@@ -1,0 +1,99 @@
+name: Reel Agent
+
+on:
+  schedule:
+    - cron: "30 2 * * *"     # 8:00 AM India time: stories for reel 1
+    - cron: "30 10 * * *"    # 4:00 PM India time: stories for reel 2
+    - cron: "*/15 * * * *"   # every 15 min: check Telegram + post scheduled reels
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to run"
+        type: choice
+        options: [poll, offer, check]
+        default: check
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reel-agent
+  cancel-in-progress: false
+
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+      CALLMEBOT_API_KEY: ${{ secrets.CALLMEBOT_API_KEY }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_GRAPH_BASE: ${{ vars.IG_GRAPH_BASE || 'https://graph.facebook.com/v26.0' }}
+      INSTAGRAM_HANDLE: ${{ vars.INSTAGRAM_HANDLE }}
+      TIMEZONE: ${{ vars.TIMEZONE || 'Asia/Kolkata' }}
+      POST_TIMES: ${{ vars.POST_TIMES || '13:00,19:30' }}
+      AUTO_PICK_HOURS: ${{ vars.AUTO_PICK_HOURS || '2' }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+      WHISPER_MODEL: ${{ vars.WHISPER_MODEL || 'base.en' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements*.txt
+
+      - run: pip install -q -r requirements-light.txt
+
+      - name: Pick mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" != "*/15 * * * *" ]; then
+            echo "mode=offer" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=poll" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run agent
+        id: run
+        run: python main.py ${{ steps.mode.outputs.mode }}
+
+      - name: Install video tools
+        if: steps.run.outputs.render == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          pip install -q -r requirements.txt
+
+      - name: Cache speech model
+        if: steps.run.outputs.render == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-${{ env.WHISPER_MODEL }}
+
+      - name: Make the reel
+        if: steps.run.outputs.render == 'true'
+        run: python main.py render
+
+      - name: Save progress
+        if: always()
+        run: |
+          git config user.name "reel-agent"
+          git config user.email "reel-agent@users.noreply.github.com"
+          git add state.json
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Update agent state"
+            git pull -q --rebase
+            git push -q
+          fi
