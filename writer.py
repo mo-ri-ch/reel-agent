@@ -8,7 +8,6 @@ import requests
 from config import GEMINI_API_KEY, GEMINI_MODEL, HANDLE, NICHE
 from state import now
 
-
 def ask(prompt, search=False, temperature=0.8):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     body = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -16,21 +15,22 @@ def ask(prompt, search=False, temperature=0.8):
     if search:
         body["tools"] = [{"google_search": {}}]
     last = ""
-    for attempt in range(5):
+    for attempt in range(4):
         r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=180)
+        if r.status_code in (400, 403, 429) and "tools" in body:
+            # Google Search isn't available (or its free quota is used up): continue without it
+            print(f"Search unavailable ({r.status_code}), writing without it")
+            body.pop("tools")
+            continue
         if r.status_code in (429, 500, 503):
             last = r.text[:300]
-            time.sleep(15 * (attempt + 1))
-            continue
-        if r.status_code == 400 and "tools" in body:
-            body.pop("tools")  # search not available on this model/tier: continue without it
+            time.sleep(20 * (attempt + 1))
             continue
         if r.status_code != 200:
             raise RuntimeError(f"Gemini error {r.status_code}: {r.text[:300]}")
         parts = r.json()["candidates"][0]["content"].get("parts", [])
         return "".join(p.get("text", "") for p in parts)
     raise RuntimeError(f"Gemini is busy or over the free limit, try again later. {last}")
-
 
 def parse_json(text):
     text = re.sub(r"```(?:json)?", "", text)
