@@ -37,8 +37,7 @@ def send_video(path, caption=""):
 
 
 def get_updates(offset):
-    return call("getUpdates", offset=offset, timeout=0,
-                allowed_updates=json.dumps(["message"]))
+    return call("getUpdates", offset=offset, allowed_updates=json.dumps(["message"]))
 
 
 def download(file_id, dest):
