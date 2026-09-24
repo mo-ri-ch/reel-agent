@@ -40,6 +40,11 @@ jobs:
       AUTO_PICK_HOURS: ${{ vars.AUTO_PICK_HOURS || '2' }}
       GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
       WHISPER_MODEL: ${{ vars.WHISPER_MODEL || 'base.en' }}
+      AUTO_APPROVE_HOURS: ${{ vars.AUTO_APPROVE_HOURS || '2' }}
+      VOICES_MALE: ${{ vars.VOICES_MALE }}
+      VOICES_FEMALE: ${{ vars.VOICES_FEMALE }}
+      TTS_RATE: ${{ vars.TTS_RATE }}
+      MUSIC_VOLUME: ${{ vars.MUSIC_VOLUME }}
     steps:
       - uses: actions/checkout@v4
 
