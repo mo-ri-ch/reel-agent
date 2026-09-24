@@ -10,6 +10,9 @@ def env(name, default=None):
 
 TELEGRAM_TOKEN = env("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = env("TELEGRAM_CHAT_ID")
+# Optional "doorbell" (Cloudflare Worker) for fast replies. Leave empty to use normal polling.
+DOORBELL_URL = (env("DOORBELL_URL") or "").rstrip("/")
+DOORBELL_KEY = env("DOORBELL_KEY")
 
 GEMINI_API_KEY = env("GEMINI_API_KEY")
 GEMINI_MODEL = env("GEMINI_MODEL", "gemini-3.6-flash")

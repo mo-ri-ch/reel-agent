@@ -3,7 +3,7 @@ import json
 
 import requests
 
-from config import TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
+from config import DOORBELL_KEY, DOORBELL_URL, TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
 
 
 def call(method, files=None, timeout=60, **params):
@@ -60,7 +60,17 @@ def send_video(path, caption="", buttons=None):
 
 
 def get_updates(offset):
+    if DOORBELL_URL:  # messages were saved by the doorbell the moment they arrived
+        r = requests.get(f"{DOORBELL_URL}/updates", params={"key": DOORBELL_KEY}, timeout=30)
+        r.raise_for_status()
+        return [u for u in r.json() if u["update_id"] >= offset]
     return call("getUpdates", offset=offset, allowed_updates=json.dumps(["message", "callback_query"]))
+
+
+def ack_updates(upto):
+    """Tells the doorbell which messages are handled, so it can forget them."""
+    if DOORBELL_URL and upto >= 0:
+        requests.delete(f"{DOORBELL_URL}/updates", params={"key": DOORBELL_KEY, "upto": upto}, timeout=30)
 
 
 def download(file_id, dest):

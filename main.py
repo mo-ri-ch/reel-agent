@@ -574,6 +574,11 @@ def cmd_poll():
 
     post_due(s)
 
+    try:
+        tg.ack_updates(s["offset"] - 1)
+    except Exception as e:
+        print(f"Doorbell ack failed (messages will be re-read safely next time): {e}")
+
     if json.dumps(s, sort_keys=True) != before:
         st.save(s)
     github_output("render", "true" if render else "false")
