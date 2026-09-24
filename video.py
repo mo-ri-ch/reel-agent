@@ -385,6 +385,144 @@ def download(url, path):
     return path
 
 
+# ---------------------------------------------------------------- logos & sound effects
+SI = "https://cdn.jsdelivr.net/npm/simple-icons@16"
+_SI_COLORS = None
+
+
+def _si_color(slug):
+    global _SI_COLORS
+    if _SI_COLORS is None:
+        try:
+            data = requests.get(f"{SI}/data/simple-icons.json", timeout=30, headers=UA).json()
+            items = data if isinstance(data, list) else data.get("icons", [])
+            _SI_COLORS = {re.sub(r"[^a-z0-9]", "", i.get("slug") or i.get("title", "").lower()): i.get("hex") for i in items}
+        except Exception:
+            _SI_COLORS = {}
+    return _SI_COLORS.get(slug)
+
+
+def brand_logo(name, domain=""):
+    """Company logo as a picture: Simple Icons first (crisp), then the website's own icon."""
+    slug = re.sub(r"[^a-z0-9]", "", name.lower())
+    try:
+        r = requests.get(f"{SI}/icons/{slug}.svg", timeout=20, headers=UA)
+        if r.status_code == 200 and "<svg" in r.text:
+            import cairosvg
+            color = _si_color(slug) or "111111"
+            svg = r.text.replace("<svg ", f'<svg fill="#{color}" ', 1)
+            png = cairosvg.svg2png(bytestring=svg.encode(), output_width=160, output_height=160)
+            return Image.open(io.BytesIO(png)).convert("RGBA")
+    except Exception as e:
+        print(f"Simple Icons logo for {name} failed: {e}")
+    if domain:
+        try:
+            r = requests.get(f"https://www.google.com/s2/favicons?domain={domain}&sz=256", timeout=20, headers=UA)
+            img = Image.open(io.BytesIO(r.content)).convert("RGBA")
+            if img.width >= 48:
+                return img
+        except Exception as e:
+            print(f"Website icon for {name} failed: {e}")
+    return None
+
+
+def make_badge(path, name, logo):
+    """A dark pill with the company logo on a white tile and the name next to it."""
+    fnt = font(54, semi=True)
+    probe = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    tw = int(probe.textlength(name, font=fnt))
+    tile, pad, h = 104, 18, 140
+    w = pad + (tile + 24 if logo else 22) + tw + 36
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([0, 0, w - 1, h - 1], radius=h // 2, fill=(12, 12, 20, 215))
+    x = pad
+    if logo:
+        d.rounded_rectangle([x, (h - tile) // 2, x + tile, (h + tile) // 2], radius=26, fill=(255, 255, 255, 255))
+        lg = logo.copy()
+        lg.thumbnail((tile - 26, tile - 26), Image.LANCZOS)
+        img.alpha_composite(lg, (x + (tile - lg.width) // 2, (h - lg.height) // 2))
+        x += tile + 24
+    else:
+        x += 22
+    d.text((x, h // 2), name, font=fnt, fill="white", anchor="lm")
+    img.save(path)
+
+
+def badge_events(beats, times, words, hook_end, tmp):
+    """When a company is named, show its badge for ~2 seconds (first mention only, max 4)."""
+    events, seen, busy_until = [], set(), 0.0
+    norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
+    for (start, end), b in zip(times, beats):
+        for br in (b.get("brands") or [])[:2]:
+            name = str(br.get("name", "")).strip()
+            if not name or norm(name) in seen or len(events) >= 4:
+                continue
+            first = norm(name.split()[0])
+            spoken = next((w["start"] for w in words if start - 0.3 <= w["start"] <= end and norm(w["text"]).startswith(first)),
+                          start + 0.2)
+            t = max(spoken, hook_end + 0.1, busy_until)
+            if t - spoken > 2.0:  # too long after it was said: skip rather than show it late
+                continue
+            logo = brand_logo(name, str(br.get("domain", "")))
+            path = os.path.join(tmp, f"badge_{len(events)}.png")
+            make_badge(path, name, logo)
+            events.append((path, t, t + 2.2))
+            seen.add(norm(name))
+            busy_until = t + 2.3
+            print(f"Logo badge: {name} ({'logo' if logo else 'name only'}) at {t:.1f}s")
+    return events
+
+
+SFX_DIR = "sfx"
+
+
+def sound_files(tmp):
+    """Your own sounds from the sfx/ folder (whoosh*.mp3, pop*.mp3), or simple built-in ones."""
+    def mine(prefix):
+        files = [f for ext in ("mp3", "wav", "ogg", "m4a") for f in glob.glob(os.path.join(SFX_DIR, f"{prefix}*.{ext}"))]
+        return random.choice(files) if files else None
+    whoosh = mine("whoosh")
+    if not whoosh:
+        whoosh = os.path.join(tmp, "whoosh.wav")
+        sh(["ffmpeg", "-y", "-f", "lavfi", "-i", "anoisesrc=d=0.55:c=pink:r=48000:a=0.7",
+            "-af", "highpass=f=350,lowpass=f=5500,afade=t=in:st=0:d=0.32:curve=exp,"
+                   "afade=t=out:st=0.3:d=0.25,volume=1.6", "-ac", "2", whoosh])
+    pop = mine("pop")
+    if not pop:
+        pop = os.path.join(tmp, "pop.wav")
+        sh(["ffmpeg", "-y", "-f", "lavfi", "-i",
+            "aevalsrc=0.9*exp(-28*t)*sin(2*PI*t*(520+1600*exp(-22*t))):s=48000:d=0.22", "-ac", "2", pop])
+    return whoosh, pop
+
+
+def add_sound_effects(audio, events, total, tmp):
+    """events: [(time, 'whoosh'|'pop')] → mixes them quietly into the audio track."""
+    events = sorted((t, k) for t, k in events if 0 <= t < total - 0.3)[:24]
+    if not events:
+        return audio
+    whoosh, pop = sound_files(tmp)
+    nw = sum(1 for _, k in events if k == "whoosh")
+    np_ = len(events) - nw
+    parts = []
+    if nw:
+        parts.append(f"[1:a]volume=0.32,asplit={nw}" + "".join(f"[w{i}]" for i in range(nw)))
+    if np_:
+        parts.append(f"[2:a]volume=0.45,asplit={np_}" + "".join(f"[p{i}]" for i in range(np_)))
+    labels, wi, pi = [], 0, 0
+    for n, (t, k) in enumerate(events):
+        ms = int(max(0, (t - 0.18 if k == "whoosh" else t)) * 1000)
+        src = f"w{wi}" if k == "whoosh" else f"p{pi}"
+        wi, pi = (wi + 1, pi) if k == "whoosh" else (wi, pi + 1)
+        parts.append(f"[{src}]adelay={ms}|{ms}[e{n}]")
+        labels.append(f"[e{n}]")
+    parts.append(f"[0:a]{''.join(labels)}amix=inputs={len(labels) + 1}:duration=first:normalize=0[out]")
+    out = os.path.join(tmp, "with_sfx.wav")
+    sh(["ffmpeg", "-y", "-i", audio, "-i", whoosh, "-i", pop, "-filter_complex", ";".join(parts),
+        "-map", "[out]", "-ar", "48000", "-ac", "2", out])
+    return out
+
+
 # ---------------------------------------------------------------- planning
 def beat_times(beats, words, total):
     """Start/end time of each beat, from where its words were spoken."""
@@ -521,11 +659,14 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None)
         add("image", hook_png, hook_len, style=0)
         hook_end = hook_len
     fallback = next((s for shots in plan for s in shots), ("image", hook_png))
+    cuts = [hook_end]
     for i, ((start, end), shots) in enumerate(zip(times, plan)):
         start = max(start, hook_end)
         length = end - start
         if length < 0.05:
             continue
+        if start > hook_end + 0.2:
+            cuts.append(start)
         shots = shots or [fallback]
         pieces = max(1, round(length / SHOT_SECONDS))
         for k in range(pieces):
@@ -534,7 +675,7 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None)
     listfile = os.path.join(tmp, "list.txt")
     with open(listfile, "w") as f:
         f.writelines(f"file '{os.path.abspath(s)}'\n" for s in segments)
-    return listfile
+    return listfile, cuts
 
 
 # ---------------------------------------------------------------- main
@@ -588,7 +729,13 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
 
     ass = os.path.join(tmp, "captions.ass")
     write_ass(words, total, ass, hook_until=hook_len * 0.85)
-    listfile = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening)
+    listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening)
+    hook_end = opening[1] if opening else hook_len
+    badges = []
+    try:
+        badges = badge_events(beats, times, words, hook_len, tmp)
+    except Exception as e:
+        print(f"Logo badges skipped: {e}")
 
     audio = wav
     music = pick_music()
@@ -601,13 +748,29 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
             print(f"Music skipped: {e}")
             audio = wav
 
+    try:
+        sfx = [(t, "whoosh") for t in cuts]
+        sfx += [(times[i][0] + 0.05, "pop") for i, b in enumerate(beats) if b["visual"] == "stat" and times[i][0] >= hook_end]
+        sfx += [(start, "pop") for _, start, _ in badges]
+        audio = add_sound_effects(audio, sfx, total, tmp)
+    except Exception as e:
+        print(f"Sound effects skipped: {e}")
+
     out = os.path.join(WORK_DIR, "reel.mp4")
     fontsdir = FONT_DIR if os.path.isdir(FONT_DIR) else "."
-    graph = (f"[0:v]subtitles={ass}:fontsdir={fontsdir}[v];"
-             f"color=c=0xFFD400:s={W}x10:r={FPS}[bar];"
-             f"[v][bar]overlay=x='-w+w*t/{total:.3f}':y=H-10:shortest=1[out]")
-    sh(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listfile, "-i", audio,
-        "-filter_complex", graph, "-map", "[out]", "-map", "1:a",
+    graph = [f"[0:v]subtitles={ass}:fontsdir={fontsdir}[v0]"]
+    inputs, last = [], "v0"
+    for k, (png, a, b) in enumerate(badges):
+        inputs += ["-loop", "1", "-t", f"{total:.2f}", "-i", png]
+        idx = 2 + k
+        graph.append(f"[{idx}:v]format=rgba,fade=t=in:st={a:.2f}:d=0.18:alpha=1,"
+                     f"fade=t=out:st={b - 0.25:.2f}:d=0.25:alpha=1[b{k}]")
+        graph.append(f"[{last}][b{k}]overlay=x=(W-w)/2:y=200:enable='between(t,{a:.2f},{b:.2f})'[v{k + 1}]")
+        last = f"v{k + 1}"
+    graph.append(f"color=c=0xFFD400:s={W}x10:r={FPS}[bar]")
+    graph.append(f"[{last}][bar]overlay=x='-w+w*t/{total:.3f}':y=H-10:shortest=1[out]")
+    sh(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listfile, "-i", audio, *inputs,
+        "-filter_complex", ";".join(graph), "-map", "[out]", "-map", "1:a",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-maxrate", "4000k", "-bufsize", "8000k",
         "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
         "-shortest", "-movflags", "+faststart", out])

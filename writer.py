@@ -122,13 +122,16 @@ VISUALS — split the script into 5 to 8 beats (one or two sentences each). Ever
 - "stat": a big number on screen, ONLY for a number stated in the news story or your search results (at most 2).
   Never invent, round up or estimate a number. If unsure, use "clip" or "image" instead. "big" = "600M", "small" = "weekly users".
 Mix the types; don't use the same type more than twice in a row.
+For every beat, list in "brands" the companies or AI products NAMED in that line (e.g. OpenAI, Google, Meta, Nvidia,
+ChatGPT, Gemini, Claude), with their main website domain. Use [] when none are named. Never add brands that aren't said.
 
 Return ONLY JSON:
 {{"title": "on-screen headline, max 60 characters",
  "hook_text": "3 to 6 punchy words shown big on the first screen",
  "beats": [{{"line": "spoken sentence(s)", "visual": "clip", "query": "..."}},
            {{"line": "...", "visual": "image", "prompt": "..."}},
-           {{"line": "...", "visual": "stat", "big": "...", "small": "..."}}],
+           {{"line": "...", "visual": "stat", "big": "...", "small": "...",
+             "brands": [{{"name": "OpenAI", "domain": "openai.com"}}]}}],
  "caption": "2-3 sentence Instagram caption ending with a question",
  "hashtags": ["10 to 12 relevant hashtags without #"],
  "sources": ["URLs you used"]}}"""
@@ -145,7 +148,9 @@ def normalize_draft(draft, topic):
         kind = b.get("visual") if b.get("visual") in ("clip", "image", "stat") else "clip"
         beats.append({"line": str(b["line"]).strip(), "visual": kind,
                       "query": str(b.get("query") or "technology"), "prompt": str(b.get("prompt") or ""),
-                      "big": str(b.get("big") or "")[:10], "small": str(b.get("small") or "")[:40]})
+                      "big": str(b.get("big") or "")[:10], "small": str(b.get("small") or "")[:40],
+                      "brands": [{"name": str(x.get("name", ""))[:30], "domain": str(x.get("domain", ""))[:60]}
+                                 for x in (b.get("brands") or []) if isinstance(x, dict) and x.get("name")][:2]})
     if not beats:  # older-style reply: build beats from the script lines
         script = draft.get("script", "")
         lines = script if isinstance(script, list) else str(script).splitlines()

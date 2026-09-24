@@ -77,7 +77,7 @@ jobs:
         if: steps.run.outputs.render == 'true'
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core libcairo2
           pip install -q -r requirements.txt
 
       - name: Cache speech models
