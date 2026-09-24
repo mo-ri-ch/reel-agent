@@ -48,6 +48,7 @@ AUTO_APPROVE_HOURS = float(env("AUTO_APPROVE_HOURS", "2"))
 # Times (your local time) when finished reels get posted
 POST_TIMES = [t.strip() for t in env("POST_TIMES", "13:00,19:30").split(",") if t.strip()]
 HANDLE = env("INSTAGRAM_HANDLE", "")
+SPOKEN_NAME = env("SPOKEN_NAME", "Gradient AI Labs")  # how the voice-over says your @handle
 NICHE = env("CHANNEL_NICHE", "daily AI news, trends and advancements")
 
 FONT_PATH = env("FONT_PATH", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")

@@ -7,7 +7,7 @@ import requests
 
 import random
 
-from config import KOKORO_FEMALE, KOKORO_MALE, TTS_RATE, VOICES_FEMALE, VOICES_MALE
+from config import SPOKEN_NAME, KOKORO_FEMALE, KOKORO_MALE, TTS_RATE, VOICES_FEMALE, VOICES_MALE
 
 KOKORO_DIR = os.path.expanduser("~/.cache/kokoro")
 KOKORO_BASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
@@ -15,7 +15,7 @@ KOKORO_FILES = ["kokoro-v1.0.onnx", "voices-v1.0.bin"]
 
 
 def _speakable(text):
-    text = re.sub(r"@(\w[\w.]*)", lambda m: m.group(1).replace(".", " dot "), text)  # "@gradientailabs" → "gradientailabs"
+    text = re.sub(r"@(\w[\w.]*)", lambda m: SPOKEN_NAME or m.group(1).replace(".", " dot "), text)  # "@gradientailabs" → "Gradient AI Labs"
     return re.sub(r"[ \t]+", " ", text).strip()
 
 

@@ -242,8 +242,12 @@ def start_script(s, topic, instruction=None):
     tg.send("✍️ Revising the script..." if instruction else f"✍️ Writing a script about: {topic['title']}")
     draft = writer.write_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
     image = s.get("user_image_id") if instruction else None
+    clip = s.get("user_video_id") if instruction else s.pop("next_video_id", None)
     reset_reel(s)
-    s.update(topic=topic, draft=draft, stage="awaiting_voice", user_image_id=image, script_deadline=deadline())
+    s.update(topic=topic, draft=draft, stage="awaiting_voice", user_image_id=image, user_video_id=clip,
+             script_deadline=deadline())
+    if clip and not instruction:
+        tg.send("🎥 Using the clip you sent as the opening shot.")
     tg.send(script_message(draft) + (autopilot_note("script") if s.get("autopilot") else ""),
             buttons=script_buttons(s))
 
@@ -361,11 +365,12 @@ def handle(s, m, from_button=False):
 
     video = m.get("video") or m.get("animation") or (doc if mime.startswith("video/") else None)
     if video:
-        if not s.get("draft"):
-            tg.send("Send me a topic first. Then you can add a video for the opening shot.")
-            return None
         if (video.get("file_size") or 0) > 19_000_000:
             tg.send("That video is too big for Telegram bots (max 20 MB). Please send a shorter or smaller clip.")
+            return None
+        if not s.get("draft") or stage == "choosing":
+            s["next_video_id"] = video["file_id"]
+            tg.send("🎥 Got it! I'll use this clip as the opening shot of the next reel you make.")
             return None
         push_undo(s, "adding an opening video")
         s["user_video_id"] = video["file_id"]

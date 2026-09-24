@@ -21,7 +21,8 @@ DEFAULT = {
     "preview_deadline": None,
     "last_gender": "female",   # AI voice alternates male/female
     "pending_offer": False,
-    "pending_topic": None,     # a topic waiting for your "yes" button
+    "pending_topic": None,
+    "next_video_id": None,     # a clip you sent before the script was ready     # a topic waiting for your "yes" button
     "undo_stack": [],          # last few steps, for the Undo button
     "posted_ids": [],          # reels already live (can't be undone) # next story offer waiting until the current reel is done
     "history": [],          # titles already posted (avoids repeats)

@@ -81,6 +81,36 @@ def transcribe(wav, hint=""):
     return words
 
 
+def align_to_script(words, script):
+    """Uses the script's exact spelling for captions, with the timings Whisper heard.
+    (Whisper sometimes mishears names like "Rafale" or "@gradientailabs".) If the speaker
+    went off-script (your own voice), Whisper's words are kept."""
+    import difflib
+    tokens = script.split()
+    if not words or not tokens:
+        return words
+    norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
+    heard, wanted = [norm(w["text"]) for w in words], [norm(t) for t in tokens]
+    sm = difflib.SequenceMatcher(None, heard, wanted, autojunk=False)
+    if sm.ratio() < 0.6:
+        return words
+    out = [None] * len(tokens)
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == "equal":
+            for k in range(i2 - i1):
+                out[j1 + k] = {"text": tokens[j1 + k], "start": words[i1 + k]["start"], "end": words[i1 + k]["end"]}
+        elif j2 > j1:  # script words Whisper heard differently: share out the time it heard
+            if i2 > i1:
+                t0, t1 = words[i1]["start"], words[i2 - 1]["end"]
+            else:
+                t0 = words[i1 - 1]["end"] if i1 > 0 else 0.0
+                t1 = words[i1]["start"] if i1 < len(words) else t0 + 0.3 * (j2 - j1)
+            step = max(0.05, (t1 - t0) / (j2 - j1))
+            for k in range(j2 - j1):
+                out[j1 + k] = {"text": tokens[j1 + k], "start": t0 + k * step, "end": t0 + (k + 1) * step}
+    return [w for w in out if w and re.search(r"\w", w["text"])]
+
+
 # ---------------------------------------------------------------- captions
 def chunk_words(words, max_words=2, max_chars=13):
     chunks, cur = [], []
@@ -487,7 +517,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     if total > 180:
         raise RuntimeError("The recording is longer than 3 minutes. Please keep reels under 90 seconds.")
     if words is None:
-        words = transcribe(wav, hint=draft.get("script", ""))
+        words = align_to_script(transcribe(wav, hint=draft.get("script", "")), draft.get("script", ""))
 
     beats = draft.get("beats") or [{"line": draft.get("script", ""), "visual": "clip", "query": "technology"}]
     times = beat_times(beats, words, total)
