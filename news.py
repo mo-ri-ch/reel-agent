@@ -43,6 +43,9 @@ def fetch_headlines(max_age_hours=36, limit=40):
             if published and published < cutoff:
                 continue
             title = _clean(e.get("title"))
+            src = source
+            if "news.google.com" in url and " - " in title:
+                title, src = title.rsplit(" - ", 1)  # Google News puts the publisher at the end
             key = re.sub(r"[^a-z0-9]", "", title.lower())[:50]
             if not title or key in seen:
                 continue
@@ -51,7 +54,7 @@ def fetch_headlines(max_age_hours=36, limit=40):
                 "title": title,
                 "link": e.get("link", ""),
                 "summary": _clean(e.get("summary"))[:400],
-                "source": source,
+                "source": src,
                 "published": published.isoformat() if published else "",
             })
     items.sort(key=lambda x: x["published"], reverse=True)

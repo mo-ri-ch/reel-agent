@@ -8,12 +8,15 @@ import requests
 from config import GEMINI_API_KEY, GEMINI_MODEL, HANDLE, NICHE
 from state import now
 
-def ask(prompt, search=False, temperature=0.8):
+
+def ask(prompt, search=False, temperature=0.8, json_mode=False):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     body = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "generationConfig": {"temperature": temperature}}
     if search:
         body["tools"] = [{"google_search": {}}]
+    elif json_mode:
+        body["generationConfig"]["responseMimeType"] = "application/json"
     last = ""
     for attempt in range(4):
         r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=180)
@@ -21,6 +24,8 @@ def ask(prompt, search=False, temperature=0.8):
             # Google Search isn't available (or its free quota is used up): continue without it
             print(f"Search unavailable ({r.status_code}), writing without it")
             body.pop("tools")
+            if json_mode:
+                body["generationConfig"]["responseMimeType"] = "application/json"
             continue
         if r.status_code in (429, 500, 503):
             last = r.text[:300]
@@ -28,9 +33,20 @@ def ask(prompt, search=False, temperature=0.8):
             continue
         if r.status_code != 200:
             raise RuntimeError(f"Gemini error {r.status_code}: {r.text[:300]}")
-        parts = r.json()["candidates"][0]["content"].get("parts", [])
-        return "".join(p.get("text", "") for p in parts)
-    raise RuntimeError(f"Gemini is busy or over the free limit, try again later. {last}")
+        data = r.json()
+        cand = (data.get("candidates") or [{}])[0]
+        parts = (cand.get("content") or {}).get("parts", [])
+        text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+        if text.strip():
+            return text
+        last = f"empty reply (finishReason={cand.get('finishReason')}, feedback={data.get('promptFeedback')})"
+        print("Gemini " + last)
+        if "tools" in body:  # search sometimes returns nothing: retry without it
+            body.pop("tools")
+            if json_mode:
+                body["generationConfig"]["responseMimeType"] = "application/json"
+    raise RuntimeError(f"Gemini didn't give a usable reply, please try again. {last}")
+
 
 def parse_json(text):
     text = re.sub(r"```(?:json)?", "", text)
@@ -55,7 +71,7 @@ Headlines:
 
 Return ONLY JSON: {{"picks": [{{"n": <headline number>, "angle": "<one short line: why viewers will care>"}}]}}"""
     try:
-        picks = parse_json(ask(prompt, temperature=0.4))["picks"]
+        picks = parse_json(ask(prompt, temperature=0.4, json_mode=True))["picks"]
         chosen = []
         for p in picks:
             n = int(p["n"])
@@ -100,8 +116,15 @@ def write_script(topic, previous=None, instruction=None):
     if previous and instruction:
         prompt += (f"\n\nHere is the current version:\n{json.dumps(previous, ensure_ascii=False)}\n"
                    f'Revise it based on the creator\'s feedback: "{instruction}". Keep all the rules above.')
-    draft = parse_json(ask(prompt, search=True))
-    draft["script"] = str(draft.get("script", "")).strip()
+    try:
+        draft = parse_json(ask(prompt, search=True, json_mode=True))
+    except ValueError:
+        # the search-grounded reply wasn't clean JSON: ask again in strict JSON mode
+        draft = parse_json(ask(prompt, json_mode=True))
+    if isinstance(draft, list):
+        draft = draft[0] if draft else {}
+    script = draft.get("script", "")
+    draft["script"] = ("\n".join(script) if isinstance(script, list) else str(script)).strip()
     draft["title"] = str(draft.get("title") or topic["title"])[:70]
     draft["caption"] = str(draft.get("caption", ""))
     draft["hashtags"] = [str(h).lstrip("#").replace(" ", "") for h in draft.get("hashtags", [])][:15]
