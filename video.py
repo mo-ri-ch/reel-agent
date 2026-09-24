@@ -1,6 +1,8 @@
 """Turns your voice note + script into a 1080x1920 reel with word-by-word captions."""
+import glob
 import io
 import math
+import random
 import os
 import re
 import shutil
@@ -15,6 +17,8 @@ from config import FONT_NAME, FONT_PATH, HANDLE, PEXELS_API_KEY, WORK_DIR
 W, H, FPS = 1080, 1920, 30
 HIGHLIGHT = "&H00E5FF&"  # yellow, in ASS's BGR format
 CLIP_SECONDS = 4.0
+MUSIC_DIR = "music"
+MUSIC_VOLUME = float(os.environ.get("MUSIC_VOLUME") or 0.15)  # 0.1 = quieter, 0.25 = louder
 
 
 def sh(cmd):
@@ -35,6 +39,24 @@ def clean_audio(src, dst):
     af = (f"highpass=f=80,afftdn=nf=-25,{trim},areverse,{trim},areverse,"
           "loudnorm=I=-14:TP=-1.5:LRA=11,apad=pad_dur=0.6")
     sh(["ffmpeg", "-y", "-i", src, "-af", af, "-ar", "48000", "-ac", "2", dst])
+
+
+def pick_music():
+    tracks = [f for ext in ("mp3", "m4a", "wav", "ogg", "aac")
+              for f in glob.glob(os.path.join(MUSIC_DIR, f"*.{ext}"))]
+    return random.choice(tracks) if tracks else None
+
+
+def mix_music(voice_wav, music, total, dst):
+    """Soft background music that ducks under your voice and fades out at the end."""
+    fade_start = max(0.0, total - 1.5)
+    graph = (f"[1:a]aformat=sample_rates=48000:channel_layouts=stereo,volume={MUSIC_VOLUME}[m];"
+             "[0:a]asplit=2[v][key];"
+             "[m][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=500[duck];"
+             "[v][duck]amix=inputs=2:duration=first:normalize=0,"
+             f"afade=t=out:st={fade_start:.2f}:d=1.5[out]")
+    sh(["ffmpeg", "-y", "-i", voice_wav, "-stream_loop", "-1", "-i", music,
+        "-filter_complex", graph, "-map", "[out]", "-ar", "48000", "-ac", "2", dst])
 
 
 def transcribe(wav, hint=""):
@@ -338,8 +360,20 @@ def render(voice_path, draft, topic, user_image_path=None, words=None):
         scenes.append(path)
 
     listfile = build_background(total, card, draft.get("keywords", []), tmp, scenes)
+
+    audio = wav
+    music = pick_music()
+    if music:
+        try:
+            audio = os.path.join(tmp, "mixed.wav")
+            mix_music(wav, music, total, audio)
+            print(f"Background music: {os.path.basename(music)}")
+        except Exception as e:
+            print(f"Music skipped: {e}")
+            audio = wav
+
     out = os.path.join(WORK_DIR, "reel.mp4")
-    sh(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listfile, "-i", wav,
+    sh(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listfile, "-i", audio,
         "-vf", f"subtitles={ass}", "-map", "0:v", "-map", "1:a",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-maxrate", "3500k", "-bufsize", "7000k",
         "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
