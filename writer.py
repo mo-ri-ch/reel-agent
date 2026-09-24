@@ -9,8 +9,11 @@ from config import GEMINI_API_KEY, GEMINI_FALLBACK_MODEL, GEMINI_MODEL, HANDLE, 
 from state import now
 
 
-def ask(prompt, search=False, temperature=0.8, json_mode=False):
+def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
+    """light=True: small jobs (picking stories/clips) go to the lighter model first, saving the main model's quota."""
     models = [GEMINI_MODEL] + ([GEMINI_FALLBACK_MODEL] if GEMINI_FALLBACK_MODEL != GEMINI_MODEL else [])
+    if light:
+        models.reverse()
     last = ""
     for model in models:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
@@ -39,8 +42,10 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False):
                 time.sleep(15)
                 continue
             if r.status_code == 429:
-                last = r.text[:300]
-                time.sleep(20 * (attempt + 1))
+                last = f"{model}: free quota used up for now"
+                if attempt >= 1 or "PerDay" in r.text or "per day" in r.text.lower():
+                    break  # daily limit won't reset in minutes: try the other model instead of waiting
+                time.sleep(12)
                 continue
             if r.status_code == 404 and model != GEMINI_MODEL:
                 break  # backup model name not available
@@ -87,7 +92,7 @@ Headlines:
 
 Return ONLY JSON: {{"picks": [{{"n": <headline number>, "angle": "<one short line: why viewers will care>"}}]}}"""
     try:
-        picks = parse_json(ask(prompt, temperature=0.4, json_mode=True))["picks"]
+        picks = parse_json(ask(prompt, temperature=0.4, json_mode=True, light=True))["picks"]
         chosen = []
         for p in picks:
             n = int(p["n"])
@@ -191,7 +196,7 @@ def choose_clips(beats_with_options):
             parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(img).decode()}})
     parts.append({"text": '\nReturn ONLY JSON like {"1": [2, 1], "2": [3], "3": []} — for each line, the option '
                           "numbers that fit, best first. Use [] if none fit."})
-    raw = parse_json(ask(parts, temperature=0.2, json_mode=True))
+    raw = parse_json(ask(parts, temperature=0.2, json_mode=True, light=True))
     return {int(k) - 1: [int(x) - 1 for x in v if str(x).lstrip("-").isdigit()] for k, v in raw.items()
             if str(k).isdigit() and isinstance(v, list)}
 
