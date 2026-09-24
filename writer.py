@@ -14,7 +14,8 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False):
     last = ""
     for model in models:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        body = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        parts = prompt if isinstance(prompt, list) else [{"text": prompt}]
+        body = {"contents": [{"role": "user", "parts": parts}],
                 "generationConfig": {"temperature": temperature}}
         if search:
             body["tools"] = [{"google_search": {}}]
@@ -99,22 +100,93 @@ Return ONLY JSON: {{"picks": [{{"n": <headline number>, "angle": "<one short lin
     return [{**h, "angle": ""} for h in headlines[:count]]
 
 
-RULES = """Write a script for a 35-45 second Instagram Reel. The creator will read it aloud in their own voice.
-- 85 to 110 words, simple spoken English. Explain any jargon in a few words.
-- Line 1 is the hook: under 12 words, creates curiosity or surprise. Never start with "Hey guys" or "In today's video".
-- Then 2-3 short, concrete points: what happened, why it matters, what it means for the viewer.
-  Only use names, numbers and dates you are confident are accurate.
-- Last line: a short ask to follow for daily AI news{handle}.
-- Short sentences that are easy to say. No emojis, hashtags, stage directions or brackets in the script.
+RULES = """Write a 25-40 second Instagram Reel about AI, read aloud by a voice-over.
 
-Return ONLY JSON with these keys:
+SCRIPT
+- 70 to 100 words. Conversational, like explaining to a smart friend. Short punchy sentences (max ~15 words), contractions, one idea per sentence.
+- Line 1 is the HOOK (under 12 words). Stop the scroll with ONE of: a surprising fact or number, a bold claim,
+  "you" framing about the viewer's life, or a question they can't ignore.
+  Good hooks: "Your next coworker might not be human." / "Google just made search ten times faster."
+  Never start with: "Hey guys", "Did you know", "In today's video", "Breaking news", "Imagine".
+- Then: what happened (concrete names/numbers you're sure are accurate) → why it's surprising or matters → what it means for the viewer.
+- Then one short question to spark comments, then a last line asking to follow for daily AI news{handle}.
+- Banned words: game-changer, revolutionize, revolutionary, cutting-edge, unleash, delve, landscape, buckle up,
+  "the future is here", "in today's world", "stay tuned", "mind-blowing".
+- No emojis, hashtags, stage directions or brackets in the lines. Write numbers the way they're said ("ten times", "two billion").
+
+VISUALS — split the script into 5 to 8 beats (one or two sentences each). Every beat gets ONE visual:
+- "clip": real stock video. Use for things footage shows well: people using phones or laptops, offices, city streets,
+  data centers, robots, coding screens, doctors, students. "query" = 2-4 concrete words ("woman talking to phone", not "AI innovation").
+- "image": AI-generated picture for specific or futuristic ideas stock can't show. "prompt" = vivid cinematic vertical scene,
+  no text, no logos, no real people's faces.
+- "stat": a big number on screen, only when a real number is the point (at most 2). "big" = "600M", "small" = "weekly users".
+Mix the types; don't use the same type more than twice in a row.
+
+Return ONLY JSON:
 {{"title": "on-screen headline, max 60 characters",
- "script": "the full script, one sentence per line",
- "caption": "2-3 sentence Instagram caption ending with a question to get comments",
- "hashtags": ["10 to 12 relevant hashtags without the # sign"],
- "keywords": ["5 short stock-footage search terms that visually match the story, e.g. robot arm, coding laptop, data center"],
- "image_prompts": ["3 prompts for AI-generated images that illustrate the story: vivid, cinematic, vertical composition. No text, no logos, no real people"],
+ "hook_text": "3 to 6 punchy words shown big on the first screen",
+ "beats": [{{"line": "spoken sentence(s)", "visual": "clip", "query": "..."}},
+           {{"line": "...", "visual": "image", "prompt": "..."}},
+           {{"line": "...", "visual": "stat", "big": "...", "small": "..."}}],
+ "caption": "2-3 sentence Instagram caption ending with a question",
+ "hashtags": ["10 to 12 relevant hashtags without #"],
  "sources": ["URLs you used"]}}"""
+
+
+def normalize_draft(draft, topic):
+    """Makes sure the draft has clean beats, script and all the fields the rest of the agent needs."""
+    if isinstance(draft, list):
+        draft = draft[0] if draft else {}
+    beats = []
+    for b in draft.get("beats") or []:
+        if not isinstance(b, dict) or not str(b.get("line", "")).strip():
+            continue
+        kind = b.get("visual") if b.get("visual") in ("clip", "image", "stat") else "clip"
+        beats.append({"line": str(b["line"]).strip(), "visual": kind,
+                      "query": str(b.get("query") or "technology"), "prompt": str(b.get("prompt") or ""),
+                      "big": str(b.get("big") or "")[:10], "small": str(b.get("small") or "")[:40]})
+    if not beats:  # older-style reply: build beats from the script lines
+        script = draft.get("script", "")
+        lines = script if isinstance(script, list) else str(script).splitlines()
+        keywords = draft.get("keywords") or ["artificial intelligence", "technology", "data center"]
+        beats = [{"line": l.strip(), "visual": "clip", "query": keywords[i % len(keywords)], "prompt": "",
+                  "big": "", "small": ""} for i, l in enumerate(lines) if l.strip()]
+    for b in beats:
+        if b["visual"] == "stat" and not b["big"]:
+            b["visual"] = "clip"
+        if b["visual"] == "image" and not b["prompt"]:
+            b["prompt"] = f"a cinematic illustration of: {b['line']}"
+    draft["beats"] = beats
+    draft["script"] = "\n".join(b["line"] for b in beats).strip()
+    draft["title"] = str(draft.get("title") or topic["title"])[:70]
+    draft["hook_text"] = str(draft.get("hook_text") or draft["title"])[:60]
+    draft["caption"] = str(draft.get("caption", ""))
+    draft["hashtags"] = [str(h).lstrip("#").replace(" ", "") for h in draft.get("hashtags", [])][:15]
+    draft["keywords"] = [b["query"] for b in beats if b["visual"] == "clip"][:6] or ["technology"]
+    draft["image_prompts"] = [b["prompt"] for b in beats if b["visual"] == "image"][:3]
+    draft["sources"] = draft.get("sources", [])
+    if not draft["script"]:
+        raise RuntimeError("The script came back empty, please try again.")
+    return draft
+
+
+def choose_clips(beats_with_options):
+    """Shows Gemini thumbnails of candidate stock clips and lets it pick the ones that fit each line.
+    beats_with_options: [{"line": str, "options": [jpeg_bytes, ...]}]  →  {beat_index: [option_index, ...]}"""
+    import base64
+    parts = [{"text": "You are editing an Instagram Reel. For each spoken line below, look at the numbered stock "
+                      "video thumbnails and pick the ones that visually fit the line. Prefer clips that match the "
+                      "meaning; avoid generic office meetings unless the line is about one."}]
+    for bi, b in enumerate(beats_with_options):
+        parts.append({"text": f"\nLINE {bi + 1}: \"{b['line']}\""})
+        for ci, img in enumerate(b["options"]):
+            parts.append({"text": f"Option {bi + 1}.{ci + 1}:"})
+            parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(img).decode()}})
+    parts.append({"text": '\nReturn ONLY JSON like {"1": [2, 1], "2": [3], "3": []} — for each line, the option '
+                          "numbers that fit, best first. Use [] if none fit."})
+    raw = parse_json(ask(parts, temperature=0.2, json_mode=True))
+    return {int(k) - 1: [int(x) - 1 for x in v if str(x).lstrip("-").isdigit()] for k, v in raw.items()
+            if str(k).isdigit() and isinstance(v, list)}
 
 
 def write_script(topic, previous=None, instruction=None):
@@ -136,33 +208,19 @@ def write_script(topic, previous=None, instruction=None):
     except ValueError:
         # the search-grounded reply wasn't clean JSON: ask again in strict JSON mode
         draft = parse_json(ask(prompt, json_mode=True))
-    if isinstance(draft, list):
-        draft = draft[0] if draft else {}
-    script = draft.get("script", "")
-    draft["script"] = ("\n".join(script) if isinstance(script, list) else str(script)).strip()
-    draft["title"] = str(draft.get("title") or topic["title"])[:70]
-    draft["caption"] = str(draft.get("caption", ""))
-    draft["hashtags"] = [str(h).lstrip("#").replace(" ", "") for h in draft.get("hashtags", [])][:15]
-    draft["keywords"] = [str(k) for k in draft.get("keywords", [])][:6]
-    draft["image_prompts"] = [str(p) for p in draft.get("image_prompts", [])][:3]
-    draft["sources"] = draft.get("sources", [])
-    if not draft["script"]:
-        raise RuntimeError("The script came back empty, please try again.")
-    return draft
+    return normalize_draft(draft, topic)
 
 
 def draft_from_own_script(text, topic=None):
     """Builds a draft from a script you wrote yourself (no Gemini needed)."""
     lines = [l.strip() for l in text.strip().splitlines() if l.strip()]
     title = (topic or {}).get("title") or lines[0]
-    return {
-        "title": title[:70],
-        "script": "\n".join(lines),
+    queries = ["person using smartphone", "data center servers", "coding on laptop", "robot arm", "city at night"]
+    beats = [{"line": l, "visual": "image" if i % 3 == 1 else "clip", "query": queries[i % len(queries)],
+              "prompt": f"a cinematic futuristic scene illustrating: {l}"} for i, l in enumerate(lines)]
+    return normalize_draft({
+        "title": title[:70], "hook_text": lines[0][:60], "beats": beats,
         "caption": " ".join(lines[:2])[:300] + "\n\nWhat do you think? Tell me in the comments 👇",
         "hashtags": ["ai", "artificialintelligence", "ainews", "tech", "technology", "chatgpt",
                      "openai", "futuretech", "machinelearning", "techindia"],
-        "keywords": ["artificial intelligence", "technology", "data center", "robot", "coding laptop"],
-        "image_prompts": [f"an illustration representing: {title}",
-                          "a futuristic glowing AI brain made of circuits, purple and blue neon"],
-        "sources": [],
-    }
+    }, {"title": title})

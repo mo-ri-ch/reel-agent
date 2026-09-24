@@ -1,9 +1,14 @@
-"""Turns your voice note + script into a 1080x1920 reel with word-by-word captions."""
+"""Turns a voice-over + script into a 1080x1920 reel.
+
+Style: a bold hook screen, a new shot every ~2.5 seconds that matches what's being said
+(stock clips checked by Gemini, AI images, big-number cards), modern word-by-word captions,
+soft background music and a progress bar.
+"""
 import glob
 import io
 import math
-import random
 import os
+import random
 import re
 import shutil
 import subprocess
@@ -12,13 +17,19 @@ import requests
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 import news
-from config import FONT_NAME, FONT_PATH, HANDLE, PEXELS_API_KEY, WORK_DIR
+from config import FONT_PATH, HANDLE, PEXELS_API_KEY, WORK_DIR
 
 W, H, FPS = 1080, 1920, 30
-HIGHLIGHT = "&H00E5FF&"  # yellow, in ASS's BGR format
-CLIP_SECONDS = 4.0
+SHOT_SECONDS = 2.6            # a new shot about this often
+ACCENT = (255, 212, 0)        # yellow
+ACCENT_ASS = "&H0000D4FF&"    # same yellow in ASS (BGR)
+HERE = os.path.dirname(os.path.abspath(__file__))
+FONT_DIR = os.path.join(HERE, "fonts")
+FONT_BOLD = os.path.join(FONT_DIR, "Poppins-ExtraBold.ttf")
+FONT_SEMI = os.path.join(FONT_DIR, "Poppins-SemiBold.ttf")
 MUSIC_DIR = "music"
-MUSIC_VOLUME = float(os.environ.get("MUSIC_VOLUME") or 0.15)  # 0.1 = quieter, 0.25 = louder
+MUSIC_VOLUME = float(os.environ.get("MUSIC_VOLUME") or 0.15)
+UA = news.UA
 
 
 def sh(cmd):
@@ -29,11 +40,10 @@ def sh(cmd):
 
 
 def duration(path):
-    return float(sh(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                     "-of", "csv=p=0", path]).strip())
+    return float(sh(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]).strip())
 
 
-# ---------- audio ----------
+# ---------------------------------------------------------------- audio
 def clean_audio(src, dst):
     trim = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15"
     af = (f"highpass=f=80,afftdn=nf=-25,{trim},areverse,{trim},areverse,"
@@ -42,13 +52,12 @@ def clean_audio(src, dst):
 
 
 def pick_music():
-    tracks = [f for ext in ("mp3", "m4a", "wav", "ogg", "aac")
-              for f in glob.glob(os.path.join(MUSIC_DIR, f"*.{ext}"))]
+    tracks = [f for ext in ("mp3", "m4a", "wav", "ogg", "aac") for f in glob.glob(os.path.join(MUSIC_DIR, f"*.{ext}"))]
     return random.choice(tracks) if tracks else None
 
 
 def mix_music(voice_wav, music, total, dst):
-    """Soft background music that ducks under your voice and fades out at the end."""
+    """Soft background music that ducks under the voice and fades out at the end."""
     fade_start = max(0.0, total - 1.5)
     graph = (f"[1:a]aformat=sample_rates=48000:channel_layouts=stereo,volume={MUSIC_VOLUME}[m];"
              "[0:a]asplit=2[v][key];"
@@ -72,12 +81,12 @@ def transcribe(wav, hint=""):
     return words
 
 
-# ---------- captions ----------
-def chunk_words(words, max_words=3, max_chars=14):
+# ---------------------------------------------------------------- captions
+def chunk_words(words, max_words=2, max_chars=13):
     chunks, cur = [], []
     for w in words:
         joined = " ".join(x["text"] for x in cur + [w])
-        if cur and (len(cur) >= max_words or len(joined) > max_chars or w["start"] - cur[-1]["end"] > 0.6):
+        if cur and (len(cur) >= max_words or len(joined) > max_chars or w["start"] - cur[-1]["end"] > 0.5):
             chunks.append(cur)
             cur = []
         cur.append(w)
@@ -96,11 +105,16 @@ def ass_time(t):
 
 def ass_text(t):
     t = re.sub(r"[{}\\]", "", t)
-    t = re.sub(r"^[.,;:!?…\-–—]+", "", t)  # Whisper sometimes glues the previous punctuation on
+    t = re.sub(r"^[.,;:!?…\-–—]+", "", t)
+    t = re.sub(r"[.,;:]+$", "", t)  # trailing commas/full stops look messy on screen
     return t.upper()
 
 
-def write_ass(words, total, path):
+def font_name():
+    return "Poppins" if os.path.exists(FONT_BOLD) else "DejaVu Sans"
+
+
+def write_ass(words, total, path, hook_until=0.0):
     out = [f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -110,8 +124,8 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,{FONT_NAME},86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,7,3,2,60,60,500,1
-Style: Handle,{FONT_NAME},38,&H50FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,2,60,60,150,1
+Style: Caption,{font_name()},118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,9,4,2,70,70,640,1
+Style: Handle,{font_name()},36,&H40FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,2,0,1,3,0,8,60,60,110,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"""]
@@ -123,9 +137,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
             start = w["start"]
             end = ch[wi + 1]["start"] if wi + 1 < len(ch) else chunk_end
             end = max(end, start + 0.05)
-            parts = [f"{{\\c{HIGHLIGHT}}}{ass_text(x['text'])}{{\\c&HFFFFFF&}}" if k == wi
-                     else ass_text(x["text"]) for k, x in enumerate(ch)]
-            pop = "{\\fscx80\\fscy80\\t(0,90,\\fscx100\\fscy100)}" if wi == 0 else ""
+            if end <= hook_until:
+                continue  # the hook screen has its own big text
+            start = max(start, hook_until)
+            parts = []
+            for k, x in enumerate(ch):
+                t = ass_text(x["text"])
+                parts.append(f"{{\\c{ACCENT_ASS}\\fscx108\\fscy108}}{t}{{\\c&HFFFFFF&\\fscx100\\fscy100}}"
+                             if k == wi else t)
+            pop = "{\\fscx70\\fscy70\\t(0,110,\\fscx100\\fscy100)}" if wi == 0 else ""
             out.append(f"Dialogue: 1,{ass_time(start)},{ass_time(end)},Caption,,0,0,0,,{pop}{' '.join(parts)}")
     if HANDLE:
         handle = re.sub(r"[{}\\]", "", HANDLE.lstrip("@"))
@@ -134,15 +154,17 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
         f.write("\n".join(out) + "\n")
 
 
-# ---------- images ----------
-def font(size):
-    try:
-        return ImageFont.truetype(FONT_PATH, size)
-    except OSError:
-        return ImageFont.load_default(size)
+# ---------------------------------------------------------------- pictures
+def font(size, semi=False):
+    for path in ((FONT_SEMI if semi else FONT_BOLD), FONT_PATH):
+        try:
+            return ImageFont.truetype(path, size)
+        except OSError:
+            continue
+    return ImageFont.load_default(size)
 
 
-def gradient(top=(12, 10, 40), bottom=(70, 30, 120)):
+def gradient(top=(10, 8, 30), bottom=(55, 25, 95)):
     col = Image.new("RGB", (1, H))
     for y in range(H):
         a = y / (H - 1)
@@ -152,7 +174,7 @@ def gradient(top=(12, 10, 40), bottom=(70, 30, 120)):
 
 def fetch_image(url):
     try:
-        r = requests.get(url, headers=news.UA, timeout=15)
+        r = requests.get(url, headers=UA, timeout=20)
         r.raise_for_status()
         img = Image.open(io.BytesIO(r.content)).convert("RGB")
         return img if img.width >= 300 else None
@@ -160,9 +182,9 @@ def fetch_image(url):
         return None
 
 
-def cover(img, w, h):
+def cover(img, w=W, h=H):
     s = max(w / img.width, h / img.height)
-    img = img.resize((math.ceil(img.width * s), math.ceil(img.height * s)))
+    img = img.resize((math.ceil(img.width * s), math.ceil(img.height * s)), Image.LANCZOS)
     x, y = (img.width - w) // 2, (img.height - h) // 2
     return img.crop((x, y, x + w, y + h))
 
@@ -179,148 +201,236 @@ def wrap(draw, text, fnt, maxw):
     return lines + ([cur] if cur else [])
 
 
-def make_card(path, headline, label, image=None):
-    if image:
-        bg = cover(image, W, H).filter(ImageFilter.GaussianBlur(40))
-        bg = Image.blend(bg, Image.new("RGB", (W, H)), 0.55)
-    else:
-        bg = gradient()
-    d = ImageDraw.Draw(bg)
-    lf = font(42)
-    tw = d.textlength(label, font=lf)
-    x0 = (W - tw) / 2 - 32
-    d.rounded_rectangle([x0, 230, x0 + tw + 64, 312], radius=41, fill=(255, 229, 0))
-    d.text((W / 2, 271), label, font=lf, fill=(0, 0, 0), anchor="mm")
-    size = 78
-    while True:
-        hf = font(size)
-        lines = wrap(d, headline, hf, W - 140)
-        if len(lines) <= 4 or size <= 46:
-            break
-        size -= 6
-    y = 370
-    for line in lines[:4]:
-        d.text((W / 2, y), line, font=hf, fill="white", anchor="ma", stroke_width=3, stroke_fill="black")
-        y += int(size * 1.22)
-    if image:
-        max_h = 1230 - (y + 50)
-        if max_h > 220:
-            im = image.copy()
-            im.thumbnail((W - 120, max_h))
-            mask = Image.new("L", im.size, 0)
-            ImageDraw.Draw(mask).rounded_rectangle([0, 0, im.width - 1, im.height - 1], radius=28, fill=255)
-            bg.paste(im, ((W - im.width) // 2, y + 50), mask)
-    bg.save(path)
+def darken(img, top=0.35, bottom=0.75):
+    """Vertical dark gradient so white text stays readable on any picture."""
+    shade = Image.new("L", (1, H))
+    for y in range(H):
+        shade.putpixel((0, y), int(255 * (top + (bottom - top) * (y / (H - 1)))))
+    shade = shade.resize((W, H))
+    return Image.composite(Image.new("RGB", (W, H)), img, shade)
 
 
-def make_scene(image, path):
-    """Full-screen for tall images, 'poster' style (blurred background) for wide ones."""
-    if image.height / image.width >= 1.5:
-        cover(image, W, H).save(path)
-        return
-    bg = cover(image, W, H).filter(ImageFilter.GaussianBlur(40))
+def full_frame(img, center=0.42):
+    """Any picture → full-screen 9:16 frame. Tall and square pictures fill the screen;
+    wide photos (like news images) sit across the middle on a blurred copy of themselves."""
+    if img.width / img.height <= 1.3:
+        return cover(img)
+    bg = cover(img).filter(ImageFilter.GaussianBlur(45))
     bg = Image.blend(bg, Image.new("RGB", (W, H)), 0.35)
-    im = image.copy()
-    im.thumbnail((W - 80, 1000))
-    mask = Image.new("L", im.size, 0)
-    ImageDraw.Draw(mask).rounded_rectangle([0, 0, im.width - 1, im.height - 1], radius=28, fill=255)
-    bg.paste(im, ((W - im.width) // 2, 220), mask)
+    fg_h = int(H * 0.5)
+    fg = cover(img, W, fg_h) if img.width / img.height < W / fg_h else img.resize(
+        (W, int(img.height * W / img.width)), Image.LANCZOS)
+    bg.paste(fg, (0, int(H * center) - fg.height // 2))
+    return bg
+
+
+def text_block(draw, text, fnt, y, fill="white", box=None, line_gap=1.12, maxw=W - 150):
+    lines = wrap(draw, text, fnt, maxw)
+    size = fnt.size
+    for line in lines:
+        tw = draw.textlength(line, font=fnt)
+        if box:
+            pad = int(size * 0.22)
+            draw.rounded_rectangle([W / 2 - tw / 2 - pad, y - pad * 0.4, W / 2 + tw / 2 + pad, y + size * 1.02 + pad * 0.4],
+                                   radius=int(size * 0.18), fill=box)
+        draw.text((W / 2, y), line, font=fnt, fill=fill, anchor="ma",
+                  stroke_width=0 if box else max(2, size // 22), stroke_fill="black")
+        y += int(size * line_gap + (size * 0.15 if box else 0))
+    return y
+
+
+def make_hook_card(path, hook, label, image=None):
+    bg = full_frame(image, center=0.68) if image else gradient()
+    bg = darken(bg, 0.25, 0.6)
+    d = ImageDraw.Draw(bg)
+    lf = font(38, semi=True)
+    tw = d.textlength(label, font=lf)
+    d.rounded_rectangle([W / 2 - tw / 2 - 28, 300, W / 2 + tw / 2 + 28, 368], radius=34, fill=ACCENT)
+    d.text((W / 2, 334), label, font=lf, fill="black", anchor="mm")
+    size = 118
+    while size > 70 and len(wrap(d, hook.upper(), font(size), W - 150)) > 3:
+        size -= 8
+    text_block(d, hook.upper(), font(size), 420, fill="black", box=(255, 255, 255))
     bg.save(path)
 
 
-# ---------- stock footage ----------
-def pexels_clips(keywords, dest, want=8):
+def make_stat_card(path, big, small, image=None):
+    bg = darken(full_frame(image).filter(ImageFilter.GaussianBlur(18)), 0.55, 0.85) if image else gradient()
+    d = ImageDraw.Draw(bg)
+    size = 300 if len(big) <= 4 else 240 if len(big) <= 6 else 180
+    d.text((W / 2, 560), big, font=font(size), fill=ACCENT, anchor="ma", stroke_width=6, stroke_fill="black")
+    text_block(d, small.upper(), font(68, semi=True), 560 + int(size * 1.15))
+    bg.save(path)
+
+
+# ---------------------------------------------------------------- stock footage
+def pexels_search(query, n=4):
     if not PEXELS_API_KEY:
         return []
-    paths, used = [], set()
-    terms = list(keywords) + ["artificial intelligence", "technology abstract", "futuristic"]
-    for term in terms:
-        if len(paths) >= want:
-            break
-        try:
-            r = requests.get("https://api.pexels.com/videos/search", timeout=30,
-                             headers={"Authorization": PEXELS_API_KEY},
-                             params={"query": term, "orientation": "portrait", "per_page": 8})
-            videos = r.json().get("videos", []) if r.status_code == 200 else []
-        except Exception:
-            continue
-        taken = 0
-        for v in videos:
-            if v["id"] in used or taken >= 2 or len(paths) >= want:
-                continue
-            files = [f for f in v.get("video_files", [])
-                     if f.get("file_type") == "video/mp4" and (f.get("height") or 0) >= 960]
-            if not files:
-                continue
+    try:
+        r = requests.get("https://api.pexels.com/videos/search", timeout=30,
+                         headers={"Authorization": PEXELS_API_KEY},
+                         params={"query": query, "orientation": "portrait", "per_page": n + 2, "size": "medium"})
+        videos = r.json().get("videos", []) if r.status_code == 200 else []
+    except Exception:
+        return []
+    found = []
+    for v in videos:
+        files = [f for f in v.get("video_files", [])
+                 if f.get("file_type") == "video/mp4" and (f.get("height") or 0) >= 960]
+        if files and v.get("image"):
             best = min(files, key=lambda f: abs(f["height"] - 1920))
-            path = os.path.join(dest, f"clip{len(paths)}.mp4")
-            try:
-                with requests.get(best["link"], stream=True, timeout=120) as resp:
-                    resp.raise_for_status()
-                    with open(path, "wb") as f:
-                        for c in resp.iter_content(1 << 16):
-                            f.write(c)
-            except Exception:
-                continue
-            used.add(v["id"])
-            paths.append(path)
-            taken += 1
-    return paths
+            found.append({"id": v["id"], "thumb": v["image"], "url": best["link"], "duration": v.get("duration", 10)})
+    return found[:n]
 
 
+def thumb_bytes(url):
+    try:
+        r = requests.get(url, timeout=20)
+        img = Image.open(io.BytesIO(r.content)).convert("RGB")
+        img.thumbnail((220, 390))
+        buf = io.BytesIO()
+        img.save(buf, "JPEG", quality=70)
+        return buf.getvalue()
+    except Exception:
+        return None
+
+
+def download(url, path):
+    with requests.get(url, stream=True, timeout=120) as r:
+        r.raise_for_status()
+        with open(path, "wb") as f:
+            for c in r.iter_content(1 << 16):
+                f.write(c)
+    return path
+
+
+# ---------------------------------------------------------------- planning
+def beat_times(beats, words, total):
+    """Start/end time of each beat, from where its words were spoken."""
+    counts = [max(1, len(b["line"].split())) for b in beats]
+    n_words, n_script = len(words), sum(counts)
+    times, done = [], 0
+    for i, c in enumerate(counts):
+        idx = min(n_words - 1, round(done / n_script * n_words)) if n_words else 0
+        start = 0.0 if i == 0 or not words else words[idx]["start"]
+        times.append(start)
+        done += c
+    return [(t, times[i + 1] if i + 1 < len(times) else total) for i, t in enumerate(times)]
+
+
+def plan_visuals(beats, tmp):
+    """Finds a visual for every beat. Returns a list of lists of ('clip'|'image'|'stat', payload)."""
+    import images
+    import writer
+    options = {}
+    for i, b in enumerate(beats):
+        if b["visual"] == "clip":
+            options[i] = pexels_search(b["query"]) or pexels_search("technology abstract")
+    # let Gemini look at the thumbnails and choose clips that fit each line
+    picks = {}
+    asked = [i for i in options if options[i]]
+    if asked:
+        try:
+            payload = []
+            for i in asked:
+                thumbs = [thumb_bytes(o["thumb"]) for o in options[i]]
+                options[i] = [o for o, t in zip(options[i], thumbs) if t]
+                payload.append({"line": beats[i]["line"], "options": [t for t in thumbs if t]})
+            chosen = writer.choose_clips(payload)
+            picks = {asked[k]: v for k, v in chosen.items() if k < len(asked)}
+            print(f"Gemini picked clips: {picks}")
+        except Exception as e:
+            print(f"Clip picking skipped: {e}")
+    plan, used = [], set()
+    for i, b in enumerate(beats):
+        shots = []
+        if b["visual"] == "clip":
+            order = [j for j in picks.get(i, []) if 0 <= j < len(options.get(i, []))]
+            if i in picks and not order:  # Gemini said nothing fits: use an AI image instead
+                b = {**b, "visual": "image", "prompt": f"a cinematic scene illustrating: {b['line']}"}
+            else:
+                order += [j for j in range(len(options.get(i, []))) if j not in order]
+                for j in order:
+                    o = options[i][j]
+                    if o["id"] in used:
+                        continue
+                    try:
+                        shots.append(("clip", download(o["url"], os.path.join(tmp, f"clip_{o['id']}.mp4"))))
+                        used.add(o["id"])
+                    except Exception:
+                        continue
+                    if len(shots) >= 2:
+                        break
+        if b["visual"] == "image" or (b["visual"] == "clip" and not shots):
+            img = images.generate(b.get("prompt") or f"a cinematic scene illustrating: {b['line']}")
+            if img:
+                p = os.path.join(tmp, f"img_{i}.png")
+                full_frame(img).save(p)
+                shots.append(("image", p))
+        if b["visual"] == "stat":
+            p = os.path.join(tmp, f"stat_{i}.png")
+            make_stat_card(p, b["big"], b["small"])
+            shots.append(("image", p))
+        plan.append(shots)
+    return plan
+
+
+# ---------------------------------------------------------------- assembling
 def encode_args():
     return ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(FPS)]
 
 
-def image_segment(png, length, out, zoom_in=True):
-    frames = max(1, int(length * FPS))
-    z = "min(zoom+0.0006,1.08)" if zoom_in else "if(eq(on,0),1.08,max(zoom-0.0006,1))"
+def image_shot(png, length, out, style=0):
+    frames = max(1, int(round(length * FPS)))
+    zooms = ["min(zoom+0.0012,1.12)", "if(eq(on,0),1.12,max(zoom-0.0012,1))", "1.08", "1.08"]
+    xs = ["iw/2-(iw/zoom/2)", "iw/2-(iw/zoom/2)", f"(iw-iw/zoom)*on/{frames}", f"(iw-iw/zoom)*(1-on/{frames})"]
     sh(["ffmpeg", "-y", "-i", png, "-vf",
-        f"scale=2160:3840,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+        f"scale=2160:3840,zoompan=z='{zooms[style % 4]}':x='{xs[style % 4]}':y='ih/2-(ih/zoom/2)'"
         f":d={frames}:s={W}x{H}:fps={FPS}", "-frames:v", str(frames), *encode_args(), out])
 
 
-def build_background(total, card_png, keywords, tmp, scenes=()):
-    card_len = min(3.5, total)
-    segments = [os.path.join(tmp, "seg000.mp4")]
-    image_segment(card_png, card_len, segments[0])
+def clip_shot(src, length, out, offset=0.0):
+    sh(["ffmpeg", "-y", "-stream_loop", "-1", "-ss", f"{offset:.2f}", "-i", src, "-t", f"{length:.3f}",
+        "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+               "eq=brightness=-0.05:saturation=1.12:contrast=1.05", *encode_args(), out])
 
-    remaining = total - card_len
-    if remaining > 0.05:
-        sources = [("clip", c) for c in pexels_clips(keywords, tmp)]
-        for pos, scene in zip((1, 3), scenes):  # mix AI images between stock clips
-            sources.insert(min(pos, len(sources)), ("image", scene))
-        if not sources:
-            plain = os.path.join(tmp, "plain.png")
-            gradient().save(plain)
-            sources = [("plain", plain)]
-        n = math.ceil(remaining / CLIP_SECONDS)
-        for i in range(n):
-            length = min(CLIP_SECONDS, remaining - i * CLIP_SECONDS)
-            if length < 0.05:
-                break
-            kind, src = sources[i % len(sources)]
-            seg = os.path.join(tmp, f"seg{i + 1:03d}.mp4")
-            if kind == "clip":
-                offset = (i // len(sources)) * CLIP_SECONDS
-                sh(["ffmpeg", "-y", "-stream_loop", "-1", "-ss", str(offset), "-i", src, "-t", f"{length:.3f}",
-                    "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-                           "eq=brightness=-0.07:saturation=1.1", *encode_args(), seg])
-            elif kind == "image":
-                image_segment(src, length, seg, zoom_in=(i % 2 == 0))
-            else:
-                sh(["ffmpeg", "-y", "-loop", "1", "-i", src, "-t", f"{length:.3f}", *encode_args(), seg])
-            segments.append(seg)
 
+def build_video_track(beats, times, plan, hook_png, hook_len, tmp):
+    segments, n = [], 0
+
+    def add(kind, src, length, style=0, offset=0.0):
+        nonlocal n
+        if length < 0.05:
+            return
+        out = os.path.join(tmp, f"seg{n:03d}.mp4")
+        n += 1
+        if kind == "clip":
+            clip_shot(src, length, out, offset)
+        else:
+            image_shot(src, length, out, style)
+        segments.append(out)
+
+    add("image", hook_png, hook_len, style=0)
+    fallback = next((s for shots in plan for s in shots), ("image", hook_png))
+    for i, ((start, end), shots) in enumerate(zip(times, plan)):
+        start = max(start, hook_len)
+        length = end - start
+        if length < 0.05:
+            continue
+        shots = shots or [fallback]
+        pieces = max(1, round(length / SHOT_SECONDS))
+        for k in range(pieces):
+            kind, src = shots[k % len(shots)]
+            add(kind, src, length / pieces, style=i + k, offset=(k // len(shots)) * SHOT_SECONDS)
     listfile = os.path.join(tmp, "list.txt")
     with open(listfile, "w") as f:
-        f.writelines(f"file '{os.path.abspath(p)}'\n" for p in segments)
+        f.writelines(f"file '{os.path.abspath(s)}'\n" for s in segments)
     return listfile
 
 
-# ---------- main ----------
+# ---------------------------------------------------------------- main
 def render(voice_path, draft, topic, user_image_path=None, words=None):
-    import images
     tmp = os.path.join(WORK_DIR, "build")
     shutil.rmtree(tmp, ignore_errors=True)
     os.makedirs(tmp)
@@ -329,39 +439,34 @@ def render(voice_path, draft, topic, user_image_path=None, words=None):
     total = duration(wav)
     if total > 180:
         raise RuntimeError("The recording is longer than 3 minutes. Please keep reels under 90 seconds.")
-
     if words is None:
         words = transcribe(wav, hint=draft.get("script", ""))
-    ass = os.path.join(tmp, "captions.ass")
-    write_ass(words, total, ass)
 
-    # AI images for the story
-    ai = [img for img in (images.generate(p) for p in draft.get("image_prompts", [])[:3]) if img]
+    beats = draft.get("beats") or [{"line": draft.get("script", ""), "visual": "clip", "query": "technology"}]
+    times = beat_times(beats, words, total)
+    hook_len = min(max(times[0][1], 1.6), 2.8, total)
 
-    # Title card image: your image > the article's photo > an AI image
-    card_image = None
+    # hook screen picture: your image > the article's photo > the first AI image / stat
+    hook_img = None
     if user_image_path:
         try:
-            card_image = Image.open(user_image_path).convert("RGB")
+            hook_img = Image.open(user_image_path).convert("RGB")
         except Exception:
-            card_image = None
-    if card_image is None and topic and not topic.get("custom"):
+            hook_img = None
+    if hook_img is None and topic and not topic.get("custom"):
         url = news.og_image(topic.get("link"))
-        card_image = fetch_image(url) if url else None
-    if card_image is None and ai:
-        card_image = ai.pop(0)
+        hook_img = fetch_image(url) if url else None
+    plan = plan_visuals(beats, tmp)
+    if hook_img is None:
+        first = next((src for shots in plan for kind, src in shots if kind == "image"), None)
+        hook_img = Image.open(first).convert("RGB") if first else None
+    hook_png = os.path.join(tmp, "hook.png")
+    label = "AI EXPLAINED" if (topic or {}).get("custom") else "AI NEWS"
+    make_hook_card(hook_png, draft.get("hook_text") or draft.get("title", ""), label, hook_img)
 
-    card = os.path.join(tmp, "card.png")
-    label = "AI EXPLAINED" if (topic or {}).get("custom") else "AI NEWS TODAY"
-    make_card(card, draft.get("title", ""), label, card_image)
-
-    scenes = []
-    for i, img in enumerate(ai[:2]):
-        path = os.path.join(tmp, f"scene{i}.png")
-        make_scene(img, path)
-        scenes.append(path)
-
-    listfile = build_background(total, card, draft.get("keywords", []), tmp, scenes)
+    ass = os.path.join(tmp, "captions.ass")
+    write_ass(words, total, ass, hook_until=hook_len * 0.85)
+    listfile = build_video_track(beats, times, plan, hook_png, hook_len, tmp)
 
     audio = wav
     music = pick_music()
@@ -375,9 +480,13 @@ def render(voice_path, draft, topic, user_image_path=None, words=None):
             audio = wav
 
     out = os.path.join(WORK_DIR, "reel.mp4")
+    fontsdir = FONT_DIR if os.path.isdir(FONT_DIR) else "."
+    graph = (f"[0:v]subtitles={ass}:fontsdir={fontsdir}[v];"
+             f"color=c=0xFFD400:s={W}x10:r={FPS}[bar];"
+             f"[v][bar]overlay=x='-w+w*t/{total:.3f}':y=H-10:shortest=1[out]")
     sh(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listfile, "-i", audio,
-        "-vf", f"subtitles={ass}", "-map", "0:v", "-map", "1:a",
-        "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-maxrate", "3500k", "-bufsize", "7000k",
+        "-filter_complex", graph, "-map", "[out]", "-map", "1:a",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-maxrate", "4000k", "-bufsize", "8000k",
         "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
         "-shortest", "-movflags", "+faststart", out])
     return out
