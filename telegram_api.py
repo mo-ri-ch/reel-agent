@@ -35,6 +35,19 @@ def answer_button(callback_id, text=""):
         pass
 
 
+def show_choice(message, data):
+    """Replaces a message's buttons with '✅ You chose: …' so you can see which option you tapped."""
+    if not message.get("chat"):
+        return
+    rows = (message.get("reply_markup") or {}).get("inline_keyboard") or []
+    label = next((b["text"] for row in rows for b in row if b.get("callback_data") == data), "your choice")
+    try:
+        call("editMessageReplyMarkup", chat_id=message["chat"]["id"], message_id=message["message_id"],
+             reply_markup=keyboard([[(f"✅ You chose: {label}", "any||noop")]]))
+    except Exception:
+        pass
+
+
 def clear_buttons(chat_id, message_id):
     try:
         call("editMessageReplyMarkup", chat_id=chat_id, message_id=message_id,

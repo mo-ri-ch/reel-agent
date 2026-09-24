@@ -495,12 +495,18 @@ def handle_button(s, cq):
     """A tapped button. Old buttons from earlier messages are ignored safely."""
     msg = cq.get("message") or {}
     stage_tag, token, action = (cq.get("data", "") + "||").split("|")[:3]
+    if action == "noop":
+        tg.answer_button(cq["id"])
+        return None
     if stage_tag != "any" and (stage_tag != s["stage"] or token != tok(s)):
-        tg.answer_button(cq["id"], "That button is from an older message 🙂 Use the latest one.")
+        if tg.DOORBELL_URL:  # the doorbell already answered the tap, so say it in the chat
+            tg.send("ℹ️ That button was from an older message, so I ignored it. Please use the latest one 👇")
+            show_current(s)
+        else:
+            tg.answer_button(cq["id"], "That button is from an older message 🙂 Use the latest one.")
         return None
     tg.answer_button(cq["id"])
-    if msg.get("chat"):
-        tg.clear_buttons(msg["chat"]["id"], msg["message_id"])
+    tg.show_choice(msg, cq.get("data", ""))
     if action == "confirm_topic":
         topic = s.get("pending_topic")
         if topic:
