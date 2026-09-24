@@ -49,7 +49,7 @@ Tap the buttons under my messages, or type — both work.
 • Happy with it? Reply "ok" and an AI voice reads it 🤖 (alternating male/female),
   "ok male" / "ok female" to choose, or send a voice note to use your own voice 🎤
 • I send a preview. Reply "post" to schedule it for the next posting time ({', '.join(POST_TIMES)}), or "post now"
-• Optional: send a picture (e.g. a screenshot) and I'll put it on the title card
+• Optional: send a picture or a short video clip (e.g. from Gemini) for the opening shot
 
 Commands:
 /topic <anything> – make a reel on your own topic right now
@@ -98,7 +98,8 @@ def autopilot_note(kind):
 
 # ---------- buttons & undo ----------
 REEL_KEYS = ["stage", "candidates", "choose_deadline", "topic", "draft", "video_file_id", "voice_file_id",
-             "voice_mode", "voice_gender", "user_image_id", "script_deadline", "preview_deadline", "pending_topic"]
+             "voice_mode", "voice_gender", "user_image_id", "user_video_id", "script_deadline", "preview_deadline",
+             "pending_topic"]
 
 
 def tok(s):
@@ -226,7 +227,7 @@ def use_ai_voice(s, req="alternate", auto=False):
 
 def reset_reel(s):
     s.update(stage="idle", draft=None, topic=None, video_file_id=None, voice_file_id=None,
-             voice_mode=None, user_image_id=None, candidates=[], choose_deadline=None,
+             voice_mode=None, user_image_id=None, user_video_id=None, candidates=[], choose_deadline=None,
              script_deadline=None, preview_deadline=None)
 
 
@@ -357,6 +358,23 @@ def handle(s, m, from_button=False):
                  script_deadline=None, preview_deadline=None)
         tg.send("🎬 Got your recording! Making the reel now. Preview coming in a few minutes.")
         return "render"
+
+    video = m.get("video") or m.get("animation") or (doc if mime.startswith("video/") else None)
+    if video:
+        if not s.get("draft"):
+            tg.send("Send me a topic first. Then you can add a video for the opening shot.")
+            return None
+        if (video.get("file_size") or 0) > 19_000_000:
+            tg.send("That video is too big for Telegram bots (max 20 MB). Please send a shorter or smaller clip.")
+            return None
+        push_undo(s, "adding an opening video")
+        s["user_video_id"] = video["file_id"]
+        if stage == "awaiting_approval" and (s.get("voice_file_id") or s.get("voice_mode") == "ai"):
+            s["stage"] = "rendering"
+            tg.send("🎥 Got it! Remaking the reel with your clip as the opening shot.")
+            return "render"
+        tg.send("🎥 Got it! I'll use this clip as the opening shot, with the hook text on top.")
+        return None
 
     if photo:
         if not s.get("draft"):
@@ -624,13 +642,19 @@ def cmd_render():
         image = None
         if s.get("user_image_id"):
             image = tg.download(s["user_image_id"], os.path.join(WORK_DIR, "user_image"))
-        out = video.render(voice, s["draft"], s["topic"], user_image_path=image)
+        clip = None
+        if s.get("user_video_id"):
+            try:
+                clip = tg.download(s["user_video_id"], os.path.join(WORK_DIR, "user_video.mp4"))
+            except Exception as e:
+                tg.send(f"⚠️ Couldn't download your video ({e}), so I'm using the normal opening.")
+        out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip)
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
         s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
         s["preview_deadline"] = deadline() if s.get("autopilot") else None
         tg.send("Instagram caption:\n\n" + caption_for(s["draft"], s.get("voice_mode") == "ai") +
-                "\n\n—\nTap below, or type changes to the script ✍️. Send a picture to use it on the title card 🖼" +
+                "\n\n—\nTap below, or type changes to the script ✍️. Send a picture 🖼 or a short video 🎥 for the opening shot." +
                 (autopilot_note("preview") if s.get("autopilot") else ""), buttons=preview_buttons(s))
         whatsapp.alert("🎬 Your reel is ready for approval! Open Telegram to watch the preview and reply 'post'.")
     except Exception as e:

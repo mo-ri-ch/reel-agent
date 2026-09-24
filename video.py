@@ -254,6 +254,44 @@ def make_hook_card(path, hook, label, image=None):
     bg.save(path)
 
 
+def make_hook_overlay(path, hook, label):
+    """The hook text on a transparent layer, to put on top of your own opening video."""
+    shade = Image.new("L", (1, H))
+    for y in range(H):
+        shade.putpixel((0, y), int(170 * max(0.0, 1 - y / (H * 0.55))))
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+    img.putalpha(shade.resize((W, H)))
+    d = ImageDraw.Draw(img)
+    lf = font(38, semi=True)
+    tw = d.textlength(label, font=lf)
+    d.rounded_rectangle([W / 2 - tw / 2 - 28, 300, W / 2 + tw / 2 + 28, 368], radius=34, fill=ACCENT)
+    d.text((W / 2, 334), label, font=lf, fill="black", anchor="mm")
+    size = 118
+    while size > 70 and len(wrap(d, hook.upper(), font(size), W - 150)) > 3:
+        size -= 8
+    text_block(d, hook.upper(), font(size), 420, fill="black", box=(255, 255, 255))
+    img.save(path)
+
+
+def is_landscape(path):
+    out = sh(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height:stream_side_data=rotation",
+              "-of", "csv=p=0", path]).strip().splitlines()[0].split(",")
+    w, h = int(out[0]), int(out[1])
+    return w > h
+
+
+def opening_video_shot(src, length, overlay_png, text_seconds, out):
+    """Your own clip as the opening shot, with the hook text on top for the first seconds."""
+    if is_landscape(src):  # wide clip: sharp video in the lower half, blurred copy behind
+        fit = (f"[0:v]split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+               f"boxblur=30:4,eq=brightness=-0.12[bg];[b]scale={W}:-2[fg];[bg][fg]overlay=0:(H-h)*0.62[v]")
+    else:
+        fit = f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}[v]"
+    graph = f"{fit};[v][1:v]overlay=0:0:enable='lt(t,{text_seconds:.2f})',fps={FPS}[out]"
+    sh(["ffmpeg", "-y", "-stream_loop", "-1", "-i", src, "-loop", "1", "-i", overlay_png, "-filter_complex", graph,
+        "-map", "[out]", "-t", f"{length:.3f}", *encode_args(), out])
+
+
 def make_stat_card(path, big, small, image=None):
     bg = darken(full_frame(image).filter(ImageFilter.GaussianBlur(18)), 0.55, 0.85) if image else gradient()
     d = ImageDraw.Draw(bg)
@@ -396,7 +434,7 @@ def clip_shot(src, length, out, offset=0.0):
                "eq=brightness=-0.05:saturation=1.12:contrast=1.05", *encode_args(), out])
 
 
-def build_video_track(beats, times, plan, hook_png, hook_len, tmp):
+def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None):
     segments, n = [], 0
 
     def add(kind, src, length, style=0, offset=0.0):
@@ -411,10 +449,19 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp):
             image_shot(src, length, out, style)
         segments.append(out)
 
-    add("image", hook_png, hook_len, style=0)
+    if opening:  # your own clip: (path, length, overlay_png)
+        src, open_len, overlay = opening
+        out = os.path.join(tmp, f"seg{n:03d}.mp4")
+        n += 1
+        opening_video_shot(src, open_len, overlay, hook_len, out)
+        segments.append(out)
+        hook_end = open_len
+    else:
+        add("image", hook_png, hook_len, style=0)
+        hook_end = hook_len
     fallback = next((s for shots in plan for s in shots), ("image", hook_png))
     for i, ((start, end), shots) in enumerate(zip(times, plan)):
-        start = max(start, hook_len)
+        start = max(start, hook_end)
         length = end - start
         if length < 0.05:
             continue
@@ -430,7 +477,7 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp):
 
 
 # ---------------------------------------------------------------- main
-def render(voice_path, draft, topic, user_image_path=None, words=None):
+def render(voice_path, draft, topic, user_image_path=None, words=None, user_video_path=None):
     tmp = os.path.join(WORK_DIR, "build")
     shutil.rmtree(tmp, ignore_errors=True)
     os.makedirs(tmp)
@@ -464,9 +511,21 @@ def render(voice_path, draft, topic, user_image_path=None, words=None):
     label = "AI EXPLAINED" if (topic or {}).get("custom") else "AI NEWS"
     make_hook_card(hook_png, draft.get("hook_text") or draft.get("title", ""), label, hook_img)
 
+    opening = None
+    if user_video_path:
+        try:
+            clip_len = duration(user_video_path)
+            open_len = min(clip_len, 6.0, total)
+            overlay = os.path.join(tmp, "hook_overlay.png")
+            make_hook_overlay(overlay, draft.get("hook_text") or draft.get("title", ""), label)
+            opening = (user_video_path, max(open_len, hook_len), overlay)
+        except Exception as e:
+            print(f"Your video couldn't be used, using the normal opening: {e}")
+            opening = None
+
     ass = os.path.join(tmp, "captions.ass")
     write_ass(words, total, ass, hook_until=hook_len * 0.85)
-    listfile = build_video_track(beats, times, plan, hook_png, hook_len, tmp)
+    listfile = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening)
 
     audio = wav
     music = pick_music()
