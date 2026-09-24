@@ -13,18 +13,38 @@ import state as st
 import telegram_api as tg
 import whatsapp
 import writer
-from config import AUTO_PICK_HOURS, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
+from config import AI_VOICE_NOTE, AUTO_PICK_HOURS, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
 
 POST_WORDS = {"post", "yes", "approve", "ok", "okay", "publish", "schedule", "👍", "✅"}
 POST_NOW_WORDS = {"post now", "publish now", "now"}
 REDO_WORDS = {"redo", "re-record", "rerecord", "again", "retry"}
+AI_VOICE_WORDS = {"ok", "okay", "yes", "go", "approve", "approved", "good", "looks good", "done", "👍", "✅"}
+MALE_WORDS = {"male", "man", "boy", "m", "guy"}
+FEMALE_WORDS = {"female", "woman", "girl", "f", "lady"}
+
+
+def voice_request(low):
+    """'ok' → alternate, 'ok female' / 'female' → female, 'ok male' / 'male' → male. None if not a voice request."""
+    words = low.replace(",", " ").split()
+    if not words:
+        return None
+    if low in AI_VOICE_WORDS:
+        return "alternate"
+    if all(w in AI_VOICE_WORDS | MALE_WORDS | FEMALE_WORDS | {"voice"} for w in words):
+        if any(w in FEMALE_WORDS for w in words):
+            return "female"
+        if any(w in MALE_WORDS for w in words):
+            return "male"
+    return None
 
 HELP = f"""🤖 Reel Agent
 
 Twice a day I send you the top AI stories.
 • Reply 1, 2 or 3 to pick one, or type any topic you like
 • No reply? I pick #1 automatically
-• I send a script. Reply with changes ("shorter", "funnier hook"…) or record it as a voice note 🎤
+• I send a script. Reply with changes ("shorter", "funnier hook"…)
+• Happy with it? Reply "ok" and an AI voice reads it 🤖 (alternating male/female),
+  "ok male" / "ok female" to choose, or send a voice note to use your own voice 🎤
 • I send a preview. Reply "post" to schedule it for the next posting time ({', '.join(POST_TIMES)}), or "post now"
 • Optional: send a picture (e.g. a screenshot) and I'll put it on the title card
 
@@ -51,7 +71,8 @@ def fmt_time(dt):
     return f"{dt.strftime('%I:%M %p').lstrip('0')} {day}"
 
 
-def script_message(draft, note="Record it as a voice note 🎤"):
+def script_message(draft, note="Reply \"ok\" for the AI voice 🤖 (or \"ok male\" / \"ok female\"), "
+                                "or send a voice note to use your own 🎤"):
     words = len(draft["script"].split())
     return (f"🎙 Script ({words} words, about {round(words / 2.6)} sec)\n\n{draft['script']}\n\n—\n{note}\n"
             "Or reply with changes, e.g. \"shorter\", \"stronger hook\", \"mention the price\".")
@@ -59,7 +80,7 @@ def script_message(draft, note="Record it as a voice note 🎤"):
 
 def reset_reel(s):
     s.update(stage="idle", draft=None, topic=None, video_file_id=None, voice_file_id=None,
-             user_image_id=None, candidates=[], choose_deadline=None)
+             voice_mode=None, user_image_id=None, candidates=[], choose_deadline=None)
 
 
 def next_offer_if_waiting(s):
@@ -103,8 +124,9 @@ def custom(text):
     return {"title": text.strip(), "custom": True}
 
 
-def caption_for(draft):
-    return draft["caption"] + "\n\n" + " ".join(f"#{h}" for h in draft["hashtags"])
+def caption_for(draft, ai_voice=False):
+    note = f"\n\n{AI_VOICE_NOTE}" if ai_voice and AI_VOICE_NOTE else ""
+    return draft["caption"] + note + "\n\n" + " ".join(f"#{h}" for h in draft["hashtags"])
 
 
 # ---------- scheduling & posting ----------
@@ -129,7 +151,8 @@ def publish_item(item):
 
 
 def approve(s, now_please=False):
-    item = {"title": s["topic"]["title"], "video_file_id": s["video_file_id"], "caption": caption_for(s["draft"])}
+    item = {"title": s["topic"]["title"], "video_file_id": s["video_file_id"],
+            "caption": caption_for(s["draft"], s.get("voice_mode") == "ai")}
     s["history"] = (s["history"] + [item["title"]])[-40:]
     if now_please:
         tg.send("📤 Posting to Instagram now... (1-3 minutes)")
@@ -182,7 +205,7 @@ def handle(s, m):
         if not s.get("draft"):
             tg.send("I don't have a script yet. Send me a topic or /news first.")
             return None
-        s.update(voice_file_id=audio["file_id"], stage="rendering")
+        s.update(voice_file_id=audio["file_id"], voice_mode="own", stage="rendering")
         tg.send("🎬 Got your recording! Making the reel now. Preview coming in a few minutes.")
         return "render"
 
@@ -191,7 +214,7 @@ def handle(s, m):
             tg.send("Send me a topic first. Then you can add a picture for the title card.")
             return None
         s["user_image_id"] = photo["file_id"]
-        if stage == "awaiting_approval" and s.get("voice_file_id"):
+        if stage == "awaiting_approval" and (s.get("voice_file_id") or s.get("voice_mode") == "ai"):
             s["stage"] = "rendering"
             tg.send("🖼 Got it! Remaking the reel with your picture on the title card.")
             return "render"
@@ -253,6 +276,12 @@ def handle(s, m):
         else:
             start_script(s, custom(text))
     elif stage == "awaiting_voice":
+        req = voice_request(low)
+        if req:
+            gender = req if req != "alternate" else ("male" if s.get("last_gender") == "female" else "female")
+            s.update(voice_mode="ai", voice_gender=gender, voice_file_id=None, stage="rendering")
+            tg.send(f"🤖 Making the reel with a {gender} AI voice. Preview coming in a few minutes.")
+            return "render"
         start_script(s, s["topic"], instruction=text)
     elif stage == "awaiting_approval":
         if low in POST_NOW_WORDS:
@@ -261,7 +290,8 @@ def handle(s, m):
             approve(s)
         elif low in REDO_WORDS:
             s["stage"] = "awaiting_voice"
-            tg.send(script_message(s["draft"], note="Record it again as a voice note 🎤"))
+            tg.send(script_message(s["draft"], note="Reply \"ok male\" / \"ok female\" for a new AI voice 🤖, "
+                                                    "or send a voice note 🎤"))
         else:
             start_script(s, s["topic"], instruction=text)
     elif stage == "rendering":
@@ -330,22 +360,30 @@ def cmd_render():
     try:
         os.makedirs(WORK_DIR, exist_ok=True)
         tg.action("upload_video")
-        voice = tg.download(s["voice_file_id"], os.path.join(WORK_DIR, "voice_input"))
+        if s.get("voice_mode") == "ai":
+            import tts
+            gender = s.get("voice_gender") or "male"
+            voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender)
+            s["last_gender"] = gender
+            print(f"Voice-over: {engine}")
+        else:
+            voice = tg.download(s["voice_file_id"], os.path.join(WORK_DIR, "voice_input"))
         image = None
         if s.get("user_image_id"):
             image = tg.download(s["user_image_id"], os.path.join(WORK_DIR, "user_image"))
         out = video.render(voice, s["draft"], s["topic"], user_image_path=image)
-        s["video_file_id"] = tg.send_video(out, caption="👆 Preview")
+        voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
+        s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
-        tg.send("Instagram caption:\n\n" + caption_for(s["draft"]) +
+        tg.send("Instagram caption:\n\n" + caption_for(s["draft"], s.get("voice_mode") == "ai") +
                 f"\n\n—\nReply \"post\" → scheduled for {fmt_time(next_post_time(s))} ✅\n"
-                "\"post now\" → publish right away\n\"redo\" → record again 🎤\n"
+                "\"post now\" → publish right away\n\"redo\" → new voice (AI or your own) 🎤\n"
                 "Send a picture → use it on the title card 🖼\nOr send changes to the script ✍️")
         whatsapp.alert("🎬 Your reel is ready for approval! Open Telegram to watch the preview and reply 'post'.")
     except Exception as e:
         traceback.print_exc()
         s["stage"] = "awaiting_voice"
-        tg.send(f"⚠️ Couldn't make the reel: {e}\nPlease send the voice note again.")
+        tg.send(f"⚠️ Couldn't make the reel: {e}\nReply \"ok\" to try the AI voice again, or send a voice note.")
         whatsapp.alert("⚠️ Your reel couldn't be made. Check Telegram and send the voice note again.")
     st.save(s)
 

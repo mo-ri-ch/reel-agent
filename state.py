@@ -16,6 +16,7 @@ DEFAULT = {
     "user_image_id": None,  # optional image you sent for the title card
     "video_file_id": None,  # preview video stored on Telegram
     "queue": [],            # approved reels waiting for their posting time
+    "last_gender": "female",   # AI voice alternates male/female
     "pending_offer": False, # next story offer waiting until the current reel is done
     "history": [],          # titles already posted (avoids repeats)
 }

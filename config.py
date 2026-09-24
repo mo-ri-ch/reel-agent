@@ -30,6 +30,14 @@ IG_GRAPH_BASE = env("IG_GRAPH_BASE", "https://graph.facebook.com/v26.0").rstrip(
 WHATSAPP_PHONE = env("WHATSAPP_PHONE")          # with country code, e.g. +919876543210
 CALLMEBOT_API_KEY = env("CALLMEBOT_API_KEY")
 
+# AI voice-over (used when you reply "ok" instead of sending a voice note)
+VOICES_MALE = env("VOICES_MALE", "en-IN-PrabhatNeural,en-GB-RyanNeural,en-US-GuyNeural").split(",")
+VOICES_FEMALE = env("VOICES_FEMALE", "en-IN-NeerjaNeural,en-IN-NeerjaExpressiveNeural,en-GB-SoniaNeural").split(",")
+TTS_RATE = env("TTS_RATE", "+8%")                      # speaking speed
+KOKORO_MALE = env("KOKORO_MALE", "am_michael")         # backup voices if Edge voices fail
+KOKORO_FEMALE = env("KOKORO_FEMALE", "af_heart")
+AI_VOICE_NOTE = env("AI_VOICE_NOTE", "🎙️ Voiceover generated with AI")  # added to captions of AI-voiced reels
+
 TIMEZONE = ZoneInfo(env("TIMEZONE", "Asia/Kolkata"))
 AUTO_PICK_HOURS = float(env("AUTO_PICK_HOURS", "2"))
 # Times (your local time) when finished reels get posted
