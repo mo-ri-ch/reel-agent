@@ -655,6 +655,8 @@ def cmd_render():
                 tg.send(f"⚠️ Couldn't download your video ({e}), so I'm using the normal opening.")
         out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip)
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
+        if getattr(video, "LAST_SUMMARY", ""):
+            voice_info += f"\n🎞 {video.LAST_SUMMARY}"
         s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
         s["preview_deadline"] = deadline() if s.get("autopilot") else None

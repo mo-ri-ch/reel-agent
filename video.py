@@ -175,8 +175,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
                 t = ass_text(x["text"])
                 parts.append(f"{{\\c{ACCENT_ASS}\\fscx108\\fscy108}}{t}{{\\c&HFFFFFF&\\fscx100\\fscy100}}"
                              if k == wi else t)
-            pop = "{\\fscx70\\fscy70\\t(0,110,\\fscx100\\fscy100)}" if wi == 0 else ""
-            out.append(f"Dialogue: 1,{ass_time(start)},{ass_time(end)},Caption,,0,0,0,,{pop}{' '.join(parts)}")
+            chars = sum(len(ass_text(x["text"])) for x in ch) + len(ch) - 1
+            fit = min(100, int(100 * 13 / max(chars, 1))) if chars > 13 else 100  # keep long words on screen
+            size = f"{{\\fscx{fit}\\fscy{fit}}}" if fit < 100 else ""
+            pop = f"{{\\fscx{int(fit * .7)}\\fscy{int(fit * .7)}\\t(0,110,\\fscx{fit}\\fscy{fit})}}" if wi == 0 else size
+            body = ' '.join(parts).replace("\\fscx100\\fscy100", f"\\fscx{fit}\\fscy{fit}") \
+                .replace("\\fscx108\\fscy108", f"\\fscx{int(fit * 1.08)}\\fscy{int(fit * 1.08)}")
+            out.append(f"Dialogue: 1,{ass_time(start)},{ass_time(end)},Caption,,0,0,0,,{pop}{body}")
     if HANDLE:
         handle = re.sub(r"[{}\\]", "", HANDLE.lstrip("@"))
         out.append(f"Dialogue: 0,{ass_time(0)},{ass_time(total)},Handle,,0,0,0,,@{handle}")
@@ -337,35 +342,42 @@ def pexels_search(query, n=4):
         return []
     try:
         r = requests.get("https://api.pexels.com/videos/search", timeout=30,
-                         headers={"Authorization": PEXELS_API_KEY},
-                         params={"query": query, "orientation": "portrait", "per_page": n + 2, "size": "medium"})
-        videos = r.json().get("videos", []) if r.status_code == 200 else []
-    except Exception:
+                         headers={"Authorization": PEXELS_API_KEY, **UA},
+                         params={"query": query, "orientation": "portrait", "per_page": n + 4})
+        if r.status_code != 200:
+            print(f"Pexels search '{query}' failed: {r.status_code} {r.text[:120]}")
+            return []
+        videos = r.json().get("videos", [])
+    except Exception as e:
+        print(f"Pexels search '{query}' failed: {e}")
         return []
     found = []
     for v in videos:
         files = [f for f in v.get("video_files", [])
-                 if f.get("file_type") == "video/mp4" and (f.get("height") or 0) >= 960]
+                 if f.get("file_type") == "video/mp4" and (f.get("height") or 0) >= 720]
         if files and v.get("image"):
-            best = min(files, key=lambda f: abs(f["height"] - 1920))
+            best = min(files, key=lambda f: abs(f["height"] - 1920) + (5000 if f["height"] > 2200 else 0))
             found.append({"id": v["id"], "thumb": v["image"], "url": best["link"], "duration": v.get("duration", 10)})
+    print(f"Pexels '{query}': {len(found)} usable clips")
     return found[:n]
 
 
 def thumb_bytes(url):
     try:
-        r = requests.get(url, timeout=20)
+        r = requests.get(url, timeout=20, headers=UA)
+        r.raise_for_status()
         img = Image.open(io.BytesIO(r.content)).convert("RGB")
         img.thumbnail((220, 390))
         buf = io.BytesIO()
         img.save(buf, "JPEG", quality=70)
         return buf.getvalue()
-    except Exception:
+    except Exception as e:
+        print(f"Thumbnail failed: {e}")
         return None
 
 
 def download(url, path):
-    with requests.get(url, stream=True, timeout=120) as r:
+    with requests.get(url, stream=True, timeout=120, headers=UA) as r:
         r.raise_for_status()
         with open(path, "wb") as f:
             for c in r.iter_content(1 << 16):
@@ -387,35 +399,45 @@ def beat_times(beats, words, total):
     return [(t, times[i + 1] if i + 1 < len(times) else total) for i, t in enumerate(times)]
 
 
-def plan_visuals(beats, tmp):
-    """Finds a visual for every beat. Returns a list of lists of ('clip'|'image'|'stat', payload)."""
+LAST_SUMMARY = ""
+
+
+def plan_visuals(beats, tmp, times=None):
+    """Finds visuals for every beat. Returns a list (per beat) of shots: ('clip'|'image', path)."""
+    global LAST_SUMMARY
     import images
     import writer
-    options = {}
+    options, thumbs = {}, {}
     for i, b in enumerate(beats):
         if b["visual"] == "clip":
-            options[i] = pexels_search(b["query"]) or pexels_search("technology abstract")
-    # let Gemini look at the thumbnails and choose clips that fit each line
+            options[i] = pexels_search(b["query"]) or pexels_search(" ".join(b["query"].split()[:2])) \
+                or pexels_search("technology")
+            thumbs[i] = [thumb_bytes(o["thumb"]) for o in options[i]]
+
+    # Gemini looks at the thumbnails and picks the clips that fit each line
     picks = {}
-    asked = [i for i in options if options[i]]
+    asked = [i for i in options if any(thumbs.get(i) or [])]
     if asked:
         try:
             payload = []
             for i in asked:
-                thumbs = [thumb_bytes(o["thumb"]) for o in options[i]]
-                options[i] = [o for o, t in zip(options[i], thumbs) if t]
-                payload.append({"line": beats[i]["line"], "options": [t for t in thumbs if t]})
+                keep = [k for k, t in enumerate(thumbs[i]) if t]
+                options[i] = [options[i][k] for k in keep]
+                payload.append({"line": beats[i]["line"], "options": [thumbs[i][k] for k in keep]})
             chosen = writer.choose_clips(payload)
             picks = {asked[k]: v for k, v in chosen.items() if k < len(asked)}
             print(f"Gemini picked clips: {picks}")
         except Exception as e:
             print(f"Clip picking skipped: {e}")
-    plan, used = [], set()
+
+    plan, used, counts = [], set(), {"clips": 0, "AI images": 0, "cards": 0}
     for i, b in enumerate(beats):
+        length = (times[i][1] - times[i][0]) if times else 3.0
+        want = 2 if length > 3.4 else 1
         shots = []
         if b["visual"] == "clip":
             order = [j for j in picks.get(i, []) if 0 <= j < len(options.get(i, []))]
-            if i in picks and not order:  # Gemini said nothing fits: use an AI image instead
+            if i in picks and not order:  # Gemini: none of the clips fit this line
                 b = {**b, "visual": "image", "prompt": f"a cinematic scene illustrating: {b['line']}"}
             else:
                 order += [j for j in range(len(options.get(i, []))) if j not in order]
@@ -426,21 +448,30 @@ def plan_visuals(beats, tmp):
                     try:
                         shots.append(("clip", download(o["url"], os.path.join(tmp, f"clip_{o['id']}.mp4"))))
                         used.add(o["id"])
-                    except Exception:
+                        counts["clips"] += 1
+                    except Exception as e:
+                        print(f"Clip download failed: {e}")
                         continue
-                    if len(shots) >= 2:
+                    if len(shots) >= want:
                         break
         if b["visual"] == "image" or (b["visual"] == "clip" and not shots):
-            img = images.generate(b.get("prompt") or f"a cinematic scene illustrating: {b['line']}")
-            if img:
-                p = os.path.join(tmp, f"img_{i}.png")
-                full_frame(img).save(p)
-                shots.append(("image", p))
+            base = b.get("prompt") or f"a cinematic scene illustrating: {b['line']}"
+            variants = [base, base + ", different camera angle, close-up detail shot"][:want]
+            for v, prompt in enumerate(variants):
+                img = images.generate(prompt)
+                if img:
+                    p = os.path.join(tmp, f"img_{i}_{v}.png")
+                    full_frame(img).save(p)
+                    shots.append(("image", p))
+                    counts["AI images"] += 1
         if b["visual"] == "stat":
             p = os.path.join(tmp, f"stat_{i}.png")
             make_stat_card(p, b["big"], b["small"])
             shots.append(("image", p))
+            counts["cards"] += 1
         plan.append(shots)
+    LAST_SUMMARY = ", ".join(f"{v} {k}" for k, v in counts.items() if v)
+    print(f"Visuals: {LAST_SUMMARY}")
     return plan
 
 
@@ -517,7 +548,9 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     if total > 180:
         raise RuntimeError("The recording is longer than 3 minutes. Please keep reels under 90 seconds.")
     if words is None:
-        words = align_to_script(transcribe(wav, hint=draft.get("script", "")), draft.get("script", ""))
+        from config import SPOKEN_NAME
+        caption_script = re.sub(r"@\w[\w.]*", SPOKEN_NAME or "", draft.get("script", ""))
+        words = align_to_script(transcribe(wav, hint=caption_script), caption_script)
 
     beats = draft.get("beats") or [{"line": draft.get("script", ""), "visual": "clip", "query": "technology"}]
     times = beat_times(beats, words, total)
@@ -533,7 +566,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     if hook_img is None and topic and not topic.get("custom"):
         url = news.og_image(topic.get("link"))
         hook_img = fetch_image(url) if url else None
-    plan = plan_visuals(beats, tmp)
+    plan = plan_visuals(beats, tmp, times)
     if hook_img is None:
         first = next((src for shots in plan for kind, src in shots if kind == "image"), None)
         hook_img = Image.open(first).convert("RGB") if first else None

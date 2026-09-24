@@ -119,7 +119,8 @@ VISUALS — split the script into 5 to 8 beats (one or two sentences each). Ever
   data centers, robots, coding screens, doctors, students. "query" = 2-4 concrete words ("woman talking to phone", not "AI innovation").
 - "image": AI-generated picture for specific or futuristic ideas stock can't show. "prompt" = vivid cinematic vertical scene,
   no text, no logos, no real people's faces.
-- "stat": a big number on screen, only when a real number is the point (at most 2). "big" = "600M", "small" = "weekly users".
+- "stat": a big number on screen, ONLY for a number stated in the news story or your search results (at most 2).
+  Never invent, round up or estimate a number. If unsure, use "clip" or "image" instead. "big" = "600M", "small" = "weekly users".
 Mix the types; don't use the same type more than twice in a row.
 
 Return ONLY JSON:
@@ -176,7 +177,8 @@ def choose_clips(beats_with_options):
     import base64
     parts = [{"text": "You are editing an Instagram Reel. For each spoken line below, look at the numbered stock "
                       "video thumbnails and pick the ones that visually fit the line. Prefer clips that match the "
-                      "meaning; avoid generic office meetings unless the line is about one."}]
+                      "meaning; avoid generic office meetings unless the line is about one. A loosely related but "
+                      "good-looking clip is fine; only reject all options if every one would look wrong or misleading."}]
     for bi, b in enumerate(beats_with_options):
         parts.append({"text": f"\nLINE {bi + 1}: \"{b['line']}\""})
         for ci, img in enumerate(b["options"]):
