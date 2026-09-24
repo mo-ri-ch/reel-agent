@@ -16,8 +16,14 @@ DEFAULT = {
     "user_image_id": None,  # optional image you sent for the title card
     "video_file_id": None,  # preview video stored on Telegram
     "queue": [],            # approved reels waiting for their posting time
+    "autopilot": True,         # finish reels on its own when you don't reply
+    "script_deadline": None,
+    "preview_deadline": None,
     "last_gender": "female",   # AI voice alternates male/female
-    "pending_offer": False, # next story offer waiting until the current reel is done
+    "pending_offer": False,
+    "pending_topic": None,     # a topic waiting for your "yes" button
+    "undo_stack": [],          # last few steps, for the Undo button
+    "posted_ids": [],          # reels already live (can't be undone) # next story offer waiting until the current reel is done
     "history": [],          # titles already posted (avoids repeats)
 }
 

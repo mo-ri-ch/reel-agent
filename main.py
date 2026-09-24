@@ -2,6 +2,8 @@
 
 Modes:  python main.py offer | poll | render | check
 """
+import copy
+import hashlib
 import json
 import os
 import sys
@@ -13,7 +15,7 @@ import state as st
 import telegram_api as tg
 import whatsapp
 import writer
-from config import AI_VOICE_NOTE, AUTO_PICK_HOURS, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
+from config import AI_VOICE_NOTE, AUTO_APPROVE_HOURS, AUTO_PICK_HOURS, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
 
 POST_WORDS = {"post", "yes", "approve", "ok", "okay", "publish", "schedule", "👍", "✅"}
 POST_NOW_WORDS = {"post now", "publish now", "now"}
@@ -40,7 +42,8 @@ def voice_request(low):
 HELP = f"""🤖 Reel Agent
 
 Twice a day I send you the top AI stories.
-• Reply 1, 2 or 3 to pick one, or type any topic you like
+Tap the buttons under my messages, or type — both work.
+• Tap a story (or type any topic you like)
 • No reply? I pick #1 automatically
 • I send a script. Reply with changes ("shorter", "funnier hook"…)
 • Happy with it? Reply "ok" and an AI voice reads it 🤖 (alternating male/female),
@@ -52,9 +55,11 @@ Commands:
 /topic <anything> – make a reel on your own topic right now
 /myscript <your script> – use a script you wrote yourself (skips Gemini)
 /news – get fresh stories now (e.g. to record the next reel straight away)
+/autopilot on|off – finish reels on my own when you don't reply
 /queue – see scheduled reels
 /script – show the current script again
 /status – what I'm waiting for
+/undo – go back one step (tap ↩️ Undo)
 /skip – cancel the current reel"""
 
 
@@ -71,16 +76,158 @@ def fmt_time(dt):
     return f"{dt.strftime('%I:%M %p').lstrip('0')} {day}"
 
 
-def script_message(draft, note="Reply \"ok\" for the AI voice 🤖 (or \"ok male\" / \"ok female\"), "
-                                "or send a voice note to use your own 🎤"):
+def script_message(draft, note="Tap a voice below 🤖 (or send a voice note to use your own 🎤)"):
     words = len(draft["script"].split())
     return (f"🎙 Script ({words} words, about {round(words / 2.6)} sec)\n\n{draft['script']}\n\n—\n{note}\n"
-            "Or reply with changes, e.g. \"shorter\", \"stronger hook\", \"mention the price\".")
+            "Want changes? Just type them, e.g. \"shorter\", \"stronger hook\".")
+
+
+def deadline(hours=AUTO_APPROVE_HOURS):
+    return (st.now() + timedelta(hours=hours)).isoformat()
+
+
+def passed(iso):
+    return bool(iso) and st.now() >= datetime.fromisoformat(iso)
+
+
+def autopilot_note(kind):
+    when = (st.now() + timedelta(hours=AUTO_APPROVE_HOURS)).strftime("%I:%M %p").lstrip("0")
+    return {"script": f"\n🤖 Autopilot: no reply by {when}? I'll use the AI voice.",
+            "preview": f"\n🤖 Autopilot: no reply by {when}? I'll schedule it."}[kind]
+
+
+# ---------- buttons & undo ----------
+REEL_KEYS = ["stage", "candidates", "choose_deadline", "topic", "draft", "video_file_id", "voice_file_id",
+             "voice_mode", "voice_gender", "user_image_id", "script_deadline", "preview_deadline", "pending_topic"]
+
+
+def tok(s):
+    """Short fingerprint of what's on screen now, so old buttons can't act on a newer reel."""
+    stage = s["stage"]
+    item = {"choosing": [c.get("title") for c in s.get("candidates") or []],
+            "awaiting_voice": (s.get("draft") or {}).get("script"),
+            "awaiting_approval": s.get("video_file_id"),
+            "idle": [s.get("pending_topic"), (s.get("queue") or [{}])[0].get("video_file_id")]}.get(stage, stage)
+    return hashlib.md5(json.dumps(item).encode()).hexdigest()[:6]
+
+
+def btn(s, label, action, any_stage=False):
+    return (label, f"any||{action}" if any_stage else f"{s['stage']}|{tok(s)}|{action}")
+
+
+def story_buttons(s):
+    n = len(s.get("candidates") or [])
+    return [[btn(s, f"{i} 📰", str(i)) for i in range(1, n + 1)],
+            [btn(s, "🔄 New stories", "/news", True), btn(s, "⏭ Skip", "/skip", True)]]
+
+
+def script_buttons(s):
+    return [[btn(s, "🤖 AI voice", "ok"), btn(s, "👨 Male", "ok male"), btn(s, "👩 Female", "ok female")],
+            [btn(s, "↩️ Undo", "/undo", True), btn(s, "⏭ Skip", "/skip", True)]]
+
+
+def preview_buttons(s):
+    return [[btn(s, f"✅ Schedule ({fmt_time(next_post_time(s))})", "post"), btn(s, "🚀 Post now", "post now")],
+            [btn(s, "🔁 New voice", "redo"), btn(s, "↩️ Undo", "/undo", True), btn(s, "⏭ Skip", "/skip", True)]]
+
+
+def after_schedule_buttons(s):
+    return [[btn(s, "↩️ Undo", "/undo", True), btn(s, "📰 Next reel", "/news", True)]]
+
+
+def push_undo(s, label):
+    snap = {"label": label[:80], "data": copy.deepcopy({k: s.get(k) for k in REEL_KEYS})}
+    s["undo_stack"] = (s.get("undo_stack") or [])[-4:] + [snap]
+
+
+def mark_undo(s, **info):
+    if s.get("undo_stack"):
+        s["undo_stack"][-1].update(info)
+
+
+def stories_text(s):
+    lines = ["📰 Top AI stories right now:\n"]
+    for i, p in enumerate(s["candidates"], 1):
+        lines.append(f"{i}) {p['title']}\n   {p['source']}" + (f" · {p['angle']}" if p.get("angle") else ""))
+    when = (datetime.fromisoformat(s["choose_deadline"]).strftime("%I:%M %p").lstrip("0")
+            if s.get("choose_deadline") else "")
+    lines.append("\nTap a story, or type your own topic." + (f"\nNo reply by {when}? I'll go with #1." if when else ""))
+    return "\n".join(lines)
+
+
+def show_current(s):
+    """Re-sends whatever you need to act on now (used after Undo)."""
+    stage = s["stage"]
+    if stage == "choosing" and s.get("candidates"):
+        tg.send(stories_text(s), buttons=story_buttons(s))
+    elif stage == "awaiting_voice" and s.get("draft"):
+        tg.send(script_message(s["draft"]), buttons=script_buttons(s))
+    elif stage == "awaiting_approval":
+        tg.send("Your preview is back (scroll up to watch it). What would you like to do?", buttons=preview_buttons(s))
+    else:
+        tg.send("Nothing in progress now. Send a topic, or tap below for fresh stories.",
+                buttons=[[btn(s, "📰 Get stories", "/news", True)]])
+
+
+def undo(s):
+    stack = s.get("undo_stack") or []
+    if not stack:
+        tg.send("Nothing to undo right now.")
+        return
+    snap = stack.pop()
+    live = snap.get("irreversible") or (snap.get("remove_from_queue") in (s.get("posted_ids") or []))
+    if live:
+        tg.send("🚫 That reel is already live on Instagram, so I can't undo it. "
+                "You can delete it from the Instagram app if you need to.")
+        return
+    if snap.get("remove_from_queue"):
+        s["queue"] = [q for q in s["queue"] if q["video_file_id"] != snap["remove_from_queue"]]
+        if snap.get("history_title") and s["history"] and s["history"][-1] == snap["history_title"]:
+            s["history"].pop()
+    s.update(snap["data"])
+    if s["stage"] == "rendering":
+        s["stage"] = "awaiting_voice"
+    auto = s.get("autopilot")
+    s["script_deadline"] = deadline() if auto and s["stage"] == "awaiting_voice" else None
+    s["preview_deadline"] = deadline() if auto and s["stage"] == "awaiting_approval" else None
+    if s["stage"] == "choosing":
+        s["choose_deadline"] = (st.now() + timedelta(hours=AUTO_PICK_HOURS)).isoformat()
+    tg.send(f"↩️ Undone: {snap['label']}")
+    show_current(s)
+
+
+def ask_post_now(s, title):
+    tg.send(f"🚀 Post \"{title}\" to Instagram right now?\nThis can't be undone once it's live.",
+            buttons=[[btn(s, "🚀 Yes, post now", "postnow_yes"), btn(s, "✖️ Cancel", "cancel", True)]])
+
+
+def post_next_now(s):
+    if not s["queue"]:
+        tg.send("There's nothing scheduled to post.")
+        return
+    item = s["queue"].pop(0)
+    tg.send(f"📤 Posting \"{item['title']}\" now... (1-3 minutes)")
+    try:
+        link = publish_item(item)
+        s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
+        mark_undo(s, irreversible=True)
+        tg.send(f"✅ Posted! {link}")
+    except Exception as e:
+        s["queue"].insert(0, item)
+        tg.send(f"⚠️ Couldn't post it: {e}\nIt's still scheduled, so I'll try again at its posting time.")
+
+
+def use_ai_voice(s, req="alternate", auto=False):
+    gender = req if req in ("male", "female") else ("male" if s.get("last_gender") == "female" else "female")
+    s.update(voice_mode="ai", voice_gender=gender, voice_file_id=None, stage="rendering", script_deadline=None)
+    prefix = "⏰ No reply, so autopilot is taking over. " if auto else ""
+    tg.send(f"{prefix}🤖 Making the reel with a {gender} AI voice. Preview coming in a few minutes.")
 
 
 def reset_reel(s):
     s.update(stage="idle", draft=None, topic=None, video_file_id=None, voice_file_id=None,
-             voice_mode=None, user_image_id=None, candidates=[], choose_deadline=None)
+             voice_mode=None, user_image_id=None, candidates=[], choose_deadline=None,
+             script_deadline=None, preview_deadline=None)
 
 
 def next_offer_if_waiting(s):
@@ -95,8 +242,9 @@ def start_script(s, topic, instruction=None):
     draft = writer.write_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
     image = s.get("user_image_id") if instruction else None
     reset_reel(s)
-    s.update(topic=topic, draft=draft, stage="awaiting_voice", user_image_id=image)
-    tg.send(script_message(draft))
+    s.update(topic=topic, draft=draft, stage="awaiting_voice", user_image_id=image, script_deadline=deadline())
+    tg.send(script_message(draft) + (autopilot_note("script") if s.get("autopilot") else ""),
+            buttons=script_buttons(s))
 
 
 def offer_news(s):
@@ -108,15 +256,10 @@ def offer_news(s):
         tg.send("I couldn't find fresh AI news right now. Send me any topic and I'll write a script.")
         return
     picks = writer.pick_top(headlines, used)
-    deadline = st.now() + timedelta(hours=AUTO_PICK_HOURS)
     reset_reel(s)
-    s.update(candidates=picks, stage="choosing", choose_deadline=deadline.isoformat())
-    lines = ["📰 Top AI stories right now:\n"]
-    for i, p in enumerate(picks, 1):
-        lines.append(f"{i}) {p['title']}\n   {p['source']}" + (f" · {p['angle']}" if p.get("angle") else ""))
-    lines.append(f"\nReply with a number, or type your own topic.\n"
-                 f"No reply by {deadline.strftime('%I:%M %p').lstrip('0')}? I'll go with #1.")
-    tg.send("\n".join(lines))
+    s.update(candidates=picks, stage="choosing",
+             choose_deadline=(st.now() + timedelta(hours=AUTO_PICK_HOURS)).isoformat())
+    tg.send(stories_text(s), buttons=story_buttons(s))
     whatsapp.alert("📰 New AI stories are ready! Open Telegram to pick one for your next reel.")
 
 
@@ -157,14 +300,17 @@ def approve(s, now_please=False):
     if now_please:
         tg.send("📤 Posting to Instagram now... (1-3 minutes)")
         link = publish_item(item)
+        s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
+        mark_undo(s, irreversible=True)
+        reset_reel(s)
         tg.send(f"✅ Posted! {link}")
     else:
         when = next_post_time(s)
         item["post_at"] = when.isoformat()
         s["queue"].append(item)
-        tg.send(f"🗓 Scheduled for {fmt_time(when)}.\n"
-                "Want to make the next one now? Send /news or /topic.")
-    reset_reel(s)
+        mark_undo(s, remove_from_queue=item["video_file_id"], history_title=item["title"])
+        reset_reel(s)
+        tg.send(f"🗓 Scheduled for {fmt_time(when)}.", buttons=after_schedule_buttons(s))
     next_offer_if_waiting(s)
 
 
@@ -176,6 +322,7 @@ def post_due(s):
         try:
             link = publish_item(item)
             s["queue"].remove(item)
+            s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
             tg.send(f"✅ Posted: {item['title']}\n{link}")
             whatsapp.alert(f"✅ Your reel is live on Instagram: {item['title']}\n{link}")
         except Exception as e:
@@ -192,8 +339,8 @@ def post_due(s):
 
 
 # ---------- messages ----------
-def handle(s, m):
-    """Handles one Telegram message. Returns 'render' when the reel needs (re)making."""
+def handle(s, m, from_button=False):
+    """Handles one Telegram message (or tapped button). Returns 'render' when the reel needs (re)making."""
     text = (m.get("text") or m.get("caption") or "").strip()
     doc = m.get("document") or {}
     mime = str(doc.get("mime_type", ""))
@@ -205,7 +352,9 @@ def handle(s, m):
         if not s.get("draft"):
             tg.send("I don't have a script yet. Send me a topic or /news first.")
             return None
-        s.update(voice_file_id=audio["file_id"], voice_mode="own", stage="rendering")
+        push_undo(s, "your voice note")
+        s.update(voice_file_id=audio["file_id"], voice_mode="own", stage="rendering",
+                 script_deadline=None, preview_deadline=None)
         tg.send("🎬 Got your recording! Making the reel now. Preview coming in a few minutes.")
         return "render"
 
@@ -213,6 +362,7 @@ def handle(s, m):
         if not s.get("draft"):
             tg.send("Send me a topic first. Then you can add a picture for the title card.")
             return None
+        push_undo(s, "adding a picture")
         s["user_image_id"] = photo["file_id"]
         if stage == "awaiting_approval" and (s.get("voice_file_id") or s.get("voice_mode") == "ai"):
             s["stage"] = "rendering"
@@ -225,11 +375,14 @@ def handle(s, m):
         return None
     low = text.lower().strip(" !.")
 
-    if low.startswith(("/start", "/help")):
+    if low.startswith("/undo"):
+        undo(s)
+    elif low.startswith(("/start", "/help")):
         tg.send(HELP)
     elif low.startswith("/topic"):
         topic = text[6:].strip()
         if topic:
+            push_undo(s, f"new topic \"{topic[:40]}\"")
             start_script(s, custom(topic))
         else:
             tg.send("Tell me the topic like this:\n/topic What are AI agents?")
@@ -238,17 +391,37 @@ def handle(s, m):
         if not own:
             tg.send("Paste your script after the command, like:\n/myscript OpenAI just changed everything...")
         else:
+            push_undo(s, "using your own script")
             topic = s.get("topic") or (s["candidates"][0] if s["stage"] == "choosing" and s["candidates"] else None)
             topic = topic or custom(own.splitlines()[0][:60])
             draft = writer.draft_from_own_script(own, topic)
             reset_reel(s)
-            s.update(topic=topic, draft=draft, stage="awaiting_voice")
-            tg.send(script_message(draft, note="Got your script ✅ Record it as a voice note 🎤"))
+            s.update(topic=topic, draft=draft, stage="awaiting_voice", script_deadline=deadline())
+            tg.send(script_message(draft, note="Got your script ✅ Tap a voice below 🤖 or send a voice note 🎤") +
+                    (autopilot_note("script") if s.get("autopilot") else ""), buttons=script_buttons(s))
+    elif low.startswith("/autopilot"):
+        arg = low[10:].strip()
+        if arg in ("on", "off"):
+            s["autopilot"] = arg == "on"
+            if not s["autopilot"]:
+                s.update(script_deadline=None, preview_deadline=None)
+            elif s["stage"] == "awaiting_voice":
+                s["script_deadline"] = deadline()
+            elif s["stage"] == "awaiting_approval":
+                s["preview_deadline"] = deadline()
+        on = s.get("autopilot")
+        tg.send(("🤖 Autopilot is ON: if you don't reply within "
+                 f"{AUTO_APPROVE_HOURS:g} hours, I'll use the AI voice and schedule the reel myself."
+                 if on else "✋ Autopilot is OFF: I'll always wait for your reply."),
+                buttons=[[btn(s, "Turn autopilot OFF" if on else "Turn autopilot ON",
+                              "/autopilot off" if on else "/autopilot on", True)]])
     elif low.startswith("/news"):
+        push_undo(s, "getting new stories")
         offer_news(s)
     elif low.startswith("/skip"):
+        push_undo(s, "skipping")
         reset_reel(s)
-        tg.send("👍 Skipped.")
+        tg.send("👍 Skipped.", buttons=[[btn(s, "↩️ Undo", "/undo", True), btn(s, "📰 Get stories", "/news", True)]])
         next_offer_if_waiting(s)
     elif low.startswith("/queue"):
         if s["queue"]:
@@ -258,19 +431,23 @@ def handle(s, m):
         else:
             tg.send("Nothing scheduled.")
     elif low.startswith("/clearqueue"):
-        s["queue"] = []
-        tg.send("🗑 Cleared all scheduled reels.")
+        tg.send(f"🗑 Cancel all {len(s['queue'])} scheduled reels?",
+                buttons=[[btn(s, "🗑 Yes, cancel them", "clearqueue_yes", True), btn(s, "✖️ No", "cancel", True)]])
     elif low.startswith("/script"):
-        tg.send(script_message(s["draft"]) if s.get("draft") else "No script right now.")
+        if s.get("draft"):
+            tg.send(script_message(s["draft"]), buttons=script_buttons(s) if stage == "awaiting_voice" else None)
+        else:
+            tg.send("No script right now.")
     elif low.startswith("/status"):
         tg.send({"idle": "💤 Nothing in progress. Send a topic or /news.",
-                 "choosing": "Waiting for you to pick a story (1, 2, 3 or your own topic).",
-                 "awaiting_voice": "Waiting for your voice note 🎤",
+                 "choosing": "Waiting for you to pick a story.",
+                 "awaiting_voice": "Waiting for you to choose a voice 🤖 or send a voice note 🎤",
                  "rendering": "Making the reel 🎬",
-                 "awaiting_approval": "Waiting for you to reply 'post', 'post now' or 'redo'."}.get(stage, stage)
-                + f"\nScheduled reels: {len(s['queue'])}")
+                 "awaiting_approval": "Waiting for you to schedule or post the preview."}.get(stage, stage)
+                + f"\nScheduled reels: {len(s['queue'])} · Autopilot: {'on' if s.get('autopilot') else 'off'}")
     elif stage == "choosing":
         cands = s["candidates"]
+        push_undo(s, f"choosing \"{text[:40]}\"")
         if low.isdigit() and 1 <= int(low) <= len(cands):
             start_script(s, cands[int(low) - 1])
         else:
@@ -278,27 +455,75 @@ def handle(s, m):
     elif stage == "awaiting_voice":
         req = voice_request(low)
         if req:
-            gender = req if req != "alternate" else ("male" if s.get("last_gender") == "female" else "female")
-            s.update(voice_mode="ai", voice_gender=gender, voice_file_id=None, stage="rendering")
-            tg.send(f"🤖 Making the reel with a {gender} AI voice. Preview coming in a few minutes.")
+            push_undo(s, "choosing the AI voice")
+            use_ai_voice(s, req)
             return "render"
+        push_undo(s, f"script change \"{text[:40]}\"")
         start_script(s, s["topic"], instruction=text)
     elif stage == "awaiting_approval":
         if low in POST_NOW_WORDS:
-            approve(s, now_please=True)
+            ask_post_now(s, s["topic"]["title"])
         elif low in POST_WORDS:
+            push_undo(s, "scheduling the reel")
             approve(s)
         elif low in REDO_WORDS:
-            s["stage"] = "awaiting_voice"
-            tg.send(script_message(s["draft"], note="Reply \"ok male\" / \"ok female\" for a new AI voice 🤖, "
-                                                    "or send a voice note 🎤"))
+            push_undo(s, "asking for a new voice")
+            s.update(stage="awaiting_voice", preview_deadline=None,
+                     script_deadline=deadline() if s.get("autopilot") else None)
+            tg.send(script_message(s["draft"], note="Tap a new voice below 🤖, or send a voice note 🎤"),
+                    buttons=script_buttons(s))
         else:
+            push_undo(s, f"script change \"{text[:40]}\"")
             start_script(s, s["topic"], instruction=text)
     elif stage == "rendering":
         tg.send("Still making your reel, hang on 🎬")
-    else:  # idle: any message is a new topic
-        start_script(s, custom(text))
+    elif low in POST_NOW_WORDS or low in POST_WORDS:
+        if low in POST_NOW_WORDS and s["queue"]:
+            ask_post_now(s, s["queue"][0]["title"])
+        elif s["queue"]:
+            tg.send("It's already scheduled 👍", buttons=[[btn(s, "🚀 Post it now instead", "post now")]])
+        else:
+            tg.send("There's nothing waiting to be posted right now.")
+    else:  # idle: confirm before starting a new reel, so a stray message doesn't become a topic
+        s["pending_topic"] = text
+        tg.send(f"Make a new reel about:\n“{text[:200]}”?",
+                buttons=[[btn(s, "✅ Yes, make it", "confirm_topic"), btn(s, "✖️ No", "cancel", True)]])
     return None
+
+
+def handle_button(s, cq):
+    """A tapped button. Old buttons from earlier messages are ignored safely."""
+    msg = cq.get("message") or {}
+    stage_tag, token, action = (cq.get("data", "") + "||").split("|")[:3]
+    if stage_tag != "any" and (stage_tag != s["stage"] or token != tok(s)):
+        tg.answer_button(cq["id"], "That button is from an older message 🙂 Use the latest one.")
+        return None
+    tg.answer_button(cq["id"])
+    if msg.get("chat"):
+        tg.clear_buttons(msg["chat"]["id"], msg["message_id"])
+    if action == "confirm_topic":
+        topic = s.get("pending_topic")
+        if topic:
+            push_undo(s, f"new reel \"{topic[:40]}\"")
+            s["pending_topic"] = None
+            start_script(s, custom(topic))
+        return None
+    if action == "cancel":
+        s["pending_topic"] = None
+        tg.send("👍 Cancelled, nothing changed.")
+        return None
+    if action == "clearqueue_yes":
+        s["queue"] = []
+        tg.send("🗑 Cleared all scheduled reels.")
+        return None
+    if action == "postnow_yes":
+        push_undo(s, "posting now")
+        if s["stage"] == "awaiting_approval":
+            approve(s, now_please=True)
+        else:
+            post_next_now(s)
+        return None
+    return handle(s, {"chat": msg.get("chat", {}), "text": action}, from_button=True)
 
 
 # ---------- modes ----------
@@ -308,11 +533,13 @@ def cmd_poll():
     render = False
     for u in tg.get_updates(s["offset"]):
         s["offset"] = u["update_id"] + 1
-        m = u.get("message")
+        cq = u.get("callback_query")
+        m = u.get("message") or (cq or {}).get("message")
         if not m or str(m["chat"]["id"]) != str(TELEGRAM_CHAT_ID):
             continue
         try:
-            if handle(s, m) == "render":
+            result = handle_button(s, cq) if cq else handle(s, m)
+            if result == "render":
                 render = True
                 break  # leave later messages for the next check
         except Exception as e:
@@ -323,12 +550,27 @@ def cmd_poll():
         if st.now() >= datetime.fromisoformat(s["choose_deadline"]) and s["candidates"]:
             pick = s["candidates"][0]
             tg.send(f"⏰ No reply, so I picked #1: {pick['title']}")
+            push_undo(s, "autopilot picking story #1")
             try:
                 start_script(s, pick)
                 whatsapp.alert("🎙 Today's script is ready. Open Telegram and record it as a voice note.")
             except Exception as e:
                 s["choose_deadline"] = None
                 tg.send(f"⚠️ Couldn't write the script: {e}\nReply 1, 2 or 3 to try again.")
+
+    if not render and s.get("autopilot"):
+        if s["stage"] == "awaiting_voice" and passed(s.get("script_deadline")):
+            push_undo(s, "autopilot choosing the AI voice")
+            use_ai_voice(s, auto=True)
+            render = True
+        elif s["stage"] == "awaiting_approval" and passed(s.get("preview_deadline")):
+            s["preview_deadline"] = None
+            tg.send("⏰ No reply, so autopilot is scheduling your reel.")
+            push_undo(s, "autopilot scheduling the reel")
+            try:
+                approve(s)
+            except Exception as e:
+                tg.send(f"⚠️ Autopilot couldn't schedule the reel: {e}")
 
     post_due(s)
 
@@ -375,10 +617,10 @@ def cmd_render():
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
         s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
+        s["preview_deadline"] = deadline() if s.get("autopilot") else None
         tg.send("Instagram caption:\n\n" + caption_for(s["draft"], s.get("voice_mode") == "ai") +
-                f"\n\n—\nReply \"post\" → scheduled for {fmt_time(next_post_time(s))} ✅\n"
-                "\"post now\" → publish right away\n\"redo\" → new voice (AI or your own) 🎤\n"
-                "Send a picture → use it on the title card 🖼\nOr send changes to the script ✍️")
+                "\n\n—\nTap below, or type changes to the script ✍️. Send a picture to use it on the title card 🖼" +
+                (autopilot_note("preview") if s.get("autopilot") else ""), buttons=preview_buttons(s))
         whatsapp.alert("🎬 Your reel is ready for approval! Open Telegram to watch the preview and reply 'post'.")
     except Exception as e:
         traceback.print_exc()

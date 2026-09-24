@@ -15,10 +15,32 @@ def call(method, files=None, timeout=60, **params):
     return data["result"]
 
 
-def send(text):
-    for i in range(0, len(text), 4000):
-        call("sendMessage", chat_id=TELEGRAM_CHAT_ID, text=text[i:i + 4000],
-             disable_web_page_preview="true")
+def keyboard(rows):
+    """rows: [[(label, callback_data), ...], ...] → Telegram inline keyboard JSON"""
+    return json.dumps({"inline_keyboard": [[{"text": t, "callback_data": d[:64]} for t, d in row]
+                                           for row in rows]})
+
+
+def send(text, buttons=None):
+    chunks = [text[i:i + 4000] for i in range(0, len(text), 4000)] or [""]
+    for n, chunk in enumerate(chunks):
+        extra = {"reply_markup": keyboard(buttons)} if buttons and n == len(chunks) - 1 else {}
+        call("sendMessage", chat_id=TELEGRAM_CHAT_ID, text=chunk, disable_web_page_preview="true", **extra)
+
+
+def answer_button(callback_id, text=""):
+    try:
+        call("answerCallbackQuery", callback_query_id=callback_id, text=text[:190])
+    except Exception:
+        pass
+
+
+def clear_buttons(chat_id, message_id):
+    try:
+        call("editMessageReplyMarkup", chat_id=chat_id, message_id=message_id,
+             reply_markup=json.dumps({"inline_keyboard": []}))
+    except Exception:
+        pass
 
 
 def action(kind="typing"):
@@ -28,16 +50,17 @@ def action(kind="typing"):
         pass
 
 
-def send_video(path, caption=""):
+def send_video(path, caption="", buttons=None):
+    extra = {"reply_markup": keyboard(buttons)} if buttons else {}
     with open(path, "rb") as f:
         msg = call("sendVideo", files={"video": f}, timeout=300, chat_id=TELEGRAM_CHAT_ID,
-                   caption=caption[:1000], supports_streaming="true")
+                   caption=caption[:1000], supports_streaming="true", **extra)
     media = msg.get("video") or msg.get("document")
     return media["file_id"]
 
 
 def get_updates(offset):
-    return call("getUpdates", offset=offset, allowed_updates=json.dumps(["message"]))
+    return call("getUpdates", offset=offset, allowed_updates=json.dumps(["message", "callback_query"]))
 
 
 def download(file_id, dest):
