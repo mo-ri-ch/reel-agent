@@ -4,7 +4,7 @@ A free agent that makes **2 faceless AI-news Instagram Reels a day**.
 You steer it from Telegram with a few taps; it writes the script, voices it, edits the video
 and posts it to **@gradientailabs**. If you're busy, autopilot finishes the job on its own.
 
-**Cost: ₹0 / month.**
+**Cost: ₹0 / month.** New here? See [Setup from scratch](#setup-from-scratch-about-2-hours-one-time).
 
 ---
 
@@ -121,6 +121,73 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 | `AI_VOICE_NOTE` | off | Optional caption line for AI-voiced reels |
 
 Story times (8 AM / 4 PM) are set in cron-job.org.
+
+---
+
+## Setup from scratch (about 2 hours, one time)
+
+Keep a private notepad file for the keys you collect. Never share them in screenshots or chats.
+
+### 1. Telegram bot (5 min)
+1. In Telegram, open **@BotFather**, send `/newbot`, and choose a name and username. The token it gives you is `TELEGRAM_BOT_TOKEN`.
+2. Send "hi" to your new bot, then open `https://api.telegram.org/bot<TOKEN>/getUpdates` in a browser.
+   The number after `"chat":{"id":` is `TELEGRAM_CHAT_ID`. If the page shows `"result":[]`, send another message and refresh.
+
+### 2. Free API keys (10 min)
+- **Gemini:** aistudio.google.com → *Get API key* → *Create API key* → `GEMINI_API_KEY`.
+  Check which Flash model is currently offered, and set it as the `GEMINI_MODEL` variable if it differs from the default.
+- **Pexels:** pexels.com/api → sign up ("I want to download") → fill in the short form → `PEXELS_API_KEY`.
+- **Cloudflare (AI images):** dash.cloudflare.com → *AI → Workers AI → Use REST API*.
+  Copy the **Account ID** → `CF_ACCOUNT_ID`, then *Create a Workers AI API Token* → `CF_API_TOKEN`.
+- **WhatsApp alerts (optional):** callmebot.com → *Free WhatsApp API → Send Messages*, and follow the activation steps.
+  This gives you `CALLMEBOT_API_KEY`, and your number with country code is `WHATSAPP_PHONE`.
+
+### 3. Instagram API (30–40 min)
+1. Instagram app → Settings → *Account type and tools* → switch to a **Professional** (Creator or Business) account.
+2. Instagram → *Edit profile → Page* → create or connect a **Facebook Page**.
+3. developers.facebook.com → *My Apps → Create App* → use case **"Manage messaging & content on Instagram"**
+   → connect your business portfolio → *Create app*.
+4. In the app: *Customize the use case → API setup with Facebook login → Add required content permissions*.
+5. *Tools → Graph API Explorer*: select the app → *Get User Access Token* → add `instagram_basic`,
+   `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`, `business_management`
+   → *Generate Access Token* → allow only your Page, Instagram account and business.
+6. In the Explorer, run `me/accounts?fields=name,instagram_business_account`. The `id` inside `instagram_business_account` is `IG_USER_ID`.
+7. *Tools → Access Token Debugger* → paste the token → *Debug* → **Extend Access Token** → `IG_ACCESS_TOKEN` (lasts ~60 days).
+
+App Review isn't needed; the app works for your own account in development mode.
+
+### 4. GitHub (15 min)
+1. Create a **public** repository (Actions minutes are unlimited for public repos, and secrets stay hidden) and upload all files.
+   The browser uploader skips hidden folders, so create `.github/workflows/agent.yml` with *Add file → Create new file* and paste its contents.
+2. *Settings → Actions → General → Workflow permissions* → **Read and write**.
+3. *Settings → Secrets and variables → Actions*: add every **secret** from the Settings section (type the names exactly),
+   plus the `INSTAGRAM_HANDLE` **variable**.
+4. Add royalty-free tracks (1–3 min MP3s, under ~10 MB each; the web uploader rejects files over 25 MB) to the `music/` folder,
+   a few files at a time. Pixabay Music is a good free source.
+5. *Actions → Reel Agent → Run workflow → mode* **check**. The bot sends you a ✅/❌ report for every service.
+
+### 5. Reliable timing with cron-job.org (15 min)
+GitHub's own scheduler is often late or skips runs, so a free cron-job.org account starts the agent instead.
+1. Create a **fine-grained GitHub token**: only this repository, permission **Actions: Read and write**, longest expiry.
+2. At cron-job.org, set your account timezone to **Asia/Kolkata** and create 3 cronjobs, all with:
+   - URL: `https://api.github.com/repos/<you>/<repo>/actions/workflows/agent.yml/dispatches`
+   - *Advanced* tab: method **POST**; headers `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`,
+     `Content-Type: application/json`
+
+   | Title | Schedule | Request body |
+   |---|---|---|
+   | Reel check | every 5 minutes | `{"ref":"main","inputs":{"mode":"poll"}}` |
+   | Reel stories AM | every day 8:00 | `{"ref":"main","inputs":{"mode":"offer"}}` |
+   | Reel stories PM | every day 16:00 | `{"ref":"main","inputs":{"mode":"offer"}}` |
+3. Use *Test run* on one job. **204 No Content** means it works; 401 means the token is wrong.
+
+### 6. Doorbell for fast replies (20–30 min, optional)
+Follow `doorbell/SETUP.md`: create a D1 database with the `updates` table, deploy `doorbell/worker.js` as a Worker,
+bind the database as `DB`, add its **Secrets**, add `DOORBELL_URL` and `DOORBELL_KEY` on GitHub, and connect Telegram
+with the `setWebhook` link **as the very last step**. Without the doorbell, the agent still works, but replies take up to 5 minutes.
+
+### 7. First reel
+Send `/news` to the bot, tap a story, tap a voice, then tap **🚀 Post now** on the preview to confirm posting works end to end.
 
 ---
 
