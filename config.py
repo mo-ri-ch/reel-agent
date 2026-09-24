@@ -40,6 +40,8 @@ AI_VOICE_NOTE = env("AI_VOICE_NOTE", "🎙️ Voiceover generated with AI")  # a
 
 TIMEZONE = ZoneInfo(env("TIMEZONE", "Asia/Kolkata"))
 AUTO_PICK_HOURS = float(env("AUTO_PICK_HOURS", "2"))
+# Autopilot: if you don't reply, use the AI voice / schedule the reel after this many hours
+AUTO_APPROVE_HOURS = float(env("AUTO_APPROVE_HOURS", "2"))
 # Times (your local time) when finished reels get posted
 POST_TIMES = [t.strip() for t in env("POST_TIMES", "13:00,19:30").split(",") if t.strip()]
 HANDLE = env("INSTAGRAM_HANDLE", "")
