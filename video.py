@@ -67,7 +67,7 @@ def transcribe(wav, hint=""):
     words = []
     for seg in segments:
         for w in seg.words or []:
-            if w.word.strip():
+            if re.search(r"\w", w.word):  # skip stray punctuation-only "words"
                 words.append({"text": w.word.strip(), "start": w.start, "end": w.end})
     return words
 
@@ -95,7 +95,9 @@ def ass_time(t):
 
 
 def ass_text(t):
-    return re.sub(r"[{}\\]", "", t).upper()
+    t = re.sub(r"[{}\\]", "", t)
+    t = re.sub(r"^[.,;:!?…\-–—]+", "", t)  # Whisper sometimes glues the previous punctuation on
+    return t.upper()
 
 
 def write_ass(words, total, path):

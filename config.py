@@ -39,7 +39,7 @@ VOICES_FEMALE = env("VOICES_FEMALE", "en-IN-NeerjaNeural,en-IN-NeerjaExpressiveN
 TTS_RATE = env("TTS_RATE", "+8%")                      # speaking speed
 KOKORO_MALE = env("KOKORO_MALE", "am_michael")         # backup voices if Edge voices fail
 KOKORO_FEMALE = env("KOKORO_FEMALE", "af_heart")
-AI_VOICE_NOTE = env("AI_VOICE_NOTE", "🎙️ Voiceover generated with AI")  # added to captions of AI-voiced reels
+AI_VOICE_NOTE = env("AI_VOICE_NOTE", "")  # optional line added to captions of AI-voiced reels (off)
 
 TIMEZONE = ZoneInfo(env("TIMEZONE", "Asia/Kolkata"))
 AUTO_PICK_HOURS = float(env("AUTO_PICK_HOURS", "2"))
