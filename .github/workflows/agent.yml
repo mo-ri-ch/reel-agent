@@ -2,9 +2,7 @@ name: Reel Agent
 
 on:
   schedule:
-    - cron: "30 2 * * *"     # 8:00 AM India time: stories for reel 1
-    - cron: "30 10 * * *"    # 4:00 PM India time: stories for reel 2
-    - cron: "*/15 * * * *"   # every 15 min: check Telegram + post scheduled reels
+     - cron: "*/15 * * * *"   # every 15 min: check Telegram + post scheduled reels
   workflow_dispatch:
     inputs:
       mode:
