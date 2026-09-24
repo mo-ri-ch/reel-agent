@@ -5,47 +5,62 @@ import time
 
 import requests
 
-from config import GEMINI_API_KEY, GEMINI_MODEL, HANDLE, NICHE
+from config import GEMINI_API_KEY, GEMINI_FALLBACK_MODEL, GEMINI_MODEL, HANDLE, NICHE
 from state import now
 
 
 def ask(prompt, search=False, temperature=0.8, json_mode=False):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
-    body = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
-            "generationConfig": {"temperature": temperature}}
-    if search:
-        body["tools"] = [{"google_search": {}}]
-    elif json_mode:
-        body["generationConfig"]["responseMimeType"] = "application/json"
+    models = [GEMINI_MODEL] + ([GEMINI_FALLBACK_MODEL] if GEMINI_FALLBACK_MODEL != GEMINI_MODEL else [])
     last = ""
-    for attempt in range(4):
-        r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=180)
-        if r.status_code in (400, 403, 429) and "tools" in body:
-            # Google Search isn't available (or its free quota is used up): continue without it
-            print(f"Search unavailable ({r.status_code}), writing without it")
-            body.pop("tools")
-            if json_mode:
-                body["generationConfig"]["responseMimeType"] = "application/json"
-            continue
-        if r.status_code in (429, 500, 503):
-            last = r.text[:300]
-            time.sleep(20 * (attempt + 1))
-            continue
-        if r.status_code != 200:
-            raise RuntimeError(f"Gemini error {r.status_code}: {r.text[:300]}")
-        data = r.json()
-        cand = (data.get("candidates") or [{}])[0]
-        parts = (cand.get("content") or {}).get("parts", [])
-        text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
-        if text.strip():
-            return text
-        last = f"empty reply (finishReason={cand.get('finishReason')}, feedback={data.get('promptFeedback')})"
-        print("Gemini " + last)
-        if "tools" in body:  # search sometimes returns nothing: retry without it
-            body.pop("tools")
-            if json_mode:
-                body["generationConfig"]["responseMimeType"] = "application/json"
-    raise RuntimeError(f"Gemini didn't give a usable reply, please try again. {last}")
+    for model in models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        body = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                "generationConfig": {"temperature": temperature}}
+        if search:
+            body["tools"] = [{"google_search": {}}]
+        elif json_mode:
+            body["generationConfig"]["responseMimeType"] = "application/json"
+        overloaded = 0
+        for attempt in range(5):
+            r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=180)
+            if r.status_code in (400, 403, 429) and "tools" in body:
+                # Google Search isn't available (or its free quota is used up): continue without it
+                print(f"Search unavailable ({r.status_code}), writing without it")
+                body.pop("tools")
+                if json_mode:
+                    body["generationConfig"]["responseMimeType"] = "application/json"
+                continue
+            if r.status_code in (500, 503):
+                overloaded += 1
+                last = f"{model} is overloaded right now"
+                if overloaded >= 2:
+                    break  # try the backup model
+                time.sleep(15)
+                continue
+            if r.status_code == 429:
+                last = r.text[:300]
+                time.sleep(20 * (attempt + 1))
+                continue
+            if r.status_code == 404 and model != GEMINI_MODEL:
+                break  # backup model name not available
+            if r.status_code != 200:
+                raise RuntimeError(f"Gemini error {r.status_code}: {r.text[:300]}")
+            data = r.json()
+            cand = (data.get("candidates") or [{}])[0]
+            parts = (cand.get("content") or {}).get("parts", [])
+            text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+            if text.strip():
+                if model != GEMINI_MODEL:
+                    print(f"Used backup model {model}")
+                return text
+            last = f"empty reply (finishReason={cand.get('finishReason')})"
+            print("Gemini " + last)
+            if "tools" in body:  # search sometimes returns nothing: retry without it
+                body.pop("tools")
+                if json_mode:
+                    body["generationConfig"]["responseMimeType"] = "application/json"
+        print(f"Moving on from {model}: {last}")
+    raise RuntimeError(f"Gemini didn't give a usable reply, please try again in a few minutes. {last}")
 
 
 def parse_json(text):
@@ -134,3 +149,20 @@ def write_script(topic, previous=None, instruction=None):
     if not draft["script"]:
         raise RuntimeError("The script came back empty, please try again.")
     return draft
+
+
+def draft_from_own_script(text, topic=None):
+    """Builds a draft from a script you wrote yourself (no Gemini needed)."""
+    lines = [l.strip() for l in text.strip().splitlines() if l.strip()]
+    title = (topic or {}).get("title") or lines[0]
+    return {
+        "title": title[:70],
+        "script": "\n".join(lines),
+        "caption": " ".join(lines[:2])[:300] + "\n\nWhat do you think? Tell me in the comments 👇",
+        "hashtags": ["ai", "artificialintelligence", "ainews", "tech", "technology", "chatgpt",
+                     "openai", "futuretech", "machinelearning", "techindia"],
+        "keywords": ["artificial intelligence", "technology", "data center", "robot", "coding laptop"],
+        "image_prompts": [f"an illustration representing: {title}",
+                          "a futuristic glowing AI brain made of circuits, purple and blue neon"],
+        "sources": [],
+    }

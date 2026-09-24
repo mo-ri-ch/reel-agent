@@ -30,6 +30,7 @@ Twice a day I send you the top AI stories.
 
 Commands:
 /topic <anything> – make a reel on your own topic right now
+/myscript <your script> – use a script you wrote yourself (skips Gemini)
 /news – get fresh stories now (e.g. to record the next reel straight away)
 /queue – see scheduled reels
 /script – show the current script again
@@ -209,6 +210,17 @@ def handle(s, m):
             start_script(s, custom(topic))
         else:
             tg.send("Tell me the topic like this:\n/topic What are AI agents?")
+    elif low.startswith("/myscript"):
+        own = text[9:].strip()
+        if not own:
+            tg.send("Paste your script after the command, like:\n/myscript OpenAI just changed everything...")
+        else:
+            topic = s.get("topic") or (s["candidates"][0] if s["stage"] == "choosing" and s["candidates"] else None)
+            topic = topic or custom(own.splitlines()[0][:60])
+            draft = writer.draft_from_own_script(own, topic)
+            reset_reel(s)
+            s.update(topic=topic, draft=draft, stage="awaiting_voice")
+            tg.send(script_message(draft, note="Got your script ✅ Record it as a voice note 🎤"))
     elif low.startswith("/news"):
         offer_news(s)
     elif low.startswith("/skip"):
