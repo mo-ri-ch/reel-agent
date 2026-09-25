@@ -69,7 +69,17 @@ def _reddit(cutoff):
             r = requests.get(f"https://www.reddit.com/r/{sub}/top.json", params={"t": "day", "limit": 12}, timeout=20,
                              headers={"User-Agent": "GradientDailyNewsBot/1.0 (news digest; contact via github mo-ri-ch)"})
             if r.status_code != 200:
-                print(f"Reddit r/{sub}: {r.status_code}")
+                rss = requests.get(f"https://www.reddit.com/r/{sub}/top/.rss", params={"t": "day"}, timeout=20,
+                                   headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) GradientDailyNewsBot/1.0"})
+                if rss.status_code != 200:
+                    LAST_REPORT["Reddit"] = f"blocked (HTTP {r.status_code}/{rss.status_code})"
+                    continue
+                for e in feedparser.parse(rss.content).entries[:5]:  # RSS has no upvotes: top 5 of the day only
+                    t = e.get("updated_parsed") or e.get("published_parsed")
+                    when = datetime(*t[:6], tzinfo=timezone.utc) if t else datetime.now(timezone.utc)
+                    if when >= cutoff:
+                        out.append({"title": _clean(e.get("title", "")), "link": e.get("link", ""), "summary": "",
+                                    "source": f"r/{sub}", "published": when.isoformat(), "buzz": f"top of r/{sub} today"})
                 continue
             for c in r.json().get("data", {}).get("children", []):
                 p = c.get("data", {})
@@ -99,16 +109,24 @@ def fetch_headlines(max_age_hours=36, limit=60):
         if item["title"] and key not in seen:
             seen.add(key)
             items.append(item)
-            LAST_REPORT[label] = LAST_REPORT.get(label, 0) + 1
+            prev = LAST_REPORT.get(label, 0)
+            LAST_REPORT[label] = (prev if isinstance(prev, int) else 0) + 1
 
     for url in FEEDS:
         label = url.split("/")[2].replace("www.", "")
         LAST_REPORT.setdefault(label, 0)
         try:
             resp = requests.get(url, headers=UA, timeout=20)
+            if resp.status_code != 200:
+                LAST_REPORT[label] = f"blocked (HTTP {resp.status_code})"
+                continue
             feed = feedparser.parse(resp.content)
+            if not feed.entries:
+                LAST_REPORT[label] = "empty feed"
+                continue
         except Exception as e:
             print(f"Feed failed: {url} ({e})")
+            LAST_REPORT[label] = f"failed ({type(e).__name__})"
             continue
         source = _clean(feed.feed.get("title", "")) or label
         broad = any(k in url for k in ("nvidia", "microsoft", "inc42", "producthunt", "technologyreview"))
