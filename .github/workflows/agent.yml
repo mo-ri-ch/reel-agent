@@ -36,7 +36,7 @@ jobs:
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       IG_GRAPH_BASE: ${{ vars.IG_GRAPH_BASE || 'https://graph.facebook.com/v26.0' }}
-      INSTAGRAM_HANDLE: ${{ vars.INSTAGRAM_HANDLE }}
+      INSTAGRAM_HANDLE: gradient.daily.ai   # your Instagram handle, shown on every reel
       TIMEZONE: ${{ vars.TIMEZONE || 'Asia/Kolkata' }}
       POST_TIMES: ${{ vars.POST_TIMES || '09:00,11:30,14:00,16:30,19:00,21:30' }}
       OFFER_TIMES: ${{ vars.OFFER_TIMES || '07:00,09:30,12:00,14:30,17:00,19:30' }}

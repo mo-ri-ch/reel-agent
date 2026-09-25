@@ -110,7 +110,7 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 
 | Variable | Default | What it changes |
 |---|---|---|
-| `INSTAGRAM_HANDLE` | — | Handle shown on reels |
+| `INSTAGRAM_HANDLE` | set in `agent.yml` (`gradient.daily.ai`) | Handle shown on reels; edit it in the workflow file |
 | `POST_TIMES` | `09:00,11:30,14:00,16:30,19:00,21:30` | Posting times (India time) |
 | `OFFER_TIMES` | `07:00,09:30,12:00,14:30,17:00,19:30` | When fresh stories are sent (one reel each) |
 | `AUTO_PICK_HOURS` / `AUTO_APPROVE_HOURS` | `0.75` | How long autopilot waits at each step |
