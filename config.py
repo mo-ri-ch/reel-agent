@@ -34,8 +34,8 @@ WHATSAPP_PHONE = env("WHATSAPP_PHONE")          # with country code, e.g. +91987
 CALLMEBOT_API_KEY = env("CALLMEBOT_API_KEY")
 
 # AI voice-over (used when you reply "ok" instead of sending a voice note)
-VOICES_MALE = env("VOICES_MALE", "en-US-AndrewMultilingualNeural,en-US-BrianMultilingualNeural,en-IN-PrabhatNeural").split(",")
-VOICES_FEMALE = env("VOICES_FEMALE", "en-US-AvaMultilingualNeural,en-US-EmmaMultilingualNeural,en-IN-NeerjaExpressiveNeural").split(",")
+VOICES_MALE = env("VOICES_MALE", "en-US-AndrewMultilingualNeural,en-US-BrianMultilingualNeural").split(",")
+VOICES_FEMALE = env("VOICES_FEMALE", "en-US-AvaMultilingualNeural,en-US-EmmaMultilingualNeural").split(",")
 TTS_RATE = env("TTS_RATE", "+6%")                      # speaking speed
 KOKORO_MALE = env("KOKORO_MALE", "am_michael")         # backup voices if Edge voices fail
 KOKORO_FEMALE = env("KOKORO_FEMALE", "af_heart")

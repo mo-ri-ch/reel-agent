@@ -57,7 +57,7 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 1. **News:** RSS feeds (TechCrunch, The Verge, Google News and more) → Gemini picks the 3 best stories.
 2. **Script:** Gemini writes a 25–40 s script with a scroll-stopping hook, split into 5–8 **beats**.
    Each beat has its own visual: a stock clip, an AI image, or a big-number card.
-3. **Voice:** a free Microsoft voice (Andrew, Brian, Ava, Emma, or Indian English Prabhat / Neerja), with
+3. **Voice:** a free Microsoft voice (Andrew, Brian, Ava or Emma), with
    Kokoro as the automatic backup. You can also send your own voice note.
 4. **Visuals:** Pexels clips for each beat. **Gemini looks at the thumbnails** and picks the ones that
    match the sentence; if none fit, an AI image (Cloudflare Workers AI) is used instead.
@@ -113,7 +113,7 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 | `INSTAGRAM_HANDLE` | — | Handle shown on reels |
 | `POST_TIMES` | `13:00,19:30` | Posting times (India time) |
 | `AUTO_PICK_HOURS` / `AUTO_APPROVE_HOURS` | `2` | How long autopilot waits |
-| `VOICES_MALE` / `VOICES_FEMALE` | natural US voices + Indian English | Voice lists (comma-separated) |
+| `VOICES_MALE` / `VOICES_FEMALE` | natural US voices (Andrew, Brian / Ava, Emma) | Voice lists (comma-separated) |
 | `TTS_RATE` | `+6%` | Speaking speed |
 | `MUSIC_VOLUME` | `0.15` | Background music level |
 | `GEMINI_MODEL` | `gemini-3.6-flash` | Main model (backup: `gemini-flash-lite-latest`) |
