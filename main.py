@@ -358,9 +358,9 @@ def next_story(s, reason=""):
     """Moves on to another story when this one can't be verified, so the posting slot still gets a reel."""
     tried = set(s.get("tried") or []) | {(s.get("topic") or {}).get("title", "")}
     s["tried"] = list(tried)[-30:]
-    spare = [c for c in (s.get("spare") or []) if c.get("title") not in tried]
+    spare = [c for c in (s.get("spare") or []) if not news.recent_match(c.get("title", ""), list(tried))]
     if not spare:
-        heads = [h for h in news.fetch_headlines() if h["title"] not in tried and h["title"] not in s["history"]]
+        heads = news.dedupe(news.fetch_headlines(), recent_titles(s) + list(tried))
         spare = writer.pick_top(heads, s["history"]) if heads else []
     if not spare:
         tg.send("⚠️ I couldn't find another story to switch to. Send /news or a topic.")
@@ -396,15 +396,24 @@ def start_script(s, topic, instruction=None, auto=False):
             (autopilot_note("script") if s.get("autopilot") else ""), buttons=script_buttons(s))
 
 
+def recent_titles(s):
+    """Stories posted, queued, parked or already tried in the last 14 days."""
+    cutoff = st.now() - timedelta(days=14)
+    log = [h for h in (s.get("posted_log") or []) if datetime.fromisoformat(h["at"]) > cutoff]
+    s["posted_log"] = log
+    return ([h["title"] for h in log] + list(s.get("history") or []) + [q["title"] for q in s.get("queue") or []]
+            + [h["topic"]["title"] for h in s.get("held") or []] + list(s.get("tried") or []))
+
+
 def offer_news(s):
     tg.action("typing")
-    headlines = news.fetch_headlines()
-    used = s["history"] + [q["title"] for q in s["queue"]]
+    headlines = news.dedupe(news.fetch_headlines(), recent_titles(s))
+    used = recent_titles(s)
     if not headlines:
         reset_reel(s)
         tg.send("I couldn't find fresh AI news right now. Send me any topic and I'll write a script.")
         return
-    picks = writer.pick_top(headlines, used)
+    picks = news.dedupe(writer.pick_top(headlines, used), [])
     reset_reel(s)
     s.update(candidates=picks, stage="choosing",
              choose_deadline=(st.now() + timedelta(hours=AUTO_PICK_HOURS)).isoformat())
@@ -447,7 +456,8 @@ def publish_item(item):
 def approve(s, now_please=False):
     item = {"title": s["topic"]["title"], "video_file_id": s["video_file_id"],
             "caption": caption_for(s["draft"], s.get("voice_mode") == "ai")}
-    s["history"] = (s["history"] + [item["title"]])[-40:]
+    s["history"] = (s["history"] + [item["title"]])[-100:]
+    s["posted_log"] = (s.get("posted_log") or []) + [{"title": item["title"], "at": st.now().isoformat()}]
     if now_please:
         tg.send("📤 Posting to Instagram now... (1-3 minutes)")
         link = publish_item(item)
@@ -559,7 +569,12 @@ def handle(s, m, from_button=False):
         tg.send(HELP)
     elif low.startswith("/topic"):
         topic = text[6:].strip()
-        if topic:
+        similar = news.recent_match(topic, recent_titles(s)) if topic else None
+        if similar:
+            s["pending_topic"] = topic
+            tg.send(f"Heads-up: this looks like a story you already covered recently:\n“{similar}”\n\nMake it anyway?",
+                    buttons=[[btn(s, "✅ Make it anyway", "confirm_topic"), btn(s, "✖️ No", "cancel", True)]])
+        elif topic:
             push_undo(s, f"new topic \"{topic[:40]}\"")
             start_script(s, custom(topic))
         else:

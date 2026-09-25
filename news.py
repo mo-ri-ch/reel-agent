@@ -79,3 +79,47 @@ def og_image(link):
         if m:
             return html.unescape(m.group(1))
     return None
+
+
+# ---------------------------------------------------------------- repeat detection
+STOP = set("""a an the and or but of to in on for with at by from as is are was were be been it its this that these
+those how why what when who new just now will can could would may might says said say after over into about than more
+most your you our their his her they them we us not no yes vs via amid ai artificial intelligence first launches launch
+launched announces announced unveils unveiled update updates report reports gets get big latest hits crosses reaches
+tops passes surpasses""".split())
+
+
+def keywords(title):
+    t = title.lower().replace("$", " ").replace("₹", " ")
+    t = re.sub(r"(\d+(?:\.\d+)?)\s*(million|mn)\b", r"\1m", t)       # "600 million" → "600m"
+    t = re.sub(r"(\d+(?:\.\d+)?)\s*(billion|bn)\b", r"\1b", t)
+    t = re.sub(r"(\d+(?:\.\d+)?)\s*(trillion)\b", r"\1t", t)
+    words = re.findall(r"[a-z0-9][a-z0-9.\-]*", t)
+    return {w.strip(".-") for w in words if len(w.strip(".-")) > 2 and w.strip(".-") not in STOP}
+
+
+def same_story(a, b):
+    """True when two headlines are clearly about the same news."""
+    import difflib
+    ka, kb = keywords(a), keywords(b)
+    if not ka or not kb:
+        return False
+    shared = ka & kb
+    if len(shared) >= 3 or (len(shared) >= 2 and len(shared) / min(len(ka), len(kb)) >= 0.5):
+        return True
+    return difflib.SequenceMatcher(None, a.lower(), b.lower()).ratio() > 0.72
+
+
+def recent_match(title, past):
+    """The first recent headline that's the same story, or None."""
+    return next((p for p in past if same_story(title, p)), None)
+
+
+def dedupe(headlines, past):
+    """Drops headlines already covered recently, and repeats of the same story within the list."""
+    kept = []
+    for h in headlines:
+        if recent_match(h["title"], past) or recent_match(h["title"], [k["title"] for k in kept]):
+            continue
+        kept.append(h)
+    return kept

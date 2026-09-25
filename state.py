@@ -29,7 +29,8 @@ DEFAULT = {
     "next_video_id": None,     # a clip you sent before the script was ready     # a topic waiting for your "yes" button
     "undo_stack": [],          # last few steps, for the Undo button
     "posted_ids": [],          # reels already live (can't be undone) # next story offer waiting until the current reel is done
-    "history": [],          # titles already posted (avoids repeats)
+    "history": [],
+    "posted_log": [],          # [{title, at}] reels scheduled/posted, for the 14-day repeat check          # titles already posted (avoids repeats)
 }
 
 
