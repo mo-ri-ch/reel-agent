@@ -278,14 +278,33 @@ def draft_from_own_script(text, topic=None):
 
 
 # ---------------------------------------------------------------- quality checks
+def article_text(url, limit=5000):
+    """Readable text of the source article (so its reporting counts as a source)."""
+    import html as html_lib
+    if not url or "news.google." in url:
+        return ""
+    try:
+        page = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                                                                    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"}).text
+    except Exception:
+        return ""
+    page = re.sub(r"(?is)<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>", " ", page)
+    paras = [html_lib.unescape(re.sub(r"<[^>]+>", " ", p)) for p in re.findall(r"(?is)<p[^>]*>(.*?)</p>", page)]
+    text = " ".join(re.sub(r"\s+", " ", p).strip() for p in paras if len(p) > 60)
+    return text[:limit]
+
+
 def fact_check(draft, topic):
     """Checks every claim in the script with Google Search. Returns (draft, status, notes).
     status: "ok" (all verified), "fixed" (small errors corrected), "unsure" (needs a human), "skipped"."""
     beats = [{k: v for k, v in b.items() if v not in ("", [], None)} for b in draft.get("beats", [])]
+    article = article_text(topic.get("link", ""))
     prompt = f"""Today is {now().strftime("%d %B %Y")}. You are the fact-checker of an AI-news Instagram page.
 Story: {topic.get("title", "")}
 Source: {topic.get("source", "")} {topic.get("link", "")}
 Summary: {topic.get("summary", "")}
+SOURCE ARTICLE TEXT (the reporting this story is based on):
+{article or "(not available — rely on the title, summary and Google Search)"}
 
 Script beats (JSON):
 {json.dumps(beats, ensure_ascii=False)}
@@ -297,8 +316,11 @@ Return ONLY JSON:
 {{"verdict": "ok" | "fixed" | "unsure",
  "issues": [{{"beat": <1-based number>, "problem": "what was wrong or unverifiable", "fix": "the correction"}}],
  "beats": [ONLY when verdict is "fixed": the full corrected beats list, same keys, minimal wording changes]}}
+How to judge: this is breaking news, so brand-new products may have little coverage yet. Claims stated in the
+source article, title or summary COUNT AS VERIFIED (that is the reporting). Search for everything else.
 "ok" = everything checks out. "fixed" = you corrected small errors and are confident in the corrections.
-"unsure" = something important can't be verified or seems wrong and you can't confidently fix it."""
+"unsure" = ONLY when a claim contradicts reliable sources, or appears in no source at all and can't be verified
+(likely invented by the script writer). Not being able to find extra coverage of new news is NOT a reason for "unsure"."""
     try:
         res = parse_json(ask(prompt, search=True, temperature=0.1, json_mode=True))
     except Exception as e:

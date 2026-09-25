@@ -57,6 +57,7 @@ Commands:
 /news – get fresh stories now (e.g. to record the next reel straight away)
 /autopilot on|off – finish reels on my own when you don't reply
 /queue – see scheduled reels
+/held – review reels the quality check parked
 /script – show the current script again
 /status – what I'm waiting for
 /undo – go back one step (tap ↩️ Undo)
@@ -235,6 +236,44 @@ def next_offer_if_waiting(s):
     if s.get("pending_offer"):
         s["pending_offer"] = False
         offer_news(s)
+
+
+def park_reel(s):
+    """A flagged reel is set aside for your review so it doesn't block the next reels."""
+    now_iso = st.now().isoformat()
+    s["held"] = [h for h in (s.get("held") or []) if st.now() - datetime.fromisoformat(h["held_at"]) < timedelta(hours=24)]
+    s["held"].append({"topic": s["topic"], "draft": s["draft"], "video_file_id": s["video_file_id"],
+                      "voice_mode": s.get("voice_mode"), "held_at": now_iso})
+    title = s["topic"]["title"]
+    reset_reel(s)
+    tg.send(f"⏸ Parked for your review: “{title}”.\nThe quality check flagged something, so autopilot won't post it — "
+            "but the next reels carry on as normal. Review it anytime (parked reels are kept for 24 hours).",
+            buttons=[[btn(s, f"👀 Review parked reels ({len(s['held'])})", "/held", True)]])
+    whatsapp.alert(f"⏸ A reel is parked for your review: {title}. Open Telegram → /held")
+    next_offer_if_waiting(s)
+
+
+def review_held(s):
+    held = [h for h in (s.get("held") or []) if st.now() - datetime.fromisoformat(h["held_at"]) < timedelta(hours=24)]
+    s["held"] = held
+    if not held:
+        tg.send("No parked reels right now 👍")
+        return
+    if s["stage"] not in ("idle", "choosing"):
+        tg.send("Finish or ⏭ Skip the current reel first, then send /held to review the parked one.")
+        return
+    h = held.pop(0)
+    push_undo(s, "reviewing a parked reel")
+    reset_reel(s)
+    s.update(topic=h["topic"], draft=h["draft"], video_file_id=h["video_file_id"], voice_mode=h.get("voice_mode"),
+             stage="awaiting_approval", preview_deadline=None)
+    s["draft"]["fact_status"] = "reviewed" if s["draft"].get("fact_status") == "unsure" else s["draft"].get("fact_status")
+    s["draft"]["visual_status"] = "reviewed" if s["draft"].get("visual_status") == "issues" else s["draft"].get("visual_status")
+    notes = (h["draft"].get("fact_notes") or []) + (h["draft"].get("visual_notes") or [])
+    tg.send_video_id(h["video_file_id"], caption=f"👀 Parked reel: {h['topic']['title']}")
+    tg.send("What the quality check flagged:\n• " + "\n• ".join(notes or ["(no details)"]) +
+            "\n\nIf it's fine, tap ✅ Schedule. You can also type changes to the script, or ⏭ Skip it." +
+            (f"\n\n{len(held)} more parked." if held else ""), buttons=preview_buttons(s))
 
 
 def fact_check_step(draft, topic):
@@ -427,6 +466,8 @@ def handle(s, m, from_button=False):
 
     if low.startswith("/undo"):
         undo(s)
+    elif low.startswith("/held"):
+        review_held(s)
     elif low.startswith(("/start", "/help")):
         tg.send(HELP)
     elif low.startswith("/topic"):
@@ -628,10 +669,7 @@ def cmd_poll():
             use_ai_voice(s, auto=True)
             render = True
         elif s["stage"] == "awaiting_approval" and passed(s.get("preview_deadline")) and qa_hold(s.get("draft") or {}):
-            s["preview_deadline"] = None
-            tg.send("⏸ Autopilot is holding this reel because the quality check flagged something. "
-                    "Watch the preview and tap ✅ Schedule if it's fine, or ⏭ Skip.", buttons=preview_buttons(s))
-            whatsapp.alert("⏸ A reel needs your review before posting (quality check). Open Telegram.")
+            park_reel(s)
         elif s["stage"] == "awaiting_approval" and passed(s.get("preview_deadline")):
             s["preview_deadline"] = None
             tg.send("⏰ No reply, so autopilot is scheduling your reel.")

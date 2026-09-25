@@ -28,6 +28,11 @@ def send(text, buttons=None):
         call("sendMessage", chat_id=TELEGRAM_CHAT_ID, text=chunk, disable_web_page_preview="true", **extra)
 
 
+def send_video_id(file_id, caption="", buttons=None):
+    extra = {"reply_markup": keyboard(buttons)} if buttons else {}
+    call("sendVideo", chat_id=TELEGRAM_CHAT_ID, video=file_id, caption=caption[:1000], **extra)
+
+
 def answer_button(callback_id, text=""):
     try:
         call("answerCallbackQuery", callback_query_id=callback_id, text=text[:190])
