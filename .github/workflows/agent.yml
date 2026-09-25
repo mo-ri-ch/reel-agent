@@ -38,11 +38,12 @@ jobs:
       IG_GRAPH_BASE: ${{ vars.IG_GRAPH_BASE || 'https://graph.facebook.com/v26.0' }}
       INSTAGRAM_HANDLE: ${{ vars.INSTAGRAM_HANDLE }}
       TIMEZONE: ${{ vars.TIMEZONE || 'Asia/Kolkata' }}
-      POST_TIMES: ${{ vars.POST_TIMES || '13:00,19:30' }}
-      AUTO_PICK_HOURS: ${{ vars.AUTO_PICK_HOURS || '2' }}
+      POST_TIMES: ${{ vars.POST_TIMES || '09:00,12:30,15:30,18:30,21:30' }}
+      OFFER_TIMES: ${{ vars.OFFER_TIMES || '07:00,10:30,13:30,16:30,19:30' }}
+      AUTO_PICK_HOURS: ${{ vars.AUTO_PICK_HOURS || '1' }}
       GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
       WHISPER_MODEL: ${{ vars.WHISPER_MODEL || 'base.en' }}
-      AUTO_APPROVE_HOURS: ${{ vars.AUTO_APPROVE_HOURS || '2' }}
+      AUTO_APPROVE_HOURS: ${{ vars.AUTO_APPROVE_HOURS || '1' }}
       VOICES_MALE: ${{ vars.VOICES_MALE }}
       VOICES_FEMALE: ${{ vars.VOICES_FEMALE }}
       TTS_RATE: ${{ vars.TTS_RATE }}

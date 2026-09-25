@@ -15,7 +15,7 @@ import state as st
 import telegram_api as tg
 import whatsapp
 import writer
-from config import AI_VOICE_NOTE, AUTO_APPROVE_HOURS, AUTO_PICK_HOURS, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
+from config import AI_VOICE_NOTE, AUTO_APPROVE_HOURS, AUTO_PICK_HOURS, OFFER_TIMES, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
 
 POST_WORDS = {"post", "yes", "approve", "ok", "okay", "publish", "schedule", "👍", "✅"}
 POST_NOW_WORDS = {"post now", "publish now", "now"}
@@ -41,7 +41,7 @@ def voice_request(low):
 
 HELP = f"""🤖 Reel Agent
 
-Twice a day I send you the top AI stories.
+{len(OFFER_TIMES)} times a day ({', '.join(OFFER_TIMES)}) I send you the top AI stories.
 Tap the buttons under my messages, or type — both work.
 • Tap a story (or type any topic you like)
 • No reply? I pick #1 automatically
@@ -589,6 +589,14 @@ def cmd_poll():
                 s["choose_deadline"] = None
                 tg.send(f"⚠️ Couldn't write the script: {e}\nReply 1, 2 or 3 to try again.")
 
+    if not render:
+        try:
+            if due_offer_slot(s):
+                run_offer(s)
+        except Exception as e:
+            traceback.print_exc()
+            tg.send(f"⚠️ Couldn't get the news: {e}\nSend /news to try again.")
+
     if not render and s.get("autopilot"):
         if s["stage"] == "awaiting_voice" and passed(s.get("script_deadline")):
             push_undo(s, "autopilot choosing the AI voice")
@@ -615,17 +623,45 @@ def cmd_poll():
     github_output("render", "true" if render else "false")
 
 
+def due_offer_slot(s):
+    """The story time that's due now and hasn't been sent today (None if nothing is due).
+    Times missed by more than 2 hours are skipped rather than sent late."""
+    now = st.now()
+    today = now.date().isoformat()
+    log = s.get("offer_log") or {}
+    if log.get("date") != today:
+        log = {"date": today, "done": []}
+    s["offer_log"] = log
+    due = None
+    for t in sorted(OFFER_TIMES):
+        h, m = map(int, t.split(":"))
+        at = now.replace(hour=h, minute=m, second=0, microsecond=0)
+        if t in log["done"] or now < at:
+            continue
+        log["done"].append(t)
+        if now - at <= timedelta(hours=2):
+            due = t
+    return due
+
+
+def run_offer(s):
+    if s["stage"] in ("idle", "choosing"):
+        offer_news(s)
+    else:
+        s["pending_offer"] = True
+        tg.send("🔔 Time for the next reel! Finish the current one (or tap ⏭ Skip) "
+                "and I'll send fresh stories right after.")
+        whatsapp.alert("🔔 Time for your next reel! Finish the current one on Telegram first.")
+
+
 def cmd_offer():
-    """Runs at each daily slot (8 AM and 4 PM by default)."""
+    """Only sends stories if a story time is due and wasn't sent yet (the 5-minute checks normally do this)."""
     s = st.load()
     try:
-        if s["stage"] in ("idle", "choosing"):
-            offer_news(s)
+        if due_offer_slot(s):
+            run_offer(s)
         else:
-            s["pending_offer"] = True
-            tg.send("🔔 Time for the next reel! Finish the current one (or send /skip) "
-                    "and I'll send fresh stories right after.")
-            whatsapp.alert("🔔 Time for your next reel! Finish the current one on Telegram first.")
+            print("No story time is due right now (send /news in Telegram for stories anytime).")
     except Exception as e:
         traceback.print_exc()
         tg.send(f"⚠️ Couldn't get the news: {e}\nSend /news to try again, or send any topic.")

@@ -1,6 +1,6 @@
 # 🎬 Gradient AI Labs · Reel Agent
 
-A free agent that makes **2 faceless AI-news Instagram Reels a day**.
+A free agent that makes **5 faceless AI-news Instagram Reels a day**.
 You steer it from Telegram with a few taps; it writes the script, voices it, edits the video
 and posts it to **@gradientailabs**. If you're busy, autopilot finishes the job on its own.
 
@@ -12,11 +12,11 @@ and posts it to **@gradientailabs**. If you're busy, autopilot finishes the job 
 
 | Time | What happens |
 |---|---|
-| **8:00 AM & 4:00 PM** | The bot sends the top 3 AI stories as buttons |
+| **7:00, 10:30, 13:30, 16:30, 19:30** | The bot sends the top 3 AI stories as buttons (one reel per time) |
 | You tap a story | Gemini writes a script (≈1 min) |
 | You tap a voice | The reel is made (≈5–10 min) and a preview arrives |
 | You tap **✅ Schedule** | It's queued for the next posting time |
-| **1:00 PM & 7:30 PM** | Scheduled reels go live on Instagram, and the bot sends you the link |
+| **9:00, 12:30, 15:30, 18:30, 21:30** | Scheduled reels go live on Instagram, and the bot sends you the link |
 
 Replies usually arrive within **about a minute** (see *Doorbell* below).
 
@@ -34,7 +34,7 @@ is a reel that's already live on Instagram.
 
 ### Autopilot (on by default)
 
-If you don't reply within **2 hours**, the agent picks story #1, uses the AI voice and schedules
+If you don't reply within **1 hour** at each step, the agent picks story #1, uses the AI voice and schedules
 the reel itself. Your reply or tap at any point takes over. Toggle it with `/autopilot`.
 
 ### Commands
@@ -74,7 +74,7 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 |---|---|
 | **GitHub Actions** | Runs the agent (`.github/workflows/agent.yml`) |
 | **Doorbell** (Cloudflare Worker + D1) | Telegram sends every message here instantly; it shows "⏳ Got it!", marks your tap, saves the message and starts GitHub right away |
-| **cron-job.org** | Wakes the agent every 5 min (backup check + scheduled posts) and at 8 AM / 4 PM (stories) |
+| **cron-job.org** | Wakes the agent every 5 min: checks messages, sends stories at story times, posts scheduled reels |
 | **state.json** | The agent's memory between runs (current step, queue, undo history) |
 
 ---
@@ -111,8 +111,9 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 | Variable | Default | What it changes |
 |---|---|---|
 | `INSTAGRAM_HANDLE` | — | Handle shown on reels |
-| `POST_TIMES` | `13:00,19:30` | Posting times (India time) |
-| `AUTO_PICK_HOURS` / `AUTO_APPROVE_HOURS` | `2` | How long autopilot waits |
+| `POST_TIMES` | `09:00,12:30,15:30,18:30,21:30` | Posting times (India time) |
+| `OFFER_TIMES` | `07:00,10:30,13:30,16:30,19:30` | When fresh stories are sent (one reel each) |
+| `AUTO_PICK_HOURS` / `AUTO_APPROVE_HOURS` | `1` | How long autopilot waits at each step |
 | `VOICES_MALE` / `VOICES_FEMALE` | natural US voices (Andrew, Brian / Ava, Emma) | Voice lists (comma-separated) |
 | `TTS_RATE` | `+6%` | Speaking speed |
 | `MUSIC_VOLUME` | `0.15` | Background music level |
@@ -120,7 +121,7 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 | `WHISPER_MODEL` | `base.en` | Caption timing accuracy (`small.en` is slower but more accurate) |
 | `AI_VOICE_NOTE` | off | Optional caption line for AI-voiced reels |
 
-Story times (8 AM / 4 PM) are set in cron-job.org.
+Story times come from `OFFER_TIMES`; the agent sends them itself during its 5-minute checks.
 
 ---
 
@@ -169,16 +170,13 @@ App Review isn't needed; the app works for your own account in development mode.
 ### 5. Reliable timing with cron-job.org (15 min)
 GitHub's own scheduler is often late or skips runs, so a free cron-job.org account starts the agent instead.
 1. Create a **fine-grained GitHub token**: only this repository, permission **Actions: Read and write**, longest expiry.
-2. At cron-job.org, set your account timezone to **Asia/Kolkata** and create 3 cronjobs, all with:
+2. At cron-job.org, set your account timezone to **Asia/Kolkata** and create one cronjob:
+   - Title: `Reel check`, schedule: **every 5 minutes**
    - URL: `https://api.github.com/repos/<you>/<repo>/actions/workflows/agent.yml/dispatches`
    - *Advanced* tab: method **POST**; headers `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`,
-     `Content-Type: application/json`
+     `Content-Type: application/json`; body `{"ref":"main","inputs":{"mode":"poll"}}`
 
-   | Title | Schedule | Request body |
-   |---|---|---|
-   | Reel check | every 5 minutes | `{"ref":"main","inputs":{"mode":"poll"}}` |
-   | Reel stories AM | every day 8:00 | `{"ref":"main","inputs":{"mode":"offer"}}` |
-   | Reel stories PM | every day 16:00 | `{"ref":"main","inputs":{"mode":"offer"}}` |
+   The agent sends stories at the `OFFER_TIMES` by itself, so no other jobs are needed.
 3. Use *Test run* on one job. **204 No Content** means it works; 401 means the token is wrong.
 
 ### 6. Doorbell for fast replies (20–30 min, optional)

@@ -21,6 +21,7 @@ DEFAULT = {
     "preview_deadline": None,
     "last_gender": "female",   # AI voice alternates male/female
     "pending_offer": False,
+    "offer_log": {"date": None, "done": []},  # which story times were already sent today
     "pending_topic": None,
     "next_video_id": None,     # a clip you sent before the script was ready     # a topic waiting for your "yes" button
     "undo_stack": [],          # last few steps, for the Undo button
