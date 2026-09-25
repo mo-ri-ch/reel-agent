@@ -443,11 +443,22 @@ def pasted_news(text):
             "published": "", "pasted": True}
 
 
+REQUEST_WORDS = re.compile(r"(?i)^\s*(please\s+)?(give|make|tell|show|create|do|post|write|explain|cover|share|find|"
+                           r"what|news about|latest|recent|trending)\b|\bnews (about|on)\b|\breel (about|on)\b")
+
+
 def researched_story(text):
-    """Researches pasted news before making the reel; falls back to the pasted text if research isn't possible."""
+    """Researches news or a request before making the reel. Returns the story, or None if there's nothing to make."""
     tg.send("🔎 Researching this story — finding the original article, the official announcement and the full facts...")
     tg.action("typing")
     found = writer.research(text)
+    if found and found.get("not_found") and REQUEST_WORDS.search(text):
+        names = found.get("unknown_names") or []
+        tg.send("⚠️ I couldn't find news for that request" + (f" — I couldn't identify: {', '.join(names)}" if names else "") +
+                ".\n\nSend it again with the exact names (and the company, if you know it), e.g.\n"
+                "/reel news about the Laya model by <company>\n\nOr make a roundup of this week's trending models instead:",
+                buttons=[[("📰 Trending models roundup", "any||/reel the biggest new AI model releases this week")]])
+        return None
     if found and found.get("not_found"):
         tg.send("⚠️ I couldn't find any real coverage of this news online, so it may be unconfirmed. "
                 "I'll still make the reel from your text, and the fact check will flag anything it can't verify.")
@@ -456,6 +467,8 @@ def researched_story(text):
         tg.send("Research wasn't possible right now, so I'll use your text (the fact check still runs).")
         return pasted_news(text)
     msg = f"📰 Found it: {found['title']}"
+    if found.get("unknown_names"):
+        msg += f"\n❓ Couldn't identify: {', '.join(found['unknown_names'])} (send the exact name to include it)"
     if found.get("source"):
         msg += f"\nMain source: {found['source']}"
     if found.get("corrections"):
@@ -663,8 +676,10 @@ def handle(s, m, from_button=False):
         if not request:
             tg.send("Tell me what the reel should be about, like:\n/reel give the news about the latest trending AI models")
         else:
-            push_undo(s, f"extra reel \"{request[:40]}\"")
-            extra_reel(s, researched_story(request))
+            story = researched_story(request)
+            if story:
+                push_undo(s, f"extra reel \"{request[:40]}\"")
+                extra_reel(s, story)
     elif low.startswith("/topic"):
         topic = text[6:].strip()
         similar = news.recent_match(topic, recent_titles(s)) if topic else None
@@ -812,7 +827,9 @@ def handle_button(s, cq):
                 except Exception as e:
                     tg.send(f"⚠️ {e}. You can send the headline as text instead, or /topic <what it's about>.")
             elif len(topic) >= 60:  # a sentence or more of news → research it first
-                extra_reel(s, researched_story(topic))
+                story = researched_story(topic)
+                if story:
+                    extra_reel(s, story)
             else:
                 extra_reel(s, custom(topic))
         return None

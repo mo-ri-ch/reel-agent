@@ -405,14 +405,17 @@ Return ONLY JSON:
  "official_url": "URL of the official announcement/product page, or empty",
  "corrections": ["anything in the message that was wrong or unconfirmed"],
  "sources": ["other URLs you used"]}}
-If you can't find any real coverage of this news, return {{"headline": "", "summary": "", "not_found": true}}."""
+If some names can't be found, still cover the parts of the request you CAN find (e.g. "recent trending models"),
+list the names you couldn't identify in "unknown_names", and continue. Only if nothing at all can be found, return
+{{"headline": "", "summary": "", "not_found": true, "unknown_names": [...]}}."""
     try:
         res = parse_json(ask(prompt, search=True, temperature=0.2, json_mode=True))
     except Exception as e:
         print(f"Research failed: {e}")
         return None
+    unknown = [str(n)[:40] for n in (res.get("unknown_names") or [])][:5]
     if res.get("not_found") or not res.get("headline"):
-        return {"not_found": True}
+        return {"not_found": True, "unknown_names": unknown}
     link = resolve_url(res.get("article_url", ""))
     official = resolve_url(res.get("official_url", ""))
     sources = [u for u in (resolve_url(x) for x in (res.get("sources") or [])[:4]) if u]
@@ -425,4 +428,5 @@ If you can't find any real coverage of this news, return {{"headline": "", "summ
     return {"title": str(res["headline"])[:140], "summary": str(res.get("summary", ""))[:1500],
             "source": str(res.get("outlet", ""))[:40], "link": link, "published": published,
             "official_url": official, "research_sources": [u for u in [link, official, *sources] if u],
-            "corrections": [str(c)[:200] for c in (res.get("corrections") or [])][:4], "researched": True}
+            "corrections": [str(c)[:200] for c in (res.get("corrections") or [])][:4], "researched": True,
+            "unknown_names": unknown}
