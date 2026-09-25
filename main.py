@@ -274,7 +274,9 @@ def custom(text):
 
 def caption_for(draft, ai_voice=False):
     note = f"\n\n{AI_VOICE_NOTE}" if ai_voice and AI_VOICE_NOTE else ""
-    return draft["caption"] + note + "\n\n" + " ".join(f"#{h}" for h in draft["hashtags"])
+    credits = draft.get("credits") or []
+    credit_text = ("\n\n📷 " + " · ".join(credits))[:600] if credits else ""
+    return draft["caption"] + note + credit_text + "\n\n" + " ".join(f"#{h}" for h in draft["hashtags"])
 
 
 # ---------- scheduling & posting ----------
@@ -654,6 +656,7 @@ def cmd_render():
             except Exception as e:
                 tg.send(f"⚠️ Couldn't download your video ({e}), so I'm using the normal opening.")
         out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip)
+        s["draft"]["credits"] = list(getattr(video, "LAST_CREDITS", []) or [])
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
         if getattr(video, "LAST_SUMMARY", ""):
             voice_info += f"\n🎞 {video.LAST_SUMMARY}"

@@ -385,6 +385,116 @@ def download(url, path):
     return path
 
 
+# ---------------------------------------------------------------- real photos (Wikimedia)
+WIKI_UA = {"User-Agent": "GradientAIReelAgent/1.0 (Instagram reels bot; github.com/mo-ri-ch/reel-agent)"}
+FREE_LICENSES = ("cc0", "cc by", "cc-by", "public domain", "pd", "cc by-sa", "cc-by-sa", "attribution")
+LAST_CREDITS = []
+
+
+def _clean_html(t):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", t or "")).strip()
+
+
+def _commons_file_info(file_titles):
+    """Looks up files on Wikimedia Commons; returns only freely licensed ones."""
+    r = requests.get("https://commons.wikimedia.org/w/api.php", timeout=25, headers=WIKI_UA, params={
+        "action": "query", "format": "json", "titles": "|".join(file_titles[:10]),
+        "prop": "imageinfo", "iiprop": "url|extmetadata|mime|size", "iiurlwidth": 1400})
+    found = []
+    pages = (r.json().get("query") or {}).get("pages") or {}
+    for page in pages.values():
+        info = (page.get("imageinfo") or [None])[0]
+        if not info or not str(info.get("mime", "")).startswith("image/") or "svg" in info.get("mime", ""):
+            continue
+        meta = info.get("extmetadata") or {}
+        lic = _clean_html((meta.get("LicenseShortName") or {}).get("value", ""))
+        if not any(k in lic.lower() for k in FREE_LICENSES) or "non-free" in lic.lower() or "fair use" in lic.lower():
+            continue
+        if (info.get("width") or 0) < 700:
+            continue
+        artist = _clean_html((meta.get("Artist") or {}).get("value", ""))[:60] or "Wikimedia Commons"
+        found.append({"url": info.get("thumburl") or info["url"], "credit": f"{artist} ({lic}), via Wikimedia Commons",
+                      "title": page.get("title", "")})
+    order = {t: i for i, t in enumerate(file_titles)}
+    return sorted(found, key=lambda f: order.get(f["title"], 99))
+
+
+def wiki_photo(entity):
+    """A real, freely licensed photo of a named person, company, place or product. Returns (PIL image, credit)."""
+    try:
+        # 1) the main picture of the Wikipedia article (usually the best, most recognisable photo)
+        r = requests.get("https://en.wikipedia.org/w/api.php", timeout=25, headers=WIKI_UA, params={
+            "action": "query", "format": "json", "generator": "search", "gsrsearch": entity, "gsrlimit": 1,
+            "prop": "pageimages", "piprop": "name"})
+        pages = list(((r.json().get("query") or {}).get("pages") or {}).values())
+        titles = [f"File:{p['pageimage']}" for p in pages if p.get("pageimage")]
+        # 2) more photos from Wikimedia Commons
+        r = requests.get("https://commons.wikimedia.org/w/api.php", timeout=25, headers=WIKI_UA, params={
+            "action": "query", "format": "json", "list": "search", "srsearch": f"{entity} filetype:bitmap",
+            "srnamespace": 6, "srlimit": 6})
+        titles += [x["title"] for x in (r.json().get("query") or {}).get("search", [])]
+        for f in _commons_file_info(list(dict.fromkeys(titles))):
+            img = fetch_image_wiki(f["url"])
+            if img:
+                print(f"Real photo for '{entity}': {f['title']}")
+                return img, f["credit"]
+    except Exception as e:
+        print(f"Wikimedia photo for '{entity}' failed: {e}")
+    return None, None
+
+
+def fetch_image_wiki(url):
+    try:
+        r = requests.get(url, timeout=30, headers=WIKI_UA)
+        r.raise_for_status()
+        img = Image.open(io.BytesIO(r.content)).convert("RGB")
+        return img if img.width >= 500 else None
+    except Exception:
+        return None
+
+
+def add_credit(img, credit):
+    """Small photo credit in the corner (required by the free licences)."""
+    img = img.copy()
+    d = ImageDraw.Draw(img)
+    f = font(24, semi=True)
+    text = f"Photo: {credit}"[:95]
+    tw = d.textlength(text, font=f)
+    d.rounded_rectangle([W - tw - 46, H - 88, W - 18, H - 46], radius=10, fill=(0, 0, 0))
+    d.text((W - 32, H - 67), text, font=f, fill=(230, 230, 230), anchor="rm")
+    return img
+
+
+def make_source_card(path, outlet, headline, domain=""):
+    """A clean 'where this comes from' card: publisher logo, name and the headline."""
+    bg = gradient((245, 245, 248), (220, 224, 235))
+    d = ImageDraw.Draw(bg)
+    x0, y0, x1 = 70, 520, W - 70
+    card_h = 700
+    d.rounded_rectangle([x0 + 8, y0 + 12, x1 + 8, y0 + card_h + 12], radius=36, fill=(190, 194, 205))
+    d.rounded_rectangle([x0, y0, x1, y0 + card_h], radius=36, fill=(255, 255, 255))
+    logo = brand_logo(outlet, domain) if outlet else None
+    x = x0 + 50
+    if logo:
+        lg = logo.convert("RGBA")
+        lg.thumbnail((110, 110), Image.LANCZOS)
+        bg.paste(lg, (x, y0 + 50), lg)
+        x += 130
+    d.text((x, y0 + 105), outlet or domain, font=font(56), fill=(15, 15, 25), anchor="lm")
+    d.line([x0 + 50, y0 + 190, x1 - 50, y0 + 190], fill=(225, 225, 232), width=3)
+    y = y0 + 230
+    for line in wrap(d, headline, font(64, semi=True), x1 - x0 - 100)[:5]:
+        d.text((x0 + 50, y), line, font=font(64, semi=True), fill=(20, 20, 30))
+        y += 84
+    if domain:
+        d.text((x0 + 50, y0 + card_h - 70), domain, font=font(36, semi=True), fill=(120, 124, 140))
+    tag = font(40, semi=True)
+    tw = d.textlength("SOURCE", font=tag)
+    d.rounded_rectangle([W / 2 - tw / 2 - 30, 400, W / 2 + tw / 2 + 30, 470], radius=35, fill=ACCENT)
+    d.text((W / 2, 435), "SOURCE", font=tag, fill="black", anchor="mm")
+    bg.save(path)
+
+
 # ---------------------------------------------------------------- logos & sound effects
 SI = "https://cdn.jsdelivr.net/npm/simple-icons@16"
 _SI_COLORS = None
@@ -542,7 +652,7 @@ LAST_SUMMARY = ""
 
 def plan_visuals(beats, tmp, times=None):
     """Finds visuals for every beat. Returns a list (per beat) of shots: ('clip'|'image', path)."""
-    global LAST_SUMMARY
+    global LAST_SUMMARY, LAST_CREDITS
     import images
     import writer
     options, thumbs = {}, {}
@@ -568,11 +678,28 @@ def plan_visuals(beats, tmp, times=None):
         except Exception as e:
             print(f"Clip picking skipped: {e}")
 
-    plan, used, counts = [], set(), {"clips": 0, "AI images": 0, "cards": 0}
+    plan, used, counts = [], set(), {"real photos": 0, "clips": 0, "AI images": 0, "cards": 0}
+    LAST_CREDITS = []
     for i, b in enumerate(beats):
         length = (times[i][1] - times[i][0]) if times else 3.0
         want = 2 if length > 3.4 else 1
         shots = []
+        if b["visual"] == "photo":
+            img, credit = wiki_photo(b["entity"])
+            if img:
+                p = os.path.join(tmp, f"photo_{i}.png")
+                add_credit(full_frame(img), credit.split(" (")[0]).save(p)
+                shots.append(("image", p))
+                counts["real photos"] += 1
+                LAST_CREDITS.append(f"{b['entity']}: {credit}")
+            else:  # no free photo found: fall back to a stock clip search for it
+                b = {**b, "visual": "clip", "query": b["entity"]}
+                options[i] = pexels_search(b["entity"]) or pexels_search("technology")
+        if b["visual"] == "source":
+            p = os.path.join(tmp, f"source_{i}.png")
+            make_source_card(p, b.get("outlet", ""), b.get("headline") or b["line"], b.get("domain", ""))
+            shots.append(("image", p))
+            counts["cards"] += 1
         if b["visual"] == "clip":
             order = [j for j in picks.get(i, []) if 0 <= j < len(options.get(i, []))]
             if i in picks and not order:  # Gemini: none of the clips fit this line

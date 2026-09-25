@@ -125,11 +125,17 @@ SCRIPT
   "the future is here", "in today's world", "stay tuned", "mind-blowing".
 - No emojis, hashtags, stage directions or brackets in the lines. Write numbers the way they're said ("ten times", "two billion").
 
-VISUALS — split the script into 5 to 8 beats (one or two sentences each). Every beat gets ONE visual:
+VISUALS — split the script into 5 to 8 beats (one or two sentences each). Every beat gets ONE visual.
+Prefer REAL and SPECIFIC visuals over generic ones: when a line names a person, company, university, lab, product or
+place, use "photo"; when it names where the news comes from (a journal, paper or announcement), use "source".
 - "clip": real stock video. Use for things footage shows well: people using phones or laptops, offices, city streets,
   data centers, robots, coding screens, doctors, students. "query" = 2-4 concrete words ("woman talking to phone", not "AI innovation").
 - "image": AI-generated picture for specific or futuristic ideas stock can't show. "prompt" = vivid cinematic vertical scene,
   no text, no logos, no real people's faces.
+- "photo": a real photo from Wikipedia/Wikimedia Commons. "entity" = the exact thing to show, as its Wikipedia title
+  would be: "Stanford University", "Jensen Huang", "Nvidia headquarters", "Dassault Rafale", "CERN". Use it often.
+- "source": a card showing the source. "outlet" = journal, publisher or company ("Nature Medicine", "Google DeepMind"),
+  "domain" = its website ("nature.com"), "headline" = the paper or announcement title in under 12 words.
 - "stat": a big number on screen, ONLY for a number stated in the news story or your search results (at most 2).
   Never invent, round up or estimate a number. If unsure, use "clip" or "image" instead. "big" = "600M", "small" = "weekly users".
 Mix the types; don't use the same type more than twice in a row.
@@ -141,6 +147,8 @@ Return ONLY JSON:
  "hook_text": "3 to 6 punchy words shown big on the first screen",
  "beats": [{{"line": "spoken sentence(s)", "visual": "clip", "query": "..."}},
            {{"line": "...", "visual": "image", "prompt": "..."}},
+           {{"line": "...", "visual": "photo", "entity": "Stanford University"}},
+           {{"line": "...", "visual": "source", "outlet": "Nature Medicine", "domain": "nature.com", "headline": "..."}},
            {{"line": "...", "visual": "stat", "big": "...", "small": "...",
              "brands": [{{"name": "OpenAI", "domain": "openai.com"}}]}}],
  "caption": "2-3 sentence Instagram caption ending with a question",
@@ -156,10 +164,12 @@ def normalize_draft(draft, topic):
     for b in draft.get("beats") or []:
         if not isinstance(b, dict) or not str(b.get("line", "")).strip():
             continue
-        kind = b.get("visual") if b.get("visual") in ("clip", "image", "stat") else "clip"
+        kind = b.get("visual") if b.get("visual") in ("clip", "image", "stat", "photo", "source") else "clip"
         beats.append({"line": str(b["line"]).strip(), "visual": kind,
                       "query": str(b.get("query") or "technology"), "prompt": str(b.get("prompt") or ""),
                       "big": str(b.get("big") or "")[:10], "small": str(b.get("small") or "")[:40],
+                      "entity": str(b.get("entity") or "")[:80], "outlet": str(b.get("outlet") or "")[:60],
+                      "domain": str(b.get("domain") or "")[:60], "headline": str(b.get("headline") or "")[:120],
                       "brands": [{"name": str(x.get("name", ""))[:30], "domain": str(x.get("domain", ""))[:60]}
                                  for x in (b.get("brands") or []) if isinstance(x, dict) and x.get("name")][:2]})
     if not beats:  # older-style reply: build beats from the script lines
@@ -170,6 +180,10 @@ def normalize_draft(draft, topic):
                   "big": "", "small": ""} for i, l in enumerate(lines) if l.strip()]
     for b in beats:
         if b["visual"] == "stat" and not b["big"]:
+            b["visual"] = "clip"
+        if b["visual"] == "photo" and not b["entity"]:
+            b["visual"] = "clip"
+        if b["visual"] == "source" and not (b["outlet"] or b["headline"]):
             b["visual"] = "clip"
         if b["visual"] == "image" and not b["prompt"]:
             b["prompt"] = f"a cinematic illustration of: {b['line']}"
