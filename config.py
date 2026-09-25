@@ -42,13 +42,13 @@ KOKORO_FEMALE = env("KOKORO_FEMALE", "af_heart")
 AI_VOICE_NOTE = env("AI_VOICE_NOTE", "")  # optional line added to captions of AI-voiced reels (off)
 
 TIMEZONE = ZoneInfo(env("TIMEZONE", "Asia/Kolkata"))
-AUTO_PICK_HOURS = float(env("AUTO_PICK_HOURS", "1"))
+AUTO_PICK_HOURS = float(env("AUTO_PICK_HOURS", "0.75"))
 # When the bot sends you fresh stories (your local time) — one reel per time
-OFFER_TIMES = [t.strip() for t in env("OFFER_TIMES", "07:00,10:30,13:30,16:30,19:30").split(",") if t.strip()]
+OFFER_TIMES = [t.strip() for t in env("OFFER_TIMES", "07:00,09:30,12:00,14:30,17:00,19:30").split(",") if t.strip()]
 # Autopilot: if you don't reply, use the AI voice / schedule the reel after this many hours
-AUTO_APPROVE_HOURS = float(env("AUTO_APPROVE_HOURS", "1"))
+AUTO_APPROVE_HOURS = float(env("AUTO_APPROVE_HOURS", "0.75"))
 # Times (your local time) when finished reels get posted
-POST_TIMES = [t.strip() for t in env("POST_TIMES", "09:00,12:30,15:30,18:30,21:30").split(",") if t.strip()]
+POST_TIMES = [t.strip() for t in env("POST_TIMES", "09:00,11:30,14:00,16:30,19:00,21:30").split(",") if t.strip()]
 HANDLE = env("INSTAGRAM_HANDLE", "")
 SPOKEN_NAME = env("SPOKEN_NAME", "Gradient AI Labs")  # how the voice-over says your @handle
 NICHE = env("CHANNEL_NICHE", "daily AI news, trends and advancements")

@@ -1,6 +1,6 @@
 # 🎬 Gradient AI Labs · Reel Agent
 
-A free agent that makes **5 faceless AI-news Instagram Reels a day**.
+A free agent that makes **6 faceless AI-news Instagram Reels a day**.
 You steer it from Telegram with a few taps; it writes the script, voices it, edits the video
 and posts it to **@gradientailabs**. If you're busy, autopilot finishes the job on its own.
 
@@ -12,11 +12,11 @@ and posts it to **@gradientailabs**. If you're busy, autopilot finishes the job 
 
 | Time | What happens |
 |---|---|
-| **7:00, 10:30, 13:30, 16:30, 19:30** | The bot sends the top 3 AI stories as buttons (one reel per time) |
+| **7:00, 9:30, 12:00, 14:30, 17:00, 19:30** | The bot sends the top 3 AI stories as buttons (one reel per time) |
 | You tap a story | Gemini writes a script (≈1 min) |
 | You tap a voice | The reel is made (≈5–10 min) and a preview arrives |
 | You tap **✅ Schedule** | It's queued for the next posting time |
-| **9:00, 12:30, 15:30, 18:30, 21:30** | Scheduled reels go live on Instagram, and the bot sends you the link |
+| **9:00, 11:30, 14:00, 16:30, 19:00, 21:30** | Scheduled reels go live on Instagram, and the bot sends you the link |
 
 Replies usually arrive within **about a minute** (see *Doorbell* below).
 
@@ -34,7 +34,7 @@ is a reel that's already live on Instagram.
 
 ### Autopilot (on by default)
 
-If you don't reply within **1 hour** at each step, the agent picks story #1, uses the AI voice and schedules
+If you don't reply within **45 minutes** at each step, the agent picks story #1, uses the AI voice and schedules
 the reel itself. Your reply or tap at any point takes over. Toggle it with `/autopilot`.
 
 ### Commands
@@ -111,9 +111,9 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 | Variable | Default | What it changes |
 |---|---|---|
 | `INSTAGRAM_HANDLE` | — | Handle shown on reels |
-| `POST_TIMES` | `09:00,12:30,15:30,18:30,21:30` | Posting times (India time) |
-| `OFFER_TIMES` | `07:00,10:30,13:30,16:30,19:30` | When fresh stories are sent (one reel each) |
-| `AUTO_PICK_HOURS` / `AUTO_APPROVE_HOURS` | `1` | How long autopilot waits at each step |
+| `POST_TIMES` | `09:00,11:30,14:00,16:30,19:00,21:30` | Posting times (India time) |
+| `OFFER_TIMES` | `07:00,09:30,12:00,14:30,17:00,19:30` | When fresh stories are sent (one reel each) |
+| `AUTO_PICK_HOURS` / `AUTO_APPROVE_HOURS` | `0.75` | How long autopilot waits at each step |
 | `VOICES_MALE` / `VOICES_FEMALE` | natural US voices (Andrew, Brian / Ava, Emma) | Voice lists (comma-separated) |
 | `TTS_RATE` | `+6%` | Speaking speed |
 | `MUSIC_VOLUME` | `0.15` | Background music level |
