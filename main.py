@@ -255,9 +255,9 @@ def park_reel(s):
     reasons = (s["draft"].get("fact_notes") or []) + (s["draft"].get("visual_notes") or [])
     links = sources_block(s)
     reset_reel(s)
-    tg.send(f"⏸ Parked for your review: “{title}”.\nWhy:\n• " + "\n• ".join(reasons or ["quality check"]) +
-            links + "\nAutopilot won't post it — "
-            "but the next reels carry on as normal. Review it anytime (parked reels are kept for 24 hours).",
+    tg.send(esc(f"⏸ Parked for your review: “{title}”.\nWhy:\n• " + "\n• ".join(reasons or ["quality check"])) +
+            links + esc("\nAutopilot won't post it — "
+            "but the next reels carry on as normal. Review it anytime (parked reels are kept for 24 hours)."), html=True,
             buttons=[[btn(s, f"👀 Review parked reels ({len(s['held'])})", "/held", True)]])
     whatsapp.alert(f"⏸ A reel is parked for your review: {title}. Open Telegram → /held")
     next_offer_if_waiting(s)
@@ -281,9 +281,9 @@ def review_held(s):
     s["draft"]["visual_status"] = "reviewed" if s["draft"].get("visual_status") == "issues" else s["draft"].get("visual_status")
     notes = (h["draft"].get("fact_notes") or []) + (h["draft"].get("visual_notes") or [])
     tg.send_video_id(h["video_file_id"], caption=f"👀 Parked reel: {h['topic']['title']}")
-    tg.send("What the quality check flagged:\n• " + "\n• ".join(notes or ["(no details)"]) + sources_block(s) +
-            "\n\nIf it's fine, tap ✅ Schedule. You can also type changes to the script, or ⏭ Skip it." +
-            (f"\n\n{len(held)} more parked." if held else ""), buttons=preview_buttons(s))
+    tg.send(esc("What the quality check flagged:\n• " + "\n• ".join(notes or ["(no details)"])) + sources_block(s) +
+            esc("\n\nIf it's fine, tap ✅ Schedule. You can also type changes to the script, or ⏭ Skip it." +
+                (f"\n\n{len(held)} more parked." if held else "")), buttons=preview_buttons(s), html=True)
 
 
 def fact_check_step(draft, topic):
@@ -315,9 +315,29 @@ def resolve_links(urls, limit=4):
     return out
 
 
+def esc(text):
+    import html
+    return html.escape(text or "", quote=False)
+
+
+def link_label(url, topic):
+    from urllib.parse import urlparse
+    if topic and url == topic.get("link"):
+        who = topic.get("source") or urlparse(url).netloc.replace("www.", "")
+        return f"{who}: {topic.get('title', '')[:60]}"
+    host = urlparse(url).netloc.replace("www.", "")
+    return "Google News article" if "news.google." in host else host
+
+
 def sources_block(s):
+    """Short, tappable source names (the long addresses stay hidden behind the names)."""
+    import html
     links = (s.get("draft") or {}).get("source_links") or []
-    return ("\n\n🔗 Sources (tap to verify):\n" + "\n".join(f"{k}. {u}" for k, u in enumerate(links, 1))) if links else ""
+    if not links:
+        return ""
+    rows = [f'{k}. <a href="{html.escape(u, quote=True)}">{html.escape(link_label(u, s.get("topic")))}</a>'
+            for k, u in enumerate(links, 1)]
+    return "\n\n🔗 Sources (tap to open):\n" + "\n".join(rows)
 
 
 def fact_line(draft):
@@ -356,6 +376,32 @@ def checked_script(topic, previous=None, instruction=None):
         draft = writer.write_script(topic, previous=draft, instruction=fix)
         draft = fact_check_step(draft, topic)
     draft["fix_rounds"] = rounds
+    draft = make_specific(draft, topic)
+    return draft
+
+
+def make_specific(draft, topic):
+    """No vague 'a developer' / 'a startup': find the real names and rewrite with them (and their photo cards)."""
+    phrases = writer.vague_phrases(draft.get("script", ""))
+    if not phrases:
+        return draft
+    tg.send("🧐 The script is too general (" + ", ".join(f"“{p}”" for p in phrases) + ") — finding the actual names...")
+    names = writer.find_names(topic, phrases, draft["script"])
+    found = [n for n in names if n.get("found") and n.get("name")]
+    missing = [n.get("phrase", "") for n in names if not (n.get("found") and n.get("name"))] or \
+              [p for p in phrases if not any(p == n.get("phrase") for n in found)]
+    if found:
+        fix = ("Replace the vague references with these exact names and roles: " +
+               "; ".join(f"“{n['phrase']}” → {n['name']} ({n.get('role', '')})" for n in found) +
+               ". Give each named person a 'person' beat with their name and role. Keep everything else.")
+        draft = writer.write_script(topic, previous=draft, instruction=fix)
+        draft = fact_check_step(draft, topic)
+        tg.send("✅ Named: " + "; ".join(f"{n['name']} ({n.get('role', '')})" for n in found))
+    still = writer.vague_phrases(draft.get("script", ""))
+    if still or (missing and not found):
+        draft["vague_notes"] = still or missing
+        tg.send("⚠️ I couldn't find who these are: " + ", ".join(f"“{p}”" for p in (still or missing)) +
+                ". If you know, just reply with the name (e.g. “the developer is <name>, founder of <company>”).")
     return draft
 
 
@@ -391,16 +437,16 @@ def start_script(s, topic, instruction=None, auto=False):
     if clip and not instruction:
         tg.send("🎥 Using the clip you sent as the opening shot.")
     if draft.get("fact_status") == "unsure":
-        tg.send(script_message(draft) + "\n\n" + fact_line(draft) + sources_block(s) +
-                "\n\nI couldn't fix this after checking twice." +
-                (" Autopilot will switch to another story." if s.get("autopilot") else ""),
+        tg.send(esc(script_message(draft) + "\n\n" + fact_line(draft)) + sources_block(s) +
+                esc("\n\nI couldn't fix this after checking twice." +
+                    (" Autopilot will switch to another story." if s.get("autopilot") else "")), html=True,
                 buttons=[[btn(s, "➡️ Next story", "/nextstory"), btn(s, "Keep anyway", "/keepscript")],
                          [btn(s, "⏭ Skip", "/skip", True)]])
         if auto and s.get("autopilot"):
             next_story(s, "the facts couldn't be verified")
         return
-    tg.send(script_message(draft) + "\n\n" + fact_line(draft) + sources_block(s) +
-            (autopilot_note("script") if s.get("autopilot") else ""), buttons=script_buttons(s))
+    tg.send(esc(script_message(draft) + "\n\n" + fact_line(draft)) + sources_block(s) +
+            esc(autopilot_note("script") if s.get("autopilot") else ""), buttons=script_buttons(s), html=True)
 
 
 def recent_titles(s):
@@ -1044,12 +1090,12 @@ def cmd_render():
         s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
         s["preview_deadline"] = deadline() if s.get("autopilot") else None
-        tg.send("Instagram caption:\n\n" + caption_for(s["draft"], s.get("voice_mode") == "ai") +
-                sources_block(s) +
+        tg.send(esc("Instagram caption:\n\n" + caption_for(s["draft"], s.get("voice_mode") == "ai")) +
+                sources_block(s) + esc(
                 "\n\n—\nTap below, or type changes to the script ✍️. Send a picture 🖼 or a short video 🎥 for the opening shot." +
                 (("\n\n⚠️ Quality check needs you: autopilot won't post this one — watch it and tap Schedule if it's fine."
-                  if qa_hold(s["draft"]) else autopilot_note("preview")) if s.get("autopilot") else ""),
-                buttons=preview_buttons(s))
+                  if qa_hold(s["draft"]) else autopilot_note("preview")) if s.get("autopilot") else "")),
+                buttons=preview_buttons(s), html=True)
         whatsapp.alert("🎬 Your reel is ready for approval! Open Telegram to watch the preview and reply 'post'.")
     except Exception as e:
         traceback.print_exc()

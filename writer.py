@@ -128,7 +128,9 @@ SCRIPT
   WHAT exactly (the product or model name, the journal or paper, what it actually does), WHERE (country or city)
   and, when known, a real number or date from the source. Use Google Search to find the original source first.
   Never write vague filler like "recent research", "a new study", "experts say", "scientists", "tech giants",
-  "a major company" or "this technology" without naming who or what it is. If a detail can't be verified, leave it
+  "a major company" or "this technology" without naming who or what it is. NEVER say "a developer", "a startup",
+  "a team" or "an engineer": say who — e.g. not "a developer from Kerala" but "Kochi developer <full name>".
+  Every named person must get a "person" beat (their name + role) so their photo is shown. If a detail can't be verified, leave it
   out rather than inventing it.
 - End with one short question to spark comments. Do NOT add a "follow us" line or mention any @handle.
 - Banned words: game-changer, revolutionize, revolutionary, cutting-edge, unleash, delve, landscape, buckle up,
@@ -487,3 +489,36 @@ list the names you couldn't identify in "unknown_names", and continue. Only if n
             "official_url": official, "research_sources": [u for u in [link, official, *sources] if u],
             "corrections": [str(c)[:200] for c in (res.get("corrections") or [])][:4], "researched": True,
             "unknown_names": unknown, "via": via}
+
+
+VAGUE = re.compile(
+    r"(?i)\b(a|an|one|some|two|three)\s+(\w+\s+)?(developer|developers|startup|company|firm|team|researcher|researchers|"
+    r"engineer|engineers|student|students|scientist|scientists|founder|founders|entrepreneur|lab|group|coder|"
+    r"programmer|creator|creators|youngster|teenager|techie|professor|executive|ceo)\b"
+    r"|\b(experts|researchers|scientists|developers|officials|analysts)\s+(say|said|found|have|believe|warn|built)\b"
+    r"|\bsomeone\b|\b(a|one)\s+(major|big|leading|popular|well-known)\s+(\w+\s+)?(company|firm|lab|brand)\b")
+
+
+def vague_phrases(script):
+    """Vague references like "a developer from Kerala" that should name someone."""
+    return list(dict.fromkeys(m.group(0) for m in VAGUE.finditer(script or "")))[:6]
+
+
+def find_names(topic, phrases, script):
+    """Searches for the actual names behind vague references. Returns [{"phrase", "name", "role", "found"}]."""
+    prompt = f"""Story: {topic.get("title", "")}
+Details: {topic.get("summary", "")[:800]}
+Source: {topic.get("link", "")}
+Script: {script}
+
+These phrases in the script are vague: {json.dumps(phrases)}
+Use Google Search (and the source article) to find exactly WHO each one is: the person's full name and role/company,
+or the organisation's exact name. Return ONLY JSON:
+{{"names": [{{"phrase": "...", "name": "full name", "role": "role, organisation", "found": true}}]}}
+Set "found": false (and leave name empty) if you truly can't find it. Never guess a name."""
+    try:
+        res = parse_json(ask(prompt, search=True, temperature=0.1, json_mode=True))
+        return [n for n in (res.get("names") or []) if isinstance(n, dict)]
+    except Exception as e:
+        print(f"Name search failed: {e}")
+        return []

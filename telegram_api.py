@@ -21,11 +21,23 @@ def keyboard(rows):
                                            for row in rows]})
 
 
-def send(text, buttons=None):
+def send(text, buttons=None, html=False):
     chunks = [text[i:i + 4000] for i in range(0, len(text), 4000)] or [""]
+    if html and len(chunks) > 1:  # don't cut an HTML link in half
+        chunks = [text[:4000]]
     for n, chunk in enumerate(chunks):
         extra = {"reply_markup": keyboard(buttons)} if buttons and n == len(chunks) - 1 else {}
-        call("sendMessage", chat_id=TELEGRAM_CHAT_ID, text=chunk, disable_web_page_preview="true", **extra)
+        if html:
+            extra["parse_mode"] = "HTML"
+        try:
+            call("sendMessage", chat_id=TELEGRAM_CHAT_ID, text=chunk, disable_web_page_preview="true", **extra)
+        except RuntimeError:
+            if not html:
+                raise
+            import re as _re  # formatting problem: send it as plain text instead
+            plain = _re.sub(r"<[^>]+>", "", chunk)
+            extra.pop("parse_mode", None)
+            call("sendMessage", chat_id=TELEGRAM_CHAT_ID, text=plain, disable_web_page_preview="true", **extra)
 
 
 def send_video_id(file_id, caption="", buttons=None):
