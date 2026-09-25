@@ -1,8 +1,8 @@
-# 🎬 Gradient AI Labs · Reel Agent
+# 🎬 Gradient Daily · Reel Agent
 
 A free agent that makes **6 faceless AI-news Instagram Reels a day**.
 You steer it from Telegram with a few taps; it writes the script, voices it, edits the video
-and posts it to **@gradientailabs**. If you're busy, autopilot finishes the job on its own.
+and posts it to **@gradient.daily** (by Gradient AI Labs). If you're busy, autopilot finishes the job on its own.
 
 **Cost: ₹0 / month.** New here? See [Setup from scratch](#setup-from-scratch-about-2-hours-one-time).
 
