@@ -1,6 +1,6 @@
 {
-  "offset": 153809574,
-  "stage": "awaiting_approval",
+  "offset": 153809575,
+  "stage": "awaiting_voice",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -134,57 +134,13 @@
   "video_file_id": "BAACAgUAAxkDAAOYarYBKq0MKjy8dnikhyAXDc-n37IAAmsiAAK7BLFVcNCOE2UKSFQ9BA",
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
-  "preview_deadline": "2026-09-25T12:35:46.866135+05:30",
+  "script_deadline": "2026-09-25T12:37:31.772397+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
   "pending_topic": null,
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "choosing \"2\"",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "UNU and University of Bologna Partner to Advance AI Education, Research and Policy",
-            "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPelZYX2F2UHFBTTFtWWxoY09velViY1hpWm80S0pqNi10QTlZX1JoOXpzZl9sZF9DcGJXcjlVSVdVVVc4eE9YQkgxcjFRWVpKTElGaXZSMmxUYUR2R3dIbERhdUtrdjBwekY2NTU5OC1Tb0lkTEtNWGxSQldpQnFNR2FRdkdoZGlVcUVOcjFSenNsQjJjcFRoWHJBTWI?oc=5",
-            "summary": "UNU and University of Bologna Partner to Advance AI Education, Research and Policy unu.edu",
-            "source": "unu.edu",
-            "published": "2026-09-25T00:49:42+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Artificial intelligence in biomarker discovery for diseases: diagnostic and therapeutic prospects",
-            "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXalNBTldlSXlLd0trNHVhekNBblRQUDl4b19RY19YSUVOdmRGdnNLNTgyUXMwRW1PelVKT3Izb1JyY1JyRlBCaVdCNFlaT0d5bHd3N2xYa0c4S0Y0NzFB?oc=5",
-            "summary": "Artificial intelligence in biomarker discovery for diseases: diagnostic and therapeutic prospects Nature",
-            "source": "Nature",
-            "published": "2026-09-24T23:23:56+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Nick Clegg plays down fears ‘godlike’ AI could exterminate humanity",
-            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSGFHWko1TlZzd0RzMHVFSUxPdl9NYjY3QTlIMzVVcmF4QlRvN29Nb2R1UVk1VDFoeTBUNGRrSlVFeWNVcDBJQkctTHZsYjVORXlRQXhtdE01Wmp3RnZRMDBQV3hZZ1dGVTc3OGVxNDRXT29RTXpydTZNMm9hbjI2ZDMxV1pNUFM1dmxVczdjd0VNTjJkZzFNZC16dThpM3lZOTJ0cXc2YmRpRjNPaXJRVTNRc21HbmM?oc=5",
-            "summary": "Nick Clegg plays down fears ‘godlike’ AI could exterminate humanity The Guardian",
-            "source": "The Guardian",
-            "published": "2026-09-24T23:10:00+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-09-25T10:00:35.122014+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "skipping",
       "data": {
@@ -489,6 +445,149 @@
         "user_video_id": null,
         "script_deadline": "2026-09-25T12:33:20.567663+05:30",
         "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "asking for a new voice",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta is going to let you build games with AI right on your phone",
+          "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+          "summary": "Meta has a new plan to get people to make games for its Horizon social platform. The company today announced two new development tools that will let you create games with AI prompts: Horizon Create, a mobile app, and Horizon Studio, a browser app that offers more granular controls. The apps will be available in […]",
+          "source": "AI | The Verge",
+          "published": "2026-09-24T17:52:29+00:00",
+          "angle": "Meta's new development tools let users build complete games on their phones using simple AI prompts."
+        },
+        "draft": {
+          "title": "Build games with AI on your phone",
+          "hook_text": "Make games with AI prompts",
+          "beats": [
+            {
+              "line": "Meta just dropped two new tools to let anyone build games using text prompts.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Meta is going to let you build games with AI right on your phone",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "One is Horizon Create, a mobile app meant for making things on the go.",
+              "visual": "clip",
+              "query": "person using smartphone app",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "The other is Horizon Studio, a browser app with deeper controls for your projects.",
+              "visual": "clip",
+              "query": "laptop screen coding interface",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Meta wants to fill its Horizon social platform with user-made worlds.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "vertical cinematic shot of a glowing virtual reality world and digital avatars",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you build a game if it was this easy?",
+              "visual": "clip",
+              "query": "person smiling looking at phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "brands": []
+            }
+          ],
+          "caption": "Meta is rolling out mobile and browser tools that let users create games using simple AI prompts. Would you build your own game using your phone?",
+          "hashtags": [
+            "meta",
+            "horizon",
+            "aigames",
+            "gamedev",
+            "artificialintelligence",
+            "technews",
+            "mobileapps",
+            "innovation",
+            "virtualreality",
+            "futuretech",
+            "software"
+          ],
+          "sources": [
+            "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games"
+          ],
+          "script": "Meta just dropped two new tools to let anyone build games using text prompts.\nOne is Horizon Create, a mobile app meant for making things on the go.\nThe other is Horizon Studio, a browser app with deeper controls for your projects.\nMeta wants to fill its Horizon social platform with user-made worlds.\nWould you build a game if it was this easy?",
+          "keywords": [
+            "person using smartphone app",
+            "laptop screen coding interface",
+            "person smiling looking at phone"
+          ],
+          "image_prompts": [
+            "vertical cinematic shot of a glowing virtual reality world and digital avatars"
+          ],
+          "credits": []
+        },
+        "video_file_id": "BAACAgUAAxkDAAOYarYBKq0MKjy8dnikhyAXDc-n37IAAmsiAAK7BLFVcNCOE2UKSFQ9BA",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": "2026-09-25T12:35:46.866135+05:30",
         "pending_topic": null
       }
     }
