@@ -151,7 +151,8 @@ def mark_undo(s, **info):
 def stories_text(s):
     lines = ["📰 Top AI stories right now:\n"]
     for i, p in enumerate(s["candidates"], 1):
-        lines.append(f"{i}) {p['title']}\n   {p['source']}" + (f" · {p['angle']}" if p.get("angle") else ""))
+        lines.append(f"{i}) {p['title']}\n   {p['source']}" + (f" · {p['angle']}" if p.get("angle") else "") +
+                     (f"\n   🔗 {p['link']}" if p.get("link") else ""))
     when = (datetime.fromisoformat(s["choose_deadline"]).strftime("%I:%M %p").lstrip("0")
             if s.get("choose_deadline") else "")
     lines.append("\nTap a story, or type your own topic." + (f"\nNo reply by {when}? I'll go with #1." if when else ""))
@@ -247,9 +248,10 @@ def park_reel(s):
                       "voice_mode": s.get("voice_mode"), "held_at": now_iso})
     title = s["topic"]["title"]
     reasons = (s["draft"].get("fact_notes") or []) + (s["draft"].get("visual_notes") or [])
+    links = sources_block(s)
     reset_reel(s)
     tg.send(f"⏸ Parked for your review: “{title}”.\nWhy:\n• " + "\n• ".join(reasons or ["quality check"]) +
-            "\nAutopilot won't post it — "
+            links + "\nAutopilot won't post it — "
             "but the next reels carry on as normal. Review it anytime (parked reels are kept for 24 hours).",
             buttons=[[btn(s, f"👀 Review parked reels ({len(s['held'])})", "/held", True)]])
     whatsapp.alert(f"⏸ A reel is parked for your review: {title}. Open Telegram → /held")
@@ -274,7 +276,7 @@ def review_held(s):
     s["draft"]["visual_status"] = "reviewed" if s["draft"].get("visual_status") == "issues" else s["draft"].get("visual_status")
     notes = (h["draft"].get("fact_notes") or []) + (h["draft"].get("visual_notes") or [])
     tg.send_video_id(h["video_file_id"], caption=f"👀 Parked reel: {h['topic']['title']}")
-    tg.send("What the quality check flagged:\n• " + "\n• ".join(notes or ["(no details)"]) +
+    tg.send("What the quality check flagged:\n• " + "\n• ".join(notes or ["(no details)"]) + sources_block(s) +
             "\n\nIf it's fine, tap ✅ Schedule. You can also type changes to the script, or ⏭ Skip it." +
             (f"\n\n{len(held)} more parked." if held else ""), buttons=preview_buttons(s))
 
@@ -285,6 +287,32 @@ def fact_check_step(draft, topic):
     draft, status, notes = writer.fact_check(draft, topic)
     draft["fact_status"], draft["fact_notes"] = status, notes
     return draft
+
+
+def resolve_links(urls, limit=4):
+    """Readable source links: follows redirect links (like Gemini's search links) to the real page."""
+    import requests
+    out = []
+    for u in urls:
+        if not isinstance(u, str) or not u.startswith("http"):
+            continue
+        final = u
+        if "grounding-api-redirect" in u or "vertexaisearch" in u:
+            try:
+                final = requests.get(u, timeout=8, allow_redirects=True, stream=True,
+                                     headers={"User-Agent": "Mozilla/5.0"}).url
+            except Exception:
+                pass
+        if final not in out:
+            out.append(final)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def sources_block(s):
+    links = (s.get("draft") or {}).get("source_links") or []
+    return ("\n\n🔗 Sources (tap to verify):\n" + "\n".join(f"{k}. {u}" for k, u in enumerate(links, 1))) if links else ""
 
 
 def fact_line(draft):
@@ -347,6 +375,7 @@ def start_script(s, topic, instruction=None, auto=False):
     tg.action("typing")
     tg.send("✍️ Revising the script..." if instruction else f"✍️ Writing a script about: {topic['title']}")
     draft = checked_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
+    draft["source_links"] = resolve_links([topic.get("link", "")] + list(draft.get("sources") or []))
     image = s.get("user_image_id") if instruction else None
     clip = s.get("user_video_id") if instruction else s.pop("next_video_id", None)
     reset_reel(s)
@@ -355,7 +384,7 @@ def start_script(s, topic, instruction=None, auto=False):
     if clip and not instruction:
         tg.send("🎥 Using the clip you sent as the opening shot.")
     if draft.get("fact_status") == "unsure":
-        tg.send(script_message(draft) + "\n\n" + fact_line(draft) +
+        tg.send(script_message(draft) + "\n\n" + fact_line(draft) + sources_block(s) +
                 "\n\nI couldn't fix this after checking twice." +
                 (" Autopilot will switch to another story." if s.get("autopilot") else ""),
                 buttons=[[btn(s, "➡️ Next story", "/nextstory"), btn(s, "Keep anyway", "/keepscript")],
@@ -363,7 +392,7 @@ def start_script(s, topic, instruction=None, auto=False):
         if auto and s.get("autopilot"):
             next_story(s, "the facts couldn't be verified")
         return
-    tg.send(script_message(draft) + "\n\n" + fact_line(draft) +
+    tg.send(script_message(draft) + "\n\n" + fact_line(draft) + sources_block(s) +
             (autopilot_note("script") if s.get("autopilot") else ""), buttons=script_buttons(s))
 
 
@@ -870,6 +899,7 @@ def cmd_render():
         s["stage"] = "awaiting_approval"
         s["preview_deadline"] = deadline() if s.get("autopilot") else None
         tg.send("Instagram caption:\n\n" + caption_for(s["draft"], s.get("voice_mode") == "ai") +
+                sources_block(s) +
                 "\n\n—\nTap below, or type changes to the script ✍️. Send a picture 🖼 or a short video 🎥 for the opening shot." +
                 (("\n\n⚠️ Quality check needs you: autopilot won't post this one — watch it and tap Schedule if it's fine."
                   if qa_hold(s["draft"]) else autopilot_note("preview")) if s.get("autopilot") else ""),
