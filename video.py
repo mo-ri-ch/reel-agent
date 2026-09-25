@@ -352,13 +352,94 @@ def opening_video_shot(src, length, overlay_png, text_seconds, out):
         "-map", "[out]", "-t", f"{length:.3f}", *encode_args(), out])
 
 
-def make_stat_card(path, big, small, image=None):
+def make_stat_card(path, big, small, image=None, draw_number=True):
     bg = darken(full_frame(image).filter(ImageFilter.GaussianBlur(18)), 0.55, 0.85) if image else gradient()
     d = ImageDraw.Draw(bg)
     size = 300 if len(big) <= 4 else 240 if len(big) <= 6 else 180
-    d.text((W / 2, 560), big, font=font(size), fill=ACCENT, anchor="ma", stroke_width=6, stroke_fill="black")
+    if draw_number:
+        d.text((W / 2, 560), big, font=font(size), fill=ACCENT, anchor="ma", stroke_width=6, stroke_fill="black")
     text_block(d, small.upper(), font(68, semi=True), 560 + int(size * 1.15))
     bg.save(path)
+    return size
+
+
+# ---------------------------------------------------------------- animations
+def ease_out(x):
+    x = max(0.0, min(1.0, x))
+    return 1 - (1 - x) ** 3
+
+
+def save_frames(folder, frames):
+    os.makedirs(folder, exist_ok=True)
+    for k, fr in enumerate(frames):
+        fr.save(os.path.join(folder, f"{k:03d}.png"))
+    return {"dir": folder, "n": len(frames)}
+
+
+def stat_animation(tmp, i, big, small):
+    """The number counts up (0 → 600M) and settles. Returns shots, or None if it isn't a countable number."""
+    m = re.match(r"^([^\d]*)(\d[\d,]*\.?\d*)(.*)$", big.strip())
+    if not m:
+        return None
+    prefix, num, suffix = m.groups()
+    value = float(num.replace(",", ""))
+    decimals = len(num.split(".")[1]) if "." in num else 0
+    bg = os.path.join(tmp, f"stat_bg_{i}.png")
+    size = make_stat_card(bg, big, small, draw_number=False)
+    full = os.path.join(tmp, f"stat_{i}.png")
+    make_stat_card(full, big, small)
+    frames, n = [], 22
+    for k in range(n):
+        v = value * ease_out((k + 1) / n)
+        txt = f"{prefix}{v:,.{decimals}f}{suffix}" if "," in num else f"{prefix}{v:.{decimals}f}{suffix}"
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(layer).text((W / 2, 560), txt if k < n - 1 else big, font=font(size), fill=ACCENT,
+                                   anchor="ma", stroke_width=6, stroke_fill="black")
+        frames.append(layer)
+    anim = save_frames(os.path.join(tmp, f"stat_frames_{i}"), frames)
+    return [("layered", {"bg": bg, **anim}), ("image", full)]
+
+
+def hook_animation(tmp, hook, label, image=None):
+    """The opening headline pops in line by line."""
+    bg_img = darken(full_frame(image, center=0.68) if image else gradient(), 0.25, 0.6)
+    bg = os.path.join(tmp, "hook_bg.png")
+    bg_img.save(bg)
+    probe = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    size = 118
+    while size > 70 and len(wrap(probe, hook.upper(), font(size), W - 150)) > 3:
+        size -= 8
+    fnt, lines = font(size), wrap(probe, hook.upper(), font(size), W - 150)
+    lf = font(38, semi=True)
+
+    def draw_state(t):
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(layer)
+        tw = d.textlength(label, font=lf)
+        d.rounded_rectangle([W / 2 - tw / 2 - 28, 300, W / 2 + tw / 2 + 28, 368], radius=34, fill=ACCENT)
+        d.text((W / 2, 334), label, font=lf, fill="black", anchor="mm")
+        y = 420
+        for k, line in enumerate(lines):
+            p = ease_out((t - 2 - k * 4) / 5)  # each line starts 4 frames after the previous
+            step = int(size * 1.12 + size * 0.15)
+            if p > 0:
+                tile = Image.new("RGBA", (W, step + 40), (0, 0, 0, 0))
+                td = ImageDraw.Draw(tile)
+                lw = td.textlength(line, font=fnt)
+                pad = int(size * 0.22)
+                td.rounded_rectangle([W / 2 - lw / 2 - pad, 20 - pad * 0.4, W / 2 + lw / 2 + pad, 20 + size * 1.02 + pad * 0.4],
+                                     radius=int(size * 0.18), fill=(255, 255, 255))
+                td.text((W / 2, 20), line, font=fnt, fill="black", anchor="ma")
+                sc = 0.82 + 0.18 * p
+                tile = tile.resize((max(1, int(tile.width * sc)), max(1, int(tile.height * sc))), Image.LANCZOS)
+                alpha = tile.getchannel("A").point(lambda a: int(a * p))
+                tile.putalpha(alpha)
+                layer.alpha_composite(tile, (int((W - tile.width) / 2), int(y - 20 * sc)))
+            y += step
+        return layer
+    frames = [draw_state(t) for t in range(2 + 4 * len(lines) + 6)]
+    anim = save_frames(os.path.join(tmp, "hook_frames"), frames)
+    return {"bg": bg, **anim}
 
 
 # ---------------------------------------------------------------- stock footage
@@ -650,7 +731,8 @@ def portrait_square(img, size):
     return img.crop((x, y, x + side, y + side)).resize((size, size), Image.LANCZOS)
 
 
-def make_person_card(path, name, role, img=None, credit=""):
+def make_person_card(path, name, role, img=None, credit="", animate_into=None):
+    """animate_into: a folder → also saves the card without text plus frames of the name/role sliding in."""
     """The person's photo with their name and role underneath, like a TV lower third."""
     if img:
         bg = darken(cover(img).filter(ImageFilter.GaussianBlur(40)), 0.55, 0.8)
@@ -670,16 +752,31 @@ def make_person_card(path, name, role, img=None, credit=""):
         d.ellipse([W / 2 - 250, top + 50, W / 2 + 250, top + 550], fill=(123, 154, 248))
         d.text((W / 2, top + 300), initials, font=font(220), fill=(15, 20, 48), anchor="mm")
     y = top + size + 60
-    d.text((W / 2, y), name, font=font(74), fill="white", anchor="ma")
-    if role:
-        rf = font(44, semi=True)
-        tw = d.textlength(role, font=rf)
-        d.rounded_rectangle([W / 2 - tw / 2 - 28, y + 110, W / 2 + tw / 2 + 28, y + 180], radius=35,
-                            fill=(255, 212, 0))
-        d.text((W / 2, y + 145), role, font=rf, fill=(15, 15, 20), anchor="mm")
     if img and credit:
         bg = add_credit(bg, credit)
-    bg.save(path)
+
+    def text_layer(p):
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ld = ImageDraw.Draw(layer)
+        dy = int(40 * (1 - p))
+        ld.text((W / 2, y + dy), name, font=font(74), fill=(255, 255, 255, int(255 * p)), anchor="ma")
+        if role:
+            rf = font(44, semi=True)
+            tw = ld.textlength(role, font=rf)
+            q = ease_out((p - 0.3) / 0.7) if p < 1 else 1
+            ld.rounded_rectangle([W / 2 - tw / 2 - 28, y + 110 + dy, W / 2 + tw / 2 + 28, y + 180 + dy], radius=35,
+                                 fill=(255, 212, 0, int(255 * q)))
+            ld.text((W / 2, y + 145 + dy), role, font=rf, fill=(15, 15, 20, int(255 * q)), anchor="mm")
+        return layer
+    full = bg.convert("RGBA")
+    full.alpha_composite(text_layer(1.0))
+    full.convert("RGB").save(path)
+    if animate_into:
+        base = path.replace(".png", "_bg.png")
+        bg.save(base)
+        anim = save_frames(animate_into, [text_layer(ease_out((k + 1) / 14)) for k in range(14)])
+        return {"bg": base, **anim}
+    return None
 
 
 def make_logo_card(path, name, domain=""):
@@ -791,48 +888,48 @@ def badge_events(beats, times, words, hook_end, tmp):
 SFX_DIR = "sfx"
 
 
-def sound_files(tmp):
-    """Your own sounds from the sfx/ folder (whoosh*.mp3, pop*.mp3), or simple built-in ones."""
-    def mine(prefix):
-        files = [f for ext in ("mp3", "wav", "ogg", "m4a") for f in glob.glob(os.path.join(SFX_DIR, f"{prefix}*.{ext}"))]
-        return random.choice(files) if files else None
-    whoosh = mine("whoosh")
-    if not whoosh:
-        whoosh = os.path.join(tmp, "whoosh.wav")
-        sh(["ffmpeg", "-y", "-f", "lavfi", "-i", "anoisesrc=d=0.55:c=pink:r=48000:a=0.7",
-            "-af", "highpass=f=350,lowpass=f=5500,afade=t=in:st=0:d=0.32:curve=exp,"
-                   "afade=t=out:st=0.3:d=0.25,volume=1.6", "-ac", "2", whoosh])
-    pop = mine("pop")
-    if not pop:
-        pop = os.path.join(tmp, "pop.wav")
-        sh(["ffmpeg", "-y", "-f", "lavfi", "-i",
-            "aevalsrc=0.9*exp(-28*t)*sin(2*PI*t*(520+1600*exp(-22*t))):s=48000:d=0.22", "-ac", "2", pop])
-    return whoosh, pop
+SYNTH = {  # built-in sounds, used unless you add your own to the sfx/ folder
+    "whoosh": ("anoisesrc=d=0.55:c=pink:r=48000:a=0.7",
+               "highpass=f=350,lowpass=f=5500,afade=t=in:st=0:d=0.32:curve=exp,afade=t=out:st=0.3:d=0.25,volume=1.6"),
+    "pop": ("aevalsrc=0.9*exp(-28*t)*sin(2*PI*t*(520+1600*exp(-22*t))):s=48000:d=0.22", "anull"),
+    "impact": ("aevalsrc=0.9*exp(-5*t)*sin(2*PI*52*t)+0.3*exp(-22*t)*sin(2*PI*110*t):s=48000:d=0.9",
+               "lowpass=f=400,volume=1.8"),
+    "riser": ("aevalsrc=0.4*(t/0.7)*sin(2*PI*(260*t+420*t*t)):s=48000:d=0.7", "afade=t=out:st=0.62:d=0.08"),
+}
+LEVELS = {"whoosh": 0.32, "pop": 0.45, "impact": 0.5, "riser": 0.22}
+
+
+def sound_file(kind, tmp):
+    files = [f for ext in ("mp3", "wav", "ogg", "m4a") for f in glob.glob(os.path.join(SFX_DIR, f"{kind}*.{ext}"))]
+    if files:
+        return random.choice(files)
+    out = os.path.join(tmp, f"{kind}.wav")
+    if not os.path.exists(out):
+        src, af = SYNTH[kind]
+        sh(["ffmpeg", "-y", "-f", "lavfi", "-i", src, "-af", af, "-ac", "2", out])
+    return out
 
 
 def add_sound_effects(audio, events, total, tmp):
-    """events: [(time, 'whoosh'|'pop')] → mixes them quietly into the audio track."""
-    events = sorted((t, k) for t, k in events if 0 <= t < total - 0.3)[:24]
+    """events: [(time, kind)] → mixed quietly into the audio track."""
+    events = sorted((t, k) for t, k in events if 0 <= t < total - 0.3 and k in SYNTH)[:28]
     if not events:
         return audio
-    whoosh, pop = sound_files(tmp)
-    nw = sum(1 for _, k in events if k == "whoosh")
-    np_ = len(events) - nw
-    parts = []
-    if nw:
-        parts.append(f"[1:a]volume=0.32,asplit={nw}" + "".join(f"[w{i}]" for i in range(nw)))
-    if np_:
-        parts.append(f"[2:a]volume=0.45,asplit={np_}" + "".join(f"[p{i}]" for i in range(np_)))
-    labels, wi, pi = [], 0, 0
+    kinds = sorted({k for _, k in events})
+    inputs, parts = [], []
+    for n, k in enumerate(kinds):
+        inputs += ["-i", sound_file(k, tmp)]
+        count = sum(1 for _, kk in events if kk == k)
+        parts.append(f"[{n + 1}:a]volume={LEVELS[k]},asplit={count}" + "".join(f"[{k}{j}]" for j in range(count)))
+    used, labels = {k: 0 for k in kinds}, []
     for n, (t, k) in enumerate(events):
         ms = int(max(0, (t - 0.18 if k == "whoosh" else t)) * 1000)
-        src = f"w{wi}" if k == "whoosh" else f"p{pi}"
-        wi, pi = (wi + 1, pi) if k == "whoosh" else (wi, pi + 1)
-        parts.append(f"[{src}]adelay={ms}|{ms}[e{n}]")
+        parts.append(f"[{k}{used[k]}]adelay={ms}|{ms}[e{n}]")
+        used[k] += 1
         labels.append(f"[e{n}]")
     parts.append(f"[0:a]{''.join(labels)}amix=inputs={len(labels) + 1}:duration=first:normalize=0[out]")
     out = os.path.join(tmp, "with_sfx.wav")
-    sh(["ffmpeg", "-y", "-i", audio, "-i", whoosh, "-i", pop, "-filter_complex", ";".join(parts),
+    sh(["ffmpeg", "-y", "-i", audio, *inputs, "-filter_complex", ";".join(parts),
         "-map", "[out]", "-ar", "48000", "-ac", "2", out])
     return out
 
@@ -938,8 +1035,9 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
         if b["visual"] == "person":
             img, credit = person_photo(b["name"], b.get("x", ""), b.get("url", ""), source_urls)
             p = os.path.join(tmp, f"person_{i}.png")
-            make_person_card(p, b["name"], b.get("role", ""), img, credit or "")
-            shots.append(("image", p))
+            anim = make_person_card(p, b["name"], b.get("role", ""), img, credit or "",
+                                    animate_into=os.path.join(tmp, f"person_frames_{i}"))
+            shots += [("layered", anim), ("image", p)] if anim else [("image", p)]
             if img:
                 counts["real photos"] += 1
                 LAST_CREDITS.append(f"{b['name']}: {credit}")
@@ -1024,9 +1122,17 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                     shots.append(("image", p))
                     counts["AI images"] += 1
         if b["visual"] == "stat":
-            p = os.path.join(tmp, f"stat_{i}.png")
-            make_stat_card(p, b["big"], b["small"])
-            shots.append(("image", p))
+            anim = None
+            try:
+                anim = stat_animation(tmp, i, b["big"], b["small"])
+            except Exception as e:
+                print(f"Count-up skipped: {e}")
+            if anim:
+                shots += anim
+            else:
+                p = os.path.join(tmp, f"stat_{i}.png")
+                make_stat_card(p, b["big"], b["small"])
+                shots.append(("image", p))
             counts["cards"] += 1
         plan.append(shots)
     LAST_SUMMARY = ", ".join(f"{v} {k}" for k, v in counts.items() if v)
@@ -1049,9 +1155,22 @@ def image_shot(png, frames, out, style=0):
 
 
 def clip_shot(src, frames, out, offset=0.0):
+    punch = f",zoompan=z='max(1,1.06-0.0065*on)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS}"
     sh(["ffmpeg", "-y", "-stream_loop", "-1", "-ss", f"{offset:.2f}", "-i", src,
         "-vf", f"fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-               "eq=brightness=-0.05:saturation=1.12:contrast=1.05", "-frames:v", str(int(frames)), *encode_args(), out])
+               f"eq=brightness=-0.05:saturation=1.12:contrast=1.05{punch}", "-frames:v", str(int(frames)),
+        *encode_args(), out])
+
+
+def layered_shot(src, frames, out, style=0):
+    """A slowly zooming background with an animated layer on top (text popping in, numbers counting)."""
+    frames = max(1, int(frames))
+    zooms = ["min(zoom+0.0008,1.06)", "if(eq(on,0),1.06,max(zoom-0.0008,1))"]
+    sh(["ffmpeg", "-y", "-i", src["bg"], "-framerate", str(FPS), "-i", os.path.join(src["dir"], "%03d.png"),
+        "-filter_complex",
+        f"[0:v]scale=2160:3840,zoompan=z='{zooms[style % 2]}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+        f":d={frames}:s={W}x{H}:fps={FPS}[bg];[1:v]format=rgba[fg];[bg][fg]overlay=0:0:eof_action=repeat[v]",
+        "-map", "[v]", "-frames:v", str(frames), *encode_args(), out])
 
 
 def frame_count(path):
@@ -1060,7 +1179,7 @@ def frame_count(path):
     return int(out or 0)
 
 
-def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None, total=None):
+def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None, total=None, hook_anim=None):
     """Every shot ends exactly on the frame where it should, so the picture never drifts from the voice."""
     segments, n, pos = [], 0, 0  # pos = frames already placed
 
@@ -1073,6 +1192,8 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None,
         n += 1
         if kind == "opening":
             opening_video_shot(src, frames / FPS, overlay, text_seconds, out)
+        elif kind == "layered":
+            layered_shot(src, frames, out, style)
         elif kind == "clip":
             clip_shot(src, frames, out, offset)
         else:
@@ -1091,10 +1212,13 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None,
         src, open_len, overlay = opening
         add("opening", src, open_len, overlay=overlay, text_seconds=hook_len)
         hook_end = open_len
+    elif hook_anim:
+        add("layered", hook_anim, hook_len, style=0)
+        hook_end = hook_len
     else:
         add("image", hook_png, hook_len, style=0)
         hook_end = hook_len
-    fallback = next((s for shots in plan for s in shots), ("image", hook_png))
+    fallback = next((s for shots in plan for s in shots if s[0] != "layered"), ("image", hook_png))
     cuts = [hook_end]
     for i, ((start, end), shots) in enumerate(zip(times, plan)):
         start = max(start, hook_end)
@@ -1214,7 +1338,10 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     sources += [u for u in (draft.get("sources") or []) if isinstance(u, str) and u.startswith("http")][:4]
     plan = plan_visuals(beats, tmp, times, sources, safe_beats)
     if hook_img is None:
-        first = next((src for shots in plan for kind, src in shots if kind == "image"), None)
+        # a real picture for the opening background — never a text card (stat, person, source, logo)
+        picture = ("img_", "official_", "photo_")
+        first = next((src for shots in plan for kind, src in shots
+                      if kind == "image" and os.path.basename(src).startswith(picture)), None)
         hook_img = Image.open(first).convert("RGB") if first else None
     hook_png = os.path.join(tmp, "hook.png")
     label = "AI EXPLAINED" if (topic or {}).get("custom") else "AI NEWS"
@@ -1234,7 +1361,13 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
 
     ass = os.path.join(tmp, "captions.ass")
     write_ass(words, total, ass, hook_until=hook_len * 0.85)
-    listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening, total)
+    hook_anim = None
+    if not opening:
+        try:
+            hook_anim = hook_animation(tmp, draft.get("hook_text") or draft.get("title", ""), label, hook_img)
+        except Exception as e:
+            print(f"Hook animation skipped: {e}")
+    listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening, total, hook_anim)
     hook_end = opening[1] if opening else hook_len
 
     def intent(b):
@@ -1263,8 +1396,10 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
             audio = wav
 
     try:
-        sfx = [(t, "whoosh") for t in cuts]
-        sfx += [(times[i][0] + 0.05, "pop") for i, b in enumerate(beats) if b["visual"] == "stat" and times[i][0] >= hook_end]
+        sfx = [(0.06, "impact")] + [(t, "whoosh") for t in cuts]
+        for i, b in enumerate(beats):
+            if b["visual"] == "stat" and times[i][0] >= hook_end:
+                sfx += [(times[i][0] + 0.02, "riser"), (times[i][0] + 0.72, "pop")]
         sfx += [(start, "pop") for _, start, _ in badges]
         audio = add_sound_effects(audio, sfx, total, tmp)
     except Exception as e:
