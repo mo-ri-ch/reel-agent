@@ -123,3 +123,29 @@ def dedupe(headlines, past):
             continue
         kept.append(h)
     return kept
+
+
+def topic_from_url(url):
+    """Title, summary, outlet and date of an article link you send, so it can become a reel."""
+    from urllib.parse import urlparse
+    try:
+        r = requests.get(url, headers=UA, timeout=20, allow_redirects=True)
+        page, final = r.text[:600000], r.url
+    except Exception as e:
+        raise RuntimeError(f"couldn't open that link ({e})")
+
+    def meta(*names):
+        for n in names:
+            for pat in (rf'<meta[^>]+(?:property|name)=["\']{n}["\'][^>]*content=["\']([^"\']+)',
+                        rf'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\']{n}["\']'):
+                m = re.search(pat, page, re.I)
+                if m:
+                    return html.unescape(m.group(1)).strip()
+        return ""
+    title = meta("og:title", "twitter:title") or _clean((re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S)
+                                                          or [None, ""])[1])
+    if not title:
+        raise RuntimeError("couldn't read a headline from that link")
+    domain = urlparse(final).netloc.replace("www.", "")
+    return {"title": title[:200], "link": final, "summary": meta("og:description", "description", "twitter:description")[:400],
+            "source": meta("og:site_name") or domain, "published": meta("article:published_time", "og:updated_time")}

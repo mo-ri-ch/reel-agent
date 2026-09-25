@@ -24,6 +24,7 @@ DEFAULT = {
     "offer_log": {"date": None, "done": []},  # which story times were already sent today
     "pending_topic": None,
     "held": [],
+    "paused": None,            # a regular reel paused while you make an extra one
     "spare": [],               # the other stories from the list, used if a story can't be verified
     "tried": [],               # stories already tried (not picked again)                # reels parked for your review (quality check flagged them)
     "next_video_id": None,     # a clip you sent before the script was ready     # a topic waiting for your "yes" button

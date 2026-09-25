@@ -6,6 +6,7 @@ import copy
 import hashlib
 import json
 import os
+import re
 import sys
 import traceback
 from datetime import datetime, timedelta
@@ -52,7 +53,7 @@ Tap the buttons under my messages, or type — both work.
 • Optional: send a picture or a short video clip (e.g. from Gemini) for the opening shot
 
 Commands:
-/topic <anything> – make a reel on your own topic right now
+/topic <anything> – make an extra reel on your own topic right now (or just send a news link)
 /myscript <your script> – use a script you wrote yourself (skips Gemini)
 /news – get fresh stories now (e.g. to record the next reel straight away)
 /autopilot on|off – finish reels on my own when you don't reply
@@ -130,6 +131,9 @@ def script_buttons(s):
 
 
 def preview_buttons(s):
+    if (s.get("topic") or {}).get("extra"):  # your own story: posting it now doesn't touch the regular slots
+        return [[btn(s, "🚀 Post now (extra)", "post now"), btn(s, f"🗓 Use a slot ({fmt_time(next_post_time(s))})", "post")],
+                [btn(s, "🔁 New voice", "redo"), btn(s, "↩️ Undo", "/undo", True), btn(s, "⏭ Skip", "/skip", True)]]
     return [[btn(s, f"✅ Schedule ({fmt_time(next_post_time(s))})", "post"), btn(s, "🚀 Post now", "post now")],
             [btn(s, "🔁 New voice", "redo"), btn(s, "↩️ Undo", "/undo", True), btn(s, "⏭ Skip", "/skip", True)]]
 
@@ -453,6 +457,37 @@ def publish_item(item):
     return instagram.publish_reel(path, item["caption"])
 
 
+def extra_reel(s, topic):
+    """Your own story or link, made right away. A regular reel in progress is paused and resumes afterwards."""
+    topic = {**topic, "extra": True}
+    if s["stage"] == "rendering":
+        tg.send("I'm in the middle of making a video — send it again in a few minutes and I'll start your reel.")
+        return
+    if s["stage"] != "idle" and not s.get("paused"):
+        s["paused"] = copy.deepcopy({k: s.get(k) for k in REEL_KEYS})
+        tg.send(f"⏸ Pausing the current reel (“{(s.get('topic') or {}).get('title', 'story list')[:60]}”) — "
+                "it'll continue right after yours. The regular schedule isn't affected.")
+    reset_reel(s)
+    start_script(s, topic)
+
+
+def resume_paused(s):
+    paused = s.pop("paused", None)
+    if not paused:
+        return False
+    s.update(paused)
+    auto = s.get("autopilot")
+    if s["stage"] == "rendering":
+        s["stage"] = "awaiting_voice"
+    s["script_deadline"] = deadline() if auto and s["stage"] == "awaiting_voice" else None
+    s["preview_deadline"] = deadline() if auto and s["stage"] == "awaiting_approval" else None
+    if s["stage"] == "choosing":
+        s["choose_deadline"] = (st.now() + timedelta(hours=AUTO_PICK_HOURS)).isoformat()
+    tg.send("▶️ Back to the reel that was paused:")
+    show_current(s)
+    return True
+
+
 def approve(s, now_please=False):
     item = {"title": s["topic"]["title"], "video_file_id": s["video_file_id"],
             "caption": caption_for(s["draft"], s.get("voice_mode") == "ai")}
@@ -472,7 +507,8 @@ def approve(s, now_please=False):
         mark_undo(s, remove_from_queue=item["video_file_id"], history_title=item["title"])
         reset_reel(s)
         tg.send(f"🗓 Scheduled for {fmt_time(when)}.", buttons=after_schedule_buttons(s))
-    next_offer_if_waiting(s)
+    if not resume_paused(s):
+        next_offer_if_waiting(s)
 
 
 def post_due(s):
@@ -554,6 +590,13 @@ def handle(s, m, from_button=False):
         return None
     low = text.lower().strip(" !.")
 
+    link = re.search(r"https?://\S+", text)
+    if link and not low.startswith("/"):
+        s["pending_topic"] = link.group(0)
+        tg.send(f"📰 Make an extra reel from this news?\n{link.group(0)}\n\nIt'll be made now and posted as an extra — "
+                "the regular schedule carries on as usual.",
+                buttons=[[btn(s, "✅ Yes, make it", "confirm_topic"), btn(s, "✖️ No", "cancel", True)]])
+        return None
     if low.startswith("/undo"):
         undo(s)
     elif low.startswith("/held"):
@@ -576,7 +619,7 @@ def handle(s, m, from_button=False):
                     buttons=[[btn(s, "✅ Make it anyway", "confirm_topic"), btn(s, "✖️ No", "cancel", True)]])
         elif topic:
             push_undo(s, f"new topic \"{topic[:40]}\"")
-            start_script(s, custom(topic))
+            extra_reel(s, custom(topic))
         else:
             tg.send("Tell me the topic like this:\n/topic What are AI agents?")
     elif low.startswith("/myscript"):
@@ -615,7 +658,8 @@ def handle(s, m, from_button=False):
         push_undo(s, "skipping")
         reset_reel(s)
         tg.send("👍 Skipped.", buttons=[[btn(s, "↩️ Undo", "/undo", True), btn(s, "📰 Get stories", "/news", True)]])
-        next_offer_if_waiting(s)
+        if not resume_paused(s):
+            next_offer_if_waiting(s)
     elif low.startswith("/queue"):
         if s["queue"]:
             tg.send("🗓 Scheduled reels:\n\n" + "\n".join(
@@ -706,7 +750,14 @@ def handle_button(s, cq):
         if topic:
             push_undo(s, f"new reel \"{topic[:40]}\"")
             s["pending_topic"] = None
-            start_script(s, custom(topic))
+            if topic.startswith("http"):
+                try:
+                    tg.send("🔗 Reading the article...")
+                    extra_reel(s, news.topic_from_url(topic))
+                except Exception as e:
+                    tg.send(f"⚠️ {e}. You can send the headline as text instead, or /topic <what it's about>.")
+            else:
+                extra_reel(s, custom(topic))
         return None
     if action == "cancel":
         s["pending_topic"] = None
@@ -779,10 +830,11 @@ def cmd_poll():
             park_reel(s)
         elif s["stage"] == "awaiting_approval" and passed(s.get("preview_deadline")):
             s["preview_deadline"] = None
-            tg.send("⏰ No reply, so autopilot is scheduling your reel.")
-            push_undo(s, "autopilot scheduling the reel")
+            extra = (s.get("topic") or {}).get("extra")
+            tg.send("⏰ No reply, so autopilot is " + ("posting your extra reel now." if extra else "scheduling your reel."))
+            push_undo(s, "autopilot posting the reel")
             try:
-                approve(s)
+                approve(s, now_please=bool(extra))
             except Exception as e:
                 tg.send(f"⚠️ Autopilot couldn't schedule the reel: {e}")
 
