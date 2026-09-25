@@ -464,9 +464,13 @@ def researched_story(text):
                 "I'll still make the reel from your text, and the fact check will flag anything it can't verify.")
         return pasted_news(text)
     if not found:
-        tg.send("Research wasn't possible right now, so I'll use your text (the fact check still runs).")
+        if REQUEST_WORDS.search(text):
+            tg.send("⚠️ Search isn't available right now (Google's free search limit), so I can't research this yet. "
+                    "Try /reel again in a little while.")
+            return None
+        tg.send("Search isn't available right now, so I'll use your text (the fact check still runs).")
         return pasted_news(text)
-    msg = f"📰 Found it: {found['title']}"
+    msg = f"📰 Found it ({found.get('via', 'Google Search')}): {found['title']}"
     if found.get("unknown_names"):
         msg += f"\n❓ Couldn't identify: {', '.join(found['unknown_names'])} (send the exact name to include it)"
     if found.get("source"):

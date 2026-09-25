@@ -9,8 +9,13 @@ from config import GEMINI_API_KEY, GEMINI_FALLBACK_MODEL, GEMINI_MODEL, HANDLE, 
 from state import now
 
 
+SEARCH_USED = False  # did the last ask() really use Google Search?
+
+
 def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
     """light=True: small jobs (picking stories/clips) go to the lighter model first, saving the main model's quota."""
+    global SEARCH_USED
+    SEARCH_USED = False
     models = [GEMINI_MODEL] + ([GEMINI_FALLBACK_MODEL] if GEMINI_FALLBACK_MODEL != GEMINI_MODEL else [])
     if light:
         models.reverse()
@@ -58,6 +63,7 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
             if text.strip():
                 if model != GEMINI_MODEL:
                     print(f"Used backup model {model}")
+                SEARCH_USED = "tools" in body
                 return text
             last = f"empty reply (finishReason={cand.get('finishReason')})"
             print("Gemini " + last)
@@ -383,9 +389,42 @@ def resolve_url(u):
     return u
 
 
+def google_news_search(request, limit=8):
+    """Backup search: asks Google News directly (free, no quota). Returns [{title, link, source, published, summary}]."""
+    import feedparser
+    import urllib.parse
+    try:
+        q = parse_json(ask(f'Turn this request into 1-3 short Google News search queries (the key names/topics, with '
+                           f'"AI" if helpful). Request: "{request[:500]}". Return ONLY JSON: {{"queries": ["..."]}}',
+                           temperature=0.2, json_mode=True, light=True)).get("queries") or []
+    except Exception:
+        q = []
+    q = q or [re.sub(r"(?i)\b(give|make|tell|show|me|the|news|about|a|reel|please|on)\b", " ", request).strip()]
+    found, seen = [], set()
+    for query in q[:3]:
+        url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(f"{query} when:14d") +
+               "&hl=en-IN&gl=IN&ceid=IN:en")
+        try:
+            feed = feedparser.parse(requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0"}).content)
+        except Exception as e:
+            print(f"Google News search failed: {e}")
+            continue
+        for e in feed.entries[:6]:
+            title = re.sub(r"\s+", " ", e.get("title", "")).strip()
+            if not title or title in seen:
+                continue
+            seen.add(title)
+            src = title.rsplit(" - ", 1)[1] if " - " in title else ""
+            found.append({"title": title.rsplit(" - ", 1)[0], "link": e.get("link", ""), "source": src,
+                          "published": e.get("published", ""), "query": query})
+    print(f"Google News search: {len(found)} results for {q}")
+    return found[:limit]
+
+
 def research(text):
     """Researches news you pasted: finds the original article and official announcement and the full facts.
-    Returns a story dict (title, link, source, published, summary, official_url, sources) or None."""
+    Returns a story dict (title, link, source, published, summary, official_url, sources) or None.
+    Uses Gemini's Google Search; if that isn't available, searches Google News directly."""
     prompt = f"""Today is {now().strftime("%d %B %Y")}. Someone sent this AI news or request (maybe short, informal or forwarded, possibly with misspelled names):
 \"\"\"{text[:2000]}\"\"\"
 
@@ -408,11 +447,27 @@ Return ONLY JSON:
 If some names can't be found, still cover the parts of the request you CAN find (e.g. "recent trending models"),
 list the names you couldn't identify in "unknown_names", and continue. Only if nothing at all can be found, return
 {{"headline": "", "summary": "", "not_found": true, "unknown_names": [...]}}."""
+    via = "Google Search"
     try:
         res = parse_json(ask(prompt, search=True, temperature=0.2, json_mode=True))
+        searched = SEARCH_USED
     except Exception as e:
         print(f"Research failed: {e}")
-        return None
+        res, searched = {}, False
+    if not searched or res.get("not_found") or not res.get("headline"):
+        results = google_news_search(text)  # backup: real, current results from Google News
+        if results:
+            via = "Google News"
+            listing = "\n".join(f"- {r['title']} ({r['source']}, {r['published'][:16]}) {r['link']}" for r in results)
+            try:
+                res = parse_json(ask(prompt + "\n\nUse ONLY these current Google News results as your sources "
+                                              "(they are real and recent):\n" + listing,
+                                     temperature=0.2, json_mode=True))
+            except Exception as e:
+                print(f"Research from Google News failed: {e}")
+                return None if not res else {"not_found": True, "unknown_names": []}
+        elif not searched:
+            return None  # no search worked at all: don't claim "not found"
     unknown = [str(n)[:40] for n in (res.get("unknown_names") or [])][:5]
     if res.get("not_found") or not res.get("headline"):
         return {"not_found": True, "unknown_names": unknown}
@@ -429,4 +484,4 @@ list the names you couldn't identify in "unknown_names", and continue. Only if n
             "source": str(res.get("outlet", ""))[:40], "link": link, "published": published,
             "official_url": official, "research_sources": [u for u in [link, official, *sources] if u],
             "corrections": [str(c)[:200] for c in (res.get("corrections") or [])][:4], "researched": True,
-            "unknown_names": unknown}
+            "unknown_names": unknown, "via": via}
