@@ -854,7 +854,25 @@ def beat_times(beats, words, total):
 LAST_SUMMARY = ""
 
 
-def plan_visuals(beats, tmp, times=None, source_urls=()):
+def safe_shot(b, i, tmp):
+    """A visual that can't be wrong: name card, logo card, or a neutral illustration."""
+    import images
+    p = os.path.join(tmp, f"safe_{i}.png")
+    if b["visual"] == "person":
+        make_person_card(p, b["name"], b.get("role", ""))
+    elif b["visual"] in ("official", "photo", "source") or b.get("brands"):
+        name = b.get("entity") or b.get("outlet") or (b.get("brands") or [{}])[0].get("name", "")
+        domain = b.get("domain") or (b.get("brands") or [{}])[0].get("domain", "")
+        make_logo_card(p, name or "AI news", domain)
+    else:
+        img = images.generate(f"minimal abstract illustration about technology and AI, calm colors, no text, no people")
+        if not img:
+            return None
+        full_frame(img).save(p)
+    return ("image", p)
+
+
+def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
     """Finds visuals for every beat. Returns a list (per beat) of shots: ('clip'|'image', path)."""
     global LAST_SUMMARY, LAST_CREDITS
     import images
@@ -912,6 +930,11 @@ def plan_visuals(beats, tmp, times=None, source_urls=()):
         length = (times[i][1] - times[i][0]) if times else 3.0
         want = 2 if length > 3.4 else 1
         shots = []
+        if i in safe_beats:
+            shot = safe_shot(b, i, tmp)
+            plan.append([shot] if shot else [])
+            counts["cards"] += 1
+            continue
         if b["visual"] == "person":
             img, credit = person_photo(b["name"], b.get("x", ""), b.get("url", ""), source_urls)
             p = os.path.join(tmp, f"person_{i}.png")
@@ -1115,7 +1138,30 @@ def sync_offset(caption_words, heard_words):
 
 
 # ---------------------------------------------------------------- main
-def render(voice_path, draft, topic, user_image_path=None, words=None, user_video_path=None, exact_words=None):
+LAST_CHECK = {}
+
+
+def check_frames(out):
+    """One small frame from the middle of each beat (after the opening), for the visual check."""
+    info = LAST_CHECK
+    frames = []
+    for i, (start, end) in enumerate(info.get("times", [])):
+        start = max(start, info.get("hook_end", 0))
+        if end - start < 0.4:
+            continue
+        t = (start + end) / 2
+        tmpf = os.path.join(WORK_DIR, "build", f"check_{i}.jpg")
+        try:
+            sh(["ffmpeg", "-y", "-ss", f"{t:.2f}", "-i", out, "-frames:v", "1", "-vf", "scale=360:-2", "-q:v", "5", tmpf])
+            with open(tmpf, "rb") as f:
+                frames.append({"beat": i, "jpeg": f.read(), **info["intents"][i]})
+        except Exception as e:
+            print(f"Frame {i} skipped: {e}")
+    return frames
+
+
+def render(voice_path, draft, topic, user_image_path=None, words=None, user_video_path=None, exact_words=None,
+           safe_beats=()):
     """exact_words: word timings reported by the AI voice itself (most accurate)."""
     global LAST_SYNC
     tmp = os.path.join(WORK_DIR, "build")
@@ -1166,7 +1212,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
         hook_img = fetch_image(url) if url else None
     sources = [topic.get("link")] if topic and topic.get("link") else []
     sources += [u for u in (draft.get("sources") or []) if isinstance(u, str) and u.startswith("http")][:4]
-    plan = plan_visuals(beats, tmp, times, sources)
+    plan = plan_visuals(beats, tmp, times, sources, safe_beats)
     if hook_img is None:
         first = next((src for shots in plan for kind, src in shots if kind == "image"), None)
         hook_img = Image.open(first).convert("RGB") if first else None
@@ -1190,6 +1236,15 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     write_ass(words, total, ass, hook_until=hook_len * 0.85)
     listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening, total)
     hook_end = opening[1] if opening else hook_len
+
+    def intent(b):
+        what = {"person": f"a photo of {b.get('name')} ({b.get('role')}) or an initials card",
+                "official": f"real images of {b.get('entity')}", "photo": f"a real photo of {b.get('entity')}",
+                "source": f"a source card for {b.get('outlet')}", "stat": f"a big number {b.get('big')}",
+                "clip": f"stock video: {b.get('query')}", "image": f"illustration: {b.get('prompt', '')[:80]}"}
+        return {"line": b["line"], "intent": what.get(b["visual"], b["visual"])}
+    LAST_CHECK.clear()
+    LAST_CHECK.update({"times": times, "hook_end": hook_end, "intents": [intent(b) for b in beats]})
     badges = []
     try:
         badges = badge_events(beats, times, words, hook_len, tmp)

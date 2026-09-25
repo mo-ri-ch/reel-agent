@@ -275,3 +275,71 @@ def draft_from_own_script(text, topic=None):
         "hashtags": ["ai", "artificialintelligence", "ainews", "tech", "technology", "chatgpt",
                      "openai", "futuretech", "machinelearning", "techindia"],
     }, {"title": title})
+
+
+# ---------------------------------------------------------------- quality checks
+def fact_check(draft, topic):
+    """Checks every claim in the script with Google Search. Returns (draft, status, notes).
+    status: "ok" (all verified), "fixed" (small errors corrected), "unsure" (needs a human), "skipped"."""
+    beats = [{k: v for k, v in b.items() if v not in ("", [], None)} for b in draft.get("beats", [])]
+    prompt = f"""Today is {now().strftime("%d %B %Y")}. You are the fact-checker of an AI-news Instagram page.
+Story: {topic.get("title", "")}
+Source: {topic.get("source", "")} {topic.get("link", "")}
+Summary: {topic.get("summary", "")}
+
+Script beats (JSON):
+{json.dumps(beats, ensure_ascii=False)}
+
+Use Google Search to check EVERY factual claim: names and spellings, people's roles and titles, companies,
+product and model names, numbers, dates, places, and who said what. Also check each "person" beat's "role" and
+each "stat" beat's number.
+Return ONLY JSON:
+{{"verdict": "ok" | "fixed" | "unsure",
+ "issues": [{{"beat": <1-based number>, "problem": "what was wrong or unverifiable", "fix": "the correction"}}],
+ "beats": [ONLY when verdict is "fixed": the full corrected beats list, same keys, minimal wording changes]}}
+"ok" = everything checks out. "fixed" = you corrected small errors and are confident in the corrections.
+"unsure" = something important can't be verified or seems wrong and you can't confidently fix it."""
+    try:
+        res = parse_json(ask(prompt, search=True, temperature=0.1, json_mode=True))
+    except Exception as e:
+        print(f"Fact check skipped: {e}")
+        return draft, "skipped", []
+    verdict = str(res.get("verdict", "")).lower()
+    issues = [i for i in (res.get("issues") or []) if isinstance(i, dict)]
+    notes = [f"Beat {i.get('beat', '?')}: {i.get('problem', '')}" + (f" → {i['fix']}" if i.get("fix") else "")
+             for i in issues][:6]
+    if verdict == "fixed" and isinstance(res.get("beats"), list) and res["beats"]:
+        try:
+            fixed = normalize_draft({**draft, "beats": res["beats"]}, topic)
+            return fixed, "fixed", notes
+        except Exception as e:
+            print(f"Couldn't apply fact fixes: {e}")
+            return draft, "unsure", notes
+    if verdict == "ok" and not issues:
+        return draft, "ok", []
+    return draft, ("ok" if verdict == "ok" else "unsure"), notes
+
+
+def visual_check(shots):
+    """shots: [{"line", "intent", "jpeg"}] → [{"beat": i, "problem": str}] for clear mismatches."""
+    import base64
+    parts = [{"text": "You review an AI-news Instagram Reel before it's posted. For each numbered shot you get the "
+                      "spoken line, what the shot is supposed to show, and a frame. Flag ONLY clear problems: the "
+                      "picture is unrelated or misleading for the line (e.g. a real landscape for a software product "
+                      "called 'Horizon', fruit for Apple the company), shows a different product or company than "
+                      "named, is broken, blank or unreadable, or contains garbled text. Do not try to identify who "
+                      "a person is from their face; for person cards only check it looks like a normal photo of a "
+                      "person or an initials card. Generic but fitting visuals are fine."}]
+    for i, s in enumerate(shots):
+        parts.append({"text": f"\nSHOT {i + 1} · line: \"{s['line']}\" · should show: {s['intent']}"})
+        parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(s["jpeg"]).decode()}})
+    parts.append({"text": '\nReturn ONLY JSON: {"problems": [{"shot": <number>, "problem": "short reason"}]} '
+                          '(empty list if everything is fine).'})
+    res = parse_json(ask(parts, temperature=0.1, json_mode=True, light=True))
+    out = []
+    for p in res.get("problems") or []:
+        try:
+            out.append({"beat": int(p["shot"]) - 1, "problem": str(p.get("problem", ""))[:120]})
+        except Exception:
+            continue
+    return out

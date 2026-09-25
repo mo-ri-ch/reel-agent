@@ -237,10 +237,35 @@ def next_offer_if_waiting(s):
         offer_news(s)
 
 
+def fact_check_step(draft, topic):
+    """Checkpoint 1: every claim verified with Google Search before anything is voiced or rendered."""
+    tg.action("typing")
+    draft, status, notes = writer.fact_check(draft, topic)
+    draft["fact_status"], draft["fact_notes"] = status, notes
+    return draft
+
+
+def fact_line(draft):
+    status, notes = draft.get("fact_status"), draft.get("fact_notes") or []
+    if status == "ok":
+        return "🔎 Fact check: ✅ all claims verified"
+    if status == "fixed":
+        return "🔎 Fact check: ✏️ corrected before writing this:\n• " + "\n• ".join(notes)
+    if status == "unsure":
+        return ("🔎 Fact check: ⚠️ please check these before posting (autopilot won't post this reel):\n• "
+                + "\n• ".join(notes or ["some claims couldn't be verified"]))
+    return "🔎 Fact check: skipped (Gemini unavailable) — please check the facts yourself"
+
+
+def qa_hold(draft):
+    return draft.get("fact_status") == "unsure" or draft.get("visual_status") == "issues"
+
+
 def start_script(s, topic, instruction=None):
     tg.action("typing")
     tg.send("✍️ Revising the script..." if instruction else f"✍️ Writing a script about: {topic['title']}")
     draft = writer.write_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
+    draft = fact_check_step(draft, topic)
     image = s.get("user_image_id") if instruction else None
     clip = s.get("user_video_id") if instruction else s.pop("next_video_id", None)
     reset_reel(s)
@@ -248,8 +273,8 @@ def start_script(s, topic, instruction=None):
              script_deadline=deadline())
     if clip and not instruction:
         tg.send("🎥 Using the clip you sent as the opening shot.")
-    tg.send(script_message(draft) + (autopilot_note("script") if s.get("autopilot") else ""),
-            buttons=script_buttons(s))
+    tg.send(script_message(draft) + "\n\n" + fact_line(draft) +
+            (autopilot_note("script") if s.get("autopilot") else ""), buttons=script_buttons(s))
 
 
 def offer_news(s):
@@ -602,6 +627,11 @@ def cmd_poll():
             push_undo(s, "autopilot choosing the AI voice")
             use_ai_voice(s, auto=True)
             render = True
+        elif s["stage"] == "awaiting_approval" and passed(s.get("preview_deadline")) and qa_hold(s.get("draft") or {}):
+            s["preview_deadline"] = None
+            tg.send("⏸ Autopilot is holding this reel because the quality check flagged something. "
+                    "Watch the preview and tap ✅ Schedule if it's fine, or ⏭ Skip.", buttons=preview_buttons(s))
+            whatsapp.alert("⏸ A reel needs your review before posting (quality check). Open Telegram.")
         elif s["stage"] == "awaiting_approval" and passed(s.get("preview_deadline")):
             s["preview_deadline"] = None
             tg.send("⏰ No reply, so autopilot is scheduling your reel.")
@@ -669,6 +699,7 @@ def cmd_offer():
 
 
 def cmd_render():
+    import tts
     import video
     s = st.load()
     try:
@@ -697,18 +728,45 @@ def cmd_render():
             exact = tts.LAST_WORDS
         out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
                            exact_words=exact)
+        # Checkpoint 2: does every shot actually fit what's being said?
+        s["draft"]["visual_status"], s["draft"]["visual_notes"] = "skipped", []
+        try:
+            frames = video.check_frames(out)
+            problems = writer.visual_check(frames) if frames else []
+            beats_bad = sorted({frames[p["beat"]]["beat"] for p in problems if 0 <= p["beat"] < len(frames)})
+            if beats_bad:
+                notes = [f"{frames[p['beat']]['line'][:50]}…: {p['problem']}" for p in problems
+                         if 0 <= p["beat"] < len(frames)]
+                tg.send("🖼 Visual check found shots that don't fit, so I'm replacing them:\n• " + "\n• ".join(notes))
+                out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
+                                   exact_words=exact, safe_beats=set(beats_bad))
+                frames = video.check_frames(out)
+                again = writer.visual_check(frames) if frames else []
+                s["draft"]["visual_status"] = "issues" if again else "fixed"
+                s["draft"]["visual_notes"] = [p["problem"] for p in again] or notes
+            else:
+                s["draft"]["visual_status"] = "ok"
+        except Exception as e:
+            print(f"Visual check skipped: {e}")
         s["draft"]["credits"] = list(getattr(video, "LAST_CREDITS", []) or [])
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
         if getattr(video, "LAST_SUMMARY", ""):
             voice_info += f"\n🎞 {video.LAST_SUMMARY}"
         if getattr(video, "LAST_SYNC", ""):
             voice_info += f"\n{video.LAST_SYNC}"
+        vs = s["draft"].get("visual_status")
+        voice_info += {"ok": "\n🖼 Visual check: ✅ every shot fits", "fixed": "\n🖼 Visual check: ✏️ fixed mismatched shots",
+                       "issues": "\n🖼 Visual check: ⚠️ some shots may not fit — please look",
+                       "skipped": "\n🖼 Visual check: skipped"}.get(vs, "")
+        voice_info += "\n" + fact_line(s["draft"]).split("\n")[0]
         s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
         s["preview_deadline"] = deadline() if s.get("autopilot") else None
         tg.send("Instagram caption:\n\n" + caption_for(s["draft"], s.get("voice_mode") == "ai") +
                 "\n\n—\nTap below, or type changes to the script ✍️. Send a picture 🖼 or a short video 🎥 for the opening shot." +
-                (autopilot_note("preview") if s.get("autopilot") else ""), buttons=preview_buttons(s))
+                (("\n\n⚠️ Quality check needs you: autopilot won't post this one — watch it and tap Schedule if it's fine."
+                  if qa_hold(s["draft"]) else autopilot_note("preview")) if s.get("autopilot") else ""),
+                buttons=preview_buttons(s))
         whatsapp.alert("🎬 Your reel is ready for approval! Open Telegram to watch the preview and reply 'post'.")
     except Exception as e:
         traceback.print_exc()
