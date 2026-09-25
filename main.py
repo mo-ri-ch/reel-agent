@@ -655,11 +655,18 @@ def cmd_render():
                 clip = tg.download(s["user_video_id"], os.path.join(WORK_DIR, "user_video.mp4"))
             except Exception as e:
                 tg.send(f"⚠️ Couldn't download your video ({e}), so I'm using the normal opening.")
-        out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip)
+        exact = None
+        if s.get("voice_mode") == "ai":
+            import tts
+            exact = tts.LAST_WORDS
+        out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
+                           exact_words=exact)
         s["draft"]["credits"] = list(getattr(video, "LAST_CREDITS", []) or [])
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
         if getattr(video, "LAST_SUMMARY", ""):
             voice_info += f"\n🎞 {video.LAST_SUMMARY}"
+        if getattr(video, "LAST_SYNC", ""):
+            voice_info += f"\n{video.LAST_SYNC}"
         s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
         s["preview_deadline"] = deadline() if s.get("autopilot") else None

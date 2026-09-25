@@ -44,9 +44,10 @@ def duration(path):
 
 
 # ---------------------------------------------------------------- audio
-def clean_audio(src, dst):
+def clean_audio(src, dst, trim_start=True):
     trim = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15"
-    af = (f"highpass=f=80,afftdn=nf=-25,{trim},areverse,{trim},areverse,"
+    start = f"{trim}," if trim_start else ""
+    af = (f"highpass=f=80,afftdn=nf=-25,{start}areverse,{trim},areverse,"
           "loudnorm=I=-14:TP=-1.5:LRA=11,apad=pad_dur=0.6")
     sh(["ffmpeg", "-y", "-i", src, "-af", af, "-ar", "48000", "-ac", "2", dst])
 
@@ -745,8 +746,8 @@ def encode_args():
     return ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(FPS)]
 
 
-def image_shot(png, length, out, style=0):
-    frames = max(1, int(round(length * FPS)))
+def image_shot(png, frames, out, style=0):
+    frames = max(1, int(frames))
     zooms = ["min(zoom+0.0012,1.12)", "if(eq(on,0),1.12,max(zoom-0.0012,1))", "1.08", "1.08"]
     xs = ["iw/2-(iw/zoom/2)", "iw/2-(iw/zoom/2)", f"(iw-iw/zoom)*on/{frames}", f"(iw-iw/zoom)*(1-on/{frames})"]
     sh(["ffmpeg", "-y", "-i", png, "-vf",
@@ -754,33 +755,48 @@ def image_shot(png, length, out, style=0):
         f":d={frames}:s={W}x{H}:fps={FPS}", "-frames:v", str(frames), *encode_args(), out])
 
 
-def clip_shot(src, length, out, offset=0.0):
-    sh(["ffmpeg", "-y", "-stream_loop", "-1", "-ss", f"{offset:.2f}", "-i", src, "-t", f"{length:.3f}",
-        "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-               "eq=brightness=-0.05:saturation=1.12:contrast=1.05", *encode_args(), out])
+def clip_shot(src, frames, out, offset=0.0):
+    sh(["ffmpeg", "-y", "-stream_loop", "-1", "-ss", f"{offset:.2f}", "-i", src,
+        "-vf", f"fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+               "eq=brightness=-0.05:saturation=1.12:contrast=1.05", "-frames:v", str(int(frames)), *encode_args(), out])
 
 
-def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None):
-    segments, n = [], 0
+def frame_count(path):
+    out = sh(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_frames",
+              "-show_entries", "stream=nb_read_frames", "-of", "csv=p=0", path]).strip()
+    return int(out or 0)
 
-    def add(kind, src, length, style=0, offset=0.0):
-        nonlocal n
-        if length < 0.05:
+
+def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None, total=None):
+    """Every shot ends exactly on the frame where it should, so the picture never drifts from the voice."""
+    segments, n, pos = [], 0, 0  # pos = frames already placed
+
+    def add(kind, src, end_time, style=0, offset=0.0, overlay=None, text_seconds=0.0):
+        nonlocal n, pos
+        frames = int(round(end_time * FPS)) - pos
+        if frames < 1:
             return
         out = os.path.join(tmp, f"seg{n:03d}.mp4")
         n += 1
-        if kind == "clip":
-            clip_shot(src, length, out, offset)
+        if kind == "opening":
+            opening_video_shot(src, frames / FPS, overlay, text_seconds, out)
+        elif kind == "clip":
+            clip_shot(src, frames, out, offset)
         else:
-            image_shot(src, length, out, style)
+            image_shot(src, frames, out, style)
+        got = frame_count(out)
+        if got != frames:
+            print(f"Shot {n}: fixing {got} → {frames} frames")
+            fixed = out.replace(".mp4", "_fix.mp4")
+            sh(["ffmpeg", "-y", "-i", out, "-vf", f"tpad=stop_mode=clone:stop={max(0, frames - got)}",
+                "-frames:v", str(frames), *encode_args(), fixed])
+            out = fixed
         segments.append(out)
+        pos += frames
 
     if opening:  # your own clip: (path, length, overlay_png)
         src, open_len, overlay = opening
-        out = os.path.join(tmp, f"seg{n:03d}.mp4")
-        n += 1
-        opening_video_shot(src, open_len, overlay, hook_len, out)
-        segments.append(out)
+        add("opening", src, open_len, overlay=overlay, text_seconds=hook_len)
         hook_end = open_len
     else:
         add("image", hook_png, hook_len, style=0)
@@ -798,27 +814,71 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None)
         pieces = max(1, round(length / SHOT_SECONDS))
         for k in range(pieces):
             kind, src = shots[k % len(shots)]
-            add(kind, src, length / pieces, style=i + k, offset=(k // len(shots)) * SHOT_SECONDS)
+            add(kind, src, start + length * (k + 1) / pieces, style=i + k, offset=(k // len(shots)) * SHOT_SECONDS)
+    if total and int(round(total * FPS)) > pos:  # never end short of the voice
+        kind, src = fallback
+        add(kind, src, total, style=1)
     listfile = os.path.join(tmp, "list.txt")
     with open(listfile, "w") as f:
         f.writelines(f"file '{os.path.abspath(s)}'\n" for s in segments)
     return listfile, cuts
 
 
+# ---------------------------------------------------------------- sync check
+LAST_SYNC = ""
+
+
+def sync_offset(caption_words, heard_words):
+    """Median gap (seconds) between caption times and what Whisper hears, over matching words."""
+    import difflib
+    norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
+    a, b = [norm(w["text"]) for w in caption_words], [norm(w["text"]) for w in heard_words]
+    sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
+    diffs = []
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == "equal":
+            diffs += [caption_words[i1 + k]["start"] - heard_words[j1 + k]["start"] for k in range(i2 - i1)]
+    if len(diffs) < 5:
+        return None
+    diffs.sort()
+    return diffs[len(diffs) // 2]
+
+
 # ---------------------------------------------------------------- main
-def render(voice_path, draft, topic, user_image_path=None, words=None, user_video_path=None):
+def render(voice_path, draft, topic, user_image_path=None, words=None, user_video_path=None, exact_words=None):
+    """exact_words: word timings reported by the AI voice itself (most accurate)."""
+    global LAST_SYNC
     tmp = os.path.join(WORK_DIR, "build")
     shutil.rmtree(tmp, ignore_errors=True)
     os.makedirs(tmp)
     wav = os.path.join(tmp, "voice.wav")
-    clean_audio(voice_path, wav)
+    clean_audio(voice_path, wav, trim_start=not exact_words)  # keep the AI voice's own timeline
     total = duration(wav)
     if total > 180:
         raise RuntimeError("The recording is longer than 3 minutes. Please keep reels under 90 seconds.")
+    from config import SPOKEN_NAME
+    caption_script = re.sub(r"@\w[\w.]*", SPOKEN_NAME or "", draft.get("script", ""))
+    LAST_SYNC = ""
     if words is None:
-        from config import SPOKEN_NAME
-        caption_script = re.sub(r"@\w[\w.]*", SPOKEN_NAME or "", draft.get("script", ""))
-        words = align_to_script(transcribe(wav, hint=caption_script), caption_script)
+        heard = None
+        try:
+            heard = transcribe(wav, hint=caption_script)
+        except Exception as e:
+            print(f"Whisper failed: {e}")
+        if exact_words:
+            words = align_to_script(exact_words, caption_script)
+            gap = sync_offset(words, heard) if heard else None
+            if gap is not None and abs(gap) > 0.15 and heard:  # voice timings look off: trust what Whisper hears
+                print(f"Voice timings off by {gap:+.2f}s, using Whisper instead")
+                words = align_to_script(heard, caption_script)
+                gap = 0.0
+            LAST_SYNC = "✅ captions checked" + (f" (±{abs(gap):.2f}s)" if gap is not None else "")
+        elif heard:
+            words = align_to_script(heard, caption_script)
+            LAST_SYNC = "✅ captions timed from the voice"
+        else:
+            raise RuntimeError("Couldn't time the captions (speech recognition failed).")
+    words = [{**w, "start": max(0.0, w["start"] - 0.05)} for w in words]  # appear a hair early, feels in sync
 
     beats = draft.get("beats") or [{"line": draft.get("script", ""), "visual": "clip", "query": "technology"}]
     times = beat_times(beats, words, total)
@@ -856,7 +916,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
 
     ass = os.path.join(tmp, "captions.ass")
     write_ass(words, total, ass, hook_until=hook_len * 0.85)
-    listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening)
+    listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening, total)
     hook_end = opening[1] if opening else hook_len
     badges = []
     try:
@@ -901,4 +961,17 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-maxrate", "4000k", "-bufsize", "8000k",
         "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
         "-shortest", "-movflags", "+faststart", out])
+    v_len, a_len = duration_of(out, "v"), duration_of(out, "a")
+    if v_len and a_len and abs(v_len - a_len) > 0.12:
+        LAST_SYNC += f" ⚠️ picture/sound length differ by {abs(v_len - a_len):.2f}s"
+        print(LAST_SYNC)
     return out
+
+
+def duration_of(path, kind):
+    try:
+        out = sh(["ffprobe", "-v", "error", "-select_streams", f"{kind}:0", "-show_entries", "stream=duration",
+                  "-of", "csv=p=0", path]).strip()
+        return float(out)
+    except Exception:
+        return None

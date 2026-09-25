@@ -19,16 +19,33 @@ def _speakable(text):
     return re.sub(r"[ \t]+", " ", text).strip()
 
 
+LAST_WORDS = None  # exact word timings from the Edge voice, when available
+
+
 def _edge(text, out_base, voice):
+    global LAST_WORDS
     import edge_tts
     out = out_base + ".mp3"
+    words = []
 
     async def run():
-        await edge_tts.Communicate(text, voice, rate=TTS_RATE).save(out)
+        try:
+            comm = edge_tts.Communicate(text, voice, rate=TTS_RATE, boundary="WordBoundary")
+        except TypeError:  # older edge-tts
+            comm = edge_tts.Communicate(text, voice, rate=TTS_RATE)
+        with open(out, "wb") as f:
+            async for chunk in comm.stream():
+                if chunk["type"] == "audio":
+                    f.write(chunk["data"])
+                elif chunk["type"] == "WordBoundary":
+                    start = chunk["offset"] / 10_000_000
+                    words.append({"text": chunk["text"], "start": start,
+                                  "end": start + chunk["duration"] / 10_000_000})
 
     asyncio.run(run())
     if not os.path.exists(out) or os.path.getsize(out) < 2000:
         raise RuntimeError("no audio returned")
+    LAST_WORDS = words if len(words) >= 3 else None
     return out
 
 
@@ -66,6 +83,8 @@ def voice_label(voice):
 
 def synthesize(text, out_base, gender="male"):
     """Returns (audio_path, description). Picks a random voice of the given gender."""
+    global LAST_WORDS
+    LAST_WORDS = None
     text = _speakable(text)
     pool = [v.strip() for v in (VOICES_FEMALE if gender == "female" else VOICES_MALE) if v.strip()]
     random.shuffle(pool)
