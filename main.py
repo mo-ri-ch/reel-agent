@@ -379,6 +379,8 @@ def start_script(s, topic, instruction=None, auto=False):
     tg.action("typing")
     tg.send("✍️ Revising the script..." if instruction else f"✍️ Writing a script about: {topic['title']}")
     draft = checked_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
+    if topic.get("research_sources"):  # official page + articles found by research → images & credits
+        draft["sources"] = list(dict.fromkeys(topic["research_sources"] + list(draft.get("sources") or [])))
     draft["source_links"] = resolve_links([topic.get("link", "")] + list(draft.get("sources") or []))
     image = s.get("user_image_id") if instruction else None
     clip = s.get("user_video_id") if instruction else s.pop("next_video_id", None)
@@ -438,6 +440,29 @@ def pasted_news(text):
     src = re.search(r"(?im)^\s*(?:via|source|from|—|-)\s*[:\-]?\s*([A-Za-z][\w .&'’-]{1,38})\s*$", text)
     return {"title": headline, "summary": text[:1500], "source": src.group(1).strip() if src else "", "link": "",
             "published": "", "pasted": True}
+
+
+def researched_story(text):
+    """Researches pasted news before making the reel; falls back to the pasted text if research isn't possible."""
+    tg.send("🔎 Researching this story — finding the original article, the official announcement and the full facts...")
+    tg.action("typing")
+    found = writer.research(text)
+    if found and found.get("not_found"):
+        tg.send("⚠️ I couldn't find any real coverage of this news online, so it may be unconfirmed. "
+                "I'll still make the reel from your text, and the fact check will flag anything it can't verify.")
+        return pasted_news(text)
+    if not found:
+        tg.send("Research wasn't possible right now, so I'll use your text (the fact check still runs).")
+        return pasted_news(text)
+    msg = f"📰 Found it: {found['title']}"
+    if found.get("source"):
+        msg += f"\nMain source: {found['source']}"
+    if found.get("corrections"):
+        msg += "\n\n✏️ Corrected from your message:\n• " + "\n• ".join(found["corrections"])
+    if found.get("research_sources"):
+        msg += "\n\n🔗 " + "\n🔗 ".join(found["research_sources"][:3])
+    tg.send(msg)
+    return found
 
 
 def custom(text):
@@ -778,8 +803,8 @@ def handle_button(s, cq):
                     extra_reel(s, news.topic_from_url(topic))
                 except Exception as e:
                     tg.send(f"⚠️ {e}. You can send the headline as text instead, or /topic <what it's about>.")
-            elif len(topic) >= PASTE_MIN:
-                extra_reel(s, pasted_news(topic))
+            elif len(topic) >= 60:  # a sentence or more of news → research it first
+                extra_reel(s, researched_story(topic))
             else:
                 extra_reel(s, custom(topic))
         return None

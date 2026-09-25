@@ -367,3 +367,59 @@ def visual_check(shots):
         except Exception:
             continue
     return out
+
+
+# ---------------------------------------------------------------- research (for news you send)
+def resolve_url(u):
+    """Follows Gemini's search redirect links to the real article address."""
+    if not isinstance(u, str) or not u.startswith("http"):
+        return ""
+    if "grounding-api-redirect" in u or "vertexaisearch" in u:
+        try:
+            return requests.get(u, timeout=10, allow_redirects=True, stream=True,
+                                headers={"User-Agent": "Mozilla/5.0"}).url
+        except Exception:
+            return ""
+    return u
+
+
+def research(text):
+    """Researches news you pasted: finds the original article and official announcement and the full facts.
+    Returns a story dict (title, link, source, published, summary, official_url, sources) or None."""
+    prompt = f"""Today is {now().strftime("%d %B %Y")}. Someone sent this AI news (maybe a short or forwarded message):
+\"\"\"{text[:2000]}\"\"\"
+
+Research it with Google Search like a journalist:
+1. Find the ORIGINAL reporting (a real news article) and, if one exists, the company's OFFICIAL announcement page.
+2. Collect the verified facts: who (companies, people with their roles), what exactly (product/model names), numbers,
+   dates, places, and any notable quote. Note anything in the message that is wrong or unconfirmed.
+Return ONLY JSON:
+{{"headline": "clear factual headline, max 100 characters",
+ "summary": "the full story in 4-6 factual sentences, only verified facts",
+ "published": "YYYY-MM-DD of the original announcement or article",
+ "outlet": "name of the main news outlet (e.g. TechCrunch)",
+ "article_url": "URL of the best original article",
+ "official_url": "URL of the official announcement/product page, or empty",
+ "corrections": ["anything in the message that was wrong or unconfirmed"],
+ "sources": ["other URLs you used"]}}
+If you can't find any real coverage of this news, return {{"headline": "", "summary": "", "not_found": true}}."""
+    try:
+        res = parse_json(ask(prompt, search=True, temperature=0.2, json_mode=True))
+    except Exception as e:
+        print(f"Research failed: {e}")
+        return None
+    if res.get("not_found") or not res.get("headline"):
+        return {"not_found": True}
+    link = resolve_url(res.get("article_url", ""))
+    official = resolve_url(res.get("official_url", ""))
+    sources = [u for u in (resolve_url(x) for x in (res.get("sources") or [])[:4]) if u]
+    published = ""
+    try:
+        from datetime import datetime
+        published = datetime.strptime(str(res.get("published", ""))[:10], "%Y-%m-%d").isoformat() + "+00:00"
+    except Exception:
+        pass
+    return {"title": str(res["headline"])[:140], "summary": str(res.get("summary", ""))[:1500],
+            "source": str(res.get("outlet", ""))[:40], "link": link, "published": published,
+            "official_url": official, "research_sources": [u for u in [link, official, *sources] if u],
+            "corrections": [str(c)[:200] for c in (res.get("corrections") or [])][:4], "researched": True}
