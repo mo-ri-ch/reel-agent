@@ -85,12 +85,14 @@ def parse_json(text):
 
 
 def pick_top(headlines, history, count=3):
-    listing = "\n".join(f"{i}. [{h['source']}] {h['title']} — {h['summary'][:200]}"
-                        for i, h in enumerate(headlines, 1))
+    listing = "\n".join(f"{i}. [{h['source']}] {h['title']}" + (f" ({h['buzz']})" if h.get("buzz") else "") +
+                        f" — {h['summary'][:200]}" for i, h in enumerate(headlines, 1))
     recent = "\n- ".join([""] + list(dict.fromkeys(history))[-40:]) or "none"
     prompt = f"""You run an Instagram Reels page about {NICHE} for a general audience.
 From the headlines below, pick the {count} stories that would make the most engaging 40-second reels today:
 big launches, surprising capabilities, tools people can actually use, major industry moves.
+Favour BREAKING stories that are clearly blowing up (high Hacker News points / Reddit upvotes in brackets) — but a Reddit
+post is only a lead: prefer stories that are also confirmed by a news site or an official announcement.
 Skip minor funding news, opinion pieces and duplicates of each other.
 NEVER pick a story we already covered, even if the headline is worded differently, comes from another outlet, or
 names a person instead of their company (e.g. "Mustafa Suleyman" = Microsoft's AI chief). Recently covered:{recent}

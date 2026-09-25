@@ -8,7 +8,7 @@ on:
       mode:
         description: "What to run"
         type: choice
-        options: [poll, offer, check]
+        options: [poll, offer, check, feeds]
         default: check
 
 permissions:

@@ -415,6 +415,7 @@ def recent_titles(s):
 def offer_news(s):
     tg.action("typing")
     headlines = news.dedupe(news.fetch_headlines(), recent_titles(s))
+    s["feed_report"] = {"at": st.now().isoformat(timespec="minutes"), **news.LAST_REPORT}
     used = recent_titles(s)
     if not headlines:
         reset_reel(s)
@@ -1058,6 +1059,16 @@ def cmd_render():
     st.save(s)
 
 
+def cmd_feeds():
+    """Checks every news source and saves how many stories each one gave (no messages sent)."""
+    s = st.load()
+    heads = news.fetch_headlines()
+    s["feed_report"] = {"at": st.now().isoformat(timespec="minutes"), **news.LAST_REPORT,
+                        "sample": [f"[{h['source']}] {h['title'][:70]}" + (f" ({h['buzz']})" if h.get("buzz") else "")
+                                   for h in heads[:12]]}
+    st.save(s)
+
+
 def cmd_check():
     results = []
 
@@ -1105,5 +1116,5 @@ def cmd_check():
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "poll"
-    {"poll": cmd_poll, "offer": cmd_offer, "morning": cmd_offer,
+    {"poll": cmd_poll, "offer": cmd_offer, "morning": cmd_offer, "feeds": cmd_feeds,
      "render": cmd_render, "check": cmd_check}[mode]()

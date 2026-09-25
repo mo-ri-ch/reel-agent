@@ -10,15 +10,33 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 
 FEEDS = [
+    # tech news
     "https://techcrunch.com/category/artificial-intelligence/feed/",
     "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
     "https://venturebeat.com/category/ai/feed/",
     "https://www.artificialintelligence-news.com/feed/",
-    "https://huggingface.co/blog/feed.xml",
-    "https://blog.google/technology/ai/rss/",
+    "https://arstechnica.com/ai/feed/",
+    "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+    # official company / lab announcements
     "https://openai.com/news/rss.xml",
+    "https://blog.google/technology/ai/rss/",
+    "https://deepmind.google/blog/rss.xml",
+    "https://huggingface.co/blog/feed.xml",
+    "https://blogs.nvidia.com/feed/",
+    "https://blogs.microsoft.com/ai/feed/",
+    # India
+    "https://analyticsindiamag.com/feed/",
+    "https://inc42.com/feed/",
+    # broad coverage (many outlets)
     "https://news.google.com/rss/search?q=artificial+intelligence+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+    # new AI products of the day
+    "https://www.producthunt.com/feed?category=artificial-intelligence",
 ]
+AI_WORDS = re.compile(r"(?i)\b(ai|a\.i\.|llm|llms|gpt|chatgpt|openai|anthropic|claude|gemini|deepmind|llama|mistral|"
+                      r"grok|copilot|nvidia|model|models|agent|agents|agi|neural|diffusion|transformer|sarvam|"
+                      r"perplexity|hugging ?face|deepseek|qwen|robot|robotics|machine learning|chatbot)\b")
+REDDIT_SUBS = ["LocalLLaMA", "OpenAI", "singularity", "artificial", "MachineLearning", "ClaudeAI", "Bard"]
+LAST_REPORT = {}  # headlines found per source on the last fetch (for checking the feeds)
 
 
 def _clean(text):
@@ -26,17 +44,74 @@ def _clean(text):
     return re.sub(r"\s+", " ", html.unescape(text)).strip()
 
 
-def fetch_headlines(max_age_hours=36, limit=40):
+def _hacker_news(cutoff):
+    """AI stories on Hacker News' front page, with their points (a strong "this is trending" signal)."""
+    out = []
+    try:
+        r = requests.get("https://hn.algolia.com/api/v1/search", timeout=20,
+                         params={"tags": "front_page", "hitsPerPage": 60})
+        for h in r.json().get("hits", []):
+            title, url = h.get("title") or "", h.get("url") or ""
+            when = datetime.fromtimestamp(h.get("created_at_i", 0), tz=timezone.utc)
+            if url and when >= cutoff and AI_WORDS.search(title):
+                out.append({"title": title, "link": url, "summary": "", "source": url.split("/")[2].replace("www.", ""),
+                            "published": when.isoformat(), "buzz": f"Hacker News {h.get('points', 0)} points"})
+    except Exception as e:
+        print(f"Hacker News failed: {e}")
+    return out
+
+
+def _reddit(cutoff):
+    """Top posts of the day in AI communities (first place many releases and leaks show up), with upvotes."""
+    out = []
+    for sub in REDDIT_SUBS:
+        try:
+            r = requests.get(f"https://www.reddit.com/r/{sub}/top.json", params={"t": "day", "limit": 12}, timeout=20,
+                             headers={"User-Agent": "GradientDailyNewsBot/1.0 (news digest; contact via github mo-ri-ch)"})
+            if r.status_code != 200:
+                print(f"Reddit r/{sub}: {r.status_code}")
+                continue
+            for c in r.json().get("data", {}).get("children", []):
+                p = c.get("data", {})
+                when = datetime.fromtimestamp(p.get("created_utc", 0), tz=timezone.utc)
+                score = p.get("score", 0)
+                if when < cutoff or score < 150 or p.get("stickied") or p.get("over_18"):
+                    continue
+                link = p.get("url_overridden_by_dest") or ""
+                if not link or "reddit.com" in link or "redd.it" in link or link.endswith((".jpg", ".png", ".gif")):
+                    link = "https://www.reddit.com" + p.get("permalink", "")  # a text post: link to the discussion
+                out.append({"title": _clean(p.get("title", "")), "link": link,
+                            "summary": _clean(p.get("selftext", ""))[:400], "source": f"r/{sub}",
+                            "published": when.isoformat(), "buzz": f"r/{sub} {score} upvotes"})
+        except Exception as e:
+            print(f"Reddit r/{sub} failed: {e}")
+    return out
+
+
+def fetch_headlines(max_age_hours=36, limit=60):
+    """Fresh AI headlines from news sites, official blogs, Google News, Product Hunt, Hacker News and Reddit."""
     cutoff = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
     items, seen = [], set()
+    LAST_REPORT.clear()
+
+    def add(item, label):
+        key = re.sub(r"[^a-z0-9]", "", item["title"].lower())[:50]
+        if item["title"] and key not in seen:
+            seen.add(key)
+            items.append(item)
+            LAST_REPORT[label] = LAST_REPORT.get(label, 0) + 1
+
     for url in FEEDS:
+        label = url.split("/")[2].replace("www.", "")
+        LAST_REPORT.setdefault(label, 0)
         try:
             resp = requests.get(url, headers=UA, timeout=20)
             feed = feedparser.parse(resp.content)
         except Exception as e:
             print(f"Feed failed: {url} ({e})")
             continue
-        source = _clean(feed.feed.get("title", "")) or url.split("/")[2]
+        source = _clean(feed.feed.get("title", "")) or label
+        broad = any(k in url for k in ("nvidia", "microsoft", "inc42", "producthunt", "technologyreview"))
         for e in feed.entries[:25]:
             t = e.get("published_parsed") or e.get("updated_parsed")
             published = datetime(*t[:6], tzinfo=timezone.utc) if t else None
@@ -46,18 +121,18 @@ def fetch_headlines(max_age_hours=36, limit=40):
             src = source
             if "news.google.com" in url and " - " in title:
                 title, src = title.rsplit(" - ", 1)  # Google News puts the publisher at the end
-            key = re.sub(r"[^a-z0-9]", "", title.lower())[:50]
-            if not title or key in seen:
-                continue
-            seen.add(key)
-            items.append({
-                "title": title,
-                "link": e.get("link", ""),
-                "summary": _clean(e.get("summary"))[:400],
-                "source": src,
-                "published": published.isoformat() if published else "",
-            })
+            summary = _clean(e.get("summary"))[:400]
+            if broad and not AI_WORDS.search(f"{title} {summary}"):
+                continue  # general feeds: keep only AI stories
+            add({"title": title, "link": e.get("link", ""), "summary": summary, "source": src,
+                 "published": published.isoformat() if published else "",
+                 **({"buzz": "Product Hunt launch"} if "producthunt" in url else {})}, label)
+    for item in _hacker_news(cutoff):
+        add(item, "Hacker News")
+    for item in _reddit(cutoff):
+        add(item, "Reddit")
     items.sort(key=lambda x: x["published"], reverse=True)
+    print("Headlines per source:", LAST_REPORT)
     return items[:limit]
 
 
