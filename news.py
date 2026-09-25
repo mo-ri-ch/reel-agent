@@ -13,8 +13,6 @@ FEEDS = [
     # tech news
     "https://techcrunch.com/category/artificial-intelligence/feed/",
     "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-    "https://venturebeat.com/category/ai/feed/",
-    "https://www.artificialintelligence-news.com/feed/",
     "https://arstechnica.com/ai/feed/",
     "https://www.technologyreview.com/topic/artificial-intelligence/feed",
     # official company / lab announcements
@@ -23,12 +21,12 @@ FEEDS = [
     "https://deepmind.google/blog/rss.xml",
     "https://huggingface.co/blog/feed.xml",
     "https://blogs.nvidia.com/feed/",
-    "https://blogs.microsoft.com/ai/feed/",
     # India
-    "https://analyticsindiamag.com/feed/",
     "https://inc42.com/feed/",
     # broad coverage (many outlets)
     "https://news.google.com/rss/search?q=artificial+intelligence+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+    # sites that block direct access, reached through Google News instead
+    "https://news.google.com/rss/search?q=(site:venturebeat.com+OR+site:analyticsindiamag.com+OR+site:artificialintelligence-news.com)+AI+when:2d&hl=en-IN&gl=IN&ceid=IN:en",
     # new AI products of the day
     "https://www.producthunt.com/feed?category=artificial-intelligence",
 ]
@@ -113,7 +111,7 @@ def fetch_headlines(max_age_hours=36, limit=60):
             LAST_REPORT[label] = (prev if isinstance(prev, int) else 0) + 1
 
     for url in FEEDS:
-        label = url.split("/")[2].replace("www.", "")
+        label = "Google News (VentureBeat, AIM, AI News)" if "site:" in url else url.split("/")[2].replace("www.", "")
         LAST_REPORT.setdefault(label, 0)
         try:
             resp = requests.get(url, headers=UA, timeout=20)
