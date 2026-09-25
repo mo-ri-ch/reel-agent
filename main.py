@@ -53,7 +53,8 @@ Tap the buttons under my messages, or type — both work.
 • Optional: send a picture or a short video clip (e.g. from Gemini) for the opening shot
 
 Commands:
-/topic <anything> – make an extra reel on your own topic right now (or just send a news link)
+/reel <news or request> – research it and make an extra reel now (e.g. /reel latest trending AI models)
+/topic <anything> – an explainer reel on a topic (or just send a news link / paste news text)
 /myscript <your script> – use a script you wrote yourself (skips Gemini)
 /news – get fresh stories now (e.g. to record the next reel straight away)
 /autopilot on|off – finish reels on my own when you don't reply
@@ -657,6 +658,13 @@ def handle(s, m, from_button=False):
             tg.send(script_message(s["draft"]) + "\n\n" + fact_line(s["draft"]), buttons=script_buttons(s))
     elif low.startswith(("/start", "/help")):
         tg.send(HELP)
+    elif low.startswith("/reel"):
+        request = text[5:].strip()
+        if not request:
+            tg.send("Tell me what the reel should be about, like:\n/reel give the news about the latest trending AI models")
+        else:
+            push_undo(s, f"extra reel \"{request[:40]}\"")
+            extra_reel(s, researched_story(request))
     elif low.startswith("/topic"):
         topic = text[6:].strip()
         similar = news.recent_match(topic, recent_titles(s)) if topic else None

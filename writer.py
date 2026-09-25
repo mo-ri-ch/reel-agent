@@ -386,9 +386,12 @@ def resolve_url(u):
 def research(text):
     """Researches news you pasted: finds the original article and official announcement and the full facts.
     Returns a story dict (title, link, source, published, summary, official_url, sources) or None."""
-    prompt = f"""Today is {now().strftime("%d %B %Y")}. Someone sent this AI news (maybe a short or forwarded message):
+    prompt = f"""Today is {now().strftime("%d %B %Y")}. Someone sent this AI news or request (maybe short, informal or forwarded, possibly with misspelled names):
 \"\"\"{text[:2000]}\"\"\"
 
+If it names SEVERAL things (e.g. "news about model X, model Y and other trending models"), make ONE roundup story covering
+the most newsworthy recent ones (max 3). If a name is misspelled, work out what it most likely refers to from recent
+news, and mention that interpretation in "corrections".
 Research it with Google Search like a journalist:
 1. Find the ORIGINAL reporting (a real news article) and, if one exists, the company's OFFICIAL announcement page.
 2. Collect the verified facts: who (companies, people with their roles), what exactly (product/model names), numbers,
