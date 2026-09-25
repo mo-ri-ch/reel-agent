@@ -425,6 +425,21 @@ def offer_news(s):
     whatsapp.alert("📰 New AI stories are ready! Open Telegram to pick one for your next reel.")
 
 
+PASTE_MIN = 180  # a message this long (a paragraph or more) is treated as pasted news
+
+
+def pasted_news(text):
+    """A story from news text you pasted (e.g. copied from WhatsApp): first line = headline, the rest = details."""
+    text = re.sub(r"[*_~]", "", text).strip()  # WhatsApp formatting marks
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    first = lines[0] if lines else text
+    headline = re.split(r"(?<=[.!?])\s", first)[0][:140]
+    headline = re.sub(r"(?i)^(big news|breaking|update|news)\s*[:\-–]\s*", "", headline)
+    src = re.search(r"(?im)^\s*(?:via|source|from|—|-)\s*[:\-]?\s*([A-Za-z][\w .&'’-]{1,38})\s*$", text)
+    return {"title": headline, "summary": text[:1500], "source": src.group(1).strip() if src else "", "link": "",
+            "published": "", "pasted": True}
+
+
 def custom(text):
     return {"title": text.strip(), "custom": True}
 
@@ -591,6 +606,13 @@ def handle(s, m, from_button=False):
     low = text.lower().strip(" !.")
 
     link = re.search(r"https?://\S+", text)
+    if not link and len(text) >= PASTE_MIN and not low.startswith("/"):
+        s["pending_topic"] = text
+        preview = text[:220] + ("…" if len(text) > 220 else "")
+        tg.send(f"📰 Make an extra reel from this news?\n\n“{preview}”\n\nIt'll be made now and posted as an extra — "
+                "the regular schedule carries on as usual.",
+                buttons=[[btn(s, "✅ Yes, make it", "confirm_topic"), btn(s, "✖️ No", "cancel", True)]])
+        return None
     if link and not low.startswith("/"):
         s["pending_topic"] = link.group(0)
         tg.send(f"📰 Make an extra reel from this news?\n{link.group(0)}\n\nIt'll be made now and posted as an extra — "
@@ -756,6 +778,8 @@ def handle_button(s, cq):
                     extra_reel(s, news.topic_from_url(topic))
                 except Exception as e:
                     tg.send(f"⚠️ {e}. You can send the headline as text instead, or /topic <what it's about>.")
+            elif len(topic) >= PASTE_MIN:
+                extra_reel(s, pasted_news(topic))
             else:
                 extra_reel(s, custom(topic))
         return None
