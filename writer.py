@@ -128,7 +128,8 @@ SCRIPT
 VISUALS — split the script into 5 to 8 beats (one or two sentences each). Every beat gets ONE visual.
 Prefer REAL and SPECIFIC visuals over generic ones:
 - a line about a named PRODUCT, APP, AI MODEL, DEVICE or COMPANY ANNOUNCEMENT → "official" (the real product images);
-- a named person, university, lab, building or place → "photo";
+- a line that names or quotes a PERSON ("Sam Altman says…", "Lovable co-founder Fabian Hedin…") → ALWAYS "person";
+- a named university, lab, building or place → "photo";
 - where the news comes from (a journal, paper or announcement) → "source".
 NEVER use a product or company name as a stock "query" or image "prompt": names are not literal ("Horizon Studio" is
 Meta software, not a horizon; "Gemini" is a Google AI, not a star sign; "Apple" is a company, not fruit).
@@ -139,6 +140,9 @@ Meta software, not a horizon; "Gemini" is a Google AI, not a star sign; "Apple" 
 - "official": the real images of a named product or company, taken from its official page and the news article.
   "entity" = exact name ("Meta Horizon Studio"), "url" = the official product/announcement page if you know it,
   "domain" = the company's website ("meta.com").
+- "person": the person's real photo with their name and role underneath. "name" = full name exactly as written in
+  the source, "role" = short designation ("CEO, OpenAI", "Co-founder, Lovable"), "x" = their X/Twitter handle
+  without @ if you know it (else ""), "url" = a page that shows them (company team page, profile) if you know one.
 - "photo": a real photo from Wikipedia/Wikimedia Commons. "entity" = the exact thing to show, as its Wikipedia title
   would be: "Stanford University", "Jensen Huang", "Nvidia headquarters", "Dassault Rafale", "CERN". Use it often.
 - "source": a card showing the source. "outlet" = journal, publisher or company ("Nature Medicine", "Google DeepMind"),
@@ -154,6 +158,7 @@ Return ONLY JSON:
  "hook_text": "3 to 6 punchy words shown big on the first screen",
  "beats": [{{"line": "spoken sentence(s)", "visual": "clip", "query": "..."}},
            {{"line": "...", "visual": "image", "prompt": "..."}},
+           {{"line": "...", "visual": "person", "name": "Sam Altman", "role": "CEO, OpenAI", "x": "sama", "url": ""}},
            {{"line": "...", "visual": "photo", "entity": "Stanford University"}},
            {{"line": "...", "visual": "official", "entity": "Meta Horizon Studio", "url": "https://...", "domain": "meta.com"}},
            {{"line": "...", "visual": "source", "outlet": "Nature Medicine", "domain": "nature.com", "headline": "..."}},
@@ -172,13 +177,16 @@ def normalize_draft(draft, topic):
     for b in draft.get("beats") or []:
         if not isinstance(b, dict) or not str(b.get("line", "")).strip():
             continue
-        kind = b.get("visual") if b.get("visual") in ("clip", "image", "stat", "photo", "source", "official") else "clip"
+        kind = b.get("visual") if b.get("visual") in ("clip", "image", "stat", "photo", "source", "official",
+                                                       "person") else "clip"
         beats.append({"line": str(b["line"]).strip(), "visual": kind,
                       "query": str(b.get("query") or "technology"), "prompt": str(b.get("prompt") or ""),
                       "big": str(b.get("big") or "")[:10], "small": str(b.get("small") or "")[:40],
                       "entity": str(b.get("entity") or "")[:80], "outlet": str(b.get("outlet") or "")[:60],
                       "domain": str(b.get("domain") or "")[:60], "headline": str(b.get("headline") or "")[:120],
                       "url": str(b.get("url") or "")[:300],
+                      "name": str(b.get("name") or "")[:60], "role": str(b.get("role") or "")[:60],
+                      "x": re.sub(r"[^A-Za-z0-9_]", "", str(b.get("x") or ""))[:30],
                       "brands": [{"name": str(x.get("name", ""))[:30], "domain": str(x.get("domain", ""))[:60]}
                                  for x in (b.get("brands") or []) if isinstance(x, dict) and x.get("name")][:2]})
     if not beats:  # older-style reply: build beats from the script lines
@@ -191,6 +199,8 @@ def normalize_draft(draft, topic):
         if b["visual"] == "stat" and not b["big"]:
             b["visual"] = "clip"
         if b["visual"] in ("photo", "official") and not b["entity"]:
+            b["visual"] = "clip"
+        if b["visual"] == "person" and not b["name"]:
             b["visual"] = "clip"
         if b["visual"] == "source" and not (b["outlet"] or b["headline"]):
             b["visual"] = "clip"

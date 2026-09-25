@@ -570,6 +570,118 @@ def page_images(url, limit=5):
     return found
 
 
+def _name_tokens(name):
+    return [t for t in re.sub(r"[^a-z0-9 ]", " ", name.lower()).split() if len(t) > 1]
+
+
+def wiki_person(name):
+    """A free photo from the person's OWN Wikipedia article (the title must match their name)."""
+    try:
+        r = requests.get("https://en.wikipedia.org/w/api.php", timeout=25, headers=WIKI_UA, params={
+            "action": "query", "format": "json", "generator": "search", "gsrsearch": name, "gsrlimit": 3,
+            "prop": "pageimages", "piprop": "name"})
+        pages = ((r.json().get("query") or {}).get("pages") or {}).values()
+        want = _name_tokens(name)
+        for p in pages:
+            title = _name_tokens(p.get("title", ""))
+            if p.get("pageimage") and want and all(t in title for t in want):
+                for f in _commons_file_info([f"File:{p['pageimage']}"]):
+                    img = fetch_image_wiki(f["url"])
+                    if img:
+                        return img, f["credit"].split(" (")[0]
+    except Exception as e:
+        print(f"Wikipedia photo for {name} failed: {e}")
+    return None, None
+
+
+def page_person_image(url, name):
+    """A photo on a page whose alt text / file name mentions the person (e.g. a team page or the article)."""
+    from urllib.parse import urljoin, urlparse
+    import html as html_lib
+    last = _name_tokens(name)[-1] if _name_tokens(name) else ""
+    if not url or not last:
+        return None, None
+    try:
+        r = requests.get(url, headers=UA, timeout=20, allow_redirects=True)
+        page, final = r.text[:800000], r.url
+    except Exception:
+        return None, None
+    for tag in re.findall(r"<img\b[^>]*>", page, re.I):
+        meta = " ".join(re.findall(r'(?:alt|title|src|data-src)=["\']([^"\']+)', tag, re.I)).lower()
+        if last not in meta:
+            continue
+        srcset = re.search(r'srcset=["\']([^"\']+)', tag, re.I)
+        src = (srcset.group(1).split(",")[-1].strip().split(" ")[0] if srcset else
+               (re.search(r'(?:data-src|src)=["\']([^"\']+)', tag, re.I) or [None, None])[1])
+        if not src:
+            continue
+        img = fetch_image(urljoin(final, html_lib.unescape(src)))
+        if img and min(img.size) >= 250:
+            return img, urlparse(final).netloc.replace("www.", "")
+    return None, None
+
+
+def person_photo(name, handle="", url="", source_urls=()):
+    """The person's real photo, or (None, None). Only from places where it's clearly them."""
+    img, credit = wiki_person(name)
+    if img:
+        return img, credit
+    for u in [url, *source_urls]:
+        img, credit = page_person_image(u, name)
+        if img:
+            return img, credit
+    if handle:
+        try:
+            r = requests.get(f"https://unavatar.io/x/{handle}?fallback=false", headers=UA, timeout=20)
+            if r.status_code == 200:
+                img = Image.open(io.BytesIO(r.content)).convert("RGB")
+                if min(img.size) >= 200:
+                    return img, f"x.com/{handle}"
+        except Exception as e:
+            print(f"X photo for {name} failed: {e}")
+    return None, None
+
+
+def portrait_square(img, size):
+    """Square crop that keeps the face: for tall photos, take the top part (faces sit high)."""
+    side = min(img.width, img.height)
+    x = (img.width - side) // 2
+    y = int((img.height - side) * 0.15) if img.height > img.width else 0
+    return img.crop((x, y, x + side, y + side)).resize((size, size), Image.LANCZOS)
+
+
+def make_person_card(path, name, role, img=None, credit=""):
+    """The person's photo with their name and role underneath, like a TV lower third."""
+    if img:
+        bg = darken(cover(img).filter(ImageFilter.GaussianBlur(40)), 0.55, 0.8)
+    else:
+        bg = gradient((14, 16, 30), (30, 36, 70))
+    d = ImageDraw.Draw(bg)
+    size, top = 600, 330
+    if img:
+        face = portrait_square(img, size)
+        mask = Image.new("L", (size, size), 0)
+        ImageDraw.Draw(mask).rounded_rectangle([0, 0, size - 1, size - 1], radius=60, fill=255)
+        d.rounded_rectangle([W / 2 - size / 2 - 8, top - 8, W / 2 + size / 2 + 8, top + size + 8], radius=66,
+                            fill=(255, 255, 255))
+        bg.paste(face, (int(W / 2 - size / 2), top), mask)
+    else:  # no trustworthy photo: initials, never someone else's face
+        initials = "".join(t[0] for t in name.split()[:2]).upper()
+        d.ellipse([W / 2 - 250, top + 50, W / 2 + 250, top + 550], fill=(123, 154, 248))
+        d.text((W / 2, top + 300), initials, font=font(220), fill=(15, 20, 48), anchor="mm")
+    y = top + size + 60
+    d.text((W / 2, y), name, font=font(74), fill="white", anchor="ma")
+    if role:
+        rf = font(44, semi=True)
+        tw = d.textlength(role, font=rf)
+        d.rounded_rectangle([W / 2 - tw / 2 - 28, y + 110, W / 2 + tw / 2 + 28, y + 180], radius=35,
+                            fill=(255, 212, 0))
+        d.text((W / 2, y + 145), role, font=rf, fill=(15, 15, 20), anchor="mm")
+    if img and credit:
+        bg = add_credit(bg, credit)
+    bg.save(path)
+
+
 def make_logo_card(path, name, domain=""):
     """A big, clean logo card for a company or product when no real image is available."""
     bg = gradient((14, 16, 30), (30, 36, 70))
@@ -800,6 +912,17 @@ def plan_visuals(beats, tmp, times=None, source_urls=()):
         length = (times[i][1] - times[i][0]) if times else 3.0
         want = 2 if length > 3.4 else 1
         shots = []
+        if b["visual"] == "person":
+            img, credit = person_photo(b["name"], b.get("x", ""), b.get("url", ""), source_urls)
+            p = os.path.join(tmp, f"person_{i}.png")
+            make_person_card(p, b["name"], b.get("role", ""), img, credit or "")
+            shots.append(("image", p))
+            if img:
+                counts["real photos"] += 1
+                LAST_CREDITS.append(f"{b['name']}: {credit}")
+            else:
+                counts["cards"] += 1
+            print(f"Person {b['name']}: {'photo from ' + str(credit) if img else 'name card (no reliable photo)'}")
         if b["visual"] == "official":
             for _ in range(want):
                 img, dom = take_from_pool(b.get("url", ""), b.get("domain", ""))
