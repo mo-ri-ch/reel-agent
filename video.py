@@ -915,21 +915,43 @@ SYNTH = {  # built-in sounds, used unless you add your own to the sfx/ folder
     "whoosh": ("anoisesrc=d=0.55:c=pink:r=48000:a=0.7",
                "highpass=f=350,lowpass=f=5500,afade=t=in:st=0:d=0.32:curve=exp,afade=t=out:st=0.3:d=0.25,volume=1.6"),
     "pop": ("aevalsrc=0.9*exp(-28*t)*sin(2*PI*t*(520+1600*exp(-22*t))):s=48000:d=0.22", "anull"),
-    "impact": ("aevalsrc=0.9*exp(-5*t)*sin(2*PI*52*t)+0.3*exp(-22*t)*sin(2*PI*110*t):s=48000:d=0.9",
-               "lowpass=f=400,volume=1.8"),
+    "impact": [  # the opening sound — one is picked at random for each reel
+        ("aevalsrc=0.9*exp(-5*t)*sin(2*PI*52*t)+0.3*exp(-22*t)*sin(2*PI*110*t):s=48000:d=0.9",
+         "lowpass=f=400"),                                                               # deep boom
+        ("aevalsrc=0.55*exp(-9*t)*(random(0)*2-1)+0.8*exp(-4*t)*sin(2*PI*45*t):s=48000:d=1.1",
+         "lowpass=f=2800"),                                                              # cinematic hit
+        ("aevalsrc=0.9*exp(-3.5*t)*sin(2*PI*(120*t-50*t*t)):s=48000:d=1.0",
+         "lowpass=f=600"),                                                               # bass drop
+        ("aevalsrc=0.7*exp(-16*t)*sin(2*PI*880*t)+0.55*gte(t\\,0.09)*exp(-16*(t-0.09))*sin(2*PI*1320*t):s=48000:d=0.5",
+         "anull"),                                                                       # tech blip
+        ("aevalsrc=0.5*(random(0)*2-1)*gt(sin(2*PI*26*t)\\,0)*exp(-6*t):s=48000:d=0.55",
+         "highpass=f=500,lowpass=f=7000"),                                               # digital glitch
+        ("aevalsrc=0.8*exp(-6*t)*sin(2*PI*65*t)+0.25*exp(-2.5*t)*sin(2*PI*1560*t)*sin(2*PI*4*t):s=48000:d=1.2",
+         "lowpass=f=5000"),                                                              # hit with shimmer
+    ],
     "riser": ("aevalsrc=0.4*(t/0.7)*sin(2*PI*(260*t+420*t*t)):s=48000:d=0.7", "afade=t=out:st=0.62:d=0.08"),
 }
 LEVELS = {"whoosh": 0.32, "pop": 0.45, "impact": 0.5, "riser": 0.22}
 
 
 def sound_file(kind, tmp):
+    """Your own sounds from sfx/ (kind*.mp3) or a built-in one; when there are several, one is picked at random."""
     files = [f for ext in ("mp3", "wav", "ogg", "m4a") for f in glob.glob(os.path.join(SFX_DIR, f"{kind}*.{ext}"))]
-    if files:
-        return random.choice(files)
+    options = SYNTH[kind] if isinstance(SYNTH[kind], list) else [SYNTH[kind]]
+    choice = random.randrange(len(files) + len(options))
+    if choice < len(files):
+        print(f"Sound '{kind}': {os.path.basename(files[choice])}")
+        return files[choice]
     out = os.path.join(tmp, f"{kind}.wav")
     if not os.path.exists(out):
-        src, af = SYNTH[kind]
-        sh(["ffmpeg", "-y", "-f", "lavfi", "-i", src, "-af", af, "-ac", "2", out])
+        src, af = options[choice - len(files)]
+        raw = out.replace(".wav", "_raw.wav")
+        sh(["ffmpeg", "-y", "-f", "lavfi", "-i", src, "-af", af, "-ac", "2", raw])
+        peak = re.search(r"max_volume: (-?[\d.]+) dB", subprocess.run(
+            ["ffmpeg", "-i", raw, "-af", "volumedetect", "-f", "null", "-"], capture_output=True, text=True).stderr)
+        gain = -3.0 - float(peak.group(1)) if peak else 0.0  # every variant equally loud
+        sh(["ffmpeg", "-y", "-i", raw, "-af", f"volume={gain:.1f}dB", out])
+        print(f"Sound '{kind}': built-in #{choice - len(files) + 1}")
     return out
 
 

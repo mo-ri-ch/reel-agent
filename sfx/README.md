@@ -5,7 +5,7 @@ Built-in sounds are used by default. To use your own, upload royalty-free files 
 
 - `whoosh...mp3` (e.g. whoosh1.mp3, whoosh-soft.mp3). One is picked at random each reel.
 - `pop...mp3` (e.g. pop1.mp3): logo badges, big numbers settling
-- `impact...mp3`: the opening headline popping in
+- `impact...mp3`: the opening headline popping in. Add several (impact1.mp3, impact2.mp3…) — together with the 6 built-in ones, a different one is picked at random for each reel
 - `riser...mp3`: under a number counting up
 
 Pixabay's sound effects library (pixabay.com/sound-effects) is a good free source. Keep each file short (under 1 second).
