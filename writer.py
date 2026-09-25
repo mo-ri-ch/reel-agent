@@ -113,8 +113,14 @@ SCRIPT
   "you" framing about the viewer's life, or a question they can't ignore.
   Good hooks: "Your next coworker might not be human." / "Google just made search ten times faster."
   Never start with: "Hey guys", "Did you know", "In today's video", "Breaking news", "Imagine".
-- Then: what happened (concrete names/numbers you're sure are accurate) → why it's surprising or matters → what it means for the viewer.
-- Then one short question to spark comments, then a last line asking to follow for daily AI news{handle}.
+- Then: what happened → why it's surprising or matters → what it means for the viewer.
+- BE SPECIFIC. Every script must name the concrete details: WHO (the company, lab, university or research team),
+  WHAT exactly (the product or model name, the journal or paper, what it actually does), WHERE (country or city)
+  and, when known, a real number or date from the source. Use Google Search to find the original source first.
+  Never write vague filler like "recent research", "a new study", "experts say", "scientists", "tech giants",
+  "a major company" or "this technology" without naming who or what it is. If a detail can't be verified, leave it
+  out rather than inventing it.
+- End with one short question to spark comments. Do NOT add a "follow us" line or mention any @handle.
 - Banned words: game-changer, revolutionize, revolutionary, cutting-edge, unleash, delve, landscape, buckle up,
   "the future is here", "in today's world", "stay tuned", "mind-blowing".
 - No emojis, hashtags, stage directions or brackets in the lines. Write numbers the way they're said ("ten times", "two billion").
