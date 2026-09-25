@@ -1162,11 +1162,11 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-09-25T23:21+05:30",
+    "at": "2026-09-25T23:25+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
-    "venturebeat.com": 0,
-    "artificialintelligence-news.com": 0,
+    "venturebeat.com": "blocked (HTTP 429)",
+    "artificialintelligence-news.com": "blocked (HTTP 403)",
     "arstechnica.com": 5,
     "technologyreview.com": 1,
     "openai.com": 1,
@@ -1174,12 +1174,13 @@
     "deepmind.google": 1,
     "huggingface.co": 1,
     "blogs.nvidia.com": 1,
-    "blogs.microsoft.com": 0,
-    "analyticsindiamag.com": 0,
+    "blogs.microsoft.com": "blocked (HTTP 410)",
+    "analyticsindiamag.com": "empty feed",
     "inc42.com": 7,
     "news.google.com": 25,
     "producthunt.com": 8,
     "Hacker News": 5,
+    "Reddit": 5,
     "sample": [
       "[OpenAI News] Proaction boosts sales 60% and saves 75+ hours with Codex",
       "[BBC] Chief minister says AI brings Jersey opportunities",
@@ -1191,8 +1192,8 @@
       "[Amazon Web Services (AWS)] Accelerate multimodal RL training with SkyRL on Amazon SageMaker Hyper",
       "[AI News & Artificial Intelligence | TechCrunch] Meta is putting its muscle behind Muse as the AI app takes off",
       "[Amazon Web Services (AWS)] NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
-      "[github.com] Jevmem – automatic project memory for Claude Code, built on Jev (Hacker News 46 points)",
-      "[theguardian.com] Pope Leo warns of AI threat to humanity at start of three-day France v"
+      "[github.com] Jevmem – automatic project memory for Claude Code, built on Jev (Hacker News 47 points)",
+      "[Amazon Web Services (AWS)] How Datacor built self-service rental analytics with Amazon Quick Sigh"
     ]
   }
 }
