@@ -21,8 +21,9 @@ from config import FONT_PATH, HANDLE, PEXELS_API_KEY, WORK_DIR
 
 W, H, FPS = 1080, 1920, 30
 SHOT_SECONDS = 2.6            # a new shot about this often
-ACCENT = (255, 212, 0)        # yellow
-ACCENT_ASS = "&H0000D4FF&"    # same yellow in ASS (BGR)
+ACCENT = (123, 154, 248)      # Gradient brand blue (#7B9AF8)
+ACCENT_ASS = "&H00F89A7B&"    # same blue in ASS (BGR)
+ACCENT_HEX = "0x7B9AF8"
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT_DIR = os.path.join(HERE, "fonts")
 FONT_BOLD = os.path.join(FONT_DIR, "Poppins-ExtraBold.ttf")
@@ -299,14 +300,40 @@ def text_block(draw, text, fnt, y, fill="white", box=None, line_gap=1.12, maxw=W
     return y
 
 
+def draw_label(d, label, y=334):
+    """A calm news label: a small brand-blue dot, then e.g. "The Verge · 25 Sep 2026"."""
+    f = font(40, semi=True)
+    tw = d.textlength(label, font=f)
+    x = W / 2 - (tw + 40) / 2
+    d.ellipse([x, y - 13, x + 26, y + 13], fill=ACCENT)
+    d.text((x + 40, y), label, font=f, fill="white", anchor="lm", stroke_width=2, stroke_fill=(0, 0, 0))
+
+
+def news_label(topic):
+    """'The Verge · 25 Sep 2026' for news, 'Explainer' for your own topics."""
+    from datetime import datetime, timezone
+    from config import TIMEZONE
+    if not topic or topic.get("custom"):
+        return "Explainer"
+    parts = [p.strip() for p in re.split(r"\s[|\-–—:]\s|\s\|\s?", str(topic.get("source") or "")) if p.strip()]
+    generic = re.compile(r"(?i)^(ai|news|blog|the blog|feed|rss|ai news.*|artificial intelligence.*|latest.*|technology|tech)$")
+    names = [p for p in parts if not generic.match(p) and not re.search(r"(?i)artificial intelligence|\bai news\b", p)]
+    names = [n for n in names if n.lower() != "google news"]
+    source = re.sub(r"(?i)\s+(blog|news|newsroom)$", "", names[-1]) if names else ""
+    try:
+        when = datetime.fromisoformat(topic["published"]).astimezone(TIMEZONE)
+    except Exception:
+        when = datetime.now(timezone.utc).astimezone(TIMEZONE)
+    date = f"{when.day} {when.strftime('%b %Y')}"
+    return f"{source[:28]} · {date}" if source and "google news" not in source.lower() else date
+
+
 def make_hook_card(path, hook, label, image=None):
     bg = full_frame(image, center=0.68) if image else gradient()
     bg = darken(bg, 0.25, 0.6)
     d = ImageDraw.Draw(bg)
     lf = font(38, semi=True)
-    tw = d.textlength(label, font=lf)
-    d.rounded_rectangle([W / 2 - tw / 2 - 28, 300, W / 2 + tw / 2 + 28, 368], radius=34, fill=ACCENT)
-    d.text((W / 2, 334), label, font=lf, fill="black", anchor="mm")
+    draw_label(d, label)
     size = 118
     while size > 70 and len(wrap(d, hook.upper(), font(size), W - 150)) > 3:
         size -= 8
@@ -323,9 +350,7 @@ def make_hook_overlay(path, hook, label):
     img.putalpha(shade.resize((W, H)))
     d = ImageDraw.Draw(img)
     lf = font(38, semi=True)
-    tw = d.textlength(label, font=lf)
-    d.rounded_rectangle([W / 2 - tw / 2 - 28, 300, W / 2 + tw / 2 + 28, 368], radius=34, fill=ACCENT)
-    d.text((W / 2, 334), label, font=lf, fill="black", anchor="mm")
+    draw_label(d, label)
     size = 118
     while size > 70 and len(wrap(d, hook.upper(), font(size), W - 150)) > 3:
         size -= 8
@@ -415,9 +440,7 @@ def hook_animation(tmp, hook, label, image=None):
     def draw_state(t):
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(layer)
-        tw = d.textlength(label, font=lf)
-        d.rounded_rectangle([W / 2 - tw / 2 - 28, 300, W / 2 + tw / 2 + 28, 368], radius=34, fill=ACCENT)
-        d.text((W / 2, 334), label, font=lf, fill="black", anchor="mm")
+        draw_label(d, label)
         y = 420
         for k, line in enumerate(lines):
             p = ease_out((t - 2 - k * 4) / 5)  # each line starts 4 frames after the previous
@@ -765,7 +788,7 @@ def make_person_card(path, name, role, img=None, credit="", animate_into=None):
             tw = ld.textlength(role, font=rf)
             q = ease_out((p - 0.3) / 0.7) if p < 1 else 1
             ld.rounded_rectangle([W / 2 - tw / 2 - 28, y + 110 + dy, W / 2 + tw / 2 + 28, y + 180 + dy], radius=35,
-                                 fill=(255, 212, 0, int(255 * q)))
+                                 fill=(*ACCENT, int(255 * q)))
             ld.text((W / 2, y + 145 + dy), role, font=rf, fill=(15, 15, 20, int(255 * q)), anchor="mm")
         return layer
     full = bg.convert("RGBA")
@@ -1344,7 +1367,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
                       if kind == "image" and os.path.basename(src).startswith(picture)), None)
         hook_img = Image.open(first).convert("RGB") if first else None
     hook_png = os.path.join(tmp, "hook.png")
-    label = "AI EXPLAINED" if (topic or {}).get("custom") else "AI NEWS"
+    label = news_label(topic)
     make_hook_card(hook_png, draft.get("hook_text") or draft.get("title", ""), label, hook_img)
 
     opening = None
@@ -1416,7 +1439,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
                      f"fade=t=out:st={b - 0.25:.2f}:d=0.25:alpha=1[b{k}]")
         graph.append(f"[{last}][b{k}]overlay=x=(W-w)/2:y=200:enable='between(t,{a:.2f},{b:.2f})'[v{k + 1}]")
         last = f"v{k + 1}"
-    graph.append(f"color=c=0xFFD400:s={W}x10:r={FPS}[bar]")
+    graph.append(f"color=c={ACCENT_HEX}:s={W}x10:r={FPS}[bar]")
     graph.append(f"[{last}][bar]overlay=x='-w+w*t/{total:.3f}':y=H-10:shortest=1[out]")
     sh(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listfile, "-i", audio, *inputs,
         "-filter_complex", ";".join(graph), "-map", "[out]", "-map", "1:a",
