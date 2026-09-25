@@ -483,10 +483,12 @@ def add_credit(img, credit):
     img = img.copy()
     d = ImageDraw.Draw(img)
     f = font(24, semi=True)
-    text = f"Photo: {credit}"[:95]
+    text = (credit if credit.startswith(("Photo", "Image")) else
+            f"Image: {credit}" if "." in credit and " " not in credit else f"Photo: {credit}")[:95]
     tw = d.textlength(text, font=f)
-    d.rounded_rectangle([W - tw - 46, H - 88, W - 18, H - 46], radius=10, fill=(0, 0, 0))
-    d.text((W - 32, H - 67), text, font=f, fill=(230, 230, 230), anchor="rm")
+    # inside the "safe area": the slow zoom on images crops the outer edges
+    d.rounded_rectangle([W - tw - 124, H - 262, W - 96, H - 220], radius=10, fill=(0, 0, 0))
+    d.text((W - 110, H - 241), text, font=f, fill=(230, 230, 230), anchor="rm")
     return img
 
 
@@ -517,6 +519,71 @@ def make_source_card(path, outlet, headline, domain=""):
     tw = d.textlength("SOURCE", font=tag)
     d.rounded_rectangle([W / 2 - tw / 2 - 30, 400, W / 2 + tw / 2 + 30, 470], radius=35, fill=ACCENT)
     d.text((W / 2, 435), "SOURCE", font=tag, fill="black", anchor="mm")
+    bg.save(path)
+
+
+# ---------------------------------------------------------------- official & article images
+SKIP_IMG = re.compile(r"logo|icon|avatar|sprite|favicon|badge|button|pixel|tracking|placeholder|author|profile|"
+                      r"ads?[_/.-]|banner-ad|spinner|loading|emoji|\.svg|\.gif", re.I)
+
+
+def page_images(url, limit=5):
+    """Big images from a web page: its share image first, then large pictures in the page. [(PIL image, domain)]"""
+    from urllib.parse import urljoin, urlparse
+    import html as html_lib
+    try:
+        r = requests.get(url, headers=UA, timeout=20, allow_redirects=True)
+        page, final = r.text[:800000], r.url
+    except Exception as e:
+        print(f"Couldn't open {url[:80]}: {e}")
+        return []
+    domain = urlparse(final).netloc.replace("www.", "")
+    if "news.google." in domain:
+        return []
+    cands = []
+    for pat in (r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)(?::src)?["\'][^>]*content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:image|twitter:image)'):
+        cands += re.findall(pat, page, re.I)
+    for tag in re.findall(r"<img\b[^>]*>", page, re.I)[:80]:
+        srcset = re.search(r'srcset=["\']([^"\']+)', tag, re.I)
+        if srcset:
+            parts = [p.strip().split(" ")[0] for p in srcset.group(1).split(",") if p.strip()]
+            if parts:
+                cands.append(parts[-1])  # the largest version
+                continue
+        src = re.search(r'(?:data-src|src)=["\']([^"\']+)', tag, re.I)
+        if src:
+            cands.append(src.group(1))
+    found, seen = [], set()
+    for c in cands:
+        c = urljoin(final, html_lib.unescape(c.strip()))
+        key = re.sub(r"[?#].*$", "", c)
+        if not c.startswith("http") or key in seen or SKIP_IMG.search(key):
+            continue
+        seen.add(key)
+        img = fetch_image(c)
+        if img and img.width >= 600 and img.height >= 300 and 0.4 <= img.width / img.height <= 3.0:
+            found.append((img, domain))
+            if len(found) >= limit:
+                break
+    print(f"{len(found)} images from {domain}")
+    return found
+
+
+def make_logo_card(path, name, domain=""):
+    """A big, clean logo card for a company or product when no real image is available."""
+    bg = gradient((14, 16, 30), (30, 36, 70))
+    d = ImageDraw.Draw(bg)
+    logo = brand_logo(name.split()[0], domain) or (brand_logo(name, domain) if " " in name else None)
+    y = 640
+    if logo:
+        tile = 420
+        d.rounded_rectangle([W / 2 - tile / 2, y, W / 2 + tile / 2, y + tile], radius=90, fill=(255, 255, 255))
+        lg = logo.convert("RGBA")
+        lg.thumbnail((tile - 110, tile - 110), Image.LANCZOS)
+        bg.paste(lg, (int(W / 2 - lg.width / 2), int(y + tile / 2 - lg.height / 2)), lg)
+        y += tile + 60
+    text_block(d, name, font(84), y)
     bg.save(path)
 
 
@@ -675,7 +742,7 @@ def beat_times(beats, words, total):
 LAST_SUMMARY = ""
 
 
-def plan_visuals(beats, tmp, times=None):
+def plan_visuals(beats, tmp, times=None, source_urls=()):
     """Finds visuals for every beat. Returns a list (per beat) of shots: ('clip'|'image', path)."""
     global LAST_SUMMARY, LAST_CREDITS
     import images
@@ -703,12 +770,60 @@ def plan_visuals(beats, tmp, times=None):
         except Exception as e:
             print(f"Clip picking skipped: {e}")
 
-    plan, used, counts = [], set(), {"real photos": 0, "clips": 0, "AI images": 0, "cards": 0}
+    plan, used, counts = [], set(), {"official images": 0, "real photos": 0, "clips": 0, "AI images": 0, "cards": 0}
     LAST_CREDITS = []
+
+    # real images from the official pages and the news sources, fetched once and shared by the beats
+    pool, pool_used, fetched = [], set(), set()
+
+    def fill_pool(url):
+        if url and url not in fetched and len(fetched) < 6:
+            fetched.add(url)
+            pool.extend((img, dom, url) for img, dom in page_images(url))
+
+    def take_from_pool(prefer_url="", prefer_domain=""):
+        order = sorted(range(len(pool)), key=lambda k: (pool[k][2] != prefer_url,
+                                                          prefer_domain not in pool[k][1] if prefer_domain else True))
+        for k in order:
+            if k not in pool_used:
+                pool_used.add(k)
+                return pool[k][0], pool[k][1]
+        return None, None
+
+    if any(b["visual"] in ("official", "photo") for b in beats):
+        for b in beats:
+            if b["visual"] == "official":
+                fill_pool(b.get("url"))
+        for u in source_urls:
+            fill_pool(u)
     for i, b in enumerate(beats):
         length = (times[i][1] - times[i][0]) if times else 3.0
         want = 2 if length > 3.4 else 1
         shots = []
+        if b["visual"] == "official":
+            for _ in range(want):
+                img, dom = take_from_pool(b.get("url", ""), b.get("domain", ""))
+                if not img:
+                    break
+                p = os.path.join(tmp, f"official_{i}_{len(shots)}.png")
+                framed = full_frame(img)
+                add_credit(framed, dom).save(p)
+                shots.append(("image", p))
+                counts["official images"] += 1
+                LAST_CREDITS.append(f"{b['entity']}: {dom}")
+            if not shots:  # nothing on the official pages: a real photo, else the logo card
+                img, credit = wiki_photo(b["entity"])
+                if img:
+                    p = os.path.join(tmp, f"photo_{i}.png")
+                    add_credit(full_frame(img), credit.split(" (")[0]).save(p)
+                    shots.append(("image", p))
+                    counts["real photos"] += 1
+                    LAST_CREDITS.append(f"{b['entity']}: {credit}")
+                else:
+                    p = os.path.join(tmp, f"logo_{i}.png")
+                    make_logo_card(p, b["entity"], b.get("domain", ""))
+                    shots.append(("image", p))
+                    counts["cards"] += 1
         if b["visual"] == "photo":
             img, credit = wiki_photo(b["entity"])
             if img:
@@ -717,9 +832,17 @@ def plan_visuals(beats, tmp, times=None):
                 shots.append(("image", p))
                 counts["real photos"] += 1
                 LAST_CREDITS.append(f"{b['entity']}: {credit}")
-            else:  # no free photo found: fall back to a stock clip search for it
-                b = {**b, "visual": "clip", "query": b["entity"]}
-                options[i] = pexels_search(b["entity"]) or pexels_search("technology")
+            else:  # no free photo: an image from the official/news pages, else a logo card
+                img, dom = take_from_pool("", b.get("domain", ""))
+                p = os.path.join(tmp, f"photo_{i}.png")
+                if img:
+                    add_credit(full_frame(img), dom).save(p)
+                    counts["official images"] += 1
+                    LAST_CREDITS.append(f"{b['entity']}: {dom}")
+                else:
+                    make_logo_card(p, b["entity"], b.get("domain", ""))
+                    counts["cards"] += 1
+                shots.append(("image", p))
         if b["visual"] == "source":
             p = os.path.join(tmp, f"source_{i}.png")
             make_source_card(p, b.get("outlet", ""), b.get("headline") or b["line"], b.get("domain", ""))
@@ -918,7 +1041,9 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     if hook_img is None and topic and not topic.get("custom"):
         url = news.og_image(topic.get("link"))
         hook_img = fetch_image(url) if url else None
-    plan = plan_visuals(beats, tmp, times)
+    sources = [topic.get("link")] if topic and topic.get("link") else []
+    sources += [u for u in (draft.get("sources") or []) if isinstance(u, str) and u.startswith("http")][:4]
+    plan = plan_visuals(beats, tmp, times, sources)
     if hook_img is None:
         first = next((src for shots in plan for kind, src in shots if kind == "image"), None)
         hook_img = Image.open(first).convert("RGB") if first else None

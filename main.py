@@ -274,7 +274,7 @@ def custom(text):
 
 def caption_for(draft, ai_voice=False):
     note = f"\n\n{AI_VOICE_NOTE}" if ai_voice and AI_VOICE_NOTE else ""
-    credits = draft.get("credits") or []
+    credits = list(dict.fromkeys(draft.get("credits") or []))  # no duplicates
     credit_text = ("\n\n📷 " + " · ".join(credits))[:600] if credits else ""
     return draft["caption"] + note + credit_text + "\n\n" + " ".join(f"#{h}" for h in draft["hashtags"])
 
