@@ -113,7 +113,10 @@ def align_to_script(words, script):
 
 
 # ---------------------------------------------------------------- captions
-def chunk_words(words, max_words=2, max_chars=13):
+CAPTION_STYLE = (os.environ.get("CAPTION_STYLE") or "clean").lower()   # "clean" (default) or "bold"
+
+
+def chunk_words(words, max_words=2, max_chars=13, sentence_breaks=".!?,;:"):
     chunks, cur = [], []
     for w in words:
         joined = " ".join(x["text"] for x in cur + [w])
@@ -121,7 +124,7 @@ def chunk_words(words, max_words=2, max_chars=13):
             chunks.append(cur)
             cur = []
         cur.append(w)
-        if re.search(r"[.!?,;:]$", w["text"]):
+        if w["text"] and w["text"][-1] in sentence_breaks:
             chunks.append(cur)
             cur = []
     if cur:
@@ -134,19 +137,20 @@ def ass_time(t):
     return f"{cs // 360000}:{cs // 6000 % 60:02d}:{cs // 100 % 60:02d}.{cs % 100:02d}"
 
 
-def ass_text(t):
+def ass_text(t, upper=True):
     t = re.sub(r"[{}\\]", "", t)
     t = re.sub(r"^[.,;:!?…\-–—]+", "", t)
-    t = re.sub(r"[.,;:]+$", "", t)  # trailing commas/full stops look messy on screen
-    return t.upper()
+    if upper:
+        t = re.sub(r"[.,;:]+$", "", t)  # trailing commas/full stops look messy in big captions
+        return t.upper()
+    return t
 
 
 def font_name():
     return "Poppins" if os.path.exists(FONT_BOLD) else "DejaVu Sans"
 
 
-def write_ass(words, total, path, hook_until=0.0):
-    out = [f"""[Script Info]
+ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
 PlayResY: {H}
@@ -155,15 +159,29 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,{font_name()},118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,9,4,2,70,70,640,1
-Style: Handle,{font_name()},36,&H40FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,2,0,1,3,0,8,60,60,110,1
+{caption}
+Style: Handle,{font},36,&H40FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,2,0,1,3,0,8,60,60,110,1
 
 [Events]
-Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"""]
-    chunks = chunk_words(words)
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"""
+
+
+def write_ass(words, total, path, hook_until=0.0):
+    font = font_name()
+    clean = CAPTION_STYLE != "bold"
+    if clean:
+        # Clean & minimal: sentence case, SemiBold, soft shadow, a short phrase at a time, active word in yellow
+        caption = (f"Style: Caption,{font},82,&H00FFFFFF,&H00FFFFFF,&H60000000,&H70000000,0,0,0,0,100,100,0.5,0,1,"
+                   f"3,2,2,100,100,600,1")
+        chunks = chunk_words(words, max_words=5, max_chars=26, sentence_breaks=".!?")
+    else:
+        caption = (f"Style: Caption,{font},118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,"
+                   f"9,4,2,70,70,640,1")
+        chunks = chunk_words(words)
+    out = [ASS_HEADER.format(W=W, H=H, caption=caption, font=font)]
     for ci, ch in enumerate(chunks):
         nxt = chunks[ci + 1][0]["start"] if ci + 1 < len(chunks) else total
-        chunk_end = nxt if nxt - ch[-1]["end"] < 0.5 else ch[-1]["end"] + 0.3
+        chunk_end = nxt if nxt - ch[-1]["end"] < 0.6 else ch[-1]["end"] + 0.35
         for wi, w in enumerate(ch):
             start = w["start"]
             end = ch[wi + 1]["start"] if wi + 1 < len(ch) else chunk_end
@@ -171,6 +189,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
             if end <= hook_until:
                 continue  # the hook screen has its own big text
             start = max(start, hook_until)
+            if clean:
+                parts = [f"{{\\c{ACCENT_ASS}}}{ass_text(x['text'], False)}{{\\c&HFFFFFF&}}" if k == wi
+                         else ass_text(x["text"], False) for k, x in enumerate(ch)]
+                soft = "{\\blur4}" + ("{\\fad(90,0)}" if wi == 0 else "")
+                out.append(f"Dialogue: 1,{ass_time(start)},{ass_time(end)},Caption,,0,0,0,,{soft}{' '.join(parts)}")
+                continue
             parts = []
             for k, x in enumerate(ch):
                 t = ass_text(x["text"])
