@@ -58,6 +58,7 @@ Commands:
 /autopilot on|off – finish reels on my own when you don't reply
 /queue – see scheduled reels
 /held – review reels the quality check parked
+/nextstory – drop this story and make the next one
 /script – show the current script again
 /status – what I'm waiting for
 /undo – go back one step (tap ↩️ Undo)
@@ -245,8 +246,10 @@ def park_reel(s):
     s["held"].append({"topic": s["topic"], "draft": s["draft"], "video_file_id": s["video_file_id"],
                       "voice_mode": s.get("voice_mode"), "held_at": now_iso})
     title = s["topic"]["title"]
+    reasons = (s["draft"].get("fact_notes") or []) + (s["draft"].get("visual_notes") or [])
     reset_reel(s)
-    tg.send(f"⏸ Parked for your review: “{title}”.\nThe quality check flagged something, so autopilot won't post it — "
+    tg.send(f"⏸ Parked for your review: “{title}”.\nWhy:\n• " + "\n• ".join(reasons or ["quality check"]) +
+            "\nAutopilot won't post it — "
             "but the next reels carry on as normal. Review it anytime (parked reels are kept for 24 hours).",
             buttons=[[btn(s, f"👀 Review parked reels ({len(s['held'])})", "/held", True)]])
     whatsapp.alert(f"⏸ A reel is parked for your review: {title}. Open Telegram → /held")
@@ -291,8 +294,9 @@ def fact_line(draft):
     if status == "fixed":
         return "🔎 Fact check: ✏️ corrected before writing this:\n• " + "\n• ".join(notes)
     if status == "unsure":
-        return ("🔎 Fact check: ⚠️ please check these before posting (autopilot won't post this reel):\n• "
-                + "\n• ".join(notes or ["some claims couldn't be verified"]))
+        return ("🔎 Fact check: ⚠️ these couldn't be verified:\n• " + "\n• ".join(notes or ["unverified claims"]))
+    if status == "kept":
+        return "🔎 Fact check: ⚠️ you chose to keep unverified claims"
     return "🔎 Fact check: skipped (Gemini unavailable) — please check the facts yourself"
 
 
@@ -300,11 +304,49 @@ def qa_hold(draft):
     return draft.get("fact_status") == "unsure" or draft.get("visual_status") == "issues"
 
 
-def start_script(s, topic, instruction=None):
+MAX_FIX_ROUNDS = 2
+
+
+def checked_script(topic, previous=None, instruction=None):
+    """Writes the script, fact-checks it, and if something is wrong rewrites it to fix the problem and checks
+    again (up to MAX_FIX_ROUNDS times). Returns the draft; draft['fact_status'] says how it ended."""
+    draft = writer.write_script(topic, previous=previous, instruction=instruction)
+    draft = fact_check_step(draft, topic)
+    rounds = 0
+    while draft.get("fact_status") == "unsure" and rounds < MAX_FIX_ROUNDS:
+        rounds += 1
+        problems = draft.get("fact_notes") or ["some claims couldn't be verified"]
+        tg.send(f"🔎 Fact check found a problem (attempt {rounds}/{MAX_FIX_ROUNDS}), fixing it:\n• " + "\n• ".join(problems))
+        fix = ("Fix these fact-check problems: " + " | ".join(problems) +
+               ". Correct each claim using the source article and search; if a claim can't be verified, remove it. "
+               "Don't add new claims.")
+        draft = writer.write_script(topic, previous=draft, instruction=fix)
+        draft = fact_check_step(draft, topic)
+    draft["fix_rounds"] = rounds
+    return draft
+
+
+def next_story(s, reason=""):
+    """Moves on to another story when this one can't be verified, so the posting slot still gets a reel."""
+    tried = set(s.get("tried") or []) | {(s.get("topic") or {}).get("title", "")}
+    s["tried"] = list(tried)[-30:]
+    spare = [c for c in (s.get("spare") or []) if c.get("title") not in tried]
+    if not spare:
+        heads = [h for h in news.fetch_headlines() if h["title"] not in tried and h["title"] not in s["history"]]
+        spare = writer.pick_top(heads, s["history"]) if heads else []
+    if not spare:
+        tg.send("⚠️ I couldn't find another story to switch to. Send /news or a topic.")
+        reset_reel(s)
+        return
+    pick, s["spare"] = spare[0], spare[1:]
+    tg.send(f"➡️ Switching to another story{(' — ' + reason) if reason else ''}:\n{pick['title']}")
+    start_script(s, pick, auto=True)
+
+
+def start_script(s, topic, instruction=None, auto=False):
     tg.action("typing")
     tg.send("✍️ Revising the script..." if instruction else f"✍️ Writing a script about: {topic['title']}")
-    draft = writer.write_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
-    draft = fact_check_step(draft, topic)
+    draft = checked_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
     image = s.get("user_image_id") if instruction else None
     clip = s.get("user_video_id") if instruction else s.pop("next_video_id", None)
     reset_reel(s)
@@ -312,6 +354,15 @@ def start_script(s, topic, instruction=None):
              script_deadline=deadline())
     if clip and not instruction:
         tg.send("🎥 Using the clip you sent as the opening shot.")
+    if draft.get("fact_status") == "unsure":
+        tg.send(script_message(draft) + "\n\n" + fact_line(draft) +
+                "\n\nI couldn't fix this after checking twice." +
+                (" Autopilot will switch to another story." if s.get("autopilot") else ""),
+                buttons=[[btn(s, "➡️ Next story", "/nextstory"), btn(s, "Keep anyway", "/keepscript")],
+                         [btn(s, "⏭ Skip", "/skip", True)]])
+        if auto and s.get("autopilot"):
+            next_story(s, "the facts couldn't be verified")
+        return
     tg.send(script_message(draft) + "\n\n" + fact_line(draft) +
             (autopilot_note("script") if s.get("autopilot") else ""), buttons=script_buttons(s))
 
@@ -468,6 +519,13 @@ def handle(s, m, from_button=False):
         undo(s)
     elif low.startswith("/held"):
         review_held(s)
+    elif low.startswith("/nextstory"):
+        push_undo(s, "switching story")
+        next_story(s, "as you asked")
+    elif low.startswith("/keepscript"):
+        if s.get("draft"):
+            s["draft"]["fact_status"] = "kept"
+            tg.send(script_message(s["draft"]) + "\n\n" + fact_line(s["draft"]), buttons=script_buttons(s))
     elif low.startswith(("/start", "/help")):
         tg.send(HELP)
     elif low.startswith("/topic"):
@@ -540,6 +598,7 @@ def handle(s, m, from_button=False):
         cands = s["candidates"]
         push_undo(s, f"choosing \"{text[:40]}\"")
         if low.isdigit() and 1 <= int(low) <= len(cands):
+            s["spare"] = [c for k, c in enumerate(cands) if k != int(low) - 1]
             start_script(s, cands[int(low) - 1])
         else:
             start_script(s, custom(text))
@@ -649,8 +708,8 @@ def cmd_poll():
             tg.send(f"⏰ No reply, so I picked #1: {pick['title']}")
             push_undo(s, "autopilot picking story #1")
             try:
-                start_script(s, pick)
-                whatsapp.alert("🎙 Today's script is ready. Open Telegram and record it as a voice note.")
+                s["spare"] = s["candidates"][1:]
+                start_script(s, pick, auto=True)
             except Exception as e:
                 s["choose_deadline"] = None
                 tg.send(f"⚠️ Couldn't write the script: {e}\nReply 1, 2 or 3 to try again.")
@@ -664,7 +723,11 @@ def cmd_poll():
             tg.send(f"⚠️ Couldn't get the news: {e}\nSend /news to try again.")
 
     if not render and s.get("autopilot"):
-        if s["stage"] == "awaiting_voice" and passed(s.get("script_deadline")):
+        if (s["stage"] == "awaiting_voice" and passed(s.get("script_deadline"))
+                and (s.get("draft") or {}).get("fact_status") == "unsure"):
+            s["script_deadline"] = None
+            next_story(s, "the facts couldn't be verified")
+        elif s["stage"] == "awaiting_voice" and passed(s.get("script_deadline")):
             push_undo(s, "autopilot choosing the AI voice")
             use_ai_voice(s, auto=True)
             render = True
@@ -780,8 +843,14 @@ def cmd_render():
                                    exact_words=exact, safe_beats=set(beats_bad))
                 frames = video.check_frames(out)
                 again = writer.visual_check(frames) if frames else []
-                s["draft"]["visual_status"] = "issues" if again else "fixed"
-                s["draft"]["visual_notes"] = [p["problem"] for p in again] or notes
+                if again:  # still not right: those shots become safe cards too (name/logo cards can't be wrong)
+                    more = {frames[p["beat"]]["beat"] for p in again if 0 <= p["beat"] < len(frames)}
+                    tg.send("🖼 Still not right, replacing these with safe cards:\n• " +
+                            "\n• ".join(p["problem"] for p in again))
+                    out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
+                                       exact_words=exact, safe_beats=set(beats_bad) | more)
+                s["draft"]["visual_status"] = "fixed"
+                s["draft"]["visual_notes"] = notes + [p["problem"] for p in again]
             else:
                 s["draft"]["visual_status"] = "ok"
         except Exception as e:
