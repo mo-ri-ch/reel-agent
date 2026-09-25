@@ -50,6 +50,8 @@ jobs:
       MUSIC_VOLUME: ${{ vars.MUSIC_VOLUME }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # always the latest memory (state.json), never an older copy
 
       - uses: actions/setup-python@v5
         with:
@@ -102,6 +104,6 @@ jobs:
           git add state.json
           if ! git diff --cached --quiet; then
             git commit -q -m "Update agent state"
-            git pull -q --rebase
+            git pull -q --rebase -X theirs   # if two saves meet, keep this run's newer memory
             git push -q
           fi

@@ -18,7 +18,32 @@ def _check(r):
     return data
 
 
+def already_posted(caption, hours=24):
+    """Link of a post with the same caption from the last `hours`, or "" (guards against double posting)."""
+    from datetime import datetime, timedelta, timezone
+    try:
+        data = _check(requests.get(f"{IG_GRAPH_BASE}/{IG_USER_ID}/media", timeout=30, params={
+            "fields": "caption,timestamp,permalink", "limit": 10, "access_token": IG_ACCESS_TOKEN}))
+    except Exception as e:
+        print(f"Duplicate check skipped: {e}")
+        return ""
+    key = caption.strip()[:120]
+    since = datetime.now(timezone.utc) - timedelta(hours=hours)
+    for m in data.get("data", []):
+        try:
+            when = datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        except Exception:
+            continue
+        if when >= since and (m.get("caption") or "").strip()[:120] == key:
+            return m.get("permalink") or "(already on Instagram)"
+    return ""
+
+
 def publish_reel(video_path, caption):
+    existing = already_posted(caption)
+    if existing:
+        print("This reel is already on Instagram — not posting it twice.")
+        return existing
     size = os.path.getsize(video_path)
     # 1) create an upload container
     data = _check(requests.post(f"{IG_GRAPH_BASE}/{IG_USER_ID}/media", data={
