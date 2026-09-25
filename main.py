@@ -301,7 +301,7 @@ def resolve_links(urls, limit=4):
     for u in urls:
         if not isinstance(u, str) or not u.startswith("http"):
             continue
-        final = u
+        final = news.real_url(u)
         if "grounding-api-redirect" in u or "vertexaisearch" in u:
             try:
                 final = requests.get(u, timeout=8, allow_redirects=True, stream=True,
@@ -468,6 +468,8 @@ def offer_news(s):
         tg.send("I couldn't find fresh AI news right now. Send me any topic and I'll write a script.")
         return
     picks = news.dedupe(writer.pick_top(headlines, used), [])
+    for p in picks:
+        p["link"] = news.real_url(p.get("link", ""))
     reset_reel(s)
     s.update(candidates=picks, stage="choosing",
              choose_deadline=(st.now() + timedelta(hours=AUTO_PICK_HOURS)).isoformat())

@@ -240,3 +240,29 @@ def topic_from_url(url):
     domain = urlparse(final).netloc.replace("www.", "")
     return {"title": title[:200], "link": final, "summary": meta("og:description", "description", "twitter:description")[:400],
             "source": meta("og:site_name") or domain, "published": meta("article:published_time", "og:updated_time")}
+
+
+def real_url(url):
+    """Unwraps a Google News link (news.google.com/rss/articles/...) to the real article address.
+    Returns the original link if it can't be unwrapped."""
+    import json as _json
+    if not url or "news.google.com" not in url or "/articles/" not in url:
+        return url
+    try:
+        art_id = url.split("/articles/")[1].split("?")[0]
+        page = requests.get(f"https://news.google.com/rss/articles/{art_id}", headers=UA, timeout=15).text
+        sig = re.search(r'data-n-a-sg="([^"]+)"', page)
+        ts = re.search(r'data-n-a-ts="([^"]+)"', page)
+        if not (sig and ts):
+            return url
+        req = ["Fbv4je", f'["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,'
+                         f'0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"{art_id}",{ts.group(1)},"{sig.group(1)}"]']
+        r = requests.post("https://news.google.com/_/DotsSplashUi/data/batchexecute", timeout=15,
+                          headers={**UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"},
+                          data={"f.req": _json.dumps([[req]])})
+        body = _json.loads(r.text.split("\n\n")[1])[:-2]
+        found = _json.loads(body[0][2])[1]
+        return found if isinstance(found, str) and found.startswith("http") else url
+    except Exception as e:
+        print(f"Couldn't unwrap Google News link: {e}")
+        return url

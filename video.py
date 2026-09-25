@@ -734,6 +734,10 @@ def person_photo(name, handle="", url="", source_urls=()):
         img, credit = page_person_image(u, name)
         if img:
             return img, credit
+    for u in [url, *source_urls]:  # the article's main picture, when the article is about this person
+        img, credit = article_portrait(u, name)
+        if img:
+            return img, credit
     if handle:
         try:
             r = requests.get(f"https://unavatar.io/x/{handle}?fallback=false", headers=UA, timeout=20)
@@ -743,6 +747,44 @@ def person_photo(name, handle="", url="", source_urls=()):
                     return img, f"x.com/{handle}"
         except Exception as e:
             print(f"X photo for {name} failed: {e}")
+    return None, None
+
+
+def article_portrait(url, name):
+    """The article's share image, used only if the article's opening mentions the person AND Gemini confirms
+    the picture is a portrait of one person (so we never show a random picture as someone's face)."""
+    import base64
+    from urllib.parse import urlparse
+    if not url or "news.google." in url:
+        return None, None
+    try:
+        page = requests.get(url, headers=UA, timeout=20).text[:400000]
+    except Exception:
+        return None, None
+    text = re.sub(r"<[^>]+>", " ", page)
+    first = (_name_tokens(name) or [""])[0]
+    if not first or first not in text.lower()[:60000]:
+        return None, None
+    src = news.og_image(url)
+    img = fetch_image(src) if src else None
+    if not img:
+        return None, None
+    try:
+        import writer
+        buf = io.BytesIO()
+        small = img.copy()
+        small.thumbnail((512, 512))
+        small.save(buf, "JPEG", quality=75)
+        verdict = writer.parse_json(writer.ask([
+            {"text": f"This is the main image of a news article about {name}. Is it a photo or portrait showing "
+                     f"exactly one person's face clearly (not a logo, product, screenshot, group or illustration)? "
+                     'Return ONLY JSON: {"single_person_portrait": true/false}'},
+            {"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(buf.getvalue()).decode()}}],
+            temperature=0, json_mode=True, light=True))
+        if verdict.get("single_person_portrait") is True:
+            return img, urlparse(url).netloc.replace("www.", "")
+    except Exception as e:
+        print(f"Portrait check skipped: {e}")
     return None, None
 
 

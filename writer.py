@@ -293,6 +293,9 @@ def draft_from_own_script(text, topic=None):
 def article_text(url, limit=5000):
     """Readable text of the source article (so its reporting counts as a source)."""
     import html as html_lib
+    if url and "news.google." in url:
+        import news
+        url = news.real_url(url)
     if not url or "news.google." in url:
         return ""
     try:
@@ -381,9 +384,12 @@ def visual_check(shots):
 
 # ---------------------------------------------------------------- research (for news you send)
 def resolve_url(u):
-    """Follows Gemini's search redirect links to the real article address."""
+    """Follows Gemini's search redirect links (and Google News links) to the real article address."""
     if not isinstance(u, str) or not u.startswith("http"):
         return ""
+    if "news.google.com" in u:
+        import news
+        return news.real_url(u)
     if "grounding-api-redirect" in u or "vertexaisearch" in u:
         try:
             return requests.get(u, timeout=10, allow_redirects=True, stream=True,
@@ -462,7 +468,13 @@ list the names you couldn't identify in "unknown_names", and continue. Only if n
         results = google_news_search(text)  # backup: real, current results from Google News
         if results:
             via = "Google News"
+            import news as _news
+            for r in results[:3]:
+                r["link"] = _news.real_url(r["link"])
+            texts = "\n\n".join(f"ARTICLE ({r['source']}): {article_text(r['link'], 2500)}" for r in results[:2]
+                                  if "news.google." not in r["link"])
             listing = "\n".join(f"- {r['title']} ({r['source']}, {r['published'][:16]}) {r['link']}" for r in results)
+            listing += ("\n\n" + texts) if texts.strip() else ""
             try:
                 res = parse_json(ask(prompt + "\n\nUse ONLY these current Google News results as your sources "
                                               "(they are real and recent):\n" + listing,
@@ -476,6 +488,17 @@ list the names you couldn't identify in "unknown_names", and continue. Only if n
     if res.get("not_found") or not res.get("headline"):
         return {"not_found": True, "unknown_names": unknown}
     link = resolve_url(res.get("article_url", ""))
+    if link and via == "Google Search":  # double-check the story against the article's actual text
+        body = article_text(link, 4000)
+        if body:
+            try:
+                res2 = parse_json(ask(prompt + "\n\nHere is the text of that article — make every fact match it, and "
+                                               "name every person it mentions with their role:\n" + body,
+                                      temperature=0.2, json_mode=True))
+                if res2.get("headline"):
+                    res = {**res, **{k: v for k, v in res2.items() if v}}
+            except Exception as e:
+                print(f"Article re-check skipped: {e}")
     official = resolve_url(res.get("official_url", ""))
     sources = [u for u in (resolve_url(x) for x in (res.get("sources") or [])[:4]) if u]
     published = ""
