@@ -39,7 +39,10 @@ def already_posted(caption, hours=24):
     return ""
 
 
-def publish_reel(video_path, caption):
+COVER_AT_MS = 1300  # the cover frame: 1.3 s in, when the opening headline is fully on screen
+
+
+def publish_reel(video_path, caption, cover_at_ms=COVER_AT_MS):
     existing = already_posted(caption)
     if existing:
         print("This reel is already on Instagram — not posting it twice.")
@@ -47,7 +50,7 @@ def publish_reel(video_path, caption):
     size = os.path.getsize(video_path)
     # 1) create an upload container
     data = _check(requests.post(f"{IG_GRAPH_BASE}/{IG_USER_ID}/media", data={
-        "media_type": "REELS", "upload_type": "resumable", "caption": caption[:2200],
+        "media_type": "REELS", "upload_type": "resumable", "caption": caption[:2200], "thumb_offset": int(cover_at_ms),
         "share_to_feed": "true", "access_token": IG_ACCESS_TOKEN}, timeout=60))
     container = data["id"]
     version = IG_GRAPH_BASE.split("/")[-1]

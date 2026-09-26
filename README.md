@@ -2,7 +2,7 @@
 
 A free agent that makes **6 faceless AI-news Instagram Reels a day**.
 You steer it from Telegram with a few taps; it writes the script, voices it, edits the video
-and posts it to **@gradient.daily.ai** (by Gradient AI Labs). If you're busy, autopilot finishes the job on its own.
+and posts it to **@gradientai.news** (by Gradient AI Labs). If you're busy, autopilot finishes the job on its own.
 
 **Cost: ₹0 / month.** New here? See [Setup from scratch](#setup-from-scratch-about-2-hours-one-time).
 
@@ -110,7 +110,7 @@ the reel itself. Your reply or tap at any point takes over. Toggle it with `/aut
 
 | Variable | Default | What it changes |
 |---|---|---|
-| `INSTAGRAM_HANDLE` | set in `agent.yml` (`gradient.daily.ai`) | Handle shown on reels; edit it in the workflow file |
+| `INSTAGRAM_HANDLE` | set in `agent.yml` (`gradientai.news`) | Handle shown on reels; edit it in the workflow file |
 | `POST_TIMES` | `09:00,11:30,14:00,16:30,19:00,21:30` | Posting times (India time) |
 | `OFFER_TIMES` | `07:00,09:30,12:00,14:30,17:00,19:30` | When fresh stories are sent (one reel each) |
 | `AUTO_PICK_HOURS` / `AUTO_APPROVE_HOURS` | `0.75` | How long autopilot waits at each step |
