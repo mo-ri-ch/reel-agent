@@ -21,6 +21,8 @@ from config import FONT_PATH, HANDLE, PEXELS_API_KEY, WORK_DIR
 
 W, H, FPS = 1080, 1920, 30
 SHOT_SECONDS = 2.6            # a new shot about this often
+CONTENT_BOTTOM = 1150         # cards keep logos/names/numbers above this line…
+CAPTION_Y = 1300              # …because captions sit here (one line, centred on this height)
 ACCENT = (123, 154, 248)      # Gradient brand blue (#7B9AF8)
 ACCENT_ASS = "&H00F89A7B&"    # same blue in ASS (BGR)
 ACCENT_HEX = "0x7B9AF8"
@@ -167,14 +169,24 @@ Style: Handle,{font},36,&H40FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"""
 
 
+def caption_fit(text, max_width=W - 180):
+    """Scale (in %) so a caption stays on one line inside the screen."""
+    try:
+        f = ImageFont.truetype(FONT_SEMI, 82)
+        width = ImageDraw.Draw(Image.new("RGB", (10, 10))).textlength(text, font=f) + 12
+    except Exception:
+        width = len(text) * 42
+    return 100 if width <= max_width else max(55, int(100 * max_width / width))
+
+
 def write_ass(words, total, path, hook_until=0.0):
     font = font_name()
     clean = CAPTION_STYLE != "bold"
     if clean:
         # Clean & minimal: sentence case, SemiBold, soft shadow, a short phrase at a time, active word in yellow
         caption = (f"Style: Caption,{font},82,&H00FFFFFF,&H00FFFFFF,&H60000000,&H70000000,0,0,0,0,100,100,0.5,0,1,"
-                   f"3,2,2,100,100,600,1")
-        chunks = chunk_words(words, max_words=5, max_chars=26, sentence_breaks=".!?")
+                   f"3,2,5,100,100,0,1")
+        chunks = chunk_words(words, max_words=5, max_chars=24, sentence_breaks=".!?")
     else:
         caption = (f"Style: Caption,{font},118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,"
                    f"9,4,2,70,70,640,1")
@@ -193,7 +205,9 @@ def write_ass(words, total, path, hook_until=0.0):
             if clean:
                 parts = [f"{{\\c{ACCENT_ASS}}}{ass_text(x['text'], False)}{{\\c&HFFFFFF&}}" if k == wi
                          else ass_text(x["text"], False) for k, x in enumerate(ch)]
-                soft = "{\\blur4}" + ("{\\fad(90,0)}" if wi == 0 else "")
+                fit = caption_fit(" ".join(ass_text(x["text"], False) for x in ch))
+                soft = (f"{{\\q2\\an5\\pos({W // 2},{CAPTION_Y})\\fscx{fit}\\fscy{fit}\\blur4}}" +
+                        ("{\\fad(90,0)}" if wi == 0 else ""))
                 out.append(f"Dialogue: 1,{ass_time(start)},{ass_time(end)},Caption,,0,0,0,,{soft}{' '.join(parts)}")
                 continue
             parts = []
@@ -207,7 +221,8 @@ def write_ass(words, total, path, hook_until=0.0):
             pop = f"{{\\fscx{int(fit * .7)}\\fscy{int(fit * .7)}\\t(0,110,\\fscx{fit}\\fscy{fit})}}" if wi == 0 else size
             body = ' '.join(parts).replace("\\fscx100\\fscy100", f"\\fscx{fit}\\fscy{fit}") \
                 .replace("\\fscx108\\fscy108", f"\\fscx{int(fit * 1.08)}\\fscy{int(fit * 1.08)}")
-            out.append(f"Dialogue: 1,{ass_time(start)},{ass_time(end)},Caption,,0,0,0,,{pop}{body}")
+            out.append(f"Dialogue: 1,{ass_time(start)},{ass_time(end)},Caption,,0,0,0,,"
+                       f"{{\\q2\\an5\\pos({W // 2},{CAPTION_Y})}}{pop}{body}")
     if HANDLE:
         handle = re.sub(r"[{}\\]", "", HANDLE.lstrip("@"))
         out.append(f"Dialogue: 0,{ass_time(0)},{ass_time(total)},Handle,,0,0,0,,@{handle}")
@@ -271,7 +286,7 @@ def darken(img, top=0.35, bottom=0.75):
     return Image.composite(Image.new("RGB", (W, H)), img, shade)
 
 
-def full_frame(img, center=0.42):
+def full_frame(img, center=0.37):
     """Any picture → full-screen 9:16 frame. Tall and square pictures fill the screen;
     wide photos (like news images) sit across the middle on a blurred copy of themselves."""
     if img.width / img.height <= 1.3:
@@ -382,8 +397,8 @@ def make_stat_card(path, big, small, image=None, draw_number=True):
     d = ImageDraw.Draw(bg)
     size = 300 if len(big) <= 4 else 240 if len(big) <= 6 else 180
     if draw_number:
-        d.text((W / 2, 560), big, font=font(size), fill=ACCENT, anchor="ma", stroke_width=6, stroke_fill="black")
-    text_block(d, small.upper(), font(68, semi=True), 560 + int(size * 1.15))
+        d.text((W / 2, 480), big, font=font(size), fill=ACCENT, anchor="ma", stroke_width=6, stroke_fill="black")
+    text_block(d, small.upper(), font(68, semi=True), 480 + int(size * 1.15))
     bg.save(path)
     return size
 
@@ -418,7 +433,7 @@ def stat_animation(tmp, i, big, small):
         v = value * ease_out((k + 1) / n)
         txt = f"{prefix}{v:,.{decimals}f}{suffix}" if "," in num else f"{prefix}{v:.{decimals}f}{suffix}"
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        ImageDraw.Draw(layer).text((W / 2, 560), txt if k < n - 1 else big, font=font(size), fill=ACCENT,
+        ImageDraw.Draw(layer).text((W / 2, 480), txt if k < n - 1 else big, font=font(size), fill=ACCENT,
                                    anchor="ma", stroke_width=6, stroke_fill="black")
         frames.append(layer)
     anim = save_frames(os.path.join(tmp, f"stat_frames_{i}"), frames)
@@ -598,11 +613,11 @@ def add_credit(img, credit):
 
 def make_source_card(path, outlet, headline, domain=""):
     """A clean 'where this comes from' card: publisher logo, name and the headline."""
-    bg = gradient((245, 245, 248), (220, 224, 235))
+    bg = gradient((14, 16, 30), (30, 36, 70))  # dark, so white captions stay readable
     d = ImageDraw.Draw(bg)
-    x0, y0, x1 = 70, 520, W - 70
-    card_h = 700
-    d.rounded_rectangle([x0 + 8, y0 + 12, x1 + 8, y0 + card_h + 12], radius=36, fill=(190, 194, 205))
+    x0, y0, x1 = 70, 420, W - 70
+    card_h = CONTENT_BOTTOM - 40 - 420
+    d.rounded_rectangle([x0 + 8, y0 + 12, x1 + 8, y0 + card_h + 12], radius=36, fill=(8, 10, 20))
     d.rounded_rectangle([x0, y0, x1, y0 + card_h], radius=36, fill=(255, 255, 255))
     logo = brand_logo(outlet, domain) if outlet else None
     x = x0 + 50
@@ -614,15 +629,15 @@ def make_source_card(path, outlet, headline, domain=""):
     d.text((x, y0 + 105), outlet or domain, font=font(56), fill=(15, 15, 25), anchor="lm")
     d.line([x0 + 50, y0 + 190, x1 - 50, y0 + 190], fill=(225, 225, 232), width=3)
     y = y0 + 230
-    for line in wrap(d, headline, font(64, semi=True), x1 - x0 - 100)[:5]:
+    for line in wrap(d, headline, font(64, semi=True), x1 - x0 - 100)[:4]:
         d.text((x0 + 50, y), line, font=font(64, semi=True), fill=(20, 20, 30))
         y += 84
     if domain:
         d.text((x0 + 50, y0 + card_h - 70), domain, font=font(36, semi=True), fill=(120, 124, 140))
     tag = font(40, semi=True)
     tw = d.textlength("SOURCE", font=tag)
-    d.rounded_rectangle([W / 2 - tw / 2 - 30, 400, W / 2 + tw / 2 + 30, 470], radius=35, fill=ACCENT)
-    d.text((W / 2, 435), "SOURCE", font=tag, fill="black", anchor="mm")
+    d.rounded_rectangle([W / 2 - tw / 2 - 30, 300, W / 2 + tw / 2 + 30, 370], radius=35, fill=ACCENT)
+    d.text((W / 2, 335), "SOURCE", font=tag, fill="black", anchor="mm")
     bg.save(path)
 
 
@@ -804,7 +819,7 @@ def make_person_card(path, name, role, img=None, credit="", animate_into=None):
     else:
         bg = gradient((14, 16, 30), (30, 36, 70))
     d = ImageDraw.Draw(bg)
-    size, top = 600, 330
+    size, top = 540, 280
     if img:
         face = portrait_square(img, size)
         mask = Image.new("L", (size, size), 0)
@@ -849,9 +864,9 @@ def make_logo_card(path, name, domain=""):
     bg = gradient((14, 16, 30), (30, 36, 70))
     d = ImageDraw.Draw(bg)
     logo = brand_logo(name.split()[0], domain) or (brand_logo(name, domain) if " " in name else None)
-    y = 640
+    y = 420
     if logo:
-        tile = 420
+        tile = 400
         d.rounded_rectangle([W / 2 - tile / 2, y, W / 2 + tile / 2, y + tile], radius=90, fill=(255, 255, 255))
         lg = logo.convert("RGBA")
         lg.thumbnail((tile - 110, tile - 110), Image.LANCZOS)
