@@ -1423,6 +1423,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
         hook_img = fetch_image(url) if url else None
     sources = [topic.get("link")] if topic and topic.get("link") else []
     sources += [u for u in (draft.get("sources") or []) if isinstance(u, str) and u.startswith("http")][:4]
+    sources = list(dict.fromkeys(news.real_url(u) for u in sources))  # never a Google News wrapper link
     plan = plan_visuals(beats, tmp, times, sources, safe_beats)
     if hook_img is None:
         # a real picture for the opening background — never a text card (stat, person, source, logo)
