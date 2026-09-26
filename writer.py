@@ -248,6 +248,8 @@ def choose_clips(beats_with_options):
     parts.append({"text": '\nReturn ONLY JSON like {"1": [2, 1], "2": [3], "3": []} — for each line, the option '
                           "numbers that fit, best first. Use [] if none fit."})
     raw = parse_json(ask(parts, temperature=0.2, json_mode=True, light=True))
+    if isinstance(raw, list):
+        raw = {str(i + 1): v for i, v in enumerate(raw)}
     return {int(k) - 1: [int(x) - 1 for x in v if str(x).lstrip("-").isdigit()] for k, v in raw.items()
             if str(k).isdigit() and isinstance(v, list)}
 
@@ -306,6 +308,13 @@ def article_text(url, limit=5000):
     page = re.sub(r"(?is)<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>", " ", page)
     paras = [html_lib.unescape(re.sub(r"<[^>]+>", " ", p)) for p in re.findall(r"(?is)<p[^>]*>(.*?)</p>", page)]
     text = " ".join(re.sub(r"\s+", " ", p).strip() for p in paras if len(p) > 60)
+    if len(text) < 400:  # fallback: JSON-LD articleBody, used by many news sites
+        m = re.search(r'"articleBody"\s*:\s*"((?:[^"\\]|\\.){200,})"', page)
+        if m:
+            try:
+                text = json.loads(f'"{m.group(1)}"')
+            except Exception:
+                text = m.group(1)
     return text[:limit]
 
 
@@ -334,8 +343,20 @@ def fact_check(draft, topic):
     corpus = {}
     for u in [topic.get("link", ""), *(topic.get("research_sources") or [])][:3]:
         txt = article_text(u, 30000) if u else ""
-        if txt:
+        if len(txt) > 400:
             corpus[u] = txt
+    if len(corpus) < 2:  # paywalled or blocked source: read other outlets' coverage of the same story
+        import news as _news
+        for r in google_news_search(topic.get("title", ""))[:6]:
+            if len(corpus) >= 3:
+                break
+            u = _news.real_url(r["link"])
+            if u in corpus or "news.google." in u:
+                continue
+            txt = article_text(u, 30000)
+            if len(txt) > 400:
+                corpus[u] = txt
+    print(f"Fact check sources: {list(corpus)}")
     beats = [{"beat": i + 1, "line": b["line"], **({"person": b.get("name"), "role": b.get("role")}
                                                    if b.get("visual") == "person" else {}),
               **({"number": b.get("big"), "label": b.get("small")} if b.get("visual") == "stat" else {})}
@@ -362,7 +383,8 @@ Return ONLY JSON:
     except Exception as e:
         print(f"Fact check skipped: {e}")
         return draft, "skipped", ["the fact check couldn't run (Gemini unavailable)"]
-    claims = [c for c in (res.get("claims") or []) if isinstance(c, dict) and c.get("claim")]
+    claims = res if isinstance(res, list) else (res.get("claims") or [])
+    claims = [c for c in claims if isinstance(c, dict) and c.get("claim")]
     if not claims:
         return draft, "unsure", ["the fact check didn't return any claims to verify"]
     notes = []
@@ -406,7 +428,9 @@ def visual_check(shots):
                           '(empty list if everything is fine).'})
     res = parse_json(ask(parts, temperature=0.1, json_mode=True, light=True))
     out = []
-    for p in res.get("problems") or []:
+    for p in (res if isinstance(res, list) else res.get("problems") or []):
+        if not isinstance(p, dict):
+            continue
         try:
             out.append({"beat": int(p["shot"]) - 1, "problem": str(p.get("problem", ""))[:120]})
         except Exception:
@@ -496,6 +520,8 @@ list the names you couldn't identify in "unknown_names", and continue. Only if n
     except Exception as e:
         print(f"Research failed: {e}")
         res, searched = {}, False
+    if isinstance(res, list):
+        res = next((x for x in res if isinstance(x, dict)), {})
     if not searched or res.get("not_found") or not res.get("headline"):
         results = google_news_search(text)  # backup: real, current results from Google News
         if results:
@@ -516,6 +542,8 @@ list the names you couldn't identify in "unknown_names", and continue. Only if n
                 return None if not res else {"not_found": True, "unknown_names": []}
         elif not searched:
             return None  # no search worked at all: don't claim "not found"
+    if isinstance(res, list):
+        res = next((x for x in res if isinstance(x, dict)), {})
     unknown = [str(n)[:40] for n in (res.get("unknown_names") or [])][:5]
     if res.get("not_found") or not res.get("headline"):
         return {"not_found": True, "unknown_names": unknown}
@@ -527,6 +555,8 @@ list the names you couldn't identify in "unknown_names", and continue. Only if n
                 res2 = parse_json(ask(prompt + "\n\nHere is the text of that article — make every fact match it, and "
                                                "name every person it mentions with their role:\n" + body,
                                       temperature=0.2, json_mode=True))
+                if isinstance(res2, list):
+                    res2 = next((x for x in res2 if isinstance(x, dict)), {})
                 if res2.get("headline"):
                     res = {**res, **{k: v for k, v in res2.items() if v}}
             except Exception as e:
@@ -573,7 +603,7 @@ or the organisation's exact name. Return ONLY JSON:
 Set "found": false (and leave name empty) if you truly can't find it. Never guess a name."""
     try:
         res = parse_json(ask(prompt, search=True, temperature=0.1, json_mode=True))
-        return [n for n in (res.get("names") or []) if isinstance(n, dict)]
+        return [n for n in (res if isinstance(res, list) else res.get("names") or []) if isinstance(n, dict)]
     except Exception as e:
         print(f"Name search failed: {e}")
         return []
