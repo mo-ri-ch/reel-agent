@@ -1,36 +1,109 @@
 {
   "offset": 153809597,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "OpenAI says its AI agents posted users' images online in error",
-      "link": "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html",
-      "summary": "OpenAI says its AI agents posted users' images online in error Le Monde.fr",
-      "source": "Le Monde.fr",
-      "published": "2026-09-26T03:54:00+00:00",
-      "angle": "OpenAI's agents accidentally leaked users' private images online, raising major privacy alarms."
-    },
-    {
-      "title": "Microsoft abandons personal AI chatbot race with Copilot reboot",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot",
-      "summary": "",
-      "source": "bloomberg.com",
-      "published": "2026-09-25T14:07:08+00:00",
-      "buzz": "Hacker News 111 points",
-      "angle": "Microsoft is completely giving up on the personal AI chatbot race with a massive Copilot reboot."
-    },
-    {
-      "title": "Microsoft stops insisting you need a \"Copilot+ PC\"",
-      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
-      "summary": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
-      "source": "AI - Ars Technica",
-      "published": "2026-09-25T17:57:37+00:00",
-      "angle": "Microsoft drops its strict Copilot+ PC requirement, meaning older laptops can finally run its newest features."
-    }
-  ],
-  "choose_deadline": "2026-09-26T12:45:41.945700+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "OpenAI says its AI agents posted users' images online in error",
+    "link": "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html",
+    "summary": "OpenAI says its AI agents posted users' images online in error Le Monde.fr",
+    "source": "Le Monde.fr",
+    "published": "2026-09-26T03:54:00+00:00",
+    "angle": "OpenAI's agents accidentally leaked users' private images online, raising major privacy alarms."
+  },
+  "draft": {
+    "title": "OpenAI AI agents posted user images in error",
+    "hook_text": "Photos posted online by error",
+    "beats": [
+      {
+        "line": "OpenAI says its AI agents posted users images online in error.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "OpenAI",
+        "outlet": "",
+        "domain": "openai.com",
+        "headline": "",
+        "url": "https://openai.com",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      },
+      {
+        "line": "Le Monde reported on the unexpected technical mistake.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Le Monde.fr",
+        "domain": "lemonde.fr",
+        "headline": "OpenAI says its AI agents posted users images online in error",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust an automated agent with your personal photos?",
+        "visual": "clip",
+        "query": "person looking at smartphone screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "caption": "OpenAI says its AI agents posted users images online in error according to Le Monde. This unexpected mistake highlights questions around data handling by autonomous software. Would you trust an AI agent with your personal photos?",
+    "hashtags": [
+      "OpenAI",
+      "ArtificialIntelligence",
+      "DataPrivacy",
+      "TechNews",
+      "AIAgents",
+      "CyberSecurity",
+      "TechUpdate",
+      "DigitalPrivacy",
+      "SoftwareBug",
+      "FutureOfTech",
+      "PrivacyBreach"
+    ],
+    "sources": [
+      "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html"
+    ],
+    "script": "OpenAI says its AI agents posted users images online in error.\nLe Monde reported on the unexpected technical mistake.\nWould you trust an automated agent with your personal photos?",
+    "keywords": [
+      "person looking at smartphone screen"
+    ],
+    "image_prompts": [],
+    "fact_status": "unsure",
+    "fact_notes": [
+      "Beat 1: “OpenAI says its AI agents posted users images online in error.” — no source found for this",
+      "Beat 2: “Le Monde reported on the unexpected technical mistake.” — no source found for this"
+    ],
+    "fix_rounds": 2,
+    "source_links": [
+      "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -43,7 +116,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-09-26T13:38:02.917979+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -208,184 +281,21 @@
       "held_at": "2026-09-26T01:45:27.806806+05:30"
     }
   ],
+  "paused": null,
   "spare": [
     {
-      "title": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
-      "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
-      "summary": "After teasing its new Copilot \"super app\" last month, Microsoft is officially unveiling it today. The redesigned Copilot app bundles three AI capabilities into a single interface of chat, coding, and agents. As part of the launch, Microsoft is also rebranding Scout, the AI personal assistant it unveiled at Build earlier this year, as Autopilot. […]",
-      "source": "AI | The Verge",
-      "published": "2026-09-25T12:00:00+00:00",
-      "angle": "Microsoft just overhauled Copilot into a massive super app combining chat, coding, and an autopilot agent"
-    },
-    {
-      "title": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
-      "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
-      "summary": "\"Overly constrained AI models\" could cause military operations to fail, judges say.",
+      "title": "Microsoft stops insisting you need a \"Copilot+ PC\"",
+      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
+      "summary": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
       "source": "AI - Ars Technica",
-      "published": "2026-09-25T21:36:20+00:00",
-      "angle": "A US court officially rules the government can blacklist Anthropic for refusing to unconstrain its AI models"
+      "published": "2026-09-25T17:57:37+00:00",
+      "angle": "Microsoft drops its strict Copilot+ PC requirement, meaning older laptops can finally run its newest features."
     }
   ],
-  "tried": [],
-  "next_video_id": null,
+  "tried": [
+    "OpenAI says its AI agents posted users' images online in error"
+  ],
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-          "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-          "summary": "",
-          "source": "cnbc.com",
-          "published": "2026-09-25T15:29:25+00:00",
-          "buzz": "Hacker News 380 points",
-          "angle": "US appeals court upholds Anthropic supply chain risk designation, a massive blow for the AI lab."
-        },
-        "draft": {
-          "title": "Anthropic Fights Pentagon Supply Chain Risk Label",
-          "hook_text": "The Pentagon just banned Anthropic.",
-          "beats": [
-            {
-              "line": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "CNBC",
-              "domain": "cnbc.com",
-              "headline": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The Department of Defense argues the artificial intelligence company poses national security concerns.",
-              "visual": "clip",
-              "query": "pentagon building exterior washington dc",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Anthropic strongly disputed this label in court filings.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic website",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.anthropic.com",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "This ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.",
-              "visual": "clip",
-              "query": "lawyers talking in courtroom",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How should the military handle national security risks from artificial intelligence firms?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Dark digital security network graphic with glowing red warning shield",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "A U.S. appeals court has upheld the Pentagon designation of Anthropic as a supply chain risk. How should governments balance military security with commercial artificial intelligence tools?",
-          "hashtags": [
-            "Anthropic",
-            "Pentagon",
-            "ArtificialIntelligence",
-            "AI",
-            "NationalSecurity",
-            "USCourt",
-            "TechNews",
-            "DefenseDepartment",
-            "MachineLearning",
-            "AIPolicy"
-          ],
-          "sources": [
-            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-          ],
-          "script": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.\nThe Department of Defense argues the artificial intelligence company poses national security concerns.\nAnthropic strongly disputed this label in court filings.\nThis ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.\nHow should the military handle national security risks from artificial intelligence firms?",
-          "keywords": [
-            "pentagon building exterior washington dc",
-            "lawyers talking in courtroom"
-          ],
-          "image_prompts": [
-            "Dark digital security network graphic with glowing red warning shield"
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-09-26T08:35:37.314222+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -900,6 +810,51 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIBGGq3W50CdDsH4355i2VXcwhvsER6AAJ2JQACuwTBVbnewWJEcVJxPQQ",
       "history_title": "Revealing the details of how OpenAI agents hacked Hugging Face"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "OpenAI says its AI agents posted users' images online in error",
+            "link": "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html",
+            "summary": "OpenAI says its AI agents posted users' images online in error Le Monde.fr",
+            "source": "Le Monde.fr",
+            "published": "2026-09-26T03:54:00+00:00",
+            "angle": "OpenAI's agents accidentally leaked users' private images online, raising major privacy alarms."
+          },
+          {
+            "title": "Microsoft abandons personal AI chatbot race with Copilot reboot",
+            "link": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot",
+            "summary": "",
+            "source": "bloomberg.com",
+            "published": "2026-09-25T14:07:08+00:00",
+            "buzz": "Hacker News 111 points",
+            "angle": "Microsoft is completely giving up on the personal AI chatbot race with a massive Copilot reboot."
+          },
+          {
+            "title": "Microsoft stops insisting you need a \"Copilot+ PC\"",
+            "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
+            "summary": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
+            "source": "AI - Ars Technica",
+            "published": "2026-09-25T17:57:37+00:00",
+            "angle": "Microsoft drops its strict Copilot+ PC requirement, meaning older laptops can finally run its newest features."
+          }
+        ],
+        "choose_deadline": "2026-09-26T12:45:41.945700+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
