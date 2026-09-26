@@ -1,6 +1,6 @@
 {
   "offset": 153809599,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -203,16 +203,21 @@
     "fix_rounds": 1,
     "source_links": [
       "https://analyticsindiamag.com/ai-news/microsoft-revamps-copilot-with-home-code-and-autopilot-capabilities"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The update introduces Home, Code, and Autopilot ca…: The visual shows a drone instead of a person coding on a laptop."
+    ],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIBQ2q3q3I4FB3Psg3DVUU5XD5sIAEfAAKgJgACuwTBVSkzgPJHlpx_PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-09-26T16:46:21.432381+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-09-26T17:39:35.452288+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-09-26",
@@ -400,124 +405,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "script change \"1\"",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "OpenAI says its AI agents posted users' images online in error",
-          "link": "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html",
-          "summary": "OpenAI says its AI agents posted users' images online in error Le Monde.fr",
-          "source": "Le Monde.fr",
-          "published": "2026-09-26T03:54:00+00:00",
-          "angle": "OpenAI's agents accidentally leaked users' private images online, raising major privacy alarms."
-        },
-        "draft": {
-          "title": "OpenAI AI agents posted user images in error",
-          "hook_text": "Photos posted online by error",
-          "beats": [
-            {
-              "line": "OpenAI says its AI agents posted users images online in error.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Le Monde reported on the unexpected technical mistake.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Le Monde.fr",
-              "domain": "lemonde.fr",
-              "headline": "OpenAI says its AI agents posted users images online in error",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an automated agent with your personal photos?",
-              "visual": "clip",
-              "query": "person looking at smartphone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "OpenAI says its AI agents posted users images online in error according to Le Monde. This unexpected mistake highlights questions around data handling by autonomous software. Would you trust an AI agent with your personal photos?",
-          "hashtags": [
-            "OpenAI",
-            "ArtificialIntelligence",
-            "DataPrivacy",
-            "TechNews",
-            "AIAgents",
-            "CyberSecurity",
-            "TechUpdate",
-            "DigitalPrivacy",
-            "SoftwareBug",
-            "FutureOfTech",
-            "PrivacyBreach"
-          ],
-          "sources": [
-            "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html"
-          ],
-          "script": "OpenAI says its AI agents posted users images online in error.\nLe Monde reported on the unexpected technical mistake.\nWould you trust an automated agent with your personal photos?",
-          "keywords": [
-            "person looking at smartphone screen"
-          ],
-          "image_prompts": [],
-          "fact_status": "unsure",
-          "fact_notes": [
-            "Beat 1: “OpenAI says its AI agents posted users images online in error.” — no source found for this",
-            "Beat 2: “Le Monde reported on the unexpected technical mistake.” — no source found for this"
-          ],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-09-26T13:38:02.917979+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "switching story",
       "data": {
@@ -1046,6 +933,225 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Microsoft Revamps Copilot With Home, Code and Autopilot Capabilities",
+          "link": "https://analyticsindiamag.com/ai-news/microsoft-revamps-copilot-with-home-code-and-autopilot-capabilities",
+          "summary": "Microsoft Revamps Copilot With Home, Code and Autopilot Capabilities analyticsindiamag.com",
+          "source": "analyticsindiamag.com",
+          "published": "2026-09-26T06:33:23+00:00",
+          "angle": "Microsoft is giving its Copilot a massive upgrade with new Home, Code, and Autopilot capabilities."
+        },
+        "draft": {
+          "title": "Microsoft Revamps Copilot",
+          "hook_text": "Microsoft just overhauled Copilot",
+          "beats": [
+            {
+              "line": "Microsoft just overhauled its Copilot assistant with three major new features.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Microsoft Copilot",
+              "outlet": "",
+              "domain": "microsoft.com",
+              "headline": "",
+              "url": "https://analyticsindiamag.com/ai-news/microsoft-revamps-copilot-with-home-code-and-autopilot-capabilities",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "The update introduces Home, Code, and Autopilot capabilities to the platform.",
+              "visual": "clip",
+              "query": "person coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "Home acts as your central dashboard for all daily AI interactions.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "futuristic minimalist dashboard interface glowing blue on dark screen",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Code moves solution building outside the realm of developers alone.",
+              "visual": "clip",
+              "query": "software code scrolling on screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It lets anyone create purpose-built solutions without traditional programming barriers.",
+              "visual": "clip",
+              "query": "hands typing on mechanical keyboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Autopilot takes over multi-step tasks so you do not have to click manually.",
+              "visual": "clip",
+              "query": "person looking thoughtfully at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an artificial intelligence autopilot to run your daily desktop tasks?",
+              "visual": "clip",
+              "query": "person using computer office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Microsoft is pushing its AI assistant further into daily workflows with new Home, Code, and Autopilot features. Would you trust an artificial intelligence autopilot to run your desktop tasks?",
+          "hashtags": [
+            "Microsoft",
+            "Copilot",
+            "ArtificialIntelligence",
+            "TechNews",
+            "SoftwareEngineering",
+            "ProductivityTools",
+            "MachineLearning",
+            "Coding",
+            "Automation",
+            "FutureOfWork"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/ai-news/microsoft-revamps-copilot-with-home-code-and-autopilot-capabilities"
+          ],
+          "script": "Microsoft just overhauled its Copilot assistant with three major new features.\nThe update introduces Home, Code, and Autopilot capabilities to the platform.\nHome acts as your central dashboard for all daily AI interactions.\nCode moves solution building outside the realm of developers alone.\nIt lets anyone create purpose-built solutions without traditional programming barriers.\nAutopilot takes over multi-step tasks so you do not have to click manually.\nWould you trust an artificial intelligence autopilot to run your daily desktop tasks?",
+          "keywords": [
+            "person coding on laptop",
+            "software code scrolling on screen",
+            "hands typing on mechanical keyboard",
+            "person looking thoughtfully at computer screen",
+            "person using computer office"
+          ],
+          "image_prompts": [
+            "futuristic minimalist dashboard interface glowing blue on dark screen"
+          ],
+          "evidence": [
+            {
+              "claim": "Microsoft overhauled its Copilot assistant with three major new features.",
+              "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+            },
+            {
+              "claim": "The update introduces Home, Code, and Autopilot capabilities to the platform.",
+              "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+            },
+            {
+              "claim": "Home acts as your central dashboard for all daily AI interactions.",
+              "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+            },
+            {
+              "claim": "Code moves solution building outside the realm of developers alone.",
+              "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+            },
+            {
+              "claim": "It lets anyone create purpose-built solutions without traditional programming barriers.",
+              "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+            },
+            {
+              "claim": "Autopilot takes over multi-step tasks so you do not have to click manually.",
+              "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/microsoft-revamps-copilot-with-home-code-and-autopilot-capabilities"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-26T16:46:21.432381+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1101,8 +1207,8 @@
       "at": "2026-09-26T15:15:25.157164+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-09-26T15:15+05:30",
