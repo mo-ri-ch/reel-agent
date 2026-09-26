@@ -1,5 +1,5 @@
 {
-  "offset": 153809597,
+  "offset": 153809598,
   "stage": "awaiting_voice",
   "candidates": [],
   "choose_deadline": null,
@@ -12,8 +12,8 @@
     "angle": "OpenAI's agents accidentally leaked users' private images online, raising major privacy alarms."
   },
   "draft": {
-    "title": "OpenAI AI agents posted user images in error",
-    "hook_text": "Photos posted online by error",
+    "title": "OpenAI AI agents posted user images online in error",
+    "hook_text": "Your AI leaked photos",
     "beats": [
       {
         "line": "OpenAI says its AI agents posted users images online in error.",
@@ -38,7 +38,7 @@
         ]
       },
       {
-        "line": "Le Monde reported on the unexpected technical mistake.",
+        "line": "French publication Le Monde reported the incident involving user data.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -55,7 +55,7 @@
         "brands": []
       },
       {
-        "line": "Would you trust an automated agent with your personal photos?",
+        "line": "Would you trust an AI agent with your personal photos?",
         "visual": "clip",
         "query": "person looking at smartphone screen",
         "prompt": "",
@@ -72,32 +72,30 @@
         "brands": []
       }
     ],
-    "caption": "OpenAI says its AI agents posted users images online in error according to Le Monde. This unexpected mistake highlights questions around data handling by autonomous software. Would you trust an AI agent with your personal photos?",
+    "caption": "OpenAI stated that its AI agents posted users images online in error according to reports by Le Monde. Would you trust an AI agent with your personal photos?",
     "hashtags": [
       "OpenAI",
       "ArtificialIntelligence",
-      "DataPrivacy",
       "TechNews",
+      "DataPrivacy",
       "AIAgents",
-      "CyberSecurity",
+      "LeMonde",
       "TechUpdate",
-      "DigitalPrivacy",
-      "SoftwareBug",
-      "FutureOfTech",
-      "PrivacyBreach"
+      "CyberSecurity",
+      "PrivacyBreach",
+      "FutureTech"
     ],
     "sources": [
       "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html"
     ],
-    "script": "OpenAI says its AI agents posted users images online in error.\nLe Monde reported on the unexpected technical mistake.\nWould you trust an automated agent with your personal photos?",
+    "script": "OpenAI says its AI agents posted users images online in error.\nFrench publication Le Monde reported the incident involving user data.\nWould you trust an AI agent with your personal photos?",
     "keywords": [
       "person looking at smartphone screen"
     ],
     "image_prompts": [],
     "fact_status": "unsure",
     "fact_notes": [
-      "Beat 1: “OpenAI says its AI agents posted users images online in error.” — no source found for this",
-      "Beat 2: “Le Monde reported on the unexpected technical mistake.” — no source found for this"
+      "Beat 2: “French publication Le Monde reported the incident involving user data.” is wrong → Le Monde's website displayed an access restriction error page for automated traffic, and did not publish a reporting article in the accessible text."
     ],
     "fix_rounds": 2,
     "source_links": [
@@ -116,7 +114,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-09-26T13:38:02.917979+05:30",
+  "script_deadline": "2026-09-26T14:02:08.071687+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -295,172 +293,8 @@
   "tried": [
     "OpenAI says its AI agents posted users' images online in error"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-          "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-          "summary": "",
-          "source": "cnbc.com",
-          "published": "2026-09-25T15:29:25+00:00",
-          "buzz": "Hacker News 380 points",
-          "angle": "US appeals court upholds Anthropic supply chain risk designation, a massive blow for the AI lab."
-        },
-        "draft": {
-          "title": "Anthropic Fights Pentagon Supply Chain Risk Label",
-          "hook_text": "The Pentagon just banned Anthropic.",
-          "beats": [
-            {
-              "line": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "CNBC",
-              "domain": "cnbc.com",
-              "headline": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The Department of Defense argues the artificial intelligence company poses national security concerns.",
-              "visual": "clip",
-              "query": "pentagon building exterior washington dc",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Anthropic strongly disputed this label in court filings.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic website",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.anthropic.com",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "This ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.",
-              "visual": "clip",
-              "query": "lawyers talking in courtroom",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How should the military handle national security risks from artificial intelligence firms?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Dark digital security network graphic with glowing red warning shield",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "A U.S. appeals court has upheld the Pentagon designation of Anthropic as a supply chain risk. How should governments balance military security with commercial artificial intelligence tools?",
-          "hashtags": [
-            "Anthropic",
-            "Pentagon",
-            "ArtificialIntelligence",
-            "AI",
-            "NationalSecurity",
-            "USCourt",
-            "TechNews",
-            "DefenseDepartment",
-            "MachineLearning",
-            "AIPolicy"
-          ],
-          "sources": [
-            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-          ],
-          "script": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.\nThe Department of Defense argues the artificial intelligence company poses national security concerns.\nAnthropic strongly disputed this label in court filings.\nThis ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.\nHow should the military handle national security risks from artificial intelligence firms?",
-          "keywords": [
-            "pentagon building exterior washington dc",
-            "lawyers talking in courtroom"
-          ],
-          "image_prompts": [
-            "Dark digital security network graphic with glowing red warning shield"
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "Anthropic website: anthropic.com",
-            "Anthropic website: cnbc.com"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIBC2q3OBFa_qmMrpZMr_-CRCSLfMxdAAJNIwACuwS5VUPbyIpLCwO1PQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIBC2q3OBFa_qmMrpZMr_-CRCSLfMxdAAJNIwACuwS5VUPbyIpLCwO1PQQ",
-      "history_title": "U.S. appeals court upholds designation of Anthropic as supply chain risk"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -852,6 +686,124 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "script change \"1\"",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "OpenAI says its AI agents posted users' images online in error",
+          "link": "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html",
+          "summary": "OpenAI says its AI agents posted users' images online in error Le Monde.fr",
+          "source": "Le Monde.fr",
+          "published": "2026-09-26T03:54:00+00:00",
+          "angle": "OpenAI's agents accidentally leaked users' private images online, raising major privacy alarms."
+        },
+        "draft": {
+          "title": "OpenAI AI agents posted user images in error",
+          "hook_text": "Photos posted online by error",
+          "beats": [
+            {
+              "line": "OpenAI says its AI agents posted users images online in error.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Le Monde reported on the unexpected technical mistake.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Le Monde.fr",
+              "domain": "lemonde.fr",
+              "headline": "OpenAI says its AI agents posted users images online in error",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an automated agent with your personal photos?",
+              "visual": "clip",
+              "query": "person looking at smartphone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "OpenAI says its AI agents posted users images online in error according to Le Monde. This unexpected mistake highlights questions around data handling by autonomous software. Would you trust an AI agent with your personal photos?",
+          "hashtags": [
+            "OpenAI",
+            "ArtificialIntelligence",
+            "DataPrivacy",
+            "TechNews",
+            "AIAgents",
+            "CyberSecurity",
+            "TechUpdate",
+            "DigitalPrivacy",
+            "SoftwareBug",
+            "FutureOfTech",
+            "PrivacyBreach"
+          ],
+          "sources": [
+            "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html"
+          ],
+          "script": "OpenAI says its AI agents posted users images online in error.\nLe Monde reported on the unexpected technical mistake.\nWould you trust an automated agent with your personal photos?",
+          "keywords": [
+            "person looking at smartphone screen"
+          ],
+          "image_prompts": [],
+          "fact_status": "unsure",
+          "fact_notes": [
+            "Beat 1: “OpenAI says its AI agents posted users images online in error.” — no source found for this",
+            "Beat 2: “Le Monde reported on the unexpected technical mistake.” — no source found for this"
+          ],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.lemonde.fr/en/pixels/article/2026/09/26/openai-says-its-ai-agents-posted-user-images-online-in-error_6757971_13.html"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-26T13:38:02.917979+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
