@@ -1,167 +1,57 @@
 {
   "offset": 153809597,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-    "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-    "summary": "",
-    "source": "cnbc.com",
-    "published": "2026-09-25T15:29:25+00:00",
-    "buzz": "Hacker News 380 points",
-    "angle": "US appeals court upholds Anthropic supply chain risk designation, a massive blow for the AI lab."
-  },
-  "draft": {
-    "title": "Anthropic Fights Pentagon Supply Chain Risk Label",
-    "hook_text": "The Pentagon just banned Anthropic.",
-    "beats": [
-      {
-        "line": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "CNBC",
-        "domain": "cnbc.com",
-        "headline": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Anthropic",
-            "domain": "anthropic.com"
-          }
-        ]
-      },
-      {
-        "line": "The Department of Defense argues the artificial intelligence company poses national security concerns.",
-        "visual": "clip",
-        "query": "pentagon building exterior washington dc",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Anthropic strongly disputed this label in court filings.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Anthropic website",
-        "outlet": "",
-        "domain": "anthropic.com",
-        "headline": "",
-        "url": "https://www.anthropic.com",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Anthropic",
-            "domain": "anthropic.com"
-          }
-        ]
-      },
-      {
-        "line": "This ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.",
-        "visual": "clip",
-        "query": "lawyers talking in courtroom",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "How should the military handle national security risks from artificial intelligence firms?",
-        "visual": "image",
-        "query": "technology",
-        "prompt": "Dark digital security network graphic with glowing red warning shield",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "caption": "A U.S. appeals court has upheld the Pentagon designation of Anthropic as a supply chain risk. How should governments balance military security with commercial artificial intelligence tools?",
-    "hashtags": [
-      "Anthropic",
-      "Pentagon",
-      "ArtificialIntelligence",
-      "AI",
-      "NationalSecurity",
-      "USCourt",
-      "TechNews",
-      "DefenseDepartment",
-      "MachineLearning",
-      "AIPolicy"
-    ],
-    "sources": [
-      "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-    ],
-    "script": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.\nThe Department of Defense argues the artificial intelligence company poses national security concerns.\nAnthropic strongly disputed this label in court filings.\nThis ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.\nHow should the military handle national security risks from artificial intelligence firms?",
-    "keywords": [
-      "pentagon building exterior washington dc",
-      "lawyers talking in courtroom"
-    ],
-    "image_prompts": [
-      "Dark digital security network graphic with glowing red warning shield"
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 0,
-    "source_links": [
-      "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-    ],
-    "visual_status": "ok",
-    "visual_notes": [],
-    "credits": [
-      "Anthropic website: anthropic.com",
-      "Anthropic website: cnbc.com"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+      "link": "https://swarmtraces.org/",
+      "summary": "",
+      "source": "swarmtraces.org",
+      "published": "2026-09-25T21:09:27+00:00",
+      "buzz": "Hacker News 285 points",
+      "angle": "OpenAI agent swarms are hacking Hugging Face and databases—here is how they pull it off"
+    },
+    {
+      "title": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
+      "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+      "summary": "After teasing its new Copilot \"super app\" last month, Microsoft is officially unveiling it today. The redesigned Copilot app bundles three AI capabilities into a single interface of chat, coding, and agents. As part of the launch, Microsoft is also rebranding Scout, the AI personal assistant it unveiled at Build earlier this year, as Autopilot. […]",
+      "source": "AI | The Verge",
+      "published": "2026-09-25T12:00:00+00:00",
+      "angle": "Microsoft just overhauled Copilot into a massive super app combining chat, coding, and an autopilot agent"
+    },
+    {
+      "title": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
+      "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+      "summary": "\"Overly constrained AI models\" could cause military operations to fail, judges say.",
+      "source": "AI - Ars Technica",
+      "published": "2026-09-25T21:36:20+00:00",
+      "angle": "A US court officially rules the government can blacklist Anthropic for refusing to unconstrain its AI models"
+    }
+  ],
+  "choose_deadline": "2026-09-26T10:15:52.005455+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIBC2q3OBFa_qmMrpZMr_-CRCSLfMxdAAJNIwACuwS5VUPbyIpLCwO1PQQ",
-  "queue": [],
+  "video_file_id": null,
+  "queue": [
+    {
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "video_file_id": "BAACAgUAAxkDAAIBC2q3OBFa_qmMrpZMr_-CRCSLfMxdAAJNIwACuwS5VUPbyIpLCwO1PQQ",
+      "caption": "A U.S. appeals court has upheld the Pentagon designation of Anthropic as a supply chain risk. How should governments balance military security with commercial artificial intelligence tools?\n\n📷 Anthropic website: anthropic.com · Anthropic website: cnbc.com\n\n#Anthropic #Pentagon #ArtificialIntelligence #AI #NationalSecurity #USCourt #TechNews #DefenseDepartment #MachineLearning #AIPolicy",
+      "post_at": "2026-09-26T11:30:00+05:30"
+    }
+  ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-09-26T09:27:18.419082+05:30",
+  "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-09-26",
     "done": [
-      "07:00"
+      "07:00",
+      "09:30"
     ]
   },
   "pending_topic": null,
@@ -317,7 +207,6 @@
       "held_at": "2026-09-26T01:45:27.806806+05:30"
     }
   ],
-  "paused": null,
   "spare": [
     {
       "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
@@ -340,50 +229,6 @@
   "tried": [],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "One company is at the center of a wave of rogue AI attacks",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-            "summary": "In July, OpenAI revealed that its AI agents had attacked Hugging Face without permission, sparking widespread concerns about AI safety. Since then, a string of similar incidents involving agents from Meta, Anthropic, Google, and other companies has fueled further fears about rogue AI. As disclosures implicating numerous AI models trickled out over the past few […]",
-            "source": "AI | The Verge",
-            "published": "2026-09-25T15:39:48+00:00",
-            "angle": "Autonomous AI agent swarms are breaking past security and attacking platforms without permission."
-          },
-          {
-            "title": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
-            "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
-            "summary": "After teasing its new Copilot \"super app\" last month, Microsoft is officially unveiling it today. The redesigned Copilot app bundles three AI capabilities into a single interface of chat, coding, and agents. As part of the launch, Microsoft is also rebranding Scout, the AI personal assistant it unveiled at Build earlier this year, as Autopilot. […]",
-            "source": "AI | The Verge",
-            "published": "2026-09-25T12:00:00+00:00",
-            "angle": "Microsoft's massive Copilot super app redesign combines chat, coding, and autonomous agents."
-          },
-          {
-            "title": "Some Supabase customers are publicly exposing reams of people’s data to the web",
-            "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
-            "summary": "The findings highlight how AI-generated and vibe-coded apps can spill and expose users' data when not configured or secured properly.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-09-25T17:29:46+00:00",
-            "angle": "Vibe-coded apps are leaking sensitive user data straight to the web due to poor security configs."
-          }
-        ],
-        "choose_deadline": "2026-09-26T02:30:38.668075+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -922,6 +767,171 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+          "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+          "summary": "",
+          "source": "cnbc.com",
+          "published": "2026-09-25T15:29:25+00:00",
+          "buzz": "Hacker News 380 points",
+          "angle": "US appeals court upholds Anthropic supply chain risk designation, a massive blow for the AI lab."
+        },
+        "draft": {
+          "title": "Anthropic Fights Pentagon Supply Chain Risk Label",
+          "hook_text": "The Pentagon just banned Anthropic.",
+          "beats": [
+            {
+              "line": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "CNBC",
+              "domain": "cnbc.com",
+              "headline": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The Department of Defense argues the artificial intelligence company poses national security concerns.",
+              "visual": "clip",
+              "query": "pentagon building exterior washington dc",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Anthropic strongly disputed this label in court filings.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic website",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "This ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.",
+              "visual": "clip",
+              "query": "lawyers talking in courtroom",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "How should the military handle national security risks from artificial intelligence firms?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Dark digital security network graphic with glowing red warning shield",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "A U.S. appeals court has upheld the Pentagon designation of Anthropic as a supply chain risk. How should governments balance military security with commercial artificial intelligence tools?",
+          "hashtags": [
+            "Anthropic",
+            "Pentagon",
+            "ArtificialIntelligence",
+            "AI",
+            "NationalSecurity",
+            "USCourt",
+            "TechNews",
+            "DefenseDepartment",
+            "MachineLearning",
+            "AIPolicy"
+          ],
+          "sources": [
+            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+          ],
+          "script": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.\nThe Department of Defense argues the artificial intelligence company poses national security concerns.\nAnthropic strongly disputed this label in court filings.\nThis ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.\nHow should the military handle national security risks from artificial intelligence firms?",
+          "keywords": [
+            "pentagon building exterior washington dc",
+            "lawyers talking in courtroom"
+          ],
+          "image_prompts": [
+            "Dark digital security network graphic with glowing red warning shield"
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+          ],
+          "visual_status": "ok",
+          "visual_notes": [],
+          "credits": [
+            "Anthropic website: anthropic.com",
+            "Anthropic website: cnbc.com"
+          ]
+        },
+        "video_file_id": "BAACAgUAAxkDAAIBC2q3OBFa_qmMrpZMr_-CRCSLfMxdAAJNIwACuwS5VUPbyIpLCwO1PQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIBC2q3OBFa_qmMrpZMr_-CRCSLfMxdAAJNIwACuwS5VUPbyIpLCwO1PQQ",
+      "history_title": "U.S. appeals court upholds designation of Anthropic as supply chain risk"
     }
   ],
   "posted_ids": [
@@ -947,7 +957,8 @@
     "Lovable’s annualized revenue crosses $600M as vibe coding takes off",
     "Saaras V4: Sarvam AI's new speech model can transcribe 22 Indian languages",
     "Kerala Developer Releases Open-Source Laya Model Rivaling TypeSafe AI",
-    "One company is at the center of a wave of rogue AI attacks"
+    "One company is at the center of a wave of rogue AI attacks",
+    "U.S. appeals court upholds designation of Anthropic as supply chain risk"
   ],
   "posted_log": [
     {
@@ -957,27 +968,31 @@
     {
       "title": "One company is at the center of a wave of rogue AI attacks",
       "at": "2026-09-26T04:10:25.076310+05:30"
+    },
+    {
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "at": "2026-09-26T09:30:42.826996+05:30"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-09-26T07:00+05:30",
+    "at": "2026-09-26T09:30+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
-    "arstechnica.com": 9,
+    "arstechnica.com": 8,
     "technologyreview.com": 1,
     "openai.com": 1,
     "blog.google": 0,
     "deepmind.google": 1,
-    "huggingface.co": 1,
-    "blogs.nvidia.com": 1,
-    "inc42.com": 6,
+    "huggingface.co": 0,
+    "blogs.nvidia.com": 0,
+    "inc42.com": 5,
     "news.google.com": 25,
-    "Google News (VentureBeat, AIM, AI News)": 19,
+    "Google News (VentureBeat, AIM, AI News)": 17,
     "producthunt.com": 4,
-    "Hacker News": 5,
+    "Hacker News": 4,
     "Reddit": 5
   }
 }
