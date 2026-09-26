@@ -219,6 +219,7 @@ def post_next_now(s):
     try:
         link = publish_item(item)
         s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
+        record_post(s, item.get("extra"))
         mark_undo(s, irreversible=True)
         tg.send(f"✅ Posted! {link}")
     except Exception as e:
@@ -547,8 +548,43 @@ def caption_for(draft, ai_voice=False):
 
 
 # ---------- scheduling & posting ----------
+# ---------- the 6-a-day guarantee ----------
+def slots_on(day):
+    now = st.now()
+    return [datetime(day.year, day.month, day.day, *map(int, t.split(":")), tzinfo=now.tzinfo) for t in sorted(POST_TIMES)]
+
+
+def posted_today(s):
+    today = st.now().date().isoformat()
+    return sum(1 for p in (s.get("post_log") or []) if p["at"][:10] == today and not p.get("extra"))
+
+
+def record_post(s, extra=False):
+    s["post_log"] = ((s.get("post_log") or []) + [{"at": st.now().isoformat(), "extra": bool(extra)}])[-60:]
+
+
+def behind_today(s):
+    """How many of today's past slots went without a reel (not counting reels already queued to catch up)."""
+    now = st.now()
+    start = datetime.fromisoformat(s.setdefault("guarantee_since", now.isoformat()))
+    passed_slots = sum(1 for t in slots_on(now.date()) if start < t <= now)
+    queued_now = sum(1 for q in s["queue"] if datetime.fromisoformat(q["post_at"]) <= now and not q.get("extra"))
+    return max(0, passed_slots - posted_today(s) - queued_now)
+
+
+def next_unfilled(s):
+    """The next moment a reel is needed: now (if behind) or the next slot today that has nothing queued."""
+    now = st.now()
+    if behind_today(s):
+        return now
+    taken = {q["post_at"][:16] for q in s["queue"]}
+    return next((t for t in slots_on(now.date()) if t > now and t.isoformat()[:16] not in taken), None)
+
+
 def next_post_time(s):
     now = st.now()
+    if behind_today(s):  # a slot was missed today: post as soon as this reel is ready
+        return now + timedelta(minutes=1)
     taken = {q["post_at"][:16] for q in s["queue"]}
     for day in range(0, 7):
         date = (now + timedelta(days=day)).date()
@@ -565,6 +601,47 @@ def publish_item(item):
     os.makedirs(WORK_DIR, exist_ok=True)
     path = tg.download(item["video_file_id"], os.path.join(WORK_DIR, "final.mp4"))
     return instagram.publish_reel(path, item["caption"])
+
+
+def digest_draft(heads):
+    """'According to TechCrunch, …' — every line credits its source, so it's accurate by construction."""
+    beats = [{"line": "Here are today's top AI headlines.", "visual": "image",
+              "prompt": "abstract futuristic news studio with glowing screens, blue light"}]
+    for h in heads[:3]:
+        src = re.sub(r"\s*[|:–-].*$", "", h.get("source") or "").strip() or "the news"
+        title = h["title"].rstrip(".")
+        beats.append({"line": f"According to {src}: {title}.",
+                      "visual": "source", "outlet": src, "headline": title[:120], "domain": ""})
+    beats.append({"line": "Which of these matters most to you?", "visual": "image",
+                  "prompt": "abstract glowing network of connected nodes, blue and purple"})
+    listing = "\n".join(f"• {h['title']} ({re.sub(r'\s*[|:–-].*$', '', h.get('source') or '').strip() or 'news'})"
+                         for h in heads[:3])
+    draft = writer.normalize_draft({"title": "Today's top AI headlines", "hook_text": "Today's top AI headlines",
+                                    "beats": beats, "caption": f"Today's top AI headlines:\n{listing}\n\n"
+                                    "Which one matters most to you? 👇",
+                                    "hashtags": ["ai", "ainews", "artificialintelligence", "technews", "tech"],
+                                    "sources": [h.get("link", "") for h in heads[:3]]},
+                                   {"title": "Today's top AI headlines"})
+    draft.update(fact_status="ok", fact_notes=[], evidence=[{"claim": b["line"], "url": ""} for b in beats[1:4]])
+    return draft
+
+
+def emergency_reel(s):
+    """Nothing ready and a slot is close: make an attributed-headlines reel right away."""
+    heads = news.dedupe(news.fetch_headlines(), recent_titles(s))[:3]
+    if len(heads) < 2:
+        return False
+    if s["stage"] not in ("idle", "choosing") and not s.get("paused"):
+        s["paused"] = copy.deepcopy({k: s.get(k) for k in REEL_KEYS})
+    reset_reel(s)
+    topic = {"title": f"Top AI headlines · {fmt_time(st.now())}", "custom": False, "digest": True,
+             "source": "", "published": st.now().isoformat()}
+    s["tried"] = ((s.get("tried") or []) + [h["title"] for h in heads])[-60:]  # never the same headlines twice
+    s.update(topic=topic, draft=digest_draft(heads), stage="rendering", voice_mode="ai",
+             voice_gender="male" if s.get("last_gender") == "female" else "female")
+    tg.send("⏱ A post time is close and no reel is ready, so I'm making a quick “top AI headlines” reel "
+            "(every line credits its source) to keep the schedule. The reel I was working on continues after.")
+    return True
 
 
 def extra_reel(s, topic):
@@ -600,13 +677,15 @@ def resume_paused(s):
 
 def approve(s, now_please=False):
     item = {"title": s["topic"]["title"], "video_file_id": s["video_file_id"],
-            "caption": caption_for(s["draft"], s.get("voice_mode") == "ai")}
+            "caption": caption_for(s["draft"], s.get("voice_mode") == "ai"),
+            "extra": bool((s.get("topic") or {}).get("extra"))}
     s["history"] = (s["history"] + [item["title"]])[-100:]
     s["posted_log"] = (s.get("posted_log") or []) + [{"title": item["title"], "at": st.now().isoformat()}]
     if now_please:
         tg.send("📤 Posting to Instagram now... (1-3 minutes)")
         link = publish_item(item)
         s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
+        record_post(s, (s.get("topic") or {}).get("extra"))
         mark_undo(s, irreversible=True)
         reset_reel(s)
         tg.send(f"✅ Posted! {link}")
@@ -630,6 +709,7 @@ def post_due(s):
             link = publish_item(item)
             s["queue"].remove(item)
             s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
+            record_post(s, item.get("extra"))
             tg.send(f"✅ Posted: {item['title']}\n{link}")
             whatsapp.alert(f"✅ Your reel is live on Instagram: {item['title']}\n{link}")
         except Exception as e:
@@ -969,7 +1049,15 @@ def cmd_poll():
             except Exception as e:
                 tg.send(f"⚠️ Autopilot couldn't schedule the reel: {e}")
 
+    if not render and s.get("autopilot"):
+        try:
+            render = keep_schedule(s) or render
+        except Exception as e:
+            traceback.print_exc()
+            print(f"Schedule keeper: {e}")
+
     post_due(s)
+    daily_report(s)
 
     try:
         tg.ack_updates(s["offset"] - 1)
@@ -979,6 +1067,54 @@ def cmd_poll():
     if json.dumps(s, sort_keys=True) != before:
         st.save(s)
     github_output("render", "true" if render else "false")
+
+
+def keep_schedule(s):
+    """Makes sure every post time today gets a reel: works ahead, hurries when a slot is close, and makes a
+    backup reel if nothing will be ready in time. Returns True when a video needs rendering now."""
+    now = st.now()
+    need = next_unfilled(s)
+    if not need:
+        return False
+    minutes = (need - now).total_seconds() / 60
+    # 1) hurry: shorten autopilot's waiting when the slot is close
+    if minutes < 90:
+        cap = now + timedelta(minutes=0 if minutes < 45 else 10)
+        for key in ("choose_deadline", "script_deadline", "preview_deadline"):
+            if s.get(key) and datetime.fromisoformat(s[key]) > cap:
+                s[key] = cap.isoformat()
+    # 2) work ahead: idle while a slot today still needs a reel → start the next one now
+    if s["stage"] == "idle" and not s.get("paused") and 5 <= now.hour < 22:
+        last = s.get("last_auto_offer")
+        if not last or abs(now - datetime.fromisoformat(last)) > timedelta(minutes=20):
+            s["last_auto_offer"] = now.isoformat()
+            tg.send(f"📋 Getting the next reel ready for {fmt_time(need) if minutes > 1 else 'right now'}.")
+            offer_news(s)
+            if minutes < 90 and s["stage"] == "choosing":
+                s["choose_deadline"] = (now + timedelta(minutes=0 if minutes < 45 else 10)).isoformat()
+        return False
+    # 3) backup: under 35 minutes and nothing close to ready → attributed-headlines reel now
+    ready_soon = s["stage"] == "awaiting_approval" and not qa_hold(s.get("draft") or {})
+    if minutes < 35 and not ready_soon and s["stage"] != "rendering" and s.get("digest_for") != need.isoformat()[:16]:
+        s["digest_for"] = need.isoformat()[:16]
+        return emergency_reel(s)
+    return False
+
+
+def daily_report(s):
+    """At 10 PM: how many of today's reels went out."""
+    now = st.now()
+    today = now.date().isoformat()
+    if now.hour < 22 or s.get("report_day") == today:
+        return
+    s["report_day"] = today
+    done, want = posted_today(s), len(POST_TIMES)
+    extras = sum(1 for p in (s.get("post_log") or []) if p["at"][:10] == today and p.get("extra"))
+    msg = f"📊 Today: {done}/{want} scheduled reels posted" + (f" (+{extras} extra)" if extras else "") + \
+          (" ✅" if done >= want else " ⚠️")
+    if done < want and not s.get("autopilot"):
+        msg += "\nAutopilot is off, so reels only go out when you approve them. Turn it on with /autopilot."
+    tg.send(msg)
 
 
 def due_offer_slot(s):
@@ -1106,7 +1242,9 @@ def cmd_render():
     except Exception as e:
         traceback.print_exc()
         s["stage"] = "awaiting_voice"
-        tg.send(f"⚠️ Couldn't make the reel: {e}\nReply \"ok\" to try the AI voice again, or send a voice note.")
+        s["script_deadline"] = (st.now() + timedelta(minutes=5)).isoformat() if s.get("autopilot") else None
+        tg.send(f"⚠️ Couldn't make the reel: {e}\n" + ("Autopilot will try again in a few minutes." if s.get("autopilot")
+                else "Reply \"ok\" to try the AI voice again, or send a voice note."))
         whatsapp.alert("⚠️ Your reel couldn't be made. Check Telegram and send the voice note again.")
     st.save(s)
 

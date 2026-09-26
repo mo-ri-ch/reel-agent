@@ -24,6 +24,7 @@ DEFAULT = {
     "offer_log": {"date": None, "done": []},  # which story times were already sent today
     "pending_topic": None,
     "held": [],
+    "post_log": [],            # [{at, extra}] every reel actually posted (for the 6-a-day guarantee)
     "paused": None,            # a regular reel paused while you make an extra one
     "spare": [],               # the other stories from the list, used if a story can't be verified
     "tried": [],               # stories already tried (not picked again)                # reels parked for your review (quality check flagged them)
