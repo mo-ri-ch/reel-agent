@@ -628,7 +628,11 @@ def digest_draft(heads):
 
 def emergency_reel(s):
     """Nothing ready and a slot is close: make an attributed-headlines reel right away."""
-    heads = news.dedupe(news.fetch_headlines(), recent_titles(s))[:3]
+    fresh = news.fetch_headlines()
+    heads = news.dedupe(fresh, recent_titles(s))[:3]
+    if len(heads) < 2:  # few "new" stories: any headline not used word-for-word before will do
+        used = set(recent_titles(s))
+        heads = [h for h in fresh if h["title"] not in used][:3]
     if len(heads) < 2:
         return False
     if s["stage"] not in ("idle", "choosing") and not s.get("paused"):
@@ -1094,10 +1098,13 @@ def keep_schedule(s):
                 s["choose_deadline"] = (now + timedelta(minutes=0 if minutes < 45 else 10)).isoformat()
         return False
     # 3) backup: under 35 minutes and nothing close to ready → attributed-headlines reel now
-    ready_soon = s["stage"] == "awaiting_approval" and not qa_hold(s.get("draft") or {})
-    if minutes < 35 and not ready_soon and s["stage"] != "rendering" and s.get("digest_for") != need.isoformat()[:16]:
-        s["digest_for"] = need.isoformat()[:16]
-        return emergency_reel(s)
+    d_ = s.get("draft") or {}
+    ready_soon = ((s["stage"] == "awaiting_approval" and not qa_hold(d_)) or
+                  (s["stage"] == "awaiting_voice" and d_.get("fact_status") == "ok" and not d_.get("vague_notes")))
+    if minutes < 50 and not ready_soon and s["stage"] != "rendering" and s.get("digest_for") != need.isoformat()[:16]:
+        if emergency_reel(s):
+            s["digest_for"] = need.isoformat()[:16]
+            return True
     return False
 
 
