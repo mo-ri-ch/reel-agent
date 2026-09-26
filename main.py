@@ -343,18 +343,21 @@ def sources_block(s):
 def fact_line(draft):
     status, notes = draft.get("fact_status"), draft.get("fact_notes") or []
     if status == "ok":
-        return "🔎 Fact check: ✅ all claims verified"
+        n = len(draft.get("evidence") or [])
+        return f"🔎 Fact check: ✅ all {n} claims proven with quotes from the sources" if n else "🔎 Fact check: ✅ verified"
     if status == "fixed":
         return "🔎 Fact check: ✏️ corrected before writing this:\n• " + "\n• ".join(notes)
     if status == "unsure":
         return ("🔎 Fact check: ⚠️ these couldn't be verified:\n• " + "\n• ".join(notes or ["unverified claims"]))
     if status == "kept":
         return "🔎 Fact check: ⚠️ you chose to keep unverified claims"
-    return "🔎 Fact check: skipped (Gemini unavailable) — please check the facts yourself"
+    return "🔎 Fact check: couldn't run (Gemini unavailable) — autopilot won't post this until it's verified"
 
 
 def qa_hold(draft):
-    return draft.get("fact_status") == "unsure" or draft.get("visual_status") == "issues"
+    """The final gate: autopilot only posts reels whose every claim was proven and that name who they're about."""
+    return (draft.get("fact_status") not in ("ok", "kept", "reviewed") or draft.get("visual_status") == "issues"
+            or bool(draft.get("vague_notes")))
 
 
 MAX_FIX_ROUNDS = 2
@@ -371,8 +374,8 @@ def checked_script(topic, previous=None, instruction=None):
         problems = draft.get("fact_notes") or ["some claims couldn't be verified"]
         tg.send(f"🔎 Fact check found a problem (attempt {rounds}/{MAX_FIX_ROUNDS}), fixing it:\n• " + "\n• ".join(problems))
         fix = ("Fix these fact-check problems: " + " | ".join(problems) +
-               ". Correct each claim using the source article and search; if a claim can't be verified, remove it. "
-               "Don't add new claims.")
+               ". Correct wrong claims to exactly what the source says. REMOVE every claim that has no source. "
+               "Only keep facts stated in the source article. Don't add new claims.")
         draft = writer.write_script(topic, previous=draft, instruction=fix)
         draft = fact_check_step(draft, topic)
     draft["fix_rounds"] = rounds
@@ -945,8 +948,9 @@ def cmd_poll():
             tg.send(f"⚠️ Couldn't get the news: {e}\nSend /news to try again.")
 
     if not render and s.get("autopilot"):
+        d_ = s.get("draft") or {}
         if (s["stage"] == "awaiting_voice" and passed(s.get("script_deadline"))
-                and (s.get("draft") or {}).get("fact_status") == "unsure"):
+                and (d_.get("fact_status") in ("unsure", "skipped") or d_.get("vague_notes"))):
             s["script_deadline"] = None
             next_story(s, "the facts couldn't be verified")
         elif s["stage"] == "awaiting_voice" and passed(s.get("script_deadline")):

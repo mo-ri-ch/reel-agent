@@ -309,52 +309,84 @@ def article_text(url, limit=5000):
     return text[:limit]
 
 
-def fact_check(draft, topic):
-    """Checks every claim in the script with Google Search. Returns (draft, status, notes).
-    status: "ok" (all verified), "fixed" (small errors corrected), "unsure" (needs a human), "skipped"."""
-    beats = [{k: v for k, v in b.items() if v not in ("", [], None)} for b in draft.get("beats", [])]
-    article = article_text(topic.get("link", ""))
-    prompt = f"""Today is {now().strftime("%d %B %Y")}. You are the fact-checker of an AI-news Instagram page.
-Story: {topic.get("title", "")}
-Source: {topic.get("source", "")} {topic.get("link", "")}
-Summary: {topic.get("summary", "")}
-SOURCE ARTICLE TEXT (the reporting this story is based on):
-{article or "(not available — rely on the title, summary and Google Search)"}
+def _norm(t):
+    t = (t or "").lower().replace("’", "'").replace("“", '"').replace("”", '"').replace("–", "-").replace("—", "-")
+    return re.sub(r"[^a-z0-9$%.' -]", " ", re.sub(r"\s+", " ", t)).strip()
 
-Script beats (JSON):
+
+def evidence_found(quote, text):
+    """True if the quote really appears in the text (small differences in punctuation are allowed)."""
+    q, t = _norm(quote), _norm(text)
+    if len(q) < 12 or not t:
+        return False
+    if q in t:
+        return True
+    words = q.split()
+    windows = [" ".join(words[i:i + 7]) for i in range(0, max(1, len(words) - 6), 3)]
+    hits = sum(1 for w in windows if w in t)
+    return len(words) >= 7 and hits >= max(1, len(windows) * 0.6)
+
+
+def fact_check(draft, topic):
+    """Evidence-based fact check. Every factual claim must come with an exact quote from a source, and the
+    agent itself confirms the quote is really on that page. Returns (draft, status, notes).
+    status: "ok" (every claim proven), "unsure" (something wrong or unproven), "skipped" (couldn't run)."""
+    corpus = {}
+    for u in [topic.get("link", ""), *(topic.get("research_sources") or [])][:3]:
+        txt = article_text(u, 30000) if u else ""
+        if txt:
+            corpus[u] = txt
+    beats = [{"beat": i + 1, "line": b["line"], **({"person": b.get("name"), "role": b.get("role")}
+                                                   if b.get("visual") == "person" else {}),
+              **({"number": b.get("big"), "label": b.get("small")} if b.get("visual") == "stat" else {})}
+             for i, b in enumerate(draft.get("beats", []))]
+    sources_txt = "\n\n".join(f"SOURCE {u}:\n{t[:12000]}" for u, t in corpus.items()) or "(no source text available)"
+    prompt = f"""Today is {now().strftime("%d %B %Y")}. You are a strict fact-checker for a news page.
+Story: {topic.get("title", "")}
+
+{sources_txt}
+
+Script beats:
 {json.dumps(beats, ensure_ascii=False)}
 
-Use Google Search to check EVERY factual claim: names and spellings, people's roles and titles, companies,
-product and model names, numbers, dates, places, and who said what. Also check each "person" beat's "role" and
-each "stat" beat's number.
+List EVERY factual claim in the beats (names, roles, companies, product names, numbers, dates, places, who said or
+did what, what a product does). Questions and opinions are not claims.
+For each claim give EVIDENCE: a sentence copied WORD FOR WORD from one of the SOURCE texts above, or from a web page
+you found with Google Search (then give that page's URL). Never paraphrase the evidence. If you can't find exact
+evidence, mark the claim "unsupported". If a source says something different, mark it "contradicted".
 Return ONLY JSON:
-{{"verdict": "ok" | "fixed" | "unsure",
- "issues": [{{"beat": <1-based number>, "problem": "what was wrong or unverifiable", "fix": "the correction"}}],
- "beats": [ONLY when verdict is "fixed": the full corrected beats list, same keys, minimal wording changes]}}
-How to judge: this is breaking news, so brand-new products may have little coverage yet. Claims stated in the
-source article, title or summary COUNT AS VERIFIED (that is the reporting). Search for everything else.
-"ok" = everything checks out. "fixed" = you corrected small errors and are confident in the corrections.
-"unsure" = ONLY when a claim contradicts reliable sources, or appears in no source at all and can't be verified
-(likely invented by the script writer). Not being able to find extra coverage of new news is NOT a reason for "unsure"."""
+{{"claims": [{{"beat": <number>, "claim": "...", "status": "supported" | "unsupported" | "contradicted",
+  "evidence": "exact quote (max 40 words)", "url": "the source URL the quote is from", "correct": "the right fact, if contradicted"}}]}}"""
     try:
-        res = parse_json(ask(prompt, search=True, temperature=0.1, json_mode=True))
+        res = parse_json(ask(prompt, search=True, temperature=0.0, json_mode=True))
     except Exception as e:
         print(f"Fact check skipped: {e}")
-        return draft, "skipped", []
-    verdict = str(res.get("verdict", "")).lower()
-    issues = [i for i in (res.get("issues") or []) if isinstance(i, dict)]
-    notes = [f"Beat {i.get('beat', '?')}: {i.get('problem', '')}" + (f" → {i['fix']}" if i.get("fix") else "")
-             for i in issues][:6]
-    if verdict == "fixed" and isinstance(res.get("beats"), list) and res["beats"]:
-        try:
-            fixed = normalize_draft({**draft, "beats": res["beats"]}, topic)
-            return fixed, "fixed", notes
-        except Exception as e:
-            print(f"Couldn't apply fact fixes: {e}")
-            return draft, "unsure", notes
-    if verdict == "ok" and not issues:
-        return draft, "ok", []
-    return draft, ("ok" if verdict == "ok" else "unsure"), notes
+        return draft, "skipped", ["the fact check couldn't run (Gemini unavailable)"]
+    claims = [c for c in (res.get("claims") or []) if isinstance(c, dict) and c.get("claim")]
+    if not claims:
+        return draft, "unsure", ["the fact check didn't return any claims to verify"]
+    notes = []
+    for c in claims:
+        status = str(c.get("status", "")).lower()
+        tag = f"Beat {c.get('beat', '?')}: “{str(c['claim'])[:90]}”"
+        if status == "contradicted":
+            notes.append(f"{tag} is wrong" + (f" → {c['correct']}" if c.get("correct") else ""))
+            continue
+        if status != "supported":
+            notes.append(f"{tag} — no source found for this")
+            continue
+        url = resolve_url(str(c.get("url") or ""))
+        text = corpus.get(url) or next((t for u, t in corpus.items() if evidence_found(c.get("evidence", ""), t)), "")
+        if not text and url:
+            text = article_text(url, 30000)
+            if text:
+                corpus[url] = text
+        if not evidence_found(c.get("evidence", ""), text):
+            notes.append(f"{tag} — the quoted evidence isn't actually on the source page")
+    if notes:
+        return draft, "unsure", notes[:8]
+    draft["evidence"] = [{"claim": c["claim"], "url": c.get("url", "")} for c in claims][:12]
+    return draft, "ok", []
 
 
 def visual_check(shots):
