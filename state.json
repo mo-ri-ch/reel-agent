@@ -1,6 +1,6 @@
 {
   "offset": 153809597,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -141,11 +141,17 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [
+      "Anthropic website: anthropic.com",
+      "Anthropic website: cnbc.com"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIBC2q3OBFa_qmMrpZMr_-CRCSLfMxdAAJNIwACuwS5VUPbyIpLCwO1PQQ",
   "queue": [
     {
       "title": "One company is at the center of a wave of rogue AI attacks",
@@ -155,9 +161,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-09-26T08:35:37.314222+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-09-26T09:27:18.419082+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-09-26",
@@ -339,179 +345,8 @@
     }
   ],
   "tried": [],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Kerala Developer Releases Open-Source Laya Model Rivaling TypeSafe AI",
-          "summary": "Nandakishor, a developer from Kerala, has launched an open-source AI model named Laya that shares core architectural ideas with TypeSafe AI's recently released Jev model. Within 15 hours of its launch, Laya quickly gained traction on Hugging Face, amassing thousands of likes and supporting multiple developer applications. The model is designed to provide rapid decision-making capabilities without generating text, operating efficiently across numerous languages including Hindi. Nandakishor previously published research papers outlining this approach in 2025 before releasing the complete dataset and Python package for Laya.",
-          "source": "Analytics India Magazine",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlhsc1FoTTM5em0xU24zQVN3VUtKTC00U21LUlg2QjVXUFZacno2TUI4dVBfVGpqWERxUlhqYjdjZC1BakJsNkZ5bXlYSWw3U3FSS255TnRnaU5HT0Y0dktPOWxOMk5ZZTUtNTZDRXhkc3ZkQU01eVlzMDNxM0E2V09wb05TMWx5NEhsSWI4Y1Fma1VfbV9lY0thTzhrbWZYMjRBR2JuZHpIZHo0V1RncXZMN25nNEtETlVv?oc=5",
-          "published": "2026-09-25T00:00:00+00:00",
-          "official_url": "",
-          "research_sources": [
-            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlhsc1FoTTM5em0xU24zQVN3VUtKTC00U21LUlg2QjVXUFZacno2TUI4dVBfVGpqWERxUlhqYjdjZC1BakJsNkZ5bXlYSWw3U3FSS255TnRnaU5HT0Y0dktPOWxOMk5ZZTUtNTZDRXhkc3ZkQU01eVlzMDNxM0E2V09wb05TMWx5NEhsSWI4Y1Fma1VfbV9lY0thTzhrbWZYMjRBR2JuZHpIZHo0V1RncXZMN25nNEtETlVv?oc=5",
-            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlhsc1FoTTM5em0xU24zQVN3VUtKTC00U21LUlg2QjVXUFZacno2TUI4dVBfVGpqWERxUlhqYjdjZC1BakJsNkZ5bXlYSWw3U3FSS255TnRnaU5HT0Y0dktPOWxOMk5ZZTUtNTZDRXhkc3ZkQU01eVlzMDNxM0E2V09wb05TMWx5NEhsSWI4Y1Fma1VfbV9lY0thTzhrbWZYMjRBR2JuZHpIZHo0V1RncXZMN25nNEtETlVv?oc=5",
-            "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcDBqQWNQRDA5U2s0Q1U1c2hmVkFQbzlZOGhtVFh5d1N1cDZKZFpQODQ4bC1jUDJ6TjdsOXZuTVBMc1ZNaEloM1NMUXhiSWN3UldMb2NZT2JydTc2SE80T3NmQUp5cmpTNVpKdmhvQ0JqcnZWOERiV0txZkpZdkljZk9JUWRaQkN5YW5oeFd5WGMyTDBVS3djWWlZUzRldUJaZXdXLWR3?oc=5"
-          ],
-          "corrections": [
-            "The forwarded text describes Nandakishor as a 'mason's son', which may be an unverified biographical detail or background color not explicitly highlighted in the primary tech reporting."
-          ],
-          "researched": true,
-          "unknown_names": [],
-          "via": "Google News",
-          "extra": true
-        },
-        "draft": {
-          "title": "Kerala Developer Releases Open-Source Laya Model",
-          "hook_text": "An open source model drops.",
-          "beats": [
-            {
-              "line": "A developer from Kerala just dropped an open source AI model named Laya.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "Nandakishor",
-              "role": "Software Developer",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It shares core ideas with TypeSafe AI and their Jev model.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Analytics India Magazine",
-              "domain": "analyticsindiamag.com",
-              "headline": "Kerala Developer Releases Open-Source Laya Model Rivaling TypeSafe AI",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Within fifteen hours, Laya gained thousands of likes on Hugging Face.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "15 Hours",
-              "small": "Rapid traction on Hugging Face",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Hugging Face",
-                  "domain": "huggingface.co"
-                }
-              ]
-            },
-            {
-              "line": "It delivers rapid decisions without generating text and runs smoothly in Hindi.",
-              "visual": "clip",
-              "query": "person coding on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can independent developers challenge big AI labs alone?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Abstract digital data streams glowing in dark space",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Kerala-based developer Nandakishor launched the open-source Laya model, gaining massive traction on Hugging Face in just fifteen hours. It offers fast decision-making without text generation and supports multiple languages like Hindi. Can independent developers compete with major AI labs?",
-          "hashtags": [
-            "artificialintelligence",
-            "opensource",
-            "technews",
-            "machinelearning",
-            "huggingface",
-            "developer",
-            "innovation",
-            "python",
-            "softwaredevelopment",
-            "futuretech",
-            "ainews"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlhsc1FoTTM5em0xU24zQVN3VUtKTC00U21LUlg2QjVXUFZacno2TUI4dVBfVGpqWERxUlhqYjdjZC1BakJsNkZ5bXlYSWw3U3FSS255TnRnaU5HT0Y0dktPOWxOMk5ZZTUtNTZDRXhkc3ZkQU01eVlzMDNxM0E2V09wb05TMWx5NEhsSWI4Y1Fma1VfbV9lY0thTzhrbWZYMjRBR2JuZHpIZHo0V1RncXZMN25nNEtETlVv?oc=5",
-            "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcDBqQWNQRDA5U2s0Q1U1c2hmVkFQbzlZOGhtVFh5d1N1cDZKZFpQODQ4bC1jUDJ6TjdsOXZuTVBMc1ZNaEloM1NMUXhiSWN3UldMb2NZT2JydTc2SE80T3NmQUp5cmpTNVpKdmhvQ0JqcnZWOERiV0txZkpZdkljZk9JUWRaQkN5YW5oeFd5WGMyTDBVS3djWWlZUzRldUJaZXdXLWR3?oc=5"
-          ],
-          "script": "A developer from Kerala just dropped an open source AI model named Laya.\nIt shares core ideas with TypeSafe AI and their Jev model.\nWithin fifteen hours, Laya gained thousands of likes on Hugging Face.\nIt delivers rapid decisions without generating text and runs smoothly in Hindi.\nCan independent developers challenge big AI labs alone?",
-          "keywords": [
-            "person coding on laptop"
-          ],
-          "image_prompts": [
-            "Abstract digital data streams glowing in dark space"
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlhsc1FoTTM5em0xU24zQVN3VUtKTC00U21LUlg2QjVXUFZacno2TUI4dVBfVGpqWERxUlhqYjdjZC1BakJsNkZ5bXlYSWw3U3FSS255TnRnaU5HT0Y0dktPOWxOMk5ZZTUtNTZDRXhkc3ZkQU01eVlzMDNxM0E2V09wb05TMWx5NEhsSWI4Y1Fma1VfbV9lY0thTzhrbWZYMjRBR2JuZHpIZHo0V1RncXZMN25nNEtETlVv?oc=5",
-            "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcDBqQWNQRDA5U2s0Q1U1c2hmVkFQbzlZOGhtVFh5d1N1cDZKZFpQODQ4bC1jUDJ6TjdsOXZuTVBMc1ZNaEloM1NMUXhiSWN3UldMb2NZT2JydTc2SE80T3NmQUp5cmpTNVpKdmhvQ0JqcnZWOERiV0txZkpZdkljZk9JUWRaQkN5YW5oeFd5WGMyTDBVS3djWWlZUzRldUJaZXdXLWR3?oc=5"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "It delivers rapid decisions without generating tex…: The visual shows people in a station or street setting with garbled text signs instead of a person coding on a laptop.",
-            "shows a robot head illustration instead of a person coding on a laptop"
-          ],
-          "credits": []
-        },
-        "video_file_id": "BAACAgUAAxkDAAP1ara_sh-kIh0H30zwGT5SAAFlha_BAALPIgACuwS5Ve6DN9gglrHXPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "irreversible": true
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -937,6 +772,163 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+          "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+          "summary": "",
+          "source": "cnbc.com",
+          "published": "2026-09-25T15:29:25+00:00",
+          "buzz": "Hacker News 380 points",
+          "angle": "US appeals court upholds Anthropic supply chain risk designation, a massive blow for the AI lab."
+        },
+        "draft": {
+          "title": "Anthropic Fights Pentagon Supply Chain Risk Label",
+          "hook_text": "The Pentagon just banned Anthropic.",
+          "beats": [
+            {
+              "line": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "CNBC",
+              "domain": "cnbc.com",
+              "headline": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The Department of Defense argues the artificial intelligence company poses national security concerns.",
+              "visual": "clip",
+              "query": "pentagon building exterior washington dc",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Anthropic strongly disputed this label in court filings.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic website",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "This ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.",
+              "visual": "clip",
+              "query": "lawyers talking in courtroom",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "How should the military handle national security risks from artificial intelligence firms?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Dark digital security network graphic with glowing red warning shield",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "A U.S. appeals court has upheld the Pentagon designation of Anthropic as a supply chain risk. How should governments balance military security with commercial artificial intelligence tools?",
+          "hashtags": [
+            "Anthropic",
+            "Pentagon",
+            "ArtificialIntelligence",
+            "AI",
+            "NationalSecurity",
+            "USCourt",
+            "TechNews",
+            "DefenseDepartment",
+            "MachineLearning",
+            "AIPolicy"
+          ],
+          "sources": [
+            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+          ],
+          "script": "A United States appeals court just upheld the designation of Anthropic as a supply chain risk.\nThe Department of Defense argues the artificial intelligence company poses national security concerns.\nAnthropic strongly disputed this label in court filings.\nThis ruling sets a major legal precedent for military contracts with commercial artificial intelligence providers.\nHow should the military handle national security risks from artificial intelligence firms?",
+          "keywords": [
+            "pentagon building exterior washington dc",
+            "lawyers talking in courtroom"
+          ],
+          "image_prompts": [
+            "Dark digital security network graphic with glowing red warning shield"
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-26T08:35:37.314222+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -973,8 +965,8 @@
       "at": "2026-09-26T04:10:25.076310+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-09-26T07:00+05:30",
