@@ -361,6 +361,8 @@ def fact_check(draft, topic):
                                                    if b.get("visual") == "person" else {}),
               **({"number": b.get("big"), "label": b.get("small")} if b.get("visual") == "stat" else {})}
              for i, b in enumerate(draft.get("beats", []))]
+    if draft.get("hook_text"):  # the big opening headline / cover is checked too
+        beats.insert(0, {"beat": 0, "line": f"(opening headline shown on screen and on the cover) {draft['hook_text']}"})
     sources_txt = "\n\n".join(f"SOURCE {u}:\n{t[:12000]}" for u, t in corpus.items()) or "(no source text available)"
     prompt = f"""Today is {now().strftime("%d %B %Y")}. You are a strict fact-checker for a news page.
 Story: {topic.get("title", "")}
@@ -371,7 +373,8 @@ Script beats:
 {json.dumps(beats, ensure_ascii=False)}
 
 List EVERY factual claim in the beats (names, roles, companies, product names, numbers, dates, places, who said or
-did what, what a product does). Questions and opinions are not claims.
+did what, what a product does). Questions and opinions are not claims. Beat 0 is the opening headline: it must not
+exaggerate or say more than the sources do (e.g. "paused ALL training" when only some was paused is "contradicted").
 For each claim give EVIDENCE: a sentence copied WORD FOR WORD from one of the SOURCE texts above, or from a web page
 you found with Google Search (then give that page's URL). Never paraphrase the evidence. If you can't find exact
 evidence, mark the claim "unsupported". If a source says something different, mark it "contradicted".
