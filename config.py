@@ -36,7 +36,11 @@ CALLMEBOT_API_KEY = env("CALLMEBOT_API_KEY")
 # AI voice-over (used when you reply "ok" instead of sending a voice note)
 VOICES_MALE = env("VOICES_MALE", "en-US-AndrewMultilingualNeural,en-US-BrianMultilingualNeural").split(",")
 VOICES_FEMALE = env("VOICES_FEMALE", "en-US-AvaMultilingualNeural,en-US-EmmaMultilingualNeural").split(",")
-TTS_RATE = env("TTS_RATE", "+6%")                      # speaking speed
+TTS_RATE = env("TTS_RATE", "+6%")
+# Google (Gemini) voices, used alternately with the Microsoft ones
+GOOGLE_VOICES_MALE = env("GOOGLE_VOICES_MALE", "Charon,Puck,Orus").split(",")
+GOOGLE_VOICES_FEMALE = env("GOOGLE_VOICES_FEMALE", "Kore,Aoede,Zephyr").split(",")
+GEMINI_TTS_MODEL = env("GEMINI_TTS_MODEL", "")  # empty = pick the newest available TTS model automatically                      # speaking speed
 KOKORO_MALE = env("KOKORO_MALE", "am_michael")         # backup voices if Edge voices fail
 KOKORO_FEMALE = env("KOKORO_FEMALE", "af_heart")
 AI_VOICE_NOTE = env("AI_VOICE_NOTE", "")  # optional line added to captions of AI-voiced reels (off)

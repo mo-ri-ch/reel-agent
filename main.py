@@ -1180,7 +1180,9 @@ def cmd_render():
         if s.get("voice_mode") == "ai":
             import tts
             gender = s.get("voice_gender") or "male"
-            voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender)
+            want = "microsoft" if s.get("last_engine") == "google" else "google"  # alternate Google / Microsoft
+            voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender, want)
+            s["last_engine"] = tts.LAST_ENGINE or want
             s["last_gender"] = gender
             print(f"Voice-over: {engine}")
         else:

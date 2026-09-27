@@ -7,7 +7,7 @@ import requests
 
 import random
 
-from config import SPOKEN_NAME, KOKORO_FEMALE, KOKORO_MALE, TTS_RATE, VOICES_FEMALE, VOICES_MALE
+from config import GEMINI_API_KEY, GEMINI_TTS_MODEL, GOOGLE_VOICES_FEMALE, GOOGLE_VOICES_MALE, SPOKEN_NAME, KOKORO_FEMALE, KOKORO_MALE, TTS_RATE, VOICES_FEMALE, VOICES_MALE
 
 KOKORO_DIR = os.path.expanduser("~/.cache/kokoro")
 KOKORO_BASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
@@ -81,17 +81,92 @@ def voice_label(voice):
     return voice
 
 
-def synthesize(text, out_base, gender="male"):
-    """Returns (audio_path, description). Picks a random voice of the given gender."""
-    global LAST_WORDS
+LAST_ENGINE = ""  # "google" / "microsoft" / "backup": which one made the last voice-over
+_TTS_MODELS = None
+
+
+def _tts_models():
+    """Google's text-to-speech models available to this key, newest first."""
+    global _TTS_MODELS
+    if _TTS_MODELS is None:
+        _TTS_MODELS = [GEMINI_TTS_MODEL] if GEMINI_TTS_MODEL else []
+        try:
+            r = requests.get("https://generativelanguage.googleapis.com/v1beta/models", timeout=20,
+                             params={"pageSize": 200}, headers={"x-goog-api-key": GEMINI_API_KEY})
+            names = [m["name"].split("/")[-1] for m in r.json().get("models", [])
+                     if "tts" in m["name"] and "generateContent" in m.get("supportedGenerationMethods", [])]
+            def rank(n):  # newest version first, "flash" before "pro" (faster, bigger free quota)
+                v = re.findall(r"(\d+(?:\.\d+)?)", n)
+                return (-float(v[0]) if v else 0, "pro" in n, "preview" in n)
+            _TTS_MODELS += sorted(names, key=rank)
+        except Exception as e:
+            print(f"Couldn't list Google TTS models: {e}")
+        _TTS_MODELS = _TTS_MODELS or ["gemini-2.5-flash-preview-tts"]
+    return _TTS_MODELS
+
+
+def _google(text, out_base, voice):
+    """A Google (Gemini) voice. Returns a .wav path."""
+    import base64
+    import wave
+    prompt = ("Read this like a clear, confident tech-news presenter: natural pace, lively but not shouting, "
+              "with small pauses between sentences.\n\n" + text)
+    last = ""
+    for model in _tts_models()[:2]:
+        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                          headers={"x-goog-api-key": GEMINI_API_KEY}, timeout=180, json={
+                              "contents": [{"parts": [{"text": prompt}]}],
+                              "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {
+                                  "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}})
+        if r.status_code != 200:
+            last = f"{model}: HTTP {r.status_code} {r.text[:150]}"
+            continue
+        parts = r.json()["candidates"][0]["content"]["parts"]
+        audio = next((p["inlineData"] for p in parts if "inlineData" in p), None)
+        if not audio:
+            last = f"{model}: no audio in reply"
+            continue
+        pcm = base64.b64decode(audio["data"])
+        rate = int((re.search(r"rate=(\d+)", audio.get("mimeType", "")) or [None, 24000])[1])
+        out = out_base + ".wav"
+        with wave.open(out, "wb") as w:
+            w.setnchannels(1)
+            w.setsampwidth(2)
+            w.setframerate(rate)
+            w.writeframes(pcm)
+        if len(pcm) < rate:  # under half a second: something went wrong
+            last = f"{model}: audio too short"
+            continue
+        return out
+    raise RuntimeError(last or "no Google TTS model worked")
+
+
+def synthesize(text, out_base, gender="male", engine="microsoft"):
+    """Returns (audio_path, description). engine: "google" or "microsoft" (the other is the automatic backup)."""
+    global LAST_WORDS, LAST_ENGINE
     LAST_WORDS = None
     text = _speakable(text)
-    pool = [v.strip() for v in (VOICES_FEMALE if gender == "female" else VOICES_MALE) if v.strip()]
-    random.shuffle(pool)
-    for voice in pool[:2]:
-        try:
-            return _edge(text, out_base, voice), f"{voice_label(voice)}, {gender}"
-        except Exception as e:
-            print(f"Edge voice {voice} failed: {e}")
+    engines = ["google", "microsoft"] if engine == "google" else ["microsoft", "google"]
+    for eng in engines:
+        if eng == "google":
+            pool = [v.strip() for v in (GOOGLE_VOICES_FEMALE if gender == "female" else GOOGLE_VOICES_MALE) if v.strip()]
+            voice = random.choice(pool)
+            try:
+                path = _google(text, out_base + "_g", voice)
+                LAST_ENGINE = "google"
+                return path, f"{voice} (Google), {gender}"
+            except Exception as e:
+                print(f"Google voice {voice} failed: {e}")
+        else:
+            pool = [v.strip() for v in (VOICES_FEMALE if gender == "female" else VOICES_MALE) if v.strip()]
+            random.shuffle(pool)
+            for voice in pool[:2]:
+                try:
+                    path = _edge(text, out_base, voice)
+                    LAST_ENGINE = "microsoft"
+                    return path, f"{voice_label(voice)} (Microsoft), {gender}"
+                except Exception as e:
+                    print(f"Edge voice {voice} failed: {e}")
     backup = KOKORO_FEMALE if gender == "female" else KOKORO_MALE
+    LAST_ENGINE = "backup"
     return _kokoro(text, out_base, backup), f"backup voice {backup}, {gender}"
