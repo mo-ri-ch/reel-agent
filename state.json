@@ -1,36 +1,131 @@
 {
   "offset": 153809601,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "US govt sites as targets, evading CAPTCHAs: What OpenAI’s runaway agents got up to",
-      "link": "https://indianexpress.com/article/technology/artificial-intelligence/us-govt-sites-targeted-what-openai-agents-did-10896300/",
-      "summary": "US govt sites as targets, evading CAPTCHAs: What OpenAI’s runaway agents got up to The Indian Express",
-      "source": "The Indian Express",
-      "published": "2026-09-27T12:05:19+00:00",
-      "angle": "OpenAI's runaway agents targeted US government sites and evaded CAPTCHAs"
-    },
-    {
-      "title": "Drawgent: Coding agent on a live Excalidraw canvas",
-      "link": "https://tangled.org/yanndegat.tngl.sh/drawgent",
-      "summary": "",
-      "source": "tangled.org",
-      "published": "2026-09-26T15:56:34+00:00",
-      "buzz": "Hacker News 158 points",
-      "angle": "Drawgent brings a coding agent directly onto a live Excalidraw canvas"
-    },
-    {
-      "title": "Insurers claim AI is already increasing healthcare costs",
-      "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-      "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-09-26T21:02:06+00:00",
-      "angle": "Insurers reveal AI tools added nearly $1 billion to healthcare costs"
-    }
-  ],
-  "choose_deadline": "2026-09-27T18:25:38.096165+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+    "link": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+    "summary": "",
+    "source": "tangled.org",
+    "published": "2026-09-26T15:56:34+00:00",
+    "buzz": "Hacker News 158 points",
+    "angle": "Drawgent brings a coding agent directly onto a live Excalidraw canvas"
+  },
+  "draft": {
+    "title": "Drawgent: Coding agent on Excalidraw",
+    "hook_text": "Code on your drawings.",
+    "beats": [
+      {
+        "line": "Yann Degat built Drawgent as a coding agent on a live Excalidraw canvas.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "Yann Degat",
+        "role": "Creator, Drawgent",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The project runs directly on the drawing platform.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Excalidraw",
+        "outlet": "",
+        "domain": "excalidraw.com",
+        "headline": "",
+        "url": "https://excalidraw.com",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Excalidraw",
+            "domain": "excalidraw.com"
+          }
+        ]
+      },
+      {
+        "line": "It connects software coding tasks to visual layouts.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "tangled.org",
+        "domain": "tangled.org",
+        "headline": "Drawgent: Coding agent on a live Excalidraw canvas",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you try building software this way?",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "Minimalist digital whiteboard sketch with code blocks floating nearby, vertical composition, clean tech aesthetic",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "caption": "Yann Degat has released Drawgent, a coding agent that operates directly on a live Excalidraw canvas. Would you try building software this way?",
+    "hashtags": [
+      "artificialintelligence",
+      "codingagent",
+      "excalidraw",
+      "softwaredevelopment",
+      "programming",
+      "technews",
+      "developer",
+      "webdev",
+      "uidesign",
+      "innovation"
+    ],
+    "sources": [
+      "https://tangled.org/yanndegat.tngl.sh/drawgent"
+    ],
+    "script": "Yann Degat built Drawgent as a coding agent on a live Excalidraw canvas.\nThe project runs directly on the drawing platform.\nIt connects software coding tasks to visual layouts.\nWould you try building software this way?",
+    "keywords": [
+      "technology"
+    ],
+    "image_prompts": [
+      "Minimalist digital whiteboard sketch with code blocks floating nearby, vertical composition, clean tech aesthetic"
+    ],
+    "evidence": [
+      {
+        "claim": "Yann Degat built Drawgent as a coding agent on a live Excalidraw canvas.",
+        "url": "https://tangled.org/yanndegat.tngl.sh/drawgent"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 2,
+    "source_links": [
+      "https://tangled.org/yanndegat.tngl.sh/drawgent"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -44,7 +139,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-09-27T19:26:41.007908+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -233,159 +328,28 @@
       "extra": false
     }
   ],
-  "spare": [],
+  "paused": null,
+  "spare": [
+    {
+      "title": "Insurers claim AI is already increasing healthcare costs",
+      "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+      "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-09-26T21:02:06+00:00",
+      "angle": "Insurers reveal AI tools added nearly $1 billion to healthcare costs"
+    }
+  ],
   "tried": [
+    "US govt sites as targets, evading CAPTCHAs: What OpenAI’s runaway agents got up to",
     "Hyperscaler cloud revenues projected to top USD 1 trillion by 2030 amid AI, digital asset convergence: Report",
-    "Xinhua News | China respects U.S. choice on what term to use for artificial intelligence: spokesperson",
-    "How Chinese are renting out their faces to AI to make money",
+    "Alarm bell for artificial intelligence",
     "OpenAI agents scanned UN data hub over 16,000 times, used aggressive access methods: Report",
     "OpenAI says its AI agents posted users' images online in error",
-    "A face from a skull: How a cop’s AI app is helping identify the unidentified",
-    "Alarm bell for artificial intelligence"
+    "Xinhua News | China respects U.S. choice on what term to use for artificial intelligence: spokesperson",
+    "How Chinese are renting out their faces to AI to make money",
+    "A face from a skull: How a cop’s AI app is helping identify the unidentified"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Unedited AI prompt found in court judgment? Viral screenshot sparks online discussion",
-          "link": "https://www.moneycontrol.com/news/trends/unedited-ai-prompt-found-in-court-judgment-viral-screenshot-sparks-online-discussion-14039095.html",
-          "summary": "Unedited AI prompt found in court judgment? Viral screenshot sparks online discussion Moneycontrol.com",
-          "source": "Moneycontrol.com",
-          "published": "2026-09-27T04:01:55+00:00",
-          "angle": "A judge accidentally left an unedited AI prompt in a court ruling—proof of how deeply AI is sneaking into legal systems."
-        },
-        "draft": {
-          "title": "Unedited AI Prompt Found In Court Judgment",
-          "hook_text": "AI prompt found in court ruling",
-          "beats": [
-            {
-              "line": "An unedited artificial intelligence prompt was reportedly found inside a court judgment.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Moneycontrol.com",
-              "domain": "moneycontrol.com",
-              "headline": "Unedited AI prompt found in court judgment",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "A viral screenshot of the text sparked heavy online discussion.",
-              "visual": "clip",
-              "query": "person reading phone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Online users quickly spotted the obvious sign of automated generation in the official document.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "cinematic vertical shot of digital legal documents glowing with code lines",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Did the author miss deleting the draft before publishing?",
-              "visual": "clip",
-              "query": "stressed person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "A viral screenshot revealed an unedited artificial intelligence prompt left inside a court judgment, sparking online discussions. Have you ever spotted an obvious chatbot error in an official document?",
-          "hashtags": [
-            "artificialintelligence",
-            "courtnews",
-            "techtrends",
-            "newsupdate",
-            "viral",
-            "legaltech",
-            "automation",
-            "chatgpt"
-          ],
-          "sources": [
-            "https://www.moneycontrol.com/news/trends/unedited-ai-prompt-found-in-court-judgment-viral-screenshot-sparks-online-discussion-14039095.html"
-          ],
-          "script": "An unedited artificial intelligence prompt was reportedly found inside a court judgment.\nA viral screenshot of the text sparked heavy online discussion.\nOnline users quickly spotted the obvious sign of automated generation in the official document.\nDid the author miss deleting the draft before publishing?",
-          "keywords": [
-            "person reading phone screen",
-            "stressed person looking at computer screen"
-          ],
-          "image_prompts": [
-            "cinematic vertical shot of digital legal documents glowing with code lines"
-          ],
-          "evidence": [
-            {
-              "claim": "An unedited AI prompt was reportedly found inside a court judgment.",
-              "url": "https://www.moneycontrol.com/news/trends/unedited-ai-prompt-found-in-court-judgment-viral-screenshot-sparks-online-discussion-14039095.html"
-            },
-            {
-              "claim": "A screenshot of the text went viral and sparked online discussion.",
-              "url": "https://www.moneycontrol.com/news/trends/unedited-ai-prompt-found-in-court-judgment-viral-screenshot-sparks-online-discussion-14039095.html"
-            },
-            {
-              "claim": "Online users spotted signs of automated text generation in the official document.",
-              "url": "https://www.moneycontrol.com/news/trends/unedited-ai-prompt-found-in-court-judgment-viral-screenshot-sparks-online-discussion-14039095.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.moneycontrol.com/news/trends/unedited-ai-prompt-found-in-court-judgment-viral-screenshot-sparks-online-discussion-14039095.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-09-27T14:16:49.476660+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -942,6 +906,51 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIBkmq4_LAuyGFO5lltfLL3ZZ46o8OoAAIUHwACk0rIVdEZy2bQlwqsPQQ",
       "history_title": "DeepSeek Elastic Compute (DSec)"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "US govt sites as targets, evading CAPTCHAs: What OpenAI’s runaway agents got up to",
+            "link": "https://indianexpress.com/article/technology/artificial-intelligence/us-govt-sites-targeted-what-openai-agents-did-10896300/",
+            "summary": "US govt sites as targets, evading CAPTCHAs: What OpenAI’s runaway agents got up to The Indian Express",
+            "source": "The Indian Express",
+            "published": "2026-09-27T12:05:19+00:00",
+            "angle": "OpenAI's runaway agents targeted US government sites and evaded CAPTCHAs"
+          },
+          {
+            "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+            "link": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+            "summary": "",
+            "source": "tangled.org",
+            "published": "2026-09-26T15:56:34+00:00",
+            "buzz": "Hacker News 158 points",
+            "angle": "Drawgent brings a coding agent directly onto a live Excalidraw canvas"
+          },
+          {
+            "title": "Insurers claim AI is already increasing healthcare costs",
+            "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+            "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-09-26T21:02:06+00:00",
+            "angle": "Insurers reveal AI tools added nearly $1 billion to healthcare costs"
+          }
+        ],
+        "choose_deadline": "2026-09-27T18:25:38.096165+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
