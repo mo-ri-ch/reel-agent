@@ -614,8 +614,9 @@ def digest_draft(heads):
                       "visual": "source", "outlet": src, "headline": title[:120], "domain": ""})
     beats.append({"line": "Which of these matters most to you?", "visual": "image",
                   "prompt": "abstract glowing network of connected nodes, blue and purple"})
-    listing = "\n".join(f"• {h['title']} ({re.sub(r'\s*[|:–-].*$', '', h.get('source') or '').strip() or 'news'})"
-                         for h in heads[:3])
+    def outlet(h):
+        return re.sub(r"\s*[|:–-].*$", "", h.get("source") or "").strip() or "news"
+    listing = "\n".join("• " + h["title"] + " (" + outlet(h) + ")" for h in heads[:3])
     draft = writer.normalize_draft({"title": "Today's top AI headlines", "hook_text": "Today's top AI headlines",
                                     "beats": beats, "caption": f"Today's top AI headlines:\n{listing}\n\n"
                                     "Which one matters most to you? 👇",

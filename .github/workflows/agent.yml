@@ -96,6 +96,16 @@ jobs:
         if: steps.run.outputs.render == 'true'
         run: python main.py render
 
+      - name: Crash alarm
+        if: failure()
+        run: |
+          # at most once an hour, so a repeating crash doesn't flood the chat
+          if [ "$(date +%M)" -lt 5 ]; then
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              -d chat_id="${TELEGRAM_CHAT_ID}" \
+              -d text="🚨 The reel agent crashed and isn't running. Open GitHub → Actions to see the error, or tell Claude." > /dev/null
+          fi
+
       - name: Save progress
         if: always()
         run: |
