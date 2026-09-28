@@ -36,6 +36,24 @@ AI_WORDS = re.compile(r"(?i)\b(ai|a\.i\.|llm|llms|gpt|chatgpt|openai|anthropic|c
 REDDIT_SUBS = ["LocalLLaMA", "OpenAI", "singularity", "artificial", "MachineLearning", "ClaudeAI", "Bard"]
 LAST_REPORT = {}  # headlines found per source on the last fetch (for checking the feeds)
 
+# Not news for our audience: press releases, small-company PR, local events and trainings
+PR_SOURCES = re.compile(r"(?i)pr ?newswire|business ?wire|globe ?newswire|ein ?presswire|openpr|newswire|"
+                        r"accesswire|prlog|press release|marketscreener|stocktitan|tipranks|investing\.com|"
+                        r"zacks|benzinga|fool\.com|seeking ?alpha|marketbeat")
+WEAK_STORY = re.compile(
+    r"(?i)\b(announces? (strategic|its|a) (foray|partnership|collaboration|mou)|strategic foray|signs? (an? )?mou|"
+    r"bootcamp|workshop|webinar|seminar|training (programme|program|session)|commences|inaugurat|felicitat|"
+    r"conference (held|organised|organized)|awareness (drive|programme|program)|hackathon|faculty development|"
+    r"students? (learn|trained)|share price|stock (rises|falls|jumps|surges)|shares (rise|fall|jump|surge)|"
+    r"q[1-4] results|quarterly results|earnings call|appoints|named (as )?(new )?(ceo|cto|head)|"
+    r"market (size|to reach|worth|report)|cagr|forecast period)\b")
+
+
+def newsworthy(item):
+    """False for press releases, local events, stock/market-report fluff."""
+    text = f"{item.get('title', '')} {item.get('summary', '')[:200]}"
+    return not (PR_SOURCES.search(item.get("source", "") + " " + item.get("link", "")) or WEAK_STORY.search(text))
+
 
 def _clean(text):
     text = re.sub(r"<[^>]+>", " ", text or "")
@@ -147,6 +165,9 @@ def fetch_headlines(max_age_hours=36, limit=60):
         add(item, "Hacker News")
     for item in _reddit(cutoff):
         add(item, "Reddit")
+    before = len(items)
+    items = [i for i in items if newsworthy(i)]
+    LAST_REPORT["filtered out (PR / local events / market fluff)"] = before - len(items)
     items.sort(key=lambda x: x["published"], reverse=True)
     print("Headlines per source:", LAST_REPORT)
     return items[:limit]

@@ -94,6 +94,10 @@ big launches, surprising capabilities, tools people can actually use, major indu
 Favour BREAKING stories that are clearly blowing up (high Hacker News points / Reddit upvotes in brackets) — but a Reddit
 post is only a lead: prefer stories that are also confirmed by a news site or an official announcement.
 Skip minor funding news, opinion pieces and duplicates of each other.
+Also SKIP: company press releases and self-announcements by small or unknown firms, local/regional events
+(bootcamps, workshops, trainings, seminars, hackathons), government MoUs and "policy targets" without a concrete
+launch, stock/market-size reports, and anything an AI-curious viewer wouldn't tell a friend about.
+It's better to return fewer picks than weak ones: only pick stories a big tech-news outlet would also cover.
 NEVER pick a story we already covered, even if the headline is worded differently, comes from another outlet, or
 names a person instead of their company (e.g. "Mustafa Suleyman" = Microsoft's AI chief). Recently covered:{recent}
 
@@ -181,6 +185,16 @@ Return ONLY JSON:
  "sources": ["URLs you used"]}}"""
 
 
+def clean_spoken(line):
+    """Removes things a voice must never read: [stage directions], (pause), *emphasis*, labels like 'Narrator:'."""
+    line = re.sub(r"\[[^\]]*\]", " ", str(line))
+    line = re.sub(r"\((?:pause|beat|music|sfx|sound|laughs?|whoosh|b-roll|cut to|on screen|voice ?over)[^)]*\)", " ",
+                  line, flags=re.I)
+    line = re.sub(r"(?i)^\s*(narrator|voice ?over|vo|host|speaker|line \d+)\s*:\s*", "", line)
+    line = line.replace("*", "").replace("#", "").replace("_", " ")
+    return re.sub(r"\s+", " ", line).strip()
+
+
 def normalize_draft(draft, topic):
     """Makes sure the draft has clean beats, script and all the fields the rest of the agent needs."""
     if isinstance(draft, list):
@@ -222,6 +236,10 @@ def normalize_draft(draft, topic):
     draft["script"] = "\n".join(b["line"] for b in beats).strip()
     draft["title"] = str(draft.get("title") or topic["title"])[:70]
     draft["hook_text"] = str(draft.get("hook_text") or draft["title"])[:60]
+    for b in draft.get("beats", []):  # no stage directions / formatting in anything that gets spoken
+        b["line"] = clean_spoken(b["line"])
+    draft["beats"] = [b for b in draft.get("beats", []) if b["line"]]
+    draft["script"] = "\n".join(b["line"] for b in draft["beats"])
     draft["caption"] = str(draft.get("caption", ""))
     draft["hashtags"] = [str(h).lstrip("#").replace(" ", "") for h in draft.get("hashtags", [])][:15]
     draft["keywords"] = [b["query"] for b in beats if b["visual"] == "clip"][:6] or ["technology"]
