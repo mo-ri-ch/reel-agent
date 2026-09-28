@@ -87,3 +87,23 @@ def publish_reel(video_path, caption, cover_at_ms=COVER_AT_MS):
 def whoami():
     return _check(requests.get(f"{IG_GRAPH_BASE}/{IG_USER_ID}", params={
         "fields": "username", "access_token": IG_ACCESS_TOKEN}, timeout=30)).get("username")
+
+
+def reels_posted_on(day, tz):
+    """How many reels are on the account for this local date (so deleted reels count as missing). None if unknown."""
+    from datetime import datetime
+    try:
+        data = _check(requests.get(f"{IG_GRAPH_BASE}/{IG_USER_ID}/media", timeout=30, params={
+            "fields": "timestamp,media_product_type", "limit": 25, "access_token": IG_ACCESS_TOKEN}))
+    except Exception as e:
+        print(f"Couldn't count today's reels on Instagram: {e}")
+        return None
+    n = 0
+    for m in data.get("data", []):
+        try:
+            when = datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z").astimezone(tz)
+        except Exception:
+            continue
+        if when.date() == day and m.get("media_product_type", "REELS") == "REELS":
+            n += 1
+    return n

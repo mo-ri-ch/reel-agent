@@ -555,8 +555,31 @@ def slots_on(day):
 
 
 def posted_today(s):
-    today = st.now().date().isoformat()
-    return sum(1 for p in (s.get("post_log") or []) if p["at"][:10] == today and not p.get("extra"))
+    """Scheduled reels that are really on Instagram today. Counted on Instagram itself (checked at most every
+    10 minutes), so a reel that was deleted or failed counts as missing and gets replaced."""
+    now = st.now()
+    today = now.date().isoformat()
+    mine = [p for p in (s.get("post_log") or []) if p["at"][:10] == today]
+    extras = sum(1 for p in mine if p.get("extra"))
+    cache = s.get("ig_count") or {}
+    fresh = cache.get("day") == today and now - datetime.fromisoformat(cache["at"]) < timedelta(minutes=10)
+    if not fresh and IG_READY():
+        import instagram
+        n = instagram.reels_posted_on(now.date(), now.tzinfo)
+        if n is not None:
+            cache = {"day": today, "at": now.isoformat(), "count": n}
+            s["ig_count"] = cache
+    if cache.get("day") == today and "count" in cache:
+        # reels posted since the last Instagram check are added on top
+        since = datetime.fromisoformat(cache["at"])
+        recent = sum(1 for p in mine if datetime.fromisoformat(p["at"]) > since)
+        return max(0, cache["count"] + recent - extras)
+    return len(mine) - extras
+
+
+def IG_READY():
+    from config import IG_ACCESS_TOKEN, IG_USER_ID
+    return bool(IG_ACCESS_TOKEN and IG_USER_ID)
 
 
 def record_post(s, extra=False):
@@ -1080,8 +1103,15 @@ def keep_schedule(s):
     now = st.now()
     need = next_unfilled(s)
     if not need:
+        s.pop("behind_since", None)
         return False
     minutes = (need - now).total_seconds() / 60
+    behind = behind_today(s) > 0
+    if behind:
+        s.setdefault("behind_since", now.isoformat())
+    else:
+        s.pop("behind_since", None)
+    waited = (now - datetime.fromisoformat(s["behind_since"])).total_seconds() / 60 if behind else 0
     # 1) hurry: shorten autopilot's waiting when the slot is close
     if minutes < 90:
         cap = now + timedelta(minutes=0 if minutes < 45 else 10)
@@ -1093,7 +1123,8 @@ def keep_schedule(s):
         last = s.get("last_auto_offer")
         if not last or abs(now - datetime.fromisoformat(last)) > timedelta(minutes=20):
             s["last_auto_offer"] = now.isoformat()
-            tg.send(f"📋 Getting the next reel ready for {fmt_time(need) if minutes > 1 else 'right now'}.")
+            tg.send("📋 A reel is missing from today's six (deleted or not posted), so I'm making a replacement now."
+                    if behind else f"📋 Getting the next reel ready for {fmt_time(need)}.")
             offer_news(s)
             if minutes < 90 and s["stage"] == "choosing":
                 s["choose_deadline"] = (now + timedelta(minutes=0 if minutes < 45 else 10)).isoformat()
@@ -1102,9 +1133,11 @@ def keep_schedule(s):
     d_ = s.get("draft") or {}
     ready_soon = ((s["stage"] == "awaiting_approval" and not qa_hold(d_)) or
                   (s["stage"] == "awaiting_voice" and d_.get("fact_status") == "ok" and not d_.get("vague_notes")))
-    if minutes < 50 and not ready_soon and s["stage"] != "rendering" and s.get("digest_for") != need.isoformat()[:16]:
+    too_late = (minutes < 50 and not behind) or (behind and waited > 45)
+    key = f"behind-{now.date()}-{posted_today(s)}" if behind else need.isoformat()[:16]
+    if too_late and not ready_soon and s["stage"] != "rendering" and s.get("digest_for") != key:
         if emergency_reel(s):
-            s["digest_for"] = need.isoformat()[:16]
+            s["digest_for"] = key
             return True
     return False
 
