@@ -1183,6 +1183,20 @@ def cmd_render():
             want = "microsoft" if s.get("last_engine") == "google" else "google"  # alternate Google / Microsoft
             voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender, want)
             s["last_engine"] = tts.LAST_ENGINE or want
+            # listen to the voice-over before using it: it must say the script and nothing else
+            try:
+                ok, why = tts.speech_matches(video.transcribe(voice, hint=s["draft"]["script"]), s["draft"]["script"])
+            except Exception as e:
+                ok, why = True, ""
+                print(f"Voice check skipped: {e}")
+            if not ok:
+                print(f"Voice-over rejected ({why}); remaking it")
+                tg.send(f"🎙 The {engine.split(',')[0]} voice-over didn't match the script ({why}), so I'm remaking it.")
+                other = "microsoft" if tts.LAST_ENGINE == "google" else "google"
+                voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice2"), gender, other)
+                ok2, why2 = tts.speech_matches(video.transcribe(voice, hint=s["draft"]["script"]), s["draft"]["script"])
+                if not ok2:
+                    raise RuntimeError(f"the voice-over didn't match the script twice ({why2})")
             s["last_gender"] = gender
             print(f"Voice-over: {engine}")
         else:

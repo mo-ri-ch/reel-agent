@@ -109,8 +109,7 @@ def _google(text, out_base, voice):
     """A Google (Gemini) voice. Returns a .wav path."""
     import base64
     import wave
-    prompt = ("Read this like a clear, confident tech-news presenter: natural pace, lively but not shouting, "
-              "with small pauses between sentences.\n\n" + text)
+    prompt = text  # ONLY the script: any instruction here can end up being read aloud
     last = ""
     for model in _tts_models()[:2]:
         r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
@@ -170,3 +169,27 @@ def synthesize(text, out_base, gender="male", engine="microsoft"):
     backup = KOKORO_FEMALE if gender == "female" else KOKORO_MALE
     LAST_ENGINE = "backup"
     return _kokoro(text, out_base, backup), f"backup voice {backup}, {gender}"
+
+
+def speech_matches(heard_words, script, max_extra_chars=14):
+    """True if the voice-over says the script and nothing else (no extra words before/after, nothing skipped).
+    Compared letter by letter, so "Open AI" vs "OpenAI" or "GPT 6" vs "GPT-6" don't count as differences."""
+    import difflib
+    norm = lambda t: re.sub(r"[^a-z0-9]", "", str(t).lower())
+    heard = "".join(norm(w["text"] if isinstance(w, dict) else w) for w in heard_words)
+    want = norm(_speakable(script))
+    if not heard or not want:
+        return False, "no speech found"
+    sm = difflib.SequenceMatcher(None, heard, want, autojunk=False)
+    blocks = [b for b in sm.get_matching_blocks() if b.size >= 3]
+    if not blocks:
+        return False, "the audio doesn't match the script"
+    lead, trail = blocks[0].a, len(heard) - (blocks[-1].a + blocks[-1].size)
+    covered = sum(b.size for b in blocks) / len(want)
+    if lead > max_extra_chars:
+        return False, f"extra words at the start (“{heard[:40]}…”)"
+    if trail > max_extra_chars:
+        return False, f"extra words at the end (“…{heard[-40:]}”)"
+    if covered < 0.85:
+        return False, f"parts of the script are missing ({int(covered * 100)}% spoken)"
+    return True, ""
