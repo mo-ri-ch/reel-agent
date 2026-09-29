@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -163,16 +163,19 @@
     "fix_rounds": 0,
     "source_links": [
       "https://status.claude.com/incidents/4xvtc2gnq73l"
-    ]
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAICrGq76nRWGi8MSZM7fbTyzBSDwl4iAALOJQACjpTgVaLTq6XPs1UnPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-09-29T22:05:49.980414+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-09-29T22:57:29.323979+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-09-29",
@@ -476,169 +479,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Anthropic Launches Claude Sonnet 5.5 With 30% Lower Costs Per Task",
-          "link": "https://analyticsindiamag.com/ai-news/anthropic-launches-claude-sonnet-55-with-30-lower-costs-per-task",
-          "summary": "Anthropic Launches Claude Sonnet 5.5 With 30% Lower Costs Per Task analyticsindiamag.com",
-          "source": "analyticsindiamag.com",
-          "published": "2026-09-29T09:00:00+00:00",
-          "angle": "Anthropic drops Claude Sonnet 5.5 with 30% lower costs, making top-tier AI way cheaper."
-        },
-        "draft": {
-          "title": "Anthropic Launches Claude Sonnet 5.5",
-          "hook_text": "Anthropic just launched Claude Sonnet 5.5.",
-          "beats": [
-            {
-              "line": "Anthropic just launched Claude Sonnet 5.5.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic Claude",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://analyticsindiamag.com/ai-news/anthropic-launches-claude-sonnet-55-with-30-lower-costs-per-task",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "It features thirty percent lower costs per task.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "30%",
-              "small": "lower costs per task",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Developers can now run complex workloads for less money.",
-              "visual": "clip",
-              "query": "developer writing code on dual monitors",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will you use this new model for your next project?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Anthropic has released Claude Sonnet 5.5 with thirty percent lower costs per task. Will you use this new model for your next project?",
-          "hashtags": [
-            "anthropic",
-            "claudesonnet",
-            "artificialintelligence",
-            "machinelearning",
-            "technews",
-            "ainews",
-            "llm",
-            "coding",
-            "softwaredevelopment",
-            "techupdates",
-            "innovation"
-          ],
-          "sources": [
-            "https://analyticsindiamag.com/ai-news/anthropic-launches-claude-sonnet-55-with-30-lower-costs-per-task"
-          ],
-          "script": "Anthropic just launched Claude Sonnet 5.5.\nIt features thirty percent lower costs per task.\nDevelopers can now run complex workloads for less money.\nWill you use this new model for your next project?",
-          "keywords": [
-            "developer writing code on dual monitors",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Anthropic launched Claude Sonnet 5.5",
-              "url": "https://mashable.com/tech/anthropic-claude-sonnet-launch-cheaper-opus-model"
-            },
-            {
-              "claim": "Anthropic launched Claude Sonnet 5.5",
-              "url": "https://mashable.com/tech/anthropic-claude-sonnet-launch-cheaper-opus-model"
-            },
-            {
-              "claim": "Claude Sonnet 5.5 features 30 percent lower costs per task",
-              "url": "https://mashable.com/tech/anthropic-claude-sonnet-launch-cheaper-opus-model"
-            },
-            {
-              "claim": "Developers can now run complex workloads for less money",
-              "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://analyticsindiamag.com/ai-news/anthropic-launches-claude-sonnet-55-with-30-lower-costs-per-task"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "Anthropic Claude: Прикли (CC0), via Wikimedia Commons"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAICjWq7ot6nf54lOfhV-Y3J0BuFPu-bAALDJAACjpTgVeAbKl0jXS2_PQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAICjWq7ot6nf54lOfhV-Y3J0BuFPu-bAALDJAACjpTgVeAbKl0jXS2_PQQ",
-      "history_title": "Anthropic Launches Claude Sonnet 5.5 With 30% Lower Costs Per Task"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1058,6 +898,185 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Claude partial outage",
+          "link": "https://status.claude.com/incidents/4xvtc2gnq73l",
+          "summary": "",
+          "source": "status.claude.com",
+          "published": "2026-09-29T14:25:41+00:00",
+          "buzz": "Hacker News 69 points",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Claude Partial Outage",
+          "hook_text": "Claude just went down.",
+          "beats": [
+            {
+              "line": "Claude just went down.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Claude by Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Anthropic reported a partial outage on status dot claude dot com.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "status.claude.com",
+              "domain": "status.claude.com",
+              "headline": "Claude partial outage",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Users couldn't access their chats for a bit.",
+              "visual": "clip",
+              "query": "person looking at laptop screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Things are back online now.",
+              "visual": "clip",
+              "query": "server room data center lights",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "How much do you rely on AI for your daily work?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Digital abstract neon grid connecting glowing data nodes in blue and dark grey tones",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Anthropic experienced a partial outage on Claude today, causing temporary disruptions for users. Services have since recovered. How much do you rely on AI for your daily work?",
+          "hashtags": [
+            "claude",
+            "anthropic",
+            "artificialintelligence",
+            "technews",
+            "aitools",
+            "serverdown",
+            "software",
+            "innovation",
+            "technology",
+            "digital"
+          ],
+          "sources": [
+            "https://status.claude.com/incidents/4xvtc2gnq73l"
+          ],
+          "script": "Claude just went down.\nAnthropic reported a partial outage on status dot claude dot com.\nUsers couldn't access their chats for a bit.\nThings are back online now.\nHow much do you rely on AI for your daily work?",
+          "keywords": [
+            "person looking at laptop screen",
+            "server room data center lights"
+          ],
+          "image_prompts": [
+            "Digital abstract neon grid connecting glowing data nodes in blue and dark grey tones"
+          ],
+          "evidence": [
+            {
+              "claim": "Claude just went down.",
+              "url": "https://tech.sportskeeda.com/laptops/news-is-claude-right-now-september-29-2026-outage-status-explored"
+            },
+            {
+              "claim": "Claude just went down.",
+              "url": "https://tech.sportskeeda.com/laptops/news-is-claude-right-now-september-29-2026-outage-status-explored"
+            },
+            {
+              "claim": "Anthropic reported a partial outage on status dot claude dot com.",
+              "url": "https://9to5google.com/2026/09/29/claude-confirmed-outage-sept-29/"
+            },
+            {
+              "claim": "Users couldn't access their chats for a bit.",
+              "url": "https://www.pcmag.com/news/is-claude-down-anthropic-works-on-a-fix-for-latest-major-outage"
+            },
+            {
+              "claim": "Things are back online now.",
+              "url": "https://www.pcmag.com/news/is-claude-down-anthropic-works-on-a-fix-for-latest-major-outage"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://status.claude.com/incidents/4xvtc2gnq73l"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-29T22:05:49.980414+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1244,8 +1263,8 @@
       "at": "2026-09-29T20:30:47.391873+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-09-29T20:31+05:30",
@@ -1269,11 +1288,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-09-29T05:00:32.842172+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-09-29",
   "ig_count": {
     "day": "2026-09-29",
-    "at": "2026-09-29T22:00:30.685051+05:30",
+    "at": "2026-09-29T22:12:29.324125+05:30",
     "count": 6
   }
 }
