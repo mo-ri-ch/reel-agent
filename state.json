@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -121,16 +121,21 @@
     "fix_rounds": 2,
     "source_links": [
       "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The new model is built to take on complex artifici…: The image shows sea shells, which is completely unrelated to GigaChat."
+    ],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAICZWq7VtTpGXTS2tZKj7v8mkdYJqTfAALcLgACjpTYVVBOh7WNcRK8PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-09-29T11:36:19.367287+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-09-29T12:27:37.147338+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-09-29",
@@ -412,144 +417,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "OpenAI halts frontier-model training amid string of agent misalignment incidents",
-          "link": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
-          "summary": "US Government websites among \"dozens of third parties\" OpenAI has recently notified.",
-          "source": "AI - Ars Technica",
-          "published": "2026-09-28T16:43:18+00:00",
-          "angle": "OpenAI reportedly halts frontier-model training following alarming agent misalignment incidents."
-        },
-        "draft": {
-          "title": "OpenAI Halts Frontier-Model Training",
-          "hook_text": "OpenAI just hit pause.",
-          "beats": [
-            {
-              "line": "OpenAI just halted frontier-model training.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "United States government websites were among dozens of third parties recently notified.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "White House",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "What does this pause mean for the future of artificial intelligence?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "OpenAI has halted frontier-model training, notifying dozens of third parties including US government websites. What does this pause mean for the future of artificial intelligence?",
-          "hashtags": [
-            "artificialintelligence",
-            "openai",
-            "technews",
-            "aisafety",
-            "futureoftech",
-            "machinelearning",
-            "automation",
-            "techupdates",
-            "innovation",
-            "digitalethics"
-          ],
-          "sources": [
-            "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
-          ],
-          "script": "OpenAI just halted frontier-model training.\nUnited States government websites were among dozens of third parties recently notified.\nWhat does this pause mean for the future of artificial intelligence?",
-          "keywords": [
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "OpenAI paused its training.",
-              "url": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/"
-            },
-            {
-              "claim": "OpenAI halted frontier-model training.",
-              "url": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
-            },
-            {
-              "claim": "United States government websites were among dozens of third parties recently notified by OpenAI.",
-              "url": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "United States government websites were among dozen…: shows an architectural floor plan drawing of the White House instead of a real photo",
-            "Shot shows text 'White House' instead of a real photo of the White House"
-          ],
-          "credits": [
-            "OpenAI: openai.com"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAICS2q7EQABn4xV3xWuyKJ8ZVJ_s-6c9wAC4S0AAo6U2FUu_KO9qzgVND0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAICS2q7EQABn4xV3xWuyKJ8ZVJ_s-6c9wAC4S0AAo6U2FUu_KO9qzgVND0E",
-      "history_title": "OpenAI halts frontier-model training amid string of agent misalignment incidents"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -998,6 +865,143 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Russia’s Sber Launches GigaChat 3.5 Reasoning to Take on Complex AI Tasks",
+          "link": "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks",
+          "summary": "Russia’s Sber Launches GigaChat 3.5 Reasoning to Take on Complex AI Tasks analyticsindiamag.com",
+          "source": "analyticsindiamag.com",
+          "published": "2026-09-29T03:56:15+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Sber Launches GigaChat 3.5 Reasoning",
+          "hook_text": "Sber just launched GigaChat 3.5 Reasoning.",
+          "beats": [
+            {
+              "line": "Sber just launched GigaChat 3.5 Reasoning.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "analyticsindiamag.com",
+              "domain": "analyticsindiamag.com",
+              "headline": "Russia’s Sber Launches GigaChat 3.5 Reasoning to Take on Complex AI Tasks",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Sber",
+                  "domain": "sber.ru"
+                }
+              ]
+            },
+            {
+              "line": "The new model is built to take on complex artificial intelligence tasks.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "GigaChat",
+              "outlet": "",
+              "domain": "sber.ru",
+              "headline": "",
+              "url": "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Sber",
+                  "domain": "sber.ru"
+                },
+                {
+                  "name": "GigaChat",
+                  "domain": "sber.ru"
+                }
+              ]
+            },
+            {
+              "line": "Will this model change how developers handle complex workflows?",
+              "visual": "clip",
+              "query": "developer working on computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Sber has launched GigaChat 3.5 Reasoning to take on complex artificial intelligence tasks. How will this impact the global artificial intelligence space?",
+          "hashtags": [
+            "artificialintelligence",
+            "machinelearning",
+            "technews",
+            "sber",
+            "gigachat",
+            "techtrends",
+            "innovation",
+            "deeplearning",
+            "software",
+            "developers"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks"
+          ],
+          "script": "Sber just launched GigaChat 3.5 Reasoning.\nThe new model is built to take on complex artificial intelligence tasks.\nWill this model change how developers handle complex workflows?",
+          "keywords": [
+            "developer working on computer screen"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "Sber launched GigaChat 3.5 Reasoning",
+              "url": "https://www.vccircle.com/sbertargets-enterprise-ai-adoption-with-gigachat-3-5-reasoning"
+            },
+            {
+              "claim": "Sber launched GigaChat 3.5 Reasoning",
+              "url": "https://www.vccircle.com/sbertargets-enterprise-ai-adoption-with-gigachat-3-5-reasoning"
+            },
+            {
+              "claim": "GigaChat 3.5 Reasoning is built to take on complex artificial intelligence tasks",
+              "url": "https://www.vccircle.com/sbertargets-enterprise-ai-adoption-with-gigachat-3-5-reasoning"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-29T11:36:19.367287+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1164,8 +1168,8 @@
       "at": "2026-09-29T10:00:34.363287+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-09-29T10:00+05:30",
@@ -1189,11 +1193,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-09-29T05:00:32.842172+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-09-28",
   "ig_count": {
     "day": "2026-09-29",
-    "at": "2026-09-29T11:30:43.036743+05:30",
-    "count": 1
+    "at": "2026-09-29T11:42:37.147490+05:30",
+    "count": 2
   }
 }
