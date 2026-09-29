@@ -160,16 +160,17 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-09-29T14:26:46.042743+05:30",
+  "script_deadline": "2026-09-29T14:36:23.781846+05:30",
   "preview_deadline": null,
   "last_gender": "male",
-  "pending_offer": false,
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-09-29",
     "done": [
       "07:00",
       "09:30",
-      "12:00"
+      "12:00",
+      "14:30"
     ]
   },
   "pending_topic": null,
@@ -449,143 +450,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Russia’s Sber Launches GigaChat 3.5 Reasoning to Take on Complex AI Tasks",
-          "link": "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks",
-          "summary": "Russia’s Sber Launches GigaChat 3.5 Reasoning to Take on Complex AI Tasks analyticsindiamag.com",
-          "source": "analyticsindiamag.com",
-          "published": "2026-09-29T03:56:15+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Sber Launches GigaChat 3.5 Reasoning",
-          "hook_text": "Sber just launched GigaChat 3.5 Reasoning.",
-          "beats": [
-            {
-              "line": "Sber just launched GigaChat 3.5 Reasoning.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "analyticsindiamag.com",
-              "domain": "analyticsindiamag.com",
-              "headline": "Russia’s Sber Launches GigaChat 3.5 Reasoning to Take on Complex AI Tasks",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Sber",
-                  "domain": "sber.ru"
-                }
-              ]
-            },
-            {
-              "line": "The new model is built to take on complex artificial intelligence tasks.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "GigaChat",
-              "outlet": "",
-              "domain": "sber.ru",
-              "headline": "",
-              "url": "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Sber",
-                  "domain": "sber.ru"
-                },
-                {
-                  "name": "GigaChat",
-                  "domain": "sber.ru"
-                }
-              ]
-            },
-            {
-              "line": "Will this model change how developers handle complex workflows?",
-              "visual": "clip",
-              "query": "developer working on computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Sber has launched GigaChat 3.5 Reasoning to take on complex artificial intelligence tasks. How will this impact the global artificial intelligence space?",
-          "hashtags": [
-            "artificialintelligence",
-            "machinelearning",
-            "technews",
-            "sber",
-            "gigachat",
-            "techtrends",
-            "innovation",
-            "deeplearning",
-            "software",
-            "developers"
-          ],
-          "sources": [
-            "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks"
-          ],
-          "script": "Sber just launched GigaChat 3.5 Reasoning.\nThe new model is built to take on complex artificial intelligence tasks.\nWill this model change how developers handle complex workflows?",
-          "keywords": [
-            "developer working on computer screen"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Sber launched GigaChat 3.5 Reasoning",
-              "url": "https://www.vccircle.com/sbertargets-enterprise-ai-adoption-with-gigachat-3-5-reasoning"
-            },
-            {
-              "claim": "Sber launched GigaChat 3.5 Reasoning",
-              "url": "https://www.vccircle.com/sbertargets-enterprise-ai-adoption-with-gigachat-3-5-reasoning"
-            },
-            {
-              "claim": "GigaChat 3.5 Reasoning is built to take on complex artificial intelligence tasks",
-              "url": "https://www.vccircle.com/sbertargets-enterprise-ai-adoption-with-gigachat-3-5-reasoning"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://analyticsindiamag.com/ai-news/russias-sber-launches-gigachat-35-reasoning-to-take-on-complex-ai-tasks"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-09-29T11:36:19.367287+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1111,6 +975,175 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist",
+          "link": "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist",
+          "summary": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist analyticsindiamag.com",
+          "source": "analyticsindiamag.com",
+          "published": "2026-09-29T04:38:08+00:00",
+          "angle": "AMD just made a massive $8.2B splash by acquiring World Labs with Fei-Fei Li joining as Chief Scientist!"
+        },
+        "draft": {
+          "title": "AMD Acquires World Labs",
+          "hook_text": "AMD just bought World Labs.",
+          "beats": [
+            {
+              "line": "AMD just bought World Labs.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "AMD",
+              "outlet": "",
+              "domain": "amd.com",
+              "headline": "",
+              "url": "https://www.amd.com",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "AMD",
+                  "domain": "amd.com"
+                }
+              ]
+            },
+            {
+              "line": "The deal is worth eight point two billion dollars.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$8.2B",
+              "small": "acquisition cost",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "AMD",
+                  "domain": "amd.com"
+                },
+                {
+                  "name": "World Labs",
+                  "domain": "worldlabs.ai"
+                }
+              ]
+            },
+            {
+              "line": "Fei-Fei Li is joining the company as chief scientist.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "Fei-Fei Li",
+              "role": "Chief Scientist, World Labs",
+              "x": "drfeifei",
+              "brands": [
+                {
+                  "name": "World Labs",
+                  "domain": "worldlabs.ai"
+                }
+              ]
+            },
+            {
+              "line": "How will this acquisition shape the future of artificial intelligence?",
+              "visual": "clip",
+              "query": "server room computer hardware",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "AMD",
+                  "domain": "amd.com"
+                }
+              ]
+            }
+          ],
+          "caption": "AMD has acquired World Labs for eight point two billion dollars, with Fei-Fei Li joining as chief scientist. How will this acquisition shape the future of artificial intelligence?",
+          "hashtags": [
+            "AMD",
+            "WorldLabs",
+            "FeiFeiLi",
+            "ArtificialIntelligence",
+            "TechNews",
+            "SpatialIntelligence",
+            "SiliconValley",
+            "Semiconductors",
+            "MachineLearning",
+            "TechIndustry",
+            "AI"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist"
+          ],
+          "script": "AMD just bought World Labs.\nThe deal is worth eight point two billion dollars.\nFei-Fei Li is joining the company as chief scientist.\nHow will this acquisition shape the future of artificial intelligence?",
+          "keywords": [
+            "server room computer hardware"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "AMD acquired World Labs.",
+              "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+            },
+            {
+              "claim": "AMD bought World Labs.",
+              "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/"
+            },
+            {
+              "claim": "The deal is worth eight point two billion dollars.",
+              "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+            },
+            {
+              "claim": "Fei-Fei Li is joining the company as chief scientist.",
+              "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-29T14:26:46.042743+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1307,7 +1340,7 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-09-29T05:00:32.842172+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-09-28",
   "ig_count": {
     "day": "2026-09-29",
