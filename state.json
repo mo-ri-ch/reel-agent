@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -112,16 +112,24 @@
     "fix_rounds": 1,
     "source_links": [
       "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "United States government websites were among dozen…: shows an architectural floor plan drawing of the White House instead of a real photo",
+      "Shot shows text 'White House' instead of a real photo of the White House"
+    ],
+    "credits": [
+      "OpenAI: openai.com"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAICS2q7EQABn4xV3xWuyKJ8ZVJ_s-6c9wAC4S0AAo6U2FUu_KO9qzgVND0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-09-29T06:36:14.662812+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-09-29T07:29:40.541362+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-09-29",
@@ -392,50 +400,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Next five VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026",
-            "link": "https://techcrunch.com/2026/09/28/next-five-vcs-judging-startup-battlefield-200-contenders-at-techcrunch-disrupt-2026/",
-            "summary": "Thousands of applications. Multiple rounds of review. Hundreds of hours spent evaluating startups from around the world. Now comes the part everyone has been waiting for. Startup Battlefield 200 is almost here, and with today’s announcement, the judging panel is nearly complete. In just a couple of weeks, 200 carefully selected startups will gather at […]",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-09-28T14:30:00+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Modulate raises $25M for its voice models and analysis suite",
-            "link": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
-            "summary": "Modulate deploys its models to detect deepfake, fraud and scam",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-09-28T14:05:00+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Insuretech Outmarket raises $34.5M just months after prior round",
-            "link": "https://techcrunch.com/2026/09/28/insuretech-outmarket-raises-34-5m-just-months-after-prior-round/",
-            "summary": "The startup uses AI to automate tedious paperwork for insurance agencies and brokers.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-09-28T14:00:00+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-09-28T20:30:44.149134+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -838,6 +802,134 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "OpenAI halts frontier-model training amid string of agent misalignment incidents",
+          "link": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
+          "summary": "US Government websites among \"dozens of third parties\" OpenAI has recently notified.",
+          "source": "AI - Ars Technica",
+          "published": "2026-09-28T16:43:18+00:00",
+          "angle": "OpenAI reportedly halts frontier-model training following alarming agent misalignment incidents."
+        },
+        "draft": {
+          "title": "OpenAI Halts Frontier-Model Training",
+          "hook_text": "OpenAI just hit pause.",
+          "beats": [
+            {
+              "line": "OpenAI just halted frontier-model training.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "United States government websites were among dozens of third parties recently notified.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "White House",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "What does this pause mean for the future of artificial intelligence?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "OpenAI has halted frontier-model training, notifying dozens of third parties including US government websites. What does this pause mean for the future of artificial intelligence?",
+          "hashtags": [
+            "artificialintelligence",
+            "openai",
+            "technews",
+            "aisafety",
+            "futureoftech",
+            "machinelearning",
+            "automation",
+            "techupdates",
+            "innovation",
+            "digitalethics"
+          ],
+          "sources": [
+            "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
+          ],
+          "script": "OpenAI just halted frontier-model training.\nUnited States government websites were among dozens of third parties recently notified.\nWhat does this pause mean for the future of artificial intelligence?",
+          "keywords": [
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "OpenAI paused its training.",
+              "url": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/"
+            },
+            {
+              "claim": "OpenAI halted frontier-model training.",
+              "url": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
+            },
+            {
+              "claim": "United States government websites were among dozens of third parties recently notified by OpenAI.",
+              "url": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-29T06:36:14.662812+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -993,8 +1085,8 @@
       "at": "2026-09-28T21:10:28.225236+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-09-29T05:00+05:30",
@@ -1018,11 +1110,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-09-29T05:00:32.842172+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-09-28",
   "ig_count": {
     "day": "2026-09-29",
-    "at": "2026-09-29T06:30:47.995901+05:30",
+    "at": "2026-09-29T06:44:40.541514+05:30",
     "count": 0
   }
 }
