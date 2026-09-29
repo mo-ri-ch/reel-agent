@@ -1,35 +1,160 @@
 {
   "offset": 153809604,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist",
-      "link": "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist",
-      "summary": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist analyticsindiamag.com",
-      "source": "analyticsindiamag.com",
-      "published": "2026-09-29T04:38:08+00:00",
-      "angle": "AMD just made a massive $8.2B splash by acquiring World Labs with Fei-Fei Li joining as Chief Scientist!"
-    },
-    {
-      "title": "Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity",
-      "link": "https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/",
-      "summary": "In its prospectus, Anthropic just told investors it's losing tens of billions of dollars a year, but also growing like crazy, and — oh yeah — its own AI might pose an existential risk to humanity.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-09-29T05:13:43+00:00",
-      "angle": "Anthropic’s official IPO filing drops a bombshell warning investors that its AI could potentially end humanity."
-    },
-    {
-      "title": "Shopify opens checkout to browser-based AI agents",
-      "link": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
-      "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-09-28T19:33:57+00:00",
-      "angle": "Shopify is officially opening checkout to browser-based AI agents, letting them buy things for you."
-    }
-  ],
-  "choose_deadline": "2026-09-29T13:15:50.177551+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist",
+    "link": "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist",
+    "summary": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist analyticsindiamag.com",
+    "source": "analyticsindiamag.com",
+    "published": "2026-09-29T04:38:08+00:00",
+    "angle": "AMD just made a massive $8.2B splash by acquiring World Labs with Fei-Fei Li joining as Chief Scientist!"
+  },
+  "draft": {
+    "title": "AMD Acquires World Labs",
+    "hook_text": "AMD just bought World Labs.",
+    "beats": [
+      {
+        "line": "AMD just bought World Labs.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "AMD",
+        "outlet": "",
+        "domain": "amd.com",
+        "headline": "",
+        "url": "https://www.amd.com",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "AMD",
+            "domain": "amd.com"
+          }
+        ]
+      },
+      {
+        "line": "The deal is worth eight point two billion dollars.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "$8.2B",
+        "small": "acquisition cost",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "AMD",
+            "domain": "amd.com"
+          },
+          {
+            "name": "World Labs",
+            "domain": "worldlabs.ai"
+          }
+        ]
+      },
+      {
+        "line": "Fei-Fei Li is joining the company as chief scientist.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "Fei-Fei Li",
+        "role": "Chief Scientist, World Labs",
+        "x": "drfeifei",
+        "brands": [
+          {
+            "name": "World Labs",
+            "domain": "worldlabs.ai"
+          }
+        ]
+      },
+      {
+        "line": "How will this acquisition shape the future of artificial intelligence?",
+        "visual": "clip",
+        "query": "server room computer hardware",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "AMD",
+            "domain": "amd.com"
+          }
+        ]
+      }
+    ],
+    "caption": "AMD has acquired World Labs for eight point two billion dollars, with Fei-Fei Li joining as chief scientist. How will this acquisition shape the future of artificial intelligence?",
+    "hashtags": [
+      "AMD",
+      "WorldLabs",
+      "FeiFeiLi",
+      "ArtificialIntelligence",
+      "TechNews",
+      "SpatialIntelligence",
+      "SiliconValley",
+      "Semiconductors",
+      "MachineLearning",
+      "TechIndustry",
+      "AI"
+    ],
+    "sources": [
+      "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist"
+    ],
+    "script": "AMD just bought World Labs.\nThe deal is worth eight point two billion dollars.\nFei-Fei Li is joining the company as chief scientist.\nHow will this acquisition shape the future of artificial intelligence?",
+    "keywords": [
+      "server room computer hardware"
+    ],
+    "image_prompts": [],
+    "evidence": [
+      {
+        "claim": "AMD acquired World Labs.",
+        "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+      },
+      {
+        "claim": "AMD bought World Labs.",
+        "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/"
+      },
+      {
+        "claim": "The deal is worth eight point two billion dollars.",
+        "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+      },
+      {
+        "claim": "Fei-Fei Li is joining the company as chief scientist.",
+        "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 2,
+    "source_links": [
+      "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -43,7 +168,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-09-29T14:10:07.354902+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -285,20 +410,20 @@
   "paused": null,
   "spare": [
     {
-      "title": "Global AI industry needs to earn $6 trillion to justify data centres: Bain",
-      "link": "https://www.business-standard.com/technology/artificial-intelligence/global-ai-industry-needs-to-earn-6-trillion-to-justify-data-centres-bain-126092900158_1.html",
-      "summary": "Global AI industry needs to earn $6 trillion to justify data centres: Bain Business Standard",
-      "source": "Business Standard",
-      "published": "2026-09-29T03:39:23+00:00",
-      "angle": ""
+      "title": "Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity",
+      "link": "https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/",
+      "summary": "In its prospectus, Anthropic just told investors it's losing tens of billions of dollars a year, but also growing like crazy, and — oh yeah — its own AI might pose an existential risk to humanity.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-09-29T05:13:43+00:00",
+      "angle": "Anthropic’s official IPO filing drops a bombshell warning investors that its AI could potentially end humanity."
     },
     {
-      "title": "OpenAI cancels release of new AI model over safety concerns",
-      "link": "https://www.france24.com/en/americas/20260929-openai-cancels-release-new-ai-model-safety-concerns",
-      "summary": "OpenAI cancels release of new AI model over safety concerns France 24",
-      "source": "France 24",
-      "published": "2026-09-29T02:54:49+00:00",
-      "angle": ""
+      "title": "Shopify opens checkout to browser-based AI agents",
+      "link": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
+      "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-09-28T19:33:57+00:00",
+      "angle": "Shopify is officially opening checkout to browser-based AI agents, letting them buy things for you."
     }
   ],
   "tried": [
@@ -326,185 +451,7 @@
     "Jensen Huang says AI distillation is 'competition.'",
     "Insuretech Outmarket raises $34.5M just months after prior round"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Nvidia unveils security platform to stop AI agents from going rogue",
-          "link": "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621",
-          "summary": "Nvidia unveils security platform to stop AI agents from going rogue AP News",
-          "source": "AP News",
-          "published": "2026-09-28T22:14:00+00:00",
-          "angle": "Nvidia is building physical watchdog chips to stop rogue AI agents from taking over."
-        },
-        "draft": {
-          "title": "Nvidia unveils AI security platform",
-          "hook_text": "Nvidia unveiled a new security platform.",
-          "beats": [
-            {
-              "line": "Nvidia unveiled a new security platform designed for autonomous artificial intelligence.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "The system aims to help stop AI agents from operating unexpectedly.",
-              "visual": "clip",
-              "query": "coding data stream screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Autonomous agents are increasingly taking actions across digital environments.",
-              "visual": "clip",
-              "query": "person using laptop computer typing",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Safety tools are becoming critical as these systems handle complex tasks.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "AP News",
-              "domain": "apnews.com",
-              "headline": "Nvidia unveils security platform to stop AI agents",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How will developers secure autonomous artificial intelligence?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "futuristic digital security shield glowing code dark background",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Nvidia has announced a new security platform built to help monitor and secure autonomous artificial intelligence agents. How do you think developers should handle AI safety?",
-          "hashtags": [
-            "nvidia",
-            "artificialintelligence",
-            "aisafety",
-            "technews",
-            "aiagents",
-            "cybersecurity",
-            "machinelearning",
-            "techupdates",
-            "software",
-            "innovation"
-          ],
-          "sources": [
-            "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621"
-          ],
-          "script": "Nvidia unveiled a new security platform designed for autonomous artificial intelligence.\nThe system aims to help stop AI agents from operating unexpectedly.\nAutonomous agents are increasingly taking actions across digital environments.\nSafety tools are becoming critical as these systems handle complex tasks.\nHow will developers secure autonomous artificial intelligence?",
-          "keywords": [
-            "coding data stream screen",
-            "person using laptop computer typing"
-          ],
-          "image_prompts": [
-            "futuristic digital security shield glowing code dark background"
-          ],
-          "evidence": [
-            {
-              "claim": "Nvidia unveiled a new security platform.",
-              "url": "https://www.theguardian.com/technology/2026/sep/28/nvidia-ai-agent-security-platform-stock-buyback"
-            },
-            {
-              "claim": "Nvidia unveiled a new security platform designed for autonomous artificial intelligence.",
-              "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform"
-            },
-            {
-              "claim": "The system aims to help stop AI agents from operating unexpectedly.",
-              "url": "https://www.theguardian.com/technology/2026/sep/28/nvidia-ai-agent-security-platform-stock-buyback"
-            },
-            {
-              "claim": "Autonomous agents are increasingly taking actions across digital environments.",
-              "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform"
-            },
-            {
-              "claim": "Safety tools are becoming critical as these systems handle complex tasks.",
-              "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform"
-            },
-            {
-              "claim": "How will developers secure autonomous artificial intelligence?",
-              "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-09-29T09:06:08.078185+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1013,6 +960,50 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAICZWq7VtTpGXTS2tZKj7v8mkdYJqTfAALcLgACjpTYVVBOh7WNcRK8PQQ",
       "history_title": "Russia’s Sber Launches GigaChat 3.5 Reasoning to Take on Complex AI Tasks"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist",
+            "link": "https://analyticsindiamag.com/ai-news/amd-acquires-world-labs-for-82-bn-fei-fei-li-to-join-as-chief-scientist",
+            "summary": "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist analyticsindiamag.com",
+            "source": "analyticsindiamag.com",
+            "published": "2026-09-29T04:38:08+00:00",
+            "angle": "AMD just made a massive $8.2B splash by acquiring World Labs with Fei-Fei Li joining as Chief Scientist!"
+          },
+          {
+            "title": "Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity",
+            "link": "https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/",
+            "summary": "In its prospectus, Anthropic just told investors it's losing tens of billions of dollars a year, but also growing like crazy, and — oh yeah — its own AI might pose an existential risk to humanity.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-09-29T05:13:43+00:00",
+            "angle": "Anthropic’s official IPO filing drops a bombshell warning investors that its AI could potentially end humanity."
+          },
+          {
+            "title": "Shopify opens checkout to browser-based AI agents",
+            "link": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
+            "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-09-28T19:33:57+00:00",
+            "angle": "Shopify is officially opening checkout to browser-based AI agents, letting them buy things for you."
+          }
+        ],
+        "choose_deadline": "2026-09-29T13:15:50.177551+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
