@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -131,11 +131,17 @@
     "fix_rounds": 1,
     "source_links": [
       "https://openai.com/index/introducing-gpt-6-1-sol/"
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [
+      "OpenAI GPT 6.1 Sol: openai.com",
+      "OpenAI GPT 6.1 Sol: openai.com"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAICumq8ZDoyFCU6fAQJV5SOItf5Hfy9AAIPHAACUM7pVbK4oP0-JTl4PQQ",
   "queue": [
     {
       "title": "Claude partial outage",
@@ -146,9 +152,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-09-30T06:46:22.103166+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-09-30T07:37:02.974838+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-09-30",
@@ -444,52 +450,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Claude partial outage",
-            "link": "https://status.claude.com/incidents/4xvtc2gnq73l",
-            "summary": "",
-            "source": "status.claude.com",
-            "published": "2026-09-29T14:25:41+00:00",
-            "buzz": "Hacker News 69 points",
-            "angle": ""
-          },
-          {
-            "title": "OpenAI says planned GPT-6.1 is too insecure to release",
-            "link": "https://arstechnica.com/ai/2026/09/openai-says-planned-gpt-6-1-is-too-insecure-to-release/",
-            "summary": "Similar performance, security tradeoffs also seen in current public models.",
-            "source": "AI - Ars Technica",
-            "published": "2026-09-29T14:22:31+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
-            "link": "https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions",
-            "summary": "",
-            "source": "appleinsider.com",
-            "published": "2026-09-29T14:15:24+00:00",
-            "buzz": "Hacker News 36 points",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-09-29T21:16:14.891937+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1044,6 +1004,153 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "link": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "summary": "",
+          "source": "openai.com",
+          "published": "2026-09-29T17:06:45+00:00",
+          "buzz": "Hacker News 735 points",
+          "angle": "OpenAI just dropped GPT-6.1 Sol—getting near-Astra power for a fifth of the price."
+        },
+        "draft": {
+          "title": "OpenAI Launches GPT 6.1 Sol",
+          "hook_text": "Near Astra power for cheap",
+          "beats": [
+            {
+              "line": "OpenAI just released GPT six point one Sol.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI GPT 6.1 Sol",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "It delivers near Astra intelligence.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "one fifth",
+              "small": "of the price",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "OpenAI published this update on their site.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "openai.com",
+              "domain": "openai.com",
+              "headline": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            }
+          ],
+          "caption": "OpenAI has just introduced GPT six point one Sol, bringing near Astra intelligence at a fifth of the price. How will this new pricing model impact your projects?",
+          "hashtags": [
+            "openai",
+            "gpt6",
+            "artificialintelligence",
+            "machinelearning",
+            "technews",
+            "innovation",
+            "futuretech",
+            "softwaredevelopment",
+            "automation",
+            "aichatbot"
+          ],
+          "sources": [
+            "https://openai.com/index/introducing-gpt-6-1-sol/"
+          ],
+          "script": "OpenAI just released GPT six point one Sol.\nIt delivers near Astra intelligence.\nOpenAI published this update on their site.",
+          "keywords": [
+            "technology"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "GPT-6.1 Sol offers near Astra intelligence for cheap / a fraction of the price",
+              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+            },
+            {
+              "claim": "OpenAI released GPT-6.1 Sol",
+              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+            },
+            {
+              "claim": "GPT-6.1 Sol delivers near Astra intelligence",
+              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+            },
+            {
+              "claim": "GPT-6.1 Sol is priced at one fifth of the price of Astra",
+              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+            },
+            {
+              "claim": "OpenAI published this update on their site",
+              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://openai.com/index/introducing-gpt-6-1-sol/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-09-30T06:46:22.103166+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1260,7 +1367,7 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-09-30T05:00:32.422430+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-09-29",
   "ig_count": {
     "day": "2026-09-30",
