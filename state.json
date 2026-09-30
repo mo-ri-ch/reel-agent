@@ -1,166 +1,38 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
-    "link": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/",
-    "summary": "Before OpenAI launched its new AI agent, Dots, on Tuesday, Elon Musk's xAI had already acquired the domain name \"dot.com,\" which now redirects to the Grok chatbot download page.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-09-29T22:20:59+00:00",
-    "angle": "Elon Musk's xAI brilliantly trolled OpenAI by snapping up the dot.com domain right before their launch."
-  },
-  "draft": {
-    "title": "xAI Redirects Dot Com",
-    "hook_text": "Did xAI troll OpenAI?",
-    "beats": [
-      {
-        "line": "Before OpenAI launched its new AI agent named Dots, xAI acquired the domain name dot com.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "TechCrunch",
-        "domain": "techcrunch.com",
-        "headline": "The internet is convinced Elon Musk's xAI trolled OpenAI's Dots launch",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          },
-          {
-            "name": "xAI",
-            "domain": "x.ai"
-          }
-        ]
-      },
-      {
-        "line": "The domain now redirects users straight to the Grok chatbot download page.",
-        "visual": "clip",
-        "query": "person typing laptop",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Grok",
-            "domain": "x.ai"
-          }
-        ]
-      },
-      {
-        "line": "The internet is convinced this move was a deliberate troll against OpenAI.",
-        "visual": "clip",
-        "query": "person looking at phone",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          }
-        ]
-      },
-      {
-        "line": "Would you redirect rival traffic to your own chatbot?",
-        "visual": "clip",
-        "query": "person smiling looking at phone",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "caption": "Elon Musk's xAI acquired the dot.com domain right before OpenAI launched its new AI agent, Dots. The domain now redirects visitors straight to the Grok chatbot download page. Would you pull a move like this against a rival?",
-    "hashtags": [
-      "elonmusk",
-      "xai",
-      "openai",
-      "grok",
-      "artificialintelligence",
-      "technews",
-      "aiagents",
-      "dots",
-      "techcrunch",
-      "business"
-    ],
-    "sources": [
-      "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
-    ],
-    "script": "Before OpenAI launched its new AI agent named Dots, xAI acquired the domain name dot com.\nThe domain now redirects users straight to the Grok chatbot download page.\nThe internet is convinced this move was a deliberate troll against OpenAI.\nWould you redirect rival traffic to your own chatbot?",
-    "keywords": [
-      "person typing laptop",
-      "person looking at phone",
-      "person smiling looking at phone"
-    ],
-    "image_prompts": [],
-    "evidence": [
-      {
-        "claim": "xAI trolled OpenAI",
-        "url": "https://www.techbuzz.ai/articles/musk-s-xai-snatches-dot-com-domain-before-openai-s-dots-launch"
-      },
-      {
-        "claim": "OpenAI launched a new AI agent named Dots",
-        "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
-      },
-      {
-        "claim": "xAI acquired the domain name dot com",
-        "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
-      },
-      {
-        "claim": "The dot com domain redirects users straight to the Grok chatbot download page",
-        "url": "https://www.techbuzz.ai/articles/musk-s-xai-snatches-dot-com-domain-before-openai-s-dots-launch"
-      },
-      {
-        "claim": "The internet is convinced this move was a deliberate troll against OpenAI",
-        "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 2,
-    "source_links": [
-      "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
-    ],
-    "visual_status": "ok",
-    "visual_notes": [],
-    "credits": []
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+      "link": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
+      "summary": "The new round is anticipated to be the company's last before its delayed 2027 public debut.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-09-29T19:52:37+00:00",
+      "angle": "OpenAI is reportedly in talks to raise a massive $30B round at a staggering $1.4T valuation ahead of its planned public debut."
+    },
+    {
+      "title": "OpenClaw launches free enterprise control plane for persistent AI agents, backed by OpenAI, Red Hat and Nvidia",
+      "link": "https://venturebeat.com/orchestration/openclaw-launches-free-enterprise-control-plane-for-persistent-ai-agents-backed-by-openai-red-hat-and-nvidia",
+      "summary": "OpenClaw launches free enterprise control plane for persistent AI agents, backed by OpenAI, Red Hat and Nvidia VentureBeat",
+      "source": "VentureBeat",
+      "published": "2026-09-30T01:25:57+00:00",
+      "angle": "OpenClaw launches a free enterprise control plane for persistent AI agents, backed by industry heavyweights like OpenAI, Red Hat, and Nvidia."
+    },
+    {
+      "title": "AI-powered app maker Wabi pivots to a messaging experience",
+      "link": "https://techcrunch.com/2026/09/29/ai-powered-app-maker-wabi-pivots-to-a-messaging-experience/",
+      "summary": "Wabi is repositioning its prompt-based app builder as a personal AI agent that can create interfaces on demand, combining chat, apps, and ongoing tasks.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-09-29T17:20:00+00:00",
+      "angle": "AI-powered app maker Wabi pivots to an on-demand messaging experience combining chat, apps, and ongoing tasks into a single personal agent."
+    }
+  ],
+  "choose_deadline": "2026-09-30T10:55:32.157738+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAICzGq8h1iVkv0hKhliKlforPv1wJ6tAAKKHAACUM7pVY0qyN5T-3jrPQQ",
+  "video_file_id": null,
   "queue": [
     {
       "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
@@ -168,13 +40,20 @@
       "caption": "OpenAI has just introduced GPT six point one Sol, bringing near Astra intelligence at a fifth of the price. How will this new pricing model impact your projects?\n\n📷 OpenAI GPT 6.1 Sol: openai.com\n\n#openai #gpt6 #artificialintelligence #machinelearning #technews #innovation #futuretech #softwaredevelopment #automation #aichatbot",
       "extra": false,
       "post_at": "2026-09-30T11:30:00+05:30"
+    },
+    {
+      "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
+      "video_file_id": "BAACAgUAAxkDAAICzGq8h1iVkv0hKhliKlforPv1wJ6tAAKKHAACUM7pVY0qyN5T-3jrPQQ",
+      "caption": "Elon Musk's xAI acquired the dot.com domain right before OpenAI launched its new AI agent, Dots. The domain now redirects visitors straight to the Grok chatbot download page. Would you pull a move like this against a rival?\n\n#elonmusk #xai #openai #grok #artificialintelligence #technews #aiagents #dots #techcrunch #business",
+      "extra": false,
+      "post_at": "2026-09-30T14:00:00+05:30"
     }
   ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-09-30T10:06:53.008704+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
-  "pending_offer": true,
+  "pending_offer": false,
   "offer_log": {
     "date": "2026-09-30",
     "done": [
@@ -429,7 +308,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
     {
       "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
@@ -469,153 +347,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "link": "https://openai.com/index/introducing-gpt-6-1-sol/",
-          "summary": "",
-          "source": "openai.com",
-          "published": "2026-09-29T17:06:45+00:00",
-          "buzz": "Hacker News 735 points",
-          "angle": "OpenAI just dropped GPT-6.1 Sol—getting near-Astra power for a fifth of the price."
-        },
-        "draft": {
-          "title": "OpenAI Launches GPT 6.1 Sol",
-          "hook_text": "Near Astra power for cheap",
-          "beats": [
-            {
-              "line": "OpenAI just released GPT six point one Sol.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI GPT 6.1 Sol",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "It delivers near Astra intelligence.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "one fifth",
-              "small": "of the price",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "OpenAI published this update on their site.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "openai.com",
-              "domain": "openai.com",
-              "headline": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            }
-          ],
-          "caption": "OpenAI has just introduced GPT six point one Sol, bringing near Astra intelligence at a fifth of the price. How will this new pricing model impact your projects?",
-          "hashtags": [
-            "openai",
-            "gpt6",
-            "artificialintelligence",
-            "machinelearning",
-            "technews",
-            "innovation",
-            "futuretech",
-            "softwaredevelopment",
-            "automation",
-            "aichatbot"
-          ],
-          "sources": [
-            "https://openai.com/index/introducing-gpt-6-1-sol/"
-          ],
-          "script": "OpenAI just released GPT six point one Sol.\nIt delivers near Astra intelligence.\nOpenAI published this update on their site.",
-          "keywords": [
-            "technology"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "GPT-6.1 Sol offers near Astra intelligence for cheap / a fraction of the price",
-              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-            },
-            {
-              "claim": "OpenAI released GPT-6.1 Sol",
-              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-            },
-            {
-              "claim": "GPT-6.1 Sol delivers near Astra intelligence",
-              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-            },
-            {
-              "claim": "GPT-6.1 Sol is priced at one fifth of the price of Astra",
-              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-            },
-            {
-              "claim": "OpenAI published this update on their site",
-              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://openai.com/index/introducing-gpt-6-1-sol/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-09-30T06:36:02.435312+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1130,6 +861,180 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
+          "link": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/",
+          "summary": "Before OpenAI launched its new AI agent, Dots, on Tuesday, Elon Musk's xAI had already acquired the domain name \"dot.com,\" which now redirects to the Grok chatbot download page.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-09-29T22:20:59+00:00",
+          "angle": "Elon Musk's xAI brilliantly trolled OpenAI by snapping up the dot.com domain right before their launch."
+        },
+        "draft": {
+          "title": "xAI Redirects Dot Com",
+          "hook_text": "Did xAI troll OpenAI?",
+          "beats": [
+            {
+              "line": "Before OpenAI launched its new AI agent named Dots, xAI acquired the domain name dot com.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "The internet is convinced Elon Musk's xAI trolled OpenAI's Dots launch",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                },
+                {
+                  "name": "xAI",
+                  "domain": "x.ai"
+                }
+              ]
+            },
+            {
+              "line": "The domain now redirects users straight to the Grok chatbot download page.",
+              "visual": "clip",
+              "query": "person typing laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Grok",
+                  "domain": "x.ai"
+                }
+              ]
+            },
+            {
+              "line": "The internet is convinced this move was a deliberate troll against OpenAI.",
+              "visual": "clip",
+              "query": "person looking at phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you redirect rival traffic to your own chatbot?",
+              "visual": "clip",
+              "query": "person smiling looking at phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Elon Musk's xAI acquired the dot.com domain right before OpenAI launched its new AI agent, Dots. The domain now redirects visitors straight to the Grok chatbot download page. Would you pull a move like this against a rival?",
+          "hashtags": [
+            "elonmusk",
+            "xai",
+            "openai",
+            "grok",
+            "artificialintelligence",
+            "technews",
+            "aiagents",
+            "dots",
+            "techcrunch",
+            "business"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
+          ],
+          "script": "Before OpenAI launched its new AI agent named Dots, xAI acquired the domain name dot com.\nThe domain now redirects users straight to the Grok chatbot download page.\nThe internet is convinced this move was a deliberate troll against OpenAI.\nWould you redirect rival traffic to your own chatbot?",
+          "keywords": [
+            "person typing laptop",
+            "person looking at phone",
+            "person smiling looking at phone"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "xAI trolled OpenAI",
+              "url": "https://www.techbuzz.ai/articles/musk-s-xai-snatches-dot-com-domain-before-openai-s-dots-launch"
+            },
+            {
+              "claim": "OpenAI launched a new AI agent named Dots",
+              "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
+            },
+            {
+              "claim": "xAI acquired the domain name dot com",
+              "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
+            },
+            {
+              "claim": "The dot com domain redirects users straight to the Grok chatbot download page",
+              "url": "https://www.techbuzz.ai/articles/musk-s-xai-snatches-dot-com-domain-before-openai-s-dots-launch"
+            },
+            {
+              "claim": "The internet is convinced this move was a deliberate troll against OpenAI",
+              "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/"
+          ],
+          "visual_status": "ok",
+          "visual_notes": [],
+          "credits": []
+        },
+        "video_file_id": "BAACAgUAAxkDAAICzGq8h1iVkv0hKhliKlforPv1wJ6tAAKKHAACUM7pVY0qyN5T-3jrPQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAICzGq8h1iVkv0hKhliKlforPv1wJ6tAAKKHAACUM7pVY0qyN5T-3jrPQQ",
+      "history_title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch"
     }
   ],
   "posted_ids": [
@@ -1202,7 +1107,8 @@
     "Anthropic Launches Claude Sonnet 5.5 With 30% Lower Costs Per Task",
     "Shopify opens checkout to browser-based AI agents",
     "Claude partial outage",
-    "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price"
+    "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+    "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch"
   ],
   "posted_log": [
     {
@@ -1324,13 +1230,17 @@
     {
       "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
       "at": "2026-09-30T07:40:27.963927+05:30"
+    },
+    {
+      "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
+      "at": "2026-09-30T10:10:24.983471+05:30"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-09-30T07:40+05:30",
+    "at": "2026-09-30T10:10+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
     "arstechnica.com": 9,
@@ -1341,7 +1251,7 @@
     "huggingface.co": 2,
     "blogs.nvidia.com": 0,
     "inc42.com": 2,
-    "news.google.com": 24,
+    "news.google.com": 25,
     "Google News (VentureBeat, AIM, AI News)": 24,
     "producthunt.com": 2,
     "Hacker News": 6,
