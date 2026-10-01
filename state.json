@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -164,11 +164,16 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "ElevenLabs just doubled its valuation to twenty-tw…: The text on the screen reads 'IIElevenLabs' with a duplicated 'II', which is garbled or incorrect branding."
+    ],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIDOGq9-buzyT1q7Jgd8FUS1CurLXsSAAL_IwACLx_wVSFY7rWhRnCiPQQ",
   "queue": [
     {
       "title": "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now",
@@ -186,9 +191,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-01T11:31:07.503502+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-01T12:27:12.212137+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-01",
@@ -521,172 +526,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now",
-          "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-          "summary": "Google today revealed its next AI frontier model, which it's calling Gemini 4 Argon. The new model delivers \"frontier performance in complex workflows across real-world software engineering, enterprise knowledge work like legal and finance, and cybersecurity defense,\" according to chief AI architect and Google DeepMind SVP Koray Kavukcuoglu. But the company is limiting access at […]",
-          "source": "AI | The Verge",
-          "published": "2026-09-30T20:41:41+00:00",
-          "angle": "Google drops Gemini 4 Argon, but locks it down so tight only cyber defenders can use it."
-        },
-        "draft": {
-          "title": "Google Announces Gemini 4 Argon",
-          "hook_text": "Meet Google Gemini 4 Argon.",
-          "beats": [
-            {
-              "line": "Google just revealed its next AI frontier model called Gemini 4 Argon.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google Gemini",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                },
-                {
-                  "name": "Gemini",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "It delivers high performance across software engineering, enterprise knowledge work, and cybersecurity defense.",
-              "visual": "clip",
-              "query": "software engineer writing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Google is limiting access right now so only trusted cyber defenders can use it.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Google announces Gemini 4 and says it is so capable that only trusted cyber defenders can have it",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "How will this restricted access model impact enterprise security?",
-              "visual": "clip",
-              "query": "cybersecurity data analytics screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Google revealed its next AI frontier model, Gemini 4 Argon, delivering performance in software engineering and cybersecurity defense. How will this restricted access model impact enterprise security?",
-          "hashtags": [
-            "Google",
-            "Gemini4",
-            "GoogleDeepMind",
-            "ArtificialIntelligence",
-            "Cybersecurity",
-            "TechNews",
-            "SoftwareEngineering",
-            "MachineLearning",
-            "TechTrends",
-            "FutureTech"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
-          ],
-          "script": "Google just revealed its next AI frontier model called Gemini 4 Argon.\nIt delivers high performance across software engineering, enterprise knowledge work, and cybersecurity defense.\nGoogle is limiting access right now so only trusted cyber defenders can use it.\nHow will this restricted access model impact enterprise security?",
-          "keywords": [
-            "software engineer writing code",
-            "cybersecurity data analytics screen"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Google Gemini 4 Argon has been introduced.",
-              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
-            },
-            {
-              "claim": "Google revealed its next AI frontier model called Gemini 4 Argon.",
-              "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
-            },
-            {
-              "claim": "It delivers high performance across software engineering, enterprise knowledge work, and cybersecurity defense.",
-              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
-            },
-            {
-              "claim": "Google is limiting access right now so only trusted cyber defenders can use it.",
-              "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "Google Gemini: Google (Public domain), via Wikimedia Commons"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIDH2q9s5jZkB9hPXAVzRNqNH9b78UEAAL9IQACUM7xVZoNXn2WJ0s3PQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIDH2q9s5jZkB9hPXAVzRNqNH9b78UEAAL9IQACUM7xVZoNXn2WJ0s3PQQ",
-      "history_title": "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1107,6 +946,186 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AI voice startup ElevenLabs doubles valuation to $22B",
+          "link": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
+          "summary": "The $300 million employee tender was co-led by Wellington and T. Rowe Price.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-09-30T18:23:57+00:00",
+          "angle": "ElevenLabs' valuation doubles to $22 billion as voice AI explodes."
+        },
+        "draft": {
+          "title": "ElevenLabs Valuation Reaches Twenty-Two Billion",
+          "hook_text": "ElevenLabs reaches twenty-two billion.",
+          "beats": [
+            {
+              "line": "ElevenLabs just doubled its valuation to twenty-two billion dollars.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "ElevenLabs",
+              "outlet": "",
+              "domain": "elevenlabs.io",
+              "headline": "",
+              "url": "https://elevenlabs.io",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ElevenLabs",
+                  "domain": "elevenlabs.io"
+                }
+              ]
+            },
+            {
+              "line": "The company completed a three hundred million dollar employee tender.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "300M",
+              "small": "employee tender",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ElevenLabs",
+                  "domain": "elevenlabs.io"
+                }
+              ]
+            },
+            {
+              "line": "Firms Wellington and T. Rowe Price co-led the secondary transaction.",
+              "visual": "clip",
+              "query": "people in modern office meeting",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Employees cashed out vested equity during the massive payout.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "modern corporate office interior with sleek design and digital displays",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you use this voice technology for your audio projects?",
+              "visual": "clip",
+              "query": "person recording audio podcast in studio",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "ElevenLabs has doubled its valuation to twenty-two billion dollars after a three hundred million dollar employee tender co-led by Wellington and T. Rowe Price. Would you use this voice technology for your audio projects?",
+          "hashtags": [
+            "elevenlabs",
+            "artificialintelligence",
+            "aivoice",
+            "techstartup",
+            "venturecapital",
+            "technews",
+            "audioai",
+            "startuplife",
+            "innovation",
+            "futuretech",
+            "businessnews",
+            "funding"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
+          ],
+          "script": "ElevenLabs just doubled its valuation to twenty-two billion dollars.\nThe company completed a three hundred million dollar employee tender.\nFirms Wellington and T. Rowe Price co-led the secondary transaction.\nEmployees cashed out vested equity during the massive payout.\nWould you use this voice technology for your audio projects?",
+          "keywords": [
+            "people in modern office meeting",
+            "person recording audio podcast in studio"
+          ],
+          "image_prompts": [
+            "modern corporate office interior with sleek design and digital displays"
+          ],
+          "evidence": [
+            {
+              "claim": "ElevenLabs reaches a valuation of twenty-two billion",
+              "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
+            },
+            {
+              "claim": "ElevenLabs doubled its valuation to twenty-two billion dollars",
+              "url": "https://www.globalbankingandfinance.com/elevenlabs-valuation-doubles-22-billion-surging-ai/"
+            },
+            {
+              "claim": "The company completed a three hundred million dollar employee tender.",
+              "url": "https://www.globalbankingandfinance.com/elevenlabs-valuation-doubles-22-billion-surging-ai/"
+            },
+            {
+              "claim": "Firms Wellington and T. Rowe Price co-led the secondary transaction.",
+              "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
+            },
+            {
+              "claim": "Employees cashed out vested equity during the massive payout.",
+              "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-01T11:31:07.503502+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1343,8 +1362,8 @@
       "at": "2026-10-01T09:57:30.525960+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-01T09:57+05:30",
@@ -1368,11 +1387,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-01T05:00:32.089654+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-09-30",
   "ig_count": {
     "day": "2026-10-01",
-    "at": "2026-10-01T11:25:56.355650+05:30",
-    "count": 1
+    "at": "2026-10-01T11:42:12.212315+05:30",
+    "count": 2
   }
 }
