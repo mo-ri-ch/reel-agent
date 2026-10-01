@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -143,11 +143,16 @@
     "fix_rounds": 2,
     "source_links": [
       "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [
+      "Google Gemini: Google (Public domain), via Wikimedia Commons"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIDH2q9s5jZkB9hPXAVzRNqNH9b78UEAAL9IQACUM7xVZoNXn2WJ0s3PQQ",
   "queue": [
     {
       "title": "Airbnb adds AI search, more social features",
@@ -165,9 +170,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-01T06:38:10.040483+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-01T07:27:56.715747+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-01",
@@ -489,163 +494,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Airbnb adds AI search, more social features",
-          "link": "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/",
-          "summary": "Airbnb is also launching new services such as meal delivery and laundry in select locations",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-09-30T12:00:00+00:00",
-          "angle": "Airbnb is leveling up by adding AI search, meal delivery, and laundry services directly to the app."
-        },
-        "draft": {
-          "title": "Airbnb Adds AI Search",
-          "hook_text": "Airbnb just launched AI search.",
-          "beats": [
-            {
-              "line": "Airbnb just added AI search and new social features.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Airbnb",
-              "outlet": "",
-              "domain": "airbnb.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Airbnb",
-                  "domain": "airbnb.com"
-                }
-              ]
-            },
-            {
-              "line": "The company is also launching meal delivery and laundry services in select locations.",
-              "visual": "clip",
-              "query": "person using phone app",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "TechCrunch reported the update on September 30, 2026.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Airbnb adds AI search, more social features",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you order food through your vacation rental app?",
-              "visual": "clip",
-              "query": "person relaxing on vacation",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Airbnb is expanding beyond lodging with new AI search capabilities, social tools, and practical services like laundry and meal delivery. Would you use these features on your next trip?",
-          "hashtags": [
-            "airbnb",
-            "traveltech",
-            "aisearch",
-            "technews",
-            "travel",
-            "innovation",
-            "vacation",
-            "artificialintelligence",
-            "startups",
-            "hospitality"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/"
-          ],
-          "script": "Airbnb just added AI search and new social features.\nThe company is also launching meal delivery and laundry services in select locations.\nTechCrunch reported the update on September 30, 2026.\nWould you order food through your vacation rental app?",
-          "keywords": [
-            "person using phone app",
-            "person relaxing on vacation"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Airbnb just launched AI search.",
-              "url": "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/"
-            },
-            {
-              "claim": "Airbnb added AI search and new social features.",
-              "url": "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/"
-            },
-            {
-              "claim": "The company is also launching meal delivery and laundry services in select locations.",
-              "url": "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/"
-            },
-            {
-              "claim": "TechCrunch reported the update on September 30, 2026.",
-              "url": "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/09/30/airbnb-adds-ai-search-more-social-features/"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "Airbnb: Dllu (CC BY-SA 4.0), via Wikimedia Commons"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIDBGq9FKLrjTSPcRRXC18BOzETq9mcAAIVHwACUM7pVWhcE80PGlg5PQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIDBGq9FKLrjTSPcRRXC18BOzETq9mcAAIVHwACUM7pVWhcE80PGlg5PQQ",
-      "history_title": "Airbnb adds AI search, more social features"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1097,6 +945,165 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now",
+          "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+          "summary": "Google today revealed its next AI frontier model, which it's calling Gemini 4 Argon. The new model delivers \"frontier performance in complex workflows across real-world software engineering, enterprise knowledge work like legal and finance, and cybersecurity defense,\" according to chief AI architect and Google DeepMind SVP Koray Kavukcuoglu. But the company is limiting access at […]",
+          "source": "AI | The Verge",
+          "published": "2026-09-30T20:41:41+00:00",
+          "angle": "Google drops Gemini 4 Argon, but locks it down so tight only cyber defenders can use it."
+        },
+        "draft": {
+          "title": "Google Announces Gemini 4 Argon",
+          "hook_text": "Meet Google Gemini 4 Argon.",
+          "beats": [
+            {
+              "line": "Google just revealed its next AI frontier model called Gemini 4 Argon.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google Gemini",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                },
+                {
+                  "name": "Gemini",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "It delivers high performance across software engineering, enterprise knowledge work, and cybersecurity defense.",
+              "visual": "clip",
+              "query": "software engineer writing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Google is limiting access right now so only trusted cyber defenders can use it.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Google announces Gemini 4 and says it is so capable that only trusted cyber defenders can have it",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "How will this restricted access model impact enterprise security?",
+              "visual": "clip",
+              "query": "cybersecurity data analytics screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Google revealed its next AI frontier model, Gemini 4 Argon, delivering performance in software engineering and cybersecurity defense. How will this restricted access model impact enterprise security?",
+          "hashtags": [
+            "Google",
+            "Gemini4",
+            "GoogleDeepMind",
+            "ArtificialIntelligence",
+            "Cybersecurity",
+            "TechNews",
+            "SoftwareEngineering",
+            "MachineLearning",
+            "TechTrends",
+            "FutureTech"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
+          ],
+          "script": "Google just revealed its next AI frontier model called Gemini 4 Argon.\nIt delivers high performance across software engineering, enterprise knowledge work, and cybersecurity defense.\nGoogle is limiting access right now so only trusted cyber defenders can use it.\nHow will this restricted access model impact enterprise security?",
+          "keywords": [
+            "software engineer writing code",
+            "cybersecurity data analytics screen"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "Google Gemini 4 Argon has been introduced.",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+            },
+            {
+              "claim": "Google revealed its next AI frontier model called Gemini 4 Argon.",
+              "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
+            },
+            {
+              "claim": "It delivers high performance across software engineering, enterprise knowledge work, and cybersecurity defense.",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+            },
+            {
+              "claim": "Google is limiting access right now so only trusted cyber defenders can use it.",
+              "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-01T06:38:10.040483+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1323,8 +1330,8 @@
       "at": "2026-09-30T22:45:29.177903+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-01T05:00+05:30",
@@ -1348,11 +1355,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-01T05:00:32.089654+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-09-30",
   "ig_count": {
     "day": "2026-10-01",
-    "at": "2026-10-01T06:30:38.374585+05:30",
+    "at": "2026-10-01T06:42:56.715899+05:30",
     "count": 0
   }
 }
