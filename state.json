@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -147,11 +147,16 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [
+      "Google Gemini: Authors of the preprint: Gemini Team Google: Rohan Anil, Seb (CC BY 4.0), via Wikimedia Commons"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIDK2q91o9EF8L8WpckJ6E3ZGsGWc11AALGIgACUM7xVT1ptyaUkyYpPQQ",
   "queue": [
     {
       "title": "Instagram is adding an AI ‘assistant’ to tell you how to post",
@@ -169,9 +174,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-01T09:06:20.247819+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-01T09:57:07.969115+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-01",
@@ -499,192 +504,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Instagram is adding an AI ‘assistant’ to tell you how to post",
-          "link": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
-          "summary": "Instagram is the latest social media platform to add built-in AI-powered features that will give users feedback on their posts. The company announced Wednesday that its standalone Edits app will now include an AI \"creative assistant\" that pulls in data from a user's Instagram account and offers suggestions on what to change. Using the new […]",
-          "source": "AI | The Verge",
-          "published": "2026-09-30T14:30:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Instagram Adds AI Creative Assistant",
-          "hook_text": "Instagram built an AI editor.",
-          "beats": [
-            {
-              "line": "Instagram built an AI creative assistant into its standalone Edits app.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Instagram Edits app",
-              "outlet": "",
-              "domain": "instagram.com",
-              "headline": "",
-              "url": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Instagram",
-                  "domain": "instagram.com"
-                }
-              ]
-            },
-            {
-              "line": "The assistant pulls data from your account to give you direct feedback.",
-              "visual": "clip",
-              "query": "person looking at phone analytics",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It tells you exactly what to change to improve your posts.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "vertical cinematic shot of glowing mobile analytics dashboard with data graphs",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Meta announced the feature on Wednesday to help creators grow.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Instagram is adding an AI assistant to tell you how to post",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you let an algorithm edit your next post?",
-              "visual": "clip",
-              "query": "content creator editing video",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Instagram is rolling out a new AI creative assistant inside its Edits app to analyze your account data and give you feedback on what to change. Would you let an algorithm edit your next post?",
-          "hashtags": [
-            "instagram",
-            "instagramupdate",
-            "socialmedia",
-            "contentcreator",
-            "artificialintelligence",
-            "aifeatures",
-            "meta",
-            "videoediting",
-            "creatoreconomy",
-            "technews"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube"
-          ],
-          "script": "Instagram built an AI creative assistant into its standalone Edits app.\nThe assistant pulls data from your account to give you direct feedback.\nIt tells you exactly what to change to improve your posts.\nMeta announced the feature on Wednesday to help creators grow.\nWould you let an algorithm edit your next post?",
-          "keywords": [
-            "person looking at phone analytics",
-            "content creator editing video"
-          ],
-          "image_prompts": [
-            "vertical cinematic shot of glowing mobile analytics dashboard with data graphs"
-          ],
-          "evidence": [
-            {
-              "claim": "Instagram built an AI editor.",
-              "url": "https://techcrunch.com/2026/09/30/instagram-rolls-out-an-ai-video-editor-for-creators/"
-            },
-            {
-              "claim": "Instagram built an AI creative assistant into its standalone Edits app.",
-              "url": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube"
-            },
-            {
-              "claim": "The assistant pulls data from your account to give you direct feedback.",
-              "url": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube"
-            },
-            {
-              "claim": "It tells you exactly what to change to improve your posts.",
-              "url": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube"
-            },
-            {
-              "claim": "Meta announced the feature on Wednesday to help creators grow.",
-              "url": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Instagram built an AI creative assistant into its …: The image shows vintage gas pumps/signs instead of the Instagram Edits app.",
-            "The image shows a stock photo of an investing/stocks app (Robinhood with 'Investing $892.16' and stock charts) rather th"
-          ],
-          "credits": []
-        },
-        "video_file_id": "BAACAgUAAxkDAAIDEWq9OHlY_T7czHZIh1FDcJz907NEAAI1IQACUM7xVWDKGzsYk0gEPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIDEWq9OHlY_T7czHZIh1FDcJz907NEAAI1IQACUM7xVWDKGzsYk0gEPQQ",
-      "history_title": "Instagram is adding an AI ‘assistant’ to tell you how to post"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1097,6 +916,169 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
+          "link": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+          "summary": "Google has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-09-30T23:43:07+00:00",
+          "angle": "Google just dropped Gemini 4 Argon, claiming it's their most powerful workhorse yet for coding and cyber defense."
+        },
+        "draft": {
+          "title": "Google Releases Gemini 4 Argon",
+          "hook_text": "Google just dropped Gemini 4 Argon.",
+          "beats": [
+            {
+              "line": "Google just released Gemini 4 Argon, marketing it as its most powerful model yet.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google Gemini",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                },
+                {
+                  "name": "Gemini",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "The company built this version as a workhorse for coding and cybersecurity work.",
+              "visual": "clip",
+              "query": "programmer writing code at night",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "TechCrunch covered the release details from the announcement.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Google releases Gemini 4 Argon, called its most powerful model yet",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an artificial intelligence with your coding workflows?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Google has released Gemini 4 Argon as its most powerful model yet, designed for coding and cybersecurity tasks. Would you use an AI workhorse for your software projects?",
+          "hashtags": [
+            "Google",
+            "Gemini",
+            "ArtificialIntelligence",
+            "TechNews",
+            "Coding",
+            "Cybersecurity",
+            "SoftwareEngineering",
+            "TechCrunch",
+            "MachineLearning",
+            "Tech"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+          ],
+          "script": "Google just released Gemini 4 Argon, marketing it as its most powerful model yet.\nThe company built this version as a workhorse for coding and cybersecurity work.\nTechCrunch covered the release details from the announcement.\nWould you trust an artificial intelligence with your coding workflows?",
+          "keywords": [
+            "programmer writing code at night",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "Google dropped Gemini 4 Argon",
+              "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+            },
+            {
+              "claim": "Google released Gemini 4 Argon",
+              "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+            },
+            {
+              "claim": "Google marketed Gemini 4 Argon as its most powerful model yet",
+              "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+            },
+            {
+              "claim": "Google built Gemini 4 Argon as a workhorse for coding and cybersecurity work",
+              "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html"
+            },
+            {
+              "claim": "TechCrunch covered the release details from the announcement",
+              "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-01T09:06:20.247819+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1328,8 +1310,8 @@
       "at": "2026-10-01T07:30:37.033878+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-01T07:30+05:30",
@@ -1353,11 +1335,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-01T05:00:32.089654+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-09-30",
   "ig_count": {
     "day": "2026-10-01",
-    "at": "2026-10-01T09:00:29.323114+05:30",
-    "count": 0
+    "at": "2026-10-01T09:12:07.969259+05:30",
+    "count": 1
   }
 }
