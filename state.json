@@ -218,7 +218,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-02T19:38:13.666022+05:30",
+  "script_deadline": "2026-10-02T19:52:53.977240+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
@@ -596,51 +596,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
-            "link": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
-            "summary": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-01T16:44:35+00:00",
-            "angle": "Shopify's new Canvas lets you build entire online stores just by chatting with an AI agent."
-          },
-          {
-            "title": "AI music maker Suno now generates spoken words",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
-            "summary": "Suno is branching out from the world of AI music, launching a new feature that generates spoken voices based on scripts or prompted descriptions. Speech is now available in public beta across Suno's web and mobile platforms, and allows you to simultaneously generate voiceovers and background music to accompany them. \"Music will always be at […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-02T09:42:19+00:00",
-            "angle": "Suno is branching out beyond music, launching a new AI tool that generates realistic spoken voices."
-          },
-          {
-            "title": "Clef: Open-weight decision models, and new RL fine-tuning platform",
-            "link": "https://blog.cloudflare.com/clef-decision-models/",
-            "summary": "",
-            "source": "blog.cloudflare.com",
-            "published": "2026-10-01T16:18:57+00:00",
-            "buzz": "Hacker News 510 points",
-            "angle": "Cloudflare drops Clef, an open-weight decision model shaking up the open-source AI community."
-          }
-        ],
-        "choose_deadline": "2026-10-02T16:05:32.668246+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1209,6 +1164,211 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": "2026-10-02T19:26:46.613231+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AI music maker Suno now generates spoken words",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+          "summary": "Suno is branching out from the world of AI music, launching a new feature that generates spoken voices based on scripts or prompted descriptions. Speech is now available in public beta across Suno's web and mobile platforms, and allows you to simultaneously generate voiceovers and background music to accompany them. \"Music will always be at […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-02T09:42:19+00:00",
+          "angle": "Suno expands beyond music, now generating realistic spoken voices from text scripts."
+        },
+        "draft": {
+          "title": "Suno adds spoken voice generation",
+          "hook_text": "Suno just learned to speak.",
+          "beats": [
+            {
+              "line": "Suno just learned to speak.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Suno",
+              "outlet": "",
+              "domain": "suno.com",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Suno",
+                  "domain": "suno.com"
+                }
+              ]
+            },
+            {
+              "line": "The popular AI music maker is launching a public beta for spoken voices.",
+              "visual": "clip",
+              "query": "person using music app on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Suno",
+                  "domain": "suno.com"
+                }
+              ]
+            },
+            {
+              "line": "You can now generate voiceovers and background music at the same time.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Vertical cinematic view of audio waveform mixing console with glowing blue and purple sound waves",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The feature creates spoken audio directly from scripts or prompted descriptions.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "AI music maker Suno now generates spoken words",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Suno",
+                  "domain": "suno.com"
+                }
+              ]
+            },
+            {
+              "line": "It is available now across the company web and mobile platforms.",
+              "visual": "clip",
+              "query": "typing on mobile phone outdoors",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you use an AI tool that makes both your voiceover and background track?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Vertical futuristic podcast studio setup with holographic sound controls and glowing microphone",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Suno is expanding beyond AI music with a new feature that generates spoken voices from scripts. You can now create simultaneous voiceovers and background tracks on web and mobile. Would you use an AI tool that makes both your voiceover and background track?",
+          "hashtags": [
+            "Suno",
+            "AIAudio",
+            "VoiceGenerator",
+            "MusicTech",
+            "ArtificialIntelligence",
+            "ContentCreator",
+            "AudioProduction",
+            "TechNews",
+            "VoiceOver",
+            "MobileApp"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+          ],
+          "script": "Suno just learned to speak.\nThe popular AI music maker is launching a public beta for spoken voices.\nYou can now generate voiceovers and background music at the same time.\nThe feature creates spoken audio directly from scripts or prompted descriptions.\nIt is available now across the company web and mobile platforms.\nWould you use an AI tool that makes both your voiceover and background track?",
+          "keywords": [
+            "person using music app on phone",
+            "typing on mobile phone outdoors"
+          ],
+          "image_prompts": [
+            "Vertical cinematic view of audio waveform mixing console with glowing blue and purple sound waves",
+            "Vertical futuristic podcast studio setup with holographic sound controls and glowing microphone"
+          ],
+          "evidence": [
+            {
+              "claim": "Suno just learned to speak.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "Suno just learned to speak.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "The popular AI music maker is launching a public beta for spoken voices.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "You can now generate voiceovers and background music at the same time.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "The feature creates spoken audio directly from scripts or prompted descriptions.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "It is available now across the company web and mobile platforms.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-02T19:38:13.666022+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
