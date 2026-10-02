@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -141,11 +141,17 @@
     "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Would you trust an AI agent to design your entire …: The shot shows financial stock market charts instead of a business owner looking at a monitor.",
+      "shows a giant robot instead of a business owner looking at a monitor"
+    ],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIDvmq_lp3JEVMo7RAi2i54rNCxopxJAAJfKAACLx8AAVZwD546voe1nT0E",
   "queue": [
     {
       "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
@@ -170,17 +176,18 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-02T16:56:05.828492+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
-  "pending_offer": false,
+  "script_deadline": null,
+  "preview_deadline": "2026-10-02T17:48:50.304366+05:30",
+  "last_gender": "female",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-02",
     "done": [
       "07:00",
       "09:30",
       "12:00",
-      "14:30"
+      "14:30",
+      "17:00"
     ]
   },
   "pending_topic": null,
@@ -543,168 +550,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "ChatGPT can now virtually try on clothes for you",
-          "link": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-          "summary": "OpenAI is rolling out new shopping features for ChatGPT that let users virtually try on clothing and accessories using their own photos and save products they like to a Favorites library.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-01T19:21:53+00:00",
-          "angle": "ChatGPT can now virtually try on clothes using your own photos—here is how it works."
-        },
-        "draft": {
-          "title": "ChatGPT Virtual Try-On",
-          "hook_text": "Shop clothes with ChatGPT.",
-          "beats": [
-            {
-              "line": "OpenAI is rolling out new shopping features for ChatGPT.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "ChatGPT",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "You can virtually try on clothing using your own photos.",
-              "visual": "clip",
-              "query": "woman shopping on phone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You can also save products you like to a favorites library.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "ChatGPT can now virtually try on clothes for you",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you buy clothes recommended by an artificial intelligence?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "futuristic digital fitting room display with clothing options",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "OpenAI has added new shopping capabilities to ChatGPT allowing users to virtually try on clothing using their own photos and save items to a favorites list. Would you trust AI to pick your next outfit?",
-          "hashtags": [
-            "ChatGPT",
-            "OpenAI",
-            "AI",
-            "Shopping",
-            "FashionTech",
-            "TechNews",
-            "ArtificialIntelligence",
-            "ECommerce",
-            "VirtualTryOn",
-            "TechCrunch"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
-          ],
-          "script": "OpenAI is rolling out new shopping features for ChatGPT.\nYou can virtually try on clothing using your own photos.\nYou can also save products you like to a favorites library.\nWould you buy clothes recommended by an artificial intelligence?",
-          "keywords": [
-            "woman shopping on phone"
-          ],
-          "image_prompts": [
-            "futuristic digital fitting room display with clothing options"
-          ],
-          "evidence": [
-            {
-              "claim": "OpenAI introduced a feature to shop clothes with ChatGPT.",
-              "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
-            },
-            {
-              "claim": "OpenAI is rolling out new shopping features for ChatGPT.",
-              "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
-            },
-            {
-              "claim": "You can virtually try on clothing using your own photos.",
-              "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
-            },
-            {
-              "claim": "You can save products you like to a favorites library.",
-              "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
-          ],
-          "visual_status": "skipped",
-          "visual_notes": [],
-          "credits": [
-            "ChatGPT: ChatGPT (Public domain), via Wikimedia Commons"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIDpGq_UAvMDoBs1qBg62bwmSQ_EQW_AAJZIwACLx8AAVblFfsMAg1uGT0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIDpGq_UAvMDoBs1qBg62bwmSQ_EQW_AAJZIwACLx8AAVblFfsMAg1uGT0E",
-      "history_title": "ChatGPT can now virtually try on clothes for you"
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1064,6 +909,163 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
+          "link": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+          "summary": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-01T16:44:35+00:00",
+          "angle": "Shopify's new Canvas lets you build entire online stores just by chatting with an AI agent."
+        },
+        "draft": {
+          "title": "Shopify Canvas lets you build stores by chatting",
+          "hook_text": "Build online stores by chatting",
+          "beats": [
+            {
+              "line": "Shopify just launched Canvas to let merchants build online stores by simply chatting.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Shopify Canvas",
+              "outlet": "",
+              "domain": "shopify.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Shopify",
+                  "domain": "shopify.com"
+                }
+              ]
+            },
+            {
+              "line": "You talk to its AI agent Sidekick while watching the changes happen in real time.",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Shopify",
+                  "domain": "shopify.com"
+                }
+              ]
+            },
+            {
+              "line": "This removes the need for manual design and complex coding work.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Minimalist modern ecommerce dashboard interface mockup on clean desk",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an AI agent to design your entire storefront?",
+              "visual": "clip",
+              "query": "business owner looking at monitor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Shopify is making online store creation conversational with its new Canvas builder powered by Sidekick. Would you trust an AI to design your entire storefront?",
+          "hashtags": [
+            "shopify",
+            "ecommerce",
+            "artificialintelligence",
+            "aiagent",
+            "technews",
+            "webdesign",
+            "businessowners",
+            "startup",
+            "software",
+            "innovation"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
+          ],
+          "script": "Shopify just launched Canvas to let merchants build online stores by simply chatting.\nYou talk to its AI agent Sidekick while watching the changes happen in real time.\nThis removes the need for manual design and complex coding work.\nWould you trust an AI agent to design your entire storefront?",
+          "keywords": [
+            "person typing on laptop",
+            "business owner looking at monitor"
+          ],
+          "image_prompts": [
+            "Minimalist modern ecommerce dashboard interface mockup on clean desk"
+          ],
+          "evidence": [
+            {
+              "claim": "Canvas allows users to build online stores by chatting.",
+              "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
+            },
+            {
+              "claim": "Shopify launched Canvas to let merchants build online stores by chatting.",
+              "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
+            },
+            {
+              "claim": "Users talk to the AI agent Sidekick while watching changes land in real time.",
+              "url": "https://www.shopify.com/news/introducing-canvas"
+            },
+            {
+              "claim": "Canvas enables building stores regardless of design experience or coding skills.",
+              "url": "https://www.unite.ai/shopify-rolls-out-canvas-a-sidekick-powered-store-design-surface/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-02T16:56:05.828492+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1345,8 +1347,8 @@
       "at": "2026-10-02T15:20:24.458943+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-02T15:20+05:30",
@@ -1370,11 +1372,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-02T05:00:38.581200+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-10-01",
   "ig_count": {
     "day": "2026-10-02",
-    "at": "2026-10-02T16:45:29.744675+05:30",
+    "at": "2026-10-02T17:03:50.304523+05:30",
     "count": 4
   }
 }
