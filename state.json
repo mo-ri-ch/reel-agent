@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -184,11 +184,17 @@
     "fix_rounds": 0,
     "source_links": [
       "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [
+      "OpenAI API: HaeB (CC BY-SA 4.0), via Wikimedia Commons",
+      "NVIDIA Blackwell: Pronoia (CC0), via Wikimedia Commons"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIDmWq_LPbURUekpaDcyXFTDqbpnN4ZAAK8IgACLx8AAVZO1KypX_p3Ij0E",
   "queue": [
     {
       "title": "California Bans AI-Powered Firing Of Employees",
@@ -213,14 +219,15 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-02T09:28:42.177094+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
-  "pending_offer": false,
+  "script_deadline": null,
+  "preview_deadline": "2026-10-02T10:18:03.478910+05:30",
+  "last_gender": "male",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-02",
     "done": [
-      "07:00"
+      "07:00",
+      "09:30"
     ]
   },
   "pending_topic": null,
@@ -552,184 +559,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Google’s new Guided Vision feature can help you read the fine print",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-          "summary": "Guided Vision is launching in Gemini Live on compatible Android devices today to use AI to give real-time audio descriptions of anything you point your phone's camera at. By sharing your camera in Gemini Live, you can have Google's AI help with things like reading small text, describing your surroundings, finding or identifying objects around […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-01T19:47:51+00:00",
-          "angle": "Google's new Gemini Live feature uses your camera for real-time audio descriptions of the world around you."
-        },
-        "draft": {
-          "title": "Google Guided Vision Reads Fine Print",
-          "hook_text": "Read tiny text instantly.",
-          "beats": [
-            {
-              "line": "Google just launched Guided Vision inside Gemini Live on Android.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google Gemini",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "It gives you real-time audio descriptions of anything you point your camera at.",
-              "visual": "clip",
-              "query": "person holding phone camera",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You can use it to read small restaurant menus or fine print on labels.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Close-up vertical shot of smartphone camera pointing at a small nutrition label",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The artificial intelligence can also describe your surroundings or identify everyday objects.",
-              "visual": "clip",
-              "query": "person using ai phone app outdoors",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How would you use audio camera descriptions in your daily life?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Google Gemini Live Guided Vision Feature",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            }
-          ],
-          "caption": "Google is bringing real-time visual assistance right to your phone with the new Guided Vision feature in Gemini Live. It helps you read fine print and understand your surroundings instantly. Would you use this feature while shopping?",
-          "hashtags": [
-            "Google",
-            "GeminiLive",
-            "ArtificialIntelligence",
-            "TechNews",
-            "Android",
-            "Accessibility",
-            "AIFeatures",
-            "Smartphones",
-            "TechTrends",
-            "Innovation"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
-          ],
-          "script": "Google just launched Guided Vision inside Gemini Live on Android.\nIt gives you real-time audio descriptions of anything you point your camera at.\nYou can use it to read small restaurant menus or fine print on labels.\nThe artificial intelligence can also describe your surroundings or identify everyday objects.\nHow would you use audio camera descriptions in your daily life?",
-          "keywords": [
-            "person holding phone camera",
-            "person using ai phone app outdoors"
-          ],
-          "image_prompts": [
-            "Close-up vertical shot of smartphone camera pointing at a small nutrition label"
-          ],
-          "evidence": [
-            {
-              "claim": "Read tiny text instantly.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
-            },
-            {
-              "claim": "Google launched Guided Vision inside Gemini Live on Android.",
-              "url": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
-            },
-            {
-              "claim": "It gives you real-time audio descriptions of anything you point your camera at.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
-            },
-            {
-              "claim": "You can use it to read small restaurant menus or fine print on labels.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
-            },
-            {
-              "claim": "The artificial intelligence can also describe your surroundings or identify everyday objects.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-02T06:36:18.213382+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1340,6 +1169,206 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+          "link": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+          "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x faster token generation than the Astra Standard mode. For developers, […]",
+          "source": "NVIDIA Blog",
+          "published": "2026-10-01T23:44:13+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "OpenAI Launches GPT-6 Astra Ultrafast",
+          "hook_text": "Eight times faster token generation.",
+          "beats": [
+            {
+              "line": "OpenAI just dropped GPT-6 Astra Ultrafast.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI API",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "It runs on NVIDIA Blackwell GPUs.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "NVIDIA Blackwell",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "NVIDIA",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Token generation is eight times faster than Astra Standard mode.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "8x",
+              "small": "faster token generation",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Eligible ChatGPT Work and Codex users can access it right now in the API.",
+              "visual": "clip",
+              "query": "developer typing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Are you ready to build faster applications with this speed?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "NVIDIA Blog",
+              "domain": "nvidia.com",
+              "headline": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "NVIDIA",
+                  "domain": "nvidia.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            }
+          ],
+          "caption": "OpenAI has released GPT-6 Astra Ultrafast powered by NVIDIA Blackwell GPUs, delivering up to eight times faster token generation. The new mode is available now for eligible users and developers in the API. How will this speed change what you build?",
+          "hashtags": [
+            "OpenAI",
+            "NVIDIA",
+            "ArtificialIntelligence",
+            "MachineLearning",
+            "TechNews",
+            "Developers",
+            "GPT6",
+            "Blackwell",
+            "CloudComputing",
+            "Programming",
+            "SoftwareEngineering",
+            "Innovation"
+          ],
+          "sources": [
+            "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+          ],
+          "script": "OpenAI just dropped GPT-6 Astra Ultrafast.\nIt runs on NVIDIA Blackwell GPUs.\nToken generation is eight times faster than Astra Standard mode.\nEligible ChatGPT Work and Codex users can access it right now in the API.\nAre you ready to build faster applications with this speed?",
+          "keywords": [
+            "developer typing code"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "GPT-6 Astra Ultrafast features eight times faster token generation",
+              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+            },
+            {
+              "claim": "OpenAI dropped GPT-6 Astra Ultrafast",
+              "url": "https://www.techbuzz.ai/articles/openai-s-gpt-6-astra-ultrafast-gets-8x-speed-boost-on-nvidia"
+            },
+            {
+              "claim": "GPT-6 Astra Ultrafast runs on NVIDIA Blackwell GPUs",
+              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+            },
+            {
+              "claim": "Token generation is eight times faster than Astra Standard mode",
+              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+            },
+            {
+              "claim": "Eligible ChatGPT Work and Codex users can access GPT-6 Astra Ultrafast right now in the API",
+              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-02T09:28:42.177094+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1631,7 +1660,7 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-02T05:00:38.581200+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-01",
   "ig_count": {
     "day": "2026-10-02",
