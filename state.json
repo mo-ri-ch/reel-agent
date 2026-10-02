@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -162,11 +162,20 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The artificial intelligence can also describe your…: The image shows a food delivery app on the phone screen instead of an AI camera app describing surroundings.",
+      "the text on the phone screen and nutrition label contains garbled and unreadable text",
+      "overlapping text elements at the top, showing both 'SOURCE' and 'Google' floating awkwardly above The Verge source card"
+    ],
+    "credits": [
+      "Google Gemini: Google (Public domain), via Wikimedia Commons"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIDgGq_B8rC-lTrFnJHxjNX2X5iWuUjAAJZIQACLx_4VXFH9rd5ZdTqPQQ",
   "queue": [
     {
       "title": "DoorDash launches an AI agent you can text to order food",
@@ -191,9 +200,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-02T06:46:55.878871+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-02T07:39:27.233857+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-02",
@@ -539,50 +548,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Gemini 4 Argon: our next era of frontier intelligence",
-            "link": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-            "summary": "",
-            "source": "Google DeepMind News",
-            "published": "2026-09-30T20:01:45+00:00",
-            "angle": "Google just dropped Gemini 4 Argon, kicking off a brand new era of frontier AI intelligence."
-          },
-          {
-            "title": "Hearing tech startup Legato launches its AI hearing glasses",
-            "link": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
-            "summary": "The glasses stem from the startup’s goal of making hearing care more accessible by addressing the cost, comfort, and stigma associated with traditional hearing aids.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-01T13:00:00+00:00",
-            "angle": "Hearing tech startup Legato just launched AI-powered hearing glasses to completely transform accessibility."
-          },
-          {
-            "title": "Satlyt, founded by a former Google and SpaceX product manager, raises $8M to run AI on satellites",
-            "link": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
-            "summary": "Satlyt wants to be the Android of orbital computing, offering open software that works on many companies' satellites, versus SpaceX's closed, all-in-one iPhone-style approach.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-01T12:00:00+00:00",
-            "angle": "Former Google and SpaceX talent raised $8M to run open AI software directly on satellites in orbit."
-          }
-        ],
-        "choose_deadline": "2026-10-01T20:55:40.934119+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1121,6 +1086,184 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Google’s new Guided Vision feature can help you read the fine print",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
+          "summary": "Guided Vision is launching in Gemini Live on compatible Android devices today to use AI to give real-time audio descriptions of anything you point your phone's camera at. By sharing your camera in Gemini Live, you can have Google's AI help with things like reading small text, describing your surroundings, finding or identifying objects around […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-01T19:47:51+00:00",
+          "angle": "Google's new Gemini Live feature uses your camera for real-time audio descriptions of the world around you."
+        },
+        "draft": {
+          "title": "Google Guided Vision Reads Fine Print",
+          "hook_text": "Read tiny text instantly.",
+          "beats": [
+            {
+              "line": "Google just launched Guided Vision inside Gemini Live on Android.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google Gemini",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "It gives you real-time audio descriptions of anything you point your camera at.",
+              "visual": "clip",
+              "query": "person holding phone camera",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You can use it to read small restaurant menus or fine print on labels.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Close-up vertical shot of smartphone camera pointing at a small nutrition label",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The artificial intelligence can also describe your surroundings or identify everyday objects.",
+              "visual": "clip",
+              "query": "person using ai phone app outdoors",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "How would you use audio camera descriptions in your daily life?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Google Gemini Live Guided Vision Feature",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            }
+          ],
+          "caption": "Google is bringing real-time visual assistance right to your phone with the new Guided Vision feature in Gemini Live. It helps you read fine print and understand your surroundings instantly. Would you use this feature while shopping?",
+          "hashtags": [
+            "Google",
+            "GeminiLive",
+            "ArtificialIntelligence",
+            "TechNews",
+            "Android",
+            "Accessibility",
+            "AIFeatures",
+            "Smartphones",
+            "TechTrends",
+            "Innovation"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
+          ],
+          "script": "Google just launched Guided Vision inside Gemini Live on Android.\nIt gives you real-time audio descriptions of anything you point your camera at.\nYou can use it to read small restaurant menus or fine print on labels.\nThe artificial intelligence can also describe your surroundings or identify everyday objects.\nHow would you use audio camera descriptions in your daily life?",
+          "keywords": [
+            "person holding phone camera",
+            "person using ai phone app outdoors"
+          ],
+          "image_prompts": [
+            "Close-up vertical shot of smartphone camera pointing at a small nutrition label"
+          ],
+          "evidence": [
+            {
+              "claim": "Read tiny text instantly.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
+            },
+            {
+              "claim": "Google launched Guided Vision inside Gemini Live on Android.",
+              "url": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
+            },
+            {
+              "claim": "It gives you real-time audio descriptions of anything you point your camera at.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
+            },
+            {
+              "claim": "You can use it to read small restaurant menus or fine print on labels.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
+            },
+            {
+              "claim": "The artificial intelligence can also describe your surroundings or identify everyday objects.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-02T06:46:55.878871+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1407,11 +1550,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-02T05:00:38.581200+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-01",
   "ig_count": {
     "day": "2026-10-02",
-    "at": "2026-10-02T06:43:53.110193+05:30",
+    "at": "2026-10-02T06:54:27.234031+05:30",
     "count": 0
   }
 }
