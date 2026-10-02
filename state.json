@@ -218,10 +218,10 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-02T19:26:46.613231+05:30",
+  "script_deadline": "2026-10-02T19:38:13.666022+05:30",
   "preview_deadline": null,
   "last_gender": "female",
-  "pending_offer": false,
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-02",
     "done": [
@@ -229,7 +229,8 @@
       "09:30",
       "12:00",
       "14:30",
-      "17:00"
+      "17:00",
+      "19:30"
     ]
   },
   "pending_topic": null,
@@ -595,147 +596,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "DeepSeek Harness Desktop for macOS and Windows",
-          "link": "https://www.deepseek.com/en/harness/",
-          "summary": "",
-          "source": "deepseek.com",
-          "published": "2026-10-02T03:11:20+00:00",
-          "buzz": "Hacker News 179 points",
-          "angle": "DeepSeek just launched an official desktop app for Mac and Windows, making local AI even easier."
-        },
-        "draft": {
-          "title": "DeepSeek Harness Desktop for macOS and Windows",
-          "hook_text": "DeepSeek launched Harness Desktop.",
-          "beats": [
-            {
-              "line": "DeepSeek released Harness Desktop for macOS and Windows.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "DeepSeek Harness Desktop",
-              "outlet": "",
-              "domain": "deepseek.com",
-              "headline": "",
-              "url": "https://www.deepseek.com/en/harness/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "DeepSeek",
-                  "domain": "deepseek.com"
-                }
-              ]
-            },
-            {
-              "line": "You can now download the application directly from their site.",
-              "visual": "clip",
-              "query": "person downloading software on computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will you use this new desktop tool?",
-              "visual": "clip",
-              "query": "person using desktop computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "DeepSeek has officially released Harness Desktop for both macOS and Windows. Will you be trying out this new desktop tool?",
-          "hashtags": [
-            "DeepSeek",
-            "DesktopApp",
-            "ArtificialIntelligence",
-            "TechNews",
-            "SoftwareEngineering",
-            "MacOs",
-            "Windows",
-            "AI",
-            "DeveloperTools",
-            "Coding"
-          ],
-          "sources": [
-            "https://www.deepseek.com/en/harness/"
-          ],
-          "script": "DeepSeek released Harness Desktop for macOS and Windows.\nYou can now download the application directly from their site.\nWill you use this new desktop tool?",
-          "keywords": [
-            "person downloading software on computer",
-            "person using desktop computer"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "DeepSeek launched Harness Desktop.",
-              "url": "https://vocal.media/01/i-installed-deepseek-harness-v02-so-you-dont-have-to"
-            },
-            {
-              "claim": "DeepSeek released Harness Desktop for macOS and Windows.",
-              "url": "https://vocal.media/01/i-installed-deepseek-harness-v02-so-you-dont-have-to"
-            },
-            {
-              "claim": "You can download the application directly from DeepSeek's site.",
-              "url": "https://vocal.media/01/i-installed-deepseek-harness-v02-so-you-dont-have-to"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.deepseek.com/en/harness/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "You can now download the application directly from…: The laptop screen shows Pexels, not the DeepSeek Harness Desktop application being discussed.",
-            "Will you use this new desktop tool?…: The computer monitor shows Adobe Lightroom editing software instead of the DeepSeek desktop tool."
-          ],
-          "credits": [
-            "DeepSeek Harness Desktop: deepseek.com",
-            "DeepSeek Harness Desktop: deepseek.com"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIDsWq_c0lmGSgFkTLUlJasP4dCIgX1AAJjJQACLx8AAVaB2rfYDli4yT0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIDsWq_c0lmGSgFkTLUlJasP4dCIgX1AAJjJQACLx8AAVaB2rfYDli4yT0E",
-      "history_title": "DeepSeek Harness Desktop for macOS and Windows"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1147,6 +1007,211 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AI music maker Suno now generates spoken words",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+          "summary": "Suno is branching out from the world of AI music, launching a new feature that generates spoken voices based on scripts or prompted descriptions. Speech is now available in public beta across Suno's web and mobile platforms, and allows you to simultaneously generate voiceovers and background music to accompany them. \"Music will always be at […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-02T09:42:19+00:00",
+          "angle": "Suno expands beyond music, now generating realistic spoken voices from text scripts."
+        },
+        "draft": {
+          "title": "Suno adds spoken voice generation",
+          "hook_text": "Suno just learned to speak.",
+          "beats": [
+            {
+              "line": "Suno just learned to speak.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Suno",
+              "outlet": "",
+              "domain": "suno.com",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Suno",
+                  "domain": "suno.com"
+                }
+              ]
+            },
+            {
+              "line": "The popular AI music maker is launching a public beta for spoken voices.",
+              "visual": "clip",
+              "query": "person using music app on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Suno",
+                  "domain": "suno.com"
+                }
+              ]
+            },
+            {
+              "line": "You can now generate voiceovers and background music at the same time.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Vertical cinematic view of audio waveform mixing console with glowing blue and purple sound waves",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The feature creates spoken audio directly from scripts or prompted descriptions.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "AI music maker Suno now generates spoken words",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Suno",
+                  "domain": "suno.com"
+                }
+              ]
+            },
+            {
+              "line": "It is available now across the company web and mobile platforms.",
+              "visual": "clip",
+              "query": "typing on mobile phone outdoors",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you use an AI tool that makes both your voiceover and background track?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Vertical futuristic podcast studio setup with holographic sound controls and glowing microphone",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Suno is expanding beyond AI music with a new feature that generates spoken voices from scripts. You can now create simultaneous voiceovers and background tracks on web and mobile. Would you use an AI tool that makes both your voiceover and background track?",
+          "hashtags": [
+            "Suno",
+            "AIAudio",
+            "VoiceGenerator",
+            "MusicTech",
+            "ArtificialIntelligence",
+            "ContentCreator",
+            "AudioProduction",
+            "TechNews",
+            "VoiceOver",
+            "MobileApp"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+          ],
+          "script": "Suno just learned to speak.\nThe popular AI music maker is launching a public beta for spoken voices.\nYou can now generate voiceovers and background music at the same time.\nThe feature creates spoken audio directly from scripts or prompted descriptions.\nIt is available now across the company web and mobile platforms.\nWould you use an AI tool that makes both your voiceover and background track?",
+          "keywords": [
+            "person using music app on phone",
+            "typing on mobile phone outdoors"
+          ],
+          "image_prompts": [
+            "Vertical cinematic view of audio waveform mixing console with glowing blue and purple sound waves",
+            "Vertical futuristic podcast studio setup with holographic sound controls and glowing microphone"
+          ],
+          "evidence": [
+            {
+              "claim": "Suno just learned to speak.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "Suno just learned to speak.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "The popular AI music maker is launching a public beta for spoken voices.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "You can now generate voiceovers and background music at the same time.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "The feature creates spoken audio directly from scripts or prompted descriptions.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            },
+            {
+              "claim": "It is available now across the company web and mobile platforms.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-02T19:26:46.613231+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1433,8 +1498,8 @@
       "at": "2026-10-02T17:50:29.238052+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-02T17:50+05:30",
@@ -1458,7 +1523,7 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-02T05:00:38.581200+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-01",
   "ig_count": {
     "day": "2026-10-02",
