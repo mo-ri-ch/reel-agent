@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -114,11 +114,20 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.deepseek.com/en/harness/"
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "You can now download the application directly from…: The laptop screen shows Pexels, not the DeepSeek Harness Desktop application being discussed.",
+      "Will you use this new desktop tool?…: The computer monitor shows Adobe Lightroom editing software instead of the DeepSeek desktop tool."
+    ],
+    "credits": [
+      "DeepSeek Harness Desktop: deepseek.com",
+      "DeepSeek Harness Desktop: deepseek.com"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIDsWq_c0lmGSgFkTLUlJasP4dCIgX1AAJjJQACLx8AAVaB2rfYDli4yT0E",
   "queue": [
     {
       "title": "Google’s new Guided Vision feature can help you read the fine print",
@@ -143,16 +152,17 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-02T14:27:05.011559+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
-  "pending_offer": false,
+  "script_deadline": null,
+  "preview_deadline": "2026-10-02T15:18:06.509201+05:30",
+  "last_gender": "male",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-02",
     "done": [
       "07:00",
       "09:30",
-      "12:00"
+      "12:00",
+      "14:30"
     ]
   },
   "pending_topic": null,
@@ -509,214 +519,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
-          "link": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
-          "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x faster token generation than the Astra Standard mode. For developers, […]",
-          "source": "NVIDIA Blog",
-          "published": "2026-10-01T23:44:13+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "OpenAI Launches GPT-6 Astra Ultrafast",
-          "hook_text": "Eight times faster token generation.",
-          "beats": [
-            {
-              "line": "OpenAI just dropped GPT-6 Astra Ultrafast.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI API",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "It runs on NVIDIA Blackwell GPUs.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "NVIDIA Blackwell",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "NVIDIA",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Token generation is eight times faster than Astra Standard mode.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "8x",
-              "small": "faster token generation",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Eligible ChatGPT Work and Codex users can access it right now in the API.",
-              "visual": "clip",
-              "query": "developer typing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Are you ready to build faster applications with this speed?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "NVIDIA Blog",
-              "domain": "nvidia.com",
-              "headline": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "NVIDIA",
-                  "domain": "nvidia.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            }
-          ],
-          "caption": "OpenAI has released GPT-6 Astra Ultrafast powered by NVIDIA Blackwell GPUs, delivering up to eight times faster token generation. The new mode is available now for eligible users and developers in the API. How will this speed change what you build?",
-          "hashtags": [
-            "OpenAI",
-            "NVIDIA",
-            "ArtificialIntelligence",
-            "MachineLearning",
-            "TechNews",
-            "Developers",
-            "GPT6",
-            "Blackwell",
-            "CloudComputing",
-            "Programming",
-            "SoftwareEngineering",
-            "Innovation"
-          ],
-          "sources": [
-            "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
-          ],
-          "script": "OpenAI just dropped GPT-6 Astra Ultrafast.\nIt runs on NVIDIA Blackwell GPUs.\nToken generation is eight times faster than Astra Standard mode.\nEligible ChatGPT Work and Codex users can access it right now in the API.\nAre you ready to build faster applications with this speed?",
-          "keywords": [
-            "developer typing code"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "GPT-6 Astra Ultrafast features eight times faster token generation",
-              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
-            },
-            {
-              "claim": "OpenAI dropped GPT-6 Astra Ultrafast",
-              "url": "https://www.techbuzz.ai/articles/openai-s-gpt-6-astra-ultrafast-gets-8x-speed-boost-on-nvidia"
-            },
-            {
-              "claim": "GPT-6 Astra Ultrafast runs on NVIDIA Blackwell GPUs",
-              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
-            },
-            {
-              "claim": "Token generation is eight times faster than Astra Standard mode",
-              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
-            },
-            {
-              "claim": "Eligible ChatGPT Work and Codex users can access GPT-6 Astra Ultrafast right now in the API",
-              "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "OpenAI API: HaeB (CC BY-SA 4.0), via Wikimedia Commons",
-            "NVIDIA Blackwell: Pronoia (CC0), via Wikimedia Commons"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIDmWq_LPbURUekpaDcyXFTDqbpnN4ZAAK8IgACLx8AAVZO1KypX_p3Ij0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIDmWq_LPbURUekpaDcyXFTDqbpnN4ZAAK8IgACLx8AAVZO1KypX_p3Ij0E",
-      "history_title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1122,6 +924,136 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "DeepSeek Harness Desktop for macOS and Windows",
+          "link": "https://www.deepseek.com/en/harness/",
+          "summary": "",
+          "source": "deepseek.com",
+          "published": "2026-10-02T03:11:20+00:00",
+          "buzz": "Hacker News 179 points",
+          "angle": "DeepSeek just launched an official desktop app for Mac and Windows, making local AI even easier."
+        },
+        "draft": {
+          "title": "DeepSeek Harness Desktop for macOS and Windows",
+          "hook_text": "DeepSeek launched Harness Desktop.",
+          "beats": [
+            {
+              "line": "DeepSeek released Harness Desktop for macOS and Windows.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "DeepSeek Harness Desktop",
+              "outlet": "",
+              "domain": "deepseek.com",
+              "headline": "",
+              "url": "https://www.deepseek.com/en/harness/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "DeepSeek",
+                  "domain": "deepseek.com"
+                }
+              ]
+            },
+            {
+              "line": "You can now download the application directly from their site.",
+              "visual": "clip",
+              "query": "person downloading software on computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will you use this new desktop tool?",
+              "visual": "clip",
+              "query": "person using desktop computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "DeepSeek has officially released Harness Desktop for both macOS and Windows. Will you be trying out this new desktop tool?",
+          "hashtags": [
+            "DeepSeek",
+            "DesktopApp",
+            "ArtificialIntelligence",
+            "TechNews",
+            "SoftwareEngineering",
+            "MacOs",
+            "Windows",
+            "AI",
+            "DeveloperTools",
+            "Coding"
+          ],
+          "sources": [
+            "https://www.deepseek.com/en/harness/"
+          ],
+          "script": "DeepSeek released Harness Desktop for macOS and Windows.\nYou can now download the application directly from their site.\nWill you use this new desktop tool?",
+          "keywords": [
+            "person downloading software on computer",
+            "person using desktop computer"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "DeepSeek launched Harness Desktop.",
+              "url": "https://vocal.media/01/i-installed-deepseek-harness-v02-so-you-dont-have-to"
+            },
+            {
+              "claim": "DeepSeek released Harness Desktop for macOS and Windows.",
+              "url": "https://vocal.media/01/i-installed-deepseek-harness-v02-so-you-dont-have-to"
+            },
+            {
+              "claim": "You can download the application directly from DeepSeek's site.",
+              "url": "https://vocal.media/01/i-installed-deepseek-harness-v02-so-you-dont-have-to"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.deepseek.com/en/harness/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-02T14:27:05.011559+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1398,8 +1330,8 @@
       "at": "2026-10-02T12:50:26.744616+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-02T12:50+05:30",
@@ -1423,11 +1355,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-02T05:00:38.581200+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-01",
   "ig_count": {
     "day": "2026-10-02",
-    "at": "2026-10-02T14:20:27.354695+05:30",
+    "at": "2026-10-02T14:33:06.509384+05:30",
     "count": 3
   }
 }
