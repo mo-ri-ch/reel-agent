@@ -1,35 +1,191 @@
 {
   "offset": 153809604,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "OpenAI fires three workers over mishandling 'sensitive information'",
-      "link": "https://www.bbc.com/news/articles/c6y9z9r4ejzwo",
-      "summary": "OpenAI fires three workers over mishandling 'sensitive information' BBC",
-      "source": "BBC",
-      "published": "2026-10-02T01:34:56+00:00",
-      "angle": ""
-    },
-    {
-      "title": "How applied theatre can help students examine the ethics of AI",
-      "link": "https://www.timeshighereducation.com/campus/how-applied-theatre-can-help-students-examine-ethics-ai",
-      "summary": "How applied theatre can help students examine the ethics of AI Times Higher Education",
-      "source": "Times Higher Education",
-      "published": "2026-10-02T00:00:00+00:00",
-      "angle": ""
-    },
-    {
-      "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
-      "link": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
-      "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x faster token generation than the Astra Standard mode. For developers, […]",
-      "source": "NVIDIA Blog",
-      "published": "2026-10-01T23:44:13+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-02T08:25:32.910497+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+    "link": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+    "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x faster token generation than the Astra Standard mode. For developers, […]",
+    "source": "NVIDIA Blog",
+    "published": "2026-10-01T23:44:13+00:00",
+    "angle": ""
+  },
+  "draft": {
+    "title": "OpenAI Launches GPT-6 Astra Ultrafast",
+    "hook_text": "Eight times faster token generation.",
+    "beats": [
+      {
+        "line": "OpenAI just dropped GPT-6 Astra Ultrafast.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "OpenAI API",
+        "outlet": "",
+        "domain": "openai.com",
+        "headline": "",
+        "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      },
+      {
+        "line": "It runs on NVIDIA Blackwell GPUs.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "NVIDIA Blackwell",
+        "outlet": "",
+        "domain": "nvidia.com",
+        "headline": "",
+        "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "NVIDIA",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Token generation is eight times faster than Astra Standard mode.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "8x",
+        "small": "faster token generation",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      },
+      {
+        "line": "Eligible ChatGPT Work and Codex users can access it right now in the API.",
+        "visual": "clip",
+        "query": "developer typing code",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "ChatGPT",
+            "domain": "openai.com"
+          },
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      },
+      {
+        "line": "Are you ready to build faster applications with this speed?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "NVIDIA Blog",
+        "domain": "nvidia.com",
+        "headline": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "NVIDIA",
+            "domain": "nvidia.com"
+          },
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      }
+    ],
+    "caption": "OpenAI has released GPT-6 Astra Ultrafast powered by NVIDIA Blackwell GPUs, delivering up to eight times faster token generation. The new mode is available now for eligible users and developers in the API. How will this speed change what you build?",
+    "hashtags": [
+      "OpenAI",
+      "NVIDIA",
+      "ArtificialIntelligence",
+      "MachineLearning",
+      "TechNews",
+      "Developers",
+      "GPT6",
+      "Blackwell",
+      "CloudComputing",
+      "Programming",
+      "SoftwareEngineering",
+      "Innovation"
+    ],
+    "sources": [
+      "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+    ],
+    "script": "OpenAI just dropped GPT-6 Astra Ultrafast.\nIt runs on NVIDIA Blackwell GPUs.\nToken generation is eight times faster than Astra Standard mode.\nEligible ChatGPT Work and Codex users can access it right now in the API.\nAre you ready to build faster applications with this speed?",
+    "keywords": [
+      "developer typing code"
+    ],
+    "image_prompts": [],
+    "evidence": [
+      {
+        "claim": "GPT-6 Astra Ultrafast features eight times faster token generation",
+        "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+      },
+      {
+        "claim": "OpenAI dropped GPT-6 Astra Ultrafast",
+        "url": "https://www.techbuzz.ai/articles/openai-s-gpt-6-astra-ultrafast-gets-8x-speed-boost-on-nvidia"
+      },
+      {
+        "claim": "GPT-6 Astra Ultrafast runs on NVIDIA Blackwell GPUs",
+        "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+      },
+      {
+        "claim": "Token generation is eight times faster than Astra Standard mode",
+        "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+      },
+      {
+        "claim": "Eligible ChatGPT Work and Codex users can access GPT-6 Astra Ultrafast right now in the API",
+        "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -64,7 +220,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-02T09:17:32.238019+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -366,215 +522,38 @@
     }
   ],
   "paused": null,
-  "spare": [
-    {
-      "title": "ChatGPT can now virtually try on clothes for you",
-      "link": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-      "summary": "OpenAI is rolling out new shopping features for ChatGPT that let users virtually try on clothing and accessories using their own photos and save products they like to a Favorites library.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-01T19:21:53+00:00",
-      "angle": "ChatGPT can now virtually try on clothes and accessories using your own photos."
-    },
-    {
-      "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
-      "link": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
-      "summary": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-01T16:44:35+00:00",
-      "angle": "Shopify's new Canvas lets merchants build and customize online stores just by chatting with an AI agent."
-    }
-  ],
+  "spare": [],
   "tried": [
-    "From Parkinson’s to Potholes: 9 Tamil Nadu Students Turn to AI to Solve Everyday Problems",
+    "Anthropic warns of ‘catastrophic’ AI risks in its own IPO filing",
+    "Jensen Huang says AI distillation is 'competition.'",
+    "OpenAI agents scanned UN data hub over 16,000 times, used aggressive access methods: Report",
     "Bengaluru to Power Mythic AI’s Ambitions to Beat NVIDIA With Analogue Computing",
+    "Alarm bell for artificial intelligence",
+    "US govt sites as targets, evading CAPTCHAs: What OpenAI’s runaway agents got up to",
+    "AI in Teaching: Preserving Core Pedagogical Principles",
+    "OpenAI says its AI agents posted users' images online in error",
+    "From Parkinson’s to Potholes: 9 Tamil Nadu Students Turn to AI to Solve Everyday Problems",
+    "Modulate raises $25M for its voice models and analysis suite",
+    "AI needs trust – and Australia can provide the verification",
+    "OpenAI fires three workers over mishandling 'sensitive information'",
     "Accenture Earnings Due As Artificial Intelligence Looms As Double-Edged Sword",
-    "After a deepfake voice fooled her grandfather, this founder sprang into action",
-    "42x Faster Prompt Lookup Drafting in llama.cpp",
-    "Hyperscaler cloud revenues projected to top USD 1 trillion by 2030 amid AI, digital asset convergence: Report",
-    "OpenAI launches Dots, always-on AI agent coworkers, and ChatGPT Space where they can collaborate with human teams",
-    "A face from a skull: How a cop’s AI app is helping identify the unidentified",
-    "Next five VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026",
     "Xinhua News | China respects U.S. choice on what term to use for artificial intelligence: spokesperson",
     "How Chinese are renting out their faces to AI to make money",
-    "MongoDB CEO Joins Meta to Lead Enterprise AI Platform",
-    "AI godfathers warn of runaway ‘intelligence explosion’",
-    "Modulate raises $25M for its voice models and analysis suite",
-    "The AI College Boom Is Outrunning the Teachers Who Have to Make It Work",
     "AI is Giving Hackers Machine Speed. Human Defence May Not Be Enough",
-    "OpenAI agents scanned UN data hub over 16,000 times, used aggressive access methods: Report",
-    "Anthropic warns of ‘catastrophic’ AI risks in its own IPO filing",
-    "Alarm bell for artificial intelligence",
-    "OpenAI says its AI agents posted users' images online in error",
+    "Next five VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026",
+    "MongoDB CEO Joins Meta to Lead Enterprise AI Platform",
+    "How applied theatre can help students examine the ethics of AI",
     "Teaching children to question artificial intelligence, understand its pros and cons",
-    "US govt sites as targets, evading CAPTCHAs: What OpenAI’s runaway agents got up to",
-    "AI needs trust – and Australia can provide the verification",
-    "Jensen Huang says AI distillation is 'competition.'",
-    "Insuretech Outmarket raises $34.5M just months after prior round",
-    "AI in Teaching: Preserving Core Pedagogical Principles"
+    "OpenAI launches Dots, always-on AI agent coworkers, and ChatGPT Space where they can collaborate with human teams",
+    "AI godfathers warn of runaway ‘intelligence explosion’",
+    "42x Faster Prompt Lookup Drafting in llama.cpp",
+    "Hyperscaler cloud revenues projected to top USD 1 trillion by 2030 amid AI, digital asset convergence: Report",
+    "A face from a skull: How a cop’s AI app is helping identify the unidentified",
+    "The AI College Boom Is Outrunning the Teachers Who Have to Make It Work",
+    "After a deepfake voice fooled her grandfather, this founder sprang into action",
+    "Insuretech Outmarket raises $34.5M just months after prior round"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Gemini 4 Argon: our next era of frontier intelligence",
-          "link": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-          "summary": "",
-          "source": "Google DeepMind News",
-          "published": "2026-09-30T20:01:45+00:00",
-          "angle": "Google just dropped Gemini 4 Argon, kicking off a brand new era of frontier AI intelligence."
-        },
-        "draft": {
-          "title": "Google DeepMind unveils Gemini 4 Argon",
-          "hook_text": "Meet Gemini 4 Argon.",
-          "beats": [
-            {
-              "line": "Google DeepMind just announced Gemini 4 Argon.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Google DeepMind News",
-              "domain": "deepmind.google",
-              "headline": "Gemini 4 Argon: our next era of frontier intelligence",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google DeepMind",
-                  "domain": "deepmind.google"
-                }
-              ]
-            },
-            {
-              "line": "It significantly expands the model output token limit to one million tokens.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1M",
-              "small": "output tokens",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google DeepMind",
-                  "domain": "deepmind.google"
-                }
-              ]
-            },
-            {
-              "line": "The model processes massive amounts of information in a single run.",
-              "visual": "clip",
-              "query": "person typing on laptop computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How will you use this expanded output limit?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Cinematic vertical view of abstract data streams flowing through glowing servers",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Google DeepMind has introduced Gemini 4 Argon featuring an expanded output token limit of one million tokens. How will you use this large output capacity in your daily projects?",
-          "hashtags": [
-            "GoogleDeepMind",
-            "Gemini4",
-            "ArtificialIntelligence",
-            "TechNews",
-            "MachineLearning",
-            "Innovation",
-            "FutureTech",
-            "AI",
-            "DeepMind",
-            "Google"
-          ],
-          "sources": [
-            "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
-          ],
-          "script": "Google DeepMind just announced Gemini 4 Argon.\nIt significantly expands the model output token limit to one million tokens.\nThe model processes massive amounts of information in a single run.\nHow will you use this expanded output limit?",
-          "keywords": [
-            "person typing on laptop computer"
-          ],
-          "image_prompts": [
-            "Cinematic vertical view of abstract data streams flowing through glowing servers"
-          ],
-          "evidence": [
-            {
-              "claim": "Google DeepMind announced Gemini 4 Argon.",
-              "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
-            },
-            {
-              "claim": "Google DeepMind announced Gemini 4 Argon.",
-              "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
-            },
-            {
-              "claim": "Gemini 4 Argon expands the model output token limit to one million tokens.",
-              "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
-            },
-            {
-              "claim": "Gemini 4 Argon processes massive amounts of information in a single run.",
-              "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": []
-        },
-        "video_file_id": "BAACAgUAAxkDAAIDb2q-iKodf970bcCgEVfOOKD-EQOaAAISIQACLx_4VaoHzYQwdivXPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIDb2q-iKodf970bcCgEVfOOKD-EQOaAAISIQACLx_4VaoHzYQwdivXPQQ",
-      "history_title": "Gemini 4 Argon: our next era of frontier intelligence"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1163,6 +1142,50 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIDgGq_B8rC-lTrFnJHxjNX2X5iWuUjAAJZIQACLx_4VXFH9rd5ZdTqPQQ",
       "history_title": "Google’s new Guided Vision feature can help you read the fine print"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "OpenAI fires three workers over mishandling 'sensitive information'",
+            "link": "https://www.bbc.com/news/articles/c6y9z9r4ejzwo",
+            "summary": "OpenAI fires three workers over mishandling 'sensitive information' BBC",
+            "source": "BBC",
+            "published": "2026-10-02T01:34:56+00:00",
+            "angle": ""
+          },
+          {
+            "title": "How applied theatre can help students examine the ethics of AI",
+            "link": "https://www.timeshighereducation.com/campus/how-applied-theatre-can-help-students-examine-ethics-ai",
+            "summary": "How applied theatre can help students examine the ethics of AI Times Higher Education",
+            "source": "Times Higher Education",
+            "published": "2026-10-02T00:00:00+00:00",
+            "angle": ""
+          },
+          {
+            "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+            "link": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+            "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x faster token generation than the Astra Standard mode. For developers, […]",
+            "source": "NVIDIA Blog",
+            "published": "2026-10-01T23:44:13+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-02T08:25:32.910497+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
