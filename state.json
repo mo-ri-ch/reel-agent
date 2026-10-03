@@ -1,37 +1,127 @@
 {
   "offset": 153809604,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Buying RTX 5090 At Micro Center Reportedly Now Requires Paperwork, Including A No-Export Declaration",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-02T20:35:45+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Buying an RTX 5090 at Micro Center now requires signing a no-export declaration and paperwork."
-    },
-    {
-      "title": "With most information hidden, the game Stratego had stumped AI until now",
-      "link": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-      "summary": "",
-      "source": "arstechnica.com",
-      "published": "2026-10-02T14:11:24+00:00",
-      "buzz": "Hacker News 195 points",
-      "angle": "AI finally masters Stratego, a complex game with hidden information that previously stumped systems."
-    },
-    {
-      "title": "Sean Parker is rebuilding Stability AI around music",
-      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-      "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-02T21:09:14+00:00",
-      "angle": "Sean Parker is officially bringing Stability AI back, completely rebuilding it around music with major label backing."
-    }
-  ],
-  "choose_deadline": "2026-10-03T10:45:40.308393+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Buying RTX 5090 At Micro Center Reportedly Now Requires Paperwork, Including A No-Export Declaration",
+    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now/",
+    "summary": "",
+    "source": "r/LocalLLaMA",
+    "published": "2026-10-02T20:35:45+00:00",
+    "buzz": "top of r/LocalLLaMA today",
+    "angle": "Buying an RTX 5090 at Micro Center now requires signing a no-export declaration and paperwork."
+  },
+  "draft": {
+    "title": "Micro Center Requires Paperwork For RTX 5090",
+    "hook_text": "Buying a graphics card now needs paperwork.",
+    "beats": [
+      {
+        "line": "Buying an RTX 5090 at Micro Center now requires signing a no export declaration.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia RTX 5090",
+        "outlet": "",
+        "domain": "microcenter.com",
+        "headline": "",
+        "url": "https://www.microcenter.com",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Retailers are cracking down on hardware leaving the country.",
+        "visual": "clip",
+        "query": "retail store checkout counter",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "High end chips are under strict export controls.",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "Cinematic vertical view of advanced computer microchips on a glowing circuit board",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "How far will stores go to keep hardware local?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Reddit",
+        "domain": "reddit.com",
+        "headline": "Buying RTX 5090 At Micro Center Reportedly Now Requires Paperwork",
+        "url": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "caption": "Buying top tier graphics cards is getting complicated with new export rules at retailers like Micro Center. Would you sign a declaration just to buy a GPU?",
+    "hashtags": [
+      "rtx5090",
+      "nvidia",
+      "microcenter",
+      "hardware",
+      "gamingpc",
+      "artificialintelligence",
+      "technews",
+      "gup",
+      "pcbuilding",
+      "technews"
+    ],
+    "sources": [
+      "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now/"
+    ],
+    "script": "Buying an RTX 5090 at Micro Center now requires signing a no export declaration.\nRetailers are cracking down on hardware leaving the country.\nHigh end chips are under strict export controls.\nHow far will stores go to keep hardware local?",
+    "keywords": [
+      "retail store checkout counter"
+    ],
+    "image_prompts": [
+      "Cinematic vertical view of advanced computer microchips on a glowing circuit board"
+    ],
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -73,7 +163,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-03T11:36:30.086707+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -406,21 +496,21 @@
   "paused": null,
   "spare": [
     {
+      "title": "With most information hidden, the game Stratego had stumped AI until now",
+      "link": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "summary": "",
+      "source": "arstechnica.com",
+      "published": "2026-10-02T14:11:24+00:00",
+      "buzz": "Hacker News 195 points",
+      "angle": "AI finally masters Stratego, a complex game with hidden information that previously stumped systems."
+    },
+    {
       "title": "Sean Parker is rebuilding Stability AI around music",
       "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
       "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money.",
       "source": "AI News & Artificial Intelligence | TechCrunch",
       "published": "2026-10-02T21:09:14+00:00",
-      "angle": "Napster founder Sean Parker is back, officially rebuilding Stability AI entirely around music with major label backing."
-    },
-    {
-      "title": "Buying RTX 5090 At Micro Center Reportedly Now Requires Paperwork, Including A No-Export Declaration",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-02T20:35:45+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Buying an RTX 5090 at Micro Center now reportedly requires signing official paperwork and a no-export declaration."
+      "angle": "Sean Parker is officially bringing Stability AI back, completely rebuilding it around music with major label backing."
     }
   ],
   "tried": [
@@ -455,185 +545,7 @@
     "After a deepfake voice fooled her grandfather, this founder sprang into action",
     "How applied theatre can help students examine the ethics of AI"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Artificial Intelligence: A Law Unto Itself?",
-          "link": "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/",
-          "summary": "Artificial Intelligence: A Law Unto Itself? Next Century Foundation",
-          "source": "Next Century Foundation",
-          "published": "2026-10-02T22:28:11+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Artificial Intelligence: A Law Unto Itself?",
-          "hook_text": "Is AI a law unto itself?",
-          "beats": [
-            {
-              "line": "Is artificial intelligence a law unto itself?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Next Century Foundation",
-              "domain": "nextcenturyfoundation.org",
-              "headline": "Artificial Intelligence: A Law Unto Itself?",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The Next Century Foundation examines the challenges surrounding autonomous systems.",
-              "visual": "clip",
-              "query": "server room data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Next Century Foundation",
-                  "domain": "nextcenturyfoundation.org"
-                }
-              ]
-            },
-            {
-              "line": "Policymakers face complex questions regarding technology oversight.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "futuristic digital code matrix floating in a modern dark boardroom",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Society must address how these digital systems integrate safely.",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How should institutions adapt to these modern developments?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Next Century Foundation",
-              "domain": "nextcenturyfoundation.org",
-              "headline": "Artificial Intelligence: A Law Unto Itself?",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "The Next Century Foundation explores critical questions regarding artificial intelligence and governance. How should institutions adapt to these modern developments? Share your thoughts below.",
-          "hashtags": [
-            "artificialintelligence",
-            "techpolicy",
-            "futureoftech",
-            "regulation",
-            "techlaw",
-            "digitalsociety",
-            "nextcenturyfoundation",
-            "technews",
-            "ethics",
-            "innovation"
-          ],
-          "sources": [
-            "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-          ],
-          "script": "Is artificial intelligence a law unto itself?\nThe Next Century Foundation examines the challenges surrounding autonomous systems.\nPolicymakers face complex questions regarding technology oversight.\nSociety must address how these digital systems integrate safely.\nHow should institutions adapt to these modern developments?",
-          "keywords": [
-            "server room data center",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [
-            "futuristic digital code matrix floating in a modern dark boardroom"
-          ],
-          "evidence": [
-            {
-              "claim": "The Next Century Foundation published a report or article titled 'Artificial Intelligence: A Law Unto Itself?'",
-              "url": "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-            },
-            {
-              "claim": "The Next Century Foundation examined challenges surrounding autonomous systems.",
-              "url": "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-            },
-            {
-              "claim": "The Next Century Foundation examined challenges surrounding autonomous systems.",
-              "url": "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-            },
-            {
-              "claim": "Policymakers face complex questions regarding technology oversight.",
-              "url": "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-            },
-            {
-              "claim": "Society must address how these digital systems integrate safely.",
-              "url": "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-            },
-            {
-              "claim": "Institutions should adapt to these modern developments through international responses and negotiations.",
-              "url": "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.nextcenturyfoundation.org/artificial-intelligence-a-law-unto-itself/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-03T06:40:44.761949+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1229,6 +1141,52 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIEMWrAeYmaWbKplX2tx-SEXtajyq-rAAJeJAACUWsJVhOUM3yqGMHgPQQ",
       "history_title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Buying RTX 5090 At Micro Center Reportedly Now Requires Paperwork, Including A No-Export Declaration",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-02T20:35:45+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "Buying an RTX 5090 at Micro Center now requires signing a no-export declaration and paperwork."
+          },
+          {
+            "title": "With most information hidden, the game Stratego had stumped AI until now",
+            "link": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+            "summary": "",
+            "source": "arstechnica.com",
+            "published": "2026-10-02T14:11:24+00:00",
+            "buzz": "Hacker News 195 points",
+            "angle": "AI finally masters Stratego, a complex game with hidden information that previously stumped systems."
+          },
+          {
+            "title": "Sean Parker is rebuilding Stability AI around music",
+            "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+            "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-02T21:09:14+00:00",
+            "angle": "Sean Parker is officially bringing Stability AI back, completely rebuilding it around music with major label backing."
+          }
+        ],
+        "choose_deadline": "2026-10-03T10:45:40.308393+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
