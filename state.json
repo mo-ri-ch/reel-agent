@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -140,11 +140,18 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Why do you think safety insiders are walking away …: The visual shows the initials card for David Robinson instead of the requested conceptual minimalist portrait.",
+      "The visual shows a city street with tall buildings instead of a person reading an article on a laptop.",
+      "The visual shows a person's initials card ('DR') instead of an illustration of a person looking at digital data streams."
+    ],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIEh2rBM_-aFfZm9GV_AAHoiBhV-JMZIQACLiYAAlFrCVaTY49cGxRBvD0E",
   "queue": [
     {
       "title": "Sean Parker is rebuilding Stability AI around music",
@@ -176,9 +183,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-03T22:20:38.472812+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-03T23:12:36.276115+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-03",
@@ -585,193 +592,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Meta wants your next gadget to be Muse-infused",
-          "link": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
-          "summary": "Meta wants Muse in your TV and your toaster, so it's giving the code away for free.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-03T00:45:39+00:00",
-          "angle": "Meta is giving away open-source code for Muse so you can build AI-powered gadgets right at home."
-        },
-        "draft": {
-          "title": "Meta gives Muse code away",
-          "hook_text": "Meta just gave away its Muse code",
-          "beats": [
-            {
-              "line": "Meta just open sourced its Muse code for free.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Meta Muse",
-              "outlet": "",
-              "domain": "meta.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            },
-            {
-              "line": "The company wants you to build smart home gadgets.",
-              "visual": "clip",
-              "query": "smart home appliances toaster tv",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You can now put Muse inside your TV and your toaster.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "futuristic smart toaster and television on a modern kitchen counter cinematic lighting vertical",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "TechCrunch reported the release on October second.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Meta wants your next gadget to be Muse-infused",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you buy a toaster powered by Meta?",
-              "visual": "clip",
-              "query": "person looking at kitchen appliances",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            }
-          ],
-          "caption": "Meta is making its Muse code completely free so anyone can build smart home devices like connected TVs and toasters. Would you want AI built into your kitchen appliances?",
-          "hashtags": [
-            "Meta",
-            "Muse",
-            "TechNews",
-            "ArtificialIntelligence",
-            "SmartHome",
-            "Gadgets",
-            "TechCrunch",
-            "Innovation",
-            "InternetOfThings",
-            "ConsumerTech",
-            "AI"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
-          ],
-          "script": "Meta just open sourced its Muse code for free.\nThe company wants you to build smart home gadgets.\nYou can now put Muse inside your TV and your toaster.\nTechCrunch reported the release on October second.\nWould you buy a toaster powered by Meta?",
-          "keywords": [
-            "smart home appliances toaster tv",
-            "person looking at kitchen appliances"
-          ],
-          "image_prompts": [
-            "futuristic smart toaster and television on a modern kitchen counter cinematic lighting vertical"
-          ],
-          "evidence": [
-            {
-              "claim": "Meta gave away its Muse code",
-              "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
-            },
-            {
-              "claim": "Meta open sourced its Muse code for free",
-              "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
-            },
-            {
-              "claim": "The company wants you to build smart home gadgets",
-              "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
-            },
-            {
-              "claim": "You can now put Muse inside your TV and your toaster",
-              "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
-            },
-            {
-              "claim": "TechCrunch reported the release on October second",
-              "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Meta just open sourced its Muse code for free.…: The image shows an ancient Roman statue instead of Meta Muse.",
-            "You can now put Muse inside your TV and your toast…: The AI-generated image contains garbled text (\"THIX SHOEL HBFTTING\") on the screen."
-          ],
-          "credits": []
-        },
-        "video_file_id": "BAACAgUAAxkDAAIEbWrA7umc_7mR1T4rhuPI2TWrGixJAAK0JQACUWsJVkwHvyhkqopEPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIEbWrA7umc_7mR1T4rhuPI2TWrGixJAAK0JQACUWsJVkwHvyhkqopEPQQ",
-      "history_title": "Meta wants your next gadget to be Muse-infused"
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1161,6 +981,162 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "An OpenAI safety employee has quit and is sounding the alarm",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+          "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-03T14:31:56+00:00",
+          "angle": "An OpenAI safety employee just quit and is sounding the alarm in a major tell-all essay."
+        },
+        "draft": {
+          "title": "OpenAI safety employee quits and sounds alarm",
+          "hook_text": "An OpenAI safety writer just quit.",
+          "beats": [
+            {
+              "line": "An OpenAI safety writer just quit and is sounding the alarm.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "David Robinson",
+              "role": "Former Safety Report Writer, OpenAI",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "David Robinson wrote the safety reports for every major model release at OpenAI.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "An OpenAI safety employee has quit and is sounding the alarm",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He published a critical editorial in The Atlantic after resigning this week.",
+              "visual": "clip",
+              "query": "person reading article on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Why do you think safety insiders are walking away from major labs?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Conceptual minimalist portrait of a person looking at digital data streams, dark blue tones",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "David Robinson, who used to write safety reports for major OpenAI model releases, has resigned and spoken out in The Atlantic. Why are more insiders leaving AI labs to sound the alarm?",
+          "hashtags": [
+            "artificialintelligence",
+            "openai",
+            "techsafety",
+            "aiethics",
+            "davidrobinson",
+            "theatlantic",
+            "theverge",
+            "aipolicy",
+            "technews",
+            "futureoftech",
+            "machinelearning"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+          ],
+          "script": "An OpenAI safety writer just quit and is sounding the alarm.\nDavid Robinson wrote the safety reports for every major model release at OpenAI.\nHe published a critical editorial in The Atlantic after resigning this week.\nWhy do you think safety insiders are walking away from major labs?",
+          "keywords": [
+            "person reading article on laptop"
+          ],
+          "image_prompts": [
+            "Conceptual minimalist portrait of a person looking at digital data streams, dark blue tones"
+          ],
+          "evidence": [
+            {
+              "claim": "An OpenAI safety writer just quit.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+            },
+            {
+              "claim": "An OpenAI safety writer just quit and is sounding the alarm.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+            },
+            {
+              "claim": "David Robinson is a former safety report writer at OpenAI.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+            },
+            {
+              "claim": "David Robinson wrote the safety reports for every major model release at OpenAI.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+            },
+            {
+              "claim": "He published a critical editorial in The Atlantic after resigning this week.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-03T22:20:38.472812+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1487,8 +1463,8 @@
       "at": "2026-10-03T20:45:27.278617+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-03T20:45+05:30",
@@ -1512,7 +1488,7 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-03T05:00:33.947416+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-10-03",
   "ig_count": {
     "day": "2026-10-03",
