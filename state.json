@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -165,11 +165,16 @@
     "fix_rounds": 2,
     "source_links": [
       "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [
+      "Nvidia H100: nvidia.com"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIEMWrAeYmaWbKplX2tx-SEXtajyq-rAAJeJAACUWsJVhOUM3yqGMHgPQQ",
   "queue": [
     {
       "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
@@ -201,9 +206,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-03T09:06:56.951646+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-03T09:57:02.519033+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-03",
@@ -584,166 +589,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
-          "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-          "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-02T18:11:27+00:00",
-          "angle": "Apple is locking down macOS Full Disk Access because AI agents are getting way too good at digging through your private files."
-        },
-        "draft": {
-          "title": "Apple Tightens macOS Disk Access",
-          "hook_text": "Apple tightens macOS controls",
-          "beats": [
-            {
-              "line": "Apple is tightening macOS Full Disk Access controls.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "macOS Full Disk Access",
-              "outlet": "",
-              "domain": "apple.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "TechCrunch reported this change is due to new risks from AI agents.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Apple says its tightening macOS Full Disk Access controls due to new risks from AI agents",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Increasingly capable AI agents make broad file access riskier.",
-              "visual": "clip",
-              "query": "person typing on macbook",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Apple warned about risks to users files and messages.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Abstract digital security shield over laptop screen in dark room, cinematic lighting, vertical",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Apple is updating macOS Full Disk Access controls following warnings about new risks from AI agents accessing user files and messages. How will this impact your workflow?",
-          "hashtags": [
-            "Apple",
-            "macOS",
-            "TechNews",
-            "ArtificialIntelligence",
-            "CyberSecurity",
-            "TechCrunch",
-            "Privacy",
-            "AIAgents",
-            "SoftwareUpdate",
-            "DataProtection"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
-          ],
-          "script": "Apple is tightening macOS Full Disk Access controls.\nTechCrunch reported this change is due to new risks from AI agents.\nIncreasingly capable AI agents make broad file access riskier.\nApple warned about risks to users files and messages.",
-          "keywords": [
-            "person typing on macbook"
-          ],
-          "image_prompts": [
-            "Abstract digital security shield over laptop screen in dark room, cinematic lighting, vertical"
-          ],
-          "evidence": [
-            {
-              "claim": "Apple is tightening macOS controls.",
-              "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
-            },
-            {
-              "claim": "Apple is tightening macOS Full Disk Access controls.",
-              "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
-            },
-            {
-              "claim": "TechCrunch reported that the change is due to new risks from AI agents.",
-              "url": "https://ua.news/en/technologies/apple-posilit-kontrol-dostupu-do-diska-v-macos-cherez-riziki-shi-techcrunch"
-            },
-            {
-              "claim": "Increasingly capable AI agents increase the risks associated with broad access.",
-              "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
-            },
-            {
-              "claim": "Apple warned about risks of exposing user files and messages.",
-              "url": "https://www.unite.ai/apple-to-tighten-macos-full-disk-access-citing-ai-agent-risks/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": []
-        },
-        "video_file_id": "BAACAgUAAxkDAAIED2rADdKd9qgcWnCy4emfQrKyyncgAAL4HwACUWsBVkD30-kAAS-H7T0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIED2rADdKd9qgcWnCy4emfQrKyyncgAAL4HwACUWsBVkD30-kAAS-H7T0E",
-      "history_title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1191,6 +1036,187 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
+          "link": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+          "summary": "Nvidia’s chip-smuggling problem won’t go away as arrests continue.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-02T18:39:36+00:00",
+          "angle": "A tech CEO was just arrested for allegedly smuggling a massive $300 million worth of Nvidia AI chips into China."
+        },
+        "draft": {
+          "title": "Tech CEO Arrested For Smuggling Nvidia Chips",
+          "hook_text": "Three hundred million in chips.",
+          "beats": [
+            {
+              "line": "Federal agents just arrested a tech chief for smuggling three hundred million dollars in Nvidia chips into China.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "US arrests tech CEO accused of smuggling $300M in Nvidia chips",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Federal authorities filed charges following the illegal shipment operation.",
+              "visual": "clip",
+              "query": "federal courthouse building exterior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Nvidia processors power advanced systems globally.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia H100",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://www.nvidia.com/en-us/data-center/h100/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Investigators uncovered the massive hardware smuggling network.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Cinematic vertical shot of shipping containers at a busy port at night, dramatic lighting",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "How do underground brokers move such massive shipments past border security?",
+              "visual": "clip",
+              "query": "cargo port security inspection",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "US authorities have arrested a tech executive involved in a massive illegal chip shipment to China. Investigators continue examining how the hardware was moved across borders. How do you think customs agencies can stop this smuggling?",
+          "hashtags": [
+            "nvidia",
+            "techpolicy",
+            "hardware",
+            "artificialintelligence",
+            "chinatrade",
+            "semiconductors",
+            "technews",
+            "federalarrest",
+            "microchips"
+          ],
+          "sources": [
+            "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+          ],
+          "script": "Federal agents just arrested a tech chief for smuggling three hundred million dollars in Nvidia chips into China.\nFederal authorities filed charges following the illegal shipment operation.\nNvidia processors power advanced systems globally.\nInvestigators uncovered the massive hardware smuggling network.\nHow do underground brokers move such massive shipments past border security?",
+          "keywords": [
+            "federal courthouse building exterior",
+            "cargo port security inspection"
+          ],
+          "image_prompts": [
+            "Cinematic vertical shot of shipping containers at a busy port at night, dramatic lighting"
+          ],
+          "evidence": [
+            {
+              "claim": "A tech CEO is accused of smuggling $300 million in Nvidia chips into China.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+            },
+            {
+              "claim": "Federal agents arrested a tech chief for smuggling three hundred million dollars in Nvidia chips into China.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+            },
+            {
+              "claim": "Federal authorities filed charges following the illegal shipment operation.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+            },
+            {
+              "claim": "Nvidia processors can process large amounts of data and train large language models.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+            },
+            {
+              "claim": "Investigators uncovered a massive hardware smuggling network involving false paperwork and shipments routed through South Asian countries like Malaysia and Singapore.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+            },
+            {
+              "claim": "Underground brokers use fraudulent paperwork and transit through intermediate jurisdictions to move shipments past border security.",
+              "url": "https://qz.com/greg-lui-earthmade-nvidia-ai-chips-smuggling-china-100226"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-03T09:06:56.951646+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1492,8 +1518,8 @@
       "at": "2026-10-03T07:35:20.619841+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-03T07:35+05:30",
@@ -1517,11 +1543,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-03T05:00:33.947416+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-02",
   "ig_count": {
     "day": "2026-10-03",
-    "at": "2026-10-03T09:00:33.258895+05:30",
-    "count": 0
+    "at": "2026-10-03T09:12:02.519210+05:30",
+    "count": 1
   }
 }
