@@ -471,7 +471,7 @@ def offer_news(s):
         reset_reel(s)
         tg.send("I couldn't find fresh AI news right now. Send me any topic and I'll write a script.")
         return
-    picks = news.dedupe(writer.pick_top(headlines, used), [])
+    picks = writer.drop_same_events(news.dedupe(writer.pick_top(headlines, used), []), used)
     for p in picks:
         p["link"] = news.real_url(p.get("link", ""))
     reset_reel(s)
@@ -1079,6 +1079,7 @@ def cmd_poll():
 
     if not render and s.get("autopilot"):
         try:
+            drop_queued_repeats(s)
             render = keep_schedule(s) or render
         except Exception as e:
             traceback.print_exc()
@@ -1095,6 +1096,22 @@ def cmd_poll():
     if json.dumps(s, sort_keys=True) != before:
         st.save(s)
     github_output("render", "true" if render else "false")
+
+
+def drop_queued_repeats(s):
+    """Once a day: a queued reel that turns out to repeat an already-posted story is removed (and replaced)."""
+    today = st.now().date().isoformat()
+    if s.get("repeat_check_day") == today or not s["queue"]:
+        return
+    s["repeat_check_day"] = today
+    queued = [{"title": q["title"], "summary": ""} for q in s["queue"]]
+    others = [t for t in recent_titles(s) if t not in {q["title"] for q in s["queue"]}]
+    keep = {p["title"] for p in writer.drop_same_events(queued, others)}
+    gone = [q for q in s["queue"] if q["title"] not in keep]
+    if gone:
+        s["queue"] = [q for q in s["queue"] if q["title"] in keep]
+        tg.send("🧹 Removed from the schedule because it repeats a story we already covered:\n• " +
+                "\n• ".join(q["title"] for q in gone) + "\nA new reel will be made for that slot.")
 
 
 def keep_schedule(s):

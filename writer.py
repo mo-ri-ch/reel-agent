@@ -628,3 +628,31 @@ Set "found": false (and leave name empty) if you truly can't find it. Never gues
     except Exception as e:
         print(f"Name search failed: {e}")
         return []
+
+
+def drop_same_events(picks, covered):
+    """Asks Gemini whether any picked story is the SAME news event as one already covered, even when the
+    headlines share no words (e.g. a first-person essay and a news report about the same resignation)."""
+    if not picks or not covered:
+        return picks
+    listing = "\n".join(f"{i}. {p['title']} — {p.get('summary', '')[:160]}" for i, p in enumerate(picks, 1))
+    recent = "\n".join(f"- {t}" for t in list(dict.fromkeys(covered))[-40:])
+    try:
+        res = parse_json(ask(f"""New stories:
+{listing}
+
+Already covered recently:
+{recent}
+
+Which NEW stories are about the same news event as something already covered (same announcement, same person
+leaving, same launch, same report, same lawsuit) — even if worded differently or from another outlet?
+Return ONLY JSON: {{"repeats": [<numbers of the new stories that are repeats>]}}""", temperature=0, json_mode=True,
+                             light=True))
+        rep = res if isinstance(res, list) else res.get("repeats") or []
+        bad = {int(x) for x in rep if str(x).isdigit()}
+    except Exception as e:
+        print(f"Same-event check skipped: {e}")
+        return picks
+    if bad:
+        print("Dropped repeats:", [picks[i - 1]["title"] for i in bad if 0 < i <= len(picks)])
+    return [p for i, p in enumerate(picks, 1) if i not in bad]

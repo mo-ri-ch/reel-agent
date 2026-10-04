@@ -198,7 +198,7 @@ STOP = set("""a an the and or but of to in on for with at by from as is are was 
 those how why what when who new just now will can could would may might says said say after over into about than more
 most your you our their his her they them we us not no yes vs via amid ai artificial intelligence first launches launch
 launched announces announced unveils unveiled update updates report reports gets get big latest hits crosses reaches
-tops passes surpasses""".split())
+tops passes surpasses has have had because its it's their his her him she he i we my our why how""".split())
 
 
 def keywords(title):
