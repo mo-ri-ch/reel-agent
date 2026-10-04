@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -137,11 +137,18 @@
     "fix_rounds": 1,
     "source_links": [
       "https://github.com/Niko1221/Strata"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The repository was created by Niko1221.…: The image shows a fantasy city with an Eiffel Tower replica and Chinese-style architecture instead of a developer coding",
+      "garbled text on screen",
+      "image shows bookshelves instead of a person looking at a computer screen"
+    ],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIE-GrCg0KC62GmtGJAr55qKtWMTqIWAAK2IwACpsUQVpJ7rIJVr1AZPQQ",
   "queue": [
     {
       "title": "AI Can Detect Hidden Signs of Aging in the 3D Architecture of DNA",
@@ -180,9 +187,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-04T22:11:19.434134+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-04T23:03:02.704305+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-04",
@@ -613,52 +620,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Religious scholars met with Anthropic",
-            "link": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
-            "summary": "",
-            "source": "nytimes.com",
-            "published": "2026-10-04T02:34:22+00:00",
-            "buzz": "Hacker News 92 points",
-            "angle": "Anthropic secretly met with religious scholars, sparking massive debate on AI and ethics."
-          },
-          {
-            "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
-            "link": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
-            "summary": "",
-            "source": "fortune.com",
-            "published": "2026-10-03T17:44:29+00:00",
-            "buzz": "Hacker News 177 points",
-            "angle": "Yann LeCun says he has 'zero concerns' about AI wiping out humanity despite recent rogue incidents."
-          },
-          {
-            "title": "OpenAI Employee Quits With Call for Nuclear-Level Safeguards",
-            "link": "https://www.deccanchronicle.com/amp/technology/openai-employee-quits-with-call-for-nuclear-level-safeguards-1993022",
-            "summary": "OpenAI Employee Quits With Call for Nuclear-Level Safeguards deccanchronicle.com",
-            "source": "deccanchronicle.com",
-            "published": "2026-10-04T09:11:58+00:00",
-            "angle": "An OpenAI employee just quit, demanding nuclear-level safeguards for advanced AI."
-          }
-        ],
-        "choose_deadline": "2026-10-04T18:40:36.100430+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1232,6 +1193,159 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+          "link": "https://github.com/Niko1221/Strata",
+          "summary": "",
+          "source": "github.com",
+          "published": "2026-10-04T12:51:53+00:00",
+          "buzz": "Hacker News 148 points",
+          "angle": "Run massive 125B AI models on a single consumer RTX 4090 at crazy speeds"
+        },
+        "draft": {
+          "title": "Check out Strata on GitHub",
+          "hook_text": "Explore Strata on GitHub.",
+          "beats": [
+            {
+              "line": "A new project called Strata is now available on GitHub.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "GitHub",
+              "domain": "github.com",
+              "headline": "Strata repository",
+              "url": "https://github.com/Niko1221/Strata",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "GitHub",
+                  "domain": "github.com"
+                }
+              ]
+            },
+            {
+              "line": "The repository was created by Niko1221.",
+              "visual": "clip",
+              "query": "developer coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You can view the code and project files directly on the platform.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Code lines on a computer screen in a dark room, vertical aspect ratio",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will you check out this repository for your next project?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "The Strata repository is now hosted on GitHub for developers to check out. Will you check out this repository for your next project?",
+          "hashtags": [
+            "github",
+            "opensource",
+            "programming",
+            "developer",
+            "coding",
+            "software",
+            "tech",
+            "repository",
+            "code",
+            "development"
+          ],
+          "sources": [
+            "https://github.com/Niko1221/Strata"
+          ],
+          "script": "A new project called Strata is now available on GitHub.\nThe repository was created by Niko1221.\nYou can view the code and project files directly on the platform.\nWill you check out this repository for your next project?",
+          "keywords": [
+            "developer coding on laptop",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [
+            "Code lines on a computer screen in a dark room, vertical aspect ratio"
+          ],
+          "evidence": [
+            {
+              "claim": "Explore Strata on GitHub.",
+              "url": "https://github.com/Niko1221/Strata"
+            },
+            {
+              "claim": "A new project called Strata is now available on GitHub.",
+              "url": "https://startupfortune.com/strata-lets-a-125-billion-parameter-model-run-on-a-gaming-gpu/"
+            },
+            {
+              "claim": "The repository was created by Niko1221.",
+              "url": "https://github.com/Niko1221/Strata"
+            },
+            {
+              "claim": "You can view the code and project files directly on the platform.",
+              "url": "https://github.com/Niko1221/Strata"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://github.com/Niko1221/Strata"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-04T22:11:19.434134+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1618,11 +1732,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-04T05:00:34.939867+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-10-04",
   "ig_count": {
     "day": "2026-10-04",
-    "at": "2026-10-04T22:00:33.153777+05:30",
+    "at": "2026-10-04T22:18:02.704470+05:30",
     "count": 6
   }
 }
