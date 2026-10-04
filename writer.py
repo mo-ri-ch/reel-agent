@@ -644,12 +644,20 @@ def drop_same_events(picks, covered):
 Already covered recently:
 {recent}
 
-Which NEW stories are about the same news event as something already covered (same announcement, same person
+Which NEW stories are about the SAME news event as something already covered (same announcement, same person
 leaving, same launch, same report, same lawsuit) — even if worded differently or from another outlet?
-Return ONLY JSON: {{"repeats": [<numbers of the new stories that are repeats>]}}""", temperature=0, json_mode=True,
+Only the very same event counts: two different stories about the same company or topic are NOT repeats.
+Return ONLY JSON: {{"repeats": [{{"new": <number>, "covered": "the exact already-covered title it repeats"}}]}}""", temperature=0, json_mode=True,
                              light=True))
         rep = res if isinstance(res, list) else res.get("repeats") or []
-        bad = {int(x) for x in rep if str(x).isdigit()}
+        import news as _news
+        bad = set()
+        for r in rep:  # trust it only when the two headlines also share at least 2 key words
+            if not isinstance(r, dict) or not str(r.get("new", "")).isdigit():
+                continue
+            i = int(r["new"])
+            if 0 < i <= len(picks) and len(_news.keywords(picks[i - 1]["title"]) & _news.keywords(str(r.get("covered", "")))) >= 2:
+                bad.add(i)
     except Exception as e:
         print(f"Same-event check skipped: {e}")
         return picks
