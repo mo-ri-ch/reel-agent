@@ -1101,12 +1101,13 @@ def cmd_poll():
 def drop_queued_repeats(s):
     """Once a day: a queued reel that turns out to repeat an already-posted story is removed (and replaced)."""
     today = st.now().date().isoformat()
-    if s.get("repeat_check_day") == today or not s["queue"]:
+    if s.get("repeat_check2_day") == today or not s["queue"]:
         return
-    s["repeat_check_day"] = today
+    s["repeat_check2_day"] = today
     queued = [{"title": q["title"], "summary": ""} for q in s["queue"]]
     others = [t for t in recent_titles(s) if t not in {q["title"] for q in s["queue"]}]
     keep = {p["title"] for p in writer.drop_same_events(queued, others)}
+    keep = {t for t in keep if not news.recent_match(t, others)}  # word check too (works without Gemini)
     gone = [q for q in s["queue"] if q["title"] not in keep]
     if gone:
         s["queue"] = [q for q in s["queue"] if q["title"] in keep]
