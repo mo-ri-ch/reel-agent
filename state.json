@@ -178,7 +178,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-04T09:10:45.844904+05:30",
+  "script_deadline": "2026-10-04T09:21:32.241225+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -585,171 +585,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "An OpenAI safety employee has quit and is sounding the alarm",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-          "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-03T14:31:56+00:00",
-          "angle": "An OpenAI safety employee just quit and is sounding the alarm in a major tell-all essay."
-        },
-        "draft": {
-          "title": "OpenAI safety employee quits and sounds alarm",
-          "hook_text": "An OpenAI safety writer just quit.",
-          "beats": [
-            {
-              "line": "An OpenAI safety writer just quit and is sounding the alarm.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "David Robinson",
-              "role": "Former Safety Report Writer, OpenAI",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "David Robinson wrote the safety reports for every major model release at OpenAI.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "An OpenAI safety employee has quit and is sounding the alarm",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He published a critical editorial in The Atlantic after resigning this week.",
-              "visual": "clip",
-              "query": "person reading article on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Why do you think safety insiders are walking away from major labs?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Conceptual minimalist portrait of a person looking at digital data streams, dark blue tones",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "David Robinson, who used to write safety reports for major OpenAI model releases, has resigned and spoken out in The Atlantic. Why are more insiders leaving AI labs to sound the alarm?",
-          "hashtags": [
-            "artificialintelligence",
-            "openai",
-            "techsafety",
-            "aiethics",
-            "davidrobinson",
-            "theatlantic",
-            "theverge",
-            "aipolicy",
-            "technews",
-            "futureoftech",
-            "machinelearning"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-          ],
-          "script": "An OpenAI safety writer just quit and is sounding the alarm.\nDavid Robinson wrote the safety reports for every major model release at OpenAI.\nHe published a critical editorial in The Atlantic after resigning this week.\nWhy do you think safety insiders are walking away from major labs?",
-          "keywords": [
-            "person reading article on laptop"
-          ],
-          "image_prompts": [
-            "Conceptual minimalist portrait of a person looking at digital data streams, dark blue tones"
-          ],
-          "evidence": [
-            {
-              "claim": "An OpenAI safety writer just quit.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-            },
-            {
-              "claim": "An OpenAI safety writer just quit and is sounding the alarm.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-            },
-            {
-              "claim": "David Robinson is a former safety report writer at OpenAI.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-            },
-            {
-              "claim": "David Robinson wrote the safety reports for every major model release at OpenAI.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-            },
-            {
-              "claim": "He published a critical editorial in The Atlantic after resigning this week.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Why do you think safety insiders are walking away …: The visual shows the initials card for David Robinson instead of the requested conceptual minimalist portrait.",
-            "The visual shows a city street with tall buildings instead of a person reading an article on a laptop.",
-            "The visual shows a person's initials card ('DR') instead of an illustration of a person looking at digital data streams."
-          ],
-          "credits": []
-        },
-        "video_file_id": "BAACAgUAAxkDAAIEh2rBM_-aFfZm9GV_AAHoiBhV-JMZIQACLiYAAlFrCVaTY49cGxRBvD0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIEh2rBM_-aFfZm9GV_AAHoiBhV-JMZIQACLiYAAlFrCVaTY49cGxRBvD0E",
-      "history_title": "An OpenAI safety employee has quit and is sounding the alarm"
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1124,6 +959,157 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AI Can Detect Hidden Signs of Aging in the 3D Architecture of DNA",
+          "link": "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/",
+          "summary": "AI Can Detect Hidden Signs of Aging in the 3D Architecture of DNA SciTechDaily",
+          "source": "SciTechDaily",
+          "published": "2026-10-04T01:39:42+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "AI Detects Hidden Signs of Aging in DNA",
+          "hook_text": "Your DNA architecture ages",
+          "beats": [
+            {
+              "line": "Your DNA three dimensional folding changes as you get older.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Cinematic vertical shot of glowing dna strands twisting and folding inside human cells, dark background, blue and purple lighting, macro detail",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Researchers discovered artificial intelligence can spot these tiny structural shifts.",
+              "visual": "clip",
+              "query": "scientist looking at computer screen in laboratory",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Scientists trained machine learning models on genomic architectural data.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "University of California San Diego",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The algorithm tracks biological aging alongside other standard biomarkers.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "SciTechDaily",
+              "domain": "scitechdaily.com",
+              "headline": "AI Can Detect Hidden Signs of Aging in the 3D Architecture of DNA",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "New research shows that artificial intelligence can read the three dimensional structure of DNA to find hidden signs of aging. This method works alongside standard epigenetic clocks to measure biological health. Would you want to know your true biological age?",
+          "hashtags": [
+            "artificialintelligence",
+            "dna",
+            "genetics",
+            "aging",
+            "biotech",
+            "scitech",
+            "science",
+            "longevity",
+            "research",
+            "healthtech",
+            "biology"
+          ],
+          "sources": [
+            "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/"
+          ],
+          "script": "Your DNA three dimensional folding changes as you get older.\nResearchers discovered artificial intelligence can spot these tiny structural shifts.\nScientists trained machine learning models on genomic architectural data.\nThe algorithm tracks biological aging alongside other standard biomarkers.",
+          "keywords": [
+            "scientist looking at computer screen in laboratory"
+          ],
+          "image_prompts": [
+            "Cinematic vertical shot of glowing dna strands twisting and folding inside human cells, dark background, blue and purple lighting, macro detail"
+          ],
+          "evidence": [
+            {
+              "claim": "Your DNA architecture ages",
+              "url": "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/"
+            },
+            {
+              "claim": "Your DNA three dimensional folding changes as you get older.",
+              "url": "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/"
+            },
+            {
+              "claim": "Researchers discovered artificial intelligence can spot these tiny structural shifts.",
+              "url": "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/"
+            },
+            {
+              "claim": "Scientists trained machine learning models on genomic architectural data.",
+              "url": "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/"
+            },
+            {
+              "claim": "The algorithm tracks biological aging alongside other standard biomarkers.",
+              "url": "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://scitechdaily.com/ai-can-detect-hidden-signs-of-aging-in-the-3d-architecture-of-dna/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-04T09:10:45.844904+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1460,8 +1446,8 @@
       "at": "2026-10-04T07:35:29.402040+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-04T07:35+05:30",
@@ -1485,7 +1471,7 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-04T05:00:34.939867+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-10-03",
   "ig_count": {
     "day": "2026-10-04",
