@@ -200,7 +200,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-05T06:35:59.261825+05:30",
+  "script_deadline": "2026-10-05T06:46:27.651363+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -626,53 +626,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
-            "link": "https://github.com/Niko1221/Strata",
-            "summary": "",
-            "source": "github.com",
-            "published": "2026-10-04T12:51:53+00:00",
-            "buzz": "Hacker News 148 points",
-            "angle": "Run massive 125B AI models on a single consumer RTX 4090 at crazy speeds"
-          },
-          {
-            "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
-            "link": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
-            "summary": "",
-            "source": "fortune.com",
-            "published": "2026-10-03T17:44:29+00:00",
-            "buzz": "Hacker News 234 points",
-            "angle": "Yann LeCun says he has zero concerns about AI wiping out humanity"
-          },
-          {
-            "title": "Show HN: AI search for every photo and every frame of video on macOS",
-            "link": "https://github.com/allenv0/SCM",
-            "summary": "",
-            "source": "github.com",
-            "published": "2026-10-04T09:24:52+00:00",
-            "buzz": "Hacker News 39 points",
-            "angle": "New open-source tool brings local AI search to every photo and video frame on macOS"
-          }
-        ],
-        "choose_deadline": "2026-10-04T21:10:35.406891+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1186,6 +1139,179 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
+          "link": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+          "summary": "AI slop seems to be overwhelming bug bounty programs.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-04T20:31:07+00:00",
+          "angle": "Google had to freeze its bug bounty program because AI-generated slop is completely overwhelming them."
+        },
+        "draft": {
+          "title": "Google Halts Bug Bounty",
+          "hook_text": "AI flooded Google with bugs.",
+          "beats": [
+            {
+              "line": "Google just froze its open source bug bounty program.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google Open Source",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://opensource.google/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "The company faced a massive wave of low quality AI generated submissions.",
+              "visual": "clip",
+              "query": "person typing on laptop computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Automated tools are now overwhelming security teams with noise instead of real threats.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Abstract digital data stream overloading a glowing server rack in a dark data center",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "TechCrunch reported that human reviewers could not keep up with the volume.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Google froze its open source bug bounty program",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "How do we stop AI from breaking the systems meant to protect us?",
+              "visual": "clip",
+              "query": "frustrated developer looking at monitor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "Google had to pause its open source bug bounty program after being overwhelmed by low quality AI generated submissions. How can platforms filter out automated noise to find real security threats?",
+          "hashtags": [
+            "google",
+            "cybersecurity",
+            "artificialintelligence",
+            "technews",
+            "bugbounty",
+            "softwaresecurity",
+            "techindustry",
+            "automation",
+            "opensource",
+            "infosec"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+          ],
+          "script": "Google just froze its open source bug bounty program.\nThe company faced a massive wave of low quality AI generated submissions.\nAutomated tools are now overwhelming security teams with noise instead of real threats.\nTechCrunch reported that human reviewers could not keep up with the volume.\nHow do we stop AI from breaking the systems meant to protect us?",
+          "keywords": [
+            "person typing on laptop computer",
+            "frustrated developer looking at monitor"
+          ],
+          "image_prompts": [
+            "Abstract digital data stream overloading a glowing server rack in a dark data center"
+          ],
+          "evidence": [
+            {
+              "claim": "AI flooded Google with bugs.",
+              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1"
+            },
+            {
+              "claim": "Google froze its open source bug bounty program.",
+              "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+            },
+            {
+              "claim": "The company faced a massive wave of low quality AI generated submissions.",
+              "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+            },
+            {
+              "claim": "Automated tools are now overwhelming security teams with noise instead of real threats.",
+              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1"
+            },
+            {
+              "claim": "TechCrunch reported that human reviewers could not keep up with the volume.",
+              "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-05T06:35:59.261825+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1552,8 +1678,8 @@
       "at": "2026-10-04T23:05:20.447195+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-05T05:00+05:30",
@@ -1577,7 +1703,7 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-09-28-4",
   "last_auto_offer": "2026-10-05T05:00:33.669945+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-04",
   "ig_count": {
     "day": "2026-10-05",
