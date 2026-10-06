@@ -569,7 +569,8 @@ def posted_today(s):
         if n is not None:
             cache = {"day": today, "at": now.isoformat(), "count": n}
             s["ig_count"] = cache
-    if cache.get("day") == today and "count" in cache:
+    if (cache.get("day") == today and "count" in cache
+            and now - datetime.fromisoformat(cache["at"]) < timedelta(minutes=30)):  # never trust a stale count
         # reels posted since the last Instagram check are added on top
         since = datetime.fromisoformat(cache["at"])
         recent = sum(1 for p in mine if datetime.fromisoformat(p["at"]) > since)
@@ -1077,10 +1078,13 @@ def cmd_poll():
             except Exception as e:
                 tg.send(f"⚠️ Autopilot couldn't schedule the reel: {e}")
 
-    if not render and s.get("autopilot"):
+    if s.get("autopilot"):
         try:
             drop_queued_repeats(s)
-            render = keep_schedule(s) or render
+            if not render:
+                render = keep_schedule(s) or render
+            else:
+                keep_schedule_alarm(s)
         except Exception as e:
             traceback.print_exc()
             print(f"Schedule keeper: {e}")
@@ -1113,6 +1117,17 @@ def drop_queued_repeats(s):
         s["queue"] = [q for q in s["queue"] if q["title"] in keep]
         tg.send("🧹 Removed from the schedule because it repeats a story we already covered:\n• " +
                 "\n• ".join(q["title"] for q in gone) + "\nA new reel will be made for that slot.")
+
+
+def keep_schedule_alarm(s):
+    """While a reel is being retried: if a post time has already been missed for over an hour, tell the user once."""
+    now = st.now()
+    if behind_today(s) and s.get("behind_since"):
+        late = (now - datetime.fromisoformat(s["behind_since"])).total_seconds() / 60
+        if late > 60 and s.get("late_alarm_day") != now.date().isoformat():
+            s["late_alarm_day"] = now.date().isoformat()
+            err = (s.get("last_render_error") or {}).get("error", "")
+            tg.send("🚨 Today's reels are behind schedule. " + (f"Last error: {err}" if err else ""))
 
 
 def keep_schedule(s):
@@ -1316,11 +1331,24 @@ def cmd_render():
         whatsapp.alert("🎬 Your reel is ready for approval! Open Telegram to watch the preview and reply 'post'.")
     except Exception as e:
         traceback.print_exc()
-        s["stage"] = "awaiting_voice"
-        s["script_deadline"] = (st.now() + timedelta(minutes=5)).isoformat() if s.get("autopilot") else None
-        tg.send(f"⚠️ Couldn't make the reel: {e}\n" + ("Autopilot will try again in a few minutes." if s.get("autopilot")
-                else "Reply \"ok\" to try the AI voice again, or send a voice note."))
-        whatsapp.alert("⚠️ Your reel couldn't be made. Check Telegram and send the voice note again.")
+        title = (s.get("topic") or {}).get("title", "")
+        fails = s["render_fails"] = (s.get("render_fails", 0) + 1) if s.get("render_fail_topic") == title else 1
+        s["render_fail_topic"] = title
+        s["last_render_error"] = {"at": st.now().isoformat(), "topic": title[:80],
+                                  "error": f"{type(e).__name__}: {e}"[:400],
+                                  "trace": traceback.format_exc()[-1500:]}
+        if s.get("autopilot") and fails >= 2:
+            # this reel keeps failing: drop it and move on, so the day's schedule isn't blocked
+            tg.send(f"⚠️ Couldn't make “{title[:80]}” twice ({e}). Dropping it and moving on to another story.")
+            s["tried"] = ((s.get("tried") or []) + [title])[-60:]
+            s["render_fails"] = 0
+            if not resume_paused(s):
+                reset_reel(s)
+        else:
+            s["stage"] = "awaiting_voice"
+            s["script_deadline"] = (st.now() + timedelta(minutes=5)).isoformat() if s.get("autopilot") else None
+            tg.send(f"⚠️ Couldn't make the reel: {e}\n" + ("Autopilot will try once more in a few minutes."
+                    if s.get("autopilot") else "Reply \"ok\" to try the AI voice again, or send a voice note."))
     st.save(s)
 
 
