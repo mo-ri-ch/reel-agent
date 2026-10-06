@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -161,16 +161,24 @@
     "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "OpenAI notes that simple editing can make these ma…: contains garbled text like '1 TEAM COSTARTA'",
+      "The image shows a humanoid robot head instead of the requested illustration of abstract digital code fading on a dark sc"
+    ],
+    "credits": [
+      "OpenAI ChatGPT: chatgpt.com"
     ]
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIG92rEu9aELKvvtpf5NbyapBQRMhgkAALfKAACP0MpVml4bW5XmRXXPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-06T14:36:31.270643+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-06T15:28:59.530501+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-06",
@@ -630,123 +638,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
-          "link": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
-          "summary": "",
-          "source": "vals.ai",
-          "published": "2026-10-05T21:00:21+00:00",
-          "buzz": "Hacker News 264 points",
-          "angle": "AI agents just discovered two new room-temperature magnetic semiconductor candidates, making a major real-world scientific breakthrough."
-        },
-        "draft": {
-          "title": "Opus 5.5 Agents Discover New Material Candidates",
-          "hook_text": "Opus 5.5 found two new candidates.",
-          "beats": [
-            {
-              "line": "Opus 5.5 agents discovered two room-temperature magnetic semiconductor candidates.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "vals.ai",
-              "domain": "vals.ai",
-              "headline": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "vals.ai",
-                  "domain": "vals.ai"
-                }
-              ]
-            },
-            {
-              "line": "The discovery was shared on vals point ai.",
-              "visual": "clip",
-              "query": "computer screen showing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Opus 5.5 agents have identified two room-temperature magnetic semiconductor candidates according to recent findings. What impact will AI have on materials science?",
-          "hashtags": [
-            "artificialintelligence",
-            "materials",
-            "physics",
-            "tech",
-            "semiconductors",
-            "science",
-            "research",
-            "machinelearning",
-            "computing",
-            "innovation"
-          ],
-          "sources": [
-            "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors"
-          ],
-          "script": "Opus 5.5 agents discovered two room-temperature magnetic semiconductor candidates.\nThe discovery was shared on vals point ai.",
-          "keywords": [
-            "computer screen showing code"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Opus 5.5 found two new candidates.",
-              "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors"
-            },
-            {
-              "claim": "Opus 5.5 agents discovered two room-temperature magnetic semiconductor candidates.",
-              "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors"
-            },
-            {
-              "claim": "The discovery was shared on vals point ai.",
-              "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": []
-        },
-        "video_file_id": "BAACAgUAAxkDAAIG3mrEhnwdU40YXsH66f-4Ok7ZOm53AAKCJwACP0MpVhSvZs6Vl2LxPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIG3mrEhnwdU40YXsH66f-4Ok7ZOm53AAKCJwACP0MpVhSvZs6Vl2LxPQQ",
-      "history_title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates"
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1176,6 +1067,183 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
+          "link": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+          "summary": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks harder to detect, it says.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-05T20:36:48+00:00",
+          "angle": "OpenAI is now forced to put invisible watermarks on ChatGPT text in the EU to comply with strict new laws."
+        },
+        "draft": {
+          "title": "OpenAI adds text watermarks in the EU",
+          "hook_text": "ChatGPT text is getting watermarked.",
+          "beats": [
+            {
+              "line": "OpenAI is adding watermarks to ChatGPT and Codex text in the European Union.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI ChatGPT",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com/chatgpt/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                },
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "This update helps the company comply with the European Union Artificial Intelligence Act.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "OpenAI will start watermarking ChatGPTs text in the EU",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Invisible marks are embedded directly into the generated output.",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "OpenAI notes that simple editing can make these marks harder to detect.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Abstract digital code fading on a dark screen",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you notice if your homework or emails were written by artificial intelligence?",
+              "visual": "clip",
+              "query": "student reading computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "OpenAI is rolling out text watermarks for ChatGPT and Codex users in the European Union to meet regulatory requirements. Even with invisible markers, manual edits can make detection tougher. Would you notice if your emails were AI-written?",
+          "hashtags": [
+            "OpenAI",
+            "ChatGPT",
+            "ArtificialIntelligence",
+            "TechNews",
+            "EUAIAct",
+            "MachineLearning",
+            "TechTrends",
+            "FutureOfTech",
+            "AIEthics",
+            "Software"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+          ],
+          "script": "OpenAI is adding watermarks to ChatGPT and Codex text in the European Union.\nThis update helps the company comply with the European Union Artificial Intelligence Act.\nInvisible marks are embedded directly into the generated output.\nOpenAI notes that simple editing can make these marks harder to detect.\nWould you notice if your homework or emails were written by artificial intelligence?",
+          "keywords": [
+            "person typing on laptop",
+            "student reading computer screen"
+          ],
+          "image_prompts": [
+            "Abstract digital code fading on a dark screen"
+          ],
+          "evidence": [
+            {
+              "claim": "ChatGPT text is getting watermarked.",
+              "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+            },
+            {
+              "claim": "OpenAI is adding watermarks to ChatGPT and Codex text in the European Union.",
+              "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+            },
+            {
+              "claim": "This update helps the company comply with the European Union Artificial Intelligence Act.",
+              "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+            },
+            {
+              "claim": "Invisible marks are embedded directly into the generated output.",
+              "url": "https://openai.com/index/eu-text-provenance/"
+            },
+            {
+              "claim": "OpenAI notes that simple editing can make these marks harder to detect.",
+              "url": "https://openai.com/index/eu-text-provenance/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-06T14:36:31.270643+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1567,8 +1635,8 @@
       "at": "2026-10-06T13:00:33.184408+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-06T13:00+05:30",
@@ -1592,11 +1660,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-10-06-0",
   "last_auto_offer": "2026-10-06T11:05:26.575997+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-05",
   "ig_count": {
     "day": "2026-10-06",
-    "at": "2026-10-06T14:30:42.280288+05:30",
+    "at": "2026-10-06T14:43:59.530640+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
