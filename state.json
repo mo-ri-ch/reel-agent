@@ -1,6 +1,6 @@
 {
   "offset": 153809604,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -113,16 +113,23 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Would you use this feature to buy products?…: the smartphone screen is completely blank and white",
+      "The visual shows a person wearing a futuristic helmet/cyborg gear instead of a person browsing a shopping app.",
+      "The visual shows a futuristic robot head instead of a person looking at a smartphone screen."
+    ],
+    "credits": []
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIHBGrE2zd27Y5LF1LDi38Fo4BfofhrAAJ_KQACP0MpVugTWz0DuFgaPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-06T16:52:14.624299+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-06T17:42:52.269715+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-06",
@@ -574,181 +581,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Gemini Call for Me might tell your mom you’re running late",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
-          "summary": "Google may be expanding its \"Call for Me\" AI feature beyond business calls so you can use it to send messages to friends and family. Android Authority reports finding a \"Gemini Calling\" introductory screen in an APK teardown with examples that include \"Call Mom and tell her I will be 15 minutes late\" and \"Call […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-05T23:09:55+00:00",
-          "angle": "Google's Gemini might soon text your mom and friends for you when you're busy."
-        },
-        "draft": {
-          "title": "Google Gemini Call for Me Feature Expands",
-          "hook_text": "Will Gemini call your mom?",
-          "beats": [
-            {
-              "line": "Google is expanding its Call for Me feature beyond business calls.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google Gemini",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Android Authority found a Gemini Calling screen in a recent app teardown.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Gemini Call for Me might tell your mom you are running late",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Soon you can tell your phone to call Mom and report a delay.",
-              "visual": "clip",
-              "query": "person talking on smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The leaked examples show the AI handling personal updates for you.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Futuristic smartphone UI showing an automated voice call assistant with clean modern design",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let an assistant talk to your family for you?",
-              "visual": "clip",
-              "query": "person looking at phone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "Google might soon let Gemini handle your personal phone calls, including telling your family you are running late. Would you trust an AI to make that call for you?",
-          "hashtags": [
-            "Google",
-            "Gemini",
-            "ArtificialIntelligence",
-            "TechNews",
-            "Android",
-            "Smartphones",
-            "AI",
-            "FutureTech",
-            "GoogleAI",
-            "TechUpdates"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors"
-          ],
-          "script": "Google is expanding its Call for Me feature beyond business calls.\nAndroid Authority found a Gemini Calling screen in a recent app teardown.\nSoon you can tell your phone to call Mom and report a delay.\nThe leaked examples show the AI handling personal updates for you.\nWould you let an assistant talk to your family for you?",
-          "keywords": [
-            "person talking on smartphone",
-            "person looking at phone screen"
-          ],
-          "image_prompts": [
-            "Futuristic smartphone UI showing an automated voice call assistant with clean modern design"
-          ],
-          "evidence": [
-            {
-              "claim": "Gemini will call your mom",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors"
-            },
-            {
-              "claim": "Google is expanding its Call for Me feature beyond business calls.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors"
-            },
-            {
-              "claim": "Android Authority found a Gemini Calling screen in a recent app teardown.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors"
-            },
-            {
-              "claim": "Soon you can tell your phone to call Mom and report a delay.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors"
-            },
-            {
-              "claim": "The leaked examples show the AI handling personal updates for you.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "Google Gemini: Google (Public domain), via Wikimedia Commons"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIG6mrEoK0XoVjyPhOl6hGQ-H9Kwj2OAAL5JwACP0MpVj7iV4snFMRnPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIG6mrEoK0XoVjyPhOl6hGQ-H9Kwj2OAAL5JwACP0MpVj7iV4snFMRnPQQ",
-      "history_title": "Gemini Call for Me might tell your mom you’re running late"
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1191,6 +1023,135 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "TikTok rolls out an AI shopping assistant and one-click checkout",
+          "link": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
+          "summary": "TikTok describes its new Shopping Assistant as a conversational AI agent designed to help users discover and purchase products.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-05T18:29:00+00:00",
+          "angle": "TikTok just dropped an AI shopping assistant with one-click checkout—shopping will never be the same."
+        },
+        "draft": {
+          "title": "TikTok Rolls Out AI Shopping Assistant",
+          "hook_text": "TikTok launched an AI shopping assistant.",
+          "beats": [
+            {
+              "line": "TikTok rolled out a new Shopping Assistant with one-click checkout.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "TikTok Shopping Assistant",
+              "outlet": "",
+              "domain": "tiktok.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "TikTok",
+                  "domain": "tiktok.com"
+                }
+              ]
+            },
+            {
+              "line": "The conversational agent helps users discover and purchase products.",
+              "visual": "clip",
+              "query": "person browsing shopping app",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you use this feature to buy products?",
+              "visual": "clip",
+              "query": "person looking at smartphone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "TikTok introduced a new conversational shopping assistant designed to help users discover and purchase products. Would you use this feature to buy items on the app?",
+          "hashtags": [
+            "TikTok",
+            "AIShopping",
+            "TechNews",
+            "Ecommerce",
+            "ArtificialIntelligence",
+            "ShoppingAssistant",
+            "TechTrends",
+            "DigitalShopping",
+            "Retail",
+            "TechCrunch"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/"
+          ],
+          "script": "TikTok rolled out a new Shopping Assistant with one-click checkout.\nThe conversational agent helps users discover and purchase products.\nWould you use this feature to buy products?",
+          "keywords": [
+            "person browsing shopping app",
+            "person looking at smartphone screen"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "TikTok launched an AI shopping assistant.",
+              "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/"
+            },
+            {
+              "claim": "TikTok rolled out a new Shopping Assistant with one-click checkout.",
+              "url": "https://www.unite.ai/tiktok-unveils-buy-direct-checkout-and-ai-shopping-assistant/"
+            },
+            {
+              "claim": "The conversational agent helps users discover and purchase products.",
+              "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-06T16:52:14.624299+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1587,8 +1548,8 @@
       "at": "2026-10-06T15:15:29.086152+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-06T15:15+05:30",
@@ -1612,11 +1573,11 @@
   "guarantee_since": "2026-09-27T08:48:41.919332+05:30",
   "digest_for": "behind-2026-10-06-0",
   "last_auto_offer": "2026-10-06T11:05:26.575997+05:30",
-  "last_engine": "microsoft",
+  "last_engine": "google",
   "report_day": "2026-10-05",
   "ig_count": {
     "day": "2026-10-06",
-    "at": "2026-10-06T16:45:25.541010+05:30",
+    "at": "2026-10-06T16:57:52.269875+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
