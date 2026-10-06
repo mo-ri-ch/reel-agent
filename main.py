@@ -1250,8 +1250,12 @@ def cmd_render():
             voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender, want)
             s["last_engine"] = tts.LAST_ENGINE or want
             # listen to the voice-over before using it: it must say the script and nothing else
+            def heard_words(path):
+                # Microsoft reports exactly what it spoke; otherwise transcribe WITHOUT a hint (a hint makes the
+                # recogniser echo script phrases into the silence at the end)
+                return tts.LAST_WORDS if tts.LAST_ENGINE == "microsoft" and tts.LAST_WORDS else video.transcribe(path)
             try:
-                ok, why = tts.speech_matches(video.transcribe(voice, hint=s["draft"]["script"]), s["draft"]["script"])
+                ok, why = tts.speech_matches(heard_words(voice), s["draft"]["script"])
             except Exception as e:
                 ok, why = True, ""
                 print(f"Voice check skipped: {e}")
@@ -1260,7 +1264,7 @@ def cmd_render():
                 tg.send(f"🎙 The {engine.split(',')[0]} voice-over didn't match the script ({why}), so I'm remaking it.")
                 other = "microsoft" if tts.LAST_ENGINE == "google" else "google"
                 voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice2"), gender, other)
-                ok2, why2 = tts.speech_matches(video.transcribe(voice, hint=s["draft"]["script"]), s["draft"]["script"])
+                ok2, why2 = tts.speech_matches(heard_words(voice), s["draft"]["script"])
                 if not ok2:
                     raise RuntimeError(f"the voice-over didn't match the script twice ({why2})")
             s["last_gender"] = gender

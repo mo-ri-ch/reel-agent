@@ -172,24 +172,38 @@ def synthesize(text, out_base, gender="male", engine="microsoft"):
 
 
 def speech_matches(heard_words, script, max_extra_chars=14):
-    """True if the voice-over says the script and nothing else (no extra words before/after, nothing skipped).
-    Compared letter by letter, so "Open AI" vs "OpenAI" or "GPT 6" vs "GPT-6" don't count as differences."""
+    """True if the voice-over says the script and nothing else.
+    Extra words heard before/after the script only count when they are NOT script words: speech recognition sometimes
+    'hears' an echo of script phrases in the silence at the end, which isn't a real problem; an instruction read aloud
+    ("read this like a news presenter") is made of words that aren't in the script, and is caught."""
     import difflib
     norm = lambda t: re.sub(r"[^a-z0-9]", "", str(t).lower())
-    heard = "".join(norm(w["text"] if isinstance(w, dict) else w) for w in heard_words)
+    words = [norm(w["text"] if isinstance(w, dict) else w) for w in heard_words]
+    words = [w for w in words if w]
     want = norm(_speakable(script))
-    if not heard or not want:
+    script_words = {norm(w) for w in _speakable(script).split()} - {""}
+    if not words or not want:
         return False, "no speech found"
+    heard = "".join(words)
+    starts, pos = [], 0
+    for w in words:
+        starts.append(pos)
+        pos += len(w)
     sm = difflib.SequenceMatcher(None, heard, want, autojunk=False)
     blocks = [b for b in sm.get_matching_blocks() if b.size >= 3]
     if not blocks:
         return False, "the audio doesn't match the script"
-    lead, trail = blocks[0].a, len(heard) - (blocks[-1].a + blocks[-1].size)
     covered = sum(b.size for b in blocks) / len(want)
-    if lead > max_extra_chars:
-        return False, f"extra words at the start (“{heard[:40]}…”)"
-    if trail > max_extra_chars:
-        return False, f"extra words at the end (“…{heard[-40:]}”)"
+    first, last = blocks[0].a, blocks[-1].a + blocks[-1].size
+    lead = [w for w, p in zip(words, starts) if p + len(w) <= first]
+    trail = [w for w, p in zip(words, starts) if p >= last]
+
+    def foreign(extra):  # extra words that aren't from the script at all
+        return [w for w in extra if w not in script_words and not any(w in sw or sw in w for sw in script_words if len(sw) > 3)]
+    if len("".join(foreign(lead))) > max_extra_chars:
+        return False, f"extra words at the start: “{' '.join(foreign(lead))[:60]}”"
+    if len("".join(foreign(trail))) > max_extra_chars:
+        return False, f"extra words at the end: “{' '.join(foreign(trail))[:60]}”"
     if covered < 0.85:
         return False, f"parts of the script are missing ({int(covered * 100)}% spoken)"
     return True, ""
