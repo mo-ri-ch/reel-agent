@@ -89,8 +89,11 @@ def pick_top(headlines, history, count=3):
                         f" — {h['summary'][:200]}" for i, h in enumerate(headlines, 1))
     recent = "\n- ".join([""] + list(dict.fromkeys(history))[-40:]) or "none"
     prompt = f"""You run an Instagram Reels page about {NICHE} for a general audience.
-From the headlines below, pick the {count} stories that would make the most engaging 40-second reels today:
+From the headlines below, pick the {count} stories that would make the most engaging 20-second reels today:
 big launches, surprising capabilities, tools people can actually use, major industry moves.
+SHAREABILITY decides reach on Instagram (DM sends count far more than likes): prefer stories a viewer would
+send to a friend: surprising or weird, useful right now, affects their job, money or privacy, or sparks debate.
+A dry corporate update (partnership, minor feature, earnings) loses to a surprising story from a known name.
 Favour BREAKING stories that are clearly blowing up (high Hacker News points / Reddit upvotes in brackets) — but a Reddit
 post is only a lead: prefer stories that are also confirmed by a news site or an official announcement.
 The audience is GLOBAL (US, Europe, India): favour stories people everywhere care about (big AI companies, new
@@ -125,10 +128,10 @@ Return ONLY JSON: {{"picks": [{{"n": <headline number>, "angle": "<one short lin
     return [{**h, "angle": ""} for h in headlines[:count]]
 
 
-RULES = """Write a 25-40 second Instagram Reel about AI, read aloud by a voice-over.
+RULES = """Write an 18-25 second Instagram Reel about AI, read aloud by a voice-over.
 
 SCRIPT
-- 70 to 100 words. Conversational, like explaining to a smart friend. Short punchy sentences (max ~15 words), contractions, one idea per sentence.
+- 45 to 65 words (short reels get watched to the end, and completion drives reach). Conversational, like explaining to a smart friend. Short punchy sentences (max ~15 words), contractions, one idea per sentence.
 - Line 1 is the HOOK: 9 words or fewer, the big name or number first. Viewers decide in under 2 seconds, so make it
   create curiosity or stakes, not just state the news. Use ONE of: a surprising fact or number, a bold (true) claim,
   "you" framing about the viewer's life, or a question they can't ignore.
@@ -146,12 +149,14 @@ SCRIPT
   "a team" or "an engineer": say who — e.g. not "a developer from Kerala" but "Kochi developer <full name>".
   Every named person must get a "person" beat (their name + role) so their photo is shown. If a detail can't be verified, leave it
   out rather than inventing it.
-- End with one short question to spark comments. Do NOT add a "follow us" line or mention any @handle.
+- Keep one surprising detail for the second-to-last line so viewers stay to the end.
+- End with one short, specific question viewers can answer in a word or two ("Would you let it drive your car?"),
+  never a generic "What do you think?". Do NOT add a "follow us" line or mention any @handle.
 - Banned words: game-changer, revolutionize, revolutionary, cutting-edge, unleash, delve, landscape, buckle up,
   "the future is here", "in today's world", "stay tuned", "mind-blowing".
 - No emojis, hashtags, stage directions or brackets in the lines. Write numbers the way they're said ("ten times", "two billion").
 
-VISUALS — split the script into 5 to 8 beats (one or two sentences each). Every beat gets ONE visual.
+VISUALS — split the script into 5 to 7 beats (one or two sentences each). Every beat gets ONE visual.
 Prefer REAL and SPECIFIC visuals over generic ones:
 - a line about a named PRODUCT, APP, AI MODEL, DEVICE or COMPANY ANNOUNCEMENT → "official" (the real product images);
 - a line that names or quotes a PERSON ("Sam Altman says…", "Lovable co-founder Fabian Hedin…") → ALWAYS "person";

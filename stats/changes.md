@@ -14,3 +14,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   cuts, shot lengths, sound start, loudness, words/min) so Claude can audit real output; (b) when a beat reuses
   the same photo, the repeat is a punch-in crop (new framing) instead of the same frame. Why: audit of a real reel
   found a 7.8 s static shot. Target: avg watch time (base 3.5 s), longest shot ≤ 3 s in review packs.
+- 2026-10-07 · Virality research (Mosseri: watch time, sends, likes are the top signals; completion drives reach;
+  under ~30 s best for non-followers) · (a) scripts 45-65 words (~20 s, was 70-100 / 25-40 s), surprise kept for
+  the end, closing question must be specific; (b) story picks favour "would you send this to a friend?" stories.
+  Why: avg watch 3.5 s of ~30 s, 1 share in 42 reels. Targets: avg watch time and watch % (base 3.5 s), shares
+  per reel (base 0.02), views/reel (base 47).
