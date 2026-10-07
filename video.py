@@ -1053,7 +1053,7 @@ def beat_times(beats, words, total):
 
 
 LAST_SUMMARY = ""
-STYLE = (os.environ.get("REEL_STYLE") or "classic").lower()   # "studio" = clean studio look (studio.py)
+STYLE = (os.environ.get("REEL_STYLE") or "studio").lower()   # "studio" = clean studio look (studio.py)
 STUDIO_INFO = {}  # shot file → what it shows (kind, raw picture, name…), so the studio style can redraw it
 
 
@@ -1440,6 +1440,25 @@ def check_frames(out):
     return frames
 
 
+def _studio_track(beats, times, plan, draft, label, hook_img, hook_len, total, words, tmp):
+    """The studio look: video track + caption strip. Returns (concat list, cuts, captions .mov)."""
+    import studio
+    date = label.split(" · ")[-1]
+    for info in STUDIO_INFO.values():  # logos for the logo and source cards
+        if info["kind"] == "logo":
+            info["logo"] = brand_logo(info["name"].split()[0], info.get("domain", "")) or \
+                (brand_logo(info["name"], info.get("domain", "")) if " " in info["name"] else None)
+        elif info["kind"] == "source":
+            info["logo"] = brand_logo(info.get("outlet", ""), info.get("domain", "")) if info.get("outlet") else None
+            info["date"] = date
+    listfile, cuts, theme_at = studio.build_track(
+        beats, times, plan, (draft.get("hook_text") or draft.get("title", ""), label, hook_img), hook_len, total, tmp)
+    names = [b.get(k) for b in beats for k in ("name", "entity", "outlet") if b.get(k)]
+    names += [br.get("name") for b in beats for br in (b.get("brands") or []) if isinstance(br, dict)]
+    captions = studio.caption_track(os.path.join(tmp, "captions.mov"), words, total, hook_len, theme_at, names)
+    return listfile, cuts, captions
+
+
 def render(voice_path, draft, topic, user_image_path=None, words=None, user_video_path=None, exact_words=None,
            safe_beats=()):
     """exact_words: word timings reported by the AI voice itself (most accurate)."""
@@ -1522,22 +1541,13 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     studio_look = STYLE == "studio" and not opening
     captions_mov = None
     if studio_look:
-        import studio
-        date = label.split(" · ")[-1]
-        for info in STUDIO_INFO.values():  # logos for the logo and source cards
-            if info["kind"] == "logo":
-                info["logo"] = brand_logo(info["name"].split()[0], info.get("domain", "")) or \
-                    (brand_logo(info["name"], info.get("domain", "")) if " " in info["name"] else None)
-            elif info["kind"] == "source":
-                info["logo"] = brand_logo(info.get("outlet", ""), info.get("domain", "")) if info.get("outlet") else None
-                info["date"] = date
-        listfile, cuts, theme_at = studio.build_track(
-            beats, times, plan, (draft.get("hook_text") or draft.get("title", ""), label, hook_img), hook_len, total, tmp)
-        names = [b.get(k) for b in beats for k in ("name", "entity", "outlet") if b.get(k)]
-        names += [br.get("name") for b in beats for br in (b.get("brands") or []) if isinstance(br, dict)]
-        captions_mov = studio.caption_track(os.path.join(tmp, "captions.mov"), words, total, hook_len,
-                                            theme_at, names)
-    else:
+        try:
+            listfile, cuts, captions_mov = _studio_track(beats, times, plan, draft, label, hook_img, hook_len, total,
+                                                         words, tmp)
+        except Exception as e:  # never lose a reel to the new look: fall back to the classic style
+            print(f"Studio style failed ({e}); using the classic style")
+            studio_look, captions_mov = False, None
+    if not studio_look:
         write_ass(words, total, ass, hook_until=hook_len * 0.85)
         hook_anim = None
         if not opening:

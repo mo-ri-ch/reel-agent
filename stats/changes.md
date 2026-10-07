@@ -31,3 +31,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   time and followers vs AI-voice reels (compare by meta.engine = "fish").
 - 2026-10-07 · Fish library voices as backup (/fishvoice <link>, owner-picked): used when the owner's voice is off
   or a take fails the voice check; credits out → regular voices. Compare by meta.voice.
+- 2026-10-07 · Studio style on by default (owner approved the sample): clean dark/light studio scenes, pictures as
+  floating cards, captions at the top with key-word highlight, motion on every shot, article-style source card.
+  Falls back to the classic style automatically if a studio render fails. Inspired by a hand-animated explainer
+  reel the owner shared. Target: avg watch time (base 3.5 s), shares, followers.

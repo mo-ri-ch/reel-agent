@@ -31,7 +31,7 @@ through a Telegram bot and reads Claude's messages there.
 - Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
 - Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
 - Voice: Fish Audio library voices Paula & Ethan (owner's choice, 2026-10-07; own clone saved but off — /myvoice on). Fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
-- Brand blue (#7B9AF8), clean & minimal captions, "Source · date" label, @gradientai.news handle.
+- Brand blue (#7B9AF8), "Source · date" label, @gradientai.news handle. Look: studio style (studio.py) — clean dark/light scenes, floating picture cards, top captions with key-word highlight box (owner approved 2026-10-07).
 
 ## Daily health check (every day)
 1. `gh run list -R mo-ri-ch/reel-agent -L 100`: any failures in the last 24 h? Which step (`gh run view --json jobs`)?
