@@ -182,6 +182,8 @@ Meta software, not a horizon; "Gemini" is a Google AI, not a star sign; "Apple" 
 - "stat": a big number on screen, ONLY for a number stated in the news story or your search results (at most 2).
   Never invent, round up or estimate a number. If unsure, use "clip" or "image" instead. "big" = "600M", "small" = "weekly users".
 Mix the types; don't use the same type more than twice in a row.
+For every beat, also give "tag": a 2-4 word on-screen phrase with that line's key fact, in title words, true to the
+line ("$600M a year", "Grants for faculty", "Banned in 3 states"). It is shown big when no picture fits.
 For every beat, list in "brands" the companies or AI products NAMED in that line (e.g. OpenAI, Google, Meta, Nvidia,
 ChatGPT, Gemini, Claude), with their main website domain. Use [] when none are named. Never add brands that aren't said.
 
@@ -227,7 +229,7 @@ def normalize_draft(draft, topic):
                       "big": str(b.get("big") or "")[:10], "small": str(b.get("small") or "")[:40],
                       "entity": str(b.get("entity") or "")[:80], "outlet": str(b.get("outlet") or "")[:60],
                       "domain": str(b.get("domain") or "")[:60], "headline": str(b.get("headline") or "")[:120],
-                      "url": str(b.get("url") or "")[:300],
+                      "url": str(b.get("url") or "")[:300], "tag": str(b.get("tag") or "")[:40],
                       "name": str(b.get("name") or "")[:60], "role": str(b.get("role") or "")[:60],
                       "x": re.sub(r"[^A-Za-z0-9_]", "", str(b.get("x") or ""))[:30],
                       "brands": [{"name": str(x.get("name", ""))[:30], "domain": str(x.get("domain", ""))[:60]}

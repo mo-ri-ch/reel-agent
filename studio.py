@@ -372,6 +372,55 @@ def logo_shot(out, frames, name, domain, theme, logo=None):
     return write_frames(out, frames, draw)
 
 
+def statement_shot(out, frames, tag, theme):
+    """The line's key fact in big type, words popping in one by one, the key word in a highlight box."""
+    t_ = THEMES[theme]
+    bg = background(theme)
+    probe = ImageDraw.Draw(bg)
+    size = 150
+    while size > 80 and len(V.wrap(probe, tag, V.font(size), W - 160)) > 2:
+        size -= 8
+    fnt = V.font(size)
+    lines = V.wrap(probe, tag, fnt, W - 160)[:3]
+    words = tag.split()
+    key = key_word_index(words)
+    key_word = words[key] if key is not None else None
+    y0 = CARD_CY - len(lines) * size * 0.62
+
+    def draw(k):
+        tt = k / FPS + 0.05
+        frame = bg.copy()
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(layer)
+        y, n, boxed = y0, 0, False
+        for line in lines:
+            lw = d.textlength(line, font=fnt) + (24 if key_word and key_word in line.split() else 0)
+            x = W / 2 - lw / 2
+            for word in line.split():
+                q = ease((tt - 0.06 - n * 0.09) / 0.3)
+                ww = d.textlength(word, font=fnt)
+                if q > 0:
+                    dy = 40 * (1 - q)
+                    if not boxed and word == key_word and q > 0.5:
+                        boxed = True
+                        select_box(d, (x - 8, y + dy - 6, x + ww + 16, y + dy + size * 1.08), theme)
+                    d.text((x + (4 if word == key_word else 0), y + dy), word, font=fnt,
+                           fill=(*(ACCENT if word == key_word else t_["fg"]), int(255 * q)))
+                x += ww + d.textlength(" ", font=fnt) + (24 if word == key_word else 0)
+                n += 1
+            y += int(size * 1.2)
+        bar = ease((tt - 0.3) / 0.5)
+        if bar > 0:
+            d.rounded_rectangle([W / 2 - 160 * bar, y + 30, W / 2 + 160 * bar, y + 40], radius=5, fill=(*ACCENT, 255))
+        s = 1 + 0.03 * (k / max(1, frames))
+        if s > 1.001:
+            layer = layer.resize((round(W * s), round(H * s)), Image.BILINEAR).crop(
+                (round((W * s - W) / 2), round((H * s - H) / 2), round((W * s - W) / 2) + W, round((H * s - H) / 2) + H))
+        frame.alpha_composite(layer)
+        return frame
+    return write_frames(out, frames, draw)
+
+
 def key_word_index(words):
     """Which word of a line deserves the highlight: a number first, else a name (capitalised, not the first word)."""
     for i, w in enumerate(words):
@@ -572,8 +621,14 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
         specs = specs_for(b, shots)
         pieces = max(1, round((end - start) / V.SHOT_SECONDS))
         ai_only = all(k == "picture" and not (i.get("credit") or i.get("real")) for k, i in specs)
-        if real and ai_only:  # never an AI picture when the story has real photos
+        tag = (b.get("tag") or "").strip()
+        if ai_only and tag:  # nothing real fits this line: its key fact in big type, then real photos if any
+            specs = [("statement", {"tag": tag})] + (real_instead(pieces - 1) if real and pieces > 1 else [])
+            pieces = len(specs)
+        elif real and ai_only:  # never an AI picture when the story has real photos
             specs = real_instead(pieces)
+        if not specs and tag:
+            specs = [("statement", {"tag": tag})]
         if not specs:
             specs = [("logo", {"name": (b.get("brands") or [{}])[0].get("name") or "AI", "domain": ""})]
         text_card = specs[0][0] in ("stat", "person", "source", "logo")
@@ -588,6 +643,8 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
                     info.get("_reframe", repeat), i + k)
             elif kind == "clip":
                 add(clip_shot, stop, theme, info["src"], theme, repeat * V.SHOT_SECONDS)
+            elif kind == "statement":
+                add(statement_shot, stop, theme, info["tag"], theme)
             elif kind == "stat":
                 add(stat_shot, stop, theme, info["big"], info["small"], theme)
             elif kind == "person":

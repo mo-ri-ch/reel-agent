@@ -38,3 +38,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 2026-10-07 · Editor audit of the AI-viruses reel: (a) opinion essays / how-to guides dropped as stories; (b) vague
   "experts argue…" caught by the specificity check; (c) studio: scenes that would show AI pictures reuse the
   story's real photos with new crops; (d) final mix normalised to -14 LUFS (was -15.8). Target: watch time.
+- 2026-10-07 · Audit of the first studio reel (Penn State faculty grants): studio worked, 0 AI pictures on screen,
+  -14.6 LUFS. Fixed: (a) campus-admin stories (university grants/courses/centres) dropped; (b) every beat gets a
+  2-4 word "tag"; when no real picture fits a line, the studio shows the tag in big kinetic type (like the
+  reference reel) instead of looping the same photo. Target: watch time, visual variety (no picture > 2 uses).
