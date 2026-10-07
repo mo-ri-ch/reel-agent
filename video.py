@@ -1119,12 +1119,11 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                 return pool[k][0], pool[k][1]
         return None, None
 
-    if any(b["visual"] in ("official", "photo") for b in beats):
-        for b in beats:
-            if b["visual"] == "official":
-                fill_pool(b.get("url"))
-        for u in source_urls:
-            fill_pool(u)
+    for b in beats:  # real photos come first, so the pool is always filled from the official and news pages
+        if b["visual"] == "official":
+            fill_pool(b.get("url"))
+    for u in source_urls:
+        fill_pool(u)
     for i, b in enumerate(beats):
         length = (times[i][1] - times[i][0]) if times else 3.0
         want = 2 if length > 3.4 else 1
@@ -1214,6 +1213,16 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                     if len(shots) >= want:
                         break
         if b["visual"] == "image" or (b["visual"] == "clip" and not shots):
+            for _ in range(want):  # a real photo from the news article / official pages beats an AI picture
+                img, dom = take_from_pool("", b.get("domain", ""))
+                if not img:
+                    break
+                p = os.path.join(tmp, f"official_{i}_{len(shots)}.png")
+                add_credit(full_frame(img), dom).save(p)
+                shots.append(("image", p))
+                counts["official images"] += 1
+                LAST_CREDITS.append(f"news photo: {dom}")
+        if (b["visual"] == "image" or b["visual"] == "clip") and not shots:  # last resort: AI picture
             base = b.get("prompt") or f"a cinematic scene illustrating: {b['line']}"
             variants = [base, base + ", different camera angle, close-up detail shot"][:want]
             for v, prompt in enumerate(variants):

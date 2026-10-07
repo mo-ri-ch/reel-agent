@@ -166,8 +166,9 @@ NEVER use a product or company name as a stock "query" or image "prompt": names 
 Meta software, not a horizon; "Gemini" is a Google AI, not a star sign; "Apple" is a company, not fruit).
 - "clip": real stock video. Use for things footage shows well: people using phones or laptops, offices, city streets,
   data centers, robots, coding screens, doctors, students. "query" = 2-4 concrete words ("woman talking to phone", not "AI innovation").
-- "image": AI-generated picture for specific or futuristic ideas stock can't show. "prompt" = vivid cinematic vertical scene,
-  no text, no logos, no real people's faces.
+- "image": AVOID. AI pictures look fake in news and viewers swipe away. Use only when nothing real (official, photo,
+  person, clip, source) can show the line; a real news photo is used instead whenever one exists. "prompt" = vivid
+  cinematic vertical scene, no text, no logos, no real people's faces.
 - "official": the real images of a named product or company, taken from its official page and the news article.
   "entity" = exact name ("Meta Horizon Studio"), "url" = the official product/announcement page if you know it,
   "domain" = the company's website ("meta.com").

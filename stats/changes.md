@@ -19,3 +19,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   the end, closing question must be specific; (b) story picks favour "would you send this to a friend?" stories.
   Why: avg watch 3.5 s of ~30 s, 1 share in 42 reels. Targets: avg watch time and watch % (base 3.5 s), shares
   per reel (base 0.02), views/reel (base 47).
+- 2026-10-07 · Owner: AI-generated pictures don't suit news · beats that would get an AI picture (or a stock clip
+  that doesn't fit) now use a real photo from the news article / official pages first; AI only as a last resort.
+  Writer told to avoid "image". Target: avg watch time (base 3.5 s); visual_summary should show few "AI images".
