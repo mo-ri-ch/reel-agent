@@ -543,6 +543,25 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
     text, label, img = hook
     add(hook_shot, hook_len, "dark", text, label, img, "dark")
     cuts = [hook_len]
+    # real news photos of this story, reused (with a new crop each time) instead of AI pictures
+    real = [i for i in V.STUDIO_INFO.values() if i["kind"] == "picture" and i.get("credit") and
+            i.get("raw") and os.path.exists(i["raw"])]
+    if img is not None:
+        hook_raw = os.path.join(tmp, "hook_raw.jpg")
+        try:
+            img.convert("RGB").save(hook_raw, quality=90)
+            real.append({"kind": "picture", "raw": hook_raw, "credit": "", "real": True})
+        except Exception:
+            pass
+    uses = {}
+
+    def real_instead(n_pieces):
+        out = []
+        for k in range(n_pieces):
+            info = min(real, key=lambda i: uses.get(i["raw"], 0))
+            uses[info["raw"]] = uses.get(info["raw"], 0) + 1
+            out.append(("picture", {**info, "_reframe": uses[info["raw"]]}))
+        return out
     for i, ((start, end), b, shots) in enumerate(zip(times, beats, plan)):
         start = max(start, hook_len)
         if end - start < 0.05:
@@ -551,16 +570,22 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
         if start > hook_len + 0.2:
             cuts.append(start)
         specs = specs_for(b, shots)
+        pieces = max(1, round((end - start) / V.SHOT_SECONDS))
+        ai_only = all(k == "picture" and not (i.get("credit") or i.get("real")) for k, i in specs)
+        if real and ai_only:  # never an AI picture when the story has real photos
+            specs = real_instead(pieces)
         if not specs:
             specs = [("logo", {"name": (b.get("brands") or [{}])[0].get("name") or "AI", "domain": ""})]
         text_card = specs[0][0] in ("stat", "person", "source", "logo")
-        pieces = 1 if text_card else max(1, round((end - start) / V.SHOT_SECONDS))
+        if text_card:
+            pieces = 1
         for k in range(pieces):
             kind, info = specs[k % len(specs)]
             repeat = k // len(specs)
             stop = start + (end - start) * (k + 1) / pieces
             if kind == "picture":
-                add(picture_shot, stop, theme, Image.open(info["raw"]), theme, info.get("credit", ""), repeat, i + k)
+                add(picture_shot, stop, theme, Image.open(info["raw"]), theme, info.get("credit", ""),
+                    info.get("_reframe", repeat), i + k)
             elif kind == "clip":
                 add(clip_shot, stop, theme, info["src"], theme, repeat * V.SHOT_SECONDS)
             elif kind == "stat":

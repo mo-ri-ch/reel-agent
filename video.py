@@ -1616,7 +1616,8 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     sh(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listfile, "-i", audio, *inputs,
         "-filter_complex", ";".join(graph), "-map", "[out]", "-map", "1:a",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-maxrate", "4000k", "-bufsize", "8000k",
-        "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
+        "-pix_fmt", "yuv420p", "-r", str(FPS), "-filter:a", "loudnorm=I=-14:TP=-1.5:LRA=11",
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
         "-shortest", "-movflags", "+faststart", out])
     v_len, a_len = duration_of(out, "v"), duration_of(out, "a")
     if v_len and a_len and abs(v_len - a_len) > 0.12:

@@ -35,3 +35,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   floating cards, captions at the top with key-word highlight, motion on every shot, article-style source card.
   Falls back to the classic style automatically if a studio render fails. Inspired by a hand-animated explainer
   reel the owner shared. Target: avg watch time (base 3.5 s), shares, followers.
+- 2026-10-07 · Editor audit of the AI-viruses reel: (a) opinion essays / how-to guides dropped as stories; (b) vague
+  "experts argue…" caught by the specificity check; (c) studio: scenes that would show AI pictures reuse the
+  story's real photos with new crops; (d) final mix normalised to -14 LUFS (was -15.8). Target: watch time.
