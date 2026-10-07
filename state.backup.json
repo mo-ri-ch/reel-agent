@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -172,36 +172,24 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The nonprofit reviews apps and entertainment focus…: The image is completely blurred and unreadable/broken."
+    ],
+    "credits": [],
+    "voice_used": "your voice (Fish Audio)",
+    "visual_summary": "4 AI images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
-  "queue": [
-    {
-      "title": "Penn State Announces New Artificial Intelligence Grants For Faculty",
-      "video_file_id": "BAACAgUAAxkDAAIHi2rGFAPJfbIQNN3lRvFJ8uc0tZ54AAIPJgAClrIwVqGsFSHLAAENCT0E",
-      "caption": "Penn State is investing directly in artificial intelligence for its faculty members. These new grants will help support the integration of artificial intelligence into teaching and learning across campus. Would you take a class designed with this support?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Pennsylvania State University: State Collegian (Public domain), via Wikimedia Commons\n\n#PennState #ArtificialIntelligence #HigherEducation #AIResearch #UniversityPark #EdTech #MachineLearning #OnwardState #CollegeNews #FutureOfEducation",
-      "extra": false,
-      "meta": {
-        "title": "Penn State Announces New Artificial Intelligence Grants For Faculty",
-        "kind": "news",
-        "source": "Onward State",
-        "engine": "fish",
-        "voice": "Ethan (Fish Audio)",
-        "person": false,
-        "words": 68,
-        "visuals": "1 real photos, 8 AI images, 1 cards",
-        "made": "2026-10-07T15:45+05:30"
-      },
-      "post_at": "2026-10-07T19:00:00+05:30"
-    }
-  ],
+  "video_file_id": "BAACAgUAAxkDAAIHoGrGTjd8H42ovh_Mp0HFdw8vCi9YAALoHgAClrI4VrWMCxi0eW1LPQQ",
+  "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-07T17:06:43.331013+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
-  "pending_offer": false,
+  "script_deadline": null,
+  "preview_deadline": "2026-10-07T19:40:41.310944+05:30",
+  "last_gender": "female",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-07",
     "done": [
@@ -215,7 +203,8 @@
       "10:00",
       "12:00",
       "14:00",
-      "16:00"
+      "16:00",
+      "18:00"
     ]
   },
   "pending_topic": null,
@@ -372,10 +361,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-09-28T16:31:17.214570+05:30",
-      "extra": false
-    },
     {
       "at": "2026-09-28T19:01:07.830353+05:30",
       "extra": false
@@ -611,6 +596,10 @@
     {
       "at": "2026-10-07T17:01:05.679338+05:30",
       "extra": false
+    },
+    {
+      "at": "2026-10-07T19:18:15.326846+05:30",
+      "extra": false
     }
   ],
   "paused": null,
@@ -666,167 +655,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "How to Defend Against AI-Designed Viruses",
-          "link": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/",
-          "summary": "How to Defend Against AI-Designed Viruses War on the Rocks",
-          "source": "War on the Rocks",
-          "published": "2026-10-07T07:34:06+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Defending Against AI-Designed Viruses",
-          "hook_text": "AI designs biological threats.",
-          "beats": [
-            {
-              "line": "War on the Rocks analyzed how to defend against AI-designed viruses.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "War on the Rocks",
-              "domain": "warontherocks.com",
-              "headline": "How to Defend Against AI-Designed Viruses",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Advanced algorithms could lower the barrier for creating pathogens.",
-              "visual": "clip",
-              "query": "scientist working in laboratory",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Experts argue we must secure DNA supply chains.",
-              "visual": "clip",
-              "query": "modern biotechnology research lab",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will genetic screening stop malicious actors?",
-              "visual": "clip",
-              "query": "dna sequencing screen data",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and serious, warning viewers about an emerging biosecurity challenge",
-          "caption": "A recent analysis from War on the Rocks explores how to defend against AI-designed viruses and secure genetic supply chains. Will robust screening be enough to stop misuse? Let us know your thoughts.",
-          "hashtags": [
-            "artificialintelligence",
-            "biosecurity",
-            "warontherocks",
-            "techpolicy",
-            "science",
-            "security",
-            "research",
-            "news",
-            "genetics",
-            "technology"
-          ],
-          "sources": [
-            "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
-          ],
-          "script": "War on the Rocks analyzed how to defend against AI-designed viruses.\nAdvanced algorithms could lower the barrier for creating pathogens.\nExperts argue we must secure DNA supply chains.\nWill genetic screening stop malicious actors?",
-          "keywords": [
-            "scientist working in laboratory",
-            "modern biotechnology research lab",
-            "dna sequencing screen data"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "AI designs biological threats.",
-              "url": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
-            },
-            {
-              "claim": "War on the Rocks analyzed how to defend against AI-designed viruses.",
-              "url": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
-            },
-            {
-              "claim": "Advanced algorithms could lower the barrier for creating pathogens.",
-              "url": "https://www.statnews.com/2026/09/28/ai-bioweapons-pathogens-guardrails-policy-warning/"
-            },
-            {
-              "claim": "Experts argue we must secure DNA supply chains.",
-              "url": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
-            },
-            {
-              "claim": "Will genetic screening stop malicious actors?",
-              "url": "https://www.statnews.com/2026/09/28/ai-bioweapons-pathogens-guardrails-policy-warning/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Experts argue we must secure DNA supply chains.…: the frame is completely black and unreadable",
-            "The visual shows masked people in a laboratory instead of DNA sequencing screen data."
-          ],
-          "credits": [],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "2 clips, 3 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIHfWrF-q4yHU_h713xLtwcIjZmkDkjAAKsJQAClrIwVmfyru165bTuPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIHfWrF-q4yHU_h713xLtwcIjZmkDkjAAKsJQAClrIwVmfyru165bTuPQQ",
-      "history_title": "How to Defend Against AI-Designed Viruses"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1313,10 +1141,197 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
+          "summary": "Common Sense Media, a nonprofit that offers reviews of apps, services, and entertainment with a focus on youth safety, today said that OpenAI's ChatGPT for Teens is an \"unacceptable risk.\" ChatGPT for Teens, introduced in August, has guardrails for teens and is designed to help students learn, but Common Sense Media says that the teen […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-07T09:00:00+00:00",
+          "angle": "Common Sense Media warns OpenAI's ChatGPT for Teens is an 'unacceptable risk' — sparking urgent debate over youth safety."
+        },
+        "draft": {
+          "title": "ChatGPT for Teens an Unacceptable Risk?",
+          "hook_text": "ChatGPT for Teens is an unacceptable risk.",
+          "beats": [
+            {
+              "line": "ChatGPT for Teens is an unacceptable risk.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "ChatGPT for Teens is an unacceptable risk",
+              "url": "",
+              "tag": "Unacceptable Risk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Common Sense Media warned about OpenAI safety guardrails today.",
+              "visual": "clip",
+              "query": "teenager using smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "OpenAI Guardrails",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "The nonprofit reviews apps and entertainment focusing heavily on youth safety.",
+              "visual": "clip",
+              "query": "parents reviewing app safety",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Youth Safety",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "OpenAI introduced the tier in August to help students learn.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "ChatGPT for Teens",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
+              "tag": "Launched In August",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust an AI tutor with your teenager?",
+              "visual": "clip",
+              "query": "teen studying online",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI Tutor",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and questioning, highlighting the clash between AI features and youth safety concerns",
+          "caption": "Common Sense Media has labeled OpenAI's ChatGPT for Teens an unacceptable risk, raising fresh concerns over youth safety guardrails. Would you let your teenager use an AI study assistant?",
+          "hashtags": [
+            "ChatGPT",
+            "OpenAI",
+            "CommonSenseMedia",
+            "TeenSafety",
+            "ArtificialIntelligence",
+            "TechNews",
+            "AIEthics",
+            "TeensAndTech",
+            "EducationTech",
+            "FutureOfAI"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
+          ],
+          "script": "ChatGPT for Teens is an unacceptable risk.\nCommon Sense Media warned about OpenAI safety guardrails today.\nThe nonprofit reviews apps and entertainment focusing heavily on youth safety.\nOpenAI introduced the tier in August to help students learn.\nWould you trust an AI tutor with your teenager?",
+          "keywords": [
+            "teenager using smartphone",
+            "parents reviewing app safety",
+            "teen studying online"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "ChatGPT for Teens is an unacceptable risk.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
+            },
+            {
+              "claim": "ChatGPT for Teens is an unacceptable risk.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
+            },
+            {
+              "claim": "Common Sense Media warned about OpenAI safety guardrails today.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
+            },
+            {
+              "claim": "The nonprofit reviews apps and entertainment focusing heavily on youth safety.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
+            },
+            {
+              "claim": "OpenAI introduced the tier in August to help students learn.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-07T17:06:43.331013+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIDsWq_c0lmGSgFkTLUlJasP4dCIgX1AAJjJQACLx8AAVaB2rfYDli4yT0E",
     "BAACAgUAAxkDAAIDvmq_lp3JEVMo7RAi2i54rNCxopxJAAJfKAACLx8AAVZwD546voe1nT0E",
     "BAACAgUAAxkDAAIEBGq_6tC4wmOGszRhl8Tpu9SauY0qAAMpAAIvHwABVs9VIhYoiP01PQQ",
     "BAACAgUAAxkDAAIED2rADdKd9qgcWnCy4emfQrKyyncgAAL4HwACUWsBVkD30-kAAS-H7T0E",
@@ -1345,7 +1360,8 @@
     "BAACAgUAAxkDAAIHamrF8vWlJW99k_fDa01C8PN23XbxAAKSIQACP0MxVvd_SfVUhSDaPQQ",
     "BAACAgUAAxkDAAIHR2rFv72Ayd1ECcstAcBsp7O01tGgAAKeIAACP0MxVtKnIkexvY4JPQQ",
     "BAACAgUAAxkDAAIHWGrF3PWlmjk2CYCeT6oRvDbIDbJKAAIpIQACP0MxVvCeS3NH6IyhPQQ",
-    "BAACAgUAAxkDAAIHfWrF-q4yHU_h713xLtwcIjZmkDkjAAKsJQAClrIwVmfyru165bTuPQQ"
+    "BAACAgUAAxkDAAIHfWrF-q4yHU_h713xLtwcIjZmkDkjAAKsJQAClrIwVmfyru165bTuPQQ",
+    "BAACAgUAAxkDAAIHi2rGFAPJfbIQNN3lRvFJ8uc0tZ54AAIPJgAClrIwVqGsFSHLAAENCT0E"
   ],
   "history": [
     "OpenAI and Anthropic call for cooperation as UN debates AI global risks",
@@ -1759,8 +1775,8 @@
       "at": "2026-10-07T15:45:36.554162+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-07T16:00+05:30",
@@ -1788,8 +1804,8 @@
   "report_day": "2026-10-06",
   "ig_count": {
     "day": "2026-10-07",
-    "at": "2026-10-07T16:55:26.313801+05:30",
-    "count": 5
+    "at": "2026-10-07T19:30:41.310989+05:30",
+    "count": 7
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-07",
@@ -1808,5 +1824,6 @@
     }
   ],
   "engine_used": "fish",
-  "token_day": "2026-10-07"
+  "token_day": "2026-10-07",
+  "last_fish_id": "f9fdc52b05b94e39ac1780f53cac8f08"
 }
