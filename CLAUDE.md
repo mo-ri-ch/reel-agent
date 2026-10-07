@@ -9,7 +9,9 @@ through a Telegram bot and reads Claude's messages there.
   (the owner does nothing manually).
 - Near term: 10 followers by Sun 11 Oct 2026 (from 6 on 7 Oct); then steady growth in views, watch time, shares.
 - Quality bar: top-notch, editor-grade reels (studio look), specific and fact-checked, never generic.
-- Long-term goal (6–12 months): NOT YET SET — asked the owner on 2026-10-07; update this line when they answer.
+- Long-term goals (owner, 2026-10-07: "all of them"): (1) a big audience: reach, shares, followers; (2) a credible
+  brand for Gradient AI Labs; (3) leads/customers for the company; (4) income from the page (sponsors). Today the
+  order is 1 → 2: grow reach with credible reels; add lead/sponsor features once there's an audience (ask first).
 
 ## How it runs
 - `.github/workflows/agent.yml` runs every 5 minutes (started by cron-job.org) in **Python 3.11**. `main.py poll` does the
