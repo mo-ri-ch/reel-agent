@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -145,16 +145,28 @@
     "fix_rounds": 0,
     "source_links": [
       "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "It gives developers access to top tier performance…: The image is completely blurred and blank/unreadable, failing to show developer typing code.",
+      "Would you run it on your own server?…: The image shows terminal command line output (ping responses) instead of a data center server rack.",
+      "Visual shows Mistral logo graphic instead of stock video of a developer typing code.",
+      "Visual shows text 'Run Locally' instead of stock video of a data center server rack."
+    ],
+    "credits": [
+      "Mistral AI: VulcanSphere (Public domain), via Wikimedia Commons"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 real photos, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIHx2rGhLN_HW8LpWGx_Md51yuiLxSjAAJxHwAClrI4VnSLuyxjRusJPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-07T23:09:41.477497+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-07T23:43:16.160992+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-07",
@@ -606,203 +618,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
-          "summary": "Common Sense Media, a nonprofit that offers reviews of apps, services, and entertainment with a focus on youth safety, today said that OpenAI's ChatGPT for Teens is an \"unacceptable risk.\" ChatGPT for Teens, introduced in August, has guardrails for teens and is designed to help students learn, but Common Sense Media says that the teen […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-07T09:00:00+00:00",
-          "angle": "Common Sense Media warns OpenAI's ChatGPT for Teens is an 'unacceptable risk' — sparking urgent debate over youth safety."
-        },
-        "draft": {
-          "title": "ChatGPT for Teens an Unacceptable Risk?",
-          "hook_text": "ChatGPT for Teens is an unacceptable risk.",
-          "beats": [
-            {
-              "line": "ChatGPT for Teens is an unacceptable risk.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "ChatGPT for Teens is an unacceptable risk",
-              "url": "",
-              "tag": "Unacceptable Risk",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Common Sense Media warned about OpenAI safety guardrails today.",
-              "visual": "clip",
-              "query": "teenager using smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "OpenAI Guardrails",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The nonprofit reviews apps and entertainment focusing heavily on youth safety.",
-              "visual": "clip",
-              "query": "parents reviewing app safety",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Youth Safety",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "OpenAI introduced the tier in August to help students learn.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "ChatGPT for Teens",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
-              "tag": "Launched In August",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust an AI tutor with your teenager?",
-              "visual": "clip",
-              "query": "teen studying online",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI Tutor",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and questioning, highlighting the clash between AI features and youth safety concerns",
-          "caption": "Common Sense Media has labeled OpenAI's ChatGPT for Teens an unacceptable risk, raising fresh concerns over youth safety guardrails. Would you let your teenager use an AI study assistant?",
-          "hashtags": [
-            "ChatGPT",
-            "OpenAI",
-            "CommonSenseMedia",
-            "TeenSafety",
-            "ArtificialIntelligence",
-            "TechNews",
-            "AIEthics",
-            "TeensAndTech",
-            "EducationTech",
-            "FutureOfAI"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-          ],
-          "script": "ChatGPT for Teens is an unacceptable risk.\nCommon Sense Media warned about OpenAI safety guardrails today.\nThe nonprofit reviews apps and entertainment focusing heavily on youth safety.\nOpenAI introduced the tier in August to help students learn.\nWould you trust an AI tutor with your teenager?",
-          "keywords": [
-            "teenager using smartphone",
-            "parents reviewing app safety",
-            "teen studying online"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "ChatGPT for Teens is an unacceptable risk.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-            },
-            {
-              "claim": "ChatGPT for Teens is an unacceptable risk.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-            },
-            {
-              "claim": "Common Sense Media warned about OpenAI safety guardrails today.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-            },
-            {
-              "claim": "The nonprofit reviews apps and entertainment focusing heavily on youth safety.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-            },
-            {
-              "claim": "OpenAI introduced the tier in August to help students learn.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "The nonprofit reviews apps and entertainment focus…: The image is completely blurred and unreadable/broken."
-          ],
-          "credits": [],
-          "voice_used": "your voice (Fish Audio)",
-          "visual_summary": "4 AI images, 3 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIHoGrGTjd8H42ovh_Mp0HFdw8vCi9YAALoHgAClrI4VrWMCxi0eW1LPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIHoGrGTjd8H42ovh_Mp0HFdw8vCi9YAALoHgAClrI4VrWMCxi0eW1LPQQ",
-      "history_title": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1275,6 +1090,167 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
+          "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+          "summary": "Mistral says Le Chonk can rival top closed models while remaining open-weight.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-07T14:12:37+00:00",
+          "angle": "Mistral drops 'Le Chonk,' a massive new open-weight model challenging top closed giants."
+        },
+        "draft": {
+          "title": "Mistral's Le Chonk AI",
+          "hook_text": "Mistral just dropped Le Chonk.",
+          "beats": [
+            {
+              "line": "Mistral's new open weight model is named Le Chonk.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Mistral AI",
+              "outlet": "",
+              "domain": "mistral.ai",
+              "headline": "",
+              "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+              "tag": "Mistral Le Chonk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Mistral AI",
+                  "domain": "mistral.ai"
+                }
+              ]
+            },
+            {
+              "line": "The French lab claims it can rival the best closed models.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Mistral says Le Chonk can challenge the best AI models",
+              "url": "",
+              "tag": "Rivals Closed Models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Mistral AI",
+                  "domain": "mistral.ai"
+                }
+              ]
+            },
+            {
+              "line": "It gives developers access to top tier performance without paying locked fees.",
+              "visual": "clip",
+              "query": "developer typing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Open Weight Access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you run it on your own server?",
+              "visual": "clip",
+              "query": "data center server rack",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Run Locally",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "casual and direct, highlighting the quirky name before getting into serious tech capabilities.",
+          "caption": "Mistral says their new open weight model Le Chonk can compete with the top closed AI systems. Would you run an open model locally?",
+          "hashtags": [
+            "Mistral",
+            "LeChonk",
+            "ArtificialIntelligence",
+            "OpenWeight",
+            "TechNews",
+            "MachineLearning",
+            "AImodels",
+            "Developer",
+            "TechTrends",
+            "Innovation"
+          ],
+          "sources": [
+            "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/"
+          ],
+          "script": "Mistral's new open weight model is named Le Chonk.\nThe French lab claims it can rival the best closed models.\nIt gives developers access to top tier performance without paying locked fees.\nWould you run it on your own server?",
+          "keywords": [
+            "developer typing code",
+            "data center server rack"
+          ],
+          "image_prompts": [],
+          "hook_before": "Mistral just released an open weight model called Le Chonk.",
+          "evidence": [
+            {
+              "claim": "Mistral dropped a model named Le Chonk.",
+              "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/"
+            },
+            {
+              "claim": "Mistral's new open-weight model is named Le Chonk.",
+              "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/"
+            },
+            {
+              "claim": "The French lab claims it can rival the best closed models.",
+              "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/"
+            },
+            {
+              "claim": "It gives developers access to top tier performance without paying locked fees.",
+              "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-07T23:09:41.477497+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1731,8 +1707,8 @@
       "at": "2026-10-07T21:52:11.173963+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-07T22:00+05:30",
@@ -1760,15 +1736,14 @@
   "report_day": "2026-10-06",
   "ig_count": {
     "day": "2026-10-07",
-    "at": "2026-10-07T23:00:40.535723+05:30",
-    "count": 8
+    "at": "2026-10-07T23:13:16.161175+05:30",
+    "count": 9
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-07",
   "late_alarm_day": "2026-10-06",
   "stats_day": "2026-10-07",
   "perm_told": true,
-  "fish_voice_id": "f9fdc52b05b94e39ac1780f53cac8f08",
   "fish_pool": [
     {
       "id": "c2623f0c075b4492ac367989aee1576f",
@@ -1781,5 +1756,5 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-07",
-  "last_fish_id": "f9fdc52b05b94e39ac1780f53cac8f08"
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f"
 }
