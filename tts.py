@@ -54,16 +54,16 @@ def fish_voice_name(voice_id):
 
 
 def _fish(text, out_base, voice_id):
-    """The owner's cloned voice from Fish Audio. Returns an .mp3 path."""
+    """The owner's cloned voice from Fish Audio. Returns a .wav path."""
     r = requests.post(f"{FISH_API}/v1/tts", timeout=180,
                       headers={"Authorization": f"Bearer {FISH_API_KEY}", "model": FISH_MODEL},
-                      json={"text": text, "reference_id": voice_id, "format": "mp3", "normalize": True,
+                      json={"text": text, "reference_id": voice_id, "format": "wav", "normalize": True,
                             "latency": "normal"})
     if r.status_code in (401, 402):
         raise FishOut(f"HTTP {r.status_code}: {r.text[:150]}")
     if r.status_code != 200:
         raise RuntimeError(f"HTTP {r.status_code}: {r.text[:150]}")
-    out = out_base + "_f.mp3"
+    out = out_base + "_f.wav"  # lossless: no mp3 artefacts before our own processing
     with open(out, "wb") as f:
         f.write(r.content)
     if os.path.getsize(out) < 2000:

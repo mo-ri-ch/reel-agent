@@ -47,10 +47,12 @@ def duration(path):
 
 
 # ---------------------------------------------------------------- audio
-def clean_audio(src, dst, trim_start=True):
+def clean_audio(src, dst, trim_start=True, denoise=True):
+    """denoise only for real recordings: on a clean AI voice it adds a muffled, watery sound."""
     trim = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15"
     start = f"{trim}," if trim_start else ""
-    af = (f"highpass=f=80,afftdn=nf=-25,{start}areverse,{trim},areverse,"
+    nr = "afftdn=nf=-25," if denoise else ""
+    af = (f"highpass=f=80,{nr}{start}areverse,{trim},areverse,"
           "loudnorm=I=-14:TP=-1.5:LRA=11,apad=pad_dur=0.6")
     sh(["ffmpeg", "-y", "-i", src, "-af", af, "-ar", "48000", "-ac", "2", dst])
 
@@ -1414,7 +1416,8 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     shutil.rmtree(tmp, ignore_errors=True)
     os.makedirs(tmp)
     wav = os.path.join(tmp, "voice.wav")
-    clean_audio(voice_path, wav, trim_start=not exact_words)  # keep the AI voice's own timeline
+    clean_audio(voice_path, wav, trim_start=not exact_words,  # keep the AI voice's own timeline
+                denoise="ai_voice" not in os.path.basename(str(voice_path)))
     total = duration(wav)
     if total > 180:
         raise RuntimeError("The recording is longer than 3 minutes. Please keep reels under 90 seconds.")
