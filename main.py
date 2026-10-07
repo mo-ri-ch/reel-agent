@@ -1330,6 +1330,18 @@ def stats_jobs(s):
                         "“instagram_manage_insights” permission. Ask Claude to walk you through adding it (5 min).")
         except Exception as e:
             print(f"Stats collection failed: {e}")
+    if s.get("token_day") != today:  # once a day: warn a week before the Instagram token expires
+        s["token_day"] = today
+        try:
+            import instagram
+            valid, expires = instagram.token_expiry()
+            days = (expires - now.timestamp()) / 86400 if expires else None
+            if not valid or (days is not None and days < 7):
+                when = "has expired" if not valid or days <= 0 else f"expires in {max(1, int(days))} day(s)"
+                tg.send(f"🔑 The Instagram token {when}. Posting stops when it does. Ask Claude for the steps to make "
+                        "a never-expiring page token (5 minutes).")
+        except Exception as e:
+            print(f"Token check failed: {e}")
     week = f"{now.isocalendar()[0]}-{now.isocalendar()[1]}"
     if now.weekday() == 6 and now.hour >= 10 and s.get("report_week") != week:
         s["report_week"] = week

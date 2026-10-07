@@ -89,6 +89,16 @@ def whoami():
         "fields": "username", "access_token": IG_ACCESS_TOKEN}, timeout=30)).get("username")
 
 
+def token_expiry():
+    """When the Instagram token expires: (valid, expires_at unix time; 0 = never)."""
+    r = requests.get(f"{IG_GRAPH_BASE}/debug_token", timeout=30,
+                     params={"input_token": IG_ACCESS_TOKEN, "access_token": IG_ACCESS_TOKEN})
+    data = (r.json() or {}).get("data") or {}
+    if r.status_code != 200 or not data:
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:150]}")
+    return bool(data.get("is_valid")), int(data.get("expires_at") or 0)
+
+
 def reels_posted_on(day, tz):
     """How many reels are on the account for this local date (so deleted reels count as missing). None if unknown."""
     from datetime import datetime
