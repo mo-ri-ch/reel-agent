@@ -1423,7 +1423,10 @@ def fish_voices(s):
     out = [(own, "your voice (Fish Audio)")] if own and not s.get("fish_disabled") else []
     pool = [(v["id"], f"{v.get('name') or 'library voice'} (Fish Audio)") for v in s.get("fish_pool") or []
             if v.get("id")]
-    random.shuffle(pool)
+    last = s.get("last_fish_id")  # take turns (Paula, Ethan, Paula…): the one used last time goes to the back
+    if last in [v[0] for v in pool]:
+        k = [v[0] for v in pool].index(last)
+        pool = pool[k + 1:] + pool[:k + 1]
     return out + pool
 
 
@@ -1469,6 +1472,8 @@ def cmd_render():
                     raise RuntimeError(f"the voice-over didn't match the script twice ({why2})")
             s["last_gender"] = gender
             s["engine_used"] = tts.LAST_ENGINE
+            if tts.LAST_ENGINE == "fish" and tts.LAST_FISH_ID:
+                s["last_fish_id"] = tts.LAST_FISH_ID
             print(f"Voice-over: {engine}")
         else:
             voice = tg.download(s["voice_file_id"], os.path.join(WORK_DIR, "voice_input"))

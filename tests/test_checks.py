@@ -59,6 +59,18 @@ path, _ = tts.synthesize("x y z", "/tmp/x", "male", "google", fish_voice=[("own"
 check("fish credits out -> skip library", tts.LAST_ENGINE, "google")
 tts._fish, tts._google, tts.FISH_API_KEY = _f, _g, _key
 
+# Fish library voices take turns
+import main  # noqa: E402
+_k = main.FISH_API_KEY
+main.FISH_API_KEY = "test"
+_s = {"fish_disabled": True, "fish_pool": [{"id": "paula", "name": "Paula"}, {"id": "ethan", "name": "Ethan"}]}
+check("fish first pick", main.fish_voices(_s)[0][0], "paula")
+_s["last_fish_id"] = "paula"
+check("fish alternates", main.fish_voices(_s)[0][0], "ethan")
+_s["last_fish_id"] = "ethan"
+check("fish alternates back", main.fish_voices(_s)[0][0], "paula")
+main.FISH_API_KEY = _k
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
