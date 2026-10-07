@@ -493,55 +493,69 @@ def _norm(t):
 
 
 def caption_track(out, words, total, hook_until, theme_at, keywords=()):
-    """A transparent caption strip: the words of the current phrase appear as they're spoken, earlier ones in grey,
-    the key word (a number or a name) in a highlight box."""
+    """A transparent caption strip with the whole sentence on screen (up to 3 lines), so viewers can read a complete
+    thought: words light up from grey to full colour as they're spoken, the key word (a number or a name) gets a
+    highlight box once it's said."""
     stop = {"the", "and", "for", "of", "a", "an", "in", "on", "at", "to", "with", "by", "from", "inc", "ltd"}
     keys = {_norm(k) for kw in keywords for k in str(kw).split()
             if len(_norm(k)) > 2 and _norm(k) not in stop and (k[:1].isupper() or re.search(r"\d", k))}
-    chunks = V.chunk_words(words, max_words=3, max_chars=20, sentence_breaks=".!?,;:")
+    chunks = V.chunk_words(words, max_words=16, max_chars=95, sentence_breaks=".!?")
     events = []
     for ci, ch in enumerate(chunks):
         nxt = chunks[ci + 1][0]["start"] if ci + 1 < len(chunks) else total
-        chunk_end = nxt if nxt - ch[-1]["end"] < 0.6 else ch[-1]["end"] + 0.35
+        chunk_end = nxt if nxt - ch[-1]["end"] < 0.6 else ch[-1]["end"] + 0.5
         texts = [V.ass_text(w["text"], False) for w in ch]
-        key = next((i for i, w in enumerate(texts) if re.search(r"\d", w) or (w[:1].isupper() and _norm(w) in keys)),
-                   None)
+        key = next((i for i, w in enumerate(texts) if re.search(r"\d", w)),
+                   next((i for i, w in enumerate(texts) if w[:1].isupper() and _norm(w) in keys), None))
+        first = max(ch[0]["start"], hook_until)
+        if chunk_end <= first:
+            continue
+        events.append((first, ch[0]["start"], texts, key, -1, ci))  # (the sentence shows a hair before its first word)
         for wi, w in enumerate(ch):
             start = max(w["start"], hook_until)
             end = ch[wi + 1]["start"] if wi + 1 < len(ch) else chunk_end
             if end > start:
-                events.append((start, end, texts[:wi + 1], key if key is not None and key <= wi else None))
+                events.append((start, end, texts, key, wi, ci))
+    events = [e for e in events if e[1] > e[0]]
     cache = {}
 
-    def strip(texts, key, theme):
+    def layout(texts, key):
+        probe = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+        for size in (56, 50, 44):
+            f = V.font(size, semi=True)
+            sp = probe.textlength(" ", font=f)
+            widths = [probe.textlength(w, font=f) + (18 if i == key else 0) for i, w in enumerate(texts)]
+            lines, cur, cw = [], [], 0
+            for i, w in enumerate(widths):
+                if cur and cw + sp + w > W - 150:
+                    lines.append(cur)
+                    cur, cw = [], 0
+                cur.append(i)
+                cw += (sp if len(cur) > 1 else 0) + w
+            lines.append(cur)
+            if len(lines) <= 3:
+                break
+        return f, sp, widths, lines, int(size * 1.32)
+
+    def strip(texts, key, wi, theme):
         t_ = THEMES[theme]
         img = Image.new("RGBA", (W, CAP_H), (0, 0, 0, 0))
         d = ImageDraw.Draw(img)
-        reg, bold = V.font(66, semi=True), V.font(66)
-        sp = d.textlength(" ", font=reg)
-        widths = [d.textlength(w, font=bold if (i == len(texts) - 1 or i == key) else reg) + (16 if i == key else 0)
-                  for i, w in enumerate(texts)]
-        lines, cur, cw = [], [], 0
-        for i, w in enumerate(widths):
-            if cur and cw + sp + w > W - 140:
-                lines.append(cur)
-                cur, cw = [], 0
-            cur.append(i)
-            cw += (sp if len(cur) > 1 else 0) + w
-        lines.append(cur)
-        y = CAP_H / 2 - (len(lines) * 84) / 2 + 6
+        f, sp, widths, lines, lh = layout(texts, key)
+        y = CAP_H / 2 - (len(lines) * lh) / 2 + 4
+        upcoming = (*t_["muted"], 150)
         for line in lines:
             lw = sum(widths[i] for i in line) + sp * (len(line) - 1)
             x = W / 2 - lw / 2
             for i in line:
-                last = i == len(texts) - 1
+                said = i <= wi
                 if i == key:
-                    select_box(d, (x - 4, y - 2, x + widths[i] - 4, y + 84), theme)
-                    x += 8
-                d.text((x, y), texts[i], font=bold if (last or i == key) else reg,
-                       fill=t_["fg"] if (last or i == key) else t_["muted"])
-                x += widths[i] + sp - (8 if i == key else 0)
-            y += 84
+                    if said:
+                        select_box(d, (x - 2, y - 4, x + widths[i] - 2, y + lh - 6), theme)
+                    x += 9
+                d.text((x, y), texts[i], font=f, fill=(*t_["fg"], 255) if said else upcoming)
+                x += widths[i] + sp - (9 if i == key else 0)
+            y += lh
         return img
 
     blank = Image.new("RGBA", (W, CAP_H), (0, 0, 0, 0))
@@ -553,12 +567,12 @@ def caption_track(out, words, total, hook_until, theme_at, keywords=()):
         while ev < len(events) and events[ev][1] <= t:
             ev += 1
         if ev < len(events) and events[ev][0] <= t:
-            s, e, texts, key = events[ev]
+            s, e, texts, key, wi, ci = events[ev]
             theme = theme_at(t)
-            ck = (ev, theme)
+            ck = (ci, wi, theme)
             if ck not in cache:
                 cache.clear()
-                cache[ck] = strip(texts, key, theme)
+                cache[ck] = strip(texts, key, wi, theme)
             return ck, cache[ck]
         return "blank", blank
     return write_frames(out, int(round(total * FPS)), draw, alpha=True, size=(W, CAP_H))

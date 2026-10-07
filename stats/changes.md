@@ -42,3 +42,5 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   -14.6 LUFS. Fixed: (a) campus-admin stories (university grants/courses/centres) dropped; (b) every beat gets a
   2-4 word "tag"; when no real picture fits a line, the studio shows the tag in big kinetic type (like the
   reference reel) instead of looping the same photo. Target: watch time, visual variety (no picture > 2 uses).
+- 2026-10-07 · Owner: smaller captions, whole sentence on screen · studio captions now show the full sentence (up to
+  3 lines, 56px) with words lighting up as spoken; numbers get the highlight first. Target: watch time / completion.
