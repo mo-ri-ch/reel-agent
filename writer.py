@@ -96,6 +96,9 @@ post is only a lead: prefer stories that are also confirmed by a news site or an
 The audience is GLOBAL (US, Europe, India): favour stories people everywhere care about (big AI companies, new
 models and tools anyone can use, major policy and research). Regional stories (India, Europe, US politics) are fine
 when they are big news, but keep the mix global.
+OUR DATA: stories about well-known companies and products (OpenAI/ChatGPT, Google/Gemini, Apple, Microsoft, Meta,
+Nvidia, Anthropic/Claude, Amazon, Tesla, big game studios…) get about 50% more views than niche ones. Strongly prefer
+them. Local pilots, regional regulations and small-company news only when they are genuinely big.
 Skip minor funding news, opinion pieces and duplicates of each other.
 Also SKIP: company press releases and self-announcements by small or unknown firms, local/regional events
 (bootcamps, workshops, trainings, seminars, hackathons), government MoUs and "policy targets" without a concrete
@@ -126,8 +129,12 @@ RULES = """Write a 25-40 second Instagram Reel about AI, read aloud by a voice-o
 
 SCRIPT
 - 70 to 100 words. Conversational, like explaining to a smart friend. Short punchy sentences (max ~15 words), contractions, one idea per sentence.
-- Line 1 is the HOOK (under 12 words). Stop the scroll with ONE of: a surprising fact or number, a bold claim,
+- Line 1 is the HOOK: 9 words or fewer, the big name or number first. Viewers decide in under 2 seconds, so make it
+  create curiosity or stakes, not just state the news. Use ONE of: a surprising fact or number, a bold (true) claim,
   "you" framing about the viewer's life, or a question they can't ignore.
+  Weak: "Utah is launching a pilot program to use artificial intelligence for patient exams."
+  Strong: "An AI just started examining patients in Utah."
+- Line 2 gives the viewer a reason to stay (what's at stake for them, or the surprising detail), within 3 seconds.
   Good hooks: "Your next coworker might not be human." / "Google just made search ten times faster."
   Never start with: "Hey guys", "Did you know", "In today's video", "Breaking news", "Imagine".
 - Then: what happened → why it's surprising or matters → what it means for the viewer.
@@ -294,7 +301,41 @@ def write_script(topic, previous=None, instruction=None):
     except ValueError:
         # the search-grounded reply wasn't clean JSON: ask again in strict JSON mode
         draft = parse_json(ask(prompt, json_mode=True))
-    return normalize_draft(draft, topic)
+    draft = normalize_draft(draft, topic)
+    if not instruction:
+        draft = sharpen_hook(draft, topic)
+    return draft
+
+
+def sharpen_hook(draft, topic):
+    """Rewrites only the first spoken line into a stronger hook (facts unchanged). Falls back silently."""
+    beats = draft.get("beats") or []
+    if not beats:
+        return draft
+    first = beats[0]["line"]
+    prompt = f"""News story: {topic.get('title', '')}
+First line of an Instagram Reel voice-over: "{first}"
+Next line: "{beats[1]['line'] if len(beats) > 1 else ''}"
+
+Viewers swipe away within 2 seconds unless the first line grabs them. Rewrite ONLY the first line:
+- a hook of 9 words or fewer, with the company/product name or the key number early, creating curiosity or stakes;
+- then, if the hook drops a fact the original line had, add one short plain sentence with that fact (max 14 words);
+- keep every fact true and unchanged: no new claims, numbers or names; no exaggeration; no question marks if the
+  original had a fact; no "Did you know", "Imagine", "Breaking", "Hey guys"; numbers written as spoken words.
+Return ONLY JSON: {{"line": "the new first line"}}"""
+    try:
+        res = parse_json(ask(prompt, temperature=0.7, json_mode=True, light=True))
+        new = clean_spoken(str((res[0] if isinstance(res, list) and res else res).get("line", "")))
+    except Exception as e:
+        print(f"Hook pass skipped: {e}")
+        return draft
+    words = len(new.split())
+    if 4 <= words <= 26 and new.lower() != first.lower():
+        print(f"Hook: {first!r} → {new!r}")
+        beats[0]["line"] = new
+        draft["script"] = "\n".join(b["line"] for b in beats)
+        draft["hook_before"] = first
+    return draft
 
 
 def draft_from_own_script(text, topic=None):

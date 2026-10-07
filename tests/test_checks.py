@@ -44,5 +44,19 @@ check("drop bootcamp", news.newsworthy({"title": "DIET Leh Commences Three-Day B
 check("keep launch", news.newsworthy({"title": "OpenAI launches GPT-6 with persistent memory",
                                       "source": "The Verge"}), True)
 
+# the hook pass replaces only the first line, and only with a sensible length
+_ask = writer.ask
+d = {"beats": [{"line": "Utah is launching a pilot program to use artificial intelligence for patient exams."},
+               {"line": "Doctors will review every result."}], "script": "x"}
+writer.ask = lambda *a, **k: '{"line": "An AI just started examining patients in Utah."}'
+out = writer.sharpen_hook(d, {"title": "Utah AI exams"})
+check("hook replaced", out["beats"][0]["line"], "An AI just started examining patients in Utah.")
+check("hook keeps rest", out["beats"][1]["line"], "Doctors will review every result.")
+check("script rebuilt", out["script"].split("\n")[0], "An AI just started examining patients in Utah.")
+writer.ask = lambda *a, **k: '{"line": "Wow."}'
+d2 = {"beats": [{"line": "OpenAI just launched GPT-6."}], "script": "OpenAI just launched GPT-6."}
+check("too-short hook ignored", writer.sharpen_hook(d2, {})["beats"][0]["line"], "OpenAI just launched GPT-6.")
+writer.ask = _ask
+
 print("\n".join(fails) if fails else "all checks passed")
 sys.exit(1 if fails else 0)

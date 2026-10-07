@@ -16,7 +16,7 @@ import state as st
 import telegram_api as tg
 import whatsapp
 import writer
-from config import AI_VOICE_NOTE, AUTO_APPROVE_HOURS, AUTO_PICK_HOURS, OFFER_TIMES, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
+from config import HANDLE, AI_VOICE_NOTE, AUTO_APPROVE_HOURS, AUTO_PICK_HOURS, OFFER_TIMES, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
 
 POST_WORDS = {"post", "yes", "approve", "ok", "okay", "publish", "schedule", "👍", "✅"}
 POST_NOW_WORDS = {"post now", "publish now", "now"}
@@ -548,7 +548,9 @@ def caption_for(draft, ai_voice=False):
     note = f"\n\n{AI_VOICE_NOTE}" if ai_voice and AI_VOICE_NOTE else ""
     credits = list(dict.fromkeys(draft.get("credits") or []))  # no duplicates
     credit_text = ("\n\n📷 " + " · ".join(credits))[:600] if credits else ""
-    return draft["caption"] + note + credit_text + "\n\n" + " ".join(f"#{h}" for h in draft["hashtags"])
+    follow = f"\n\nFollow @{HANDLE.lstrip('@')} for daily AI news ⚡" if HANDLE else ""
+    return (draft["caption"] + follow + note + credit_text + "\n\n" +
+            " ".join(f"#{h}" for h in draft["hashtags"]))
 
 
 # ---------- scheduling & posting ----------
