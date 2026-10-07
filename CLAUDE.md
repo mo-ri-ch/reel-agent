@@ -4,6 +4,13 @@ An automated Instagram account (**@gradientai.news**, "Gradient Daily · AI News
 **12 AI-news reels a day**, one every 2 hours (01:00–23:00 IST, odd hours), for a global audience. The owner talks to it
 through a Telegram bot and reads Claude's messages there.
 
+## Mission & goals (keep every change aimed at these)
+- Build @gradientai.news into a trusted, fast-growing AI-news account for a global audience, fully on autopilot
+  (the owner does nothing manually).
+- Near term: 10 followers by Sun 11 Oct 2026 (from 6 on 7 Oct); then steady growth in views, watch time, shares.
+- Quality bar: top-notch, editor-grade reels (studio look), specific and fact-checked, never generic.
+- Long-term goal (6–12 months): NOT YET SET — asked the owner on 2026-10-07; update this line when they answer.
+
 ## How it runs
 - `.github/workflows/agent.yml` runs every 5 minutes (started by cron-job.org) in **Python 3.11**. `main.py poll` does the
   work; `Make the reel` steps run when a video must be rendered.
