@@ -113,6 +113,8 @@ jobs:
           git config user.name "reel-agent"
           git config user.email "reel-agent@users.noreply.github.com"
           git add state.json
+          git add state.backup.json 2>/dev/null || true
+          git add -A control 2>/dev/null || true
           git add stats 2>/dev/null || true
           git add -A outbox 2>/dev/null || true
           git add -A review 2>/dev/null || true

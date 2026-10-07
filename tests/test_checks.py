@@ -71,6 +71,25 @@ _s["last_fish_id"] = "ethan"
 check("fish alternates back", main.fish_voices(_s)[0][0], "paula")
 main.FISH_API_KEY = _k
 
+# a broken memory file falls back to the backup; control files are applied once and removed
+import json as _json, os as _os, tempfile as _tf  # noqa: E402
+import state as _st  # noqa: E402
+_d = _tf.mkdtemp()
+_old = (_st.STATE_FILE, _st.BACKUP_FILE, _st.CONTROL_DIR)
+_st.STATE_FILE, _st.BACKUP_FILE, _st.CONTROL_DIR = (_os.path.join(_d, "state.json"), _os.path.join(_d, "state.backup.json"),
+                                                     _os.path.join(_d, "control"))
+open(_st.STATE_FILE, "w").write('{"stage": "x",\n  }broken')
+_json.dump({"stage": "choosing", "fish_disabled": True}, open(_st.BACKUP_FILE, "w"))
+_os.makedirs(_st.CONTROL_DIR)
+_json.dump({"set": {"autopilot": True}, "unset": ["fish_disabled"]}, open(_os.path.join(_st.CONTROL_DIR, "1.json"), "w"))
+_s = _st.load()
+check("backup used", (_s["stage"], bool(_st.RECOVERED)), ("choosing", True))
+check("control applied", ("fish_disabled" in _s, _s["autopilot"], _os.listdir(_st.CONTROL_DIR)), (False, True, []))
+_st.save(_s)
+check("both copies saved", _json.load(open(_st.STATE_FILE))["stage"], "choosing")
+_st.STATE_FILE, _st.BACKUP_FILE, _st.CONTROL_DIR = _old
+_st.RECOVERED = None
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

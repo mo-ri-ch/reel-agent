@@ -36,17 +36,56 @@ DEFAULT = {
 }
 
 
+BACKUP_FILE = STATE_FILE.replace(".json", ".backup.json")
+CONTROL_DIR = os.path.join(os.path.dirname(os.path.abspath(STATE_FILE)), "control")
+RECOVERED = None  # set when the memory file was broken and the backup was used
+
+
 def load():
+    """The agent's memory. If state.json is ever broken (e.g. a bad merge), the backup copy is used instead."""
+    global RECOVERED
     data = {}
-    if os.path.exists(STATE_FILE):
-        with open(STATE_FILE) as f:
-            data = json.load(f)
-    return {**DEFAULT, **data}
+    for path in (STATE_FILE, BACKUP_FILE):
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path) as f:
+                data = json.load(f)
+            if path == BACKUP_FILE:
+                RECOVERED = "state.json was broken, so I restored my memory from the backup copy."
+            break
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            print(f"Couldn't read {path}: {e}")
+    s = {**DEFAULT, **data}
+    apply_control(s)
+    return s
+
+
+def apply_control(s):
+    """Changes Claude asks for without touching state.json (so no merge can break it): control/*.json files with
+    {"set": {key: value}, "unset": [keys]}. Applied once, then deleted."""
+    if not os.path.isdir(CONTROL_DIR):
+        return
+    for name in sorted(os.listdir(CONTROL_DIR)):
+        path = os.path.join(CONTROL_DIR, name)
+        if not name.endswith(".json"):
+            continue
+        try:
+            with open(path) as f:
+                c = json.load(f)
+            s.update(c.get("set") or {})
+            for k in c.get("unset") or []:
+                s.pop(k, None)
+            print(f"Applied control file {name}")
+        except Exception as e:
+            print(f"Control file {name} skipped: {e}")
+        os.remove(path)
 
 
 def save(state):
-    with open(STATE_FILE, "w") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
+    for path in (STATE_FILE, BACKUP_FILE):
+        with open(path, "w") as f:
+            json.dump(state, f, indent=2, ensure_ascii=False)
 
 
 def now():

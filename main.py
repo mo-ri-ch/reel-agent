@@ -1126,6 +1126,11 @@ def handle_button(s, cq):
 # ---------- modes ----------
 def cmd_poll():
     s = st.load()
+    if st.RECOVERED:
+        try:
+            tg.send("⚠️ " + st.RECOVERED + " Everything carries on; Claude will check it.")
+        except Exception:
+            pass
     before = json.dumps(s, sort_keys=True)
     render = False
     for u in tg.get_updates(s["offset"]):

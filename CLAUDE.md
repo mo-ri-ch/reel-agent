@@ -17,8 +17,12 @@ through a Telegram bot and reads Claude's messages there.
 - `.github/workflows/agent.yml` runs every 5 minutes (started by cron-job.org) in **Python 3.11**. `main.py poll` does the
   work; `Make the reel` steps run when a video must be rendered.
 - `state.json` is the agent's memory. **The agent commits it every 5 minutes**, so pushes often race: always
-  `git pull --rebase origin main` right before `git push`, and retry. Avoid editing `state.json` by hand; if you must,
-  change only the keys you need, in a fresh pull, and push immediately.
+  `git pull --rebase origin main` right before `git push`, and retry.
+- **NEVER edit `state.json` (or `state.backup.json`) by hand.** On 2026-10-07 a hand edit saved with different
+  formatting was merged with the agent's save and broke the JSON: the agent crashed for 2 hours and missed a slot.
+  To change the agent's memory, commit a file `control/<name>.json` = `{"set": {key: value}, "unset": [keys]}`; the
+  agent applies it on its next run and deletes it. If state.json is ever unreadable, the agent loads
+  `state.backup.json` and tells the owner.
 - `stats/insights.json`: daily Instagram numbers (followers per day; per reel: views, reach, likes, comments, shares,
   saved, ig_reels_avg_watch_time in ms) and `meta` (per reel link: kind, engine, voice, person, words, slot…).
 - `outbox/*.txt`: plain-text messages the agent sends to the owner's Telegram on its next run, then deletes.
