@@ -50,6 +50,13 @@ check("fish down -> google", (tts.LAST_ENGINE, tts.FISH_PROBLEM), ("google", "HT
 tts._fish = lambda text, out, vid: "fish.mp3"
 path, _ = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google", fish_voice="abc")
 check("fish used", (path, tts.LAST_ENGINE), ("fish.mp3", "fish"))
+tts._fish = lambda text, out, vid: (_ for _ in ()).throw(RuntimeError("503")) if vid == "own" else vid + ".mp3"
+path, label = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google",
+                             fish_voice=[("own", "your voice"), ("lib1", "Narrator (Fish Audio)")])
+check("fish own down -> library voice", (path, label, tts.LAST_FISH_ID), ("lib1.mp3", "Narrator (Fish Audio)", "lib1"))
+tts._fish = _out
+path, _ = tts.synthesize("x y z", "/tmp/x", "male", "google", fish_voice=[("own", "a"), ("lib1", "b")])
+check("fish credits out -> skip library", tts.LAST_ENGINE, "google")
 tts._fish, tts._google, tts.FISH_API_KEY = _f, _g, _key
 
 # vague references must be caught

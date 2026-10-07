@@ -804,6 +804,36 @@ def clone_voice(s, audio):
     return None
 
 
+def fish_pool_command(s, arg):
+    """/fishvoice <Fish Audio voice link> adds a library voice; /fishvoice list; /fishvoice clear."""
+    import tts
+    pool = s.setdefault("fish_pool", [])
+    found = re.search(r"[0-9a-f]{32}", arg.lower())
+    if arg.lower() == "clear":
+        s["fish_pool"] = []
+        tg.send("🎙 Removed all Fish library voices.")
+    elif found and FISH_API_KEY:
+        vid = found.group(0)
+        if any(v["id"] == vid for v in pool):
+            tg.send("🎙 That voice is already in the list.")
+            return
+        try:
+            name = tts.fish_voice_name(vid)
+        except Exception as e:
+            tg.send(f"⚠️ Couldn't use that voice: {str(e)[:150]}")
+            return
+        pool.append({"id": vid, "name": name})
+        tg.send(f"✅ Added “{name}”. Backup Fish voices: {len(pool)}. They're used when your own voice is off or a "
+                "take fails the voice check.")
+    elif found:
+        tg.send("🎙 Add the FISH_API_KEY secret in GitHub first.")
+    else:
+        names = ", ".join(v.get("name", "?") for v in pool) or "none yet"
+        tg.send(f"🎙 Fish library voices: {names}.\nTo add one, open a voice on fish.audio (Discovery), copy its link "
+                "and send: /fishvoice <link>. Pick clear US-English narrator voices, never a celebrity's voice.\n"
+                "/fishvoice clear removes them all.")
+
+
 def handle(s, m, from_button=False):
     """Handles one Telegram message (or tapped button). Returns 'render' when the reel needs (re)making."""
     text = (m.get("text") or m.get("caption") or "").strip()
@@ -880,11 +910,12 @@ def handle(s, m, from_button=False):
         arg = low[len("/myvoice"):].strip()
         if arg == "off":
             s["fish_disabled"] = True
-            tg.send("🎙 Your voice is off. Reels use the regular voices. Send /myvoice on to switch back.")
+            tg.send("🎙 Your voice is off. Reels use your Fish library voices (/fishvoice) if you've added any, else "
+                    "the regular voices. Send /myvoice on to switch back.")
         elif arg == "on":
             s.pop("fish_disabled", None)
             s.pop("fish_off_day", None)
-            tg.send("🎙 Your voice is on again." if fish_voice(s) else
+            tg.send("🎙 Your voice is on again." if fish_voices(s) else
                     "🎙 Switched on, but there's no voice yet: send /myvoice and then a recording.")
         elif not FISH_API_KEY:
             tg.send("🎙 Add the FISH_API_KEY secret in GitHub first, then send /myvoice again.")
@@ -892,6 +923,8 @@ def handle(s, m, from_button=False):
             s["awaiting_voice_sample"] = True
             tg.send("🎙 Send me a voice recording now (1–3 minutes). Read any news text clearly, at your normal "
                     "pace, in a quiet room, phone close to your mouth. I'll make your voice from it.")
+    elif low.startswith("/fishvoice"):
+        fish_pool_command(s, text[len("/fishvoice"):].strip())
     elif low.startswith("/stats"):
         import insights
         try:
@@ -1368,11 +1401,18 @@ def cmd_offer():
     st.save(s)
 
 
-def fish_voice(s):
-    """The owner's cloned voice id, if it's set up, switched on and not out of credits today."""
-    if not FISH_API_KEY or s.get("fish_disabled") or s.get("fish_off_day") == st.now().date().isoformat():
-        return None
-    return s.get("fish_voice_id") or FISH_VOICE_ID or None
+def fish_voices(s):
+    """Fish Audio voices to try, in order: the owner's own voice (unless switched off), then the library voices the
+    owner picked with /fishvoice (shuffled). Empty when there's no key or credits ran out today."""
+    import random
+    if not FISH_API_KEY or s.get("fish_off_day") == st.now().date().isoformat():
+        return []
+    own = s.get("fish_voice_id") or FISH_VOICE_ID
+    out = [(own, "your voice (Fish Audio)")] if own and not s.get("fish_disabled") else []
+    pool = [(v["id"], f"{v.get('name') or 'library voice'} (Fish Audio)") for v in s.get("fish_pool") or []
+            if v.get("id")]
+    random.shuffle(pool)
+    return out + pool
 
 
 def cmd_render():
@@ -1386,7 +1426,7 @@ def cmd_render():
             import tts
             gender = s.get("voice_gender") or "male"
             want = "microsoft" if s.get("last_engine") == "google" else "google"  # alternate Google / Microsoft
-            fish = fish_voice(s)
+            fish = fish_voices(s)
             voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender, want,
                                            delivery=s["draft"].get("delivery") or "", fish_voice=fish)
             if tts.LAST_ENGINE != "fish":  # the Google / Microsoft alternation only moves when one of them is used
@@ -1394,7 +1434,7 @@ def cmd_render():
             if fish and tts.FISH_PROBLEM == "out":
                 s["fish_off_day"] = st.now().date().isoformat()
                 tg.send("🎙 Fish Audio refused (credits used up, or the key changed), so today's reels use the regular "
-                        "voices. Top up at fish.audio and your voice comes back tomorrow.")
+                        "voices. Top up at fish.audio and the Fish voices come back tomorrow.")
             # listen to the voice-over before using it: it must say the script and nothing else
             def heard_words(path):
                 # Microsoft reports exactly what it spoke; otherwise transcribe WITHOUT a hint (a hint makes the
@@ -1409,7 +1449,9 @@ def cmd_render():
                 print(f"Voice-over rejected ({why}); remaking it")
                 tg.send(f"🎙 The {engine.split(',')[0]} voice-over didn't match the script ({why}), so I'm remaking it.")
                 other = "microsoft" if tts.LAST_ENGINE == "google" else "google"
-                voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice2"), gender, other)
+                rest = [v for v in fish if v[0] != tts.LAST_FISH_ID] if tts.LAST_ENGINE == "fish" else []
+                voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice2"), gender, other,
+                                               fish_voice=rest)
                 ok2, why2 = tts.speech_matches(heard_words(voice), s["draft"]["script"])
                 if not ok2:
                     raise RuntimeError(f"the voice-over didn't match the script twice ({why2})")

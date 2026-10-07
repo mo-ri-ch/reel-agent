@@ -22,6 +22,7 @@ def _speakable(text):
 LAST_WORDS = None  # exact word timings from the Edge voice, when available
 FISH_API = "https://api.fish.audio"
 FISH_PROBLEM = None  # why the owner's voice wasn't used this time ("out" = no credits / key refused)
+LAST_FISH_ID = None  # which Fish voice was used
 
 
 class FishOut(RuntimeError):
@@ -42,6 +43,14 @@ def fish_clone(path, title="Gradient Daily voice"):
     if not voice_id:
         raise RuntimeError(f"no voice id in reply: {str(data)[:200]}")
     return voice_id
+
+
+def fish_voice_name(voice_id):
+    """The title of a Fish Audio voice (also checks that it exists and can be used)."""
+    r = requests.get(f"{FISH_API}/model/{voice_id}", headers={"Authorization": f"Bearer {FISH_API_KEY}"}, timeout=30)
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:150]}")
+    return str(r.json().get("title") or "Fish voice")[:40]
 
 
 def _fish(text, out_base, voice_id):
@@ -198,22 +207,26 @@ def _google(text, out_base, voice, delivery=None):
 def synthesize(text, out_base, gender="male", engine="microsoft", delivery=None, fish_voice=None):
     """Returns (audio_path, description). engine: "google" or "microsoft" (the other is the automatic backup).
     delivery: the story's feeling for Google's director notes; None = bare script.
-    fish_voice: the owner's cloned voice id; tried first, and if it fails the regular voices are used."""
-    global LAST_WORDS, LAST_ENGINE, FISH_PROBLEM
+    fish_voice: Fish Audio voices to try first, in order: a voice id, or a list of (voice id, label). If they all
+    fail (or credits run out) the regular voices are used."""
+    global LAST_WORDS, LAST_ENGINE, FISH_PROBLEM, LAST_FISH_ID
     LAST_WORDS = None
     FISH_PROBLEM = None
+    LAST_FISH_ID = None
     text = _speakable(text)
-    if fish_voice and FISH_API_KEY:
+    fish = [(fish_voice, "your voice (Fish Audio)")] if isinstance(fish_voice, str) else list(fish_voice or [])
+    for voice_id, label in (fish if FISH_API_KEY else []):
         try:
-            path = _fish(text, out_base, fish_voice)
-            LAST_ENGINE = "fish"
-            return path, "your voice (Fish Audio)"
+            path = _fish(text, out_base, voice_id)
+            LAST_ENGINE, LAST_FISH_ID = "fish", voice_id
+            return path, label
         except FishOut as e:
             FISH_PROBLEM = "out"
             print(f"Fish Audio refused ({e}); using the regular voices")
+            break
         except Exception as e:
             FISH_PROBLEM = str(e)[:150]
-            print(f"Fish Audio failed ({e}); using the regular voices")
+            print(f"Fish voice {label} failed ({e})")
     engines = ["google", "microsoft"] if engine == "google" else ["microsoft", "google"]
     for eng in engines:
         if eng == "google":

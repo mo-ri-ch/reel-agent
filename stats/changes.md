@@ -29,3 +29,5 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 2026-10-07 · Owner's own voice via Fish Audio (~$2-3/month, owner approved) · set up with /myvoice in Telegram;
   used for every reel; credits out / errors → regular Google/Microsoft voices automatically. Target: avg watch
   time and followers vs AI-voice reels (compare by meta.engine = "fish").
+- 2026-10-07 · Fish library voices as backup (/fishvoice <link>, owner-picked): used when the owner's voice is off
+  or a take fails the voice check; credits out → regular voices. Compare by meta.voice.
