@@ -1053,6 +1053,21 @@ def beat_times(beats, words, total):
 
 
 LAST_SUMMARY = ""
+STYLE = (os.environ.get("REEL_STYLE") or "classic").lower()   # "studio" = clean studio look (studio.py)
+STUDIO_INFO = {}  # shot file → what it shows (kind, raw picture, name…), so the studio style can redraw it
+
+
+def _remember(p, kind, img=None, **info):
+    if img is not None:
+        raw = p[:-4] + "_raw.jpg"
+        try:
+            im = img.convert("RGB")
+            im.thumbnail((1800, 1800), Image.LANCZOS)
+            im.save(raw, quality=90)
+            info["raw"] = raw
+        except Exception as e:
+            print(f"Raw picture not saved: {e}")
+    STUDIO_INFO[p] = {"kind": kind, **info}
 
 
 def safe_shot(b, i, tmp):
@@ -1061,15 +1076,18 @@ def safe_shot(b, i, tmp):
     p = os.path.join(tmp, f"safe_{i}.png")
     if b["visual"] == "person":
         make_person_card(p, b["name"], b.get("role", ""))
+        _remember(p, "person", name=b["name"], role=b.get("role", ""))
     elif b["visual"] in ("official", "photo", "source") or b.get("brands"):
         name = b.get("entity") or b.get("outlet") or (b.get("brands") or [{}])[0].get("name", "")
         domain = b.get("domain") or (b.get("brands") or [{}])[0].get("domain", "")
         make_logo_card(p, name or "AI news", domain)
+        _remember(p, "logo", name=name or "AI news", domain=domain)
     else:
         img = images.generate(f"minimal abstract illustration about technology and AI, calm colors, no text, no people")
         if not img:
             return None
         full_frame(img).save(p)
+        _remember(p, "picture", img)
     return ("image", p)
 
 
@@ -1103,6 +1121,7 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
 
     plan, used, counts = [], set(), {"official images": 0, "real photos": 0, "clips": 0, "AI images": 0, "cards": 0}
     LAST_CREDITS = []
+    STUDIO_INFO.clear()
 
     # real images from the official pages and the news sources, fetched once and shared by the beats
     pool, pool_used, fetched = [], set(), set()
@@ -1141,6 +1160,7 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
             anim = make_person_card(p, b["name"], b.get("role", ""), img, credit or "",
                                     animate_into=os.path.join(tmp, f"person_frames_{i}"))
             shots += [("layered", anim), ("image", p)] if anim else [("image", p)]
+            _remember(p, "person", img, name=b["name"], role=b.get("role", ""), credit=credit or "")
             if img:
                 counts["real photos"] += 1
                 LAST_CREDITS.append(f"{b['name']}: {credit}")
@@ -1155,6 +1175,7 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                 p = os.path.join(tmp, f"official_{i}_{len(shots)}.png")
                 framed = full_frame(img)
                 add_credit(framed, dom).save(p)
+                _remember(p, "picture", img, credit=f"Image: {dom}")
                 shots.append(("image", p))
                 counts["official images"] += 1
                 LAST_CREDITS.append(f"{b['entity']}: {dom}")
@@ -1163,12 +1184,14 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                 if img:
                     p = os.path.join(tmp, f"photo_{i}.png")
                     add_credit(full_frame(img), credit.split(" (")[0]).save(p)
+                    _remember(p, "picture", img, credit=f"Photo: {credit.split(' (')[0]}")
                     shots.append(("image", p))
                     counts["real photos"] += 1
                     LAST_CREDITS.append(f"{b['entity']}: {credit}")
                 else:
                     p = os.path.join(tmp, f"logo_{i}.png")
                     make_logo_card(p, b["entity"], b.get("domain", ""))
+                    _remember(p, "logo", name=b["entity"], domain=b.get("domain", ""))
                     shots.append(("image", p))
                     counts["cards"] += 1
         if b["visual"] == "photo":
@@ -1176,6 +1199,7 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
             if img:
                 p = os.path.join(tmp, f"photo_{i}.png")
                 add_credit(full_frame(img), credit.split(" (")[0]).save(p)
+                _remember(p, "picture", img, credit=f"Photo: {credit.split(' (')[0]}")
                 shots.append(("image", p))
                 counts["real photos"] += 1
                 LAST_CREDITS.append(f"{b['entity']}: {credit}")
@@ -1184,15 +1208,19 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                 p = os.path.join(tmp, f"photo_{i}.png")
                 if img:
                     add_credit(full_frame(img), dom).save(p)
+                    _remember(p, "picture", img, credit=f"Image: {dom}")
                     counts["official images"] += 1
                     LAST_CREDITS.append(f"{b['entity']}: {dom}")
                 else:
                     make_logo_card(p, b["entity"], b.get("domain", ""))
+                    _remember(p, "logo", name=b["entity"], domain=b.get("domain", ""))
                     counts["cards"] += 1
                 shots.append(("image", p))
         if b["visual"] == "source":
             p = os.path.join(tmp, f"source_{i}.png")
             make_source_card(p, b.get("outlet", ""), b.get("headline") or b["line"], b.get("domain", ""))
+            _remember(p, "source", outlet=b.get("outlet", ""), headline=b.get("headline") or b["line"],
+                      domain=b.get("domain", ""))
             shots.append(("image", p))
             counts["cards"] += 1
         if b["visual"] == "clip":
@@ -1221,6 +1249,7 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                     break
                 p = os.path.join(tmp, f"official_{i}_{len(shots)}.png")
                 add_credit(full_frame(img), dom).save(p)
+                _remember(p, "picture", img, credit=f"Image: {dom}")
                 shots.append(("image", p))
                 counts["official images"] += 1
                 LAST_CREDITS.append(f"news photo: {dom}")
@@ -1232,6 +1261,7 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                 if img:
                     p = os.path.join(tmp, f"img_{i}_{v}.png")
                     full_frame(img).save(p)
+                    _remember(p, "picture", img)
                     shots.append(("image", p))
                     counts["AI images"] += 1
         if b["visual"] == "stat":
@@ -1242,9 +1272,11 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                 print(f"Count-up skipped: {e}")
             if anim:
                 shots += anim
+                _remember(anim[-1][1], "stat", big=b["big"], small=b["small"])
             else:
                 p = os.path.join(tmp, f"stat_{i}.png")
                 make_stat_card(p, b["big"], b["small"])
+                _remember(p, "stat", big=b["big"], small=b["small"])
                 shots.append(("image", p))
             counts["cards"] += 1
         plan.append(shots)
@@ -1468,7 +1500,8 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
         picture = ("img_", "official_", "photo_")
         first = next((src for shots in plan for kind, src in shots
                       if kind == "image" and os.path.basename(src).startswith(picture)), None)
-        hook_img = Image.open(first).convert("RGB") if first else None
+        raw = (STUDIO_INFO.get(first) or {}).get("raw") if first and STYLE == "studio" else None
+        hook_img = Image.open(raw or first).convert("RGB") if first else None
     hook_png = os.path.join(tmp, "hook.png")
     label = news_label(topic)
     make_hook_card(hook_png, draft.get("hook_text") or draft.get("title", ""), label, hook_img)
@@ -1486,14 +1519,33 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
             opening = None
 
     ass = os.path.join(tmp, "captions.ass")
-    write_ass(words, total, ass, hook_until=hook_len * 0.85)
-    hook_anim = None
-    if not opening:
-        try:
-            hook_anim = hook_animation(tmp, draft.get("hook_text") or draft.get("title", ""), label, hook_img)
-        except Exception as e:
-            print(f"Hook animation skipped: {e}")
-    listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening, total, hook_anim)
+    studio_look = STYLE == "studio" and not opening
+    captions_mov = None
+    if studio_look:
+        import studio
+        date = label.split(" · ")[-1]
+        for info in STUDIO_INFO.values():  # logos for the logo and source cards
+            if info["kind"] == "logo":
+                info["logo"] = brand_logo(info["name"].split()[0], info.get("domain", "")) or \
+                    (brand_logo(info["name"], info.get("domain", "")) if " " in info["name"] else None)
+            elif info["kind"] == "source":
+                info["logo"] = brand_logo(info.get("outlet", ""), info.get("domain", "")) if info.get("outlet") else None
+                info["date"] = date
+        listfile, cuts, theme_at = studio.build_track(
+            beats, times, plan, (draft.get("hook_text") or draft.get("title", ""), label, hook_img), hook_len, total, tmp)
+        names = [b.get(k) for b in beats for k in ("name", "entity", "outlet") if b.get(k)]
+        names += [br.get("name") for b in beats for br in (b.get("brands") or []) if isinstance(br, dict)]
+        captions_mov = studio.caption_track(os.path.join(tmp, "captions.mov"), words, total, hook_len,
+                                            theme_at, names)
+    else:
+        write_ass(words, total, ass, hook_until=hook_len * 0.85)
+        hook_anim = None
+        if not opening:
+            try:
+                hook_anim = hook_animation(tmp, draft.get("hook_text") or draft.get("title", ""), label, hook_img)
+            except Exception as e:
+                print(f"Hook animation skipped: {e}")
+        listfile, cuts = build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening, total, hook_anim)
     hook_end = opening[1] if opening else hook_len
 
     def intent(b):
@@ -1506,7 +1558,8 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     LAST_CHECK.update({"times": times, "hook_end": hook_end, "intents": [intent(b) for b in beats]})
     badges = []
     try:
-        badges = badge_events(beats, times, words, hook_len, tmp)
+        if not studio_look:  # the studio look shows logos in its own cards
+            badges = badge_events(beats, times, words, hook_len, tmp)
     except Exception as e:
         print(f"Logo badges skipped: {e}")
 
@@ -1533,11 +1586,17 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
 
     out = os.path.join(WORK_DIR, "reel.mp4")
     fontsdir = FONT_DIR if os.path.isdir(FONT_DIR) else "."
-    graph = [f"[0:v]subtitles={ass}:fontsdir={fontsdir}[v0]"]
-    inputs, last = [], "v0"
+    if captions_mov:
+        import studio
+        graph = [f"[2:v]format=rgba[cap];[0:v][cap]overlay=0:{studio.CAP_Y0}:eof_action=pass[v0]"]
+        inputs = ["-i", captions_mov]
+    else:
+        graph = [f"[0:v]subtitles={ass}:fontsdir={fontsdir}[v0]"]
+        inputs = []
+    last = "v0"
     for k, (png, a, b) in enumerate(badges):
         inputs += ["-loop", "1", "-t", f"{total:.2f}", "-i", png]
-        idx = 2 + k
+        idx = 2 + k + (1 if captions_mov else 0)
         graph.append(f"[{idx}:v]format=rgba,fade=t=in:st={a:.2f}:d=0.18:alpha=1,"
                      f"fade=t=out:st={b - 0.25:.2f}:d=0.25:alpha=1[b{k}]")
         graph.append(f"[{last}][b{k}]overlay=x=(W-w)/2:y=200:enable='between(t,{a:.2f},{b:.2f})'[v{k + 1}]")
