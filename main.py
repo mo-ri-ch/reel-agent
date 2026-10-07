@@ -59,6 +59,7 @@ Commands:
 /news – get fresh stories now (e.g. to record the next reel straight away)
 /autopilot on|off – finish reels on my own when you don't reply
 /queue – see scheduled reels
+/stats – this week's numbers (followers, views, best reels)
 /held – review reels the quality check parked
 /nextstory – drop this story and make the next one
 /script – show the current script again
@@ -627,7 +628,13 @@ def publish_item(item):
     import instagram
     os.makedirs(WORK_DIR, exist_ok=True)
     path = tg.download(item["video_file_id"], os.path.join(WORK_DIR, "final.mp4"))
-    return instagram.publish_reel(path, item["caption"])
+    link = instagram.publish_reel(path, item["caption"])
+    try:
+        import insights
+        insights.remember_reel(link, {**(item.get("meta") or {}), "posted": st.now().isoformat(timespec="minutes")})
+    except Exception as e:
+        print(f"Couldn't save reel details: {e}")
+    return link
 
 
 def digest_draft(heads):
@@ -707,10 +714,22 @@ def resume_paused(s):
     return True
 
 
+def reel_meta(s):
+    """What we know about this reel, so its views can later be compared by these features."""
+    t, d = s.get("topic") or {}, s.get("draft") or {}
+    beats = d.get("beats") or []
+    kind = "headlines" if t.get("digest") else "extra" if t.get("extra") else "explainer" if t.get("custom") else "news"
+    return {"title": t.get("title", "")[:120], "kind": kind, "source": t.get("source", "")[:40],
+            "engine": s.get("last_engine") if s.get("voice_mode") == "ai" else "own voice",
+            "voice": d.get("voice_used", "")[:60], "person": any(b.get("visual") == "person" for b in beats),
+            "words": len(d.get("script", "").split()), "visuals": d.get("visual_summary", "")[:80],
+            "made": st.now().isoformat(timespec="minutes")}
+
+
 def approve(s, now_please=False):
     item = {"title": s["topic"]["title"], "video_file_id": s["video_file_id"],
             "caption": caption_for(s["draft"], s.get("voice_mode") == "ai"),
-            "extra": bool((s.get("topic") or {}).get("extra"))}
+            "extra": bool((s.get("topic") or {}).get("extra")), "meta": reel_meta(s)}
     s["history"] = (s["history"] + [item["title"]])[-100:]
     s["posted_log"] = (s.get("posted_log") or []) + [{"title": item["title"], "at": st.now().isoformat()}]
     if now_please:
@@ -828,6 +847,13 @@ def handle(s, m, from_button=False):
         return None
     if low.startswith("/undo"):
         undo(s)
+    elif low.startswith("/stats"):
+        import insights
+        try:
+            insights.collect(st.now().tzinfo)
+        except Exception as e:
+            print(f"Stats refresh failed: {e}")
+        tg.send(insights.weekly_report(st.now().tzinfo))
     elif low.startswith("/held"):
         review_held(s)
     elif low.startswith("/nextstory"):
@@ -1094,6 +1120,8 @@ def cmd_poll():
 
     post_due(s)
     daily_report(s)
+    if not render:
+        stats_jobs(s)
 
     try:
         tg.ack_updates(s["offset"] - 1)
@@ -1181,6 +1209,36 @@ def keep_schedule(s):
             s["digest_for"] = key
             return True
     return False
+
+
+def stats_jobs(s):
+    """Once a day (just after midnight, IST): collect Instagram stats. Sundays 10 AM: the weekly report."""
+    if not IG_READY():
+        return
+    import insights
+    now = st.now()
+    today = now.date().isoformat()
+    first_time = not s.get("stats_day")
+    if s.get("stats_day") != today and (first_time or (now.hour == 0 and now.minute >= 20) or now.hour >= 1):
+        s["stats_day"] = today
+        try:
+            status = insights.collect(now.tzinfo)
+            print(f"Stats: {status}")
+            data = insights.load()
+            if not data.get("notes", {}).get("insights_permission", True) and not s.get("perm_told"):
+                s["perm_told"] = True
+                tg.send("📊 I've started saving your Instagram stats every day (followers, likes, comments). To also "
+                        "track views, shares, saves and watch time, the Instagram token needs the "
+                        "“instagram_manage_insights” permission. Ask Claude to walk you through adding it (5 min).")
+        except Exception as e:
+            print(f"Stats collection failed: {e}")
+    week = f"{now.isocalendar()[0]}-{now.isocalendar()[1]}"
+    if now.weekday() == 6 and now.hour >= 10 and s.get("report_week") != week:
+        s["report_week"] = week
+        try:
+            tg.send(insights.weekly_report(now.tzinfo))
+        except Exception as e:
+            print(f"Weekly report failed: {e}")
 
 
 def daily_report(s):
@@ -1323,6 +1381,8 @@ def cmd_render():
             print(f"Visual check skipped: {e}")
         s["draft"]["credits"] = list(getattr(video, "LAST_CREDITS", []) or [])
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
+        s["draft"]["voice_used"] = engine if s.get("voice_mode") == "ai" else "own voice"
+        s["draft"]["visual_summary"] = getattr(video, "LAST_SUMMARY", "")
         if getattr(video, "LAST_SUMMARY", ""):
             voice_info += f"\n🎞 {video.LAST_SUMMARY}"
         if getattr(video, "LAST_SYNC", ""):

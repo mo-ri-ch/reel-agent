@@ -112,6 +112,7 @@ jobs:
           git config user.name "reel-agent"
           git config user.email "reel-agent@users.noreply.github.com"
           git add state.json
+          git add stats 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -q -m "Update agent state"
             git pull -q --rebase -X theirs   # if two saves meet, keep this run's newer memory
