@@ -1414,6 +1414,11 @@ def cmd_render():
                        "issues": "\n🖼 Visual check: ⚠️ some shots may not fit — please look",
                        "skipped": "\n🖼 Visual check: skipped"}.get(vs, "")
         voice_info += "\n" + fact_line(s["draft"]).split("\n")[0]
+        try:
+            import review
+            review.save(out, s["draft"], s.get("topic"))
+        except Exception as e:
+            print(f"Review pack skipped: {e}")
         s["video_file_id"] = tg.send_video(out, caption="👆 Preview" + voice_info)
         s["stage"] = "awaiting_approval"
         s["preview_deadline"] = deadline() if s.get("autopilot") else None
