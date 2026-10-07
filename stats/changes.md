@@ -46,3 +46,5 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   3 lines, 56px) with words lighting up as spoken; numbers get the highlight first. Target: watch time / completion.
 - 2026-10-07 · Owner: use my voice, made energetic · own Fish clone back on with the [excited] tag, +6% pace,
   presence EQ and light compression; Paula/Ethan as backups. Compare watch time vs Paula/Ethan reels.
+- 2026-10-07 · Owner: crisp, clear studio sound · every voice gets a vocal chain (high-pass, de-box EQ, presence +
+  air, de-esser, gentle compression) before mixing; owner's voice adds only pace + a little bite on top.

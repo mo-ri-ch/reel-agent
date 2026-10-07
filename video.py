@@ -52,7 +52,11 @@ def clean_audio(src, dst, trim_start=True, denoise=True):
     trim = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15"
     start = f"{trim}," if trim_start else ""
     nr = "afftdn=nf=-25," if denoise else ""
-    af = (f"highpass=f=80,{nr}{start}areverse,{trim},areverse,"
+    # studio vocal chain: no rumble, less boxiness, more presence and air, softer "s" sounds, even level
+    vocal = ("highpass=f=85,equalizer=f=250:t=q:w=1.1:g=-2.5,equalizer=f=3200:t=q:w=1.3:g=2.5,"
+             "equalizer=f=10500:t=q:w=0.9:g=2,deesser=i=0.35:m=0.5:f=0.5,"
+             "acompressor=threshold=-20dB:ratio=2.5:attack=8:release=90:makeup=1.5,")
+    af = (f"{vocal}{nr}{start}areverse,{trim},areverse,"
           "loudnorm=I=-14:TP=-1.5:LRA=11,apad=pad_dur=0.6")
     sh(["ffmpeg", "-y", "-i", src, "-af", af, "-ar", "48000", "-ac", "2", dst])
 

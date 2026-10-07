@@ -53,8 +53,9 @@ def fish_voice_name(voice_id):
     return str(r.json().get("title") or "Fish voice")[:40]
 
 
-ENERGY_FILTER = ("atempo=1.06,highpass=f=90,equalizer=f=220:t=q:w=1:g=-2,equalizer=f=3600:t=q:w=1.2:g=3.5,"
-                 "equalizer=f=9000:t=q:w=1:g=1.5,acompressor=threshold=-21dB:ratio=3:attack=5:release=60:makeup=2")
+# the studio vocal chain (EQ, de-esser, compression) is applied to every voice in video.clean_audio; this only adds
+# pace and a little extra bite on top
+ENERGY_FILTER = "atempo=1.06,equalizer=f=3600:t=q:w=1.2:g=1.5"
 
 
 def energize(path):
