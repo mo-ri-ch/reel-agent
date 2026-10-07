@@ -37,20 +37,20 @@ check("director one transcript header", dp.count("\n#### TRANSCRIPT"), 1)
 _f, _g, _key = tts._fish, tts._google, tts.FISH_API_KEY
 tts.FISH_API_KEY = "test"
 tts._google = lambda text, out, voice, delivery=None: "google.wav"
-def _out(*a):
+def _out(*a, **k):
     raise tts.FishOut("HTTP 402")
 tts._fish = _out
 path, _ = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google", fish_voice="abc")
 check("fish out -> google", (path, tts.LAST_ENGINE, tts.FISH_PROBLEM), ("google.wav", "google", "out"))
-def _down(*a):
+def _down(*a, **k):
     raise RuntimeError("HTTP 503")
 tts._fish = _down
 path, _ = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google", fish_voice="abc")
 check("fish down -> google", (tts.LAST_ENGINE, tts.FISH_PROBLEM), ("google", "HTTP 503"))
-tts._fish = lambda text, out, vid: "fish.mp3"
+tts._fish = lambda text, out, vid, **k: "fish.mp3"
 path, _ = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google", fish_voice="abc")
 check("fish used", (path, tts.LAST_ENGINE), ("fish.mp3", "fish"))
-tts._fish = lambda text, out, vid: (_ for _ in ()).throw(RuntimeError("503")) if vid == "own" else vid + ".mp3"
+tts._fish = lambda text, out, vid, **k: (_ for _ in ()).throw(RuntimeError("503")) if vid == "own" else vid + ".mp3"
 path, label = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google",
                              fish_voice=[("own", "your voice"), ("lib1", "Narrator (Fish Audio)")])
 check("fish own down -> library voice", (path, label, tts.LAST_FISH_ID), ("lib1.mp3", "Narrator (Fish Audio)", "lib1"))

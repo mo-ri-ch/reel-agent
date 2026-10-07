@@ -44,3 +44,5 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   reference reel) instead of looping the same photo. Target: watch time, visual variety (no picture > 2 uses).
 - 2026-10-07 · Owner: smaller captions, whole sentence on screen · studio captions now show the full sentence (up to
   3 lines, 56px) with words lighting up as spoken; numbers get the highlight first. Target: watch time / completion.
+- 2026-10-07 · Owner: use my voice, made energetic · own Fish clone back on with the [excited] tag, +6% pace,
+  presence EQ and light compression; Paula/Ethan as backups. Compare watch time vs Paula/Ethan reels.

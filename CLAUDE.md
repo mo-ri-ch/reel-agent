@@ -39,7 +39,7 @@ through a Telegram bot and reads Claude's messages there.
 ## Owner's preferences (learned)
 - Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
 - Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
-- Voice: Fish Audio library voices Paula & Ethan (owner's choice, 2026-10-07; own clone saved but off — /myvoice on). Fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
+- Voice: the owner's own Fish clone, made energetic ([excited] tag + quicker, punchier sound), owner's request 2026-10-07 17:11; Paula & Ethan (alternating) are the backups. Fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
 - Brand blue (#7B9AF8), "Source · date" label, @gradientai.news handle. Look: studio style (studio.py) — clean dark/light scenes, floating picture cards, top captions with key-word highlight box (owner approved 2026-10-07).
 
 ## Daily health check (every day)

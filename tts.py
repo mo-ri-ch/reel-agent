@@ -53,8 +53,24 @@ def fish_voice_name(voice_id):
     return str(r.json().get("title") or "Fish voice")[:40]
 
 
-def _fish(text, out_base, voice_id):
-    """The owner's cloned voice from Fish Audio. Returns a .wav path."""
+ENERGY_FILTER = ("atempo=1.06,highpass=f=90,equalizer=f=220:t=q:w=1:g=-2,equalizer=f=3600:t=q:w=1.2:g=3.5,"
+                 "equalizer=f=9000:t=q:w=1:g=1.5,acompressor=threshold=-21dB:ratio=3:attack=5:release=60:makeup=2")
+
+
+def energize(path):
+    """A livelier read: 6% quicker, more presence and 'air', light compression (a radio host's punch)."""
+    import subprocess
+    out = path[:-4] + "_e.wav"
+    r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", path, "-af", ENERGY_FILTER, out],
+                       capture_output=True, text=True, timeout=120)
+    return out if r.returncode == 0 and os.path.exists(out) and os.path.getsize(out) > 2000 else path
+
+
+def _fish(text, out_base, voice_id, energetic=False):
+    """A Fish Audio voice (the owner's clone or a library voice). Returns a .wav path.
+    energetic: the excited emotion tag (the voice check catches it if it's ever read aloud) and a livelier sound."""
+    if energetic:
+        text = "[excited] " + text
     r = requests.post(f"{FISH_API}/v1/tts", timeout=180,
                       headers={"Authorization": f"Bearer {FISH_API_KEY}", "model": FISH_MODEL},
                       json={"text": text, "reference_id": voice_id, "format": "wav", "normalize": True,
@@ -68,7 +84,7 @@ def _fish(text, out_base, voice_id):
         f.write(r.content)
     if os.path.getsize(out) < 2000:
         raise RuntimeError("no audio returned")
-    return out
+    return energize(out) if energetic else out
 
 
 def _edge(text, out_base, voice):
@@ -217,7 +233,7 @@ def synthesize(text, out_base, gender="male", engine="microsoft", delivery=None,
     fish = [(fish_voice, "your voice (Fish Audio)")] if isinstance(fish_voice, str) else list(fish_voice or [])
     for voice_id, label in (fish if FISH_API_KEY else []):
         try:
-            path = _fish(text, out_base, voice_id)
+            path = _fish(text, out_base, voice_id, energetic=label.startswith("your voice"))
             LAST_ENGINE, LAST_FISH_ID = "fish", voice_id
             return path, label
         except FishOut as e:
