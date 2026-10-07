@@ -23,7 +23,8 @@ FEEDS = [
     "https://blogs.nvidia.com/feed/",
     # India
     "https://inc42.com/feed/",
-    # broad coverage (many outlets)
+    # broad coverage (many outlets): US and India editions, for a global mix
+    "https://news.google.com/rss/search?q=artificial+intelligence+when:1d&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=artificial+intelligence+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
     # sites that block direct access, reached through Google News instead
     "https://news.google.com/rss/search?q=(site:venturebeat.com+OR+site:analyticsindiamag.com+OR+site:artificialintelligence-news.com)+AI+when:2d&hl=en-IN&gl=IN&ceid=IN:en",

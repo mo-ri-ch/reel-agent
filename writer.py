@@ -93,6 +93,9 @@ From the headlines below, pick the {count} stories that would make the most enga
 big launches, surprising capabilities, tools people can actually use, major industry moves.
 Favour BREAKING stories that are clearly blowing up (high Hacker News points / Reddit upvotes in brackets) — but a Reddit
 post is only a lead: prefer stories that are also confirmed by a news site or an official announcement.
+The audience is GLOBAL (US, Europe, India): favour stories people everywhere care about (big AI companies, new
+models and tools anyone can use, major policy and research). Regional stories (India, Europe, US politics) are fine
+when they are big news, but keep the mix global.
 Skip minor funding news, opinion pieces and duplicates of each other.
 Also SKIP: company press releases and self-announcements by small or unknown firms, local/regional events
 (bootcamps, workshops, trainings, seminars, hackathons), government MoUs and "policy targets" without a concrete
@@ -305,7 +308,7 @@ def draft_from_own_script(text, topic=None):
         "title": title[:70], "hook_text": lines[0][:60], "beats": beats,
         "caption": " ".join(lines[:2])[:300] + "\n\nWhat do you think? Tell me in the comments 👇",
         "hashtags": ["ai", "artificialintelligence", "ainews", "tech", "technology", "chatgpt",
-                     "openai", "futuretech", "machinelearning", "techindia"],
+                     "openai", "futuretech", "machinelearning", "technews"],
     }, {"title": title})
 
 

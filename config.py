@@ -46,16 +46,16 @@ KOKORO_FEMALE = env("KOKORO_FEMALE", "af_heart")
 AI_VOICE_NOTE = env("AI_VOICE_NOTE", "")  # optional line added to captions of AI-voiced reels (off)
 
 TIMEZONE = ZoneInfo(env("TIMEZONE", "Asia/Kolkata"))
-AUTO_PICK_HOURS = float(env("AUTO_PICK_HOURS", "0.75"))
+AUTO_PICK_HOURS = float(env("AUTO_PICK_HOURS", "0.5"))
 # When the bot sends you fresh stories (your local time) — one reel per time
-OFFER_TIMES = [t.strip() for t in env("OFFER_TIMES", "07:00,09:30,12:00,14:30,17:00,19:30").split(",") if t.strip()]
+OFFER_TIMES = [t.strip() for t in env("OFFER_TIMES", "00:00,02:00,04:00,06:00,08:00,10:00,12:00,14:00,16:00,18:00,20:00,22:00").split(",") if t.strip()]
 # Autopilot: if you don't reply, use the AI voice / schedule the reel after this many hours
-AUTO_APPROVE_HOURS = float(env("AUTO_APPROVE_HOURS", "0.75"))
+AUTO_APPROVE_HOURS = float(env("AUTO_APPROVE_HOURS", "0.5"))
 # Times (your local time) when finished reels get posted
-POST_TIMES = [t.strip() for t in env("POST_TIMES", "09:00,11:30,14:00,16:30,19:00,21:30").split(",") if t.strip()]
+POST_TIMES = [t.strip() for t in env("POST_TIMES", "01:00,03:00,05:00,07:00,09:00,11:00,13:00,15:00,17:00,19:00,21:00,23:00").split(",") if t.strip()]
 HANDLE = env("INSTAGRAM_HANDLE", "")
 SPOKEN_NAME = env("SPOKEN_NAME", "Gradient Daily")  # how the voice-over says your @handle
-NICHE = env("CHANNEL_NICHE", "daily AI news, trends and advancements")
+NICHE = env("CHANNEL_NICHE", "daily AI news, trends and advancements, for a global audience (US, Europe, India)")
 
 FONT_PATH = env("FONT_PATH", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
 FONT_NAME = env("FONT_NAME", "DejaVu Sans")

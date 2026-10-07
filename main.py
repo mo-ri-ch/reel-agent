@@ -467,6 +467,9 @@ def offer_news(s):
     headlines = news.dedupe(news.fetch_headlines(), recent_titles(s))
     s["feed_report"] = {"at": st.now().isoformat(timespec="minutes"), **news.LAST_REPORT}
     used = recent_titles(s)
+    if len(headlines) < 3:  # with many reels a day the last 36 hours can run dry: look back 4 days
+        older = news.dedupe(news.fetch_headlines(max_age_hours=96, limit=120), used)
+        headlines = news.dedupe(headlines + older, [])
     if not headlines:
         reset_reel(s)
         tg.send("I couldn't find fresh AI news right now. Send me any topic and I'll write a script.")
@@ -653,7 +656,7 @@ def digest_draft(heads):
 
 def emergency_reel(s):
     """Nothing ready and a slot is close: make an attributed-headlines reel right away."""
-    fresh = news.fetch_headlines()
+    fresh = news.fetch_headlines(max_age_hours=96, limit=120)
     heads = news.dedupe(fresh, recent_titles(s))[:3]
     if len(heads) < 2:  # few "new" stories: any headline not used word-for-word before will do
         used = set(recent_titles(s))
@@ -1152,13 +1155,18 @@ def keep_schedule(s):
             if s.get(key) and datetime.fromisoformat(s[key]) > cap:
                 s[key] = cap.isoformat()
     # 2) work ahead: idle while a slot today still needs a reel → start the next one now
-    if s["stage"] == "idle" and not s.get("paused") and 5 <= now.hour < 22:
+    if s["stage"] == "idle" and not s.get("paused"):  # around the clock: night slots are for other time zones
         last = s.get("last_auto_offer")
         if not last or abs(now - datetime.fromisoformat(last)) > timedelta(minutes=20):
             s["last_auto_offer"] = now.isoformat()
-            tg.send("📋 A reel is missing from today's six (deleted or not posted), so I'm making a replacement now."
-                    if behind else f"📋 Getting the next reel ready for {fmt_time(need)}.")
+            tg.send(f"📋 A reel is missing from today's {len(POST_TIMES)} (deleted or not posted), so I'm making a "
+                    "replacement now." if behind else f"📋 Getting the next reel ready for {fmt_time(need)}.")
             offer_news(s)
+            nothing = s["stage"] == "idle"
+            key = f"behind-{now.date()}-{posted_today(s)}" if behind else need.isoformat()[:16]
+            if nothing and (minutes < 50 or behind) and s.get("digest_for") != key and emergency_reel(s):
+                s["digest_for"] = key
+                return True
             if minutes < 90 and s["stage"] == "choosing":
                 s["choose_deadline"] = (now + timedelta(minutes=0 if minutes < 45 else 10)).isoformat()
         return False
@@ -1176,10 +1184,11 @@ def keep_schedule(s):
 
 
 def daily_report(s):
-    """At 10 PM: how many of today's reels went out."""
+    """After the day's last post time: how many of today's reels went out."""
     now = st.now()
     today = now.date().isoformat()
-    if now.hour < 22 or s.get("report_day") == today:
+    last = max(slots_on(now.date()))
+    if now < last + timedelta(minutes=20) or s.get("report_day") == today:
         return
     s["report_day"] = today
     done, want = posted_today(s), len(POST_TIMES)
