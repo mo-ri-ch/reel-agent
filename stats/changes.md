@@ -10,3 +10,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   2. Story picks favour well-known companies/products. Why: big-name titles 58 vs 38 views/reel (20 vs 22 reels).
      Target: views/reel (base 47, median 32).
   3. Caption ends with "Follow @gradientai.news for daily AI news ⚡" (text only). Target: followers (base 6).
+- 2026-10-07 · Editor pass: (a) every rendered reel saves a review pack (review/*.jpg contact sheet + *.json with
+  cuts, shot lengths, sound start, loudness, words/min) so Claude can audit real output; (b) when a beat reuses
+  the same photo, the repeat is a punch-in crop (new framing) instead of the same frame. Why: audit of a real reel
+  found a 7.8 s static shot. Target: avg watch time (base 3.5 s), longest shot ≤ 3 s in review packs.

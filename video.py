@@ -1247,12 +1247,19 @@ def encode_args():
     return ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(FPS)]
 
 
-def image_shot(png, frames, out, style=0):
+# Tight reframes of the same picture, used when a beat has fewer pictures than shots: an editor's "punch-in" to a
+# different part of the frame reads as a new shot instead of one image lingering on screen.
+REFRAMES = ["crop=iw*0.70:ih*0.70:iw*0.15:ih*0.10", "crop=iw*0.66:ih*0.66:iw*0.30:ih*0.24",
+            "crop=iw*0.66:ih*0.66:iw*0.04:ih*0.28", "crop=iw*0.74:ih*0.74:iw*0.13:ih*0.02"]
+
+
+def image_shot(png, frames, out, style=0, reframe=0):
     frames = max(1, int(frames))
     zooms = ["min(zoom+0.0012,1.12)", "if(eq(on,0),1.12,max(zoom-0.0012,1))", "1.08", "1.08"]
     xs = ["iw/2-(iw/zoom/2)", "iw/2-(iw/zoom/2)", f"(iw-iw/zoom)*on/{frames}", f"(iw-iw/zoom)*(1-on/{frames})"]
+    crop = (REFRAMES[(reframe - 1) % len(REFRAMES)] + ",") if reframe else ""
     sh(["ffmpeg", "-y", "-i", png, "-vf",
-        f"scale=2160:3840,zoompan=z='{zooms[style % 4]}':x='{xs[style % 4]}':y='ih/2-(ih/zoom/2)'"
+        f"{crop}scale=2160:3840,zoompan=z='{zooms[style % 4]}':x='{xs[style % 4]}':y='ih/2-(ih/zoom/2)'"
         f":d={frames}:s={W}x{H}:fps={FPS}", "-frames:v", str(frames), *encode_args(), out])
 
 
@@ -1285,7 +1292,7 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None,
     """Every shot ends exactly on the frame where it should, so the picture never drifts from the voice."""
     segments, n, pos = [], 0, 0  # pos = frames already placed
 
-    def add(kind, src, end_time, style=0, offset=0.0, overlay=None, text_seconds=0.0):
+    def add(kind, src, end_time, style=0, offset=0.0, overlay=None, text_seconds=0.0, reframe=0):
         nonlocal n, pos
         frames = int(round(end_time * FPS)) - pos
         if frames < 1:
@@ -1299,7 +1306,7 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None,
         elif kind == "clip":
             clip_shot(src, frames, out, offset)
         else:
-            image_shot(src, frames, out, style)
+            image_shot(src, frames, out, style, reframe)
         got = frame_count(out)
         if got != frames:
             print(f"Shot {n}: fixing {got} → {frames} frames")
@@ -1333,7 +1340,11 @@ def build_video_track(beats, times, plan, hook_png, hook_len, tmp, opening=None,
         pieces = max(1, round(length / SHOT_SECONDS))
         for k in range(pieces):
             kind, src = shots[k % len(shots)]
-            add(kind, src, start + length * (k + 1) / pieces, style=i + k, offset=(k // len(shots)) * SHOT_SECONDS)
+            repeat = k // len(shots)  # how many times this picture has already been on screen in this beat
+            # only real pictures are reframed; text cards (numbers, names, sources, logos) must stay whole
+            picture = kind == "image" and os.path.basename(str(src)).startswith(("img_", "official_", "photo_"))
+            add(kind, src, start + length * (k + 1) / pieces, style=i + k, offset=repeat * SHOT_SECONDS,
+                reframe=repeat if picture else 0)
     if total and int(round(total * FPS)) > pos:  # never end short of the voice
         kind, src = fallback
         add(kind, src, total, style=1)
