@@ -1,0 +1,58 @@
+# Gradient Daily reel agent: rules for Claude
+
+An automated Instagram account (**@gradientai.news**, "Gradient Daily · AI News", by Gradient AI Labs) that posts
+**12 AI-news reels a day**, one every 2 hours (01:00–23:00 IST, odd hours), for a global audience. The owner talks to it
+through a Telegram bot and reads Claude's messages there.
+
+## How it runs
+- `.github/workflows/agent.yml` runs every 5 minutes (started by cron-job.org) in **Python 3.11**. `main.py poll` does the
+  work; `Make the reel` steps run when a video must be rendered.
+- `state.json` is the agent's memory. **The agent commits it every 5 minutes**, so pushes often race: always
+  `git pull --rebase origin main` right before `git push`, and retry. Avoid editing `state.json` by hand; if you must,
+  change only the keys you need, in a fresh pull, and push immediately.
+- `stats/insights.json`: daily Instagram numbers (followers per day; per reel: views, reach, likes, comments, shares,
+  saved, ig_reels_avg_watch_time in ms) and `meta` (per reel link: kind, engine, voice, person, words, slot…).
+- `outbox/*.txt`: plain-text messages the agent sends to the owner's Telegram on its next run, then deletes.
+- GitHub Actions logs can't be downloaded through the proxy; use `gh run list` / `gh run view <id> --json jobs`
+  (step conclusions) and `state.json` → `last_render_error` for errors.
+
+## Hard rules
+1. **Test before every push**: `python3.11 -m py_compile *.py`, `python3.11 tests/test_checks.py` and
+   `python3.11 tests/simulate_day.py` (needs a 3.11 venv with requests feedparser Pillow numpy). All must pass.
+   Earlier outages came from untested changes (a 3.12-only f-string; an over-strict voice check).
+2. Small, reversible changes. One idea per commit, with a clear message and the attribution lines.
+3. **Ask the owner first** (via outbox, then wait for the next review) before: changing posting times or count,
+   turning autopilot off, changing secrets/tokens/accounts, the workflow triggers, deleting posts, or anything costly.
+4. Never weaken the quality gates: evidence-based fact check, voice-matches-script check, visual check, no vague
+   references ("a developer" → real names), no repeats, no press releases/local events.
+5. Never put secrets in code, commits, outbox messages or chat.
+
+## Owner's preferences (learned)
+- Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
+- Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
+- US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
+- Brand blue (#7B9AF8), clean & minimal captions, "Source · date" label, @gradientai.news handle.
+
+## Daily health check (every day)
+1. `gh run list -R mo-ri-ch/reel-agent -L 100`: any failures in the last 24 h? Which step (`gh run view --json jobs`)?
+2. `state.json`: is the agent stuck (same stage/topic for hours), `last_render_error`, `render_fails`, `held`,
+   `behind_since`; `post_log` vs `POST_TIMES` for yesterday and today.
+3. `stats/insights.json` → `notes` (last_collect recent? insights_permission true?).
+4. If something is broken and the fix is clear and safe: fix it, run the tests, push. Otherwise explain the problem.
+5. Message the owner (one `outbox/` file) **only if** something was wrong or changed: what happened, what you did,
+   anything they must do. If all is well on a weekday, send nothing.
+
+## Weekly review (Sundays)
+1. Analyse the last 7 days in `stats/insights.json` against the week before: views/reel, median, watch time,
+   shares, saves, followers; by slot, kind, engine/voice, person shown, script length, source/topic.
+2. Read `stats/changes.md`: for each change made ≥ 7 days ago, did its target metric improve? Revert what got worse.
+3. Pick **at most 2** improvements backed by the data (e.g. hook style, script length, story selection hints,
+   visuals), implement, test, push, and log them in `stats/changes.md` (date, change, why, metric + baseline).
+   Until 2026-10-21 there is too little data: only make changes with a clear, large signal; otherwise just report.
+4. Send one short outbox summary: the week's numbers, what you changed and why, what you'll watch next week.
+
+## Commit attribution
+End commit messages with:
+```
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+```

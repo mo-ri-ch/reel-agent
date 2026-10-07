@@ -1120,6 +1120,7 @@ def cmd_poll():
 
     post_due(s)
     daily_report(s)
+    send_outbox()
     if not render:
         stats_jobs(s)
 
@@ -1209,6 +1210,25 @@ def keep_schedule(s):
             s["digest_for"] = key
             return True
     return False
+
+
+def send_outbox():
+    """Messages left in outbox/ (e.g. by Claude's daily review) are sent to Telegram, then removed."""
+    folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "outbox")
+    if not os.path.isdir(folder):
+        return
+    for name in sorted(os.listdir(folder)):
+        path = os.path.join(folder, name)
+        if not name.endswith(".txt") or not os.path.isfile(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                text = f.read().strip()
+            if text:
+                tg.send(text[:3900])
+            os.remove(path)
+        except Exception as e:
+            print(f"Outbox message {name} not sent: {e}")
 
 
 def stats_jobs(s):
