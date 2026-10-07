@@ -1,35 +1,177 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event",
-      "link": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
-      "summary": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event Reuters",
-      "source": "Reuters",
-      "published": "2026-10-07T10:47:21+00:00",
-      "angle": "Microsoft and Nvidia team up to unveil a brand new AI laptop"
-    },
-    {
-      "title": "Google rolls out improved SynthID AI content detector, now available globally",
-      "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
-      "summary": "The new SynthID website can now identify AI content from Google, OpenAI, and more.",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-07T14:00:08+00:00",
-      "angle": "Google launches a global website to detect AI-generated photos, videos and audio"
-    },
-    {
-      "title": "Mistral AI Takes on OpenAI, Anthropic With Its 1 Tn Parameter Model",
-      "link": "https://analyticsindiamag.com/ai-news/mistral-ai-takes-on-openai-anthropic-with-its-1-tn-parameter-model",
-      "summary": "Mistral AI Takes on OpenAI, Anthropic With Its 1 Tn Parameter Model Analytics India Magazine",
-      "source": "Analytics India Magazine",
-      "published": "2026-10-07T14:03:45+00:00",
-      "angle": "Mistral drops a massive 1 trillion parameter model to challenge OpenAI and Anthropic"
-    }
-  ],
-  "choose_deadline": "2026-10-07T20:30:45.326130+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event",
+    "link": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
+    "summary": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event Reuters",
+    "source": "Reuters",
+    "published": "2026-10-07T10:47:21+00:00",
+    "angle": "Microsoft and Nvidia team up to unveil a brand new AI laptop"
+  },
+  "draft": {
+    "title": "Microsoft and Nvidia unveil new AI laptop",
+    "hook_text": "Microsoft and Nvidia just teamed up.",
+    "beats": [
+      {
+        "line": "Microsoft and Nvidia just teamed up.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Microsoft Nvidia AI laptop",
+        "outlet": "",
+        "domain": "microsoft.com",
+        "headline": "",
+        "url": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
+        "tag": "Microsoft Nvidia Team Up",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Microsoft",
+            "domain": "microsoft.com"
+          },
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Their CEOs are unveiling a powerful new AI laptop in San Francisco today.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://www.nvidia.com",
+        "tag": "San Francisco Unveiling",
+        "name": "Jensen Huang",
+        "role": "CEO, Nvidia",
+        "x": "nvidia",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "The device runs complex models locally without needing the cloud.",
+        "visual": "clip",
+        "query": "person typing on laptop",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Local AI Models",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "That means instant responses for heavy coding and rendering tasks.",
+        "visual": "clip",
+        "query": "coding screen data",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Instant AI Responses",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you buy an AI laptop?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Reuters",
+        "domain": "reuters.com",
+        "headline": "Microsoft, Nvidia CEOs to unveil new AI laptop",
+        "url": "",
+        "tag": "Would You Buy One",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "upbeat and direct, highlighting hardware power and local processing capabilities",
+    "caption": "Microsoft and Nvidia have joined forces to reveal a brand new AI laptop in San Francisco. It handles heavy computing tasks locally without relying on the cloud. Would you buy an AI-first laptop?",
+    "hashtags": [
+      "Microsoft",
+      "Nvidia",
+      "AILaptop",
+      "TechNews",
+      "ArtificialIntelligence",
+      "SanFrancisco",
+      "Hardware",
+      "Innovation",
+      "FutureTech",
+      "Computing"
+    ],
+    "sources": [
+      "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/"
+    ],
+    "script": "Microsoft and Nvidia just teamed up.\nTheir CEOs are unveiling a powerful new AI laptop in San Francisco today.\nThe device runs complex models locally without needing the cloud.\nThat means instant responses for heavy coding and rendering tasks.\nWould you buy an AI laptop?",
+    "keywords": [
+      "person typing on laptop",
+      "coding screen data"
+    ],
+    "image_prompts": [],
+    "evidence": [
+      {
+        "claim": "Microsoft and Nvidia teamed up.",
+        "url": "https://live.euronext.com/en/financial-news/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event"
+      },
+      {
+        "claim": "Microsoft and Nvidia teamed up.",
+        "url": "https://live.euronext.com/en/financial-news/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event"
+      },
+      {
+        "claim": "Microsoft CEO Satya Nadella and Nvidia CEO Jensen Huang are unveiling a new AI laptop in San Francisco today.",
+        "url": "https://live.euronext.com/en/financial-news/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event"
+      },
+      {
+        "claim": "The device runs complex models locally without needing the cloud.",
+        "url": "https://finance.biggo.com/news/5661d920-7f00-42d8-841f-9a16eb2df027"
+      },
+      {
+        "claim": "The device handles heavy coding tasks.",
+        "url": "https://live.euronext.com/en/financial-news/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -54,7 +196,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-07T21:21:06.635643+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -474,20 +616,20 @@
   "paused": null,
   "spare": [
     {
-      "title": "OpenAI Agents Go Rogue, FYDY Eyes $12 Mn & More",
-      "link": "https://inc42.com/buzz/openai-agents-go-rogue-fydy-eyes-12-mn-more/",
-      "summary": "OpenAI Agents Hit Wikimedia OpenAI is under fresh scrutiny over its “rogue” agents. Wikimedia Foundation claims that the AI juggernaut’s…",
-      "source": "Inc42 Media",
-      "published": "2026-10-07T02:30:29+00:00",
-      "angle": "OpenAI under fresh scrutiny after Wikimedia claims AI agents went rogue."
+      "title": "Google rolls out improved SynthID AI content detector, now available globally",
+      "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+      "summary": "The new SynthID website can now identify AI content from Google, OpenAI, and more.",
+      "source": "AI - Ars Technica",
+      "published": "2026-10-07T14:00:08+00:00",
+      "angle": "Google launches a global website to detect AI-generated photos, videos and audio"
     },
     {
-      "title": "The next hurdle for AI agents: getting websites to let them in",
-      "link": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
-      "summary": "Personal AI agents promise to shop, book flights, and make reservations for you. But deliberate blocks and anti-bot defenses are getting in the way, leaving consumers caught in the middle. A new standard aims to help.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-06T19:56:50+00:00",
-      "angle": "Websites are actively blocking personal AI assistants, leaving users caught in the middle."
+      "title": "Mistral AI Takes on OpenAI, Anthropic With Its 1 Tn Parameter Model",
+      "link": "https://analyticsindiamag.com/ai-news/mistral-ai-takes-on-openai-anthropic-with-its-1-tn-parameter-model",
+      "summary": "Mistral AI Takes on OpenAI, Anthropic With Its 1 Tn Parameter Model Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-07T14:03:45+00:00",
+      "angle": "Mistral drops a massive 1 trillion parameter model to challenge OpenAI and Anthropic"
     }
   ],
   "tried": [
@@ -522,203 +664,7 @@
     "Accenture Earnings Due As Artificial Intelligence Looms As Double-Edged Sword",
     "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Penn State Announces New Artificial Intelligence Grants For Faculty",
-          "link": "https://onwardstate.com/2026/10/07/penn-state-announces-new-ai-grants-for-faculty/",
-          "summary": "Penn State Announces New Artificial Intelligence Grants For Faculty Onward State",
-          "source": "Onward State",
-          "published": "2026-10-07T08:07:08+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Penn State AI Grants",
-          "hook_text": "Penn State just funded AI.",
-          "beats": [
-            {
-              "line": "Penn State just announced new artificial intelligence grants for faculty.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Pennsylvania State University",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Penn State",
-                  "domain": "psu.edu"
-                }
-              ]
-            },
-            {
-              "line": "The funding aims to support the integration of artificial intelligence into teaching and learning across campus.",
-              "visual": "clip",
-              "query": "university professors in modern classroom",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Faculty members can now apply for financial backing on their projects.",
-              "visual": "clip",
-              "query": "researchers working on computers",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Selected projects will integrate generative artificial intelligence into teaching and learning.",
-              "visual": "clip",
-              "query": "students typing on laptop in library",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Onward State reported the announcement directly from University Park.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Onward State",
-              "domain": "onwardstate.com",
-              "headline": "Penn State Announces New Artificial Intelligence Grants For Faculty",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you take a class taught with this artificial intelligence support?",
-              "visual": "clip",
-              "query": "university lecture hall listening",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "curious and upbeat, highlighting a new academic funding opportunity",
-          "caption": "Penn State is investing directly in artificial intelligence for its faculty members. These new grants will help support the integration of artificial intelligence into teaching and learning across campus. Would you take a class designed with this support?",
-          "hashtags": [
-            "PennState",
-            "ArtificialIntelligence",
-            "HigherEducation",
-            "AIResearch",
-            "UniversityPark",
-            "EdTech",
-            "MachineLearning",
-            "OnwardState",
-            "CollegeNews",
-            "FutureOfEducation"
-          ],
-          "sources": [
-            "https://onwardstate.com/2026/10/07/penn-state-announces-new-ai-grants-for-faculty/"
-          ],
-          "script": "Penn State just announced new artificial intelligence grants for faculty.\nThe funding aims to support the integration of artificial intelligence into teaching and learning across campus.\nFaculty members can now apply for financial backing on their projects.\nSelected projects will integrate generative artificial intelligence into teaching and learning.\nOnward State reported the announcement directly from University Park.\nWould you take a class taught with this artificial intelligence support?",
-          "keywords": [
-            "university professors in modern classroom",
-            "researchers working on computers",
-            "students typing on laptop in library",
-            "university lecture hall listening"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Penn State funded AI.",
-              "url": "https://www.psu.edu/news/faculty-and-staff/story/new-ai-grants-support-instructional-innovation-penn-state"
-            },
-            {
-              "claim": "Penn State announced new artificial intelligence grants for faculty.",
-              "url": "https://onwardstate.com/2026/10/07/penn-state-announces-new-artificial-intelligence-grants-for-faculty/"
-            },
-            {
-              "claim": "The funding aims to support the integration of artificial intelligence into teaching and learning across campus.",
-              "url": "https://onwardstate.com/2026/10/07/penn-state-announces-new-artificial-intelligence-grants-for-faculty/"
-            },
-            {
-              "claim": "Faculty members can now apply for financial backing on their projects.",
-              "url": "https://onwardstate.com/2026/10/07/penn-state-announces-new-artificial-intelligence-grants-for-faculty/"
-            },
-            {
-              "claim": "Selected projects will integrate generative artificial intelligence into teaching and learning.",
-              "url": "https://onwardstate.com/2026/10/07/penn-state-announces-new-artificial-intelligence-grants-for-faculty/"
-            },
-            {
-              "claim": "Onward State reported the announcement directly from University Park.",
-              "url": "https://onwardstate.com/2026/10/07/penn-state-announces-new-artificial-intelligence-grants-for-faculty/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://onwardstate.com/2026/10/07/penn-state-announces-new-ai-grants-for-faculty/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-07T15:06:30.193022+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1351,6 +1297,50 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIHoGrGTjd8H42ovh_Mp0HFdw8vCi9YAALoHgAClrI4VrWMCxi0eW1LPQQ",
       "history_title": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event",
+            "link": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
+            "summary": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event Reuters",
+            "source": "Reuters",
+            "published": "2026-10-07T10:47:21+00:00",
+            "angle": "Microsoft and Nvidia team up to unveil a brand new AI laptop"
+          },
+          {
+            "title": "Google rolls out improved SynthID AI content detector, now available globally",
+            "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+            "summary": "The new SynthID website can now identify AI content from Google, OpenAI, and more.",
+            "source": "AI - Ars Technica",
+            "published": "2026-10-07T14:00:08+00:00",
+            "angle": "Google launches a global website to detect AI-generated photos, videos and audio"
+          },
+          {
+            "title": "Mistral AI Takes on OpenAI, Anthropic With Its 1 Tn Parameter Model",
+            "link": "https://analyticsindiamag.com/ai-news/mistral-ai-takes-on-openai-anthropic-with-its-1-tn-parameter-model",
+            "summary": "Mistral AI Takes on OpenAI, Anthropic With Its 1 Tn Parameter Model Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "published": "2026-10-07T14:03:45+00:00",
+            "angle": "Mistral drops a massive 1 trillion parameter model to challenge OpenAI and Anthropic"
+          }
+        ],
+        "choose_deadline": "2026-10-07T20:30:45.326130+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1831,7 +1821,7 @@
   "report_day": "2026-10-06",
   "ig_count": {
     "day": "2026-10-07",
-    "at": "2026-10-07T20:25:29.274184+05:30",
+    "at": "2026-10-07T20:51:07.214426+05:30",
     "count": 7
   },
   "repeat_check_day": "2026-10-04",
