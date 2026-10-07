@@ -1,6 +1,6 @@
 {
-  "offset": 153809617,
-  "stage": "awaiting_voice",
+  "offset": 153809618,
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -135,11 +135,19 @@
     "fix_rounds": 1,
     "source_links": [
       "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Experts argue we must secure DNA supply chains.…: the frame is completely black and unreadable",
+      "The visual shows masked people in a laboratory instead of DNA sequencing screen data."
+    ],
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 clips, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIHfWrF-q4yHU_h713xLtwcIjZmkDkjAAKsJQAClrIwVmfyru165bTuPQQ",
   "queue": [
     {
       "title": "Utah to let AI examine patients and prescribe medication without human oversight",
@@ -169,9 +177,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-07T13:48:15.664696+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-07T13:54:23.517633+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-07",
@@ -633,51 +641,8 @@
     "Accenture Earnings Due As Artificial Intelligence Looms As Double-Edged Sword",
     "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "OpenAI releases 372 groups of math results from unreleased frontier AI model",
-            "link": "https://indianexpress.com/article/technology/artificial-intelligence/openai-releases-372-groups-of-math-results-from-unreleased-frontier-ai-model-10910068/",
-            "summary": "OpenAI releases 372 groups of math results from unreleased frontier AI model The Indian Express",
-            "source": "The Indian Express",
-            "published": "2026-10-07T03:14:17+00:00",
-            "angle": "OpenAI drops math test results from an unreleased frontier model, hinting at massive capability jumps."
-          },
-          {
-            "title": "OpenAI Agents Go Rogue, FYDY Eyes $12 Mn & More",
-            "link": "https://inc42.com/buzz/openai-agents-go-rogue-fydy-eyes-12-mn-more/",
-            "summary": "OpenAI Agents Hit Wikimedia OpenAI is under fresh scrutiny over its “rogue” agents. Wikimedia Foundation claims that the AI juggernaut’s…",
-            "source": "Inc42 Media",
-            "published": "2026-10-07T02:30:29+00:00",
-            "angle": "OpenAI agents go rogue and hit Wikimedia, raising fresh safety and control concerns."
-          },
-          {
-            "title": "The next hurdle for AI agents: getting websites to let them in",
-            "link": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
-            "summary": "Personal AI agents promise to shop, book flights, and make reservations for you. But deliberate blocks and anti-bot defenses are getting in the way, leaving consumers caught in the middle. A new standard aims to help.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-06T19:56:50+00:00",
-            "angle": "The next big hurdle for AI: websites are blocking personal shopping and booking agents."
-          }
-        ],
-        "choose_deadline": "2026-10-07T12:31:10.811111+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "choosing the AI voice",
       "data": {
@@ -1307,6 +1272,157 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "How to Defend Against AI-Designed Viruses",
+          "link": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/",
+          "summary": "How to Defend Against AI-Designed Viruses War on the Rocks",
+          "source": "War on the Rocks",
+          "published": "2026-10-07T07:34:06+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Defending Against AI-Designed Viruses",
+          "hook_text": "AI designs biological threats.",
+          "beats": [
+            {
+              "line": "War on the Rocks analyzed how to defend against AI-designed viruses.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "War on the Rocks",
+              "domain": "warontherocks.com",
+              "headline": "How to Defend Against AI-Designed Viruses",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Advanced algorithms could lower the barrier for creating pathogens.",
+              "visual": "clip",
+              "query": "scientist working in laboratory",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Experts argue we must secure DNA supply chains.",
+              "visual": "clip",
+              "query": "modern biotechnology research lab",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will genetic screening stop malicious actors?",
+              "visual": "clip",
+              "query": "dna sequencing screen data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and serious, warning viewers about an emerging biosecurity challenge",
+          "caption": "A recent analysis from War on the Rocks explores how to defend against AI-designed viruses and secure genetic supply chains. Will robust screening be enough to stop misuse? Let us know your thoughts.",
+          "hashtags": [
+            "artificialintelligence",
+            "biosecurity",
+            "warontherocks",
+            "techpolicy",
+            "science",
+            "security",
+            "research",
+            "news",
+            "genetics",
+            "technology"
+          ],
+          "sources": [
+            "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
+          ],
+          "script": "War on the Rocks analyzed how to defend against AI-designed viruses.\nAdvanced algorithms could lower the barrier for creating pathogens.\nExperts argue we must secure DNA supply chains.\nWill genetic screening stop malicious actors?",
+          "keywords": [
+            "scientist working in laboratory",
+            "modern biotechnology research lab",
+            "dna sequencing screen data"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "AI designs biological threats.",
+              "url": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
+            },
+            {
+              "claim": "War on the Rocks analyzed how to defend against AI-designed viruses.",
+              "url": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
+            },
+            {
+              "claim": "Advanced algorithms could lower the barrier for creating pathogens.",
+              "url": "https://www.statnews.com/2026/09/28/ai-bioweapons-pathogens-guardrails-policy-warning/"
+            },
+            {
+              "claim": "Experts argue we must secure DNA supply chains.",
+              "url": "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
+            },
+            {
+              "claim": "Will genetic screening stop malicious actors?",
+              "url": "https://www.statnews.com/2026/09/28/ai-bioweapons-pathogens-guardrails-policy-warning/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://warontherocks.com/how-to-defend-against-ai-designed-viruses/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-07T13:48:15.664696+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1743,8 +1859,8 @@
       "at": "2026-10-07T13:09:19.712001+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-07T13:09+05:30",
@@ -1772,8 +1888,8 @@
   "report_day": "2026-10-06",
   "ig_count": {
     "day": "2026-10-07",
-    "at": "2026-10-07T13:09:02.744512+05:30",
-    "count": 2
+    "at": "2026-10-07T13:19:38.081450+05:30",
+    "count": 3
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-07",
