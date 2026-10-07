@@ -1,6 +1,6 @@
 {
   "offset": 153809605,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -142,11 +142,21 @@
     "fix_rounds": 0,
     "source_links": [
       "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "There is a catch because this only applies in the …: The image shows a nighttime city street instead of a person using a laptop in a cafe.",
+      "Would you want AI watermarks everywhere you live?…: The image shows a city street scene with neon signs instead of a person looking at a phone screen."
+    ],
+    "credits": [
+      "ChatGPT: chatgpt.com"
+    ],
+    "voice_used": "Emma Multilingual (US) (Microsoft), female",
+    "visual_summary": "1 official images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIHWGrF3PWlmjk2CYCeT6oRvDbIDbJKAAIpIQACP0MxVvCeS3NH6IyhPQQ",
   "queue": [
     {
       "title": "Utah to let AI examine patients and prescribe medication without human oversight",
@@ -157,9 +167,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-07T11:11:06.396400+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-07T11:47:34.057993+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-07",
@@ -624,194 +634,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "OpenAI drops another batch of mathematical breakthroughs",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-          "summary": "OpenAI has revealed solutions to a number of long-standing mathematics problems produced by an unreleased frontier model in a batch of 722 manuscripts, covering 372 result families that group related papers. It extends a run of breakthroughs that have both impressed and unsettled parts of the mathematical community while raising questions about research ethics and […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-06T23:26:38+00:00",
-          "angle": "OpenAI reveals math breakthroughs with 722 manuscripts solved by an unreleased model."
-        },
-        "draft": {
-          "title": "OpenAI Solves Math Problems",
-          "hook_text": "OpenAI just solved advanced math.",
-          "beats": [
-            {
-              "line": "OpenAI just dropped seven hundred twenty two math manuscripts.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI GitHub",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "An unreleased frontier model produced solutions to long standing mathematical problems.",
-              "visual": "clip",
-              "query": "person writing math equations",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The batch covers three hundred seventy two result families.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "372",
-              "small": "result families covered",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It extends a run of breakthroughs that have unsettled parts of the mathematical community.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "OpenAI drops another batch of mathematical breakthroughs",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Can machines completely take over mathematical research.",
-              "visual": "clip",
-              "query": "abstract mathematics chalkboard",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "caption": "OpenAI has published 722 manuscripts featuring solutions to complex math problems generated by an unreleased model. What does this mean for human mathematicians?",
-          "hashtags": [
-            "OpenAI",
-            "ArtificialIntelligence",
-            "Mathematics",
-            "TechNews",
-            "MachineLearning",
-            "Research",
-            "FutureTech",
-            "ScienceNews",
-            "AI",
-            "Innovation"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
-          ],
-          "script": "OpenAI just dropped seven hundred twenty two math manuscripts.\nAn unreleased frontier model produced solutions to long standing mathematical problems.\nThe batch covers three hundred seventy two result families.\nIt extends a run of breakthroughs that have unsettled parts of the mathematical community.\nCan machines completely take over mathematical research.",
-          "keywords": [
-            "person writing math equations",
-            "abstract mathematics chalkboard"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "OpenAI just solved advanced math.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
-            },
-            {
-              "claim": "OpenAI just dropped seven hundred twenty two math manuscripts.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
-            },
-            {
-              "claim": "An unreleased frontier model produced solutions to long standing mathematical problems.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
-            },
-            {
-              "claim": "The batch covers three hundred seventy two result families.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
-            },
-            {
-              "claim": "It extends a run of breakthroughs that have unsettled parts of the mathematical community.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "OpenAI GitHub: Evgenii Arsentev (CC BY 4.0), via Wikimedia Commons"
-          ]
-        },
-        "video_file_id": "BAACAgUAAxkDAAIHLGrFnKUFvAYAAVOUZB3s9q6uER1_qwACPiAAAj9DMVbkbdG4ihzw-z0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIHLGrFnKUFvAYAAVOUZB3s9q6uER1_qwACPiAAAj9DMVbkbdG4ihzw-z0E",
-      "history_title": "OpenAI drops another batch of mathematical breakthroughs"
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1196,6 +1018,164 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "OpenAI will watermark ChatGPT outputs by default—but only in the EU",
+          "link": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+          "summary": "Like other solutions, it is not especially reliable, and it's easy to circumvent.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-06T20:50:32+00:00",
+          "angle": "OpenAI is making ChatGPT watermark its outputs by default, but only in the EU—here is what that means for users."
+        },
+        "draft": {
+          "title": "OpenAI adds ChatGPT watermarks in the EU",
+          "hook_text": "OpenAI is watermarking your chats.",
+          "beats": [
+            {
+              "line": "OpenAI is now watermarking all ChatGPT outputs by default.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "ChatGPT",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://chatgpt.com",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                },
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "There is a catch because this only applies in the European Union.",
+              "visual": "clip",
+              "query": "person using laptop in cafe",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The system is not very reliable and people can easily bypass it.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "OpenAI will watermark ChatGPT outputs by default but only in the EU",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you want AI watermarks everywhere you live?",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "caption": "OpenAI has rolled out default watermarking for ChatGPT outputs, but the feature is currently restricted to users in the European Union. Critics note that the solution remains easy to circumvent and lacks reliability. Would you want your AI-generated text watermarked?",
+          "hashtags": [
+            "OpenAI",
+            "ChatGPT",
+            "ArtificialIntelligence",
+            "EU",
+            "TechNews",
+            "AIWatermark",
+            "AIEthics",
+            "MachineLearning",
+            "FutureTech",
+            "TechUpdates"
+          ],
+          "sources": [
+            "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/"
+          ],
+          "script": "OpenAI is now watermarking all ChatGPT outputs by default.\nThere is a catch because this only applies in the European Union.\nThe system is not very reliable and people can easily bypass it.\nWould you want AI watermarks everywhere you live?",
+          "keywords": [
+            "person using laptop in cafe",
+            "person looking at phone screen"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "OpenAI is watermarking chats.",
+              "url": "https://www.thehindu.com/business/openai-to-watermark-chatgpt-text-in-eu-under-ai-act-rules/article71551205.ece"
+            },
+            {
+              "claim": "OpenAI is now watermarking all ChatGPT outputs by default.",
+              "url": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/"
+            },
+            {
+              "claim": "This only applies in the European Union.",
+              "url": "https://openai.com/index/eu-text-provenance/"
+            },
+            {
+              "claim": "The system is not very reliable and people can easily bypass it.",
+              "url": "https://openai.com/index/eu-text-provenance/"
+            },
+            {
+              "claim": "Would you want AI watermarks everywhere you live?",
+              "url": "https://openai.com/index/eu-text-provenance/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-07T11:11:06.396400+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1620,8 +1600,8 @@
       "at": "2026-10-07T10:00:31.145871+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-07T10:05+05:30",
@@ -1645,11 +1625,11 @@
   "guarantee_since": "2026-10-07T10:00:00+05:30",
   "digest_for": "behind-2026-10-06-0",
   "last_auto_offer": "2026-10-07T05:00:29.199952+05:30",
-  "last_engine": "google",
+  "last_engine": "microsoft",
   "report_day": "2026-10-06",
   "ig_count": {
     "day": "2026-10-07",
-    "at": "2026-10-07T11:05:23.700720+05:30",
+    "at": "2026-10-07T11:15:26.656995+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
