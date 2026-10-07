@@ -64,6 +64,10 @@ check("vague developer", bool(writer.vague_phrases("A developer from Kerala just
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
 check("drop how-to essay", news.newsworthy({"title": "How to Defend Against AI-Designed Viruses",
                                             "source": "War on the Rocks"}), False)
+check("drop campus grants", news.newsworthy({"title": "Penn State Announces New Artificial Intelligence Grants "
+                                                     "For Faculty", "source": "Onward State"}), False)
+check("keep university research", news.newsworthy({"title": "MIT researchers build an AI that designs new antibiotics",
+                                                   "source": "MIT News"}), True)
 check("named developer", bool(writer.vague_phrases("Kochi developer Arjun Menon just dropped Laya.")), False)
 
 # repeats
