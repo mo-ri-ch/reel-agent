@@ -652,7 +652,8 @@ VAGUE = re.compile(
     r"(?i)\b(a|an|one|some|two|three)\s+(\w+\s+)?(developer|developers|startup|company|firm|team|researcher|researchers|"
     r"engineer|engineers|student|students|scientist|scientists|founder|founders|entrepreneur|lab|group|coder|"
     r"programmer|creator|creators|youngster|teenager|techie|professor|executive|ceo)\b"
-    r"|\b(experts|researchers|scientists|developers|officials|analysts)\s+(say|said|found|have|believe|warn|built)\b"
+    r"|\b(experts|researchers|scientists|developers|officials|analysts|critics|insiders)\s+(say|said|found|have|"
+    r"believe|warn|warned|built|argue|argued|suggest|claim|think|predict|agree|note|fear)\b"
     r"|\bsomeone\b|\b(a|one)\s+(major|big|leading|popular|well-known)\s+(\w+\s+)?(company|firm|lab|brand)\b")
 
 

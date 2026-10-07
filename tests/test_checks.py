@@ -61,6 +61,9 @@ tts._fish, tts._google, tts.FISH_API_KEY = _f, _g, _key
 
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
+check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
+check("drop how-to essay", news.newsworthy({"title": "How to Defend Against AI-Designed Viruses",
+                                            "source": "War on the Rocks"}), False)
 check("named developer", bool(writer.vague_phrases("Kochi developer Arjun Menon just dropped Laya.")), False)
 
 # repeats

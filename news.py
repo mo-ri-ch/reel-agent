@@ -50,10 +50,15 @@ WEAK_STORY = re.compile(
     r"market (size|to reach|worth|report)|cagr|forecast period)\b")
 
 
+OPINION = re.compile(r"(?i)^\s*(how to|how we|why (you|we|the|ai)|opinion|op-ed|commentary|analysis:|the case (for|against)|"
+                     r"in defense of|a guide to|guide:)\b")
+
+
 def newsworthy(item):
-    """False for press releases, local events, stock/market-report fluff."""
+    """False for press releases, local events, stock/market-report fluff, opinion essays and how-to guides."""
     text = f"{item.get('title', '')} {item.get('summary', '')[:200]}"
-    return not (PR_SOURCES.search(item.get("source", "") + " " + item.get("link", "")) or WEAK_STORY.search(text))
+    return not (PR_SOURCES.search(item.get("source", "") + " " + item.get("link", "")) or WEAK_STORY.search(text)
+                or OPINION.search(item.get("title", "")))
 
 
 def _clean(text):
