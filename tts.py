@@ -105,11 +105,26 @@ def _tts_models():
     return _TTS_MODELS
 
 
-def _google(text, out_base, voice):
-    """A Google (Gemini) voice. Returns a .wav path."""
+def director_prompt(text, delivery=""):
+    """Google's documented format for a performed read: direction sections that are NOT spoken, then the words under
+    '#### TRANSCRIPT'. Gives the voice the context of the story so it stresses the right words like a real host.
+    (If an instruction is ever read aloud anyway, the voice check catches it and the remake uses no direction.)"""
+    feel = re.sub(r"[\r\n#]+", " ", str(delivery or "")).strip()[:200] or "genuinely interested; clear about why it matters"
+    return ("Synthesize speech for the performance defined below. Speak ONLY the lines under #### TRANSCRIPT.\n\n"
+            "### AUDIO PROFILE\nA sharp, likeable American tech-news host who has just read this story and finds it "
+            "interesting, telling it to a smart friend in a short Instagram reel.\n\n"
+            "### SCENE\nA quiet studio, close to the microphone, relaxed but alert, speaking to one person.\n\n"
+            f"### DIRECTOR'S NOTES\nStyle: {feel}. Understand each sentence before saying it: stress the names, "
+            "numbers and the surprising part, let the voice rise and fall naturally, real micro-pauses between ideas. "
+            "Not an announcer, not sing-song, not over-excited.\nPace: brisk and conversational, a touch slower on "
+            "the key fact.\nAccent: General American English.\n\n#### TRANSCRIPT\n" + text)
+
+
+def _google(text, out_base, voice, delivery=None):
+    """A Google (Gemini) voice. Returns a .wav path. delivery=None reads the bare script (no direction at all)."""
     import base64
     import wave
-    prompt = text  # ONLY the script: any instruction here can end up being read aloud
+    prompt = text if delivery is None else director_prompt(text, delivery)
     last = ""
     for model in _tts_models()[:2]:
         r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
@@ -140,8 +155,9 @@ def _google(text, out_base, voice):
     raise RuntimeError(last or "no Google TTS model worked")
 
 
-def synthesize(text, out_base, gender="male", engine="microsoft"):
-    """Returns (audio_path, description). engine: "google" or "microsoft" (the other is the automatic backup)."""
+def synthesize(text, out_base, gender="male", engine="microsoft", delivery=None):
+    """Returns (audio_path, description). engine: "google" or "microsoft" (the other is the automatic backup).
+    delivery: the story's feeling for Google's director notes; None = bare script."""
     global LAST_WORDS, LAST_ENGINE
     LAST_WORDS = None
     text = _speakable(text)
@@ -151,7 +167,7 @@ def synthesize(text, out_base, gender="male", engine="microsoft"):
             pool = [v.strip() for v in (GOOGLE_VOICES_FEMALE if gender == "female" else GOOGLE_VOICES_MALE) if v.strip()]
             voice = random.choice(pool)
             try:
-                path = _google(text, out_base + "_g", voice)
+                path = _google(text, out_base + "_g", voice, delivery)
                 LAST_ENGINE = "google"
                 return path, f"{voice} (Google), {gender}"
             except Exception as e:

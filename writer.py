@@ -196,6 +196,7 @@ Return ONLY JSON:
            {{"line": "...", "visual": "source", "outlet": "Nature Medicine", "domain": "nature.com", "headline": "..."}},
            {{"line": "...", "visual": "stat", "big": "...", "small": "...",
              "brands": [{{"name": "OpenAI", "domain": "openai.com"}}]}}],
+ "delivery": "one line for the voice actor: the feeling of THIS story and where it turns (e.g. 'amused disbelief, then serious about what it means for jobs'); no script words",
  "caption": "2-3 sentence Instagram caption ending with a question",
  "hashtags": ["10 to 12 relevant hashtags without #"],
  "sources": ["URLs you used"]}}"""

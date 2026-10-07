@@ -22,3 +22,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 2026-10-07 · Owner: AI-generated pictures don't suit news · beats that would get an AI picture (or a stock clip
   that doesn't fit) now use a real photo from the news article / official pages first; AI only as a last resort.
   Writer told to avoid "image". Target: avg watch time (base 3.5 s); visual_summary should show few "AI images".
+- 2026-10-07 · Owner: voices don't sound like they understand the story · the writer adds a one-line "delivery"
+  note per story; Google voices get it in Google's documented director format (profile, scene, notes, then
+  #### TRANSCRIPT) so emphasis and tone follow the story. Voice check still listens to every take; a remake uses
+  the bare script. Target: avg watch time (base 3.5 s); compare Google vs Microsoft reels' watch time.

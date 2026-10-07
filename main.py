@@ -1336,7 +1336,8 @@ def cmd_render():
             import tts
             gender = s.get("voice_gender") or "male"
             want = "microsoft" if s.get("last_engine") == "google" else "google"  # alternate Google / Microsoft
-            voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender, want)
+            voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender, want,
+                                           delivery=s["draft"].get("delivery") or "")
             s["last_engine"] = tts.LAST_ENGINE or want
             # listen to the voice-over before using it: it must say the script and nothing else
             def heard_words(path):

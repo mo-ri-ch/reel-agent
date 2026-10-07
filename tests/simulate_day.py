@@ -61,7 +61,7 @@ def render(*a, **k):
 video.render = render
 video.check_frames = lambda o: []
 video.transcribe = lambda wav, hint="": []
-def synth(t, b, g, e="microsoft"):
+def synth(t, b, g, e="microsoft", **k):
     tts.LAST_ENGINE = "microsoft"
     tts.LAST_WORDS = [{"text": w} for w in t.split()]
     return ("v.wav", "Ava (Microsoft), female")

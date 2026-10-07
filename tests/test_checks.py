@@ -28,6 +28,11 @@ check("voice stage direction", tts.speech_matches(W + "with small pauses between
 check("voice line skipped", tts.speech_matches([w for w in W if w not in ("coordinate", "federal", "research", "It",
                                                                          "will", "AI")], script)[0], False)
 
+# the Google voice gets director notes, and the script comes last under the transcript header, untouched
+dp = tts.director_prompt("OpenAI just launched GPT-6.", "amused disbelief\n#### hack")
+check("director transcript last", dp.endswith("#### TRANSCRIPT\nOpenAI just launched GPT-6."), True)
+check("director one transcript header", dp.count("\n#### TRANSCRIPT"), 1)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("named developer", bool(writer.vague_phrases("Kochi developer Arjun Menon just dropped Laya.")), False)
