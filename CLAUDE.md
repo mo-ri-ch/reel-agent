@@ -30,7 +30,7 @@ through a Telegram bot and reads Claude's messages there.
 ## Owner's preferences (learned)
 - Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
 - Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
-- US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
+- Voice: the owner's own cloned voice via Fish Audio (/myvoice) when set up; fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
 - Brand blue (#7B9AF8), clean & minimal captions, "Source · date" label, @gradientai.news handle.
 
 ## Daily health check (every day)

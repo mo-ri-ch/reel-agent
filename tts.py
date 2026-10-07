@@ -7,7 +7,7 @@ import requests
 
 import random
 
-from config import GEMINI_API_KEY, GEMINI_TTS_MODEL, GOOGLE_VOICES_FEMALE, GOOGLE_VOICES_MALE, SPOKEN_NAME, KOKORO_FEMALE, KOKORO_MALE, TTS_RATE, VOICES_FEMALE, VOICES_MALE
+from config import FISH_API_KEY, FISH_MODEL, GEMINI_API_KEY, GEMINI_TTS_MODEL, GOOGLE_VOICES_FEMALE, GOOGLE_VOICES_MALE, SPOKEN_NAME, KOKORO_FEMALE, KOKORO_MALE, TTS_RATE, VOICES_FEMALE, VOICES_MALE
 
 KOKORO_DIR = os.path.expanduser("~/.cache/kokoro")
 KOKORO_BASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
@@ -20,6 +20,46 @@ def _speakable(text):
 
 
 LAST_WORDS = None  # exact word timings from the Edge voice, when available
+FISH_API = "https://api.fish.audio"
+FISH_PROBLEM = None  # why the owner's voice wasn't used this time ("out" = no credits / key refused)
+
+
+class FishOut(RuntimeError):
+    """Fish Audio refused: no credits left, or the key isn't valid."""
+
+
+def fish_clone(path, title="Gradient Daily voice"):
+    """Creates a private voice clone from the owner's recording. Returns its voice id."""
+    with open(path, "rb") as f:
+        r = requests.post(f"{FISH_API}/model", headers={"Authorization": f"Bearer {FISH_API_KEY}"}, timeout=180,
+                          data={"type": "tts", "title": title, "train_mode": "fast", "visibility": "private",
+                                "enhance_audio_quality": "true"},
+                          files={"voices": (os.path.basename(path), f)})
+    if r.status_code not in (200, 201):
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
+    data = r.json()
+    voice_id = data.get("_id") or data.get("id")
+    if not voice_id:
+        raise RuntimeError(f"no voice id in reply: {str(data)[:200]}")
+    return voice_id
+
+
+def _fish(text, out_base, voice_id):
+    """The owner's cloned voice from Fish Audio. Returns an .mp3 path."""
+    r = requests.post(f"{FISH_API}/v1/tts", timeout=180,
+                      headers={"Authorization": f"Bearer {FISH_API_KEY}", "model": FISH_MODEL},
+                      json={"text": text, "reference_id": voice_id, "format": "mp3", "normalize": True,
+                            "latency": "normal"})
+    if r.status_code in (401, 402):
+        raise FishOut(f"HTTP {r.status_code}: {r.text[:150]}")
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:150]}")
+    out = out_base + "_f.mp3"
+    with open(out, "wb") as f:
+        f.write(r.content)
+    if os.path.getsize(out) < 2000:
+        raise RuntimeError("no audio returned")
+    return out
 
 
 def _edge(text, out_base, voice):
@@ -155,12 +195,25 @@ def _google(text, out_base, voice, delivery=None):
     raise RuntimeError(last or "no Google TTS model worked")
 
 
-def synthesize(text, out_base, gender="male", engine="microsoft", delivery=None):
+def synthesize(text, out_base, gender="male", engine="microsoft", delivery=None, fish_voice=None):
     """Returns (audio_path, description). engine: "google" or "microsoft" (the other is the automatic backup).
-    delivery: the story's feeling for Google's director notes; None = bare script."""
-    global LAST_WORDS, LAST_ENGINE
+    delivery: the story's feeling for Google's director notes; None = bare script.
+    fish_voice: the owner's cloned voice id; tried first, and if it fails the regular voices are used."""
+    global LAST_WORDS, LAST_ENGINE, FISH_PROBLEM
     LAST_WORDS = None
+    FISH_PROBLEM = None
     text = _speakable(text)
+    if fish_voice and FISH_API_KEY:
+        try:
+            path = _fish(text, out_base, fish_voice)
+            LAST_ENGINE = "fish"
+            return path, "your voice (Fish Audio)"
+        except FishOut as e:
+            FISH_PROBLEM = "out"
+            print(f"Fish Audio refused ({e}); using the regular voices")
+        except Exception as e:
+            FISH_PROBLEM = str(e)[:150]
+            print(f"Fish Audio failed ({e}); using the regular voices")
     engines = ["google", "microsoft"] if engine == "google" else ["microsoft", "google"]
     for eng in engines:
         if eng == "google":

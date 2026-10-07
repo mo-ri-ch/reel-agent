@@ -15,6 +15,10 @@ DOORBELL_URL = (env("DOORBELL_URL") or "").rstrip("/")
 DOORBELL_KEY = env("DOORBELL_KEY")
 
 GEMINI_API_KEY = env("GEMINI_API_KEY")
+# Fish Audio: the owner's cloned voice (paid per use). Without a key, or when credits run out, the regular voices are used.
+FISH_API_KEY = env("FISH_API_KEY")
+FISH_VOICE_ID = env("FISH_VOICE_ID", "")  # optional; normally set with /myvoice in Telegram
+FISH_MODEL = env("FISH_MODEL", "s2-pro")
 GEMINI_MODEL = env("GEMINI_MODEL", "gemini-3.6-flash")
 # Used only when the main model is overloaded (503)
 GEMINI_FALLBACK_MODEL = env("GEMINI_FALLBACK_MODEL", "gemini-flash-lite-latest")

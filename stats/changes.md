@@ -26,3 +26,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   note per story; Google voices get it in Google's documented director format (profile, scene, notes, then
   #### TRANSCRIPT) so emphasis and tone follow the story. Voice check still listens to every take; a remake uses
   the bare script. Target: avg watch time (base 3.5 s); compare Google vs Microsoft reels' watch time.
+- 2026-10-07 · Owner's own voice via Fish Audio (~$2-3/month, owner approved) · set up with /myvoice in Telegram;
+  used for every reel; credits out / errors → regular Google/Microsoft voices automatically. Target: avg watch
+  time and followers vs AI-voice reels (compare by meta.engine = "fish").

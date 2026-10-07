@@ -33,6 +33,25 @@ dp = tts.director_prompt("OpenAI just launched GPT-6.", "amused disbelief\n#### 
 check("director transcript last", dp.endswith("#### TRANSCRIPT\nOpenAI just launched GPT-6."), True)
 check("director one transcript header", dp.count("\n#### TRANSCRIPT"), 1)
 
+# the owner's Fish Audio voice is tried first; out of credits or down -> the regular voices take over
+_f, _g, _key = tts._fish, tts._google, tts.FISH_API_KEY
+tts.FISH_API_KEY = "test"
+tts._google = lambda text, out, voice, delivery=None: "google.wav"
+def _out(*a):
+    raise tts.FishOut("HTTP 402")
+tts._fish = _out
+path, _ = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google", fish_voice="abc")
+check("fish out -> google", (path, tts.LAST_ENGINE, tts.FISH_PROBLEM), ("google.wav", "google", "out"))
+def _down(*a):
+    raise RuntimeError("HTTP 503")
+tts._fish = _down
+path, _ = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google", fish_voice="abc")
+check("fish down -> google", (tts.LAST_ENGINE, tts.FISH_PROBLEM), ("google", "HTTP 503"))
+tts._fish = lambda text, out, vid: "fish.mp3"
+path, _ = tts.synthesize("OpenAI just launched GPT-6.", "/tmp/x", "male", "google", fish_voice="abc")
+check("fish used", (path, tts.LAST_ENGINE), ("fish.mp3", "fish"))
+tts._fish, tts._google, tts.FISH_API_KEY = _f, _g, _key
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("named developer", bool(writer.vague_phrases("Kochi developer Arjun Menon just dropped Laya.")), False)

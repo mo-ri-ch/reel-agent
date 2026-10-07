@@ -16,7 +16,7 @@ import state as st
 import telegram_api as tg
 import whatsapp
 import writer
-from config import HANDLE, AI_VOICE_NOTE, AUTO_APPROVE_HOURS, AUTO_PICK_HOURS, OFFER_TIMES, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
+from config import FISH_API_KEY, FISH_VOICE_ID, HANDLE, AI_VOICE_NOTE, AUTO_APPROVE_HOURS, AUTO_PICK_HOURS, OFFER_TIMES, POST_TIMES, TELEGRAM_CHAT_ID, WORK_DIR
 
 POST_WORDS = {"post", "yes", "approve", "ok", "okay", "publish", "schedule", "👍", "✅"}
 POST_NOW_WORDS = {"post now", "publish now", "now"}
@@ -722,7 +722,7 @@ def reel_meta(s):
     beats = d.get("beats") or []
     kind = "headlines" if t.get("digest") else "extra" if t.get("extra") else "explainer" if t.get("custom") else "news"
     return {"title": t.get("title", "")[:120], "kind": kind, "source": t.get("source", "")[:40],
-            "engine": s.get("last_engine") if s.get("voice_mode") == "ai" else "own voice",
+            "engine": (s.get("engine_used") or s.get("last_engine")) if s.get("voice_mode") == "ai" else "own voice",
             "voice": d.get("voice_used", "")[:60], "person": any(b.get("visual") == "person" for b in beats),
             "words": len(d.get("script", "").split()), "visuals": d.get("visual_summary", "")[:80],
             "made": st.now().isoformat(timespec="minutes")}
@@ -779,6 +779,31 @@ def post_due(s):
 
 
 # ---------- messages ----------
+def clone_voice(s, audio):
+    """Turns the owner's recording into their Fish Audio voice, used for every reel from then on."""
+    import tts
+    if not FISH_API_KEY:
+        tg.send("🎙 Add the FISH_API_KEY secret in GitHub first, then send /myvoice again.")
+        return None
+    if (audio.get("duration") or 60) < 20:
+        s["awaiting_voice_sample"] = True
+        tg.send("🎙 That's a bit short. Please send at least 1 minute of clear speech.")
+        return None
+    try:
+        os.makedirs(WORK_DIR, exist_ok=True)
+        name = audio.get("file_name") or "sample.ogg"
+        path = tg.download(audio["file_id"], os.path.join(WORK_DIR, "voice_sample" + os.path.splitext(name)[1]))
+        s["fish_voice_id"] = tts.fish_clone(path)
+        s.pop("fish_disabled", None)
+        s.pop("fish_off_day", None)
+        tg.send("✅ Your voice is ready. From the next reel on, reels speak in your voice. If Fish Audio ever runs "
+                "out of credits, the regular voices take over automatically.\n/myvoice off switches it off.")
+    except Exception as e:
+        tg.send(f"⚠️ Couldn't make your voice: {str(e)[:200]}. Try sending the recording again.")
+        s["awaiting_voice_sample"] = True
+    return None
+
+
 def handle(s, m, from_button=False):
     """Handles one Telegram message (or tapped button). Returns 'render' when the reel needs (re)making."""
     text = (m.get("text") or m.get("caption") or "").strip()
@@ -788,6 +813,8 @@ def handle(s, m, from_button=False):
     photo = (m["photo"][-1] if m.get("photo") else None) or (doc if mime.startswith("image/") else None)
     stage = s["stage"]
 
+    if audio and (s.pop("awaiting_voice_sample", False) or text.lower().startswith("/myvoice")):
+        return clone_voice(s, audio)
     if audio:
         if not s.get("draft"):
             tg.send("I don't have a script yet. Send me a topic or /news first.")
@@ -849,6 +876,22 @@ def handle(s, m, from_button=False):
         return None
     if low.startswith("/undo"):
         undo(s)
+    elif low.startswith("/myvoice"):
+        arg = low[len("/myvoice"):].strip()
+        if arg == "off":
+            s["fish_disabled"] = True
+            tg.send("🎙 Your voice is off. Reels use the regular voices. Send /myvoice on to switch back.")
+        elif arg == "on":
+            s.pop("fish_disabled", None)
+            s.pop("fish_off_day", None)
+            tg.send("🎙 Your voice is on again." if fish_voice(s) else
+                    "🎙 Switched on, but there's no voice yet: send /myvoice and then a recording.")
+        elif not FISH_API_KEY:
+            tg.send("🎙 Add the FISH_API_KEY secret in GitHub first, then send /myvoice again.")
+        else:
+            s["awaiting_voice_sample"] = True
+            tg.send("🎙 Send me a voice recording now (1–3 minutes). Read any news text clearly, at your normal "
+                    "pace, in a quiet room, phone close to your mouth. I'll make your voice from it.")
     elif low.startswith("/stats"):
         import insights
         try:
@@ -1325,6 +1368,13 @@ def cmd_offer():
     st.save(s)
 
 
+def fish_voice(s):
+    """The owner's cloned voice id, if it's set up, switched on and not out of credits today."""
+    if not FISH_API_KEY or s.get("fish_disabled") or s.get("fish_off_day") == st.now().date().isoformat():
+        return None
+    return s.get("fish_voice_id") or FISH_VOICE_ID or None
+
+
 def cmd_render():
     import tts
     import video
@@ -1336,9 +1386,15 @@ def cmd_render():
             import tts
             gender = s.get("voice_gender") or "male"
             want = "microsoft" if s.get("last_engine") == "google" else "google"  # alternate Google / Microsoft
+            fish = fish_voice(s)
             voice, engine = tts.synthesize(s["draft"]["script"], os.path.join(WORK_DIR, "ai_voice"), gender, want,
-                                           delivery=s["draft"].get("delivery") or "")
-            s["last_engine"] = tts.LAST_ENGINE or want
+                                           delivery=s["draft"].get("delivery") or "", fish_voice=fish)
+            if tts.LAST_ENGINE != "fish":  # the Google / Microsoft alternation only moves when one of them is used
+                s["last_engine"] = tts.LAST_ENGINE or want
+            if fish and tts.FISH_PROBLEM == "out":
+                s["fish_off_day"] = st.now().date().isoformat()
+                tg.send("🎙 Fish Audio refused (credits used up, or the key changed), so today's reels use the regular "
+                        "voices. Top up at fish.audio and your voice comes back tomorrow.")
             # listen to the voice-over before using it: it must say the script and nothing else
             def heard_words(path):
                 # Microsoft reports exactly what it spoke; otherwise transcribe WITHOUT a hint (a hint makes the
@@ -1358,6 +1414,7 @@ def cmd_render():
                 if not ok2:
                     raise RuntimeError(f"the voice-over didn't match the script twice ({why2})")
             s["last_gender"] = gender
+            s["engine_used"] = tts.LAST_ENGINE
             print(f"Voice-over: {engine}")
         else:
             voice = tg.download(s["voice_file_id"], os.path.join(WORK_DIR, "voice_input"))
