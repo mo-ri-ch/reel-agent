@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -159,16 +159,30 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Foundation models and agentic AI are automating co…: Visual shows text ('Physical AI') instead of stock video of an industrial robot arm in a factory.",
+      "Unlike purely digital software, these systems inte…: Visual shows a business lab article card with a person's photo instead of stock video of an engineer monitoring automate",
+      "Engineers are now building rigorous safety framewo…: Visual shows an article card/graphic about AVEVA instead of stock video of a factory safety testing laboratory.",
+      "Would you trust an autonomous robot in your workpl…: Visual shows text ('Trust the Robot') instead of stock video of a collaborative robot workspace.",
+      "Visual shows text ('Physical AI') instead of stock video of an industrial robot arm factory.",
+      "Visual shows a business article card with a person's photo instead of stock video of an engineer monitoring automated ma",
+      "Visual shows an article card/graphic instead of stock video of a factory safety testing laboratory.",
+      "Visual shows text ('Trust the Robot') instead of stock video of a collaborative robot workspace."
+    ],
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIIXGrHaX8GRGvCNvkS-ko0SCYc7OLOAAL4HgAClrJAVqDX7Av3YjbBPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-08T15:25:05.428801+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-08T15:59:27.722525+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-08",
@@ -615,168 +629,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Using AI to mitigate the growing environmental threat of data centers",
-          "link": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008",
-          "summary": "Using AI to mitigate the growing environmental threat of data centers MIT News",
-          "source": "MIT News",
-          "published": "2026-10-08T04:00:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "MIT AI tackles data center emissions",
-          "hook_text": "Data centers consume massive power",
-          "beats": [
-            {
-              "line": "Data centers consume massive amounts of energy. MIT researcher Christina Delimitrou is working to fix that.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "MIT tackles emissions",
-              "name": "Christina Delimitrou",
-              "role": "Associate Professor, MIT",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "She explores how artificial intelligence can mitigate their growing environmental threat.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "MIT News",
-              "domain": "news.mit.edu",
-              "headline": "Using AI to mitigate environmental threat of data centers",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008",
-              "tag": "Environmental threat",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Servers demand continuous power while dealing with fluctuating workloads every day.",
-              "visual": "clip",
-              "query": "server room computer racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Continuous server power",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can smart scheduling curb their massive carbon footprint?",
-              "visual": "clip",
-              "query": "data center cooling fans",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Curb carbon footprint",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and direct, highlighting the pressing environmental challenge of modern computing infrastructure",
-          "caption": "MIT researcher Christina Delimitrou is studying how artificial intelligence can help mitigate the growing environmental threat posed by data centers. How should tech companies balance AI growth with sustainability?",
-          "hashtags": [
-            "MIT",
-            "ArtificialIntelligence",
-            "DataCenters",
-            "ClimateTech",
-            "GreenEnergy",
-            "CarbonFootprint",
-            "TechNews",
-            "Sustainability",
-            "CleanEnergy",
-            "MachineLearning"
-          ],
-          "sources": [
-            "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-          ],
-          "script": "Data centers consume massive amounts of energy. MIT researcher Christina Delimitrou is working to fix that.\nShe explores how artificial intelligence can mitigate their growing environmental threat.\nServers demand continuous power while dealing with fluctuating workloads every day.\nCan smart scheduling curb their massive carbon footprint?",
-          "keywords": [
-            "server room computer racks",
-            "data center cooling fans"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Data centers consume massive power",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-            },
-            {
-              "claim": "Data centers consume massive amounts of energy",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-            },
-            {
-              "claim": "Christina Delimitrou is an Associate Professor at MIT",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-            },
-            {
-              "claim": "Christina Delimitrou is working to fix the energy efficiency of data centers",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-            },
-            {
-              "claim": "She explores how artificial intelligence can mitigate the growing environmental threat of data centers",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-            },
-            {
-              "claim": "Servers demand continuous power while dealing with fluctuating workloads",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-            },
-            {
-              "claim": "Smart scheduling or resource management can curb their massive carbon footprint",
-              "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-08T11:07:41.845336+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
-    {
       "label": "autopilot posting the reel",
       "data": {
         "stage": "awaiting_approval",
@@ -1197,6 +1049,181 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Building a safer path to autonomous industrial AI",
+          "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+          "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across industrial environments. But unlike AI that operates purely in the digital world, industrial AI can interact directly with physical systems,…",
+          "source": "Artificial intelligence – MIT Technology Review",
+          "published": "2026-10-08T08:17:32+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Safer Industrial AI at MIT Technology Review",
+          "hook_text": "Industrial AI is entering the physical world.",
+          "beats": [
+            {
+              "line": "Industrial AI just left the screen and entered the factory.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "MIT Technology Review",
+              "domain": "technologyreview.com",
+              "headline": "Building a safer path to autonomous industrial AI",
+              "url": "",
+              "tag": "Industrial AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Foundation models and agentic AI are automating complex tasks.",
+              "visual": "clip",
+              "query": "industrial robot arm factory",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Physical AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Unlike purely digital software, these systems interact directly with real hardware.",
+              "visual": "clip",
+              "query": "engineer monitoring automated machinery",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Real Hardware",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Engineers are now building rigorous safety frameworks before deployment.",
+              "visual": "clip",
+              "query": "factory safety testing laboratory",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Safety Frameworks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an autonomous robot in your workplace?",
+              "visual": "clip",
+              "query": "collaborative robot workspace",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust the Robot",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "curious and forward-looking, highlighting the shift from digital software to real-world industrial machinery",
+          "caption": "Industrial AI is moving past screens and directly into physical factories. As autonomous systems take on heavier workloads, strict safety guardrails become essential. Would you trust an autonomous machine working right next to you?",
+          "hashtags": [
+            "ArtificialIntelligence",
+            "IndustrialAI",
+            "TechNews",
+            "Automation",
+            "Robotics",
+            "MITTechnologyReview",
+            "FutureOfWork",
+            "Engineering",
+            "SmartFactory",
+            "TechTrends"
+          ],
+          "sources": [
+            "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+          ],
+          "script": "Industrial AI just left the screen and entered the factory.\nFoundation models and agentic AI are automating complex tasks.\nUnlike purely digital software, these systems interact directly with real hardware.\nEngineers are now building rigorous safety frameworks before deployment.\nWould you trust an autonomous robot in your workplace?",
+          "keywords": [
+            "industrial robot arm factory",
+            "engineer monitoring automated machinery",
+            "factory safety testing laboratory",
+            "collaborative robot workspace"
+          ],
+          "image_prompts": [],
+          "hook_before": "Industrial AI is moving from digital screens into physical factories.",
+          "evidence": [
+            {
+              "claim": "Industrial AI is entering the physical world.",
+              "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+            },
+            {
+              "claim": "Industrial AI entered the factory.",
+              "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+            },
+            {
+              "claim": "Foundation models and agentic AI are automating complex tasks.",
+              "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+            },
+            {
+              "claim": "Unlike purely digital software, these systems interact directly with real hardware.",
+              "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+            },
+            {
+              "claim": "Engineers are building rigorous safety frameworks before deployment.",
+              "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-08T15:25:05.428801+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1701,8 +1728,8 @@
       "at": "2026-10-08T14:20:26.691548+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-08T14:20+05:30",
@@ -1730,7 +1757,7 @@
   "report_day": "2026-10-07",
   "ig_count": {
     "day": "2026-10-08",
-    "at": "2026-10-08T15:15:27.609924+05:30",
+    "at": "2026-10-08T15:29:27.722687+05:30",
     "count": 8
   },
   "repeat_check_day": "2026-10-04",
@@ -1750,5 +1777,5 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-08",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f"
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca"
 }
