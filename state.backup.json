@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -167,16 +167,21 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
-    ]
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "4 clips, 2 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIICGrG-aDOCgIHUqQAAR8J2Zy5wHQajAAC0h8AApayOFZAb6JeuurMsT0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-08T07:26:45.251600+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-08T08:02:09.154366+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-08",
@@ -634,166 +639,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones",
-          "link": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
-          "summary": "Opus-built Creative Cloud alternatives are ambitious, free, and nowhere near finished.",
-          "source": "AI - Ars Technica",
-          "published": "2026-10-07T21:56:42+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Open source Adobe clones",
-          "hook_text": "Free Adobe clones are here",
-          "beats": [
-            {
-              "line": "An artificial intelligence developer just took aim at Adobe with open source clones.",
-              "visual": "clip",
-              "query": "person coding at computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Aiming at Adobe",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Adobe",
-                  "domain": "adobe.com"
-                }
-              ]
-            },
-            {
-              "line": "These Opus built Creative Cloud alternatives are ambitious and completely free.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Adobe Creative Cloud",
-              "outlet": "",
-              "domain": "adobe.com",
-              "headline": "",
-              "url": "https://www.adobe.com/creativecloud.html",
-              "tag": "Creative Cloud clones",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Adobe",
-                  "domain": "adobe.com"
-                }
-              ]
-            },
-            {
-              "line": "The catch is that the software is still nowhere near finished.",
-              "visual": "clip",
-              "query": "unfinished digital interface design",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Nowhere near finished",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you try an open source alternative to Creative Cloud?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Ars Technica",
-              "domain": "arstechnica.com",
-              "headline": "Software is over: Bold AI developer takes aim at Adobe with open source clones",
-              "url": "",
-              "tag": "Open source alternative",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "conversational and direct, moving from the new open source releases to a curious question for creators",
-          "caption": "An artificial intelligence developer just released open source alternatives to Adobe Creative Cloud built using Opus. While these free tools are ambitious, they are nowhere near finished yet. Would you try an open source alternative to Creative Cloud?",
-          "hashtags": [
-            "artificialintelligence",
-            "opensource",
-            "adobe",
-            "creativecloud",
-            "technews",
-            "software",
-            "coding",
-            "developer",
-            "design",
-            "futureoftech"
-          ],
-          "sources": [
-            "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
-          ],
-          "script": "An artificial intelligence developer just took aim at Adobe with open source clones.\nThese Opus built Creative Cloud alternatives are ambitious and completely free.\nThe catch is that the software is still nowhere near finished.\nWould you try an open source alternative to Creative Cloud?",
-          "keywords": [
-            "person coding at computer",
-            "unfinished digital interface design"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "Free Adobe clones are here",
-              "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
-            },
-            {
-              "claim": "An artificial intelligence developer just took aim at Adobe with open source clones.",
-              "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
-            },
-            {
-              "claim": "These Opus built Creative Cloud alternatives are ambitious and completely free.",
-              "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
-            },
-            {
-              "claim": "The software is still nowhere near finished.",
-              "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-08T05:32:01.453123+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
-    {
       "label": "autopilot posting the reel",
       "data": {
         "stage": "awaiting_approval",
@@ -1208,6 +1053,189 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+          "summary": "OpenAI is launching a new Intelligent UI feature in ChatGPT that allows the chatbot to answer your questions with interactive visuals. The update, which is rolling out to all users alongside GPT-6, gives ChatGPT the ability to combine a text response with diagrams, charts, forms, tappable buttons, and more. In a blog post explaining the […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-07T19:10:42+00:00",
+          "angle": "ChatGPT is changing its interface to answer you with interactive charts, pictures, and buttons."
+        },
+        "draft": {
+          "title": "ChatGPT Gets Interactive Visuals",
+          "hook_text": "ChatGPT answers with pictures now.",
+          "beats": [
+            {
+              "line": "ChatGPT now answers your questions with interactive visuals.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "ChatGPT Intelligent UI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+              "tag": "Interactive Visuals",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "OpenAI is rolling out the feature alongside GPT-6.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "ChatGPT’s Intelligent UI update fills responses with pictures",
+              "url": "",
+              "tag": "GPT-6 Rollout",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Responses now combine text with diagrams, charts, and forms.",
+              "visual": "clip",
+              "query": "person looking at charts on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Charts And Diagrams",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You can even use new tappable buttons inside the chat.",
+              "visual": "clip",
+              "query": "person tapping smartphone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Tappable Buttons",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you use buttons in your chats?",
+              "visual": "clip",
+              "query": "person typing on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Interactive Chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "excited and conversational, highlighting the shift from plain text to interactive tools",
+          "caption": "OpenAI is rolling out a new Intelligent UI feature in ChatGPT alongside GPT-6, turning plain text into interactive charts, forms, and buttons. Would you use visual elements in your everyday chats?",
+          "hashtags": [
+            "ChatGPT",
+            "OpenAI",
+            "ArtificialIntelligence",
+            "TechNews",
+            "GPT6",
+            "TechTrends",
+            "FutureOfTech",
+            "SoftwareUpdate",
+            "Innovation",
+            "AI"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+          ],
+          "script": "ChatGPT now answers your questions with interactive visuals.\nOpenAI is rolling out the feature alongside GPT-6.\nResponses now combine text with diagrams, charts, and forms.\nYou can even use new tappable buttons inside the chat.\nWould you use buttons in your chats?",
+          "keywords": [
+            "person looking at charts on laptop",
+            "person tapping smartphone screen",
+            "person typing on phone"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "ChatGPT answers with pictures now.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+            },
+            {
+              "claim": "ChatGPT now answers your questions with interactive visuals.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+            },
+            {
+              "claim": "OpenAI is rolling out the feature alongside GPT-6.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+            },
+            {
+              "claim": "Responses now combine text with diagrams, charts, and forms.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+            },
+            {
+              "claim": "You can even use new tappable buttons inside the chat.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-08T07:26:45.251600+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1692,8 +1720,8 @@
       "at": "2026-10-08T06:20:28.847169+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-08T06:20+05:30",
@@ -1741,5 +1769,5 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-08",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f"
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca"
 }
