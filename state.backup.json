@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -144,16 +144,23 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
-    ]
+    ],
+    "visual_status": "skipped",
+    "visual_notes": [],
+    "credits": [
+      "Anthropic Claude: Software: Anthropic PBC Artwork and Screenshot: VulcanSphere (Public domain), via Wikimedia Commons"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 real photos, 5 clips"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIIqmrH6iY0Pu-XxsLSiOopw_Inld6SAAIBIAAClrJAVsXdwCvTaeWWPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-09T00:32:01.441817+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-09T01:08:22.782214+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-09",
@@ -590,44 +597,8 @@
     "OPINIONS: How U.Va. should respond to the changing artificial intelligence landscape",
     "Anthropic warns of ‘catastrophic’ AI risks in its own IPO filing"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "GPT‑6 and Intelligent UI for everyone",
-            "link": "https://openai.com/index/gpt-6-for-everyone/",
-            "summary": "",
-            "source": "openai.com",
-            "published": "2026-10-07T18:00:58+00:00",
-            "buzz": "Hacker News 697 points",
-            "angle": "OpenAI drops GPT-6 and a totally new UI — changing how we use ChatGPT"
-          },
-          {
-            "title": "Google releases a new local-first Granola competitor",
-            "link": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
-            "summary": "Google’s new AI Edge Foresight app takes on Granola with an offline meeting note-taker that can transcribe conversations, generate notes, and answer questions using on-device AI.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-08T13:28:39+00:00",
-            "angle": "Google just released an offline AI meeting note-taker that keeps your data 100% private"
-          }
-        ],
-        "choose_deadline": "2026-10-08T20:31:08.710092+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1177,6 +1148,166 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIIm2rH5E7WqQQDwho_YQGpbE8aGNA5AAL_HwAClrJAVhq6QGQY--MLPQQ",
       "history_title": "Top AI headlines · 12:10 AM today"
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+          "summary": "Anthropic is making changes to its usage policy for the first time in over a year to reflect new and high-risk cases of misuse - including election interference, weapons development, surveillance, and health and financial uses. But one of the most significant changes prohibits \"sustained and needless abusive or cruel behavior\" toward Claude. Last August, […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-08T17:00:00+00:00",
+          "angle": "Anthropic updates its rules to officially ban abusive behavior and cruel treatment toward Claude."
+        },
+        "draft": {
+          "title": "Anthropic bans abuse toward Claude",
+          "hook_text": "Anthropic just banned abusing Claude.",
+          "beats": [
+            {
+              "line": "Anthropic banned being mean to Claude.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic Claude",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+              "tag": "New Anthropic Policy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                },
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The updated safety policy prohibits sustained and needless cruel behavior toward the chatbot.",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Targeting Torment",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It also restricts high-risk misuses like election interference and weapons development.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "High Risk Misuse",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you ever bully a chatbot?",
+              "visual": "clip",
+              "query": "close up of fingers on keyboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Bullying A Chatbot",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "curious and slightly amused, turning to serious about human behavior and AI",
+          "caption": "Anthropic has updated its usage policy to ban sustained and needless abusive or cruel behavior toward Claude. The new rules also target election interference, weapons development, and surveillance. Would you ever bully a chatbot?",
+          "hashtags": [
+            "anthropic",
+            "claude",
+            "artificialintelligence",
+            "aethics",
+            "techpolicy",
+            "machinelearning",
+            "futureoftech",
+            "technews",
+            "aigovernance",
+            "software"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
+          ],
+          "script": "Anthropic banned being mean to Claude.\nThe updated safety policy prohibits sustained and needless cruel behavior toward the chatbot.\nIt also restricts high-risk misuses like election interference and weapons development.\nWould you ever bully a chatbot?",
+          "keywords": [
+            "person typing on laptop",
+            "server room data center",
+            "close up of fingers on keyboard"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "Anthropic banned abusing Claude.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
+            },
+            {
+              "claim": "Anthropic banned being mean to Claude.",
+              "url": "https://qz.com/anthropic-usage-policy-update-claude-abuse-election-weapons-100826"
+            },
+            {
+              "claim": "The updated safety policy prohibits sustained and needless cruel behavior toward the chatbot.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
+            },
+            {
+              "claim": "It also restricts high-risk misuses like election interference and weapons development.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-09T00:32:01.441817+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1699,7 +1830,7 @@
       "at": "2026-10-09T00:20:25.633077+05:30"
     }
   ],
-  "voice_mode": null,
+  "voice_mode": "ai",
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
@@ -1728,7 +1859,7 @@
   "report_day": "2026-10-08",
   "ig_count": {
     "day": "2026-10-09",
-    "at": "2026-10-09T00:27:15.180905+05:30",
+    "at": "2026-10-09T00:38:22.782354+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1748,5 +1879,5 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-09",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca"
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f"
 }
