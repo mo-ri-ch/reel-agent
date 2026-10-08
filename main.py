@@ -639,20 +639,38 @@ def publish_item(item):
     return link
 
 
+MAJOR_OUTLETS = re.compile(r"(?i)verge|techcrunch|wired|reuters|bloomberg|ars ?technica|venturebeat|cnbc|axios|"
+                           r"engadget|technology review|financial times|wall street|wsj|new york times|bbc|guardian|"
+                           r"the information|zdnet|cbs|nbc|associated press|ap news|openai|anthropic|google|deepmind|nvidia|microsoft|meta|hacker news")
+
+
+def clean_headline(title):
+    """'Big news | Newswise' → 'Big news' (the outlet is credited separately)."""
+    return re.sub(r"\s+[|–—]\s+[^|–—]{2,40}$", "", title or "").strip() or title
+
+
+def digest_rank(heads):
+    """Backup reels show the strongest stories: clearly about AI, from a major outlet or the company itself."""
+    def score(h):
+        return ((2 if news.AI_WORDS.search(h["title"]) else 0)
+                + (3 if MAJOR_OUTLETS.search(h.get("source", "")) else 0))
+    return sorted(heads, key=score, reverse=True)  # stable: newest first among equals
+
+
 def digest_draft(heads):
     """'According to TechCrunch, …' — every line credits its source, so it's accurate by construction."""
-    beats = [{"line": "Here are today's top AI headlines.", "visual": "image",
+    beats = [{"line": "Here are today's top AI headlines.", "visual": "image", "tag": "3 AI stories today",
               "prompt": "abstract futuristic news studio with glowing screens, blue light"}]
     for h in heads[:3]:
         src = re.sub(r"\s*[|:–-].*$", "", h.get("source") or "").strip() or "the news"
-        title = h["title"].rstrip(".")
+        title = clean_headline(h["title"]).rstrip(".")
         beats.append({"line": f"According to {src}: {title}.",
                       "visual": "source", "outlet": src, "headline": title[:120], "domain": ""})
-    beats.append({"line": "Which of these matters most to you?", "visual": "image",
+    beats.append({"line": "Which of these matters most to you?", "visual": "image", "tag": "Which matters most?",
                   "prompt": "abstract glowing network of connected nodes, blue and purple"})
     def outlet(h):
         return re.sub(r"\s*[|:–-].*$", "", h.get("source") or "").strip() or "news"
-    listing = "\n".join("• " + h["title"] + " (" + outlet(h) + ")" for h in heads[:3])
+    listing = "\n".join("• " + clean_headline(h["title"]) + " (" + outlet(h) + ")" for h in heads[:3])
     draft = writer.normalize_draft({"title": "Today's top AI headlines", "hook_text": "Today's top AI headlines",
                                     "beats": beats, "caption": f"Today's top AI headlines:\n{listing}\n\n"
                                     "Which one matters most to you? 👇",
@@ -666,10 +684,10 @@ def digest_draft(heads):
 def emergency_reel(s):
     """Nothing ready and a slot is close: make an attributed-headlines reel right away."""
     fresh = news.fetch_headlines(max_age_hours=96, limit=120)
-    heads = news.dedupe(fresh, recent_titles(s))[:3]
+    heads = digest_rank(news.dedupe(fresh, recent_titles(s)))[:3]
     if len(heads) < 2:  # few "new" stories: any headline not used word-for-word before will do
         used = set(recent_titles(s))
-        heads = [h for h in fresh if h["title"] not in used][:3]
+        heads = digest_rank([h for h in fresh if h["title"] not in used])[:3]
     if len(heads) < 2:
         return False
     if s["stage"] not in ("idle", "choosing") and not s.get("paused"):
