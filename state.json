@@ -1,42 +1,180 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Google’s AI note-taking app transcribes your meetings completely offline",
-      "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
-      "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company's on-device EmbeddingGemma 2 model. Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-08T15:27:30+00:00",
-      "angle": "Google's new offline AI note-taker runs entirely on-device, meaning zero internet needed and total meeting privacy."
-    },
-    {
-      "title": "chatgpt's new intelligent ui was reverse engineered in less than 24 hours, and apparently you can recreate it with local llms",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x0y4lv/chatgpts_new_intelligent_ui_was_reverse/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-08T18:08:02+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "ChatGPT's brand new intelligent UI was reverse-engineered in under 24 hours and can now run locally."
-    },
-    {
-      "title": "Trump declares anyone who uses the term Artificial Intelligence to be ‘The Enemy!’",
-      "link": "https://www.independent.co.uk/news/world/americas/us-politics/trump-ai-super-intelligence-the-enemy-b3063681.html",
-      "summary": "Trump declares anyone who uses the term Artificial Intelligence to be ‘The Enemy!’ The Independent",
-      "source": "The Independent",
-      "published": "2026-10-08T17:51:00+00:00",
-      "angle": "Trump declares anyone using the term 'Artificial Intelligence' instead of 'Super Intelligence' to be the enemy."
-    }
-  ],
-  "choose_deadline": "2026-10-09T01:16:39.558459+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+    "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+    "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company's on-device EmbeddingGemma 2 model. Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-08T15:27:30+00:00",
+    "angle": "Google's new offline AI note-taker runs entirely on-device, meaning zero internet needed and total meeting privacy."
+  },
+  "draft": {
+    "title": "Google AI Edge Foresight Offline Transcriber",
+    "hook_text": "Google's new app works offline.",
+    "beats": [
+      {
+        "line": "Google's new experimental app runs entirely offline.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Google AI Edge Foresight",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+        "tag": "Google AI Edge Foresight",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "It transcribes your meetings entirely offline on macOS.",
+        "visual": "clip",
+        "query": "person typing on macbook",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Transcribes offline",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The free tool runs on the on-device EmbeddingGemma two model.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "EmbeddingGemma 2",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+        "tag": "EmbeddingGemma 2 model",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "Your audio never leaves your laptop.",
+        "visual": "clip",
+        "query": "secure data privacy lock",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Total privacy",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust an offline app with your meetings?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Google AI note-taking app transcribes offline",
+        "url": "",
+        "tag": "Trust offline AI?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "curious and upbeat, highlighting the privacy benefit of running local AI models",
+    "caption": "Google just launched an offline note-taking app called Google AI Edge Foresight for macOS. It processes everything locally using the EmbeddingGemma two model for total privacy. Would you trust this for your work meetings?",
+    "hashtags": [
+      "Google",
+      "ArtificialIntelligence",
+      "MacBook",
+      "TechNews",
+      "Productivity",
+      "Privacy",
+      "MachineLearning",
+      "Software",
+      "Innovation",
+      "Meetings"
+    ],
+    "sources": [
+      "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+    ],
+    "script": "Google's new experimental app runs entirely offline.\nIt transcribes your meetings entirely offline on macOS.\nThe free tool runs on the on-device EmbeddingGemma two model.\nYour audio never leaves your laptop.\nWould you trust an offline app with your meetings?",
+    "keywords": [
+      "person typing on macbook",
+      "secure data privacy lock"
+    ],
+    "image_prompts": [],
+    "hook_before": "Google just released an experimental app called Google AI Edge Foresight.",
+    "evidence": [
+      {
+        "claim": "Google has a new app that works offline.",
+        "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+      },
+      {
+        "claim": "Google's new experimental app runs entirely offline.",
+        "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+      },
+      {
+        "claim": "It transcribes your meetings entirely offline on macOS.",
+        "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+      },
+      {
+        "claim": "The free tool runs on the on-device EmbeddingGemma two model.",
+        "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+      },
+      {
+        "claim": "Your audio never leaves your laptop.",
+        "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-09T01:51:10.656869+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -442,7 +580,25 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "chatgpt's new intelligent ui was reverse engineered in less than 24 hours, and apparently you can recreate it with local llms",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x0y4lv/chatgpts_new_intelligent_ui_was_reverse/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-08T18:08:02+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "ChatGPT's brand new intelligent UI was reverse-engineered in under 24 hours and can now run locally."
+    },
+    {
+      "title": "Trump declares anyone who uses the term Artificial Intelligence to be ‘The Enemy!’",
+      "link": "https://www.independent.co.uk/news/world/americas/us-politics/trump-ai-super-intelligence-the-enemy-b3063681.html",
+      "summary": "Trump declares anyone who uses the term Artificial Intelligence to be ‘The Enemy!’ The Independent",
+      "source": "The Independent",
+      "published": "2026-10-08T17:51:00+00:00",
+      "angle": "Trump declares anyone using the term 'Artificial Intelligence' instead of 'Super Intelligence' to be the enemy."
+    }
+  ],
   "tried": [
     "Next five VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026",
     "South Korea says AI agents appear to have been used to hack the country's banks",
@@ -475,184 +631,7 @@
     "OPINIONS: How U.Va. should respond to the changing artificial intelligence landscape",
     "Anthropic warns of ‘catastrophic’ AI risks in its own IPO filing"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "GPT‑6 and Intelligent UI for everyone",
-          "link": "https://openai.com/index/gpt-6-for-everyone/",
-          "summary": "",
-          "source": "openai.com",
-          "published": "2026-10-07T18:00:58+00:00",
-          "buzz": "Hacker News 697 points",
-          "angle": "OpenAI drops GPT-6 and a totally new UI — changing how we use ChatGPT"
-        },
-        "draft": {
-          "title": "GPT-6 and Intelligent UI for everyone",
-          "hook_text": "OpenAI just released GPT-6",
-          "beats": [
-            {
-              "line": "OpenAI just announced GPT-six and a new intelligent user interface.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "GPT-6",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com/index/gpt-6-for-everyone/",
-              "tag": "GPT-6 Released",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The update brings advanced features directly to every user.",
-              "visual": "clip",
-              "query": "person using smart computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Advanced Features",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "It aims to make software navigation much simpler across applications.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "openai.com",
-              "domain": "openai.com",
-              "headline": "GPT-6 and Intelligent UI for everyone",
-              "url": "",
-              "tag": "Simpler Navigation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let it handle your daily tasks?",
-              "visual": "clip",
-              "query": "typing on laptop keyboard",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Daily Tasks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "fast-paced excitement, turning to a thought-provoking tone about automation",
-          "caption": "OpenAI has officially released GPT-6 featuring an intelligent user interface designed for everyone. Would you let an AI manage your daily tasks?",
-          "hashtags": [
-            "OpenAI",
-            "GPT6",
-            "ArtificialIntelligence",
-            "TechNews",
-            "AI",
-            "MachineLearning",
-            "FutureTech",
-            "Software",
-            "Innovation",
-            "Automation",
-            "TechTrends"
-          ],
-          "sources": [
-            "https://openai.com/index/gpt-6-for-everyone/"
-          ],
-          "script": "OpenAI just announced GPT-six and a new intelligent user interface.\nThe update brings advanced features directly to every user.\nIt aims to make software navigation much simpler across applications.\nWould you let it handle your daily tasks?",
-          "keywords": [
-            "person using smart computer",
-            "typing on laptop keyboard"
-          ],
-          "image_prompts": [],
-          "evidence": [
-            {
-              "claim": "OpenAI released GPT-6",
-              "url": "https://openai.com/index/gpt-6-for-everyone/"
-            },
-            {
-              "claim": "OpenAI announced GPT-6 and a new intelligent user interface",
-              "url": "https://openai.com/index/gpt-6-for-everyone/"
-            },
-            {
-              "claim": "The update brings advanced features directly to every user",
-              "url": "https://openai.com/index/gpt-6-for-everyone/"
-            },
-            {
-              "claim": "It aims to make software navigation much simpler across applications",
-              "url": "https://openai.com/index/gpt-6-for-everyone/"
-            },
-            {
-              "claim": "Would you let it handle your daily tasks?",
-              "url": "https://openai.com/index/gpt-6-for-everyone/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://openai.com/index/gpt-6-for-everyone/"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "credits": [
-            "GPT-6: openai.com",
-            "GPT-6: openai.com"
-          ],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "2 official images, 3 clips, 1 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIIhGrHudHLTGufeDcxHca-hfSGCq7qAALaHwAClrJAVhlt-_WZhd5RPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIIhGrHudHLTGufeDcxHca-hfSGCq7qAALaHwAClrJAVhlt-_WZhd5RPQQ",
-      "history_title": "GPT‑6 and Intelligent UI for everyone"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1189,6 +1168,51 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIIqmrH6iY0Pu-XxsLSiOopw_Inld6SAAIBIAAClrJAVsXdwCvTaeWWPQQ",
       "history_title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+            "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+            "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company's on-device EmbeddingGemma 2 model. Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-08T15:27:30+00:00",
+            "angle": "Google's new offline AI note-taker runs entirely on-device, meaning zero internet needed and total meeting privacy."
+          },
+          {
+            "title": "chatgpt's new intelligent ui was reverse engineered in less than 24 hours, and apparently you can recreate it with local llms",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x0y4lv/chatgpts_new_intelligent_ui_was_reverse/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-08T18:08:02+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "ChatGPT's brand new intelligent UI was reverse-engineered in under 24 hours and can now run locally."
+          },
+          {
+            "title": "Trump declares anyone who uses the term Artificial Intelligence to be ‘The Enemy!’",
+            "link": "https://www.independent.co.uk/news/world/americas/us-politics/trump-ai-super-intelligence-the-enemy-b3063681.html",
+            "summary": "Trump declares anyone who uses the term Artificial Intelligence to be ‘The Enemy!’ The Independent",
+            "source": "The Independent",
+            "published": "2026-10-08T17:51:00+00:00",
+            "angle": "Trump declares anyone using the term 'Artificial Intelligence' instead of 'Super Intelligence' to be the enemy."
+          }
+        ],
+        "choose_deadline": "2026-10-09T01:16:39.558459+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
