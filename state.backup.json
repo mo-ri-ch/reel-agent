@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -167,16 +167,21 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
-    ]
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "3 clips, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIItGrH-Wyaucg_RgviVD8wzhrtfOVuAALAIAACqmdBViYQJkt8j1crPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-09T01:40:34.137856+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-09T02:13:32.998528+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-09",
@@ -633,50 +638,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Book counters AI hype by examining how researchers talk about their work",
-            "link": "https://news.illinois.edu/book-counters-ai-hype-by-examining-how-researchers-talk-about-their-work/",
-            "summary": "Book counters AI hype by examining how researchers talk about their work University of Illinois Urbana-Champaign",
-            "source": "University of Illinois Urbana-Champaign",
-            "published": "2026-10-08T16:24:01+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Bridging Algorithmic Design and Regulatory Standards in Enterprise AI",
-            "link": "https://www.kdnuggets.com/bridging-algorithmic-design-and-regulatory-standards-in-enterprise-ai",
-            "summary": "Bridging Algorithmic Design and Regulatory Standards in Enterprise AI KDnuggets",
-            "source": "KDnuggets",
-            "published": "2026-10-08T16:09:24+00:00",
-            "angle": ""
-          },
-          {
-            "title": "AI or ‘super intelligence’? Trump isn’t the only one who is confused",
-            "link": "https://www.newscientist.com/article/2592404-ai-or-super-intelligence-trump-isnt-the-only-one-who-is-confused/",
-            "summary": "AI or ‘super intelligence’? Trump isn’t the only one who is confused New Scientist",
-            "source": "New Scientist",
-            "published": "2026-10-08T16:08:03+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-10-08T22:30:43.093472+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1214,6 +1175,189 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+          "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+          "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on macOS using the company's on-device EmbeddingGemma 2 model. Similar to AI note-taking apps like Granola and Wispr Flow, Foresight summarizes […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-08T15:27:30+00:00",
+          "angle": "Google's new offline AI note-taker runs entirely on-device, meaning zero internet needed and total meeting privacy."
+        },
+        "draft": {
+          "title": "Google AI Edge Foresight Offline Transcriber",
+          "hook_text": "Google's new app works offline.",
+          "beats": [
+            {
+              "line": "Google's new experimental app runs entirely offline.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google AI Edge Foresight",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+              "tag": "Google AI Edge Foresight",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "It transcribes your meetings entirely offline on macOS.",
+              "visual": "clip",
+              "query": "person typing on macbook",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Transcribes offline",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The free tool runs on the on-device EmbeddingGemma two model.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "EmbeddingGemma 2",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+              "tag": "EmbeddingGemma 2 model",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Your audio never leaves your laptop.",
+              "visual": "clip",
+              "query": "secure data privacy lock",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Total privacy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an offline app with your meetings?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Google AI note-taking app transcribes offline",
+              "url": "",
+              "tag": "Trust offline AI?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "curious and upbeat, highlighting the privacy benefit of running local AI models",
+          "caption": "Google just launched an offline note-taking app called Google AI Edge Foresight for macOS. It processes everything locally using the EmbeddingGemma two model for total privacy. Would you trust this for your work meetings?",
+          "hashtags": [
+            "Google",
+            "ArtificialIntelligence",
+            "MacBook",
+            "TechNews",
+            "Productivity",
+            "Privacy",
+            "MachineLearning",
+            "Software",
+            "Innovation",
+            "Meetings"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+          ],
+          "script": "Google's new experimental app runs entirely offline.\nIt transcribes your meetings entirely offline on macOS.\nThe free tool runs on the on-device EmbeddingGemma two model.\nYour audio never leaves your laptop.\nWould you trust an offline app with your meetings?",
+          "keywords": [
+            "person typing on macbook",
+            "secure data privacy lock"
+          ],
+          "image_prompts": [],
+          "hook_before": "Google just released an experimental app called Google AI Edge Foresight.",
+          "evidence": [
+            {
+              "claim": "Google has a new app that works offline.",
+              "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+            },
+            {
+              "claim": "Google's new experimental app runs entirely offline.",
+              "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+            },
+            {
+              "claim": "It transcribes your meetings entirely offline on macOS.",
+              "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+            },
+            {
+              "claim": "The free tool runs on the on-device EmbeddingGemma two model.",
+              "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+            },
+            {
+              "claim": "Your audio never leaves your laptop.",
+              "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-09T01:40:34.137856+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1740,8 +1884,8 @@
       "at": "2026-10-09T00:45:30.085739+05:30"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-09T00:45+05:30",
@@ -1769,7 +1913,7 @@
   "report_day": "2026-10-08",
   "ig_count": {
     "day": "2026-10-09",
-    "at": "2026-10-09T01:30:34.137893+05:30",
+    "at": "2026-10-09T01:41:56.042382+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -1789,5 +1933,5 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-09",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f"
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca"
 }
