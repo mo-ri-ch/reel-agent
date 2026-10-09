@@ -109,6 +109,9 @@ _n, _num = writer.specificity("The company shared new results. Experts are curio
 check("general script", (len(_n) >= 2, _num), (False, False))
 check("vague new model", bool(writer.vague_phrases("They released a new AI model for coding.")), True)
 check("named new model", bool(writer.vague_phrases("They released a new model called Codex Max.")), False)
+check("vague experts debating", bool(writer.vague_phrases("Independent experts are now actively debating it.")), True)
+check("filler raises questions", bool(writer.vague_phrases("This raises urgent biosecurity questions.")), True)
+check("named researchers ok", bool(writer.vague_phrases("MIT researchers led by Regina Barzilay built it.")), False)
 check("vague tech giants", bool(writer.vague_phrases("Tech giants are racing to build agents.")), True)
 
 # vague references must be caught

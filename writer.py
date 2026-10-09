@@ -189,9 +189,12 @@ Meta software, not a horizon; "Gemini" is a Google AI, not a star sign; "Apple" 
   "domain" = its website ("nature.com"), "headline" = the paper or announcement title in under 12 words.
 - "stat": a big number on screen, ONLY for a number stated in the news story or your search results (at most 2).
   Never invent, round up or estimate a number. If unsure, use "clip" or "image" instead. "big" = "600M", "small" = "weekly users".
-Mix the types; don't use the same type more than twice in a row.
-For every beat, also give "tag": a 2-4 word on-screen phrase with that line's key fact, in title words, true to the
-line ("$600M a year", "Grants for faculty", "Banned in 3 states"). It is shown big when no picture fits.
+Mix the types; don't use the same type more than twice in a row. Use "clip" for at most 2 beats: stock video is
+generic and rarely matches the words. When a line names a company, product or model, use "official" (its real
+images); a person → "person"; a place, lab or university → "photo"; a number → "stat"; the outlet → "source".
+For every beat, also give "tag": a 2-5 word on-screen phrase with that line's KEY FACT, always containing a name or a
+number from the line ("Claude scanned 30M genes", "$600M a year", "Banned in 3 states"). Never an abstract label
+("Expert Debate", "Traditional Methods", "Biosecurity Questions"). It is shown big when no picture fits.
 For every beat, list in "brands" the companies or AI products NAMED in that line (e.g. OpenAI, Google, Meta, Nvidia,
 ChatGPT, Gemini, Claude), with their main website domain. Use [] when none are named. Never add brands that aren't said.
 
@@ -667,7 +670,12 @@ VAGUE = re.compile(
     r"believe|warn|warned|built|argue|argued|suggest|claim|think|predict|agree|note|fear)\b"
     r"|\bsomeone\b|\b(a|one)\s+(major|big|leading|popular|well-known)\s+(\w+\s+)?(company|firm|lab|brand)\b"
     r"|\b(tech giants?|big tech|a tech company|an ai company|an ai lab|an ai startup|ai companies|some companies)\b"
-    r"|\ba\s+new\s+(ai\s+)?(model|tool|app|chatbot|platform|system|feature|product)\b(?!\s+(called|named))")
+    r"|\ba\s+new\s+(ai\s+)?(model|tool|app|chatbot|platform|system|feature|product)\b(?!\s+(called|named))"
+    r"|(?:^|[.!?]\s+)(independent\s+|some\s+|many\s+|other\s+)?(experts|researchers|scientists|biologists|critics|"
+    r"analysts|observers|developers|engineers|insiders|officials)\b"
+    r"|\b(independent|outside|leading)\s+experts\b"
+    r"|\braises?\s+(\w+\s+){0,2}(questions|concerns)\b"
+    r"|\b(sparks?|fuels?)\s+(a\s+)?(debate|concerns?|questions)\b")
 
 NUMBER_WORDS = re.compile(r"(?i)\b(\d[\d,.]*|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|"
                           r"thirty|forty|fifty|hundred|thousand|million|billion|trillion|percent|half|double|triple|"

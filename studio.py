@@ -619,12 +619,17 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
     uses = {}
 
     def real_instead(n_pieces):
+        """Real photos of the story, each shown at most twice in the whole reel (a third time reads as a loop)."""
         out = []
         for k in range(n_pieces):
-            info = min(real, key=lambda i: uses.get(i["raw"], 0))
+            fresh = [i for i in real if uses.get(i["raw"], 0) < 2]
+            if not fresh:
+                break
+            info = min(fresh, key=lambda i: uses.get(i["raw"], 0))
             uses[info["raw"]] = uses.get(info["raw"], 0) + 1
             out.append(("picture", {**info, "_reframe": uses[info["raw"]]}))
         return out
+    shown_brands = set()
     for i, ((start, end), b, shots) in enumerate(zip(times, beats, plan)):
         start = max(start, hook_len)
         if end - start < 0.05:
@@ -636,17 +641,28 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
         pieces = max(1, round((end - start) / V.SHOT_SECONDS))
         ai_only = all(k == "picture" and not (i.get("credit") or i.get("real")) for k, i in specs)
         tag = (b.get("tag") or "").strip()
-        if ai_only and tag:  # nothing real fits this line: its key fact in big type, then real photos if any
-            specs = [("statement", {"tag": tag})] + (real_instead(pieces - 1) if real and pieces > 1 else [])
-            pieces = len(specs)
-        elif real and ai_only:  # never an AI picture when the story has real photos
-            specs = real_instead(pieces)
+        multi = False
+        if ai_only:  # nothing real fits this line: what it names, then its key fact, then real photos if any left
+            alts = []
+            for br in b.get("brands") or []:
+                key = re.sub(r"[^a-z0-9]", "", str(br.get("name", "")).lower())
+                if key and key not in shown_brands:
+                    shown_brands.add(key)
+                    alts.append(("logo", {"name": br["name"], "domain": br.get("domain", ""),
+                                          "logo": V.brand_logo(br["name"], br.get("domain", ""))}))
+                    break
+            if tag:
+                alts.append(("statement", {"tag": tag}))
+            if real and pieces > len(alts):
+                alts += real_instead(pieces - len(alts))
+            if alts:
+                specs, pieces, multi = alts, len(alts), True
         if not specs and tag:
             specs = [("statement", {"tag": tag})]
         if not specs:
             specs = [("logo", {"name": (b.get("brands") or [{}])[0].get("name") or "AI", "domain": ""})]
         text_card = specs[0][0] in ("stat", "person", "source", "logo")
-        if text_card:
+        if text_card and not multi:
             pieces = 1
         for k in range(pieces):
             kind, info = specs[k % len(specs)]

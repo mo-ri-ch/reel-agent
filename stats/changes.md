@@ -57,3 +57,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   real names (company/product/person/place) and a number or date, with no vague phrases ("a new AI model", "tech
   giants", "the company…"); one rewrite, else the story is skipped. New simulation scenario (half the scripts
   generic) still posts 12/12 on time.
+- 2026-10-09 · Owner: "visuals and talks are not matching" (Anthropic gene-editing reel: 6 of 7 beats were stock
+  "clip", none fitted → one DNA photo repeated 6x + abstract tags "Expert Debate"). Fixes: writer uses "clip" for at
+  most 2 beats and "official"/"person"/"photo"/"stat"/"source" for named things; when nothing real fits, the studio
+  shows the named company's logo card, then the line's fact in big type; a real photo is shown at most twice; tags
+  must contain a name or number. Also caught vague "experts are debating…" / "raises … questions" filler.
