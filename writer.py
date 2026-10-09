@@ -147,7 +147,9 @@ SCRIPT
   Never start with: "Hey guys", "Did you know", "In today's video", "Breaking news", "Imagine".
 - Then: what happened (the specifics) → how it works or the key detail → context (numbers, comparison, competitors,
   what came before) → why it matters to the viewer → what happens next.
-- BE SPECIFIC. Every script must name the concrete details: WHO (the company, lab, university or research team),
+- BE STRICTLY SPECIFIC (the owner's top rule). Name the company AND the product/model in the first two lines, every
+  person with their role, and give at least one real number or date. Never generalise ("the company", "a new AI
+  model", "tech giants", "experts"). Every script must name the concrete details: WHO (the company, lab, university or research team),
   WHAT exactly (the product or model name, the journal or paper, what it actually does), WHERE (country or city)
   and, when known, a real number or date from the source. Use Google Search to find the original source first.
   Never write vague filler like "recent research", "a new study", "experts say", "scientists", "tech giants",
@@ -663,7 +665,30 @@ VAGUE = re.compile(
     r"programmer|creator|creators|youngster|teenager|techie|professor|executive|ceo)\b"
     r"|\b(experts|researchers|scientists|developers|officials|analysts|critics|insiders)\s+(say|said|found|have|"
     r"believe|warn|warned|built|argue|argued|suggest|claim|think|predict|agree|note|fear)\b"
-    r"|\bsomeone\b|\b(a|one)\s+(major|big|leading|popular|well-known)\s+(\w+\s+)?(company|firm|lab|brand)\b")
+    r"|\bsomeone\b|\b(a|one)\s+(major|big|leading|popular|well-known)\s+(\w+\s+)?(company|firm|lab|brand)\b"
+    r"|\b(tech giants?|big tech|a tech company|an ai company|an ai lab|an ai startup|ai companies|some companies)\b"
+    r"|\ba\s+new\s+(ai\s+)?(model|tool|app|chatbot|platform|system|feature|product)\b(?!\s+(called|named))")
+
+NUMBER_WORDS = re.compile(r"(?i)\b(\d[\d,.]*|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|"
+                          r"thirty|forty|fifty|hundred|thousand|million|billion|trillion|percent|half|double|triple|"
+                          r"january|february|march|april|may|june|july|august|september|october|november|december|"
+                          r"monday|tuesday|wednesday|thursday|friday|saturday|sunday|today|yesterday|last week|this week)\b")
+COMMON_CAPS = {"AI", "I", "The", "This", "That", "It", "Its", "And", "But", "So", "Now", "Would", "Could", "Can", "Will",
+               "What", "Why", "How", "Who", "When", "Where", "Your", "You", "We", "They", "He", "She", "If", "Just",
+               "Here", "There", "Do", "Does", "Is", "Are", "Should", "Meanwhile", "Still", "Plus", "Then", "A", "An"}
+
+
+def specificity(script):
+    """(names, has_number): proper names mentioned (company, product, person, place) and whether a number/date is
+    given. A reel must name who and what, with at least one concrete number or date."""
+    names = set()
+    for sentence in re.split(r"(?<=[.!?])\s+", script or ""):
+        words = sentence.split()
+        for i, w in enumerate(words):
+            t = re.sub(r"[^\w'’.-]", "", w).strip(".'’")
+            if t[:1].isupper() and t not in COMMON_CAPS and (i > 0 or len(t) > 2) and not t.isdigit():
+                names.add(t)
+    return names, bool(NUMBER_WORDS.search(script or ""))
 
 
 def vague_phrases(script):

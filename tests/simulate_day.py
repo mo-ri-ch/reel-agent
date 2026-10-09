@@ -42,10 +42,14 @@ news.fetch_headlines = heads
 news.real_url = lambda u: u
 writer.pick_top = lambda h, u: h[:3]
 writer.drop_same_events = lambda p, c: p
+calls = [0]
 def write_script(t, previous=None, instruction=None):
     if SCENARIO == "gemini_down":
         raise RuntimeError("Gemini overloaded")
-    body = " ".join(["It ships today with real numbers, named people and a clear reason it matters to you."] * 5)
+    body = " ".join(["Jensen Huang of Nvidia confirmed it on Tuesday with three billion dollars of orders."] * 5)
+    calls[0] += 1
+    if SCENARIO == "general_half" and calls[0] % 2:
+        body = " ".join(["the company shared some results and people are curious about what comes next."] * 5)
     return {"title": t["title"], "script": "Here is what happened with " + t["title"] + ". " + body + " Would you use it?",
             "caption": "c " + t["title"], "hashtags": [], "beats": [], "sources": []}
 writer.write_script = write_script
@@ -90,7 +94,7 @@ while clock[0] < datetime.fromisoformat("2026-10-08T23:59:00+05:30"):
 print(json.dumps({"posted": posted, "slots": sorted(main.POST_TIMES)}))
 '''
 
-SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down"]
+SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half"]
 
 
 def run(scenario):

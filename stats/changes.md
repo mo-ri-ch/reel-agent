@@ -53,3 +53,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   75-105 words, every sentence must add a concrete fact; scripts under 65 words get one expansion with verified
   detail, else the story is skipped. Also drop Show HN posts and question/opinion headlines. Target: watch time,
   completion, follows.
+- 2026-10-09 · Owner: "always strictly mention the company, name, facts" · hard gate: every script must contain ≥2
+  real names (company/product/person/place) and a number or date, with no vague phrases ("a new AI model", "tech
+  giants", "the company…"); one rewrite, else the story is skipped. New simulation scenario (half the scripts
+  generic) still posts 12/12 on time.

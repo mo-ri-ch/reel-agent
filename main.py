@@ -382,7 +382,32 @@ def checked_script(topic, previous=None, instruction=None):
         draft = fact_check_step(draft, topic)
     draft["fix_rounds"] = rounds
     draft = make_specific(draft, topic)
-    return substance_step(draft, topic)
+    return specific_facts_step(substance_step(draft, topic), topic)
+
+
+def specific_facts_step(draft, topic):
+    """Owner (2026-10-09): "Always strictly mention the company, name, facts, do not generalise". A script must name
+    at least two real names (company, product, person, place) and give a number or date. One rewrite, else skipped."""
+    if draft.get("fact_status") == "unsure":
+        return draft
+    names, has_num = writer.specificity(draft.get("script", ""))
+    vague = writer.vague_phrases(draft.get("script", ""))
+    if len(names) >= 2 and has_num and not vague:
+        return draft
+    missing = ([] if len(names) >= 2 else ["the exact company/product/person names"]) + \
+              ([] if has_num else ["the key number or date"]) + ([f"vague: {', '.join(vague)}"] if vague else [])
+    tg.send("🎯 The script is too general (" + "; ".join(missing) + "). Rewriting with the exact names and facts...")
+    fix = ("Be strictly specific. Name the exact company, product or model, and the people involved with their roles; "
+           "give the key numbers and dates from the source. Replace every general phrase (" + "; ".join(missing) +
+           ") with the real name or fact. Never generalise. Keep every fact true and sourced.")
+    better = fact_check_step(writer.write_script(topic, previous=draft, instruction=fix), topic)
+    names2, num2 = writer.specificity(better.get("script", ""))
+    if better.get("fact_status") != "unsure" and len(names2) >= 2 and num2 and \
+            len((better.get("script") or "").split()) >= FLOOR_WORDS and not writer.vague_phrases(better.get("script", "")):
+        return better
+    draft["fact_status"] = "unsure"
+    draft["fact_notes"] = ["too general: " + "; ".join(missing)]
+    return draft
 
 
 MIN_WORDS = 65   # below this a reel feels empty (owner, 2026-10-09: "scripts are getting so bad, not very short")

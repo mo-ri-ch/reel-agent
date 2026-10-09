@@ -102,6 +102,15 @@ check("still thin -> skipped", main.substance_step({"script": "too short " * 10}
 check("full script untouched", main.substance_step({"script": "word " * 80}, {}).get("fact_status"), None)
 main.writer.write_script, main.fact_check_step, main.make_specific, main.tg.send = _ws, _fc, _ms, _send
 
+# strict specificity: real names + a number/date
+_n, _num = writer.specificity("OpenAI's revenue is twenty billion dollars below target, TechCrunch reported on Tuesday.")
+check("specific script", (len(_n) >= 2, _num), (True, True))
+_n, _num = writer.specificity("The company shared new results. Experts are curious about what comes next.")
+check("general script", (len(_n) >= 2, _num), (False, False))
+check("vague new model", bool(writer.vague_phrases("They released a new AI model for coding.")), True)
+check("named new model", bool(writer.vague_phrases("They released a new model called Codex Max.")), False)
+check("vague tech giants", bool(writer.vague_phrases("Tech giants are racing to build agents.")), True)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
