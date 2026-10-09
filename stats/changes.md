@@ -86,3 +86,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   late-and-good beats on-time-and-bad; the owner is told when a slot is late. Also found the editor-in-chief had
   NEVER run (NameError: video not imported in editor_step → silently skipped) — fixed; simulation now proves the
   editor gates (rejecting everything → nothing posted).
+- 2026-10-10 05:20 · OUTAGE 01:00–05:00 (3 slots missed, no crash): every story was rejected before rendering by
+  over-strict gates I added: "Researchers at Stanford found…" counted as vague; fact-check fixes deleted lines and the
+  script fell under the length floor. Fixed: researchers/experts are vague only when no name follows; fact fixes must
+  replace removed lines with other sourced facts; floor 50 words.

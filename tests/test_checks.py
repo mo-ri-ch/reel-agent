@@ -118,6 +118,8 @@ check("vague new model", bool(writer.vague_phrases("They released a new AI model
 check("named new model", bool(writer.vague_phrases("They released a new model called Codex Max.")), False)
 check("vague experts debating", bool(writer.vague_phrases("Independent experts are now actively debating it.")), True)
 check("filler raises questions", bool(writer.vague_phrases("This raises urgent biosecurity questions.")), True)
+check("researchers at X ok", bool(writer.vague_phrases("Study done. Researchers at Stanford University found it.")), False)
+check("bare researchers vague", bool(writer.vague_phrases("Study done. Researchers found it works.")), True)
 check("named researchers ok", bool(writer.vague_phrases("MIT researchers led by Regina Barzilay built it.")), False)
 check("vague tech giants", bool(writer.vague_phrases("Tech giants are racing to build agents.")), True)
 

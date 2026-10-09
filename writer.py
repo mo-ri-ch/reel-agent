@@ -764,7 +764,8 @@ VAGUE = re.compile(
     r"|\b(tech giants?|big tech|a tech company|an ai company|an ai lab|an ai startup|ai companies|some companies)\b"
     r"|\ba\s+new\s+(ai\s+)?(model|tool|app|chatbot|platform|system|feature|product)\b(?!\s+(called|named))"
     r"|(?:^|[.!?]\s+)(independent\s+|some\s+|many\s+|other\s+)?(experts|researchers|scientists|biologists|critics|"
-    r"analysts|observers|developers|engineers|insiders|officials)\b"
+    r"analysts|observers|developers|engineers|insiders|officials)\b(?!\s+(at|from|of|in|with|led|behind|on)\s+[A-Z])"
+    r"(?!\s+[A-Z])"
     r"|\b(independent|outside|leading)\s+experts\b"
     r"|\braises?\s+(\w+\s+){0,2}(questions|concerns)\b"
     r"|\b(sparks?|fuels?)\s+(a\s+)?(debate|concerns?|questions)\b")

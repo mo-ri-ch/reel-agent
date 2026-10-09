@@ -376,8 +376,9 @@ def checked_script(topic, previous=None, instruction=None):
         problems = draft.get("fact_notes") or ["some claims couldn't be verified"]
         tg.send(f"🔎 Fact check found a problem (attempt {rounds}/{MAX_FIX_ROUNDS}), fixing it:\n• " + "\n• ".join(problems))
         fix = ("Fix these fact-check problems: " + " | ".join(problems) +
-               ". Correct wrong claims to exactly what the source says. REMOVE every claim that has no source. "
-               "Only keep facts stated in the source article. Don't add new claims.")
+               ". Correct wrong claims to exactly what the source says. REMOVE every claim that has no source, and "
+               "replace it with another fact the source article DOES state, so the script stays 75-105 words. "
+               "Only keep facts stated in the source article.")
         draft = writer.write_script(topic, previous=draft, instruction=fix)
         draft = fact_check_step(draft, topic)
     draft["fix_rounds"] = rounds
@@ -418,7 +419,7 @@ def specific_facts_step(draft, topic):
 
 
 MIN_WORDS = 65   # below this a reel feels empty (owner, 2026-10-09: "scripts are getting so bad, not very short")
-FLOOR_WORDS = 55  # after one expansion attempt, anything shorter isn't worth a reel: the story is skipped
+FLOOR_WORDS = 50  # after one expansion attempt, anything shorter isn't worth a reel: the story is skipped
 
 
 def substance_step(draft, topic):
