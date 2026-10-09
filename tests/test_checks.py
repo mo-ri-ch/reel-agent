@@ -121,6 +121,15 @@ check("filler raises questions", bool(writer.vague_phrases("This raises urgent b
 check("named researchers ok", bool(writer.vague_phrases("MIT researchers led by Regina Barzilay built it.")), False)
 check("vague tech giants", bool(writer.vague_phrases("Tech giants are racing to build agents.")), True)
 
+# the editor-in-chief's score: inaccurate or generic reels can't pass on other strengths
+_r = writer.score_review({"scores": {"hook": 9, "specific": 9, "substance": 9, "accuracy": 9, "visuals": 9, "flow": 9},
+                          "visual_problems": [{"line": 2, "problem": "fruit for Apple"}]}, 5)
+check("editor good", (_r["overall"], _r["visual_beats"]), (9.0, [1]))
+_r = writer.score_review({"scores": {"hook": 10, "specific": 10, "substance": 10, "accuracy": 5, "visuals": 10,
+                                     "flow": 10}}, 5)
+check("editor inaccurate capped", _r["overall"], 6.5)
+check("editor bad json", writer.score_review([], 3)["overall"], 7.0)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

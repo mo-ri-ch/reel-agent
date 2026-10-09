@@ -535,6 +535,87 @@ def visual_check(shots):
     return out
 
 
+EDITOR_CRITERIA = ["hook", "specific", "substance", "accuracy", "visuals", "flow"]
+
+EDITOR_BRIEF = """You are the editor-in-chief of @gradientai.news, a premium AI-news Instagram account for a global
+audience. Be strict: only top-notch reels get posted. Judge this finished reel before it goes live.
+
+SOURCE HEADLINE: {title}
+SOURCE SUMMARY: {summary}
+SCRIPT (spoken, in order):
+{lines}
+
+Score each 1-10:
+- hook: do the first 2 seconds (title screen + line 1) make a viewer stop? Big name or number first?
+- specific: real company, product/model and people names, real numbers/dates. Any generic phrase ("the company",
+  "experts", "a new AI model", "raises questions") costs points.
+- substance: every line adds a new concrete fact; no filler, no repetition, no "X reported on it".
+- accuracy: every claim matches the source; no exaggeration or misleading framing (a projection is not a target, a
+  report is not a confirmation). Wrong or misleading = 4 or less.
+- visuals: each frame fits the words being spoken at that moment (named company -> its logo/product, person -> their
+  photo, number -> number card); no unrelated, repeated, blank or broken pictures; text readable.
+- flow: natural spoken English, clear story, strong specific ending question.
+Then list what must change to reach 9/10."""
+
+EDITOR_FORMAT = """
+Return ONLY JSON: {"scores": {"hook": n, "specific": n, "substance": n, "accuracy": n, "visuals": n, "flow": n},
+"one_line": "your verdict in under 15 words",
+"script_fixes": ["concrete change to a line, e.g. 'LINE 3: name the model (GPT-5.5) instead of the new model'"],
+"visual_problems": [{"line": LINE number, "problem": "short reason"}]}"""
+
+
+def editor_review(draft, topic, frames, beat_times):
+    """The editor-in-chief watches the finished reel (frames + script + source) and scores it like a strict news
+    editor. Returns {"overall", "scores", "one_line", "script_fixes", "visual_beats", "visual_notes"}."""
+    import base64
+    beats = draft.get("beats") or []
+
+    def beat_at(t):
+        for i, (a, b) in enumerate(beat_times or []):
+            if a <= t < b:
+                return i
+        return None
+    lines = "\n".join(f"LINE {i + 1}: {b.get('line', '')}" for i, b in enumerate(beats))
+    parts = [{"text": EDITOR_BRIEF.format(title=topic.get("title", ""), summary=str(topic.get("summary", ""))[:600],
+                                          lines=lines)}]
+    for i, f in enumerate(frames):
+        b = beat_at(f["t"])
+        said = f"LINE {b + 1}" if b is not None else "title screen"
+        parts.append({"text": f"\nFRAME {i + 1} at {f['t']}s (while {said} is spoken)"})
+        parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(f["jpeg"]).decode()}})
+    parts.append({"text": EDITOR_FORMAT})
+    res = parse_json(ask(parts, temperature=0.1, json_mode=True))
+    return score_review(res, len(beats))
+
+
+def score_review(res, n_beats):
+    """Turns the editor's JSON into the overall score (inaccurate or generic reels can't pass on other strengths)."""
+    if isinstance(res, list):
+        res = res[0] if res else {}
+    raw = res.get("scores") or {}
+    scores = {}
+    for k in EDITOR_CRITERIA:
+        try:
+            scores[k] = max(1, min(10, int(float(raw.get(k, 7)))))
+        except Exception:
+            scores[k] = 7
+    overall = round(sum(scores.values()) / len(scores), 1)
+    if min(scores["accuracy"], scores["specific"]) < 7:
+        overall = min(overall, 6.5)
+    vb, notes = [], []
+    for p in res.get("visual_problems") or []:
+        try:
+            i = int(p.get("line")) - 1
+        except Exception:
+            continue
+        if 0 <= i < n_beats:
+            vb.append(i)
+            notes.append(f"line {i + 1}: {str(p.get('problem', ''))[:90]}")
+    return {"overall": overall, "scores": scores, "one_line": str(res.get("one_line", ""))[:120],
+            "script_fixes": [str(x)[:200] for x in (res.get("script_fixes") or [])][:6],
+            "visual_beats": sorted(set(vb)), "visual_notes": notes[:6]}
+
+
 # ---------------------------------------------------------------- research (for news you send)
 def resolve_url(u):
     """Follows Gemini's search redirect links (and Google News links) to the real article address."""

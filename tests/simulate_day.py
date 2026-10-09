@@ -65,6 +65,13 @@ def render(*a, **k):
     return "x.mp4"
 video.render = render
 video.check_frames = lambda o: []
+video.editor_frames = lambda o: []
+def editor_review(d, t, f, times):
+    if SCENARIO == "editor_low":
+        return {"overall": 5.5, "scores": {}, "one_line": "too generic", "script_fixes": ["LINE 1: name the model"],
+                "visual_beats": [], "visual_notes": []}
+    return {"overall": 8.5, "scores": {}, "one_line": "good", "script_fixes": [], "visual_beats": [], "visual_notes": []}
+writer.editor_review = editor_review
 video.transcribe = lambda wav, hint="": []
 def synth(t, b, g, e="microsoft", **k):
     tts.LAST_ENGINE = "microsoft"
@@ -94,7 +101,7 @@ while clock[0] < datetime.fromisoformat("2026-10-08T23:59:00+05:30"):
 print(json.dumps({"posted": posted, "slots": sorted(main.POST_TIMES)}))
 '''
 
-SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half"]
+SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low"]
 
 
 def run(scenario):

@@ -67,3 +67,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   backup headlines reel. Now: word count decides "thin"; names are a must, a number is asked for but optional after
   the rewrite; rewrite errors never crash (story skipped). Owner: never say "according to <source>" → removed from
   scripts and the headlines reel.
+- 2026-10-09 · Editor-in-chief (owner approved): after rendering, Gemini watches ~14 frames + script + source and
+  scores hook, specific, substance, accuracy, visuals, flow (1-10). Pass = 8/10 (accuracy or specific < 7 caps at
+  6.5). Below: weak shots replaced and re-scored, or the script rewritten with its notes and re-made; still < 7 →
+  switch story. Score shown in the Telegram preview and saved in review packs + stats meta ("editor"). Backup
+  headlines reel bypasses it. Simulation: editor rejecting everything still posts 12/12 on time.

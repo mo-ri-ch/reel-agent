@@ -1463,6 +1463,22 @@ def _studio_track(beats, times, plan, draft, label, hook_img, hook_len, total, w
     return listfile, cuts, captions
 
 
+def editor_frames(out, every=2.4, limit=14):
+    """Frames across the whole finished reel for the editor-in-chief: [{"t": seconds, "jpeg": bytes}]."""
+    total = duration(out)
+    times, t = [0.5], every
+    while t < total - 0.3 and len(times) < limit:
+        times.append(round(t, 1))
+        t += every
+    frames = []
+    for k, t in enumerate(times):
+        tmpf = os.path.join(WORK_DIR, "build", f"editor_{k}.jpg")
+        sh(["ffmpeg", "-y", "-ss", f"{t:.2f}", "-i", out, "-frames:v", "1", "-vf", "scale=360:-2", "-q:v", "5", tmpf])
+        with open(tmpf, "rb") as f:
+            frames.append({"t": t, "jpeg": f.read()})
+    return frames
+
+
 def render(voice_path, draft, topic, user_image_path=None, words=None, user_video_path=None, exact_words=None,
            safe_beats=()):
     """exact_words: word timings reported by the AI voice itself (most accurate)."""

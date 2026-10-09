@@ -806,6 +806,7 @@ def reel_meta(s):
             "engine": (s.get("engine_used") or s.get("last_engine")) if s.get("voice_mode") == "ai" else "own voice",
             "voice": d.get("voice_used", "")[:60], "person": any(b.get("visual") == "person" for b in beats),
             "words": len(d.get("script", "").split()), "visuals": d.get("visual_summary", "")[:80],
+            "editor": (d.get("editor") or {}).get("overall"),
             "made": st.now().isoformat(timespec="minutes")}
 
 
@@ -1580,6 +1581,7 @@ def cmd_render():
                            exact_words=exact)
         # Checkpoint 2: does every shot actually fit what's being said?
         s["draft"]["visual_status"], s["draft"]["visual_notes"] = "skipped", []
+        safe_done = set()
         try:
             frames = video.check_frames(out)
             problems = writer.visual_check(frames) if frames else []
@@ -1590,6 +1592,7 @@ def cmd_render():
                 tg.send("🖼 Visual check found shots that don't fit, so I'm replacing them:\n• " + "\n• ".join(notes))
                 out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
                                    exact_words=exact, safe_beats=set(beats_bad))
+                safe_done = set(beats_bad)
                 frames = video.check_frames(out)
                 again = writer.visual_check(frames) if frames else []
                 if again:  # still not right: those shots become safe cards too (name/logo cards can't be wrong)
@@ -1598,12 +1601,23 @@ def cmd_render():
                             "\n• ".join(p["problem"] for p in again))
                     out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
                                        exact_words=exact, safe_beats=set(beats_bad) | more)
+                    safe_done = set(beats_bad) | more
                 s["draft"]["visual_status"] = "fixed"
                 s["draft"]["visual_notes"] = notes + [p["problem"] for p in again]
             else:
                 s["draft"]["visual_status"] = "ok"
         except Exception as e:
             print(f"Visual check skipped: {e}")
+        # Checkpoint 3: the editor-in-chief watches the whole finished reel and scores it out of 10
+        def rerender(extra):
+            safe_done.update(extra)
+            return video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
+                                exact_words=exact, safe_beats=set(safe_done))
+        out, action = editor_step(s, out, rerender)
+        if action in ("rewrite", "switch"):
+            editor_redo(s, action)
+            st.save(s)
+            return
         s["draft"]["credits"] = list(getattr(video, "LAST_CREDITS", []) or [])
         voice_info = f" · voice: {engine}" if s.get("voice_mode") == "ai" else ""
         s["draft"]["voice_used"] = engine if s.get("voice_mode") == "ai" else "own voice"
@@ -1617,6 +1631,9 @@ def cmd_render():
                        "issues": "\n🖼 Visual check: ⚠️ some shots may not fit — please look",
                        "skipped": "\n🖼 Visual check: skipped"}.get(vs, "")
         voice_info += "\n" + fact_line(s["draft"]).split("\n")[0]
+        ed = s["draft"].get("editor") or {}
+        if ed.get("overall") is not None:
+            voice_info += f"\n🎬 Editor: {ed['overall']}/10 — {ed.get('one_line', '')}"
         try:
             import review
             review.save(out, s["draft"], s.get("topic"))
@@ -1653,6 +1670,68 @@ def cmd_render():
             tg.send(f"⚠️ Couldn't make the reel: {e}\n" + ("Autopilot will try once more in a few minutes."
                     if s.get("autopilot") else "Reply \"ok\" to try the AI voice again, or send a voice note."))
     st.save(s)
+
+
+EDITOR_PASS = 8.0   # the editor-in-chief's bar for posting
+EDITOR_FLOOR = 7.0  # after one round of fixes, reels between this and the bar are posted (with the score shown)
+
+
+def editor_step(s, out, rerender):
+    """Scores the finished reel. Returns (video, action): "ok" (post), "rewrite" (script must change) or "switch"
+    (not good enough even after fixes). Weak shots are replaced and re-scored once, right here."""
+    d = s["draft"]
+    if (s.get("topic") or {}).get("digest"):  # the backup headlines reel exists to keep the schedule: never blocked
+        return out, "ok"
+    try:
+        rev = writer.editor_review(d, s.get("topic") or {}, video.editor_frames(out),
+                                   video.LAST_CHECK.get("times") or [])
+    except Exception as e:  # the editor must never block the schedule
+        print(f"Editor review skipped: {e}")
+        return out, "ok"
+    d["editor"] = rev
+    print(f"Editor: {rev['overall']}/10 {rev['scores']} · {rev['one_line']}")
+    if rev["overall"] >= EDITOR_PASS:
+        return out, "ok"
+    first_round = not d.get("editor_rounds")
+    if first_round and rev["visual_beats"] and not rev["script_fixes"]:
+        d["editor_rounds"] = 1
+        tg.send(f"🎬 Editor-in-chief: {rev['overall']}/10, {rev['one_line']}\nReplacing the weak shots:\n• " +
+                "\n• ".join(rev["visual_notes"]))
+        try:
+            return editor_step(s, rerender(set(rev["visual_beats"])), rerender)
+        except Exception as e:
+            print(f"Editor re-render failed: {e}")
+            return out, "ok" if rev["overall"] >= EDITOR_FLOOR else "switch"
+    if first_round and rev["script_fixes"]:
+        return out, "rewrite"
+    return out, ("ok" if rev["overall"] >= EDITOR_FLOOR else "switch")
+
+
+def editor_redo(s, action):
+    """Acts on the editor's verdict: rewrite the script with its notes (then voice + render again), or switch story."""
+    rev = s["draft"].get("editor") or {}
+    if action == "rewrite":
+        tg.send(f"🎬 Editor-in-chief: {rev.get('overall')}/10, {rev.get('one_line', '')}\nRewriting the script:\n• " +
+                "\n• ".join(rev.get("script_fixes") or []))
+        try:
+            new = checked_script(s["topic"], previous=s["draft"],
+                                 instruction="The editor-in-chief's notes, fix every one (keep every fact true and "
+                                             "sourced): " + " | ".join(rev.get("script_fixes") or []))
+        except Exception as e:
+            print(f"Editor rewrite failed: {e}")
+            new = {"fact_status": "unsure"}
+        if new.get("fact_status") != "unsure" and new.get("script"):
+            new["editor_rounds"] = 1
+            new["source_links"] = s["draft"].get("source_links")
+            s["draft"] = new
+            s["stage"] = "awaiting_voice"
+            s["script_deadline"] = st.now().isoformat()  # autopilot voices and renders it on the next run
+            return
+        tg.send("🎬 The editor's fixes couldn't be verified, so I'm switching to another story.")
+    else:
+        tg.send(f"🎬 Editor-in-chief: {rev.get('overall')}/10 even after fixes, {rev.get('one_line', '')}. "
+                "Not good enough to post, switching to another story.")
+    next_story(s, f"editor score {rev.get('overall')}/10")
 
 
 def cmd_feeds():

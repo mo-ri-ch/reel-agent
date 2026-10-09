@@ -88,6 +88,7 @@ def save(path, draft, topic, extra=None):
                 "words": len((draft.get("script") or "").split()),
                 "beats": [{"line": b.get("line"), "visual": b.get("visual")} for b in draft.get("beats") or []],
                 "voice": draft.get("voice_used"), "visuals": draft.get("visual_summary"),
+                "editor": draft.get("editor"),
                 **measure(path), **(extra or {})}
         if info.get("duration"):
             info["words_per_minute"] = round(info["words"] / info["duration"] * 60)
