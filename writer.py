@@ -160,6 +160,8 @@ SCRIPT
 - Keep one surprising detail for the second-to-last line so viewers stay to the end.
 - End with one short, specific question viewers can answer in a word or two ("Would you let it drive your car?"),
   never a generic "What do you think?". Do NOT add a "follow us" line or mention any @handle.
+- Never say "according to <outlet>", "<outlet> reported" or "as reported by": just state the facts (the source is
+  shown on screen and in the caption).
 - Banned words: game-changer, revolutionize, revolutionary, cutting-edge, unleash, delve, landscape, buckle up,
   "the future is here", "in today's world", "stay tuned", "mind-blowing".
 - No emojis, hashtags, stage directions or brackets in the lines. Write numbers the way they're said ("ten times", "two billion").
@@ -226,6 +228,15 @@ def clean_spoken(line):
     return re.sub(r"\s+", " ", line).strip()
 
 
+ATTRIBUTION = re.compile(r"(?i)^\s*(according to|as reported by|per)\s+[^,:]{2,60}[,:]\s*")
+
+
+def drop_attribution(line):
+    """Owner: never say 'According to <source>' in the voice-over (the source is shown on screen and in the caption)."""
+    out = ATTRIBUTION.sub("", line).strip()
+    return out[:1].upper() + out[1:] if out else line
+
+
 def normalize_draft(draft, topic):
     """Makes sure the draft has clean beats, script and all the fields the rest of the agent needs."""
     if isinstance(draft, list):
@@ -236,7 +247,7 @@ def normalize_draft(draft, topic):
             continue
         kind = b.get("visual") if b.get("visual") in ("clip", "image", "stat", "photo", "source", "official",
                                                        "person") else "clip"
-        beats.append({"line": str(b["line"]).strip(), "visual": kind,
+        beats.append({"line": drop_attribution(str(b["line"]).strip()), "visual": kind,
                       "query": str(b.get("query") or "technology"), "prompt": str(b.get("prompt") or ""),
                       "big": str(b.get("big") or "")[:10], "small": str(b.get("small") or "")[:40],
                       "entity": str(b.get("entity") or "")[:80], "outlet": str(b.get("outlet") or "")[:60],

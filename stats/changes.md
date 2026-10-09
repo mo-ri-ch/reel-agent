@@ -62,3 +62,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   most 2 beats and "official"/"person"/"photo"/"stat"/"source" for named things; when nothing real fits, the studio
   shows the named company's logo card, then the line's fact in big type; a real photo is shown at most twice; tags
   must contain a name or number. Also caught vague "experts are debating…" / "raises … questions" filler.
+- 2026-10-09 evening · Gates were too strict/fragile: the writer's own "thin" flag skipped good 80-word scripts; a
+  required number skipped true stories with none; a Gemini error in a rewrite crashed 3 runs → the 9 PM slot got the
+  backup headlines reel. Now: word count decides "thin"; names are a must, a number is asked for but optional after
+  the rewrite; rewrite errors never crash (story skipped). Owner: never say "according to <source>" → removed from
+  scripts and the headlines reel.

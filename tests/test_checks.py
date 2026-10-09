@@ -99,6 +99,13 @@ main.writer.write_script = lambda t, previous=None, instruction=None: {"script":
 check("thin script expanded", main.substance_step({"script": "too short " * 10}, {}).get("fact_status"), None)
 main.writer.write_script = lambda t, previous=None, instruction=None: {"script": "word " * 30}
 check("still thin -> skipped", main.substance_step({"script": "too short " * 10}, {}).get("fact_status"), "unsure")
+check("model's thin flag ignored at 80 words", main.substance_step({"script": "word " * 80, "thin": True}, {})
+      .get("fact_status"), None)
+main.writer.write_script = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("503 overloaded"))
+check("gemini busy doesn't crash", main.substance_step({"script": "short " * 20}, {}).get("fact_status"), "unsure")
+check("named but no number kept", main.specific_facts_step(
+    {"script": "Anthropic launched Claude Security scans for GitHub projects, said Jason Clinton. " * 6}, {})
+      .get("fact_status"), None)
 check("full script untouched", main.substance_step({"script": "word " * 80}, {}).get("fact_status"), None)
 main.writer.write_script, main.fact_check_step, main.make_specific, main.tg.send = _ws, _fc, _ms, _send
 
@@ -126,6 +133,8 @@ check("keep university research", news.newsworthy({"title": "MIT researchers bui
 check("drop Show HN", news.newsworthy({"title": "Show HN: Edi Life OS – self-hosted life dashboard", "source": "x"}), False)
 check("drop question essay", news.newsworthy({"title": "Is this the 'mathocalypse'? Why OpenAI's results dump...",
                                               "source": "The Conversation"}), False)
+check("no 'according to'", writer.drop_attribution("According to Reuters: China AI labs publish few safety tests."),
+      "China AI labs publish few safety tests.")
 check("named developer", bool(writer.vague_phrases("Kochi developer Arjun Menon just dropped Laya.")), False)
 
 # repeats

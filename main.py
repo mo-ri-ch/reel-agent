@@ -400,11 +400,18 @@ def specific_facts_step(draft, topic):
     fix = ("Be strictly specific. Name the exact company, product or model, and the people involved with their roles; "
            "give the key numbers and dates from the source. Replace every general phrase (" + "; ".join(missing) +
            ") with the real name or fact. Never generalise. Keep every fact true and sourced.")
-    better = fact_check_step(writer.write_script(topic, previous=draft, instruction=fix), topic)
+    try:
+        better = fact_check_step(writer.write_script(topic, previous=draft, instruction=fix), topic)
+    except Exception as e:  # Gemini busy: never crash the run
+        print(f"Specificity rewrite failed: {e}")
+        better = {"fact_status": "unsure"}
     names2, num2 = writer.specificity(better.get("script", ""))
-    if better.get("fact_status") != "unsure" and len(names2) >= 2 and num2 and \
+    # names and no vague phrases are a must; a number is asked for, but some true stories simply have none
+    if better.get("fact_status") != "unsure" and len(names2) >= 2 and \
             len((better.get("script") or "").split()) >= FLOOR_WORDS and not writer.vague_phrases(better.get("script", "")):
         return better
+    if len(names) >= 2 and not vague and draft.get("fact_status") != "unsure":  # rewrite failed, original was fine
+        return draft
     draft["fact_status"] = "unsure"
     draft["fact_notes"] = ["too general: " + "; ".join(missing)]
     return draft
@@ -420,16 +427,20 @@ def substance_step(draft, topic):
     if draft.get("fact_status") == "unsure":
         return draft
     n = len((draft.get("script") or "").split())
-    if n >= MIN_WORDS and not draft.get("thin"):
+    if n >= MIN_WORDS:  # the writer's own "thin" flag is too cautious; the word count and fact check decide
         return draft
     tg.send(f"📝 The script is too thin ({n} words). Adding verified detail from the sources...")
     fix = ("The script is too thin. Expand it to 75-105 words using ONLY facts from the source article and your search "
            "results: what exactly it is, how it works, the key numbers, who is involved, what came before, and why it "
            "matters to the viewer. Every sentence must add a new concrete fact. Never write lines like 'X reported on "
            "it' or 'the publication discussed'. Keep every fact true.")
-    better = fact_check_step(writer.write_script(topic, previous=draft, instruction=fix), topic)
+    try:
+        better = fact_check_step(writer.write_script(topic, previous=draft, instruction=fix), topic)
+    except Exception as e:  # Gemini busy: never crash the run; this story is skipped instead
+        print(f"Expansion failed: {e}")
+        better = {"fact_status": "unsure"}
     m = len((better.get("script") or "").split())
-    if better.get("fact_status") != "unsure" and m >= FLOOR_WORDS and not better.get("thin"):
+    if better.get("fact_status") != "unsure" and m >= FLOOR_WORDS:
         better["fix_rounds"] = draft.get("fix_rounds", 0)
         return make_specific(better, topic)
     draft["fact_status"] = "unsure"
@@ -710,13 +721,13 @@ def digest_rank(heads):
 
 
 def digest_draft(heads):
-    """'According to TechCrunch, …' — every line credits its source, so it's accurate by construction."""
+    """Three headlines read as they are (accurate by construction); each shows its outlet's card on screen."""
     beats = [{"line": "Here are today's top AI headlines.", "visual": "image", "tag": "3 AI stories today",
               "prompt": "abstract futuristic news studio with glowing screens, blue light"}]
     for h in heads[:3]:
         src = re.sub(r"\s*[|:–-].*$", "", h.get("source") or "").strip() or "the news"
         title = clean_headline(h["title"]).rstrip(".")
-        beats.append({"line": f"According to {src}: {title}.",
+        beats.append({"line": f"{title}.",
                       "visual": "source", "outlet": src, "headline": title[:120], "domain": ""})
     beats.append({"line": "Which of these matters most to you?", "visual": "image", "tag": "Which matters most?",
                   "prompt": "abstract glowing network of connected nodes, blue and purple"})
