@@ -74,7 +74,12 @@ def render(*a, **k):
 video.render = render
 video.check_frames = lambda o: []
 video.editor_frames = lambda o: []
+ed = [0]
 def editor_review(d, t, f, times):
+    ed[0] += 1
+    if SCENARIO == "editor_mixed" and ed[0] % 2:
+        return {"overall": 5.5, "scores": {}, "one_line": "too generic", "script_fixes": ["LINE 1: name the model"],
+                "visual_beats": [], "visual_notes": []}
     if SCENARIO == "editor_low":
         return {"overall": 5.5, "scores": {}, "one_line": "too generic", "script_fixes": ["LINE 1: name the model"],
                 "visual_beats": [], "visual_notes": []}
@@ -106,10 +111,12 @@ while clock[0] < datetime.fromisoformat("2026-10-08T23:59:00+05:30"):
     if out and out[-1] == "true":
         main.cmd_render()
     clock[0] += timedelta(minutes=5)
-print(json.dumps({"posted": posted, "slots": sorted(main.POST_TIMES)}))
+print(json.dumps({"posted": posted, "slots": sorted(main.POST_TIMES), "late_notes": sum("isn't ready yet" in l for l in log)}))
 '''
 
-SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low", "repeats_half", "gemini_flaky"]
+SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low", "repeats_half", "gemini_flaky", "editor_mixed"]
+# with no junk backups, these must post NOTHING (never a bad reel) and tell the owner the slots are late
+NOTHING_GOOD = {"gemini_down", "editor_low"}
 
 
 def run(scenario):
@@ -130,6 +137,9 @@ def run(scenario):
         res = json.loads(last[-1])
         posted, slots = res["posted"], res["slots"]
         on_time = sum(1 for t in slots if any(abs(_mins(p_) - _mins(t)) <= 5 for p_ in posted))
+        if scenario in NOTHING_GOOD:
+            ok = not posted and res.get("late_notes", 0) > 0
+            return ok, f"nothing good to post → {len(posted)} posted (want 0), owner told: {res.get('late_notes', 0)}"
         ok = len(posted) == len(slots) and on_time == len(slots)
         return ok, f"{len(posted)}/{len(slots)} posted, {on_time} on time: {posted}"
 

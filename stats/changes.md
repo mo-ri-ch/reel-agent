@@ -81,3 +81,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   writing the new script was uncaught → every run crashed, the 9 PM reel didn't post. Fixed (switch failures are
   caught, schedule keeper fills); new simulation "gemini_flaky" covers it. Likely trigger: more Gemini calls per reel
   (editor, same-event gate, rewrites) → watch Gemini quota.
+- 2026-10-09 23:55 · Owner: the "Top AI headlines" backup reel made no sense ("Very bad execution"). It read raw
+  headlines (a podcast, an opinion question), bypassed every quality check incl. the editor. REMOVED as a backup:
+  late-and-good beats on-time-and-bad; the owner is told when a slot is late. Also found the editor-in-chief had
+  NEVER run (NameError: video not imported in editor_step → silently skipped) — fixed; simulation now proves the
+  editor gates (rejecting everything → nothing posted).

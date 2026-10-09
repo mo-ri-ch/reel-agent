@@ -1401,24 +1401,16 @@ def keep_schedule(s):
             tg.send(f"📋 A reel is missing from today's {len(POST_TIMES)} (deleted or not posted), so I'm making a "
                     "replacement now." if behind else f"📋 Getting the next reel ready for {fmt_time(need)}.")
             offer_news(s)
-            nothing = s["stage"] == "idle"
-            key = f"behind-{now.date()}-{posted_today(s)}" if behind else need.isoformat()[:16]
-            if nothing and (minutes < 50 or behind) and s.get("digest_for") != key and emergency_reel(s):
-                s["digest_for"] = key
-                return True
             if minutes < 90 and s["stage"] == "choosing":
                 s["choose_deadline"] = (now + timedelta(minutes=0 if minutes < 45 else 10)).isoformat()
         return False
-    # 3) backup: under 35 minutes and nothing close to ready → attributed-headlines reel now
-    d_ = s.get("draft") or {}
-    ready_soon = ((s["stage"] == "awaiting_approval" and not qa_hold(d_)) or
-                  (s["stage"] == "awaiting_voice" and d_.get("fact_status") == "ok" and not d_.get("vague_notes")))
-    too_late = (minutes < 50 and not behind) or (behind and waited > 45)
-    key = f"behind-{now.date()}-{posted_today(s)}" if behind else need.isoformat()[:16]
-    if too_late and not ready_soon and s["stage"] != "rendering" and s.get("digest_for") != key:
-        if emergency_reel(s):
-            s["digest_for"] = key
-            return True
+    # 3) no more "headlines" backup reels (owner, 2026-10-09: they made no sense and skipped every quality check).
+    #    A reel that isn't ready posts as soon as it passes all checks: late and good beats on time and bad.
+    key = f"{now.date()}-{posted_today(s)}"
+    if behind and waited >= 10 and s.get("late_note_for") != key:
+        s["late_note_for"] = key
+        tg.send("⏳ This slot's reel isn't ready yet. It will post as soon as it passes every check "
+                "(a late, good reel beats an on-time bad one).")
     return False
 
 
@@ -1724,6 +1716,7 @@ EDITOR_FLOOR = 7.0  # after one round of fixes, reels between this and the bar a
 def editor_step(s, out, rerender):
     """Scores the finished reel. Returns (video, action): "ok" (post), "rewrite" (script must change) or "switch"
     (not good enough even after fixes). Weak shots are replaced and re-scored once, right here."""
+    import video
     d = s["draft"]
     if (s.get("topic") or {}).get("digest"):  # the backup headlines reel exists to keep the schedule: never blocked
         return out, "ok"
