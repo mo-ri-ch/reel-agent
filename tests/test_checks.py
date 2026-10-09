@@ -130,6 +130,18 @@ _r = writer.score_review({"scores": {"hook": 10, "specific": 10, "substance": 10
 check("editor inaccurate capped", _r["overall"], 6.5)
 check("editor bad json", writer.score_review([], 3)["overall"], 7.0)
 
+# the final repeat gate: renamed launches and follow-up pieces about the same event are caught
+_ask2 = writer.ask
+writer.ask = lambda *a, **k: '{"repeat": true, "covered": 1, "why": "same model"}'
+check("same event caught", writer.same_event({"title": "Mistral says Le Chonk can challenge the best AI models"},
+                                             ["Mistral's new 1T model aims to leapfrog rivals — said: Mistral's Le Chonk..."]),
+      "Mistral's new 1T model aims to leapfrog rivals")
+check("no shared word = not trusted", writer.same_event({"title": "Utah lets AI prescribe medicine"},
+                                                         ["Mistral's new 1T model aims to leapfrog rivals"]), None)
+writer.ask = lambda *a, **k: '{"repeat": false, "covered": 0}'
+check("different story kept", writer.same_event({"title": "Mistral cuts API prices"}, ["Mistral's new 1T model"]), None)
+writer.ask = _ask2
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

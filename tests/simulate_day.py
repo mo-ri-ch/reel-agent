@@ -42,6 +42,11 @@ news.fetch_headlines = heads
 news.real_url = lambda u: u
 writer.pick_top = lambda h, u: h[:3]
 writer.drop_same_events = lambda p, c: p
+rep = [0]
+def same_event(t, c):
+    rep[0] += 1
+    return "an earlier story" if SCENARIO == "repeats_half" and rep[0] % 2 and c else None
+writer.same_event = same_event
 calls = [0]
 def write_script(t, previous=None, instruction=None):
     if SCENARIO == "gemini_down":
@@ -101,7 +106,7 @@ while clock[0] < datetime.fromisoformat("2026-10-08T23:59:00+05:30"):
 print(json.dumps({"posted": posted, "slots": sorted(main.POST_TIMES)}))
 '''
 
-SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low"]
+SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low", "repeats_half"]
 
 
 def run(scenario):

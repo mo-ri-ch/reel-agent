@@ -477,7 +477,7 @@ def next_story(s, reason=""):
     """Moves on to another story when this one can't be verified, so the posting slot still gets a reel."""
     tried = set(s.get("tried") or []) | {(s.get("topic") or {}).get("title", "")}
     s["tried"] = list(tried)[-30:]
-    spare = [c for c in (s.get("spare") or []) if not news.recent_match(c.get("title", ""), list(tried))]
+    spare = [c for c in (s.get("spare") or []) if not news.recent_match(c.get("title", ""), list(tried) + recent_titles(s))]
     if not spare:
         heads = news.dedupe(news.fetch_headlines(), recent_titles(s) + list(tried))
         spare = writer.pick_top(heads, s["history"]) if heads else []
@@ -490,7 +490,40 @@ def next_story(s, reason=""):
     start_script(s, pick, auto=True)
 
 
+def recent_events(s):
+    """What we covered in the last 14 days: titles plus what each reel actually said (more precise than titles)."""
+    cutoff = st.now() - timedelta(days=14)
+    out = []
+    for h in s.get("posted_log") or []:
+        if datetime.fromisoformat(h["at"]) > cutoff:
+            out.append(h["title"] + (f" — said: {h['event']}" if h.get("event") else ""))
+    out += [q["title"] for q in s.get("queue") or []] + [h["topic"]["title"] for h in s.get("held") or []]
+    return out
+
+
+def is_repeat(s, topic):
+    """The last check before a story is written: is it the same news event as anything posted, queued or parked in
+    the last 14 days? Word match first (works offline), then the same-event check on titles + what we said."""
+    past = recent_events(s)
+    hit = news.recent_match(topic.get("title", ""), [p.split(" — said: ")[0] for p in past])
+    if hit:
+        return hit
+    try:
+        return writer.same_event(topic, past)
+    except Exception as e:
+        print(f"Same-event gate skipped: {e}")
+        return None
+
+
 def start_script(s, topic, instruction=None, auto=False):
+    if not instruction and not topic.get("extra") and not topic.get("custom") and not topic.get("digest"):
+        repeat = is_repeat(s, topic)
+        if repeat:
+            tg.send(f"🔁 Skipping a repeat: “{topic['title'][:80]}” is the same news as “{repeat[:80]}”.")
+            s["tried"] = ((s.get("tried") or []) + [topic.get("title", "")])[-60:]
+            if auto or s.get("autopilot"):
+                next_story(s, "the last one was a repeat")
+            return
     tg.action("typing")
     tg.send("✍️ Revising the script..." if instruction else f"✍️ Writing a script about: {topic['title']}")
     draft = checked_script(topic, previous=s.get("draft") if instruction else None, instruction=instruction)
@@ -815,7 +848,9 @@ def approve(s, now_please=False):
             "caption": caption_for(s["draft"], s.get("voice_mode") == "ai"),
             "extra": bool((s.get("topic") or {}).get("extra")), "meta": reel_meta(s)}
     s["history"] = (s["history"] + [item["title"]])[-100:]
-    s["posted_log"] = (s.get("posted_log") or []) + [{"title": item["title"], "at": st.now().isoformat()}]
+    said = " ".join((s["draft"].get("script") or "").split())[:240]
+    s["posted_log"] = (s.get("posted_log") or []) + [{"title": item["title"], "at": st.now().isoformat(),
+                                                      "event": said}]
     if now_please:
         tg.send("📤 Posting to Instagram now... (1-3 minutes)")
         link = publish_item(item)

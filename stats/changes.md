@@ -72,3 +72,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   6.5). Below: weak shots replaced and re-scored, or the script rewritten with its notes and re-made; still < 7 →
   switch story. Score shown in the Telegram preview and saved in review packs + stats meta ("editor"). Backup
   headlines reel bypasses it. Simulation: editor rejecting everything still posts 12/12 on time.
+- 2026-10-09 · Owner asked about repeats. Audit found 4 repeated events in 4 days (OpenAI math results ×3, ChatGPT EU
+  watermark ×2, Mistral 1T/"Le Chonk" ×2, ChatGPT Intelligent UI ×2): backup stories skipped the AI same-event check,
+  and it needed 2 shared title words. Now every story passes a final same-event gate right before its script is
+  written (main model; compares against titles + what each posted reel actually said, 14 days; 1 shared name is
+  enough). Posted reels now store "event" (first lines of the script). Simulation with 50% repeats: 12/12 on time.

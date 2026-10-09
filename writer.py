@@ -816,6 +816,39 @@ Set "found": false (and leave name empty) if you truly can't find it. Never gues
         return []
 
 
+def same_event(topic, covered):
+    """Is this one story the SAME news event as something we already covered? Returns that covered item or None.
+    Covered items may include what our reel said, which catches renamed launches ("1T model" = "Le Chonk")."""
+    if not covered:
+        return None
+    recent = "\n".join(f"{i}. {t}" for i, t in enumerate(list(dict.fromkeys(covered))[-60:], 1))
+    res = parse_json(ask(f"""NEW STORY: {topic.get("title", "")} — {str(topic.get("summary", ""))[:300]}
+
+ALREADY COVERED in the last 14 days (title, and what our reel said):
+{recent}
+
+Is the NEW STORY about the SAME news event as one already covered: the same announcement, launch, model, results
+release, report, policy, lawsuit, deal or person's move, even if worded differently, from another outlet, a follow-up
+analysis or an opinion piece about it? A genuinely NEW development (e.g. a price cut a week after a launch) is NOT a
+repeat; a different story about the same company is NOT a repeat.
+Return ONLY JSON: {{"repeat": true/false, "covered": <number of the covered item or 0>, "why": "short"}}""",
+                         temperature=0, json_mode=True))
+    if isinstance(res, list):
+        res = res[0] if res else {}
+    if not res.get("repeat"):
+        return None
+    items = list(dict.fromkeys(covered))[-60:]
+    try:
+        hit = items[int(res.get("covered")) - 1]
+    except Exception:
+        return None
+    import news as _news
+    # guard against false alarms: they must share at least one distinctive word (a company, product or topic name)
+    if not _news.keywords(topic.get("title", "") + " " + str(topic.get("summary", ""))[:300]) & _news.keywords(hit):
+        return None
+    return hit.split(" — said: ")[0]
+
+
 def drop_same_events(picks, covered):
     """Asks Gemini whether any picked story is the SAME news event as one already covered, even when the
     headlines share no words (e.g. a first-person essay and a news report about the same resignation)."""
@@ -842,7 +875,8 @@ Return ONLY JSON: {{"repeats": [{{"new": <number>, "covered": "the exact already
             if not isinstance(r, dict) or not str(r.get("new", "")).isdigit():
                 continue
             i = int(r["new"])
-            if 0 < i <= len(picks) and len(_news.keywords(picks[i - 1]["title"]) & _news.keywords(str(r.get("covered", "")))) >= 2:
+            if 0 < i <= len(picks) and len(_news.keywords(picks[i - 1]["title"] + " " + picks[i - 1].get("summary", "")[:200])
+                                           & _news.keywords(str(r.get("covered", "")))) >= 2:
                 bad.add(i)
     except Exception as e:
         print(f"Same-event check skipped: {e}")
