@@ -1,136 +1,61 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock",
-    "link": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837",
-    "summary": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock The Conversation",
-    "source": "The Conversation",
-    "published": "2026-10-09T03:25:00+00:00",
-    "angle": "Mathematicians in shock over OpenAI's latest math results is a major brain-breaking trend."
-  },
-  "draft": {
-    "title": "OpenAI math results covered by The Conversation",
-    "hook_text": "Did OpenAI shock mathematicians?",
-    "beats": [
-      {
-        "line": "The Conversation reported on recent OpenAI results.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "The Conversation",
-        "domain": "theconversation.com",
-        "headline": "Is this the mathocalypse? Why OpenAIs latest results dump has left mathematicians in shock",
-        "url": "",
-        "tag": "The Conversation report",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          }
-        ]
-      },
-      {
-        "line": "The publication discussed reactions to the release.",
-        "visual": "clip",
-        "query": "person looking at computer screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Mathematician reactions",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you trust an artificial intelligence with complex calculations?",
-        "visual": "clip",
-        "query": "person thinking at desk",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Trust AI with math",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "curious and conversational, discussing the reported reaction to OpenAI's publication",
-    "caption": "The Conversation recently reported on reactions to OpenAI outputs. Would you trust an artificial intelligence with complex mathematics?",
-    "hashtags": [
-      "OpenAI",
-      "ArtificialIntelligence",
-      "Mathematics",
-      "TechNews",
-      "AI",
-      "Research",
-      "MachineLearning",
-      "Science",
-      "Innovation",
-      "Technology"
-    ],
-    "sources": [
-      "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
-    ],
-    "script": "The Conversation reported on recent OpenAI results.\nThe publication discussed reactions to the release.\nWould you trust an artificial intelligence with complex calculations?",
-    "keywords": [
-      "person looking at computer screen",
-      "person thinking at desk"
-    ],
-    "image_prompts": [],
-    "evidence": [
-      {
-        "claim": "OpenAI shocked mathematicians",
-        "url": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
-      },
-      {
-        "claim": "The Conversation reported on recent OpenAI results.",
-        "url": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
-      },
-      {
-        "claim": "The publication discussed reactions to the release.",
-        "url": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 2,
-    "source_links": [
-      "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
-    ],
-    "visual_status": "ok",
-    "visual_notes": [],
-    "credits": [],
-    "voice_used": "Ethan (Fish Audio)",
-    "visual_summary": "3 clips, 1 cards"
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+      "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-08T20:04:26+00:00",
+      "angle": "Fired OpenAI safety researchers are fighting back, warning of a dangerous chilling effect."
+    },
+    {
+      "title": "USA Today becomes the latest publisher to sue OpenAI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+      "summary": "USA Today Co., along with the several local newspapers it owns, is suing OpenAI over claims that the company copied \"hundreds of thousands\" of articles to train its AI models, as reported earlier by Reuters. In a filing on Thursday, the publisher asks for damages of more than $250 million, alleging OpenAI's unauthorized use of […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-08T17:58:33+00:00",
+      "angle": "USA Today just slapped OpenAI with a massive lawsuit over copyright training data."
+    },
+    {
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security issues sooner, but the trade-off is that OSS Scanner's […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-08T21:53:51+00:00",
+      "angle": "Anthropic is now offering free AI-powered security scans for open-source projects."
+    }
+  ],
+  "choose_deadline": "2026-10-09T14:15:39.434080+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIJI2rIm_2-FVBiQCP2RKE1dXqDrop2AAL7IQACqmdBVtZsGGxYzsEgPQQ",
-  "queue": [],
+  "video_file_id": null,
+  "queue": [
+    {
+      "title": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock",
+      "video_file_id": "BAACAgUAAxkDAAIJI2rIm_2-FVBiQCP2RKE1dXqDrop2AAL7IQACqmdBVtZsGGxYzsEgPQQ",
+      "caption": "The Conversation recently reported on reactions to OpenAI outputs. Would you trust an artificial intelligence with complex mathematics?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#OpenAI #ArtificialIntelligence #Mathematics #TechNews #AI #Research #MachineLearning #Science #Innovation #Technology",
+      "extra": false,
+      "meta": {
+        "title": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock",
+        "kind": "news",
+        "source": "The Conversation",
+        "engine": "fish",
+        "voice": "Ethan (Fish Audio)",
+        "person": false,
+        "words": 23,
+        "visuals": "3 clips, 1 cards",
+        "made": "2026-10-09T13:45+05:30"
+      },
+      "post_at": "2026-10-09T15:00:00+05:30"
+    }
+  ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-10-09T13:40:44.173584+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
@@ -540,7 +465,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [],
   "tried": [
     "What a 14-Year-Old Got Right About AI in 1984",
@@ -576,50 +500,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "California is trying to shut down robot vs. human cage matches",
-            "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
-            "summary": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September 18th, pitted a human, Frankie LaPenna, against a humanoid robot owned by a tech startup, Rek, that […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-08T20:06:56+00:00",
-            "angle": "California tries to shut down the first-ever human vs. robot cage match!"
-          },
-          {
-            "title": "USA Today becomes the latest publisher to sue OpenAI",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
-            "summary": "USA Today Co., along with the several local newspapers it owns, is suing OpenAI over claims that the company copied \"hundreds of thousands\" of articles to train its AI models, as reported earlier by Reuters. In a filing on Thursday, the publisher asks for damages of more than $250 million, alleging OpenAI's unauthorized use of […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-08T17:58:33+00:00",
-            "angle": "USA Today becomes the latest media giant to sue OpenAI over stolen articles."
-          },
-          {
-            "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-            "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-            "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-08T20:04:26+00:00",
-            "angle": "Fired OpenAI safety researchers drop an open letter warning of a chilling effect."
-          }
-        ],
-        "choose_deadline": "2026-10-09T10:30:39.798471+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1129,6 +1009,146 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock",
+          "link": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837",
+          "summary": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock The Conversation",
+          "source": "The Conversation",
+          "published": "2026-10-09T03:25:00+00:00",
+          "angle": "Mathematicians in shock over OpenAI's latest math results is a major brain-breaking trend."
+        },
+        "draft": {
+          "title": "OpenAI math results covered by The Conversation",
+          "hook_text": "Did OpenAI shock mathematicians?",
+          "beats": [
+            {
+              "line": "The Conversation reported on recent OpenAI results.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Conversation",
+              "domain": "theconversation.com",
+              "headline": "Is this the mathocalypse? Why OpenAIs latest results dump has left mathematicians in shock",
+              "url": "",
+              "tag": "The Conversation report",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "The publication discussed reactions to the release.",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Mathematician reactions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an artificial intelligence with complex calculations?",
+              "visual": "clip",
+              "query": "person thinking at desk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust AI with math",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "curious and conversational, discussing the reported reaction to OpenAI's publication",
+          "caption": "The Conversation recently reported on reactions to OpenAI outputs. Would you trust an artificial intelligence with complex mathematics?",
+          "hashtags": [
+            "OpenAI",
+            "ArtificialIntelligence",
+            "Mathematics",
+            "TechNews",
+            "AI",
+            "Research",
+            "MachineLearning",
+            "Science",
+            "Innovation",
+            "Technology"
+          ],
+          "sources": [
+            "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
+          ],
+          "script": "The Conversation reported on recent OpenAI results.\nThe publication discussed reactions to the release.\nWould you trust an artificial intelligence with complex calculations?",
+          "keywords": [
+            "person looking at computer screen",
+            "person thinking at desk"
+          ],
+          "image_prompts": [],
+          "evidence": [
+            {
+              "claim": "OpenAI shocked mathematicians",
+              "url": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
+            },
+            {
+              "claim": "The Conversation reported on recent OpenAI results.",
+              "url": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
+            },
+            {
+              "claim": "The publication discussed reactions to the release.",
+              "url": "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837"
+          ],
+          "visual_status": "ok",
+          "visual_notes": [],
+          "credits": [],
+          "voice_used": "Ethan (Fish Audio)",
+          "visual_summary": "3 clips, 1 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAIJI2rIm_2-FVBiQCP2RKE1dXqDrop2AAL7IQACqmdBVtZsGGxYzsEgPQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIJI2rIm_2-FVBiQCP2RKE1dXqDrop2AAL7IQACqmdBVtZsGGxYzsEgPQQ",
+      "history_title": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock"
     }
   ],
   "posted_ids": [
@@ -1164,7 +1184,6 @@
     "BAACAgUAAxkDAAIJEGrIf6tlFoZyy50xR0qVnLw66lSGAAKfIQACqmdBVoLKZqprPNkIPQQ"
   ],
   "history": [
-    "U.S. appeals court upholds designation of Anthropic as supply chain risk",
     "Revealing the details of how OpenAI agents hacked Hugging Face",
     "Microsoft stops insisting you need a \"Copilot+ PC\"",
     "Microsoft Revamps Copilot With Home, Code and Autopilot Capabilities",
@@ -1263,7 +1282,8 @@
     "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
     "Show HN: Edi Life OS – self-hosted life dashboard with an MCP server for AI",
     "Superficial intelligence",
-    "California is trying to shut down robot vs. human cage matches"
+    "California is trying to shut down robot vs. human cage matches",
+    "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock"
   ],
   "posted_log": [
     {
@@ -1677,33 +1697,37 @@
     {
       "title": "California is trying to shut down robot vs. human cage matches",
       "at": "2026-10-09T11:45:29.112980+05:30"
+    },
+    {
+      "title": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock",
+      "at": "2026-10-09T13:45:26.997931+05:30"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-09T12:00+05:30",
-    "techcrunch.com": 18,
-    "theverge.com": 10,
+    "at": "2026-10-09T13:45+05:30",
+    "techcrunch.com": 17,
+    "theverge.com": 9,
     "arstechnica.com": 3,
     "technologyreview.com": 3,
     "openai.com": 4,
     "blog.google": 0,
     "deepmind.google": 0,
     "huggingface.co": 1,
-    "blogs.nvidia.com": 2,
+    "blogs.nvidia.com": 1,
     "inc42.com": 3,
-    "news.google.com": 40,
-    "Google News (VentureBeat, AIM, AI News)": 14,
-    "producthunt.com": 5,
-    "Hacker News": 5,
+    "news.google.com": 41,
+    "Google News (VentureBeat, AIM, AI News)": 15,
+    "producthunt.com": 10,
+    "Hacker News": 4,
     "Reddit": 5,
     "filtered out (PR / local events / market fluff)": 2
   },
   "guarantee_since": "2026-10-07T10:00:00+05:30",
   "digest_for": "2026-10-09T01:00",
-  "last_auto_offer": "2026-10-09T11:45:30.199920+05:30",
+  "last_auto_offer": "2026-10-09T13:45:27.567483+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-08",
   "ig_count": {
