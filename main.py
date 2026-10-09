@@ -885,6 +885,8 @@ def post_due(s):
         except Exception as e:
             traceback.print_exc()
             item["tries"] = item.get("tries", 0) + 1
+            s["last_post_error"] = {"at": st.now().isoformat(timespec="minutes"), "title": item["title"][:80],
+                                    "error": f"{type(e).__name__}: {e}"[:500]}  # for Claude's checks
             if item["tries"] >= 3:
                 s["queue"].remove(item)
                 tg.send(f"❌ Couldn't post \"{item['title']}\" after 3 tries: {e}\n"
