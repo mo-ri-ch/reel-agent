@@ -90,3 +90,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   over-strict gates I added: "Researchers at Stanford found…" counted as vague; fact-check fixes deleted lines and the
   script fell under the length floor. Fixed: researchers/experts are vague only when no name follows; fact fixes must
   replace removed lines with other sourced facts; floor 50 words.
+- 2026-10-10 05:30 · Root cause of the 01:00–05:00 gap: when writing the auto-picked story's script failed (Gemini
+  error), the code cleared choose_deadline and waited for the owner's reply → stuck from 02:10. Now autopilot rotates
+  to the next story in 10 min, and a story list on autopilot always has a deadline. Saves last_script_error.

@@ -1277,8 +1277,13 @@ def cmd_poll():
                 s["spare"] = s["candidates"][1:]
                 start_script(s, pick, auto=True)
             except Exception as e:
-                s["choose_deadline"] = None
-                tg.send(f"⚠️ Couldn't write the script: {e}\nReply 1, 2 or 3 to try again.")
+                traceback.print_exc()
+                s["last_script_error"] = {"at": st.now().isoformat(timespec="minutes"), "error": str(e)[:400]}
+                # autopilot never waits for a reply: drop this story and try the next one in 10 minutes
+                s["candidates"] = s["candidates"][1:] + s["candidates"][:1]
+                s["tried"] = ((s.get("tried") or []) + [pick.get("title", "")])[-60:]
+                s["choose_deadline"] = (st.now() + timedelta(minutes=10)).isoformat()
+                tg.send(f"⚠️ Couldn't write the script ({str(e)[:150]}). Trying the next story in 10 minutes.")
 
     if not render:
         try:
@@ -1394,6 +1399,8 @@ def keep_schedule(s):
         for key in ("choose_deadline", "script_deadline", "preview_deadline"):
             if s.get(key) and datetime.fromisoformat(s[key]) > cap:
                 s[key] = cap.isoformat()
+    if s["stage"] == "choosing" and not s.get("choose_deadline"):
+        s["choose_deadline"] = (now + timedelta(minutes=5)).isoformat()  # never wait forever for a reply
     # 2) work ahead: idle while a slot today still needs a reel → start the next one now
     if s["stage"] == "idle" and not s.get("paused"):  # around the clock: night slots are for other time zones
         last = s.get("last_auto_offer")
