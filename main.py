@@ -1290,7 +1290,15 @@ def cmd_poll():
         if (s["stage"] == "awaiting_voice" and passed(s.get("script_deadline"))
                 and (d_.get("fact_status") in ("unsure", "skipped") or d_.get("vague_notes"))):
             s["script_deadline"] = None
-            next_story(s, "the facts couldn't be verified")
+            try:
+                next_story(s, "the facts couldn't be verified")
+            except Exception as e:  # writing AI busy/out of quota: never crash the run (posting must go on)
+                traceback.print_exc()
+                s["tried"] = ((s.get("tried") or []) + [(s.get("topic") or {}).get("title", "")])[-60:]
+                if not resume_paused(s):
+                    reset_reel(s)
+                tg.send(f"⚠️ Couldn't switch stories right now ({str(e)[:120]}). The schedule keeper will fill "
+                        "the next slot.")
         elif s["stage"] == "awaiting_voice" and passed(s.get("script_deadline")):
             push_undo(s, "autopilot choosing the AI voice")
             use_ai_voice(s, auto=True)

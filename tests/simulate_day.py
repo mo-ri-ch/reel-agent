@@ -51,6 +51,9 @@ calls = [0]
 def write_script(t, previous=None, instruction=None):
     if SCENARIO == "gemini_down":
         raise RuntimeError("Gemini overloaded")
+    if SCENARIO == "gemini_flaky" and previous is None and "robot" not in t["title"] and calls[0] % 3 == 2:
+        calls[0] += 1
+        raise RuntimeError("Gemini free quota used up")
     body = " ".join(["Jensen Huang of Nvidia confirmed it on Tuesday with three billion dollars of orders."] * 5)
     calls[0] += 1
     if SCENARIO == "general_half" and calls[0] % 2:
@@ -59,7 +62,7 @@ def write_script(t, previous=None, instruction=None):
             "caption": "c " + t["title"], "hashtags": [], "beats": [], "sources": []}
 writer.write_script = write_script
 def fact_check(d, t):
-    bad = SCENARIO == "facts_fail" and "robot" in t["title"]
+    bad = SCENARIO in ("facts_fail", "gemini_flaky") and "robot" in t["title"]
     return d, ("unsure" if bad else "ok"), (["no source"] if bad else [])
 writer.fact_check = fact_check
 writer.visual_check = lambda f: []
@@ -106,7 +109,7 @@ while clock[0] < datetime.fromisoformat("2026-10-08T23:59:00+05:30"):
 print(json.dumps({"posted": posted, "slots": sorted(main.POST_TIMES)}))
 '''
 
-SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low", "repeats_half"]
+SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low", "repeats_half", "gemini_flaky"]
 
 
 def run(scenario):

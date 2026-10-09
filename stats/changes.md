@@ -77,3 +77,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   and it needed 2 shared title words. Now every story passes a final same-event gate right before its script is
   written (main model; compares against titles + what each posted reel actually said, 14 days; 1 shared name is
   enough). Posted reels now store "event" (first lines of the script). Simulation with 50% repeats: 12/12 on time.
+- 2026-10-09 21:20 · OUTAGE 20:50–21:25: when a story failed and the agent switched stories, a Gemini error while
+  writing the new script was uncaught → every run crashed, the 9 PM reel didn't post. Fixed (switch failures are
+  caught, schedule keeper fills); new simulation "gemini_flaky" covers it. Likely trigger: more Gemini calls per reel
+  (editor, same-event gate, rewrites) → watch Gemini quota.
