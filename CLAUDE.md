@@ -43,6 +43,8 @@ through a Telegram bot and reads Claude's messages there.
 ## Owner's preferences (learned)
 - Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
 - Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
+- Scripts: 30-40 s, 75-105 words, every sentence a concrete fact. Owner rejected short 45-65 word scripts
+  (2026-10-09: "getting so bad"). Don't shorten scripts again without asking.
 - Voice: Fish Audio library voices Paula & Ethan, alternating (owner's choice). The owner's own clone was removed on 2026-10-07 at their request — don't bring it back unless asked. Fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
 - Brand blue (#7B9AF8), "Source · date" label, @gradientai.news handle. Look: studio style (studio.py) — clean dark/light scenes, floating picture cards, top captions with key-word highlight box (owner approved 2026-10-07).
 
