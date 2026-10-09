@@ -90,6 +90,18 @@ check("both copies saved", _json.load(open(_st.STATE_FILE))["stage"], "choosing"
 _st.STATE_FILE, _st.BACKUP_FILE, _st.CONTROL_DIR = _old
 _st.RECOVERED = None
 
+# thin scripts get one expansion; if still thin, the story is skipped
+_ws, _fc, _ms, _send = main.writer.write_script, main.fact_check_step, main.make_specific, main.tg.send
+main.tg.send = lambda *a, **k: None
+main.fact_check_step = lambda d, t: d
+main.make_specific = lambda d, t: d
+main.writer.write_script = lambda t, previous=None, instruction=None: {"script": "word " * 85}
+check("thin script expanded", main.substance_step({"script": "too short " * 10}, {}).get("fact_status"), None)
+main.writer.write_script = lambda t, previous=None, instruction=None: {"script": "word " * 30}
+check("still thin -> skipped", main.substance_step({"script": "too short " * 10}, {}).get("fact_status"), "unsure")
+check("full script untouched", main.substance_step({"script": "word " * 80}, {}).get("fact_status"), None)
+main.writer.write_script, main.fact_check_step, main.make_specific, main.tg.send = _ws, _fc, _ms, _send
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
@@ -99,6 +111,9 @@ check("drop campus grants", news.newsworthy({"title": "Penn State Announces New 
                                                      "For Faculty", "source": "Onward State"}), False)
 check("keep university research", news.newsworthy({"title": "MIT researchers build an AI that designs new antibiotics",
                                                    "source": "MIT News"}), True)
+check("drop Show HN", news.newsworthy({"title": "Show HN: Edi Life OS – self-hosted life dashboard", "source": "x"}), False)
+check("drop question essay", news.newsworthy({"title": "Is this the 'mathocalypse'? Why OpenAI's results dump...",
+                                              "source": "The Conversation"}), False)
 check("named developer", bool(writer.vague_phrases("Kochi developer Arjun Menon just dropped Laya.")), False)
 
 # repeats

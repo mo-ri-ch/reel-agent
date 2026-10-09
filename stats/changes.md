@@ -48,3 +48,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   presence EQ and light compression; Paula/Ethan as backups. Compare watch time vs Paula/Ethan reels.
 - 2026-10-07 · Owner: crisp, clear studio sound · every voice gets a vocal chain (high-pass, de-box EQ, presence +
   air, de-esser, gentle compression) before mixing; owner's voice adds only pace + a little bite on top.
+- 2026-10-09 · REVERTED the 45-65 word limit (owner: "scripts are getting so bad, don't make it very short"). Scripts
+  were thin/empty (one was 23 words: "The Conversation reported on… The publication discussed…"). Now: 30-40 s,
+  75-105 words, every sentence must add a concrete fact; scripts under 65 words get one expansion with verified
+  detail, else the story is skipped. Also drop Show HN posts and question/opinion headlines. Target: watch time,
+  completion, follows.

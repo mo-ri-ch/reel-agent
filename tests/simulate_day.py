@@ -45,7 +45,8 @@ writer.drop_same_events = lambda p, c: p
 def write_script(t, previous=None, instruction=None):
     if SCENARIO == "gemini_down":
         raise RuntimeError("Gemini overloaded")
-    return {"title": t["title"], "script": "Here is what happened with " + t["title"] + ". Would you use it?",
+    body = " ".join(["It ships today with real numbers, named people and a clear reason it matters to you."] * 5)
+    return {"title": t["title"], "script": "Here is what happened with " + t["title"] + ". " + body + " Would you use it?",
             "caption": "c " + t["title"], "hashtags": [], "beats": [], "sources": []}
 writer.write_script = write_script
 def fact_check(d, t):

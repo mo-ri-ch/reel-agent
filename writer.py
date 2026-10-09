@@ -89,7 +89,7 @@ def pick_top(headlines, history, count=3):
                         f" — {h['summary'][:200]}" for i, h in enumerate(headlines, 1))
     recent = "\n- ".join([""] + list(dict.fromkeys(history))[-40:]) or "none"
     prompt = f"""You run an Instagram Reels page about {NICHE} for a general audience.
-From the headlines below, pick the {count} stories that would make the most engaging 20-second reels today:
+From the headlines below, pick the {count} stories that would make the most engaging 30-40 second reels today:
 big launches, surprising capabilities, tools people can actually use, major industry moves.
 SHAREABILITY decides reach on Instagram (DM sends count far more than likes): prefer stories a viewer would
 send to a friend: surprising or weird, useful right now, affects their job, money or privacy, or sparks debate.
@@ -128,10 +128,15 @@ Return ONLY JSON: {{"picks": [{{"n": <headline number>, "angle": "<one short lin
     return [{**h, "angle": ""} for h in headlines[:count]]
 
 
-RULES = """Write an 18-25 second Instagram Reel about AI, read aloud by a voice-over.
+RULES = """Write a 30-40 second Instagram Reel about AI, read aloud by a voice-over.
 
 SCRIPT
-- 45 to 65 words (short reels get watched to the end, and completion drives reach). Conversational, like explaining to a smart friend. Short punchy sentences (max ~15 words), contractions, one idea per sentence.
+- 75 to 105 words. Conversational, like a sharp tech journalist explaining it to a smart friend: short sentences (max
+  ~16 words), contractions, one idea per sentence. Say "AI", never "artificial intelligence".
+- SUBSTANCE: every sentence must add a NEW concrete fact from the sources: what exactly it is, how it works, the key
+  number, who is involved, what came before, what happens next. Never write empty lines like "X reported on it",
+  "the publication discussed reactions", "the code is available online" or "this raises questions". If the sources
+  don't give enough real detail for a full reel, say so in "thin": true instead of padding.
 - Line 1 is the HOOK: 9 words or fewer, the big name or number first. Viewers decide in under 2 seconds, so make it
   create curiosity or stakes, not just state the news. Use ONE of: a surprising fact or number, a bold (true) claim,
   "you" framing about the viewer's life, or a question they can't ignore.
@@ -140,7 +145,8 @@ SCRIPT
 - Line 2 gives the viewer a reason to stay (what's at stake for them, or the surprising detail), within 3 seconds.
   Good hooks: "Your next coworker might not be human." / "Google just made search ten times faster."
   Never start with: "Hey guys", "Did you know", "In today's video", "Breaking news", "Imagine".
-- Then: what happened → why it's surprising or matters → what it means for the viewer.
+- Then: what happened (the specifics) → how it works or the key detail → context (numbers, comparison, competitors,
+  what came before) → why it matters to the viewer → what happens next.
 - BE SPECIFIC. Every script must name the concrete details: WHO (the company, lab, university or research team),
   WHAT exactly (the product or model name, the journal or paper, what it actually does), WHERE (country or city)
   and, when known, a real number or date from the source. Use Google Search to find the original source first.
@@ -156,7 +162,7 @@ SCRIPT
   "the future is here", "in today's world", "stay tuned", "mind-blowing".
 - No emojis, hashtags, stage directions or brackets in the lines. Write numbers the way they're said ("ten times", "two billion").
 
-VISUALS — split the script into 5 to 7 beats (one or two sentences each). Every beat gets ONE visual.
+VISUALS — split the script into 6 to 9 beats (one or two sentences each). Every beat gets ONE visual.
 Prefer REAL and SPECIFIC visuals over generic ones:
 - a line about a named PRODUCT, APP, AI MODEL, DEVICE or COMPANY ANNOUNCEMENT → "official" (the real product images);
 - a line that names or quotes a PERSON ("Sam Altman says…", "Lovable co-founder Fabian Hedin…") → ALWAYS "person";
@@ -199,6 +205,7 @@ Return ONLY JSON:
            {{"line": "...", "visual": "stat", "big": "...", "small": "...",
              "brands": [{{"name": "OpenAI", "domain": "openai.com"}}]}}],
  "delivery": "one line for the voice actor: the feeling of THIS story and where it turns (e.g. 'amused disbelief, then serious about what it means for jobs'); no script words",
+ "thin": false,
  "caption": "2-3 sentence Instagram caption ending with a question",
  "hashtags": ["10 to 12 relevant hashtags without #"],
  "sources": ["URLs you used"]}}"""

@@ -382,6 +382,33 @@ def checked_script(topic, previous=None, instruction=None):
         draft = fact_check_step(draft, topic)
     draft["fix_rounds"] = rounds
     draft = make_specific(draft, topic)
+    return substance_step(draft, topic)
+
+
+MIN_WORDS = 65   # below this a reel feels empty (owner, 2026-10-09: "scripts are getting so bad, not very short")
+FLOOR_WORDS = 55  # after one expansion attempt, anything shorter isn't worth a reel: the story is skipped
+
+
+def substance_step(draft, topic):
+    """A reel must say something: too-thin scripts get one rewrite with more verified detail; if the sources still
+    don't have enough, the story is skipped (autopilot moves to the next one)."""
+    if draft.get("fact_status") == "unsure":
+        return draft
+    n = len((draft.get("script") or "").split())
+    if n >= MIN_WORDS and not draft.get("thin"):
+        return draft
+    tg.send(f"📝 The script is too thin ({n} words). Adding verified detail from the sources...")
+    fix = ("The script is too thin. Expand it to 75-105 words using ONLY facts from the source article and your search "
+           "results: what exactly it is, how it works, the key numbers, who is involved, what came before, and why it "
+           "matters to the viewer. Every sentence must add a new concrete fact. Never write lines like 'X reported on "
+           "it' or 'the publication discussed'. Keep every fact true.")
+    better = fact_check_step(writer.write_script(topic, previous=draft, instruction=fix), topic)
+    m = len((better.get("script") or "").split())
+    if better.get("fact_status") != "unsure" and m >= FLOOR_WORDS and not better.get("thin"):
+        better["fix_rounds"] = draft.get("fix_rounds", 0)
+        return make_specific(better, topic)
+    draft["fact_status"] = "unsure"
+    draft["fact_notes"] = [f"not enough verified detail for a full reel ({max(n, m)} words)"]
     return draft
 
 

@@ -55,7 +55,8 @@ CAMPUS_ADMIN = re.compile(r"(?i)^(?=.*\b(university|college|campus|faculty|schoo
                           r"(?=.*\b(grants?|course|courses|curriculum|degree|programme|centre|center|scholarships?|"
                           r"chair|workshop|announces new)\b)")
 OPINION = re.compile(r"(?i)^\s*(how to|how we|why (you|we|the|ai)|opinion|op-ed|commentary|analysis:|the case (for|against)|"
-                     r"in defense of|a guide to|guide:)\b")
+                     r"in defense of|a guide to|guide:|show hn|ask hn|is (this|it) the|are we|should (we|you)|"
+                     r"what if|superficial intelligence)\b")
 
 
 def newsworthy(item):
