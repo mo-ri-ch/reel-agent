@@ -1,8 +1,34 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "AI coding agents generate more code, but not more software",
+      "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+      "source": "AI - Ars Technica",
+      "published": "2026-10-09T19:43:50+00:00",
+      "angle": "Study finds AI coding agents write far more code, but teams aren't shipping more software because human review is the bottleneck. This hits every developer's job and the hype around it."
+    },
+    {
+      "title": "Qwen-Image-2.1-Turbo released!",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-09T13:27:18+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "Alibaba's Qwen-Image-2.1-Turbo has just been released and is trending at the top of r/LocalLLaMA, so anyone can try a fast new image generator."
+    },
+    {
+      "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+      "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+      "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-09T14:00:00+00:00",
+      "angle": "Instinct was the invite-only, no-marketing AI agent everyone was buzzing about. Now it faces a rival called Muse, which makes it a good AI agent underdog story."
+    }
+  ],
+  "choose_deadline": "2026-10-10T10:25:20.336851+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -421,6 +447,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [],
   "tried": [
     "Trump’s attempt to rename AI is looking awfully artificial",
@@ -2257,7 +2284,7 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-10T09:50+05:30",
+    "at": "2026-10-10T10:25+05:30",
     "techcrunch.com": 17,
     "theverge.com": 10,
     "arstechnica.com": 3,
@@ -2270,19 +2297,19 @@
     "inc42.com": 3,
     "news.google.com": 40,
     "Google News (VentureBeat, AIM, AI News)": 9,
-    "producthunt.com": 4,
+    "producthunt.com": 3,
     "Hacker News": 7,
     "Reddit": 5,
     "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-10T08:17:43.377888+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-10T09:50:24.817087+05:30",
+  "last_auto_offer": "2026-10-10T10:25:20.336851+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T10:13:31.020117+05:30",
+    "at": "2026-10-10T10:25:20.336895+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2306,16 +2333,11 @@
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 416,
-    "claude_calls": 102,
-    "claude_backup": 102
+    "calls": 420,
+    "claude_calls": 103,
+    "claude_backup": 103
   },
   "gemini_errors": [
-    {
-      "at": "04:51",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
     {
       "at": "04:52",
       "error": "gemini-3.6-flash: free quota used up for now",
@@ -2359,6 +2381,11 @@
     {
       "at": "04:54",
       "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:55",
+      "error": "gemini-3.6-flash: free quota used up for now",
       "day": "2026-10-10"
     }
   ],
