@@ -1,41 +1,184 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-      "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-      "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-09T22:04:07+00:00",
-      "angle": "Ukrainian drones strike a critical AI data center belonging to 'Russia's Google'."
-    },
-    {
-      "title": "AI coding agents generate more code, but not more software",
-      "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-      "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-09T19:43:50+00:00",
-      "angle": "AI coding agents generate more code, but a massive human bottleneck is slowing it all down."
-    },
-    {
-      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-      "summary": "TypeSafe AI raised $870 million in a round led by a16Z.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-09T21:41:29+00:00",
-      "angle": "The maker of the viral non-text AI model Jev just hit a massive $7.5B valuation."
-    }
-  ],
-  "choose_deadline": "2026-10-10T05:30:38.504460+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+    "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+    "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+    "source": "AI - Ars Technica",
+    "published": "2026-10-09T22:04:07+00:00",
+    "angle": "Ukrainian drones strike a critical AI data center belonging to 'Russia's Google'."
+  },
+  "draft": {
+    "title": "Ukraine drones hit Yandex AI center",
+    "hook_text": "Yandex data center hit by drones",
+    "beats": [
+      {
+        "line": "Ukrainian drones just knocked out a data center belonging to Yandex, known as Russia’s Google.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Yandex",
+        "outlet": "",
+        "domain": "yandex.com",
+        "headline": "",
+        "url": "https://yandex.com",
+        "tag": "Yandex data center hit",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Yandex",
+            "domain": "yandex.com"
+          }
+        ]
+      },
+      {
+        "line": "The strike severely damaged supercomputers used for training Yandex’s AI model.",
+        "visual": "clip",
+        "query": "damaged server room data center",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Supercomputers severely damaged",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Yandex",
+            "domain": "yandex.com"
+          }
+        ]
+      },
+      {
+        "line": "These high-powered systems are essential for processing massive search and language algorithms.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "100%",
+        "small": "AI training halted",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Training processing halted",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The facility is located deep inside Russian territory, raising questions about infrastructure vulnerability.",
+        "visual": "clip",
+        "query": "industrial facility security",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Infrastructure vulnerability exposed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Yandex now faces massive delays in developing its next-generation technology.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Ars Technica",
+        "domain": "arstechnica.com",
+        "headline": "Ukraine's drones knock out AI data center",
+        "url": "",
+        "tag": "Massive development delays",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Yandex",
+            "domain": "yandex.com"
+          }
+        ]
+      },
+      {
+        "line": "How fragile is physical AI infrastructure against modern drone attacks?",
+        "visual": "clip",
+        "query": "drone flying over city",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Physical infrastructure vulnerability",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "urgent, sharp, and factual, emphasizing the direct physical impact on major tech infrastructure",
+    "thin": false,
+    "caption": "A Ukrainian drone strike has successfully knocked out a key Yandex data center housing supercomputers used for AI training. This unprecedented attack highlights the physical vulnerabilities of major tech infrastructure. How vulnerable is your local tech?",
+    "hashtags": [
+      "Ukraine",
+      "Yandex",
+      "ArtificialIntelligence",
+      "TechNews",
+      "DataCenter",
+      "Supercomputer",
+      "Russia",
+      "DroneStrike",
+      "TechInfrastructure",
+      "AITraining"
+    ],
+    "sources": [
+      "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+    ],
+    "script": "Ukrainian drones just knocked out a data center belonging to Yandex, known as Russia’s Google.\nThe strike severely damaged supercomputers used for training Yandex’s AI model.\nThese high-powered systems are essential for processing massive search and language algorithms.\nThe facility is located deep inside Russian territory, raising questions about infrastructure vulnerability.\nYandex now faces massive delays in developing its next-generation technology.\nHow fragile is physical AI infrastructure against modern drone attacks?",
+    "keywords": [
+      "damaged server room data center",
+      "industrial facility security",
+      "drone flying over city"
+    ],
+    "image_prompts": [],
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-10T05:35:39.703704+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -494,52 +637,7 @@
     "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
     "An Anthropic AI model sent a false homicide tip to Philadelphia police"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Using AI for just 10 minutes erodes your ability to persist at hard things",
-            "link": "https://news.berkeley.edu/2026/10/09/using-ai-for-just-10-minutes-erodes-your-ability-to-persist-at-hard-things/",
-            "summary": "Using AI for just 10 minutes erodes your ability to persist at hard things University of California, Berkeley",
-            "source": "University of California, Berkeley",
-            "published": "2026-10-09T17:40:46+00:00",
-            "angle": "Using AI for just 10 minutes makes it harder to stick to hard tasks—are we losing our grit?"
-          },
-          {
-            "title": "Nikon microscopic video competition winner disqualified for using generative AI",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
-            "summary": "Nikon says the video that originally won first place in its Small World in Motion contest \"did not comply with the competition rules regarding generative AI.\" BBC reports that the original first place video from Dr. Ning Xu claimed to show \"tiny, hair-like structures called cilia moving in the airway of a child with the […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-09T18:06:57+00:00",
-            "angle": "A major photo contest winner gets disqualified after trying to pass off generative AI as a real photo"
-          },
-          {
-            "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-            "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
-            "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-09T16:56:42+00:00",
-            "angle": "Amazon and Microsoft finally stop hiding data center secret deals from local communities"
-          }
-        ],
-        "choose_deadline": "2026-10-10T00:10:45.331461+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -703,6 +801,50 @@
           }
         ],
         "choose_deadline": "2026-10-10T04:00:42.449045+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+            "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+            "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+            "source": "AI - Ars Technica",
+            "published": "2026-10-09T22:04:07+00:00",
+            "angle": "Ukrainian drones strike a critical AI data center belonging to 'Russia's Google'."
+          },
+          {
+            "title": "AI coding agents generate more code, but not more software",
+            "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+            "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+            "source": "AI - Ars Technica",
+            "published": "2026-10-09T19:43:50+00:00",
+            "angle": "AI coding agents generate more code, but a massive human bottleneck is slowing it all down."
+          },
+          {
+            "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+            "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+            "summary": "TypeSafe AI raised $870 million in a round led by a16Z.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-09T21:41:29+00:00",
+            "angle": "The maker of the viral non-text AI model Jev just hit a massive $7.5B valuation."
+          }
+        ],
+        "choose_deadline": "2026-10-10T05:30:38.504460+05:30",
         "topic": null,
         "draft": null,
         "video_file_id": null,
