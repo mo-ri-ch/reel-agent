@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -211,16 +211,54 @@
     "editor_rounds": 1,
     "source_links": [
       "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The strike knocked out hardware specifically used …: The image shows text on a plain background instead of damaged server racks electronics.",
+      "Yandex operates the dominant search engine in Russ…: The image shows text on a plain background instead of a server room data center.",
+      "The facility loss severely hampers domestic comput…: The image shows text on a plain background instead of computer processor chips circuit.",
+      "The image shows the Yandex logo/app icon instead of stock video of damaged server racks.",
+      "The image shows the Yandex logo/app icon instead of stock video of a server room data center.",
+      "The image shows the Yandex logo/app icon instead of stock video of computer processor chips."
+    ],
+    "editor": {
+      "overall": 7.5,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 4,
+        "flow": 8
+      },
+      "one_line": "Strong script and hook ruined by excessive static street sign visuals.",
+      "script_fixes": [
+        "LINE 1: specify the location or size of the Yandex data center for higher impact"
+      ],
+      "visual_beats": [
+        0,
+        3
+      ],
+      "visual_notes": [
+        "line 1: Too many consecutive, identical frames of a Yandex street sign while the audio moves on to",
+        "line 4: Visual arrives too late relative to the spoken script"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Yandex data center: ATI1999 (CC BY-SA 4.0), via Wikimedia Commons"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAILm2rJ7YkLT-JXzGe3Dy39HibAbnGPAAKSJQACqmdRVoNFLZtF-USGPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-10T13:09:47.599553+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-10T13:47:22.182805+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-10",
@@ -683,206 +721,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Female AI assistants get 10% less than male counterparts for same work, study finds",
-          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUdIBzgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUQ?oc=5",
-          "summary": "Female AI assistants get 10% less than male counterparts for same work, study finds StoryBoard 18",
-          "source": "StoryBoard 18",
-          "published": "2026-10-10T06:01:02+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Female AI assistants face a ten percent pay gap",
-          "hook_text": "Female AI assistants make ten percent less.",
-          "beats": [
-            {
-              "line": "Ten percent less. Female AI assistants earn less for the exact same work.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "StoryBoard 18",
-              "domain": "storyboard18.com",
-              "headline": "Female AI assistants get 10% less than male counterparts",
-              "url": "",
-              "tag": "Ten percent less pay",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "A recent study revealed this surprising gender wage gap hidden inside digital intelligence systems.",
-              "visual": "clip",
-              "query": "person using laptop in office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Study reveals wage gap",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Researchers tested various automated assistants across identical operational tasks and complex performance metrics.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "10%",
-              "small": "pay gap in AI",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Identical tasks tested",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Even when output volume and accuracy matched perfectly, the female personas received lower financial valuations.",
-              "visual": "clip",
-              "query": "data analytics dashboard screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Lower financial valuations",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This algorithmic bias mirrors historical human discrimination found across traditional labor markets.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Moneycontrol",
-              "domain": "moneycontrol.com",
-              "headline": "Does the gender pay gap extend to AI?",
-              "url": "",
-              "tag": "Mirrors human bias",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust software that repeats human wage inequality?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "StoryBoard 18",
-              "domain": "storyboard18.com",
-              "headline": "Female AI assistants get 10% less than male counterparts",
-              "url": "",
-              "tag": "Repeats wage inequality",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "objective, analytical, and slightly concerned tone highlighting algorithmic bias",
-          "thin": false,
-          "caption": "A new study reveals that female AI assistants are paid ten percent less than male counterparts for identical work. How should developers fix algorithmic wage bias? Let us know.",
-          "hashtags": [
-            "ArtificialIntelligence",
-            "TechNews",
-            "GenderPayGap",
-            "AIEthics",
-            "StoryBoard18",
-            "TechIndustry",
-            "AlgorithmBias",
-            "FutureOfWork",
-            "DigitalAssistants",
-            "TechTrends"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUdIBzgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUQ?oc=5",
-            "https://www.storyboard18.com",
-            "https://www.moneycontrol.com/education/does-the-gender-pay-gap-extend-to-ai-new-study-finds-female-ai-agents-paid-less-than-male-ai-for-doing-the-same-job-article-14044695.html"
-          ],
-          "script": "Ten percent less. Female AI assistants earn less for the exact same work.\nA recent study revealed this surprising gender wage gap hidden inside digital intelligence systems.\nResearchers tested various automated assistants across identical operational tasks and complex performance metrics.\nEven when output volume and accuracy matched perfectly, the female personas received lower financial valuations.\nThis algorithmic bias mirrors historical human discrimination found across traditional labor markets.\nWould you trust software that repeats human wage inequality?",
-          "keywords": [
-            "person using laptop in office",
-            "data analytics dashboard screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Female AI assistants make ten percent less.",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUdIBzgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUQ?oc=5"
-            },
-            {
-              "claim": "Female AI assistants earn less for the exact same work.",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUdIBzgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUQ?oc=5"
-            },
-            {
-              "claim": "A recent study revealed this surprising gender wage gap hidden inside digital intelligence systems.",
-              "url": "https://www.moneycontrol.com/education/does-the-gender-pay-gap-extend-to-ai-new-study-finds-female-ai-agents-paid-less-than-male-ai-for-doing-the-same-job-article-14044695.html"
-            },
-            {
-              "claim": "Researchers tested various automated assistants across identical operational tasks and complex performance metrics.",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUdIBzgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUQ?oc=5"
-            },
-            {
-              "claim": "Even when output volume and accuracy matched perfectly, the female personas received lower financial valuations.",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUdIBzgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUQ?oc=5"
-            },
-            {
-              "claim": "This algorithmic bias mirrors historical human discrimination found across traditional labor markets.",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUdIBzgFBVV95cUxPd2haQllRa2I1dUVIR2V3MWR0c3IxS3JGLXlkWmtNc3JkMEVncGRxWjNWcVJvM3htdHlQRUtjcWpmWVJ0Wms3TU10RFdmZlJpdGNVYjFTd3pOYlhPYmxTczlJdGlMYUdoS1lJQUFmMWVrTFRBZXBUenF3SjYzazNfU1RIQVFyNWRnNGMwbzRYQVZlb1pLNXJ0d0tvSm5SNlA4YXZhaGJUYUZ4U1RjVVpYUnBpbVAtNFU3WDRGUGIzc2ZUOUtfV09XcEtWbEdOUQ?oc=5"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.storyboard18.com/amp/digital/female-ai-assistants-get-10-less-than-male-counterparts-for-same-work-study-finds-112287.htm",
-            "https://www.storyboard18.com",
-            "https://www.moneycontrol.com/education/does-the-gender-pay-gap-extend-to-ai-new-study-finds-female-ai-agents-paid-less-than-male-ai-for-doing-the-same-job-article-14044695.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T12:35:08.137658+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1547,6 +1385,233 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+          "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+          "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-09T22:04:07+00:00",
+          "angle": "Ukraine drones knock out AI supercomputers belonging to Russia's Yandex in a major wartime infrastructure strike."
+        },
+        "draft": {
+          "title": "Ukraine drones hit Yandex AI data center",
+          "hook_text": "Drones just hit Russia's Google.",
+          "beats": [
+            {
+              "line": "Ukrainian drones just destroyed a Yandex data center holding critical supercomputers.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Yandex data center",
+              "outlet": "",
+              "domain": "yandex.com",
+              "headline": "",
+              "url": "https://yandex.com",
+              "tag": "Yandex data center destroyed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "The strike knocked out hardware specifically used for training Yandex GPT models.",
+              "visual": "clip",
+              "query": "damaged server racks electronics",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Yandex GPT training hardware",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Yandex operates the dominant search engine in Russia and is often called Russia's Google.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Russia's Google search engine",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                },
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "This single facility held two of the company's three main AI supercomputers.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2 of 3",
+              "small": "supercomputers damaged",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Two main supercomputers hit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "The facility loss severely hampers domestic computing power available for major language models.",
+              "visual": "clip",
+              "query": "computer processor chips circuit",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Reduced computing power",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Will this infrastructure loss permanently delay Russian AI independence?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Ukraine's drones knock out AI data center",
+              "url": "",
+              "tag": "AI independence delay",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "urgent and direct, emphasizing the intersection of geopolitical conflict and critical technology infrastructure",
+          "thin": false,
+          "caption": "Ukrainian drones destroyed a Yandex data center housing two of the company's three main supercomputers used for AI training. The facility belonged to Russia's Google counterpart. Will this infrastructure loss delay domestic technology development?",
+          "hashtags": [
+            "Yandex",
+            "Ukraine",
+            "datacenter",
+            "Russia",
+            "hardware"
+          ],
+          "sources": [
+            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+          ],
+          "script": "Ukrainian drones just destroyed a Yandex data center holding critical supercomputers.\nThe strike knocked out hardware specifically used for training Yandex GPT models.\nYandex operates the dominant search engine in Russia and is often called Russia's Google.\nThis single facility held two of the company's three main AI supercomputers.\nThe facility loss severely hampers domestic computing power available for major language models.\nWill this infrastructure loss permanently delay Russian AI independence?",
+          "keywords": [
+            "damaged server racks electronics",
+            "server room data center",
+            "computer processor chips circuit"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Drones hit Russia's Google",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Ukrainian drones destroyed a Yandex data center holding critical supercomputers",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "The strike knocked out hardware specifically used for training Yandex GPT models",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Yandex operates the dominant search engine in Russia and is often called Russia's Google",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "This single facility held two of the company's three main AI supercomputers",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "The facility loss severely hampers domestic computing power available for major language models",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-10T13:09:47.599553+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2113,7 +2178,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-10T12:55+05:30",
@@ -2141,8 +2206,8 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T13:01:23.469555+05:30",
-    "count": 1
+    "at": "2026-10-10T13:17:22.183055+05:30",
+    "count": 2
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-10",
@@ -2161,20 +2226,15 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-10",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-10-1",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 709,
-    "claude_calls": 155,
+    "calls": 717,
+    "claude_calls": 156,
     "claude_backup": 150
   },
   "gemini_errors": [
-    {
-      "at": "06:45",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
     {
       "at": "06:45",
       "error": "Claude refused (400): {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Bi",
@@ -2217,6 +2277,11 @@
     },
     {
       "at": "07:30",
+      "error": "Claude refused (400): {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Bi",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "07:46",
       "error": "Claude refused (400): {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Bi",
       "day": "2026-10-10"
     }
