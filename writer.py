@@ -287,8 +287,8 @@ Return ONLY JSON:
              "brands": [{{"name": "OpenAI", "domain": "openai.com"}}]}}],
  "delivery": "one line for the voice actor: the feeling of THIS story and where it turns (e.g. 'amused disbelief, then serious about what it means for jobs'); no script words",
  "thin": false,
- "caption": "2-3 sentence Instagram caption ending with a question",
- "hashtags": ["10 to 12 relevant hashtags without #"],
+ "caption": "2-3 sentence Instagram caption ending with a question. The first sentence (under 125 characters, all the feed shows before '...more') states the key fact with the company/person name and the number. Use the words people would search (e.g. 'OpenAI GPT-6 release') naturally in the text. No links, no emojis at the start",
+ "hashtags": ["3 to 5 specific hashtags without # (Instagram allows 5 at most), e.g. the company, product and topic"],
  "sources": ["URLs you used"]}}"""
 
 
@@ -362,7 +362,7 @@ def normalize_draft(draft, topic):
     draft["beats"] = [b for b in draft.get("beats", []) if b["line"]]
     draft["script"] = "\n".join(b["line"] for b in draft["beats"])
     draft["caption"] = str(draft.get("caption", ""))
-    draft["hashtags"] = [str(h).lstrip("#").replace(" ", "") for h in draft.get("hashtags", [])][:15]
+    draft["hashtags"] = [str(h).lstrip("#").replace(" ", "") for h in draft.get("hashtags", [])][:5]  # Instagram's limit
     draft["keywords"] = [b["query"] for b in beats if b["visual"] == "clip"][:6] or ["technology"]
     draft["image_prompts"] = [b["prompt"] for b in beats if b["visual"] == "image"][:3]
     draft["sources"] = draft.get("sources", [])
@@ -495,8 +495,7 @@ def draft_from_own_script(text, topic=None):
     return normalize_draft({
         "title": title[:70], "hook_text": lines[0][:60], "beats": beats,
         "caption": " ".join(lines[:2])[:300] + "\n\nWhat do you think? Tell me in the comments 👇",
-        "hashtags": ["ai", "artificialintelligence", "ainews", "tech", "technology", "chatgpt",
-                     "openai", "futuretech", "machinelearning", "technews"],
+        "hashtags": ["ai", "ainews", "artificialintelligence", "technews", "tech"],
     }, {"title": title})
 
 

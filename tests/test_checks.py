@@ -214,6 +214,10 @@ check("de-hype keeps checked original", main.de_hype({"script": "A groundbreakin
       "A groundbreaking deal.")
 writer.write_script, main.fact_check_step = _ws, _fcs
 
+cap = main.caption_for({"caption": "OpenAI cut prices\u2014by half.", "hashtags": [str(i) for i in range(12)]})
+check("max 5 hashtags", cap.count("#"), 5)
+check("caption em dash", "\u2014" in cap, False)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

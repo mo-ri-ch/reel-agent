@@ -691,8 +691,9 @@ def caption_for(draft, ai_voice=False):
     credits = list(dict.fromkeys(draft.get("credits") or []))  # no duplicates
     credit_text = ("\n\n📷 " + " · ".join(credits))[:600] if credits else ""
     follow = f"\n\nFollow @{HANDLE.lstrip('@')} for daily AI news ⚡" if HANDLE else ""
-    return (draft["caption"] + follow + note + credit_text + "\n\n" +
-            " ".join(f"#{h}" for h in draft["hashtags"]))
+    text = re.sub(r"\s*\u2014\s*", ", ", draft["caption"])  # em dashes read as machine-written
+    return (text + follow + note + credit_text + "\n\n" +
+            " ".join(f"#{h}" for h in draft["hashtags"][:5]))  # Instagram allows 5 hashtags at most
 
 
 # ---------- scheduling & posting ----------
