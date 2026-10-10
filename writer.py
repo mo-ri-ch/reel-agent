@@ -141,6 +141,8 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
             return claude_backup(prompt, search, json_mode, last)
         except Exception as e:
             print(f"Claude backup failed: {e}")
+            if BACKUP_LEFT[0] > 0 or BACKUP_CALLS[0]:
+                ERRORS.append({"at": time.strftime("%H:%M"), "error": f"Claude backup failed: {str(e)[:170]}"})
     raise RuntimeError(f"Gemini didn't give a usable reply, please try again in a few minutes. {last}")
 
 
