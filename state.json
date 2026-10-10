@@ -16,7 +16,7 @@
     "hook_text": "Amazon just dropped data center secrecy.",
     "beats": [
       {
-        "line": "Zero secrets. Amazon is dropping non-disclosure agreements for local data center deals.",
+        "line": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -27,7 +27,7 @@
         "domain": "amazon.com",
         "headline": "",
         "url": "https://aws.amazon.com",
-        "tag": "Amazon drops data center NDAs",
+        "tag": "Amazon stops using NDAs",
         "name": "",
         "role": "",
         "x": "",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "Microsoft made a similar move earlier this year after community backlash.",
+        "line": "Microsoft made a similar transparency move earlier this year amid growing pressure.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -50,7 +50,7 @@
         "domain": "microsoft.com",
         "headline": "",
         "url": "https://microsoft.com",
-        "tag": "Microsoft followed earlier this year",
+        "tag": "Microsoft made similar move",
         "name": "",
         "role": "",
         "x": "",
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "line": "Secret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco.",
+        "line": "Extreme secrecy has fueled severe community backlash against expanding AI infrastructure.",
         "visual": "clip",
         "query": "city council meeting protest",
         "prompt": "",
@@ -73,14 +73,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Moratoriums from NY to SF",
+        "tag": "Secrecy fueled backlash",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Local residents pushed back against massive energy demands and noise from new AI infrastructure.",
+        "line": "That local opposition has already led to hundreds of proposed and enacted moratoriums from New York to San Francisco.",
         "visual": "clip",
         "query": "modern data center exterior",
         "prompt": "",
@@ -91,14 +91,41 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Community backlash on infrastructure",
+        "tag": "Hundreds of moratoriums",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Will public transparency actually save these tech projects from being blocked?",
+        "line": "Amazon signed a twenty year nuclear power deal with Constellation Energy to power its expanding data center network.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "20 yrs",
+        "small": "nuclear power deal",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "20 year nuclear deal",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Amazon",
+            "domain": "amazon.com"
+          },
+          {
+            "name": "Constellation Energy",
+            "domain": "constellation.com"
+          }
+        ]
+      },
+      {
+        "line": "Meanwhile, a wave of new startups is betting that everyday consumers will soon hand autonomous AI agents control over their daily tasks.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -109,7 +136,25 @@
         "domain": "techcrunch.com",
         "headline": "Amazon and others are done keeping data center deals secret",
         "url": "",
-        "tag": "Will transparency save projects?",
+        "tag": "Startups bet on AI agents",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust an automated agent with your schedule?",
+        "visual": "clip",
+        "query": "person using smartphone",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Trust automated agents?",
         "name": "",
         "role": "",
         "x": "",
@@ -118,46 +163,58 @@
     ],
     "delivery": "direct, journalistic, and inquiring about the real-world friction of tech infrastructure expansion",
     "thin": false,
-    "caption": "Amazon says it will stop using NDAs for data center deals with local governments following Microsoft's lead. Transparency aims to address widespread community moratoriums from New York to San Francisco. Will public talks save these projects from local bans?",
+    "caption": "Amazon says it will stop using non-disclosure agreements for data center deals with local governments following Microsoft's lead. Transparency aims to address widespread community moratoriums from New York to San Francisco. Would you trust an automated agent with your schedule?",
     "hashtags": [
       "Amazon",
       "Microsoft",
-      "DataCenter",
-      "ArtificialIntelligence"
+      "TechCrunch",
+      "DataCenter"
     ],
     "sources": [
-      "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+      "https://www.sphericalinsights.com/blogs/amazon-signs-20-year-nuclear-power-deal-with-constellation-as-ai-data-centres-drive-rising-u.s.-electricity-demand-and-nuclear-energy-investment-"
     ],
-    "script": "Zero secrets. Amazon is dropping non-disclosure agreements for local data center deals.\nMicrosoft made a similar move earlier this year after community backlash.\nSecret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco.\nLocal residents pushed back against massive energy demands and noise from new AI infrastructure.\nWill public transparency actually save these tech projects from being blocked?",
+    "script": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.\nMicrosoft made a similar transparency move earlier this year amid growing pressure.\nExtreme secrecy has fueled severe community backlash against expanding AI infrastructure.\nThat local opposition has already led to hundreds of proposed and enacted moratoriums from New York to San Francisco.\nAmazon signed a twenty year nuclear power deal with Constellation Energy to power its expanding data center network.\nMeanwhile, a wave of new startups is betting that everyday consumers will soon hand autonomous AI agents control over their daily tasks.\nWould you trust an automated agent with your schedule?",
     "keywords": [
       "city council meeting protest",
-      "modern data center exterior"
+      "modern data center exterior",
+      "person using smartphone"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
-    "hook_before": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.",
-    "hook_score": 40,
     "evidence": [
       {
-        "claim": "Amazon dropped data center secrecy",
+        "claim": "Amazon dropped data center secrecy.",
         "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
       },
       {
-        "claim": "Amazon is dropping non-disclosure agreements for local data center deals",
+        "claim": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.",
         "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
       },
       {
-        "claim": "Microsoft made a similar move earlier this year after community backlash",
+        "claim": "Microsoft made a similar transparency move earlier this year amid growing pressure.",
         "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
       },
       {
-        "claim": "Secret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco",
+        "claim": "Extreme secrecy has fueled severe community backlash against expanding AI infrastructure.",
+        "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      },
+      {
+        "claim": "Local opposition has already led to hundreds of proposed and enacted moratoriums from New York to San Francisco.",
+        "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      },
+      {
+        "claim": "Amazon signed a 20-year nuclear power deal with Constellation Energy to power its expanding data center network.",
+        "url": "https://www.sphericalinsights.com/blogs/amazon-signs-20-year-nuclear-power-deal-with-constellation-as-ai-data-centres-drive-rising-u.s.-electricity-demand-and-nuclear-energy-investment-"
+      },
+      {
+        "claim": "A wave of new startups is betting that everyday consumers will soon hand autonomous AI agents control over their daily tasks.",
         "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
     ]
@@ -189,9 +246,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-10T15:51:13.729020+05:30",
+  "script_deadline": "2026-10-10T15:59:20.072645+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-10",
@@ -658,50 +715,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos",
-            "link": "https://www.ndtv.com/world-news/ai-could-make-3-day-work-weeks-single-income-families-possible-jeff-bezos-12164818",
-            "summary": "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos NDTV",
-            "source": "NDTV",
-            "published": "2026-10-10T07:48:34+00:00",
-            "angle": "Jeff Bezos predicts 3-day work weeks and single-income families thanks to AI"
-          },
-          {
-            "title": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report",
-            "link": "https://www.ndtv.com/world-news/openai-anthropic-prepare-for-public-and-political-backlash-after-potential-ai-disaster-report-12164959",
-            "summary": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report NDTV",
-            "source": "NDTV",
-            "published": "2026-10-10T07:55:51+00:00",
-            "angle": "Report reveals AI companies are actively preparing for potential catastrophic incidents"
-          },
-          {
-            "title": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
-            "link": "https://dailybruin.com/2026/10/09/gavin-newsoms-executive-order-increases-ai-oversight-proposes-kill-switch/",
-            "summary": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’ Daily Bruin",
-            "source": "Daily Bruin",
-            "published": "2026-10-10T06:53:00+00:00",
-            "angle": "Gavin Newsom’s new executive order introduces an AI 'kill switch'"
-          }
-        ],
-        "choose_deadline": "2026-10-10T13:50:22.899777+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1307,6 +1320,182 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+          "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+          "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-09T16:56:42+00:00",
+          "angle": "Amazon and Microsoft drop secret data center deals to dodge community backlash."
+        },
+        "draft": {
+          "title": "Amazon Drops Data Center NDAs",
+          "hook_text": "Amazon just dropped data center secrecy.",
+          "beats": [
+            {
+              "line": "Zero secrets. Amazon is dropping non-disclosure agreements for local data center deals.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Amazon AWS",
+              "outlet": "",
+              "domain": "amazon.com",
+              "headline": "",
+              "url": "https://aws.amazon.com",
+              "tag": "Amazon drops data center NDAs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Amazon",
+                  "domain": "amazon.com"
+                }
+              ]
+            },
+            {
+              "line": "Microsoft made a similar move earlier this year after community backlash.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Microsoft",
+              "outlet": "",
+              "domain": "microsoft.com",
+              "headline": "",
+              "url": "https://microsoft.com",
+              "tag": "Microsoft followed earlier this year",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "Secret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco.",
+              "visual": "clip",
+              "query": "city council meeting protest",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Moratoriums from NY to SF",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Local residents pushed back against massive energy demands and noise from new AI infrastructure.",
+              "visual": "clip",
+              "query": "modern data center exterior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Community backlash on infrastructure",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will public transparency actually save these tech projects from being blocked?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Amazon and others are done keeping data center deals secret",
+              "url": "",
+              "tag": "Will transparency save projects?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "direct, journalistic, and inquiring about the real-world friction of tech infrastructure expansion",
+          "thin": false,
+          "caption": "Amazon says it will stop using NDAs for data center deals with local governments following Microsoft's lead. Transparency aims to address widespread community moratoriums from New York to San Francisco. Will public talks save these projects from local bans?",
+          "hashtags": [
+            "Amazon",
+            "Microsoft",
+            "DataCenter",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+          ],
+          "script": "Zero secrets. Amazon is dropping non-disclosure agreements for local data center deals.\nMicrosoft made a similar move earlier this year after community backlash.\nSecret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco.\nLocal residents pushed back against massive energy demands and noise from new AI infrastructure.\nWill public transparency actually save these tech projects from being blocked?",
+          "keywords": [
+            "city council meeting protest",
+            "modern data center exterior"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.",
+          "hook_score": 40,
+          "evidence": [
+            {
+              "claim": "Amazon dropped data center secrecy",
+              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+            },
+            {
+              "claim": "Amazon is dropping non-disclosure agreements for local data center deals",
+              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+            },
+            {
+              "claim": "Microsoft made a similar move earlier this year after community backlash",
+              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+            },
+            {
+              "claim": "Secret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco",
+              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-10T15:51:13.729020+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1878,8 +2067,8 @@
       "event": "OpenAI and Anthropic are drafting emergency plans for a potential catastrophic AI disaster. Labs are preparing crisis communications strategies to manage severe public and political backlash. Executives are worried an autonomous system fail"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-10T14:40+05:30",
@@ -1927,7 +2116,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-10",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-10-2",
   "gemini_use": {
     "day": "2026-10-10",
