@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -187,11 +187,36 @@
     "source_links": [
       "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
       "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "TypeSafe just hit a seven point five billion dolla…: The image shows an airplane (Jet Airways) instead of images related to TypeSafe Jev.",
+      "The media element is completely blurred out and unreadable.",
+      "The media element is pure black and completely unreadable."
+    ],
+    "editor": {
+      "overall": 9.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 9,
+        "flow": 9
+      },
+      "one_line": "Strong valuation scoop with tight numbers and clear visuals, ready to publish.",
+      "script_fixes": [],
+      "visual_beats": [],
+      "visual_notes": [],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIMTmrKPac-7OJ8New3g25hPpVRFgXlAAKNIAACRp1RVqV9UYsHR_V9PQQ",
   "queue": [
     {
       "title": "HCLTech rolls out 20 industry-specific AI solutions across key sectors",
@@ -216,9 +241,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-10T18:53:33.681083+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-10T19:29:11.754312+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-10",
@@ -684,239 +709,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-          "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
-          "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-09T16:56:42+00:00",
-          "angle": "Amazon and Microsoft drop secret data center deals to dodge community backlash."
-        },
-        "draft": {
-          "title": "Amazon Drops Data Center NDAs",
-          "hook_text": "Amazon just dropped data center secrecy.",
-          "beats": [
-            {
-              "line": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Amazon AWS",
-              "outlet": "",
-              "domain": "amazon.com",
-              "headline": "",
-              "url": "https://aws.amazon.com",
-              "tag": "Amazon stops using NDAs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Microsoft made a similar transparency move earlier this year amid growing pressure.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Microsoft",
-              "outlet": "",
-              "domain": "microsoft.com",
-              "headline": "",
-              "url": "https://microsoft.com",
-              "tag": "Microsoft made similar move",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "Extreme secrecy has fueled severe community backlash against expanding AI infrastructure.",
-              "visual": "clip",
-              "query": "city council meeting protest",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Secrecy fueled backlash",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "That local opposition has already led to hundreds of proposed and enacted moratoriums from New York to San Francisco.",
-              "visual": "clip",
-              "query": "modern data center exterior",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Hundreds of moratoriums",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Amazon signed a twenty year nuclear power deal with Constellation Energy to power its expanding data center network.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "20 yrs",
-              "small": "nuclear power deal",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "20 year nuclear deal",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                },
-                {
-                  "name": "Constellation Energy",
-                  "domain": "constellation.com"
-                }
-              ]
-            },
-            {
-              "line": "Meanwhile, a wave of new startups is betting that everyday consumers will soon hand autonomous AI agents control over their daily tasks.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Amazon and others are done keeping data center deals secret",
-              "url": "",
-              "tag": "Startups bet on AI agents",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an automated agent with your schedule?",
-              "visual": "clip",
-              "query": "person using smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust automated agents?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "direct, journalistic, and inquiring about the real-world friction of tech infrastructure expansion",
-          "thin": false,
-          "caption": "Amazon says it will stop using non-disclosure agreements for data center deals with local governments following Microsoft's lead. Transparency aims to address widespread community moratoriums from New York to San Francisco. Would you trust an automated agent with your schedule?",
-          "hashtags": [
-            "Amazon",
-            "Microsoft",
-            "TechCrunch",
-            "DataCenter"
-          ],
-          "sources": [
-            "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
-            "https://www.sphericalinsights.com/blogs/amazon-signs-20-year-nuclear-power-deal-with-constellation-as-ai-data-centres-drive-rising-u.s.-electricity-demand-and-nuclear-energy-investment-"
-          ],
-          "script": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.\nMicrosoft made a similar transparency move earlier this year amid growing pressure.\nExtreme secrecy has fueled severe community backlash against expanding AI infrastructure.\nThat local opposition has already led to hundreds of proposed and enacted moratoriums from New York to San Francisco.\nAmazon signed a twenty year nuclear power deal with Constellation Energy to power its expanding data center network.\nMeanwhile, a wave of new startups is betting that everyday consumers will soon hand autonomous AI agents control over their daily tasks.\nWould you trust an automated agent with your schedule?",
-          "keywords": [
-            "city council meeting protest",
-            "modern data center exterior",
-            "person using smartphone"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Amazon dropped data center secrecy.",
-              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
-            },
-            {
-              "claim": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.",
-              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
-            },
-            {
-              "claim": "Microsoft made a similar transparency move earlier this year amid growing pressure.",
-              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
-            },
-            {
-              "claim": "Extreme secrecy has fueled severe community backlash against expanding AI infrastructure.",
-              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
-            },
-            {
-              "claim": "Local opposition has already led to hundreds of proposed and enacted moratoriums from New York to San Francisco.",
-              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
-            },
-            {
-              "claim": "Amazon signed a 20-year nuclear power deal with Constellation Energy to power its expanding data center network.",
-              "url": "https://www.sphericalinsights.com/blogs/amazon-signs-20-year-nuclear-power-deal-with-constellation-as-ai-data-centres-drive-rising-u.s.-electricity-demand-and-nuclear-energy-investment-"
-            },
-            {
-              "claim": "A wave of new startups is betting that everyday consumers will soon hand autonomous AI agents control over their daily tasks.",
-              "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "editor_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T15:59:20.072645+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1637,6 +1429,209 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+          "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+          "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-09T21:41:29+00:00",
+          "angle": "New non-text AI model Jev hits a $7.5B valuation in weeks, using way fewer tokens than LLMs."
+        },
+        "draft": {
+          "title": "TypeSafe Valued At 7.5B For Jev",
+          "hook_text": "TypeSafe hit seven point five billion.",
+          "beats": [
+            {
+              "line": "TypeSafe just hit a seven point five billion dollar valuation for its Jev system.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "TypeSafe Jev",
+              "outlet": "",
+              "domain": "typesafe.ai",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+              "tag": "TypeSafe Jev valued 7.5B",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "TypeSafe",
+                  "domain": "typesafe.ai"
+                }
+              ]
+            },
+            {
+              "line": "That massive milestone came just weeks after the non-text AI model launched.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "7.5B",
+              "small": "valuation in weeks",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "TypeSafe also closed an eight hundred seventy million dollar funding round.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "870M",
+              "small": "funding round",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "TypeSafe",
+                  "domain": "typesafe.ai"
+                }
+              ]
+            },
+            {
+              "line": "Large corporations are rushing to adopt it because Jev bypasses traditional text processing.",
+              "visual": "clip",
+              "query": "server racks running data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It operates significantly faster than standard language models while consuming far fewer tokens.",
+              "visual": "clip",
+              "query": "person looking at fast computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a non-text model to handle your daily workload?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "The maker of non-text AI model Jev valued at 7.5B",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and fast-paced tech journalist tone, highlighting the massive valuation and technical shift",
+          "thin": false,
+          "caption": "TypeSafe reached a $7.5 billion valuation and closed an $870 million funding round just weeks after launching its non-text AI model Jev. Corporations are excited because Jev runs faster and uses fewer tokens than traditional LLMs. Would you trust a non-text model for your workflow?",
+          "hashtags": [
+            "TypeSafe",
+            "Jev",
+            "ArtificialIntelligence",
+            "TechNews",
+            "Funding"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+            "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
+          ],
+          "script": "TypeSafe just hit a seven point five billion dollar valuation for its Jev system.\nThat massive milestone came just weeks after the non-text AI model launched.\nTypeSafe also closed an eight hundred seventy million dollar funding round.\nLarge corporations are rushing to adopt it because Jev bypasses traditional text processing.\nIt operates significantly faster than standard language models while consuming far fewer tokens.\nWould you trust a non-text model to handle your daily workload?",
+          "keywords": [
+            "server racks running data",
+            "person looking at fast computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "TypeSafe hit seven point five billion valuation.",
+              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
+            },
+            {
+              "claim": "TypeSafe hit a seven point five billion dollar valuation for its Jev system.",
+              "url": "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
+            },
+            {
+              "claim": "The milestone came just weeks after the non-text AI model launched.",
+              "url": "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
+            },
+            {
+              "claim": "TypeSafe closed an eight hundred seventy million dollar funding round.",
+              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
+            },
+            {
+              "claim": "Large corporations are rushing to adopt it because Jev bypasses traditional text processing.",
+              "url": "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
+            },
+            {
+              "claim": "It operates significantly faster than standard language models while consuming far fewer tokens.",
+              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+            "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-10T18:53:33.681083+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2209,8 +2204,8 @@
       "event": "HCLTech just rolled out twenty industry-specific AI solutions across key global sectors. The new portfolio targets financial services, manufacturing, life sciences, and healthcare domains. These specialized offerings leverage advanced machi"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-10T17:45+05:30",
@@ -2238,7 +2233,7 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T18:45:28.306919+05:30",
+    "at": "2026-10-10T18:59:11.754565+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2258,11 +2253,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-10",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-10-2",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 1272,
+    "calls": 1279,
     "claude_calls": 156,
     "claude_backup": 150
   },
