@@ -12,22 +12,22 @@
     "angle": "Ukrainian drones hit the data center that trains 'Russia's Google' Yandex's AI model, so AI infrastructure is now a war target."
   },
   "draft": {
-    "title": "Ukraine's drones hit Yandex AI data centers",
-    "hook_text": "Ukraine just hit Russia's Google",
+    "title": "Ukrainian drones hit Yandex's AI data centers",
+    "hook_text": "Russia's Google just got hit",
     "beats": [
       {
-        "line": "Ukrainian drones just hit Yandex, Russia's Google. Two of its five data centers went down.",
-        "visual": "photo",
+        "line": "Ukrainian drones knocked out a Yandex AI data center. Yandex is known as Russia's Google.",
+        "visual": "official",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "Yandex",
         "outlet": "",
-        "domain": "",
+        "domain": "yandex.com",
         "headline": "",
-        "url": "",
-        "tag": "2 of 5 Yandex data centers hit",
+        "url": "https://yandex.com",
+        "tag": "Yandex: Russia's Google hit",
         "name": "",
         "role": "",
         "x": "",
@@ -39,31 +39,36 @@
         ]
       },
       {
-        "line": "The strikes hit Sasovo and Kaluga on October 8 and 9.",
+        "line": "Two of its five data centers are knocked out. Sasovo was hit first, then Kaluga, on October 8 and 9.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "2 of 5",
+        "small": "Yandex data centers knocked out",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "2 of 5 Yandex data centers out",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Yandex",
+            "domain": "yandex.com"
+          }
+        ]
+      },
+      {
+        "line": "Sasovo's data center houses two of Yandex's three supercomputers used to train YandexGPT.",
         "visual": "photo",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Kaluga",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Sasovo and Kaluga hit Oct 8-9",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Sasovo houses two of Yandex's three supercomputers that train YandexGPT.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "2 of 3",
-        "small": "YandexGPT training supercomputers in Sas",
-        "entity": "",
+        "entity": "Sasovo",
         "outlet": "",
         "domain": "",
         "headline": "",
@@ -85,12 +90,12 @@
       },
       {
         "line": "Ukrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.",
-        "visual": "clip",
-        "query": "military drone flying",
+        "visual": "photo",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "",
+        "entity": "Kaluga",
         "outlet": "",
         "domain": "",
         "headline": "",
@@ -107,7 +112,7 @@
         ]
       },
       {
-        "line": "Users reported problems with T-Bank, Russian Railways, and the Ivi streaming platform.",
+        "line": "Yandex admits disruptions, but no employees were hurt. Russian users reported trouble with T-Bank, Russian Railways, and Ivi.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -117,56 +122,42 @@
         "outlet": "",
         "domain": "tbank.ru",
         "headline": "",
-        "url": "",
-        "tag": "T-Bank and Ivi had outages",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Ukraine calls it a symmetrical response. Russian drones have hit Ukraine's data centers since late September.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "Ars Technica",
-        "domain": "arstechnica.com",
-        "headline": "Ukraine's drones knock out AI data center belonging to Russia's Google",
-        "url": "",
-        "tag": "Ukraine: a symmetrical response",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "In February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE.",
-        "visual": "photo",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Data center",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Amazon data centers hit in February",
+        "url": "https://www.tbank.ru",
+        "tag": "T-Bank, Ivi, Russian Railways hit",
         "name": "",
         "role": "",
         "x": "",
         "brands": [
           {
-            "name": "Amazon",
-            "domain": "amazon.com"
+            "name": "Yandex",
+            "domain": "yandex.com"
+          },
+          {
+            "name": "T-Bank",
+            "domain": "tbank.ru"
           }
         ]
       },
       {
-        "line": "Should AI data centers count as military targets?",
+        "line": "Zelenskyy calls it a symmetrical response to Russian strikes on Ukraine's data centers since late September.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Zelenskyy: a symmetrical response",
+        "name": "Volodymyr Zelenskyy",
+        "role": "President of Ukraine",
+        "x": "ZelenskyyUa",
+        "brands": []
+      },
+      {
+        "line": "Are data centers now fair game?",
         "visual": "clip",
         "query": "data center server room",
         "prompt": "",
@@ -177,16 +168,16 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Yandex: 2 data centers down",
+        "tag": "Yandex: 2 data centers out",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       }
     ],
-    "delivery": "Urgent, matter-of-fact disbelief, turning sober at the point that AI data centers are now wartime targets.",
+    "delivery": "Urgent, matter-of-fact disbelief, turning sober at the point that AI data centers have become wartime targets.",
     "thin": false,
-    "caption": "Ukrainian drones hit two of Yandex's five data centers on October 8 and 9, including Sasovo, which holds two of three YandexGPT training supercomputers. Users reported problems with Russian apps and services too. Should AI data centers count as military targets?",
+    "caption": "Ukrainian drones hit Yandex data centers in Sasovo and Kaluga on October 8 and 9. Sasovo houses two of Yandex's three supercomputers used to train YandexGPT, and Russian users reported trouble with apps like T-Bank and Ivi. Are data centers now fair game?",
     "hashtags": [
       "AI",
       "Yandex",
@@ -204,16 +195,21 @@
     "sources": [
       "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
     ],
-    "script": "Ukrainian drones just hit Yandex, Russia's Google. Two of its five data centers went down.\nThe strikes hit Sasovo and Kaluga on October 8 and 9.\nSasovo houses two of Yandex's three supercomputers that train YandexGPT.\nUkrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.\nUsers reported problems with T-Bank, Russian Railways, and the Ivi streaming platform.\nUkraine calls it a symmetrical response. Russian drones have hit Ukraine's data centers since late September.\nIn February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE.\nShould AI data centers count as military targets?",
+    "script": "Ukrainian drones knocked out a Yandex AI data center. Yandex is known as Russia's Google.\nTwo of its five data centers are knocked out. Sasovo was hit first, then Kaluga, on October 8 and 9.\nSasovo's data center houses two of Yandex's three supercomputers used to train YandexGPT.\nUkrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.\nYandex admits disruptions, but no employees were hurt. Russian users reported trouble with T-Bank, Russian Railways, and Ivi.\nZelenskyy calls it a symmetrical response to Russian strikes on Ukraine's data centers since late September.\nAre data centers now fair game?",
     "keywords": [
-      "military drone flying",
       "data center server room"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
+    "fact_status": "ok",
+    "fact_notes": [],
     "evidence": [
       {
-        "claim": "Ukraine hit Yandex, known as Russia's Google",
+        "claim": "Yandex, known as Russia's Google, was hit (by Ukrainian strikes)",
+        "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+      },
+      {
+        "claim": "Ukrainian drones knocked out a Yandex AI data center",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
@@ -221,45 +217,44 @@
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "Two of Yandex's five data centers went down after Ukrainian drone strikes",
+        "claim": "Two of Yandex's five data centers were knocked out",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "The strikes hit Sasovo and Kaluga on October 8 and 9",
+        "claim": "Sasovo and Kaluga data centers were struck on October 8 and October 9",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "Sasovo houses two of Yandex's three supercomputers used to train YandexGPT",
+        "claim": "Sasovo was hit first, then Kaluga",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "Firepoint is a Ukrainian company and said its FP-1 one-way attack drones were used in the strike on the Kaluga data center",
+        "claim": "Sasovo data center houses two of Yandex's three supercomputers used to train YandexGPT",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "The Kaluga data center is Yandex's largest",
+        "claim": "Ukrainian company Firepoint says its FP-1 one-way attack drones were used in the strike on the Kaluga data center, Yandex's largest",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "Users reported problems with T-Bank, Russian Railways and the Ivi streaming platform",
+        "claim": "Yandex acknowledged disruptions but said no employees were hurt",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "Ukraine (Zelenskyy) calls the strike a symmetrical response",
+        "claim": "Russian users reported problems with T-Bank, Russian Railways, and Ivi",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "Russian drones have hit Ukraine's data centers since late September",
+        "claim": "Zelenskyy called the strike a symmetrical response",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       },
       {
-        "claim": "In February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE",
+        "claim": "Volodymyr Zelenskyy is President of Ukraine",
         "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
       }
     ],
-    "fact_status": "ok",
-    "fact_notes": [],
     "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
     ]
@@ -269,9 +264,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-10T10:02:58.794033+05:30",
+  "script_deadline": "2026-10-10T10:13:10.432900+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-10",
@@ -731,271 +726,8 @@
     "OpenAI fires three safety researchers for \"mishandling research information\"",
     "Trump’s attempt to rename AI is looking awfully artificial"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources",
-          "link": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/",
-          "summary": "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources Vanderbilt Health News",
-          "source": "Vanderbilt Health News",
-          "published": "2026-10-09T22:30:53+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Vanderbilt's Deonna Taylor on AI and nursing",
-          "hook_text": "AI and your nurse",
-          "beats": [
-            {
-              "line": "How will AI change your nurse's job? Vanderbilt's Deonna Taylor was asked exactly that.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/",
-              "tag": "Deonna Taylor on AI in nursing",
-              "name": "Deonna Taylor",
-              "role": "Chief Nursing Officer, Adult Ambulatory Nursing, Vanderbilt",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "She's Chief Nursing Officer for Adult Ambulatory Nursing.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Vanderbilt University Medical Center",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Taylor: Adult Ambulatory Nursing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Nurse practitioner roles are becoming the fastest growing job in the next ten years.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "10 years",
-              "small": "nurse practitioner: fastest growing job",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Fastest growing job in 10 years",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Heather Jackson, Vanderbilt's Administrative Director of Advanced Practice, discussed that trend.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Heather Jackson on nurse practitioners",
-              "name": "Heather Jackson",
-              "role": "Administrative Director, Advanced Practice, Vanderbilt",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "ICU alarms keep patients from sleeping and cause alarm fatigue for nurses.",
-              "visual": "clip",
-              "query": "ICU nurse hospital monitor",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "ICU alarms tire out nurses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Sleep matters for patients too. Vanderbilt neurology professor Beth Malow discussed a study on insomnia.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Beth Malow on insomnia study",
-              "name": "Beth Malow",
-              "role": "Professor of Neurology and Pediatrics, Vanderbilt Sleep Divi",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It found a 26% higher risk of stroke.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "26%",
-              "small": "higher stroke risk with insomnia",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Insomnia: 26% higher stroke risk",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It also found 28% higher odds of hospital admission.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Prevention",
-              "domain": "prevention.com",
-              "headline": "Insomnia linked to higher stroke risk and hospital admission",
-              "url": "",
-              "tag": "Insomnia: 28% higher admission odds",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you want AI helping your nurse?",
-              "visual": "clip",
-              "query": "nurse talking to patient",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI helping your nurse?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Curious and matter-of-fact, then a small jolt of concern at the stroke and hospital admission numbers, closing with a light, direct question.",
-          "thin": false,
-          "caption": "Vanderbilt's Deonna Taylor, Chief Nursing Officer for Adult Ambulatory Nursing, was asked how AI will affect nursing practice. Nurse practitioner roles are also set to become the fastest growing job in the next ten years. Would you want AI helping your nurse?",
-          "hashtags": [
-            "AI",
-            "nursing",
-            "healthcare",
-            "Vanderbilt",
-            "nursepractitioner",
-            "ICU",
-            "sleep",
-            "stroke",
-            "insomnia",
-            "healthtech",
-            "hospitals",
-            "nurses"
-          ],
-          "sources": [
-            "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-          ],
-          "script": "How will AI change your nurse's job? Vanderbilt's Deonna Taylor was asked exactly that.\nShe's Chief Nursing Officer for Adult Ambulatory Nursing.\nNurse practitioner roles are becoming the fastest growing job in the next ten years.\nHeather Jackson, Vanderbilt's Administrative Director of Advanced Practice, discussed that trend.\nICU alarms keep patients from sleeping and cause alarm fatigue for nurses.\nSleep matters for patients too. Vanderbilt neurology professor Beth Malow discussed a study on insomnia.\nIt found a 26% higher risk of stroke.\nIt also found 28% higher odds of hospital admission.\nWould you want AI helping your nurse?",
-          "keywords": [
-            "ICU nurse hospital monitor",
-            "nurse talking to patient"
-          ],
-          "image_prompts": [],
-          "writer_model": "claude",
-          "evidence": [
-            {
-              "claim": "Headline: AI and your nurse. The source covers an interview about how AI will affect nursing practice, so the headline does not overstate it.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "Vanderbilt's Deonna Taylor was asked how AI will affect nurses' jobs (nursing practice).",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "Deonna Taylor is Chief Nursing Officer for Adult Ambulatory Nursing.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "Nurse practitioner roles are becoming the fastest growing job in the next 10 years.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "Heather Jackson is Vanderbilt's Administrative Director of Advanced Practice and discussed the nurse practitioner job trend.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "ICU alarms keep patients from sleeping and cause alarm fatigue for nurses.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "Beth Malow, a Vanderbilt neurology professor, discussed a study on insomnia.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "The study found insomnia linked with a 26% higher risk of stroke.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            },
-            {
-              "claim": "The study found 28% higher odds of hospital admission.",
-              "url": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T09:17:07.905706+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1701,6 +1433,284 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+          "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+          "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-09T22:04:07+00:00",
+          "angle": "Ukrainian drones hit the data center that trains 'Russia's Google' Yandex's AI model, so AI infrastructure is now a war target."
+        },
+        "draft": {
+          "title": "Ukraine's drones hit Yandex AI data centers",
+          "hook_text": "Ukraine just hit Russia's Google",
+          "beats": [
+            {
+              "line": "Ukrainian drones just hit Yandex, Russia's Google. Two of its five data centers went down.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Yandex",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "2 of 5 Yandex data centers hit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "The strikes hit Sasovo and Kaluga on October 8 and 9.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Kaluga",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sasovo and Kaluga hit Oct 8-9",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Sasovo houses two of Yandex's three supercomputers that train YandexGPT.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2 of 3",
+              "small": "YandexGPT training supercomputers in Sas",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "2 of 3 supercomputers in Sasovo",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                },
+                {
+                  "name": "YandexGPT",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Ukrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.",
+              "visual": "clip",
+              "query": "military drone flying",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Firepoint FP-1 drones hit Kaluga",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Users reported problems with T-Bank, Russian Railways, and the Ivi streaming platform.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "T-Bank",
+              "outlet": "",
+              "domain": "tbank.ru",
+              "headline": "",
+              "url": "",
+              "tag": "T-Bank and Ivi had outages",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Ukraine calls it a symmetrical response. Russian drones have hit Ukraine's data centers since late September.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Ukraine's drones knock out AI data center belonging to Russia's Google",
+              "url": "",
+              "tag": "Ukraine: a symmetrical response",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "In February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Data center",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Amazon data centers hit in February",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Amazon",
+                  "domain": "amazon.com"
+                }
+              ]
+            },
+            {
+              "line": "Should AI data centers count as military targets?",
+              "visual": "clip",
+              "query": "data center server room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Yandex: 2 data centers down",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Urgent, matter-of-fact disbelief, turning sober at the point that AI data centers are now wartime targets.",
+          "thin": false,
+          "caption": "Ukrainian drones hit two of Yandex's five data centers on October 8 and 9, including Sasovo, which holds two of three YandexGPT training supercomputers. Users reported problems with Russian apps and services too. Should AI data centers count as military targets?",
+          "hashtags": [
+            "AI",
+            "Yandex",
+            "YandexGPT",
+            "Ukraine",
+            "Russia",
+            "datacenters",
+            "drones",
+            "tech",
+            "technews",
+            "war",
+            "Firepoint",
+            "AInews"
+          ],
+          "sources": [
+            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+          ],
+          "script": "Ukrainian drones just hit Yandex, Russia's Google. Two of its five data centers went down.\nThe strikes hit Sasovo and Kaluga on October 8 and 9.\nSasovo houses two of Yandex's three supercomputers that train YandexGPT.\nUkrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.\nUsers reported problems with T-Bank, Russian Railways, and the Ivi streaming platform.\nUkraine calls it a symmetrical response. Russian drones have hit Ukraine's data centers since late September.\nIn February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE.\nShould AI data centers count as military targets?",
+          "keywords": [
+            "military drone flying",
+            "data center server room"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Ukraine hit Yandex, known as Russia's Google",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Yandex is known as Russia's Google",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Two of Yandex's five data centers went down after Ukrainian drone strikes",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "The strikes hit Sasovo and Kaluga on October 8 and 9",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Sasovo houses two of Yandex's three supercomputers used to train YandexGPT",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Firepoint is a Ukrainian company and said its FP-1 one-way attack drones were used in the strike on the Kaluga data center",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "The Kaluga data center is Yandex's largest",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Users reported problems with T-Bank, Russian Railways and the Ivi streaming platform",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Ukraine (Zelenskyy) calls the strike a symmetrical response",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Russian drones have hit Ukraine's data centers since late September",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "In February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-10T10:02:58.794033+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2260,8 +2270,8 @@
       "event": "Here are today's top AI headlines. Danu Robotics’ fight to build a better recycling robot. We can’t help treating AI like it’s human. But should we?. A16z’s Olivia Moore on the state of consumer AI. Which of these matters most to you?"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-10T09:50+05:30",
@@ -2294,7 +2304,7 @@
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-09",
-  "late_alarm_day": "2026-10-06",
+  "late_alarm_day": "2026-10-10",
   "stats_day": "2026-10-10",
   "perm_told": true,
   "fish_pool": [
@@ -2309,7 +2319,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-10",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
