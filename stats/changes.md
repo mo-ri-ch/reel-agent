@@ -93,3 +93,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 2026-10-10 05:30 · Root cause of the 01:00–05:00 gap: when writing the auto-picked story's script failed (Gemini
   error), the code cleared choose_deadline and waited for the owner's reply → stuck from 02:10. Now autopilot rotates
   to the next story in 10 min, and a story list on autopilot always has a deadline. Saves last_script_error.
+- 2026-10-10 05:50 · Gemini FREE quota exhausted ("free quota used up" on both models; 57 calls by 06:00) → no reel
+  could be fact-checked since 23:00. Owner chose "stay free, post fewer": 6 reels/day at 01, 05, 09, 13, 17, 21 IST
+  (keeps 13 & 17, our best slots). All quality checks kept. Missed morning slots aren't chased (guarantee reset).
+  gemini_use/gemini_errors now saved in state. Baseline for the new schedule: views/reel and follows per day.
