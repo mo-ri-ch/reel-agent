@@ -1,184 +1,43 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-    "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-    "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-    "source": "AI - Ars Technica",
-    "published": "2026-10-09T22:04:07+00:00",
-    "angle": "Ukrainian drones strike a critical AI data center belonging to 'Russia's Google'."
-  },
-  "draft": {
-    "title": "Ukraine drones hit Yandex AI center",
-    "hook_text": "Yandex data center hit by drones",
-    "beats": [
-      {
-        "line": "Ukrainian drones just knocked out a data center belonging to Yandex, known as Russia’s Google.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Yandex",
-        "outlet": "",
-        "domain": "yandex.com",
-        "headline": "",
-        "url": "https://yandex.com",
-        "tag": "Yandex data center hit",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Yandex",
-            "domain": "yandex.com"
-          }
-        ]
-      },
-      {
-        "line": "The strike severely damaged supercomputers used for training Yandex’s AI model.",
-        "visual": "clip",
-        "query": "damaged server room data center",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Supercomputers severely damaged",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Yandex",
-            "domain": "yandex.com"
-          }
-        ]
-      },
-      {
-        "line": "These high-powered systems are essential for processing massive search and language algorithms.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "100%",
-        "small": "AI training halted",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Training processing halted",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The facility is located deep inside Russian territory, raising questions about infrastructure vulnerability.",
-        "visual": "clip",
-        "query": "industrial facility security",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Infrastructure vulnerability exposed",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Yandex now faces massive delays in developing its next-generation technology.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "Ars Technica",
-        "domain": "arstechnica.com",
-        "headline": "Ukraine's drones knock out AI data center",
-        "url": "",
-        "tag": "Massive development delays",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Yandex",
-            "domain": "yandex.com"
-          }
-        ]
-      },
-      {
-        "line": "How fragile is physical AI infrastructure against modern drone attacks?",
-        "visual": "clip",
-        "query": "drone flying over city",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Physical infrastructure vulnerability",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "urgent, sharp, and factual, emphasizing the direct physical impact on major tech infrastructure",
-    "thin": false,
-    "caption": "A Ukrainian drone strike has successfully knocked out a key Yandex data center housing supercomputers used for AI training. This unprecedented attack highlights the physical vulnerabilities of major tech infrastructure. How vulnerable is your local tech?",
-    "hashtags": [
-      "Ukraine",
-      "Yandex",
-      "ArtificialIntelligence",
-      "TechNews",
-      "DataCenter",
-      "Supercomputer",
-      "Russia",
-      "DroneStrike",
-      "TechInfrastructure",
-      "AITraining"
-    ],
-    "sources": [
-      "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-    ],
-    "script": "Ukrainian drones just knocked out a data center belonging to Yandex, known as Russia’s Google.\nThe strike severely damaged supercomputers used for training Yandex’s AI model.\nThese high-powered systems are essential for processing massive search and language algorithms.\nThe facility is located deep inside Russian territory, raising questions about infrastructure vulnerability.\nYandex now faces massive delays in developing its next-generation technology.\nHow fragile is physical AI infrastructure against modern drone attacks?",
-    "keywords": [
-      "damaged server room data center",
-      "industrial facility security",
-      "drone flying over city"
-    ],
-    "image_prompts": [],
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
-    ],
-    "fix_rounds": 0,
-    "source_links": [
-      "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Nikon microscopic video competition winner disqualified for using generative AI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+      "summary": "Nikon says the video that originally won first place in its Small World in Motion contest \"did not comply with the competition rules regarding generative AI.\" BBC reports that the original first place video from Dr. Ning Xu claimed to show \"tiny, hair-like structures called cilia moving in the airway of a child with the […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-09T18:06:57+00:00",
+      "angle": "A prestige photography contest stripped its first-place winner after discovering the video was made with generative AI."
+    },
+    {
+      "title": "Microsoft-Decision-1, our model for fast decision-making",
+      "link": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+      "summary": "",
+      "source": "commandline.microsoft.com",
+      "published": "2026-10-09T18:38:44+00:00",
+      "buzz": "Hacker News 125 points",
+      "angle": "Microsoft quietly released a new AI model engineered specifically for ultra-fast autonomous decision-making."
+    },
+    {
+      "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+      "link": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+      "summary": "",
+      "source": "jessewaites.com",
+      "published": "2026-10-09T11:36:20+00:00",
+      "buzz": "Hacker News 97 points",
+      "angle": "Researchers pointed AI at dusty historical archives and instantly uncovered lost rhinos and forgotten meteorites."
+    }
+  ],
+  "choose_deadline": "2026-10-10T05:40:54.525207+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-10T05:35:39.703704+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -585,57 +444,39 @@
       "extra": false
     }
   ],
-  "paused": null,
-  "spare": [
-    {
-      "title": "AI coding agents generate more code, but not more software",
-      "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-      "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-09T19:43:50+00:00",
-      "angle": "AI coding agents generate more code, but a massive human bottleneck is slowing it all down."
-    },
-    {
-      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-      "summary": "TypeSafe AI raised $870 million in a round led by a16Z.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-09T21:41:29+00:00",
-      "angle": "The maker of the viral non-text AI model Jev just hit a massive $7.5B valuation."
-    }
-  ],
+  "spare": [],
   "tried": [
     "Anthropic launches free AI security scans for open-source projects",
-    "OPINIONS: How U.Va. should respond to the changing artificial intelligence landscape",
-    "Sorted",
-    "Let your AI agents paint big arrows, boxes and text on your screen",
-    "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-    "OpenAI fires three safety researchers for \"mishandling research information\"",
-    "Magnific One launches to give teams an image generator that avoids the 'AI look' and automatically upholds their brand kit",
-    "ChatGPT for Teens has special safeguards. A watchdog group finds most don't work",
-    "iwant",
-    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
-    "Court throws out killer's sentence after judge said he loved AI video of victim",
-    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
-    "The U.S.-China AI Rivalry is Being Upended",
-    "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
-    "Ben Affleck is an AI nerd, and the internet is impressed",
-    "Microsoft event debuts new AI-friendly hardware and Windows changes",
-    "Natura’s $99 smart ring puts AI agents on your finger",
-    "Danu Robotics’ fight to build a better recycling robot",
     "Photonic circuits become trainable AI hardware",
-    "a16z’s Olivia Moore on the state of consumer AI",
-    "South Korea says AI agents appear to have been used to hack the country's banks",
-    "Using AI for just 10 minutes erodes your ability to persist at hard things",
-    "Bridging Algorithmic Design and Regulatory Standards in Enterprise AI",
+    "OPINIONS: How U.Va. should respond to the changing artificial intelligence landscape",
     "Trump says anyone who does not refer to AI as ‘super intelligence’ is ‘THE ENEMY'",
-    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
-    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
+    "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+    "Using AI for just 10 minutes erodes your ability to persist at hard things",
     "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
-    "Insuretech Outmarket raises $34.5M just months after prior round",
+    "Sorted",
+    "South Korea says AI agents appear to have been used to hack the country's banks",
+    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
+    "iwant",
+    "Danu Robotics’ fight to build a better recycling robot",
+    "Microsoft event debuts new AI-friendly hardware and Windows changes",
+    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+    "Court throws out killer's sentence after judge said he loved AI video of victim",
+    "ChatGPT for Teens has special safeguards. A watchdog group finds most don't work",
+    "a16z’s Olivia Moore on the state of consumer AI",
+    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
+    "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
+    "Let your AI agents paint big arrows, boxes and text on your screen",
+    "AI coding agents generate more code, but not more software",
+    "OpenAI fires three safety researchers for \"mishandling research information\"",
     "Today In Artificial Intelligence: Friday, October 9, 2026",
+    "Ben Affleck is an AI nerd, and the internet is impressed",
+    "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
+    "Magnific One launches to give teams an image generator that avoids the 'AI look' and automatically upholds their brand kit",
+    "Insuretech Outmarket raises $34.5M just months after prior round",
     "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-    "An Anthropic AI model sent a false homicide tip to Philadelphia police"
+    "The U.S.-China AI Rivalry is Being Upended",
+    "AI coding agents generate more code, but not more software"
   ],
   "undo_stack": [
     {
@@ -994,10 +835,6 @@
     "Top AI headlines · 10:30 PM today"
   ],
   "posted_log": [
-    {
-      "title": "One company is at the center of a wave of rogue AI attacks",
-      "at": "2026-09-26T04:10:25.076310+05:30"
-    },
     {
       "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
       "at": "2026-09-26T09:30:42.826996+05:30"
@@ -1428,32 +1265,32 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-10T04:00+05:30",
+    "at": "2026-10-10T05:41+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
-    "arstechnica.com": 4,
+    "arstechnica.com": 3,
     "technologyreview.com": 2,
-    "openai.com": 5,
+    "openai.com": 3,
     "blog.google": 0,
     "deepmind.google": 0,
     "huggingface.co": 1,
     "blogs.nvidia.com": 1,
-    "inc42.com": 5,
-    "news.google.com": 43,
-    "Google News (VentureBeat, AIM, AI News)": 17,
+    "inc42.com": 4,
+    "news.google.com": 39,
+    "Google News (VentureBeat, AIM, AI News)": 14,
     "producthunt.com": 6,
-    "Hacker News": 6,
+    "Hacker News": 7,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 4
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-07T10:00:00+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-10T02:10:28.725050+05:30",
+  "last_auto_offer": "2026-10-10T05:40:54.525207+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T05:30:38.504504+05:30",
+    "at": "2026-10-10T05:40:54.525265+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1475,5 +1312,46 @@
   "token_day": "2026-10-10",
   "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "behind_since": "2026-10-10T01:00:33.465646+05:30",
-  "late_note_for": "2026-10-10-0"
+  "late_note_for": "2026-10-10-0",
+  "gemini_use": {
+    "day": "2026-10-10",
+    "calls": 33
+  },
+  "gemini_errors": [
+    {
+      "at": "00:10",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "00:10",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "00:10",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "00:10",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "00:10",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "00:10",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "00:11",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    }
+  ]
 }
