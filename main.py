@@ -863,7 +863,7 @@ def reel_meta(s):
             "engine": (s.get("engine_used") or s.get("last_engine")) if s.get("voice_mode") == "ai" else "own voice",
             "voice": d.get("voice_used", "")[:60], "person": any(b.get("visual") == "person" for b in beats),
             "words": len(d.get("script", "").split()), "visuals": d.get("visual_summary", "")[:80],
-            "editor": (d.get("editor") or {}).get("overall"), "writer": d.get("writer_model", ""),
+            "editor": (d.get("editor") or {}).get("overall"), "writer": d.get("writer_model", ""), "hook_score": d.get("hook_score"),
             "made": st.now().isoformat(timespec="minutes")}
 
 

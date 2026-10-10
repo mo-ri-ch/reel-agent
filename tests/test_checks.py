@@ -237,6 +237,15 @@ check("script rebuilt", out["script"].split("\n")[0], "An AI just started examin
 writer.ask = lambda *a, **k: '{"line": "Wow."}'
 d2 = {"beats": [{"line": "OpenAI just launched GPT-6."}], "script": "OpenAI just launched GPT-6."}
 check("too-short hook ignored", writer.sharpen_hook(d2, {})["beats"][0]["line"], "OpenAI just launched GPT-6.")
+writer.ask = lambda *a, **k: ('{"options": ["Here is some news about AI today.", '
+                               '"Nvidia sold three billion dollars of chips in one week.", "So, Nvidia had a week."]}')
+d3 = {"beats": [{"line": "Nvidia had a big week for chip sales."}], "script": "x"}
+check("best-scoring hook picked", writer.sharpen_hook(d3, {})["beats"][0]["line"],
+      "Nvidia sold three billion dollars of chips in one week.")
+writer.ask = lambda *a, **k: '{"options": ["Here is some news about AI today."]}'
+d4 = {"beats": [{"line": "Nvidia sold three billion dollars of chips in one week."}], "script": "x"}
+check("weaker hook not used", writer.sharpen_hook(d4, {})["beats"][0]["line"],
+      "Nvidia sold three billion dollars of chips in one week.")
 writer.ask = _ask
 
 print("\n".join(fails) if fails else "all checks passed")

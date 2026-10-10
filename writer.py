@@ -427,7 +427,10 @@ def write_script(topic, previous=None, instruction=None):
 
 
 def sharpen_hook(draft, topic):
-    """Rewrites only the first spoken line into a stronger hook (facts unchanged). Falls back silently."""
+    """Rewrites only the first spoken line into a stronger hook (facts unchanged): the writer offers 3 hooks built on
+    proven formulas and hookscore picks the strongest; the original stays unless an option scores higher.
+    Falls back silently."""
+    import hookscore
     beats = draft.get("beats") or []
     if not beats:
         return draft
@@ -436,24 +439,41 @@ def sharpen_hook(draft, topic):
 First line of an Instagram Reel voice-over: "{first}"
 Next line: "{beats[1]['line'] if len(beats) > 1 else ''}"
 
-Viewers swipe away within 2 seconds unless the first line grabs them. Rewrite ONLY the first line:
-- a hook of 9 words or fewer, with the company/product name or the key number early, creating curiosity or stakes;
-- then, if the hook drops a fact the original line had, add one short plain sentence with that fact (max 14 words);
-- keep every fact true and unchanged: no new claims, numbers or names; no exaggeration; no question marks if the
-  original had a fact; no "Did you know", "Imagine", "Breaking", "Hey guys"; numbers written as spoken words.
-Return ONLY JSON: {{"line": "the new first line"}}"""
+Viewers swipe away within 2 seconds unless the first line grabs them. Write 3 DIFFERENT options for ONLY the first
+line, each on a different formula:
+- The Statistic: the striking number first ("Three billion dollars. That's what Nvidia sold in one week.")
+- The Replacement / Head to head: the price, speed or size gap ("This free model just beat GPT-5 at coding.")
+- The Reveal: name the product and the one thing it changes ("This is Gemini 3.8, and it now has a face.")
+- Someone else's result: who did what, with the number ("One lab at Stanford cut drug trials from years to weeks.")
+- The deadline: what changes for the viewer, and when ("From Monday, your ChatGPT chats can be used for ads.")
+Each option: a hook of 9 words or fewer with the company/product name or the key number in the first 4 words; then,
+if the hook drops a fact the original line had, one short plain sentence with that fact (max 14 words). Keep every
+fact true and unchanged: no new claims, numbers or names; no exaggeration; no "Did you know", "Imagine",
+"Breaking", "Hey guys", "Stop scrolling"; numbers written as spoken words.
+Return ONLY JSON: {{"options": ["...", "...", "..."]}}"""
     try:
         res = parse_json(ask(prompt, temperature=0.7, json_mode=True, light=True))
-        new = clean_spoken(str((res[0] if isinstance(res, list) and res else res).get("line", "")))
+        res = res[0] if isinstance(res, list) and res and isinstance(res[0], dict) else res
+        raw = res.get("options") if isinstance(res, dict) else res
+        if isinstance(res, dict) and not raw and res.get("line"):
+            raw = [res["line"]]
+        options = [clean_spoken(str(o)) for o in (raw or []) if str(o).strip()]
     except Exception as e:
         print(f"Hook pass skipped: {e}")
         return draft
-    words = len(new.split())
-    if 4 <= words <= 26 and new.lower() != first.lower():
-        print(f"Hook: {first!r} → {new!r}")
-        beats[0]["line"] = new
+    options = [o for o in options if 4 <= len(o.split()) <= 26 and o.lower() != first.lower()]
+    if not options:
+        return draft
+
+    def score(line):  # the hook is the first sentence; the follow-up sentence isn't graded
+        return hookscore.run(re.split(r"(?<=[.!?])\s+", line.strip())[0])[1]
+    best = max(options, key=score)
+    if score(best) > score(first):
+        print(f"Hook: {first!r} ({score(first):.0f}) → {best!r} ({score(best):.0f})")
+        beats[0]["line"] = best
         draft["script"] = "\n".join(b["line"] for b in beats)
         draft["hook_before"] = first
+    draft["hook_score"] = round(score(beats[0]["line"]))
     return draft
 
 
