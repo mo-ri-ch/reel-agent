@@ -1,42 +1,284 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "AI coding agents generate more code, but not more software",
-      "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-      "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-09T19:43:50+00:00",
-      "angle": "Study finds AI coding agents write far more code, but teams aren't shipping more software because human review is the bottleneck. This hits every developer's job and the hype around it."
-    },
-    {
-      "title": "Qwen-Image-2.1-Turbo released!",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-09T13:27:18+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Alibaba's Qwen-Image-2.1-Turbo has just been released and is trending at the top of r/LocalLLaMA, so anyone can try a fast new image generator."
-    },
-    {
-      "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
-      "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
-      "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-09T14:00:00+00:00",
-      "angle": "Instinct was the invite-only, no-marketing AI agent everyone was buzzing about. Now it faces a rival called Muse, which makes it a good AI agent underdog story."
-    }
-  ],
-  "choose_deadline": "2026-10-10T10:25:20.336851+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "AI coding agents generate more code, but not more software",
+    "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+    "source": "AI - Ars Technica",
+    "published": "2026-10-09T19:43:50+00:00",
+    "angle": "Study finds AI coding agents write far more code, but teams aren't shipping more software because human review is the bottleneck. This hits every developer's job and the hype around it."
+  },
+  "draft": {
+    "title": "AI coding agents write more code, not more software",
+    "hook_text": "More AI code. Same software.",
+    "beats": [
+      {
+        "line": "Thirty percent more code, yet software output stays flat. The boost comes from AI coding agents.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "30%",
+        "small": "more lines of code with AI agents",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "30% more code, no more software",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Harvard researchers Fiona Chen and James Stratton studied over seven hundred software firms from 2021 through March 2026.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Harvard's Fiona Chen, 700 firms",
+        "name": "Fiona Chen",
+        "role": "Researcher, Harvard University",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Their data came from Jellyfish, covering three hundred million work events and more than seven hundred thousand employees.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Jellyfish",
+        "outlet": "",
+        "domain": "jellyfish.co",
+        "headline": "",
+        "url": "https://jellyfish.co",
+        "tag": "300M work events tracked",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Jellyfish",
+            "domain": "jellyfish.co"
+          }
+        ]
+      },
+      {
+        "line": "AI agents lifted commits twenty percent and pull requests twenty-three percent.",
+        "visual": "clip",
+        "query": "programmer coding screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Pull requests up 23%",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "But the rate of finished features and issues in Jira didn't change in any statistically significant way.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Jira",
+        "outlet": "",
+        "domain": "atlassian.com",
+        "headline": "",
+        "url": "https://www.atlassian.com/software/jira",
+        "tag": "Jira features: no real change",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Jira",
+            "domain": "atlassian.com"
+          }
+        ]
+      },
+      {
+        "line": "The bottleneck is human review. Time from pull request to merge balloons forty-nine percent.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "49%",
+        "small": "longer code review time",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Review time up 49%",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Pull requests needing changes nearly doubled, and comments per request rose thirty-five percent.",
+        "visual": "clip",
+        "query": "developers reviewing code office",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Comments per request up 35%",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "AI reviewing AI isn't fixing it. Agents wrote only 23.3 percent of review comments, even though eighty percent of firms used AI review.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Ars Technica",
+        "domain": "arstechnica.com",
+        "headline": "AI coding agents generate more code, but not more software",
+        "url": "",
+        "tag": "AI wrote just 23.3% of reviews",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "And ninety-five percent of these firms now use AI coding agents. Would you trust AI-written code unreviewed?",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "95%",
+        "small": "of firms now use AI coding agents",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "95% of firms use AI agents",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Sharp, curious, a little skeptical; turns from impressive numbers to the surprising reveal that review time eats the gains.",
+    "thin": false,
+    "caption": "A Harvard study of over 700 software firms found AI coding agents boost lines of code by 30 percent, but finished features didn't budge. Human code review time jumped 49 percent and ate the gains. Would you trust AI-written code without a human check?",
+    "hashtags": [
+      "AI",
+      "coding",
+      "softwaredevelopment",
+      "AIagents",
+      "programming",
+      "Harvard",
+      "devlife",
+      "tech",
+      "productivity",
+      "codereview",
+      "technews",
+      "software"
+    ],
+    "sources": [
+      "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+    ],
+    "script": "Thirty percent more code, yet software output stays flat. The boost comes from AI coding agents.\nHarvard researchers Fiona Chen and James Stratton studied over seven hundred software firms from 2021 through March 2026.\nTheir data came from Jellyfish, covering three hundred million work events and more than seven hundred thousand employees.\nAI agents lifted commits twenty percent and pull requests twenty-three percent.\nBut the rate of finished features and issues in Jira didn't change in any statistically significant way.\nThe bottleneck is human review. Time from pull request to merge balloons forty-nine percent.\nPull requests needing changes nearly doubled, and comments per request rose thirty-five percent.\nAI reviewing AI isn't fixing it. Agents wrote only 23.3 percent of review comments, even though eighty percent of firms used AI review.\nAnd ninety-five percent of these firms now use AI coding agents. Would you trust AI-written code unreviewed?",
+    "keywords": [
+      "programmer coding screen",
+      "developers reviewing code office"
+    ],
+    "image_prompts": [],
+    "writer_model": "claude",
+    "hook_before": "AI coding agents boost code by thirty percent. Software output? Flat.",
+    "evidence": [
+      {
+        "claim": "AI generates more code but the same amount of software (headline)",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "AI coding agents lead to a 30 percent increase in lines of code",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "Software output stays flat despite the code increase",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "Harvard researchers Fiona Chen and James Stratton conducted the study",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "The study covered over 700 software firms from 2021 through March 2026",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "Data came from Jellyfish and covered 300 million work events",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "The data covered more than 700,000 employees",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "AI agents lifted commits by 20 percent and pull requests by 23 percent",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "The resolution rate of Jira issues and features did not change in a statistically significant way",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "Time from pull request submission to merge rose 49 percent after AI agents were introduced",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "Human code review is the bottleneck",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      },
+      {
+        "claim": "The share of pull requests needing changes nearly doubled and comments per pull request rose 35%",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-10T10:31:17.655701+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -448,7 +690,25 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Qwen-Image-2.1-Turbo released!",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-09T13:27:18+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "Alibaba's Qwen-Image-2.1-Turbo has just been released and is trending at the top of r/LocalLLaMA, so anyone can try a fast new image generator."
+    },
+    {
+      "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+      "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+      "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-09T14:00:00+00:00",
+      "angle": "Instinct was the invite-only, no-marketing AI agent everyone was buzzing about. Now it faces a rival called Muse, which makes it a good AI agent underdog story."
+    }
+  ],
   "tried": [
     "Trump’s attempt to rename AI is looking awfully artificial",
     "Sorted",
@@ -482,336 +742,7 @@
     "Ben Affleck is an AI nerd, and the internet is impressed",
     "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\""
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-          "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-          "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-09T21:41:29+00:00",
-          "angle": "A non-text AI model called Jev hit a $7.5B valuation weeks after launch, with claims it's faster and uses far fewer tokens than LLMs. People will ask whether this could replace ChatGPT-style models."
-        },
-        "draft": {
-          "title": "Jev: the AI that doesn't write text hits $7.5B",
-          "hook_text": "AI that never writes text",
-          "beats": [
-            {
-              "line": "Meet Jev, the AI that never writes text.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Jev",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Jev: AI with no text output",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Jev",
-                  "domain": ""
-                }
-              ]
-            },
-            {
-              "line": "Its maker, TypeSafe AI, is now worth $7.5 billion.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$7.5B",
-              "small": "TypeSafe AI valuation",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "TypeSafe AI worth $7.5B",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "TypeSafe AI",
-                  "domain": ""
-                }
-              ]
-            },
-            {
-              "line": "It raised $870 million, led by Andreessen Horowitz, with Sequoia and DCVC joining.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Andreessen Horowitz",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "$870M led by Andreessen Horowitz",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Andreessen Horowitz",
-                  "domain": "a16z.com"
-                },
-                {
-                  "name": "Sequoia",
-                  "domain": "sequoiacap.com"
-                }
-              ]
-            },
-            {
-              "line": "Jev only launched September 15. It's built on a transformer, but it's not a large language model.",
-              "visual": "clip",
-              "query": "code on computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Jev launched September 15",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It outputs probabilities the company calls calibrated decisions. TypeSafe claims it's much faster and uses far fewer tokens than LLMs.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "The maker of non-text AI model Jev valued at $7.5B",
-              "url": "",
-              "tag": "Jev outputs calibrated decisions",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "TypeSafe AI",
-                  "domain": ""
-                }
-              ]
-            },
-            {
-              "line": "Co-founder Diogo Almeida, a former OpenAI researcher, says human language isn't useful for automation.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Diogo Almeida, ex-OpenAI",
-              "name": "Diogo Almeida",
-              "role": "Co-founder, TypeSafe AI",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "TypeSafe claims a third of Fortune 500 companies already use it.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1/3",
-              "small": "of Fortune 500 firms use Jev",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "A third of Fortune 500",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would your company swap text AI for this?",
-              "visual": "clip",
-              "query": "office workers laptops",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Would your company switch?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Curious and punchy, a little astonished at the speed of the money, then matter-of-fact on how Jev works, ending with a direct challenge to the viewer.",
-          "thin": false,
-          "caption": "TypeSafe AI's Jev launched on September 15 and is already valued at $7.5 billion after an $870 million round led by Andreessen Horowitz. It's built on a transformer but isn't an LLM: it outputs probabilities instead of text. Would your company switch to it?",
-          "hashtags": [
-            "AI",
-            "Jev",
-            "TypeSafe",
-            "artificialintelligence",
-            "startups",
-            "venturecapital",
-            "a16z",
-            "Sequoia",
-            "technews",
-            "LLM",
-            "automation",
-            "OpenAI"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-          ],
-          "script": "Meet Jev, the AI that never writes text.\nIts maker, TypeSafe AI, is now worth $7.5 billion.\nIt raised $870 million, led by Andreessen Horowitz, with Sequoia and DCVC joining.\nJev only launched September 15. It's built on a transformer, but it's not a large language model.\nIt outputs probabilities the company calls calibrated decisions. TypeSafe claims it's much faster and uses far fewer tokens than LLMs.\nCo-founder Diogo Almeida, a former OpenAI researcher, says human language isn't useful for automation.\nTypeSafe claims a third of Fortune 500 companies already use it.\nWould your company swap text AI for this?",
-          "keywords": [
-            "code on computer screen",
-            "office workers laptops"
-          ],
-          "image_prompts": [],
-          "writer_model": "claude",
-          "hook_before": "Jev is an AI that never writes text.",
-          "evidence": [
-            {
-              "claim": "Jev is an AI that never writes text (does not output text)",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "Jev is an AI model that does not write text",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "Jev's maker is TypeSafe AI",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "TypeSafe AI is now valued at $7.5 billion",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "TypeSafe raised $870 million",
-              "url": "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
-            },
-            {
-              "claim": "The round was led by Andreessen Horowitz, with Sequoia and DCVC participating",
-              "url": "https://siliconangle.com/2026/10/09/jev-creator-typesafe-closes-870m-round-at-7-5b-valuation/"
-            },
-            {
-              "claim": "Jev launched on September 15",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "Jev is built on a transformer architecture but is not a large language model",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "Jev outputs probabilities that the company calls calibrated decisions",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "TypeSafe claims Jev is much faster and uses far fewer tokens than LLMs",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "Diogo Almeida is a co-founder of TypeSafe and a former OpenAI researcher",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "Almeida says human language isn't useful for automation",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "editor": {
-            "overall": 5.3,
-            "scores": {
-              "hook": 5,
-              "specific": 7,
-              "substance": 6,
-              "accuracy": 6,
-              "visuals": 3,
-              "flow": 5
-            },
-            "one_line": "Strong story, but weak hook, mismatched visuals and unsupported claims; not ready to post.",
-            "script_fixes": [
-              "LINE 1: Lead with the number and name, e.g. 'A $7.5 billion AI startup just launched a model that never writes text: Jev.' The current line has no number or company name, and 'never writes text' is a ",
-              "LINE 2: Merge with line 1 or tighten, and add the timeframe from the headline: '$7.5B valuation just weeks after launch'. Cut the repetition of the valuation shown on the number card.",
-              "LINE 3: Say what the $870M is. Clarify that it's a funding round and name the lead investor early. Naming Sequoia and DCVC is fine but dense. Consider 'Andreessen Horowitz led an $870M round' and drop",
-              "LINE 4: Avoid the vague 'it's built on a transformer, but not an LLM' without explanation. Say what Jev does instead. Verify the 'September 15' launch date against the article. The source only says 'w",
-              "LINE 5: Replace 'the company calls calibrated decisions' with a plain explanation, e.g. 'Instead of words, Jev outputs probabilities TypeSafe calls calibrated decisions.' Keep 'claims' framing. Add an",
-              "LINE 6: The quote is paraphrased and attributed as fact. Check it matches the article, and make clear it's Almeida's opinion. Confirm he is a former OpenAI researcher and co-founder from the article, "
-            ],
-            "visual_beats": [
-              0,
-              1,
-              2,
-              3,
-              4,
-              5,
-              6
-            ],
-            "visual_notes": [
-              "line 1: Opening frame is a stock-looking group photo of three unnamed people with no caption. View",
-              "line 1: Title screen is a generic phrase with no name or number, so nothing stops the scroll. The ",
-              "line 2: Number card is clean, but frames 3 and 4 are essentially identical and the text duplicates",
-              "line 3: Only Andreessen Horowitz gets a visual (a fan photo of a building at night, credited to a ",
-              "line 4: Generic code-on-screen stock footage with grass in the corner for 'Jev launched September ",
-              "line 5: Static TechCrunch headline card is reused across four frames (10 to 13) with grey placehol"
-            ],
-            "reviewer": "gemini"
-          }
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T09:40:21.898379+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1721,6 +1652,51 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "AI coding agents generate more code, but not more software",
+            "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+            "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+            "source": "AI - Ars Technica",
+            "published": "2026-10-09T19:43:50+00:00",
+            "angle": "Study finds AI coding agents write far more code, but teams aren't shipping more software because human review is the bottleneck. This hits every developer's job and the hype around it."
+          },
+          {
+            "title": "Qwen-Image-2.1-Turbo released!",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-09T13:27:18+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "Alibaba's Qwen-Image-2.1-Turbo has just been released and is trending at the top of r/LocalLLaMA, so anyone can try a fast new image generator."
+          },
+          {
+            "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+            "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+            "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-09T14:00:00+00:00",
+            "angle": "Instinct was the invite-only, no-marketing AI agent everyone was buzzing about. Now it faces a rival called Muse, which makes it a good AI agent underdog story."
+          }
+        ],
+        "choose_deadline": "2026-10-10T10:25:20.336851+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2333,31 +2309,11 @@
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 420,
-    "claude_calls": 103,
-    "claude_backup": 103
+    "calls": 430,
+    "claude_calls": 108,
+    "claude_backup": 107
   },
   "gemini_errors": [
-    {
-      "at": "04:52",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:53",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:54",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:54",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
     {
       "at": "04:54",
       "error": "Claude refused (200): {\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011Cfsxcy3eACTomvcEVheve\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"scores\\\": {\\",
@@ -2386,6 +2342,26 @@
     {
       "at": "04:55",
       "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:00",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:00",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:00",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:01",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     }
   ],
