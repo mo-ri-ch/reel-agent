@@ -1,35 +1,149 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos",
-      "link": "https://www.ndtv.com/world-news/ai-could-make-3-day-work-weeks-single-income-families-possible-jeff-bezos-12164818",
-      "summary": "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos NDTV",
-      "source": "NDTV",
-      "published": "2026-10-10T07:48:34+00:00",
-      "angle": "Jeff Bezos predicts 3-day work weeks and single-income families thanks to AI"
-    },
-    {
-      "title": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report",
-      "link": "https://www.ndtv.com/world-news/openai-anthropic-prepare-for-public-and-political-backlash-after-potential-ai-disaster-report-12164959",
-      "summary": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report NDTV",
-      "source": "NDTV",
-      "published": "2026-10-10T07:55:51+00:00",
-      "angle": "Report reveals AI companies are actively preparing for potential catastrophic incidents"
-    },
-    {
-      "title": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
-      "link": "https://dailybruin.com/2026/10/09/gavin-newsoms-executive-order-increases-ai-oversight-proposes-kill-switch/",
-      "summary": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’ Daily Bruin",
-      "source": "Daily Bruin",
-      "published": "2026-10-10T06:53:00+00:00",
-      "angle": "Gavin Newsom’s new executive order introduces an AI 'kill switch'"
-    }
-  ],
-  "choose_deadline": "2026-10-10T13:50:22.899777+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report",
+    "link": "https://www.ndtv.com/world-news/openai-anthropic-prepare-for-public-and-political-backlash-after-potential-ai-disaster-report-12164959",
+    "summary": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report NDTV",
+    "source": "NDTV",
+    "published": "2026-10-10T07:55:51+00:00",
+    "angle": "Report reveals AI companies are actively preparing for potential catastrophic incidents"
+  },
+  "draft": {
+    "title": "OpenAI and Anthropic Prepare For Backlash",
+    "hook_text": "OpenAI and Anthropic prepare for disaster.",
+    "beats": [
+      {
+        "line": "OpenAI and Anthropic are drafting crisis plans to handle intense public backlash after a potential catastrophic AI incident.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "OpenAI",
+        "outlet": "",
+        "domain": "openai.com",
+        "headline": "",
+        "url": "https://openai.com",
+        "tag": "OpenAI drafts crisis plans",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          },
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "Axios reported that labs are setting up internal communications strategies ahead of severe reputational damage.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Axios",
+        "domain": "axios.com",
+        "headline": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident",
+        "url": "",
+        "tag": "Axios reports crisis strategies",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Lawmakers in Washington are monitoring these preparations as calls for strict federal oversight increase.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "United States Capitol",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Lawmakers monitor safety protocols",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust OpenAI to manage its own crisis?",
+        "visual": "clip",
+        "query": "person looking at smartphone screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Trust OpenAI crisis management",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      }
+    ],
+    "delivery": "urgent and serious, highlighting growing corporate preparations for an AI disaster",
+    "thin": false,
+    "caption": "OpenAI and Anthropic are preparing for intense public backlash following a potential catastrophic AI incident. Labs are rushing to establish crisis plans as political pressure mounts. Would you trust these companies to manage their own crisis?",
+    "hashtags": [
+      "OpenAI",
+      "Anthropic",
+      "Axios",
+      "TechNews"
+    ],
+    "sources": [
+      "https://www.ndtv.com/world-news/openai-anthropic-prepare-for-public-and-political-backlash-after-potential-ai-disaster-report-12164959"
+    ],
+    "script": "OpenAI and Anthropic are drafting crisis plans to handle intense public backlash after a potential catastrophic AI incident.\nAxios reported that labs are setting up internal communications strategies ahead of severe reputational damage.\nLawmakers in Washington are monitoring these preparations as calls for strict federal oversight increase.\nWould you trust OpenAI to manage its own crisis?",
+    "keywords": [
+      "person looking at smartphone screen"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "OpenAI and Anthropic prepare for disaster.",
+        "url": "https://www.aa.com.tr/en/americas/ai-firms-prepare-for-backlash-over-potential-catastrophic-event-report/4083703"
+      },
+      {
+        "claim": "OpenAI and Anthropic are drafting crisis plans to handle intense public backlash after a potential catastrophic AI incident.",
+        "url": "https://www.aa.com.tr/en/americas/ai-firms-prepare-for-backlash-over-potential-catastrophic-event-report/4083703"
+      },
+      {
+        "claim": "Axios reported that labs are setting up internal communications strategies ahead of severe reputational damage.",
+        "url": "https://www.aa.com.tr/en/americas/ai-firms-prepare-for-backlash-over-potential-catastrophic-event-report/4083703"
+      },
+      {
+        "claim": "Lawmakers in Washington are monitoring these preparations as calls for strict federal oversight increase.",
+        "url": "https://www.aa.com.tr/en/americas/ai-firms-prepare-for-backlash-over-potential-catastrophic-event-report/4083703"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://www.ndtv.com/world-news/openai-anthropic-prepare-for-public-and-political-backlash-after-potential-ai-disaster-report-12164959"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -57,7 +171,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-10T13:56:56.332033+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -471,269 +585,49 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
+      "link": "https://dailybruin.com/2026/10/09/gavin-newsoms-executive-order-increases-ai-oversight-proposes-kill-switch/",
+      "summary": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’ Daily Bruin",
+      "source": "Daily Bruin",
+      "published": "2026-10-10T06:53:00+00:00",
+      "angle": "Gavin Newsom’s new executive order introduces an AI 'kill switch'"
+    }
+  ],
   "tried": [
+    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
+    "Artificial intelligence giants are preparing for the ‘Day After’: Report",
+    "Trump’s attempt to rename AI is looking awfully artificial",
+    "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+    "OpenAI fires three safety researchers for \"mishandling research information\"",
+    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
     "Court throws out killer's sentence after judge said he loved AI video of victim",
+    "The U.S.-China AI Rivalry is Being Upended",
+    "Moneycontrol Pro Weekender | Artificial intelligence, real inflation",
+    "Danu Robotics’ fight to build a better recycling robot",
+    "Photonic circuits become trainable AI hardware",
     "Local Living: world of artificial intelligence",
     "AI coding agents generate more code, but not more software",
-    "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
-    "Nikon microscopic video competition winner disqualified for using generative AI",
-    "Moneycontrol Pro Weekender | Artificial intelligence, real inflation",
-    "Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision-Scoring Model",
-    "Danu Robotics’ fight to build a better recycling robot",
-    "GLM 5.3 Flash opensource @ the top of Artificial Analysis Cyber Index over Claude.",
     "Ben Affleck is an AI nerd, and the internet is impressed",
-    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
-    "OpenAI fires three safety researchers for \"mishandling research information\"",
-    "South Korea says AI agents appear to have been used to hack the country's banks",
+    "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
     "Apostolic Nuncio in Ghana Urges Religious Orders to Harness Artificial Intelligence for Mission",
-    "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
-    "The U.S.-China AI Rivalry is Being Upended",
-    "Artificial intelligence giants are preparing for the ‘Day After’: Report",
-    "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-    "AI is changing how lawyers work — and putting the billable hour under pressure",
-    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
-    "Photonic circuits become trainable AI hardware",
-    "Sorted",
-    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
-    "Insuretech Outmarket raises $34.5M just months after prior round",
-    "Trump’s attempt to rename AI is looking awfully artificial",
-    "If AI is conscient, then we are making slaves",
+    "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos",
     "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
     "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
-    "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
-    "Typesafe AI raises $870M at $7.5B"
+    "Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision-Scoring Model",
+    "If AI is conscient, then we are making slaves",
+    "Typesafe AI raises $870M at $7.5B",
+    "GLM 5.3 Flash opensource @ the top of Artificial Analysis Cyber Index over Claude.",
+    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
+    "AI is changing how lawyers work — and putting the billable hour under pressure",
+    "Nikon microscopic video competition winner disqualified for using generative AI",
+    "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+    "Insuretech Outmarket raises $34.5M just months after prior round",
+    "South Korea says AI agents appear to have been used to hack the country's banks"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-          "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-          "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-          "source": "AI - Ars Technica",
-          "published": "2026-10-09T22:04:07+00:00",
-          "angle": "Ukraine drones knock out AI supercomputers belonging to Russia's Yandex in a major wartime infrastructure strike."
-        },
-        "draft": {
-          "title": "Ukraine drones hit Yandex AI data center",
-          "hook_text": "Drones just hit Russia's Google.",
-          "beats": [
-            {
-              "line": "Ukrainian drones just destroyed a Yandex data center holding critical supercomputers.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Yandex data center",
-              "outlet": "",
-              "domain": "yandex.com",
-              "headline": "",
-              "url": "https://yandex.com",
-              "tag": "Yandex data center destroyed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "The strike knocked out hardware specifically used for training Yandex GPT models.",
-              "visual": "clip",
-              "query": "damaged server racks electronics",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Yandex GPT training hardware",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Yandex operates the dominant search engine in Russia and is often called Russia's Google.",
-              "visual": "clip",
-              "query": "server room data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Russia's Google search engine",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                },
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "This single facility held two of the company's three main AI supercomputers.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2 of 3",
-              "small": "supercomputers damaged",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Two main supercomputers hit",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "The facility loss severely hampers domestic computing power available for major language models.",
-              "visual": "clip",
-              "query": "computer processor chips circuit",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Reduced computing power",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Will this infrastructure loss permanently delay Russian AI independence?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Ars Technica",
-              "domain": "arstechnica.com",
-              "headline": "Ukraine's drones knock out AI data center",
-              "url": "",
-              "tag": "AI independence delay",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "urgent and direct, emphasizing the intersection of geopolitical conflict and critical technology infrastructure",
-          "thin": false,
-          "caption": "Ukrainian drones destroyed a Yandex data center housing two of the company's three main supercomputers used for AI training. The facility belonged to Russia's Google counterpart. Will this infrastructure loss delay domestic technology development?",
-          "hashtags": [
-            "Yandex",
-            "Ukraine",
-            "datacenter",
-            "Russia",
-            "hardware"
-          ],
-          "sources": [
-            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-          ],
-          "script": "Ukrainian drones just destroyed a Yandex data center holding critical supercomputers.\nThe strike knocked out hardware specifically used for training Yandex GPT models.\nYandex operates the dominant search engine in Russia and is often called Russia's Google.\nThis single facility held two of the company's three main AI supercomputers.\nThe facility loss severely hampers domestic computing power available for major language models.\nWill this infrastructure loss permanently delay Russian AI independence?",
-          "keywords": [
-            "damaged server racks electronics",
-            "server room data center",
-            "computer processor chips circuit"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Drones hit Russia's Google",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Ukrainian drones destroyed a Yandex data center holding critical supercomputers",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "The strike knocked out hardware specifically used for training Yandex GPT models",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Yandex operates the dominant search engine in Russia and is often called Russia's Google",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "This single facility held two of the company's three main AI supercomputers",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "The facility loss severely hampers domestic computing power available for major language models",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T13:09:47.599553+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1479,6 +1373,50 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos",
+            "link": "https://www.ndtv.com/world-news/ai-could-make-3-day-work-weeks-single-income-families-possible-jeff-bezos-12164818",
+            "summary": "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos NDTV",
+            "source": "NDTV",
+            "published": "2026-10-10T07:48:34+00:00",
+            "angle": "Jeff Bezos predicts 3-day work weeks and single-income families thanks to AI"
+          },
+          {
+            "title": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report",
+            "link": "https://www.ndtv.com/world-news/openai-anthropic-prepare-for-public-and-political-backlash-after-potential-ai-disaster-report-12164959",
+            "summary": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report NDTV",
+            "source": "NDTV",
+            "published": "2026-10-10T07:55:51+00:00",
+            "angle": "Report reveals AI companies are actively preparing for potential catastrophic incidents"
+          },
+          {
+            "title": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
+            "link": "https://dailybruin.com/2026/10/09/gavin-newsoms-executive-order-increases-ai-oversight-proposes-kill-switch/",
+            "summary": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’ Daily Bruin",
+            "source": "Daily Bruin",
+            "published": "2026-10-10T06:53:00+00:00",
+            "angle": "Gavin Newsom’s new executive order introduces an AI 'kill switch'"
+          }
+        ],
+        "choose_deadline": "2026-10-10T13:50:22.899777+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2078,7 +2016,7 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T13:45:26.230547+05:30",
+    "at": "2026-10-10T13:56:56.332090+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2102,7 +2040,7 @@
   "late_note_for": "2026-10-10-2",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 822,
+    "calls": 891,
     "claude_calls": 156,
     "claude_backup": 150
   },
