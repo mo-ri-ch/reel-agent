@@ -1,42 +1,281 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
-      "link": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
-      "summary": "AI is changing how lawyers work — and putting the billable hour under pressure CNBC",
-      "source": "CNBC",
-      "published": "2026-10-10T05:00:01+00:00",
-      "angle": "AI is threatening the billable hour, so lawyers' jobs and what clients pay are both in play. A CNBC story people will send to a friend in law or any white-collar job."
-    },
-    {
-      "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
-      "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
-      "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-09T14:00:00+00:00",
-      "angle": "Instinct, an invite-only AI agent that got big on word of mouth with no marketing, now faces Muse, a rival from a bigger name. A startup-vs-giant fight over who wins the AI agent race."
-    },
-    {
-      "title": "Qwen-Image-2.1-Turbo released!",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-09T13:27:18+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Alibaba's Qwen-Image-2.1-Turbo is a new fast open image model that anyone can try now. It was the top post on r/LocalLLaMA today."
-    }
-  ],
-  "choose_deadline": "2026-10-10T10:50:24.670639+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
+    "link": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
+    "summary": "AI is changing how lawyers work — and putting the billable hour under pressure CNBC",
+    "source": "CNBC",
+    "published": "2026-10-10T05:00:01+00:00",
+    "angle": "AI is threatening the billable hour, so lawyers' jobs and what clients pay are both in play. A CNBC story people will send to a friend in law or any white-collar job."
+  },
+  "draft": {
+    "title": "AI is breaking the lawyer's billable hour",
+    "hook_text": "16 hours vs 16 seconds",
+    "beats": [
+      {
+        "line": "Almost ninety percent of lawyers now use AI. That's across the UK and Ireland.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "~90%",
+        "small": "of UK & Ireland legal pros use AI",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Almost 90% of lawyers use AI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "That's putting the billable hour under the microscope. Here's why your lawyer's invoice could change.",
+        "visual": "clip",
+        "query": "lawyer working on laptop",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Billable hour under pressure",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "A&O Shearman built AI agents with legal AI company Harvey. They review loan agreements in minutes, not hours.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Harvey",
+        "outlet": "",
+        "domain": "harvey.ai",
+        "headline": "",
+        "url": "https://www.harvey.ai",
+        "tag": "A&O Shearman + Harvey agents",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Harvey",
+            "domain": "harvey.ai"
+          }
+        ]
+      },
+      {
+        "line": "Slaughter and May rolled Harvey out across all practice areas this year.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Slaughter and May",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Slaughter and May rolled out Harvey",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Harvey",
+            "domain": "harvey.ai"
+          }
+        ]
+      },
+      {
+        "line": "Lexolent CEO Nick Rowles-Davies says, \"You can't charge 16 hours for something that takes 16 seconds.\"",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "16 hours vs 16 seconds",
+        "name": "Nick Rowles-Davies",
+        "role": "Founder and CEO, Lexolent",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Deloitte's survey says hourly-charged work will fall from 72% to 44% within two to three years.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "72% → 44%",
+        "small": "work charged by the hour",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Hourly work: 72% to 44%",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Harvey's Jorge Bestard warns that a faster route to a draft doesn't mean a faster route to competence.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Juniors lose their training ground",
+        "name": "Jorge Bestard",
+        "role": "Head of EMEA, Harvey",
+        "x": "",
+        "brands": [
+          {
+            "name": "Harvey",
+            "domain": "harvey.ai"
+          }
+        ]
+      },
+      {
+        "line": "And 51% of legal professionals work evenings, but only 32% want to.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "51% vs 32%",
+        "small": "work evenings vs want to",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "51% work evenings, 32% want to",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you pay a lawyer by the hour if AI does the work?",
+        "visual": "clip",
+        "query": "client meeting law office",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Pay by the hour, or not?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Sharp and curious, a little incredulous at the 16 hours versus 16 seconds line, then thoughtful about what it means for junior lawyers and working hours.",
+    "thin": false,
+    "caption": "AI is now used by almost 90% of legal professionals in the UK and Ireland, and the billable hour is feeling the heat. Firms like A&O Shearman and Slaughter and May are already using Harvey. Would you still pay a lawyer by the hour?",
+    "hashtags": [
+      "AI",
+      "legaltech",
+      "lawyers",
+      "Harvey",
+      "billablehour",
+      "futureofwork",
+      "ASOShearman",
+      "Deloitte",
+      "Clio",
+      "lawfirm",
+      "technews",
+      "business"
+    ],
+    "sources": [
+      "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+    ],
+    "script": "Almost ninety percent of lawyers now use AI. That's across the UK and Ireland.\nThat's putting the billable hour under the microscope. Here's why your lawyer's invoice could change.\nA&O Shearman built AI agents with legal AI company Harvey. They review loan agreements in minutes, not hours.\nSlaughter and May rolled Harvey out across all practice areas this year.\nLexolent CEO Nick Rowles-Davies says, \"You can't charge 16 hours for something that takes 16 seconds.\"\nDeloitte's survey says hourly-charged work will fall from 72% to 44% within two to three years.\nHarvey's Jorge Bestard warns that a faster route to a draft doesn't mean a faster route to competence.\nAnd 51% of legal professionals work evenings, but only 32% want to.\nWould you pay a lawyer by the hour if AI does the work?",
+    "keywords": [
+      "lawyer working on laptop",
+      "client meeting law office"
+    ],
+    "image_prompts": [],
+    "writer_model": "claude",
+    "hook_before": "Almost 90% of UK and Ireland lawyers now use AI.",
+    "evidence": [
+      {
+        "claim": "Headline '16 hours vs 16 seconds' reflects the quote about charging 16 hours for something that takes 16 seconds",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "Almost 90% of legal professionals in the UK and Ireland use AI",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "AI use is putting the billable hour under the microscope",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "A&O Shearman worked with legal AI company Harvey to develop AI agents, including for reviewing loan agreements, which complete in minutes work that previously took hours",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "Slaughter and May rolled out Harvey across all practice areas this year",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "Nick Rowles-Davies, founder and CEO of Lexolent, said \"You can't charge 16 hours for something that takes 16 seconds.\"",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "A Deloitte survey says the share of work charged by the hour will fall from 72% to 44% within two to three years",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "Jorge Bestard, head of EMEA at Harvey, said a faster route to a draft does not mean a faster route to competence",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "Jorge Bestard's role is Head of EMEA at Harvey",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      },
+      {
+        "claim": "51% of legal professionals work evenings but only 32% want to",
+        "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-10T10:56:03.334035+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -450,21 +689,21 @@
   "paused": null,
   "spare": [
     {
+      "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+      "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+      "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-09T14:00:00+00:00",
+      "angle": "Instinct, an invite-only AI agent that got big on word of mouth with no marketing, now faces Muse, a rival from a bigger name. A startup-vs-giant fight over who wins the AI agent race."
+    },
+    {
       "title": "Qwen-Image-2.1-Turbo released!",
       "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
       "summary": "",
       "source": "r/LocalLLaMA",
       "published": "2026-10-09T13:27:18+00:00",
       "buzz": "top of r/LocalLLaMA today",
-      "angle": "Alibaba's Qwen-Image-2.1-Turbo has just been released and is trending at the top of r/LocalLLaMA, so anyone can try a fast new image generator."
-    },
-    {
-      "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
-      "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
-      "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-09T14:00:00+00:00",
-      "angle": "Instinct was the invite-only, no-marketing AI agent everyone was buzzing about. Now it faces a rival called Muse, which makes it a good AI agent underdog story."
+      "angle": "Alibaba's Qwen-Image-2.1-Turbo is a new fast open image model that anyone can try now. It was the top post on r/LocalLLaMA today."
     }
   ],
   "tried": [
@@ -501,281 +740,7 @@
     "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
     "AI coding agents generate more code, but not more software"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-          "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-          "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-          "source": "AI - Ars Technica",
-          "published": "2026-10-09T22:04:07+00:00",
-          "angle": "Ukrainian drones hit the data center that trains 'Russia's Google' Yandex's AI model, so AI infrastructure is now a war target."
-        },
-        "draft": {
-          "title": "Ukrainian drones hit Yandex's AI data centers",
-          "hook_text": "Russia's Google just got hit",
-          "beats": [
-            {
-              "line": "Ukrainian drones knocked out a Yandex AI data center. Yandex is known as Russia's Google.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Yandex",
-              "outlet": "",
-              "domain": "yandex.com",
-              "headline": "",
-              "url": "https://yandex.com",
-              "tag": "Yandex: Russia's Google hit",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Two of its five data centers are knocked out. Sasovo was hit first, then Kaluga, on October 8 and 9.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2 of 5",
-              "small": "Yandex data centers knocked out",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2 of 5 Yandex data centers out",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Sasovo's data center houses two of Yandex's three supercomputers used to train YandexGPT.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Sasovo",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2 of 3 supercomputers in Sasovo",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                },
-                {
-                  "name": "YandexGPT",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Ukrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Kaluga",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Firepoint FP-1 drones hit Kaluga",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Yandex admits disruptions, but no employees were hurt. Russian users reported trouble with T-Bank, Russian Railways, and Ivi.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "T-Bank",
-              "outlet": "",
-              "domain": "tbank.ru",
-              "headline": "",
-              "url": "https://www.tbank.ru",
-              "tag": "T-Bank, Ivi, Russian Railways hit",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                },
-                {
-                  "name": "T-Bank",
-                  "domain": "tbank.ru"
-                }
-              ]
-            },
-            {
-              "line": "Zelenskyy calls it a symmetrical response to Russian strikes on Ukraine's data centers since late September.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Zelenskyy: a symmetrical response",
-              "name": "Volodymyr Zelenskyy",
-              "role": "President of Ukraine",
-              "x": "ZelenskyyUa",
-              "brands": []
-            },
-            {
-              "line": "Are data centers now fair game?",
-              "visual": "clip",
-              "query": "data center server room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Yandex: 2 data centers out",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Urgent, matter-of-fact disbelief, turning sober at the point that AI data centers have become wartime targets.",
-          "thin": false,
-          "caption": "Ukrainian drones hit Yandex data centers in Sasovo and Kaluga on October 8 and 9. Sasovo houses two of Yandex's three supercomputers used to train YandexGPT, and Russian users reported trouble with apps like T-Bank and Ivi. Are data centers now fair game?",
-          "hashtags": [
-            "AI",
-            "Yandex",
-            "YandexGPT",
-            "Ukraine",
-            "Russia",
-            "datacenters",
-            "drones",
-            "tech",
-            "technews",
-            "war",
-            "Firepoint",
-            "AInews"
-          ],
-          "sources": [
-            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-          ],
-          "script": "Ukrainian drones knocked out a Yandex AI data center. Yandex is known as Russia's Google.\nTwo of its five data centers are knocked out. Sasovo was hit first, then Kaluga, on October 8 and 9.\nSasovo's data center houses two of Yandex's three supercomputers used to train YandexGPT.\nUkrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.\nYandex admits disruptions, but no employees were hurt. Russian users reported trouble with T-Bank, Russian Railways, and Ivi.\nZelenskyy calls it a symmetrical response to Russian strikes on Ukraine's data centers since late September.\nAre data centers now fair game?",
-          "keywords": [
-            "data center server room"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "fact_status": "ok",
-          "fact_notes": [],
-          "evidence": [
-            {
-              "claim": "Yandex, known as Russia's Google, was hit (by Ukrainian strikes)",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Ukrainian drones knocked out a Yandex AI data center",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Yandex is known as Russia's Google",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Two of Yandex's five data centers were knocked out",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Sasovo and Kaluga data centers were struck on October 8 and October 9",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Sasovo was hit first, then Kaluga",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Sasovo data center houses two of Yandex's three supercomputers used to train YandexGPT",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Ukrainian company Firepoint says its FP-1 one-way attack drones were used in the strike on the Kaluga data center, Yandex's largest",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Yandex acknowledged disruptions but said no employees were hurt",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Russian users reported problems with T-Bank, Russian Railways, and Ivi",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Zelenskyy called the strike a symmetrical response",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Volodymyr Zelenskyy is President of Ukraine",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            }
-          ],
-          "fix_rounds": 1,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T10:13:10.432900+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1708,6 +1673,51 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
+            "link": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
+            "summary": "AI is changing how lawyers work — and putting the billable hour under pressure CNBC",
+            "source": "CNBC",
+            "published": "2026-10-10T05:00:01+00:00",
+            "angle": "AI is threatening the billable hour, so lawyers' jobs and what clients pay are both in play. A CNBC story people will send to a friend in law or any white-collar job."
+          },
+          {
+            "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+            "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+            "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-09T14:00:00+00:00",
+            "angle": "Instinct, an invite-only AI agent that got big on word of mouth with no marketing, now faces Muse, a rival from a bigger name. A startup-vs-giant fight over who wins the AI agent race."
+          },
+          {
+            "title": "Qwen-Image-2.1-Turbo released!",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-09T13:27:18+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "Alibaba's Qwen-Image-2.1-Turbo is a new fast open image model that anyone can try now. It was the top post on r/LocalLLaMA today."
+          }
+        ],
+        "choose_deadline": "2026-10-10T10:50:24.670639+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2296,7 +2306,7 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T10:45:26.761712+05:30",
+    "at": "2026-10-10T10:56:03.334078+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2320,31 +2330,11 @@
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 434,
-    "claude_calls": 110,
-    "claude_backup": 109
+    "calls": 444,
+    "claude_calls": 115,
+    "claude_backup": 113
   },
   "gemini_errors": [
-    {
-      "at": "04:54",
-      "error": "Claude backup failed: Claude not available",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:54",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:54",
-      "error": "Claude backup failed: Claude not available",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:55",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
     {
       "at": "05:00",
       "error": "gemini-flash-lite-latest: free quota used up for now",
@@ -2373,6 +2363,26 @@
     {
       "at": "05:20",
       "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:25",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:25",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:25",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:25",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     }
   ],
