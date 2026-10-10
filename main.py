@@ -369,6 +369,7 @@ def checked_script(topic, previous=None, instruction=None):
     """Writes the script, fact-checks it, and if something is wrong rewrites it to fix the problem and checks
     again (up to MAX_FIX_ROUNDS times). Returns the draft; draft['fact_status'] says how it ended."""
     draft = writer.write_script(topic, previous=previous, instruction=instruction)
+    draft = trim_step(draft, topic)
     draft = fact_check_step(draft, topic)
     rounds = 0
     while draft.get("fact_status") == "unsure" and rounds < MAX_FIX_ROUNDS:
@@ -420,6 +421,28 @@ def specific_facts_step(draft, topic):
 
 MIN_WORDS = 65   # below this a reel feels empty (owner, 2026-10-09: "scripts are getting so bad, not very short")
 FLOOR_WORDS = 50  # after one expansion attempt, anything shorter isn't worth a reel: the story is skipped
+
+
+MAX_WORDS = 110  # scripts are 75-105 words (owner); longer ones overrun 40 s and the voice-over check fails
+
+
+def trim_step(draft, topic):
+    """Over-long scripts (Claude wrote 134-147 words on 2026-10-10 and both voice-overs were rejected) get one
+    rewrite down to 90-100 words, before the fact check. Only cuts: no new facts."""
+    n = len((draft.get("script") or "").split())
+    if n <= MAX_WORDS:
+        return draft
+    print(f"Script too long ({n} words): trimming")
+    fix = (f"The script is {n} words: far too long for a 30-40 second reel. Cut it to 90-100 words (count them). "
+           "Keep the hook, the real names, the key numbers and the closing question; drop the weakest facts and "
+           "tighten sentences. Do NOT add any new fact, name or number.")
+    try:
+        better = writer.write_script(topic, previous=draft, instruction=fix)
+    except Exception as e:  # model busy: keep the original (the voice check still guards the render)
+        print(f"Trim failed: {e}")
+        return draft
+    m = len((better.get("script") or "").split())
+    return better if MIN_WORDS <= m < n else draft
 
 
 def substance_step(draft, topic):

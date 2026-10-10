@@ -107,6 +107,14 @@ check("named but no number kept", main.specific_facts_step(
     {"script": "Anthropic launched Claude Security scans for GitHub projects, said Jason Clinton. " * 6}, {})
       .get("fact_status"), None)
 check("full script untouched", main.substance_step({"script": "word " * 80}, {}).get("fact_status"), None)
+# over-long scripts get one trim; a failed or bad trim keeps the original
+main.writer.write_script = lambda t, previous=None, instruction=None: {"script": "word " * 95}
+check("long script trimmed", len(main.trim_step({"script": "long " * 147}, {})["script"].split()), 95)
+check("normal script not trimmed", len(main.trim_step({"script": "ok " * 100}, {})["script"].split()), 100)
+main.writer.write_script = lambda t, previous=None, instruction=None: {"script": "word " * 40}
+check("over-trim rejected", len(main.trim_step({"script": "long " * 140}, {})["script"].split()), 140)
+main.writer.write_script = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("503 overloaded"))
+check("trim failure keeps draft", len(main.trim_step({"script": "long " * 140}, {})["script"].split()), 140)
 main.writer.write_script, main.fact_check_step, main.make_specific, main.tg.send = _ws, _fc, _ms, _send
 
 # strict specificity: real names + a number/date

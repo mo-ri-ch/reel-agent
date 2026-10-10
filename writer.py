@@ -407,7 +407,8 @@ def write_script(topic, previous=None, instruction=None):
                                       "Use ONLY facts stated in the SOURCE ARTICLE below.")
                        .replace("Use Google Search to find the original source first.",
                                 "Use the SOURCE ARTICLE below as the original source.")
-                       + f"\n\nSOURCE ARTICLE (the only facts you may use):\n{source}\n\nReturn ONLY the JSON.")
+                       + f"\n\nSOURCE ARTICLE (the only facts you may use):\n{source}\n\nThe script must be 75-105 "
+                       "words in total (count them): pick the best facts, don't use them all. Return ONLY the JSON.")
             draft, model = parse_json(ask_claude(cprompt, temperature=0.6)), "claude"
         except Exception as e:
             print(f"Claude writing skipped, using Gemini: {e}")
