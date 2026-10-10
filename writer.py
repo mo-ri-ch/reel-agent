@@ -34,7 +34,7 @@ def ask_claude(parts, temperature=0.5, max_tokens=4000):
     for attempt in range(3):
         r = requests.post("https://api.anthropic.com/v1/messages", timeout=180, headers={
             "x-api-key": ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-            json={"model": CLAUDE_MODEL, "max_tokens": max_tokens, "temperature": temperature,
+            json={"model": CLAUDE_MODEL, "max_tokens": max_tokens,  # Sonnet 5.5 refuses "temperature"
                   "messages": [{"role": "user", "content": content}]})
         if r.status_code in (429, 500, 529) and attempt < 2:
             time.sleep(10)

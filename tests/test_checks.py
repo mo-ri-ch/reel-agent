@@ -169,6 +169,8 @@ _cfg.ANTHROPIC_API_KEY = "test"
 _sleep = writer.time.sleep
 writer.time.sleep = lambda x: None
 def _fake_post(url, *a, **k):
+    if "anthropic" in url and "temperature" in (k.get("json") or {}):
+        return _R(400, {"error": "`temperature` is deprecated for this model."})
     if "googleapis" in url:
         return _R(429, {"error": "quota PerDay"})
     return _R(200, {"content": [{"type": "text", "text": '{"ok": 1}'}]})
