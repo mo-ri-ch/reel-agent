@@ -12,6 +12,10 @@ from state import now
 SEARCH_USED = False  # did the last ask() really use Google Search?
 
 
+ERRORS = []   # Gemini failures in this run (saved to state.json so Claude can see quota problems)
+CALLS = [0]   # Gemini requests made in this run
+
+
 def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
     """light=True: small jobs (picking stories/clips) go to the lighter model first, saving the main model's quota."""
     global SEARCH_USED
@@ -31,6 +35,7 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
             body["generationConfig"]["responseMimeType"] = "application/json"
         overloaded = 0
         for attempt in range(5):
+            CALLS[0] += 1
             r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=180)
             if r.status_code in (400, 403, 429) and "tools" in body:
                 # Google Search isn't available (or its free quota is used up): continue without it
@@ -72,6 +77,7 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
                 if json_mode:
                     body["generationConfig"]["responseMimeType"] = "application/json"
         print(f"Moving on from {model}: {last}")
+    ERRORS.append({"at": time.strftime("%H:%M"), "error": last[:200]})
     raise RuntimeError(f"Gemini didn't give a usable reply, please try again in a few minutes. {last}")
 
 

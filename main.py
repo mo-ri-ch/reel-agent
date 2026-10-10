@@ -1345,6 +1345,7 @@ def cmd_poll():
     except Exception as e:
         print(f"Doorbell ack failed (messages will be re-read safely next time): {e}")
 
+    note_gemini(s)
     if json.dumps(s, sort_keys=True) != before:
         st.save(s)
     github_output("render", "true" if render else "false")
@@ -1714,6 +1715,7 @@ def cmd_render():
             s["script_deadline"] = (st.now() + timedelta(minutes=5)).isoformat() if s.get("autopilot") else None
             tg.send(f"⚠️ Couldn't make the reel: {e}\n" + ("Autopilot will try once more in a few minutes."
                     if s.get("autopilot") else "Reply \"ok\" to try the AI voice again, or send a voice note."))
+    note_gemini(s)
     st.save(s)
 
 
@@ -1778,6 +1780,20 @@ def editor_redo(s, action):
         tg.send(f"🎬 Editor-in-chief: {rev.get('overall')}/10 even after fixes, {rev.get('one_line', '')}. "
                 "Not good enough to post, switching to another story.")
     next_story(s, f"editor score {rev.get('overall')}/10")
+
+
+def note_gemini(s):
+    """Counts Gemini requests per day and keeps its last errors, so quota problems are visible."""
+    day = st.now().date().isoformat()
+    use = s.get("gemini_use") or {}
+    if use.get("day") != day:
+        use = {"day": day, "calls": 0}
+    use["calls"] = use.get("calls", 0) + writer.CALLS[0]
+    writer.CALLS[0] = 0
+    s["gemini_use"] = use
+    if writer.ERRORS:
+        s["gemini_errors"] = ((s.get("gemini_errors") or []) + [{**e, "day": day} for e in writer.ERRORS])[-10:]
+        writer.ERRORS.clear()
 
 
 def cmd_feeds():
