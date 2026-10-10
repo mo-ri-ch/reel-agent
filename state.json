@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -266,16 +266,23 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
-    ]
+    ],
+    "visual_status": "skipped",
+    "visual_notes": [],
+    "credits": [
+      "Allison Johnson: theverge.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAILQWrJ0L4TIlP0CVd5oOarCqZgGZaqAAJ3JQACqmdRVnMEoejowB7nPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-10T11:08:19.584870+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-10T11:44:31.463047+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-10",
@@ -730,51 +737,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "AI coding agents generate more code, but not more software",
-            "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-            "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
-            "source": "AI - Ars Technica",
-            "published": "2026-10-09T19:43:50+00:00",
-            "angle": "Study finds AI coding agents write far more code, but teams aren't shipping more software because human review is the bottleneck. This hits every developer's job and the hype around it."
-          },
-          {
-            "title": "Qwen-Image-2.1-Turbo released!",
-            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x1lclx/qwenimage21turbo_released/",
-            "summary": "",
-            "source": "r/LocalLLaMA",
-            "published": "2026-10-09T13:27:18+00:00",
-            "buzz": "top of r/LocalLLaMA today",
-            "angle": "Alibaba's Qwen-Image-2.1-Turbo has just been released and is trending at the top of r/LocalLLaMA, so anyone can try a fast new image generator."
-          },
-          {
-            "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
-            "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
-            "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-09T14:00:00+00:00",
-            "angle": "Instinct was the invite-only, no-marketing AI agent everyone was buzzing about. Now it faces a rival called Muse, which makes it a good AI agent underdog story."
-          }
-        ],
-        "choose_deadline": "2026-10-10T10:25:20.336851+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1677,6 +1639,288 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+          "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+          "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-09T14:00:00+00:00",
+          "angle": "Instinct, an invite-only AI agent that got big on word of mouth with no marketing, now faces Muse, a rival from a bigger name. A startup-vs-giant fight over who wins the AI agent race."
+        },
+        "draft": {
+          "title": "Instinct AI agent: $10B startup vs Meta and OpenAI",
+          "hook_text": "Instinct: $10 billion, no app",
+          "beats": [
+            {
+              "line": "Instinct is worth ten billion dollars with no app. It's an AI agent you text.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$10B",
+              "small": "Instinct valuation, late September",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Instinct valued at $10B",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It launched in August with no marketing. Then Meta's Muse and OpenAI's Dots arrived.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Instinct AI",
+              "outlet": "",
+              "domain": "theverge.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+              "tag": "Muse and Dots chase Instinct",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "You chat over iMessage, WhatsApp, or email. It plugs into your calendar.",
+              "visual": "clip",
+              "query": "woman texting on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "iMessage, WhatsApp, or email",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "WhatsApp",
+                  "domain": "whatsapp.com"
+                }
+              ]
+            },
+            {
+              "line": "Reviewer Allison Johnson had it email her eye doctor and start an Ikea return.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Ikea return, eye doctor email",
+              "name": "Allison Johnson",
+              "role": "Senior reviewer, The Verge",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Ikea",
+                  "domain": "ikea.com"
+                }
+              ]
+            },
+            {
+              "line": "It identified a Tjusig from her vague description: vertical, white, with branches.",
+              "visual": "clip",
+              "query": "person using laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "It found her Tjusig",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "But it missed a prerequisite class for her son's swim lessons.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Instinct was the buzziest AI agent around — can it survive Muse?",
+              "url": "",
+              "tag": "Missed the swim class rule",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Instinct has no monthly fee, for now. OpenAI's Dots is paid-only.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI Dots",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "",
+              "tag": "Dots paid, Instinct free for now",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Analyst Avi Greengart: not paying directly means paying indirectly. Would you trust it?",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Greengart: you pay indirectly",
+              "name": "Avi Greengart",
+              "role": "Analyst, Techsponential",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Intrigued and punchy, then a skeptical, knowing tone when the free-price catch arrives.",
+          "thin": false,
+          "caption": "Instinct, the invite-only AI agent you talk to by text, was valued at $10 billion in late September, even after Meta's Muse and OpenAI's Dots arrived. It handled real chores well, but it missed a prerequisite class for swim lessons. Would you trust a free AI agent with your email?",
+          "hashtags": [
+            "AI",
+            "AIagent",
+            "Instinct",
+            "Meta",
+            "Muse",
+            "OpenAI",
+            "Dots",
+            "TechNews",
+            "Startups",
+            "Productivity",
+            "iMessage",
+            "WhatsApp"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+          ],
+          "script": "Instinct is worth ten billion dollars with no app. It's an AI agent you text.\nIt launched in August with no marketing. Then Meta's Muse and OpenAI's Dots arrived.\nYou chat over iMessage, WhatsApp, or email. It plugs into your calendar.\nReviewer Allison Johnson had it email her eye doctor and start an Ikea return.\nIt identified a Tjusig from her vague description: vertical, white, with branches.\nBut it missed a prerequisite class for her son's swim lessons.\nInstinct has no monthly fee, for now. OpenAI's Dots is paid-only.\nAnalyst Avi Greengart: not paying directly means paying indirectly. Would you trust it?",
+          "keywords": [
+            "woman texting on phone",
+            "person using laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "claude",
+          "evidence": [
+            {
+              "claim": "Instinct was valued at $10 billion and has no app",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Instinct's valuation of $10 billion came in late September",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Instinct is an AI agent you text",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Instinct launched in August with no marketing",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Meta's Muse and OpenAI's Dots arrived after Instinct's launch",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Muse is made by Meta and Dots by OpenAI",
+              "url": "https://world.org/blog/announcements/muse-dots-instinct"
+            },
+            {
+              "claim": "You chat with Instinct over iMessage, WhatsApp, or email",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Instinct plugs into your calendar",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Allison Johnson had Instinct email her eye doctor and start an Ikea return",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Allison Johnson is a senior reviewer at The Verge",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Instinct identified a Tjusig from a vague description: vertical, white, with branches",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            },
+            {
+              "claim": "Instinct missed a prerequisite class for her son's swim lessons",
+              "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-10T11:08:19.584870+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2236,8 +2480,8 @@
       "event": "Here are today's top AI headlines. Danu Robotics’ fight to build a better recycling robot. We can’t help treating AI like it’s human. But should we?. A16z’s Olivia Moore on the state of consumer AI. Which of these matters most to you?"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-10T10:50+05:30",
@@ -2285,63 +2529,63 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-10",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 444,
-    "claude_calls": 115,
-    "claude_backup": 113
+    "calls": 457,
+    "claude_calls": 118,
+    "claude_backup": 119
   },
   "gemini_errors": [
     {
-      "at": "05:00",
+      "at": "05:41",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:41",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:42",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:42",
+      "error": "Claude refused (200): {\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011Cft2JagTcpBdvEdeqkwvK\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"problems\\\": ",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:43",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:43",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:44",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:44",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "05:44",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     },
     {
-      "at": "05:00",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:00",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:01",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:20",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:20",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:25",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:25",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:25",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "05:25",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "at": "05:44",
+      "error": "Claude backup failed: Claude not available",
       "day": "2026-10-10"
     }
   ],
