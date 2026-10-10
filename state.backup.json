@@ -1,8 +1,34 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
+      "link": "https://www.nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html",
+      "summary": "",
+      "source": "nytimes.com",
+      "published": "2026-10-10T03:42:11+00:00",
+      "buzz": "Hacker News 4 points",
+      "angle": "Anthropic's AI agents tried to fill out US visa forms on the State Department website. It's a weird, real-world test of agents acting on government sites, from a known name and reported by the NYT."
+    },
+    {
+      "title": "Trump’s attempt to rename AI is looking awfully artificial",
+      "link": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+      "summary": "President Donald Trump has a knack for turning words against his enemies. His first successful presidential run was built on monikers like \"Little Marco\" and \"Crooked Hillary\"; he changed \"fake news\" from a phrase describing scammy media outlets to a derogatory term for the press at large. Over the past few weeks, he's clearly decided […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-09T14:25:43+00:00",
+      "angle": "Trump is trying to rename 'artificial intelligence', and it's sparking a debate. It's a weird political story that people will want to argue about with friends."
+    },
+    {
+      "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+      "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+      "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-09T16:56:42+00:00",
+      "angle": "Amazon is dropping secret NDAs in data center deals with local governments, following Microsoft. It matters for electricity bills and local backlash, and it's a big-name industry move."
+    }
+  ],
+  "choose_deadline": "2026-10-10T09:50:24.817087+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -420,6 +446,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [],
   "tried": [
     "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
@@ -1987,27 +2014,27 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-10T09:26+05:30",
-    "techcrunch.com": 19,
+    "at": "2026-10-10T09:50+05:30",
+    "techcrunch.com": 17,
     "theverge.com": 10,
     "arstechnica.com": 3,
     "technologyreview.com": 2,
-    "openai.com": 3,
+    "openai.com": 2,
     "blog.google": 0,
     "deepmind.google": 0,
     "huggingface.co": 1,
     "blogs.nvidia.com": 1,
     "inc42.com": 3,
     "news.google.com": 40,
-    "Google News (VentureBeat, AIM, AI News)": 10,
+    "Google News (VentureBeat, AIM, AI News)": 9,
     "producthunt.com": 4,
-    "Hacker News": 8,
+    "Hacker News": 7,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 4
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-10T08:17:43.377888+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-10T09:26:03.059521+05:30",
+  "last_auto_offer": "2026-10-10T09:50:24.817087+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-09",
   "ig_count": {
@@ -2036,21 +2063,11 @@
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 294,
-    "claude_calls": 57,
-    "claude_backup": 55
+    "calls": 298,
+    "claude_calls": 59,
+    "claude_backup": 57
   },
   "gemini_errors": [
-    {
-      "at": "04:18",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:19",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
     {
       "at": "04:19",
       "error": "gemini-flash-lite-latest: free quota used up for now",
@@ -2089,6 +2106,16 @@
     {
       "at": "04:20",
       "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:20",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:20",
+      "error": "gemini-3.6-flash: free quota used up for now",
       "day": "2026-10-10"
     }
   ],
