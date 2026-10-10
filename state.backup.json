@@ -1,35 +1,167 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Anthropic AI model submits false homicide tip to Philadelphia police",
-      "link": "https://www.aljazeera.com/news/2026/10/10/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police",
-      "summary": "Anthropic AI model submits false homicide tip to Philadelphia police Al Jazeera",
-      "source": "Al Jazeera",
-      "published": "2026-10-10T05:04:38+00:00",
-      "angle": "An AI model hallucinated and submitted a false homicide tip directly to police, sparking massive safety concerns."
-    },
-    {
-      "title": "Billionaire Peter Thiel to Pope Leo and Obama: Stop opposing AI to boost your popularity, says: Both Obam",
-      "link": "https://timesofindia.indiatimes.com/technology/tech-news/billionaire-peter-thiel-to-pope-leo-and-obama-stop-opposing-ai-to-boost-your-popularity-says-both-obama-and-pope-fall-into-category-where-/articleshow/134849975.cms",
-      "summary": "Billionaire Peter Thiel to Pope Leo and Obama: Stop opposing AI to boost your popularity, says: Both Obam The Times of India",
-      "source": "The Times of India",
-      "published": "2026-10-10T07:50:00+00:00",
-      "angle": "Billionaire Peter Thiel tells Pope Leo and Obama to stop opposing AI to boost their popularity."
-    },
-    {
-      "title": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
-      "link": "https://dailybruin.com/2026/10/09/gavin-newsoms-executive-order-increases-ai-oversight-proposes-kill-switch/",
-      "summary": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’ Daily Bruin",
-      "source": "Daily Bruin",
-      "published": "2026-10-10T06:53:00+00:00",
-      "angle": "Gavin Newsom pushes for strict AI oversight and proposes a literal 'kill switch' for dangerous AI models."
-    }
-  ],
-  "choose_deadline": "2026-10-10T15:10:36.445668+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+    "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+    "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-10-09T16:56:42+00:00",
+    "angle": "Amazon and Microsoft drop secret data center deals to dodge community backlash."
+  },
+  "draft": {
+    "title": "Amazon Drops Data Center NDAs",
+    "hook_text": "Amazon just dropped data center secrecy.",
+    "beats": [
+      {
+        "line": "Zero secrets. Amazon is dropping non-disclosure agreements for local data center deals.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Amazon AWS",
+        "outlet": "",
+        "domain": "amazon.com",
+        "headline": "",
+        "url": "https://aws.amazon.com",
+        "tag": "Amazon drops data center NDAs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Amazon",
+            "domain": "amazon.com"
+          }
+        ]
+      },
+      {
+        "line": "Microsoft made a similar move earlier this year after community backlash.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Microsoft",
+        "outlet": "",
+        "domain": "microsoft.com",
+        "headline": "",
+        "url": "https://microsoft.com",
+        "tag": "Microsoft followed earlier this year",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Microsoft",
+            "domain": "microsoft.com"
+          }
+        ]
+      },
+      {
+        "line": "Secret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco.",
+        "visual": "clip",
+        "query": "city council meeting protest",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Moratoriums from NY to SF",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Local residents pushed back against massive energy demands and noise from new AI infrastructure.",
+        "visual": "clip",
+        "query": "modern data center exterior",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Community backlash on infrastructure",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Will public transparency actually save these tech projects from being blocked?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "TechCrunch",
+        "domain": "techcrunch.com",
+        "headline": "Amazon and others are done keeping data center deals secret",
+        "url": "",
+        "tag": "Will transparency save projects?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "direct, journalistic, and inquiring about the real-world friction of tech infrastructure expansion",
+    "thin": false,
+    "caption": "Amazon says it will stop using NDAs for data center deals with local governments following Microsoft's lead. Transparency aims to address widespread community moratoriums from New York to San Francisco. Will public talks save these projects from local bans?",
+    "hashtags": [
+      "Amazon",
+      "Microsoft",
+      "DataCenter",
+      "ArtificialIntelligence"
+    ],
+    "sources": [
+      "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+    ],
+    "script": "Zero secrets. Amazon is dropping non-disclosure agreements for local data center deals.\nMicrosoft made a similar move earlier this year after community backlash.\nSecret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco.\nLocal residents pushed back against massive energy demands and noise from new AI infrastructure.\nWill public transparency actually save these tech projects from being blocked?",
+    "keywords": [
+      "city council meeting protest",
+      "modern data center exterior"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "hook_before": "Amazon will stop using non-disclosure agreements when negotiating data center deals with local governments.",
+    "hook_score": 40,
+    "evidence": [
+      {
+        "claim": "Amazon dropped data center secrecy",
+        "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      },
+      {
+        "claim": "Amazon is dropping non-disclosure agreements for local data center deals",
+        "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      },
+      {
+        "claim": "Microsoft made a similar move earlier this year after community backlash",
+        "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      },
+      {
+        "claim": "Secret talks have fueled intense opposition and hundreds of proposed moratoriums from New York to San Francisco",
+        "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -57,7 +189,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-10T15:51:13.729020+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -474,265 +606,57 @@
   "paused": null,
   "spare": [
     {
-      "title": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
-      "link": "https://dailybruin.com/2026/10/09/gavin-newsoms-executive-order-increases-ai-oversight-proposes-kill-switch/",
-      "summary": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’ Daily Bruin",
-      "source": "Daily Bruin",
-      "published": "2026-10-10T06:53:00+00:00",
-      "angle": "Gavin Newsom’s new executive order introduces an AI 'kill switch'"
+      "title": "Lune",
+      "link": "https://www.producthunt.com/products/lune-research",
+      "summary": "The search engine built for scientific AI agents Discussion | Link",
+      "source": "Product Hunt — The best new products, every day",
+      "published": "2026-10-10T03:56:36+00:00",
+      "buzz": "Product Hunt launch",
+      "angle": "Lune launches as a specialized search engine built entirely for scientific AI agents."
+    },
+    {
+      "title": "KernelAI",
+      "link": "https://www.producthunt.com/products/kernelai",
+      "summary": "53 open models from 15 labs, running entirely on your phone Discussion | Link",
+      "source": "Product Hunt — The best new products, every day",
+      "published": "2026-10-09T16:58:13+00:00",
+      "buzz": "Product Hunt launch",
+      "angle": "KernelAI lets you run 53 open models from 15 labs directly on your phone."
     }
   ],
   "tried": [
+    "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+    "Insuretech Outmarket raises $34.5M just months after prior round",
+    "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
+    "From Supply Security to Artificial Intelligence: Issues Bringing Global Energy Leaders Together in Riyadh",
+    "If AI is conscient, then we are making slaves",
+    "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
+    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
+    "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+    "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos",
+    "Photonic circuits become trainable AI hardware",
     "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
     "Artificial intelligence giants are preparing for the ‘Day After’: Report",
-    "Trump’s attempt to rename AI is looking awfully artificial",
-    "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-    "OpenAI fires three safety researchers for \"mishandling research information\"",
-    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
-    "Court throws out killer's sentence after judge said he loved AI video of victim",
-    "The U.S.-China AI Rivalry is Being Upended",
     "Moneycontrol Pro Weekender | Artificial intelligence, real inflation",
-    "Danu Robotics’ fight to build a better recycling robot",
-    "Photonic circuits become trainable AI hardware",
-    "Local Living: world of artificial intelligence",
     "AI coding agents generate more code, but not more software",
-    "Ben Affleck is an AI nerd, and the internet is impressed",
-    "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
-    "Apostolic Nuncio in Ghana Urges Religious Orders to Harness Artificial Intelligence for Mission",
-    "AI Could Make 3-Day Work Weeks, Single-Income Families Possible: Jeff Bezos",
-    "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-    "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
+    "Court throws out killer's sentence after judge said he loved AI video of victim",
     "Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision-Scoring Model",
-    "If AI is conscient, then we are making slaves",
+    "Nikon microscopic video competition winner disqualified for using generative AI",
+    "AI is changing how lawyers work — and putting the billable hour under pressure",
+    "Anthropic AI model submits false homicide tip to Philadelphia police",
     "Typesafe AI raises $870M at $7.5B",
+    "Apostolic Nuncio in Ghana Urges Religious Orders to Harness Artificial Intelligence for Mission",
+    "The U.S.-China AI Rivalry is Being Upended",
     "GLM 5.3 Flash opensource @ the top of Artificial Analysis Cyber Index over Claude.",
     "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
-    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
-    "AI is changing how lawyers work — and putting the billable hour under pressure",
-    "Nikon microscopic video competition winner disqualified for using generative AI",
-    "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
-    "Insuretech Outmarket raises $34.5M just months after prior round",
-    "South Korea says AI agents appear to have been used to hack the country's banks"
+    "South Korea says AI agents appear to have been used to hack the country's banks",
+    "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+    "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+    "Waffling at the UN: OpenAI, Anthropic and Selling Artificial Intelligence",
+    "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
+    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Typesafe AI raises $870M at $7.5B",
-          "link": "https://typesafe.ai/blog/series-ai",
-          "summary": "",
-          "source": "typesafe.ai",
-          "published": "2026-10-09T17:02:31+00:00",
-          "buzz": "Hacker News 351 points",
-          "angle": "Typesafe AI just raised a massive $870M at a $7.5B valuation."
-        },
-        "draft": {
-          "title": "Typesafe AI raises 870M at 7.5B",
-          "hook_text": "Typesafe AI just raised eight hundred seventy million dollar",
-          "beats": [
-            {
-              "line": "Typesafe AI just raised eight hundred seventy million dollars in funding.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Typesafe AI",
-              "outlet": "",
-              "domain": "typesafe.ai",
-              "headline": "",
-              "url": "https://typesafe.ai/blog/series-ai",
-              "tag": "Typesafe AI raises 870M",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Typesafe AI",
-                  "domain": "typesafe.ai"
-                }
-              ]
-            },
-            {
-              "line": "This round pushes the company valuation to seven point five billion dollars.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$7.5B",
-              "small": "valuation",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "7.5 billion dollar valuation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Typesafe AI",
-                  "domain": "typesafe.ai"
-                }
-              ]
-            },
-            {
-              "line": "The company builds Jev, which is a new type of AI model for automation.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Typesafe AI",
-              "outlet": "",
-              "domain": "typesafe.ai",
-              "headline": "",
-              "url": "https://typesafe.ai/blog/series-ai",
-              "tag": "Jev automation model",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Typesafe AI",
-                  "domain": "typesafe.ai"
-                }
-              ]
-            },
-            {
-              "line": "A third of Fortune five hundred companies are already using Jev.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "typesafe.ai",
-              "domain": "typesafe.ai",
-              "headline": "Typesafe AI raises 870M at 7.5B",
-              "url": "https://typesafe.ai/blog/series-ai",
-              "tag": "Fortune five hundred adoption",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Typesafe AI",
-                  "domain": "typesafe.ai"
-                }
-              ]
-            },
-            {
-              "line": "The capital will help take Jev to the extreme and build smart software infrastructure.",
-              "visual": "clip",
-              "query": "server rack data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Smart software infrastructure",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Typesafe AI",
-                  "domain": "typesafe.ai"
-                }
-              ]
-            },
-            {
-              "line": "Would your company adopt automation models like Jev?",
-              "visual": "clip",
-              "query": "person looking at laptop screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Adopt automation models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and direct tech journalism tone, highlighting the massive valuation and enterprise adoption",
-          "thin": false,
-          "caption": "Typesafe AI secured 870 million dollars, bringing its valuation to 7.5 billion dollars with its automation model Jev. Would your company adopt automation models like Jev?",
-          "hashtags": [
-            "TypesafeAI",
-            "TechNews",
-            "Funding",
-            "Startups",
-            "Automation"
-          ],
-          "sources": [
-            "https://typesafe.ai/blog/series-ai"
-          ],
-          "script": "Typesafe AI just raised eight hundred seventy million dollars in funding.\nThis round pushes the company valuation to seven point five billion dollars.\nThe company builds Jev, which is a new type of AI model for automation.\nA third of Fortune five hundred companies are already using Jev.\nThe capital will help take Jev to the extreme and build smart software infrastructure.\nWould your company adopt automation models like Jev?",
-          "keywords": [
-            "server rack data center",
-            "person looking at laptop screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Typesafe AI raised eight hundred seventy million dollars",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "Typesafe AI raised eight hundred seventy million dollars in funding",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "The round pushes the company valuation to seven point five billion dollars",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "The company builds Jev, which is a new type of AI model for automation",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "A third of Fortune five hundred companies are already using Jev",
-              "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
-            },
-            {
-              "claim": "The capital will help take Jev to the extreme and build smart software infrastructure",
-              "url": "https://typesafe.ai/blog/series-ai"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://typesafe.ai/blog/series-ai"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T13:40:25.972781+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1338,6 +1262,50 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAILzGrJ-cMDyrMfwtXLxSIOPMkK6EdqAALpHwACRp1RVvuA9m3RhMJMPQQ",
       "history_title": "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Anthropic AI model submits false homicide tip to Philadelphia police",
+            "link": "https://www.aljazeera.com/news/2026/10/10/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police",
+            "summary": "Anthropic AI model submits false homicide tip to Philadelphia police Al Jazeera",
+            "source": "Al Jazeera",
+            "published": "2026-10-10T05:04:38+00:00",
+            "angle": "An AI model hallucinated and submitted a false homicide tip directly to police, sparking massive safety concerns."
+          },
+          {
+            "title": "Billionaire Peter Thiel to Pope Leo and Obama: Stop opposing AI to boost your popularity, says: Both Obam",
+            "link": "https://timesofindia.indiatimes.com/technology/tech-news/billionaire-peter-thiel-to-pope-leo-and-obama-stop-opposing-ai-to-boost-your-popularity-says-both-obama-and-pope-fall-into-category-where-/articleshow/134849975.cms",
+            "summary": "Billionaire Peter Thiel to Pope Leo and Obama: Stop opposing AI to boost your popularity, says: Both Obam The Times of India",
+            "source": "The Times of India",
+            "published": "2026-10-10T07:50:00+00:00",
+            "angle": "Billionaire Peter Thiel tells Pope Leo and Obama to stop opposing AI to boost their popularity."
+          },
+          {
+            "title": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’",
+            "link": "https://dailybruin.com/2026/10/09/gavin-newsoms-executive-order-increases-ai-oversight-proposes-kill-switch/",
+            "summary": "Gavin Newsom’s executive order increases AI oversight, proposes ‘kill switch’ Daily Bruin",
+            "source": "Daily Bruin",
+            "published": "2026-10-10T06:53:00+00:00",
+            "angle": "Gavin Newsom pushes for strict AI oversight and proposes a literal 'kill switch' for dangerous AI models."
+          }
+        ],
+        "choose_deadline": "2026-10-10T15:10:36.445668+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1475,10 +1443,6 @@
     "AI Companies Prepare For Public Backlash After Potential Catastrophic Incident: Report"
   ],
   "posted_log": [
-    {
-      "title": "Microsoft stops insisting you need a \"Copilot+ PC\"",
-      "at": "2026-09-26T15:15:25.157164+05:30"
-    },
     {
       "title": "Microsoft Revamps Copilot With Home, Code and Autopilot Capabilities",
       "at": "2026-09-26T17:40:43.169561+05:30"
@@ -1942,7 +1906,7 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T15:10:26.275322+05:30",
+    "at": "2026-10-10T15:21:14.374188+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -1966,21 +1930,11 @@
   "late_note_for": "2026-10-10-2",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 900,
+    "calls": 1128,
     "claude_calls": 156,
     "claude_backup": 150
   },
   "gemini_errors": [
-    {
-      "at": "06:45",
-      "error": "Claude refused (400): {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Bi",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "06:45",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
     {
       "at": "06:50",
       "error": "gemini-flash-lite-latest: free quota used up for now",
@@ -2019,6 +1973,16 @@
     {
       "at": "07:46",
       "error": "Claude refused (400): {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Bi",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "09:49",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "09:50",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     }
   ],
