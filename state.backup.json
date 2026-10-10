@@ -1,42 +1,217 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
-      "link": "https://www.nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html",
-      "summary": "",
-      "source": "nytimes.com",
-      "published": "2026-10-10T03:42:11+00:00",
-      "buzz": "Hacker News 4 points",
-      "angle": "Anthropic's AI agents tried to fill out US visa forms on the State Department website. It's a weird, real-world test of agents acting on government sites, from a known name and reported by the NYT."
-    },
-    {
-      "title": "Trump’s attempt to rename AI is looking awfully artificial",
-      "link": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
-      "summary": "President Donald Trump has a knack for turning words against his enemies. His first successful presidential run was built on monikers like \"Little Marco\" and \"Crooked Hillary\"; he changed \"fake news\" from a phrase describing scammy media outlets to a derogatory term for the press at large. Over the past few weeks, he's clearly decided […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-09T14:25:43+00:00",
-      "angle": "Trump is trying to rename 'artificial intelligence', and it's sparking a debate. It's a weird political story that people will want to argue about with friends."
-    },
-    {
-      "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-      "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
-      "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-09T16:56:42+00:00",
-      "angle": "Amazon is dropping secret NDAs in data center deals with local governments, following Microsoft. It matters for electricity bills and local backlash, and it's a big-name industry move."
-    }
-  ],
-  "choose_deadline": "2026-10-10T09:50:24.817087+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+    "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+    "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-10-09T16:56:42+00:00",
+    "angle": "Amazon is dropping secret NDAs in data center deals with local governments, following Microsoft. It matters for electricity bills and local backlash, and it's a big-name industry move."
+  },
+  "draft": {
+    "title": "Amazon drops NDAs on data center deals",
+    "hook_text": "Amazon ditches secret data center deals",
+    "beats": [
+      {
+        "line": "Amazon just ditched secret data center deals. It will stop using NDAs when negotiating with local governments.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Amazon",
+        "outlet": "",
+        "domain": "amazon.com",
+        "headline": "",
+        "url": "https://www.aboutamazon.com",
+        "tag": "Amazon drops NDAs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Amazon",
+            "domain": "amazon.com"
+          }
+        ]
+      },
+      {
+        "line": "Microsoft made a similar move earlier this year.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Microsoft",
+        "outlet": "",
+        "domain": "microsoft.com",
+        "headline": "",
+        "url": "https://www.microsoft.com",
+        "tag": "Microsoft did it first",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Microsoft",
+            "domain": "microsoft.com"
+          }
+        ]
+      },
+      {
+        "line": "Secrecy has fueled community backlash against AI infrastructure.",
+        "visual": "clip",
+        "query": "community meeting crowd protest",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Secrecy fueled AI backlash",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Opposition has led to hundreds of proposed and enacted moratoriums.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "Hundreds",
+        "small": "data center moratoriums proposed or enac",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Hundreds of moratoriums",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "They stretch from New York to San Francisco.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "San Francisco",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "New York to San Francisco",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Trust may be the real product for personal AI startups. They want consumers to give AI agents access to inboxes, files, and credit cards.",
+        "visual": "clip",
+        "query": "woman using laptop credit card",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "AI agents want your credit card",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "But only if the agents can get websites to let them in.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "TechCrunch Equity",
+        "domain": "techcrunch.com",
+        "headline": "Amazon and others are done keeping data center deals secret",
+        "url": "",
+        "tag": "Websites must let agents in",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would dropping NDAs make you trust a data center?",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Data center",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "NDAs gone, trust next?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Sharp and curious, like a journalist breaking a quiet shift; turns skeptical when asking whether dropping NDAs is enough to earn trust.",
+    "thin": false,
+    "caption": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following Microsoft's similar move earlier this year. Hundreds of moratoriums have been proposed or enacted from New York to San Francisco. Would dropping NDAs make you trust a data center in your town?",
+    "hashtags": [
+      "AI",
+      "Amazon",
+      "Microsoft",
+      "DataCenters",
+      "TechNews",
+      "AIInfrastructure",
+      "NDA",
+      "TechCrunch",
+      "AIAgents",
+      "Startups",
+      "BigTech",
+      "Cloud"
+    ],
+    "sources": [
+      "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+    ],
+    "script": "Amazon just ditched secret data center deals. It will stop using NDAs when negotiating with local governments.\nMicrosoft made a similar move earlier this year.\nSecrecy has fueled community backlash against AI infrastructure.\nOpposition has led to hundreds of proposed and enacted moratoriums.\nThey stretch from New York to San Francisco.\nTrust may be the real product for personal AI startups. They want consumers to give AI agents access to inboxes, files, and credit cards.\nBut only if the agents can get websites to let them in.\nWould dropping NDAs make you trust a data center?",
+    "keywords": [
+      "community meeting crowd protest",
+      "woman using laptop credit card"
+    ],
+    "image_prompts": [],
+    "writer_model": "claude",
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-10T09:59:57.191643+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -449,84 +624,38 @@
   "paused": null,
   "spare": [],
   "tried": [
-    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
-    "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
-    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
-    "Photonic circuits become trainable AI hardware",
-    "Let your AI agents paint big arrows, boxes and text on your screen",
-    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
-    "Court throws out killer's sentence after judge said he loved AI video of victim",
-    "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-    "Nikon microscopic video competition winner disqualified for using generative AI",
-    "Magnific One launches to give teams an image generator that avoids the 'AI look' and automatically upholds their brand kit",
-    "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-    "Local Living: world of artificial intelligence",
-    "CUJ holds meet on AI, digital technology in tourism",
-    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
-    "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
-    "Insuretech Outmarket raises $34.5M just months after prior round",
-    "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-    "Today In Artificial Intelligence: Friday, October 9, 2026",
-    "AI coding agents generate more code, but not more software",
-    "OpenAI fires three safety researchers for \"mishandling research information\"",
     "Using AI for just 10 minutes erodes your ability to persist at hard things",
+    "AI coding agents generate more code, but not more software",
+    "Insuretech Outmarket raises $34.5M just months after prior round",
     "Danu Robotics’ fight to build a better recycling robot",
+    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
+    "Magnific One launches to give teams an image generator that avoids the 'AI look' and automatically upholds their brand kit",
+    "Court throws out killer's sentence after judge said he loved AI video of victim",
+    "Photonic circuits become trainable AI hardware",
+    "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+    "Trump’s attempt to rename AI is looking awfully artificial",
+    "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+    "Ben Affleck is an AI nerd, and the internet is impressed",
+    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
+    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+    "South Korea says AI agents appear to have been used to hack the country's banks",
+    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
+    "Local Living: world of artificial intelligence",
+    "Nikon microscopic video competition winner disqualified for using generative AI",
+    "An Anthropic AI model sent a false homicide tip to Philadelphia police",
     "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources",
     "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
-    "South Korea says AI agents appear to have been used to hack the country's banks",
+    "Let your AI agents paint big arrows, boxes and text on your screen",
+    "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
+    "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
+    "Today In Artificial Intelligence: Friday, October 9, 2026",
+    "CUJ holds meet on AI, digital technology in tourism",
+    "OpenAI fires three safety researchers for \"mishandling research information\"",
     "The U.S.-China AI Rivalry is Being Upended",
-    "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-    "Sorted",
-    "Ben Affleck is an AI nerd, and the internet is impressed",
-    "a16z’s Olivia Moore on the state of consumer AI",
-    "The maker of non-text AI model Jev valued at $7.5B just weeks after launch"
+    "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
+    "Sorted"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources",
-            "link": "https://news.vumc.org/2026/10/09/digital-detox-how-to-artificial-intelligence-in-nursing-when-to-see-your-doctor-about-gi-issues-plus-other-stories-with-vanderbilt-health-sources/",
-            "summary": "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources Vanderbilt Health News",
-            "source": "Vanderbilt Health News",
-            "published": "2026-10-09T22:30:53+00:00",
-            "angle": ""
-          },
-          {
-            "title": "El-Sayed talks corporate money, healthcare, artificial intelligence at Lansing town hall",
-            "link": "https://michiganadvance.com/2026/10/09/el-sayed-talks-corporate-money-healthcare-artificial-intelligence-at-lansing-town-hall/",
-            "summary": "El-Sayed talks corporate money, healthcare, artificial intelligence at Lansing town hall Michigan Advance",
-            "source": "Michigan Advance",
-            "published": "2026-10-09T21:53:49+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Are Americans Who Use the Term ‘Artificial Intelligence’ the Enemy?",
-            "link": "https://blogs.timesofisrael.com/are-americans-who-use-the-term-artificial-intelligence-the-enemy/",
-            "summary": "Are Americans Who Use the Term ‘Artificial Intelligence’ the Enemy? The Times of Israel",
-            "source": "The Times of Israel",
-            "published": "2026-10-09T22:32:00+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-10-10T09:10:35.923765+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1451,6 +1580,51 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
+            "link": "https://www.nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html",
+            "summary": "",
+            "source": "nytimes.com",
+            "published": "2026-10-10T03:42:11+00:00",
+            "buzz": "Hacker News 4 points",
+            "angle": "Anthropic's AI agents tried to fill out US visa forms on the State Department website. It's a weird, real-world test of agents acting on government sites, from a known name and reported by the NYT."
+          },
+          {
+            "title": "Trump’s attempt to rename AI is looking awfully artificial",
+            "link": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+            "summary": "President Donald Trump has a knack for turning words against his enemies. His first successful presidential run was built on monikers like \"Little Marco\" and \"Crooked Hillary\"; he changed \"fake news\" from a phrase describing scammy media outlets to a derogatory term for the press at large. Over the past few weeks, he's clearly decided […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-09T14:25:43+00:00",
+            "angle": "Trump is trying to rename 'artificial intelligence', and it's sparking a debate. It's a weird political story that people will want to argue about with friends."
+          },
+          {
+            "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+            "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+            "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-09T16:56:42+00:00",
+            "angle": "Amazon is dropping secret NDAs in data center deals with local governments, following Microsoft. It matters for electricity bills and local backlash, and it's a big-name industry move."
+          }
+        ],
+        "choose_deadline": "2026-10-10T09:50:24.817087+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2039,7 +2213,7 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T09:45:29.941099+05:30",
+    "at": "2026-10-10T09:59:57.191686+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2063,59 +2237,59 @@
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 298,
-    "claude_calls": 59,
-    "claude_backup": 57
+    "calls": 354,
+    "claude_calls": 76,
+    "claude_backup": 76
   },
   "gemini_errors": [
     {
-      "at": "04:19",
+      "at": "04:29",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     },
     {
-      "at": "04:20",
-      "error": "Claude refused (200): {\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011CfsuyY5DG5fNSnBvgYWMc\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"scores\\\":{\\\"",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:20",
+      "at": "04:29",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     },
     {
-      "at": "04:20",
-      "error": "Claude backup failed: Claude not available",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:20",
+      "at": "04:29",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     },
     {
-      "at": "04:20",
-      "error": "Claude backup failed: Claude not available",
+      "at": "04:29",
+      "error": "Claude refused (200): {\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011CfsvitR2d5rUxZ8Cj6Bf3\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"\",\"sign",
       "day": "2026-10-10"
     },
     {
-      "at": "04:20",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:20",
-      "error": "Claude backup failed: Claude not available",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:20",
+      "at": "04:29",
       "error": "gemini-3.6-flash: free quota used up for now",
       "day": "2026-10-10"
     },
     {
-      "at": "04:20",
+      "at": "04:29",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:29",
       "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:29",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:29",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:29",
+      "error": "Claude backup failed: Claude not available",
       "day": "2026-10-10"
     }
   ],
