@@ -103,3 +103,4 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   fact-checking with Google Search and remains the fallback (no key / no credit / errors). Est. $0.05-0.08/reel
   (Sonnet 5.5: $2 in / $10 out per MTok). meta.writer and editor.reviewer record which model did it — compare
   editor scores and views Claude vs Gemini on Sunday.
+- 2026-10-10 08:20 · Owner: back to 12 reels/day (odd hours IST). Claude Sonnet 5.5 key added, so writing + editor no longer use Gemini quota; Gemini still fact-checks. Missed morning slots not chased (guarantee reset).
