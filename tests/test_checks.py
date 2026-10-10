@@ -196,6 +196,24 @@ writer.time.sleep = _sleep
 writer.BACKUP_LEFT[0] = writer.BACKUP_CALLS[0] = 0
 writer.ERRORS.clear()
 
+# hype / AI-sounding wording is caught, names that look like hype words are not; em dashes become commas
+check("hype words", writer.hype_phrases("This groundbreaking model will revolutionize coding."),
+      ["groundbreaking", "revolutionize"])
+check("names not hype", writer.hype_phrases("Realm and Harness raised money."), [])
+check("not-just shape", bool(writer.hype_phrases("It's not just a chatbot, it's an agent.")), True)
+check("em dash spoken", writer.clean_spoken("OpenAI\u2014the maker of ChatGPT\u2014cut prices."),
+      "OpenAI, the maker of ChatGPT, cut prices.")
+
+_ws, _fcs = writer.write_script, main.fact_check_step
+plain = " ".join(["Nvidia sold three billion dollars of chips to Microsoft this week."] * 6)
+writer.write_script = lambda topic, previous=None, instruction=None: {"script": plain, "beats": []}
+main.fact_check_step = lambda d, t: {**d, "fact_status": "ok"}
+check("de-hype rewrites", main.de_hype({"script": "A groundbreaking deal. " + plain}, {})["script"], plain)
+main.fact_check_step = lambda d, t: {**d, "fact_status": "unsure"}
+check("de-hype keeps checked original", main.de_hype({"script": "A groundbreaking deal."}, {})["script"],
+      "A groundbreaking deal.")
+writer.write_script, main.fact_check_step = _ws, _fcs
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

@@ -233,8 +233,11 @@ SCRIPT
   never a generic "What do you think?". Do NOT add a "follow us" line or mention any @handle.
 - Never say "according to <outlet>", "<outlet> reported" or "as reported by": just state the facts (the source is
   shown on screen and in the caption).
-- Banned words: game-changer, revolutionize, revolutionary, cutting-edge, unleash, delve, landscape, buckle up,
-  "the future is here", "in today's world", "stay tuned", "mind-blowing".
+- Banned words: game-changer, revolutionize, revolutionary, cutting-edge, groundbreaking, transformative, seamless,
+  unparalleled, pivotal, unleash, delve, landscape, realm, tapestry, testament to, buckle up, "the future is here",
+  "in today's world", "stay tuned", "mind-blowing", "let that sink in", "you won't believe", "nobody is talking about".
+- No AI-sounding shapes: "It's not just X, it's Y", "not only X but also Y", one-word reveal questions ("The result?",
+  "The catch?"), lists of three adjectives. Say the plain fact.
 - No emojis, hashtags, stage directions or brackets in the lines. Write numbers the way they're said ("ten times", "two billion").
 
 VISUALS — split the script into 6 to 9 beats (one or two sentences each). Every beat gets ONE visual.
@@ -296,6 +299,11 @@ def clean_spoken(line):
                   line, flags=re.I)
     line = re.sub(r"(?i)^\s*(narrator|voice ?over|vo|host|speaker|line \d+)\s*:\s*", "", line)
     line = line.replace("*", "").replace("#", "").replace("_", " ")
+    # typography a voice reads badly and that marks text as machine-written (from instagram-agent-skill's humanizer)
+    line = re.sub(r"[\u200b-\u200f\u2060\ufeff\u00ad\u180e\u061c\u202a-\u202e]", "", line)
+    line = re.sub(r"\s*\u2014\s*", ", ", line).replace("\u2013", "-").replace("\u2026", "...")
+    line = line.replace("\u2018", "'").replace("\u2019", "'").replace("\u201c", '"').replace("\u201d", '"')
+    line = re.sub(r",\s*([,.!?])", r"\1", line)
     return re.sub(r"\s+", " ", line).strip()
 
 
@@ -905,6 +913,27 @@ def specificity(script):
             if t[:1].isupper() and t not in COMMON_CAPS and (i > 0 or len(t) > 2) and not t.isdigit():
                 names.add(t)
     return names, bool(NUMBER_WORDS.search(script or ""))
+
+
+# AI-sounding / hype wording (lexicon adapted from github.com/Jakeschincariol/instagram-agent-skill, MIT).
+# Single words match lower-case only, so product and company names (Realm, Harness, Seamless) are never flagged.
+HYPE_WORDS = re.compile(
+    r"\b(game[- ]chang(?:er|ers|ing)|revolutioni[sz](?:e|es|ed|ing)|revolutionary|cutting-edge|groundbreaking|"
+    r"transformative|seamless(?:ly)?|unparalleled|pivotal|unleash(?:es|ed|ing)?|delve[sd]?|delving|tapestry|realm|"
+    r"testament to|mind-blowing|jaw-dropping|paradigm shift)\b")
+HYPE_PHRASES = re.compile(
+    r"\b(in today's (?:fast-paced|digital) (?:world|age)|ever-(?:evolving|changing) (?:landscape|world)|"
+    r"buckle up|let that sink in|you won'?t believe|(?:nobody|no one) is talking about|stop scrolling|"
+    r"the future is here|watch till the end|this changes everything|here'?s the thing|picture this|let'?s face it|"
+    r"it'?s not (?:just|only) [^.!?\n]{2,60}[,.] it'?s|not only\b[^.!?\n]{2,80}\bbut also)\b"
+    r"|^\s*(?:the result|the best part|the kicker|the catch|the twist)\?", re.I | re.M)
+
+
+def hype_phrases(script):
+    """Hype and AI-sounding phrases that make a news reel sound like an ad or a bot."""
+    found = [m.group(0) for m in HYPE_WORDS.finditer(script or "")] + \
+            [m.group(0).strip() for m in HYPE_PHRASES.finditer(script or "")]
+    return list(dict.fromkeys(found))[:6]
 
 
 def vague_phrases(script):

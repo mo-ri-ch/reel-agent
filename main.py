@@ -472,8 +472,30 @@ def substance_step(draft, topic):
     return draft
 
 
+def de_hype(draft, topic):
+    """Hype / AI-sounding wording ("groundbreaking", "It's not just X, it's Y") gets one plain-English rewrite.
+    If the rewrite fails or doesn't pass the fact check, the original (already checked) script is kept."""
+    found = writer.hype_phrases(draft.get("script", ""))
+    if not found or draft.get("fact_status") == "unsure":
+        return draft
+    fix = ("These phrases sound like an ad or a bot: " + ", ".join(f"“{p}”" for p in found) +
+           ". Rewrite only those lines in plain spoken news English: state the concrete fact instead. Keep every "
+           "other line, every name, number and the beats unchanged.")
+    try:
+        better = fact_check_step(writer.write_script(topic, previous=draft, instruction=fix), topic)
+    except Exception as e:
+        print(f"De-hype skipped: {e}")
+        return draft
+    if better.get("fact_status") == "unsure" or len((better.get("script") or "").split()) < FLOOR_WORDS:
+        return draft
+    better["fix_rounds"] = draft.get("fix_rounds", 0)
+    print(f"De-hyped: {found}")
+    return better
+
+
 def make_specific(draft, topic):
     """No vague 'a developer' / 'a startup': find the real names and rewrite with them (and their photo cards)."""
+    draft = de_hype(draft, topic)
     phrases = writer.vague_phrases(draft.get("script", ""))
     if not phrases:
         return draft
