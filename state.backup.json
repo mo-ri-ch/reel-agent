@@ -1,42 +1,156 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-      "link": "https://github.com/rociiu/talorys",
-      "summary": "",
-      "source": "github.com",
-      "published": "2026-10-10T10:52:09+00:00",
-      "buzz": "Hacker News 169 points",
-      "angle": "How to run your own self-hosted personal AI agent completely for free"
-    },
-    {
-      "title": "Mac Users Are Nuking Every Trace of Apple AI on Their Machines",
-      "link": "https://futurism.com/artificial-intelligence/mac-users-nuking-every-trace-of-apple-ai",
-      "summary": "Mac Users Are Nuking Every Trace of Apple AI on Their Machines Futurism",
-      "source": "Futurism",
-      "published": "2026-10-10T16:02:00+00:00",
-      "angle": "Why Apple users are completely wiping Apple AI off their Macs"
-    },
-    {
-      "title": "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor",
-      "link": "https://futurism.com/artificial-intelligence/anthropic-solve-humor",
-      "summary": "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor Futurism",
-      "source": "Futurism",
-      "published": "2026-10-10T15:01:00+00:00",
-      "angle": "Anthropic researchers claim they used Claude to finally 'solve' humor"
-    }
-  ],
-  "choose_deadline": "2026-10-11T01:00:31.429820+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+    "link": "https://github.com/rociiu/talorys",
+    "summary": "",
+    "source": "github.com",
+    "published": "2026-10-10T10:52:09+00:00",
+    "buzz": "Hacker News 169 points",
+    "angle": "How to run your own self-hosted personal AI agent completely for free"
+  },
+  "draft": {
+    "title": "Talorys: Self-Hosted AI Agent on Cloudflare",
+    "hook_text": "Run your own personal AI agent.",
+    "beats": [
+      {
+        "line": "Developer Rociiu just released Talorys, a self-hosted personal AI agent running entirely on Cloudflare's free tier.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://github.com/rociiu/talorys",
+        "tag": "Talorys on Cloudflare",
+        "name": "Rociiu",
+        "role": "Creator, Talorys",
+        "x": "",
+        "brands": [
+          {
+            "name": "Cloudflare",
+            "domain": "cloudflare.com"
+          }
+        ]
+      },
+      {
+        "line": "It operates serverless using Cloudflare Workers so you avoid expensive subscription fees for cloud hosting.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Cloudflare Workers",
+        "outlet": "",
+        "domain": "cloudflare.com",
+        "headline": "",
+        "url": "https://developers.cloudflare.com/workers/",
+        "tag": "Zero server costs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Cloudflare",
+            "domain": "cloudflare.com"
+          }
+        ]
+      },
+      {
+        "line": "The open-source project handles chats and automation while keeping your personal data stored privately on your own infrastructure.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "GitHub",
+        "domain": "github.com",
+        "headline": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+        "url": "",
+        "tag": "Open-source data privacy",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "You deploy the codebase directly to your own account in minutes without needing dedicated virtual private servers.",
+        "visual": "clip",
+        "query": "person typing code",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Deploy in minutes",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust a serverless AI agent with your daily tasks?",
+        "visual": "clip",
+        "query": "using mobile phone",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Trust serverless AI?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "curious and direct, highlighting the practicality of free serverless hosting",
+    "thin": false,
+    "caption": "Developer Rociiu released Talorys, a self-hosted personal AI agent running on Cloudflare's free tier. The open-source tool uses Cloudflare Workers for serverless execution while keeping your data private. Would you use a self-hosted AI agent?",
+    "hashtags": [
+      "Talorys",
+      "Cloudflare",
+      "AIAgent",
+      "OpenSource"
+    ],
+    "sources": [
+      "https://github.com/rociiu/talorys"
+    ],
+    "script": "Developer Rociiu just released Talorys, a self-hosted personal AI agent running entirely on Cloudflare's free tier.\nIt operates serverless using Cloudflare Workers so you avoid expensive subscription fees for cloud hosting.\nThe open-source project handles chats and automation while keeping your personal data stored privately on your own infrastructure.\nYou deploy the codebase directly to your own account in minutes without needing dedicated virtual private servers.\nWould you trust a serverless AI agent with your daily tasks?",
+    "keywords": [
+      "person typing code",
+      "using mobile phone"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://github.com/rociiu/talorys"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-11T01:30:46.978911+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -442,21 +556,20 @@
   "paused": null,
   "spare": [
     {
-      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-      "link": "https://github.com/rociiu/talorys",
-      "summary": "",
-      "source": "github.com",
-      "published": "2026-10-10T10:52:09+00:00",
-      "buzz": "Hacker News 169 points",
-      "angle": "How to run your own self-hosted personal AI agent completely for free"
-    },
-    {
       "title": "Mac Users Are Nuking Every Trace of Apple AI on Their Machines",
       "link": "https://futurism.com/artificial-intelligence/mac-users-nuking-every-trace-of-apple-ai",
       "summary": "Mac Users Are Nuking Every Trace of Apple AI on Their Machines Futurism",
       "source": "Futurism",
       "published": "2026-10-10T16:02:00+00:00",
       "angle": "Why Apple users are completely wiping Apple AI off their Macs"
+    },
+    {
+      "title": "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor",
+      "link": "https://futurism.com/artificial-intelligence/anthropic-solve-humor",
+      "summary": "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor Futurism",
+      "source": "Futurism",
+      "published": "2026-10-10T15:01:00+00:00",
+      "angle": "Anthropic researchers claim they used Claude to finally 'solve' humor"
     }
   ],
   "tried": [
@@ -494,52 +607,7 @@
     "Mac Users Are Nuking Every Trace of Apple AI on Their Machines",
     "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "AI agent makers are promising privacy — will they deliver?",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
-            "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-10T13:00:00+00:00",
-            "angle": "OpenAI CEO Sam Altman launches 'Dots' AI agent with major privacy promises."
-          },
-          {
-            "title": "What’s Dragging Down A.I. Efficiency? The ‘Verification Tax.’",
-            "link": "https://www.nytimes.com/2026/10/10/business/dealbook/ai-verification-tax-rework.html",
-            "summary": "What’s Dragging Down A.I. Efficiency? The ‘Verification Tax.’ The New York Times",
-            "source": "The New York Times",
-            "published": "2026-10-10T12:00:02+00:00",
-            "angle": "The New York Times reveals the 'Verification Tax' slowing down AI efficiency."
-          },
-          {
-            "title": "Nvidia commits $1 billion for US scientific AI supercomputing",
-            "link": "http://datacenters.economictimes.indiatimes.com/amp/news/policy-land-power/nvidia-commits-1-billion-for-us-scientific-ai-supercomputing/134853814",
-            "summary": "Nvidia commits $1 billion for US scientific AI supercomputing ET Datacenters",
-            "source": "ET Datacenters",
-            "published": "2026-10-10T11:51:32+00:00",
-            "angle": "Nvidia commits $1 billion to build massive US scientific AI supercomputing power."
-          }
-        ],
-        "choose_deadline": "2026-10-10T20:00:51.815825+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1029,6 +1097,51 @@
           }
         ],
         "choose_deadline": "2026-10-11T00:45:51.410686+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+            "link": "https://github.com/rociiu/talorys",
+            "summary": "",
+            "source": "github.com",
+            "published": "2026-10-10T10:52:09+00:00",
+            "buzz": "Hacker News 169 points",
+            "angle": "How to run your own self-hosted personal AI agent completely for free"
+          },
+          {
+            "title": "Mac Users Are Nuking Every Trace of Apple AI on Their Machines",
+            "link": "https://futurism.com/artificial-intelligence/mac-users-nuking-every-trace-of-apple-ai",
+            "summary": "Mac Users Are Nuking Every Trace of Apple AI on Their Machines Futurism",
+            "source": "Futurism",
+            "published": "2026-10-10T16:02:00+00:00",
+            "angle": "Why Apple users are completely wiping Apple AI off their Macs"
+          },
+          {
+            "title": "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor",
+            "link": "https://futurism.com/artificial-intelligence/anthropic-solve-humor",
+            "summary": "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor Futurism",
+            "source": "Futurism",
+            "published": "2026-10-10T15:01:00+00:00",
+            "angle": "Anthropic researchers claim they used Claude to finally 'solve' humor"
+          }
+        ],
+        "choose_deadline": "2026-10-11T01:00:31.429820+05:30",
         "topic": null,
         "draft": null,
         "video_file_id": null,
@@ -1647,7 +1760,7 @@
   "report_day": "2026-10-10",
   "ig_count": {
     "day": "2026-10-11",
-    "at": "2026-10-11T00:45:24.786514+05:30",
+    "at": "2026-10-11T01:00:47.608757+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1671,58 +1784,58 @@
   "late_note_for": "2026-10-10-2",
   "gemini_use": {
     "day": "2026-10-11",
-    "calls": 24,
+    "calls": 41,
     "claude_calls": 0,
-    "claude_backup": 2
+    "claude_backup": 6
   },
   "gemini_errors": [
     {
-      "at": "09:50",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "16:30",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "16:30",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "16:30",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "16:30",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "17:05",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "19:05",
+      "at": "19:20",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-11"
     },
     {
-      "at": "19:05",
+      "at": "19:20",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-11"
     },
     {
-      "at": "19:20",
+      "at": "19:30",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "19:30",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "19:30",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "19:30",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "19:30",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-11"
     },
     {
-      "at": "19:20",
+      "at": "19:30",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "19:30",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "19:30",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-11"
     }
