@@ -191,6 +191,7 @@ writer.ERRORS.clear()
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
+check("drop newsletter roundup", news.newsworthy({"title": "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources", "source": "Vanderbilt Health News", "link": "https://news.vumc.org/x"}), False)
 check("drop how-to essay", news.newsworthy({"title": "How to Defend Against AI-Designed Viruses",
                                             "source": "War on the Rocks"}), False)
 check("drop campus grants", news.newsworthy({"title": "Penn State Announces New Artificial Intelligence Grants "

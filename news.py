@@ -39,10 +39,11 @@ LAST_REPORT = {}  # headlines found per source on the last fetch (for checking t
 
 # Not news for our audience: press releases, small-company PR, local events and trainings
 PR_SOURCES = re.compile(r"(?i)pr ?newswire|business ?wire|globe ?newswire|ein ?presswire|openpr|newswire|"
-                        r"accesswire|prlog|press release|marketscreener|stocktitan|tipranks|investing\.com|"
+                        r"accesswire|prlog|press release|news\.vumc\.org|health news\b|marketscreener|stocktitan|tipranks|investing\.com|"
                         r"zacks|benzinga|fool\.com|seeking ?alpha|marketbeat|newswise|eurekalert|prweb|einnews")
 WEAK_STORY = re.compile(
     r"(?i)\b(announces? (strategic|its|a) (foray|partnership|collaboration|mou)|strategic foray|signs? (an? )?mou|"
+    r"plus other stories|other stories with|news roundup|weekly roundup|how-to;|"
     r"bootcamp|workshop|webinar|seminar|training (programme|program|session)|commences|inaugurat|felicitat|"
     r"conference (held|organised|organized)|awareness (drive|programme|program)|hackathon|faculty development|"
     r"students? (learn|trained)|share price|stock (rises|falls|jumps|surges)|shares (rise|fall|jump|surge)|"
