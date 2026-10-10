@@ -164,6 +164,28 @@ check("claude switched off", writer.CLAUDE_OFF[0], True)
 writer.requests.post, _cfg.ANTHROPIC_API_KEY, writer.article_text, writer.ask = _post, _key, _at, _ask3
 writer.CLAUDE_OFF[0] = False
 
+# Gemini's free quota used up: Claude takes the job (within today's budget); no budget = the error stays
+_cfg.ANTHROPIC_API_KEY = "test"
+_sleep = writer.time.sleep
+writer.time.sleep = lambda x: None
+def _fake_post(url, *a, **k):
+    if "googleapis" in url:
+        return _R(429, {"error": "quota PerDay"})
+    return _R(200, {"content": [{"type": "text", "text": '{"ok": 1}'}]})
+writer.requests.post = _fake_post
+writer.BACKUP_LEFT[0] = 1
+check("quota -> claude backup", writer.parse_json(writer.ask("x", search=True, json_mode=True)), {"ok": 1})
+check("backup counted", writer.BACKUP_CALLS[0], 1)
+try:
+    writer.ask("x")
+    check("budget used up -> error", "no error", "error")
+except RuntimeError:
+    pass
+writer.requests.post, _cfg.ANTHROPIC_API_KEY = _post, _key
+writer.time.sleep = _sleep
+writer.BACKUP_LEFT[0] = writer.BACKUP_CALLS[0] = 0
+writer.ERRORS.clear()
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

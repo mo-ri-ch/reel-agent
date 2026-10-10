@@ -1246,6 +1246,7 @@ def handle_button(s, cq):
 # ---------- modes ----------
 def cmd_poll():
     s = st.load()
+    backup_budget(s)
     if st.RECOVERED:
         try:
             tg.send("⚠️ " + st.RECOVERED + " Everything carries on; Claude will check it.")
@@ -1567,6 +1568,7 @@ def cmd_render():
     import tts
     import video
     s = st.load()
+    backup_budget(s)
     try:
         os.makedirs(WORK_DIR, exist_ok=True)
         tg.action("upload_video")
@@ -1790,11 +1792,23 @@ def note_gemini(s):
         use = {"day": day, "calls": 0}
     use["calls"] = use.get("calls", 0) + writer.CALLS[0]
     use["claude_calls"] = use.get("claude_calls", 0) + writer.CLAUDE_CALLS[0]
-    writer.CALLS[0] = writer.CLAUDE_CALLS[0] = 0
+    use["claude_backup"] = use.get("claude_backup", 0) + writer.BACKUP_CALLS[0]
+    writer.CALLS[0] = writer.CLAUDE_CALLS[0] = writer.BACKUP_CALLS[0] = 0
     s["gemini_use"] = use
     if writer.ERRORS:
         s["gemini_errors"] = ((s.get("gemini_errors") or []) + [{**e, "day": day} for e in writer.ERRORS])[-10:]
         writer.ERRORS.clear()
+    backup_budget(s)
+
+
+CLAUDE_BACKUP_PER_DAY = 150  # max jobs/day Claude takes over when Gemini's free quota is used up (~$1-2/day at most)
+
+
+def backup_budget(s):
+    """Tells writer how many Gemini jobs Claude may still take over today."""
+    use = s.get("gemini_use") or {}
+    used = use.get("claude_backup", 0) if use.get("day") == st.now().date().isoformat() else 0
+    writer.BACKUP_LEFT[0] = max(0, CLAUDE_BACKUP_PER_DAY - used)
 
 
 def cmd_feeds():

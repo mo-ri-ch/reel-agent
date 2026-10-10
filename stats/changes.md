@@ -104,3 +104,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   (Sonnet 5.5: $2 in / $10 out per MTok). meta.writer and editor.reviewer record which model did it — compare
   editor scores and views Claude vs Gemini on Sunday.
 - 2026-10-10 08:20 · Owner: back to 12 reels/day (odd hours IST). Claude Sonnet 5.5 key added, so writing + editor no longer use Gemini quota; Gemini still fact-checks. Missed morning slots not chased (guarantee reset).
+
+## 2026-10-10: Claude covers Gemini quota outages
+- Change: when Gemini's free quota is used up, Claude Sonnet does that job (story picking, fact check, etc.), capped at 150 jobs/day. The fact check stays strict: Claude may only use the fetched source pages, and our code still confirms every quote is really on the page.
+- Why: the quota ran out at 02:50 IST and no reels posted from 01:00 to 09:00 IST (5 slots missed).
+- Metric: slots posted per day (baseline 10 Oct: 0 of the first 5); gemini_use.claude_backup (cost).

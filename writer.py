@@ -49,6 +49,29 @@ def ask_claude(parts, temperature=0.5, max_tokens=4000):
             return text
     raise RuntimeError("Claude gave no reply")
 CALLS = [0]   # Gemini requests made in this run
+BACKUP_CALLS = [0]   # jobs Claude did because Gemini's free quota was used up (this run)
+BACKUP_LEFT = [0]    # how many more of those today (set by main.py from state.json; caps the cost)
+
+
+def claude_backup(prompt, search, json_mode, last):
+    """Gemini's free quota is used up: let Claude do the job, so slots don't go empty for hours.
+    Claude has no Google Search here, so it may only use the text it is given (stricter, never looser)."""
+    if BACKUP_LEFT[0] <= 0:
+        raise RuntimeError(last)
+    parts = list(prompt) if isinstance(prompt, list) else [{"text": prompt}]
+    extra = ""
+    if search:
+        extra += ("\n\n(You can't search the web now: use ONLY the source text given above; anything not in it is "
+                  "\"unsupported\". Never invent quotes or URLs.)")
+    if json_mode:
+        extra += "\n\nReply with ONLY the JSON, no other text."
+    if extra:
+        parts.append({"text": extra})
+    BACKUP_LEFT[0] -= 1
+    BACKUP_CALLS[0] += 1
+    text = ask_claude(parts, temperature=0.2 if search else 0.5)
+    print("Gemini quota used up: Claude did this job")
+    return text
 
 
 def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
@@ -113,6 +136,11 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
                     body["generationConfig"]["responseMimeType"] = "application/json"
         print(f"Moving on from {model}: {last}")
     ERRORS.append({"at": time.strftime("%H:%M"), "error": last[:200]})
+    if "quota" in last or "overloaded" in last:
+        try:
+            return claude_backup(prompt, search, json_mode, last)
+        except Exception as e:
+            print(f"Claude backup failed: {e}")
     raise RuntimeError(f"Gemini didn't give a usable reply, please try again in a few minutes. {last}")
 
 
