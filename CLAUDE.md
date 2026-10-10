@@ -65,7 +65,9 @@ through a Telegram bot and reads Claude's messages there.
 
 ## Weekly review (Sundays)
 1. Analyse the last 7 days in `stats/insights.json` against the week before: views/reel, median, watch time,
-   shares, saves, followers; by slot, kind, engine/voice, person shown, script length, source/topic.
+   shares, saves, followers; by slot, kind, engine/voice, person shown, script length, source/topic, hook_score.
+   Rank reels by **outlier multiple** (views ÷ the account's median views) and **shares per reach** (the strongest
+   signal), not raw views. Check whether hook_score tracks watch time; if it doesn't, don't trust it.
 2. Read `stats/changes.md`: for each change made ≥ 7 days ago, did its target metric improve? Revert what got worse.
 3. Pick **at most 2** improvements backed by the data (e.g. hook style, script length, story selection hints,
    visuals), implement, test, push, and log them in `stats/changes.md` (date, change, why, metric + baseline).

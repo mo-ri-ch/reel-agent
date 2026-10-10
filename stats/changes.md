@@ -109,3 +109,10 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Change: when Gemini's free quota is used up, Claude Sonnet does that job (story picking, fact check, etc.), capped at 150 jobs/day. The fact check stays strict: Claude may only use the fetched source pages, and our code still confirms every quote is really on the page.
 - Why: the quota ran out at 02:50 IST and no reels posted from 01:00 to 09:00 IST (5 slots missed).
 - Metric: slots posted per day (baseline 10 Oct: 0 of the first 5); gemini_use.claude_backup (cost).
+
+## 2026-10-10: ideas from github.com/Jakeschincariol/instagram-agent-skill (MIT)
+- Hooks: 3 options on proven formulas, hookscore.py keeps the best (only if better than the original). Metric: avg watch time, 3-second hold; meta.hook_score.
+- Hype/AI-sounding phrases flagged and rewritten once (checked original kept if the rewrite fails); em dashes → commas. Metric: editor "flow" score.
+- Captions: max 5 hashtags (Instagram's limit), key fact in the first 125 characters. Metric: reach from search/explore, shares.
+- Weekly review ranks by outlier multiple and shares per reach.
+- Not taken: auto word-swapping (changes meaning in news), DM/comment bots, profile rewrite (ask owner first).
