@@ -97,3 +97,4 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   could be fact-checked since 23:00. Owner chose "stay free, post fewer": 6 reels/day at 01, 05, 09, 13, 17, 21 IST
   (keeps 13 & 17, our best slots). All quality checks kept. Missed morning slots aren't chased (guarantee reset).
   gemini_use/gemini_errors now saved in state. Baseline for the new schedule: views/reel and follows per day.
+- 2026-10-10 08:00 · Owner: back to the earlier Indian-time slots for 6/day: 09:00, 11:30, 14:00, 16:30, 19:00, 21:30 IST (24-hour spread returns with 12/day).

@@ -1,7 +1,8 @@
 # Gradient Daily reel agent: rules for Claude
 
 An automated Instagram account (**@gradientai.news**, "Gradient Daily · AI News", by Gradient AI Labs) that posts
-**6 AI-news reels a day**, one every 4 hours (01, 05, 09, 13, 17, 21 IST), for a global audience. (Was 12 until
+**6 AI-news reels a day** at Indian times (09:00, 11:30, 14:00, 16:30, 19:00, 21:30 IST; owner's choice 2026-10-10 —
+back to a 24-hour spread when we return to 12 a day). (Was 12 until
 2026-10-10; cut to 6 by the owner because Google's FREE Gemini quota can't cover 12 fully checked reels. Watch
 `state.json` → `gemini_use` / `gemini_errors`. Paid Gemini (~$15-50/mo est.) was offered and declined for now.) The owner talks to it
 through a Telegram bot and reads Claude's messages there.
