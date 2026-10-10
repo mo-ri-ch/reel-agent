@@ -40,8 +40,8 @@ jobs:
       IG_GRAPH_BASE: ${{ vars.IG_GRAPH_BASE || 'https://graph.facebook.com/v26.0' }}
       INSTAGRAM_HANDLE: gradientai.news   # your Instagram handle, shown on every reel
       TIMEZONE: ${{ vars.TIMEZONE || 'Asia/Kolkata' }}
-      POST_TIMES: ${{ vars.POST_TIMES || '01:00,03:00,05:00,07:00,09:00,11:00,13:00,15:00,17:00,19:00,21:00,23:00' }}
-      OFFER_TIMES: ${{ vars.OFFER_TIMES || '00:00,02:00,04:00,06:00,08:00,10:00,12:00,14:00,16:00,18:00,20:00,22:00' }}
+      POST_TIMES: ${{ vars.POST_TIMES || '09:00,11:30,14:00,16:30,19:00,21:30' }}
+      OFFER_TIMES: ${{ vars.OFFER_TIMES || '07:00,09:30,12:00,14:30,17:00,19:30' }}
       AUTO_PICK_HOURS: ${{ vars.AUTO_PICK_HOURS || '0.5' }}
       GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
       WHISPER_MODEL: ${{ vars.WHISPER_MODEL || 'base.en' }}

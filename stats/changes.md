@@ -119,3 +119,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-10 13:14: back to free Gemini only
 - Owner: "Sonnet is costly. Stay free". Claude switched off (USE_CLAUDE flag). Metric: slots posted/day on the free quota.
+
+## 2026-10-10 13:19: 6 reels/day (owner chose, free quota)
+- 09:00, 11:30, 14:00, 16:30, 19:00, 21:30 IST. Metric: slots filled on time (12/day missed 1-9 AM on 10 Oct).
