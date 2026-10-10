@@ -98,3 +98,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   (keeps 13 & 17, our best slots). All quality checks kept. Missed morning slots aren't chased (guarantee reset).
   gemini_use/gemini_errors now saved in state. Baseline for the new schedule: views/reel and follows per day.
 - 2026-10-10 08:00 · Owner: back to the earlier Indian-time slots for 6/day: 09:00, 11:30, 14:00, 16:30, 19:00, 21:30 IST (24-hour spread returns with 12/day).
+- 2026-10-10 08:10 · Owner: try Claude Sonnet 5.5. Built (inactive until the ANTHROPIC_API_KEY secret exists):
+  Claude writes scripts from the source article text and runs the editor-in-chief review; Gemini (free) keeps
+  fact-checking with Google Search and remains the fallback (no key / no credit / errors). Est. $0.05-0.08/reel
+  (Sonnet 5.5: $2 in / $10 out per MTok). meta.writer and editor.reviewer record which model did it — compare
+  editor scores and views Claude vs Gemini on Sunday.

@@ -47,6 +47,8 @@ through a Telegram bot and reads Claude's messages there.
 - Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
 - Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
 - Every reel is scored by the editor-in-chief (writer.editor_review) before posting: pass 8/10. Never lower the bar.
+- Models: Claude Sonnet 5.5 (paid, owner-approved trial 2026-10-10, key = ANTHROPIC_API_KEY secret) writes scripts + editor review;
+  Gemini (free) fact-checks with Google Search and is the fallback. Watch state.json gemini_use.claude_calls.
 - No "Top AI headlines" backup reels (owner, 2026-10-09: made no sense). A late, fully checked reel beats an on-time bad one.
 - Scripts: 30-40 s, 75-105 words, every sentence a concrete fact. Owner rejected short 45-65 word scripts
   (2026-10-09: "getting so bad"). Don't shorten scripts again without asking.

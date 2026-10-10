@@ -144,6 +144,26 @@ writer.ask = lambda *a, **k: '{"repeat": false, "covered": 0}'
 check("different story kept", writer.same_event({"title": "Mistral cuts API prices"}, ["Mistral's new 1T model"]), None)
 writer.ask = _ask2
 
+# Claude writes when a key is set; any problem falls back to Gemini; a refused key switches Claude off for the run
+import config as _cfg  # noqa: E402
+_post, _key, _at, _ask3 = writer.requests.post, _cfg.ANTHROPIC_API_KEY, writer.article_text, writer.ask
+class _R:
+    def __init__(self, code, body): self.status_code, self._b, self.text = code, body, str(body)
+    def json(self): return self._b
+_cfg.ANTHROPIC_API_KEY = "test"
+writer.CLAUDE_OFF[0] = False
+writer.article_text = lambda url, limit=5000: "Anthropic released Claude Sonnet 5.5 on Tuesday. " * 40
+writer.requests.post = lambda *a, **k: _R(200, {"content": [{"type": "text", "text":
+    '{"title": "t", "beats": [{"line": "Anthropic released Claude Sonnet 5.5.", "visual": "official"}]}'}]})
+writer.ask = lambda *a, **k: '{"line": "Anthropic just shipped Claude Sonnet 5.5."}'
+check("claude writes", writer.write_script({"title": "Sonnet 5.5", "link": "https://x"})["writer_model"], "claude")
+writer.requests.post = lambda *a, **k: _R(402, {"error": "credit balance too low"})
+writer.ask = lambda *a, **k: '{"title": "t", "beats": [{"line": "Anthropic released Claude Sonnet 5.5 today.", "visual": "official"}]}'
+check("no credit -> gemini", writer.write_script({"title": "Sonnet 5.5", "link": "https://x"})["writer_model"], "gemini")
+check("claude switched off", writer.CLAUDE_OFF[0], True)
+writer.requests.post, _cfg.ANTHROPIC_API_KEY, writer.article_text, writer.ask = _post, _key, _at, _ask3
+writer.CLAUDE_OFF[0] = False
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

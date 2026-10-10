@@ -840,7 +840,7 @@ def reel_meta(s):
             "engine": (s.get("engine_used") or s.get("last_engine")) if s.get("voice_mode") == "ai" else "own voice",
             "voice": d.get("voice_used", "")[:60], "person": any(b.get("visual") == "person" for b in beats),
             "words": len(d.get("script", "").split()), "visuals": d.get("visual_summary", "")[:80],
-            "editor": (d.get("editor") or {}).get("overall"),
+            "editor": (d.get("editor") or {}).get("overall"), "writer": d.get("writer_model", ""),
             "made": st.now().isoformat(timespec="minutes")}
 
 
@@ -1789,7 +1789,8 @@ def note_gemini(s):
     if use.get("day") != day:
         use = {"day": day, "calls": 0}
     use["calls"] = use.get("calls", 0) + writer.CALLS[0]
-    writer.CALLS[0] = 0
+    use["claude_calls"] = use.get("claude_calls", 0) + writer.CLAUDE_CALLS[0]
+    writer.CALLS[0] = writer.CLAUDE_CALLS[0] = 0
     s["gemini_use"] = use
     if writer.ERRORS:
         s["gemini_errors"] = ((s.get("gemini_errors") or []) + [{**e, "day": day} for e in writer.ERRORS])[-10:]

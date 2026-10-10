@@ -13,6 +13,41 @@ SEARCH_USED = False  # did the last ask() really use Google Search?
 
 
 ERRORS = []   # Gemini failures in this run (saved to state.json so Claude can see quota problems)
+CLAUDE_CALLS = [0]
+CLAUDE_OFF = [False]  # set when the key is refused or out of credit, so the run falls back to Gemini at once
+
+
+def ask_claude(parts, temperature=0.5, max_tokens=4000):
+    """Claude (Anthropic API). parts: text, or a list of {"text"} / {"inline_data": {"mime_type", "data"}} like ask().
+    Raises on any problem; callers fall back to Gemini."""
+    from config import ANTHROPIC_API_KEY, CLAUDE_MODEL
+    if not ANTHROPIC_API_KEY or CLAUDE_OFF[0]:
+        raise RuntimeError("Claude not available")
+    content = []
+    for p in (parts if isinstance(parts, list) else [{"text": parts}]):
+        if "inline_data" in p:
+            content.append({"type": "image", "source": {"type": "base64", "media_type": p["inline_data"]["mime_type"],
+                                                        "data": p["inline_data"]["data"]}})
+        elif p.get("text"):
+            content.append({"type": "text", "text": p["text"]})
+    CLAUDE_CALLS[0] += 1
+    for attempt in range(3):
+        r = requests.post("https://api.anthropic.com/v1/messages", timeout=180, headers={
+            "x-api-key": ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+            json={"model": CLAUDE_MODEL, "max_tokens": max_tokens, "temperature": temperature,
+                  "messages": [{"role": "user", "content": content}]})
+        if r.status_code in (429, 500, 529) and attempt < 2:
+            time.sleep(10)
+            continue
+        if r.status_code in (401, 402, 403) or "credit" in r.text.lower():
+            CLAUDE_OFF[0] = True
+            ERRORS.append({"at": time.strftime("%H:%M"), "error": f"Claude refused ({r.status_code}): {r.text[:150]}"})
+        if r.status_code != 200:
+            raise RuntimeError(f"Claude error {r.status_code}: {r.text[:200]}")
+        text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
+        if text.strip():
+            return text
+    raise RuntimeError("Claude gave no reply")
 CALLS = [0]   # Gemini requests made in this run
 
 
@@ -334,12 +369,27 @@ def write_script(topic, previous=None, instruction=None):
     if previous and instruction:
         prompt += (f"\n\nHere is the current version:\n{json.dumps(previous, ensure_ascii=False)}\n"
                    f'Revise it based on the creator\'s feedback: "{instruction}". Keep all the rules above.')
-    try:
-        draft = parse_json(ask(prompt, search=True, json_mode=True))
-    except ValueError:
-        # the search-grounded reply wasn't clean JSON: ask again in strict JSON mode
-        draft = parse_json(ask(prompt, json_mode=True))
+    draft, model = None, "gemini"
+    source = "" if topic.get("custom") else article_text(topic.get("link", ""), limit=9000)
+    if len(source) > 600:  # Claude writes from the article itself (it has no Google Search here)
+        try:
+            cprompt = (prompt.replace("Use Google Search to verify the details and find the latest facts.",
+                                      "Use ONLY facts stated in the SOURCE ARTICLE below.")
+                       .replace("Use Google Search to find the original source first.",
+                                "Use the SOURCE ARTICLE below as the original source.")
+                       + f"\n\nSOURCE ARTICLE (the only facts you may use):\n{source}\n\nReturn ONLY the JSON.")
+            draft, model = parse_json(ask_claude(cprompt, temperature=0.6)), "claude"
+        except Exception as e:
+            print(f"Claude writing skipped, using Gemini: {e}")
+            draft = None
+    if draft is None:
+        try:
+            draft = parse_json(ask(prompt, search=True, json_mode=True))
+        except ValueError:
+            # the search-grounded reply wasn't clean JSON: ask again in strict JSON mode
+            draft = parse_json(ask(prompt, json_mode=True))
     draft = normalize_draft(draft, topic)
+    draft["writer_model"] = model
     if not instruction:
         draft = sharpen_hook(draft, topic)
     return draft
@@ -590,8 +640,16 @@ def editor_review(draft, topic, frames, beat_times):
         parts.append({"text": f"\nFRAME {i + 1} at {f['t']}s (while {said} is spoken)"})
         parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(f["jpeg"]).decode()}})
     parts.append({"text": EDITOR_FORMAT})
-    res = parse_json(ask(parts, temperature=0.1, json_mode=True))
-    return score_review(res, len(beats))
+    try:
+        res = parse_json(ask_claude(parts, temperature=0.1, max_tokens=1500))
+        reviewer = "claude"
+    except Exception as e:
+        print(f"Claude editor skipped, using Gemini: {e}")
+        res = parse_json(ask(parts, temperature=0.1, json_mode=True))
+        reviewer = "gemini"
+    out = score_review(res, len(beats))
+    out["reviewer"] = reviewer
+    return out
 
 
 def score_review(res, n_beats):
