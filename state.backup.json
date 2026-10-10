@@ -1,284 +1,16 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "idle",
   "candidates": [],
   "choose_deadline": null,
-  "topic": {
-    "title": "AI coding agents generate more code, but not more software",
-    "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-    "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
-    "source": "AI - Ars Technica",
-    "published": "2026-10-09T19:43:50+00:00",
-    "angle": "Study finds AI coding agents write far more code, but teams aren't shipping more software because human review is the bottleneck. This hits every developer's job and the hype around it."
-  },
-  "draft": {
-    "title": "AI coding agents write more code, not more software",
-    "hook_text": "More AI code. Same software.",
-    "beats": [
-      {
-        "line": "Thirty percent more code, yet software output stays flat. The boost comes from AI coding agents.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "30%",
-        "small": "more lines of code with AI agents",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "30% more code, no more software",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Harvard researchers Fiona Chen and James Stratton studied over seven hundred software firms from 2021 through March 2026.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Harvard's Fiona Chen, 700 firms",
-        "name": "Fiona Chen",
-        "role": "Researcher, Harvard University",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Their data came from Jellyfish, covering three hundred million work events and more than seven hundred thousand employees.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Jellyfish",
-        "outlet": "",
-        "domain": "jellyfish.co",
-        "headline": "",
-        "url": "https://jellyfish.co",
-        "tag": "300M work events tracked",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Jellyfish",
-            "domain": "jellyfish.co"
-          }
-        ]
-      },
-      {
-        "line": "AI agents lifted commits twenty percent and pull requests twenty-three percent.",
-        "visual": "clip",
-        "query": "programmer coding screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Pull requests up 23%",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "But the rate of finished features and issues in Jira didn't change in any statistically significant way.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Jira",
-        "outlet": "",
-        "domain": "atlassian.com",
-        "headline": "",
-        "url": "https://www.atlassian.com/software/jira",
-        "tag": "Jira features: no real change",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Jira",
-            "domain": "atlassian.com"
-          }
-        ]
-      },
-      {
-        "line": "The bottleneck is human review. Time from pull request to merge balloons forty-nine percent.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "49%",
-        "small": "longer code review time",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Review time up 49%",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Pull requests needing changes nearly doubled, and comments per request rose thirty-five percent.",
-        "visual": "clip",
-        "query": "developers reviewing code office",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Comments per request up 35%",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "AI reviewing AI isn't fixing it. Agents wrote only 23.3 percent of review comments, even though eighty percent of firms used AI review.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "Ars Technica",
-        "domain": "arstechnica.com",
-        "headline": "AI coding agents generate more code, but not more software",
-        "url": "",
-        "tag": "AI wrote just 23.3% of reviews",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "And ninety-five percent of these firms now use AI coding agents. Would you trust AI-written code unreviewed?",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "95%",
-        "small": "of firms now use AI coding agents",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "95% of firms use AI agents",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Sharp, curious, a little skeptical; turns from impressive numbers to the surprising reveal that review time eats the gains.",
-    "thin": false,
-    "caption": "A Harvard study of over 700 software firms found AI coding agents boost lines of code by 30 percent, but finished features didn't budge. Human code review time jumped 49 percent and ate the gains. Would you trust AI-written code without a human check?",
-    "hashtags": [
-      "AI",
-      "coding",
-      "softwaredevelopment",
-      "AIagents",
-      "programming",
-      "Harvard",
-      "devlife",
-      "tech",
-      "productivity",
-      "codereview",
-      "technews",
-      "software"
-    ],
-    "sources": [
-      "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-    ],
-    "script": "Thirty percent more code, yet software output stays flat. The boost comes from AI coding agents.\nHarvard researchers Fiona Chen and James Stratton studied over seven hundred software firms from 2021 through March 2026.\nTheir data came from Jellyfish, covering three hundred million work events and more than seven hundred thousand employees.\nAI agents lifted commits twenty percent and pull requests twenty-three percent.\nBut the rate of finished features and issues in Jira didn't change in any statistically significant way.\nThe bottleneck is human review. Time from pull request to merge balloons forty-nine percent.\nPull requests needing changes nearly doubled, and comments per request rose thirty-five percent.\nAI reviewing AI isn't fixing it. Agents wrote only 23.3 percent of review comments, even though eighty percent of firms used AI review.\nAnd ninety-five percent of these firms now use AI coding agents. Would you trust AI-written code unreviewed?",
-    "keywords": [
-      "programmer coding screen",
-      "developers reviewing code office"
-    ],
-    "image_prompts": [],
-    "writer_model": "claude",
-    "hook_before": "AI coding agents boost code by thirty percent. Software output? Flat.",
-    "evidence": [
-      {
-        "claim": "AI generates more code but the same amount of software (headline)",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "AI coding agents lead to a 30 percent increase in lines of code",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "Software output stays flat despite the code increase",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "Harvard researchers Fiona Chen and James Stratton conducted the study",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "The study covered over 700 software firms from 2021 through March 2026",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "Data came from Jellyfish and covered 300 million work events",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "The data covered more than 700,000 employees",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "AI agents lifted commits by 20 percent and pull requests by 23 percent",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "The resolution rate of Jira issues and features did not change in a statistically significant way",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "Time from pull request submission to merge rose 49 percent after AI agents were introduced",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "Human code review is the bottleneck",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      },
-      {
-        "claim": "The share of pull requests needing changes nearly doubled and comments per pull request rose 35%",
-        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 0,
-    "source_links": [
-      "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
-    ]
-  },
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-10T10:40:24.639300+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -689,7 +421,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
     {
       "title": "Qwen-Image-2.1-Turbo released!",
@@ -740,288 +471,11 @@
     "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
     "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources",
     "Ben Affleck is an AI nerd, and the internet is impressed",
-    "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\""
+    "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+    "AI coding agents generate more code, but not more software"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-          "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-          "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-          "source": "AI - Ars Technica",
-          "published": "2026-10-09T22:04:07+00:00",
-          "angle": "Ukrainian drones hit the data center that trains 'Russia's Google' Yandex's AI model, so AI infrastructure is now a war target."
-        },
-        "draft": {
-          "title": "Ukraine's drones hit Yandex AI data centers",
-          "hook_text": "Ukraine just hit Russia's Google",
-          "beats": [
-            {
-              "line": "Ukrainian drones just hit Yandex, Russia's Google. Two of its five data centers went down.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Yandex",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2 of 5 Yandex data centers hit",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "The strikes hit Sasovo and Kaluga on October 8 and 9.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Kaluga",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Sasovo and Kaluga hit Oct 8-9",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Sasovo houses two of Yandex's three supercomputers that train YandexGPT.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2 of 3",
-              "small": "YandexGPT training supercomputers in Sas",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2 of 3 supercomputers in Sasovo",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                },
-                {
-                  "name": "YandexGPT",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Ukrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.",
-              "visual": "clip",
-              "query": "military drone flying",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Firepoint FP-1 drones hit Kaluga",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Yandex",
-                  "domain": "yandex.com"
-                }
-              ]
-            },
-            {
-              "line": "Users reported problems with T-Bank, Russian Railways, and the Ivi streaming platform.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "T-Bank",
-              "outlet": "",
-              "domain": "tbank.ru",
-              "headline": "",
-              "url": "",
-              "tag": "T-Bank and Ivi had outages",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Ukraine calls it a symmetrical response. Russian drones have hit Ukraine's data centers since late September.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Ars Technica",
-              "domain": "arstechnica.com",
-              "headline": "Ukraine's drones knock out AI data center belonging to Russia's Google",
-              "url": "",
-              "tag": "Ukraine: a symmetrical response",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "In February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Data center",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Amazon data centers hit in February",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Should AI data centers count as military targets?",
-              "visual": "clip",
-              "query": "data center server room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Yandex: 2 data centers down",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Urgent, matter-of-fact disbelief, turning sober at the point that AI data centers are now wartime targets.",
-          "thin": false,
-          "caption": "Ukrainian drones hit two of Yandex's five data centers on October 8 and 9, including Sasovo, which holds two of three YandexGPT training supercomputers. Users reported problems with Russian apps and services too. Should AI data centers count as military targets?",
-          "hashtags": [
-            "AI",
-            "Yandex",
-            "YandexGPT",
-            "Ukraine",
-            "Russia",
-            "datacenters",
-            "drones",
-            "tech",
-            "technews",
-            "war",
-            "Firepoint",
-            "AInews"
-          ],
-          "sources": [
-            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-          ],
-          "script": "Ukrainian drones just hit Yandex, Russia's Google. Two of its five data centers went down.\nThe strikes hit Sasovo and Kaluga on October 8 and 9.\nSasovo houses two of Yandex's three supercomputers that train YandexGPT.\nUkrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.\nUsers reported problems with T-Bank, Russian Railways, and the Ivi streaming platform.\nUkraine calls it a symmetrical response. Russian drones have hit Ukraine's data centers since late September.\nIn February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE.\nShould AI data centers count as military targets?",
-          "keywords": [
-            "military drone flying",
-            "data center server room"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Ukraine hit Yandex, known as Russia's Google",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Yandex is known as Russia's Google",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Two of Yandex's five data centers went down after Ukrainian drone strikes",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "The strikes hit Sasovo and Kaluga on October 8 and 9",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Sasovo houses two of Yandex's three supercomputers used to train YandexGPT",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Firepoint is a Ukrainian company and said its FP-1 one-way attack drones were used in the strike on the Kaluga data center",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "The Kaluga data center is Yandex's largest",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Users reported problems with T-Bank, Russian Railways and the Ivi streaming platform",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Ukraine (Zelenskyy) calls the strike a symmetrical response",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "Russian drones have hit Ukraine's data centers since late September",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            },
-            {
-              "claim": "In February, Iranian drones knocked out multiple Amazon data centers in Bahrain and the UAE",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-10T10:02:58.794033+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1940,6 +1394,293 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AI coding agents generate more code, but not more software",
+          "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+          "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-09T19:43:50+00:00",
+          "angle": "Study finds AI coding agents write far more code, but teams aren't shipping more software because human review is the bottleneck. This hits every developer's job and the hype around it."
+        },
+        "draft": {
+          "title": "AI coding agents write more code, not more software",
+          "hook_text": "More AI code. Same software.",
+          "beats": [
+            {
+              "line": "Thirty percent more code, yet software output stays flat. The boost comes from AI coding agents.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "30%",
+              "small": "more lines of code with AI agents",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "30% more code, no more software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Harvard researchers Fiona Chen and James Stratton studied over seven hundred software firms from 2021 through March 2026.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Harvard's Fiona Chen, 700 firms",
+              "name": "Fiona Chen",
+              "role": "Researcher, Harvard University",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Their data came from Jellyfish, covering three hundred million work events and more than seven hundred thousand employees.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Jellyfish",
+              "outlet": "",
+              "domain": "jellyfish.co",
+              "headline": "",
+              "url": "https://jellyfish.co",
+              "tag": "300M work events tracked",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Jellyfish",
+                  "domain": "jellyfish.co"
+                }
+              ]
+            },
+            {
+              "line": "AI agents lifted commits twenty percent and pull requests twenty-three percent.",
+              "visual": "clip",
+              "query": "programmer coding screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Pull requests up 23%",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "But the rate of finished features and issues in Jira didn't change in any statistically significant way.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Jira",
+              "outlet": "",
+              "domain": "atlassian.com",
+              "headline": "",
+              "url": "https://www.atlassian.com/software/jira",
+              "tag": "Jira features: no real change",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Jira",
+                  "domain": "atlassian.com"
+                }
+              ]
+            },
+            {
+              "line": "The bottleneck is human review. Time from pull request to merge balloons forty-nine percent.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "49%",
+              "small": "longer code review time",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Review time up 49%",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Pull requests needing changes nearly doubled, and comments per request rose thirty-five percent.",
+              "visual": "clip",
+              "query": "developers reviewing code office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Comments per request up 35%",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "AI reviewing AI isn't fixing it. Agents wrote only 23.3 percent of review comments, even though eighty percent of firms used AI review.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "AI coding agents generate more code, but not more software",
+              "url": "",
+              "tag": "AI wrote just 23.3% of reviews",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "And ninety-five percent of these firms now use AI coding agents. Would you trust AI-written code unreviewed?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "95%",
+              "small": "of firms now use AI coding agents",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "95% of firms use AI agents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Sharp, curious, a little skeptical; turns from impressive numbers to the surprising reveal that review time eats the gains.",
+          "thin": false,
+          "caption": "A Harvard study of over 700 software firms found AI coding agents boost lines of code by 30 percent, but finished features didn't budge. Human code review time jumped 49 percent and ate the gains. Would you trust AI-written code without a human check?",
+          "hashtags": [
+            "AI",
+            "coding",
+            "softwaredevelopment",
+            "AIagents",
+            "programming",
+            "Harvard",
+            "devlife",
+            "tech",
+            "productivity",
+            "codereview",
+            "technews",
+            "software"
+          ],
+          "sources": [
+            "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+          ],
+          "script": "Thirty percent more code, yet software output stays flat. The boost comes from AI coding agents.\nHarvard researchers Fiona Chen and James Stratton studied over seven hundred software firms from 2021 through March 2026.\nTheir data came from Jellyfish, covering three hundred million work events and more than seven hundred thousand employees.\nAI agents lifted commits twenty percent and pull requests twenty-three percent.\nBut the rate of finished features and issues in Jira didn't change in any statistically significant way.\nThe bottleneck is human review. Time from pull request to merge balloons forty-nine percent.\nPull requests needing changes nearly doubled, and comments per request rose thirty-five percent.\nAI reviewing AI isn't fixing it. Agents wrote only 23.3 percent of review comments, even though eighty percent of firms used AI review.\nAnd ninety-five percent of these firms now use AI coding agents. Would you trust AI-written code unreviewed?",
+          "keywords": [
+            "programmer coding screen",
+            "developers reviewing code office"
+          ],
+          "image_prompts": [],
+          "writer_model": "claude",
+          "hook_before": "AI coding agents boost code by thirty percent. Software output? Flat.",
+          "evidence": [
+            {
+              "claim": "AI generates more code but the same amount of software (headline)",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "AI coding agents lead to a 30 percent increase in lines of code",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "Software output stays flat despite the code increase",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "Harvard researchers Fiona Chen and James Stratton conducted the study",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "The study covered over 700 software firms from 2021 through March 2026",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "Data came from Jellyfish and covered 300 million work events",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "The data covered more than 700,000 employees",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "AI agents lifted commits by 20 percent and pull requests by 23 percent",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "The resolution rate of Jira issues and features did not change in a statistically significant way",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "Time from pull request submission to merge rose 49 percent after AI agents were introduced",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "Human code review is the bottleneck",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            },
+            {
+              "claim": "The share of pull requests needing changes nearly doubled and comments per pull request rose 35%",
+              "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-10T10:40:24.639300+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2499,7 +2240,7 @@
       "event": "Here are today's top AI headlines. Danu Robotics’ fight to build a better recycling robot. We can’t help treating AI like it’s human. But should we?. A16z’s Olivia Moore on the state of consumer AI. Which of these matters most to you?"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
@@ -2528,7 +2269,7 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T10:35:25.366458+05:30",
+    "at": "2026-10-10T10:45:26.761712+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2613,12 +2354,12 @@
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now"
   },
   "behind_since": "2026-10-10T09:00:34.659306+05:30",
-  "render_fails": 1,
+  "render_fails": 0,
   "render_fail_topic": "AI coding agents generate more code, but not more software",
   "last_render_error": {
-    "at": "2026-10-10T10:36:28.789258+05:30",
+    "at": "2026-10-10T10:46:38.827402+05:30",
     "topic": "AI coding agents generate more code, but not more software",
-    "error": "RuntimeError: the voice-over didn't match the script twice (parts of the script are missing (80% spoken))",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1607, in cmd_render\n    raise RuntimeError(f\"the voice-over didn't match the script twice ({why2})\")\nRuntimeError: the voice-over didn't match the script twice (parts of the script are missing (80% spoken))\n"
+    "error": "RuntimeError: the voice-over didn't match the script twice (parts of the script are missing (79% spoken))",
+    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1607, in cmd_render\n    raise RuntimeError(f\"the voice-over didn't match the script twice ({why2})\")\nRuntimeError: the voice-over didn't match the script twice (parts of the script are missing (79% spoken))\n"
   }
 }
