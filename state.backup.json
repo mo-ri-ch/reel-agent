@@ -1,41 +1,155 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
-      "link": "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/",
-      "summary": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports Reuters",
-      "source": "Reuters",
-      "published": "2026-10-10T19:33:44+00:00",
-      "angle": ""
-    },
-    {
-      "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-      "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-      "summary": "Is Apple hoping to get into the AI-generated podcast business?",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-10T19:50:00+00:00",
-      "angle": ""
-    },
-    {
-      "title": "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility",
-      "link": "https://markets.businessinsider.com/news/stocks/winseed-successfully-concludes-its-participation-at-iaa-transportation-2026-showcasing-new-insights-into-automotive-ai-and-global-brand-visibility-1036614416",
-      "summary": "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility markets.businessinsider.com",
-      "source": "markets.businessinsider.com",
-      "published": "2026-10-10T19:41:27+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-11T03:10:39.448897+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": "2026-10-11T03:25:43.624984+05:30",
+  "topic": {
+    "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
+    "link": "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/",
+    "summary": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports Reuters",
+    "source": "Reuters",
+    "published": "2026-10-10T19:33:44+00:00",
+    "angle": ""
+  },
+  "draft": {
+    "title": "Nvidia in Talks to Buy Reflection AI",
+    "hook_text": "Nvidia eyes buying Reflection AI.",
+    "beats": [
+      {
+        "line": "Nvidia is in talks to invest further in Reflection AI or buy the startup outright.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia",
+        "outlet": "",
+        "domain": "nvidia.com",
+        "headline": "",
+        "url": "https://www.nvidia.com",
+        "tag": "Nvidia talks with Reflection AI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Financial Times reported the potential acquisition discussions happening in October twenty twenty six.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Reuters",
+        "domain": "reuters.com",
+        "headline": "Nvidia in talks to invest further in Reflection AI or buy it",
+        "url": "",
+        "tag": "Financial Times reports talks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Reflection AI builds foundation models and is led by CEO Mustafa Suleyman.",
+        "visual": "clip",
+        "query": "artificial intelligence server room",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Reflection AI foundation models",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Nvidia already backs multiple AI labs to secure hardware demand for its chips.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia GPU",
+        "outlet": "",
+        "domain": "nvidia.com",
+        "headline": "",
+        "url": "https://www.nvidia.com",
+        "tag": "Nvidia hardware demand",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Would you want chipmakers owning AI labs?",
+        "visual": "clip",
+        "query": "person looking at smartphone screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Chipmakers owning AI labs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "sharp, fast-paced tech reporting with a focus on big industry moves",
+    "thin": false,
+    "caption": "Nvidia is in talks to acquire or further invest in Reflection AI according to reports. Would you want major chipmakers owning foundational AI labs?",
+    "hashtags": [
+      "Nvidia",
+      "ReflectionAI",
+      "ArtificialIntelligence",
+      "TechNews"
+    ],
+    "sources": [
+      "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/"
+    ],
+    "script": "Nvidia is in talks to invest further in Reflection AI or buy the startup outright.\nFinancial Times reported the potential acquisition discussions happening in October twenty twenty six.\nReflection AI builds foundation models and is led by CEO Mustafa Suleyman.\nNvidia already backs multiple AI labs to secure hardware demand for its chips.\nWould you want chipmakers owning AI labs?",
+    "keywords": [
+      "artificial intelligence server room",
+      "person looking at smartphone screen"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "fact_status": "unsure",
+    "fact_notes": [
+      "not enough verified detail for a full reel (60 words)"
+    ],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-11T03:45:32.829828+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -441,106 +555,56 @@
   "paused": null,
   "spare": [
     {
-      "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
-      "link": "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/",
-      "summary": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports Reuters",
-      "source": "Reuters",
-      "published": "2026-10-10T19:33:44+00:00",
+      "title": "AI agents can be unpredictable. Your control layer shouldn't be.",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYVBMb093OXRMVVF5Y0pPU0RXaTJNVkFTNFRHejFUWHRQYl9hNjV5aVZHYm9vVm9vOGhoRkxxQzBPckVtd0c1aXNibkp4eE40SXNmeURPSzZaX05YOEg1S01ydDQtazFCVjAta0d4Y2xjT0lJNHdtMWVNMWxBZTlzUjViVGZBQVVFclFlZElKOFg1M1g2OEEya0lGYVEwb1Zy?oc=5",
+      "summary": "AI agents can be unpredictable. Your control layer shouldn't be. VentureBeat",
+      "source": "VentureBeat",
+      "published": "2026-10-10T21:05:00+00:00",
       "angle": ""
     },
     {
-      "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-      "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-      "summary": "Is Apple hoping to get into the AI-generated podcast business?",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-10T19:50:00+00:00",
+      "title": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWllxOVA0bTc2VGhkSDNzOWpRT0pRZjU1d084VDJMZmZmZGdSOEFfUGNZdG1NNWdVWG9nZjJxZVNVYVVlOE5hUl9lZU5hYW9xZjRaWFgzQWlwWXkxY3VBcXVXUkQxaHlxTTdxMC1QalJyWWFzUVRaWF8wSUJzdnNqSGctZ24wZDBHdkswZmtJTdIBlAFBVV95cUxPNHRQX2VXbDZtb2Z0WS1RRHAzc1NxZjdsWHNDZ1oweTYxTi10NGNESm9KLWNnNmhVYUdQblRqODlmWUdjQlFxYzRJbjVJLUlkUkdib2lwb3VUZ3pYNnJCclhid25RYlRyWEhnbE5ibGY5bWNTb2tzOWNEQlBPcllvMms1YkZxcEJSZHJPbHVpaTZQejRx?oc=5",
+      "summary": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control CNBC",
+      "source": "CNBC",
+      "published": "2026-10-10T20:59:28+00:00",
       "angle": ""
     }
   ],
   "tried": [
-    "My personal AI agent posted my bank details on company Slack",
-    "Moneycontrol Pro Weekender | Artificial intelligence, real inflation",
     "Trump’s AI Liability Push Opens Blame Game for Models Gone Rogue",
-    "Court throws out killer's sentence after judge said he loved AI video of victim",
-    "Stop reading long explanations: 4 ChatGPT codes that make learning visual",
-    "AI agent makers are promising privacy — will they deliver?",
-    "Here are the top AI agents that can live in your text messages",
-    "Insuretech Outmarket raises $34.5M just months after prior round",
-    "Lune",
-    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
-    "AI coding agents generate more code, but not more software",
-    "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor",
-    "Apostolic Nuncio in Ghana Urges Religious Orders to Harness Artificial Intelligence for Mission",
-    "India entering tech transformation era with AI advances: AEC chief",
-    "In Silicon Valley, AI founders cheer Trump’s calls for the industry to police itself on safety",
-    "Nikon microscopic video competition winner disqualified for using generative AI",
-    "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
+    "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+    "Anthropic AI model submits false homicide tip to Philadelphia police",
+    "China to curb tech investment bubbles, ensure AI safety",
     "Mac Users Are Nuking Every Trace of Apple AI on Their Machines",
     "South Korea says AI agents appear to have been used to hack the country's banks",
-    "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
-    "Waffling at the UN: OpenAI, Anthropic and Selling Artificial Intelligence",
-    "If AI is conscient, then we are making slaves",
-    "KernelAI",
-    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
-    "Anthropic AI model submits false homicide tip to Philadelphia police",
-    "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
-    "Photonic circuits become trainable AI hardware",
-    "China to curb tech investment bubbles, ensure AI safety",
-    "Artificial intelligence giants are preparing for the ‘Day After’: Report",
-    "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+    "Apostolic Nuncio in Ghana Urges Religious Orders to Harness Artificial Intelligence for Mission",
     "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-    "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-    "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility",
+    "In Silicon Valley, AI founders cheer Trump’s calls for the industry to police itself on safety",
+    "Court throws out killer's sentence after judge said he loved AI video of victim",
+    "Nikon microscopic video competition winner disqualified for using generative AI",
+    "AI coding agents generate more code, but not more software",
+    "Lune",
+    "Eggheads at Anthropic Said They Used Claude to \"Solve\" Humor",
+    "India entering tech transformation era with AI advances: AEC chief",
+    "Photonic circuits become trainable AI hardware",
     "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
+    "KernelAI",
+    "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+    "My personal AI agent posted my bank details on company Slack",
+    "Stop reading long explanations: 4 ChatGPT codes that make learning visual",
     "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-    "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility"
+    "Moneycontrol Pro Weekender | Artificial intelligence, real inflation",
+    "Here are the top AI agents that can live in your text messages",
+    "AI agent makers are promising privacy — will they deliver?",
+    "Insuretech Outmarket raises $34.5M just months after prior round",
+    "Artificial intelligence giants are preparing for the ‘Day After’: Report",
+    "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility",
+    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
+    "Nvidia in talks to invest further in Reflection AI or buy it, FT reports"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-            "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-            "summary": "Is Apple hoping to get into the AI-generated podcast business?",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-10T19:50:00+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility",
-            "link": "https://markets.businessinsider.com/news/stocks/winseed-successfully-concludes-its-participation-at-iaa-transportation-2026-showcasing-new-insights-into-automotive-ai-and-global-brand-visibility-1036614416",
-            "summary": "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility markets.businessinsider.com",
-            "source": "markets.businessinsider.com",
-            "published": "2026-10-10T19:41:27+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
-            "link": "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/",
-            "summary": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports Reuters",
-            "source": "Reuters",
-            "published": "2026-10-10T19:33:44+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-10-11T02:05:44.396817+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -704,6 +768,50 @@
           }
         ],
         "choose_deadline": "2026-10-11T02:55:30.373413+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
+            "link": "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/",
+            "summary": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports Reuters",
+            "source": "Reuters",
+            "published": "2026-10-10T19:33:44+00:00",
+            "angle": ""
+          },
+          {
+            "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+            "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+            "summary": "Is Apple hoping to get into the AI-generated podcast business?",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-10T19:50:00+00:00",
+            "angle": ""
+          },
+          {
+            "title": "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility",
+            "link": "https://markets.businessinsider.com/news/stocks/winseed-successfully-concludes-its-participation-at-iaa-transportation-2026-showcasing-new-insights-into-automotive-ai-and-global-brand-visibility-1036614416",
+            "summary": "Winseed Successfully Concludes Its Participation at IAA TRANSPORTATION 2026, Showcasing New Insights into Automotive AI and Global Brand Visibility markets.businessinsider.com",
+            "source": "markets.businessinsider.com",
+            "published": "2026-10-10T19:41:27+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-11T03:10:39.448897+05:30",
         "topic": null,
         "draft": null,
         "video_file_id": null,
@@ -1322,7 +1430,7 @@
   "report_day": "2026-10-10",
   "ig_count": {
     "day": "2026-10-11",
-    "at": "2026-10-11T03:00:40.062979+05:30",
+    "at": "2026-10-11T03:15:44.140714+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1346,64 +1454,64 @@
   "late_note_for": "2026-10-10-2",
   "gemini_use": {
     "day": "2026-10-11",
-    "calls": 82,
+    "calls": 108,
     "claude_calls": 0,
-    "claude_backup": 17
+    "claude_backup": 25
   },
   "gemini_errors": [
     {
-      "at": "20:50",
+      "at": "21:45",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-11"
     },
     {
-      "at": "20:50",
+      "at": "21:45",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-11"
     },
     {
-      "at": "21:00",
+      "at": "21:45",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-11"
     },
     {
-      "at": "21:00",
+      "at": "21:45",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-11"
     },
     {
-      "at": "21:00",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "at": "21:45",
+      "error": "gemini-3.6-flash: free quota used up for now",
       "day": "2026-10-11"
     },
     {
-      "at": "21:00",
+      "at": "21:45",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-11"
     },
     {
-      "at": "21:15",
+      "at": "21:45",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-11"
     },
     {
-      "at": "21:15",
+      "at": "21:45",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-11"
     },
     {
-      "at": "21:30",
+      "at": "21:45",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-11"
     },
     {
-      "at": "21:30",
+      "at": "21:45",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-11"
     }
   ],
   "last_script_error": {
-    "at": "2026-10-11T03:00+05:30",
+    "at": "2026-10-11T03:15+05:30",
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now"
   },
   "render_fails": 0,
