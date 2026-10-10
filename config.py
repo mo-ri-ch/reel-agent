@@ -18,6 +18,9 @@ GEMINI_API_KEY = env("GEMINI_API_KEY")
 # Claude (paid, optional): writes the scripts and does the editor-in-chief review when a key is set; Gemini otherwise
 ANTHROPIC_API_KEY = env("ANTHROPIC_API_KEY")
 CLAUDE_MODEL = env("CLAUDE_MODEL", "claude-sonnet-5-5")
+# Owner, 2026-10-10: "Sonnet is costly. Stay free" -> Claude is off; only free Gemini is used.
+# Set USE_CLAUDE=1 in the workflow env to turn it back on (ask the owner first: it costs money).
+USE_CLAUDE = env("USE_CLAUDE", "") == "1"
 # Fish Audio: the owner's cloned voice (paid per use). Without a key, or when credits run out, the regular voices are used.
 FISH_API_KEY = env("FISH_API_KEY")
 FISH_VOICE_ID = env("FISH_VOICE_ID", "")  # optional; normally set with /myvoice in Telegram

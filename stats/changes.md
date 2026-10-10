@@ -116,3 +116,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Captions: max 5 hashtags (Instagram's limit), key fact in the first 125 characters. Metric: reach from search/explore, shares.
 - Weekly review ranks by outlier multiple and shares per reach.
 - Not taken: auto word-swapping (changes meaning in news), DM/comment bots, profile rewrite (ask owner first).
+
+## 2026-10-10 13:14: back to free Gemini only
+- Owner: "Sonnet is costly. Stay free". Claude switched off (USE_CLAUDE flag). Metric: slots posted/day on the free quota.

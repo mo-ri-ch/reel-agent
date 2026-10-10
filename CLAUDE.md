@@ -2,8 +2,8 @@
 
 An automated Instagram account (**@gradientai.news**, "Gradient Daily · AI News", by Gradient AI Labs) that posts
 **12 AI-news reels a day**, one every 2 hours (01:00–23:00 IST, odd hours), for a global audience. (Briefly 6/day on
-2026-10-10 morning because the FREE Gemini quota ran out; back to 12 the same day with Claude Sonnet 5.5 doing the
-writing + editor review, which takes most load off Gemini. Watch `state.json` → `gemini_use` / `gemini_errors`.) The owner talks to it
+2026-10-10 morning because the FREE Gemini quota ran out; 12/day again the same day with a 1-day paid Claude trial,
+then back to free Gemini only. Watch `state.json` → `gemini_use` / `gemini_errors`.) The owner talks to it
 through a Telegram bot and reads Claude's messages there.
 
 ## Mission & goals (keep every change aimed at these)
@@ -46,8 +46,8 @@ through a Telegram bot and reads Claude's messages there.
 - Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
 - Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
 - Every reel is scored by the editor-in-chief (writer.editor_review) before posting: pass 8/10. Never lower the bar.
-- Models: Claude Sonnet 5.5 (paid, owner-approved trial 2026-10-10, key = ANTHROPIC_API_KEY secret) writes scripts + editor review;
-  Gemini (free) fact-checks with Google Search and is the fallback. Watch state.json gemini_use.claude_calls.
+- Models: **free Gemini only** (owner, 2026-10-10 13:14: "Sonnet is costly. Stay free"). Claude Sonnet 5.5 code stays
+  but is off (config USE_CLAUDE; the trial ran out of credit on 10 Oct). Don't turn it on without asking.
 - No "Top AI headlines" backup reels (owner, 2026-10-09: made no sense). A late, fully checked reel beats an on-time bad one.
 - Scripts: 30-40 s, 75-105 words, every sentence a concrete fact. Owner rejected short 45-65 word scripts
   (2026-10-09: "getting so bad"). Don't shorten scripts again without asking.

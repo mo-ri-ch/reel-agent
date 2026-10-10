@@ -20,8 +20,8 @@ CLAUDE_OFF = [False]  # set when the key is refused or out of credit, so the run
 def ask_claude(parts, temperature=0.5, max_tokens=4000):
     """Claude (Anthropic API). parts: text, or a list of {"text"} / {"inline_data": {"mime_type", "data"}} like ask().
     Raises on any problem; callers fall back to Gemini."""
-    from config import ANTHROPIC_API_KEY, CLAUDE_MODEL
-    if not ANTHROPIC_API_KEY or CLAUDE_OFF[0]:
+    from config import ANTHROPIC_API_KEY, CLAUDE_MODEL, USE_CLAUDE
+    if not USE_CLAUDE or not ANTHROPIC_API_KEY or CLAUDE_OFF[0]:
         raise RuntimeError("Claude not available")
     content = []
     for p in (parts if isinstance(parts, list) else [{"text": parts}]):

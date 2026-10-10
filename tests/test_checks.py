@@ -159,6 +159,7 @@ class _R:
     def __init__(self, code, body): self.status_code, self._b, self.text = code, body, str(body)
     def json(self): return self._b
 _cfg.ANTHROPIC_API_KEY = "test"
+_cfg.USE_CLAUDE = True
 writer.CLAUDE_OFF[0] = False
 writer.article_text = lambda url, limit=5000: "Anthropic released Claude Sonnet 5.5 on Tuesday. " * 40
 writer.requests.post = lambda *a, **k: _R(200, {"content": [{"type": "text", "text":
@@ -193,8 +194,14 @@ except RuntimeError:
     pass
 writer.requests.post, _cfg.ANTHROPIC_API_KEY = _post, _key
 writer.time.sleep = _sleep
+_cfg.USE_CLAUDE = False
 writer.BACKUP_LEFT[0] = writer.BACKUP_CALLS[0] = 0
 writer.ERRORS.clear()
+_cfg.ANTHROPIC_API_KEY = "test"
+writer.requests.post = lambda *a, **k: (_ for _ in ()).throw(AssertionError("Claude must not be called"))
+writer.ask = lambda *a, **k: '{"title": "t", "beats": [{"line": "Anthropic released Claude Sonnet 5.5 today.", "visual": "official"}]}'
+check("claude off by default -> gemini", writer.write_script({"title": "x", "link": "https://x"})["writer_model"], "gemini")
+writer.requests.post, _cfg.ANTHROPIC_API_KEY, writer.ask = _post, _key, _ask3
 
 # hype / AI-sounding wording is caught, names that look like hype words are not; em dashes become commas
 check("hype words", writer.hype_phrases("This groundbreaking model will revolutionize coding."),
