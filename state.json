@@ -257,16 +257,57 @@
     "editor_rounds": 1,
     "source_links": [
       "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Ukrainian company Firepoint says its FP-1 one-way …: The image is a city trolleybus, which has nothing to do with a Yandex data center or a drone strike. It doesn't clearly "
+    ],
+    "editor": {
+      "overall": 5.8,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 5,
+        "visuals": 4,
+        "flow": 6
+      },
+      "one_line": "Strong story, but mismatched visuals, a weak hook and a loose headline claim.",
+      "script_fixes": [
+        "LINE 1: Open with the hit, not the definition. E.g. 'Ukraine's drones just knocked out Yandex's AI data center, the Russian Google.' Put 'Yandex' in the title card, not just 'Russia's Google'.",
+        "LINE 1: The title 'Russia's Google just got hit' and the line 'Yandex is known as Russia's Google' repeat each other. Replace the second sentence with a new fact, such as the supercomputers that train",
+        "LINE 2: 'Two of its five data centers are knocked out' states the damage as total and permanent. The source says only one data center was damaged. Verify against the source and soften to 'damaged' or ",
+        "LINE 2: This line drags on a single static '2 of 5' card for about 10 seconds. Split it, or move the Sasovo and Kaluga names and dates onto separate visuals.",
+        "LINE 3: Name the model and the hardware, and add what was lost. E.g. 'Sasovo held two of Yandex's three YandexGPT training supercomputers.' Cut 'used to train' repetition.",
+        "LINE 4: 'Firepoint says' is correctly attributed to the company. Keep that framing and do not let the voice or captions state it as confirmed fact. Add the FP-1 name and one more detail, such as range"
+      ],
+      "visual_beats": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The satellite image is tiny, unlabeled and not clearly Sasovo or Kaluga. The text-selectio",
+        "line 1: The Yandex HQ photo (Frame 3) is a generic Moscow office building, not the data center. It",
+        "line 2: The identical '2 of 5' card sits on screen for about 10 seconds across four frames with no",
+        "line 2: Selection and handle boxes around words (Sasovo, Yandex, FP-1) look like leftover editor U",
+        "line 3: The photo shows a field of small planes at an airfield (credit: Jozef Tóth). It is unrelat",
+        "line 4: The Yandex 'Y' app icon is labeled 'Kaluga', so it implies the logo is the data center. Th"
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-10T10:13:10.432900+05:30",
+  "script_deadline": "2026-10-10T10:23:28.520711+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-10",
@@ -678,14 +719,6 @@
   "paused": null,
   "spare": [
     {
-      "title": "AI disqualification yields new Nikon Small World in Motion winner",
-      "link": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
-      "summary": "New winner is Nguyen Nam Nhat of Vietnam for video of a roundworm and single-celled Dileptus.",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-09T18:44:06+00:00",
-      "angle": "A famous science photo-video contest disqualified an entry over AI, a weird and shareable story about what's real."
-    },
-    {
       "title": "Artificial intelligence giants are preparing for the ‘Day After’: Report",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5iOHh2Mmp2ejlOZDVoQzdVMU55dXVoSDBVbEFZbFRtTlpIYlBGTUExcmhMdXE5VjFhMlZzWnZxamhzdmtZZXk2VkNDSUVHMzlDc0JreDRTdDczWEk?oc=5",
       "summary": "Artificial intelligence giants are preparing for the ‘Day After’: Report Fox Business",
@@ -695,84 +728,39 @@
     }
   ],
   "tried": [
-    "Today In Artificial Intelligence: Friday, October 9, 2026",
-    "The U.S.-China AI Rivalry is Being Upended",
-    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
-    "Let your AI agents paint big arrows, boxes and text on your screen",
-    "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources",
-    "Insuretech Outmarket raises $34.5M just months after prior round",
-    "Local Living: world of artificial intelligence",
-    "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
     "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-    "South Korea says AI agents appear to have been used to hack the country's banks",
-    "Sorted",
-    "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-    "Court throws out killer's sentence after judge said he loved AI video of victim",
-    "AI coding agents generate more code, but not more software",
-    "Photonic circuits become trainable AI hardware",
-    "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
     "CU Denver officials believe a new hub could offer lessons to students on AI’s use",
-    "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-    "Nikon microscopic video competition winner disqualified for using generative AI",
-    "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
-    "Danu Robotics’ fight to build a better recycling robot",
-    "Ben Affleck is an AI nerd, and the internet is impressed",
-    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
-    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
     "\"Fired For Prioritising Safety\": Ex-OpenAI Researcher On Termination",
-    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
-    "CUJ holds meet on AI, digital technology in tourism",
+    "Nikon microscopic video competition winner disqualified for using generative AI",
+    "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+    "Court throws out killer's sentence after judge said he loved AI video of victim",
+    "Trump’s attempt to rename AI is looking awfully artificial",
+    "Digital detox how-to; artificial intelligence in nursing; when to see your doctor about GI issues; plus other stories with Vanderbilt Health sources",
+    "Sorted",
+    "Insuretech Outmarket raises $34.5M just months after prior round",
     "Magnific One launches to give teams an image generator that avoids the 'AI look' and automatically upholds their brand kit",
+    "Experian NeuroID Recognized as Best Authentication Innovation in 2026 Fraud & AML Impact Awards",
+    "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+    "Danu Robotics’ fight to build a better recycling robot",
+    "CUJ holds meet on AI, digital technology in tourism",
+    "Let your AI agents paint big arrows, boxes and text on your screen",
     "OpenAI fires three safety researchers for \"mishandling research information\"",
-    "Trump’s attempt to rename AI is looking awfully artificial"
+    "Photonic circuits become trainable AI hardware",
+    "Today In Artificial Intelligence: Friday, October 9, 2026",
+    "Local Living: world of artificial intelligence",
+    "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+    "Ben Affleck is an AI nerd, and the internet is impressed",
+    "AI fears are growing – and unsettling new film Artificial puts them, and the future of humanity, centre stage",
+    "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+    "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
+    "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+    "The U.S.-China AI Rivalry is Being Upended",
+    "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+    "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
+    "South Korea says AI agents appear to have been used to hack the country's banks"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-            "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-            "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-09T21:41:29+00:00",
-            "angle": "A non-text AI model called Jev hit a $7.5B valuation weeks after launch, with claims it's faster and uses far fewer tokens than LLMs. People will ask whether this could replace ChatGPT-style models."
-          },
-          {
-            "title": "Microsoft-Decision-1, our model for fast decision-making",
-            "link": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
-            "summary": "",
-            "source": "commandline.microsoft.com",
-            "published": "2026-10-09T18:38:44+00:00",
-            "buzz": "Hacker News 163 points",
-            "angle": "Microsoft unveiled Microsoft-Decision-1, its own model for fast decision-making, and it's blowing up on Hacker News with 163 points. It's a big-name move in the AI model race."
-          },
-          {
-            "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-            "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
-            "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents a",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-09T16:56:42+00:00",
-            "angle": "Amazon says it will stop using NDAs in data center deals with local governments, following Microsoft. Many people worry about secret AI data centers near their homes, their power bills and their water."
-          }
-        ],
-        "choose_deadline": "2026-10-10T09:26:03.059521+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1711,6 +1699,279 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+          "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+          "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-09T22:04:07+00:00",
+          "angle": "Ukrainian drones hit the data center that trains 'Russia's Google' Yandex's AI model, so AI infrastructure is now a war target."
+        },
+        "draft": {
+          "title": "Ukrainian drones hit Yandex's AI data centers",
+          "hook_text": "Russia's Google just got hit",
+          "beats": [
+            {
+              "line": "Ukrainian drones knocked out a Yandex AI data center. Yandex is known as Russia's Google.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Yandex",
+              "outlet": "",
+              "domain": "yandex.com",
+              "headline": "",
+              "url": "https://yandex.com",
+              "tag": "Yandex: Russia's Google hit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Two of its five data centers are knocked out. Sasovo was hit first, then Kaluga, on October 8 and 9.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2 of 5",
+              "small": "Yandex data centers knocked out",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "2 of 5 Yandex data centers out",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Sasovo's data center houses two of Yandex's three supercomputers used to train YandexGPT.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Sasovo",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "2 of 3 supercomputers in Sasovo",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                },
+                {
+                  "name": "YandexGPT",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Ukrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Kaluga",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Firepoint FP-1 drones hit Kaluga",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                }
+              ]
+            },
+            {
+              "line": "Yandex admits disruptions, but no employees were hurt. Russian users reported trouble with T-Bank, Russian Railways, and Ivi.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "T-Bank",
+              "outlet": "",
+              "domain": "tbank.ru",
+              "headline": "",
+              "url": "https://www.tbank.ru",
+              "tag": "T-Bank, Ivi, Russian Railways hit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Yandex",
+                  "domain": "yandex.com"
+                },
+                {
+                  "name": "T-Bank",
+                  "domain": "tbank.ru"
+                }
+              ]
+            },
+            {
+              "line": "Zelenskyy calls it a symmetrical response to Russian strikes on Ukraine's data centers since late September.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Zelenskyy: a symmetrical response",
+              "name": "Volodymyr Zelenskyy",
+              "role": "President of Ukraine",
+              "x": "ZelenskyyUa",
+              "brands": []
+            },
+            {
+              "line": "Are data centers now fair game?",
+              "visual": "clip",
+              "query": "data center server room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Yandex: 2 data centers out",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Urgent, matter-of-fact disbelief, turning sober at the point that AI data centers have become wartime targets.",
+          "thin": false,
+          "caption": "Ukrainian drones hit Yandex data centers in Sasovo and Kaluga on October 8 and 9. Sasovo houses two of Yandex's three supercomputers used to train YandexGPT, and Russian users reported trouble with apps like T-Bank and Ivi. Are data centers now fair game?",
+          "hashtags": [
+            "AI",
+            "Yandex",
+            "YandexGPT",
+            "Ukraine",
+            "Russia",
+            "datacenters",
+            "drones",
+            "tech",
+            "technews",
+            "war",
+            "Firepoint",
+            "AInews"
+          ],
+          "sources": [
+            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+          ],
+          "script": "Ukrainian drones knocked out a Yandex AI data center. Yandex is known as Russia's Google.\nTwo of its five data centers are knocked out. Sasovo was hit first, then Kaluga, on October 8 and 9.\nSasovo's data center houses two of Yandex's three supercomputers used to train YandexGPT.\nUkrainian company Firepoint says its FP-1 one-way attack drones hit Kaluga, Yandex's largest data center.\nYandex admits disruptions, but no employees were hurt. Russian users reported trouble with T-Bank, Russian Railways, and Ivi.\nZelenskyy calls it a symmetrical response to Russian strikes on Ukraine's data centers since late September.\nAre data centers now fair game?",
+          "keywords": [
+            "data center server room"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "fact_status": "ok",
+          "fact_notes": [],
+          "evidence": [
+            {
+              "claim": "Yandex, known as Russia's Google, was hit (by Ukrainian strikes)",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Ukrainian drones knocked out a Yandex AI data center",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Yandex is known as Russia's Google",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Two of Yandex's five data centers were knocked out",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Sasovo and Kaluga data centers were struck on October 8 and October 9",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Sasovo was hit first, then Kaluga",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Sasovo data center houses two of Yandex's three supercomputers used to train YandexGPT",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Ukrainian company Firepoint says its FP-1 one-way attack drones were used in the strike on the Kaluga data center, Yandex's largest",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Yandex acknowledged disruptions but said no employees were hurt",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Russian users reported problems with T-Bank, Russian Railways, and Ivi",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Zelenskyy called the strike a symmetrical response",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            },
+            {
+              "claim": "Volodymyr Zelenskyy is President of Ukraine",
+              "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+            }
+          ],
+          "fix_rounds": 1,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-10T10:13:10.432900+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2271,7 +2532,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "male",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-10T09:50+05:30",
@@ -2299,7 +2560,7 @@
   "report_day": "2026-10-09",
   "ig_count": {
     "day": "2026-10-10",
-    "at": "2026-10-10T09:59:57.191686+05:30",
+    "at": "2026-10-10T10:13:31.020117+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2319,63 +2580,63 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-10",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-10-0",
   "gemini_use": {
     "day": "2026-10-10",
-    "calls": 378,
-    "claude_calls": 87,
-    "claude_backup": 85
+    "calls": 398,
+    "claude_calls": 95,
+    "claude_backup": 94
   },
   "gemini_errors": [
     {
-      "at": "04:29",
+      "at": "04:46",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:46",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:46",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:47",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:48",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:48",
+      "error": "Claude refused (200): {\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011Cfsx92BNuL9ayFupJuXT1\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"scores\\\":{\\\"",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:48",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-10"
+    },
+    {
+      "at": "04:48",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-10"
     },
     {
-      "at": "04:30",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:30",
+      "at": "04:48",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-10"
     },
     {
-      "at": "04:30",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:31",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:31",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:31",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:32",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:32",
-      "error": "gemini-3.6-flash: free quota used up for now",
-      "day": "2026-10-10"
-    },
-    {
-      "at": "04:32",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "at": "04:48",
+      "error": "Claude backup failed: Claude not available",
       "day": "2026-10-10"
     }
   ],
@@ -2384,11 +2645,11 @@
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now"
   },
   "behind_since": "2026-10-10T09:00:34.659306+05:30",
-  "render_fails": 0,
-  "render_fail_topic": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+  "render_fails": 1,
+  "render_fail_topic": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
   "last_render_error": {
-    "at": "2026-10-10T09:50:05.981972+05:30",
-    "topic": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+    "at": "2026-10-10T10:18:28.519285+05:30",
+    "topic": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
     "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now",
     "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1666, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1784, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 491, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 530, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 371, in checked_script\n    draft = writer.write_script(topic, previous=previous, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 417, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 146, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now\n"
   }
