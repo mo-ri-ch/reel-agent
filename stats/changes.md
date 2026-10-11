@@ -122,3 +122,9 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-10 13:19: 6 reels/day (owner chose, free quota)
 - 09:00, 11:30, 14:00, 16:30, 19:00, 21:30 IST. Metric: slots filled on time (12/day missed 1-9 AM on 10 Oct).
+
+## 2026-10-11: Sunday review (no code changes)
+- Finding: the free Gemini quota resets at 12:30 IST (midnight US Pacific) and ran out at ~22:30 IST on 10 Oct after 5 reels.
+  With Claude off, the 09:00 and 11:30 slots can't be made (both missed today). Asked the owner: 5/day after 12:30, keep 6 and
+  accept late morning reels, or paid Claude for the mornings only.
+- Week 4-10 Oct: 57 reels, median 83 views (prior 32), avg watch ~3 s, 4 shares, followers 6 → 7. Too little data for changes.
