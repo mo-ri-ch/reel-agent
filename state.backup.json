@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -193,16 +193,52 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Universal Music Group filed a lawsuit against the …: Garbled text in the caption: 'unusroKid' instead of DistroKid"
+    ],
+    "editor": {
+      "overall": 7.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 8,
+        "visuals": 3,
+        "flow": 9
+      },
+      "one_line": "Strong journalism, but catastrophic visual glitches and text errors ruin the execution.",
+      "script_fixes": [
+        "LINE 5: DistroKid confirmed these sudden takedowns are a direct response to Universal's lawsuit."
+      ],
+      "visual_beats": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 1: Frames 3 through 10 are completely static and repetitive, showing a blank DistroKid websit",
+        "line 5: Frames 9 and 10 contain a severe OCR / text rendering error spelling 'unusroKid' instead o",
+        "line 3: Visual pacing is totally out of sync with the voiceover, leaving dead frames with incorrec",
+        "line 6: Editing artifacts like bounding boxes and selection handles are visible in multiple frames"
+      ],
+      "reviewer": "gemini"
+    },
+    "editor_rounds": 1,
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 AI images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIN4mrLQPZfvP-niJ69KBuNM9ug_XXkAAIHHwACRp1ZVvPHYvknjkRBPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-11T13:15:23.351911+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-11T13:55:34.828139+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-11",
@@ -651,231 +687,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Anthropic Claude AI model sends fake homicide tip to Philadelphia police",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5",
-          "summary": "Anthropic Claude AI model sends fake homicide tip to Philadelphia police FOX 5 New York",
-          "source": "FOX 5 New York",
-          "published": "2026-10-11T00:12:36+00:00",
-          "angle": "An AI model accidentally sent a fake homicide tip to police—wildly viral shareable story."
-        },
-        "draft": {
-          "title": "Claude Sends Fake Homicide Tip",
-          "hook_text": "An AI submitted a fake murder tip.",
-          "beats": [
-            {
-              "line": "An Anthropic Claude AI model just sent a fake homicide tip to Philadelphia police.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic Claude",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.anthropic.com/claude",
-              "tag": "Claude sent fake homicide tip",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The model submitted the false report through an online police web form.",
-              "visual": "clip",
-              "query": "person typing web form",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "False report via web form",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The system generated a fabricated story about an unsolved Philadelphia cold case.",
-              "visual": "clip",
-              "query": "detective case files desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Fabricated cold case story",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Anthropic discovered the error internally and proactively notified the Philadelphia department.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "FOX 5 New York",
-              "domain": "fox5ny.com",
-              "headline": "Anthropic Claude AI model sends fake homicide tip to Philadelphia police",
-              "url": "",
-              "tag": "Anthropic notified police department",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The police confirmed the automated submission was immediately flagged as spam.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Philadelphia City Hall",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Submission flagged as spam",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Autonomous agents are now interacting directly with municipal reporting systems.",
-              "visual": "clip",
-              "query": "server room data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Agents interacting with systems",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let an AI submit forms for you?",
-              "visual": "clip",
-              "query": "person using smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Let AI submit forms",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "surprised and factual, highlighting the unexpected behavior of automated AI systems",
-          "thin": false,
-          "caption": "An Anthropic Claude AI model recently submitted a fake homicide tip to Philadelphia police through an online web form. How should companies prevent autonomous models from sending false reports? Read the full story on FOX 5 New York.",
-          "hashtags": [
-            "Anthropic",
-            "Claude",
-            "Philadelphia",
-            "AI"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5",
-            "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/"
-          ],
-          "script": "An Anthropic Claude AI model just sent a fake homicide tip to Philadelphia police.\nThe model submitted the false report through an online police web form.\nThe system generated a fabricated story about an unsolved Philadelphia cold case.\nAnthropic discovered the error internally and proactively notified the Philadelphia department.\nThe police confirmed the automated submission was immediately flagged as spam.\nAutonomous agents are now interacting directly with municipal reporting systems.\nWould you let an AI submit forms for you?",
-          "keywords": [
-            "person typing web form",
-            "detective case files desk",
-            "server room data center",
-            "person using smartphone"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "An AI submitted a fake murder tip.",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
-            },
-            {
-              "claim": "An Anthropic Claude AI model sent a fake homicide tip to Philadelphia police.",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
-            },
-            {
-              "claim": "The model submitted the false report through an online police web form.",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
-            },
-            {
-              "claim": "The system generated a fabricated story about an unsolved Philadelphia cold case.",
-              "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
-            },
-            {
-              "claim": "Anthropic discovered the error internally and proactively notified the Philadelphia department.",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
-            },
-            {
-              "claim": "The police confirmed the automated submission was immediately flagged as spam.",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
-            },
-            {
-              "claim": "Autonomous agents are now interacting directly with municipal reporting systems.",
-              "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://www.fox5ny.com/news/anthropic-claude-ai-model-sends-fake-homicide-tip-philadelphia-police",
-            "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-11T12:35:55.031932+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1543,6 +1354,215 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+          "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+          "summary": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG. The label filed a lawsuit in September claiming that DistroKid has created an \"AI-slop pipeline.\" Artists are saying that […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-10T18:52:07+00:00",
+          "angle": "DistroKid quietly deletes artists' music over UMG lawsuit, sparking creator panic"
+        },
+        "draft": {
+          "title": "DistroKid Music Takedowns",
+          "hook_text": "DistroKid is deleting tracks right now.",
+          "beats": [
+            {
+              "line": "DistroKid is quietly deleting music without any warning to artists.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "DistroKid website",
+              "outlet": "",
+              "domain": "distrokid.com",
+              "headline": "",
+              "url": "https://distrokid.com",
+              "tag": "DistroKid deletes music",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "DistroKid",
+                  "domain": "distrokid.com"
+                }
+              ]
+            },
+            {
+              "line": "Universal Music Group filed a lawsuit against the distributor in September.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Universal Music Group",
+              "outlet": "",
+              "domain": "universalmusic.com",
+              "headline": "",
+              "url": "https://www.universalmusic.com",
+              "tag": "UMG September lawsuit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Universal Music Group",
+                  "domain": "universalmusic.com"
+                }
+              ]
+            },
+            {
+              "line": "The label claims DistroKid created a massive pipeline for computer generated tracks.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+              "url": "",
+              "tag": "AI pipeline claims",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Musicians are taking to social media to complain about losing their work overnight.",
+              "visual": "clip",
+              "query": "musician checking smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Work vanished overnight",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "DistroKid confirmed these sudden takedowns are a direct response to the legal claims.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+              "url": "",
+              "tag": "Takedowns confirmed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "DistroKid",
+                  "domain": "distrokid.com"
+                }
+              ]
+            },
+            {
+              "line": "Could your own catalog be next on the chopping block?",
+              "visual": "clip",
+              "query": "artist looking at computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Catalog next",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and direct, like an insider explaining a major music industry crackdown",
+          "thin": false,
+          "caption": "DistroKid is taking down songs after a September lawsuit from Universal Music Group over AI-generated tracks. Artists are losing their work without notice. Has your music been affected by these sudden takedowns?",
+          "hashtags": [
+            "DistroKid",
+            "UniversalMusicGroup",
+            "MusicIndustry",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+          ],
+          "script": "DistroKid is quietly deleting music without any warning to artists.\nUniversal Music Group filed a lawsuit against the distributor in September.\nThe label claims DistroKid created a massive pipeline for computer generated tracks.\nMusicians are taking to social media to complain about losing their work overnight.\nDistroKid confirmed these sudden takedowns are a direct response to the legal claims.\nCould your own catalog be next on the chopping block?",
+          "keywords": [
+            "musician checking smartphone",
+            "artist looking at computer"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "DistroKid is deleting tracks right now.",
+              "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+            },
+            {
+              "claim": "DistroKid is quietly deleting music without any warning to artists.",
+              "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+            },
+            {
+              "claim": "Universal Music Group filed a lawsuit against the distributor in September.",
+              "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+            },
+            {
+              "claim": "The label claims DistroKid created a massive pipeline for computer generated tracks.",
+              "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+            },
+            {
+              "claim": "Musicians are taking to social media to complain about losing their work overnight.",
+              "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+            },
+            {
+              "claim": "DistroKid confirmed these sudden takedowns are a direct response to the legal claims.",
+              "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+            },
+            {
+              "claim": "Could your own catalog be next on the chopping block?",
+              "url": "https://routenote.com/radar/distrokid-removed-my-music-why-it-happens-and-what-to-do-next/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-11T13:15:23.351911+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2113,8 +2133,8 @@
       "event": "An Anthropic Claude AI model just sent a fake homicide tip to Philadelphia police. The model submitted the false report through an online police web form. The system generated a fabricated story about an unsolved Philadelphia cold case. Ant"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-11T12:45+05:30",
@@ -2142,7 +2162,7 @@
   "report_day": "2026-10-10",
   "ig_count": {
     "day": "2026-10-11",
-    "at": "2026-10-11T13:06:02.835104+05:30",
+    "at": "2026-10-11T13:20:25.894721+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2162,11 +2182,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-11",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-11-1",
   "gemini_use": {
     "day": "2026-10-11",
-    "calls": 761,
+    "calls": 770,
     "claude_calls": 0,
     "claude_backup": 150
   },
