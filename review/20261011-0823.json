@@ -1,0 +1,77 @@
+{
+ "made": "20261011-0823",
+ "title": "Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them",
+ "hook_text": "Search Mac files locally with EmbeddingGemma 2.",
+ "hook_before": null,
+ "script": "A new open-source Mac app lets you search your local documents using Google EmbeddingGemma 2.\nThe project uses Google EmbeddingGemma 2 models to handle embedding workloads entirely on personal hardware.\nInstead of sending files to external servers, semantic search runs completely offline on macOS.\nGoogle designed these models specifically for edge devices to parse text content quickly without cloud dependency.\nThis setup gives you private document retrieval without sacrificing data security or relying on internet access.\nWould you install an open-source tool to search your Mac files offline?",
+ "words": 88,
+ "beats": [
+  {
+   "line": "A new open-source Mac app lets you search your local documents using Google EmbeddingGemma 2.",
+   "visual": "source"
+  },
+  {
+   "line": "The project uses Google EmbeddingGemma 2 models to handle embedding workloads entirely on personal hardware.",
+   "visual": "official"
+  },
+  {
+   "line": "Instead of sending files to external servers, semantic search runs completely offline on macOS.",
+   "visual": "clip"
+  },
+  {
+   "line": "Google designed these models specifically for edge devices to parse text content quickly without cloud dependency.",
+   "visual": "clip"
+  },
+  {
+   "line": "This setup gives you private document retrieval without sacrificing data security or relying on internet access.",
+   "visual": "stat"
+  },
+  {
+   "line": "Would you install an open-source tool to search your Mac files offline?",
+   "visual": "clip"
+  }
+ ],
+ "voice": "Paula (Fish Audio)",
+ "visuals": "5 official images, 2 cards",
+ "editor": {
+  "overall": 7.8,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 6,
+   "flow": 8
+  },
+  "one_line": "Strong local search story, but repetitive and mismatched graphics need urgent cleanup.",
+  "script_fixes": [
+   "LINE 2: Replace 'Google EmbeddingGemma 2 models' with 'EmbeddingGemma 2' to avoid redundancy.",
+   "LINE 4: Specify the app name if available, or clarify the exact hardware specs.",
+   "LINE 5: Remove vague phrasing and state directly how offline indexing works."
+  ],
+  "visual_beats": [
+   1,
+   2,
+   4
+  ],
+  "visual_notes": [
+   "line 2: Displays an arbitrary benchmark table with unrelated devices instead of the Mac app interf",
+   "line 3: Shows a generic software development workflow diagram completely unrelated to local file s",
+   "line 5: Uses random percentage counters (98% to 100%) which look like arbitrary fluff."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 38.83,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.2,
+ "cuts": [
+  5.3,
+  9.73,
+  11.93,
+  25.8
+ ],
+ "first_cut_at": 5.3,
+ "avg_shot_seconds": 7.77,
+ "longest_shot_seconds": 13.87,
+ "words_per_minute": 136
+}
