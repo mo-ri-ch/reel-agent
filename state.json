@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -167,16 +167,49 @@
     "fact_notes": [],
     "source_links": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Running models of that scale completely on Snapdra…: shows a flower (snapdragon plant) instead of Snapdragon hardware",
+      "Qualcomm engineers are pushing for local processin…: the image area is blank, greyed out, or broken",
+      "Shot 4 shows the Qualcomm logo card instead of a person holding a smartphone as requested."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, specific tech news with good pacing, though early visual pacing needs tightening.",
+      "script_fixes": [],
+      "visual_beats": [
+        0,
+        1
+      ],
+      "visual_notes": [
+        "line 1: Text on screen shows random reddit metadata instead of a punchy headline or parameter coun",
+        "line 2: Visual stays static on the Snapdragon logo for too long while engineering details are disc"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Cristiano Amon: Web Summit"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 2 clips, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-11T15:10:29.307576+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-11T15:49:10.134955+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-11",
@@ -618,50 +651,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "The AI labor apocalypse is on hold (for now)",
-            "link": "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html",
-            "summary": "The AI labor apocalypse is on hold (for now) EL PAÍS English",
-            "source": "EL PAÍS English",
-            "published": "2026-10-11T04:00:00+00:00",
-            "angle": "Is the job apocalypse actually happening? A major reality check on AI taking over the workforce."
-          },
-          {
-            "title": "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds",
-            "link": "https://www.wccbcharlotte.com/2026/10/10/most-americans-think-artificial-intelligence-is-developing-too-fast-a-new-ap-norc-poll-finds/",
-            "summary": "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds WCCB Charlotte",
-            "source": "WCCB Charlotte",
-            "published": "2026-10-10T15:41:50+00:00",
-            "angle": "New poll reveals most Americans think AI is moving way too fast—are you keeping up?"
-          },
-          {
-            "title": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids",
-            "link": "https://www.reflector.com/news/local/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids/article_dad54518-db5e-5c5f-a15d-4e0f41f02428.html",
-            "summary": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids The Daily Reflector",
-            "source": "The Daily Reflector",
-            "published": "2026-10-11T07:30:00+00:00",
-            "angle": "AI data centers are putting a massive strain on power grids and forcing a shift to solar and natural gas."
-          }
-        ],
-        "choose_deadline": "2026-10-11T13:30:42.637961+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1347,6 +1336,189 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
+          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/",
+          "summary": "",
+          "source": "r/LocalLLaMA",
+          "published": "2026-10-11T04:37:21+00:00",
+          "buzz": "top of r/LocalLLaMA today",
+          "angle": "Qualcomm reveals AI companies want phones running 100B-parameter models continuously by 2028."
+        },
+        "draft": {
+          "title": "Qualcomm AI on Phones by 2028",
+          "hook_text": "One hundred billion parameters.",
+          "beats": [
+            {
+              "line": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.qualcomm.com",
+              "tag": "Cristiano Amon on 2028 models",
+              "name": "Cristiano Amon",
+              "role": "CEO, Qualcomm",
+              "x": "cristianoamon",
+              "brands": [
+                {
+                  "name": "Qualcomm",
+                  "domain": "qualcomm.com"
+                }
+              ]
+            },
+            {
+              "line": "Running models of that scale completely on Snapdragon hardware requires major engineering advances.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Snapdragon",
+              "outlet": "",
+              "domain": "qualcomm.com",
+              "headline": "",
+              "url": "https://www.qualcomm.com",
+              "tag": "Snapdragon hardware advances needed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Qualcomm",
+                  "domain": "qualcomm.com"
+                }
+              ]
+            },
+            {
+              "line": "Current mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "100B",
+              "small": "parameter mobile target",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "100B parameter target",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Qualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.",
+              "visual": "clip",
+              "query": "person holding smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Avoid cloud latency",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Qualcomm",
+                  "domain": "qualcomm.com"
+                }
+              ]
+            },
+            {
+              "line": "Will your next mobile device run a massive model locally without internet connection?",
+              "visual": "clip",
+              "query": "person using phone outdoors",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Run massive model locally",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and direct tech journalism tone, highlighting the scale of the hardware shift",
+          "thin": false,
+          "caption": "Qualcomm CEO Cristiano Amon reveals artificial intelligence developers want phones running 100-billion-parameter models continuously by 2028. This shifts massive processing workloads directly to mobile hardware. Would you run a massive model locally on your phone?",
+          "hashtags": [
+            "Qualcomm",
+            "Snapdragon",
+            "LocalLLaMA",
+            "AI"
+          ],
+          "sources": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
+          ],
+          "script": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.\nRunning models of that scale completely on Snapdragon hardware requires major engineering advances.\nCurrent mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.\nQualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.\nWill your next mobile device run a massive model locally without internet connection?",
+          "keywords": [
+            "person holding smartphone",
+            "person using phone outdoors"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "One hundred billion parameters.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            },
+            {
+              "claim": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            },
+            {
+              "claim": "Running models of that scale completely on Snapdragon hardware requires major engineering advances.",
+              "url": "https://startupfortune.com/qualcomms-ceo-says-ai-firms-want-phones-running-100-billion-parameter-models-by-2028/"
+            },
+            {
+              "claim": "Current mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            },
+            {
+              "claim": "Qualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-11T15:10:29.307576+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1927,8 +2099,8 @@
       "event": "A new open-source Mac app lets you search your local documents using Google EmbeddingGemma 2. The project uses Google EmbeddingGemma 2 models to handle embedding workloads entirely on personal hardware. Instead of sending files to external "
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-11T14:00+05:30",
@@ -1956,7 +2128,7 @@
   "report_day": "2026-10-10",
   "ig_count": {
     "day": "2026-10-11",
-    "at": "2026-10-11T15:00:29.307604+05:30",
+    "at": "2026-10-11T15:15:26.259052+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -1976,11 +2148,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-11",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-11-1",
   "gemini_use": {
     "day": "2026-10-11",
-    "calls": 1402,
+    "calls": 1409,
     "claude_calls": 0,
     "claude_backup": 150
   },
