@@ -1,216 +1,69 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
-    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/",
-    "summary": "",
-    "source": "r/LocalLLaMA",
-    "published": "2026-10-11T04:37:21+00:00",
-    "buzz": "top of r/LocalLLaMA today",
-    "angle": "Qualcomm reveals AI companies want phones running 100B-parameter models continuously by 2028."
-  },
-  "draft": {
-    "title": "Qualcomm AI on Phones by 2028",
-    "hook_text": "One hundred billion parameters.",
-    "beats": [
-      {
-        "line": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "https://www.qualcomm.com",
-        "tag": "Cristiano Amon on 2028 models",
-        "name": "Cristiano Amon",
-        "role": "CEO, Qualcomm",
-        "x": "cristianoamon",
-        "brands": [
-          {
-            "name": "Qualcomm",
-            "domain": "qualcomm.com"
-          }
-        ]
-      },
-      {
-        "line": "Running models of that scale completely on Snapdragon hardware requires major engineering advances.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Snapdragon",
-        "outlet": "",
-        "domain": "qualcomm.com",
-        "headline": "",
-        "url": "https://www.qualcomm.com",
-        "tag": "Snapdragon hardware advances needed",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Qualcomm",
-            "domain": "qualcomm.com"
-          }
-        ]
-      },
-      {
-        "line": "Current mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "100B",
-        "small": "parameter mobile target",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "100B parameter target",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Qualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.",
-        "visual": "clip",
-        "query": "person holding smartphone",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Avoid cloud latency",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Qualcomm",
-            "domain": "qualcomm.com"
-          }
-        ]
-      },
-      {
-        "line": "Will your next mobile device run a massive model locally without internet connection?",
-        "visual": "clip",
-        "query": "person using phone outdoors",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Run massive model locally",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "sharp and direct tech journalism tone, highlighting the scale of the hardware shift",
-    "thin": false,
-    "caption": "Qualcomm CEO Cristiano Amon reveals artificial intelligence developers want phones running 100-billion-parameter models continuously by 2028. This shifts massive processing workloads directly to mobile hardware. Would you run a massive model locally on your phone?",
-    "hashtags": [
-      "Qualcomm",
-      "Snapdragon",
-      "LocalLLaMA",
-      "AI"
-    ],
-    "sources": [
-      "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
-    ],
-    "script": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.\nRunning models of that scale completely on Snapdragon hardware requires major engineering advances.\nCurrent mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.\nQualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.\nWill your next mobile device run a massive model locally without internet connection?",
-    "keywords": [
-      "person holding smartphone",
-      "person using phone outdoors"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "evidence": [
-      {
-        "claim": "One hundred billion parameters.",
-        "url": "https://www.tokenpost.com/news/technology/29601"
-      },
-      {
-        "claim": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.",
-        "url": "https://www.tokenpost.com/news/technology/29601"
-      },
-      {
-        "claim": "Running models of that scale completely on Snapdragon hardware requires major engineering advances.",
-        "url": "https://startupfortune.com/qualcomms-ceo-says-ai-firms-want-phones-running-100-billion-parameter-models-by-2028/"
-      },
-      {
-        "claim": "Current mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.",
-        "url": "https://www.tokenpost.com/news/technology/29601"
-      },
-      {
-        "claim": "Qualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.",
-        "url": "https://www.tokenpost.com/news/technology/29601"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "source_links": [
-      "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
-    ],
-    "visual_status": "fixed",
-    "visual_notes": [
-      "Running models of that scale completely on Snapdra…: shows a flower (snapdragon plant) instead of Snapdragon hardware",
-      "Qualcomm engineers are pushing for local processin…: the image area is blank, greyed out, or broken",
-      "Shot 4 shows the Qualcomm logo card instead of a person holding a smartphone as requested."
-    ],
-    "editor": {
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 9,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong, specific tech news with good pacing, though early visual pacing needs tightening.",
-      "script_fixes": [],
-      "visual_beats": [
-        0,
-        1
-      ],
-      "visual_notes": [
-        "line 1: Text on screen shows random reddit metadata instead of a punchy headline or parameter coun",
-        "line 2: Visual stays static on the Snapdragon logo for too long while engineering details are disc"
-      ],
-      "reviewer": "gemini"
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "link": "https://github.com/rociiu/talorys",
+      "summary": "",
+      "source": "github.com",
+      "published": "2026-10-10T10:52:09+00:00",
+      "buzz": "Hacker News 294 points",
+      "angle": "Run your own personal AI agent completely free on Cloudflare with this new self-hosted tool."
     },
-    "credits": [
-      "Cristiano Amon: Web Summit"
-    ],
-    "voice_used": "Ethan (Fish Audio)",
-    "visual_summary": "1 real photos, 2 clips, 3 cards"
-  },
+    {
+      "title": "Farol",
+      "link": "https://www.producthunt.com/products/farol-3",
+      "summary": "The macOS terminal that shows which coding agent needs you Discussion | Link",
+      "source": "Product Hunt — The best new products, every day",
+      "published": "2026-10-10T10:38:06+00:00",
+      "buzz": "Product Hunt launch",
+      "angle": "A new macOS terminal that tells you exactly which coding agent needs your attention right now."
+    },
+    {
+      "title": "Building a 4x R9700 setup for a 10 person startup",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x2u742/building_a_4x_r9700_setup_for_a_10_person_startup/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-11T00:20:07+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "A 10-person startup is building a massive 4x R9700 hardware rig for local LLM computing."
+    }
+  ],
+  "choose_deadline": "2026-10-11T16:00:50.772327+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ",
-  "queue": [],
+  "video_file_id": null,
+  "queue": [
+    {
+      "title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
+      "video_file_id": "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ",
+      "caption": "Qualcomm CEO Cristiano Amon reveals artificial intelligence developers want phones running 100-billion-parameter models continuously by 2028. This shifts massive processing workloads directly to mobile hardware. Would you run a massive model locally on your phone?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Cristiano Amon: Web Summit\n\n#Qualcomm #Snapdragon #LocalLLaMA #AI",
+      "extra": false,
+      "meta": {
+        "title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
+        "kind": "news",
+        "source": "r/LocalLLaMA",
+        "engine": "fish",
+        "voice": "Ethan (Fish Audio)",
+        "person": true,
+        "words": 75,
+        "visuals": "1 real photos, 2 clips, 3 cards",
+        "editor": 8.5,
+        "writer": "gemini",
+        "hook_score": null,
+        "made": "2026-10-11T15:30+05:30"
+      },
+      "post_at": "2026-10-11T16:30:00+05:30"
+    }
+  ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-10-11T15:30:26.083658+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
-  "pending_offer": true,
+  "pending_offer": false,
   "offer_log": {
     "date": "2026-10-11",
     "done": [
@@ -615,7 +468,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [],
   "tried": [
     "How healthcare and the environment can benefit from 'Green' AI",
@@ -651,187 +503,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-10T12:43:33+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "This open-source Mac app runs EmbeddingGemma 2 locally to search all your files by meaning."
-        },
-        "draft": {
-          "title": "Open-source Mac app runs EmbeddingGemma 2",
-          "hook_text": "Search Mac files with EmbeddingGemma 2.",
-          "beats": [
-            {
-              "line": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "r/LocalLLaMA",
-              "domain": "reddit.com",
-              "headline": "Open-source Mac app that runs EmbeddingGemma 2 locally",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/",
-              "tag": "EmbeddingGemma 2 Mac App",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "It indexes your documents directly on your device using the open-weight embedding model.",
-              "visual": "clip",
-              "query": "person typing on macbook",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Local Document Indexing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Google built the EmbeddingGemma model family to handle semantic search tasks on local hardware.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "EmbeddingGemma",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "",
-              "tag": "Google EmbeddingGemma Models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "The software scans your local folders to let you query content by what is actually inside your files.",
-              "visual": "clip",
-              "query": "searching files on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Semantic Local File Search",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you install an open-source app to search your personal files offline?",
-              "visual": "clip",
-              "query": "macbook screen dark mode",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Offline Mac Search App",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and direct tech journalism tone, highlighting local open-weight search capabilities",
-          "thin": false,
-          "caption": "A new open-source Mac app lets you run Google EmbeddingGemma 2 locally to search your files by content. All processing runs directly on your device. Would you use an offline semantic search app?",
-          "hashtags": [
-            "EmbeddingGemma",
-            "Google",
-            "Mac",
-            "LocalLLaMA",
-            "OpenSource"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/"
-          ],
-          "script": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.\nIt indexes your documents directly on your device using the open-weight embedding model.\nGoogle built the EmbeddingGemma model family to handle semantic search tasks on local hardware.\nThe software scans your local folders to let you query content by what is actually inside your files.\nWould you install an open-source app to search your personal files offline?",
-          "keywords": [
-            "person typing on macbook",
-            "searching files on laptop",
-            "macbook screen dark mode"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "An open-source Mac app runs EmbeddingGemma 2 locally to search files.",
-              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
-            },
-            {
-              "claim": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.",
-              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
-            },
-            {
-              "claim": "It indexes your documents directly on your device using the open-weight embedding model.",
-              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
-            },
-            {
-              "claim": "Google built the EmbeddingGemma model family to handle semantic search tasks on local hardware.",
-              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
-            },
-            {
-              "claim": "The software scans your local folders to let you query content by what is actually inside your files.",
-              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-11T13:43:00.298438+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1519,6 +1190,224 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
+          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/",
+          "summary": "",
+          "source": "r/LocalLLaMA",
+          "published": "2026-10-11T04:37:21+00:00",
+          "buzz": "top of r/LocalLLaMA today",
+          "angle": "Qualcomm reveals AI companies want phones running 100B-parameter models continuously by 2028."
+        },
+        "draft": {
+          "title": "Qualcomm AI on Phones by 2028",
+          "hook_text": "One hundred billion parameters.",
+          "beats": [
+            {
+              "line": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.qualcomm.com",
+              "tag": "Cristiano Amon on 2028 models",
+              "name": "Cristiano Amon",
+              "role": "CEO, Qualcomm",
+              "x": "cristianoamon",
+              "brands": [
+                {
+                  "name": "Qualcomm",
+                  "domain": "qualcomm.com"
+                }
+              ]
+            },
+            {
+              "line": "Running models of that scale completely on Snapdragon hardware requires major engineering advances.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Snapdragon",
+              "outlet": "",
+              "domain": "qualcomm.com",
+              "headline": "",
+              "url": "https://www.qualcomm.com",
+              "tag": "Snapdragon hardware advances needed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Qualcomm",
+                  "domain": "qualcomm.com"
+                }
+              ]
+            },
+            {
+              "line": "Current mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "100B",
+              "small": "parameter mobile target",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "100B parameter target",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Qualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.",
+              "visual": "clip",
+              "query": "person holding smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Avoid cloud latency",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Qualcomm",
+                  "domain": "qualcomm.com"
+                }
+              ]
+            },
+            {
+              "line": "Will your next mobile device run a massive model locally without internet connection?",
+              "visual": "clip",
+              "query": "person using phone outdoors",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Run massive model locally",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and direct tech journalism tone, highlighting the scale of the hardware shift",
+          "thin": false,
+          "caption": "Qualcomm CEO Cristiano Amon reveals artificial intelligence developers want phones running 100-billion-parameter models continuously by 2028. This shifts massive processing workloads directly to mobile hardware. Would you run a massive model locally on your phone?",
+          "hashtags": [
+            "Qualcomm",
+            "Snapdragon",
+            "LocalLLaMA",
+            "AI"
+          ],
+          "sources": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
+          ],
+          "script": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.\nRunning models of that scale completely on Snapdragon hardware requires major engineering advances.\nCurrent mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.\nQualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.\nWill your next mobile device run a massive model locally without internet connection?",
+          "keywords": [
+            "person holding smartphone",
+            "person using phone outdoors"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "One hundred billion parameters.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            },
+            {
+              "claim": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            },
+            {
+              "claim": "Running models of that scale completely on Snapdragon hardware requires major engineering advances.",
+              "url": "https://startupfortune.com/qualcomms-ceo-says-ai-firms-want-phones-running-100-billion-parameter-models-by-2028/"
+            },
+            {
+              "claim": "Current mobile processors handle smaller on-device tasks, but local execution for huge models is the next target.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            },
+            {
+              "claim": "Qualcomm engineers are pushing for local processing to avoid cloud latency and data privacy risks.",
+              "url": "https://www.tokenpost.com/news/technology/29601"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
+          ],
+          "visual_status": "fixed",
+          "visual_notes": [
+            "Running models of that scale completely on Snapdra…: shows a flower (snapdragon plant) instead of Snapdragon hardware",
+            "Qualcomm engineers are pushing for local processin…: the image area is blank, greyed out, or broken",
+            "Shot 4 shows the Qualcomm logo card instead of a person holding a smartphone as requested."
+          ],
+          "editor": {
+            "overall": 8.5,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 9,
+              "accuracy": 9,
+              "visuals": 7,
+              "flow": 9
+            },
+            "one_line": "Strong, specific tech news with good pacing, though early visual pacing needs tightening.",
+            "script_fixes": [],
+            "visual_beats": [
+              0,
+              1
+            ],
+            "visual_notes": [
+              "line 1: Text on screen shows random reddit metadata instead of a punchy headline or parameter coun",
+              "line 2: Visual stays static on the Snapdragon logo for too long while engineering details are disc"
+            ],
+            "reviewer": "gemini"
+          },
+          "credits": [
+            "Cristiano Amon: Web Summit"
+          ],
+          "voice_used": "Ethan (Fish Audio)",
+          "visual_summary": "1 real photos, 2 clips, 3 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ",
+      "history_title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028."
     }
   ],
   "posted_ids": [
@@ -1554,7 +1443,6 @@
     "BAACAgUAAxkDAAIOF2rLR3EDLuZy6Jruu2yJMdozEPXKAAIQHwACRp1ZVrrGbIGXNpgJPQQ"
   ],
   "history": [
-    "Hypersoft Technologies Ltd announces Strategic Foray into Artificial Intelligence - A Unified AI Platform for Data Science and ERP Excellence",
     "DIET Leh Commences Three-Day Bootcamp on Artificial Intelligence, Digital Citizenship and Educational Technology.",
     "Top AI headlines · 8:20 PM today",
     "Top AI headlines · 8:40 PM today",
@@ -1653,13 +1541,10 @@
     "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
     "Anthropic Claude AI model sends fake homicide tip to Philadelphia police",
     "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-    "Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them"
+    "Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them",
+    "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028."
   ],
   "posted_log": [
-    {
-      "title": "Unedited AI prompt found in court judgment? Viral screenshot sparks online discussion",
-      "at": "2026-09-27T15:10:27.289336+05:30"
-    },
     {
       "title": "DeepSeek Elastic Compute (DSec)",
       "at": "2026-09-27T17:40:29.004048+05:30"
@@ -2097,15 +1982,20 @@
       "title": "Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them",
       "at": "2026-10-11T14:00:27.630625+05:30",
       "event": "A new open-source Mac app lets you search your local documents using Google EmbeddingGemma 2. The project uses Google EmbeddingGemma 2 models to handle embedding workloads entirely on personal hardware. Instead of sending files to external "
+    },
+    {
+      "title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
+      "at": "2026-10-11T15:30:35.417710+05:30",
+      "event": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by twenty-eight. Running models of that scale completely on Snapdragon hardware requires m"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-11T14:00+05:30",
-    "techcrunch.com": 6,
-    "theverge.com": 5,
+    "at": "2026-10-11T15:30+05:30",
+    "techcrunch.com": 5,
+    "theverge.com": 4,
     "arstechnica.com": 1,
     "technologyreview.com": 0,
     "openai.com": 0,
@@ -2114,12 +2004,12 @@
     "huggingface.co": 0,
     "blogs.nvidia.com": 0,
     "inc42.com": 1,
-    "news.google.com": 43,
+    "news.google.com": 39,
     "Google News (VentureBeat, AIM, AI News)": 3,
-    "producthunt.com": 5,
+    "producthunt.com": 2,
     "Hacker News": 3,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 0
+    "filtered out (PR / local events / market fluff)": 1
   },
   "guarantee_since": "2026-10-10T13:19:00+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -2128,7 +2018,7 @@
   "report_day": "2026-10-10",
   "ig_count": {
     "day": "2026-10-11",
-    "at": "2026-10-11T15:15:26.259052+05:30",
+    "at": "2026-10-11T15:30:35.417746+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2152,7 +2042,7 @@
   "late_note_for": "2026-10-11-1",
   "gemini_use": {
     "day": "2026-10-11",
-    "calls": 1409,
+    "calls": 1411,
     "claude_calls": 0,
     "claude_backup": 150
   },
