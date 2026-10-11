@@ -14,10 +14,10 @@
   },
   "draft": {
     "title": "Open-source Mac app runs EmbeddingGemma 2",
-    "hook_text": "Search Mac files with EmbeddingGemma 2.",
+    "hook_text": "Search Mac files locally with EmbeddingGemma 2.",
     "beats": [
       {
-        "line": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.",
+        "line": "A new open-source Mac app lets you search your local documents using Google EmbeddingGemma 2.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -40,36 +40,18 @@
         ]
       },
       {
-        "line": "It indexes your documents directly on your device using the open-weight embedding model.",
-        "visual": "clip",
-        "query": "person typing on macbook",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Local Document Indexing",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Google built the EmbeddingGemma model family to handle semantic search tasks on local hardware.",
+        "line": "The project uses Google EmbeddingGemma 2 models to handle embedding workloads entirely on personal hardware.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "EmbeddingGemma",
+        "entity": "Google",
         "outlet": "",
         "domain": "google.com",
         "headline": "",
-        "url": "",
-        "tag": "Google EmbeddingGemma Models",
+        "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/",
+        "tag": "Google Hardware Models",
         "name": "",
         "role": "",
         "x": "",
@@ -81,9 +63,9 @@
         ]
       },
       {
-        "line": "The software scans your local folders to let you query content by what is actually inside your files.",
+        "line": "Instead of sending files to external servers, semantic search runs completely offline on macOS.",
         "visual": "clip",
-        "query": "searching files on laptop",
+        "query": "person typing on macbook",
         "prompt": "",
         "big": "",
         "small": "",
@@ -92,14 +74,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Semantic Local File Search",
+        "tag": "Offline Semantic Search",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Would you install an open-source app to search your personal files offline?",
+        "line": "Google designed these models specifically for edge devices to parse text content quickly without cloud dependency.",
         "visual": "clip",
         "query": "macbook screen dark mode",
         "prompt": "",
@@ -110,7 +92,48 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Offline Mac Search App",
+        "tag": "Edge Device Parsing",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "This setup gives you private document retrieval without sacrificing data security or relying on internet access.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "100%",
+        "small": "private offline search",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Private Document Retrieval",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you install an open-source tool to search your Mac files offline?",
+        "visual": "clip",
+        "query": "laptop close up",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Offline Mac Search",
         "name": "",
         "role": "",
         "x": "",
@@ -119,7 +142,7 @@
     ],
     "delivery": "sharp and direct tech journalism tone, highlighting local open-weight search capabilities",
     "thin": false,
-    "caption": "A new open-source Mac app lets you run Google EmbeddingGemma 2 locally to search your files by content. All processing runs directly on your device. Would you use an offline semantic search app?",
+    "caption": "A new open-source Mac app runs Google EmbeddingGemma 2 locally to search your files by content. All processing runs directly on your device without cloud servers. Would you use an offline semantic search app?",
     "hashtags": [
       "EmbeddingGemma",
       "Google",
@@ -128,41 +151,47 @@
       "OpenSource"
     ],
     "sources": [
-      "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/"
+      "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/",
+      "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
     ],
-    "script": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.\nIt indexes your documents directly on your device using the open-weight embedding model.\nGoogle built the EmbeddingGemma model family to handle semantic search tasks on local hardware.\nThe software scans your local folders to let you query content by what is actually inside your files.\nWould you install an open-source app to search your personal files offline?",
+    "script": "A new open-source Mac app lets you search your local documents using Google EmbeddingGemma 2.\nThe project uses Google EmbeddingGemma 2 models to handle embedding workloads entirely on personal hardware.\nInstead of sending files to external servers, semantic search runs completely offline on macOS.\nGoogle designed these models specifically for edge devices to parse text content quickly without cloud dependency.\nThis setup gives you private document retrieval without sacrificing data security or relying on internet access.\nWould you install an open-source tool to search your Mac files offline?",
     "keywords": [
       "person typing on macbook",
-      "searching files on laptop",
-      "macbook screen dark mode"
+      "macbook screen dark mode",
+      "laptop close up"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "An open-source Mac app runs EmbeddingGemma 2 locally to search files.",
+        "claim": "Search Mac files locally with EmbeddingGemma 2.",
         "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
       },
       {
-        "claim": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.",
+        "claim": "A new open-source Mac app lets you search your local documents using Google EmbeddingGemma 2.",
         "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
       },
       {
-        "claim": "It indexes your documents directly on your device using the open-weight embedding model.",
+        "claim": "The project uses Google EmbeddingGemma 2 models to handle embedding workloads entirely on personal hardware.",
         "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
       },
       {
-        "claim": "Google built the EmbeddingGemma model family to handle semantic search tasks on local hardware.",
+        "claim": "Instead of sending files to external servers, semantic search runs completely offline on macOS.",
         "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
       },
       {
-        "claim": "The software scans your local folders to let you query content by what is actually inside your files.",
+        "claim": "Google designed these models specifically for edge devices to parse text content quickly without cloud dependency.",
+        "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
+      },
+      {
+        "claim": "This setup gives you private document retrieval without sacrificing data security or relying on internet access.",
         "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 2,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/"
     ]
@@ -172,9 +201,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-11T13:43:00.298438+05:30",
+  "script_deadline": "2026-10-11T13:50:27.324428+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-11",
@@ -620,187 +649,8 @@
     "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
     "Satya Nadella says don't trust AI blindly, it could be an insider risk"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-11T04:37:21+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "Qualcomm reveals AI companies want phones running massive 100B parameter models continuously by 2028."
-        },
-        "draft": {
-          "title": "Qualcomm CEO: 100B Phone Models by 2028",
-          "hook_text": "One hundred billion parameters",
-          "beats": [
-            {
-              "line": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by 2028.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.qualcomm.com/company/leadership/cristiano-amon",
-              "tag": "Cristiano Amon 100B models",
-              "name": "Cristiano Amon",
-              "role": "CEO, Qualcomm",
-              "x": "cristianoamon",
-              "brands": [
-                {
-                  "name": "Qualcomm",
-                  "domain": "qualcomm.com"
-                }
-              ]
-            },
-            {
-              "line": "Current mobile processors handle much smaller on-device tasks while heavier computing goes to the cloud.",
-              "visual": "clip",
-              "query": "person using smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Mobile processors smaller tasks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Qualcomm builds Snapdragon processors designed to run complex local models directly on mobile hardware.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Qualcomm Snapdragon",
-              "outlet": "",
-              "domain": "qualcomm.com",
-              "headline": "",
-              "url": "https://www.qualcomm.com/products/mobile/snapdragon",
-              "tag": "Qualcomm Snapdragon processors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Qualcomm",
-                  "domain": "qualcomm.com"
-                }
-              ]
-            },
-            {
-              "line": "Qualcomm chief executive Cristiano Amon revealed this hardware target during an industry discussion.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Reddit",
-              "domain": "reddit.com",
-              "headline": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models",
-              "url": "",
-              "tag": "Amon industry discussion",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Qualcomm",
-                  "domain": "qualcomm.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you want a mobile device running massive models locally?",
-              "visual": "clip",
-              "query": "person holding smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Massive models locally",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp tech journalist tone, factual and direct, highlighting the massive hardware leap coming to phones",
-          "thin": false,
-          "caption": "Qualcomm CEO Cristiano Amon says developers want phones running one hundred billion parameter models by 2028. This target requires significant hardware advancements for future mobile processors. Would you want a mobile device running massive models locally?",
-          "hashtags": [
-            "Qualcomm",
-            "CristianoAmon",
-            "Snapdragon",
-            "LocalLLaMA",
-            "SmartphoneAI"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
-          ],
-          "script": "Qualcomm chief executive Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by 2028.\nCurrent mobile processors handle much smaller on-device tasks while heavier computing goes to the cloud.\nQualcomm builds Snapdragon processors designed to run complex local models directly on mobile hardware.\nQualcomm chief executive Cristiano Amon revealed this hardware target during an industry discussion.\nWould you want a mobile device running massive models locally?",
-          "keywords": [
-            "person using smartphone",
-            "person holding smartphone"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI companies want phones running 100-billion-parameter models continuously by 2028.",
-              "url": "https://www.tokenpost.com/news/technology/29601"
-            },
-            {
-              "claim": "Qualcomm CEO Cristiano Amon says artificial intelligence developers want phones running one-hundred-billion-parameter models continuously by 2028.",
-              "url": "https://www.tokenpost.com/news/technology/29601"
-            },
-            {
-              "claim": "Qualcomm builds Snapdragon processors designed to run complex local models directly on mobile hardware.",
-              "url": "https://www.tokenpost.com/news/technology/29601"
-            },
-            {
-              "claim": "Qualcomm chief executive Cristiano Amon revealed this hardware target during an industry discussion.",
-              "url": "https://www.tokenpost.com/news/technology/29601"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-11T12:56:53.810816+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1476,6 +1326,187 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them",
+          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/",
+          "summary": "",
+          "source": "r/LocalLLaMA",
+          "published": "2026-10-10T12:43:33+00:00",
+          "buzz": "top of r/LocalLLaMA today",
+          "angle": "This open-source Mac app runs EmbeddingGemma 2 locally to search all your files by meaning."
+        },
+        "draft": {
+          "title": "Open-source Mac app runs EmbeddingGemma 2",
+          "hook_text": "Search Mac files with EmbeddingGemma 2.",
+          "beats": [
+            {
+              "line": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "r/LocalLLaMA",
+              "domain": "reddit.com",
+              "headline": "Open-source Mac app that runs EmbeddingGemma 2 locally",
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/",
+              "tag": "EmbeddingGemma 2 Mac App",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "It indexes your documents directly on your device using the open-weight embedding model.",
+              "visual": "clip",
+              "query": "person typing on macbook",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Local Document Indexing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Google built the EmbeddingGemma model family to handle semantic search tasks on local hardware.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "EmbeddingGemma",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "",
+              "tag": "Google EmbeddingGemma Models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "The software scans your local folders to let you query content by what is actually inside your files.",
+              "visual": "clip",
+              "query": "searching files on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Semantic Local File Search",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you install an open-source app to search your personal files offline?",
+              "visual": "clip",
+              "query": "macbook screen dark mode",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Offline Mac Search App",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and direct tech journalism tone, highlighting local open-weight search capabilities",
+          "thin": false,
+          "caption": "A new open-source Mac app lets you run Google EmbeddingGemma 2 locally to search your files by content. All processing runs directly on your device. Would you use an offline semantic search app?",
+          "hashtags": [
+            "EmbeddingGemma",
+            "Google",
+            "Mac",
+            "LocalLLaMA",
+            "OpenSource"
+          ],
+          "sources": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/"
+          ],
+          "script": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.\nIt indexes your documents directly on your device using the open-weight embedding model.\nGoogle built the EmbeddingGemma model family to handle semantic search tasks on local hardware.\nThe software scans your local folders to let you query content by what is actually inside your files.\nWould you install an open-source app to search your personal files offline?",
+          "keywords": [
+            "person typing on macbook",
+            "searching files on laptop",
+            "macbook screen dark mode"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "An open-source Mac app runs EmbeddingGemma 2 locally to search files.",
+              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
+            },
+            {
+              "claim": "A new open-source Mac app now runs Google EmbeddingGemma 2 locally to search your files.",
+              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
+            },
+            {
+              "claim": "It indexes your documents directly on your device using the open-weight embedding model.",
+              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
+            },
+            {
+              "claim": "Google built the EmbeddingGemma model family to handle semantic search tasks on local hardware.",
+              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
+            },
+            {
+              "claim": "The software scans your local folders to let you query content by what is actually inside your files.",
+              "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-11T13:43:00.298438+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2051,8 +2082,8 @@
       "event": "DistroKid is quietly deleting music without any warning to artists. Universal Music Group filed a lawsuit against the distributor in September. The label claims DistroKid created a massive pipeline for computer generated tracks. Musicians a"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-11T13:30+05:30",
@@ -2100,7 +2131,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-11",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-11-1",
   "gemini_use": {
     "day": "2026-10-11",
