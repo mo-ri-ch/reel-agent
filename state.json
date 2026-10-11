@@ -1,63 +1,184 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "The AI labor apocalypse is on hold (for now)",
-      "link": "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html",
-      "summary": "The AI labor apocalypse is on hold (for now) EL PAÍS English",
-      "source": "EL PAÍS English",
-      "published": "2026-10-11T04:00:00+00:00",
-      "angle": "Is the job apocalypse actually happening? A major reality check on AI taking over the workforce."
-    },
-    {
-      "title": "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds",
-      "link": "https://www.wccbcharlotte.com/2026/10/10/most-americans-think-artificial-intelligence-is-developing-too-fast-a-new-ap-norc-poll-finds/",
-      "summary": "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds WCCB Charlotte",
-      "source": "WCCB Charlotte",
-      "published": "2026-10-10T15:41:50+00:00",
-      "angle": "New poll reveals most Americans think AI is moving way too fast—are you keeping up?"
-    },
-    {
-      "title": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids",
-      "link": "https://www.reflector.com/news/local/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids/article_dad54518-db5e-5c5f-a15d-4e0f41f02428.html",
-      "summary": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids The Daily Reflector",
-      "source": "The Daily Reflector",
-      "published": "2026-10-11T07:30:00+00:00",
-      "angle": "AI data centers are putting a massive strain on power grids and forcing a shift to solar and natural gas."
-    }
-  ],
-  "choose_deadline": "2026-10-11T13:30:42.637961+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids",
+    "link": "https://www.reflector.com/news/local/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids/article_dad54518-db5e-5c5f-a15d-4e0f41f02428.html",
+    "summary": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids The Daily Reflector",
+    "source": "The Daily Reflector",
+    "published": "2026-10-11T07:30:00+00:00",
+    "angle": "AI data centers are putting a massive strain on power grids and forcing a shift to solar and natural gas."
+  },
+  "draft": {
+    "title": "AI data centers strain power grids",
+    "hook_text": "AI demands more power than ever.",
+    "beats": [
+      {
+        "line": "AI data centers are driving a massive surge in demand for natural gas and solar power.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Daily Reflector",
+        "domain": "reflector.com",
+        "headline": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids",
+        "url": "",
+        "tag": "Surge in energy demand",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "These massive facilities require constant electricity to run complex machine learning models.",
+        "visual": "clip",
+        "query": "server room racks blinking lights",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Constant electricity needed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Traditional power grids were built decades ago for residential and light commercial use.",
+        "visual": "clip",
+        "query": "old electrical substation transformers",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Outdated power grids",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Utilities now rush to secure new generation sources to prevent widespread blackouts.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "100%",
+        "small": "surge in power demand",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Utilities rush for power",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Energy companies partner with solar and gas providers to build dedicated plants near tech hubs.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Solar power plant",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Solar and gas partnerships",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Consumers might see higher electricity bills as infrastructure upgrades get passed down.",
+        "visual": "clip",
+        "query": "person looking at electricity bill",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Higher utility bills",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Will your local power grid handle the coming tech boom?",
+        "visual": "clip",
+        "query": "city skyline at night lights",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Grid future uncertain",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "serious and urgent, explaining the physical resource limits and infrastructure costs behind modern technology",
+    "thin": false,
+    "caption": "AI data centers are driving a massive surge in demand for natural gas and solar power, challenging existing power grids. Will your local utility handle the coming tech boom?",
+    "hashtags": [
+      "energy",
+      "solarpower",
+      "naturalgas",
+      "powergrid",
+      "utilities"
+    ],
+    "sources": [
+      "https://www.reflector.com/news/local/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids/article_dad54518-db5e-5c5f-a15d-4e0f41f02428.html"
+    ],
+    "script": "AI data centers are driving a massive surge in demand for natural gas and solar power.\nThese massive facilities require constant electricity to run complex machine learning models.\nTraditional power grids were built decades ago for residential and light commercial use.\nUtilities now rush to secure new generation sources to prevent widespread blackouts.\nEnergy companies partner with solar and gas providers to build dedicated plants near tech hubs.\nConsumers might see higher electricity bills as infrastructure upgrades get passed down.\nWill your local power grid handle the coming tech boom?",
+    "keywords": [
+      "server room racks blinking lights",
+      "old electrical substation transformers",
+      "person looking at electricity bill",
+      "city skyline at night lights"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "fix_rounds": 2,
+    "source_links": [
+      "https://www.reflector.com/news/local/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids/article_dad54518-db5e-5c5f-a15d-4e0f41f02428.html"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-      "video_file_id": "BAACAgUAAxkDAAIN4mrLQPZfvP-niJ69KBuNM9ug_XXkAAIHHwACRp1ZVvPHYvknjkRBPQQ",
-      "caption": "DistroKid is taking down songs after a September lawsuit from Universal Music Group over AI-generated tracks. Artists are losing their work without notice. Has your music been affected by these sudden takedowns?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#DistroKid #UniversalMusicGroup #MusicIndustry #ArtificialIntelligence",
-      "extra": false,
-      "meta": {
-        "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-        "kind": "news",
-        "source": "AI | The Verge",
-        "engine": "fish",
-        "voice": "Paula (Fish Audio)",
-        "person": false,
-        "words": 69,
-        "visuals": "1 AI images, 5 cards",
-        "editor": 7.7,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-11T13:30+05:30"
-      },
-      "post_at": "2026-10-11T13:31:40.853098+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-11T13:38:20.287164+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -223,10 +344,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-03T21:31:12.118300+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-04T09:01:10.255899+05:30",
       "extra": false
@@ -462,95 +579,40 @@
     {
       "at": "2026-10-11T12:53:03.398654+05:30",
       "extra": false
-    }
-  ],
-  "spare": [
-    {
-      "title": "AI banking agent — How Artificial Intelligence Is Ending the Laziness Tax and Transforming Global Finance",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8xaGtkU0VUNFkya290US1ZVXNIQlVUdnpGYlFXSEdQbFFJeUNaM1F0c3J3YWxlQWNXS3Jnai1qV0dhNzlfSGV0SDkwUVhVWGEta2VTRU0tN3dvNHRaVllNWWdPa1psYlVQaXN4c3I2VFlndw?oc=5",
-      "summary": "AI banking agent — How Artificial Intelligence Is Ending the Laziness Tax and Transforming Global Finance The Korea Daily",
-      "source": "The Korea Daily",
-      "published": "2026-10-11T06:31:23+00:00",
-      "angle": "AI banking agents promise to end the 'laziness tax' and change global finance"
     },
     {
-      "title": "AI agent makers are promising privacy — will they deliver?",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
-      "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-10T13:00:00+00:00",
-      "angle": "AI agent makers promise privacy at DevDay — but can they actually deliver?"
+      "at": "2026-10-11T13:38:56.625573+05:30",
+      "extra": false
     }
   ],
+  "paused": null,
+  "spare": [],
   "tried": [
     "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
-    "How healthcare and the environment can benefit from 'Green' AI",
+    "AI may change the price of your Big Mac and groceries — what this means for shoppers",
     "Very, very excited about AA-Robotics v0.1 - watch this space!",
+    "Satya Nadella says we should assume all AI models are ‘compromised’",
+    "AI issuers upend debt market safety valve as borrowing costs rise",
     "Here are the top AI agents that can live in your text messages",
     "China AI developers publish safety tests for just 3.6% of model releases, report finds",
-    "Anthropic is cutting off its internal evaluations from the internet",
-    "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-    "Satya Nadella says don't trust AI blindly, it could be an insider risk",
-    "Satya Nadella flags ‘black box’ AI risks: Why Microsoft CEO wants stronger controls over superintelligence",
-    "Nadella calls for AI emergency brake, warns firms against trusting advanced models blindly",
-    "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-    "Satya Nadella says we should assume all AI models are ‘compromised’",
-    "Nicolas Cage criticises Amazon over AI, says he may not work with studio again",
-    "​Global experts identify 17 ‘catastrophic’ threats that could devastate human health by 2100: AI is one of them​",
     "Better Artificial Intelligence Stock: Arm vs. Marvell Technology",
-    "Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors",
-    "AI issuers upend debt market safety valve as borrowing costs rise",
+    "Nicolas Cage criticises Amazon over AI, says he may not work with studio again",
+    "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds",
+    "The AI labor apocalypse is on hold (for now)",
+    "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+    "Anthropic is cutting off its internal evaluations from the internet",
+    "Satya Nadella says don't trust AI blindly, it could be an insider risk",
+    "​Global experts identify 17 ‘catastrophic’ threats that could devastate human health by 2100: AI is one of them​",
+    "Nadella calls for AI emergency brake, warns firms against trusting advanced models blindly",
     "Nvidia in talks to deepen investment in or acquire AI startup Reflection",
-    "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
+    "Satya Nadella flags ‘black box’ AI risks: Why Microsoft CEO wants stronger controls over superintelligence",
     "FCC considers allowing more political robocalls before midterms, including those created with AI",
-    "BUZZ HPC proposes 320MW AI campus in Oakville, Ontario"
+    "How healthcare and the environment can benefit from 'Green' AI",
+    "BUZZ HPC proposes 320MW AI campus in Oakville, Ontario",
+    "Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors",
+    "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028."
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
-            "link": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
-            "summary": "AI may change the price of your Big Mac and groceries — what this means for shoppers CNBC",
-            "source": "CNBC",
-            "published": "2026-10-11T05:00:01+00:00",
-            "angle": "How AI is quietly changing the price of your everyday groceries and fast food."
-          },
-          {
-            "title": "Anthropic is cutting off its internal evaluations from the internet",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-            "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-10T14:41:16+00:00",
-            "angle": "Anthropic cuts its internal AI agents off from the internet after escape scares."
-          },
-          {
-            "title": "Nvidia in talks to deepen investment in or acquire AI startup Reflection",
-            "link": "https://www.business-standard.com/world-news/nvidia-in-talks-to-deepen-investment-in-or-acquire-ai-startup-reflection-126101100061_1.html",
-            "summary": "Nvidia in talks to deepen investment in or acquire AI startup Reflection Business Standard",
-            "source": "Business Standard",
-            "published": "2026-10-11T02:59:36+00:00",
-            "angle": "Nvidia is in talks to deepen investment in or acquire hot AI startup Reflection."
-          }
-        ],
-        "choose_deadline": "2026-10-11T12:45:28.026832+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1362,10 +1424,53 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIN4mrLQPZfvP-niJ69KBuNM9ug_XXkAAIHHwACRp1ZVvPHYvknjkRBPQQ",
       "history_title": "DistroKid has been quietly taking down songs in response to UMG lawsuit"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "The AI labor apocalypse is on hold (for now)",
+            "link": "https://english.elpais.com/economy-and-business/2026-10-11/the-ai-labor-apocalypse-is-on-hold-for-now.html",
+            "summary": "The AI labor apocalypse is on hold (for now) EL PAÍS English",
+            "source": "EL PAÍS English",
+            "published": "2026-10-11T04:00:00+00:00",
+            "angle": "Is the job apocalypse actually happening? A major reality check on AI taking over the workforce."
+          },
+          {
+            "title": "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds",
+            "link": "https://www.wccbcharlotte.com/2026/10/10/most-americans-think-artificial-intelligence-is-developing-too-fast-a-new-ap-norc-poll-finds/",
+            "summary": "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds WCCB Charlotte",
+            "source": "WCCB Charlotte",
+            "published": "2026-10-10T15:41:50+00:00",
+            "angle": "New poll reveals most Americans think AI is moving way too fast—are you keeping up?"
+          },
+          {
+            "title": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids",
+            "link": "https://www.reflector.com/news/local/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids/article_dad54518-db5e-5c5f-a15d-4e0f41f02428.html",
+            "summary": "Electric avenues: AI data centers spur natural gas, solar; challenge power grids The Daily Reflector",
+            "source": "The Daily Reflector",
+            "published": "2026-10-11T07:30:00+00:00",
+            "angle": "AI data centers are putting a massive strain on power grids and forcing a shift to solar and natural gas."
+          }
+        ],
+        "choose_deadline": "2026-10-11T13:30:42.637961+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIH4WrGzK9o5EcFu6ottqogiFPReTroAAKdHwAClrI4Vo8Wl-DfQ6eTPQQ",
     "BAACAgUAAxkDAAIH7mrG3udHHiebWqeBp_SmNNTlCMafAAKpHwAClrI4VljLFFePQOikPQQ",
     "BAACAgUAAxkDAAIH_GrG500QrBSMfxuJWUkcoDaYFyDbAAK8HwAClrI4VpkQdxDVWqZjPQQ",
     "BAACAgUAAxkDAAIICGrG-aDOCgIHUqQAAR8J2Zy5wHQajAAC0h8AApayOFZAb6JeuurMsT0E",
@@ -1394,7 +1499,8 @@
     "BAACAgUAAxkDAAILzGrJ-cMDyrMfwtXLxSIOPMkK6EdqAALpHwACRp1RVvuA9m3RhMJMPQQ",
     "BAACAgUAAxkDAAIMM2rKKQU8X78lWi4nGgzL2AvvWUf6AAJqIAACRp1RVjjharmRLN5YPQQ",
     "BAACAgUAAxkDAAIMTmrKPac-7OJ8New3g25hPpVRFgXlAAKNIAACRp1RVqV9UYsHR_V9PQQ",
-    "BAACAgUAAxkDAAINoGrLNpfvyQxpJUbfQiHtNXYzP_lNAAICHwACRp1ZVjPF-m_qtvDKPQQ"
+    "BAACAgUAAxkDAAINoGrLNpfvyQxpJUbfQiHtNXYzP_lNAAICHwACRp1ZVjPF-m_qtvDKPQQ",
+    "BAACAgUAAxkDAAIN4mrLQPZfvP-niJ69KBuNM9ug_XXkAAIHHwACRp1ZVvPHYvknjkRBPQQ"
   ],
   "history": [
     "Uttar Pradesh targets AI and semiconductor growth beyond electronics manufacturing",
@@ -1990,26 +2096,11 @@
   "late_note_for": "2026-10-11-1",
   "gemini_use": {
     "day": "2026-10-11",
-    "calls": 772,
+    "calls": 886,
     "claude_calls": 0,
     "claude_backup": 150
   },
   "gemini_errors": [
-    {
-      "at": "06:40",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-11"
-    },
-    {
-      "at": "06:40",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-11"
-    },
-    {
-      "at": "06:45",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-11"
-    },
     {
       "at": "06:45",
       "error": "gemini-flash-lite-latest: free quota used up for now",
@@ -2044,6 +2135,21 @@
       "at": "07:22",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-11"
+    },
+    {
+      "at": "08:08",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "08:08",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-11"
+    },
+    {
+      "at": "08:08",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-11"
     }
   ],
   "last_script_error": {
@@ -2058,6 +2164,5 @@
     "error": "RuntimeError: the voice-over didn't match the script twice (parts of the script are missing (83% spoken))",
     "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1653, in cmd_render\n    raise RuntimeError(f\"the voice-over didn't match the script twice ({why2})\")\nRuntimeError: the voice-over didn't match the script twice (parts of the script are missing (83% spoken))\n"
   },
-  "behind_since": "2026-10-11T09:00:48.826910+05:30",
   "report_week": "2026-41"
 }
