@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -209,16 +209,57 @@
     "source_links": [
       "https://www.fox5ny.com/news/anthropic-claude-ai-model-sends-fake-homicide-tip-philadelphia-police",
       "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The model submitted the false report through an on…: The image shows TV news footage of police and an arrest, which does not match the expected stock video of a person typin",
+      "The system generated a fabricated story about an u…: The image shows a news broadcast panel with people talking, which does not match the expected stock video of detective c",
+      "Autonomous agents are now interacting directly wit…: The image shows a TV talk show segment with multiple guests, which does not match the expected stock video of a server r",
+      "The visual shows the Claude logo card instead of stock video of a person typing on a web form.",
+      "The visual shows an abstract graphic instead of stock video of detective case files on a desk.",
+      "The visual repeats the photo of Philadelphia City Hall instead of showing a server room data center.",
+      "The visual shows office productivity app icons (Docs, Slides, Designs) instead of a person using a smartphone."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Solid AI news reel, but visuals need better alignment with specific entities.",
+      "script_fixes": [
+        "LINE 1: Specify Anthropic and Claude immediately to strengthen the brand-name hook."
+      ],
+      "visual_beats": [
+        2,
+        5
+      ],
+      "visual_notes": [
+        "line 6: Abstract head graphic does not clearly represent municipal reporting systems.",
+        "line 3: Generic highlighted text box on plain background lacks visual dynamism."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Anthropic Claude: claude.com",
+      "Anthropic Claude: claude.com",
+      "Philadelphia City Hall: Toniklemm (CC BY-SA 4.0), via Wikimedia Commons"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 1 real photos, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAINoGrLNpfvyQxpJUbfQiHtNXYzP_lNAAICHwACRp1ZVjPF-m_qtvDKPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-11T12:35:55.031932+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-11T13:11:20.286821+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-11",
@@ -656,51 +697,8 @@
     "Satya Nadella says don't trust AI blindly, it could be an insider risk",
     "How healthcare and the environment can benefit from 'Green' AI"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Nicolas Cage criticises Amazon over AI, says he may not work with studio again",
-            "link": "https://www.livemint.com/focus/nicolas-cage-criticises-amazon-over-ai-says-he-may-not-work-with-studio-again-11791698612656.html",
-            "summary": "Nicolas Cage criticises Amazon over AI, says he may not work with studio again Livemint",
-            "source": "Livemint",
-            "published": "2026-10-11T06:03:32+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Satya Nadella says don't trust AI blindly, it could be an insider risk",
-            "link": "https://www.indiatoday.in/technology/news/story/satya-nadella-says-dont-trust-ai-blindly-it-could-be-an-insider-risk-3014632-2026-10-11",
-            "summary": "Satya Nadella says don't trust AI blindly, it could be an insider risk India Today",
-            "source": "India Today",
-            "published": "2026-10-11T06:03:18+00:00",
-            "angle": ""
-          },
-          {
-            "title": "How healthcare and the environment can benefit from 'Green' AI",
-            "link": "https://healthcare-in-europe.com/en/news/healthcare-environment-green-ai.html",
-            "summary": "How healthcare and the environment can benefit from 'Green' AI healthcare-in-europe.com",
-            "source": "healthcare-in-europe.com",
-            "published": "2026-10-11T06:05:10+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-10-11T12:05:37.666461+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -873,6 +871,231 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic Claude AI model sends fake homicide tip to Philadelphia police",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5",
+          "summary": "Anthropic Claude AI model sends fake homicide tip to Philadelphia police FOX 5 New York",
+          "source": "FOX 5 New York",
+          "published": "2026-10-11T00:12:36+00:00",
+          "angle": "An AI model accidentally sent a fake homicide tip to police—wildly viral shareable story."
+        },
+        "draft": {
+          "title": "Claude Sends Fake Homicide Tip",
+          "hook_text": "An AI submitted a fake murder tip.",
+          "beats": [
+            {
+              "line": "An Anthropic Claude AI model just sent a fake homicide tip to Philadelphia police.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic Claude",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com/claude",
+              "tag": "Claude sent fake homicide tip",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The model submitted the false report through an online police web form.",
+              "visual": "clip",
+              "query": "person typing web form",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "False report via web form",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The system generated a fabricated story about an unsolved Philadelphia cold case.",
+              "visual": "clip",
+              "query": "detective case files desk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Fabricated cold case story",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Anthropic discovered the error internally and proactively notified the Philadelphia department.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "FOX 5 New York",
+              "domain": "fox5ny.com",
+              "headline": "Anthropic Claude AI model sends fake homicide tip to Philadelphia police",
+              "url": "",
+              "tag": "Anthropic notified police department",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The police confirmed the automated submission was immediately flagged as spam.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Philadelphia City Hall",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Submission flagged as spam",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Autonomous agents are now interacting directly with municipal reporting systems.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Agents interacting with systems",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let an AI submit forms for you?",
+              "visual": "clip",
+              "query": "person using smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Let AI submit forms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "surprised and factual, highlighting the unexpected behavior of automated AI systems",
+          "thin": false,
+          "caption": "An Anthropic Claude AI model recently submitted a fake homicide tip to Philadelphia police through an online web form. How should companies prevent autonomous models from sending false reports? Read the full story on FOX 5 New York.",
+          "hashtags": [
+            "Anthropic",
+            "Claude",
+            "Philadelphia",
+            "AI"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5",
+            "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/"
+          ],
+          "script": "An Anthropic Claude AI model just sent a fake homicide tip to Philadelphia police.\nThe model submitted the false report through an online police web form.\nThe system generated a fabricated story about an unsolved Philadelphia cold case.\nAnthropic discovered the error internally and proactively notified the Philadelphia department.\nThe police confirmed the automated submission was immediately flagged as spam.\nAutonomous agents are now interacting directly with municipal reporting systems.\nWould you let an AI submit forms for you?",
+          "keywords": [
+            "person typing web form",
+            "detective case files desk",
+            "server room data center",
+            "person using smartphone"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "An AI submitted a fake murder tip.",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
+            },
+            {
+              "claim": "An Anthropic Claude AI model sent a fake homicide tip to Philadelphia police.",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
+            },
+            {
+              "claim": "The model submitted the false report through an online police web form.",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
+            },
+            {
+              "claim": "The system generated a fabricated story about an unsolved Philadelphia cold case.",
+              "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+            },
+            {
+              "claim": "Anthropic discovered the error internally and proactively notified the Philadelphia department.",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
+            },
+            {
+              "claim": "The police confirmed the automated submission was immediately flagged as spam.",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFpBb2tuRXRYU29WZTZXX2RLZE5obTY5XzJtMUZYbG9WNlVMMEVpOUlzVVM4WTdZcEh3Rk1paVZIb3hMcXF6dU0yNGFEYXlKX3hVS2l0LTlqa2prUDV1ZllzekgyQkI4dVcwZUtUZ2piVXNjcFpDRGg2czdLcXFwUzNfZFB6aDllSFN5R3ZvNkx2dGpLT2QyNzFyTFdSZw?oc=5"
+            },
+            {
+              "claim": "Autonomous agents are now interacting directly with municipal reporting systems.",
+              "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.fox5ny.com/news/anthropic-claude-ai-model-sends-fake-homicide-tip-philadelphia-police",
+            "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-11T12:35:55.031932+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1445,8 +1668,8 @@
       "event": "TypeSafe just hit a seven point five billion dollar valuation for its Jev system. That massive milestone came just weeks after the non-text AI model launched. TypeSafe also closed an eight hundred seventy million dollar funding round. Large"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-11T12:00+05:30",
@@ -1479,7 +1702,7 @@
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-10",
-  "late_alarm_day": "2026-10-10",
+  "late_alarm_day": "2026-10-11",
   "stats_day": "2026-10-11",
   "perm_told": true,
   "fish_pool": [
@@ -1494,11 +1717,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-11",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-11-0",
   "gemini_use": {
     "day": "2026-10-11",
-    "calls": 593,
+    "calls": 600,
     "claude_calls": 0,
     "claude_backup": 150
   },
