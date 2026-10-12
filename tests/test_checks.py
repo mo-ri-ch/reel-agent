@@ -211,6 +211,12 @@ check("missing model remembered", "gemini-3.7-flash" in writer.MISSING, True)
 seen.clear()
 writer.ask("x")
 check("skips used-up and missing", seen, ["gemini-3.5-flash"])
+def _timeout_post(url, *a, **k):
+    if "gemini-3.5-flash:" in url:
+        raise writer.requests.exceptions.ReadTimeout("slow")
+    return _R(200, {"candidates": [{"content": {"parts": [{"text": "ok"}]}}]})
+writer.requests.post = _timeout_post
+check("hung model -> next model", writer.ask("x"), "ok")
 check("light jobs start on Flash-Lite", "lite" in writer.model_order(light=True)[0], True)
 check("reset is in the future", writer.quota_reset_after(writer.time.time()) > writer.time.time(), True)
 writer.EXHAUSTED.clear(); writer.MISSING.clear(); writer.MODEL_USE.clear()

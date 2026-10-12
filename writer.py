@@ -128,7 +128,12 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
         overloaded = 0
         for attempt in range(5):
             CALLS[0] += 1
-            r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=180)
+            try:
+                r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=120)
+            except requests.exceptions.RequestException as e:  # hung or dropped: hand the job to the next model
+                note_model(model, 0)
+                last = f"{model} didn't answer ({type(e).__name__})"
+                break
             note_model(model, r.status_code)
             if r.status_code in (400, 403, 429) and "tools" in body:
                 # Google Search isn't available (or its free quota is used up): continue without it
