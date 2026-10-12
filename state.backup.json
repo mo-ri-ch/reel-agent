@@ -16,7 +16,7 @@
     "hook_text": "Cash is AI's next big bottleneck",
     "beats": [
       {
-        "line": "Intel and Broadcom CEOs warn a capital crunch could become the biggest bottleneck for AI.",
+        "line": "Intel CEO Lip-Bu Tan and Broadcom CEO Hock Tan warn a capital crunch could become the biggest bottleneck for AI.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -43,9 +43,9 @@
         ]
       },
       {
-        "line": "Chipmakers face mounting financial pressure as infrastructure costs soar for massive data centers.",
-        "visual": "clip",
-        "query": "server racks data center",
+        "line": "Broadcom CEO Hock Tan stated financing could become a bigger obstacle to AI expansion than supply shortages.",
+        "visual": "person",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
@@ -54,14 +54,42 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Infrastructure costs soar",
-        "name": "",
-        "role": "",
+        "tag": "Financing over supply shortages",
+        "name": "Hock Tan",
+        "role": "CEO, Broadcom",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Broadcom",
+            "domain": "broadcom.com"
+          }
+        ]
       },
       {
-        "line": "Building out advanced silicon requires huge upfront spending that current hardware revenue might struggle to support.",
+        "line": "Intel CEO Lip-Bu Tan echoed these concerns regarding the soaring cost of capital for massive infrastructure.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Soaring cost of capital",
+        "name": "Lip-Bu Tan",
+        "role": "CEO, Intel",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      },
+      {
+        "line": "Building out advanced silicon requires billions in upfront spending that current hardware revenue might struggle to support.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -72,7 +100,7 @@
         "domain": "intel.com",
         "headline": "",
         "url": "https://www.intel.com",
-        "tag": "Silicon spending required",
+        "tag": "Billions in silicon spending",
         "name": "",
         "role": "",
         "x": "",
@@ -84,41 +112,18 @@
         ]
       },
       {
-        "line": "Without enough funding, semiconductor production lines could slow down just as global demand hits record highs.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Broadcom",
-        "outlet": "",
-        "domain": "broadcom.com",
-        "headline": "",
-        "url": "https://www.broadcom.com",
-        "tag": "Production lines slow down",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Broadcom",
-            "domain": "broadcom.com"
-          }
-        ]
-      },
-      {
-        "line": "Can hardware manufacturers sustain this heavy financial load without stalling future technological progress?",
-        "visual": "source",
-        "query": "technology",
+        "line": "Can semiconductor manufacturers sustain this heavy financial load without stalling next-generation data center expansions?",
+        "visual": "clip",
+        "query": "microchip manufacturing cleanroom",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "CNBC",
-        "domain": "cnbc.com",
-        "headline": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
         "url": "",
-        "tag": "Can manufacturers sustain load",
+        "tag": "Stalling data center expansion",
         "name": "",
         "role": "",
         "x": "",
@@ -127,7 +132,7 @@
     ],
     "delivery": "urgent and direct, highlighting the financial reality behind the hardware race",
     "thin": false,
-    "caption": "Intel and Broadcom CEOs warn that a capital crunch could become the biggest bottleneck for AI. Can chipmakers sustain this heavy spending without slowing down infrastructure growth?",
+    "caption": "Intel CEO Lip-Bu Tan and Broadcom CEO Hock Tan warn that a capital crunch could become the biggest bottleneck for AI. Can chipmakers sustain massive spending without slowing down data center expansions?",
     "hashtags": [
       "Intel",
       "Broadcom",
@@ -138,9 +143,9 @@
     "sources": [
       "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
     ],
-    "script": "Intel and Broadcom CEOs warn a capital crunch could become the biggest bottleneck for AI.\nChipmakers face mounting financial pressure as infrastructure costs soar for massive data centers.\nBuilding out advanced silicon requires huge upfront spending that current hardware revenue might struggle to support.\nWithout enough funding, semiconductor production lines could slow down just as global demand hits record highs.\nCan hardware manufacturers sustain this heavy financial load without stalling future technological progress?",
+    "script": "Intel CEO Lip-Bu Tan and Broadcom CEO Hock Tan warn a capital crunch could become the biggest bottleneck for AI.\nBroadcom CEO Hock Tan stated financing could become a bigger obstacle to AI expansion than supply shortages.\nIntel CEO Lip-Bu Tan echoed these concerns regarding the soaring cost of capital for massive infrastructure.\nBuilding out advanced silicon requires billions in upfront spending that current hardware revenue might struggle to support.\nCan semiconductor manufacturers sustain this heavy financial load without stalling next-generation data center expansions?",
     "keywords": [
-      "server racks data center"
+      "microchip manufacturing cleanroom"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
@@ -150,28 +155,29 @@
         "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
       },
       {
-        "claim": "Intel and Broadcom CEOs warn a capital crunch could become the biggest bottleneck for AI.",
+        "claim": "Intel CEO Lip-Bu Tan and Broadcom CEO Hock Tan warn a capital crunch could become the biggest bottleneck for AI.",
         "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
       },
       {
-        "claim": "Chipmakers face mounting financial pressure as infrastructure costs soar for massive data centers.",
+        "claim": "Broadcom CEO Hock Tan stated financing could become a bigger obstacle to AI expansion than supply shortages.",
         "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
       },
       {
-        "claim": "Building out advanced silicon requires huge upfront spending that current hardware revenue might struggle to support.",
+        "claim": "Intel CEO Lip-Bu Tan echoed these concerns regarding the soaring cost of capital for massive infrastructure.",
         "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
       },
       {
-        "claim": "Without enough funding, semiconductor production lines could slow down just as global demand hits record highs.",
+        "claim": "Building out advanced silicon requires billions in upfront spending that current hardware revenue might struggle to support.",
         "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
       },
       {
-        "claim": "Can hardware manufacturers sustain this heavy financial load without stalling future technological progress?",
+        "claim": "Semiconductor manufacturers face challenges sustaining heavy financial loads without potential pressures on project economics.",
         "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "editor_rounds": 1,
     "source_links": [
       "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
     ]
@@ -181,9 +187,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-12T14:32:07.930767+05:30",
+  "script_deadline": "2026-10-12T14:38:14.790474+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-12",
@@ -641,227 +647,8 @@
     "The AI Paradox: Why Cheaper Tokens Could Make Computing Power More Valuable",
     "These execs think voice AI hasn’t reached its ChatGPT moment yet"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Will the HomeView be Apple’s first smart home success?",
-          "link": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-          "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-11T21:14:40+00:00",
-          "angle": "Apple's upcoming smart home device leaks with a brand new name and launch date"
-        },
-        "draft": {
-          "title": "Apple's HomeView Smart Display",
-          "hook_text": "Apple is building a new smart display.",
-          "beats": [
-            {
-              "line": "Apple is preparing to launch a brand new smart home display called HomeView.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Apple HomeView",
-              "outlet": "",
-              "domain": "apple.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-              "tag": "Apple HomeView display",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "The new device features a screen and relies on AI to control household gear.",
-              "visual": "clip",
-              "query": "smart home display screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI smart controls",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "Reports indicate the official product launch is scheduled for Tuesday, October 13, 2026.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Will the HomeView be Apple’s first smart home success?",
-              "url": "",
-              "tag": "October 13 launch",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Apple previously struggled to gain traction in the smart home market against Amazon and Google.",
-              "visual": "clip",
-              "query": "smart home speaker on table",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Past market struggles",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                },
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "HomeView will serve as Apple's big bet to finally conquer connected living rooms.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Apple HomeView",
-              "outlet": "",
-              "domain": "apple.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-              "tag": "Connected living rooms",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you buy an Apple display for your kitchen?",
-              "visual": "clip",
-              "query": "person using smart display in kitchen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Kitchen smart display",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "curious and analytical, explaining Apple's new hardware strategy with casual authority",
-          "thin": false,
-          "caption": "Apple is launching its new HomeView smart home display on October 13, 2026. After years of trailing behind competitors, will this finally be Apple's breakthrough in home automation? Would you put one in your house?",
-          "hashtags": [
-            "Apple",
-            "HomeView",
-            "SmartHome",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
-          ],
-          "script": "Apple is preparing to launch a brand new smart home display called HomeView.\nThe new device features a screen and relies on AI to control household gear.\nReports indicate the official product launch is scheduled for Tuesday, October 13, 2026.\nApple previously struggled to gain traction in the smart home market against Amazon and Google.\nHomeView will serve as Apple's big bet to finally conquer connected living rooms.\nWould you buy an Apple display for your kitchen?",
-          "keywords": [
-            "smart home display screen",
-            "smart home speaker on table",
-            "person using smart display in kitchen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Apple is building a new smart display.",
-              "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
-            },
-            {
-              "claim": "Apple is preparing to launch a brand new smart home display called HomeView.",
-              "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
-            },
-            {
-              "claim": "The new device features a screen and relies on AI to control household gear.",
-              "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
-            },
-            {
-              "claim": "The official product launch is scheduled for Tuesday, October 13, 2026.",
-              "url": "https://www.indiatoday.in/technology/news/story/apple-hosting-its-welcome-home-event-tomorrow-homeview-smart-display-new-homepod-mini-and-more-to-expect-3015379-2026-10-12"
-            },
-            {
-              "claim": "Apple previously struggled to gain traction in the smart home market against Amazon and Google.",
-              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
-            },
-            {
-              "claim": "HomeView will serve as Apple's big bet to finally conquer connected living rooms.",
-              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-12T13:46:40.000745+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1513,6 +1300,196 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+          "link": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html",
+          "summary": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck CNBC",
+          "source": "CNBC",
+          "published": "2026-10-12T08:27:52+00:00",
+          "angle": "Tech CEOs warn a massive capital crunch could become the ultimate bottleneck for AI's explosive growth."
+        },
+        "draft": {
+          "title": "Intel and Broadcom CEOs warn on AI capital crunch",
+          "hook_text": "Cash is AI's next big bottleneck",
+          "beats": [
+            {
+              "line": "Intel and Broadcom CEOs warn a capital crunch could become the biggest bottleneck for AI.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "CNBC",
+              "domain": "cnbc.com",
+              "headline": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+              "url": "",
+              "tag": "Intel and Broadcom CEOs warn",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                },
+                {
+                  "name": "Broadcom",
+                  "domain": "broadcom.com"
+                }
+              ]
+            },
+            {
+              "line": "Chipmakers face mounting financial pressure as infrastructure costs soar for massive data centers.",
+              "visual": "clip",
+              "query": "server racks data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Infrastructure costs soar",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Building out advanced silicon requires huge upfront spending that current hardware revenue might struggle to support.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Intel",
+              "outlet": "",
+              "domain": "intel.com",
+              "headline": "",
+              "url": "https://www.intel.com",
+              "tag": "Silicon spending required",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Without enough funding, semiconductor production lines could slow down just as global demand hits record highs.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Broadcom",
+              "outlet": "",
+              "domain": "broadcom.com",
+              "headline": "",
+              "url": "https://www.broadcom.com",
+              "tag": "Production lines slow down",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Broadcom",
+                  "domain": "broadcom.com"
+                }
+              ]
+            },
+            {
+              "line": "Can hardware manufacturers sustain this heavy financial load without stalling future technological progress?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "CNBC",
+              "domain": "cnbc.com",
+              "headline": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+              "url": "",
+              "tag": "Can manufacturers sustain load",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and direct, highlighting the financial reality behind the hardware race",
+          "thin": false,
+          "caption": "Intel and Broadcom CEOs warn that a capital crunch could become the biggest bottleneck for AI. Can chipmakers sustain this heavy spending without slowing down infrastructure growth?",
+          "hashtags": [
+            "Intel",
+            "Broadcom",
+            "AI",
+            "TechNews",
+            "Semiconductors"
+          ],
+          "sources": [
+            "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+          ],
+          "script": "Intel and Broadcom CEOs warn a capital crunch could become the biggest bottleneck for AI.\nChipmakers face mounting financial pressure as infrastructure costs soar for massive data centers.\nBuilding out advanced silicon requires huge upfront spending that current hardware revenue might struggle to support.\nWithout enough funding, semiconductor production lines could slow down just as global demand hits record highs.\nCan hardware manufacturers sustain this heavy financial load without stalling future technological progress?",
+          "keywords": [
+            "server racks data center"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Cash is AI's next big bottleneck",
+              "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+            },
+            {
+              "claim": "Intel and Broadcom CEOs warn a capital crunch could become the biggest bottleneck for AI.",
+              "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+            },
+            {
+              "claim": "Chipmakers face mounting financial pressure as infrastructure costs soar for massive data centers.",
+              "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+            },
+            {
+              "claim": "Building out advanced silicon requires huge upfront spending that current hardware revenue might struggle to support.",
+              "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+            },
+            {
+              "claim": "Without enough funding, semiconductor production lines could slow down just as global demand hits record highs.",
+              "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+            },
+            {
+              "claim": "Can hardware manufacturers sustain this heavy financial load without stalling future technological progress?",
+              "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-12T14:32:07.930767+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2071,8 +2048,8 @@
       "event": "Satya Nadella says we should assume all AI models are compromised. The Microsoft CEO posted this warning on X today. He argues we can no longer treat AI as simple black boxes. We currently accept advice and actions from these systems withou"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-12T14:25+05:30",
@@ -2120,7 +2097,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-12",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-12-1",
   "gemini_use": {
     "day": "2026-10-12",
