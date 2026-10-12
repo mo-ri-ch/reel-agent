@@ -52,9 +52,27 @@
         "brands": []
       },
       {
-        "line": "Energy usage by data centers could soon eclipse the total power consumption of smaller countries.",
+        "line": "Data center energy use could soon eclipse the total power consumption of nations like Ireland.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "18%",
+        "small": "Irish grid power demand",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Eclipsing Ireland power",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "These facilities consume millions of gallons of water daily and sprawl across hundreds of acres.",
         "visual": "clip",
-        "query": "power plant cooling towers",
+        "query": "industrial cooling towers water",
         "prompt": "",
         "big": "",
         "small": "",
@@ -63,32 +81,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Data center energy drain",
+        "tag": "Millions of gallons daily",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "These massive facilities consume scarce land and vast amounts of water to keep cool.",
-        "visual": "image",
-        "query": "technology",
-        "prompt": "Vast industrial data center facility next to water reservoir, vertical orientation",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Consuming land and water",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Research advances at warp speed while safety regulations crawl along at a snails pace.",
+        "line": "Commercial deployment races ahead while federal safety frameworks remain stalled in Congress.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -99,7 +99,7 @@
         "domain": "resilience.org",
         "headline": "Why artificial intelligence must be stopped now",
         "url": "",
-        "tag": "Regulation lags behind",
+        "tag": "Frameworks stalled in Congress",
         "name": "",
         "role": "",
         "x": "",
@@ -125,27 +125,24 @@
       }
     ],
     "delivery": "urgent, direct, and serious, pressing the viewer on the true environmental cost of technology",
-    "thin": true,
-    "caption": "Resilience.org published a stark warning arguing that artificial intelligence must be stopped immediately due to extreme environmental threats. Data center energy use is soaring while regulation lags far behind research. Would you shut down AI to protect the planet?",
+    "thin": false,
+    "caption": "Resilience.org published a stark warning arguing that artificial intelligence must be stopped immediately due to extreme environmental threats. Data center energy use is soaring past national grids while regulation stalls in Congress. Would you shut down AI to protect the planet?",
     "hashtags": [
       "Resilience",
-      "ArtificialIntelligence",
       "TechNews",
       "Environment",
       "DataCenters"
     ],
     "sources": [
-      "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWtMOGg4WjR3ajduc1lqR1RqR0ZVZlRCRlZEa1NzeGdQOHpGXzF3bTQwRW1DVHRVWHFCeUtDdEJvLUhhNjdINFdzcW05MWduX3EzdDlvSDlGajJjT1lHSmVkelVIa1BBWThjVDVSeVM4UkdkYTE3dGZ1NXFJQnhObUd4Wjk2d0M0aEEwNm53eTNJNDMzT0ZfVFRB?oc=5"
+      "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
     ],
-    "script": "Resilience dot org warns that AI poses an ultimate threat to all life on Earth.\nThe platform argues that unintended negative outcomes will vastly outweigh any short term gains.\nEnergy usage by data centers could soon eclipse the total power consumption of smaller countries.\nThese massive facilities consume scarce land and vast amounts of water to keep cool.\nResearch advances at warp speed while safety regulations crawl along at a snails pace.\nWould you shut down AI to protect the planet?",
+    "script": "Resilience dot org warns that AI poses an ultimate threat to all life on Earth.\nThe platform argues that unintended negative outcomes will vastly outweigh any short term gains.\nData center energy use could soon eclipse the total power consumption of nations like Ireland.\nThese facilities consume millions of gallons of water daily and sprawl across hundreds of acres.\nCommercial deployment races ahead while federal safety frameworks remain stalled in Congress.\nWould you shut down AI to protect the planet?",
     "keywords": [
       "server racks blinking lights",
-      "power plant cooling towers",
+      "industrial cooling towers water",
       "person looking troubled at smartphone"
     ],
-    "image_prompts": [
-      "Vast industrial data center facility next to water reservoir, vertical orientation"
-    ],
+    "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
@@ -153,28 +150,29 @@
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWtMOGg4WjR3ajduc1lqR1RqR0ZVZlRCRlZEa1NzeGdQOHpGXzF3bTQwRW1DVHRVWHFCeUtDdEJvLUhhNjdINFdzcW05MWduX3EzdDlvSDlGajJjT1lHSmVkelVIa1BBWThjVDVSeVM4UkdkYTE3dGZ1NXFJQnhObUd4Wjk2d0M0aEEwNm53eTNJNDMzT0ZfVFRB?oc=5"
       },
       {
-        "claim": "Resilience dot org warns that AI poses an ultimate threat to all life on Earth.",
-        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+        "claim": "AI poses an ultimate threat to all life on Earth according to Resilience.org",
+        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now"
       },
       {
-        "claim": "The platform argues that unintended negative outcomes will vastly outweigh any short term gains.",
-        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+        "claim": "Unintended negative consequences will vastly outweigh any short-term benefits",
+        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now"
       },
       {
-        "claim": "Energy usage by data centers could soon eclipse the total power consumption of smaller countries.",
-        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+        "claim": "AI's energy usage could soon eclipse that of many smaller countries",
+        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now"
       },
       {
-        "claim": "These massive facilities consume scarce land and vast amounts of water to keep cool.",
-        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+        "claim": "AI data centers tend to gobble up land and water",
+        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now"
       },
       {
-        "claim": "Research advances at warp speed while safety regulations crawl along at a snails pace.",
-        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+        "claim": "AI is being commercialized faster than other major technologies",
+        "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "editor_rounds": 1,
     "source_links": [
       "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
     ]
@@ -184,9 +182,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-12T14:07:50.993980+05:30",
+  "script_deadline": "2026-10-12T14:17:34.401989+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-12",
@@ -636,247 +634,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "California Bans Employers From Using AI Alone to Fire Workers Under New Law",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5",
-          "summary": "California Bans Employers From Using AI Alone to Fire Workers Under New Law Law Commentary",
-          "source": "Law Commentary",
-          "published": "2026-10-12T05:25:33+00:00",
-          "angle": "California just made it illegal for AI to fire you without a human in the loop—is your job next?"
-        },
-        "draft": {
-          "title": "California Bans AI-Only Firings",
-          "hook_text": "California bans AI-only firings",
-          "beats": [
-            {
-              "line": "California just passed a new law banning employers from using AI alone to fire workers.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "California State Capitol",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "California AI ban",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Governor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://gov.ca.gov",
-              "tag": "Governor Newsom signs",
-              "name": "Gavin Newsom",
-              "role": "Governor of California",
-              "x": "GavinNewsom",
-              "brands": []
-            },
-            {
-              "line": "Companies can no longer rely on automated systems as the sole decider for job loss.",
-              "visual": "clip",
-              "query": "office worker looking at computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No AI sole decider",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The law requires a human manager to independently review data before any employee is terminated.",
-              "visual": "clip",
-              "query": "manager talking to employee",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Human review required",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This move addresses growing concerns over automated errors in high-stakes human resources decisions.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract digital data flow with a person standing in the foreground",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Addressing automated errors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "California remains the first state to codify this specific protection for the modern workforce.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1st",
-              "small": "State with this law",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "First state protection",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an algorithm to decide if you keep your job?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Law Commentary",
-              "domain": "lawcommentary.com",
-              "headline": "California Bans Employers From Using AI Alone to Fire Workers",
-              "url": "",
-              "tag": "Trusting algorithms",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious and informative, focusing on worker protections and the shift toward mandatory human oversight in the digital workplace.",
-          "thin": false,
-          "caption": "California has officially banned employers from using AI alone to fire workers. Governor Gavin Newsom signed the law to ensure human oversight in termination decisions, requiring a manager to independently review all data before a layoff. Would you trust an algorithm to decide if you keep your job?",
-          "hashtags": [
-            "California",
-            "EmploymentLaw",
-            "AI",
-            "GavinNewsom",
-            "Workplace"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-          ],
-          "script": "California just passed a new law banning employers from using AI alone to fire workers.\nGovernor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.\nCompanies can no longer rely on automated systems as the sole decider for job loss.\nThe law requires a human manager to independently review data before any employee is terminated.\nThis move addresses growing concerns over automated errors in high-stakes human resources decisions.\nCalifornia remains the first state to codify this specific protection for the modern workforce.\nWould you trust an algorithm to decide if you keep your job?",
-          "keywords": [
-            "office worker looking at computer",
-            "manager talking to employee"
-          ],
-          "image_prompts": [
-            "abstract digital data flow with a person standing in the foreground"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "California bans AI-only firings",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "California just passed a new law banning employers from using AI alone to fire workers.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "Governor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "Companies can no longer rely on automated systems as the sole decider for job loss.",
-              "url": "https://ogletree.com/insights-resources/blog-posts/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance/"
-            },
-            {
-              "claim": "The law requires a human manager to independently review data before any employee is terminated.",
-              "url": "https://ogletree.com/insights-resources/blog-posts/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance/"
-            },
-            {
-              "claim": "This move addresses growing concerns over automated errors in high-stakes human resources decisions.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "California remains the first state to codify this specific protection for the modern workforce.",
-              "url": "https://www.theguardian.com/technology/2026/oct/03/california-ai-laws-worker-protection"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.lawcommentary.com/articles/california-ai-firing-law-newsom-sb-947"
-          ],
-          "visual_status": "ok",
-          "visual_notes": [],
-          "editor": {
-            "overall": 5.7,
-            "scores": {
-              "hook": 6,
-              "specific": 5,
-              "substance": 6,
-              "accuracy": 7,
-              "visuals": 4,
-              "flow": 6
-            },
-            "one_line": "Solid topic, but repetitive stock visuals and missing bill specifics lower quality.",
-            "script_fixes": [
-              "LINE 1: Specify the exact California bill number instead of a generic law reference.",
-              "LINE 5: Swap 'growing concerns' for a concrete statistic or case study."
-            ],
-            "visual_beats": [
-              3
-            ],
-            "visual_notes": [
-              "line 4: Repetitive back-and-forth toggling between two generic office stock clips."
-            ],
-            "reviewer": "gemini"
-          }
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-12T12:35:30.802354+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1776,6 +1533,199 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Why artificial intelligence must be stopped now",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWtMOGg4WjR3ajduc1lqR1RqR0ZVZlRCRlZEa1NzeGdQOHpGXzF3bTQwRW1DVHRVWHFCeUtDdEJvLUhhNjdINFdzcW05MWduX3EzdDlvSDlGajJjT1lHSmVkelVIa1BBWThjVDVSeVM4UkdkYTE3dGZ1NXFJQnhObUd4Wjk2d0M0aEEwNm53eTNJNDMzT0ZfVFRB?oc=5",
+          "summary": "Why artificial intelligence must be stopped now www.resilience.org",
+          "source": "www.resilience.org",
+          "published": "2026-10-12T08:03:29+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Why AI must be stopped now",
+          "hook_text": "Stop AI entirely",
+          "beats": [
+            {
+              "line": "Resilience dot org warns that AI poses an ultimate threat to all life on Earth.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Resilience",
+              "domain": "resilience.org",
+              "headline": "Why artificial intelligence must be stopped now",
+              "url": "",
+              "tag": "Ultimate threat to life",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The platform argues that unintended negative outcomes will vastly outweigh any short term gains.",
+              "visual": "clip",
+              "query": "server racks blinking lights",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Outcomes outweigh gains",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Energy usage by data centers could soon eclipse the total power consumption of smaller countries.",
+              "visual": "clip",
+              "query": "power plant cooling towers",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data center energy drain",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These massive facilities consume scarce land and vast amounts of water to keep cool.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "Vast industrial data center facility next to water reservoir, vertical orientation",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Consuming land and water",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Research advances at warp speed while safety regulations crawl along at a snails pace.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Resilience",
+              "domain": "resilience.org",
+              "headline": "Why artificial intelligence must be stopped now",
+              "url": "",
+              "tag": "Regulation lags behind",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you shut down AI to protect the planet?",
+              "visual": "clip",
+              "query": "person looking troubled at smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Shut down AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent, direct, and serious, pressing the viewer on the true environmental cost of technology",
+          "thin": true,
+          "caption": "Resilience.org published a stark warning arguing that artificial intelligence must be stopped immediately due to extreme environmental threats. Data center energy use is soaring while regulation lags far behind research. Would you shut down AI to protect the planet?",
+          "hashtags": [
+            "Resilience",
+            "ArtificialIntelligence",
+            "TechNews",
+            "Environment",
+            "DataCenters"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWtMOGg4WjR3ajduc1lqR1RqR0ZVZlRCRlZEa1NzeGdQOHpGXzF3bTQwRW1DVHRVWHFCeUtDdEJvLUhhNjdINFdzcW05MWduX3EzdDlvSDlGajJjT1lHSmVkelVIa1BBWThjVDVSeVM4UkdkYTE3dGZ1NXFJQnhObUd4Wjk2d0M0aEEwNm53eTNJNDMzT0ZfVFRB?oc=5"
+          ],
+          "script": "Resilience dot org warns that AI poses an ultimate threat to all life on Earth.\nThe platform argues that unintended negative outcomes will vastly outweigh any short term gains.\nEnergy usage by data centers could soon eclipse the total power consumption of smaller countries.\nThese massive facilities consume scarce land and vast amounts of water to keep cool.\nResearch advances at warp speed while safety regulations crawl along at a snails pace.\nWould you shut down AI to protect the planet?",
+          "keywords": [
+            "server racks blinking lights",
+            "power plant cooling towers",
+            "person looking troubled at smartphone"
+          ],
+          "image_prompts": [
+            "Vast industrial data center facility next to water reservoir, vertical orientation"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Stop AI entirely",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWtMOGg4WjR3ajduc1lqR1RqR0ZVZlRCRlZEa1NzeGdQOHpGXzF3bTQwRW1DVHRVWHFCeUtDdEJvLUhhNjdINFdzcW05MWduX3EzdDlvSDlGajJjT1lHSmVkelVIa1BBWThjVDVSeVM4UkdkYTE3dGZ1NXFJQnhObUd4Wjk2d0M0aEEwNm53eTNJNDMzT0ZfVFRB?oc=5"
+            },
+            {
+              "claim": "Resilience dot org warns that AI poses an ultimate threat to all life on Earth.",
+              "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+            },
+            {
+              "claim": "The platform argues that unintended negative outcomes will vastly outweigh any short term gains.",
+              "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+            },
+            {
+              "claim": "Energy usage by data centers could soon eclipse the total power consumption of smaller countries.",
+              "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+            },
+            {
+              "claim": "These massive facilities consume scarce land and vast amounts of water to keep cool.",
+              "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+            },
+            {
+              "claim": "Research advances at warp speed while safety regulations crawl along at a snails pace.",
+              "url": "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.resilience.org/stories/2026-10-12/why-artificial-intelligence-must-be-stopped-now/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-12T14:07:50.993980+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2334,8 +2284,8 @@
       "event": "Satya Nadella says we should assume all AI models are compromised. The Microsoft CEO posted this warning on X today. He argues we can no longer treat AI as simple black boxes. We currently accept advice and actions from these systems withou"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-12T11:40+05:30",
@@ -2383,7 +2333,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-12",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-12-1",
   "gemini_use": {
     "day": "2026-10-12",
