@@ -17,16 +17,16 @@
     "beats": [
       {
         "line": "Apple is preparing to launch a brand new smart home display called HomeView.",
-        "visual": "official",
-        "query": "technology",
+        "visual": "clip",
+        "query": "modern smart home interior",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Apple HomeView",
+        "entity": "",
         "outlet": "",
-        "domain": "apple.com",
+        "domain": "",
         "headline": "",
-        "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+        "url": "",
         "tag": "Apple HomeView display",
         "name": "",
         "role": "",
@@ -41,7 +41,7 @@
       {
         "line": "The new device features a screen and relies on AI to control household gear.",
         "visual": "clip",
-        "query": "smart home display screen",
+        "query": "smart home screen interface",
         "prompt": "",
         "big": "",
         "small": "",
@@ -82,7 +82,7 @@
       {
         "line": "Apple previously struggled to gain traction in the smart home market against Amazon and Google.",
         "visual": "clip",
-        "query": "smart home speaker on table",
+        "query": "smart speaker on wooden table",
         "prompt": "",
         "big": "",
         "small": "",
@@ -108,16 +108,16 @@
       },
       {
         "line": "HomeView will serve as Apple's big bet to finally conquer connected living rooms.",
-        "visual": "official",
-        "query": "technology",
+        "visual": "clip",
+        "query": "person using smart home hub",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Apple HomeView",
+        "entity": "",
         "outlet": "",
-        "domain": "apple.com",
+        "domain": "",
         "headline": "",
-        "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+        "url": "",
         "tag": "Connected living rooms",
         "name": "",
         "role": "",
@@ -132,7 +132,7 @@
       {
         "line": "Would you buy an Apple display for your kitchen?",
         "visual": "clip",
-        "query": "person using smart display in kitchen",
+        "query": "modern kitchen interior appliance",
         "prompt": "",
         "big": "",
         "small": "",
@@ -167,28 +167,30 @@
     ],
     "script": "Apple is preparing to launch a brand new smart home display called HomeView.\nThe new device features a screen and relies on AI to control household gear.\nReports indicate the official product launch is scheduled for Tuesday, October 13, 2026.\nApple previously struggled to gain traction in the smart home market against Amazon and Google.\nHomeView will serve as Apple's big bet to finally conquer connected living rooms.\nWould you buy an Apple display for your kitchen?",
     "keywords": [
-      "smart home display screen",
-      "smart home speaker on table",
-      "person using smart display in kitchen"
+      "modern smart home interior",
+      "smart home screen interface",
+      "smart speaker on wooden table",
+      "person using smart home hub",
+      "modern kitchen interior appliance"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
         "claim": "Apple is building a new smart display.",
-        "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
+        "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
       },
       {
         "claim": "Apple is preparing to launch a brand new smart home display called HomeView.",
-        "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
+        "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
       },
       {
         "claim": "The new device features a screen and relies on AI to control household gear.",
-        "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
+        "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
       },
       {
         "claim": "The official product launch is scheduled for Tuesday, October 13, 2026.",
-        "url": "https://www.indiatoday.in/technology/news/story/apple-hosting-its-welcome-home-event-tomorrow-homeview-smart-display-new-homepod-mini-and-more-to-expect-3015379-2026-10-12"
+        "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
       },
       {
         "claim": "Apple previously struggled to gain traction in the smart home market against Amazon and Google.",
@@ -201,7 +203,8 @@
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
     ]
@@ -211,9 +214,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-12T13:46:40.000745+05:30",
+  "script_deadline": "2026-10-12T13:55:27.544429+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-12",
@@ -664,221 +667,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "California Bans Employers From Using AI Alone to Fire Workers Under New Law",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5",
-          "summary": "California Bans Employers From Using AI Alone to Fire Workers Under New Law Law Commentary",
-          "source": "Law Commentary",
-          "published": "2026-10-12T05:25:33+00:00",
-          "angle": "California just made it illegal for AI to fire you without a human in the loop—is your job next?"
-        },
-        "draft": {
-          "title": "California Bans AI-Only Firings",
-          "hook_text": "California bans AI-only firings",
-          "beats": [
-            {
-              "line": "California now bans employers from using AI alone to fire workers.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "California State Capitol",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "California AI ban",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Governor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://gov.ca.gov",
-              "tag": "Governor Newsom signs",
-              "name": "Gavin Newsom",
-              "role": "Governor of California",
-              "x": "GavinNewsom",
-              "brands": []
-            },
-            {
-              "line": "The legislation mandates that a human manager must independently review data before any layoff occurs.",
-              "visual": "clip",
-              "query": "manager talking to employee",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Human review required",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This law targets automated systems that previously determined employee performance metrics without direct human verification.",
-              "visual": "clip",
-              "query": "data dashboard on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Ending automated firing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The state aims to prevent technical errors from unfairly flagging employees for job loss.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract digital code matrix with a human silhouette in the center",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Protecting workers",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "California is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1st",
-              "small": "State with this law",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "First state mandate",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an algorithm to decide if you keep your job?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Law Commentary",
-              "domain": "lawcommentary.com",
-              "headline": "California Bans Employers From Using AI Alone to Fire Workers",
-              "url": "",
-              "tag": "Trusting algorithms",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious and informative, emphasizing the balance between new technology and human accountability in the workplace.",
-          "thin": false,
-          "caption": "Governor Gavin Newsom signed a law in California that bans companies from using AI alone to fire employees. A human manager must now review all data before a termination occurs. Would you trust an algorithm to decide if you keep your job?",
-          "hashtags": [
-            "California",
-            "EmploymentLaw",
-            "AI",
-            "GavinNewsom",
-            "Workplace"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-          ],
-          "script": "California now bans employers from using AI alone to fire workers.\nGovernor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.\nThe legislation mandates that a human manager must independently review data before any layoff occurs.\nThis law targets automated systems that previously determined employee performance metrics without direct human verification.\nThe state aims to prevent technical errors from unfairly flagging employees for job loss.\nCalifornia is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.\nWould you trust an algorithm to decide if you keep your job?",
-          "keywords": [
-            "manager talking to employee",
-            "data dashboard on screen"
-          ],
-          "image_prompts": [
-            "abstract digital code matrix with a human silhouette in the center"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "California bans AI-only firings",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "California now bans employers from using AI alone to fire workers.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "Governor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "The legislation mandates that a human manager must independently review data before any layoff occurs.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "This law targets automated systems that previously determined employee performance metrics without direct human verification.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "The state aims to prevent technical errors from unfairly flagging employees for job loss.",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-            },
-            {
-              "claim": "California is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.",
-              "url": "https://www.theguardian.com/technology/2026/oct/03/california-ai-laws-worker-protection"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.lawcommentary.com/articles/california-ai-firing-law-newsom-sb-947"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-12T12:20:21.549253+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1792,6 +1580,226 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Will the HomeView be Apple’s first smart home success?",
+          "link": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+          "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-11T21:14:40+00:00",
+          "angle": "Apple's upcoming smart home device leaks with a brand new name and launch date"
+        },
+        "draft": {
+          "title": "Apple's HomeView Smart Display",
+          "hook_text": "Apple is building a new smart display.",
+          "beats": [
+            {
+              "line": "Apple is preparing to launch a brand new smart home display called HomeView.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple HomeView",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+              "tag": "Apple HomeView display",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "The new device features a screen and relies on AI to control household gear.",
+              "visual": "clip",
+              "query": "smart home display screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI smart controls",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "Reports indicate the official product launch is scheduled for Tuesday, October 13, 2026.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Will the HomeView be Apple’s first smart home success?",
+              "url": "",
+              "tag": "October 13 launch",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Apple previously struggled to gain traction in the smart home market against Amazon and Google.",
+              "visual": "clip",
+              "query": "smart home speaker on table",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Past market struggles",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                },
+                {
+                  "name": "Amazon",
+                  "domain": "amazon.com"
+                }
+              ]
+            },
+            {
+              "line": "HomeView will serve as Apple's big bet to finally conquer connected living rooms.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple HomeView",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+              "tag": "Connected living rooms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you buy an Apple display for your kitchen?",
+              "visual": "clip",
+              "query": "person using smart display in kitchen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Kitchen smart display",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "curious and analytical, explaining Apple's new hardware strategy with casual authority",
+          "thin": false,
+          "caption": "Apple is launching its new HomeView smart home display on October 13, 2026. After years of trailing behind competitors, will this finally be Apple's breakthrough in home automation? Would you put one in your house?",
+          "hashtags": [
+            "Apple",
+            "HomeView",
+            "SmartHome",
+            "TechNews"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+          ],
+          "script": "Apple is preparing to launch a brand new smart home display called HomeView.\nThe new device features a screen and relies on AI to control household gear.\nReports indicate the official product launch is scheduled for Tuesday, October 13, 2026.\nApple previously struggled to gain traction in the smart home market against Amazon and Google.\nHomeView will serve as Apple's big bet to finally conquer connected living rooms.\nWould you buy an Apple display for your kitchen?",
+          "keywords": [
+            "smart home display screen",
+            "smart home speaker on table",
+            "person using smart display in kitchen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Apple is building a new smart display.",
+              "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
+            },
+            {
+              "claim": "Apple is preparing to launch a brand new smart home display called HomeView.",
+              "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
+            },
+            {
+              "claim": "The new device features a screen and relies on AI to control household gear.",
+              "url": "https://www.analyticsinsight.net/news/apple-homeview-smart-display-what-to-expect-before-launch"
+            },
+            {
+              "claim": "The official product launch is scheduled for Tuesday, October 13, 2026.",
+              "url": "https://www.indiatoday.in/technology/news/story/apple-hosting-its-welcome-home-event-tomorrow-homeview-smart-display-new-homepod-mini-and-more-to-expect-3015379-2026-10-12"
+            },
+            {
+              "claim": "Apple previously struggled to gain traction in the smart home market against Amazon and Google.",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+            },
+            {
+              "claim": "HomeView will serve as Apple's big bet to finally conquer connected living rooms.",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-12T13:46:40.000745+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2350,8 +2358,8 @@
       "event": "Satya Nadella says we should assume all AI models are compromised. The Microsoft CEO posted this warning on X today. He argues we can no longer treat AI as simple black boxes. We currently accept advice and actions from these systems withou"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-12T11:40+05:30",
@@ -2399,7 +2407,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-12",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-12-1",
   "gemini_use": {
     "day": "2026-10-12",
