@@ -1851,7 +1851,8 @@ def note_gemini(s):
     writer.CALLS[0] = writer.CLAUDE_CALLS[0] = writer.BACKUP_CALLS[0] = 0
     models = use.setdefault("models", {})
     for m, u in writer.MODEL_USE.items():
-        models[m] = {k: models.get(m, {}).get(k, 0) + v for k, v in u.items()}
+        models[m] = {**{k: models.get(m, {}).get(k, 0) + v for k, v in u.items() if k != "last"},
+                     **({"last": u["last"]} if u.get("last") else {"last": models.get(m, {}).get("last", "")})}
     writer.MODEL_USE.clear()
     s["gemini_exhausted"] = {m: ts for m, ts in writer.EXHAUSTED.items() if time.time() < writer.quota_reset_after(ts)}
     s["gemini_missing"] = sorted(writer.MISSING)

@@ -86,9 +86,25 @@ def retry_delay(text, default=20, cap=60):
     return min(cap, float(m.group(1)) + 1) if m else default
 
 
-def note_model(model, code):
+def daily_limit_hit(r):
+    """True only if Google says a per-DAY quota was exceeded (its error lists the violated quota ids); a per-minute
+    limit is just a short wait."""
+    try:
+        ids = [v.get("quotaId", "") for d in r.json().get("error", {}).get("details", [])
+               for v in (d.get("violations") or [])]
+    except Exception:
+        ids = []
+    if ids:
+        return any("PerDay" in i for i in ids)
+    return "PerDay" in r.text or "per day" in r.text.lower()
+
+
+def note_model(model, code, text=""):
     use = MODEL_USE.setdefault(model, {"ok": 0, "busy": 0, "other": 0})
     use["ok" if code == 200 else "busy" if code == 429 else "other"] += 1
+    if code != 200:
+        flat = re.sub(r"\s+", " ", text or "")
+        use["last"] = f"{code} {flat[:160]}"
 
 
 def quota_reset_after(ts):
@@ -131,10 +147,10 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
             try:
                 r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=120)
             except requests.exceptions.RequestException as e:  # hung or dropped: hand the job to the next model
-                note_model(model, 0)
+                note_model(model, 0, type(e).__name__)
                 last = f"{model} didn't answer ({type(e).__name__})"
                 break
-            note_model(model, r.status_code)
+            note_model(model, r.status_code, r.text if r.status_code != 200 else "")
             if r.status_code in (400, 403, 429) and "tools" in body:
                 # Google Search isn't available (or its free quota is used up): continue without it
                 print(f"Search unavailable ({r.status_code}), writing without it")
@@ -151,7 +167,7 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
                 continue
             if r.status_code == 429:
                 last = f"{model}: free quota used up for now"
-                if "PerDay" in r.text or "per day" in r.text.lower():
+                if daily_limit_hit(r):
                     EXHAUSTED[model] = time.time()  # skipped until Google's daily reset
                     break
                 if attempt >= 2:

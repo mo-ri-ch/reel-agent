@@ -217,6 +217,11 @@ def _timeout_post(url, *a, **k):
     return _R(200, {"candidates": [{"content": {"parts": [{"text": "ok"}]}}]})
 writer.requests.post = _timeout_post
 check("hung model -> next model", writer.ask("x"), "ok")
+_pm = _R(429, {"error": {"details": [{"violations": [{"quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"}]}],
+                         "message": "see PerDay docs"}})
+check("per-minute limit isn't daily", writer.daily_limit_hit(_pm), False)
+_pd = _R(429, {"error": {"details": [{"violations": [{"quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier"}]}]}})
+check("per-day limit", writer.daily_limit_hit(_pd), True)
 check("light jobs start on Flash-Lite", "lite" in writer.model_order(light=True)[0], True)
 check("reset is in the future", writer.quota_reset_after(writer.time.time()) > writer.time.time(), True)
 writer.EXHAUSTED.clear(); writer.MISSING.clear(); writer.MODEL_USE.clear()
