@@ -712,7 +712,9 @@ def visual_check(shots):
     return out
 
 
-EDITOR_CRITERIA = ["hook", "specific", "substance", "accuracy", "visuals", "captions", "flow"]
+EDITOR_CRITERIA = ["hook", "specific", "substance", "accuracy", "visuals", "flow"]
+# captions are checked by code (video.sync_problem: exact script words, timed to the voice); the free vision model
+# misread correct captions as wrong on every reel on 12 Oct (it compared the big card labels with the speech)
 
 EDITOR_BRIEF = """You are the editor-in-chief of @gradientai.news, a premium AI-news Instagram account for a global
 audience. Be VERY strict: the owner would rather post late, or not at all, than post a weak reel. Judge this
@@ -735,17 +737,13 @@ Score each 1-10:
   report is not a confirmation). Wrong or misleading = 4 or less.
 - visuals: each frame fits the words being spoken at that moment (named company -> its logo/product, person -> their
   photo, number -> number card); no unrelated, repeated, blank or broken pictures; text readable.
-- captions: the CAPTION is the small sentence text in the strip at the TOP of the frame. (The big bold words in the
-  middle of a card are a short headline label for the line, NOT a caption: they never need to match word for word.)
-  In EVERY frame, does the caption strip show words from the LINE being spoken at that moment,
-  spelled as in the script? A missing caption, the same caption frozen across several lines, a caption from a
-  different line, or misspelled/garbled words ("unusroKid") = 3 or less. Also: the same picture held for more than
-  ~8 seconds (3+ frames in a row) costs visuals points.
+- (Captions are checked separately by code; ignore the text strip at the top. The same picture held for more than
+  ~8 seconds, 3+ frames in a row, or the same photo appearing in many lines costs visuals points.)
 - flow: natural spoken English, clear story, strong specific ending question.
 Then list what must change to reach 9/10."""
 
 EDITOR_FORMAT = """
-Return ONLY JSON: {"scores": {"hook": n, "specific": n, "substance": n, "accuracy": n, "visuals": n, "captions": n, "flow": n},
+Return ONLY JSON: {"scores": {"hook": n, "specific": n, "substance": n, "accuracy": n, "visuals": n, "flow": n},
 "one_line": "your verdict in under 15 words",
 "script_fixes": ["concrete change to a line, e.g. 'LINE 3: name the model (GPT-5.5) instead of the new model'"],
 "visual_problems": [{"line": LINE number, "problem": "short reason"}]}"""

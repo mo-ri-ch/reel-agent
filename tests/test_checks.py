@@ -132,7 +132,7 @@ check("named researchers ok", bool(writer.vague_phrases("MIT researchers led by 
 check("vague tech giants", bool(writer.vague_phrases("Tech giants are racing to build agents.")), True)
 
 # the editor-in-chief's score: inaccurate or generic reels can't pass on other strengths
-_r = writer.score_review({"scores": {"hook": 9, "specific": 9, "substance": 9, "accuracy": 9, "visuals": 9, "captions": 9, "flow": 9},
+_r = writer.score_review({"scores": {"hook": 9, "specific": 9, "substance": 9, "accuracy": 9, "visuals": 9, "flow": 9},
                           "visual_problems": [{"line": 2, "problem": "fruit for Apple"}]}, 5)
 check("editor good", (_r["overall"], _r["visual_beats"]), (9.0, [1]))
 _r = writer.score_review({"scores": {"hook": 10, "specific": 10, "substance": 10, "accuracy": 5, "visuals": 10,
@@ -299,18 +299,19 @@ check("even timing passes", _video.sync_problem(_ev, _scr, _beats, 22.0), "")
 _good = [{"text": w, "start": i * 0.35, "end": i * 0.35 + 0.3} for i, w in enumerate(_scr.split())]
 check("good timing accepted", _video.sync_problem(_good, _scr, _beats, len(_good) * 0.35 + 0.5), "")
 
-_rv = writer.score_review({"scores": {"hook": 9, "specific": 9, "substance": 9, "accuracy": 9, "visuals": 8,
-                                      "captions": 3, "flow": 9}}, 5)
-check("broken captions can't pass", _rv["overall"], 6.5)
 
 check("any weak area fails", writer.score_review({"scores": {"hook": 6, "specific": 9, "substance": 9, "accuracy": 9,
-                                                       "visuals": 9, "captions": 9, "flow": 9}}, 5)["overall"], 6.5)
+                                                       "visuals": 9, "flow": 9}}, 5)["overall"], 6.5)
 check("no posting below 8", main.EDITOR_FLOOR, 8.0)
 
 check("drop opinion column", news.newsworthy({"title": "Why artificial intelligence must be stopped now",
                                              "source": "www.resilience.org"}), False)
 check("keep real news", news.newsworthy({"title": "Amazon in talks to acquire AI chip startup Flexibility",
                                          "source": "Reuters"}), True)
+
+check("drop personal essay", news.newsworthy({"title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+                                             "source": "The Verge"}), False)
+check("keep 'Meta' news", news.newsworthy({"title": "Meta cuts 600 AI jobs", "source": "Reuters"}), True)
 
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
