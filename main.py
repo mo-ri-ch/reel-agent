@@ -1795,6 +1795,10 @@ def editor_step(s, out, rerender):
         raise RuntimeError("the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly")
     d["editor"] = rev
     print(f"Editor: {rev['overall']}/10 {rev['scores']} · {rev['one_line']}")
+    s["editor_log"] = ((s.get("editor_log") or []) + [{
+        "at": st.now().isoformat(timespec="minutes"), "title": (s.get("topic") or {}).get("title", "")[:80],
+        "overall": rev["overall"], "scores": rev["scores"], "one_line": rev["one_line"],
+        "fixes": rev["script_fixes"][:3], "visual": rev["visual_notes"][:3]}])[-20:]
     if rev["overall"] >= EDITOR_PASS:
         return out, "ok"
     first_round = not d.get("editor_rounds")
