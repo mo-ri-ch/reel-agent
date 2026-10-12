@@ -735,7 +735,9 @@ Score each 1-10:
   report is not a confirmation). Wrong or misleading = 4 or less.
 - visuals: each frame fits the words being spoken at that moment (named company -> its logo/product, person -> their
   photo, number -> number card); no unrelated, repeated, blank or broken pictures; text readable.
-- captions: in EVERY frame, does the caption text at the top show words from the LINE being spoken at that moment,
+- captions: the CAPTION is the small sentence text in the strip at the TOP of the frame. (The big bold words in the
+  middle of a card are a short headline label for the line, NOT a caption: they never need to match word for word.)
+  In EVERY frame, does the caption strip show words from the LINE being spoken at that moment,
   spelled as in the script? A missing caption, the same caption frozen across several lines, a caption from a
   different line, or misspelled/garbled words ("unusroKid") = 3 or less. Also: the same picture held for more than
   ~8 seconds (3+ frames in a row) costs visuals points.

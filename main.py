@@ -1799,6 +1799,12 @@ def editor_step(s, out, rerender):
         "at": st.now().isoformat(timespec="minutes"), "title": (s.get("topic") or {}).get("title", "")[:80],
         "overall": rev["overall"], "scores": rev["scores"], "one_line": rev["one_line"],
         "fixes": rev["script_fixes"][:3], "visual": rev["visual_notes"][:3]}])[-20:]
+    if rev["overall"] < EDITOR_PASS:  # keep the frames of rejected reels too, so they can be studied
+        try:
+            import review
+            review.save(out, d, s.get("topic"), extra={"verdict": "rejected"})
+        except Exception as e:
+            print(f"Review pack skipped: {e}")
     if rev["overall"] >= EDITOR_PASS:
         return out, "ok"
     first_round = not d.get("editor_rounds")
