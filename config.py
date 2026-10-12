@@ -28,6 +28,10 @@ FISH_MODEL = env("FISH_MODEL", "s2-pro")
 GEMINI_MODEL = env("GEMINI_MODEL", "gemini-3.6-flash")
 # Used only when the main model is overloaded (503)
 GEMINI_FALLBACK_MODEL = env("GEMINI_FALLBACK_MODEL", "gemini-flash-lite-latest")
+# The free tier counts requests per model per day (Flash ~20/day each, Flash-Lite ~500/day each), so extra models
+# multiply the free quota. Missing models (404) are skipped automatically.
+GEMINI_EXTRA_MODELS = [m.strip() for m in env("GEMINI_EXTRA_MODELS", "gemini-3.7-flash,gemini-3.5-flash,"
+                       "gemini-3-flash-preview,gemini-3.5-flash-lite,gemini-3.1-flash-lite").split(",") if m.strip()]
 
 PEXELS_API_KEY = env("PEXELS_API_KEY")
 

@@ -128,3 +128,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   With Claude off, the 09:00 and 11:30 slots can't be made (both missed today). Asked the owner: 5/day after 12:30, keep 6 and
   accept late morning reels, or paid Claude for the mornings only.
 - Week 4-10 Oct: 57 reels, median 83 views (prior 32), avg watch ~3 s, 4 shares, followers 6 → 7. Too little data for changes.
+
+## 2026-10-12: more free Gemini models
+- Free quota is per model (Flash ~20/day, Flash-Lite ~500/day). It covered only ~4 reels/day (12:30-17:00 IST), nothing posted 17:00 Oct 11 - 11:00 Oct 12. Added 3.7/3.5/3-preview Flash and 3.5/3.1 Flash-Lite as fallbacks; used-up models skipped until the reset; per-model use in gemini_use.models. Metric: slots filled/day (baseline: 4 on Oct 11).

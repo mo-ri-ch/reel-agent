@@ -5,7 +5,7 @@ import time
 
 import requests
 
-from config import GEMINI_API_KEY, GEMINI_FALLBACK_MODEL, GEMINI_MODEL, HANDLE, NICHE
+from config import GEMINI_API_KEY, GEMINI_EXTRA_MODELS, GEMINI_FALLBACK_MODEL, GEMINI_MODEL, HANDLE, NICHE
 from state import now
 
 
@@ -56,7 +56,8 @@ BACKUP_LEFT = [0]    # how many more of those today (set by main.py from state.j
 def claude_backup(prompt, search, json_mode, last):
     """Gemini's free quota is used up: let Claude do the job, so slots don't go empty for hours.
     Claude has no Google Search here, so it may only use the text it is given (stricter, never looser)."""
-    if BACKUP_LEFT[0] <= 0:
+    from config import USE_CLAUDE
+    if BACKUP_LEFT[0] <= 0 or not USE_CLAUDE:
         raise RuntimeError(last)
     parts = list(prompt) if isinstance(prompt, list) else [{"text": prompt}]
     extra = ""
@@ -74,14 +75,41 @@ def claude_backup(prompt, search, json_mode, last):
     return text
 
 
+EXHAUSTED = {}    # model -> when its free daily quota ran out (saved in state.json, cleared at Google's reset)
+MISSING = set()   # model names this key can't use (404)
+MODEL_USE = {}    # model -> {"ok": n, "busy": n, "other": n} in this run
+
+
+def note_model(model, code):
+    use = MODEL_USE.setdefault(model, {"ok": 0, "busy": 0, "other": 0})
+    use["ok" if code == 200 else "busy" if code == 429 else "other"] += 1
+
+
+def quota_reset_after(ts):
+    """Google's free quota resets at midnight Pacific (07:00 UTC in summer, 08:00 in winter; 07:00 is used, an
+    early try only costs one refused request)."""
+    t = time.gmtime(ts)
+    reset = time.mktime((t.tm_year, t.tm_mon, t.tm_mday, 7, 0, 0, 0, 0, 0)) - time.timezone
+    return reset if reset > ts else reset + 86400
+
+
+def model_order(light=False):
+    """Strong models first for real writing; light jobs start on the Flash-Lite models (500/day) to save the Flash
+    ones (20/day). Models used up today or missing are skipped."""
+    names = list(dict.fromkeys([GEMINI_MODEL, *GEMINI_EXTRA_MODELS, GEMINI_FALLBACK_MODEL]))
+    lite = [m for m in names if "lite" in m]
+    strong = [m for m in names if "lite" not in m]
+    order = (lite + strong) if light else (strong + lite)
+    now_ = time.time()
+    return [m for m in order if m not in MISSING and not (m in EXHAUSTED and now_ < quota_reset_after(EXHAUSTED[m]))]
+
+
 def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
     """light=True: small jobs (picking stories/clips) go to the lighter model first, saving the main model's quota."""
     global SEARCH_USED
     SEARCH_USED = False
-    models = [GEMINI_MODEL] + ([GEMINI_FALLBACK_MODEL] if GEMINI_FALLBACK_MODEL != GEMINI_MODEL else [])
-    if light:
-        models.reverse()
-    last = ""
+    models = model_order(light)
+    last = "every free Gemini model is used up for today" if not models else ""
     for model in models:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         parts = prompt if isinstance(prompt, list) else [{"text": prompt}]
@@ -95,6 +123,7 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
         for attempt in range(5):
             CALLS[0] += 1
             r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=180)
+            note_model(model, r.status_code)
             if r.status_code in (400, 403, 429) and "tools" in body:
                 # Google Search isn't available (or its free quota is used up): continue without it
                 print(f"Search unavailable ({r.status_code}), writing without it")
@@ -111,12 +140,16 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
                 continue
             if r.status_code == 429:
                 last = f"{model}: free quota used up for now"
-                if attempt >= 1 or "PerDay" in r.text or "per day" in r.text.lower():
-                    break  # daily limit won't reset in minutes: try the other model instead of waiting
+                if "PerDay" in r.text or "per day" in r.text.lower():
+                    EXHAUSTED[model] = time.time()  # skipped until Google's daily reset
+                    break
+                if attempt >= 1:
+                    break  # busy: try the next model instead of waiting
                 time.sleep(12)
                 continue
-            if r.status_code == 404 and model != GEMINI_MODEL:
-                break  # backup model name not available
+            if r.status_code == 404:
+                MISSING.add(model)
+                break  # this model name isn't available to this key: try the next one
             if r.status_code != 200:
                 raise RuntimeError(f"Gemini error {r.status_code}: {r.text[:300]}")
             data = r.json()
@@ -135,8 +168,10 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
                 if json_mode:
                     body["generationConfig"]["responseMimeType"] = "application/json"
         print(f"Moving on from {model}: {last}")
-    ERRORS.append({"at": time.strftime("%H:%M"), "error": last[:200]})
-    if "quota" in last or "overloaded" in last:
+    if not ERRORS or ERRORS[-1]["error"] != last[:200]:  # don't fill the log with the same line
+        ERRORS.append({"at": time.strftime("%H:%M"), "error": last[:200]})
+    from config import USE_CLAUDE
+    if USE_CLAUDE and ("quota" in last or "overloaded" in last):
         try:
             return claude_backup(prompt, search, json_mode, last)
         except Exception as e:

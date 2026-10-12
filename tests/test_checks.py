@@ -192,6 +192,28 @@ try:
     check("budget used up -> error", "no error", "error")
 except RuntimeError:
     pass
+# Claude is off: a model used up for the day is skipped next time, a missing one (404) too; others take over
+_cfg.USE_CLAUDE = False
+writer.EXHAUSTED.clear(); writer.MISSING.clear()
+seen = []
+def _chain_post(url, *a, **k):
+    m = url.split("/models/")[1].split(":")[0]
+    seen.append(m)
+    if m == writer.GEMINI_MODEL:
+        return _R(429, {"error": "GenerateRequestsPerDayPerProjectPerModel-FreeTier"})
+    if m == "gemini-3.7-flash":
+        return _R(404, {"error": "not found"})
+    return _R(200, {"candidates": [{"content": {"parts": [{"text": "ok from " + m}]}}]})
+writer.requests.post = _chain_post
+check("next free model answers", writer.ask("x"), "ok from gemini-3.5-flash")
+check("used-up model remembered", writer.GEMINI_MODEL in writer.EXHAUSTED, True)
+check("missing model remembered", "gemini-3.7-flash" in writer.MISSING, True)
+seen.clear()
+writer.ask("x")
+check("skips used-up and missing", seen, ["gemini-3.5-flash"])
+check("light jobs start on Flash-Lite", "lite" in writer.model_order(light=True)[0], True)
+check("reset is in the future", writer.quota_reset_after(writer.time.time()) > writer.time.time(), True)
+writer.EXHAUSTED.clear(); writer.MISSING.clear(); writer.MODEL_USE.clear()
 writer.requests.post, _cfg.ANTHROPIC_API_KEY = _post, _key
 writer.time.sleep = _sleep
 _cfg.USE_CLAUDE = False

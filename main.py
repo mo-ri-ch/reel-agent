@@ -9,6 +9,7 @@ import os
 import re
 import sys
 import traceback
+import time
 from datetime import datetime, timedelta
 
 import news
@@ -1840,6 +1841,12 @@ def note_gemini(s):
     use["claude_calls"] = use.get("claude_calls", 0) + writer.CLAUDE_CALLS[0]
     use["claude_backup"] = use.get("claude_backup", 0) + writer.BACKUP_CALLS[0]
     writer.CALLS[0] = writer.CLAUDE_CALLS[0] = writer.BACKUP_CALLS[0] = 0
+    models = use.setdefault("models", {})
+    for m, u in writer.MODEL_USE.items():
+        models[m] = {k: models.get(m, {}).get(k, 0) + v for k, v in u.items()}
+    writer.MODEL_USE.clear()
+    s["gemini_exhausted"] = {m: ts for m, ts in writer.EXHAUSTED.items() if time.time() < writer.quota_reset_after(ts)}
+    s["gemini_missing"] = sorted(writer.MISSING)
     s["gemini_use"] = use
     if writer.ERRORS:
         s["gemini_errors"] = ((s.get("gemini_errors") or []) + [{**e, "day": day} for e in writer.ERRORS])[-10:]
@@ -1855,6 +1862,8 @@ def backup_budget(s):
     use = s.get("gemini_use") or {}
     used = use.get("claude_backup", 0) if use.get("day") == st.now().date().isoformat() else 0
     writer.BACKUP_LEFT[0] = max(0, CLAUDE_BACKUP_PER_DAY - used)
+    writer.EXHAUSTED.update(s.get("gemini_exhausted") or {})
+    writer.MISSING.update(s.get("gemini_missing") or [])
 
 
 def cmd_feeds():
