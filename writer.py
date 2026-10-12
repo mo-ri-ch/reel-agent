@@ -691,7 +691,8 @@ def visual_check(shots):
                       "spoken line, what the shot is supposed to show, and a frame. Flag ONLY clear problems: the "
                       "picture is unrelated or misleading for the line (e.g. a real landscape for a software product "
                       "called 'Horizon', fruit for Apple the company), shows a different product or company than "
-                      "named, is broken, blank or unreadable, or contains garbled text. Do not try to identify who "
+                      "named, is broken, blank or unreadable, contains garbled text, or is an almost-empty card "
+                      "(e.g. a tiny text logo on a big white square). Do not try to identify who "
                       "a person is from their face; for person cards only check it looks like a normal photo of a "
                       "person or an initials card. Generic but fitting visuals are fine."}]
     for i, s in enumerate(shots):
@@ -714,7 +715,9 @@ def visual_check(shots):
 EDITOR_CRITERIA = ["hook", "specific", "substance", "accuracy", "visuals", "captions", "flow"]
 
 EDITOR_BRIEF = """You are the editor-in-chief of @gradientai.news, a premium AI-news Instagram account for a global
-audience. Be strict: only top-notch reels get posted. Judge this finished reel before it goes live.
+audience. Be VERY strict: the owner would rather post late, or not at all, than post a weak reel. Judge this
+finished reel the way the editor of a top news channel would. If in doubt, score lower. A reel you wouldn't proudly
+put on a top news account scores 7 or less on the criteria where it falls short.
 
 SOURCE HEADLINE: {title}
 SOURCE SUMMARY: {summary}
@@ -725,7 +728,9 @@ Score each 1-10:
 - hook: do the first 2 seconds (title screen + line 1) make a viewer stop? Big name or number first?
 - specific: real company, product/model and people names, real numbers/dates. Any generic phrase ("the company",
   "experts", "a new AI model", "raises questions") costs points.
-- substance: every line adds a new concrete fact; no filler, no repetition, no "X reported on it".
+- substance: every line adds a new concrete fact (a name, number, date, product detail or consequence); no filler,
+  no repetition, no "X reported on it", no vague commentary lines like "this shift matters for everyone" or
+  "the security of our infrastructure depends on this" (each such line costs 2 points).
 - accuracy: every claim matches the source; no exaggeration or misleading framing (a projection is not a target, a
   report is not a confirmation). Wrong or misleading = 4 or less.
 - visuals: each frame fits the words being spoken at that moment (named company -> its logo/product, person -> their
@@ -788,7 +793,7 @@ def score_review(res, n_beats):
         except Exception:
             scores[k] = 7
     overall = round(sum(scores.values()) / len(scores), 1)
-    if min(scores["accuracy"], scores["specific"], scores["captions"]) < 7:
+    if min(scores.values()) < 7:  # strict: one weak area (any criterion under 7) is enough to fail
         overall = min(overall, 6.5)
     vb, notes = [], []
     for p in res.get("visual_problems") or []:

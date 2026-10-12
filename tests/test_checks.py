@@ -303,6 +303,10 @@ _rv = writer.score_review({"scores": {"hook": 9, "specific": 9, "substance": 9, 
                                       "captions": 3, "flow": 9}}, 5)
 check("broken captions can't pass", _rv["overall"], 6.5)
 
+check("any weak area fails", writer.score_review({"scores": {"hook": 6, "specific": 9, "substance": 9, "accuracy": 9,
+                                                       "visuals": 9, "captions": 9, "flow": 9}}, 5)["overall"], 6.5)
+check("no posting below 8", main.EDITOR_FLOOR, 8.0)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

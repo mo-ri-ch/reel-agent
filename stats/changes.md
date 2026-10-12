@@ -131,3 +131,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-12: more free Gemini models
 - Free quota is per model (Flash ~20/day, Flash-Lite ~500/day). It covered only ~4 reels/day (12:30-17:00 IST), nothing posted 17:00 Oct 11 - 11:00 Oct 12. Added 3.7/3.5/3-preview Flash and 3.5/3.1 Flash-Lite as fallbacks; used-up models skipped until the reset; per-model use in gemini_use.models. Metric: slots filled/day (baseline: 4 on Oct 11).
+
+## 2026-10-12: very strict quality (owner)
+- No reel below 8/10 (the 7.0 floor after fixes is gone); any criterion under 7 fails; editor told to score like a top news channel and penalise vague commentary lines; visual check flags near-empty cards. Also captions criterion + caption timing guard + no posting without the editor. Metric: editor scores, watch time, shares; slots missed (expect more late/missed slots).

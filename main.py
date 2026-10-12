@@ -1769,7 +1769,7 @@ def cmd_render():
 
 
 EDITOR_PASS = 8.0   # the editor-in-chief's bar for posting
-EDITOR_FLOOR = 7.0  # after one round of fixes, reels between this and the bar are posted (with the score shown)
+EDITOR_FLOOR = 8.0  # owner, 12 Oct: "be very strict" -> no reel below 8/10 is ever posted, even after fixes
 
 
 EDITOR_RETRY_WAIT = 60
