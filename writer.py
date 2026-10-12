@@ -80,6 +80,12 @@ MISSING = set()   # model names this key can't use (404)
 MODEL_USE = {}    # model -> {"ok": n, "busy": n, "other": n} in this run
 
 
+def retry_delay(text, default=20, cap=60):
+    """Seconds Google asks us to wait after a per-minute limit ("retryDelay": "34s")."""
+    m = re.search(r'retryDelay"?\s*:\s*"?(\d+(?:\.\d+)?)s', text or "")
+    return min(cap, float(m.group(1)) + 1) if m else default
+
+
 def note_model(model, code):
     use = MODEL_USE.setdefault(model, {"ok": 0, "busy": 0, "other": 0})
     use["ok" if code == 200 else "busy" if code == 429 else "other"] += 1
@@ -143,9 +149,9 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
                 if "PerDay" in r.text or "per day" in r.text.lower():
                     EXHAUSTED[model] = time.time()  # skipped until Google's daily reset
                     break
-                if attempt >= 1:
-                    break  # busy: try the next model instead of waiting
-                time.sleep(12)
+                if attempt >= 2:
+                    break  # still busy: try the next model
+                time.sleep(retry_delay(r.text))  # per-minute limit (Flash ~5/min): wait as long as Google asks
                 continue
             if r.status_code == 404:
                 MISSING.add(model)
