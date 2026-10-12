@@ -13,10 +13,10 @@
   },
   "draft": {
     "title": "Apple HomeView smart home display launch",
-    "hook_text": "Apple launches HomeView this November.",
+    "hook_text": "Apple is launching HomeView this November.",
     "beats": [
       {
-        "line": "Apple is preparing to release a brand new smart home display called HomeView this November.",
+        "line": "Apple is launching its brand new smart home display called HomeView this November.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -160,7 +160,7 @@
     ],
     "delivery": "conversational and sharp, explaining Apple's new smart home strategy with a critical look at past hardware challenges",
     "thin": false,
-    "caption": "Apple is preparing to release its new HomeView smart home display this November. The device aims to integrate AI features to rival existing smart home hubs. Would you install an Apple display in your kitchen?",
+    "caption": "Apple is launching its new HomeView smart home display this November. The device aims to integrate AI features to rival existing smart home hubs. Would you install an Apple display in your kitchen?",
     "hashtags": [
       "Apple",
       "HomeView",
@@ -170,7 +170,7 @@
     "sources": [
       "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
     ],
-    "script": "Apple is preparing to release a brand new smart home display called HomeView this November.\nThe device acts as a centralized hub to control household appliances and security systems.\nApple plans to integrate advanced AI features directly into the interface for automated routines.\nPast hardware products like the original HomePod faced heavy competition from Amazon and Google.\nThis release marks Apple's first major attempt to capture the living room display market.\nWould you install an Apple display in your kitchen?",
+    "script": "Apple is launching its brand new smart home display called HomeView this November.\nThe device acts as a centralized hub to control household appliances and security systems.\nApple plans to integrate advanced AI features directly into the interface for automated routines.\nPast hardware products like the original HomePod faced heavy competition from Amazon and Google.\nThis release marks Apple's first major attempt to capture the living room display market.\nWould you install an Apple display in your kitchen?",
     "keywords": [
       "smart home hub screen",
       "smart speaker on table",
@@ -180,11 +180,11 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Apple launches HomeView this November.",
+        "claim": "Apple is launching HomeView this November.",
         "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
       },
       {
-        "claim": "Apple is preparing to release a brand new smart home display called HomeView this November.",
+        "claim": "Apple is launching its brand new smart home display called HomeView this November.",
         "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
       },
       {
@@ -201,28 +201,27 @@
       },
       {
         "claim": "This release marks Apple's first major attempt to capture the living room display market.",
-        "url": "https://www.kucoin.com/news/flash/apple-s-first-smart-home-hub-named-homeview-to-feature-a18-chip-and-four-color-options"
-      },
-      {
-        "claim": "Would you install an Apple display in your kitchen?",
-        "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
+        "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [],
+    "editor_rounds": 1
   },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-12T13:27:05.076193+05:30",
+  "script_deadline": "2026-10-12T13:33:17.519273+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-12",
@@ -678,243 +677,8 @@
     "PSA: DeepSeek V4.1 Flash habitually exfiltrates API keys. It is dangerously misaligned and may be hazardous to use",
     "OpenAI film 'Artificial' turns lens on creators of 'new world,’ Andrew Garfield says"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-11T13:08:43+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "Why the RTX 5090 is costing $5,000: AI companies are buying gaming GPUs by the pallet."
-        },
-        "draft": {
-          "title": "RTX 5090 Supply Crisis",
-          "hook_text": "RTX 5090 costs $5,000",
-          "beats": [
-            {
-              "line": "Nvidia's RTX 5090 is hitting five thousand dollars on secondary markets.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia RTX 5090",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://www.nvidia.com",
-              "tag": "RTX 5090 costs $5,000",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "AI firms are buying these consumer GPUs by the pallet to train models.",
-              "visual": "clip",
-              "query": "server rack data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI firms buy pallets",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The Blackwell architecture inside makes these cards massive targets for corporate bulk procurement.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Blackwell",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://www.nvidia.com",
-              "tag": "Blackwell architecture demand",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Small AI labs prioritize these cards because enterprise H100 units remain strictly supply-constrained.",
-              "visual": "clip",
-              "query": "computer server room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "H100 supply constraints",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "This demand shift moves high-end gaming hardware directly into industrial AI research clusters.",
-              "visual": "clip",
-              "query": "engineers working on computers",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Gaming hardware for AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Budget constraints force these labs to bypass enterprise hardware for cheaper consumer alternatives.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "5000",
-              "small": "Dollars per GPU",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Budget hardware alternatives",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you pay five thousand dollars for a gaming GPU?",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia RTX 5090",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://www.nvidia.com",
-              "tag": "Pay $5,000 for GPU?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "Serious and analytical, focusing on the economic shift of consumer hardware into the enterprise AI sector.",
-          "thin": false,
-          "caption": "Nvidia's RTX 5090 is hitting $5,000 on secondary markets as AI labs purchase consumer GPUs by the pallet for model training. With H100 enterprise units strictly supply-constrained, these cards are moving directly into industrial AI clusters. Would you pay five thousand dollars for a gaming GPU?",
-          "hashtags": [
-            "Nvidia",
-            "RTX5090",
-            "AI",
-            "GPU",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/"
-          ],
-          "script": "Nvidia's RTX 5090 is hitting five thousand dollars on secondary markets.\nAI firms are buying these consumer GPUs by the pallet to train models.\nThe Blackwell architecture inside makes these cards massive targets for corporate bulk procurement.\nSmall AI labs prioritize these cards because enterprise H100 units remain strictly supply-constrained.\nThis demand shift moves high-end gaming hardware directly into industrial AI research clusters.\nBudget constraints force these labs to bypass enterprise hardware for cheaper consumer alternatives.\nWould you pay five thousand dollars for a gaming GPU?",
-          "keywords": [
-            "server rack data center",
-            "computer server room",
-            "engineers working on computers"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "RTX 5090 costs $5,000",
-              "url": "https://finance.biggo.com/news/8b34a7f1-1573-4ba6-a994-e122617d31b6"
-            },
-            {
-              "claim": "Nvidia's RTX 5090 is hitting five thousand dollars on secondary markets.",
-              "url": "https://finance.biggo.com/news/8b34a7f1-1573-4ba6-a994-e122617d31b6"
-            },
-            {
-              "claim": "AI firms are buying these consumer GPUs by the pallet to train models.",
-              "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
-            },
-            {
-              "claim": "The Blackwell architecture inside makes these cards massive targets for corporate bulk procurement.",
-              "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
-            },
-            {
-              "claim": "Small AI labs prioritize these cards because enterprise H100 units remain strictly supply-constrained.",
-              "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
-            },
-            {
-              "claim": "This demand shift moves high-end gaming hardware directly into industrial AI research clusters.",
-              "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
-            },
-            {
-              "claim": "Budget constraints force these labs to bypass enterprise hardware for cheaper consumer alternatives.",
-              "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-12T11:58:33.514418+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1863,6 +1627,235 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Will the HomeView be Apple’s first smart home success?",
+          "link": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+          "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-11T21:14:40+00:00",
+          "angle": "Apple's new smart home product leak reveals a potential game-changer for home tech"
+        },
+        "draft": {
+          "title": "Apple HomeView smart home display launch",
+          "hook_text": "Apple launches HomeView this November.",
+          "beats": [
+            {
+              "line": "Apple is preparing to release a brand new smart home display called HomeView this November.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple HomeView",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+              "tag": "HomeView launching November",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "The device acts as a centralized hub to control household appliances and security systems.",
+              "visual": "clip",
+              "query": "smart home hub screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Centralized home control",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "Apple plans to integrate advanced AI features directly into the interface for automated routines.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple HomeView",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+              "tag": "Advanced AI features",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "Past hardware products like the original HomePod faced heavy competition from Amazon and Google.",
+              "visual": "clip",
+              "query": "smart speaker on table",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Past HomePod competition",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                },
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "This release marks Apple's first major attempt to capture the living room display market.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Will the HomeView be Apple’s first smart home success?",
+              "url": "",
+              "tag": "First living room display",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you install an Apple display in your kitchen?",
+              "visual": "clip",
+              "query": "person using smart display in kitchen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Kitchen smart screen",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "conversational and sharp, explaining Apple's new smart home strategy with a critical look at past hardware challenges",
+          "thin": false,
+          "caption": "Apple is preparing to release its new HomeView smart home display this November. The device aims to integrate AI features to rival existing smart home hubs. Would you install an Apple display in your kitchen?",
+          "hashtags": [
+            "Apple",
+            "HomeView",
+            "SmartHome",
+            "TechNews"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+          ],
+          "script": "Apple is preparing to release a brand new smart home display called HomeView this November.\nThe device acts as a centralized hub to control household appliances and security systems.\nApple plans to integrate advanced AI features directly into the interface for automated routines.\nPast hardware products like the original HomePod faced heavy competition from Amazon and Google.\nThis release marks Apple's first major attempt to capture the living room display market.\nWould you install an Apple display in your kitchen?",
+          "keywords": [
+            "smart home hub screen",
+            "smart speaker on table",
+            "person using smart display in kitchen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Apple launches HomeView this November.",
+              "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
+            },
+            {
+              "claim": "Apple is preparing to release a brand new smart home display called HomeView this November.",
+              "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
+            },
+            {
+              "claim": "The device acts as a centralized hub to control household appliances and security systems.",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+            },
+            {
+              "claim": "Apple plans to integrate advanced AI features directly into the interface for automated routines.",
+              "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
+            },
+            {
+              "claim": "Past hardware products like the original HomePod faced heavy competition from Amazon and Google.",
+              "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+            },
+            {
+              "claim": "This release marks Apple's first major attempt to capture the living room display market.",
+              "url": "https://www.kucoin.com/news/flash/apple-s-first-smart-home-hub-named-homeview-to-feature-a18-chip-and-four-color-options"
+            },
+            {
+              "claim": "Would you install an Apple display in your kitchen?",
+              "url": "https://www.cnet.com/home/new-apple-homeview-smart-home-hub/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-12T13:27:05.076193+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2421,8 +2414,8 @@
       "event": "Satya Nadella says we should assume all AI models are compromised. The Microsoft CEO posted this warning on X today. He argues we can no longer treat AI as simple black boxes. We currently accept advice and actions from these systems withou"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-12T11:40+05:30",
@@ -2470,7 +2463,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-12",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-12-1",
   "gemini_use": {
     "day": "2026-10-12",
