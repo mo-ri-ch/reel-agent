@@ -313,6 +313,19 @@ check("drop personal essay", news.newsworthy({"title": "Learning to use local AI
                                              "source": "The Verge"}), False)
 check("keep 'Meta' news", news.newsworthy({"title": "Meta cuts 600 AI jobs", "source": "Reuters"}), True)
 
+# all free models used up: pause quietly until the reset (one message), instead of a failure every 10 minutes
+_sent, _send = [], main.tg.send
+main.tg.send = lambda *a, **k: _sent.append(a[0])
+writer.EXHAUSTED.clear(); writer.MISSING.clear()
+check("not resting with models left", main.gemini_resting({}), None)
+for _m in writer.model_order() + writer.model_order(light=True):
+    writer.EXHAUSTED[_m] = writer.time.time()
+_s = {}
+_r1 = main.gemini_resting(_s); _r2 = main.gemini_resting(_s)
+check("resting until reset", _r1 is not None and _r1 > main.st.now(), True)
+check("told once", len(_sent), 1)
+writer.EXHAUSTED.clear(); main.tg.send = _send
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

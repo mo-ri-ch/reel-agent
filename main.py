@@ -1316,6 +1316,10 @@ def cmd_poll():
             traceback.print_exc()
             tg.send(f"⚠️ Something went wrong: {e}")
 
+    resting = gemini_resting(s)
+    if not render and s["stage"] == "choosing" and s.get("choose_deadline") and resting:
+        # every free model is used up until Google's reset: wait quietly instead of burning stories every 10 minutes
+        s["choose_deadline"] = resting.isoformat()
     if not render and s["stage"] == "choosing" and s.get("choose_deadline"):
         if st.now() >= datetime.fromisoformat(s["choose_deadline"]) and s["candidates"]:
             pick = s["candidates"][0]
@@ -1333,7 +1337,7 @@ def cmd_poll():
                 s["choose_deadline"] = (st.now() + timedelta(minutes=10)).isoformat()
                 tg.send(f"⚠️ Couldn't write the script ({str(e)[:150]}). Trying the next story in 10 minutes.")
 
-    if not render:
+    if not render and not resting:
         try:
             if due_offer_slot(s):
                 run_offer(s)
@@ -1847,6 +1851,22 @@ def editor_redo(s, action):
         tg.send(f"🎬 Editor-in-chief: {rev.get('overall')}/10 even after fixes, {rev.get('one_line', '')}. "
                 "Not good enough to post, switching to another story.")
     next_story(s, f"editor score {rev.get('overall')}/10")
+
+
+def gemini_resting(s):
+    """When every free Gemini model is used up for today: the time (local) to start again, else None.
+    Tells the owner once, instead of a failure message every 10 minutes."""
+    if writer.model_order(light=False) or writer.model_order(light=True):
+        return None
+    if not writer.EXHAUSTED:
+        return None
+    resume = datetime.fromtimestamp(min(writer.quota_reset_after(ts) for ts in writer.EXHAUSTED.values()) + 120,
+                                    tz=st.now().tzinfo)
+    if s.get("rest_note") != resume.isoformat():
+        s["rest_note"] = resume.isoformat()
+        tg.send(f"⏸ Today's free AI quota is used up, so I'm pausing until {fmt_time(resume)} instead of trying "
+                "stories that can't be written. No reels until then.")
+    return resume
 
 
 def note_gemini(s):

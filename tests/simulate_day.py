@@ -99,7 +99,8 @@ st.now = lambda: clock[0]
 main.st.now = st.now
 s = st.load()
 main.reset_reel(s)
-for k in ("last_auto_offer", "digest_for", "report_day", "behind_since", "paused", "ig_count"):
+for k in ("last_auto_offer", "digest_for", "report_day", "behind_since", "paused", "ig_count", "gemini_exhausted",
+          "gemini_missing", "rest_note"):
     s.pop(k, None)
 s.update(autopilot=True, queue=[], post_log=[], guarantee_since=clock[0].isoformat(), tried=[], held=[],
          pending_offer=False, history=[], posted_log=[])
