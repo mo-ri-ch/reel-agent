@@ -616,18 +616,26 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             real.append({"kind": "picture", "raw": hook_raw, "credit": "", "real": True})
         except Exception:
             pass
-    uses = {}
+    uses = {}  # photo key -> times shown in this reel (the hook counts); max 2, a third time reads as a loop
+    if img is not None:
+        uses[img_key(img)] = 1
+    keys = {}
+
+    def key_of(info):
+        if info["raw"] not in keys:
+            keys[info["raw"]] = img_key(info["raw"])
+        return keys[info["raw"]]
 
     def real_instead(n_pieces):
-        """Real photos of the story, each shown at most twice in the whole reel (a third time reads as a loop)."""
-        out = []
+        """Real photos of the story, each shown at most twice in the whole reel."""
+        out, planned = [], {}
         for k in range(n_pieces):
-            fresh = [i for i in real if uses.get(i["raw"], 0) < 2]
+            fresh = [i for i in real if uses.get(key_of(i), 0) + planned.get(key_of(i), 0) < 2]
             if not fresh:
                 break
-            info = min(fresh, key=lambda i: uses.get(i["raw"], 0))
-            uses[info["raw"]] = uses.get(info["raw"], 0) + 1
-            out.append(("picture", {**info, "_reframe": uses[info["raw"]]}))
+            info = min(fresh, key=lambda i: uses.get(key_of(i), 0) + planned.get(key_of(i), 0))
+            planned[key_of(info)] = planned.get(key_of(info), 0) + 1
+            out.append(("picture", {**info, "_reframe": uses.get(key_of(info), 0) + planned[key_of(info)]}))
         return out
     shown_brands = set()
     for i, ((start, end), b, shots) in enumerate(zip(times, beats, plan)):
@@ -668,7 +676,19 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             kind, info = specs[k % len(specs)]
             repeat = k // len(specs)
             stop = start + (end - start) * (k + 1) / pieces
+            if kind == "picture" and uses.get(key_of(info), 0) >= 2:  # shown twice already: say it in words
+                brand = next((br for br in b.get("brands") or []
+                              if re.sub(r"[^a-z0-9]", "", str(br.get("name", "")).lower()) not in shown_brands), None)
+                if tag:
+                    kind, info = "statement", {"tag": tag}
+                elif brand:
+                    shown_brands.add(re.sub(r"[^a-z0-9]", "", str(brand.get("name", "")).lower()))
+                    kind, info = "logo", {"name": brand["name"], "domain": brand.get("domain", ""),
+                                          "logo": V.brand_logo(brand["name"], brand.get("domain", ""))}
+                else:
+                    kind, info = "statement", {"tag": " ".join(b["line"].split()[:4]).rstrip(".,")}
             if kind == "picture":
+                uses[key_of(info)] = uses.get(key_of(info), 0) + 1
                 add(picture_shot, stop, theme, Image.open(info["raw"]), theme, info.get("credit", ""),
                     info.get("_reframe", repeat), i + k)
             elif kind == "clip":
@@ -697,6 +717,17 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
                 return th
         return "dark"
     return listfile, cuts, theme_at
+
+
+def img_key(src):
+    """Same photo = same key, even when saved as different files (hook copy, crops): 8x8 average hash."""
+    try:
+        im = (src if isinstance(src, Image.Image) else Image.open(src)).convert("L").resize((8, 8))
+        px = list(im.getdata())
+        avg = sum(px) / len(px)
+        return "".join("1" if p > avg else "0" for p in px)
+    except Exception:
+        return str(src)
 
 
 def specs_for(b, shots):
