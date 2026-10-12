@@ -1,64 +1,223 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
-      "link": "https://6abc.com/post/openai-ceo-sam-altman-claims-artificial-intelligence-singularity-has-arrived/19588207/?userab=kfsn_content_recs-582*variant_b_trending_kfsn-2513,kabc_content_recs-577*variant_a_control-2480,wls_content_recs-584*variant_b_trending_wls-2517,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_a_control_ktrk-2522,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_c_share_plus_google_button-3496,otv_search_page_design_unification-546*variant_b_search_redesign-2300,vertical_video_web-519*enabled-2164,abcn_popular_reads_exp_followup-648*variant_a_control-3455,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_a_control_kgo-2514,otvlink_abcnnav-576*variant_c_localnews-3316",
-      "summary": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world' 6abc Philadelphia",
-      "source": "6abc Philadelphia",
-      "published": "2026-10-11T20:27:11+00:00",
-      "angle": "Sam Altman claims the AI singularity is officially here—is it really happening?"
-    },
-    {
-      "title": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-11T13:08:43+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Why the RTX 5090 is costing $5,000: AI companies are buying gaming GPUs by the pallet."
-    },
-    {
-      "title": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer",
-      "link": "https://abc11.com/post/val-kilmer-returns-ai-deep-grave-trailer/18897318/?userab=kfsn_content_recs-582*variant_b_trending_kfsn-2513,kabc_content_recs-577*variant_a_control-2480,wls_content_recs-584*variant_a_control_wls-2516,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_b_trending_ktrk-2523,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_a_control-2267,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_live-581*variant_a_live-2510,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,abcn_popular_reads_exp_followup-648*variant_c_autotagswpopularity-3458,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_a_control_kgo-2514,otvlink_abcnnav-576*variant_a_control-2478",
-      "summary": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer ABC11 News",
-      "source": "ABC11 News",
-      "published": "2026-10-11T23:45:27+00:00",
-      "angle": "Val Kilmer returns to the screen via AI: The future of acting or a digital ghost?"
-    }
-  ],
-  "choose_deadline": "2026-10-12T11:41:18.284614+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
+    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/",
+    "summary": "",
+    "source": "r/LocalLLaMA",
+    "published": "2026-10-11T13:08:43+00:00",
+    "buzz": "top of r/LocalLLaMA today",
+    "angle": "Why the RTX 5090 is costing $5,000: AI companies are buying gaming GPUs by the pallet."
+  },
+  "draft": {
+    "title": "Nvidia RTX 5090 Supply Crisis",
+    "hook_text": "Nvidia RTX 5090 hits $5,000",
+    "beats": [
+      {
+        "line": "Nvidia RTX fifty-ninety units now cost five thousand dollars.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia RTX 5090",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "RTX 5090 costs $5,000",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "AI firms are buying these gaming cards by the pallet.",
+        "visual": "clip",
+        "query": "stacked shipping pallets",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "AI firms buying pallets",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "They need the massive VRAM capacity to run local models.",
+        "visual": "clip",
+        "query": "computer memory module",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Need VRAM for AI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This demand creates a bottleneck for typical PC gamers.",
+        "visual": "clip",
+        "query": "gamer playing pc",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "PC gamer bottleneck",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The Reddit community reports retail stock vanishes within seconds.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "r/LocalLLaMA",
+        "domain": "reddit.com",
+        "headline": "Here’s why RTX 5090 costs $5,000",
+        "url": "",
+        "tag": "Stock vanishes in seconds",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Scalpers are now flipping these cards for massive profit margins.",
+        "visual": "clip",
+        "query": "online shopping checkout",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Scalpers flipping cards",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you pay a premium for a card intended for research?",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia RTX 5090",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Pay premium for GPU?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      }
+    ],
+    "delivery": "Urgent and frustrated tone, reflecting the reality of the hardware shortage.",
+    "thin": false,
+    "caption": "Nvidia RTX 5090 prices have surged to $5,000 because AI companies are buying them by the pallet. This industrial demand is wiping out consumer stock faster than ever. Would you pay a premium for a gaming card intended for research?",
+    "hashtags": [
+      "Nvidia",
+      "RTX5090",
+      "GPU",
+      "AI",
+      "Gaming"
+    ],
+    "sources": [
+      "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/"
+    ],
+    "script": "Nvidia RTX fifty-ninety units now cost five thousand dollars.\nAI firms are buying these gaming cards by the pallet.\nThey need the massive VRAM capacity to run local models.\nThis demand creates a bottleneck for typical PC gamers.\nThe Reddit community reports retail stock vanishes within seconds.\nScalpers are now flipping these cards for massive profit margins.\nWould you pay a premium for a card intended for research?",
+    "keywords": [
+      "stacked shipping pallets",
+      "computer memory module",
+      "gamer playing pc",
+      "online shopping checkout"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Nvidia RTX 5090 hits $5,000",
+        "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
+      },
+      {
+        "claim": "Nvidia RTX 5090 units now cost $5,000",
+        "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
+      },
+      {
+        "claim": "AI firms are buying these gaming cards by the pallet",
+        "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
+      },
+      {
+        "claim": "They need the massive VRAM capacity to run local models",
+        "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
+      },
+      {
+        "claim": "This demand creates a bottleneck for typical PC gamers",
+        "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
+      },
+      {
+        "claim": "The Reddit community reports retail stock vanishes within seconds",
+        "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
+      },
+      {
+        "claim": "Scalpers are now flipping these cards for massive profit margins",
+        "url": "https://startupfortune.com/ai-firms-are-buying-rtx-5090-gaming-cards-by-the-pallet-pricing-out-gamers/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
-      "video_file_id": "BAACAgUAAxkDAAIQhmrMeSPCy6eAu1qYt94ZxIOAqBALAAJzIgACqxlpVkAS98hD5suyPQQ",
-      "caption": "Microsoft CEO Satya Nadella is urging users to treat all AI models as compromised. He warns that treating AI as an unverified black box is no longer acceptable for modern security. Would you trust an AI that has not been independently verified?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Satya Nadella: Brian Smale and Microsoft\n\n#Microsoft #SatyaNadella #ArtificialIntelligence #CyberSecurity #TechNews",
-      "extra": false,
-      "meta": {
-        "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
-        "kind": "news",
-        "source": "AI | The Verge",
-        "engine": "fish",
-        "voice": "Paula (Fish Audio)",
-        "person": true,
-        "words": 76,
-        "visuals": "1 real photos, 6 cards",
-        "editor": null,
-        "writer": "gemini",
-        "hook_score": 73,
-        "made": "2026-10-12T11:40+05:30"
-      },
-      "post_at": "2026-10-12T11:41:22.830326+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-12T11:51:12.776693+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -223,10 +382,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-04T14:01:12.700590+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-04T16:31:17.017851+05:30",
       "extra": false
@@ -462,87 +617,46 @@
     {
       "at": "2026-10-11T17:01:15.869148+05:30",
       "extra": false
+    },
+    {
+      "at": "2026-10-12T11:51:49.506726+05:30",
+      "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
-      "title": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-11T13:08:43+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Why the RTX 5090 might cost $5,000: AI companies are buying gaming GPUs by the pallet, leaving gamers behind."
+      "title": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer",
+      "link": "https://abc11.com/post/val-kilmer-returns-ai-deep-grave-trailer/18897318/?userab=kfsn_content_recs-582*variant_b_trending_kfsn-2513,kabc_content_recs-577*variant_a_control-2480,wls_content_recs-584*variant_a_control_wls-2516,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_b_trending_ktrk-2523,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_a_control-2267,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_live-581*variant_a_live-2510,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,abcn_popular_reads_exp_followup-648*variant_c_autotagswpopularity-3458,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_a_control_kgo-2514,otvlink_abcnnav-576*variant_a_control-2478",
+      "summary": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer ABC11 News",
+      "source": "ABC11 News",
+      "published": "2026-10-11T23:45:27+00:00",
+      "angle": "Val Kilmer returns to the screen via AI: The future of acting or a digital ghost?"
     }
   ],
   "tried": [
     "",
-    "OpenAI film 'Artificial' turns lens on creators of 'new world,’ Andrew Garfield says",
-    "Google faces backlash against India data centre",
-    "AI guardrails key to unlocking productivity gains, Airtel Business CEO",
-    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
-    "Code building is now 10% of programme: IBM India executive on AI's impact on tech work",
-    "AI adoption in journalism must go hand in hand with ethics: Dean Media Studies CUK",
-    "The AI Paradox: Why Cheaper Tokens Could Make Computing Power More Valuable",
-    "AI Has a God Problem Stretching From the Vatican to the Baptist Pulpit",
-    "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-    "False police tip, visa forms: AI antics expose new risks from autonomous AI agents",
     "One Zero lays off 25 employees in latest AI-driven efficiency push",
-    "IMF says AI investment keeps global growth around 3%, with major Asia benefits",
-    "How healthcare and the environment can benefit from 'Green' AI",
-    "Amazon Weighs $7 Billion Purchase of AI Startup Decart",
     "PSA: DeepSeek V4.1 Flash habitually exfiltrates API keys. It is dangerously misaligned and may be hazardous to use",
-    "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
     "Indiana using artificial intelligence to improve readability of unemployment forms",
+    "AI guardrails key to unlocking productivity gains, Airtel Business CEO",
+    "AI adoption in journalism must go hand in hand with ethics: Dean Media Studies CUK",
+    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
+    "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
+    "How healthcare and the environment can benefit from 'Green' AI",
+    "OpenAI film 'Artificial' turns lens on creators of 'new world,’ Andrew Garfield says",
+    "Amazon Weighs $7 Billion Purchase of AI Startup Decart",
+    "Google faces backlash against India data centre",
+    "False police tip, visa forms: AI antics expose new risks from autonomous AI agents",
+    "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
+    "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+    "AI Has a God Problem Stretching From the Vatican to the Baptist Pulpit",
     "The AI labor apocalypse is on hold (for now)",
-    "PSA: DeepSeek V4.1 Flash habitually exfiltrates API keys. It is dangerously misaligned and may be hazardous to use"
+    "IMF says AI investment keeps global growth around 3%, with major Asia benefits",
+    "Code building is now 10% of programme: IBM India executive on AI's impact on tech work",
+    "The AI Paradox: Why Cheaper Tokens Could Make Computing Power More Valuable"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "AI guardrails key to unlocking productivity gains, Airtel Business CEO",
-            "link": "https://www.communicationstoday.co.in/ai-guardrails-key-to-unlocking-productivity-gains-airtel-business-ceo/",
-            "summary": "AI guardrails key to unlocking productivity gains, Airtel Business CEO Communications Today",
-            "source": "Communications Today",
-            "published": "2026-10-12T03:39:52+00:00",
-            "angle": ""
-          },
-          {
-            "title": "OpenAI film 'Artificial' turns lens on creators of 'new world,’ Andrew Garfield says",
-            "link": "https://www.thehindu.com/sci-tech/technology/openai-film-artificial-turns-lens-on-creators-of-new-world-andrew-garfield-says/article71573676.ece",
-            "summary": "OpenAI film 'Artificial' turns lens on creators of 'new world,’ Andrew Garfield says The Hindu",
-            "source": "The Hindu",
-            "published": "2026-10-12T03:50:38+00:00",
-            "angle": ""
-          },
-          {
-            "title": "IMF says AI investment keeps global growth around 3%, with major Asia benefits",
-            "link": "https://www.reuters.com/world/china/imf-says-ai-investment-keeps-global-growth-around-3-with-major-asia-benefits-2026-10-12/",
-            "summary": "IMF says AI investment keeps global growth around 3%, with major Asia benefits Reuters",
-            "source": "Reuters",
-            "published": "2026-10-12T03:50:00+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-10-12T10:55:29.730242+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1109,10 +1223,54 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIQhmrMeSPCy6eAu1qYt94ZxIOAqBALAAJzIgACqxlpVkAS98hD5suyPQQ",
       "history_title": "Satya Nadella says we should assume all AI models are ‘compromised’"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
+            "link": "https://6abc.com/post/openai-ceo-sam-altman-claims-artificial-intelligence-singularity-has-arrived/19588207/?userab=kfsn_content_recs-582*variant_b_trending_kfsn-2513,kabc_content_recs-577*variant_a_control-2480,wls_content_recs-584*variant_b_trending_wls-2517,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_a_control_ktrk-2522,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_c_share_plus_google_button-3496,otv_search_page_design_unification-546*variant_b_search_redesign-2300,vertical_video_web-519*enabled-2164,abcn_popular_reads_exp_followup-648*variant_a_control-3455,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_a_control_kgo-2514,otvlink_abcnnav-576*variant_c_localnews-3316",
+            "summary": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world' 6abc Philadelphia",
+            "source": "6abc Philadelphia",
+            "published": "2026-10-11T20:27:11+00:00",
+            "angle": "Sam Altman claims the AI singularity is officially here—is it really happening?"
+          },
+          {
+            "title": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-11T13:08:43+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "Why the RTX 5090 is costing $5,000: AI companies are buying gaming GPUs by the pallet."
+          },
+          {
+            "title": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer",
+            "link": "https://abc11.com/post/val-kilmer-returns-ai-deep-grave-trailer/18897318/?userab=kfsn_content_recs-582*variant_b_trending_kfsn-2513,kabc_content_recs-577*variant_a_control-2480,wls_content_recs-584*variant_a_control_wls-2516,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_b_trending_ktrk-2523,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_a_control-2267,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_live-581*variant_a_live-2510,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,abcn_popular_reads_exp_followup-648*variant_c_autotagswpopularity-3458,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_a_control_kgo-2514,otvlink_abcnnav-576*variant_a_control-2478",
+            "summary": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer ABC11 News",
+            "source": "ABC11 News",
+            "published": "2026-10-11T23:45:27+00:00",
+            "angle": "Val Kilmer returns to the screen via AI: The future of acting or a digital ghost?"
+          }
+        ],
+        "choose_deadline": "2026-10-12T11:41:18.284614+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIICGrG-aDOCgIHUqQAAR8J2Zy5wHQajAAC0h8AApayOFZAb6JeuurMsT0E",
     "BAACAgUAAxkDAAIIG2rHETMegvjoKv0-zVf4oTlQ2aVwAAJNIAAClrI4Vux69ryRzvdBPQQ",
     "BAACAgUAAxkDAAIINGrHLZSAVOvXkZ1KI4Ne1hdvTf8CAAKqIAAClrI4Vi-TNpxZxD2EPQQ",
     "BAACAgUAAxkDAAIIRWrHV-5fWsIltk2L9KXswQ8qVDNVAALKHgAClrJAVsbLFYa4Eg9ePQQ",
@@ -1141,7 +1299,8 @@
     "BAACAgUAAxkDAAINoGrLNpfvyQxpJUbfQiHtNXYzP_lNAAICHwACRp1ZVjPF-m_qtvDKPQQ",
     "BAACAgUAAxkDAAIN4mrLQPZfvP-niJ69KBuNM9ug_XXkAAIHHwACRp1ZVvPHYvknjkRBPQQ",
     "BAACAgUAAxkDAAIOF2rLR3EDLuZy6Jruu2yJMdozEPXKAAIQHwACRp1ZVrrGbIGXNpgJPQQ",
-    "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ"
+    "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ",
+    "BAACAgUAAxkDAAIQhmrMeSPCy6eAu1qYt94ZxIOAqBALAAJzIgACqxlpVkAS98hD5suyPQQ"
   ],
   "history": [
     "Top AI headlines · 8:20 PM today",
@@ -1700,7 +1859,7 @@
   "report_day": "2026-10-11",
   "ig_count": {
     "day": "2026-10-12",
-    "at": "2026-10-12T11:37:32.279935+05:30",
+    "at": "2026-10-12T11:51:12.776728+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1724,7 +1883,7 @@
   "late_note_for": "2026-10-12-0",
   "gemini_use": {
     "day": "2026-10-12",
-    "calls": 552,
+    "calls": 578,
     "claude_calls": 0,
     "claude_backup": 138,
     "models": {
@@ -1754,9 +1913,9 @@
         "other": 0
       },
       "gemini-3.1-flash-lite": {
-        "ok": 27,
-        "busy": 8,
-        "other": 15
+        "ok": 43,
+        "busy": 16,
+        "other": 17
       },
       "gemini-flash-lite-latest": {
         "ok": 0,
