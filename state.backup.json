@@ -16,7 +16,7 @@
     "hook_text": "California bans AI-only firings",
     "beats": [
       {
-        "line": "California now bans employers from using AI alone to fire workers.",
+        "line": "California just passed a new law banning employers from using AI alone to fire workers.",
         "visual": "photo",
         "query": "technology",
         "prompt": "",
@@ -34,7 +34,7 @@
         "brands": []
       },
       {
-        "line": "Governor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.",
+        "line": "Governor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.",
         "visual": "person",
         "query": "technology",
         "prompt": "",
@@ -52,7 +52,25 @@
         "brands": []
       },
       {
-        "line": "The legislation mandates that a human manager must independently review data before any layoff occurs.",
+        "line": "Companies can no longer rely on automated systems as the sole decider for job loss.",
+        "visual": "clip",
+        "query": "office worker looking at computer",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "No AI sole decider",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The law requires a human manager to independently review data before any employee is terminated.",
         "visual": "clip",
         "query": "manager talking to employee",
         "prompt": "",
@@ -70,28 +88,10 @@
         "brands": []
       },
       {
-        "line": "This law targets automated systems that previously determined employee performance metrics without direct human verification.",
-        "visual": "clip",
-        "query": "data dashboard on screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Ending automated firing",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The state aims to prevent technical errors from unfairly flagging employees for job loss.",
+        "line": "This move addresses growing concerns over automated errors in high-stakes human resources decisions.",
         "visual": "image",
         "query": "technology",
-        "prompt": "abstract digital code matrix with a human silhouette in the center",
+        "prompt": "abstract digital data flow with a person standing in the foreground",
         "big": "",
         "small": "",
         "entity": "",
@@ -99,14 +99,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Protecting workers",
+        "tag": "Addressing automated errors",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "California is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.",
+        "line": "California remains the first state to codify this specific protection for the modern workforce.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
@@ -117,7 +117,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "First state mandate",
+        "tag": "First state protection",
         "name": "",
         "role": "",
         "x": "",
@@ -142,9 +142,9 @@
         "brands": []
       }
     ],
-    "delivery": "Serious and informative, emphasizing the balance between new technology and human accountability in the workplace.",
+    "delivery": "Serious and informative, focusing on worker protections and the shift toward mandatory human oversight in the digital workplace.",
     "thin": false,
-    "caption": "Governor Gavin Newsom signed a law in California that bans companies from using AI alone to fire employees. A human manager must now review all data before a termination occurs. Would you trust an algorithm to decide if you keep your job?",
+    "caption": "California has officially banned employers from using AI alone to fire workers. Governor Gavin Newsom signed the law to ensure human oversight in termination decisions, requiring a manager to independently review all data before a layoff. Would you trust an algorithm to decide if you keep your job?",
     "hashtags": [
       "California",
       "EmploymentLaw",
@@ -155,13 +155,13 @@
     "sources": [
       "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
     ],
-    "script": "California now bans employers from using AI alone to fire workers.\nGovernor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.\nThe legislation mandates that a human manager must independently review data before any layoff occurs.\nThis law targets automated systems that previously determined employee performance metrics without direct human verification.\nThe state aims to prevent technical errors from unfairly flagging employees for job loss.\nCalifornia is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.\nWould you trust an algorithm to decide if you keep your job?",
+    "script": "California just passed a new law banning employers from using AI alone to fire workers.\nGovernor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.\nCompanies can no longer rely on automated systems as the sole decider for job loss.\nThe law requires a human manager to independently review data before any employee is terminated.\nThis move addresses growing concerns over automated errors in high-stakes human resources decisions.\nCalifornia remains the first state to codify this specific protection for the modern workforce.\nWould you trust an algorithm to decide if you keep your job?",
     "keywords": [
-      "manager talking to employee",
-      "data dashboard on screen"
+      "office worker looking at computer",
+      "manager talking to employee"
     ],
     "image_prompts": [
-      "abstract digital code matrix with a human silhouette in the center"
+      "abstract digital data flow with a person standing in the foreground"
     ],
     "writer_model": "gemini",
     "evidence": [
@@ -170,33 +170,34 @@
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
       },
       {
-        "claim": "California now bans employers from using AI alone to fire workers.",
+        "claim": "California just passed a new law banning employers from using AI alone to fire workers.",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
       },
       {
-        "claim": "Governor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.",
+        "claim": "Governor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
       },
       {
-        "claim": "The legislation mandates that a human manager must independently review data before any layoff occurs.",
+        "claim": "Companies can no longer rely on automated systems as the sole decider for job loss.",
+        "url": "https://ogletree.com/insights-resources/blog-posts/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance/"
+      },
+      {
+        "claim": "The law requires a human manager to independently review data before any employee is terminated.",
+        "url": "https://ogletree.com/insights-resources/blog-posts/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance/"
+      },
+      {
+        "claim": "This move addresses growing concerns over automated errors in high-stakes human resources decisions.",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
       },
       {
-        "claim": "This law targets automated systems that previously determined employee performance metrics without direct human verification.",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-      },
-      {
-        "claim": "The state aims to prevent technical errors from unfairly flagging employees for job loss.",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
-      },
-      {
-        "claim": "California is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.",
+        "claim": "California remains the first state to codify this specific protection for the modern workforce.",
         "url": "https://www.theguardian.com/technology/2026/oct/03/california-ai-laws-worker-protection"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.lawcommentary.com/articles/california-ai-firing-law-newsom-sb-947"
     ]
@@ -206,9 +207,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-12T12:20:21.549253+05:30",
+  "script_deadline": "2026-10-12T12:26:56.611439+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-12",
@@ -658,260 +659,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-          "summary": "In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set of nested black boxes\" whose advice and actions we simply accept or […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-10T22:10:17+00:00",
-          "angle": "Microsoft CEO Satya Nadella warns we should assume all AI models are 'compromised'—should you be worried?"
-        },
-        "draft": {
-          "title": "Satya Nadella on AI Risks",
-          "hook_text": "Assume all AI is compromised",
-          "beats": [
-            {
-              "line": "Satya Nadella says we should assume all AI models are compromised.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://news.microsoft.com/exec/satya-nadella/",
-              "tag": "Nadella warns on AI",
-              "name": "Satya Nadella",
-              "role": "CEO, Microsoft",
-              "x": "satyanadella",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "The Microsoft CEO posted this warning on X today.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Nadella says assume all AI is compromised",
-              "url": "",
-              "tag": "Microsoft CEO warning",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "He argues we can no longer treat AI as simple black boxes.",
-              "visual": "clip",
-              "query": "abstract digital data flow",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No more black boxes",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "We currently accept advice and actions from these systems without question.",
-              "visual": "clip",
-              "query": "person looking at smartphone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Questionable AI advice",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Nadella believes we need a new approach to verify these advanced models.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Microsoft AI",
-              "outlet": "",
-              "domain": "microsoft.com",
-              "headline": "",
-              "url": "https://www.microsoft.com/en-us/ai",
-              "tag": "Verifying AI models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "The security of our digital infrastructure depends on this shift.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "modern server room with blue data lights in dark atmosphere",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Digital infrastructure risk",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an AI that has not been independently verified?",
-              "visual": "clip",
-              "query": "person looking skeptical at laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trusting AI models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Urgent and cautionary tone, emphasizing the shift from blind trust to skepticism.",
-          "thin": false,
-          "caption": "Microsoft CEO Satya Nadella is urging users to treat all AI models as compromised. He warns that treating AI as an unverified black box is no longer acceptable for modern security. Would you trust an AI that has not been independently verified?",
-          "hashtags": [
-            "Microsoft",
-            "SatyaNadella",
-            "ArtificialIntelligence",
-            "CyberSecurity",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-          ],
-          "script": "Satya Nadella says we should assume all AI models are compromised.\nThe Microsoft CEO posted this warning on X today.\nHe argues we can no longer treat AI as simple black boxes.\nWe currently accept advice and actions from these systems without question.\nNadella believes we need a new approach to verify these advanced models.\nThe security of our digital infrastructure depends on this shift.\nWould you trust an AI that has not been independently verified?",
-          "keywords": [
-            "abstract digital data flow",
-            "person looking at smartphone screen",
-            "person looking skeptical at laptop"
-          ],
-          "image_prompts": [
-            "modern server room with blue data lights in dark atmosphere"
-          ],
-          "writer_model": "gemini",
-          "hook_score": 73,
-          "evidence": [
-            {
-              "claim": "Assume all AI is compromised",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-            },
-            {
-              "claim": "Satya Nadella is the CEO of Microsoft.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-            },
-            {
-              "claim": "Satya Nadella says we should assume all AI models are compromised.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-            },
-            {
-              "claim": "The Microsoft CEO posted this warning on X on October 10, 2026.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-            },
-            {
-              "claim": "Nadella argues we can no longer treat AI as nested black boxes.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-            },
-            {
-              "claim": "We currently accept advice and actions from these systems without question.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-            },
-            {
-              "claim": "Nadella believes we need a new approach to verify these advanced models.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "The Microsoft CEO posted this warning on X today.…: The visual shows a source card for The Verge, but the text on the card is unrelated to the spoken line about a warning o",
-            "He argues we can no longer treat AI as simple blac…: The visual shows an abstract graphic instead of the requested stock video of digital data flow.",
-            "We currently accept advice and actions from these …: The visual shows a person looking at a tablet, not a smartphone screen.",
-            "Nadella believes we need a new approach to verify …: The visual shows two people talking, not images of Microsoft AI.",
-            "The security of our digital infrastructure depends…: The visual shows a person sitting at a desk, not a server room.",
-            "Would you trust an AI that has not been independen…: The visual shows an abstract scribble, not a person looking skeptical at a laptop.",
-            "The visual is a source card for The Verge, but the line is about a Microsoft CEO warning on X.",
-            "The visual is a text card, not the requested stock video of abstract digital data flow.",
-            "The visual is a text card, not the requested stock video of a person looking at a smartphone.",
-            "The visual is a Microsoft logo card, not the requested real images of Microsoft AI.",
-            "The visual is a text card, not the requested illustration of a server room.",
-            "The visual is a text card, not the requested stock video of a person looking skeptical at a laptop."
-          ],
-          "credits": [
-            "Satya Nadella: Brian Smale and Microsoft"
-          ],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "1 real photos, 6 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIQhmrMeSPCy6eAu1qYt94ZxIOAqBALAAJzIgACqxlpVkAS98hD5suyPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIQhmrMeSPCy6eAu1qYt94ZxIOAqBALAAJzIgACqxlpVkAS98hD5suyPQQ",
-      "history_title": "Satya Nadella says we should assume all AI models are ‘compromised’"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1695,6 +1442,221 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "California Bans Employers From Using AI Alone to Fire Workers Under New Law",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5",
+          "summary": "California Bans Employers From Using AI Alone to Fire Workers Under New Law Law Commentary",
+          "source": "Law Commentary",
+          "published": "2026-10-12T05:25:33+00:00",
+          "angle": "California just made it illegal for AI to fire you without a human in the loop—is your job next?"
+        },
+        "draft": {
+          "title": "California Bans AI-Only Firings",
+          "hook_text": "California bans AI-only firings",
+          "beats": [
+            {
+              "line": "California now bans employers from using AI alone to fire workers.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "California State Capitol",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "California AI ban",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Governor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://gov.ca.gov",
+              "tag": "Governor Newsom signs",
+              "name": "Gavin Newsom",
+              "role": "Governor of California",
+              "x": "GavinNewsom",
+              "brands": []
+            },
+            {
+              "line": "The legislation mandates that a human manager must independently review data before any layoff occurs.",
+              "visual": "clip",
+              "query": "manager talking to employee",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Human review required",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This law targets automated systems that previously determined employee performance metrics without direct human verification.",
+              "visual": "clip",
+              "query": "data dashboard on screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Ending automated firing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The state aims to prevent technical errors from unfairly flagging employees for job loss.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract digital code matrix with a human silhouette in the center",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Protecting workers",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "California is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1st",
+              "small": "State with this law",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "First state mandate",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an algorithm to decide if you keep your job?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Law Commentary",
+              "domain": "lawcommentary.com",
+              "headline": "California Bans Employers From Using AI Alone to Fire Workers",
+              "url": "",
+              "tag": "Trusting algorithms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and informative, emphasizing the balance between new technology and human accountability in the workplace.",
+          "thin": false,
+          "caption": "Governor Gavin Newsom signed a law in California that bans companies from using AI alone to fire employees. A human manager must now review all data before a termination occurs. Would you trust an algorithm to decide if you keep your job?",
+          "hashtags": [
+            "California",
+            "EmploymentLaw",
+            "AI",
+            "GavinNewsom",
+            "Workplace"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+          ],
+          "script": "California now bans employers from using AI alone to fire workers.\nGovernor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.\nThe legislation mandates that a human manager must independently review data before any layoff occurs.\nThis law targets automated systems that previously determined employee performance metrics without direct human verification.\nThe state aims to prevent technical errors from unfairly flagging employees for job loss.\nCalifornia is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.\nWould you trust an algorithm to decide if you keep your job?",
+          "keywords": [
+            "manager talking to employee",
+            "data dashboard on screen"
+          ],
+          "image_prompts": [
+            "abstract digital code matrix with a human silhouette in the center"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "California bans AI-only firings",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "California now bans employers from using AI alone to fire workers.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "Governor Gavin Newsom signed this bill into law to ensure human oversight in termination decisions.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "The legislation mandates that a human manager must independently review data before any layoff occurs.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "This law targets automated systems that previously determined employee performance metrics without direct human verification.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "The state aims to prevent technical errors from unfairly flagging employees for job loss.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "California is the first state to mandate this specific human-in-the-loop requirement for worker layoffs.",
+              "url": "https://www.theguardian.com/technology/2026/oct/03/california-ai-laws-worker-protection"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.lawcommentary.com/articles/california-ai-firing-law-newsom-sb-947"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-12T12:20:21.549253+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2257,8 +2219,8 @@
       "event": "Satya Nadella says we should assume all AI models are compromised. The Microsoft CEO posted this warning on X today. He argues we can no longer treat AI as simple black boxes. We currently accept advice and actions from these systems withou"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-12T11:40+05:30",
@@ -2306,7 +2268,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-12",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-12-1",
   "gemini_use": {
     "day": "2026-10-12",
