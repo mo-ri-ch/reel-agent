@@ -200,16 +200,41 @@
     "editor_rounds": 1,
     "source_links": [
       "https://www.lawcommentary.com/articles/california-ai-firing-law-newsom-sb-947"
-    ]
+    ],
+    "visual_status": "ok",
+    "visual_notes": [],
+    "editor": {
+      "overall": 5.7,
+      "scores": {
+        "hook": 6,
+        "specific": 5,
+        "substance": 6,
+        "accuracy": 7,
+        "visuals": 4,
+        "flow": 6
+      },
+      "one_line": "Solid topic, but repetitive stock visuals and missing bill specifics lower quality.",
+      "script_fixes": [
+        "LINE 1: Specify the exact California bill number instead of a generic law reference.",
+        "LINE 5: Swap 'growing concerns' for a concrete statistic or case study."
+      ],
+      "visual_beats": [
+        3
+      ],
+      "visual_notes": [
+        "line 4: Repetitive back-and-forth toggling between two generic office stock clips."
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-12T12:26:56.611439+05:30",
+  "script_deadline": "2026-10-12T12:40:12.469099+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-12",
@@ -617,15 +642,6 @@
   "paused": null,
   "spare": [
     {
-      "title": "Whistle: speech to text in 16.9 MB",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x3bpfl/whistle_speech_to_text_in_169_mb/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-11T15:55:27+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "This new speech-to-text tool is only 16MB and runs locally—no cloud, no privacy worries."
-    },
-    {
       "title": "51% of Indian daters use AI to check messages before sending: Aisle",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOX1pBZTJkNVJKZldwWHZWZTFPdTFfNURWSlNBYkF5WnBvSTRTUjI0eEZNUmpUT3hvSjg3TENaOHp0b3U0aHQ1QW5qWVd5MURNZmdwbWViR1NETjNqRHE5ZHJUVnBaN012VTRjTGVORmNhSEw5WDI0R055Vk95OGl3U2NRQkhuQW9Oa09VQVhtcnd6S09tV1FOS3J5SVVCT0Z5Y3hBWGIycFYyQUtSN0REUjlfM0xJeFZ0SHI0b29POElwLTNmWHV30gHHAUFVX3lxTE5fWkFlMmQ1UkpmV3BYdlZlMU91MV81RFZKU0FiQXlacG9JNFNSMjR4Rk1SalRPeG9KODdMQ1o4enRvdTRodDVBbmpZV3kxRE1mZ3BtZWJHU0ROM2pEcTlkclRWcFo3TXZVNGNMZU5GY2FITDlYMjRHTnlWT3k4aXdTY1FCSG5Bb05rT1VBWG1yd3pLT21XUU5LcnlJVUJPRnljeEFYYjJwVjJBS1I3RERSOV8zTEl4VnRIcjRvb084SXAtM2ZYdXc?oc=5",
       "summary": "51% of Indian daters use AI to check messages before sending: Aisle Storyboard18",
@@ -636,74 +652,30 @@
   ],
   "tried": [
     "",
-    "The AI Paradox: Why Cheaper Tokens Could Make Computing Power More Valuable",
-    "The AI labor apocalypse is on hold (for now)",
     "OpenAI film 'Artificial' turns lens on creators of 'new world,’ Andrew Garfield says",
-    "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
-    "One Zero lays off 25 employees in latest AI-driven efficiency push",
-    "Amazon Weighs $7 Billion Purchase of AI Startup Decart",
-    "False police tip, visa forms: AI antics expose new risks from autonomous AI agents",
-    "PSA: DeepSeek V4.1 Flash habitually exfiltrates API keys. It is dangerously misaligned and may be hazardous to use",
-    "Indiana using artificial intelligence to improve readability of unemployment forms",
-    "Google faces backlash against India data centre",
-    "IMF says AI investment keeps global growth around 3%, with major Asia benefits",
-    "How healthcare and the environment can benefit from 'Green' AI",
-    "These execs think voice AI hasn’t reached its ChatGPT moment yet",
     "AI adoption in journalism must go hand in hand with ethics: Dean Media Studies CUK",
+    "IMF says AI investment keeps global growth around 3%, with major Asia benefits",
+    "Indiana using artificial intelligence to improve readability of unemployment forms",
     "AI guardrails key to unlocking productivity gains, Airtel Business CEO",
-    "Code building is now 10% of programme: IBM India executive on AI's impact on tech work",
+    "PSA: DeepSeek V4.1 Flash habitually exfiltrates API keys. It is dangerously misaligned and may be hazardous to use",
+    "The AI labor apocalypse is on hold (for now)",
     "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
+    "Amazon Weighs $7 Billion Purchase of AI Startup Decart",
+    "The AI Paradox: Why Cheaper Tokens Could Make Computing Power More Valuable",
     "AI Has a God Problem Stretching From the Vatican to the Baptist Pulpit",
+    "These execs think voice AI hasn’t reached its ChatGPT moment yet",
     "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
-    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police"
+    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
+    "One Zero lays off 25 employees in latest AI-driven efficiency push",
+    "False police tip, visa forms: AI antics expose new risks from autonomous AI agents",
+    "How healthcare and the environment can benefit from 'Green' AI",
+    "Code building is now 10% of programme: IBM India executive on AI's impact on tech work",
+    "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
+    "Google faces backlash against India data centre",
+    "California Bans Employers From Using AI Alone to Fire Workers Under New Law"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
-            "link": "https://6abc.com/post/openai-ceo-sam-altman-claims-artificial-intelligence-singularity-has-arrived/19588207/?userab=kfsn_content_recs-582*variant_b_trending_kfsn-2513,kabc_content_recs-577*variant_a_control-2480,wls_content_recs-584*variant_b_trending_wls-2517,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_a_control_ktrk-2522,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_c_share_plus_google_button-3496,otv_search_page_design_unification-546*variant_b_search_redesign-2300,vertical_video_web-519*enabled-2164,abcn_popular_reads_exp_followup-648*variant_a_control-3455,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_a_control_kgo-2514,otvlink_abcnnav-576*variant_c_localnews-3316",
-            "summary": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world' 6abc Philadelphia",
-            "source": "6abc Philadelphia",
-            "published": "2026-10-11T20:27:11+00:00",
-            "angle": "Sam Altman claims the AI singularity is officially here—is it really happening?"
-          },
-          {
-            "title": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
-            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x37tg6/heres_why_rtx_5090_costs_5000_ai_firms_are_buying/",
-            "summary": "",
-            "source": "r/LocalLLaMA",
-            "published": "2026-10-11T13:08:43+00:00",
-            "buzz": "top of r/LocalLLaMA today",
-            "angle": "Why the RTX 5090 is costing $5,000: AI companies are buying gaming GPUs by the pallet."
-          },
-          {
-            "title": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer",
-            "link": "https://abc11.com/post/val-kilmer-returns-ai-deep-grave-trailer/18897318/?userab=kfsn_content_recs-582*variant_b_trending_kfsn-2513,kabc_content_recs-577*variant_a_control-2480,wls_content_recs-584*variant_a_control_wls-2516,wtvd_content_recs-585*variant_a_control_wtvd-2518,ktrk_content_recs-587*variant_b_trending_ktrk-2523,wpvi_content_recs-586*variant_b_trending_wpvi-2521,otv_web_content_rec-539*variant_a_control-2267,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_live-581*variant_a_live-2510,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,abcn_popular_reads_exp_followup-648*variant_c_autotagswpopularity-3458,otv_mobile_web_content_recs-639*variant_a_control-3429,kgo_content_recs-583*variant_a_control_kgo-2514,otvlink_abcnnav-576*variant_a_control-2478",
-            "summary": "Val Kilmer returns via AI in 'As Deep as the Grave' trailer ABC11 News",
-            "source": "ABC11 News",
-            "published": "2026-10-11T23:45:27+00:00",
-            "angle": "Val Kilmer returns to the screen via AI: The future of acting or a digital ghost?"
-          }
-        ],
-        "choose_deadline": "2026-10-12T11:41:18.284614+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1657,6 +1629,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "California Bans Employers From Using AI Alone to Fire Workers Under New Law",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5",
+          "summary": "California Bans Employers From Using AI Alone to Fire Workers Under New Law Law Commentary",
+          "source": "Law Commentary",
+          "published": "2026-10-12T05:25:33+00:00",
+          "angle": "California just made it illegal for AI to fire you without a human in the loop—is your job next?"
+        },
+        "draft": {
+          "title": "California Bans AI-Only Firings",
+          "hook_text": "California bans AI-only firings",
+          "beats": [
+            {
+              "line": "California just passed a new law banning employers from using AI alone to fire workers.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "California State Capitol",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "California AI ban",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Governor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://gov.ca.gov",
+              "tag": "Governor Newsom signs",
+              "name": "Gavin Newsom",
+              "role": "Governor of California",
+              "x": "GavinNewsom",
+              "brands": []
+            },
+            {
+              "line": "Companies can no longer rely on automated systems as the sole decider for job loss.",
+              "visual": "clip",
+              "query": "office worker looking at computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "No AI sole decider",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The law requires a human manager to independently review data before any employee is terminated.",
+              "visual": "clip",
+              "query": "manager talking to employee",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Human review required",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This move addresses growing concerns over automated errors in high-stakes human resources decisions.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract digital data flow with a person standing in the foreground",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Addressing automated errors",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "California remains the first state to codify this specific protection for the modern workforce.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1st",
+              "small": "State with this law",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "First state protection",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an algorithm to decide if you keep your job?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Law Commentary",
+              "domain": "lawcommentary.com",
+              "headline": "California Bans Employers From Using AI Alone to Fire Workers",
+              "url": "",
+              "tag": "Trusting algorithms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and informative, focusing on worker protections and the shift toward mandatory human oversight in the digital workplace.",
+          "thin": false,
+          "caption": "California has officially banned employers from using AI alone to fire workers. Governor Gavin Newsom signed the law to ensure human oversight in termination decisions, requiring a manager to independently review all data before a layoff. Would you trust an algorithm to decide if you keep your job?",
+          "hashtags": [
+            "California",
+            "EmploymentLaw",
+            "AI",
+            "GavinNewsom",
+            "Workplace"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+          ],
+          "script": "California just passed a new law banning employers from using AI alone to fire workers.\nGovernor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.\nCompanies can no longer rely on automated systems as the sole decider for job loss.\nThe law requires a human manager to independently review data before any employee is terminated.\nThis move addresses growing concerns over automated errors in high-stakes human resources decisions.\nCalifornia remains the first state to codify this specific protection for the modern workforce.\nWould you trust an algorithm to decide if you keep your job?",
+          "keywords": [
+            "office worker looking at computer",
+            "manager talking to employee"
+          ],
+          "image_prompts": [
+            "abstract digital data flow with a person standing in the foreground"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "California bans AI-only firings",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "California just passed a new law banning employers from using AI alone to fire workers.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "Governor Gavin Newsom signed this legislation to ensure human accountability in workplace termination decisions.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "Companies can no longer rely on automated systems as the sole decider for job loss.",
+              "url": "https://ogletree.com/insights-resources/blog-posts/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance/"
+            },
+            {
+              "claim": "The law requires a human manager to independently review data before any employee is terminated.",
+              "url": "https://ogletree.com/insights-resources/blog-posts/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance/"
+            },
+            {
+              "claim": "This move addresses growing concerns over automated errors in high-stakes human resources decisions.",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHlCQUhkU28yOURlY0xqdkI2U2JHMjJEcGdGLVRQMGZCOXFISlZ0Z0htTkFsd1dmN24xeWItcTUzZ0UyTFpSLWI4SzNxaTM5Z0VSSDZtUk9IQUJBcEtpM2dCS1M5Z09zSjBDSHRsa2pYZ3dVYkhaeGM2aW5Oak1GeDBSWQ?oc=5"
+            },
+            {
+              "claim": "California remains the first state to codify this specific protection for the modern workforce.",
+              "url": "https://www.theguardian.com/technology/2026/oct/03/california-ai-laws-worker-protection"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://www.lawcommentary.com/articles/california-ai-firing-law-newsom-sb-947"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-12T12:26:56.611439+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1794,10 +1982,6 @@
     "Satya Nadella says we should assume all AI models are ‘compromised’"
   ],
   "posted_log": [
-    {
-      "title": "Uttar Pradesh targets AI and semiconductor growth beyond electronics manufacturing",
-      "at": "2026-09-28T12:30:38.123653+05:30"
-    },
     {
       "title": "Hypersoft Technologies Ltd announces Strategic Foray into Artificial Intelligence - A Unified AI Platform for Data Science and ERP Excellence",
       "at": "2026-09-28T15:10:26.972706+05:30"
@@ -2220,7 +2404,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-12T11:40+05:30",
@@ -2268,26 +2452,26 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-12",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-12-1",
   "gemini_use": {
     "day": "2026-10-12",
-    "calls": 600,
+    "calls": 616,
     "claude_calls": 0,
     "claude_backup": 138,
     "models": {
       "gemini-3.6-flash": {
-        "ok": 0,
-        "busy": 1,
-        "other": 0
+        "ok": 2,
+        "busy": 2,
+        "other": 5
       },
       "gemini-3.7-flash": {
         "ok": 10,
-        "busy": 10,
-        "other": 10
+        "busy": 11,
+        "other": 12
       },
       "gemini-3.5-flash": {
-        "ok": 0,
+        "ok": 1,
         "busy": 1,
         "other": 0
       },
@@ -2297,14 +2481,14 @@
         "other": 16
       },
       "gemini-3.5-flash-lite": {
-        "ok": 0,
+        "ok": 1,
         "busy": 2,
         "other": 0
       },
       "gemini-3.1-flash-lite": {
-        "ok": 57,
+        "ok": 58,
         "busy": 21,
-        "other": 20
+        "other": 21
       },
       "gemini-flash-lite-latest": {
         "ok": 0,
@@ -2370,12 +2554,12 @@
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now"
   },
   "render_fails": 1,
-  "render_fail_topic": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
+  "render_fail_topic": "California Bans Employers From Using AI Alone to Fire Workers Under New Law",
   "last_render_error": {
-    "at": "2026-10-12T12:08:30.012725+05:30",
-    "topic": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
-    "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1713, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1840, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 537, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 576, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 384, in checked_script\n    draft = writer.write_script(topic, previous=draft, instruction=fix)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 467, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 187, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
+    "at": "2026-10-12T12:35:12.467154+05:30",
+    "topic": "California Bans Employers From Using AI Alone to Fire Workers Under New Law",
+    "error": "ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)",
+    "trace": "          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 131, in ask\n    r = requests.post(url, headers={\"x-goog-api-key\": GEMINI_API_KEY}, json=body, timeout=180)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/requests/api.py\", line 134, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/requests/api.py\", line 71, in request\n    return session.request(method=method, url=url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/requests/sessions.py\", line 651, in request\n    resp = self.send(prep, **send_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/requests/sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/requests/adapters.py\", line 742, in send\n    raise ReadTimeout(e, request=request)\nrequests.exceptions.ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)\n"
   },
   "report_week": "2026-41",
   "last_post_error": {
@@ -2384,13 +2568,6 @@
     "error": "RuntimeError: Instagram error: Fatal"
   },
   "behind_since": "2026-10-12T09:00:36.226367+05:30",
-  "gemini_exhausted": {
-    "gemini-3.6-flash": 1791783323.739825,
-    "gemini-3.5-flash": 1791783340.1305993,
-    "gemini-3.5-flash-lite": 1791783406.5442922,
-    "gemini-flash-lite-latest": 1791783690.1243382,
-    "gemini-3.7-flash": 1791784071.8363087,
-    "gemini-3-flash-preview": 1791784651.636387
-  },
+  "gemini_exhausted": {},
   "gemini_missing": []
 }
