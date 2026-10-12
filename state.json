@@ -1,167 +1,41 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Indiana using artificial intelligence to improve readability of unemployment forms",
-    "link": "https://nwitimes.com/news/state-regional/government-politics/article_c5110546-09e9-48e0-b494-f080406eb7eb.html",
-    "summary": "Indiana using artificial intelligence to improve readability of unemployment forms nwitimes.com",
-    "source": "nwitimes.com",
-    "published": "2026-10-11T14:00:00+00:00",
-    "angle": ""
-  },
-  "draft": {
-    "title": "Indiana uses AI on jobless forms",
-    "hook_text": "Indiana is rewriting unemployment forms.",
-    "beats": [
-      {
-        "line": "Zero point one seconds. That is how fast Indiana's new AI works.",
-        "visual": "photo",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Indiana Statehouse",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Indiana rewrites jobless forms",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The state Department of Workforce Development launched the tool to make applications easier to understand.",
-        "visual": "clip",
-        "query": "person filling out online form",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Department of Workforce Development",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Applicants previously struggled with dense government jargon and complex legal instructions.",
-        "visual": "clip",
-        "query": "stressed person looking at laptop screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Simplifying dense government jargon",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The technology scans existing documents and translates them into plain English.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "nwitimes.com",
-        "domain": "nwitimes.com",
-        "headline": "Indiana using artificial intelligence to improve readability of unemployment forms",
-        "url": "",
-        "tag": "Translating forms to plain English",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Officials hope this cuts down on filing errors and speeds up benefit approvals.",
-        "visual": "clip",
-        "query": "modern office desk computer screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Reducing application filing errors",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you trust software to explain your state benefits?",
-        "visual": "clip",
-        "query": "person reading tablet screen closely",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Trusting software with benefits",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "neutral, informative tech journalist tone explaining a practical government tech update",
-    "thin": false,
-    "caption": "Indiana is using artificial intelligence to make state unemployment forms easier to understand and reduce filing errors. Would you trust an AI to simplify government paperwork?",
-    "hashtags": [
-      "Indiana",
-      "Unemployment",
-      "GovernmentTech",
-      "PublicSector"
-    ],
-    "sources": [
-      "https://nwitimes.com/news/state-regional/government-politics/article_c5110546-09e9-48e0-b494-f080406eb7eb.html"
-    ],
-    "script": "Zero point one seconds. That is how fast Indiana's new AI works.\nThe state Department of Workforce Development launched the tool to make applications easier to understand.\nApplicants previously struggled with dense government jargon and complex legal instructions.\nThe technology scans existing documents and translates them into plain English.\nOfficials hope this cuts down on filing errors and speeds up benefit approvals.\nWould you trust software to explain your state benefits?",
-    "keywords": [
-      "person filling out online form",
-      "stressed person looking at laptop screen",
-      "modern office desk computer screen",
-      "person reading tablet screen closely"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "hook_before": "Indiana is using artificial intelligence to rewrite confusing state unemployment forms.",
-    "hook_score": 45,
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
-    ],
-    "fix_rounds": 0,
-    "source_links": [
-      "https://nwitimes.com/news/state-regional/government-politics/article_c5110546-09e9-48e0-b494-f080406eb7eb.html"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "AI Has a God Problem Stretching From the Vatican to the Baptist Pulpit",
+      "link": "https://www.wsj.com/tech/ai/ai-has-a-god-problem-stretching-from-the-vatican-to-the-baptist-pulpit-f417b2fd",
+      "summary": "AI Has a God Problem Stretching From the Vatican to the Baptist Pulpit WSJ",
+      "source": "WSJ",
+      "published": "2026-10-12T00:31:28+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Code building is now 10% of programme: IBM India executive on AI's impact on tech work",
+      "link": "https://www.indiatoday.in/amp/jobs/story/ai-productivity-human-judgement-ibm-usha-srikanth-future-of-work-3015007-2026-10-12",
+      "summary": "Code building is now 10% of programme: IBM India executive on AI's impact on tech work India Today",
+      "source": "India Today",
+      "published": "2026-10-12T00:30:00+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Nvidia Looks to Purchase Open-Weight AI Firm Reflection",
+      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-looks-to-purchase-open-weight-ai-firm-reflection/",
+      "summary": "Nvidia Looks to Purchase Open-Weight AI Firm Reflection PYMNTS.com",
+      "source": "PYMNTS.com",
+      "published": "2026-10-11T23:50:26+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-12T06:35:43.885943+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-12T06:00:50.775918+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -564,44 +438,34 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
     {
-      "title": "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
-      "link": "https://broadbandbreakfast.com/broadband-breakfast-on-october-14-2026-broadband-ai-in-the-midterm-election/",
-      "summary": "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election Broadband Breakfast",
-      "source": "Broadband Breakfast",
-      "published": "2026-10-11T14:49:30+00:00",
+      "title": "Code building is now 10% of programme: IBM India executive on AI's impact on tech work",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlJRV3ZOcXNJRTdNZUR3NDRaOEI0dGxRaXZWeFVHeEZid0lfR1ZRUEZUY0RRR0VmNWREWEVFakNlOXQyYThvd2VxZFFna3FyVzFrZ0tTcTk3SlY1S0RKUFVFUHRJMWQ0SHhyaDhCb2Q3dkEzR0lUeFFJWU1NMDloYVpBTGRyYW9ydzRVV2JMdDVDdEZuUFhOQ294SEhzLVdnMUQxUnV0ZjZfQnB2emNySV9KLWx6aXFBVW5mcGgweFJCZ9IBwgFBVV95cUxNdlJRV3ZOcXNJRTdNZUR3NDRaOEI0dGxRaXZWeFVHeEZid0lfR1ZRUEZUY0RRR0VmNWREWEVFakNlOXQyYThvd2VxZFFna3FyVzFrZ0tTcTk3SlY1S0RKUFVFUHRJMWQ0SHhyaDhCb2Q3dkEzR0lUeFFJWU1NMDloYVpBTGRyYW9ydzRVV2JMdDVDdEZuUFhOQ294SEhzLVdnMUQxUnV0ZjZfQnB2emNySV9KLWx6aXFBVW5mcGgweFJCZw?oc=5",
+      "summary": "Code building is now 10% of programme: IBM India executive on AI's impact on tech work India Today",
+      "source": "India Today",
+      "published": "2026-10-12T00:30:00+00:00",
       "angle": ""
     },
     {
-      "title": "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
-      "link": "https://unn.ua/en/news/anthropics-artificial-intelligence-invented-a-murder-witness-and-sent-false-information-to-us-police",
-      "summary": "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police Українські Національні Новини (УНН)",
-      "source": "Українські Національні Новини (УНН)",
-      "published": "2026-10-11T14:15:29+00:00",
+      "title": "Nvidia Looks to Purchase Open-Weight AI Firm Reflection",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaW9rVGpjRXQxQ1M1VV9wbGM4YzRWTVdNN3FNaEl2M1BlMkNEYXFmTldZcTNHX1BhVURkd21RdEdfVHY0U1dJS0FEMzBWVU1SbWt5RGU1bEQ0VktQNUlfN1pCSUp3WHg4MzRZaXZzcFRlVWxxUUlCVkJTV2VWdVhtZnBEMmVoWTJDeVdYMzhXNzl3X2lzb3N2YUt4OHFEV2dJelAwQ2tPN0xtb0Jhc3dINFlPRQ?oc=5",
+      "summary": "Nvidia Looks to Purchase Open-Weight AI Firm Reflection PYMNTS.com",
+      "source": "PYMNTS.com",
+      "published": "2026-10-11T23:50:26+00:00",
       "angle": ""
     }
   ],
   "tried": [
-    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
-    "Indiana using artificial intelligence to improve readability of unemployment forms",
     "",
     "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
-    "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-    "One Zero lays off 25 employees in latest AI-driven efficiency push",
     "How healthcare and the environment can benefit from 'Green' AI",
+    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
     "The AI labor apocalypse is on hold (for now)",
-    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
     "Indiana using artificial intelligence to improve readability of unemployment forms",
-    "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
-    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
-    "Indiana using artificial intelligence to improve readability of unemployment forms",
-    "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
-    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police",
-    "Indiana using artificial intelligence to improve readability of unemployment forms",
-    "Broadband Breakfast on October 14, 2026: Broadband & AI in the Midterm Election",
-    "Anthropic's artificial intelligence invented a murder witness and sent false information to U.S. police"
+    "One Zero lays off 25 employees in latest AI-driven efficiency push",
+    "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+    "Indiana using artificial intelligence to improve readability of unemployment forms"
   ],
   "next_video_id": null,
   "undo_stack": [
@@ -1393,9 +1257,9 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-11T20:20+05:30",
-    "techcrunch.com": 5,
-    "theverge.com": 5,
+    "at": "2026-10-12T06:05+05:30",
+    "techcrunch.com": 8,
+    "theverge.com": 6,
     "arstechnica.com": 0,
     "technologyreview.com": 0,
     "openai.com": 0,
@@ -1403,17 +1267,17 @@
     "deepmind.google": 0,
     "huggingface.co": 0,
     "blogs.nvidia.com": 0,
-    "inc42.com": 1,
-    "news.google.com": 44,
+    "inc42.com": 0,
+    "news.google.com": 41,
     "Google News (VentureBeat, AIM, AI News)": 3,
-    "producthunt.com": 3,
-    "Hacker News": 3,
-    "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 0
+    "producthunt.com": 1,
+    "Hacker News": 4,
+    "Reddit": "blocked (HTTP 403/429)",
+    "filtered out (PR / local events / market fluff)": 2
   },
   "guarantee_since": "2026-10-10T13:19:00+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-11T20:20:32.549196+05:30",
+  "last_auto_offer": "2026-10-12T06:05:35.773664+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-11",
   "ig_count": {
@@ -1442,58 +1306,58 @@
   "late_note_for": "2026-10-11-4",
   "gemini_use": {
     "day": "2026-10-12",
-    "calls": 149,
+    "calls": 161,
     "claude_calls": 0,
-    "claude_backup": 45
+    "claude_backup": 50
   },
   "gemini_errors": [
     {
-      "at": "23:30",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-12"
-    },
-    {
-      "at": "23:30",
-      "error": "Claude backup failed: Claude not available",
-      "day": "2026-10-12"
-    },
-    {
-      "at": "23:45",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-12"
-    },
-    {
-      "at": "23:45",
-      "error": "Claude backup failed: Claude not available",
-      "day": "2026-10-12"
-    },
-    {
-      "at": "23:45",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-12"
-    },
-    {
-      "at": "23:45",
-      "error": "Claude backup failed: Claude not available",
-      "day": "2026-10-12"
-    },
-    {
-      "at": "00:00",
+      "at": "00:35",
       "error": "gemini-3.6-flash: free quota used up for now",
       "day": "2026-10-12"
     },
     {
-      "at": "00:00",
+      "at": "00:35",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-12"
     },
     {
-      "at": "00:00",
+      "at": "00:35",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-12"
     },
     {
-      "at": "00:00",
+      "at": "00:35",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-12"
+    },
+    {
+      "at": "00:35",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-12"
+    },
+    {
+      "at": "00:35",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-12"
+    },
+    {
+      "at": "00:35",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-12"
+    },
+    {
+      "at": "00:35",
+      "error": "Claude backup failed: Claude not available",
+      "day": "2026-10-12"
+    },
+    {
+      "at": "00:35",
+      "error": "gemini-3.6-flash: free quota used up for now",
+      "day": "2026-10-12"
+    },
+    {
+      "at": "00:35",
       "error": "Claude backup failed: Claude not available",
       "day": "2026-10-12"
     }
