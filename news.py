@@ -55,9 +55,13 @@ WEAK_STORY = re.compile(
 CAMPUS_ADMIN = re.compile(r"(?i)^(?=.*\b(university|college|campus|faculty|school|institute|iit|iim)\b)"
                           r"(?=.*\b(grants?|course|courses|curriculum|degree|programme|centre|center|scholarships?|"
                           r"chair|workshop|announces new)\b)")
-OPINION = re.compile(r"(?i)^\s*(how to|how we|why (you|we|the|ai)|opinion|op-ed|commentary|analysis:|the case (for|against)|"
+OPINION = re.compile(r"(?i)^\s*(how to|how we|why (you|we|the|ai|artificial intelligence|this|it|i|everyone|nobody)|opinion|op-ed|commentary|analysis:|the case (for|against)|"
                      r"in defense of|a guide to|guide:|show hn|ask hn|is (this|it) the|are we|should (we|you)|"
                      r"what if|superficial intelligence|psa|rant|unpopular opinion)\b")
+
+
+OPINION_ANYWHERE = re.compile(r"(?i)\b(must be stopped|must be banned|we must|it'?s time to|we need to talk|"
+                              r"here'?s what i think|my take)\b")
 
 
 def newsworthy(item):
@@ -66,7 +70,8 @@ def newsworthy(item):
     generic_newsroom = item.get("source", "").strip().lower() in ("newsroom", "news room", "news release")
     return not (PR_SOURCES.search(item.get("source", "") + " " + item.get("link", "")) or WEAK_STORY.search(text)
                 or generic_newsroom
-                or OPINION.search(item.get("title", "")) or CAMPUS_ADMIN.search(item.get("title", "")))
+                or OPINION.search(item.get("title", "")) or OPINION_ANYWHERE.search(item.get("title", ""))
+                or CAMPUS_ADMIN.search(item.get("title", "")))
 
 
 def _clean(text):

@@ -307,6 +307,11 @@ check("any weak area fails", writer.score_review({"scores": {"hook": 6, "specifi
                                                        "visuals": 9, "captions": 9, "flow": 9}}, 5)["overall"], 6.5)
 check("no posting below 8", main.EDITOR_FLOOR, 8.0)
 
+check("drop opinion column", news.newsworthy({"title": "Why artificial intelligence must be stopped now",
+                                             "source": "www.resilience.org"}), False)
+check("keep real news", news.newsworthy({"title": "Amazon in talks to acquire AI chip startup Flexibility",
+                                         "source": "Reuters"}), True)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
