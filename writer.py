@@ -690,7 +690,7 @@ def visual_check(shots):
     return out
 
 
-EDITOR_CRITERIA = ["hook", "specific", "substance", "accuracy", "visuals", "flow"]
+EDITOR_CRITERIA = ["hook", "specific", "substance", "accuracy", "visuals", "captions", "flow"]
 
 EDITOR_BRIEF = """You are the editor-in-chief of @gradientai.news, a premium AI-news Instagram account for a global
 audience. Be strict: only top-notch reels get posted. Judge this finished reel before it goes live.
@@ -709,11 +709,15 @@ Score each 1-10:
   report is not a confirmation). Wrong or misleading = 4 or less.
 - visuals: each frame fits the words being spoken at that moment (named company -> its logo/product, person -> their
   photo, number -> number card); no unrelated, repeated, blank or broken pictures; text readable.
+- captions: in EVERY frame, does the caption text at the top show words from the LINE being spoken at that moment,
+  spelled as in the script? A missing caption, the same caption frozen across several lines, a caption from a
+  different line, or misspelled/garbled words ("unusroKid") = 3 or less. Also: the same picture held for more than
+  ~8 seconds (3+ frames in a row) costs visuals points.
 - flow: natural spoken English, clear story, strong specific ending question.
 Then list what must change to reach 9/10."""
 
 EDITOR_FORMAT = """
-Return ONLY JSON: {"scores": {"hook": n, "specific": n, "substance": n, "accuracy": n, "visuals": n, "flow": n},
+Return ONLY JSON: {"scores": {"hook": n, "specific": n, "substance": n, "accuracy": n, "visuals": n, "captions": n, "flow": n},
 "one_line": "your verdict in under 15 words",
 "script_fixes": ["concrete change to a line, e.g. 'LINE 3: name the model (GPT-5.5) instead of the new model'"],
 "visual_problems": [{"line": LINE number, "problem": "short reason"}]}"""
@@ -763,7 +767,7 @@ def score_review(res, n_beats):
         except Exception:
             scores[k] = 7
     overall = round(sum(scores.values()) / len(scores), 1)
-    if min(scores["accuracy"], scores["specific"]) < 7:
+    if min(scores["accuracy"], scores["specific"], scores["captions"]) < 7:
         overall = min(overall, 6.5)
     vb, notes = [], []
     for p in res.get("visual_problems") or []:
