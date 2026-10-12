@@ -252,6 +252,27 @@ check("retry delay capped", writer.retry_delay('"retryDelay": "300s"'), 60)
 check("drop reddit PSA", news.newsworthy({"title": "PSA: DeepSeek V4.1 Flash habitually exfiltrates API keys",
                                          "source": "r/LocalLLaMA"}), False)
 
+# the editor waits and retries when Gemini is busy, instead of skipping the review
+import video as _video  # noqa: E402
+_ef, _er, _wait = _video.editor_frames, writer.editor_review, main.EDITOR_RETRY_WAIT
+_video.editor_frames = lambda out: []
+main.EDITOR_RETRY_WAIT = 0
+tries = [0]
+def _flaky_review(*a):
+    tries[0] += 1
+    if tries[0] < 2:
+        raise RuntimeError("busy")
+    return {"overall": 9.0, "scores": {}, "one_line": "great", "script_fixes": [], "visual_beats": [], "visual_notes": []}
+writer.editor_review = _flaky_review
+st_ = {"draft": {"beats": []}, "topic": {}}
+check("editor retried", main.editor_step(st_, "v.mp4", lambda b: "v.mp4"), ("v.mp4", "ok"))
+check("editor score kept", st_["draft"]["editor"]["overall"], 9.0)
+writer.editor_review = lambda *a: (_ for _ in ()).throw(RuntimeError("busy"))
+st_ = {"draft": {"beats": []}, "topic": {}}
+main.editor_step(st_, "v.mp4", lambda b: "v.mp4")
+check("editor skip recorded", st_["draft"]["editor"]["overall"], None)
+_video.editor_frames, writer.editor_review, main.EDITOR_RETRY_WAIT = _ef, _er, _wait
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

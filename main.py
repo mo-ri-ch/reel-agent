@@ -1772,6 +1772,9 @@ EDITOR_PASS = 8.0   # the editor-in-chief's bar for posting
 EDITOR_FLOOR = 7.0  # after one round of fixes, reels between this and the bar are posted (with the score shown)
 
 
+EDITOR_RETRY_WAIT = 60
+
+
 def editor_step(s, out, rerender):
     """Scores the finished reel. Returns (video, action): "ok" (post), "rewrite" (script must change) or "switch"
     (not good enough even after fixes). Weak shots are replaced and re-scored once, right here."""
@@ -1779,11 +1782,17 @@ def editor_step(s, out, rerender):
     d = s["draft"]
     if (s.get("topic") or {}).get("digest"):  # the backup headlines reel exists to keep the schedule: never blocked
         return out, "ok"
-    try:
-        rev = writer.editor_review(d, s.get("topic") or {}, video.editor_frames(out),
-                                   video.LAST_CHECK.get("times") or [])
-    except Exception as e:  # the editor must never block the schedule
-        print(f"Editor review skipped: {e}")
+    rev, frames = None, video.editor_frames(out)
+    for attempt in range(3):  # free Gemini models are often busy for a minute: wait instead of skipping the editor
+        try:
+            rev = writer.editor_review(d, s.get("topic") or {}, frames, video.LAST_CHECK.get("times") or [])
+            break
+        except Exception as e:
+            print(f"Editor review failed (try {attempt + 1}): {e}")
+            if attempt < 2:
+                time.sleep(EDITOR_RETRY_WAIT)
+    if rev is None:  # the editor must never block the schedule for good; the review pack shows it was skipped
+        d["editor"] = {"overall": None, "one_line": "skipped: Gemini unavailable"}
         return out, "ok"
     d["editor"] = rev
     print(f"Editor: {rev['overall']}/10 {rev['scores']} · {rev['one_line']}")
