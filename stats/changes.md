@@ -134,3 +134,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-12: very strict quality (owner)
 - No reel below 8/10 (the 7.0 floor after fixes is gone); any criterion under 7 fails; editor told to score like a top news channel and penalise vague commentary lines; visual check flags near-empty cards. Also captions criterion + caption timing guard + no posting without the editor. Metric: editor scores, watch time, shares; slots missed (expect more late/missed slots).
+
+## 2026-10-12 evening: from rejected reels
+- Photo reuse max 2 per reel by content (hook counts). Captions judged by code, not the Lite vision model (it scored correct captions 3/10). Personal essays filtered. Metric: editor visuals score (baseline 3-7 today), reels passing 8/10.
