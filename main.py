@@ -1791,9 +1791,8 @@ def editor_step(s, out, rerender):
             print(f"Editor review failed (try {attempt + 1}): {e}")
             if attempt < 2:
                 time.sleep(EDITOR_RETRY_WAIT)
-    if rev is None:  # the editor must never block the schedule for good; the review pack shows it was skipped
-        d["editor"] = {"overall": None, "one_line": "skipped: Gemini unavailable"}
-        return out, "ok"
+    if rev is None:  # owner: every reel is reviewed before posting; a late reviewed reel beats an unreviewed one
+        raise RuntimeError("the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly")
     d["editor"] = rev
     print(f"Editor: {rev['overall']}/10 {rev['scores']} · {rev['one_line']}")
     if rev["overall"] >= EDITOR_PASS:
