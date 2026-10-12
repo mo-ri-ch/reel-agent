@@ -268,10 +268,25 @@ st_ = {"draft": {"beats": []}, "topic": {}}
 check("editor retried", main.editor_step(st_, "v.mp4", lambda b: "v.mp4"), ("v.mp4", "ok"))
 check("editor score kept", st_["draft"]["editor"]["overall"], 9.0)
 writer.editor_review = lambda *a: (_ for _ in ()).throw(RuntimeError("busy"))
-st_ = {"draft": {"beats": []}, "topic": {}}
-main.editor_step(st_, "v.mp4", lambda b: "v.mp4")
-check("editor skip recorded", st_["draft"]["editor"]["overall"], None)
+try:
+    main.editor_step({"draft": {"beats": []}, "topic": {}}, "v.mp4", lambda b: "v.mp4")
+    check("no editor -> no post", "posted", "error")
+except RuntimeError:
+    pass
 _video.editor_frames, writer.editor_review, main.EDITOR_RETRY_WAIT = _ef, _er, _wait
+
+# captions: frozen / wrong word timings (12 Oct Nadella reel) are caught and replaced by even timing
+_scr = ("Satya Nadella says we should assume all AI models are compromised.\nThe Microsoft CEO posted this warning on X "
+        "today.\nHe argues we can no longer treat AI as simple black boxes.")
+_beats = [{"line": l} for l in _scr.split("\n")]
+_bad = [{"text": w, "start": 0.3 + i * 0.3, "end": 0.5 + i * 0.3} for i, w in enumerate("Satya Nadella says".split())] + \
+       [{"text": w, "start": 18 + i * 0.3, "end": 18.2 + i * 0.3} for i, w in enumerate("akin to the new approach".split())]
+check("broken timing caught", bool(_video.sync_problem(_bad, _scr, _beats, 22.0)), True)
+_ev = _video.even_words(_scr, _bad, 22.0)
+check("even timing uses script words", [w["text"] for w in _ev], _scr.split())
+check("even timing passes", _video.sync_problem(_ev, _scr, _beats, 22.0), "")
+_good = [{"text": w, "start": i * 0.35, "end": i * 0.35 + 0.3} for i, w in enumerate(_scr.split())]
+check("good timing accepted", _video.sync_problem(_good, _scr, _beats, len(_good) * 0.35 + 0.5), "")
 
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)

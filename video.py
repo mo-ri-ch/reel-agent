@@ -1043,6 +1043,41 @@ def add_sound_effects(audio, events, total, tmp):
 
 
 # ---------------------------------------------------------------- planning
+def sync_problem(words, script, beats, total):
+    """Why these word timings can't be trusted (or ""): captions must be the script's own words, nearly all of them,
+    and no beat may be spoken impossibly slowly or fast (a frozen caption / crammed ending)."""
+    tokens = [t for t in script.split() if re.search(r"\w", t)]
+    if not words or not tokens:
+        return "no word timings"
+    norm = lambda x: re.sub(r"[^a-z0-9]", "", x.lower())
+    script_set = {norm(t) for t in tokens}
+    foreign = [w["text"] for w in words if norm(w["text"]) not in script_set]
+    if len(foreign) > max(2, len(words) // 10):
+        return f"captions aren't the script's words (e.g. “{' '.join(foreign[:4])}”)"
+    if len(words) < 0.9 * len(tokens):
+        return f"only {len(words)} of {len(tokens)} words timed"
+    for i, (a, b) in enumerate(beat_times(beats, words, total)):
+        n = len(beats[i]["line"].split())
+        if n >= 4 and ((b - a) / n > 1.2 or (b - a) / n < 0.12):
+            return f"line {i + 1} lasts {b - a:.1f}s for {n} words"
+    return ""
+
+
+def even_words(script, heard, total):
+    """The script's words spread over the time speech was heard, weighted by word length (Fish/Google voices speak
+    at an even pace, so this stays close)."""
+    tokens = [t for t in script.split() if re.search(r"\w", t)]
+    t0 = heard[0]["start"] if heard else 0.1
+    t1 = heard[-1]["end"] if heard and heard[-1]["end"] > t0 + 1 else max(t0 + 1, total - 0.3)
+    weights = [len(t) + 2 for t in tokens]
+    span, acc, out = t1 - t0, 0, []
+    for tok, wt in zip(tokens, weights):
+        s = t0 + span * acc / sum(weights)
+        acc += wt
+        out.append({"text": tok, "start": s, "end": t0 + span * acc / sum(weights)})
+    return out
+
+
 def beat_times(beats, words, total):
     """Start/end time of each beat, from where its words were spoken."""
     counts = [max(1, len(b["line"].split())) for b in beats]
@@ -1497,8 +1532,8 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     LAST_SYNC = ""
     if words is None:
         heard = None
-        try:
-            heard = transcribe(wav, hint=caption_script)
+        try:  # no script hint: with a hint Whisper skipped most of a Fish voice-over and broke every caption (12 Oct)
+            heard = transcribe(wav)
         except Exception as e:
             print(f"Whisper failed: {e}")
         if exact_words:
@@ -1514,9 +1549,14 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
             LAST_SYNC = "✅ captions timed from the voice"
         else:
             raise RuntimeError("Couldn't time the captions (speech recognition failed).")
+    beats = draft.get("beats") or [{"line": draft.get("script", ""), "visual": "clip", "query": "technology"}]
+    problem = sync_problem(words, caption_script, beats, total)
+    if problem:  # never ship frozen or wrong captions: time the script's own words evenly over the speech instead
+        print(f"Caption timing looks wrong ({problem}); timing the script evenly over the voice")
+        words = even_words(caption_script, words, total)
+        LAST_SYNC = f"⚠️ captions timed evenly ({problem})"
     words = [{**w, "start": max(0.0, w["start"] - 0.05)} for w in words]  # appear a hair early, feels in sync
 
-    beats = draft.get("beats") or [{"line": draft.get("script", ""), "visual": "clip", "query": "technology"}]
     times = beat_times(beats, words, total)
     hook_len = min(max(times[0][1], 1.6), 2.8, total)
 
