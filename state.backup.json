@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -233,16 +233,58 @@
     "editor_rounds": 1,
     "source_links": [
       "https://github.com/prabanta-dev/janas"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Janas streams model experts directly from your SSD…: almost-empty card",
+      "It uses memory mapping to access model weights sto…: almost-empty card",
+      "This method allows you to run models exceeding you…: almost-empty card",
+      "Janas specifically optimizes for Mixture of Expert…: almost-empty card",
+      "Will you try running massive models on your local …: almost-empty card",
+      "The card is almost empty and lacks the required visual content.",
+      "The card is almost empty and lacks the required visual content.",
+      "The card is almost empty and lacks the required visual content.",
+      "The card is almost empty and lacks the required visual content."
+    ],
+    "editor": {
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong technical content, but visuals are repetitive and lack dynamic variety.",
+      "script_fixes": [
+        "LINE 1: Change to 'Prabanta Dey just released Janas, a tool to bypass RAM limits.'",
+        "LINE 8: Change to 'Will you run massive models on your laptop today?'"
+      ],
+      "visual_beats": [
+        0,
+        2,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The background image is generic and unrelated to the technical subject matter.",
+        "line 3: The GitHub logo is used twice in quick succession (Frame 5 and 12).",
+        "line 5: Visuals are static; needs a diagram showing SSD-to-RAM data flow."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 AI images, 7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIUUGrOFAE162SjszX-GhgYVrrvUX5PAALoIAAC-A1wVr2Qki7S4Mc_PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-13T16:42:13.584006+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-13T17:20:33.678589+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-13",
@@ -702,248 +744,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "AI labs are buying data from dead startups to train their models",
-          "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
-          "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around…",
-          "source": "Artificial intelligence – MIT Technology Review",
-          "published": "2026-10-13T09:00:00+00:00",
-          "angle": "AI labs are secretly buying data from dead startups to train their models without you knowing."
-        },
-        "draft": {
-          "title": "Dead Startups Selling AI Training Data",
-          "hook_text": "Failed startups are selling data",
-          "beats": [
-            {
-              "line": "Failed startups are selling their data for thousands of dollars.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$25,000",
-              "small": "startup code sale",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Startups selling data",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Keelan Miskell shut down his crypto startup this year.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Keelan Miskell startup",
-              "name": "Keelan Miskell",
-              "role": "Founder, Crypto Startup",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He netted twenty-five thousand dollars for his code base.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$25,000",
-              "small": "code base sale",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Code base value",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Labs like OpenAI and Anthropic buy these archives to train models.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "tag": "AI labs buying data",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Startups previously considered their user data worthless after shutting down.",
-              "visual": "clip",
-              "query": "empty office building",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data considered worthless",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Buyers use unique code and historical interactions to improve performance.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract visualization of neural network data processing",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Training data needs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This trend gives founders a way to recoup initial losses.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "MIT Technology Review",
-              "domain": "technologyreview.com",
-              "headline": "AI labs are buying data from dead startups",
-              "url": "",
-              "tag": "Recouping startup losses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you sell your users' data to save your failing business?",
-              "visual": "clip",
-              "query": "person looking at camera",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Sell your users data?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Direct and analytical, focusing on the surprising shift from worthless assets to AI training gold.",
-          "thin": false,
-          "caption": "Keelan Miskell earned $25,000 selling his defunct crypto startup's code. Labs like OpenAI and Anthropic are now buying archives from failed companies to train their models. Would you sell your users' data to save your failing business?",
-          "hashtags": [
-            "AI",
-            "Startups",
-            "TechNews",
-            "DataEconomy",
-            "Business"
-          ],
-          "sources": [
-            "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-          ],
-          "script": "Failed startups are selling their data for thousands of dollars.\nKeelan Miskell shut down his crypto startup this year.\nHe netted twenty-five thousand dollars for his code base.\nLabs like OpenAI and Anthropic buy these archives to train models.\nStartups previously considered their user data worthless after shutting down.\nBuyers use unique code and historical interactions to improve performance.\nThis trend gives founders a way to recoup initial losses.\nWould you sell your users' data to save your failing business?",
-          "keywords": [
-            "empty office building",
-            "person looking at camera"
-          ],
-          "image_prompts": [
-            "abstract visualization of neural network data processing"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Failed startups are selling data",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Failed startups are selling their data for thousands of dollars.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Keelan Miskell netted $25,000 for his startup's code base.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Keelan Miskell shut down his crypto startup this year.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Keelan Miskell netted $25,000 for his code base.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Labs like OpenAI and Anthropic buy these archives to train models.",
-              "url": "https://www.businessinsider.com/ai-training-employee-data-emails-slack-dms-2026-10"
-            },
-            {
-              "claim": "Startups previously considered their user data worthless after shutting down.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Buyers use unique code and historical interactions to improve performance.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "This trend gives founders a way to recoup initial losses.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-13T15:44:48.357499+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1599,6 +1399,255 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+          "link": "https://github.com/prabanta-dev/janas",
+          "summary": "",
+          "source": "github.com",
+          "published": "2026-10-12T22:05:43+00:00",
+          "buzz": "Hacker News 156 points",
+          "angle": "Run massive AI models on your cheap laptop by streaming data from your SSD."
+        },
+        "draft": {
+          "title": "Run LLMs larger than your RAM",
+          "hook_text": "Run huge AI on tiny RAM",
+          "beats": [
+            {
+              "line": "Prabanta Dey released Janas to bypass your computer's memory limits.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://github.com/prabanta-dev/janas",
+              "tag": "Prabanta Dey Janas",
+              "name": "Prabanta Dey",
+              "role": "Creator, Janas",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Your next AI project might finally fit on your standard laptop.",
+              "visual": "clip",
+              "query": "person typing on laptop keyboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Laptop AI projects",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Janas streams model experts directly from your SSD instead of loading into RAM.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Janas",
+              "outlet": "",
+              "domain": "github.com",
+              "headline": "",
+              "url": "https://github.com/prabanta-dev/janas",
+              "tag": "SSD expert streaming",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Janas",
+                  "domain": "github.com"
+                }
+              ]
+            },
+            {
+              "line": "It uses memory mapping to access model weights stored on disk.",
+              "visual": "clip",
+              "query": "data streaming from ssd to cpu",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Memory mapping storage",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This method allows you to run models exceeding your physical memory capacity.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "100%",
+              "small": "RAM bypass",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Bypass RAM limits",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The project is available today on GitHub as an open source tool.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "GitHub",
+              "domain": "github.com",
+              "headline": "Janas: Run LLMs larger than RAM by streaming experts",
+              "url": "",
+              "tag": "Open source Janas",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "GitHub",
+                  "domain": "github.com"
+                }
+              ]
+            },
+            {
+              "line": "Janas specifically optimizes for Mixture of Experts models by loading only required parts.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "MoE",
+              "small": "Optimization",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "MoE optimization",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Janas",
+                  "domain": "github.com"
+                }
+              ]
+            },
+            {
+              "line": "Will you try running massive models on your local machine now?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Run local models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast and punchy, highlighting the technical breakthrough of memory management.",
+          "thin": false,
+          "caption": "Prabanta Dey released Janas, a tool that lets you run LLMs larger than your RAM by streaming experts from your SSD. This implementation uses memory mapping to bypass traditional hardware constraints and optimizes for Mixture of Experts models. Will you try running massive models on your local machine now?",
+          "hashtags": [
+            "Janas",
+            "LLM",
+            "LocalAI",
+            "GitHub",
+            "OpenSource"
+          ],
+          "sources": [
+            "https://github.com/prabanta-dev/janas"
+          ],
+          "script": "Prabanta Dey released Janas to bypass your computer's memory limits.\nYour next AI project might finally fit on your standard laptop.\nJanas streams model experts directly from your SSD instead of loading into RAM.\nIt uses memory mapping to access model weights stored on disk.\nThis method allows you to run models exceeding your physical memory capacity.\nThe project is available today on GitHub as an open source tool.\nJanas specifically optimizes for Mixture of Experts models by loading only required parts.\nWill you try running massive models on your local machine now?",
+          "keywords": [
+            "person typing on laptop keyboard",
+            "data streaming from ssd to cpu",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Run huge AI on tiny RAM",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "Prabanta Dey released Janas to bypass your computer's memory limits.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "Janas streams model experts directly from your SSD instead of loading into RAM.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "It uses memory mapping to access model weights stored on disk.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "This method allows you to run models exceeding your physical memory capacity.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "The project is available today on GitHub as an open source tool.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "Janas specifically optimizes for Mixture of Experts models by loading only required parts.",
+              "url": "https://github.com/prabanta-dev/janas"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://github.com/prabanta-dev/janas"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-13T16:42:13.584006+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2127,7 +2176,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-13T16:25+05:30",
@@ -2155,7 +2204,7 @@
   "report_day": "2026-10-12",
   "ig_count": {
     "day": "2026-10-13",
-    "at": "2026-10-13T16:36:21.859019+05:30",
+    "at": "2026-10-13T16:50:33.678856+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2175,11 +2224,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-13",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-13-1",
   "gemini_use": {
     "day": "2026-10-13",
-    "calls": 403,
+    "calls": 415,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2214,10 +2263,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 132,
+        "ok": 142,
         "busy": 67,
-        "other": 29,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 31,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
         "ok": 0,
@@ -2307,29 +2356,6 @@
     "gemini-flash-lite-latest": 1791888395.2527516
   },
   "editor_log": [
-    {
-      "at": "2026-10-13T13:26+05:30",
-      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
-      "overall": 6.0,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Vague academic phrasing and weak editing drop this informative safety report below standards.",
-      "fixes": [
-        "LINE 1: Start with the exact paper title or lead author institution to improve specificity.",
-        "LINE 5: Replace vague commentary about 'computer scientists' with concrete industry impacts."
-      ],
-      "visual": [
-        "line 2: Blank text cards and dark minimalist screens dominate without relevant graphics.",
-        "line 4: Leftover UI bounding boxes and selection handles visible during text animations.",
-        "line 6: Abstract text-only layouts fail to match the engagement required for the final question."
-      ]
-    },
     {
       "at": "2026-10-13T13:33+05:30",
       "title": "Could AI Infect Your Smart TV? What Anthropic's New Test Found",
@@ -2753,6 +2779,29 @@
         "line 1: The same GitHub screenshot is held for too long across multiple frames.",
         "line 2: Visuals are static; needs a screen recording of the tool in action.",
         "line 3: Repetitive use of the same GitHub icon/logo style."
+      ]
+    },
+    {
+      "at": "2026-10-13T16:50+05:30",
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong technical content, but visuals are repetitive and lack dynamic variety.",
+      "fixes": [
+        "LINE 1: Change to 'Prabanta Dey just released Janas, a tool to bypass RAM limits.'",
+        "LINE 8: Change to 'Will you run massive models on your laptop today?'"
+      ],
+      "visual": [
+        "line 1: The background image is generic and unrelated to the technical subject matter.",
+        "line 3: The GitHub logo is used twice in quick succession (Frame 5 and 12).",
+        "line 5: Visuals are static; needs a diagram showing SSD-to-RAM data flow."
       ]
     }
   ],
