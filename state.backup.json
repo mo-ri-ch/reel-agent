@@ -16,7 +16,7 @@
     "hook_text": "Zoho just froze all salary hikes.",
     "beats": [
       {
-        "line": "Zoho just froze all salary hikes for its employees this year.",
+        "line": "Zoho just paused all salary hikes for its employees this year.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "Co-founder Sridhar Vembu cited surging costs driven by rapid AI adoption.",
+        "line": "Co-founder Sridhar Vembu cited surging costs driven by rapid software changes.",
         "visual": "person",
         "query": "technology",
         "prompt": "",
@@ -50,7 +50,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Sridhar Vembu on AI costs",
+        "tag": "Sridhar Vembu cites rising costs",
         "name": "Sridhar Vembu",
         "role": "Co-founder, Zoho",
         "x": "sridharvembu",
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "line": "He warned of an uncertain software job market as intelligent tools reshape development.",
+        "line": "He warned of a grim outlook for software jobs as automated tools reshape the industry.",
         "visual": "clip",
         "query": "software engineer writing code",
         "prompt": "",
@@ -73,14 +73,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Uncertain software job market",
+        "tag": "Grim outlook for software jobs",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Companies face heavy spending to keep pace with automated coding assistants.",
+        "line": "Tech companies face heavy spending to keep pace with shifting market demands.",
         "visual": "clip",
         "query": "data center servers blinking",
         "prompt": "",
@@ -91,14 +91,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Heavy spending on tools",
+        "tag": "Heavy spending on technology",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Zoho previously rewarded staff with steady appraisals before these market shifts hit.",
+        "line": "Zoho staff will not receive their usual pay increases this season.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -107,31 +107,18 @@
         "entity": "",
         "outlet": "Analytics India Magazine",
         "domain": "analyticsindiamag.com",
-        "headline": "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook for Software Jobs",
+        "headline": "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook",
         "url": "",
-        "tag": "Steady past appraisals",
+        "tag": "No pay increases this season",
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
-      },
-      {
-        "line": "Tech workers now face zero salary hikes this year as software roles evolve rapidly.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "Zero",
-        "small": "Salary hikes this year",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Zero salary hikes",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Zoho",
+            "domain": "zoho.com"
+          }
+        ]
       },
       {
         "line": "Would your employer survive an industry wide software hiring freeze?",
@@ -145,7 +132,7 @@
         "domain": "moneycontrol.com",
         "headline": "AI Has Raised Costs Sridhar Vembu Announces No Salary Hikes at Zoho",
         "url": "",
-        "tag": "Hiring freeze impact",
+        "tag": "Software hiring freeze",
         "name": "",
         "role": "",
         "x": "",
@@ -154,7 +141,7 @@
     ],
     "delivery": "direct, sober tone of a tech journalist reporting industry shifts and economic pressure",
     "thin": false,
-    "caption": "Zoho has frozen all salary hikes as co-founder Sridhar Vembu cites surging costs from AI adoption. Would your employer survive an industry wide software hiring freeze?",
+    "caption": "Zoho has frozen all salary hikes as co-founder Sridhar Vembu cites surging costs and a grim outlook for software jobs. Would your employer survive an industry wide software hiring freeze?",
     "hashtags": [
       "Zoho",
       "SridharVembu",
@@ -167,7 +154,7 @@
       "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html",
       "https://www.livemint.com/companies/no-appraisal-for-zoho-staffers-sridhar-vembu-cites-rising-ai-costs-says-usual-pay-increase-unlikely-this-year-11791863592011.html"
     ],
-    "script": "Zoho just froze all salary hikes for its employees this year.\nCo-founder Sridhar Vembu cited surging costs driven by rapid AI adoption.\nHe warned of an uncertain software job market as intelligent tools reshape development.\nCompanies face heavy spending to keep pace with automated coding assistants.\nZoho previously rewarded staff with steady appraisals before these market shifts hit.\nTech workers now face zero salary hikes this year as software roles evolve rapidly.\nWould your employer survive an industry wide software hiring freeze?",
+    "script": "Zoho just paused all salary hikes for its employees this year.\nCo-founder Sridhar Vembu cited surging costs driven by rapid software changes.\nHe warned of a grim outlook for software jobs as automated tools reshape the industry.\nTech companies face heavy spending to keep pace with shifting market demands.\nZoho staff will not receive their usual pay increases this season.\nWould your employer survive an industry wide software hiring freeze?",
     "keywords": [
       "software engineer writing code",
       "data center servers blinking"
@@ -176,40 +163,38 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Zoho froze all salary hikes.",
+        "claim": "Zoho just froze all salary hikes.",
         "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
       },
       {
-        "claim": "Zoho froze all salary hikes for its employees this year.",
+        "claim": "Zoho just paused all salary hikes for its employees this year.",
+        "url": "https://www.newindianexpress.com/business/2026/Oct/13/zoho-freezes-pay-hikes-cuts-marketing-spend-amid-rising-ai-costs-sridhar-vembu-2"
+      },
+      {
+        "claim": "Sridhar Vembu is the co-founder of Zoho.",
         "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
       },
       {
-        "claim": "Sridhar Vembu is Co-founder of Zoho.",
+        "claim": "Sridhar Vembu cited surging costs driven by rapid software changes.",
         "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
       },
       {
-        "claim": "Sridhar Vembu cited surging costs driven by rapid AI adoption.",
+        "claim": "He warned of a grim outlook for software jobs as automated tools reshape the industry.",
         "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
       },
       {
-        "claim": "He warned of an uncertain software job market as intelligent tools reshape development.",
+        "claim": "Tech companies face heavy spending to keep pace with shifting market demands.",
         "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
       },
       {
-        "claim": "Companies face heavy spending to keep pace with automated coding assistants.",
-        "url": "https://www.thehansindia.com/tech/zoho-halts-salary-hikes-founder-sridhar-vembu-warns-of-tough-times-1132008"
-      },
-      {
-        "claim": "Zoho previously rewarded staff with steady appraisals before these market shifts hit.",
-        "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
-      },
-      {
-        "claim": "Tech workers face zero salary hikes this year at Zoho as software roles evolve rapidly.",
+        "claim": "Zoho staff will not receive their usual pay increases this season.",
         "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "fix_rounds": 2,
+    "editor_rounds": 1,
     "source_links": [
       "https://analyticsindiamag.com/ai-news/zoho-freezes-salary-hikes-as-sridhar-vembu-warns-of-grim-outlook-for-software-jobs",
       "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html",
@@ -221,9 +206,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-13T13:44:32.846900+05:30",
+  "script_deadline": "2026-10-13T13:48:53.983805+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-13",
@@ -664,270 +649,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Epic Games reportedly pivoting to \"AI first\" game development model",
-          "link": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
-          "summary": "\"No more hand-written code\" or AI-free art for delayed Marvel/Star Wars shooter.",
-          "source": "AI - Ars Technica",
-          "published": "2026-10-12T20:59:50+00:00",
-          "angle": "Epic Games reportedly pivoting to an 'AI-first' model with zero hand-written code for major shooters—a massive shift for the gaming industry."
-        },
-        "draft": {
-          "title": "Epic Games bans manual code for Disney",
-          "hook_text": "No more manual code",
-          "beats": [
-            {
-              "line": "Epic Games just banned hand-written code for Disney.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Epic Games",
-              "outlet": "",
-              "domain": "epicgames.com",
-              "headline": "",
-              "url": "",
-              "tag": "No hand-written code",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Epic Games",
-                  "domain": "epicgames.com"
-                }
-              ]
-            },
-            {
-              "line": "Your next Star Wars game's being built by bots.",
-              "visual": "clip",
-              "query": "lightsaber battle space",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Built by bots",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Star Wars",
-                  "domain": "starwars.com"
-                }
-              ]
-            },
-            {
-              "line": "CEO Tim Sweeney is pivoting the project to an AI-first model.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.epicgames.com/site/en-US/about",
-              "tag": "Tim Sweeney's AI pivot",
-              "name": "Tim Sweeney",
-              "role": "CEO, Epic Games",
-              "x": "TimSweeneyEpic",
-              "brands": [
-                {
-                  "name": "Epic Games",
-                  "domain": "epicgames.com"
-                }
-              ]
-            },
-            {
-              "line": "This mandate specifically targets the delayed Marvel and Star Wars shooter.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Marvel Entertainment",
-              "outlet": "",
-              "domain": "marvel.com",
-              "headline": "",
-              "url": "",
-              "tag": "Marvel Star Wars shooter",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Marvel",
-                  "domain": "marvel.com"
-                },
-                {
-                  "name": "Star Wars",
-                  "domain": "starwars.com"
-                }
-              ]
-            },
-            {
-              "line": "Disney backed the partnership with a one point five billion dollar investment.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1.5B",
-              "small": "Disney Investment",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "$1.5B Disney investment",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Disney",
-                  "domain": "disney.com"
-                }
-              ]
-            },
-            {
-              "line": "Artists are now barred from delivering any AI-free concept art.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Ars Technica",
-              "domain": "arstechnica.com",
-              "headline": "Epic Games goes all-in on AI for Disney collaboration",
-              "url": "",
-              "tag": "No AI-free art",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The radical shift at the Cary headquarters has already pushed back the release.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Epic Games",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Delayed release date",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can AI build a better shooter than human programmers?",
-              "visual": "clip",
-              "query": "person gaming controller",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI vs human code",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Measured tech reporting with a sharp edge, emphasizing the scale of the mandate for the Disney project.",
-          "thin": false,
-          "caption": "Epic Games CEO Tim Sweeney is mandating an AI-first model for the studio's $1.5 billion Disney collaboration. Internal memos for the upcoming Marvel and Star Wars shooter now ban hand-written code and AI-free concept art. Can AI build a better game than human programmers?",
-          "hashtags": [
-            "epicgames",
-            "disney",
-            "starwars",
-            "marvel",
-            "gamedev"
-          ],
-          "sources": [
-            "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-          ],
-          "script": "Epic Games just banned hand-written code for Disney.\nYour next Star Wars game's being built by bots.\nCEO Tim Sweeney is pivoting the project to an AI-first model.\nThis mandate specifically targets the delayed Marvel and Star Wars shooter.\nDisney backed the partnership with a one point five billion dollar investment.\nArtists are now barred from delivering any AI-free concept art.\nThe radical shift at the Cary headquarters has already pushed back the release.\nCan AI build a better shooter than human programmers?",
-          "keywords": [
-            "lightsaber battle space",
-            "person gaming controller"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Epic Games moving towards no more hand-written code",
-              "url": "https://www.indiatoday.in/technology/news/story/no-more-hand-written-code-fortnite-maker-epic-games-is-moving-towards-ai-first-production-3016163-2026-10-13"
-            },
-            {
-              "claim": "Epic Games shifting to an AI-first development strategy for its collaboration with the Walt Disney Company",
-              "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-            },
-            {
-              "claim": "An upcoming shooter for the Disney collaboration will let AI models write all the code and guide all the artwork",
-              "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-            },
-            {
-              "claim": "Tim Sweeney is CEO of Epic Games and is pivoting the project to an AI-first model",
-              "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-            },
-            {
-              "claim": "The AI mandate targets the delayed Marvel and Star Wars shooter",
-              "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-            },
-            {
-              "claim": "Disney backed the partnership with a 1.5 billion dollar investment",
-              "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-            },
-            {
-              "claim": "Art assets for the project are generated with full AI workflows",
-              "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-            },
-            {
-              "claim": "The radical shift at the Cary headquarters has already pushed back the release",
-              "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-13T12:56:58.890020+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1659,6 +1380,236 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook for Software Jobs",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT0N3NzBRZFZ0eGVXQVVxMXVlbVMyd05lVEY1Vk9JMEdQbnU4b3JEN3lRc2RSNnhwdmp6MmtBRG9HQjJiZ2lmcmxBT2Y4bTlROFJ4VjlsX3ZEVGViRGdTY0JPZHF4QU5YSm1NOENqRFNxM2Y4VXd1NTZtVW0tMkVXNWl6bXNobTgwVjBCRFZMUEtzUFNucGtsS2p5c0JkMDV5ZnpBOVhKWWZXWndzN0FQZ2hyaVM4YTN6Tlh2UQ?oc=5",
+          "summary": "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook for Software Jobs analyticsindiamag.com",
+          "source": "analyticsindiamag.com",
+          "published": "2026-10-13T05:03:40+00:00",
+          "angle": "Zoho freezes salary hikes as software jobs face a grim outlook from AI."
+        },
+        "draft": {
+          "title": "Zoho Freezes Pay As AI Costs Rise",
+          "hook_text": "Zoho just froze all salary hikes.",
+          "beats": [
+            {
+              "line": "Zoho just froze all salary hikes for its employees this year.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Zoho",
+              "outlet": "",
+              "domain": "zoho.com",
+              "headline": "",
+              "url": "https://www.zoho.com",
+              "tag": "Zoho freezes salary hikes",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Zoho",
+                  "domain": "zoho.com"
+                }
+              ]
+            },
+            {
+              "line": "Co-founder Sridhar Vembu cited surging costs driven by rapid AI adoption.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sridhar Vembu on AI costs",
+              "name": "Sridhar Vembu",
+              "role": "Co-founder, Zoho",
+              "x": "sridharvembu",
+              "brands": [
+                {
+                  "name": "Zoho",
+                  "domain": "zoho.com"
+                }
+              ]
+            },
+            {
+              "line": "He warned of an uncertain software job market as intelligent tools reshape development.",
+              "visual": "clip",
+              "query": "software engineer writing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Uncertain software job market",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Companies face heavy spending to keep pace with automated coding assistants.",
+              "visual": "clip",
+              "query": "data center servers blinking",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Heavy spending on tools",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Zoho previously rewarded staff with steady appraisals before these market shifts hit.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Analytics India Magazine",
+              "domain": "analyticsindiamag.com",
+              "headline": "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook for Software Jobs",
+              "url": "",
+              "tag": "Steady past appraisals",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Tech workers now face zero salary hikes this year as software roles evolve rapidly.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Zero",
+              "small": "Salary hikes this year",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Zero salary hikes",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would your employer survive an industry wide software hiring freeze?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Moneycontrol",
+              "domain": "moneycontrol.com",
+              "headline": "AI Has Raised Costs Sridhar Vembu Announces No Salary Hikes at Zoho",
+              "url": "",
+              "tag": "Hiring freeze impact",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "direct, sober tone of a tech journalist reporting industry shifts and economic pressure",
+          "thin": false,
+          "caption": "Zoho has frozen all salary hikes as co-founder Sridhar Vembu cites surging costs from AI adoption. Would your employer survive an industry wide software hiring freeze?",
+          "hashtags": [
+            "Zoho",
+            "SridharVembu",
+            "TechNews",
+            "SoftwareJobs",
+            "AI"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT0N3NzBRZFZ0eGVXQVVxMXVlbVMyd05lVEY1Vk9JMEdQbnU4b3JEN3lRc2RSNnhwdmp6MmtBRG9HQjJiZ2lmcmxBT2Y4bTlROFJ4VjlsX3ZEVGViRGdTY0JPZHF4QU5YSm1NOENqRFNxM2Y4VXd1NTZtVW0tMkVXNWl6bXNobTgwVjBCRFZMUEtzUFNucGtsS2p5c0JkMDV5ZnpBOVhKWWZXWndzN0FQZ2hyaVM4YTN6Tlh2UQ?oc=5",
+            "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html",
+            "https://www.livemint.com/companies/no-appraisal-for-zoho-staffers-sridhar-vembu-cites-rising-ai-costs-says-usual-pay-increase-unlikely-this-year-11791863592011.html"
+          ],
+          "script": "Zoho just froze all salary hikes for its employees this year.\nCo-founder Sridhar Vembu cited surging costs driven by rapid AI adoption.\nHe warned of an uncertain software job market as intelligent tools reshape development.\nCompanies face heavy spending to keep pace with automated coding assistants.\nZoho previously rewarded staff with steady appraisals before these market shifts hit.\nTech workers now face zero salary hikes this year as software roles evolve rapidly.\nWould your employer survive an industry wide software hiring freeze?",
+          "keywords": [
+            "software engineer writing code",
+            "data center servers blinking"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Zoho froze all salary hikes.",
+              "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
+            },
+            {
+              "claim": "Zoho froze all salary hikes for its employees this year.",
+              "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
+            },
+            {
+              "claim": "Sridhar Vembu is Co-founder of Zoho.",
+              "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
+            },
+            {
+              "claim": "Sridhar Vembu cited surging costs driven by rapid AI adoption.",
+              "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
+            },
+            {
+              "claim": "He warned of an uncertain software job market as intelligent tools reshape development.",
+              "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
+            },
+            {
+              "claim": "Companies face heavy spending to keep pace with automated coding assistants.",
+              "url": "https://www.thehansindia.com/tech/zoho-halts-salary-hikes-founder-sridhar-vembu-warns-of-tough-times-1132008"
+            },
+            {
+              "claim": "Zoho previously rewarded staff with steady appraisals before these market shifts hit.",
+              "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
+            },
+            {
+              "claim": "Tech workers face zero salary hikes this year at Zoho as software roles evolve rapidly.",
+              "url": "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/zoho-freezes-salary-hikes-as-sridhar-vembu-warns-of-grim-outlook-for-software-jobs",
+            "https://www.moneycontrol.com/news/trends/ai-has-raised-costs-sridhar-vembu-announces-no-salary-hikes-at-zoho-this-year-warns-of-uncertain-software-job-market-14050589.html",
+            "https://www.livemint.com/companies/no-appraisal-for-zoho-staffers-sridhar-vembu-cites-rising-ai-costs-says-usual-pay-increase-unlikely-this-year-11791863592011.html"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-13T13:44:32.846900+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2185,8 +2136,8 @@
       "event": "Satya Nadella says we should assume all AI models are compromised. The Microsoft CEO posted this warning on X today. He argues we can no longer treat AI as simple black boxes. We currently accept advice and actions from these systems withou"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-12T19:30+05:30",
@@ -2234,7 +2185,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-13",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-13-0",
   "gemini_use": {
     "day": "2026-10-13",
@@ -2705,6 +2656,29 @@
       "visual": [
         "line 2: Anthropic logo repeated across frames 4, 5, and 6 creating static visual stagnation.",
         "line 5: Anthropic logo repeated again in frames 11, 12, and 13 with zero visual variety for the ou"
+      ]
+    },
+    {
+      "at": "2026-10-13T13:47+05:30",
+      "title": "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook for Software Jo",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 8,
+        "visuals": 6,
+        "flow": 7
+      },
+      "one_line": "Strong subject matter, but suffers from repetitive visuals and slight filler lines in the script.",
+      "fixes": [
+        "LINE 5: Zoho previously rewarded staff with steady appraisals before these market shifts hit. -> Replace with specific historical data or cut to improve substance.",
+        "LINE 6: Tech workers now face zero salary hikes this year as software roles evolve rapidly. -> Replace with a more specific consequence or remove repetition."
+      ],
+      "visual": [
+        "line 2: Same photo of Sridhar Vembu held across multiple frames for too long.",
+        "line 5: Static news article screenshot held across three consecutive frames (Frames 9, 10, 11).",
+        "line 6: Visual switches to text-only 'Zero' card without dynamic B-roll."
       ]
     }
   ],
