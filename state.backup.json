@@ -46,7 +46,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Laptop AI potential",
+        "tag": "Laptop AI projects",
         "name": "",
         "role": "",
         "x": "",
@@ -78,7 +78,7 @@
       {
         "line": "It uses memory mapping to access model weights stored on disk.",
         "visual": "clip",
-        "query": "solid state drive hardware",
+        "query": "data streaming from ssd to cpu",
         "prompt": "",
         "big": "",
         "small": "",
@@ -98,8 +98,8 @@
         "visual": "stat",
         "query": "technology",
         "prompt": "",
-        "big": "RAM",
-        "small": "Memory capacity bypass",
+        "big": "100%",
+        "small": "RAM bypass",
         "entity": "",
         "outlet": "",
         "domain": "",
@@ -135,18 +135,41 @@
         ]
       },
       {
-        "line": "Could this finally make local large model inference accessible for everyone?",
+        "line": "Janas specifically optimizes for Mixture of Experts models by loading only required parts.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
-        "big": "Local AI",
-        "small": "Accessibility",
+        "big": "MoE",
+        "small": "Optimization",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Local AI access",
+        "tag": "MoE optimization",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Janas",
+            "domain": "github.com"
+          }
+        ]
+      },
+      {
+        "line": "Will you try running massive models on your local machine now?",
+        "visual": "clip",
+        "query": "person looking at computer screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Run local models",
         "name": "",
         "role": "",
         "x": "",
@@ -155,7 +178,7 @@
     ],
     "delivery": "Fast and punchy, highlighting the technical breakthrough of memory management.",
     "thin": false,
-    "caption": "Prabanta Dey released Janas, a tool that lets you run LLMs larger than your RAM by streaming experts from your SSD. This implementation uses memory mapping to bypass traditional hardware constraints. Could this finally make local large model inference accessible for everyone?",
+    "caption": "Prabanta Dey released Janas, a tool that lets you run LLMs larger than your RAM by streaming experts from your SSD. This implementation uses memory mapping to bypass traditional hardware constraints and optimizes for Mixture of Experts models. Will you try running massive models on your local machine now?",
     "hashtags": [
       "Janas",
       "LLM",
@@ -166,20 +189,21 @@
     "sources": [
       "https://github.com/prabanta-dev/janas"
     ],
-    "script": "Prabanta Dey released Janas to bypass your computer's memory limits.\nYour next AI project might finally fit on your standard laptop.\nJanas streams model experts directly from your SSD instead of loading into RAM.\nIt uses memory mapping to access model weights stored on disk.\nThis method allows you to run models exceeding your physical memory capacity.\nThe project is available today on GitHub as an open source tool.\nCould this finally make local large model inference accessible for everyone?",
+    "script": "Prabanta Dey released Janas to bypass your computer's memory limits.\nYour next AI project might finally fit on your standard laptop.\nJanas streams model experts directly from your SSD instead of loading into RAM.\nIt uses memory mapping to access model weights stored on disk.\nThis method allows you to run models exceeding your physical memory capacity.\nThe project is available today on GitHub as an open source tool.\nJanas specifically optimizes for Mixture of Experts models by loading only required parts.\nWill you try running massive models on your local machine now?",
     "keywords": [
       "person typing on laptop keyboard",
-      "solid state drive hardware"
+      "data streaming from ssd to cpu",
+      "person looking at computer screen"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Janas allows running huge AI models on limited RAM.",
+        "claim": "Run huge AI on tiny RAM",
         "url": "https://github.com/prabanta-dev/janas"
       },
       {
-        "claim": "Prabanta Dey released Janas.",
+        "claim": "Prabanta Dey released Janas to bypass your computer's memory limits.",
         "url": "https://github.com/prabanta-dev/janas"
       },
       {
@@ -197,10 +221,16 @@
       {
         "claim": "The project is available today on GitHub as an open source tool.",
         "url": "https://github.com/prabanta-dev/janas"
+      },
+      {
+        "claim": "Janas specifically optimizes for Mixture of Experts models by loading only required parts.",
+        "url": "https://github.com/prabanta-dev/janas"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://github.com/prabanta-dev/janas"
     ]
@@ -210,9 +240,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-13T16:36:21.858990+05:30",
+  "script_deadline": "2026-10-13T16:42:13.584006+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-13",
@@ -670,246 +700,8 @@
     "SpaceX agrees to testify to NYC Council about AI safety after receiving subpoena",
     "Geopolitics Could Derail India’s AI Ambitions, Warns Anuraag Saxena"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "AI labs are buying data from dead startups to train their models",
-          "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
-          "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around…",
-          "source": "Artificial intelligence – MIT Technology Review",
-          "published": "2026-10-13T09:00:00+00:00",
-          "angle": "AI labs are secretly buying data from dead startups to train their models without you knowing."
-        },
-        "draft": {
-          "title": "Dead Startups Selling AI Training Data",
-          "hook_text": "Failed startups are now cashing out",
-          "beats": [
-            {
-              "line": "Keelan Miskell shut down his crypto startup this year.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Keelan Miskell startup",
-              "name": "Keelan Miskell",
-              "role": "Founder, Crypto Startup",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He sold his code base for twenty-five thousand dollars.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$25,000",
-              "small": "code base sale",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Code base value",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Miskell expects even more from a separate pending data deal.",
-              "visual": "clip",
-              "query": "digital data archives",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Pending data deal",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "AI labs are actively buying these digital archives to train models.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "MIT Technology Review",
-              "domain": "technologyreview.com",
-              "headline": "AI labs are buying data from dead startups",
-              "url": "",
-              "tag": "AI labs buying data",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Startups previously considered their user data worthless after shutting down.",
-              "visual": "clip",
-              "query": "defunct office space",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data considered worthless",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Buyers prioritize unique code and historical interactions to improve performance.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract visualization of neural network data processing",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Training data needs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This trend gives founders a way to recoup initial losses.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "businessman looking at financial charts on screen",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Recouping startup losses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you sell your failed company's data for cash?",
-              "visual": "clip",
-              "query": "person looking at camera",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Sell your data?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Direct and analytical, focusing on the surprising shift from worthless assets to AI training gold.",
-          "thin": false,
-          "caption": "Keelan Miskell earned $25,000 selling his defunct crypto startup's code. AI labs are now buying archives from failed companies to train their models. Would you sell your failed company's data for cash?",
-          "hashtags": [
-            "AI",
-            "Startups",
-            "TechNews",
-            "DataEconomy",
-            "Business"
-          ],
-          "sources": [
-            "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-          ],
-          "script": "Keelan Miskell shut down his crypto startup this year.\nHe sold his code base for twenty-five thousand dollars.\nMiskell expects even more from a separate pending data deal.\nAI labs are actively buying these digital archives to train models.\nStartups previously considered their user data worthless after shutting down.\nBuyers prioritize unique code and historical interactions to improve performance.\nThis trend gives founders a way to recoup initial losses.\nWould you sell your failed company's data for cash?",
-          "keywords": [
-            "digital data archives",
-            "defunct office space",
-            "person looking at camera"
-          ],
-          "image_prompts": [
-            "abstract visualization of neural network data processing",
-            "businessman looking at financial charts on screen"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Failed startups are now cashing out",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Keelan Miskell shut down his crypto startup this year.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "He sold his code base for twenty-five thousand dollars.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Miskell expects even more from a separate pending data deal.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "AI labs are actively buying these digital archives to train models.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Startups previously considered their user data worthless after shutting down.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "Buyers prioritize unique code and historical interactions to improve performance.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-              "claim": "This trend gives founders a way to recoup initial losses.",
-              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-13T15:37:56.447125+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1588,6 +1380,225 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+          "link": "https://github.com/prabanta-dev/janas",
+          "summary": "",
+          "source": "github.com",
+          "published": "2026-10-12T22:05:43+00:00",
+          "buzz": "Hacker News 156 points",
+          "angle": "Run massive AI models on your cheap laptop by streaming data from your SSD."
+        },
+        "draft": {
+          "title": "Run LLMs larger than your RAM",
+          "hook_text": "Run huge AI on tiny RAM",
+          "beats": [
+            {
+              "line": "Prabanta Dey released Janas to bypass your computer's memory limits.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://github.com/prabanta-dev/janas",
+              "tag": "Prabanta Dey Janas",
+              "name": "Prabanta Dey",
+              "role": "Creator, Janas",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Your next AI project might finally fit on your standard laptop.",
+              "visual": "clip",
+              "query": "person typing on laptop keyboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Laptop AI potential",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Janas streams model experts directly from your SSD instead of loading into RAM.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Janas",
+              "outlet": "",
+              "domain": "github.com",
+              "headline": "",
+              "url": "https://github.com/prabanta-dev/janas",
+              "tag": "SSD expert streaming",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Janas",
+                  "domain": "github.com"
+                }
+              ]
+            },
+            {
+              "line": "It uses memory mapping to access model weights stored on disk.",
+              "visual": "clip",
+              "query": "solid state drive hardware",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Memory mapping storage",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This method allows you to run models exceeding your physical memory capacity.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "RAM",
+              "small": "Memory capacity bypass",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Bypass RAM limits",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The project is available today on GitHub as an open source tool.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "GitHub",
+              "domain": "github.com",
+              "headline": "Janas: Run LLMs larger than RAM by streaming experts",
+              "url": "",
+              "tag": "Open source Janas",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "GitHub",
+                  "domain": "github.com"
+                }
+              ]
+            },
+            {
+              "line": "Could this finally make local large model inference accessible for everyone?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Local AI",
+              "small": "Accessibility",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Local AI access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast and punchy, highlighting the technical breakthrough of memory management.",
+          "thin": false,
+          "caption": "Prabanta Dey released Janas, a tool that lets you run LLMs larger than your RAM by streaming experts from your SSD. This implementation uses memory mapping to bypass traditional hardware constraints. Could this finally make local large model inference accessible for everyone?",
+          "hashtags": [
+            "Janas",
+            "LLM",
+            "LocalAI",
+            "GitHub",
+            "OpenSource"
+          ],
+          "sources": [
+            "https://github.com/prabanta-dev/janas"
+          ],
+          "script": "Prabanta Dey released Janas to bypass your computer's memory limits.\nYour next AI project might finally fit on your standard laptop.\nJanas streams model experts directly from your SSD instead of loading into RAM.\nIt uses memory mapping to access model weights stored on disk.\nThis method allows you to run models exceeding your physical memory capacity.\nThe project is available today on GitHub as an open source tool.\nCould this finally make local large model inference accessible for everyone?",
+          "keywords": [
+            "person typing on laptop keyboard",
+            "solid state drive hardware"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Janas allows running huge AI models on limited RAM.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "Prabanta Dey released Janas.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "Janas streams model experts directly from your SSD instead of loading into RAM.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "It uses memory mapping to access model weights stored on disk.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "This method allows you to run models exceeding your physical memory capacity.",
+              "url": "https://github.com/prabanta-dev/janas"
+            },
+            {
+              "claim": "The project is available today on GitHub as an open source tool.",
+              "url": "https://github.com/prabanta-dev/janas"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://github.com/prabanta-dev/janas"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-13T16:36:21.858990+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2115,8 +2126,8 @@
       "event": "Intel built the new D270 discrete GPU accelerator for data center workloads. It features the Xe3P architecture, previously codenamed Crescent Island. The hardware delivers massive capacity with up to 480 GB of LPDDR5X memory. Enterprise dat"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-13T16:25+05:30",
@@ -2164,7 +2175,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-13",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-13-1",
   "gemini_use": {
     "day": "2026-10-13",
@@ -2296,30 +2307,6 @@
     "gemini-flash-lite-latest": 1791888395.2527516
   },
   "editor_log": [
-    {
-      "at": "2026-10-13T13:17+05:30",
-      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
-      "overall": 4.0,
-      "scores": {
-        "hook": 4,
-        "specific": 3,
-        "substance": 3,
-        "accuracy": 6,
-        "visuals": 3,
-        "flow": 5
-      },
-      "one_line": "Generic script and repetitive visuals fail the premium standards of this account.",
-      "fixes": [
-        "LINE 1: Start with the lead author's name or university instead of 'A new paper'.",
-        "LINE 2: Replace 'specific functions' with a concrete example of a hidden capability.",
-        "LINE 5: Detail one specific 'fundamental limit' mentioned in the arXiv findings."
-      ],
-      "visual": [
-        "line 3: Static arXiv card repeated too many times; lacks visual variety.",
-        "line 4: Medical X-ray imagery is unrelated to AI capability suppression.",
-        "line 5: Third reuse of the same title card creates a boring loop."
-      ]
-    },
     {
       "at": "2026-10-13T13:26+05:30",
       "title": "AI Models Can Provably Hide Arbitrary Capabilities",
@@ -2744,6 +2731,28 @@
         "line 1: The same static text screen is held for too long (4.8s).",
         "line 2: Visuals are static and repetitive; the BBVA logo appears in almost every frame.",
         "line 5: Visuals are too abstract; use a diagram or icon representing 'interoperability' instead of"
+      ]
+    },
+    {
+      "at": "2026-10-13T16:41+05:30",
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong technical content, but the visual presentation is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 7: Replace 'accessible for everyone' with a specific hardware target like 'accessible for 8GB RAM users'."
+      ],
+      "visual": [
+        "line 1: The same GitHub screenshot is held for too long across multiple frames.",
+        "line 2: Visuals are static; needs a screen recording of the tool in action.",
+        "line 3: Repetitive use of the same GitHub icon/logo style."
       ]
     }
   ],
