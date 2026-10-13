@@ -11,6 +11,8 @@ import video as V
 
 W, H, FPS = V.W, V.H, V.FPS
 ACCENT = V.ACCENT
+MAX_PHOTO_USES = 1   # each photo once per reel (the hook counts): the editor marks any repeat down (13 Oct)
+SPLIT_AFTER = 4.0    # a line longer than this gets a second shot (its label), so there's a cut every 2-3 s
 CARD_TOP, CARD_BOTTOM, CARD_W = 470, 1700, 930   # the picture area; captions live above it
 CAP_Y0, CAP_H = 150, 320                          # caption strip (top of the screen)
 THEMES = {
@@ -630,7 +632,7 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
         """Real photos of the story, each shown at most twice in the whole reel."""
         out, planned = [], {}
         for k in range(n_pieces):
-            fresh = [i for i in real if uses.get(key_of(i), 0) + planned.get(key_of(i), 0) < 2]
+            fresh = [i for i in real if uses.get(key_of(i), 0) + planned.get(key_of(i), 0) < MAX_PHOTO_USES]
             if not fresh:
                 break
             info = min(fresh, key=lambda i: uses.get(key_of(i), 0) + planned.get(key_of(i), 0))
@@ -672,11 +674,13 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
         text_card = specs[0][0] in ("stat", "person", "source", "logo")
         if text_card and not multi:
             pieces = 1
+            if tag and end - start > SPLIT_AFTER and not any(k == "statement" for k, _ in specs):
+                specs, pieces = [specs[0], ("statement", {"tag": tag})], 2  # card, then its label
         for k in range(pieces):
             kind, info = specs[k % len(specs)]
             repeat = k // len(specs)
             stop = start + (end - start) * (k + 1) / pieces
-            if kind == "picture" and uses.get(key_of(info), 0) >= 2:  # shown twice already: say it in words
+            if kind == "picture" and uses.get(key_of(info), 0) >= MAX_PHOTO_USES:  # shown already: say it in words
                 brand = next((br for br in b.get("brands") or []
                               if re.sub(r"[^a-z0-9]", "", str(br.get("name", "")).lower()) not in shown_brands), None)
                 if tag:
