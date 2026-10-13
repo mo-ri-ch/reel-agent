@@ -143,3 +143,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   while waiting for the 12:30 IST reset (expected; owner told). No failed runs. Evening fixes of 12 Oct not yet exercised.
 - Change: market-research firms' sales blogs (Kings Research, Grand View, MarketsandMarkets…) filtered as press releases;
   one was in today's candidate list. Metric: share of picked stories from real newsrooms.
+
+## 2026-10-13: visual variety
+- Photo once per reel (hook counts); lines > 4 s split into card + label. Why: 5/6 reels rejected for repetition (editor visuals 3-7). Metric: editor visuals score, pass rate (baseline 13 Oct: 1 of 6 passed).
