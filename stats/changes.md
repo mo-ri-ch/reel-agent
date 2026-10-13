@@ -146,3 +146,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-13: visual variety
 - Photo once per reel (hook counts); lines > 4 s split into card + label. Why: 5/6 reels rejected for repetition (editor visuals 3-7). Metric: editor visuals score, pass rate (baseline 13 Oct: 1 of 6 passed).
+
+## 2026-10-13 evening: max shot 3.2 s
+- Lines cut into <=3.2 s shots (card, label, real logo); letter-block logos dropped. Baseline 13 Oct: 2 of ~20 passed, visuals median 5. Metric: editor visuals, pass rate.
