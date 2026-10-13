@@ -1,6 +1,7 @@
 """Studio style: a clean studio background (dark and light scenes), real pictures as floating cards, captions at the
 top (spoken words appear one by one, the key word in a highlight box) and smooth motion on every shot.
 Inspired by hand-animated explainer reels. Every frame is drawn here in Python and piped to ffmpeg."""
+import math
 import os
 import re
 import subprocess
@@ -12,7 +13,7 @@ import video as V
 W, H, FPS = V.W, V.H, V.FPS
 ACCENT = V.ACCENT
 MAX_PHOTO_USES = 1   # each photo once per reel (the hook counts): the editor marks any repeat down (13 Oct)
-SPLIT_AFTER = 4.0    # a line longer than this gets a second shot (its label), so there's a cut every 2-3 s
+MAX_SHOT = 3.2       # no shot longer than this: lines are cut into shots of what fits them (card, label, logo)
 CARD_TOP, CARD_BOTTOM, CARD_W = 470, 1700, 930   # the picture area; captions live above it
 CAP_Y0, CAP_H = 150, 320                          # caption strip (top of the screen)
 THEMES = {
@@ -671,11 +672,28 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             specs = [("statement", {"tag": tag})]
         if not specs:
             specs = [("logo", {"name": (b.get("brands") or [{}])[0].get("name") or "AI", "domain": ""})]
-        text_card = specs[0][0] in ("stat", "person", "source", "logo")
-        if text_card and not multi:
-            pieces = 1
-            if tag and end - start > SPLIT_AFTER and not any(k == "statement" for k, _ in specs):
-                specs, pieces = [specs[0], ("statement", {"tag": tag})], 2  # card, then its label
+        # variety: never hold one shot longer than MAX_SHOT; cycle through what fits this line (13 Oct: the editor
+        # rejected 18 of 20 reels for cards held 5-8 s, letter-block logos and initials cards)
+        pool = []
+        for kind_, info_ in specs:
+            if kind_ == "logo" and info_.get("logo") is None and tag:
+                continue  # a letter block says nothing: the line's label is better
+            pool.append((kind_, info_))
+        if tag and not any(k_ == "statement" for k_, _ in pool):
+            pool.append(("statement", {"tag": tag}))
+        for br in b.get("brands") or []:
+            key = re.sub(r"[^a-z0-9]", "", str(br.get("name", "")).lower())
+            if key and key not in shown_brands and len(pool) < 3:
+                lg = V.brand_logo(br["name"], br.get("domain", ""))
+                if lg is not None:  # only real logos
+                    shown_brands.add(key)
+                    pool.append(("logo", {"name": br["name"], "domain": br.get("domain", ""), "logo": lg}))
+                break
+        if pool:
+            specs = pool
+        pieces = max(1, math.ceil((end - start) / MAX_SHOT - 0.15))
+        if len(specs) == 1 and specs[0][0] != "picture":
+            pieces = 1  # one text card: splitting it would only repeat it
         for k in range(pieces):
             kind, info = specs[k % len(specs)]
             repeat = k // len(specs)
