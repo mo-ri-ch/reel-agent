@@ -13,8 +13,26 @@
   },
   "draft": {
     "title": "Dead Startups Selling AI Training Data",
-    "hook_text": "Failed startups are now cashing out",
+    "hook_text": "Failed startups are selling data",
     "beats": [
+      {
+        "line": "Failed startups are selling their data for thousands of dollars.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "$25,000",
+        "small": "startup code sale",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Startups selling data",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
       {
         "line": "Keelan Miskell shut down his crypto startup this year.",
         "visual": "person",
@@ -34,7 +52,7 @@
         "brands": []
       },
       {
-        "line": "He sold his code base for twenty-five thousand dollars.",
+        "line": "He netted twenty-five thousand dollars for his code base.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
@@ -52,35 +70,17 @@
         "brands": []
       },
       {
-        "line": "Miskell expects even more from a separate pending data deal.",
-        "visual": "clip",
-        "query": "digital data archives",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Pending data deal",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "AI labs are actively buying these digital archives to train models.",
-        "visual": "source",
+        "line": "Labs like OpenAI and Anthropic buy these archives to train models.",
+        "visual": "official",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "",
-        "outlet": "MIT Technology Review",
-        "domain": "technologyreview.com",
-        "headline": "AI labs are buying data from dead startups",
-        "url": "",
+        "entity": "OpenAI",
+        "outlet": "",
+        "domain": "openai.com",
+        "headline": "",
+        "url": "https://openai.com",
         "tag": "AI labs buying data",
         "name": "",
         "role": "",
@@ -90,7 +90,7 @@
       {
         "line": "Startups previously considered their user data worthless after shutting down.",
         "visual": "clip",
-        "query": "defunct office space",
+        "query": "empty office building",
         "prompt": "",
         "big": "",
         "small": "",
@@ -106,7 +106,7 @@
         "brands": []
       },
       {
-        "line": "Buyers prioritize unique code and historical interactions to improve performance.",
+        "line": "Buyers use unique code and historical interactions to improve performance.",
         "visual": "image",
         "query": "technology",
         "prompt": "abstract visualization of neural network data processing",
@@ -125,15 +125,15 @@
       },
       {
         "line": "This trend gives founders a way to recoup initial losses.",
-        "visual": "image",
+        "visual": "source",
         "query": "technology",
-        "prompt": "businessman looking at financial charts on screen",
+        "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
+        "outlet": "MIT Technology Review",
+        "domain": "technologyreview.com",
+        "headline": "AI labs are buying data from dead startups",
         "url": "",
         "tag": "Recouping startup losses",
         "name": "",
@@ -142,7 +142,7 @@
         "brands": []
       },
       {
-        "line": "Would you sell your failed company's data for cash?",
+        "line": "Would you sell your users' data to save your failing business?",
         "visual": "clip",
         "query": "person looking at camera",
         "prompt": "",
@@ -153,7 +153,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Sell your data?",
+        "tag": "Sell your users data?",
         "name": "",
         "role": "",
         "x": "",
@@ -162,7 +162,7 @@
     ],
     "delivery": "Direct and analytical, focusing on the surprising shift from worthless assets to AI training gold.",
     "thin": false,
-    "caption": "Keelan Miskell earned $25,000 selling his defunct crypto startup's code. AI labs are now buying archives from failed companies to train their models. Would you sell your failed company's data for cash?",
+    "caption": "Keelan Miskell earned $25,000 selling his defunct crypto startup's code. Labs like OpenAI and Anthropic are now buying archives from failed companies to train their models. Would you sell your users' data to save your failing business?",
     "hashtags": [
       "AI",
       "Startups",
@@ -173,20 +173,26 @@
     "sources": [
       "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
     ],
-    "script": "Keelan Miskell shut down his crypto startup this year.\nHe sold his code base for twenty-five thousand dollars.\nMiskell expects even more from a separate pending data deal.\nAI labs are actively buying these digital archives to train models.\nStartups previously considered their user data worthless after shutting down.\nBuyers prioritize unique code and historical interactions to improve performance.\nThis trend gives founders a way to recoup initial losses.\nWould you sell your failed company's data for cash?",
+    "script": "Failed startups are selling their data for thousands of dollars.\nKeelan Miskell shut down his crypto startup this year.\nHe netted twenty-five thousand dollars for his code base.\nLabs like OpenAI and Anthropic buy these archives to train models.\nStartups previously considered their user data worthless after shutting down.\nBuyers use unique code and historical interactions to improve performance.\nThis trend gives founders a way to recoup initial losses.\nWould you sell your users' data to save your failing business?",
     "keywords": [
-      "digital data archives",
-      "defunct office space",
+      "empty office building",
       "person looking at camera"
     ],
     "image_prompts": [
-      "abstract visualization of neural network data processing",
-      "businessman looking at financial charts on screen"
+      "abstract visualization of neural network data processing"
     ],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Failed startups are now cashing out",
+        "claim": "Failed startups are selling data",
+        "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+      },
+      {
+        "claim": "Failed startups are selling their data for thousands of dollars.",
+        "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+      },
+      {
+        "claim": "Keelan Miskell netted $25,000 for his startup's code base.",
         "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
       },
       {
@@ -194,23 +200,19 @@
         "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
       },
       {
-        "claim": "He sold his code base for twenty-five thousand dollars.",
+        "claim": "Keelan Miskell netted $25,000 for his code base.",
         "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
       },
       {
-        "claim": "Miskell expects even more from a separate pending data deal.",
-        "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-      },
-      {
-        "claim": "AI labs are actively buying these digital archives to train models.",
-        "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+        "claim": "Labs like OpenAI and Anthropic buy these archives to train models.",
+        "url": "https://www.businessinsider.com/ai-training-employee-data-emails-slack-dms-2026-10"
       },
       {
         "claim": "Startups previously considered their user data worthless after shutting down.",
         "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
       },
       {
-        "claim": "Buyers prioritize unique code and historical interactions to improve performance.",
+        "claim": "Buyers use unique code and historical interactions to improve performance.",
         "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
       },
       {
@@ -220,7 +222,8 @@
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
     ]
@@ -230,9 +233,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-13T15:37:56.447125+05:30",
+  "script_deadline": "2026-10-13T15:44:48.357499+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-13",
@@ -691,189 +694,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "'Brutal session' for chip stocks shows AI trade is turning",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvTjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
-          "summary": "'Brutal session' for chip stocks shows AI trade is turning Reuters",
-          "source": "Reuters",
-          "published": "2026-10-13T07:11:02+00:00",
-          "angle": "A brutal session for chip stocks signals the massive AI trade might finally be turning."
-        },
-        "draft": {
-          "title": "Nvidia and AMD drop as AI trade hits wall",
-          "hook_text": "Chip stocks just hit a wall",
-          "beats": [
-            {
-              "line": "Nvidia and AMD suffered a brutal session as investors questioned massive spending on AI infrastructure.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://www.nvidia.com",
-              "tag": "Nvidia and AMD drop",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                },
-                {
-                  "name": "AMD",
-                  "domain": "amd.com"
-                }
-              ]
-            },
-            {
-              "line": "The Nikkei dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.",
-              "visual": "clip",
-              "query": "financial trading screens",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Nikkei dived sharply",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Markets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.",
-              "visual": "clip",
-              "query": "data center servers",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data center investments",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Reuters",
-              "domain": "reuters.com",
-              "headline": "Brutal session for chip stocks shows AI trade is turning",
-              "url": "",
-              "tag": "Hardware boom tested",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Are you adjusting your tech portfolio after this drop?",
-              "visual": "clip",
-              "query": "person looking at smartphone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Adjusting tech portfolio",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and sharp, shifting from market shock over Nvidia and AMD to a direct question about investor portfolios",
-          "thin": false,
-          "caption": "Nvidia and AMD suffered a brutal session as investors questioned massive spending on AI infrastructure. The Nikkei dived sharply following heavy losses on Wall Street. Are you adjusting your tech portfolio after this drop?",
-          "hashtags": [
-            "Nvidia",
-            "AMD",
-            "WallStreet",
-            "TechStocks",
-            "Stocks"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvNjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
-            "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
-          ],
-          "script": "Nvidia and AMD suffered a brutal session as investors questioned massive spending on AI infrastructure.\nThe Nikkei dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.\nMarkets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.\nThe recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.\nAre you adjusting your tech portfolio after this drop?",
-          "keywords": [
-            "financial trading screens",
-            "data center servers",
-            "person looking at smartphone screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Nvidia suffered a brutal session",
-              "url": "https://247wallst.com/investing/2026/10/02/amd-climbs-3-as-chip-stocks-extend-their-run-arm-jumps-8-nvidia-rises-2/"
-            },
-            {
-              "claim": "AMD suffered a brutal session",
-              "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
-            },
-            {
-              "claim": "Investors questioned massive spending on AI infrastructure",
-              "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
-            },
-            {
-              "claim": "The Nikkei dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations",
-              "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
-            },
-            {
-              "claim": "Markets are reacting to mounting concerns over whether massive data center investments will deliver fast returns",
-              "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.reuters.com/world/asia-pacific/global-markets-ai-selloff-analysis-pix-2026-10-13/",
-            "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvNjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
-            "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-13T14:47:09.159175+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1727,6 +1547,245 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AI labs are buying data from dead startups to train their models",
+          "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+          "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around…",
+          "source": "Artificial intelligence – MIT Technology Review",
+          "published": "2026-10-13T09:00:00+00:00",
+          "angle": "AI labs are secretly buying data from dead startups to train their models without you knowing."
+        },
+        "draft": {
+          "title": "Dead Startups Selling AI Training Data",
+          "hook_text": "Failed startups are now cashing out",
+          "beats": [
+            {
+              "line": "Keelan Miskell shut down his crypto startup this year.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Keelan Miskell startup",
+              "name": "Keelan Miskell",
+              "role": "Founder, Crypto Startup",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He sold his code base for twenty-five thousand dollars.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$25,000",
+              "small": "code base sale",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Code base value",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Miskell expects even more from a separate pending data deal.",
+              "visual": "clip",
+              "query": "digital data archives",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Pending data deal",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "AI labs are actively buying these digital archives to train models.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "MIT Technology Review",
+              "domain": "technologyreview.com",
+              "headline": "AI labs are buying data from dead startups",
+              "url": "",
+              "tag": "AI labs buying data",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Startups previously considered their user data worthless after shutting down.",
+              "visual": "clip",
+              "query": "defunct office space",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data considered worthless",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Buyers prioritize unique code and historical interactions to improve performance.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract visualization of neural network data processing",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Training data needs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This trend gives founders a way to recoup initial losses.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "businessman looking at financial charts on screen",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Recouping startup losses",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you sell your failed company's data for cash?",
+              "visual": "clip",
+              "query": "person looking at camera",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sell your data?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Direct and analytical, focusing on the surprising shift from worthless assets to AI training gold.",
+          "thin": false,
+          "caption": "Keelan Miskell earned $25,000 selling his defunct crypto startup's code. AI labs are now buying archives from failed companies to train their models. Would you sell your failed company's data for cash?",
+          "hashtags": [
+            "AI",
+            "Startups",
+            "TechNews",
+            "DataEconomy",
+            "Business"
+          ],
+          "sources": [
+            "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+          ],
+          "script": "Keelan Miskell shut down his crypto startup this year.\nHe sold his code base for twenty-five thousand dollars.\nMiskell expects even more from a separate pending data deal.\nAI labs are actively buying these digital archives to train models.\nStartups previously considered their user data worthless after shutting down.\nBuyers prioritize unique code and historical interactions to improve performance.\nThis trend gives founders a way to recoup initial losses.\nWould you sell your failed company's data for cash?",
+          "keywords": [
+            "digital data archives",
+            "defunct office space",
+            "person looking at camera"
+          ],
+          "image_prompts": [
+            "abstract visualization of neural network data processing",
+            "businessman looking at financial charts on screen"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Failed startups are now cashing out",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            },
+            {
+              "claim": "Keelan Miskell shut down his crypto startup this year.",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            },
+            {
+              "claim": "He sold his code base for twenty-five thousand dollars.",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            },
+            {
+              "claim": "Miskell expects even more from a separate pending data deal.",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            },
+            {
+              "claim": "AI labs are actively buying these digital archives to train models.",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            },
+            {
+              "claim": "Startups previously considered their user data worthless after shutting down.",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            },
+            {
+              "claim": "Buyers prioritize unique code and historical interactions to improve performance.",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            },
+            {
+              "claim": "This trend gives founders a way to recoup initial losses.",
+              "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-13T15:37:56.447125+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2254,8 +2313,8 @@
       "event": "Intel built the new D270 discrete GPU accelerator for data center workloads. It features the Xe3P architecture, previously codenamed Crescent Island. The hardware delivers massive capacity with up to 480 GB of LPDDR5X memory. Enterprise dat"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-13T14:10+05:30",
@@ -2303,7 +2362,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-13",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-13-1",
   "gemini_use": {
     "day": "2026-10-13",
@@ -2421,30 +2480,6 @@
     "gemini-3-flash-preview": 1791880507.8980613
   },
   "editor_log": [
-    {
-      "at": "2026-10-12T17:09+05:30",
-      "title": "Will the HomeView be Apple’s first smart home success?",
-      "overall": 6.3,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 5,
-        "captions": 3,
-        "flow": 7
-      },
-      "one_line": "Weak hook, repetitive visuals, and failed captioning standards make this unsuitable for publication.",
-      "fixes": [
-        "LINE 4: Remove 'The product aims to solve past struggles' as it is vague filler.",
-        "LINE 5: Replace 'Development follows years of reports' with a specific detail about the device's rumored specs."
-      ],
-      "visual": [
-        "line 1: Visuals are static and repetitive; the HomePod image is irrelevant to a display device.",
-        "line 3: Visuals are generic Apple logos; needs a mockup or diagram of the HomeView.",
-        "line 5: Visuals are identical to previous frames; lacks variety and engagement."
-      ]
-    },
     {
       "at": "2026-10-12T17:29+05:30",
       "title": "Just 10 minutes of AI use may erode persistence on hard tasks",
@@ -2868,6 +2903,30 @@
         "line 3: Generic code snippet does not represent SpaceX or NYC Council.",
         "line 4: Abstract tunnel footage is irrelevant to the topic of AI safety.",
         "line 6: Generic stock office footage is not a substitute for actual news imagery."
+      ]
+    },
+    {
+      "at": "2026-10-13T15:44+05:30",
+      "title": "AI labs are buying data from dead startups to train their models",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 7,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "Visually repetitive and lacks a compelling hook; needs more dynamic, varied imagery.",
+      "fixes": [
+        "LINE 1: Start with the dollar amount to hook the viewer: 'Failed startups are selling their data for thousands of dollars.'",
+        "LINE 4: Name specific AI labs if possible, or replace 'AI labs' with 'Companies like OpenAI or Anthropic' if supported by the source.",
+        "LINE 8: Make the question more provocative: 'Would you sell your users' data to save your failing business?'"
+      ],
+      "visual": [
+        "line 1: The same abstract illustration is held for too long.",
+        "line 4: The MIT Technology Review logo is static and lacks visual context for the 'buying data' cl",
+        "line 5: Visuals are just text-on-screen; needs a relevant graphic or stock footage of a server/dat"
       ]
     }
   ],
