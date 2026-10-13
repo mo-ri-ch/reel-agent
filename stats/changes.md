@@ -137,3 +137,9 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-12 evening: from rejected reels
 - Photo reuse max 2 per reel by content (hook counts). Captions judged by code, not the Lite vision model (it scored correct captions 3/10). Personal essays filtered. Metric: editor visuals score (baseline 3-7 today), reels passing 8/10.
+
+## 2026-10-13: daily check
+- 12 Oct: 1 of 6 posted (strict editor rejected 10 reels, which used up the free quota by 17:40 IST); 13 Oct 09:00/11:30 missed
+  while waiting for the 12:30 IST reset (expected; owner told). No failed runs. Evening fixes of 12 Oct not yet exercised.
+- Change: market-research firms' sales blogs (Kings Research, Grand View, MarketsandMarkets…) filtered as press releases;
+  one was in today's candidate list. Metric: share of picked stories from real newsrooms.

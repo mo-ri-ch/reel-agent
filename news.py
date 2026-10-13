@@ -40,7 +40,11 @@ LAST_REPORT = {}  # headlines found per source on the last fetch (for checking t
 # Not news for our audience: press releases, small-company PR, local events and trainings
 PR_SOURCES = re.compile(r"(?i)pr ?newswire|business ?wire|globe ?newswire|ein ?presswire|openpr|newswire|"
                         r"accesswire|prlog|press release|news\.vumc\.org|health news\b|marketscreener|stocktitan|tipranks|investing\.com|"
-                        r"zacks|benzinga|fool\.com|seeking ?alpha|marketbeat|newswise|eurekalert|prweb|einnews")
+                        r"zacks|benzinga|fool\.com|seeking ?alpha|marketbeat|newswise|eurekalert|prweb|einnews|"
+                        # market-research firms' sales blogs (report ads, not news)
+                        r"kings ?research|precedence ?research|grand ?view ?research|markets ?and ?markets|mordor ?intelligence|"
+                        r"fortune ?business ?insights|allied ?market ?research|imarc|research ?and ?markets|future ?market ?insights|"
+                        r"market\.us\b|transparency ?market ?research|verified ?market ?(research|reports)|polaris ?market")
 WEAK_STORY = re.compile(
     r"(?i)\b(announces? (strategic|its|a) (foray|partnership|collaboration|mou)|strategic foray|signs? (an? )?mou|"
     r"plus other stories|other stories with|news roundup|weekly roundup|how-to;|"

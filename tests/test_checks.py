@@ -311,6 +311,8 @@ check("keep real news", news.newsworthy({"title": "Amazon in talks to acquire AI
 
 check("drop personal essay", news.newsworthy({"title": "Learning to use local AI is exciting, overwhelming, and frustrating",
                                              "source": "The Verge"}), False)
+check("drop market-research blog", news.newsworthy({"title": "U.S. High Bandwidth Memory (HBM): Solving AI Bottlenecks",
+                                                  "source": "Kings Research", "link": "https://www.kingsresearch.com/blog/x"}), False)
 check("keep 'Meta' news", news.newsworthy({"title": "Meta cuts 600 AI jobs", "source": "Reuters"}), True)
 
 # all free models used up: pause quietly until the reset (one message), instead of a failure every 10 minutes
