@@ -12,29 +12,38 @@
     "angle": "A brutal session for chip stocks signals the massive AI trade might finally be turning."
   },
   "draft": {
-    "title": "Chip stocks tumble as AI trade hits wall",
+    "title": "Nvidia and AMD drop as AI trade hits wall",
     "hook_text": "Chip stocks just hit a wall",
     "beats": [
       {
-        "line": "Chip stocks suffered a brutal session across global markets as investors questioned the massive spending on AI infrastructure.",
-        "visual": "clip",
-        "query": "stock market trading floor",
+        "line": "Nvidia and AMD suffered a brutal session as investors questioned massive spending on AI infrastructure.",
+        "visual": "official",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "",
+        "entity": "Nvidia",
         "outlet": "",
-        "domain": "",
+        "domain": "nvidia.com",
         "headline": "",
-        "url": "",
-        "tag": "Chip stocks hit wall",
+        "url": "https://www.nvidia.com",
+        "tag": "Nvidia and AMD drop",
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          },
+          {
+            "name": "AMD",
+            "domain": "amd.com"
+          }
+        ]
       },
       {
-        "line": "Asian shares dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.",
+        "line": "The Nikkei dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.",
         "visual": "clip",
         "query": "financial trading screens",
         "prompt": "",
@@ -45,7 +54,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Asian shares dive",
+        "tag": "Nikkei dived sharply",
         "name": "",
         "role": "",
         "x": "",
@@ -106,23 +115,22 @@
         "brands": []
       }
     ],
-    "delivery": "urgent and sharp, shifting from global market shock to a direct question about investor portfolios",
+    "delivery": "urgent and sharp, shifting from market shock over Nvidia and AMD to a direct question about investor portfolios",
     "thin": false,
-    "caption": "Chip stocks suffered a brutal session across global markets as investors questioned massive spending on AI infrastructure. Asian shares dived sharply following heavy losses on Wall Street. Are you adjusting your tech portfolio after this drop?",
+    "caption": "Nvidia and AMD suffered a brutal session as investors questioned massive spending on AI infrastructure. The Nikkei dived sharply following heavy losses on Wall Street. Are you adjusting your tech portfolio after this drop?",
     "hashtags": [
-      "Reuters",
+      "Nvidia",
+      "AMD",
       "WallStreet",
       "TechStocks",
-      "Market",
       "Stocks"
     ],
     "sources": [
       "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvNjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
       "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
     ],
-    "script": "Chip stocks suffered a brutal session across global markets as investors questioned the massive spending on AI infrastructure.\nAsian shares dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.\nMarkets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.\nThe recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.\nAre you adjusting your tech portfolio after this drop?",
+    "script": "Nvidia and AMD suffered a brutal session as investors questioned massive spending on AI infrastructure.\nThe Nikkei dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.\nMarkets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.\nThe recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.\nAre you adjusting your tech portfolio after this drop?",
     "keywords": [
-      "stock market trading floor",
       "financial trading screens",
       "data center servers",
       "person looking at smartphone screen"
@@ -131,29 +139,30 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Chip stocks just hit a wall",
-        "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+        "claim": "Nvidia suffered a brutal session",
+        "url": "https://247wallst.com/investing/2026/10/02/amd-climbs-3-as-chip-stocks-extend-their-run-arm-jumps-8-nvidia-rises-2/"
       },
       {
-        "claim": "Chip stocks suffered a brutal session across global markets as investors questioned the massive spending on AI infrastructure.",
-        "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+        "claim": "AMD suffered a brutal session",
+        "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
       },
       {
-        "claim": "Asian shares dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.",
-        "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-dive-focus-earnings-015003210.html"
+        "claim": "Investors questioned massive spending on AI infrastructure",
+        "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
       },
       {
-        "claim": "Markets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.",
-        "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+        "claim": "The Nikkei dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations",
+        "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
       },
       {
-        "claim": "The recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.",
-        "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+        "claim": "Markets are reacting to mounting concerns over whether massive data center investments will deliver fast returns",
+        "url": "https://wtvbam.com/2026/10/13/analysis-brutal-session-for-chip-stocks-shows-ai-trade-is-turning/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 2,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.reuters.com/world/asia-pacific/global-markets-ai-selloff-analysis-pix-2026-10-13/",
       "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvNjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
@@ -165,9 +174,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-13T14:37:05.289111+05:30",
+  "script_deadline": "2026-10-13T14:47:09.159175+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-13",
@@ -618,260 +627,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
-          "link": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
-          "summary": "",
-          "source": "intel.com",
-          "published": "2026-10-12T21:35:35+00:00",
-          "buzz": "Hacker News 185 points",
-          "angle": "Intel’s new D270 GPU AI Accelerator packs up to 480 GB of LPDDR5X memory."
-        },
-        "draft": {
-          "title": "Intel D270 GPU AI Accelerator",
-          "hook_text": "Intel packed 480 gigabytes into a new GPU",
-          "beats": [
-            {
-              "line": "Intel built the new D270 discrete GPU accelerator for data center workloads.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Intel D270 GPU",
-              "outlet": "",
-              "domain": "intel.com",
-              "headline": "",
-              "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
-              "tag": "Intel D270 GPU",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Intel",
-                  "domain": "intel.com"
-                }
-              ]
-            },
-            {
-              "line": "It features the Xe3P architecture, previously codenamed Crescent Island.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Intel D270 GPU",
-              "outlet": "",
-              "domain": "intel.com",
-              "headline": "",
-              "url": "https://videocardz.com/newz/intel-gpu-d270-is-xe3p-crescent-island-card-with-480gb-lpddr5x-memory",
-              "tag": "Xe3P Crescent Island architecture",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Intel",
-                  "domain": "intel.com"
-                }
-              ]
-            },
-            {
-              "line": "The hardware delivers massive capacity with up to 480 GB of LPDDR5X memory.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "480 GB",
-              "small": "LPDDR5X memory capacity",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Intel",
-                  "domain": "intel.com"
-                }
-              ]
-            },
-            {
-              "line": "Enterprise data centers rely on this memory size to power large AI models efficiently.",
-              "visual": "clip",
-              "query": "server room racks blinking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Powering large AI models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Intel",
-                  "domain": "intel.com"
-                }
-              ]
-            },
-            {
-              "line": "Unlike consumer graphics cards, this accelerator skips traditional 3D display outputs entirely.",
-              "visual": "clip",
-              "query": "microchip on circuit board",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No 3D display outputs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Intel",
-                  "domain": "intel.com"
-                }
-              ]
-            },
-            {
-              "line": "Intel designed it specifically for heavy server demands instead of gaming setups.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "intel.com",
-              "domain": "intel.com",
-              "headline": "Intel D270 GPU AI Accelerator",
-              "url": "",
-              "tag": "Built for heavy servers",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Intel",
-                  "domain": "intel.com"
-                }
-              ]
-            },
-            {
-              "line": "Will your next enterprise cluster run on this new processor?",
-              "visual": "clip",
-              "query": "data center monitor screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Enterprise server upgrade",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Intel",
-                  "domain": "intel.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "direct, sharp, and focused on hardware specs with upbeat tech journalist energy",
-          "thin": false,
-          "caption": "Intel built the new D270 discrete GPU featuring the Xe3P architecture and up to 480 GB of LPDDR5X memory for data centers. How will this massive memory capacity change server racks? Are you upgrading your cluster?",
-          "hashtags": [
-            "Intel",
-            "GPU",
-            "Hardware",
-            "TechNews",
-            "Datacenter"
-          ],
-          "sources": [
-            "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
-            "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html",
-            "https://videocardz.com/newz/intel-gpu-d270-is-xe3p-crescent-island-card-with-480gb-lpddr5x-memory"
-          ],
-          "script": "Intel built the new D270 discrete GPU accelerator for data center workloads.\nIt features the Xe3P architecture, previously codenamed Crescent Island.\nThe hardware delivers massive capacity with up to 480 GB of LPDDR5X memory.\nEnterprise data centers rely on this memory size to power large AI models efficiently.\nUnlike consumer graphics cards, this accelerator skips traditional 3D display outputs entirely.\nIntel designed it specifically for heavy server demands instead of gaming setups.\nWill your next enterprise cluster run on this new processor?",
-          "keywords": [
-            "server room racks blinking",
-            "microchip on circuit board",
-            "data center monitor screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Intel packed 480 gigabytes into a new GPU",
-              "url": "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html"
-            },
-            {
-              "claim": "Intel built the new D270 discrete GPU accelerator for data center workloads.",
-              "url": "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html"
-            },
-            {
-              "claim": "It features the Xe3P architecture, previously codenamed Crescent Island.",
-              "url": "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html"
-            },
-            {
-              "claim": "The hardware delivers massive capacity with up to 480 GB of LPDDR5X memory.",
-              "url": "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html"
-            },
-            {
-              "claim": "Enterprise data centers rely on this memory size to power large AI models efficiently.",
-              "url": "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html"
-            },
-            {
-              "claim": "Unlike consumer graphics cards, this accelerator skips traditional 3D display outputs entirely.",
-              "url": "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html"
-            },
-            {
-              "claim": "Intel designed it specifically for heavy server demands instead of gaming setups.",
-              "url": "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
-            "https://www.notebookcheck.net/Intel-s-new-GPU-packs-up-to-480GB-of-memory-but-skips-3D-graphics.1422369.0.html",
-            "https://videocardz.com/newz/intel-gpu-d270-is-xe3p-crescent-island-card-with-480gb-lpddr5x-memory"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-13T13:55:36.452997+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1595,6 +1350,180 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "'Brutal session' for chip stocks shows AI trade is turning",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvTjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
+          "summary": "'Brutal session' for chip stocks shows AI trade is turning Reuters",
+          "source": "Reuters",
+          "published": "2026-10-13T07:11:02+00:00",
+          "angle": "A brutal session for chip stocks signals the massive AI trade might finally be turning."
+        },
+        "draft": {
+          "title": "Chip stocks tumble as AI trade hits wall",
+          "hook_text": "Chip stocks just hit a wall",
+          "beats": [
+            {
+              "line": "Chip stocks suffered a brutal session across global markets as investors questioned the massive spending on AI infrastructure.",
+              "visual": "clip",
+              "query": "stock market trading floor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Chip stocks hit wall",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Asian shares dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.",
+              "visual": "clip",
+              "query": "financial trading screens",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Asian shares dive",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Markets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.",
+              "visual": "clip",
+              "query": "data center servers",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data center investments",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Reuters",
+              "domain": "reuters.com",
+              "headline": "Brutal session for chip stocks shows AI trade is turning",
+              "url": "",
+              "tag": "Hardware boom tested",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Are you adjusting your tech portfolio after this drop?",
+              "visual": "clip",
+              "query": "person looking at smartphone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Adjusting tech portfolio",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and sharp, shifting from global market shock to a direct question about investor portfolios",
+          "thin": false,
+          "caption": "Chip stocks suffered a brutal session across global markets as investors questioned massive spending on AI infrastructure. Asian shares dived sharply following heavy losses on Wall Street. Are you adjusting your tech portfolio after this drop?",
+          "hashtags": [
+            "Reuters",
+            "WallStreet",
+            "TechStocks",
+            "Market",
+            "Stocks"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvNjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
+            "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+          ],
+          "script": "Chip stocks suffered a brutal session across global markets as investors questioned the massive spending on AI infrastructure.\nAsian shares dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.\nMarkets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.\nThe recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.\nAre you adjusting your tech portfolio after this drop?",
+          "keywords": [
+            "stock market trading floor",
+            "financial trading screens",
+            "data center servers",
+            "person looking at smartphone screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Chip stocks just hit a wall",
+              "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+            },
+            {
+              "claim": "Chip stocks suffered a brutal session across global markets as investors questioned the massive spending on AI infrastructure.",
+              "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+            },
+            {
+              "claim": "Asian shares dived sharply following heavy losses on Wall Street as traders reassessed high tech valuations.",
+              "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-dive-focus-earnings-015003210.html"
+            },
+            {
+              "claim": "Markets are reacting to mounting concerns over whether massive data center investments will deliver fast returns.",
+              "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+            },
+            {
+              "claim": "The recent sell-off marks one of the biggest tests yet for the sustained momentum of the hardware boom.",
+              "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.reuters.com/world/asia-pacific/global-markets-ai-selloff-analysis-pix-2026-10-13/",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM1RJWWJHTmtIMnhaYWVyeFFpYV8wZndZMUFOVXM2NkpJdUNfRGlyQzdHeVcwMXkxcXkyWFFZQ3hXS3RpM0NqZUtNcmxNd3NkSGZETmlvNjRRYjJ3X3BXa0FEamh0NDExSTZieGRHam9BdFBiZXdOcTBSUXRPNlFEeTVKOEtkN3JiV25QUEsyekp0OTJRaU5nVA?oc=5",
+            "https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-ai-trade-faces-biggest-test-yet-as-chip-stocks-tumble-across-asia/articleshow/134912693.cms"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-13T14:37:05.289111+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2126,8 +2055,8 @@
       "event": "Intel built the new D270 discrete GPU accelerator for data center workloads. It features the Xe3P architecture, previously codenamed Crescent Island. The hardware delivers massive capacity with up to 480 GB of LPDDR5X memory. Enterprise dat"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-13T14:10+05:30",
@@ -2175,7 +2104,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-13",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-13-1",
   "gemini_use": {
     "day": "2026-10-13",
@@ -2293,31 +2222,6 @@
     "gemini-3-flash-preview": 1791880507.8980613
   },
   "editor_log": [
-    {
-      "at": "2026-10-12T15:16+05:30",
-      "title": "INSIGHT: Bill Gates Warns AI Will Eliminate Jobs as North America Faces a Race W",
-      "overall": 6.0,
-      "scores": {
-        "hook": 8,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 4,
-        "captions": 3,
-        "flow": 7
-      },
-      "one_line": "Weak visuals and inconsistent captioning fail to meet premium news standards.",
-      "fixes": [
-        "LINE 1: Add the specific context from the source, such as 'Bill Gates warns AI will eliminate jobs as North America races against China.'",
-        "LINE 3: Replace 'AI productivity gains' with a specific example or sector mentioned in the report.",
-        "LINE 5: Replace 'Lawmakers' with a specific entity or legislative body if mentioned in the source."
-      ],
-      "visual": [
-        "line 1: The Capitol building is generic and does not represent Bill Gates or the specific AI labor",
-        "line 3: The visual of server code is generic and does not illustrate 'productivity gains' or 'chan",
-        "line 4: The visual of a warehouse is generic; it does not show automated systems or labor market d"
-      ]
-    },
     {
       "at": "2026-10-12T15:31+05:30",
       "title": "TikTok CEO sees major scientific breakthroughs from AI within three years",
@@ -2755,6 +2659,29 @@
       "visual": [
         "line 4: Reuses the same corporate headquarters photo from line 1",
         "line 4: Shows plain text cards for Disney instead of a dynamic logo or concept art"
+      ]
+    },
+    {
+      "at": "2026-10-13T14:46+05:30",
+      "title": "'Brutal session' for chip stocks shows AI trade is turning",
+      "overall": 6.3,
+      "scores": {
+        "hook": 8,
+        "specific": 5,
+        "substance": 6,
+        "accuracy": 8,
+        "visuals": 4,
+        "flow": 7
+      },
+      "one_line": "Too generic with lacking specific company metrics and sloppy editing with bounding boxes visible.",
+      "fixes": [
+        "LINE 1: Name specific chipmakers like Nvidia and AMD instead of generic chip stocks.",
+        "LINE 2: Mention specific indices or drops like the Nasdaq or Nikkei rather than broad Asian shares."
+      ],
+      "visual": [
+        "line 1: Bounding box and selection handles are visible in the text card.",
+        "line 3: Stills of random business stock footage repeat and feel generic.",
+        "line 5: Bounding box handles visible again on the ending question card."
       ]
     }
   ],
