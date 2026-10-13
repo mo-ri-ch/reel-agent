@@ -1,25 +1,216 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Tighter AI data rules could curb Germany's economic gains by €155 billion a year, study finds",
-      "link": "https://www.reuters.com/business/tighter-ai-data-rules-could-curb-germanys-economic-gains-by-155-billion-year-2026-10-13/",
-      "summary": "Tighter AI data rules could curb Germany's economic gains by €155 billion a year, study finds Reuters",
-      "source": "Reuters",
-      "published": "2026-10-13T09:32:24+00:00",
-      "angle": "New study shows how strict AI data regulations could cost the German economy over €150 billion annually."
-    }
-  ],
-  "choose_deadline": "2026-10-13T16:24:54.490808+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+    "link": "https://github.com/prabanta-dev/janas",
+    "summary": "",
+    "source": "github.com",
+    "published": "2026-10-12T22:05:43+00:00",
+    "buzz": "Hacker News 156 points",
+    "angle": "Run massive AI models on your cheap laptop by streaming data from your SSD."
+  },
+  "draft": {
+    "title": "Run LLMs larger than your RAM",
+    "hook_text": "Run huge AI on tiny RAM",
+    "beats": [
+      {
+        "line": "Prabanta Dey released Janas to bypass your computer's memory limits.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://github.com/prabanta-dev/janas",
+        "tag": "Prabanta Dey Janas",
+        "name": "Prabanta Dey",
+        "role": "Creator, Janas",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Your next AI project might finally fit on your standard laptop.",
+        "visual": "clip",
+        "query": "person typing on laptop keyboard",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Laptop AI potential",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Janas streams model experts directly from your SSD instead of loading into RAM.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Janas",
+        "outlet": "",
+        "domain": "github.com",
+        "headline": "",
+        "url": "https://github.com/prabanta-dev/janas",
+        "tag": "SSD expert streaming",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Janas",
+            "domain": "github.com"
+          }
+        ]
+      },
+      {
+        "line": "It uses memory mapping to access model weights stored on disk.",
+        "visual": "clip",
+        "query": "solid state drive hardware",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Memory mapping storage",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This method allows you to run models exceeding your physical memory capacity.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "RAM",
+        "small": "Memory capacity bypass",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Bypass RAM limits",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The project is available today on GitHub as an open source tool.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "GitHub",
+        "domain": "github.com",
+        "headline": "Janas: Run LLMs larger than RAM by streaming experts",
+        "url": "",
+        "tag": "Open source Janas",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "GitHub",
+            "domain": "github.com"
+          }
+        ]
+      },
+      {
+        "line": "Could this finally make local large model inference accessible for everyone?",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "Local AI",
+        "small": "Accessibility",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Local AI access",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Fast and punchy, highlighting the technical breakthrough of memory management.",
+    "thin": false,
+    "caption": "Prabanta Dey released Janas, a tool that lets you run LLMs larger than your RAM by streaming experts from your SSD. This implementation uses memory mapping to bypass traditional hardware constraints. Could this finally make local large model inference accessible for everyone?",
+    "hashtags": [
+      "Janas",
+      "LLM",
+      "LocalAI",
+      "GitHub",
+      "OpenSource"
+    ],
+    "sources": [
+      "https://github.com/prabanta-dev/janas"
+    ],
+    "script": "Prabanta Dey released Janas to bypass your computer's memory limits.\nYour next AI project might finally fit on your standard laptop.\nJanas streams model experts directly from your SSD instead of loading into RAM.\nIt uses memory mapping to access model weights stored on disk.\nThis method allows you to run models exceeding your physical memory capacity.\nThe project is available today on GitHub as an open source tool.\nCould this finally make local large model inference accessible for everyone?",
+    "keywords": [
+      "person typing on laptop keyboard",
+      "solid state drive hardware"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Janas allows running huge AI models on limited RAM.",
+        "url": "https://github.com/prabanta-dev/janas"
+      },
+      {
+        "claim": "Prabanta Dey released Janas.",
+        "url": "https://github.com/prabanta-dev/janas"
+      },
+      {
+        "claim": "Janas streams model experts directly from your SSD instead of loading into RAM.",
+        "url": "https://github.com/prabanta-dev/janas"
+      },
+      {
+        "claim": "It uses memory mapping to access model weights stored on disk.",
+        "url": "https://github.com/prabanta-dev/janas"
+      },
+      {
+        "claim": "This method allows you to run models exceeding your physical memory capacity.",
+        "url": "https://github.com/prabanta-dev/janas"
+      },
+      {
+        "claim": "The project is available today on GitHub as an open source tool.",
+        "url": "https://github.com/prabanta-dev/janas"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://github.com/prabanta-dev/janas"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-13T16:36:21.858990+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -427,258 +618,59 @@
       "extra": false
     }
   ],
-  "spare": [],
+  "paused": null,
+  "spare": [
+    {
+      "title": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdXpJeGMzUFdlaVFwT3FTaFhVbW14LWRmSlplUVMxTjJrZENGaW9kV2hoRXpiYnpqdEdzRFU0dzVGaVlWYlJTZ0FZT211VFBGOWFjR1pNaDZyUVBycUhPcTQzRFBxOFFtX2o4R3kxUXFiX0l2QjRBVlVzQ0xweEs4TGRhZnBJMzVrazZJbHdTTjlsd2ZYZ3A2Q1R2Mks5b3JsdzNveFZOdUt3RGQ5aGc?oc=5",
+      "summary": "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-13T08:00:13+00:00",
+      "angle": "China’s new memory chip breakthrough could disrupt the global AI hardware supply chain."
+    },
+    {
+      "title": "A look at the math that OpenAI claims computes faster Fourier transforms",
+      "link": "https://www.argmin.net/p/faster-fourier-transforms",
+      "summary": "",
+      "source": "argmin.net",
+      "published": "2026-10-13T02:46:43+00:00",
+      "buzz": "Hacker News 151 points",
+      "angle": "OpenAI’s math claims are being put to the test by the community—is it a breakthrough or hype?"
+    }
+  ],
   "tried": [
-    "Geopolitics Could Derail India’s AI Ambitions, Warns Anuraag Saxena",
-    "SpaceX agrees to testify to NYC Council about AI safety after receiving subpoena",
-    "UVA doctor says physicians shouldn't hand treatment decisions to AI",
     "Troubled AI Chatbot App Character.AI Files for Bankruptcy Amid Legal Scrutiny",
-    "Toby",
-    "DishwasherBench – Can Frontier Models Stack a Dishwasher?",
-    "'Brutal session' for chip stocks shows AI trade is turning",
-    "The Drive AI",
-    "Houthis used Claude to develop missiles, test-fired rocket: Anthropic",
-    "Alibaba details QwenGyre to accelerate extreme-horizon agent training",
-    "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook for Software Jobs",
+    "IMF Chief: artificial intelligence to affect 40% of jobs worldwide",
     "TikTok CEO sees major scientific breakthroughs from AI within three years",
-    "EXCLUSIVE: Banking watchdogs ramp up AI scrutiny as stability fears mount, sources say",
-    "Meta says new Muse model reaches AI frontier after aggressive push",
-    "AI models can provably hide arbitrary capabilities",
-    "Microsoft Unveils Maia 300 With 40% More Tokens Per Megawatt",
-    "The Cheque is Small. The Provocation is Not",
-    "HCLTech, Anthropic to Expand Enterprise Agentic AI Deployments",
-    "AI models may soon self-replicate without access to data centers",
-    "A look at the math that OpenAI claims computes faster Fourier transforms",
-    "BBVA helps design a common protocol led by Sierra AI and Meta to connect AI agents with businesses",
-    "Dropstone CLI",
-    "‘Unfinished business’: the people who want their AI chatbots to ‘live on’ after they die",
-    "microsoft/AesCode 8B and 32B",
-    "Could AI Infect Your Smart TV? What Anthropic's New Test Found",
-    "China’s CXMT Claims Memory Breakthrough, Challenging Samsung and SK Hynix",
-    "Epic Games reportedly pivoting to \"AI first\" game development model",
     "As AI Agents Leave Sandboxes, Enterprises are Hitting the Governance Panic Button",
     "AI labs are buying data from dead startups to train their models",
-    "IMF Chief: artificial intelligence to affect 40% of jobs worldwide",
-    "As AI Agents Leave Sandboxes, Enterprises are Hitting the Governance Panic Button"
+    "microsoft/AesCode 8B and 32B",
+    "DishwasherBench – Can Frontier Models Stack a Dishwasher?",
+    "Alibaba details QwenGyre to accelerate extreme-horizon agent training",
+    "The Cheque is Small. The Provocation is Not",
+    "'Brutal session' for chip stocks shows AI trade is turning",
+    "The Drive AI",
+    "Could AI Infect Your Smart TV? What Anthropic's New Test Found",
+    "BBVA helps design a common protocol led by Sierra AI and Meta to connect AI agents with businesses",
+    "EXCLUSIVE: Banking watchdogs ramp up AI scrutiny as stability fears mount, sources say",
+    "Toby",
+    "Anthropic Warns ‘AI Worms’ Could Replicate Across Smart TVs, IoT Devices Without Data Centres",
+    "AI models may soon self-replicate without access to data centers",
+    "Microsoft Unveils Maia 300 With 40% More Tokens Per Megawatt",
+    "Epic Games reportedly pivoting to \"AI first\" game development model",
+    "AI models can provably hide arbitrary capabilities",
+    "UVA doctor says physicians shouldn't hand treatment decisions to AI",
+    "‘Unfinished business’: the people who want their AI chatbots to ‘live on’ after they die",
+    "Dropstone CLI",
+    "Houthis used Claude to develop missiles, test-fired rocket: Anthropic",
+    "Tighter AI data rules could curb Germany's economic gains by €155 billion a year, study finds",
+    "Zoho Freezes Salary Hikes as Sridhar Vembu Warns of Grim Outlook for Software Jobs",
+    "Meta says new Muse model reaches AI frontier after aggressive push",
+    "Meta Launches Muse Wonder AI Models for Personal and Professional Agents",
+    "SpaceX agrees to testify to NYC Council about AI safety after receiving subpoena",
+    "Geopolitics Could Derail India’s AI Ambitions, Warns Anuraag Saxena"
   ],
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "SpaceX agrees to testify to NYC Council about AI safety after receiving subpoena",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZGJDcnZQYTE3a1R4SnJlMnF6OXU0cGRpM0pSQkNuQ1BfZ185cy1fQ2drTFFVZ2d0bnA2bzhhUVRZcTV2WFRNVlhYelFFMndlNWhDUHJJYV9yRTVzWWxTM3RPZUJ2SE9rMEpVQk5jN1NLU0lEUllwMkhtdnllR01NU3lhLVBvVlg3dUh6Ql9qaFh4U1dmOWhFSUp0c2RPQdIBngFBVV95cUxPZGJDcnZQYTE3a1R4SnJlMnF6OXU0cGRpM0pSQkNuQ1BfZ185cy1fQ2drTFFVZ2d0bnA2bzhhUVRZcTV2WFRNVlhYelFFMndlNWhDUHJJYV9yRTVzWWxTM3RPZUJ2SE9rMEpVQk5jN1NLU0lEUllwMkhtdnllR01NU3lhLVBvVlg3dUh6Ql9qaFh4U1dmOWhFSUp0c2RPQQ?oc=5",
-          "summary": "SpaceX agrees to testify to NYC Council about AI safety after receiving subpoena CNBC",
-          "source": "CNBC",
-          "published": "2026-10-13T09:00:01+00:00",
-          "angle": "SpaceX is being subpoenaed to testify on AI safety—the intersection of space and AI regulation is heating up."
-        },
-        "draft": {
-          "title": "SpaceX to Testify to NYC Council",
-          "hook_text": "SpaceX subpoenaed for AI safety",
-          "beats": [
-            {
-              "line": "SpaceX has agreed to testify before the New York City Council regarding AI safety.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "SpaceX",
-              "outlet": "",
-              "domain": "spacex.com",
-              "headline": "",
-              "url": "https://www.spacex.com",
-              "tag": "SpaceX agrees to testify",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The company reached this deal after receiving a formal subpoena from the city government.",
-              "visual": "clip",
-              "query": "legal document on desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Formal subpoena issued",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This hearing focuses on how AI tools are being implemented and their safety implications.",
-              "visual": "clip",
-              "query": "server room lights",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI safety focus",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Council members are examining the potential risks of these automated systems within the five boroughs.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "New York City Hall",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "City Hall oversight",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The council previously requested information from several technology firms to understand their specific AI software.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "CNBC",
-              "domain": "cnbc.com",
-              "headline": "SpaceX agrees to testify to NYC Council about AI safety",
-              "url": "",
-              "tag": "Multiple firms contacted",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "SpaceX executives are now scheduled to appear to provide testimony on these specific technical protocols.",
-              "visual": "clip",
-              "query": "business meeting",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "SpaceX executives testifying",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Should private companies be forced to disclose their AI safety data to local officials?",
-              "visual": "clip",
-              "query": "person thinking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Public oversight",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Direct and factual tone, emphasizing the power of local government to compel corporate testimony.",
-          "thin": false,
-          "caption": "SpaceX has agreed to testify to the NYC Council regarding AI safety after receiving a subpoena. The city is pushing for more transparency on how tech firms manage automated systems. Should private companies be forced to disclose their AI safety data to local officials?",
-          "hashtags": [
-            "SpaceX",
-            "NYCCouncil",
-            "AISafety",
-            "TechNews",
-            "NYC"
-          ],
-          "sources": [
-            "https://www.cnbc.com"
-          ],
-          "script": "SpaceX has agreed to testify before the New York City Council regarding AI safety.\nThe company reached this deal after receiving a formal subpoena from the city government.\nThis hearing focuses on how AI tools are being implemented and their safety implications.\nCouncil members are examining the potential risks of these automated systems within the five boroughs.\nThe council previously requested information from several technology firms to understand their specific AI software.\nSpaceX executives are now scheduled to appear to provide testimony on these specific technical protocols.\nShould private companies be forced to disclose their AI safety data to local officials?",
-          "keywords": [
-            "legal document on desk",
-            "server room lights",
-            "business meeting",
-            "person thinking"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "SpaceX subpoenaed for AI safety",
-              "url": "https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html"
-            },
-            {
-              "claim": "SpaceX has agreed to testify before the New York City Council regarding AI safety.",
-              "url": "https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html"
-            },
-            {
-              "claim": "The company reached this deal after receiving a formal subpoena from the city government.",
-              "url": "https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html"
-            },
-            {
-              "claim": "This hearing focuses on how AI tools are being implemented and their safety implications.",
-              "url": "https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html"
-            },
-            {
-              "claim": "Council members are examining the potential risks of these automated systems within the five boroughs.",
-              "url": "https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html"
-            },
-            {
-              "claim": "The council previously requested information from several technology firms to understand their specific AI software.",
-              "url": "https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html"
-            },
-            {
-              "claim": "SpaceX executives are now scheduled to appear to provide testimony on these specific technical protocols.",
-              "url": "https://www.cnbc.com/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.cnbc.com/amp/2026/10/13/spacex-agrees-to-testify-to-nyc-council-about-ai-safety-.html",
-            "https://www.cnbc.com"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-13T15:29:54.172342+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1568,6 +1560,34 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Tighter AI data rules could curb Germany's economic gains by €155 billion a year, study finds",
+            "link": "https://www.reuters.com/business/tighter-ai-data-rules-could-curb-germanys-economic-gains-by-155-billion-year-2026-10-13/",
+            "summary": "Tighter AI data rules could curb Germany's economic gains by €155 billion a year, study finds Reuters",
+            "source": "Reuters",
+            "published": "2026-10-13T09:32:24+00:00",
+            "angle": "New study shows how strict AI data regulations could cost the German economy over €150 billion annually."
+          }
+        ],
+        "choose_deadline": "2026-10-13T16:24:54.490808+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2124,7 +2144,7 @@
   "report_day": "2026-10-12",
   "ig_count": {
     "day": "2026-10-13",
-    "at": "2026-10-13T16:16:57.820804+05:30",
+    "at": "2026-10-13T16:36:21.859019+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2148,7 +2168,7 @@
   "late_note_for": "2026-10-13-1",
   "gemini_use": {
     "day": "2026-10-13",
-    "calls": 306,
+    "calls": 403,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2183,10 +2203,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 77,
-        "busy": 37,
-        "other": 17,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "ok": 132,
+        "busy": 67,
+        "other": 29,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-flash-lite-latest": {
         "ok": 0,
