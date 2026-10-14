@@ -1,0 +1,82 @@
+{
+ "made": "20261014-0948",
+ "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
+ "hook_text": "Science Corporation just restored human sight",
+ "hook_before": null,
+ "script": "Science Corporation just implanted its vision-restoring chip in a Stargardt disease patient.\nMax Hodak, the former president of Neuralink, is leading this effort.\nThe procedure uses the PRIMA system to bypass specific retinal damage.\nStargardt disease causes progressive vision loss for which there are no effective treatments.\nHodak showcased this breakthrough onstage at TechCrunch Disrupt this week.\nThis implant represents a major step toward his goal of building complex brain-computer interfaces.\nWould you let a chip connect directly to your brain?",
+ "words": 81,
+ "beats": [
+  {
+   "line": "Science Corporation just implanted its vision-restoring chip in a Stargardt disease patient.",
+   "visual": "source"
+  },
+  {
+   "line": "Max Hodak, the former president of Neuralink, is leading this effort.",
+   "visual": "person"
+  },
+  {
+   "line": "The procedure uses the PRIMA system to bypass specific retinal damage.",
+   "visual": "clip"
+  },
+  {
+   "line": "Stargardt disease causes progressive vision loss for which there are no effective treatments.",
+   "visual": "clip"
+  },
+  {
+   "line": "Hodak showcased this breakthrough onstage at TechCrunch Disrupt this week.",
+   "visual": "photo"
+  },
+  {
+   "line": "This implant represents a major step toward his goal of building complex brain-computer interfaces.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you let a chip connect directly to your brain?",
+   "visual": "image"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 6,
+   "specific": 9,
+   "substance": 8,
+   "accuracy": 4,
+   "visuals": 7,
+   "flow": 8
+  },
+  "one_line": "Misleading hook claims restored sight; accuracy failure disqualifies this from premium news standards.",
+  "script_fixes": [
+   "LINE 1: Change 'restored human sight' to 'implanted a vision-restoring chip' to match the source accuracy.",
+   "LINE 6: Remove 'building complex brain-computer interfaces' and replace with 'developing high-resolution BCI technology'."
+  ],
+  "visual_beats": [
+   0,
+   1,
+   4
+  ],
+  "visual_notes": [
+   "line 1: The text 'restored human sight' is a gross exaggeration of the source material.",
+   "line 2: The same photo of Max Hodak is held for too long across multiple frames.",
+   "line 5: The TechCrunch logo is generic; use a specific photo of the stage or the device."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 33.33,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.4,
+ "cuts": [
+  2.8,
+  5.53,
+  9.73,
+  19.67,
+  30.07
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 5.55,
+ "longest_shot_seconds": 10.4,
+ "verdict": "rejected",
+ "words_per_minute": 146
+}
