@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -213,16 +213,62 @@
     "editor_rounds": 1,
     "source_links": [
       "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Federal agents arrested OpenAI software engineer A…: almost-empty card",
+      "He allegedly planted a hidden recording device ins…: almost-empty card",
+      "OpenAI security teams discovered the device and re…: almost-empty card",
+      "The United States Department of Justice charged Al…: almost-empty card",
+      "Prosecutors allege he intended to record proprieta…: almost-empty card",
+      "He faces up to five years in federal prison if con…: almost-empty card",
+      "Would you trust an office environment with this le…: almost-empty card",
+      "Missing visual: should show a photo or initials card for the person named.",
+      "Missing visual: should show a real photo of San Francisco.",
+      "Missing visual: should show stock video of tech office security.",
+      "Missing visual: should show a source card for the Department of Justice.",
+      "Missing visual: should show a big number Secret Rec.",
+      "Missing visual: should show a big number 5 Years.",
+      "Missing visual: should show stock video of a modern office interior."
+    ],
+    "editor": {
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual pacing is too slow and repetitive.",
+      "script_fixes": [
+        "LINE 7: Change to 'Is your company's internal security ready for this level of insider threat?'"
+      ],
+      "visual_beats": [
+        0,
+        1,
+        3
+      ],
+      "visual_notes": [
+        "line 1: The title screen lingers for 4.8 seconds, which is too long for a fast-paced news reel.",
+        "line 2: The OpenAI logo is held for 7.2 seconds, violating the 8-second rule when combined with th",
+        "line 4: The DOJ logo is held for 4.8 seconds, which feels static and repetitive."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIV-2rPW3OKX7s7uvK44-WNN5-dNzLYAALuIAAC-A14Vm2tx9L9OGErPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-14T15:56:52.236202+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-14T16:37:39.700584+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-14",
@@ -681,241 +727,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-          "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-          "summary": "Max Hodak, the former president and co-founder of Neuralink, detailed onstage at TechCrunch Disrupt how his company's work with PRIMA is part of its path toward a novel brain-computer interface (BCI).",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-13T23:13:31+00:00",
-          "angle": "Neuralink co-founder's new company successfully implants a vision-restoring chip in a patient."
-        },
-        "draft": {
-          "title": "Science Corporation's vision chip implant",
-          "hook_text": "Science Corporation just restored human sight",
-          "beats": [
-            {
-              "line": "Science Corporation just implanted its vision-restoring chip in a Stargardt disease patient.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-              "url": "",
-              "tag": "Vision chip implant",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Science Corporation",
-                  "domain": "science.xyz"
-                }
-              ]
-            },
-            {
-              "line": "Max Hodak, the former president of Neuralink, is leading this effort.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://science.xyz/",
-              "tag": "Max Hodak leading",
-              "name": "Max Hodak",
-              "role": "CEO, Science Corporation",
-              "x": "maxhodak",
-              "brands": [
-                {
-                  "name": "Neuralink",
-                  "domain": "neuralink.com"
-                },
-                {
-                  "name": "Science Corporation",
-                  "domain": "science.xyz"
-                }
-              ]
-            },
-            {
-              "line": "The procedure uses the PRIMA system to bypass specific retinal damage.",
-              "visual": "clip",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "science.xyz",
-              "headline": "",
-              "url": "https://science.xyz/",
-              "tag": "PRIMA system used",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Science Corporation",
-                  "domain": "science.xyz"
-                }
-              ]
-            },
-            {
-              "line": "Stargardt disease causes progressive vision loss for which there are no effective treatments.",
-              "visual": "clip",
-              "query": "human eye anatomy",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Stargardt disease impact",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Hodak showcased this breakthrough onstage at TechCrunch Disrupt this week.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "TechCrunch Disrupt",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "TechCrunch Disrupt reveal",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This implant represents a major step toward his goal of building complex brain-computer interfaces.",
-              "visual": "clip",
-              "query": "neural interface technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Brain-computer interface path",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let a chip connect directly to your brain?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "a clean medical illustration of a neural chip interface",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Would you try it?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Direct and informative, focusing on the milestone achievement of the technology.",
-          "thin": false,
-          "caption": "Science Corporation has implanted its vision-restoring chip into a patient with Stargardt disease. Max Hodak revealed the milestone at TechCrunch Disrupt as part of his work on brain-computer interfaces. Would you let a chip connect directly to your brain?",
-          "hashtags": [
-            "ScienceCorporation",
-            "MaxHodak",
-            "Neurotech",
-            "Stargardt",
-            "TechCrunch"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-          ],
-          "script": "Science Corporation just implanted its vision-restoring chip in a Stargardt disease patient.\nMax Hodak, the former president of Neuralink, is leading this effort.\nThe procedure uses the PRIMA system to bypass specific retinal damage.\nStargardt disease causes progressive vision loss for which there are no effective treatments.\nHodak showcased this breakthrough onstage at TechCrunch Disrupt this week.\nThis implant represents a major step toward his goal of building complex brain-computer interfaces.\nWould you let a chip connect directly to your brain?",
-          "keywords": [
-            "technology",
-            "human eye anatomy",
-            "neural interface technology"
-          ],
-          "image_prompts": [
-            "a clean medical illustration of a neural chip interface"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Science Corporation just restored human sight",
-              "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-              "claim": "Science Corporation implanted its vision-restoring chip in a Stargardt disease patient.",
-              "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-              "claim": "Max Hodak is the former president of Neuralink and the CEO of Science Corporation.",
-              "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-              "claim": "The procedure uses the PRIMA system to bypass specific retinal damage.",
-              "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-              "claim": "Stargardt disease causes progressive vision loss for which there are no effective treatments.",
-              "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-              "claim": "Max Hodak showcased this breakthrough onstage at TechCrunch Disrupt this week.",
-              "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-              "claim": "This implant represents a major step toward his goal of building complex brain-computer interfaces.",
-              "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-14T15:08:48.787454+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1829,6 +1640,235 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5",
+          "summary": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco The New Indian Express",
+          "source": "The New Indian Express",
+          "published": "2026-10-14T07:37:36+00:00",
+          "angle": "A major security breach at OpenAI: A Saudi employee was arrested for allegedly bugging their San Francisco office."
+        },
+        "draft": {
+          "title": "OpenAI Employee Arrested for Espionage",
+          "hook_text": "OpenAI employee arrested for bugging office",
+          "beats": [
+            {
+              "line": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Engineer arrested",
+              "name": "Abdulrahman Alfozan",
+              "role": "Software Engineer, OpenAI",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "He allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "San Francisco",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Hidden device found",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "OpenAI security teams discovered the device and reported it directly to the FBI.",
+              "visual": "clip",
+              "query": "tech office security",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "FBI investigation started",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "The United States Department of Justice charged Alfozan with intercepting oral communications.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Department of Justice",
+              "domain": "justice.gov",
+              "headline": "Software Engineer Charged with Intercepting Communications",
+              "url": "",
+              "tag": "DOJ charges filed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Prosecutors allege he intended to record proprietary meetings about future AI model development.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Secret Rec",
+              "small": "Proprietary AI data",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Targeting AI data",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He faces up to five years in federal prison if convicted.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "5 Years",
+              "small": "Potential prison sentence",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Five year sentence",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an office environment with this level of internal security risk?",
+              "visual": "clip",
+              "query": "modern office interior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Security risks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast, authoritative news reporting, maintaining a serious tone regarding the security breach.",
+          "thin": false,
+          "caption": "OpenAI software engineer Abdulrahman Alfozan was arrested on October 9, 2026, for allegedly planting a recording device at the company's San Francisco headquarters. The Department of Justice has charged him with intercepting oral communications regarding proprietary AI research. He could face up to five years in prison for the breach. Would you trust an office environment with this level of internal security risk?",
+          "hashtags": [
+            "OpenAI",
+            "TechNews",
+            "CyberSecurity",
+            "Espionage",
+            "AI"
+          ],
+          "sources": [
+            "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco-2733946.html"
+          ],
+          "script": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.\nHe allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.\nOpenAI security teams discovered the device and reported it directly to the FBI.\nThe United States Department of Justice charged Alfozan with intercepting oral communications.\nProsecutors allege he intended to record proprietary meetings about future AI model development.\nHe faces up to five years in federal prison if convicted.\nWould you trust an office environment with this level of internal security risk?",
+          "keywords": [
+            "tech office security",
+            "modern office interior"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "OpenAI employee arrested for bugging office",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "He allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "OpenAI security teams discovered the device and reported it directly to the FBI.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "The United States Department of Justice charged Alfozan with intercepting oral communications.",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5"
+            },
+            {
+              "claim": "Prosecutors allege he intended to record proprietary meetings about future AI model development.",
+              "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
+            },
+            {
+              "claim": "He faces up to five years in federal prison if convicted.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-14T15:56:52.236202+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2334,7 +2374,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-14T13:06+05:30",
@@ -2362,7 +2402,7 @@
   "report_day": "2026-10-13",
   "ig_count": {
     "day": "2026-10-14",
-    "at": "2026-10-14T15:49:39.000940+05:30",
+    "at": "2026-10-14T16:00:37.392109+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2382,11 +2422,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-14",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-14-0",
   "gemini_use": {
     "day": "2026-10-14",
-    "calls": 583,
+    "calls": 591,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2421,10 +2461,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 38,
+        "ok": 45,
         "busy": 21,
-        "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 1,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
@@ -2507,30 +2547,6 @@
     "gemini-3.5-flash-lite": 1791970581.8363059
   },
   "editor_log": [
-    {
-      "at": "2026-10-13T18:08+05:30",
-      "title": "From Earth to Orbit, France’s Ecosystem Delivers Agentic Computing at Scale With",
-      "overall": 6.3,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 5,
-        "flow": 7
-      },
-      "one_line": "Lacks specific company names and visual variety; feels like a generic slideshow.",
-      "fixes": [
-        "LINE 1: Replace 'national industries' with specific examples like 'Thales in aerospace' or 'Mistral AI'.",
-        "LINE 5: Replace 'businesses' with a specific company name mentioned in the source.",
-        "LINE 6: Replace 'deliberate compute investments' with a specific dollar amount or GPU count if available."
-      ],
-      "visual": [
-        "line 1: Static map image is repeated for too long.",
-        "line 3: Headshot of a person is shown without identifying who they are or their relevance.",
-        "line 4: Visuals are just text overlays; lacks actual footage of the industries mentioned."
-      ]
-    },
     {
       "at": "2026-10-14T13:14+05:30",
       "title": "Science Corporation implants its vision-restoring chip in its first Stargardt di",
@@ -2940,6 +2956,28 @@
       ],
       "visual": [
         "line 1: The entire premise is based on a non-existent news event, rendering visuals irrelevant."
+      ]
+    },
+    {
+      "at": "2026-10-14T16:07+05:30",
+      "title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual pacing is too slow and repetitive.",
+      "fixes": [
+        "LINE 7: Change to 'Is your company's internal security ready for this level of insider threat?'"
+      ],
+      "visual": [
+        "line 1: The title screen lingers for 4.8 seconds, which is too long for a fast-paced news reel.",
+        "line 2: The OpenAI logo is held for 7.2 seconds, violating the 8-second rule when combined with th",
+        "line 4: The DOJ logo is held for 4.8 seconds, which feels static and repetitive."
       ]
     }
   ],
