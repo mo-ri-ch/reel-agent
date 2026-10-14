@@ -1,0 +1,74 @@
+{
+ "made": "20261014-0911",
+ "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
+ "hook_text": "Personal AI in every home",
+ "hook_before": null,
+ "script": "Cerebras Systems Chief Executive Officer Andrew Feldman predicts personal AI assistants will soon inhabit every home.\nAndrew Feldman states these dedicated helpers will become as common as traditional household appliances.\nThe processing architecture will split tasks between local hardware units and remote cloud servers.\nCerebras Systems previously focused primarily on giant wafer scale processors for enterprise data centers.\nEdge computing chips run localized models directly on consumer devices to maintain low latency.\nWould you keep a personal AI assistant in your house?",
+ "words": 82,
+ "beats": [
+  {
+   "line": "Cerebras Systems Chief Executive Officer Andrew Feldman predicts personal AI assistants will soon inhabit every home.",
+   "visual": "person"
+  },
+  {
+   "line": "Andrew Feldman states these dedicated helpers will become as common as traditional household appliances.",
+   "visual": "clip"
+  },
+  {
+   "line": "The processing architecture will split tasks between local hardware units and remote cloud servers.",
+   "visual": "source"
+  },
+  {
+   "line": "Cerebras Systems previously focused primarily on giant wafer scale processors for enterprise data centers.",
+   "visual": "official"
+  },
+  {
+   "line": "Edge computing chips run localized models directly on consumer devices to maintain low latency.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you keep a personal AI assistant in your house?",
+   "visual": "person"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 6,
+   "accuracy": 7,
+   "visuals": 4,
+   "flow": 7
+  },
+  "one_line": "Strong subject matter ruined by mismatched visual assets and some hallucinated technical claims.",
+  "script_fixes": [
+   "LINE 4: Replace enterprise wafer scale processors with actual source context without introducing tech jargon not present in the summary.",
+   "LINE 5: Remove mentions of edge computing chips unless explicitly quoted from the source summary."
+  ],
+  "visual_beats": [
+   1,
+   4
+  ],
+  "visual_notes": [
+   "line 2: Displays unrelated orange abstract corporate promo instead of household appliances or Andr",
+   "line 5: Shows an IBM logo while discussing edge computing chips and Cerebras, which is completely "
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 39.4,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  2.8,
+  14.57,
+  28.5
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 9.85,
+ "longest_shot_seconds": 13.93,
+ "verdict": "rejected",
+ "words_per_minute": 125
+}
