@@ -336,6 +336,10 @@ check("drop how-to essay", news.newsworthy({"title": "How to Defend Against AI-D
                                             "source": "War on the Rocks"}), False)
 check("drop campus grants", news.newsworthy({"title": "Penn State Announces New Artificial Intelligence Grants "
                                                      "For Faculty", "source": "Onward State"}), False)
+check("drop opinion section by URL", news.newsworthy({"title": "Island Businesses: Please Knock It Off With The Ai-Generated Advertisements", "source": "Nantucket Current",
+      "link": "https://nantucketcurrent.com/opinion/island-businesses-please-knock-it-off"}), False)
+check("keep news whose slug says opinion", news.newsworthy({"title": "OpenAI ships GPT model update", "source": "The Verge",
+      "link": "https://www.theverge.com/news/123/openai-opinion-poll-feature"}), True)
 check("keep university research", news.newsworthy({"title": "MIT researchers build an AI that designs new antibiotics",
                                                    "source": "MIT News"}), True)
 check("drop Show HN", news.newsworthy({"title": "Show HN: Edi Life OS – self-hosted life dashboard", "source": "x"}), False)

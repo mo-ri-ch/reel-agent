@@ -67,6 +67,8 @@ OPINION = re.compile(r"(?i)^\s*(how to|how we|why (you|we|the|ai|artificial inte
 
 OPINION_ANYWHERE = re.compile(r"(?i)\b(must be stopped|must be banned|we must|it'?s time to|we need to talk|"
                               r"here'?s what i think|my take)\b")
+# opinion / editorial / letters sections of a newspaper site (by URL path)
+OPINION_URL = re.compile(r"(?i)https?://[^/]+/(.*/)?(opinions?|op-?eds?|editorials?|letters(-to-the-editor)?|columns?|columnists?|commentary)/")
 
 
 def newsworthy(item):
@@ -76,6 +78,7 @@ def newsworthy(item):
     return not (PR_SOURCES.search(item.get("source", "") + " " + item.get("link", "")) or WEAK_STORY.search(text)
                 or generic_newsroom
                 or OPINION.search(item.get("title", "")) or OPINION_ANYWHERE.search(item.get("title", ""))
+                or OPINION_URL.search(item.get("link", ""))
                 or CAMPUS_ADMIN.search(item.get("title", "")))
 
 
