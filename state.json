@@ -1,55 +1,218 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Facebook is giving users more control over their algorithm",
-      "link": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
-      "summary": "Meta announced the launch of its new AI-powered feature, “Your Algorithm,” a feature it first launched on Instagram.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-13T18:05:24+00:00",
-      "angle": "Meta is finally letting you customize your Facebook algorithm with AI—here is how to take control of your feed."
-    },
-    {
-      "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
-      "link": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
-      "summary": "American Express is introducing a new framework designed to ensure AI agents only make purchases their users have authorized, potentially preventing costly mistakes and disputes as AI-powered shopping grows.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-13T13:00:00+00:00",
-      "angle": "American Express is building a 'safety net' for AI agents to stop them from accidentally spending all your money."
-    }
-  ],
-  "choose_deadline": "2026-10-14T16:10:56.687569+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
+    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/",
+    "summary": "",
+    "source": "r/LocalLLaMA",
+    "published": "2026-10-13T22:21:00+00:00",
+    "buzz": "top of r/LocalLLaMA today",
+    "angle": "A hacker just got a jailbroken PS5 to run high-end AI models at incredible speeds."
+  },
+  "draft": {
+    "title": "Qwen 27B Running on a PS5",
+    "hook_text": "AI runs on a PS5",
+    "beats": [
+      {
+        "line": "A jailbroken PlayStation five is now running the Qwen twenty-seven B model.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Sony PlayStation 5",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://www.playstation.com/en-us/ps5/",
+        "tag": "PS5 runs Qwen 27B",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Sony",
+            "domain": "playstation.com"
+          }
+        ]
+      },
+      {
+        "line": "The console achieves twenty tokens per second during inference.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "20 tok/s",
+        "small": "Inference speed",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "20 tokens per second",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This performance relies on the console's sixteen gigabytes of unified GDDR6 memory.",
+        "visual": "clip",
+        "query": "computer memory hardware",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "16GB unified memory",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The project runs via native homebrew software on the existing FreeBSD operating system.",
+        "visual": "clip",
+        "query": "coding on computer screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Native homebrew software",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The model is compressed using two-bit quantization to fit the system requirements.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "2-bit",
+        "small": "Quantization",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "2-bit quantization",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The developer specifically leveraged the PS5 GPU to handle the heavy computations.",
+        "visual": "clip",
+        "query": "video game console hardware",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "GPU acceleration",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you risk your console to run your own local AI?",
+        "visual": "clip",
+        "query": "person playing video game",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Risk your console?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Fast and technical, highlighting the impressive hardware repurposing.",
+    "thin": false,
+    "caption": "A jailbroken Sony PlayStation 5 is running the Qwen 27B AI model at 20 tokens per second. By using native homebrew software on the console's FreeBSD system and 2-bit quantization, the hardware manages the large model efficiently. Would you risk your console to run your own local AI?",
+    "hashtags": [
+      "PS5",
+      "Qwen",
+      "AI",
+      "HardwareHack",
+      "PlayStation"
+    ],
+    "sources": [
+      "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
+    ],
+    "script": "A jailbroken PlayStation five is now running the Qwen twenty-seven B model.\nThe console achieves twenty tokens per second during inference.\nThis performance relies on the console's sixteen gigabytes of unified GDDR6 memory.\nThe project runs via native homebrew software on the existing FreeBSD operating system.\nThe model is compressed using two-bit quantization to fit the system requirements.\nThe developer specifically leveraged the PS5 GPU to handle the heavy computations.\nWould you risk your console to run your own local AI?",
+    "keywords": [
+      "computer memory hardware",
+      "coding on computer screen",
+      "video game console hardware",
+      "person playing video game"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "AI runs on a PS5",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      },
+      {
+        "claim": "A jailbroken PlayStation five is now running the Qwen twenty-seven B model.",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      },
+      {
+        "claim": "The console achieves twenty tokens per second during inference.",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      },
+      {
+        "claim": "This performance relies on the console's sixteen gigabytes of unified GDDR6 memory.",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      },
+      {
+        "claim": "The project runs via native homebrew software on the existing FreeBSD operating system.",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      },
+      {
+        "claim": "The model is compressed using two-bit quantization to fit the system requirements.",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      },
+      {
+        "claim": "The developer specifically leveraged the PS5 GPU to handle the heavy computations.",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 2,
+    "source_links": [
+      "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
-      "video_file_id": "BAACAgUAAxkDAAIV-2rPW3OKX7s7uvK44-WNN5-dNzLYAALuIAAC-A14Vm2tx9L9OGErPQQ",
-      "caption": "OpenAI software engineer Abdulrahman Alfozan was arrested on October 9, 2026, for allegedly planting a recording device at the company's San Francisco headquarters. The Department of Justice has charged him with intercepting oral communications regarding proprietary AI research. He could face up to five years in prison for the breach. Would you trust an office environment with this level of internal security risk?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#OpenAI #TechNews #CyberSecurity #Espionage #AI",
-      "extra": false,
-      "meta": {
-        "title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
-        "kind": "news",
-        "source": "The New Indian Express",
-        "engine": "fish",
-        "voice": "Paula (Fish Audio)",
-        "person": true,
-        "words": 86,
-        "visuals": "7 cards",
-        "editor": 8.7,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-14T16:10+05:30"
-      },
-      "post_at": "2026-10-14T16:11:24.391181+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-14T16:17:39.823135+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -216,10 +379,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-04T21:31:10.745885+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-05T09:01:11.100309+05:30",
       "extra": false
@@ -455,292 +614,64 @@
     {
       "at": "2026-10-13T17:01:47.126384+05:30",
       "extra": false
-    }
-  ],
-  "spare": [
-    {
-      "title": "Trump Administration’s new website shifts AI narrative to ‘Super Intelligence’ with launch of SI.gov",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWkh0djR6R1RVV1JWYnlVNlZBWW5uTHRRaGUySzlUNTNiVFJpSlctNGhTNDhKTlZlWHZtS0M4RHVjN1lJYi02Z1U2bkxkRDVvRmQtYzBpSkYxTEkwTWdUMDRxOGFwYzFnVWd6VkxzWWc4eHJNVy1mSy1xd0hOcWVCc24wdkxiMURMQkdCclB3Y1kwakVyRDdoUmJDT2VMQ1JRN3pIb1BvU0tCV3psWi1Jc2hlalFubWFwWFd0QU9kX0JWNTZycmVBdC1JWVlJclk1VE1EcVNGUWFNejdPLVk5MkVkTVNMeDhXTHlacm5vaGhvT0U2aUZ0bkxrR3NMbjBCNEZDeFVmTmJDcUtKUTZ4WHFR0gGXAkFVX3lxTE11OXdjdVJORGhGZTY1SFZDUTBCYmVySmE0V0gwaC1uRTlraFY0MjdTS2dfUWkwRWhzVWJPRWh5Y29JU3lJM0JPUHA4bHRnOEhVUi1sLW5nMURpX2c3NEtSQXAwRkNEeFFHZV9QclAxOHdLQ2xVTzdwdVAtUV9sMEE0U0FKOUF4bWRXNmc4eW9yS0Y4NWp4V3Y4a3FQbUlXMVgyWm1lbjhXNWZ0SzluNUJ2T01wQWg1ZXJoUGlDa0RfRzY4akcxamhrWGs1YkMta2NMYVlWSkQ3eDRoX2UzZlBfQnFEd3V6U2hHYk5nVUhBWFNPeGdUd0tNekM4RkZpUTRNT1dYQ1VialU1OUlNMjdPS21EaDk3UQ?oc=5",
-      "summary": "Trump Administration’s new website shifts AI narrative to ‘Super Intelligence’ with launch of SI.gov Business Today",
-      "source": "Business Today",
-      "published": "2026-10-14T09:11:13+00:00",
-      "angle": "The US government is shifting its AI narrative to 'Super Intelligence' with the launch of a new official website, SI.gov."
     },
     {
-      "title": "Open-source AI models carry more cybersecurity risks: Anthropic executive",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNeWNVb2hucHEyS1pwM0xYV3JPSnV1VU5aVERNTllqZXZRc05tTHBNakNTZ0I4YWZ0eGNFdUZON2xVV3h2NVN0T0dSZkNmQi1iOUxTRnlYODNrZVhjTWlRX0V5SDZ1aUctanpFcUpHQm5JWHJSYjl1VzlmU3BjN2JtWEdoVGlOOHRJc0o2RVNmd3V1WEtGWWNTYnMwWS1QX3dpMU40bVBuTzllYzdCLW5ISVlxa0dEYmpYZ0JobE9HNlFheXVMdHFzdTJUT2FvYjlTUkF6U0N0MEpIODMtdlBlb29DZDZETFdORElHSjNYZUttaWvSAfgBQVVfeXFMTUpaZXM1WnVLUS1XN29SSngybXlrdmVRR0VaZUdxRWs2TlRMNTVoMEgyZy1sWU5nZTFHSzNQQlZMcEt4UmwzLTNlbUJlakg2eS1KekY4NXNaOHVqSUVNQUt3WUxQc183d21GelUwZkFhNTYzUy1oTFNRSHlHVU5qSUJtQWpINU1oazdLOHBnVHJCUHRRbU80SThia3ZwRl9Ndzk4T3Z1ajlsSUdkQ0hqY1ZHOTc1Y05XczAtMC1KcV9yX2RwVHB3N0VZcE1lTFJoRDRDSW9XWDB1NFZvXy0ydVpjWkxVeGRxbkUzdmQ5M3Y1clhnR244Tkc?oc=5",
-      "summary": "Open-source AI models carry more cybersecurity risks: Anthropic executive Business Standard",
-      "source": "Business Standard",
-      "published": "2026-10-14T09:41:49+00:00",
-      "angle": "Anthropic executive warns that open-source AI models carry significant, overlooked cybersecurity risks for everyone."
+      "at": "2026-10-14T16:18:18.848168+05:30",
+      "extra": false
+    }
+  ],
+  "paused": null,
+  "spare": [
+    {
+      "title": "Home consoles face extinction as cloud and AI boom, BI research says",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuaGJoTk90NjBucVl0UXhlRE40ck5IdkZzNUVCNGZ5di1vZHZiWnBFWHVKT2V1eVZ4dTdCTnNSUXlwSkREZVVVZnhibWNDZlQxdk94OWpHcUVkd2p0dkkzNW5TNFJ2TG9xX1RDQXh3?oc=5",
+      "summary": "Home consoles face extinction as cloud and AI boom, BI research says The Next Web",
+      "source": "The Next Web",
+      "published": "2026-10-14T10:00:26+00:00",
+      "angle": "New research suggests the era of home gaming consoles could be ending thanks to AI and cloud tech."
+    },
+    {
+      "title": "Artificial Intelligence Girlfriend App With Customizable Personality And Privacy Features",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQMGo5ckpUa0tLT2Qtb1dZUUotbFllSkg0dG5JYnl1TURvR3hyXzZPbzBjUF9VV05xMDhMLW5GNmdOUzJQTDRaNDRwR3pxZGhnUzQxblc4bkllcFUwNFpoekc2MkJYaFEyclpHZHoxWkZGZWJXa3IzTjhWc0hlYzI1TnlKdWNJNzNpQ3A2aWtBUXBWRHY0TWxIWnRBZ3Q2dm1TWjlGdGZNZngtWTNFeFRMc2hpU2pjblprUm5yWWxPWm5KR21ObUJoVXNURC1DelN4ci1Gdlg1ZDd2WVk3WHN0T3NENzhZT2ZxeUlHbDV3dUZZRTNLOEFLS3I1b01oTE43TTkxUDRxcERyRzl5TXlwRw?oc=5",
+      "summary": "Artificial Intelligence Girlfriend App With Customizable Personality And Privacy Features Universidad de Córdoba (UCO)",
+      "source": "Universidad de Córdoba (UCO)",
+      "published": "2026-10-14T07:54:46+00:00",
+      "angle": "The rise of AI girlfriend apps: A look at the new wave of customizable, privacy-focused companions."
     }
   ],
   "tried": [
-    "22 People Got Together For a Dinner Party. So Did Their A.I. Agents.",
-    "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-    "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
-    "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
-    "Cerebras CEO pushes back on AI doomsday warnings",
-    "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-    "Microsoft Unveils Maia 300 With 40% More Tokens Per Megawatt",
-    "Alibaba Unveils New Qwen AI Smart Glasses to Compete With Meta",
-    "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
-    "AI Could Start Improving Itself By 2027: Anthropic Co-Founder",
-    "AI demand for chipmaking tools may outpace supply in next 2 years: ASML",
-    "AI can act exactly like a human, but we still don't think it's conscious",
-    "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
-    "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
-    "Kroger to lay off 3,000 corporate employees over 3 years as it leans into artificial intelligence",
-    "Server AI Chip Industry Insights: Computing Trends",
-    "The Cheque is Small. The Provocation is Not",
-    "UVA doctor says physicians shouldn't hand treatment decisions to AI",
-    "Parallel Loop Raises $6.6 Million to Make AI Work for Enterprises",
-    "Leadership in Digital Health: How to Transform Hospitals Through Technology, Data, and Artificial Intelligence",
-    "microsoft/AesCode 8B and 32B",
-    "AI is a tool and using it well takes skill",
-    "Gnani AI Launches Timbre v3.0 With AI Voices That Can Whisper, Laugh & Shout",
-    "Toby",
     "Google’s biggest AI problem is the power grid",
-    "AI labs are buying data from dead startups to train their models",
+    "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
+    "AI demand for chipmaking tools may outpace supply in next 2 years: ASML",
+    "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
+    "Gnani AI Launches Timbre v3.0 With AI Voices That Can Whisper, Laugh & Shout",
+    "UVA doctor says physicians shouldn't hand treatment decisions to AI",
+    "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
+    "The Cheque is Small. The Provocation is Not",
+    "Alibaba Unveils New Qwen AI Smart Glasses to Compete With Meta",
     "Disney offers $20M for Character.AI’s scandal-plagued chatbot tech",
+    "AI Could Start Improving Itself By 2027: Anthropic Co-Founder",
+    "AI is a tool and using it well takes skill",
+    "microsoft/AesCode 8B and 32B",
+    "AI labs are buying data from dead startups to train their models",
+    "The EU’s next chapter in AI is agentic",
+    "Cerebras CEO pushes back on AI doomsday warnings",
+    "Server AI Chip Industry Insights: Computing Trends",
+    "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+    "22 People Got Together For a Dinner Party. So Did Their A.I. Agents.",
+    "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
+    "Microsoft Unveils Maia 300 With 40% More Tokens Per Megawatt",
     "Epic Games reportedly pivoting to \"AI first\" game development model",
-    "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
-    "The EU’s next chapter in AI is agentic"
+    "Facebook is giving users more control over their algorithm",
+    "Parallel Loop Raises $6.6 Million to Make AI Work for Enterprises",
+    "Toby",
+    "Leadership in Digital Health: How to Transform Hospitals Through Technology, Data, and Artificial Intelligence",
+    "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+    "Kroger to lay off 3,000 corporate employees over 3 years as it leans into artificial intelligence",
+    "AI can act exactly like a human, but we still don't think it's conscious"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Cerebras CEO pushes back on AI doomsday warnings",
-          "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
-          "summary": "Cerebras CEO Andrew Feldman has a message for AI leaders spreading doomsday warnings: Maybe stop talking? At TechCrunch Disrupt, he argued that the industry's focus on AI's risks is drowning out its potential benefits.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-13T22:36:59+00:00",
-          "angle": "Cerebras CEO calls out AI leaders for fear-mongering and 'doomsday' talk."
-        },
-        "draft": {
-          "title": "Cerebras CEO Pushes Back on AI Doomsday Hype",
-          "hook_text": "Stop the AI doomsday warnings",
-          "beats": [
-            {
-              "line": "Cerebras CEO Andrew Feldman says AI leaders should stop talking about doomsday scenarios.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.cerebras.net/leadership",
-              "tag": "Feldman on AI warnings",
-              "name": "Andrew Feldman",
-              "role": "CEO, Cerebras",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Cerebras",
-                  "domain": "cerebras.net"
-                }
-              ]
-            },
-            {
-              "line": "He shared this message at the TechCrunch Disrupt conference in San Francisco.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Moscone Center",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "TechCrunch Disrupt 2026",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Feldman claims that focusing on existential risks drowns out the benefits of AI.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Cerebras Wafer Scale Engine",
-              "outlet": "",
-              "domain": "cerebras.net",
-              "headline": "",
-              "url": "https://www.cerebras.net",
-              "tag": "AI benefits vs risk",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Cerebras",
-                  "domain": "cerebras.net"
-                }
-              ]
-            },
-            {
-              "line": "He argues that the industry's obsession with worst-case outcomes is misguided.",
-              "visual": "clip",
-              "query": "business professional on stage",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Misguided industry focus",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The CEO instead wants to focus on building practical applications today.",
-              "visual": "clip",
-              "query": "server room data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Focus on building",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Feldman believes we must look at the real utility AI provides right now.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Cerebras Wafer Scale Engine",
-              "outlet": "",
-              "domain": "cerebras.net",
-              "headline": "",
-              "url": "https://www.cerebras.net",
-              "tag": "Utility over fear",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Cerebras",
-                  "domain": "cerebras.net"
-                }
-              ]
-            },
-            {
-              "line": "Does this constant fear-mongering actually change how you use AI?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Cerebras CEO pushes back on AI doomsday warnings",
-              "url": "",
-              "tag": "AI fear-mongering",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Sharp, direct, and slightly frustrated, mirroring Feldman's blunt message to his peers.",
-          "thin": false,
-          "caption": "Cerebras CEO Andrew Feldman argues at TechCrunch Disrupt that constant AI doomsday warnings are distracting the industry from real progress. He believes we should prioritize actual utility over hypothetical risks. Does this constant fear-mongering actually change how you use AI?",
-          "hashtags": [
-            "Cerebras",
-            "AndrewFeldman",
-            "TechCrunchDisrupt",
-            "ArtificialIntelligence",
-            "AIPolicy"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-          ],
-          "script": "Cerebras CEO Andrew Feldman says AI leaders should stop talking about doomsday scenarios.\nHe shared this message at the TechCrunch Disrupt conference in San Francisco.\nFeldman claims that focusing on existential risks drowns out the benefits of AI.\nHe argues that the industry's obsession with worst-case outcomes is misguided.\nThe CEO instead wants to focus on building practical applications today.\nFeldman believes we must look at the real utility AI provides right now.\nDoes this constant fear-mongering actually change how you use AI?",
-          "keywords": [
-            "business professional on stage",
-            "server room data center"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Cerebras CEO pushes back on AI doomsday warnings",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            },
-            {
-              "claim": "Andrew Feldman is the CEO of Cerebras",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            },
-            {
-              "claim": "Andrew Feldman says AI leaders should stop talking about doomsday scenarios",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            },
-            {
-              "claim": "Andrew Feldman shared his message at the TechCrunch Disrupt conference in San Francisco",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            },
-            {
-              "claim": "Feldman claims that focusing on existential risks drowns out the benefits of AI",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            },
-            {
-              "claim": "Feldman argues that the industry's obsession with worst-case outcomes is misguided",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            },
-            {
-              "claim": "The CEO wants to focus on building practical applications today",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            },
-            {
-              "claim": "Feldman believes we must look at the real utility AI provides right now",
-              "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-14T15:25:23.260569+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1685,10 +1616,45 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIV-2rPW3OKX7s7uvK44-WNN5-dNzLYAALuIAAC-A14Vm2tx9L9OGErPQQ",
       "history_title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Facebook is giving users more control over their algorithm",
+            "link": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
+            "summary": "Meta announced the launch of its new AI-powered feature, “Your Algorithm,” a feature it first launched on Instagram.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-13T18:05:24+00:00",
+            "angle": "Meta is finally letting you customize your Facebook algorithm with AI—here is how to take control of your feed."
+          },
+          {
+            "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+            "link": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+            "summary": "American Express is introducing a new framework designed to ensure AI agents only make purchases their users have authorized, potentially preventing costly mistakes and disputes as AI-powered shopping grows.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-13T13:00:00+00:00",
+            "angle": "American Express is building a 'safety net' for AI agents to stop them from accidentally spending all your money."
+          }
+        ],
+        "choose_deadline": "2026-10-14T16:10:56.687569+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIIRWrHV-5fWsIltk2L9KXswQ8qVDNVAALKHgAClrJAVsbLFYa4Eg9ePQQ",
     "BAACAgUAAxkDAAIIXGrHaX8GRGvCNvkS-ko0SCYc7OLOAAL4HgAClrJAVqDX7Av3YjbBPQQ",
     "BAACAgUAAxkDAAIIa2rHgiFmrIhlFMV81Hxxj-nhWMSiAAJAHwAClrJAVmfinhNo2mh_PQQ",
     "BAACAgUAAxkDAAIId2rHnze-UWNcSv8L3Z_bsQHVI4zyAAKXHwAClrJAVlTzI6ojtpmePQQ",
@@ -1717,7 +1683,8 @@
     "BAACAgUAAxkDAAIObGrLW5VDIz7ZLOMcfriLda12t7s2AAIwHwACRp1ZVnX2NAeptsj9PQQ",
     "BAACAgUAAxkDAAIQhmrMeSPCy6eAu1qYt94ZxIOAqBALAAJzIgACqxlpVkAS98hD5suyPQQ",
     "BAACAgUAAxkDAAITT2rN7UvTXyutIBkgSDEIopOb_UwgAAL1HQACqxlxVp3cHbPjqE9oPQQ",
-    "BAACAgUAAxkDAAIUUGrOFAE162SjszX-GhgYVrrvUX5PAALoIAAC-A1wVr2Qki7S4Mc_PQQ"
+    "BAACAgUAAxkDAAIUUGrOFAE162SjszX-GhgYVrrvUX5PAALoIAAC-A1wVr2Qki7S4Mc_PQQ",
+    "BAACAgUAAxkDAAIV-2rPW3OKX7s7uvK44-WNN5-dNzLYAALuIAAC-A14Vm2tx9L9OGErPQQ"
   ],
   "history": [
     "OpenAI halts frontier-model training amid string of agent misalignment incidents",
@@ -2247,7 +2214,7 @@
   "late_note_for": "2026-10-14-0",
   "gemini_use": {
     "day": "2026-10-14",
-    "calls": 594,
+    "calls": 644,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2282,10 +2249,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 48,
-        "busy": 21,
+        "ok": 80,
+        "busy": 39,
         "other": 1,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
