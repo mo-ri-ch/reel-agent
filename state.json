@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -213,16 +213,59 @@
     "editor_rounds": 1,
     "source_links": [
       "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The project uses on-device technology to prioritiz…: almost-empty card",
+      "Would you rely on on-device AI to filter your priv…: almost-empty card",
+      "The shot is an almost-empty card with no source information provided."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual variety and pacing need refinement to meet premium standards.",
+      "script_fixes": [
+        "LINE 5: Replace 'The collaboration aims to protect citizens' with 'GovTech Singapore is integrating this to protect citizens'.",
+        "LINE 6: Replace 'Google DeepMind expects these tools' with 'The project aims to intercept these threats'."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The abstract 3D graphic is generic and does not visually represent the scam issue.",
+        "line 2: The 'DeepMind partnership' text card is redundant and adds no visual information.",
+        "line 6: The stock photo of a generic Google office building is irrelevant to the specific on-devic"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Google DeepMind: deepmind.google",
+      "Google DeepMind: deepmind.google",
+      "Gemma: deepmind.google",
+      "Gemma: deepmind.google",
+      "news photo: deepmind.google",
+      "Google DeepMind: Gciriani (CC BY-SA 4.0), via Wikimedia Commons"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "5 official images, 1 real photos, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIWY2rPaCotQKwzIt0yoINCJPcXowz1AAIPIQAC-A14Vu0BJwYL5ouVPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-14T16:55:46.729851+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-14T17:31:55.200011+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-14",
@@ -664,235 +707,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
-          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5",
-          "summary": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco The New Indian Express",
-          "source": "The New Indian Express",
-          "published": "2026-10-14T07:37:36+00:00",
-          "angle": "A major security breach at OpenAI: A Saudi employee was arrested for allegedly bugging their San Francisco office."
-        },
-        "draft": {
-          "title": "OpenAI Employee Arrested for Espionage",
-          "hook_text": "OpenAI employee arrested for bugging office",
-          "beats": [
-            {
-              "line": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Engineer arrested",
-              "name": "Abdulrahman Alfozan",
-              "role": "Software Engineer, OpenAI",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "He allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "San Francisco",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Hidden device found",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "OpenAI security teams discovered the device and reported it directly to the FBI.",
-              "visual": "clip",
-              "query": "tech office security",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "FBI investigation started",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The United States Department of Justice charged Alfozan with intercepting oral communications.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Department of Justice",
-              "domain": "justice.gov",
-              "headline": "Software Engineer Charged with Intercepting Communications",
-              "url": "",
-              "tag": "DOJ charges filed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Prosecutors allege he intended to record proprietary meetings about future AI model development.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Secret Rec",
-              "small": "Proprietary AI data",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Targeting AI data",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He faces up to five years in federal prison if convicted.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "5 Years",
-              "small": "Potential prison sentence",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Five year sentence",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an office environment with this level of internal security risk?",
-              "visual": "clip",
-              "query": "modern office interior",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Security risks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast, authoritative news reporting, maintaining a serious tone regarding the security breach.",
-          "thin": false,
-          "caption": "OpenAI software engineer Abdulrahman Alfozan was arrested on October 9, 2026, for allegedly planting a recording device at the company's San Francisco headquarters. The Department of Justice has charged him with intercepting oral communications regarding proprietary AI research. He could face up to five years in prison for the breach. Would you trust an office environment with this level of internal security risk?",
-          "hashtags": [
-            "OpenAI",
-            "TechNews",
-            "CyberSecurity",
-            "Espionage",
-            "AI"
-          ],
-          "sources": [
-            "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco-2733946.html"
-          ],
-          "script": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.\nHe allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.\nOpenAI security teams discovered the device and reported it directly to the FBI.\nThe United States Department of Justice charged Alfozan with intercepting oral communications.\nProsecutors allege he intended to record proprietary meetings about future AI model development.\nHe faces up to five years in federal prison if convicted.\nWould you trust an office environment with this level of internal security risk?",
-          "keywords": [
-            "tech office security",
-            "modern office interior"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "OpenAI employee arrested for bugging office",
-              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
-            },
-            {
-              "claim": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.",
-              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
-            },
-            {
-              "claim": "He allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.",
-              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
-            },
-            {
-              "claim": "OpenAI security teams discovered the device and reported it directly to the FBI.",
-              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
-            },
-            {
-              "claim": "The United States Department of Justice charged Alfozan with intercepting oral communications.",
-              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5"
-            },
-            {
-              "claim": "Prosecutors allege he intended to record proprietary meetings about future AI model development.",
-              "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
-            },
-            {
-              "claim": "He faces up to five years in federal prison if convicted.",
-              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-14T15:56:52.236202+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1654,6 +1468,235 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+          "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+          "source": "Google DeepMind News",
+          "published": "2026-10-14T02:00:14+00:00",
+          "angle": "Google DeepMind is launching an on-device AI tool that detects scams in your private chats without sending data to the cloud."
+        },
+        "draft": {
+          "title": "Google DeepMind and Singapore Gov fight scams",
+          "hook_text": "Singapore is blocking scams using AI",
+          "beats": [
+            {
+              "line": "Scam victims in Singapore lost four billion dollars since twenty nineteen.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "4B",
+              "small": "total losses",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "4B in scam losses",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Google DeepMind is now collaborating with the Singapore government to tackle this issue.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google DeepMind",
+              "outlet": "",
+              "domain": "deepmind.google",
+              "headline": "",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+              "tag": "DeepMind partnership",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google DeepMind",
+                  "domain": "deepmind.google"
+                }
+              ]
+            },
+            {
+              "line": "They are developing lightweight Gemma models to identify and block fraudulent conversational patterns.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Gemma",
+              "outlet": "",
+              "domain": "deepmind.google",
+              "headline": "",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+              "tag": "Lightweight Gemma models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Gemma",
+                  "domain": "deepmind.google"
+                }
+              ]
+            },
+            {
+              "line": "The project uses on-device technology to prioritize user privacy and data security.",
+              "visual": "clip",
+              "query": "smartphone screen security",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "On-device processing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The collaboration aims to protect citizens from increasingly sophisticated digital phishing attempts.",
+              "visual": "clip",
+              "query": "cyber security data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Phishing protection",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Google DeepMind expects these tools to identify threats before they reach the user.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google DeepMind",
+              "outlet": "",
+              "domain": "deepmind.google",
+              "headline": "",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+              "tag": "Real-time threat detection",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google DeepMind",
+                  "domain": "deepmind.google"
+                }
+              ]
+            },
+            {
+              "line": "Would you rely on on-device AI to filter your private messages for scams?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Google DeepMind",
+              "domain": "deepmind.google",
+              "headline": "On-device AI scam detection with Singapore",
+              "url": "",
+              "tag": "Private message filtering",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and direct, focusing on the scale of the problem and the privacy-first approach of the solution.",
+          "thin": false,
+          "caption": "Google DeepMind and the Singapore government are partnering to combat scams that have cost residents four billion dollars since 2019. The project uses lightweight Gemma models to intercept fraudulent messages locally on your device. Would you trust an on-device AI to filter your messages for fraud?",
+          "hashtags": [
+            "GoogleDeepMind",
+            "Singapore",
+            "CyberSecurity",
+            "AI",
+            "DigitalSafety"
+          ],
+          "sources": [
+            "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+          ],
+          "script": "Scam victims in Singapore lost four billion dollars since twenty nineteen.\nGoogle DeepMind is now collaborating with the Singapore government to tackle this issue.\nThey are developing lightweight Gemma models to identify and block fraudulent conversational patterns.\nThe project uses on-device technology to prioritize user privacy and data security.\nThe collaboration aims to protect citizens from increasingly sophisticated digital phishing attempts.\nGoogle DeepMind expects these tools to identify threats before they reach the user.\nWould you rely on on-device AI to filter your private messages for scams?",
+          "keywords": [
+            "smartphone screen security",
+            "cyber security data"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Singapore is blocking scams using AI",
+              "url": "https://ua.news/en/world/govtech-i-google-deepmind-rozrobliaiut-sistemu-viiavlennia-shi-shakhraistva-channel-newsasia"
+            },
+            {
+              "claim": "Scam victims in Singapore lost four billion dollars since twenty nineteen.",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+            },
+            {
+              "claim": "Google DeepMind is now collaborating with the Singapore government to tackle this issue.",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+            },
+            {
+              "claim": "They are developing lightweight Gemma models to identify and block fraudulent conversational patterns.",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+            },
+            {
+              "claim": "The project uses on-device technology to prioritize user privacy and data security.",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+            },
+            {
+              "claim": "The collaboration aims to protect citizens from increasingly sophisticated digital phishing attempts.",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+            },
+            {
+              "claim": "Google DeepMind expects these tools to identify threats before they reach the user.",
+              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-14T16:55:46.729851+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2164,7 +2207,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "male",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-14T16:10+05:30",
@@ -2192,7 +2235,7 @@
   "report_day": "2026-10-13",
   "ig_count": {
     "day": "2026-10-14",
-    "at": "2026-10-14T16:45:28.925366+05:30",
+    "at": "2026-10-14T16:56:07.711807+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2212,11 +2255,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-14",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-14-1",
   "gemini_use": {
     "day": "2026-10-14",
-    "calls": 644,
+    "calls": 651,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2251,10 +2294,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 80,
+        "ok": 86,
         "busy": 39,
-        "other": 1,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 2,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
@@ -2337,26 +2380,6 @@
     "gemini-3.5-flash-lite": 1791970581.8363059
   },
   "editor_log": [
-    {
-      "at": "2026-10-14T13:31+05:30",
-      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI mode",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 9
-      },
-      "one_line": "Strong, specific script let down by stale, unpolished visuals and lingering text artifact boxes.",
-      "fixes": [],
-      "visual": [
-        "line 1: Visible editing selection bounding box on 'DeepMind' text in title frame.",
-        "line 3: Leftover UI bounding box highlights remaining on text elements.",
-        "line 4: Unwanted UI text selection box visible on 'Zero' in the subtitle card."
-      ]
-    },
     {
       "at": "2026-10-14T13:54+05:30",
       "title": "Xbox is officially embracing the chaos of AI-powered game ports",
@@ -2769,6 +2792,29 @@
         "line 1: The same abstract graphic is held for too long across multiple frames.",
         "line 2: The abstract graphic is reused again, creating visual fatigue.",
         "line 4: The visual is just text on a plain background; needs a relevant icon or diagram."
+      ]
+    },
+    {
+      "at": "2026-10-14T17:01+05:30",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI mode",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual variety and pacing need refinement to meet premium standards.",
+      "fixes": [
+        "LINE 5: Replace 'The collaboration aims to protect citizens' with 'GovTech Singapore is integrating this to protect citizens'.",
+        "LINE 6: Replace 'Google DeepMind expects these tools' with 'The project aims to intercept these threats'."
+      ],
+      "visual": [
+        "line 1: The abstract 3D graphic is generic and does not visually represent the scam issue.",
+        "line 2: The 'DeepMind partnership' text card is redundant and adds no visual information.",
+        "line 6: The stock photo of a generic Google office building is irrelevant to the specific on-devic"
       ]
     }
   ],
