@@ -13,11 +13,11 @@
     "angle": "Someone figured out how to run a powerful Qwen LLM locally on a jailbroken PlayStation 5 GPU."
   },
   "draft": {
-    "title": "Running Qwen 27B on a PS5",
-    "hook_text": "A jailbroken PS5 runs Qwen 27B.",
+    "title": "Qwen 27B Runs on a Jailbroken PS5",
+    "hook_text": "Twenty tokens per second on a jailbroken PS5.",
     "beats": [
       {
-        "line": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.",
+        "line": "Twenty tokens per second running Alibaba's Qwen twenty seven B model on a jailbroken PlayStation five.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -44,34 +44,7 @@
         ]
       },
       {
-        "line": "Alibaba released the twenty-seven billion parameter model in August twenty twenty-six.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "r/LocalLLaMA",
-        "domain": "reddit.com",
-        "headline": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
-        "url": "",
-        "tag": "Alibaba model release",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Alibaba",
-            "domain": "alibabagroup.com"
-          },
-          {
-            "name": "Qwen",
-            "domain": "aliyun.com"
-          }
-        ]
-      },
-      {
-        "line": "Developer cobanov and abhi two forty-five y built the PS5 LM projects.",
+        "line": "Developers cobanov and abhi245y built the PS5 LM project to execute local inference.",
         "visual": "clip",
         "query": "coding terminal screen dark",
         "prompt": "",
@@ -82,14 +55,41 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "PS5 LM projects",
+        "tag": "PS5 LM project",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Sony locked the custom graphics hardware down to block custom code execution.",
+        "line": "The console uses a custom AMD chip featuring sixteen gigabytes of shared GDDR6 memory.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "PlayStation 5",
+        "outlet": "",
+        "domain": "playstation.com",
+        "headline": "",
+        "url": "https://www.playstation.com/ps5/",
+        "tag": "GDDR6 memory bandwidth",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "PlayStation",
+            "domain": "playstation.com"
+          },
+          {
+            "name": "AMD",
+            "domain": "amd.com"
+          }
+        ]
+      },
+      {
+        "line": "Sony locked down the graphics hardware to prevent unapproved custom code execution.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -112,7 +112,7 @@
         ]
       },
       {
-        "line": "Local runners bypass those limits to test massive weights on console silicon.",
+        "line": "Bypassing those limits lets enthusiasts test massive model weights directly on console silicon.",
         "visual": "clip",
         "query": "living room gaming setup",
         "prompt": "",
@@ -124,6 +124,24 @@
         "headline": "",
         "url": "",
         "tag": "Console silicon testing",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Running open source weights locally avoids cloud API costs and usage restrictions.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "r/LocalLLaMA",
+        "domain": "reddit.com",
+        "headline": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
+        "url": "",
+        "tag": "Local open source weights",
         "name": "",
         "role": "",
         "x": "",
@@ -150,17 +168,19 @@
     ],
     "delivery": "curious and upbeat tech enthusiast explaining an unexpected hardware hack",
     "thin": false,
-    "caption": "A jailbroken PlayStation 5 is running Alibaba's Qwen twenty-seven B model at twenty tokens per second. Developers cobanov and abhi245y enabled local inference on console hardware. Would you hack your console to run local models?",
+    "caption": "A jailbroken PlayStation 5 is running Alibaba's Qwen twenty seven B model at twenty tokens per second using custom GDDR6 memory. Developers cobanov and abhi245y enabled local inference on console hardware. Would you hack your console to run local models?",
     "hashtags": [
       "PlayStation5",
       "Qwen",
       "LocalLLaMA",
-      "Alibaba"
+      "Alibaba",
+      "AMD"
     ],
     "sources": [
-      "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
+      "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/",
+      "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
     ],
-    "script": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.\nAlibaba released the twenty-seven billion parameter model in August twenty twenty-six.\nDeveloper cobanov and abhi two forty-five y built the PS5 LM projects.\nSony locked the custom graphics hardware down to block custom code execution.\nLocal runners bypass those limits to test massive weights on console silicon.\nWould you hack your console to run local models?",
+    "script": "Twenty tokens per second running Alibaba's Qwen twenty seven B model on a jailbroken PlayStation five.\nDevelopers cobanov and abhi245y built the PS5 LM project to execute local inference.\nThe console uses a custom AMD chip featuring sixteen gigabytes of shared GDDR6 memory.\nSony locked down the graphics hardware to prevent unapproved custom code execution.\nBypassing those limits lets enthusiasts test massive model weights directly on console silicon.\nRunning open source weights locally avoids cloud API costs and usage restrictions.\nWould you hack your console to run local models?",
     "keywords": [
       "coding terminal screen dark",
       "living room gaming setup"
@@ -169,33 +189,38 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "A jailbroken PS5 runs Qwen 27B.",
+        "claim": "Twenty tokens per second on a jailbroken PS5.",
         "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
       },
       {
-        "claim": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.",
+        "claim": "Twenty tokens per second running Alibaba's Qwen twenty seven B model on a jailbroken PlayStation five.",
         "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
       },
       {
-        "claim": "Alibaba released the twenty-seven billion parameter model in August twenty twenty-six.",
+        "claim": "Developers cobanov and abhi245y built the PS5 LM project to execute local inference.",
         "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
       },
       {
-        "claim": "Developer cobanov and abhi two forty-five y built the PS5 LM projects.",
+        "claim": "The console uses a custom AMD chip featuring sixteen gigabytes of shared GDDR6 memory.",
         "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
       },
       {
-        "claim": "Sony locked the custom graphics hardware down to block custom code execution.",
+        "claim": "Sony locked down the graphics hardware to prevent unapproved custom code execution.",
         "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
       },
       {
-        "claim": "Local runners bypass those limits to test massive weights on console silicon.",
+        "claim": "Bypassing those limits lets enthusiasts test massive model weights directly on console silicon.",
+        "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+      },
+      {
+        "claim": "Running open source weights locally avoids cloud API costs and usage restrictions.",
         "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
     ]
@@ -205,9 +230,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-14T14:00:17.934727+05:30",
+  "script_deadline": "2026-10-14T14:07:06.780391+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-14",
@@ -657,51 +682,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-            "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-            "summary": "Max Hodak, the former president and co-founder of Neuralink, detailed onstage at TechCrunch Disrupt how his company's work with PRIMA is part of its path toward a novel brain-computer interface (BCI).",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-13T23:13:31+00:00",
-            "angle": "Neuralink co-founder implants vision-restoring chip in first patient, taking BCI tech mainstream."
-          },
-          {
-            "title": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
-            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/",
-            "summary": "",
-            "source": "r/LocalLLaMA",
-            "published": "2026-10-13T22:21:00+00:00",
-            "buzz": "top of r/LocalLLaMA today",
-            "angle": "Someone just got a massive AI model running smoothly on a jailbroken PS5."
-          },
-          {
-            "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-            "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-            "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-            "source": "Google DeepMind News",
-            "published": "2026-10-14T02:00:14+00:00",
-            "angle": "Google DeepMind and Singapore built an on-device AI model specifically to intercept phone scams."
-          }
-        ],
-        "choose_deadline": "2026-10-14T13:06:40.302643+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1582,6 +1562,220 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
+          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/",
+          "summary": "",
+          "source": "r/LocalLLaMA",
+          "published": "2026-10-13T22:21:00+00:00",
+          "buzz": "top of r/LocalLLaMA today",
+          "angle": "Someone figured out how to run a powerful Qwen LLM locally on a jailbroken PlayStation 5 GPU."
+        },
+        "draft": {
+          "title": "Running Qwen 27B on a PS5",
+          "hook_text": "A jailbroken PS5 runs Qwen 27B.",
+          "beats": [
+            {
+              "line": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "PlayStation 5",
+              "outlet": "",
+              "domain": "playstation.com",
+              "headline": "",
+              "url": "https://www.playstation.com/ps5/",
+              "tag": "PS5 runs Qwen 27B",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "PlayStation",
+                  "domain": "playstation.com"
+                },
+                {
+                  "name": "Qwen",
+                  "domain": "aliyun.com"
+                }
+              ]
+            },
+            {
+              "line": "Alibaba released the twenty-seven billion parameter model in August twenty twenty-six.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "r/LocalLLaMA",
+              "domain": "reddit.com",
+              "headline": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
+              "url": "",
+              "tag": "Alibaba model release",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Alibaba",
+                  "domain": "alibabagroup.com"
+                },
+                {
+                  "name": "Qwen",
+                  "domain": "aliyun.com"
+                }
+              ]
+            },
+            {
+              "line": "Developer cobanov and abhi two forty-five y built the PS5 LM projects.",
+              "visual": "clip",
+              "query": "coding terminal screen dark",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "PS5 LM projects",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Sony locked the custom graphics hardware down to block custom code execution.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "PlayStation 5",
+              "outlet": "",
+              "domain": "playstation.com",
+              "headline": "",
+              "url": "https://www.playstation.com/ps5/",
+              "tag": "Sony hardware lockdown",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Sony",
+                  "domain": "sony.com"
+                }
+              ]
+            },
+            {
+              "line": "Local runners bypass those limits to test massive weights on console silicon.",
+              "visual": "clip",
+              "query": "living room gaming setup",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Console silicon testing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you hack your console to run local models?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "20",
+              "small": "tokens per second",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "20 tokens per second",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "curious and upbeat tech enthusiast explaining an unexpected hardware hack",
+          "thin": false,
+          "caption": "A jailbroken PlayStation 5 is running Alibaba's Qwen twenty-seven B model at twenty tokens per second. Developers cobanov and abhi245y enabled local inference on console hardware. Would you hack your console to run local models?",
+          "hashtags": [
+            "PlayStation5",
+            "Qwen",
+            "LocalLLaMA",
+            "Alibaba"
+          ],
+          "sources": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
+          ],
+          "script": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.\nAlibaba released the twenty-seven billion parameter model in August twenty twenty-six.\nDeveloper cobanov and abhi two forty-five y built the PS5 LM projects.\nSony locked the custom graphics hardware down to block custom code execution.\nLocal runners bypass those limits to test massive weights on console silicon.\nWould you hack your console to run local models?",
+          "keywords": [
+            "coding terminal screen dark",
+            "living room gaming setup"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "A jailbroken PS5 runs Qwen 27B.",
+              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+            },
+            {
+              "claim": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.",
+              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+            },
+            {
+              "claim": "Alibaba released the twenty-seven billion parameter model in August twenty twenty-six.",
+              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+            },
+            {
+              "claim": "Developer cobanov and abhi two forty-five y built the PS5 LM projects.",
+              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+            },
+            {
+              "claim": "Sony locked the custom graphics hardware down to block custom code execution.",
+              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+            },
+            {
+              "claim": "Local runners bypass those limits to test massive weights on console silicon.",
+              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-14T14:00:17.934727+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2090,8 +2284,8 @@
       "event": "Prabanta Dey released Janas to bypass your computer's memory limits. Your next AI project might finally fit on your standard laptop. Janas streams model experts directly from your SSD instead of loading into RAM. It uses memory mapping to a"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-14T13:06+05:30",
@@ -2257,30 +2451,6 @@
     "gemini-3-flash-preview": 1791963223.2122676
   },
   "editor_log": [
-    {
-      "at": "2026-10-13T15:35+05:30",
-      "title": "SpaceX agrees to testify to NYC Council about AI safety after receiving subpoena",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 6,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 5,
-        "flow": 8
-      },
-      "one_line": "Strong news hook, but visuals are generic stock footage and lack necessary specificity.",
-      "fixes": [
-        "LINE 3: Replace 'AI tools' with 'AI-driven automated systems' to sound more professional.",
-        "LINE 5: Name the specific NYC Council committee or the specific legislation if available.",
-        "LINE 6: Replace 'SpaceX executives' with the specific names of the officials testifying if known."
-      ],
-      "visual": [
-        "line 3: Generic code snippet does not represent SpaceX or NYC Council.",
-        "line 4: Abstract tunnel footage is irrelevant to the topic of AI safety.",
-        "line 6: Generic stock office footage is not a substitute for actual news imagery."
-      ]
-    },
     {
       "at": "2026-10-13T15:44+05:30",
       "title": "AI labs are buying data from dead startups to train their models",
@@ -2711,6 +2881,28 @@
         "line 1: The same static image is held for over 7 seconds, violating the pacing rule.",
         "line 2: Visuals are just text on a black background; lacks relevant imagery of retro gaming or cod",
         "line 3: The 'Call of Duty' and 'Halo' logos are missing; using generic 'A' icons is lazy."
+      ]
+    },
+    {
+      "at": "2026-10-14T14:06+05:30",
+      "title": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong technical story, but visual pacing drops with generic placeholder cards.",
+      "fixes": [
+        "LINE 3: Say 'Developers cobanov and abhi245y built the PS5 LM project.' instead of spelling out usernames."
+      ],
+      "visual": [
+        "line 2: Displays Reddit logo instead of Alibaba branding or model details",
+        "line 3: Shows generic code block instead of developers or project repo",
+        "line 6: Shows random numbers '15' and '20 tokens per second' out of context during the closing que"
       ]
     }
   ],

@@ -1,0 +1,76 @@
+{
+ "made": "20261014-0836",
+ "title": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
+ "hook_text": "A jailbroken PS5 runs Qwen 27B.",
+ "hook_before": null,
+ "script": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.\nAlibaba released the twenty-seven billion parameter model in August twenty twenty-six.\nDeveloper cobanov and abhi two forty-five y built the PS5 LM projects.\nSony locked the custom graphics hardware down to block custom code execution.\nLocal runners bypass those limits to test massive weights on console silicon.\nWould you hack your console to run local models?",
+ "words": 67,
+ "beats": [
+  {
+   "line": "Twenty tokens per second running Qwen on a jailbroken PlayStation five.",
+   "visual": "official"
+  },
+  {
+   "line": "Alibaba released the twenty-seven billion parameter model in August twenty twenty-six.",
+   "visual": "source"
+  },
+  {
+   "line": "Developer cobanov and abhi two forty-five y built the PS5 LM projects.",
+   "visual": "clip"
+  },
+  {
+   "line": "Sony locked the custom graphics hardware down to block custom code execution.",
+   "visual": "official"
+  },
+  {
+   "line": "Local runners bypass those limits to test massive weights on console silicon.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you hack your console to run local models?",
+   "visual": "stat"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 6,
+   "flow": 8
+  },
+  "one_line": "Strong technical story, but visual pacing drops with generic placeholder cards.",
+  "script_fixes": [
+   "LINE 3: Say 'Developers cobanov and abhi245y built the PS5 LM project.' instead of spelling out usernames."
+  ],
+  "visual_beats": [
+   1,
+   2,
+   5
+  ],
+  "visual_notes": [
+   "line 2: Displays Reddit logo instead of Alibaba branding or model details",
+   "line 3: Shows generic code block instead of developers or project repo",
+   "line 6: Shows random numbers '15' and '20 tokens per second' out of context during the closing que"
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 29.5,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  10.27,
+  13.2,
+  16.1,
+  21.1
+ ],
+ "first_cut_at": 10.27,
+ "avg_shot_seconds": 5.9,
+ "longest_shot_seconds": 10.27,
+ "verdict": "rejected",
+ "words_per_minute": 136
+}
