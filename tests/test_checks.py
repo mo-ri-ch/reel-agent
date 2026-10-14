@@ -328,6 +328,8 @@ check("resting until reset", _r1 is not None and _r1 > main.st.now(), True)
 check("told once", len(_sent), 1)
 writer.EXHAUSTED.clear(); main.tg.send = _send
 
+check("json trailing comma", writer.parse_json('{"a": [1, 2,], "b": {"c": 3,},}'), {"a": [1, 2], "b": {"c": 3}})
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

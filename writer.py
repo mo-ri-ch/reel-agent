@@ -214,7 +214,13 @@ def parse_json(text):
     end = max(text.rfind("}"), text.rfind("]"))
     if start == -1 or end == -1:
         raise ValueError(f"No JSON in model reply: {text[:200]}")
-    return json.loads(text[start:end + 1])
+    raw = text[start:end + 1]
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:  # the free models sometimes leave trailing commas or // notes
+        fixed = re.sub(r"(?m)^\s*//.*$", "", raw)
+        fixed = re.sub(r",\s*([}\]])", r"\1", fixed)
+        return json.loads(fixed)
 
 
 def pick_top(headlines, history, count=3):
@@ -737,7 +743,8 @@ Score each 1-10:
   report is not a confirmation). Wrong or misleading = 4 or less.
 - visuals: each frame fits the words being spoken at that moment (named company -> its logo/product, person -> their
   photo, number -> number card); no unrelated, repeated, blank or broken pictures; text readable.
-- (Captions are checked separately by code; ignore the text strip at the top. The same picture held for more than
+- (Our brand style: the highlighted key word in a box with small corner squares is INTENTIONAL design, not a leftover
+  editing artifact; don't mark it down. Captions are checked separately by code; ignore the text strip at the top. The same picture held for more than
   ~8 seconds, 3+ frames in a row, or the same photo appearing in many lines costs visuals points.)
 - flow: natural spoken English, clear story, strong specific ending question.
 Then list what must change to reach 9/10."""
