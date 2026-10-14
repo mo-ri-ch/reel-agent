@@ -149,3 +149,9 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-13 evening: max shot 3.2 s
 - Lines cut into <=3.2 s shots (card, label, real logo); letter-block logos dropped. Baseline 13 Oct: 2 of ~20 passed, visuals median 5. Metric: editor visuals, pass rate.
+
+## 2026-10-14: daily check
+- No failed runs in 24 h (17 cancelled = overlapping 5-min runs). 13 Oct: 2 of 6 posted (Intel D270, Janas, both 8.7). 14 Oct 09:00/11:30
+  missed waiting for the 12:30 IST reset (expected). The 3.2 s max-shot change landed after the quota ran out, so today is its first test.
+- Change: articles in a site's opinion/editorial/letters/column section (by URL) are skipped; a Nantucket Current opinion column was a
+  candidate today. Metric: editor scores of picked stories, fewer quota-wasting rewrites.
