@@ -640,7 +640,15 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             planned[key_of(info)] = planned.get(key_of(info), 0) + 1
             out.append(("picture", {**info, "_reframe": uses.get(key_of(info), 0) + planned[key_of(info)]}))
         return out
-    shown_brands = set()
+    shown_brands, initials_shown = set(), set()
+
+    def banner(info):
+        """Wide promo banners (> 2:1) lose their words in our card crop ('...TEST AI')."""
+        try:
+            with Image.open(info["raw"]) as im:
+                return im.width / max(1, im.height) > 2.0
+        except Exception:
+            return False
     for i, ((start, end), b, shots) in enumerate(zip(times, beats, plan)):
         start = max(start, hook_len)
         if end - start < 0.05:
@@ -698,7 +706,12 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             kind, info = specs[k % len(specs)]
             repeat = k // len(specs)
             stop = start + (end - start) * (k + 1) / pieces
-            if kind == "picture" and uses.get(key_of(info), 0) >= MAX_PHOTO_USES:  # shown already: say it in words
+            if kind == "person" and not info.get("raw") and info.get("name") in initials_shown:
+                kind, info = ("statement", {"tag": tag}) if tag else (kind, info)  # initials card once per person
+            if kind == "person" and not info.get("raw"):
+                initials_shown.add(info.get("name"))
+            if kind == "picture" and (uses.get(key_of(info), 0) >= MAX_PHOTO_USES or banner(info)):
+                # shown already, or a wide promo banner whose words get cut off: say it in words
                 brand = next((br for br in b.get("brands") or []
                               if re.sub(r"[^a-z0-9]", "", str(br.get("name", "")).lower()) not in shown_brands), None)
                 if tag:
