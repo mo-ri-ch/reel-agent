@@ -13,10 +13,33 @@
   },
   "draft": {
     "title": "OpenAI Employee Arrested for Espionage",
-    "hook_text": "OpenAI office bugged by employee",
+    "hook_text": "OpenAI employee arrested for bugging office",
     "beats": [
       {
-        "line": "A Saudi national was arrested for allegedly bugging the OpenAI office in San Francisco.",
+        "line": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Engineer arrested",
+        "name": "Abdulrahman Alfozan",
+        "role": "Software Engineer, OpenAI",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      },
+      {
+        "line": "He allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.",
         "visual": "photo",
         "query": "technology",
         "prompt": "",
@@ -27,16 +50,21 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "OpenAI employee arrested",
+        "tag": "Hidden device found",
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
       },
       {
-        "line": "The suspect allegedly planted hidden surveillance devices to monitor internal activities at the headquarters.",
+        "line": "OpenAI security teams discovered the device and reported it directly to the FBI.",
         "visual": "clip",
-        "query": "office security camera",
+        "query": "tech office security",
         "prompt": "",
         "big": "",
         "small": "",
@@ -45,159 +73,144 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Surveillance devices found",
+        "tag": "FBI investigation started",
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
       },
       {
-        "line": "Federal agents from the FBI took the employee into custody after the equipment discovery.",
-        "visual": "clip",
-        "query": "FBI agents",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "FBI makes arrest",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The individual worked directly for OpenAI inside their California offices.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "OpenAI",
-        "outlet": "",
-        "domain": "openai.com",
-        "headline": "",
-        "url": "https://openai.com",
-        "tag": "OpenAI employee identified",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Prosecutors allege the suspect intended to exfiltrate proprietary data from the AI developer.",
-        "visual": "image",
-        "query": "technology",
-        "prompt": "data server racks in a secure room",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Proprietary data theft",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This security breach is now under active investigation by federal authorities.",
-        "visual": "clip",
-        "query": "federal courthouse",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Federal investigation active",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Do you feel safe with your data inside big AI labs?",
+        "line": "The United States Department of Justice charged Alfozan with intercepting oral communications.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "The New Indian Express",
-        "domain": "newindianexpress.com",
-        "headline": "Saudi employee arrested for allegedly bugging OpenAI office",
+        "outlet": "Department of Justice",
+        "domain": "justice.gov",
+        "headline": "Software Engineer Charged with Intercepting Communications",
         "url": "",
-        "tag": "Privacy trust compromised",
+        "tag": "DOJ charges filed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Prosecutors allege he intended to record proprietary meetings about future AI model development.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "Secret Rec",
+        "small": "Proprietary AI data",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Targeting AI data",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "He faces up to five years in federal prison if convicted.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "5 Years",
+        "small": "Potential prison sentence",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Five year sentence",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust an office environment with this level of internal security risk?",
+        "visual": "clip",
+        "query": "modern office interior",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Security risks",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       }
     ],
-    "delivery": "Serious, alert tone emphasizing the high stakes of corporate espionage at a major AI developer.",
+    "delivery": "Fast, authoritative news reporting, maintaining a serious tone regarding the security breach.",
     "thin": false,
-    "caption": "A Saudi national employed at OpenAI has been arrested by the FBI for allegedly bugging the company's San Francisco office. The suspect is accused of attempting to steal proprietary information from the AI developer. Do you feel safe with your data inside big AI labs?",
+    "caption": "OpenAI software engineer Abdulrahman Alfozan was arrested on October 9, 2026, for allegedly planting a recording device at the company's San Francisco headquarters. The Department of Justice has charged him with intercepting oral communications regarding proprietary AI research. He could face up to five years in prison for the breach. Would you trust an office environment with this level of internal security risk?",
     "hashtags": [
       "OpenAI",
-      "CyberSecurity",
       "TechNews",
-      "SanFrancisco",
-      "Espionage"
+      "CyberSecurity",
+      "Espionage",
+      "AI"
     ],
     "sources": [
-      "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5"
+      "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco-2733946.html"
     ],
-    "script": "A Saudi national was arrested for allegedly bugging the OpenAI office in San Francisco.\nThe suspect allegedly planted hidden surveillance devices to monitor internal activities at the headquarters.\nFederal agents from the FBI took the employee into custody after the equipment discovery.\nThe individual worked directly for OpenAI inside their California offices.\nProsecutors allege the suspect intended to exfiltrate proprietary data from the AI developer.\nThis security breach is now under active investigation by federal authorities.\nDo you feel safe with your data inside big AI labs?",
+    "script": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.\nHe allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.\nOpenAI security teams discovered the device and reported it directly to the FBI.\nThe United States Department of Justice charged Alfozan with intercepting oral communications.\nProsecutors allege he intended to record proprietary meetings about future AI model development.\nHe faces up to five years in federal prison if convicted.\nWould you trust an office environment with this level of internal security risk?",
     "keywords": [
-      "office security camera",
-      "FBI agents",
-      "federal courthouse"
+      "tech office security",
+      "modern office interior"
     ],
-    "image_prompts": [
-      "data server racks in a secure room"
-    ],
+    "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "OpenAI office bugged by employee",
+        "claim": "OpenAI employee arrested for bugging office",
         "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
       },
       {
-        "claim": "A Saudi national was arrested for allegedly bugging the OpenAI office in San Francisco.",
+        "claim": "Federal agents arrested OpenAI software engineer Abdulrahman Alfozan on October ninth.",
         "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
       },
       {
-        "claim": "The suspect allegedly planted hidden surveillance devices to monitor internal activities at the headquarters.",
+        "claim": "He allegedly planted a hidden recording device inside the OpenAI San Francisco headquarters.",
         "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
       },
       {
-        "claim": "Federal agents from the FBI took the employee into custody after the equipment discovery.",
+        "claim": "OpenAI security teams discovered the device and reported it directly to the FBI.",
         "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
       },
       {
-        "claim": "The individual worked directly for OpenAI inside their California offices.",
-        "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+        "claim": "The United States Department of Justice charged Alfozan with intercepting oral communications.",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5"
       },
       {
-        "claim": "Prosecutors allege the suspect intended to exfiltrate proprietary data from the AI developer.",
-        "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+        "claim": "Prosecutors allege he intended to record proprietary meetings about future AI model development.",
+        "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
       },
       {
-        "claim": "This security breach is now under active investigation by federal authorities.",
+        "claim": "He faces up to five years in federal prison if convicted.",
         "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 2,
+    "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco"
     ]
@@ -207,9 +220,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-14T15:49:39.000907+05:30",
+  "script_deadline": "2026-10-14T15:56:52.236202+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-14",
@@ -668,205 +681,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
-          "link": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-          "summary": "Industrial Next helps manufacturers automate complex, delicate tasks that have traditionally required human labor.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-13T23:00:00+00:00",
-          "angle": "Factory robots can now switch tasks in minutes instead of weeks, reshaping manufacturing."
-        },
-        "draft": {
-          "title": "Industrial Next speeds up robot tasks",
-          "hook_text": "Factory robots switch tasks in minutes",
-          "beats": [
-            {
-              "line": "Industrial Next cut factory robot retooling down from weeks to just minutes.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Industrial Next",
-              "outlet": "",
-              "domain": "industrialnext.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-              "tag": "Industrial Next retooling speed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Industrial Next",
-                  "domain": "industrialnext.com"
-                }
-              ]
-            },
-            {
-              "line": "The company helps manufacturers automate complex and delicate tasks.",
-              "visual": "clip",
-              "query": "factory robotic arm assembly line",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Automating complex manufacturing tasks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Industrial Next",
-                  "domain": "industrialnext.com"
-                }
-              ]
-            },
-            {
-              "line": "These precision jobs have traditionally required human labor.",
-              "visual": "clip",
-              "query": "workers assembling electronics in factory",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Replacing manual factory labor",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Traditional factory setups often take weeks to reprogram for new products.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Industrial Next wants factory robots to switch tasks in minutes",
-              "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-              "tag": "Weeks of downtime before",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This speed helps factories adapt instantly to changing consumer demands.",
-              "visual": "clip",
-              "query": "modern smart factory floor",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Instant factory adaptation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust a robot to build your car?",
-              "visual": "clip",
-              "query": "industrial robot arm welding",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Robots building cars",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and direct tech journalism tone, highlighting the speed of robotic deployment",
-          "thin": false,
-          "caption": "Industrial Next is helping manufacturers automate complex factory tasks with robots that switch jobs in minutes instead of weeks. Would you want your car built by robots?",
-          "hashtags": [
-            "IndustrialNext",
-            "Robotics",
-            "Manufacturing",
-            "Automation",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-          ],
-          "script": "Industrial Next cut factory robot retooling down from weeks to just minutes.\nThe company helps manufacturers automate complex and delicate tasks.\nThese precision jobs have traditionally required human labor.\nTraditional factory setups often take weeks to reprogram for new products.\nThis speed helps factories adapt instantly to changing consumer demands.\nWould you trust a robot to build your car?",
-          "keywords": [
-            "factory robotic arm assembly line",
-            "workers assembling electronics in factory",
-            "modern smart factory floor",
-            "industrial robot arm welding"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Factory robots switch tasks in minutes",
-              "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-            },
-            {
-              "claim": "Industrial Next cut factory robot retooling down from weeks to just minutes.",
-              "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-            },
-            {
-              "claim": "The company helps manufacturers automate complex and delicate tasks.",
-              "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-            },
-            {
-              "claim": "These precision jobs have traditionally required human labor.",
-              "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-            },
-            {
-              "claim": "Traditional factory setups often take weeks to reprogram for new products.",
-              "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-14T14:53:51.162265+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1799,6 +1613,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5",
+          "summary": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco The New Indian Express",
+          "source": "The New Indian Express",
+          "published": "2026-10-14T07:37:36+00:00",
+          "angle": "A major security breach at OpenAI: A Saudi employee was arrested for allegedly bugging their San Francisco office."
+        },
+        "draft": {
+          "title": "OpenAI Employee Arrested for Espionage",
+          "hook_text": "OpenAI office bugged by employee",
+          "beats": [
+            {
+              "line": "A Saudi national was arrested for allegedly bugging the OpenAI office in San Francisco.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "San Francisco",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "OpenAI employee arrested",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The suspect allegedly planted hidden surveillance devices to monitor internal activities at the headquarters.",
+              "visual": "clip",
+              "query": "office security camera",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Surveillance devices found",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Federal agents from the FBI took the employee into custody after the equipment discovery.",
+              "visual": "clip",
+              "query": "FBI agents",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "FBI makes arrest",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The individual worked directly for OpenAI inside their California offices.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "tag": "OpenAI employee identified",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Prosecutors allege the suspect intended to exfiltrate proprietary data from the AI developer.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "data server racks in a secure room",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Proprietary data theft",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This security breach is now under active investigation by federal authorities.",
+              "visual": "clip",
+              "query": "federal courthouse",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Federal investigation active",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Do you feel safe with your data inside big AI labs?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The New Indian Express",
+              "domain": "newindianexpress.com",
+              "headline": "Saudi employee arrested for allegedly bugging OpenAI office",
+              "url": "",
+              "tag": "Privacy trust compromised",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious, alert tone emphasizing the high stakes of corporate espionage at a major AI developer.",
+          "thin": false,
+          "caption": "A Saudi national employed at OpenAI has been arrested by the FBI for allegedly bugging the company's San Francisco office. The suspect is accused of attempting to steal proprietary information from the AI developer. Do you feel safe with your data inside big AI labs?",
+          "hashtags": [
+            "OpenAI",
+            "CyberSecurity",
+            "TechNews",
+            "SanFrancisco",
+            "Espionage"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGwyZ3pFRllhT3paQWgyN3p4Y0FaSTlaN3U2RkphQWZxdmVLVS1PeWI5ZjBVSU1iMnBTc25GQjEtVGxJTXZ3eVc2V05pM095bVFuQWtVcnpNeGo4eUR0SkNXcmJzbjFWVHVIV3FwNlNhcW91VlNBZC0tTnpDMHNOTDF5WVZnbGtodTQ2UGZqamV3S2VsWXdIbkt0a2tGVGhQYVZUYzFBSW1ONG1FU3BxX2U4dkVsT2RNcWYzejdYa3JoTi03T3fSAdMBQVVfeXFMUGZSQk9zTXZQMnJfMC1jcVBnQUpYei15WU5tNkg5alJyZEFvX2FOOU1KU1VBRWwtSTlzeU9CNFRXT0U5aWhLU3FCS0MyMmVDQWpBc1Q3eEVNRXhQVm9PclZCcjNRc1pfdEVZdFZtOFJRU3NRZUlmYlVhY05RSzFaTDR2VWkyOW1ZZkFQelpVaUg3QmcwVjlRYmFqMC15OWZiWi01clNaQVRBQzJIeUttZGR5bjVmWXRUbjVMOUpUaGVOdE5LNF9nZkFwSnJPbVVLTVBTZw?oc=5"
+          ],
+          "script": "A Saudi national was arrested for allegedly bugging the OpenAI office in San Francisco.\nThe suspect allegedly planted hidden surveillance devices to monitor internal activities at the headquarters.\nFederal agents from the FBI took the employee into custody after the equipment discovery.\nThe individual worked directly for OpenAI inside their California offices.\nProsecutors allege the suspect intended to exfiltrate proprietary data from the AI developer.\nThis security breach is now under active investigation by federal authorities.\nDo you feel safe with your data inside big AI labs?",
+          "keywords": [
+            "office security camera",
+            "FBI agents",
+            "federal courthouse"
+          ],
+          "image_prompts": [
+            "data server racks in a secure room"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "OpenAI office bugged by employee",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "A Saudi national was arrested for allegedly bugging the OpenAI office in San Francisco.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "The suspect allegedly planted hidden surveillance devices to monitor internal activities at the headquarters.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "Federal agents from the FBI took the employee into custody after the equipment discovery.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "The individual worked directly for OpenAI inside their California offices.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "Prosecutors allege the suspect intended to exfiltrate proprietary data from the AI developer.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            },
+            {
+              "claim": "This security breach is now under active investigation by federal authorities.",
+              "url": "https://www.theguardian.com/technology/2026/oct/13/openai-employee-arrested-hidden-recording-device"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.newindianexpress.com/world/2026/Oct/14/saudi-employee-arrested-for-allegedly-bugging-openai-office-in-san-francisco"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-14T15:49:39.000907+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2303,8 +2333,8 @@
       "event": "Prabanta Dey released Janas to bypass your computer's memory limits. Your next AI project might finally fit on your standard laptop. Janas streams model experts directly from your SSD instead of loading into RAM. It uses memory mapping to a"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-14T13:06+05:30",
@@ -2352,7 +2382,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-14",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-14-0",
   "gemini_use": {
     "day": "2026-10-14",
@@ -2477,30 +2507,6 @@
     "gemini-3.5-flash-lite": 1791970581.8363059
   },
   "editor_log": [
-    {
-      "at": "2026-10-13T17:59+05:30",
-      "title": "From Earth to Orbit, France’s Ecosystem Delivers Agentic Computing at Scale With",
-      "overall": 5.3,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 4,
-        "accuracy": 8,
-        "visuals": 3,
-        "flow": 6
-      },
-      "one_line": "Weak, generic script with poor visual alignment and lack of concrete company examples.",
-      "fixes": [
-        "LINE 1: Replace with 'France is deploying agentic AI across national industries, powered by NVIDIA.'",
-        "LINE 2: Replace with 'Companies like Mistral AI and Dassault Systèmes are leveraging NVIDIA H100s for these deployments.'",
-        "LINE 3: Replace with 'The initiative launched at the February 2025 AI Action Summit in Paris.'"
-      ],
-      "visual": [
-        "line 1: Generic map graphic is uninformative.",
-        "line 3: NVIDIA logo is irrelevant to the AI Action Summit.",
-        "line 7: Eiffel Tower icon is a lazy, irrelevant visual filler."
-      ]
-    },
     {
       "at": "2026-10-13T18:08+05:30",
       "title": "From Earth to Orbit, France’s Ecosystem Delivers Agentic Computing at Scale With",
@@ -2914,6 +2920,26 @@
         "line 1: The same photo of Andrew Feldman is held for too long across multiple frames.",
         "line 2: The 'TechCrunch Disrupt' text graphic is repeated across two frames without visual change.",
         "line 5: The visual is static text for too long; needs a cut to a different relevant asset."
+      ]
+    },
+    {
+      "at": "2026-10-14T15:56+05:30",
+      "title": "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 6,
+        "substance": 6,
+        "accuracy": 4,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "The story is a fabrication; there is no such event, making the content misinformation.",
+      "fixes": [
+        "LINE 1: Delete this entire reel; the source event is fake and does not exist."
+      ],
+      "visual": [
+        "line 1: The entire premise is based on a non-existent news event, rendering visuals irrelevant."
       ]
     }
   ],
