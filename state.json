@@ -1,63 +1,230 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-      "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-14T21:11:28+00:00",
-      "angle": "Eight US states are now suing OpenAI, claiming ChatGPT isn't safe for children"
-    },
-    {
-      "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
-      "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations in Asia. The […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-14T16:43:24+00:00",
-      "angle": "OpenAI claims a former employee stole product plans and handed them over to Apple"
-    },
-    {
-      "title": "Square’s new kiosk lets you talk to AI for help with your order",
-      "link": "https://www.theverge.com/tech/1009086/square-kiosk",
-      "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-14T16:00:00+00:00",
-      "angle": "Square's new ordering kiosk lets you just walk up and talk directly to an AI"
-    }
-  ],
-  "choose_deadline": "2026-10-15T13:40:27.236782+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+    "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-14T21:11:28+00:00",
+    "angle": "Eight US states are now suing OpenAI, claiming ChatGPT isn't safe for children"
+  },
+  "draft": {
+    "title": "Eight States Sue OpenAI",
+    "hook_text": "Eight US states just sued OpenAI.",
+    "beats": [
+      {
+        "line": "Eight US states just sued OpenAI over ChatGPT child safety risks.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "ChatGPT",
+        "outlet": "",
+        "domain": "openai.com",
+        "headline": "",
+        "url": "https://openai.com/chatgpt",
+        "tag": "Eight states sue OpenAI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          },
+          {
+            "name": "ChatGPT",
+            "domain": "openai.com"
+          }
+        ]
+      },
+      {
+        "line": "Iowa, Kansas, Nebraska, and West Virginia filed separate lawsuits against the company.",
+        "visual": "clip",
+        "query": "state capitol building exterior",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Four states file lawsuits",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Arkansas, Arizona, Idaho, and Montana also joined the legal action.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "8",
+        "small": "states involved",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Eight states total",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The lawsuits accuse OpenAI of unlawfully prioritizing corporate profits over children's safety.",
+        "visual": "clip",
+        "query": "smartphone showing chat app",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Profits over safety",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "OpenAI",
+            "domain": "openai.com"
+          }
+        ]
+      },
+      {
+        "line": "The state attorneys general claim the company misled customers regarding safety features.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Eight states sue OpenAI saying ChatGPT isn't safe for kids",
+        "url": "",
+        "tag": "Misleading safety claims",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Reuters previously reported on the growing regulatory scrutiny facing the firm.",
+        "visual": "clip",
+        "query": "person reading news on laptop",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Growing regulatory scrutiny",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust ChatGPT with your kids?",
+        "visual": "clip",
+        "query": "child using tablet device",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Trust ChatGPT with kids",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "ChatGPT",
+            "domain": "openai.com"
+          }
+        ]
+      }
+    ],
+    "delivery": "urgent and direct, highlighting legal stakes and child safety concerns",
+    "thin": false,
+    "caption": "Eight US states have filed separate lawsuits against OpenAI, accusing the company of misleading customers and prioritizing profits over child safety with ChatGPT. The legal actions come from Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana. Would you let your children use ChatGPT?",
+    "hashtags": [
+      "OpenAI",
+      "ChatGPT",
+      "Lawsuit",
+      "TechNews"
+    ],
+    "sources": [
+      "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+    ],
+    "script": "Eight US states just sued OpenAI over ChatGPT child safety risks.\nIowa, Kansas, Nebraska, and West Virginia filed separate lawsuits against the company.\nArkansas, Arizona, Idaho, and Montana also joined the legal action.\nThe lawsuits accuse OpenAI of unlawfully prioritizing corporate profits over children's safety.\nThe state attorneys general claim the company misled customers regarding safety features.\nReuters previously reported on the growing regulatory scrutiny facing the firm.\nWould you trust ChatGPT with your kids?",
+    "keywords": [
+      "state capitol building exterior",
+      "smartphone showing chat app",
+      "person reading news on laptop",
+      "child using tablet device"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Eight US states just sued OpenAI.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+      },
+      {
+        "claim": "Eight US states just sued OpenAI over ChatGPT child safety risks.",
+        "url": "https://www.theguardian.com/technology/2026/oct/14/openai-child-self-harm-lawsuit"
+      },
+      {
+        "claim": "Iowa, Kansas, Nebraska, and West Virginia filed separate lawsuits against the company.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+      },
+      {
+        "claim": "Arkansas, Arizona, Idaho, and Montana also joined the legal action.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+      },
+      {
+        "claim": "The lawsuits accuse OpenAI of unlawfully prioritizing corporate profits over children's safety.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+      },
+      {
+        "claim": "The state attorneys general claim the company misled customers regarding safety features.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+      },
+      {
+        "claim": "Reuters previously reported on the growing regulatory scrutiny facing the firm.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-      "video_file_id": "BAACAgUAAxkDAAIWwmrQiULubXFWDWBak-_9TPkHc-j2AAKzHwACOveIVkusCEZIpnTtPQQ",
-      "caption": "YouTube Music is rolling out new player page labels for songs generated entirely or partially by artificial intelligence. The update comes as streaming platforms experience a massive wave of algorithmic tracks. Would you skip an algorithmic song?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 YouTube Music: music.youtube.com\n\n#YouTubeMusic #StreamingMusic #TechNews #ArtificialIntelligence",
-      "extra": false,
-      "meta": {
-        "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-        "kind": "news",
-        "source": "AI News & Artificial Intelligence | Tech",
-        "engine": "fish",
-        "voice": "Ethan (Fish Audio)",
-        "person": false,
-        "words": 78,
-        "visuals": "1 official images, 1 AI images, 5 cards",
-        "editor": 8.0,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-15T13:40+05:30"
-      },
-      "post_at": "2026-10-15T13:41:26.656073+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-15T13:46:10.787293+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -223,10 +390,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-05T14:01:09.707844+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-05T16:31:31.823338+05:30",
       "extra": false
@@ -462,9 +625,31 @@
     {
       "at": "2026-10-15T13:27:57.399305+05:30",
       "extra": false
+    },
+    {
+      "at": "2026-10-15T13:46:45.641745+05:30",
+      "extra": false
     }
   ],
-  "spare": [],
+  "paused": null,
+  "spare": [
+    {
+      "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+      "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations in Asia. The […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-14T16:43:24+00:00",
+      "angle": "OpenAI claims a former employee stole product plans and handed them over to Apple"
+    },
+    {
+      "title": "Square’s new kiosk lets you talk to AI for help with your order",
+      "link": "https://www.theverge.com/tech/1009086/square-kiosk",
+      "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-14T16:00:00+00:00",
+      "angle": "Square's new ordering kiosk lets you just walk up and talk directly to an AI"
+    }
+  ],
   "tried": [
     "AI is a tool and using it well takes skill",
     "AI Could Start Improving Itself By 2027: Anthropic Co-Founder",
@@ -502,183 +687,7 @@
     "What The Tech: How criminals are tricking artificial intelligence platforms",
     "Recording device hidden in toilet paper found in top-secret OpenAI meeting room"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "McKinsey is making job applicants spar with a fake AI client",
-          "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
-          "summary": "Consulting firm McKinsey & Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wall Street Journal. The AI simulation \"aims to reflect 80% of the scenarios McKinsey consultants might encounter in their day-to-day work,\" the […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-14T22:53:31+00:00",
-          "angle": "McKinsey is now making job applicants interview with a fake AI client—your next job interview might be against a bot."
-        },
-        "draft": {
-          "title": "McKinsey uses AI for job interviews",
-          "hook_text": "McKinsey is testing job applicants with an AI.",
-          "beats": [
-            {
-              "line": "Ten minutes with a fake AI client is now a job requirement.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "McKinsey and Company",
-              "outlet": "",
-              "domain": "mckinsey.com",
-              "headline": "",
-              "url": "https://www.mckinsey.com",
-              "tag": "McKinsey AI client interview",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "McKinsey & Company",
-                  "domain": "mckinsey.com"
-                }
-              ]
-            },
-            {
-              "line": "The Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Wall Street Journal",
-              "domain": "wsj.com",
-              "headline": "McKinsey is making job applicants spar with a fake AI client",
-              "url": "",
-              "tag": "Wall Street Journal report",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "80%",
-              "small": "daily scenarios covered",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "80% of daily scenarios",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Applicants must negotiate and solve problems directly with the software before getting hired.",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Negotiate with software",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you pass a robot client exam?",
-              "visual": "clip",
-              "query": "candidate in interview room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Pass robot client exam",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and factual, explaining how tech changes corporate hiring without hype",
-          "thin": false,
-          "caption": "McKinsey and Company is testing job applicants with a ten minute AI client simulation covering eighty percent of daily work scenarios. Would you want an AI to grade your next job interview?",
-          "hashtags": [
-            "McKinsey",
-            "ArtificialIntelligence",
-            "Hiring",
-            "Consulting"
-          ],
-          "sources": [
-            "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
-          ],
-          "script": "Ten minutes with a fake AI client is now a job requirement.\nThe Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.\nThe AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.\nApplicants must negotiate and solve problems directly with the software before getting hired.\nWould you pass a robot client exam?",
-          "keywords": [
-            "person looking at computer screen",
-            "candidate in interview room"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "McKinsey and Company is making entry level candidates have a ten minute conversation with an AI simulation of a client.",
-          "hook_score": 48,
-          "evidence": [
-            {
-              "claim": "McKinsey is testing job applicants with an AI.",
-              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
-            },
-            {
-              "claim": "Ten minutes with a fake AI client is now a job requirement.",
-              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
-            },
-            {
-              "claim": "The Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.",
-              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
-            },
-            {
-              "claim": "The AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.",
-              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
-            },
-            {
-              "claim": "Applicants must negotiate and solve problems directly with the software before getting hired.",
-              "url": "https://www.indiatoday.in/amp/jobs/story/mckinsey-wants-freshers-to-convince-ai-clients-during-interview-to-get-the-job-3017789-2026-10-15"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-15T13:10:01.029884+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1423,10 +1432,53 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIWwmrQiULubXFWDWBak-_9TPkHc-j2AAKzHwACOveIVkusCEZIpnTtPQQ",
       "history_title": "YouTube Music launches new labels as AI-generated music floods streaming platforms"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+            "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+            "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-14T21:11:28+00:00",
+            "angle": "Eight US states are now suing OpenAI, claiming ChatGPT isn't safe for children"
+          },
+          {
+            "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+            "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+            "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations in Asia. The […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-14T16:43:24+00:00",
+            "angle": "OpenAI claims a former employee stole product plans and handed them over to Apple"
+          },
+          {
+            "title": "Square’s new kiosk lets you talk to AI for help with your order",
+            "link": "https://www.theverge.com/tech/1009086/square-kiosk",
+            "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-14T16:00:00+00:00",
+            "angle": "Square's new ordering kiosk lets you just walk up and talk directly to an AI"
+          }
+        ],
+        "choose_deadline": "2026-10-15T13:40:27.236782+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIId2rHnze-UWNcSv8L3Z_bsQHVI4zyAAKXHwAClrJAVlTzI6ojtpmePQQ",
     "BAACAgUAAxkDAAIIhGrHudHLTGufeDcxHca-hfSGCq7qAALaHwAClrJAVhlt-_WZhd5RPQQ",
     "BAACAgUAAxkDAAIIqmrH6iY0Pu-XxsLSiOopw_Inld6SAAIBIAAClrJAVsXdwCvTaeWWPQQ",
     "BAACAgUAAxkDAAIItGrH-Wyaucg_RgviVD8wzhrtfOVuAALAIAACqmdBViYQJkt8j1crPQQ",
@@ -1455,7 +1507,8 @@
     "BAACAgUAAxkDAAIUUGrOFAE162SjszX-GhgYVrrvUX5PAALoIAAC-A1wVr2Qki7S4Mc_PQQ",
     "BAACAgUAAxkDAAIV-2rPW3OKX7s7uvK44-WNN5-dNzLYAALuIAAC-A14Vm2tx9L9OGErPQQ",
     "BAACAgUAAxkDAAIWY2rPaCotQKwzIt0yoINCJPcXowz1AAIPIQAC-A14Vu0BJwYL5ouVPQQ",
-    "BAACAgUAAxkDAAIWsWrQhQvDFw0vCX4l0MUN7mfBUGWmAAKpHwACOveIVsLofE6Z_hxePQQ"
+    "BAACAgUAAxkDAAIWsWrQhQvDFw0vCX4l0MUN7mfBUGWmAAKpHwACOveIVsLofE6Z_hxePQQ",
+    "BAACAgUAAxkDAAIWwmrQiULubXFWDWBak-_9TPkHc-j2AAKzHwACOveIVkusCEZIpnTtPQQ"
   ],
   "history": [
     "AMD Acquires World Labs for $8.2 Bn, Fei-Fei Li to Join as Chief Scientist",
@@ -1952,7 +2005,7 @@
   "report_day": "2026-10-14",
   "ig_count": {
     "day": "2026-10-15",
-    "at": "2026-10-15T13:30:38.320595+05:30",
+    "at": "2026-10-15T13:46:10.787335+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -1976,7 +2029,7 @@
   "late_note_for": "2026-10-15-1",
   "gemini_use": {
     "day": "2026-10-15",
-    "calls": 124,
+    "calls": 136,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2005,10 +2058,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 66,
-        "busy": 26,
+        "ok": 74,
+        "busy": 30,
         "other": 10,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
         "ok": 2,
@@ -2529,6 +2582,5 @@
       ]
     }
   ],
-  "rest_note": "2026-10-15T12:32:00+05:30",
-  "behind_since": "2026-10-15T09:00:31.550995+05:30"
+  "rest_note": "2026-10-15T12:32:00+05:30"
 }
