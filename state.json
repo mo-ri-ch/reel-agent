@@ -12,22 +12,22 @@
     "angle": "Nvidia just dropped a massive 120B parameter model designed to run always-on AI agents on your own hardware."
   },
   "draft": {
-    "title": "Nvidia Launches New Nemotron Models",
-    "hook_text": "Nvidia just dropped a massive AI update.",
+    "title": "Nvidia Nemotron 3.5 Efficiency Record",
+    "hook_text": "Nvidia just set a new efficiency record.",
     "beats": [
       {
-        "line": "Nvidia Nemotron just beat previous efficiency records for agents.",
-        "visual": "official",
+        "line": "Nvidia just set a new efficiency record for AI agents with Nemotron 3.5.",
+        "visual": "clip",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Nvidia Nemotron 3.5",
+        "entity": "",
         "outlet": "",
-        "domain": "nvidia.com",
+        "domain": "",
         "headline": "",
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-        "tag": "Nvidia Nemotron 3.5",
+        "tag": "Nemotron 3.5 Record",
         "name": "",
         "role": "",
         "x": "",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "This 120-billion-parameter model handles specialized always-on agents faster than anything before.",
+        "line": "The 120-billion-parameter model handles specialized always-on agents faster than anything before.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
@@ -50,7 +50,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "120 Billion Parameters",
+        "tag": "",
         "name": "",
         "role": "",
         "x": "",
@@ -63,14 +63,14 @@
       },
       {
         "line": "They also debuted the Bolt 74B-A9B model for local workloads.",
-        "visual": "official",
+        "visual": "clip",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Nvidia Nemotron 3.5 Bolt",
+        "entity": "",
         "outlet": "",
-        "domain": "nvidia.com",
+        "domain": "",
         "headline": "",
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
         "tag": "Bolt 74B Model",
@@ -87,7 +87,7 @@
       {
         "line": "It delivers 24 gigabytes of optimized power for your desktop.",
         "visual": "clip",
-        "query": "person working on computer",
+        "query": "person coding on laptop",
         "prompt": "",
         "big": "",
         "small": "",
@@ -103,7 +103,7 @@
         "brands": []
       },
       {
-        "line": "For even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
+        "line": "For smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
@@ -114,16 +114,16 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "4GB Bolt Model",
+        "tag": "",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "These models shift the burden from massive data centers directly to your hardware.",
+        "line": "These models shift processing from massive data centers to local hardware.",
         "visual": "clip",
-        "query": "data center server racks",
+        "query": "server room racks",
         "prompt": "",
         "big": "",
         "small": "",
@@ -170,27 +170,27 @@
     "sources": [
       "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
     ],
-    "script": "Nvidia Nemotron just beat previous efficiency records for agents.\nThis 120-billion-parameter model handles specialized always-on agents faster than anything before.\nThey also debuted the Bolt 74B-A9B model for local workloads.\nIt delivers 24 gigabytes of optimized power for your desktop.\nFor even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.\nThese models shift the burden from massive data centers directly to your hardware.\nWould you prefer your AI running locally or in the cloud?",
+    "script": "Nvidia just set a new efficiency record for AI agents with Nemotron 3.5.\nThe 120-billion-parameter model handles specialized always-on agents faster than anything before.\nThey also debuted the Bolt 74B-A9B model for local workloads.\nIt delivers 24 gigabytes of optimized power for your desktop.\nFor smaller setups, the new Bolt E4B model runs on just 4 gigabytes.\nThese models shift processing from massive data centers to local hardware.\nWould you prefer your AI running locally or in the cloud?",
     "keywords": [
-      "person working on computer",
-      "data center server racks",
+      "technology",
+      "technology",
+      "person coding on laptop",
+      "server room racks",
       "person thinking at desk"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
-    "hook_before": "Nvidia just released the Nemotron 3.5 Super VL model.",
-    "hook_score": 58,
     "evidence": [
       {
-        "claim": "Nvidia just dropped a massive AI update.",
+        "claim": "Nvidia just set a new efficiency record.",
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "Nvidia Nemotron just beat previous efficiency records for agents.",
+        "claim": "Nvidia just set a new efficiency record for AI agents with Nemotron 3.5.",
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "This 120-billion-parameter model handles specialized always-on agents faster than anything before.",
+        "claim": "The 120-billion-parameter model handles specialized always-on agents faster than anything before.",
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
@@ -202,17 +202,18 @@
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "For even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
+        "claim": "For smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "These models shift the burden from massive data centers directly to your hardware.",
+        "claim": "These models shift processing from massive data centers to local hardware.",
         "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
     ]
@@ -222,9 +223,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-16T01:57:12.968031+05:30",
+  "script_deadline": "2026-10-16T02:06:38.974626+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -700,238 +701,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
-          "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
-          "summary": "FTC may fine AI firms on par with companies that delay data breach reports.",
-          "source": "AI - Ars Technica",
-          "published": "2026-10-15T15:43:24+00:00",
-          "angle": "The FTC is launching a major probe into OpenAI and Anthropic, signaling a massive shift in how AI companies are regulated."
-        },
-        "draft": {
-          "title": "FTC Probes OpenAI and Anthropic",
-          "hook_text": "FTC targets AI giants",
-          "beats": [
-            {
-              "line": "The FTC is investigating OpenAI and Anthropic over potential security failures.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Ars Technica",
-              "domain": "arstechnica.com",
-              "headline": "FTC probes if OpenAI, Anthropic security incidents harmed Americans",
-              "url": "",
-              "tag": "FTC probes AI firms",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                },
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Regulators want to know if security incidents actually harmed American users.",
-              "visual": "clip",
-              "query": "person looking at data on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Security harm check",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This probe follows President Donald Trump dismissing AI fears as a hoax.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://en.wikipedia.org/wiki/Donald_Trump",
-              "tag": "Trump dismisses AI",
-              "name": "Donald Trump",
-              "role": "President, USA",
-              "x": "realDonaldTrump",
-              "brands": []
-            },
-            {
-              "line": "The FTC may fine these labs for failing to report data breaches.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Fines",
-              "small": "Breach reporting penalties",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "New fine risks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Officials are now pressuring these labs to disclose internal safety logs.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "tag": "Safety logs requested",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "OpenAI and Anthropic now face heightened scrutiny from federal regulators.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://anthropic.com",
-              "tag": "Heightened scrutiny",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust these labs with your personal data?",
-              "visual": "clip",
-              "query": "close up of person thinking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data trust question",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Direct and investigative, maintaining a steady pace while highlighting the regulatory pressure on AI firms.",
-          "thin": false,
-          "caption": "The FTC is investigating OpenAI and Anthropic for potential security failures and delays in reporting data breaches. This follows President Trump dismissing AI fears as a hoax. Would you trust these labs with your personal data?",
-          "hashtags": [
-            "OpenAI",
-            "Anthropic",
-            "FTC",
-            "AITech",
-            "DataSecurity"
-          ],
-          "sources": [
-            "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
-          ],
-          "script": "The FTC is investigating OpenAI and Anthropic over potential security failures.\nRegulators want to know if security incidents actually harmed American users.\nThis probe follows President Donald Trump dismissing AI fears as a hoax.\nThe FTC may fine these labs for failing to report data breaches.\nOfficials are now pressuring these labs to disclose internal safety logs.\nOpenAI and Anthropic now face heightened scrutiny from federal regulators.\nWould you trust these labs with your personal data?",
-          "keywords": [
-            "person looking at data on laptop",
-            "close up of person thinking"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "The FTC is targeting AI giants.",
-              "url": "https://broadbandbreakfast.com/ftc-opens-probe-of-ai-giants-anthropic-openai-over-consumer-risks/"
-            },
-            {
-              "claim": "The FTC is investigating OpenAI and Anthropic over potential security failures.",
-              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
-            },
-            {
-              "claim": "Regulators want to know if security incidents actually harmed American users.",
-              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
-            },
-            {
-              "claim": "President Donald Trump dismissed AI fears as a hoax.",
-              "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
-            },
-            {
-              "claim": "The FTC may fine these labs for failing to report data breaches.",
-              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
-            },
-            {
-              "claim": "Officials are pressuring these labs to disclose internal safety logs.",
-              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
-            },
-            {
-              "claim": "OpenAI and Anthropic face heightened scrutiny from federal regulators.",
-              "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-16T00:03:52.462572+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1905,6 +1674,237 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+          "link": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+          "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for local agentic workloads, and Nemotron 3.5 Bolt E4B 4GB, optimized […]",
+          "source": "NVIDIA Blog",
+          "published": "2026-10-15T15:00:24+00:00",
+          "angle": "Nvidia just dropped a massive 120B parameter model designed to run always-on AI agents on your own hardware."
+        },
+        "draft": {
+          "title": "Nvidia Launches New Nemotron Models",
+          "hook_text": "Nvidia just dropped a massive AI update.",
+          "beats": [
+            {
+              "line": "Nvidia Nemotron just beat previous efficiency records for agents.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia Nemotron 3.5",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+              "tag": "Nvidia Nemotron 3.5",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "This 120-billion-parameter model handles specialized always-on agents faster than anything before.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "120B",
+              "small": "parameters",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "120 Billion Parameters",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "They also debuted the Bolt 74B-A9B model for local workloads.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia Nemotron 3.5 Bolt",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+              "tag": "Bolt 74B Model",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "It delivers 24 gigabytes of optimized power for your desktop.",
+              "visual": "clip",
+              "query": "person working on computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "24GB Local Power",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "For even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "4GB",
+              "small": "minimal footprint",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "4GB Bolt Model",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These models shift the burden from massive data centers directly to your hardware.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Edge AI Shift",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you prefer your AI running locally or in the cloud?",
+              "visual": "clip",
+              "query": "person thinking at desk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Local vs Cloud",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast-paced and informative, highlighting the shift from massive models to efficient local performance.",
+          "thin": false,
+          "caption": "Nvidia has launched its Nemotron 3.5 Super VL model, featuring 120 billion parameters for high-speed agentic tasks. The company also introduced new Bolt models, including a 4GB version, to bring powerful AI capabilities directly to local hardware. Would you prefer your AI running locally or in the cloud?",
+          "hashtags": [
+            "Nvidia",
+            "Nemotron",
+            "AI",
+            "EdgeComputing",
+            "TechNews"
+          ],
+          "sources": [
+            "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+          ],
+          "script": "Nvidia Nemotron just beat previous efficiency records for agents.\nThis 120-billion-parameter model handles specialized always-on agents faster than anything before.\nThey also debuted the Bolt 74B-A9B model for local workloads.\nIt delivers 24 gigabytes of optimized power for your desktop.\nFor even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.\nThese models shift the burden from massive data centers directly to your hardware.\nWould you prefer your AI running locally or in the cloud?",
+          "keywords": [
+            "person working on computer",
+            "data center server racks",
+            "person thinking at desk"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Nvidia just released the Nemotron 3.5 Super VL model.",
+          "hook_score": 58,
+          "evidence": [
+            {
+              "claim": "Nvidia just dropped a massive AI update.",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+            },
+            {
+              "claim": "Nvidia Nemotron just beat previous efficiency records for agents.",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+            },
+            {
+              "claim": "This 120-billion-parameter model handles specialized always-on agents faster than anything before.",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+            },
+            {
+              "claim": "They also debuted the Bolt 74B-A9B model for local workloads.",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+            },
+            {
+              "claim": "It delivers 24 gigabytes of optimized power for your desktop.",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+            },
+            {
+              "claim": "For even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+            },
+            {
+              "claim": "These models shift the burden from massive data centers directly to your hardware.",
+              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T01:57:12.968031+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2409,8 +2409,8 @@
       "event": "Zero clicks. That is how Google is changing shopping. This AI tool is now rolling out across the Gemini app and Google Search in the US. It aims to simplify the holiday shopping experience for users. The company first previewed this feature"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-15T20:35+05:30",
@@ -2438,7 +2438,7 @@
   "report_day": "2026-10-15",
   "ig_count": {
     "day": "2026-10-16",
-    "at": "2026-10-16T01:45:27.397958+05:30",
+    "at": "2026-10-16T02:00:34.425575+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2458,7 +2458,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
@@ -2554,27 +2554,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T15:26+05:30",
-      "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 7,
-        "visuals": 5,
-        "flow": 7
-      },
-      "one_line": "Character.AI data protection story has strong facts but suffers from static, repeating visuals.",
-      "fixes": [
-        "LINE 1: Replace 'navigating restructuring' with explicit mention of bankruptcy or financial distress to match source."
-      ],
-      "visual": [
-        "line 2: Frames 4, 5, and 6 hold the exact same Letitia James photo for too long without motion.",
-        "line 5: Frames 12, 13, and 14 repeat the same 'Regulatory issues addressed' visual for too many co"
-      ]
-    },
     {
       "at": "2026-10-15T15:44+05:30",
       "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelli",
@@ -3000,6 +2979,29 @@
       "visual": [
         "line 1: The same static image of a Mac Studio is held for too long (over 7 seconds).",
         "line 3: The visual shows a generic Apple logo instead of the specific hardware mentioned."
+      ]
+    },
+    {
+      "at": "2026-10-16T02:06+05:30",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Ef",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "Strong technical content undermined by repetitive, static, and uninspired visual presentation.",
+      "fixes": [
+        "LINE 1: Change to 'Nvidia just set a new efficiency record for AI agents with Nemotron 3.5.'",
+        "LINE 6: Change to 'These models shift processing from massive data centers to local hardware.'"
+      ],
+      "visual": [
+        "line 1: The same globe graphic is held for too long, causing visual stagnation.",
+        "line 2: The Nvidia logo is static and lacks dynamic motion or relevant context.",
+        "line 3: Repetitive use of the same logo icon makes the reel feel like a slideshow."
       ]
     }
   ],
