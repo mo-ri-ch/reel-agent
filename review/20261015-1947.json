@@ -1,0 +1,82 @@
+{
+ "made": "20261015-1947",
+ "title": "Meta and Apple team up to make Muse AI models run better on Macs",
+ "hook_text": "Meta's new AI on your desktop",
+ "hook_before": null,
+ "script": "Meta just launched its most capable open-weight AI model called Muse Spark.\nIt is the first model in its class that runs directly on your desktop.\nYou need two Apple M5 Ultra Mac Studios to power it.\nThis setup relies on Apple's latest MLX framework to manage the load.\nMeta claims this model outperforms every other US open-weight model available today.\nThis makes high-end local AI computing possible without needing cloud servers.\nWould you buy two Mac Studios just to run this AI locally?",
+ "words": 84,
+ "beats": [
+  {
+   "line": "Meta just launched its most capable open-weight AI model called Muse Spark.",
+   "visual": "official"
+  },
+  {
+   "line": "It is the first model in its class that runs directly on your desktop.",
+   "visual": "clip"
+  },
+  {
+   "line": "You need two Apple M5 Ultra Mac Studios to power it.",
+   "visual": "official"
+  },
+  {
+   "line": "This setup relies on Apple's latest MLX framework to manage the load.",
+   "visual": "official"
+  },
+  {
+   "line": "Meta claims this model outperforms every other US open-weight model available today.",
+   "visual": "stat"
+  },
+  {
+   "line": "This makes high-end local AI computing possible without needing cloud servers.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you buy two Mac Studios just to run this AI locally?",
+   "visual": "official"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 9,
+   "substance": 8,
+   "accuracy": 10,
+   "visuals": 5,
+   "flow": 9
+  },
+  "one_line": "Strong script, but the visuals are repetitive and lack dynamic variety.",
+  "script_fixes": [
+   "LINE 6: Remove 'This makes high-end local AI computing possible' as it is filler; replace with 'This eliminates the need for expensive cloud GPU clusters.'"
+  ],
+  "visual_beats": [
+   0,
+   1,
+   4,
+   5
+  ],
+  "visual_notes": [
+   "line 1: The same image of the Mac Studio is held for 7 seconds across three frames.",
+   "line 2: The 'Runs on desktop' text animation is static and repeated across two frames.",
+   "line 5: The Meta logo is held for 5 seconds; needs a visual of the model's performance chart or be",
+   "line 6: The 'Local AI computing' text is held for 5 seconds without a visual change."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 34.5,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  2.8,
+  9.87,
+  18.6,
+  29.97
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 6.9,
+ "longest_shot_seconds": 11.37,
+ "verdict": "rejected",
+ "words_per_minute": 146
+}
