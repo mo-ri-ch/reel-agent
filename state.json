@@ -61,7 +61,7 @@
         "brands": []
       },
       {
-        "line": "This probe follows President Donald Trump dismissing AI fears as a hoax.",
+        "line": "This follows President Trump's recent dismissal of AI risks as a hoax.",
         "visual": "person",
         "query": "technology",
         "prompt": "",
@@ -97,7 +97,7 @@
         "brands": []
       },
       {
-        "line": "Officials are now pressuring these labs to disclose internal safety logs.",
+        "line": "The FTC is demanding internal safety logs to assess compliance.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -143,9 +143,9 @@
         ]
       },
       {
-        "line": "Would you trust these labs with your personal data?",
+        "line": "Are you comfortable with these labs handling your private data?",
         "visual": "clip",
-        "query": "close up of person thinking",
+        "query": "person thinking",
         "prompt": "",
         "big": "",
         "small": "",
@@ -163,7 +163,7 @@
     ],
     "delivery": "Direct and investigative, maintaining a steady pace while highlighting the regulatory pressure on AI firms.",
     "thin": false,
-    "caption": "The FTC is investigating OpenAI and Anthropic for potential security failures and delays in reporting data breaches. This follows President Trump dismissing AI fears as a hoax. Would you trust these labs with your personal data?",
+    "caption": "The FTC is investigating OpenAI and Anthropic for potential security failures and delays in reporting data breaches. This follows President Trump dismissing AI risks as a hoax. Are you comfortable with these labs handling your private data?",
     "hashtags": [
       "OpenAI",
       "Anthropic",
@@ -174,10 +174,10 @@
     "sources": [
       "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
     ],
-    "script": "The FTC is investigating OpenAI and Anthropic over potential security failures.\nRegulators want to know if security incidents actually harmed American users.\nThis probe follows President Donald Trump dismissing AI fears as a hoax.\nThe FTC may fine these labs for failing to report data breaches.\nOfficials are now pressuring these labs to disclose internal safety logs.\nOpenAI and Anthropic now face heightened scrutiny from federal regulators.\nWould you trust these labs with your personal data?",
+    "script": "The FTC is investigating OpenAI and Anthropic over potential security failures.\nRegulators want to know if security incidents actually harmed American users.\nThis follows President Trump's recent dismissal of AI risks as a hoax.\nThe FTC may fine these labs for failing to report data breaches.\nThe FTC is demanding internal safety logs to assess compliance.\nOpenAI and Anthropic now face heightened scrutiny from federal regulators.\nAre you comfortable with these labs handling your private data?",
     "keywords": [
       "person looking at data on laptop",
-      "close up of person thinking"
+      "person thinking"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
@@ -192,10 +192,10 @@
       },
       {
         "claim": "Regulators want to know if security incidents actually harmed American users.",
-        "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+        "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
       },
       {
-        "claim": "President Donald Trump dismissed AI fears as a hoax.",
+        "claim": "President Trump dismissed AI risks as a hoax.",
         "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
       },
       {
@@ -203,17 +203,18 @@
         "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
       },
       {
-        "claim": "Officials are pressuring these labs to disclose internal safety logs.",
+        "claim": "The FTC is demanding internal safety logs to assess compliance.",
         "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
       },
       {
         "claim": "OpenAI and Anthropic face heightened scrutiny from federal regulators.",
-        "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
+        "url": "https://broadbandbreakfast.com/ftc-opens-probe-of-ai-giants-anthropic-openai-over-consumer-risks/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 2,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
     ]
@@ -223,9 +224,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-16T00:03:52.462572+05:30",
+  "script_deadline": "2026-10-16T00:11:58.854105+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -692,50 +693,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Nobody is safe from celebrity AI deepfakes",
-            "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
-            "summary": "In hindsight, the post on Instagram should have raised more red flags. The image purported to show actress Mia Goth, just days after filing for divorce from actor and filmmaker Shia LaBeouf, posing in a T-shirt with a pointed message: MY EX IS MY BIGGEST FAN. To really drive home the point, the song \"Single […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-15T14:03:42+00:00",
-            "angle": "Deepfakes are getting so realistic that even celebrity news is becoming impossible to verify."
-          },
-          {
-            "title": "AI agents are coming to Rivian’s cars",
-            "link": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
-            "summary": "We'll likely learn more about how this will work at the company's upcoming \"AI & Autonomy Day\" event in December.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-15T15:02:36+00:00",
-            "angle": "Your next car might have its own AI agent—Rivian is officially jumping into the autonomy race."
-          },
-          {
-            "title": "Trump wants the world to stop calling it AI; US pushes 'super intelligence' at IMF",
-            "link": "https://www.moneycontrol.com/artificial-intelligence/trump-wants-the-world-to-stop-calling-it-ai-us-pushes-super-intelligence-at-imf-article-14053211.html/amp",
-            "summary": "Trump wants the world to stop calling it AI; US pushes 'super intelligence' at IMF Moneycontrol.com",
-            "source": "Moneycontrol.com",
-            "published": "2026-10-15T13:09:18+00:00",
-            "angle": "The US government is pushing to rebrand 'AI' to 'super intelligence'—is this just a name change or a major policy shift?"
-          }
-        ],
-        "choose_deadline": "2026-10-15T21:05:49.293628+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1576,6 +1533,238 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+          "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+          "summary": "FTC may fine AI firms on par with companies that delay data breach reports.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-15T15:43:24+00:00",
+          "angle": "The FTC is launching a major probe into OpenAI and Anthropic, signaling a massive shift in how AI companies are regulated."
+        },
+        "draft": {
+          "title": "FTC Probes OpenAI and Anthropic",
+          "hook_text": "FTC targets AI giants",
+          "beats": [
+            {
+              "line": "The FTC is investigating OpenAI and Anthropic over potential security failures.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "FTC probes if OpenAI, Anthropic security incidents harmed Americans",
+              "url": "",
+              "tag": "FTC probes AI firms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                },
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Regulators want to know if security incidents actually harmed American users.",
+              "visual": "clip",
+              "query": "person looking at data on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Security harm check",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This probe follows President Donald Trump dismissing AI fears as a hoax.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://en.wikipedia.org/wiki/Donald_Trump",
+              "tag": "Trump dismisses AI",
+              "name": "Donald Trump",
+              "role": "President, USA",
+              "x": "realDonaldTrump",
+              "brands": []
+            },
+            {
+              "line": "The FTC may fine these labs for failing to report data breaches.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Fines",
+              "small": "Breach reporting penalties",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "New fine risks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Officials are now pressuring these labs to disclose internal safety logs.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "tag": "Safety logs requested",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "OpenAI and Anthropic now face heightened scrutiny from federal regulators.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://anthropic.com",
+              "tag": "Heightened scrutiny",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust these labs with your personal data?",
+              "visual": "clip",
+              "query": "close up of person thinking",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data trust question",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Direct and investigative, maintaining a steady pace while highlighting the regulatory pressure on AI firms.",
+          "thin": false,
+          "caption": "The FTC is investigating OpenAI and Anthropic for potential security failures and delays in reporting data breaches. This follows President Trump dismissing AI fears as a hoax. Would you trust these labs with your personal data?",
+          "hashtags": [
+            "OpenAI",
+            "Anthropic",
+            "FTC",
+            "AITech",
+            "DataSecurity"
+          ],
+          "sources": [
+            "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+          ],
+          "script": "The FTC is investigating OpenAI and Anthropic over potential security failures.\nRegulators want to know if security incidents actually harmed American users.\nThis probe follows President Donald Trump dismissing AI fears as a hoax.\nThe FTC may fine these labs for failing to report data breaches.\nOfficials are now pressuring these labs to disclose internal safety logs.\nOpenAI and Anthropic now face heightened scrutiny from federal regulators.\nWould you trust these labs with your personal data?",
+          "keywords": [
+            "person looking at data on laptop",
+            "close up of person thinking"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "The FTC is targeting AI giants.",
+              "url": "https://broadbandbreakfast.com/ftc-opens-probe-of-ai-giants-anthropic-openai-over-consumer-risks/"
+            },
+            {
+              "claim": "The FTC is investigating OpenAI and Anthropic over potential security failures.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+            },
+            {
+              "claim": "Regulators want to know if security incidents actually harmed American users.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+            },
+            {
+              "claim": "President Donald Trump dismissed AI fears as a hoax.",
+              "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
+            },
+            {
+              "claim": "The FTC may fine these labs for failing to report data breaches.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+            },
+            {
+              "claim": "Officials are pressuring these labs to disclose internal safety logs.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+            },
+            {
+              "claim": "OpenAI and Anthropic face heightened scrutiny from federal regulators.",
+              "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T00:03:52.462572+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2080,8 +2269,8 @@
       "event": "Zero clicks. That is how Google is changing shopping. This AI tool is now rolling out across the Gemini app and Google Search in the US. It aims to simplify the holiday shopping experience for users. The company first previewed this feature"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-15T20:35+05:30",
@@ -2129,7 +2318,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
@@ -2218,27 +2407,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T14:02+05:30",
-      "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-      "overall": 7.8,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong story and specific details, but visual repetition and static text hurt the score.",
-      "fixes": [
-        "LINE 2: specify the exact states or combine state lists to maintain fast pacing"
-      ],
-      "visual": [
-        "line 2: static text card held across multiple frames without visual change",
-        "line 3: generic state list without supporting map or attorney general imagery"
-      ]
-    },
     {
       "at": "2026-10-15T14:12+05:30",
       "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
@@ -2655,6 +2823,30 @@
         "line 1: Static text screen is held for too long; needs dynamic motion or relevant imagery.",
         "line 2: Visuals are just text overlays; lacks supporting graphics or icons representing data breac",
         "line 5: The Moneycontrol logo is a static placeholder; should show a screenshot of the actual repo"
+      ]
+    },
+    {
+      "at": "2026-10-16T00:10+05:30",
+      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 7
+      },
+      "one_line": "Weak hook and repetitive visual pacing fail to meet our premium news standards.",
+      "fixes": [
+        "LINE 3: Replace with 'This follows President Trump’s recent dismissal of AI risks as a hoax.'",
+        "LINE 5: Replace with 'The FTC is demanding internal safety logs to assess compliance.'",
+        "LINE 7: Replace with 'Are you comfortable with these labs handling your private data?'"
+      ],
+      "visual": [
+        "line 1: The same image of the official is held for too long (0.5s to 4.8s).",
+        "line 4: Visuals are too abstract; use a graphic representing FTC fines or data breach reports.",
+        "line 6: The logo transition is static and lacks the dynamic motion expected for a news reel."
       ]
     }
   ],
