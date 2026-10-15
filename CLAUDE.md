@@ -44,9 +44,10 @@ through a Telegram bot and reads Claude's messages there.
 ## Owner's preferences (learned)
 - Messages: **brief**, plain language, no jargon. Lead with what happened and what (if anything) they must do.
 - Be specific: real names, roles, numbers, sources. Show real photos of named people, real product images.
-- Every reel is scored by the editor-in-chief (writer.editor_review) before posting: pass 8/10, every criterion
-  (hook, specific, substance, accuracy, visuals, flow) at least 7, no exceptions after fixes, and no
-  posting if the editor can't run. Captions are guaranteed by code (video.sync_problem / even_words), not the
+- Every reel is scored by the editor-in-chief (writer.editor_review) before posting: pass 8/10 overall; accuracy
+  and specific at least 7; of hook, substance, visuals, flow ONE may be 6, none lower (owner, 2026-10-15: "free,
+  slightly softer", after only 5 reels passed in 3 days); no exceptions after fixes; no posting if the editor
+  can't run. Captions are guaranteed by code (video.sync_problem / even_words), not the
   free vision model, which misread correct captions on 12 Oct (owner, 2026-10-12: "BE very strict with the quality check"). Never lower the bar.
 - Models: **free Gemini only** (owner, 2026-10-10 13:14: "Sonnet is costly. Stay free"). Claude Sonnet 5.5 code stays
   but is off (config USE_CLAUDE; the trial ran out of credit on 10 Oct). Don't turn it on without asking.

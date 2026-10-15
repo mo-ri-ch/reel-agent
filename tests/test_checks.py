@@ -300,7 +300,13 @@ _good = [{"text": w, "start": i * 0.35, "end": i * 0.35 + 0.3} for i, w in enume
 check("good timing accepted", _video.sync_problem(_good, _scr, _beats, len(_good) * 0.35 + 0.5), "")
 
 
-check("any weak area fails", writer.score_review({"scores": {"hook": 6, "specific": 9, "substance": 9, "accuracy": 9,
+check("one area at 6 may pass", writer.score_review({"scores": {"hook": 8, "specific": 9, "substance": 9, "accuracy": 9,
+                                                            "visuals": 6, "flow": 9}}, 5)["overall"], 8.3)
+check("two weak areas fail", writer.score_review({"scores": {"hook": 6, "specific": 9, "substance": 9, "accuracy": 9,
+                                                          "visuals": 6, "flow": 9}}, 5)["overall"], 6.5)
+check("an area at 5 fails", writer.score_review({"scores": {"hook": 9, "specific": 9, "substance": 9, "accuracy": 9,
+                                                         "visuals": 5, "flow": 9}}, 5)["overall"], 6.5)
+check("accuracy 6 fails", writer.score_review({"scores": {"hook": 9, "specific": 9, "substance": 9, "accuracy": 6,
                                                        "visuals": 9, "flow": 9}}, 5)["overall"], 6.5)
 check("no posting below 8", main.EDITOR_FLOOR, 8.0)
 

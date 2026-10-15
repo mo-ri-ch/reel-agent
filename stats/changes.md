@@ -163,3 +163,6 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Fix: the rejected-stories list ("tried") lost random titles (set → list[-30:]), so the Qwen-on-PS5 story was made and rejected
   twice (~4 reels of quota). Now kept in order, 60 max. Metric: distinct stories tried/day, reels passed/day (baseline 2).
 - Fix: a Telegram network error no longer crashes the run (retry once, then carry on).
+
+## 2026-10-15: slightly softer (owner choice)
+- Still 8/10 overall; accuracy and specific >= 7; one of hook/substance/visuals/flow may be 6. Why: only 5 reels passed in 3 days, many rejections from the weak free reviewer. Metric: reels/day (baseline ~1.7), views and watch time per reel (watch for a drop).

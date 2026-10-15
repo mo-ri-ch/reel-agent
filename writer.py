@@ -800,7 +800,11 @@ def score_review(res, n_beats):
         except Exception:
             scores[k] = 7
     overall = round(sum(scores.values()) / len(scores), 1)
-    if min(scores.values()) < 7:  # strict: one weak area (any criterion under 7) is enough to fail
+    # owner, 15 Oct ("free, slightly softer"): accuracy and names/numbers must be 7+; of the other areas ONE may be
+    # 6 (usually visuals: the free reviewer is harsh on our card style); anything lower, or two weak areas, fails
+    others = [v for k, v in scores.items() if k not in ("accuracy", "specific")]
+    if (min(scores["accuracy"], scores["specific"]) < 7 or min(others) < 6
+            or sum(1 for v in others if v < 7) > 1):
         overall = min(overall, 6.5)
     vb, notes = [], []
     for p in res.get("visual_problems") or []:
