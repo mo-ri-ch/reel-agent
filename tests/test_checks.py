@@ -336,6 +336,10 @@ writer.EXHAUSTED.clear(); main.tg.send = _send
 
 check("json trailing comma", writer.parse_json('{"a": [1, 2,], "b": {"c": 3,},}'), {"a": [1, 2], "b": {"c": 3}})
 
+check("drop panel event", news.newsworthy({"title": "Lyceum Project Leaders Talk Corporate Funding and AI in Education",
+                                          "source": "The Harvard Crimson"}), False)
+check("keep company talks", news.newsworthy({"title": "OpenAI in talks to buy Windsurf for $3B", "source": "Reuters"}), True)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

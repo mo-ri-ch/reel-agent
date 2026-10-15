@@ -48,6 +48,7 @@ PR_SOURCES = re.compile(r"(?i)pr ?newswire|business ?wire|globe ?newswire|ein ?p
 WEAK_STORY = re.compile(
     r"(?i)\b(announces? (strategic|its|a) (foray|partnership|collaboration|mou)|strategic foray|signs? (an? )?mou|"
     r"plus other stories|other stories with|news roundup|weekly roundup|how-to;|"
+    r"leaders talk|panelists|panel discussion|symposium|fireside chat|in conversation with|keynote|"
     r"bootcamp|workshop|webinar|seminar|training (programme|program|session)|commences|inaugurat|felicitat|"
     r"conference (held|organised|organized)|awareness (drive|programme|program)|hackathon|faculty development|"
     r"students? (learn|trained)|share price|stock (rises|falls|jumps|surges)|shares (rise|fall|jump|surge)|"
