@@ -1,0 +1,84 @@
+{
+ "made": "20261015-1900",
+ "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+ "hook_text": "FTC targets AI giants",
+ "hook_before": null,
+ "script": "The FTC is investigating OpenAI and Anthropic over potential security failures.\nRegulators want to know if security incidents actually harmed American users.\nThis follows President Trump's recent dismissal of AI risks as a hoax.\nThe FTC may fine these labs for failing to report data breaches.\nThe FTC is demanding internal safety logs to assess compliance.\nOpenAI and Anthropic now face heightened scrutiny from federal regulators.\nAre you comfortable with these labs handling your private data?",
+ "words": 76,
+ "beats": [
+  {
+   "line": "The FTC is investigating OpenAI and Anthropic over potential security failures.",
+   "visual": "source"
+  },
+  {
+   "line": "Regulators want to know if security incidents actually harmed American users.",
+   "visual": "clip"
+  },
+  {
+   "line": "This follows President Trump's recent dismissal of AI risks as a hoax.",
+   "visual": "person"
+  },
+  {
+   "line": "The FTC may fine these labs for failing to report data breaches.",
+   "visual": "stat"
+  },
+  {
+   "line": "The FTC is demanding internal safety logs to assess compliance.",
+   "visual": "official"
+  },
+  {
+   "line": "OpenAI and Anthropic now face heightened scrutiny from federal regulators.",
+   "visual": "official"
+  },
+  {
+   "line": "Are you comfortable with these labs handling your private data?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 6,
+   "specific": 8,
+   "substance": 6,
+   "accuracy": 9,
+   "visuals": 5,
+   "flow": 7
+  },
+  "one_line": "Weak hook and repetitive, static visuals fail to meet premium news standards.",
+  "script_fixes": [
+   "LINE 3: Replace with 'This probe follows President Trump’s recent dismissal of AI risks as a hoax.'",
+   "LINE 6: Remove, it is redundant filler. Replace with a specific detail about the potential fine amount or scope.",
+   "LINE 7: Make the question more punchy, e.g., 'Would you trust these labs with your private data?'"
+  ],
+  "visual_beats": [
+   0,
+   1,
+   5,
+   6
+  ],
+  "visual_notes": [
+   "line 1: The same static image of a person is held for too long (0s-4.8s).",
+   "line 2: Visuals are generic text cards; needs a dynamic graphic or relevant B-roll.",
+   "line 6: The Anthropic logo is held for 2.4 seconds, then the same text card repeats.",
+   "line 7: The visual is just a static text card; lacks visual impact for a closing question."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 31.8,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.4,
+ "cuts": [
+  5.0,
+  9.73,
+  19.1,
+  27.7
+ ],
+ "first_cut_at": 5.0,
+ "avg_shot_seconds": 6.36,
+ "longest_shot_seconds": 9.37,
+ "verdict": "rejected",
+ "words_per_minute": 143
+}
