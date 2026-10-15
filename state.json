@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -191,23 +191,59 @@
     "fix_rounds": 2,
     "source_links": [
       "https://www.theverge.com/tech/1009086/square-kiosk"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Square is launching a brand new hardware device ca…: The image shows a brick building/storefront instead of the Square Kiosk hardware.",
+      "shows text overlay instead of real images of Square Kiosk",
+      "shows text overlay instead of real images of Square Kiosk",
+      "shows blank text card instead of a source card for The Verge",
+      "shows text overlay instead of stock video of a restaurant digital menu",
+      "shows text overlay instead of stock video of a customer using a restaurant kiosk",
+      "shows text overlay instead of stock video of a customer at a restaurant counter"
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong product news, but visuals become repetitive text-heavy slides.",
+      "script_fixes": [],
+      "visual_beats": [
+        2,
+        4
+      ],
+      "visual_notes": [
+        "line 5: Frames 8 and 9 are identical, causing a static visual hold.",
+        "line 3: Frames 5 and 6 use generic publisher branding instead of showing the product interface."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIW8mrQl91bNXOjTApWkZ5c_S1_PnA3AALdHwACOveIVoi6p-XJ3n8VPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-15T14:26:50.977054+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
-  "pending_offer": false,
+  "script_deadline": null,
+  "preview_deadline": "2026-10-15T15:07:41.763186+05:30",
+  "last_gender": "male",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-15",
     "done": [
       "07:00",
       "09:30",
-      "12:00"
+      "12:00",
+      "14:30"
     ]
   },
   "pending_topic": null,
@@ -648,50 +684,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-            "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-14T21:11:28+00:00",
-            "angle": "Eight US states are now suing OpenAI, claiming ChatGPT isn't safe for children"
-          },
-          {
-            "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
-            "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations in Asia. The […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-14T16:43:24+00:00",
-            "angle": "OpenAI claims a former employee stole product plans and handed them over to Apple"
-          },
-          {
-            "title": "Square’s new kiosk lets you talk to AI for help with your order",
-            "link": "https://www.theverge.com/tech/1009086/square-kiosk",
-            "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-14T16:00:00+00:00",
-            "angle": "Square's new ordering kiosk lets you just walk up and talk directly to an AI"
-          }
-        ],
-        "choose_deadline": "2026-10-15T13:40:27.236782+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1654,6 +1646,213 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Square’s new kiosk lets you talk to AI for help with your order",
+          "link": "https://www.theverge.com/tech/1009086/square-kiosk",
+          "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-14T16:00:00+00:00",
+          "angle": "Square's new ordering kiosk lets you just walk up and talk directly to an AI"
+        },
+        "draft": {
+          "title": "Square Kiosk AI Ordering",
+          "hook_text": "Square just launched a talking kiosk.",
+          "beats": [
+            {
+              "line": "Square is launching a brand new hardware device called the Square Kiosk.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Square Kiosk",
+              "outlet": "",
+              "domain": "squareup.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1009086/square-kiosk",
+              "tag": "Square Kiosk launched",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Square",
+                  "domain": "squareup.com"
+                }
+              ]
+            },
+            {
+              "line": "It features a large pill shape design with a built-in touchscreen.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Square Kiosk",
+              "outlet": "",
+              "domain": "squareup.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1009086/square-kiosk",
+              "tag": "Pill shape touchscreen",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Square",
+                  "domain": "squareup.com"
+                }
+              ]
+            },
+            {
+              "line": "The device includes an agentic conversational voice layer powered by AI.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Square’s new kiosk lets you talk to AI",
+              "url": "",
+              "tag": "Conversational voice layer",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Square",
+                  "domain": "squareup.com"
+                }
+              ]
+            },
+            {
+              "line": "This voice system fully understands a seller menu.",
+              "visual": "clip",
+              "query": "restaurant digital menu",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Understands seller menu",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It listens to customers and responds to their order requests.",
+              "visual": "clip",
+              "query": "customer using restaurant kiosk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Listens and responds",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you order your food from this kiosk?",
+              "visual": "clip",
+              "query": "customer at restaurant counter",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Order from kiosk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and direct, like a tech journalist explaining a new product rollout to a smart friend",
+          "thin": false,
+          "caption": "Square is launching the Square Kiosk featuring a pill shape and an AI voice layer that understands seller menus. Would you order your food from this kiosk?",
+          "hashtags": [
+            "Square",
+            "SquareKiosk",
+            "AI",
+            "TechNews",
+            "Restaurants"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1009086/square-kiosk"
+          ],
+          "script": "Square is launching a brand new hardware device called the Square Kiosk.\nIt features a large pill shape design with a built-in touchscreen.\nThe device includes an agentic conversational voice layer powered by AI.\nThis voice system fully understands a seller menu.\nIt listens to customers and responds to their order requests.\nWould you order your food from this kiosk?",
+          "keywords": [
+            "restaurant digital menu",
+            "customer using restaurant kiosk",
+            "customer at restaurant counter"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Square launched a talking kiosk.",
+              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
+            },
+            {
+              "claim": "Square is launching a brand new hardware device called the Square Kiosk.",
+              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
+            },
+            {
+              "claim": "It features a large pill shape design with a built-in touchscreen.",
+              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
+            },
+            {
+              "claim": "The device includes an agentic conversational voice layer powered by AI.",
+              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
+            },
+            {
+              "claim": "This voice system fully understands a seller menu.",
+              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
+            },
+            {
+              "claim": "It listens to customers and responds to their order requests.",
+              "url": "https://fr.tradingview.com/news/stocktwits:3c4fedcc8094b:0-tost-stock-tumbles-as-square-rolls-out-ai-voice-kiosk-aimed-at-restaurants/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.theverge.com/tech/1009086/square-kiosk"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-15T14:26:50.977054+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2154,8 +2353,8 @@
       "event": "YouTube Music is rolling out new labels as AI-generated music floods streaming platforms. The labels will appear directly on the player page for every listener. They will mark songs entirely generated by AI or partially crafted with it. Thi"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-15T13:40+05:30",
@@ -2183,7 +2382,7 @@
   "report_day": "2026-10-14",
   "ig_count": {
     "day": "2026-10-15",
-    "at": "2026-10-15T14:26:50.977095+05:30",
+    "at": "2026-10-15T14:37:41.763419+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2203,11 +2402,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-15",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-15",
-    "calls": 136,
+    "calls": 143,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2236,10 +2435,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 74,
+        "ok": 80,
         "busy": 30,
-        "other": 10,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 11,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.1-flash-lite": {
         "ok": 2,
@@ -2327,28 +2526,6 @@
     "gemini-3-flash-preview": 1792049684.947571
   },
   "editor_log": [
-    {
-      "at": "2026-10-14T14:41+05:30",
-      "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assist",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 7,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Strong subject matter ruined by mismatched visual assets and some hallucinated technical claims.",
-      "fixes": [
-        "LINE 4: Replace enterprise wafer scale processors with actual source context without introducing tech jargon not present in the summary.",
-        "LINE 5: Remove mentions of edge computing chips unless explicitly quoted from the source summary."
-      ],
-      "visual": [
-        "line 2: Displays unrelated orange abstract corporate promo instead of household appliances or Andr",
-        "line 5: Shows an IBM logo while discussing edge computing chips and Cerebras, which is completely "
-      ]
-    },
     {
       "at": "2026-10-14T14:49+05:30",
       "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, an",
@@ -2760,6 +2937,25 @@
       "visual": [
         "line 2: Apple logo reused multiple times without new context",
         "line 4: Generic Apple logo instead of regional context graphic"
+      ]
+    },
+    {
+      "at": "2026-10-15T14:37+05:30",
+      "title": "Square’s new kiosk lets you talk to AI for help with your order",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong product news, but visuals become repetitive text-heavy slides.",
+      "fixes": [],
+      "visual": [
+        "line 5: Frames 8 and 9 are identical, causing a static visual hold.",
+        "line 3: Frames 5 and 6 use generic publisher branding instead of showing the product interface."
       ]
     }
   ],
