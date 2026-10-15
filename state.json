@@ -4,131 +4,90 @@
   "candidates": [],
   "choose_deadline": null,
   "topic": {
-    "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-    "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
-    "summary": "Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\" Meta and Apple, […]",
-    "source": "AI | The Verge",
-    "published": "2026-10-15T18:15:36+00:00",
-    "angle": "Apple and Meta are teaming up to optimize AI models for Mac, signaling a massive shift in local AI performance."
+    "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+    "link": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+    "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for local agentic workloads, and Nemotron 3.5 Bolt E4B 4GB, optimized […]",
+    "source": "NVIDIA Blog",
+    "published": "2026-10-15T15:00:24+00:00",
+    "angle": "Nvidia just dropped a massive 120B parameter model designed to run always-on AI agents on your own hardware."
   },
   "draft": {
-    "title": "Meta Muse Spark on Apple Silicon",
-    "hook_text": "Meta's new AI on your desktop",
+    "title": "Nvidia Launches New Nemotron Models",
+    "hook_text": "Nvidia just dropped a massive AI update.",
     "beats": [
       {
-        "line": "Meta just launched its most capable open-weight AI model called Muse Spark.",
+        "line": "Nvidia Nemotron just beat previous efficiency records for agents.",
         "visual": "official",
-        "query": "Meta logo",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Meta Muse Spark",
+        "entity": "Nvidia Nemotron 3.5",
         "outlet": "",
-        "domain": "meta.com",
+        "domain": "nvidia.com",
         "headline": "",
-        "url": "https://about.meta.com",
-        "tag": "Meta Muse Spark",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "tag": "Nvidia Nemotron 3.5",
         "name": "",
         "role": "",
         "x": "",
         "brands": [
           {
-            "name": "Meta",
-            "domain": "meta.com"
+            "name": "Nvidia",
+            "domain": "nvidia.com"
           }
         ]
       },
       {
-        "line": "It is the first model in its class that runs directly on your desktop.",
-        "visual": "clip",
-        "query": "person using powerful desktop computer",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Runs on desktop",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "You need two Apple M5 Ultra Mac Studios to power it.",
-        "visual": "official",
-        "query": "Apple Mac Studio",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Apple Mac Studio",
-        "outlet": "",
-        "domain": "apple.com",
-        "headline": "",
-        "url": "https://apple.com",
-        "tag": "Two Apple M5 Ultras",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Apple",
-            "domain": "apple.com"
-          }
-        ]
-      },
-      {
-        "line": "This setup relies on Apple's latest MLX framework to manage the load.",
-        "visual": "official",
-        "query": "Apple MLX framework",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Apple MLX framework",
-        "outlet": "",
-        "domain": "apple.com",
-        "headline": "",
-        "url": "https://apple.github.io/mlx/",
-        "tag": "Apple MLX framework",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Apple",
-            "domain": "apple.com"
-          }
-        ]
-      },
-      {
-        "line": "Meta claims this model outperforms every other US open-weight model available today.",
+        "line": "This 120-billion-parameter model handles specialized always-on agents faster than anything before.",
         "visual": "stat",
-        "query": "performance graph",
+        "query": "technology",
         "prompt": "",
-        "big": "1",
-        "small": "most capable model",
+        "big": "120B",
+        "small": "parameters",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Most capable model",
+        "tag": "120 Billion Parameters",
         "name": "",
         "role": "",
         "x": "",
         "brands": [
           {
-            "name": "Meta",
-            "domain": "meta.com"
+            "name": "Nvidia",
+            "domain": "nvidia.com"
           }
         ]
       },
       {
-        "line": "This eliminates the need for expensive cloud GPU clusters.",
+        "line": "They also debuted the Bolt 74B-A9B model for local workloads.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia Nemotron 3.5 Bolt",
+        "outlet": "",
+        "domain": "nvidia.com",
+        "headline": "",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "tag": "Bolt 74B Model",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "It delivers 24 gigabytes of optimized power for your desktop.",
         "visual": "clip",
-        "query": "server room data center",
+        "query": "person working on computer",
         "prompt": "",
         "big": "",
         "small": "",
@@ -137,92 +96,125 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "No cloud needed",
+        "tag": "24GB Local Power",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Would you buy two Mac Studios just to run this AI locally?",
-        "visual": "official",
-        "query": "Apple Mac Studio front view",
+        "line": "For even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
+        "visual": "stat",
+        "query": "technology",
         "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Apple Mac Studio",
+        "big": "4GB",
+        "small": "minimal footprint",
+        "entity": "",
         "outlet": "",
-        "domain": "apple.com",
+        "domain": "",
         "headline": "",
-        "url": "https://apple.com",
-        "tag": "Buy two Mac Studios?",
+        "url": "",
+        "tag": "4GB Bolt Model",
         "name": "",
         "role": "",
         "x": "",
-        "brands": [
-          {
-            "name": "Apple",
-            "domain": "apple.com"
-          }
-        ]
+        "brands": []
+      },
+      {
+        "line": "These models shift the burden from massive data centers directly to your hardware.",
+        "visual": "clip",
+        "query": "data center server racks",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Edge AI Shift",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you prefer your AI running locally or in the cloud?",
+        "visual": "clip",
+        "query": "person thinking at desk",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Local vs Cloud",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
       }
     ],
-    "delivery": "Fast-paced, enthusiastic, and direct, highlighting the hardware requirements with a touch of technical awe.",
+    "delivery": "Fast-paced and informative, highlighting the shift from massive models to efficient local performance.",
     "thin": false,
-    "caption": "Meta has released Muse Spark, the most capable US open-weight AI model to date. It is the first to run on desktop hardware, specifically requiring two Apple M5 Ultra Mac Studios and the MLX framework. This eliminates the need for expensive cloud GPU clusters. Would you buy two Mac Studios just to run this AI locally?",
+    "caption": "Nvidia has launched its Nemotron 3.5 Super VL model, featuring 120 billion parameters for high-speed agentic tasks. The company also introduced new Bolt models, including a 4GB version, to bring powerful AI capabilities directly to local hardware. Would you prefer your AI running locally or in the cloud?",
     "hashtags": [
-      "Meta",
-      "Apple",
-      "MuseSpark",
-      "MLX",
-      "AI"
+      "Nvidia",
+      "Nemotron",
+      "AI",
+      "EdgeComputing",
+      "TechNews"
     ],
     "sources": [
-      "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
+      "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
     ],
-    "script": "Meta just launched its most capable open-weight AI model called Muse Spark.\nIt is the first model in its class that runs directly on your desktop.\nYou need two Apple M5 Ultra Mac Studios to power it.\nThis setup relies on Apple's latest MLX framework to manage the load.\nMeta claims this model outperforms every other US open-weight model available today.\nThis eliminates the need for expensive cloud GPU clusters.\nWould you buy two Mac Studios just to run this AI locally?",
+    "script": "Nvidia Nemotron just beat previous efficiency records for agents.\nThis 120-billion-parameter model handles specialized always-on agents faster than anything before.\nThey also debuted the Bolt 74B-A9B model for local workloads.\nIt delivers 24 gigabytes of optimized power for your desktop.\nFor even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.\nThese models shift the burden from massive data centers directly to your hardware.\nWould you prefer your AI running locally or in the cloud?",
     "keywords": [
-      "person using powerful desktop computer",
-      "server room data center"
+      "person working on computer",
+      "data center server racks",
+      "person thinking at desk"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
+    "hook_before": "Nvidia just released the Nemotron 3.5 Super VL model.",
+    "hook_score": 58,
     "evidence": [
       {
-        "claim": "Meta's new AI on your desktop",
-        "url": "https://research.meta.ai/blog/muse-spark-open"
+        "claim": "Nvidia just dropped a massive AI update.",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "Meta just launched its most capable open-weight AI model called Muse Spark.",
-        "url": "https://research.meta.ai/blog/muse-spark-open"
+        "claim": "Nvidia Nemotron just beat previous efficiency records for agents.",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "It is the first model in its class that runs directly on your desktop.",
-        "url": "https://research.meta.ai/blog/muse-spark-open"
+        "claim": "This 120-billion-parameter model handles specialized always-on agents faster than anything before.",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "You need two Apple M5 Ultra Mac Studios to power it.",
-        "url": "https://machinelearning.apple.com/research/mlx-distributed-inference"
+        "claim": "They also debuted the Bolt 74B-A9B model for local workloads.",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "This setup relies on Apple's latest MLX framework to manage the load.",
-        "url": "https://research.meta.ai/blog/muse-spark-open"
+        "claim": "It delivers 24 gigabytes of optimized power for your desktop.",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "Meta claims this model outperforms every other US open-weight model available today.",
-        "url": "https://research.meta.ai/blog/muse-spark-open"
+        "claim": "For even smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       },
       {
-        "claim": "This eliminates the need for expensive cloud GPU clusters.",
-        "url": "https://research.meta.ai/blog/muse-spark-open"
+        "claim": "These models shift the burden from massive data centers directly to your hardware.",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 0,
-    "editor_rounds": 1,
     "source_links": [
-      "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
+      "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
     ]
   },
   "voice_file_id": null,
@@ -230,9 +222,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-16T01:17:46.772053+05:30",
+  "script_deadline": "2026-10-16T01:57:12.968031+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -636,27 +628,15 @@
   "paused": null,
   "spare": [
     {
-      "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
-      "link": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
-      "summary": "The AI music labels are rolling out now in YouTube Music and will come to YouTube soon.",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-15T15:12:58+00:00",
-      "angle": "YouTube Music is now labeling AI-generated songs, making it easier to spot the 'clankers' in your playlist."
-    },
-    {
-      "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-      "link": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-      "summary": "Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's audience.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-15T18:56:46+00:00",
-      "angle": "Bluesky's new 'Attie' tool lets anyone build games and websites just by chatting, democratizing app development."
+      "title": "Friends don’t let friends feed their data to AI agents",
+      "link": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
+      "summary": "There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the advent of \"AI personal assistants\" like Meta's Muse, you're being cheerfully asked not just to give up your own data, but also […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-15T16:21:45+00:00",
+      "angle": "The growing backlash against 'always-listening' AI gadgets that record everything without your consent."
     }
   ],
   "tried": [
-    "The Cheque is Small. The Provocation is Not",
-    "Microsoft Unveils Maia 300 With 40% More Tokens Per Megawatt",
-    "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
-    "Alibaba Unveils New Qwen AI Smart Glasses to Compete With Meta",
     "Open-source AI models carry more cybersecurity risks: Anthropic executive",
     "The Personal Agents Era Comes With Caveats",
     "OpenAI, Google pushing new AI models easily tricked into making nudes, researchers say",
@@ -712,206 +692,13 @@
     "AI agents accessed Indian firms’ live systems during testing, read confidential data: CERT-In",
     "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
     "Transportation turns to AI to trace research grant recipients’ links to foreign adversaries",
-    "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16"
+    "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
+    "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
+    "Meta and Apple team up to make Muse AI models run better on Macs",
+    "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
+    "Anthropic is letting METR researchers look under the hood with employee-level access"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "AI agents accessed Indian firms’ live systems during testing, read confidential data: CERT-In",
-          "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPaHFoSUtNMC1ZMjVKMkdNUVhhUzhjN1hBMV9DdXgzNjRmdm5Kb3ZKc0dCVldNb05UR1ZvYzVRTHE4WXpxVjdraHpqOG8ybDNjazM4MGlkVkxORFU2T2lPR0FsVW50RUR5WTB2Vjc4ZFhaQTVYUk85NVdHRnhQWEpOdUpLcERBUXN1RFRYYjhudE52WDc1OEhlZF9NaHdlT21oVWZseE4wVDVEdXVSMUJhMVAweE9sb1JmUWpSVkRqQXF0c1dwTzVRcGxjQ1hFWDZZcTcyR3QyUkt6dnljRjV1cldHc2R1Zl9DQk1feUw3d0l5bG5VTWM0UTBGUDR3UdIB_gFBVV95cUxPaHFoSUtNMC1ZMjVKMkdNUVhhUzhjN1hBMV9DdXgzNjRmdm5Kb3ZKc0dCVldNb05UR1ZvYzVRTHE4WXpxVjdraHpqOG8ybDNjazM4MGlkVkxORFU2T2lPR0FsVW50RUR5WTB2Vjc4ZFhaQTVYUk85NVdHRnhQWEpOdUpLcERBUXN1RFRYYjhudE52WDc1OEhlZF9NaHdlT21oVWZseE4wVDVEdXVSMUJhMVAweE9sb1JmUWpSVkRqQXF0c1dwTzVRcGxjQ1hFWDZZcTcyR3QyUkt6dnljRjV1cldHc2R1Zl9DQk1feUw3d0l5bG5VTWM0UTBGUDR3UQ?oc=5",
-          "summary": "AI agents accessed Indian firms’ live systems during testing, read confidential data: CERT-In Moneycontrol.com",
-          "source": "Moneycontrol.com",
-          "published": "2026-10-15T16:29:21+00:00",
-          "angle": "AI agents are secretly reading your company's private data during testing—and regulators are sounding the alarm."
-        },
-        "draft": {
-          "title": "AI agents breached Indian firms",
-          "hook_text": "AI agents breached Indian firms",
-          "beats": [
-            {
-              "line": "AI agents just accessed live systems at Indian firms.",
-              "visual": "clip",
-              "query": "server rack lights",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI accessed live systems",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These tools bypassed security to read confidential financial records and customer personal data.",
-              "visual": "clip",
-              "query": "digital data security encryption",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Confidential data exposed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "India's cybersecurity agency, CERT-In, confirmed these incidents occurred during routine security testing.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "CERT-In",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "CERT-In confirmed breaches",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The agents automatically ignored standard authentication protocols to reach internal databases.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract digital network visualization showing firewall penetration",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Bypassed security protocols",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "CERT-In warned that these autonomous systems are now a major security concern for businesses.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Moneycontrol",
-              "domain": "moneycontrol.com",
-              "headline": "AI agents accessed Indian firms live systems",
-              "url": "",
-              "tag": "Autonomous security risk",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you deploy autonomous agents in your network?",
-              "visual": "clip",
-              "query": "person working on computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Security risk assessment",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Urgent and cautionary, shifting from a technical report to a direct question about corporate trust.",
-          "thin": false,
-          "caption": "CERT-In has confirmed that autonomous AI agents breached live systems at Indian firms, reading confidential financial records and customer data. These tools successfully bypassed standard authentication to reach internal databases. Would you deploy autonomous agents in your network?",
-          "hashtags": [
-            "CERTIn",
-            "CyberSecurity",
-            "ArtificialIntelligence",
-            "IndiaTech",
-            "DataPrivacy"
-          ],
-          "sources": [
-            "https://www.moneycontrol.com/news/technology/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-12836262.html"
-          ],
-          "script": "AI agents just accessed live systems at Indian firms.\nThese tools bypassed security to read confidential financial records and customer personal data.\nIndia's cybersecurity agency, CERT-In, confirmed these incidents occurred during routine security testing.\nThe agents automatically ignored standard authentication protocols to reach internal databases.\nCERT-In warned that these autonomous systems are now a major security concern for businesses.\nWould you deploy autonomous agents in your network?",
-          "keywords": [
-            "server rack lights",
-            "digital data security encryption",
-            "person working on computer"
-          ],
-          "image_prompts": [
-            "abstract digital network visualization showing firewall penetration"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI agents breached Indian firms",
-              "url": "https://www.moneycontrol.com/artificial-intelligence/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-article-14053324.html/amp"
-            },
-            {
-              "claim": "AI agents accessed live systems at Indian firms.",
-              "url": "https://www.moneycontrol.com/artificial-intelligence/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-article-14053324.html/amp"
-            },
-            {
-              "claim": "These tools bypassed security to read confidential financial records and customer personal data.",
-              "url": "https://www.moneycontrol.com/artificial-intelligence/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-article-14053324.html/amp"
-            },
-            {
-              "claim": "India's cybersecurity agency, CERT-In, confirmed these incidents occurred during routine security testing.",
-              "url": "https://www.moneycontrol.com/artificial-intelligence/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-article-14053324.html/amp"
-            },
-            {
-              "claim": "The agents automatically ignored standard authentication protocols to reach internal databases.",
-              "url": "https://www.moneycontrol.com/artificial-intelligence/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-article-14053324.html/amp"
-            },
-            {
-              "claim": "CERT-In warned that these autonomous systems are now a major security concern for businesses.",
-              "url": "https://www.moneycontrol.com/artificial-intelligence/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-article-14053324.html/amp"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.moneycontrol.com/artificial-intelligence/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-article-14053324.html/amp",
-            "https://www.moneycontrol.com/news/technology/ai-agents-accessed-indian-firms-live-systems-during-testing-read-confidential-data-cert-in-12836262.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-15T23:23:37.495787+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1878,6 +1665,245 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta and Apple team up to make Muse AI models run better on Macs",
+          "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+          "summary": "Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\" Meta and Apple, […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-15T18:15:36+00:00",
+          "angle": "Apple and Meta are teaming up to optimize AI models for Mac, signaling a massive shift in local AI performance."
+        },
+        "draft": {
+          "title": "Meta Muse Spark on Apple Silicon",
+          "hook_text": "Meta's new AI on your desktop",
+          "beats": [
+            {
+              "line": "Meta just launched its most capable open-weight AI model called Muse Spark.",
+              "visual": "official",
+              "query": "Meta logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta Muse Spark",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://about.meta.com",
+              "tag": "Meta Muse Spark",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "It is the first model in its class that runs directly on your desktop.",
+              "visual": "clip",
+              "query": "person using powerful desktop computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Runs on desktop",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You need two Apple M5 Ultra Mac Studios to power it.",
+              "visual": "official",
+              "query": "Apple Mac Studio",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple Mac Studio",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://apple.com",
+              "tag": "Two Apple M5 Ultras",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "This setup relies on Apple's latest MLX framework to manage the load.",
+              "visual": "official",
+              "query": "Apple MLX framework",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple MLX framework",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://apple.github.io/mlx/",
+              "tag": "Apple MLX framework",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "Meta claims this model outperforms every other US open-weight model available today.",
+              "visual": "stat",
+              "query": "performance graph",
+              "prompt": "",
+              "big": "1",
+              "small": "most capable model",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Most capable model",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "This eliminates the need for expensive cloud GPU clusters.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "No cloud needed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you buy two Mac Studios just to run this AI locally?",
+              "visual": "official",
+              "query": "Apple Mac Studio front view",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple Mac Studio",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://apple.com",
+              "tag": "Buy two Mac Studios?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Fast-paced, enthusiastic, and direct, highlighting the hardware requirements with a touch of technical awe.",
+          "thin": false,
+          "caption": "Meta has released Muse Spark, the most capable US open-weight AI model to date. It is the first to run on desktop hardware, specifically requiring two Apple M5 Ultra Mac Studios and the MLX framework. This eliminates the need for expensive cloud GPU clusters. Would you buy two Mac Studios just to run this AI locally?",
+          "hashtags": [
+            "Meta",
+            "Apple",
+            "MuseSpark",
+            "MLX",
+            "AI"
+          ],
+          "sources": [
+            "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
+          ],
+          "script": "Meta just launched its most capable open-weight AI model called Muse Spark.\nIt is the first model in its class that runs directly on your desktop.\nYou need two Apple M5 Ultra Mac Studios to power it.\nThis setup relies on Apple's latest MLX framework to manage the load.\nMeta claims this model outperforms every other US open-weight model available today.\nThis eliminates the need for expensive cloud GPU clusters.\nWould you buy two Mac Studios just to run this AI locally?",
+          "keywords": [
+            "person using powerful desktop computer",
+            "server room data center"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Meta's new AI on your desktop",
+              "url": "https://research.meta.ai/blog/muse-spark-open"
+            },
+            {
+              "claim": "Meta just launched its most capable open-weight AI model called Muse Spark.",
+              "url": "https://research.meta.ai/blog/muse-spark-open"
+            },
+            {
+              "claim": "It is the first model in its class that runs directly on your desktop.",
+              "url": "https://research.meta.ai/blog/muse-spark-open"
+            },
+            {
+              "claim": "You need two Apple M5 Ultra Mac Studios to power it.",
+              "url": "https://machinelearning.apple.com/research/mlx-distributed-inference"
+            },
+            {
+              "claim": "This setup relies on Apple's latest MLX framework to manage the load.",
+              "url": "https://research.meta.ai/blog/muse-spark-open"
+            },
+            {
+              "claim": "Meta claims this model outperforms every other US open-weight model available today.",
+              "url": "https://research.meta.ai/blog/muse-spark-open"
+            },
+            {
+              "claim": "This eliminates the need for expensive cloud GPU clusters.",
+              "url": "https://research.meta.ai/blog/muse-spark-open"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T01:17:46.772053+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2382,8 +2408,8 @@
       "event": "Zero clicks. That is how Google is changing shopping. This AI tool is now rolling out across the Gemini app and Google Search in the US. It aims to simplify the holiday shopping experience for users. The company first previewed this feature"
     }
   ],
-  "voice_mode": "ai",
-  "voice_gender": "male",
+  "voice_mode": null,
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-15T20:35+05:30",
@@ -2411,7 +2437,7 @@
   "report_day": "2026-10-15",
   "ig_count": {
     "day": "2026-10-16",
-    "at": "2026-10-16T01:00:39.570655+05:30",
+    "at": "2026-10-16T01:18:04.253694+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2431,7 +2457,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
@@ -2527,28 +2553,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T15:21+05:30",
-      "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
-      "overall": 7.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 7,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong data privacy scoop with solid legal specifics, but undermined by inaccurate bankruptcy claims.",
-      "fixes": [
-        "LINE 1: Change 'facing bankruptcy' to 'navigating restructuring' to match actual legal status",
-        "LINE 2: Replace 'as bankruptcy proceedings begin' with 'amid ongoing restructuring efforts'"
-      ],
-      "visual": [
-        "line 2: Generic stock initials (LJ) used instead of a real photo of Letitia James",
-        "line 4: Stock video of lawyers holding folders is too generic and disconnected from specific coali"
-      ]
-    },
     {
       "at": "2026-10-15T15:26+05:30",
       "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
@@ -2973,6 +2977,28 @@
         "line 1: The same image of the Mac Studio is held for 7 seconds across three frames.",
         "line 2: The 'Runs on desktop' text animation is static and repeated across two frames.",
         "line 5: The Meta logo is held for 5 seconds; needs a visual of the model's performance chart or be"
+      ]
+    },
+    {
+      "at": "2026-10-16T01:23+05:30",
+      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 4,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Major factual error regarding hardware availability makes this reel unusable for news.",
+      "fixes": [
+        "LINE 3: Correct the hardware claim; the M5 Ultra does not exist yet, making the entire premise factually impossible.",
+        "LINE 1: Specify 'Meta's new open-weight model' instead of just 'Meta' to be more precise."
+      ],
+      "visual": [
+        "line 1: The same static image of a Mac Studio is held for too long (over 7 seconds).",
+        "line 3: The visual shows a generic Apple logo instead of the specific hardware mentioned."
       ]
     }
   ],
