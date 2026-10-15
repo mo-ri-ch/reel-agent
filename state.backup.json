@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -159,16 +159,52 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The Wall Street Journal revealed the consulting fi…: Unfinished source card layout showing editing bounding boxes and incomplete placeholder text.",
+      "Applicants must negotiate and solve problems direc…: Text card with editing bounding box instead of the specified stock video.",
+      "Would you pass a robot client exam?…: Text card with editing bounding box instead of the specified stock video.",
+      "Unfinished video editing artifact showing a bounding box and cropped text instead of the source card.",
+      "Unfinished video editing artifact showing a text bounding box instead of the requested stock video.",
+      "Unfinished video editing artifact showing a text bounding box instead of the requested stock video."
+    ],
+    "editor": {
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, specific reporting on McKinsey's AI hiring test, but repetitive visuals drag down quality.",
+      "script_fixes": [],
+      "visual_beats": [
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 4: Frames 8 and 9 repeat the exact same 'Negotiate with software' visual without change.",
+        "line 5: Frames 10 and 11 repeat the exact same 'Pass robot client exam' visual without change."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "McKinsey and Company: Carlo Dani (CC BY-SA 4.0), via Wikimedia Commons"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 real photos, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIWsWrQhQvDFw0vCX4l0MUN7mfBUGWmAAKpHwACOveIVsLofE6Z_hxePQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-15T13:10:01.029884+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-15T13:47:24.279842+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-15",
@@ -628,235 +664,8 @@
     "Artificial Intelligence: Beijing hosts international forum on AI and the future of urban governance",
     "What The Tech: How criminals are tricking artificial intelligence platforms"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-          "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-          "source": "Google DeepMind News",
-          "published": "2026-10-14T02:00:14+00:00",
-          "angle": "Google DeepMind is launching an on-device AI tool that detects scams in your private chats without sending data to the cloud."
-        },
-        "draft": {
-          "title": "Google DeepMind and Singapore Gov fight scams",
-          "hook_text": "Singapore is blocking scams using AI",
-          "beats": [
-            {
-              "line": "Scam victims in Singapore lost four billion dollars since twenty nineteen.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "4B",
-              "small": "total losses",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Google DeepMind is now collaborating with the Singapore government to tackle this issue.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google DeepMind",
-              "outlet": "",
-              "domain": "deepmind.google",
-              "headline": "",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-              "tag": "DeepMind and Singapore",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google DeepMind",
-                  "domain": "deepmind.google"
-                }
-              ]
-            },
-            {
-              "line": "They are developing advanced AI models to identify and block fraudulent conversational patterns.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google DeepMind",
-              "outlet": "",
-              "domain": "deepmind.google",
-              "headline": "",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-              "tag": "AI scam detection",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google DeepMind",
-                  "domain": "deepmind.google"
-                }
-              ]
-            },
-            {
-              "line": "The project uses on-device technology to prioritize user privacy and data security.",
-              "visual": "clip",
-              "query": "person holding smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "On-device privacy",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This initiative aims to protect citizens from increasingly sophisticated digital phishing attempts.",
-              "visual": "clip",
-              "query": "digital security data",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Phishing protection",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Google DeepMind expects these tools to identify threats before they reach the user.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google DeepMind",
-              "outlet": "",
-              "domain": "deepmind.google",
-              "headline": "",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-              "tag": "Real-time identification",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google DeepMind",
-                  "domain": "deepmind.google"
-                }
-              ]
-            },
-            {
-              "line": "Would you rely on on-device AI to filter your private messages for scams?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Google DeepMind",
-              "domain": "deepmind.google",
-              "headline": "On-device AI scam detection with Singapore",
-              "url": "",
-              "tag": "Private message filtering",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious and direct, focusing on the scale of the problem and the privacy-first approach of the solution.",
-          "thin": false,
-          "caption": "Google DeepMind and the Singapore government are partnering to combat scams that have cost residents four billion dollars since 2019. The project focuses on on-device AI to intercept fraudulent messages while keeping data private. Would you trust an on-device AI to filter your messages for fraud?",
-          "hashtags": [
-            "GoogleDeepMind",
-            "Singapore",
-            "CyberSecurity",
-            "AI",
-            "DigitalSafety"
-          ],
-          "sources": [
-            "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-          ],
-          "script": "Scam victims in Singapore lost four billion dollars since twenty nineteen.\nGoogle DeepMind is now collaborating with the Singapore government to tackle this issue.\nThey are developing advanced AI models to identify and block fraudulent conversational patterns.\nThe project uses on-device technology to prioritize user privacy and data security.\nThis initiative aims to protect citizens from increasingly sophisticated digital phishing attempts.\nGoogle DeepMind expects these tools to identify threats before they reach the user.\nWould you rely on on-device AI to filter your private messages for scams?",
-          "keywords": [
-            "person holding smartphone",
-            "digital security data"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Singapore is blocking scams using AI",
-              "url": "https://ua.news/en/world/govtech-i-google-deepmind-rozrobliaiut-sistemu-viiavlennia-shi-shakhraistva-channel-newsasia"
-            },
-            {
-              "claim": "Scam victims in Singapore lost four billion dollars since twenty nineteen.",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-            },
-            {
-              "claim": "Google DeepMind is now collaborating with the Singapore government to tackle this issue.",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-            },
-            {
-              "claim": "They are developing advanced AI models to identify and block fraudulent conversational patterns.",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-            },
-            {
-              "claim": "The project uses on-device technology to prioritize user privacy and data security.",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-            },
-            {
-              "claim": "This initiative aims to protect citizens from increasingly sophisticated digital phishing attempts.",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-            },
-            {
-              "claim": "Google DeepMind expects these tools to identify threats before they reach the user.",
-              "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-14T16:45:28.925332+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1447,6 +1256,181 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "McKinsey is making job applicants spar with a fake AI client",
+          "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+          "summary": "Consulting firm McKinsey & Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wall Street Journal. The AI simulation \"aims to reflect 80% of the scenarios McKinsey consultants might encounter in their day-to-day work,\" the […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-14T22:53:31+00:00",
+          "angle": "McKinsey is now making job applicants interview with a fake AI client—your next job interview might be against a bot."
+        },
+        "draft": {
+          "title": "McKinsey uses AI for job interviews",
+          "hook_text": "McKinsey is testing job applicants with an AI.",
+          "beats": [
+            {
+              "line": "Ten minutes with a fake AI client is now a job requirement.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "McKinsey and Company",
+              "outlet": "",
+              "domain": "mckinsey.com",
+              "headline": "",
+              "url": "https://www.mckinsey.com",
+              "tag": "McKinsey AI client interview",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "McKinsey & Company",
+                  "domain": "mckinsey.com"
+                }
+              ]
+            },
+            {
+              "line": "The Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Wall Street Journal",
+              "domain": "wsj.com",
+              "headline": "McKinsey is making job applicants spar with a fake AI client",
+              "url": "",
+              "tag": "Wall Street Journal report",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "80%",
+              "small": "daily scenarios covered",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "80% of daily scenarios",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Applicants must negotiate and solve problems directly with the software before getting hired.",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Negotiate with software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you pass a robot client exam?",
+              "visual": "clip",
+              "query": "candidate in interview room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Pass robot client exam",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and factual, explaining how tech changes corporate hiring without hype",
+          "thin": false,
+          "caption": "McKinsey and Company is testing job applicants with a ten minute AI client simulation covering eighty percent of daily work scenarios. Would you want an AI to grade your next job interview?",
+          "hashtags": [
+            "McKinsey",
+            "ArtificialIntelligence",
+            "Hiring",
+            "Consulting"
+          ],
+          "sources": [
+            "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+          ],
+          "script": "Ten minutes with a fake AI client is now a job requirement.\nThe Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.\nThe AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.\nApplicants must negotiate and solve problems directly with the software before getting hired.\nWould you pass a robot client exam?",
+          "keywords": [
+            "person looking at computer screen",
+            "candidate in interview room"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "McKinsey and Company is making entry level candidates have a ten minute conversation with an AI simulation of a client.",
+          "hook_score": 48,
+          "evidence": [
+            {
+              "claim": "McKinsey is testing job applicants with an AI.",
+              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+            },
+            {
+              "claim": "Ten minutes with a fake AI client is now a job requirement.",
+              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+            },
+            {
+              "claim": "The Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.",
+              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+            },
+            {
+              "claim": "The AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.",
+              "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+            },
+            {
+              "claim": "Applicants must negotiate and solve problems directly with the software before getting hired.",
+              "url": "https://www.indiatoday.in/amp/jobs/story/mckinsey-wants-freshers-to-convince-ai-clients-during-interview-to-get-the-job-3017789-2026-10-15"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-15T13:10:01.029884+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1937,8 +1921,8 @@
       "event": "Scam victims in Singapore lost four billion dollars since twenty nineteen. Google DeepMind is now collaborating with the Singapore government to tackle this issue. They are developing lightweight Gemma models to identify and block fraudulen"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-14T17:16+05:30",
@@ -1971,7 +1955,7 @@
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-14",
-  "late_alarm_day": "2026-10-14",
+  "late_alarm_day": "2026-10-15",
   "stats_day": "2026-10-15",
   "perm_told": true,
   "fish_pool": [
@@ -1986,11 +1970,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-15",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-0",
   "gemini_use": {
     "day": "2026-10-15",
-    "calls": 79,
+    "calls": 86,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2019,10 +2003,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 35,
+        "ok": 41,
         "busy": 18,
-        "other": 6,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 7,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.1-flash-lite": {
         "ok": 1,
@@ -2110,26 +2094,6 @@
     "gemini-3-flash-preview": 1792049684.947571
   },
   "editor_log": [
-    {
-      "at": "2026-10-14T13:54+05:30",
-      "title": "Xbox is officially embracing the chaos of AI-powered game ports",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Weak visuals with repeated placeholder logos and text clipping ruin a solid AI news story.",
-      "fixes": [],
-      "visual": [
-        "line 1: Bounding box UI artifact left on screen over 'Xbox'.",
-        "line 2: Unrelated repetitive text cards instead of dynamic gameplay decompilation footage.",
-        "line 3: Generic 'A' app icon displayed instead of actual Call of Duty or Halo footage."
-      ]
-    },
     {
       "at": "2026-10-14T13:58+05:30",
       "title": "Xbox is officially embracing the chaos of AI-powered game ports",
@@ -2545,6 +2509,25 @@
         "line 1: The abstract 3D graphic is generic and does not visually represent the scam issue.",
         "line 2: The 'DeepMind partnership' text card is redundant and adds no visual information.",
         "line 6: The stock photo of a generic Google office building is irrelevant to the specific on-devic"
+      ]
+    },
+    {
+      "at": "2026-10-15T13:17+05:30",
+      "title": "McKinsey is making job applicants spar with a fake AI client",
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, specific reporting on McKinsey's AI hiring test, but repetitive visuals drag down quality.",
+      "fixes": [],
+      "visual": [
+        "line 4: Frames 8 and 9 repeat the exact same 'Negotiate with software' visual without change.",
+        "line 5: Frames 10 and 11 repeat the exact same 'Pass robot client exam' visual without change."
       ]
     }
   ],
