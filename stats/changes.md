@@ -155,3 +155,11 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   missed waiting for the 12:30 IST reset (expected). The 3.2 s max-shot change landed after the quota ran out, so today is its first test.
 - Change: articles in a site's opinion/editorial/letters/column section (by URL) are skipped; a Nantucket Current opinion column was a
   candidate today. Metric: editor scores of picked stories, fewer quota-wasting rewrites.
+
+## 2026-10-15: daily check
+- 14 Oct: 2 of 6 posted (Saudi/OpenAI arrest 8.7, DeepMind-Singapore scams 8.5); the editor passed 2 of 20 reels (18 capped at
+  6.5 for a criterion under 7, mostly visuals/hook/specific), and the free quota ran out at 17:15 IST. 15 Oct 09:00/11:30 missed
+  waiting for the 12:30 IST reset (expected). Followers 8. One failed run (14 Oct 15:55 IST): Telegram unreachable from the runner.
+- Fix: the rejected-stories list ("tried") lost random titles (set → list[-30:]), so the Qwen-on-PS5 story was made and rejected
+  twice (~4 reels of quota). Now kept in order, 60 max. Metric: distinct stories tried/day, reels passed/day (baseline 2).
+- Fix: a Telegram network error no longer crashes the run (retry once, then carry on).
