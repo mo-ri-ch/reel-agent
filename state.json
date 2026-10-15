@@ -217,16 +217,46 @@
     "editor_rounds": 1,
     "source_links": [
       "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
-    ]
+    ],
+    "visual_status": "skipped",
+    "visual_notes": [],
+    "editor": {
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 7
+      },
+      "one_line": "Weak hook and repetitive, low-quality visuals fail to meet premium news standards.",
+      "script_fixes": [
+        "LINE 1: Start with the specific threat: 'The FTC is investigating OpenAI and Anthropic for potential data breach reporting failures.'",
+        "LINE 3: Remove the political commentary; replace with: 'The probe follows recent FTC warnings that AI firms must meet the same data security standards as other tech giants.'",
+        "LINE 7: Replace with a specific call to action: 'Will these new FTC fines force a change in how AI labs secure your data?'"
+      ],
+      "visual_beats": [
+        0,
+        1,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The stock photo of a generic official is irrelevant and lacks context.",
+        "line 2: The stock photo of a child is unrelated to the technical subject of data breaches.",
+        "line 6: The abstract gradient background is filler and lacks visual information."
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-16T00:11:58.854105+05:30",
+  "script_deadline": "2026-10-16T00:24:51.444397+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -628,9 +658,25 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Transportation turns to AI to trace research grant recipients’ links to foreign adversaries",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQZGEwSHdBOE9WeXpIbkJ6VWJMMEpJYmloSmM4bm5nWTNCSGUtSGlpVHpkVVExVlBwWHNFYVRlWEZkT0ZWMFZKa3VYd3UxM3Rjc01vQlNHVkhBamlIMXZ5SjRoZk5JTXR4MVNza2h3RFJPRmd2UVNSTnFsaGY1WVllVmxDQndaRFZ6ejc2UWRSdUZZY3d0V1g1ZG9VMC1qTmtOTTNxRnVmQ2k0N1p6dzBwQ29FTDRQVjNLeE9LSjRXTmEycUZPN3NXNXBIRGQ3ekNKdEF3SnhTYUQ3WVR1ZFN6Vjc1SC1pY09xaDVURjlZQm1DdUJIZ2p1aGdpMDg?oc=5",
+      "summary": "Transportation turns to AI to trace research grant recipients’ links to foreign adversaries Nextgov/FCW",
+      "source": "Nextgov/FCW",
+      "published": "2026-10-15T18:13:00+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
+      "link": "https://techcrunch.com/2026/10/15/last-chance-to-save-up-to-200-on-techcrunch-founder-summit-early-booking-ends-oct-16/",
+      "summary": "Savings of up to $200 end October 16 for TechCrunch Founder Summit. These savings for Founder and Investor Passes vanish after Friday. Join 1,000 founders and investors on November 4 at Boston’s SoWa Power Station. Bring your toughest questions and make the day count for your business.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-15T18:00:00+00:00",
+      "angle": ""
+    }
+  ],
   "tried": [
-    "AI Could Start Improving Itself By 2027: Anthropic Co-Founder",
     "AI labs are buying data from dead startups to train their models",
     "Toby",
     "The Cheque is Small. The Provocation is Not",
@@ -689,232 +735,11 @@
     "Nobody is safe from celebrity AI deepfakes",
     "AI agents are coming to Rivian’s cars",
     "Trump wants the world to stop calling it AI; US pushes 'super intelligence' at IMF",
-    "AI agents accessed Indian firms’ live systems during testing, read confidential data: CERT-In"
+    "AI agents accessed Indian firms’ live systems during testing, read confidential data: CERT-In",
+    "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Nobody is safe from celebrity AI deepfakes",
-          "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
-          "summary": "In hindsight, the post on Instagram should have raised more red flags. The image purported to show actress Mia Goth, just days after filing for divorce from actor and filmmaker Shia LaBeouf, posing in a T-shirt with a pointed message: MY EX IS MY BIGGEST FAN. To really drive home the point, the song \"Single […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-15T14:03:42+00:00",
-          "angle": "Deepfakes are getting so realistic that even celebrity news is becoming impossible to verify."
-        },
-        "draft": {
-          "title": "Deepfakes Target Mia Goth on Instagram",
-          "hook_text": "Mia Goth deepfakes are everywhere",
-          "beats": [
-            {
-              "line": "Zero celebrities are safe from Instagram AI deepfakes. Mia Goth is the latest face of this content.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.imdb.com/name/nm4825969/",
-              "tag": "Mia Goth AI",
-              "name": "Mia Goth",
-              "role": "Actress",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The images show her posing in a fake T-shirt about her ex.",
-              "visual": "clip",
-              "query": "woman looking at smartphone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Fake T-shirt images",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These deepfakes use generative AI to manipulate celebrity likenesses.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Instagram",
-              "outlet": "",
-              "domain": "instagram.com",
-              "headline": "",
-              "url": "https://about.instagram.com/",
-              "tag": "AI manipulated likeness",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Instagram",
-                  "domain": "instagram.com"
-                }
-              ]
-            },
-            {
-              "line": "Instagram recently struggled to flag this specific fake content.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Nobody is safe from celebrity AI deepfakes",
-              "url": "",
-              "tag": "Content moderation failures",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Instagram",
-                  "domain": "instagram.com"
-                }
-              ]
-            },
-            {
-              "line": "One viral post even featured audio of a song to sell the lie.",
-              "visual": "clip",
-              "query": "digital audio waveform animation",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Viral AI audio",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Soon, identifying real photos from AI will be impossible for most users.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "100%",
-              "small": "AI realism increasing",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Realism rising fast",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust a photo of a celebrity on your feed?",
-              "visual": "clip",
-              "query": "person scrolling social media feed",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trusting social media",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious, slightly concerned tone, highlighting the difficulty of telling reality from fiction on social media.",
-          "thin": false,
-          "caption": "Deepfake images of actress Mia Goth are circulating on Instagram, highlighting the platform's struggle with AI-generated content. As these manipulated images become more realistic, verifying celebrity photos is getting harder. Can you tell the difference between real and AI?",
-          "hashtags": [
-            "MiaGoth",
-            "Deepfakes",
-            "Instagram",
-            "GenerativeAI",
-            "DigitalLiteracy"
-          ],
-          "sources": [
-            "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-          ],
-          "script": "Zero celebrities are safe from Instagram AI deepfakes. Mia Goth is the latest face of this content.\nThe images show her posing in a fake T-shirt about her ex.\nThese deepfakes use generative AI to manipulate celebrity likenesses.\nInstagram recently struggled to flag this specific fake content.\nOne viral post even featured audio of a song to sell the lie.\nSoon, identifying real photos from AI will be impossible for most users.\nWould you trust a photo of a celebrity on your feed?",
-          "keywords": [
-            "woman looking at smartphone screen",
-            "digital audio waveform animation",
-            "person scrolling social media feed"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "Mia Goth is the latest face of Instagram AI slop.",
-          "hook_score": 51,
-          "evidence": [
-            {
-              "claim": "Mia Goth deepfakes are everywhere",
-              "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-            },
-            {
-              "claim": "Mia Goth is the latest face of this content.",
-              "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-            },
-            {
-              "claim": "The images show her posing in a fake T-shirt about her ex.",
-              "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-            },
-            {
-              "claim": "These deepfakes use generative AI to manipulate celebrity likenesses.",
-              "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-            },
-            {
-              "claim": "Instagram recently struggled to flag this specific fake content.",
-              "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-            },
-            {
-              "claim": "One viral post even featured audio of a song to sell the lie.",
-              "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-15T21:42:50.555161+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1765,6 +1590,239 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+          "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+          "summary": "FTC may fine AI firms on par with companies that delay data breach reports.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-15T15:43:24+00:00",
+          "angle": "The FTC is launching a major probe into OpenAI and Anthropic, signaling a massive shift in how AI companies are regulated."
+        },
+        "draft": {
+          "title": "FTC Probes OpenAI and Anthropic",
+          "hook_text": "FTC targets AI giants",
+          "beats": [
+            {
+              "line": "The FTC is investigating OpenAI and Anthropic over potential security failures.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "FTC probes if OpenAI, Anthropic security incidents harmed Americans",
+              "url": "",
+              "tag": "FTC probes AI firms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                },
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Regulators want to know if security incidents actually harmed American users.",
+              "visual": "clip",
+              "query": "person looking at data on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Security harm check",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This follows President Trump's recent dismissal of AI risks as a hoax.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://en.wikipedia.org/wiki/Donald_Trump",
+              "tag": "Trump dismisses AI",
+              "name": "Donald Trump",
+              "role": "President, USA",
+              "x": "realDonaldTrump",
+              "brands": []
+            },
+            {
+              "line": "The FTC may fine these labs for failing to report data breaches.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Fines",
+              "small": "Breach reporting penalties",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "New fine risks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The FTC is demanding internal safety logs to assess compliance.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "tag": "Safety logs requested",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "OpenAI and Anthropic now face heightened scrutiny from federal regulators.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://anthropic.com",
+              "tag": "Heightened scrutiny",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Are you comfortable with these labs handling your private data?",
+              "visual": "clip",
+              "query": "person thinking",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data trust question",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Direct and investigative, maintaining a steady pace while highlighting the regulatory pressure on AI firms.",
+          "thin": false,
+          "caption": "The FTC is investigating OpenAI and Anthropic for potential security failures and delays in reporting data breaches. This follows President Trump dismissing AI risks as a hoax. Are you comfortable with these labs handling your private data?",
+          "hashtags": [
+            "OpenAI",
+            "Anthropic",
+            "FTC",
+            "AITech",
+            "DataSecurity"
+          ],
+          "sources": [
+            "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+          ],
+          "script": "The FTC is investigating OpenAI and Anthropic over potential security failures.\nRegulators want to know if security incidents actually harmed American users.\nThis follows President Trump's recent dismissal of AI risks as a hoax.\nThe FTC may fine these labs for failing to report data breaches.\nThe FTC is demanding internal safety logs to assess compliance.\nOpenAI and Anthropic now face heightened scrutiny from federal regulators.\nAre you comfortable with these labs handling your private data?",
+          "keywords": [
+            "person looking at data on laptop",
+            "person thinking"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "The FTC is targeting AI giants.",
+              "url": "https://broadbandbreakfast.com/ftc-opens-probe-of-ai-giants-anthropic-openai-over-consumer-risks/"
+            },
+            {
+              "claim": "The FTC is investigating OpenAI and Anthropic over potential security failures.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+            },
+            {
+              "claim": "Regulators want to know if security incidents actually harmed American users.",
+              "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
+            },
+            {
+              "claim": "President Trump dismissed AI risks as a hoax.",
+              "url": "https://abcnews.com/Politics/ftc-opens-probe-safety-ai-including-anthropic-open/story?id=136896227"
+            },
+            {
+              "claim": "The FTC may fine these labs for failing to report data breaches.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+            },
+            {
+              "claim": "The FTC is demanding internal safety logs to assess compliance.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+            },
+            {
+              "claim": "OpenAI and Anthropic face heightened scrutiny from federal regulators.",
+              "url": "https://broadbandbreakfast.com/ftc-opens-probe-of-ai-giants-anthropic-openai-over-consumer-risks/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T00:11:58.854105+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2270,7 +2328,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-15T20:35+05:30",
@@ -2298,7 +2356,7 @@
   "report_day": "2026-10-15",
   "ig_count": {
     "day": "2026-10-16",
-    "at": "2026-10-16T00:00:37.057029+05:30",
+    "at": "2026-10-16T00:12:17.506735+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2318,21 +2376,23 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
-    "calls": 0,
+    "calls": 27,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.1-flash-lite": {
+        "ok": 7,
+        "busy": 5,
+        "other": 15,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      }
+    }
   },
   "gemini_errors": [
-    {
-      "at": "14:55",
-      "error": "every free Gemini model is used up for today",
-      "day": "2026-10-12"
-    },
     {
       "at": "10:46",
       "error": "gemini-flash-lite-latest: free quota used up for now",
@@ -2377,6 +2437,11 @@
       "at": "17:34",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-15"
+    },
+    {
+      "at": "18:43",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-16"
     }
   ],
   "last_script_error": {
@@ -2384,12 +2449,12 @@
     "error": "The script came back empty, please try again."
   },
   "render_fails": 1,
-  "render_fail_topic": "AI agents accessed Indian firms’ live systems during testing, read confidential data: CERT-In",
+  "render_fail_topic": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
   "last_render_error": {
-    "at": "2026-10-15T23:09:49.699720+05:30",
-    "topic": "AI agents accessed Indian firms’ live systems during testing, read confidential ",
+    "at": "2026-10-16T00:19:51.443189+05:30",
+    "topic": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
     "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1719, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1855, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 539, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 578, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 372, in checked_script\n    draft = writer.write_script(topic, previous=previous, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 494, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 208, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
+    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1719, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1855, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 539, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 578, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 384, in checked_script\n    draft = writer.write_script(topic, previous=draft, instruction=fix)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 494, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 208, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
   },
   "report_week": "2026-41",
   "last_post_error": {
@@ -2407,29 +2472,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T14:12+05:30",
-      "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-      "overall": 7.3,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 8,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Strong scoop ruined by repetitive frames and generic editorializing.",
-      "fixes": [
-        "LINE 6: Remove generic commentary line about corporate espionage risks growing.",
-        "LINE 7: Change ending question to a punchier direct takeaway about the Apple rivalry."
-      ],
-      "visual": [
-        "line 1: Frames 1 and 2 are identical title cards, holding too long.",
-        "line 6: Frames 12 and 13 repeat the exact same text and visual asset.",
-        "line 4: Apple logo graphic reuses the generic card style instead of showing leadership or Asia con"
-      ]
-    },
     {
       "at": "2026-10-15T14:23+05:30",
       "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
@@ -2847,6 +2889,30 @@
         "line 1: The same image of the official is held for too long (0.5s to 4.8s).",
         "line 4: Visuals are too abstract; use a graphic representing FTC fines or data breach reports.",
         "line 6: The logo transition is static and lacks the dynamic motion expected for a news reel."
+      ]
+    },
+    {
+      "at": "2026-10-16T00:16+05:30",
+      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 7
+      },
+      "one_line": "Weak hook and repetitive, low-quality visuals fail to meet premium news standards.",
+      "fixes": [
+        "LINE 1: Start with the specific threat: 'The FTC is investigating OpenAI and Anthropic for potential data breach reporting failures.'",
+        "LINE 3: Remove the political commentary; replace with: 'The probe follows recent FTC warnings that AI firms must meet the same data security standards as other tech giants.'",
+        "LINE 7: Replace with a specific call to action: 'Will these new FTC fines force a change in how AI labs secure your data?'"
+      ],
+      "visual": [
+        "line 1: The stock photo of a generic official is irrelevant and lacks context.",
+        "line 2: The stock photo of a child is unrelated to the technical subject of data breaches.",
+        "line 6: The abstract gradient background is filler and lacks visual information."
       ]
     }
   ],
