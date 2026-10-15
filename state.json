@@ -12,11 +12,11 @@
     "angle": "A clever startup is deploying undercover AI agents specifically to get scammed and trap fraudsters."
   },
   "draft": {
-    "title": "Apate AI undercover agents",
-    "hook_text": "Apate sends AI undercover.",
+    "title": "Apate AI agents get scammed on purpose",
+    "hook_text": "AI agents are getting scammed on purpose.",
     "beats": [
       {
-        "line": "Apate is sending AI agents undercover to get scammed on purpose.",
+        "line": "Apate is deploying AI agents undercover to get scammed on purpose.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "Most companies use AI agents to ship products faster or speed up workflows.",
+        "line": "While most businesses use AI to speed up workflows, Apate uses them to gather fraud intelligence.",
         "visual": "clip",
         "query": "person using office computer",
         "prompt": "",
@@ -50,32 +50,19 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Speeding up workflows",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Apate takes a different approach by sending them to gather fraud intelligence.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "TechCrunch",
-        "domain": "techcrunch.com",
-        "headline": "Apate sends AI agents undercover to get scammed",
-        "url": "",
         "tag": "Gathering fraud intelligence",
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Apate.ai",
+            "domain": "apate.ai"
+          }
+        ]
       },
       {
-        "line": "The agents interact with malicious actors to map out modern scam tactics.",
+        "line": "The autonomous agents engage directly with fraudsters to map out malicious financial schemes.",
         "visual": "clip",
         "query": "hacker typing on laptop",
         "prompt": "",
@@ -93,28 +80,51 @@
         "brands": []
       },
       {
-        "line": "This collected intelligence helps build better defenses against financial crimes.",
-        "visual": "clip",
-        "query": "smartphone screen showing security",
+        "line": "By entering scam pipelines, the software collects real-time data on how modern cybercriminals operate.",
+        "visual": "source",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
+        "entity": "",
+        "outlet": "TechCrunch",
+        "domain": "techcrunch.com",
+        "headline": "Apate sends AI agents undercover to get scammed",
+        "url": "",
+        "tag": "Collecting real-time data",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "TechCrunch",
+            "domain": "techcrunch.com"
+          }
+        ]
+      },
+      {
+        "line": "This intelligence helps security teams dismantle financial fraud networks before they target more victims.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "100%",
+        "small": "undercover intelligence",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Building better defenses",
+        "tag": "Dismantling fraud networks",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Would you let an AI handle a scammer for you?",
-        "visual": "clip",
-        "query": "person looking at mobile phone",
-        "prompt": "",
+        "line": "Would you trust an autonomous agent to infiltrate your own scam calls?",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "Digital shield glowing against cyber threat background",
         "big": "",
         "small": "",
         "entity": "",
@@ -122,7 +132,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Let AI handle scammers",
+        "tag": "Trusting autonomous agents",
         "name": "",
         "role": "",
         "x": "",
@@ -131,7 +141,7 @@
     ],
     "delivery": "fast-paced and sharp, shifting from amused curiosity to serious security awareness",
     "thin": false,
-    "caption": "Apate.ai is sending AI agents undercover to get scammed on purpose and gather fraud intelligence. While most companies use AI to speed up workflows, these bots infiltrate scams to map out criminal tactics. Would you let an AI handle phone scams for you?",
+    "caption": "Apate.ai is sending AI agents undercover to get scammed on purpose and gather fraud intelligence. While most companies use bots to speed up workflows, these agents infiltrate scams to map out malicious tactics. Would you trust an autonomous agent to infiltrate your own scam calls?",
     "hashtags": [
       "Apate",
       "AI",
@@ -142,43 +152,45 @@
     "sources": [
       "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
     ],
-    "script": "Apate is sending AI agents undercover to get scammed on purpose.\nMost companies use AI agents to ship products faster or speed up workflows.\nApate takes a different approach by sending them to gather fraud intelligence.\nThe agents interact with malicious actors to map out modern scam tactics.\nThis collected intelligence helps build better defenses against financial crimes.\nWould you let an AI handle a scammer for you?",
+    "script": "Apate is deploying AI agents undercover to get scammed on purpose.\nWhile most businesses use AI to speed up workflows, Apate uses them to gather fraud intelligence.\nThe autonomous agents engage directly with fraudsters to map out malicious financial schemes.\nBy entering scam pipelines, the software collects real-time data on how modern cybercriminals operate.\nThis intelligence helps security teams dismantle financial fraud networks before they target more victims.\nWould you trust an autonomous agent to infiltrate your own scam calls?",
     "keywords": [
       "person using office computer",
-      "hacker typing on laptop",
-      "smartphone screen showing security",
-      "person looking at mobile phone"
+      "hacker typing on laptop"
     ],
-    "image_prompts": [],
+    "image_prompts": [
+      "Digital shield glowing against cyber threat background"
+    ],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Apate sends AI undercover.",
+        "claim": "AI agents are getting scammed on purpose.",
         "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
       },
       {
-        "claim": "Apate is sending AI agents undercover to get scammed on purpose.",
+        "claim": "Apate is deploying AI agents undercover to get scammed on purpose.",
         "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
       },
       {
-        "claim": "Most companies use AI agents to ship products faster or speed up workflows.",
+        "claim": "Most businesses use AI to speed up workflows, while Apate uses them to gather fraud intelligence.",
         "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
       },
       {
-        "claim": "Apate sends AI agents to gather fraud intelligence.",
+        "claim": "The autonomous agents engage directly with fraudsters to map out malicious financial schemes.",
         "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
       },
       {
-        "claim": "The agents interact with malicious actors to map out modern scam tactics.",
-        "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+        "claim": "By entering scam pipelines, the software collects real-time data on how modern cybercriminals operate.",
+        "url": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/"
       },
       {
-        "claim": "This collected intelligence helps build better defenses against financial crimes.",
+        "claim": "This intelligence helps security teams dismantle financial fraud networks before they target more victims.",
         "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
     ]
@@ -188,9 +200,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-15T15:38:30.747806+05:30",
+  "script_deadline": "2026-10-15T15:45:44.905805+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-15",
@@ -641,213 +653,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Square’s new kiosk lets you talk to AI for help with your order",
-          "link": "https://www.theverge.com/tech/1009086/square-kiosk",
-          "summary": "Square is launching new hardware: a big kiosk for ordering things that has a touchscreen and lets you talk to an AI. It's called the Square Kiosk. Square says the Kiosk, which has a large pill shape, has an \"agentic, conversational voice layer\" that \"fully understands a seller's menu and listens and responds in real […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-14T16:00:00+00:00",
-          "angle": "Square's new ordering kiosk lets you just walk up and talk directly to an AI"
-        },
-        "draft": {
-          "title": "Square Kiosk AI Ordering",
-          "hook_text": "Square just launched a talking kiosk.",
-          "beats": [
-            {
-              "line": "Square is launching a brand new hardware device called the Square Kiosk.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Square Kiosk",
-              "outlet": "",
-              "domain": "squareup.com",
-              "headline": "",
-              "url": "https://www.theverge.com/tech/1009086/square-kiosk",
-              "tag": "Square Kiosk launched",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Square",
-                  "domain": "squareup.com"
-                }
-              ]
-            },
-            {
-              "line": "It features a large pill shape design with a built-in touchscreen.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Square Kiosk",
-              "outlet": "",
-              "domain": "squareup.com",
-              "headline": "",
-              "url": "https://www.theverge.com/tech/1009086/square-kiosk",
-              "tag": "Pill shape touchscreen",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Square",
-                  "domain": "squareup.com"
-                }
-              ]
-            },
-            {
-              "line": "The device includes an agentic conversational voice layer powered by AI.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Square’s new kiosk lets you talk to AI",
-              "url": "",
-              "tag": "Conversational voice layer",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Square",
-                  "domain": "squareup.com"
-                }
-              ]
-            },
-            {
-              "line": "This voice system fully understands a seller menu.",
-              "visual": "clip",
-              "query": "restaurant digital menu",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Understands seller menu",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It listens to customers and responds to their order requests.",
-              "visual": "clip",
-              "query": "customer using restaurant kiosk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Listens and responds",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you order your food from this kiosk?",
-              "visual": "clip",
-              "query": "customer at restaurant counter",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Order from kiosk",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and direct, like a tech journalist explaining a new product rollout to a smart friend",
-          "thin": false,
-          "caption": "Square is launching the Square Kiosk featuring a pill shape and an AI voice layer that understands seller menus. Would you order your food from this kiosk?",
-          "hashtags": [
-            "Square",
-            "SquareKiosk",
-            "AI",
-            "TechNews",
-            "Restaurants"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1009086/square-kiosk"
-          ],
-          "script": "Square is launching a brand new hardware device called the Square Kiosk.\nIt features a large pill shape design with a built-in touchscreen.\nThe device includes an agentic conversational voice layer powered by AI.\nThis voice system fully understands a seller menu.\nIt listens to customers and responds to their order requests.\nWould you order your food from this kiosk?",
-          "keywords": [
-            "restaurant digital menu",
-            "customer using restaurant kiosk",
-            "customer at restaurant counter"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Square launched a talking kiosk.",
-              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
-            },
-            {
-              "claim": "Square is launching a brand new hardware device called the Square Kiosk.",
-              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
-            },
-            {
-              "claim": "It features a large pill shape design with a built-in touchscreen.",
-              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
-            },
-            {
-              "claim": "The device includes an agentic conversational voice layer powered by AI.",
-              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
-            },
-            {
-              "claim": "This voice system fully understands a seller menu.",
-              "url": "https://www.theverge.com/tech/1009086/square-kiosk"
-            },
-            {
-              "claim": "It listens to customers and responds to their order requests.",
-              "url": "https://fr.tradingview.com/news/stocktwits:3c4fedcc8094b:0-tost-stock-tumbles-as-square-rolls-out-ai-voice-kiosk-aimed-at-restaurants/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://www.theverge.com/tech/1009086/square-kiosk"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-15T14:26:50.977054+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1520,6 +1325,203 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
+          "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
+          "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-14T18:00:00+00:00",
+          "angle": "A clever startup is deploying undercover AI agents specifically to get scammed and trap fraudsters."
+        },
+        "draft": {
+          "title": "Apate AI undercover agents",
+          "hook_text": "Apate sends AI undercover.",
+          "beats": [
+            {
+              "line": "Apate is sending AI agents undercover to get scammed on purpose.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apate.ai",
+              "outlet": "",
+              "domain": "apate.ai",
+              "headline": "",
+              "url": "https://apate.ai",
+              "tag": "Apate deploys undercover AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apate.ai",
+                  "domain": "apate.ai"
+                }
+              ]
+            },
+            {
+              "line": "Most companies use AI agents to ship products faster or speed up workflows.",
+              "visual": "clip",
+              "query": "person using office computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Speeding up workflows",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Apate takes a different approach by sending them to gather fraud intelligence.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Apate sends AI agents undercover to get scammed",
+              "url": "",
+              "tag": "Gathering fraud intelligence",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The agents interact with malicious actors to map out modern scam tactics.",
+              "visual": "clip",
+              "query": "hacker typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Mapping scam tactics",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This collected intelligence helps build better defenses against financial crimes.",
+              "visual": "clip",
+              "query": "smartphone screen showing security",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Building better defenses",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let an AI handle a scammer for you?",
+              "visual": "clip",
+              "query": "person looking at mobile phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Let AI handle scammers",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "fast-paced and sharp, shifting from amused curiosity to serious security awareness",
+          "thin": false,
+          "caption": "Apate.ai is sending AI agents undercover to get scammed on purpose and gather fraud intelligence. While most companies use AI to speed up workflows, these bots infiltrate scams to map out criminal tactics. Would you let an AI handle phone scams for you?",
+          "hashtags": [
+            "Apate",
+            "AI",
+            "CyberSecurity",
+            "TechNews",
+            "FraudPrevention"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+          ],
+          "script": "Apate is sending AI agents undercover to get scammed on purpose.\nMost companies use AI agents to ship products faster or speed up workflows.\nApate takes a different approach by sending them to gather fraud intelligence.\nThe agents interact with malicious actors to map out modern scam tactics.\nThis collected intelligence helps build better defenses against financial crimes.\nWould you let an AI handle a scammer for you?",
+          "keywords": [
+            "person using office computer",
+            "hacker typing on laptop",
+            "smartphone screen showing security",
+            "person looking at mobile phone"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Apate sends AI undercover.",
+              "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+            },
+            {
+              "claim": "Apate is sending AI agents undercover to get scammed on purpose.",
+              "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+            },
+            {
+              "claim": "Most companies use AI agents to ship products faster or speed up workflows.",
+              "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+            },
+            {
+              "claim": "Apate sends AI agents to gather fraud intelligence.",
+              "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+            },
+            {
+              "claim": "The agents interact with malicious actors to map out modern scam tactics.",
+              "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+            },
+            {
+              "claim": "This collected intelligence helps build better defenses against financial crimes.",
+              "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-15T15:38:30.747806+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2021,8 +2023,8 @@
       "event": "Square is launching a brand new hardware device called the Square Kiosk. It features a large pill shape design with a built-in touchscreen. The device includes an agentic conversational voice layer powered by AI. This voice system fully und"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-15T14:40+05:30",
@@ -2050,7 +2052,7 @@
   "report_day": "2026-10-14",
   "ig_count": {
     "day": "2026-10-15",
-    "at": "2026-10-15T15:28:30.747838+05:30",
+    "at": "2026-10-15T15:40:28.670891+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2070,7 +2072,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-15",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-15",
@@ -2194,30 +2196,6 @@
     "gemini-3-flash-preview": 1792049684.947571
   },
   "editor_log": [
-    {
-      "at": "2026-10-14T14:59+05:30",
-      "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Too much filler and redundant visual loops drag down an otherwise solid tech scoop.",
-      "fixes": [
-        "LINE 2: Mention specific industries or hardware products instead of generic manufacturers.",
-        "LINE 4: Cut this line as it repeats the retooling problem mentioned in line 1.",
-        "LINE 5: Replace vague 'this speed' with exact metrics or percentage gains."
-      ],
-      "visual": [
-        "line 1: Static factory floor image lingers too long across multiple frames without motion.",
-        "line 4: TechCrunch logo recycled unnecessarily from earlier branding cards.",
-        "line 6: Generic welding B-roll doesn't directly illustrate Industrial Next's specific tech."
-      ]
-    },
     {
       "at": "2026-10-14T15:18+05:30",
       "title": "Science Corporation implants its vision-restoring chip in its first Stargardt di",
@@ -2627,6 +2605,27 @@
       "visual": [
         "line 2: Frames 4, 5, and 6 hold the exact same Letitia James photo for too long without motion.",
         "line 5: Frames 12, 13, and 14 repeat the same 'Regulatory issues addressed' visual for too many co"
+      ]
+    },
+    {
+      "at": "2026-10-15T15:44+05:30",
+      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelli",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Fascinating AI security angle, but static frames and repetition drag down the visuals.",
+      "fixes": [
+        "LINE 5: specify what kind of defenses or metrics are improved to avoid generic phrasing."
+      ],
+      "visual": [
+        "line 5: Frames 9 and 10 hold the exact same visual text and background for too long without new as",
+        "line 2: Frame 3 shows a generic text card instead of directly matching the contrasting workflow sp"
       ]
     }
   ],
