@@ -386,5 +386,19 @@ check("weaker hook not used", writer.sharpen_hook(d4, {})["beats"][0]["line"],
       "Nvidia sold three billion dollars of chips in one week.")
 writer.ask = _ask
 
+# a story rejected earlier is never picked again: "tried" keeps its order (a set used to drop random titles)
+import main  # noqa: E402
+_send, _start = main.tg.send, main.start_script
+main.tg.send = lambda *a, **k: None
+picked = []
+main.start_script = lambda s, pick, auto=False: picked.append(pick["title"])
+_s = {"tried": [f"Old story {i}" for i in range(59)], "topic": {"title": "Qwen on a PS5"},
+      "spare": [{"title": "Qwen on a PS5"}, {"title": "Fresh news"}], "history": [], "posted_log": []}
+main.next_story(_s)
+check("tried keeps order", _s["tried"][-2:], ["Old story 58", "Qwen on a PS5"])
+check("tried keeps 60", len(_s["tried"]), 60)
+check("rejected story not re-picked", picked, ["Fresh news"])
+main.tg.send, main.start_script = _send, _start
+
 print("\n".join(fails) if fails else "all checks passed")
 sys.exit(1 if fails else 0)

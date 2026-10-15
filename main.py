@@ -522,8 +522,10 @@ def make_specific(draft, topic):
 
 def next_story(s, reason=""):
     """Moves on to another story when this one can't be verified, so the posting slot still gets a reel."""
-    tried = set(s.get("tried") or []) | {(s.get("topic") or {}).get("title", "")}
-    s["tried"] = list(tried)[-30:]
+    title = (s.get("topic") or {}).get("title", "")
+    # keep the order (oldest first): a set dropped random titles here, so rejected stories were picked again
+    s["tried"] = ([t for t in s.get("tried") or [] if t and t != title] + ([title] if title else []))[-60:]
+    tried = s["tried"]
     spare = [c for c in (s.get("spare") or []) if not news.recent_match(c.get("title", ""), list(tried) + recent_titles(s))]
     if not spare:
         heads = news.dedupe(news.fetch_headlines(), recent_titles(s) + list(tried))
