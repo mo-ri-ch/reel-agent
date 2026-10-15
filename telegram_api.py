@@ -22,6 +22,20 @@ def keyboard(rows):
 
 
 def send(text, buttons=None, html=False):
+    """Status messages never crash the agent: if Telegram can't be reached, retry once, then carry on without it
+    (14 Oct: a network blip on the runner stopped a render mid-way)."""
+    import time
+    for attempt in (1, 2):
+        try:
+            return _send(text, buttons, html)
+        except (requests.ConnectionError, requests.Timeout) as e:
+            if attempt == 2:
+                print(f"Telegram unreachable, message not sent: {e}")
+                return None
+            time.sleep(5)
+
+
+def _send(text, buttons=None, html=False):
     chunks = [text[i:i + 4000] for i in range(0, len(text), 4000)] or [""]
     if html and len(chunks) > 1:  # don't cut an HTML link in half
         chunks = [text[:4000]]
