@@ -1,52 +1,181 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Brazil Potash conducts tests with artificial intelligence in a US$2.5 billion project in Amazonas",
-      "link": "https://www.bnamericas.com/en/news/brazil-potash-conducts-tests-with-artificial-intelligence-in-a-us25-billion-project-in-amazonas",
-      "summary": "Brazil Potash conducts tests with artificial intelligence in a US$2.5 billion project in Amazonas BNamericas",
-      "source": "BNamericas",
-      "published": "2026-10-14T11:35:17+00:00",
-      "angle": ""
-    },
-    {
-      "title": "Artificial Intelligence: Beijing hosts international forum on AI and the future of urban governance",
-      "link": "https://news.cgtn.com/news/2026-10-14/VHJhbnNjcmlwdDkyODQy/index.html",
-      "summary": "Artificial Intelligence: Beijing hosts international forum on AI and the future of urban governance CGTN",
-      "source": "CGTN",
-      "published": "2026-10-14T11:35:14+00:00",
-      "angle": ""
-    },
-    {
-      "title": "What The Tech: How criminals are tricking artificial intelligence platforms",
-      "link": "https://www.waka.com/2026/10/14/what-the-tech-how-criminals-are-tricking-artificial-intelligence-platforms/",
-      "summary": "What The Tech: How criminals are tricking artificial intelligence platforms WAKA 8",
-      "source": "WAKA 8",
-      "published": "2026-10-14T11:30:00+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-15T12:25:23.607278+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "McKinsey is making job applicants spar with a fake AI client",
+    "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+    "summary": "Consulting firm McKinsey & Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wall Street Journal. The AI simulation \"aims to reflect 80% of the scenarios McKinsey consultants might encounter in their day-to-day work,\" the […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-14T22:53:31+00:00",
+    "angle": "McKinsey is now making job applicants interview with a fake AI client—your next job interview might be against a bot."
+  },
+  "draft": {
+    "title": "McKinsey uses AI for job interviews",
+    "hook_text": "McKinsey is testing job applicants with an AI.",
+    "beats": [
+      {
+        "line": "Ten minutes with a fake AI client is now a job requirement.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "McKinsey and Company",
+        "outlet": "",
+        "domain": "mckinsey.com",
+        "headline": "",
+        "url": "https://www.mckinsey.com",
+        "tag": "McKinsey AI client interview",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "McKinsey & Company",
+            "domain": "mckinsey.com"
+          }
+        ]
+      },
+      {
+        "line": "The Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Wall Street Journal",
+        "domain": "wsj.com",
+        "headline": "McKinsey is making job applicants spar with a fake AI client",
+        "url": "",
+        "tag": "Wall Street Journal report",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "80%",
+        "small": "daily scenarios covered",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "80% of daily scenarios",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Applicants must negotiate and solve problems directly with the software before getting hired.",
+        "visual": "clip",
+        "query": "person looking at computer screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Negotiate with software",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you pass a robot client exam?",
+        "visual": "clip",
+        "query": "candidate in interview room",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Pass robot client exam",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "sharp and factual, explaining how tech changes corporate hiring without hype",
+    "thin": false,
+    "caption": "McKinsey and Company is testing job applicants with a ten minute AI client simulation covering eighty percent of daily work scenarios. Would you want an AI to grade your next job interview?",
+    "hashtags": [
+      "McKinsey",
+      "ArtificialIntelligence",
+      "Hiring",
+      "Consulting"
+    ],
+    "sources": [
+      "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+    ],
+    "script": "Ten minutes with a fake AI client is now a job requirement.\nThe Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.\nThe AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.\nApplicants must negotiate and solve problems directly with the software before getting hired.\nWould you pass a robot client exam?",
+    "keywords": [
+      "person looking at computer screen",
+      "candidate in interview room"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "hook_before": "McKinsey and Company is making entry level candidates have a ten minute conversation with an AI simulation of a client.",
+    "hook_score": 48,
+    "evidence": [
+      {
+        "claim": "McKinsey is testing job applicants with an AI.",
+        "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+      },
+      {
+        "claim": "Ten minutes with a fake AI client is now a job requirement.",
+        "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+      },
+      {
+        "claim": "The Wall Street Journal revealed the consulting firm uses this tool as part of its hiring process.",
+        "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+      },
+      {
+        "claim": "The AI tool aims to reflect eighty percent of the scenarios consultants encounter in their day to day work.",
+        "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+      },
+      {
+        "claim": "Applicants must negotiate and solve problems directly with the software before getting hired.",
+        "url": "https://www.indiatoday.in/amp/jobs/story/mckinsey-wants-freshers-to-convince-ai-clients-during-interview-to-get-the-job-3017789-2026-10-15"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-15T13:10:01.029884+05:30",
   "preview_deadline": null,
   "last_gender": "female",
-  "pending_offer": false,
+  "pending_offer": true,
   "offer_log": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "done": [
       "07:00",
       "09:30",
-      "12:00",
-      "14:30",
-      "17:00"
+      "12:00"
     ]
   },
   "pending_topic": null,
@@ -447,12 +576,20 @@
   "paused": null,
   "spare": [
     {
-      "title": "Conversational AI Co Gupshup Launches Video-Based AI Agents for Businesses",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM2xvNF90d01VSl9tdG5vMnB3eDVpVEFfekI1aGlBQ2JVT3lhS0Q2dEt1a1VtQlE3V1lGaktqNE11WHNmOENOQVF6a2lhSV92WFhobXAya2l1RndCd0IyaS1SOE54R05tbTctaThGU3ZFbEJHUHVhTUVPV1ZjckVITUpRVWRGeXV1WWJNVVg1M1FFeTVQRWdjZHdPLXFOX0wzeWx3LTRfdnpWU2lQSkF0U2dn?oc=5",
-      "summary": "Conversational AI Co Gupshup Launches Video-Based AI Agents for Businesses analyticsindiamag.com",
-      "source": "analyticsindiamag.com",
-      "published": "2026-10-14T07:35:46+00:00",
-      "angle": "Video-based AI agents are here for businesses, changing customer service forever."
+      "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+      "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations in Asia. The […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-14T16:43:24+00:00",
+      "angle": "OpenAI claims a former employee stole 100+ product files and handed them straight to Apple right before jumping ship."
+    },
+    {
+      "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+      "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-14T21:11:28+00:00",
+      "angle": "Eight US states are now suing OpenAI, claiming ChatGPT poses major safety risks to children."
     }
   ],
   "tried": [
@@ -486,231 +623,12 @@
     "Sarvam AI Launches Bulbul V4 Flash for Real-Time Speech in 11 Indian Languages",
     "Cerebras CEO pushes back on AI doomsday warnings",
     "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-    "Gnani AI Launches Timbre v3.0 With AI Voices That Can Whisper, Laugh & Shout"
+    "Gnani AI Launches Timbre v3.0 With AI Voices That Can Whisper, Laugh & Shout",
+    "Brazil Potash conducts tests with artificial intelligence in a US$2.5 billion project in Amazonas",
+    "Artificial Intelligence: Beijing hosts international forum on AI and the future of urban governance",
+    "What The Tech: How criminals are tricking artificial intelligence platforms"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-13T22:21:00+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "A hacker just got a jailbroken PS5 to run high-end AI models at incredible speeds."
-        },
-        "draft": {
-          "title": "Qwen 27B Running on a PS5",
-          "hook_text": "AI runs on a PS5",
-          "beats": [
-            {
-              "line": "A jailbroken PlayStation five is now running the Qwen twenty-seven B model.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Sony PlayStation 5",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.playstation.com/en-us/ps5/",
-              "tag": "PS5 runs Qwen 27B",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Sony",
-                  "domain": "playstation.com"
-                }
-              ]
-            },
-            {
-              "line": "The console achieves twenty tokens per second during inference.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "20 tok/s",
-              "small": "Inference speed",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "20 tokens per second",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This performance relies on the console's sixteen gigabytes of unified GDDR6 memory.",
-              "visual": "clip",
-              "query": "computer memory hardware",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "16GB unified memory",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The project runs via native homebrew software on the existing FreeBSD operating system.",
-              "visual": "clip",
-              "query": "coding on computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Native homebrew software",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The model is compressed using two-bit quantization to fit the system requirements.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2-bit",
-              "small": "Quantization",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2-bit quantization",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The developer specifically leveraged the PS5 GPU to handle the heavy computations.",
-              "visual": "clip",
-              "query": "video game console hardware",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "GPU acceleration",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you risk your console to run your own local AI?",
-              "visual": "clip",
-              "query": "person playing video game",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Risk your console?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast and technical, highlighting the impressive hardware repurposing.",
-          "thin": false,
-          "caption": "A jailbroken Sony PlayStation 5 is running the Qwen 27B AI model at 20 tokens per second. By using native homebrew software on the console's FreeBSD system and 2-bit quantization, the hardware manages the large model efficiently. Would you risk your console to run your own local AI?",
-          "hashtags": [
-            "PS5",
-            "Qwen",
-            "AI",
-            "HardwareHack",
-            "PlayStation"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
-          ],
-          "script": "A jailbroken PlayStation five is now running the Qwen twenty-seven B model.\nThe console achieves twenty tokens per second during inference.\nThis performance relies on the console's sixteen gigabytes of unified GDDR6 memory.\nThe project runs via native homebrew software on the existing FreeBSD operating system.\nThe model is compressed using two-bit quantization to fit the system requirements.\nThe developer specifically leveraged the PS5 GPU to handle the heavy computations.\nWould you risk your console to run your own local AI?",
-          "keywords": [
-            "computer memory hardware",
-            "coding on computer screen",
-            "video game console hardware",
-            "person playing video game"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI runs on a PS5",
-              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
-            },
-            {
-              "claim": "A jailbroken PlayStation five is now running the Qwen twenty-seven B model.",
-              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
-            },
-            {
-              "claim": "The console achieves twenty tokens per second during inference.",
-              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
-            },
-            {
-              "claim": "This performance relies on the console's sixteen gigabytes of unified GDDR6 memory.",
-              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
-            },
-            {
-              "claim": "The project runs via native homebrew software on the existing FreeBSD operating system.",
-              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
-            },
-            {
-              "claim": "The model is compressed using two-bit quantization to fit the system requirements.",
-              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
-            },
-            {
-              "claim": "The developer specifically leveraged the PS5 GPU to handle the heavy computations.",
-              "url": "https://startupfortune.com/a-jailbroken-playstation-5-is-now-running-a-27-billion-parameter-ai-model/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x5ak2n/someone_is_running_qwen_27b_at_20_toks_on_a/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-14T16:17:39.823135+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1485,6 +1403,50 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Brazil Potash conducts tests with artificial intelligence in a US$2.5 billion project in Amazonas",
+            "link": "https://www.bnamericas.com/en/news/brazil-potash-conducts-tests-with-artificial-intelligence-in-a-us25-billion-project-in-amazonas",
+            "summary": "Brazil Potash conducts tests with artificial intelligence in a US$2.5 billion project in Amazonas BNamericas",
+            "source": "BNamericas",
+            "published": "2026-10-14T11:35:17+00:00",
+            "angle": ""
+          },
+          {
+            "title": "Artificial Intelligence: Beijing hosts international forum on AI and the future of urban governance",
+            "link": "https://news.cgtn.com/news/2026-10-14/VHJhbnNjcmlwdDkyODQy/index.html",
+            "summary": "Artificial Intelligence: Beijing hosts international forum on AI and the future of urban governance CGTN",
+            "source": "CGTN",
+            "published": "2026-10-14T11:35:14+00:00",
+            "angle": ""
+          },
+          {
+            "title": "What The Tech: How criminals are tricking artificial intelligence platforms",
+            "link": "https://www.waka.com/2026/10/14/what-the-tech-how-criminals-are-tricking-artificial-intelligence-platforms/",
+            "summary": "What The Tech: How criminals are tricking artificial intelligence platforms WAKA 8",
+            "source": "WAKA 8",
+            "published": "2026-10-14T11:30:00+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-15T12:25:23.607278+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1622,30 +1584,6 @@
     "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection"
   ],
   "posted_log": [
-    {
-      "title": "NetApp Unveils 100 TB/s Storage Architecture as AI Infrastructure Scales",
-      "at": "2026-09-30T17:40:31.721250+05:30"
-    },
-    {
-      "title": "Airbnb adds AI search, more social features",
-      "at": "2026-09-30T20:10:26.754131+05:30"
-    },
-    {
-      "title": "Instagram is adding an AI ‘assistant’ to tell you how to post",
-      "at": "2026-09-30T22:45:29.177903+05:30"
-    },
-    {
-      "title": "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now",
-      "at": "2026-10-01T07:30:37.033878+05:30"
-    },
-    {
-      "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
-      "at": "2026-10-01T09:57:30.525960+05:30"
-    },
-    {
-      "title": "AI voice startup ElevenLabs doubles valuation to $22B",
-      "at": "2026-10-01T12:30:45.863178+05:30"
-    },
     {
       "title": "OpenAI, Synopsys Announce GPT-Synopsys for AI Chip Design",
       "at": "2026-10-01T15:00:31.996104+05:30"
@@ -2028,7 +1966,7 @@
   "report_day": "2026-10-14",
   "ig_count": {
     "day": "2026-10-15",
-    "at": "2026-10-15T12:20:24.693037+05:30",
+    "at": "2026-10-15T13:10:01.029920+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2052,10 +1990,47 @@
   "late_note_for": "2026-10-15-0",
   "gemini_use": {
     "day": "2026-10-15",
-    "calls": 0,
+    "calls": 79,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.6-flash": {
+        "ok": 1,
+        "busy": 2,
+        "other": 1,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.7-flash": {
+        "ok": 0,
+        "busy": 3,
+        "other": 2,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.5-flash": {
+        "ok": 0,
+        "busy": 2,
+        "other": 0,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3-flash-preview": {
+        "ok": 2,
+        "busy": 5,
+        "other": 1,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.5-flash-lite": {
+        "ok": 35,
+        "busy": 18,
+        "other": 6,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.1-flash-lite": {
+        "ok": 1,
+        "busy": 0,
+        "other": 0,
+        "last": ""
+      }
+    }
   },
   "gemini_errors": [
     {
@@ -2129,13 +2104,10 @@
   },
   "gemini_missing": [],
   "gemini_exhausted": {
-    "gemini-3.6-flash": 1791962021.579398,
-    "gemini-3.7-flash": 1791962468.7903214,
-    "gemini-3.5-flash": 1791961964.8627796,
-    "gemini-3-flash-preview": 1791963223.2122676,
-    "gemini-3.5-flash-lite": 1791970581.8363059,
-    "gemini-3.1-flash-lite": 1791978212.6738381,
-    "gemini-flash-lite-latest": 1791978306.277657
+    "gemini-3.6-flash": 1792049478.1667838,
+    "gemini-3.7-flash": 1792049528.7622316,
+    "gemini-3.5-flash": 1792049497.584286,
+    "gemini-3-flash-preview": 1792049684.947571
   },
   "editor_log": [
     {
