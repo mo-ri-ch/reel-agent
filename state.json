@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -200,16 +200,58 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Liquid AI just released LFM2 point 5 twenty 4B A2B…: The visual is blank or missing the requested content.",
+      "The team built this architecture specifically for …: The visual is blank or missing the requested content.",
+      "This version packs twenty-four billion parameters …: The visual is blank or missing the requested content.",
+      "It succeeds the earlier LFM models by optimizing m…: The visual is blank or missing the requested content.",
+      "Developers can execute complex multi-step reasonin…: The visual is blank or missing the requested content.",
+      "Will you deploy LFM2 point 5 on your local device?…: The visual is blank or missing the requested content.",
+      "almost-empty card with just dark background and small text",
+      "almost-empty card with just dark background and small text",
+      "almost-empty card missing the expected big number 24B",
+      "almost-empty card with just light background and small text",
+      "shows text instead of stock video of a smartphone running an AI app",
+      "almost-empty card missing the source card for liquid.ai"
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong technical facts and specific model naming, but visuals repeat the same logo too often.",
+      "script_fixes": [],
+      "visual_beats": [
+        1,
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 2: Repeats the same Liquid AI logo card used in line 1.",
+        "line 3: Reuses the Liquid AI logo card again instead of showing a parameter-scaling graphic.",
+        "line 4: Continues showing the same logo card for the fourth time."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIXJGrQq9PQ0dI27m6n2QqJlDyIsELxAAL6HwACOveIVmWtp5aMQqlOPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-15T15:51:20.439887+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-15T16:32:51.573849+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-15",
@@ -671,50 +713,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
-            "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
-            "summary": "New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy proceeding. James is among 40 bipartisan AGs who filed a notice of interest in Character.AI's bankruptcy case \"to put all parties on notice of the regulatory issues that […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-14T18:47:54+00:00",
-            "angle": "Character.AI goes bankrupt, sparking a massive multi-state investigation over user data privacy."
-          },
-          {
-            "title": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills",
-            "link": "https://analyticsindiamag.com/ai-news/figma-expands-into-coding-hosting-as-ceo-rules-out-covering-high-traffic-bills",
-            "summary": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills Analytics India Magazine",
-            "source": "Analytics India Magazine",
-            "published": "2026-10-15T05:15:00+00:00",
-            "angle": "Figma makes a massive leap into coding and hosting, reshaping the design workflow."
-          },
-          {
-            "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
-            "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
-            "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-14T18:00:00+00:00",
-            "angle": "A clever startup is deploying undercover AI agents specifically to get scammed and trap fraudsters."
-          }
-        ],
-        "choose_deadline": "2026-10-15T14:40:42.580449+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1505,6 +1503,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+          "link": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+          "summary": "",
+          "source": "liquid.ai",
+          "published": "2026-10-14T23:59:37+00:00",
+          "buzz": "Hacker News 213 points",
+          "angle": "Liquid.ai's new on-device model running locally hints at a future where AI runs completely offline on your phone."
+        },
+        "draft": {
+          "title": "Liquid AI Drops LFM2.5-24B-A2B",
+          "hook_text": "Liquid AI just dropped LFM2 point 5 twenty 4B.",
+          "beats": [
+            {
+              "line": "Liquid AI just released LFM2 point 5 twenty 4B A2B for fast on-device agents.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "LFM2.5-24B-A2B",
+              "outlet": "",
+              "domain": "liquid.ai",
+              "headline": "",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+              "tag": "Liquid AI LFM2.5",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Liquid AI",
+                  "domain": "liquid.ai"
+                }
+              ]
+            },
+            {
+              "line": "The team built this architecture specifically for running local workflows on edge hardware.",
+              "visual": "clip",
+              "query": "person coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Edge hardware workflows",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Liquid AI",
+                  "domain": "liquid.ai"
+                }
+              ]
+            },
+            {
+              "line": "This version packs twenty-four billion parameters into a compact size.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "24B",
+              "small": "parameters",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Twenty-four billion parameters",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Liquid AI",
+                  "domain": "liquid.ai"
+                }
+              ]
+            },
+            {
+              "line": "It succeeds the earlier LFM models by optimizing memory usage during real-time tasks.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "LFM2.5-24B-A2B",
+              "outlet": "",
+              "domain": "liquid.ai",
+              "headline": "",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+              "tag": "Optimized memory usage",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Liquid AI",
+                  "domain": "liquid.ai"
+                }
+              ]
+            },
+            {
+              "line": "Developers can execute complex multi-step reasoning locally without relying on cloud servers.",
+              "visual": "clip",
+              "query": "smartphone running AI app",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Local reasoning execution",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will you deploy LFM2 point 5 on your local device?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "liquid.ai",
+              "domain": "liquid.ai",
+              "headline": "LFM2.5-24B-A2B: Built for fast on-device agents",
+              "url": "",
+              "tag": "LFM2.5 on-device agents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Liquid AI",
+                  "domain": "liquid.ai"
+                }
+              ]
+            }
+          ],
+          "delivery": "sharp and direct tech reporting, highlighting the technical specifications and local capabilities of the new model",
+          "thin": false,
+          "caption": "Liquid AI released LFM2.5-24B-A2B, featuring twenty-four billion parameters for fast on-device agents. The model runs complex tasks locally without cloud servers. Will you deploy LFM2.5 on your local device?",
+          "hashtags": [
+            "LiquidAI",
+            "EdgeAI",
+            "TechNews",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+          ],
+          "script": "Liquid AI just released LFM2 point 5 twenty 4B A2B for fast on-device agents.\nThe team built this architecture specifically for running local workflows on edge hardware.\nThis version packs twenty-four billion parameters into a compact size.\nIt succeeds the earlier LFM models by optimizing memory usage during real-time tasks.\nDevelopers can execute complex multi-step reasoning locally without relying on cloud servers.\nWill you deploy LFM2 point 5 on your local device?",
+          "keywords": [
+            "person coding on laptop",
+            "smartphone running AI app"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Liquid AI released LFM2.5-24B-A2B.",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+            },
+            {
+              "claim": "Liquid AI released LFM2.5-24B-A2B for fast on-device agents.",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+            },
+            {
+              "claim": "The team built this architecture specifically for running local workflows on edge hardware.",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+            },
+            {
+              "claim": "This version packs twenty-four billion parameters into a compact size.",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+            },
+            {
+              "claim": "It succeeds the earlier LFM models by optimizing memory usage during real-time tasks.",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+            },
+            {
+              "claim": "Developers can execute complex multi-step reasoning locally without relying on cloud servers.",
+              "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-15T15:51:20.439887+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2006,8 +2220,8 @@
       "event": "Square is launching a brand new hardware device called the Square Kiosk. It features a large pill shape design with a built-in touchscreen. The device includes an agentic conversational voice layer powered by AI. This voice system fully und"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-15T14:40+05:30",
@@ -2035,7 +2249,7 @@
   "report_day": "2026-10-14",
   "ig_count": {
     "day": "2026-10-15",
-    "at": "2026-10-15T15:51:20.439918+05:30",
+    "at": "2026-10-15T16:02:51.574092+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2055,11 +2269,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-15",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-15",
-    "calls": 157,
+    "calls": 163,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2088,7 +2302,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 90,
+        "ok": 96,
         "busy": 34,
         "other": 11,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2179,29 +2393,6 @@
     "gemini-3-flash-preview": 1792049684.947571
   },
   "editor_log": [
-    {
-      "at": "2026-10-14T15:23+05:30",
-      "title": "Science Corporation implants its vision-restoring chip in its first Stargardt di",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 8
-      },
-      "one_line": "Strong reporting, but the visuals are repetitive and lack the necessary high-end polish.",
-      "fixes": [
-        "LINE 1: Change to 'Science Corporation has successfully implanted its PRIMA vision-restoring chip in a Stargardt disease patient.'",
-        "LINE 7: Change to 'Would you trust a BCI to restore your sight?'"
-      ],
-      "visual": [
-        "line 1: The same image of Max Hodak is held for 7+ seconds across multiple frames.",
-        "line 4: The eye imagery is generic and lacks a direct connection to the specific medical condition",
-        "line 6: The visual is a placeholder; it should show a diagram of the BCI/PRIMA interface."
-      ]
-    },
     {
       "at": "2026-10-14T15:35+05:30",
       "title": "Cerebras CEO pushes back on AI doomsday warnings",
@@ -2607,6 +2798,26 @@
       "visual": [
         "line 5: Random 100% card appears with no source or metric backing it up",
         "line 3: Dashboard graphic held too long across multiple frames"
+      ]
+    },
+    {
+      "at": "2026-10-15T16:02+05:30",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong technical facts and specific model naming, but visuals repeat the same logo too often.",
+      "fixes": [],
+      "visual": [
+        "line 2: Repeats the same Liquid AI logo card used in line 1.",
+        "line 3: Reuses the Liquid AI logo card again instead of showing a parameter-scaling graphic.",
+        "line 4: Continues showing the same logo card for the fourth time."
       ]
     }
   ],
