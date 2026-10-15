@@ -1,63 +1,185 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
-      "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
-      "summary": "New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy proceeding. James is among 40 bipartisan AGs who filed a notice of interest in Character.AI's bankruptcy case \"to put all parties on notice of the regulatory issues that […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-14T18:47:54+00:00",
-      "angle": "Character.AI goes bankrupt, sparking a massive multi-state investigation over user data privacy."
-    },
-    {
-      "title": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills",
-      "link": "https://analyticsindiamag.com/ai-news/figma-expands-into-coding-hosting-as-ceo-rules-out-covering-high-traffic-bills",
-      "summary": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills Analytics India Magazine",
-      "source": "Analytics India Magazine",
-      "published": "2026-10-15T05:15:00+00:00",
-      "angle": "Figma makes a massive leap into coding and hosting, reshaping the design workflow."
-    },
-    {
-      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
-      "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
-      "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-14T18:00:00+00:00",
-      "angle": "A clever startup is deploying undercover AI agents specifically to get scammed and trap fraudsters."
-    }
-  ],
-  "choose_deadline": "2026-10-15T14:40:42.580449+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
+    "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+    "summary": "New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy proceeding. James is among 40 bipartisan AGs who filed a notice of interest in Character.AI's bankruptcy case \"to put all parties on notice of the regulatory issues that […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-14T18:47:54+00:00",
+    "angle": "Character.AI goes bankrupt, sparking a massive multi-state investigation over user data privacy."
+  },
+  "draft": {
+    "title": "Character.AI faces multi-state AG probe",
+    "hook_text": "Character.AI faces a multi-state AG probe.",
+    "beats": [
+      {
+        "line": "Character.AI is facing bankruptcy and a multi-state investigation.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Character.AI",
+        "outlet": "",
+        "domain": "character.ai",
+        "headline": "",
+        "url": "https://character.ai",
+        "tag": "Character.AI bankruptcy probe",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Character.AI",
+            "domain": "character.ai"
+          }
+        ]
+      },
+      {
+        "line": "New York Attorney General Letitia James revealed the years-long probe as bankruptcy proceedings begin.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://ag.ny.gov",
+        "tag": "Letitia James investigation",
+        "name": "Letitia James",
+        "role": "New York Attorney General",
+        "x": "NYAGJames",
+        "brands": []
+      },
+      {
+        "line": "Forty bipartisan attorneys general filed a notice of interest in the bankruptcy case.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "40",
+        "small": "bipartisan AGs",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Forty AGs intervene",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The coalition is moving to require strict protections on consumer data sold through the proceeding.",
+        "visual": "clip",
+        "query": "lawyers reviewing documents",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Consumer data protections",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The legal action aims to address regulatory issues regarding user information before assets change hands.",
+        "visual": "clip",
+        "query": "smartphone data privacy",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Regulatory issues addressed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust a bankruptcy court with your chat history?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Character.AI bankruptcy consumer data protection",
+        "url": "",
+        "tag": "Trust your chat history?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "urgent and investigative, highlighting the sudden regulatory stakes for user privacy during bankruptcy.",
+    "thin": false,
+    "caption": "Character.AI is facing bankruptcy while forty attorneys general intervene to protect user data. New York Attorney General Letitia James revealed the multi-state investigation during the liquidation process. Would you trust a bankruptcy court with your private chat logs?",
+    "hashtags": [
+      "CharacterAI",
+      "LetitiaJames",
+      "DataPrivacy",
+      "Bankruptcy",
+      "AI"
+    ],
+    "sources": [
+      "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
+    ],
+    "script": "Character.AI is facing bankruptcy and a multi-state investigation.\nNew York Attorney General Letitia James revealed the years-long probe as bankruptcy proceedings begin.\nForty bipartisan attorneys general filed a notice of interest in the bankruptcy case.\nThe coalition is moving to require strict protections on consumer data sold through the proceeding.\nThe legal action aims to address regulatory issues regarding user information before assets change hands.\nWould you trust a bankruptcy court with your chat history?",
+    "keywords": [
+      "lawyers reviewing documents",
+      "smartphone data privacy"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Character.AI faces a multi-state AG probe.",
+        "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
+      },
+      {
+        "claim": "Character.AI is facing bankruptcy and a multi-state investigation.",
+        "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
+      },
+      {
+        "claim": "New York Attorney General Letitia James revealed the years-long probe as bankruptcy proceedings begin.",
+        "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
+      },
+      {
+        "claim": "Forty bipartisan attorneys general filed a notice of interest in the bankruptcy case.",
+        "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "Square’s new kiosk lets you talk to AI for help with your order",
-      "video_file_id": "BAACAgUAAxkDAAIW8mrQl91bNXOjTApWkZ5c_S1_PnA3AALdHwACOveIVoi6p-XJ3n8VPQQ",
-      "caption": "Square is launching the Square Kiosk featuring a pill shape and an AI voice layer that understands seller menus. Would you order your food from this kiosk?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#Square #SquareKiosk #AI #TechNews #Restaurants",
-      "extra": false,
-      "meta": {
-        "title": "Square’s new kiosk lets you talk to AI for help with your order",
-        "kind": "news",
-        "source": "AI | The Verge",
-        "engine": "fish",
-        "voice": "Paula (Fish Audio)",
-        "person": false,
-        "words": 60,
-        "visuals": "6 cards",
-        "editor": 8.0,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-15T14:40+05:30"
-      },
-      "post_at": "2026-10-15T14:41:30.078631+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-15T15:15:49.357739+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -224,10 +346,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-05T16:31:31.823338+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-05T19:01:22.125986+05:30",
       "extra": false
@@ -463,9 +581,31 @@
     {
       "at": "2026-10-15T13:46:45.641745+05:30",
       "extra": false
+    },
+    {
+      "at": "2026-10-15T14:46:25.109739+05:30",
+      "extra": false
     }
   ],
-  "spare": [],
+  "paused": null,
+  "spare": [
+    {
+      "title": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills",
+      "link": "https://analyticsindiamag.com/ai-news/figma-expands-into-coding-hosting-as-ceo-rules-out-covering-high-traffic-bills",
+      "summary": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-15T05:15:00+00:00",
+      "angle": "Figma makes a massive leap into coding and hosting, reshaping the design workflow."
+    },
+    {
+      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
+      "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
+      "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-14T18:00:00+00:00",
+      "angle": "A clever startup is deploying undercover AI agents specifically to get scammed and trap fraudsters."
+    }
+  ],
   "tried": [
     "AI is a tool and using it well takes skill",
     "AI Could Start Improving Itself By 2027: Anthropic Co-Founder",
@@ -505,242 +645,7 @@
     "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
     "OpenAI claims an ex-employee took its product plans and presented them to Apple"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-          "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-14T21:11:28+00:00",
-          "angle": "Eight US states are now suing OpenAI, claiming ChatGPT isn't safe for children"
-        },
-        "draft": {
-          "title": "Eight States Sue OpenAI",
-          "hook_text": "Eight US states just sued OpenAI.",
-          "beats": [
-            {
-              "line": "Eight US states just sued OpenAI over ChatGPT child safety risks.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "ChatGPT",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com/chatgpt",
-              "tag": "Eight states sue OpenAI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                },
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Iowa, Kansas, Nebraska, and West Virginia filed separate lawsuits against the company.",
-              "visual": "clip",
-              "query": "state capitol building exterior",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Four states file lawsuits",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Arkansas, Arizona, Idaho, and Montana also joined the legal action.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "8",
-              "small": "states involved",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Eight states total",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The lawsuits accuse OpenAI of unlawfully prioritizing corporate profits over children's safety.",
-              "visual": "clip",
-              "query": "smartphone showing chat app",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Profits over safety",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The state attorneys general claim the company misled customers regarding safety features.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Eight states sue OpenAI saying ChatGPT isn't safe for kids",
-              "url": "",
-              "tag": "Misleading safety claims",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The complaints demand civil penalties and injunctions to stop these misleading practices.",
-              "visual": "clip",
-              "query": "lawyer reviewing legal documents",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Demanding civil penalties",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will you let your kids use ChatGPT after this?",
-              "visual": "clip",
-              "query": "child using tablet device",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Kids use ChatGPT",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "urgent and direct, highlighting legal stakes and child safety concerns",
-          "thin": false,
-          "caption": "Eight US states have filed separate lawsuits against OpenAI, accusing the company of misleading customers and prioritizing profits over child safety with ChatGPT. The legal actions demand civil penalties and injunctions. Will you let your kids use ChatGPT after this?",
-          "hashtags": [
-            "OpenAI",
-            "ChatGPT",
-            "Lawsuit",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-          ],
-          "script": "Eight US states just sued OpenAI over ChatGPT child safety risks.\nIowa, Kansas, Nebraska, and West Virginia filed separate lawsuits against the company.\nArkansas, Arizona, Idaho, and Montana also joined the legal action.\nThe lawsuits accuse OpenAI of unlawfully prioritizing corporate profits over children's safety.\nThe state attorneys general claim the company misled customers regarding safety features.\nThe complaints demand civil penalties and injunctions to stop these misleading practices.\nWill you let your kids use ChatGPT after this?",
-          "keywords": [
-            "state capitol building exterior",
-            "smartphone showing chat app",
-            "lawyer reviewing legal documents",
-            "child using tablet device"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Eight US states just sued OpenAI.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-            },
-            {
-              "claim": "Eight US states just sued OpenAI over ChatGPT child safety risks.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-            },
-            {
-              "claim": "Iowa, Kansas, Nebraska, and West Virginia filed separate lawsuits against the company.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-            },
-            {
-              "claim": "Arkansas, Arizona, Idaho, and Montana also joined the legal action.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-            },
-            {
-              "claim": "The lawsuits accuse OpenAI of unlawfully prioritizing corporate profits over children's safety.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-            },
-            {
-              "claim": "The state attorneys general claim the company misled customers regarding safety features.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-            },
-            {
-              "claim": "The complaints demand civil penalties and injunctions to stop these misleading practices.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-15T13:57:50.379567+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1687,10 +1592,53 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIW8mrQl91bNXOjTApWkZ5c_S1_PnA3AALdHwACOveIVoi6p-XJ3n8VPQQ",
       "history_title": "Square’s new kiosk lets you talk to AI for help with your order"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
+            "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+            "summary": "New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy proceeding. James is among 40 bipartisan AGs who filed a notice of interest in Character.AI's bankruptcy case \"to put all parties on notice of the regulatory issues that […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-14T18:47:54+00:00",
+            "angle": "Character.AI goes bankrupt, sparking a massive multi-state investigation over user data privacy."
+          },
+          {
+            "title": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills",
+            "link": "https://analyticsindiamag.com/ai-news/figma-expands-into-coding-hosting-as-ceo-rules-out-covering-high-traffic-bills",
+            "summary": "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills Analytics India Magazine",
+            "source": "Analytics India Magazine",
+            "published": "2026-10-15T05:15:00+00:00",
+            "angle": "Figma makes a massive leap into coding and hosting, reshaping the design workflow."
+          },
+          {
+            "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
+            "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
+            "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-14T18:00:00+00:00",
+            "angle": "A clever startup is deploying undercover AI agents specifically to get scammed and trap fraudsters."
+          }
+        ],
+        "choose_deadline": "2026-10-15T14:40:42.580449+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIIhGrHudHLTGufeDcxHca-hfSGCq7qAALaHwAClrJAVhlt-_WZhd5RPQQ",
     "BAACAgUAAxkDAAIIqmrH6iY0Pu-XxsLSiOopw_Inld6SAAIBIAAClrJAVsXdwCvTaeWWPQQ",
     "BAACAgUAAxkDAAIItGrH-Wyaucg_RgviVD8wzhrtfOVuAALAIAACqmdBViYQJkt8j1crPQQ",
     "BAACAgUAAxkDAAII0GrIFZp3Xax486WzEKcedDWWDNZGAALHIAACqmdBVhzMtU0G4ygUPQQ",
@@ -1719,7 +1667,8 @@
     "BAACAgUAAxkDAAIV-2rPW3OKX7s7uvK44-WNN5-dNzLYAALuIAAC-A14Vm2tx9L9OGErPQQ",
     "BAACAgUAAxkDAAIWY2rPaCotQKwzIt0yoINCJPcXowz1AAIPIQAC-A14Vu0BJwYL5ouVPQQ",
     "BAACAgUAAxkDAAIWsWrQhQvDFw0vCX4l0MUN7mfBUGWmAAKpHwACOveIVsLofE6Z_hxePQQ",
-    "BAACAgUAAxkDAAIWwmrQiULubXFWDWBak-_9TPkHc-j2AAKzHwACOveIVkusCEZIpnTtPQQ"
+    "BAACAgUAAxkDAAIWwmrQiULubXFWDWBak-_9TPkHc-j2AAKzHwACOveIVkusCEZIpnTtPQQ",
+    "BAACAgUAAxkDAAIW8mrQl91bNXOjTApWkZ5c_S1_PnA3AALdHwACOveIVoi6p-XJ3n8VPQQ"
   ],
   "history": [
     "Anthropic Launches Claude Sonnet 5.5 With 30% Lower Costs Per Task",
@@ -2245,7 +2194,7 @@
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-15",
-    "calls": 145,
+    "calls": 157,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2274,10 +2223,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 82,
-        "busy": 30,
+        "ok": 90,
+        "busy": 34,
         "other": 11,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
         "ok": 2,
@@ -2798,6 +2747,5 @@
       ]
     }
   ],
-  "rest_note": "2026-10-15T12:32:00+05:30",
-  "behind_since": "2026-10-15T14:04:19.286154+05:30"
+  "rest_note": "2026-10-15T12:32:00+05:30"
 }
