@@ -17,16 +17,16 @@
     "beats": [
       {
         "line": "Sega removed Total War: Shogun 2 Complete Edition from digital storefronts after a disastrous launch.",
-        "visual": "clip",
-        "query": "Total War Shogun 2 logo",
+        "visual": "official",
+        "query": "Total War Shogun 2 Complete Edition box art",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "",
+        "entity": "Total War: Shogun 2",
         "outlet": "",
-        "domain": "",
+        "domain": "sega.com",
         "headline": "",
-        "url": "",
+        "url": "https://www.sega.com",
         "tag": "Sega pulls game",
         "name": "",
         "role": "",
@@ -34,9 +34,9 @@
         "brands": []
       },
       {
-        "line": "Players complained about technical bugs and low-quality visual artifacts throughout the strategy game.",
+        "line": "Players reported distorted character models and UI glitches throughout the updated strategy experience.",
         "visual": "clip",
-        "query": "gaming computer screen glitch",
+        "query": "video game user interface glitch",
         "prompt": "",
         "big": "",
         "small": "",
@@ -45,16 +45,16 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Game bugs reported",
+        "tag": "Distorted models reported",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "The community identified specific textures that suggest the developer used AI for lazy upscaling.",
+        "line": "The community found textures that suggest the developer used AI for lazy upscaling.",
         "visual": "clip",
-        "query": "digital texture detail close up",
+        "query": "low resolution video game texture",
         "prompt": "",
         "big": "",
         "small": "",
@@ -70,12 +70,12 @@
         "brands": []
       },
       {
-        "line": "This remaster launched on Tuesday to bundle the 2011 base game with all its expansions.",
+        "line": "The remaster launched Tuesday to bundle the original 2011 base game with all its expansions.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
         "big": "2011",
-        "small": "original game year",
+        "small": "original release year",
         "entity": "",
         "outlet": "",
         "domain": "",
@@ -88,12 +88,12 @@
         "brands": []
       },
       {
-        "line": "The game currently holds overwhelmingly negative reviews on Steam following the botched release.",
+        "line": "It currently holds overwhelmingly negative reviews on Steam following the botched release.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
         "big": "Negative",
-        "small": "Steam review score",
+        "small": "Steam user sentiment",
         "entity": "",
         "outlet": "",
         "domain": "",
@@ -106,13 +106,13 @@
         "brands": []
       },
       {
-        "line": "Sega has not yet announced a date for when the game will return to storefronts.",
-        "visual": "clip",
-        "query": "Sega company building",
+        "line": "Sega has not announced a date for when the game will return to storefronts.",
+        "visual": "photo",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "",
+        "entity": "Sega",
         "outlet": "",
         "domain": "",
         "headline": "",
@@ -124,9 +124,9 @@
         "brands": []
       },
       {
-        "line": "Would you accept AI-upscaled graphics in your favorite classic games?",
+        "line": "Should developers be held accountable for low-effort AI upscaling in remasters?",
         "visual": "clip",
-        "query": "person looking frustrated at computer",
+        "query": "gamer looking at screen",
         "prompt": "",
         "big": "",
         "small": "",
@@ -135,7 +135,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Is AI worth it?",
+        "tag": "Accountability for AI?",
         "name": "",
         "role": "",
         "x": "",
@@ -144,7 +144,7 @@
     ],
     "delivery": "Direct and investigative, highlighting the frustration of gamers regarding the botched remaster.",
     "thin": false,
-    "caption": "Sega has pulled Total War: Shogun 2 Complete Edition from sale. Players flagged poor AI upscaling and bugs in the 2011 remaster, leading to overwhelmingly negative Steam reviews. Sega has not announced when the game will return. Would you accept AI-upscaled graphics in your favorite classic games?",
+    "caption": "Sega has pulled Total War: Shogun 2 Complete Edition from sale. Players flagged poor AI upscaling, distorted character models, and UI glitches, leading to overwhelmingly negative Steam reviews. Sega has not announced when the game will return. Should developers be held accountable for low-effort AI upscaling in remasters?",
     "hashtags": [
       "Sega",
       "TotalWar",
@@ -155,13 +155,11 @@
     "sources": [
       "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
     ],
-    "script": "Sega removed Total War: Shogun 2 Complete Edition from digital storefronts after a disastrous launch.\nPlayers complained about technical bugs and low-quality visual artifacts throughout the strategy game.\nThe community identified specific textures that suggest the developer used AI for lazy upscaling.\nThis remaster launched on Tuesday to bundle the 2011 base game with all its expansions.\nThe game currently holds overwhelmingly negative reviews on Steam following the botched release.\nSega has not yet announced a date for when the game will return to storefronts.\nWould you accept AI-upscaled graphics in your favorite classic games?",
+    "script": "Sega removed Total War: Shogun 2 Complete Edition from digital storefronts after a disastrous launch.\nPlayers reported distorted character models and UI glitches throughout the updated strategy experience.\nThe community found textures that suggest the developer used AI for lazy upscaling.\nThe remaster launched Tuesday to bundle the original 2011 base game with all its expansions.\nIt currently holds overwhelmingly negative reviews on Steam following the botched release.\nSega has not announced a date for when the game will return to storefronts.\nShould developers be held accountable for low-effort AI upscaling in remasters?",
     "keywords": [
-      "Total War Shogun 2 logo",
-      "gaming computer screen glitch",
-      "digital texture detail close up",
-      "Sega company building",
-      "person looking frustrated at computer"
+      "video game user interface glitch",
+      "low resolution video game texture",
+      "gamer looking at screen"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
@@ -175,29 +173,30 @@
         "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
       },
       {
-        "claim": "Players complained about technical bugs and low-quality visual artifacts throughout the strategy game.",
+        "claim": "Players reported distorted character models and UI glitches throughout the updated strategy experience.",
         "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
       },
       {
-        "claim": "The community identified specific textures that suggest the developer used AI for lazy upscaling.",
+        "claim": "The community found textures that suggest the developer used AI for lazy upscaling.",
         "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
       },
       {
-        "claim": "This remaster launched on Tuesday to bundle the 2011 base game with all its expansions.",
+        "claim": "The remaster launched Tuesday to bundle the original 2011 base game with all its expansions.",
         "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
       },
       {
-        "claim": "The game currently holds overwhelmingly negative reviews on Steam following the botched release.",
+        "claim": "It currently holds overwhelmingly negative reviews on Steam following the botched release.",
         "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
       },
       {
-        "claim": "Sega has not yet announced a date for when the game will return to storefronts.",
+        "claim": "Sega has not announced a date for when the game will return to storefronts.",
         "url": "https://www.xda-developers.com/steam-gamers-bomb-the-total-war-shogun-2-remasters-score-to-overwhelmingly-negative-as-the-original-gets-delisted/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 2,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
     ]
@@ -271,9 +270,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-16T10:46:36.556202+05:30",
+  "script_deadline": "2026-10-16T10:55:25.663469+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -762,218 +761,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Friends don’t let friends feed their data to AI agents",
-          "link": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
-          "summary": "There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the advent of \"AI personal assistants\" like Meta's Muse, you're being cheerfully asked not just to give up your own data, but also […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-15T16:21:45+00:00",
-          "angle": "The dark side of AI wearables: Why your new gadgets might be spying on everyone around you."
-        },
-        "draft": {
-          "title": "The hidden cost of Meta Muse AI",
-          "hook_text": "Meta Muse is watching everyone",
-          "beats": [
-            {
-              "line": "Meta is rolling out Muse to turn your daily life into AI training data. It captures everything within sight of your personal gadgets.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Meta Muse",
-              "outlet": "",
-              "domain": "meta.com",
-              "headline": "",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
-              "tag": "Meta Muse captures data",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The device records people around you without their direct consent. You are essentially bringing a surveillance tool into your social circle.",
-              "visual": "clip",
-              "query": "people talking at dinner",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No consent for others",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This trend shifts the burden of privacy from the company to the individual user. You become responsible for the data of every person you meet.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "a person wearing smart glasses in a crowded city cafe, cinematic style, no faces",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "User privacy burden",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Meta is pushing these assistants to feed their hungry AI models. Your private interactions are the raw fuel for this machine.",
-              "visual": "clip",
-              "query": "data center server racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Raw fuel for AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The Verge highlights that this creates a massive conflict between tech convenience and basic human privacy. It turns your friends into data points for a corporation.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Friends don’t let friends feed their data to AI agents",
-              "url": "",
-              "tag": "Privacy vs convenience",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Are you comfortable recording your friends to train a model?",
-              "visual": "clip",
-              "query": "close up of a person looking thoughtful",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Are you comfortable?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious, investigative tone that shifts from explaining the tech to questioning the morality of using it.",
-          "thin": false,
-          "caption": "Meta is pushing Muse to turn your private life into training data for its AI models. These gadgets record everyone around you, often without their consent, effectively making your friends part of the company's data set. Are you comfortable recording your friends to train a model?",
-          "hashtags": [
-            "Meta",
-            "Muse",
-            "AI",
-            "Privacy",
-            "Tech"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-          ],
-          "script": "Meta is rolling out Muse to turn your daily life into AI training data. It captures everything within sight of your personal gadgets.\nThe device records people around you without their direct consent. You are essentially bringing a surveillance tool into your social circle.\nThis trend shifts the burden of privacy from the company to the individual user. You become responsible for the data of every person you meet.\nMeta is pushing these assistants to feed their hungry AI models. Your private interactions are the raw fuel for this machine.\nThe Verge highlights that this creates a massive conflict between tech convenience and basic human privacy. It turns your friends into data points for a corporation.\nAre you comfortable recording your friends to train a model?",
-          "keywords": [
-            "people talking at dinner",
-            "data center server racks",
-            "close up of a person looking thoughtful"
-          ],
-          "image_prompts": [
-            "a person wearing smart glasses in a crowded city cafe, cinematic style, no faces"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Meta Muse is watching everyone",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            },
-            {
-              "claim": "Meta is rolling out Muse to turn your daily life into AI training data.",
-              "url": "https://www.cnet.com/tech/services-and-software/metas-muse-agentic-ai-privacy-violations-security-data/"
-            },
-            {
-              "claim": "It captures everything within sight of your personal gadgets.",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            },
-            {
-              "claim": "The device records people around you without their direct consent.",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            },
-            {
-              "claim": "This trend shifts the burden of privacy from the company to the individual user.",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            },
-            {
-              "claim": "You become responsible for the data of every person you meet.",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            },
-            {
-              "claim": "Meta is pushing these assistants to feed their hungry AI models.",
-              "url": "https://www.cnet.com/tech/services-and-software/metas-muse-agentic-ai-privacy-violations-security-data/"
-            },
-            {
-              "claim": "Your private interactions are the raw fuel for this machine.",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            },
-            {
-              "claim": "The Verge highlights that this creates a massive conflict between tech convenience and basic human privacy.",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            },
-            {
-              "claim": "It turns your friends into data points for a corporation.",
-              "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent"
-          ],
-          "visual_status": "skipped",
-          "visual_notes": []
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-16T07:42:29.454187+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1561,6 +1348,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
+          "link": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+          "summary": "Sega is removing Total War: Shogun 2 - Complete Edition from storefronts following a disastrous launch where users complained about issues like bugs and upscaling that appears to have been done by AI. Complete Edition, a remaster of the 2011 strategy game, launched on Tuesday, and it bundled the main game and all of its […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-15T22:35:55+00:00",
+          "angle": "The first major gaming backlash against AI: Sega pulls a remaster because of 'disastrous' AI upscaling."
+        },
+        "draft": {
+          "title": "Sega pulls Total War: Shogun 2 remaster",
+          "hook_text": "Sega pulls Shogun 2 remaster",
+          "beats": [
+            {
+              "line": "Sega removed Total War: Shogun 2 Complete Edition from digital storefronts after a disastrous launch.",
+              "visual": "clip",
+              "query": "Total War Shogun 2 logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sega pulls game",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Players complained about technical bugs and low-quality visual artifacts throughout the strategy game.",
+              "visual": "clip",
+              "query": "gaming computer screen glitch",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Game bugs reported",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The community identified specific textures that suggest the developer used AI for lazy upscaling.",
+              "visual": "clip",
+              "query": "digital texture detail close up",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI upscaling issues",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This remaster launched on Tuesday to bundle the 2011 base game with all its expansions.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2011",
+              "small": "original game year",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Original 2011 release",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The game currently holds overwhelmingly negative reviews on Steam following the botched release.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Negative",
+              "small": "Steam review score",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Negative Steam reviews",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Sega has not yet announced a date for when the game will return to storefronts.",
+              "visual": "clip",
+              "query": "Sega company building",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "No return date",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you accept AI-upscaled graphics in your favorite classic games?",
+              "visual": "clip",
+              "query": "person looking frustrated at computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Is AI worth it?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Direct and investigative, highlighting the frustration of gamers regarding the botched remaster.",
+          "thin": false,
+          "caption": "Sega has pulled Total War: Shogun 2 Complete Edition from sale. Players flagged poor AI upscaling and bugs in the 2011 remaster, leading to overwhelmingly negative Steam reviews. Sega has not announced when the game will return. Would you accept AI-upscaled graphics in your favorite classic games?",
+          "hashtags": [
+            "Sega",
+            "TotalWar",
+            "GamingNews",
+            "Shogun2",
+            "AI"
+          ],
+          "sources": [
+            "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+          ],
+          "script": "Sega removed Total War: Shogun 2 Complete Edition from digital storefronts after a disastrous launch.\nPlayers complained about technical bugs and low-quality visual artifacts throughout the strategy game.\nThe community identified specific textures that suggest the developer used AI for lazy upscaling.\nThis remaster launched on Tuesday to bundle the 2011 base game with all its expansions.\nThe game currently holds overwhelmingly negative reviews on Steam following the botched release.\nSega has not yet announced a date for when the game will return to storefronts.\nWould you accept AI-upscaled graphics in your favorite classic games?",
+          "keywords": [
+            "Total War Shogun 2 logo",
+            "gaming computer screen glitch",
+            "digital texture detail close up",
+            "Sega company building",
+            "person looking frustrated at computer"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Sega pulls Shogun 2 remaster",
+              "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+            },
+            {
+              "claim": "Sega removed Total War: Shogun 2 Complete Edition from digital storefronts after a disastrous launch.",
+              "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+            },
+            {
+              "claim": "Players complained about technical bugs and low-quality visual artifacts throughout the strategy game.",
+              "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+            },
+            {
+              "claim": "The community identified specific textures that suggest the developer used AI for lazy upscaling.",
+              "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+            },
+            {
+              "claim": "This remaster launched on Tuesday to bundle the 2011 base game with all its expansions.",
+              "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+            },
+            {
+              "claim": "The game currently holds overwhelmingly negative reviews on Steam following the botched release.",
+              "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+            },
+            {
+              "claim": "Sega has not yet announced a date for when the game will return to storefronts.",
+              "url": "https://www.xda-developers.com/steam-gamers-bomb-the-total-war-shogun-2-remasters-score-to-overwhelmingly-negative-as-the-original-gets-delisted/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T10:46:36.556202+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2081,8 +2084,8 @@
       "event": "Two point eight trillion tokens trained by Nvidia. They used a massive new pipeline for Indic language models. They successfully pretrained models using two point eight trillion tokens. This project creates a blueprint for scaling AI across"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-16T09:41+05:30",
@@ -2130,7 +2133,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
@@ -2226,29 +2229,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T17:27+05:30",
-      "title": "Figma announces new features to define how agents work on its platform",
-      "overall": 7.8,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong story and facts, but visual repetition of Figma logo and text-only screens hurt quality.",
-      "fixes": [
-        "LINE 3: Specify the exact automated coding assistant tools mentioned in the update if applicable.",
-        "LINE 6: Name the specific agent framework or interface integration being used."
-      ],
-      "visual": [
-        "line 3: Text-only screens with large highlighted single words feel repetitive.",
-        "line 4: Static text display held across multiple frames without relevant UI or code visuals.",
-        "line 5: Reuses the generic logo card style seen earlier in the reel."
-      ]
-    },
     {
       "at": "2026-10-15T17:51+05:30",
       "title": "AI credit jitters drive US tech default insurance to record highs",
@@ -2683,6 +2663,29 @@
         "line 1: The same chart is held for 9.6 seconds, exceeding the 8-second limit.",
         "line 2: The same text-only frame is held for 4.8 seconds, creating visual stagnation.",
         "line 3: The same text-only frame is held for 4.8 seconds, creating visual stagnation."
+      ]
+    },
+    {
+      "at": "2026-10-16T10:55+05:30",
+      "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "The visuals are repetitive and generic, failing to match the specific news story.",
+      "fixes": [
+        "LINE 2: Replace 'technical bugs' with specific examples like 'distorted character models' or 'UI glitches'.",
+        "LINE 7: Make the question more specific to the incident, e.g., 'Should developers be held accountable for low-effort AI upscaling in remasters?'"
+      ],
+      "visual": [
+        "line 1: The same image is held for 7 seconds across three frames.",
+        "line 2: Generic stock footage of people gaming does not represent the specific Total War game.",
+        "line 3: The same white background frame is held for 7 seconds across three frames."
       ]
     }
   ],
