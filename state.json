@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Securing AI systems from cyber threats is a top priority, according to PwC’s Global Digital Trust Insights Survey",
+      "link": "https://www.complianceweek.com/artificial-intelligence/securing-ai-systems-from-cyber-threats-is-a-top-priority-according-to-pwcs-global-digital-trust-insights-survey/",
+      "summary": "Securing AI systems from cyber threats is a top priority, according to PwC’s Global Digital Trust Insights Survey Compliance Week",
+      "source": "Compliance Week",
+      "published": "2026-10-16T01:47:21+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "link": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "summary": "",
+      "source": "Hugging Face - Blog",
+      "published": "2026-10-16T01:44:47+00:00",
+      "angle": ""
+    },
+    {
+      "title": "AI study of 101,000 patients links brown fat to heart and mental health",
+      "link": "https://www.news-medical.net/news/20261015/AI-study-of-101000-patients-links-brown-fat-to-heart-and-mental-health.aspx",
+      "summary": "AI study of 101,000 patients links brown fat to heart and mental health News-Medical",
+      "source": "News-Medical",
+      "published": "2026-10-16T01:26:00+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-16T08:23:02.701801+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -479,6 +504,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
@@ -1634,10 +1660,6 @@
   ],
   "posted_log": [
     {
-      "title": "Google’s new Guided Vision feature can help you read the fine print",
-      "at": "2026-10-02T07:40:23.923436+05:30"
-    },
-    {
       "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
       "at": "2026-10-02T10:20:29.339348+05:30"
     },
@@ -2019,19 +2041,19 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-16T06:20+05:30",
+    "at": "2026-10-16T07:52+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
-    "arstechnica.com": 6,
+    "arstechnica.com": 5,
     "technologyreview.com": 0,
     "openai.com": 3,
     "blog.google": 0,
     "deepmind.google": 1,
-    "huggingface.co": 4,
+    "huggingface.co": 5,
     "blogs.nvidia.com": 5,
     "inc42.com": 5,
     "news.google.com": 40,
-    "Google News (VentureBeat, AIM, AI News)": 18,
+    "Google News (VentureBeat, AIM, AI News)": 17,
     "producthunt.com": 3,
     "Hacker News": 4,
     "Reddit": 5,
@@ -2039,7 +2061,7 @@
   },
   "guarantee_since": "2026-10-10T13:19:00+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-16T06:20:26.119059+05:30",
+  "last_auto_offer": "2026-10-16T07:52:17.014573+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-15",
   "ig_count": {
@@ -2068,24 +2090,19 @@
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
-    "calls": 117,
+    "calls": 121,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
         "ok": 62,
         "busy": 19,
-        "other": 36,
+        "other": 40,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "12:46",
-      "error": "gemini-3.1-flash-lite: free quota used up for now",
-      "day": "2026-10-13"
-    },
     {
       "at": "12:46",
       "error": "every free Gemini model is used up for today",
@@ -2128,6 +2145,11 @@
     },
     {
       "at": "02:16",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-16"
+    },
+    {
+      "at": "02:22",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-16"
     }
