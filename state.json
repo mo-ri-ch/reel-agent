@@ -35,24 +35,24 @@
       },
       {
         "line": "Patients used a phone app to exchange over one thousand three hundred text messages with the system.",
-        "visual": "clip",
-        "query": "person texting on smartphone",
+        "visual": "stat",
+        "query": "technology",
         "prompt": "",
-        "big": "",
-        "small": "",
+        "big": "1300",
+        "small": "text messages exchanged",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Phone app text messages",
+        "tag": "1300 text messages",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "The conversational platform helps fine tune wearable seizure detectors using patient feedback.",
+        "line": "The conversational platform fine-tunes wearable seizure detectors using over 1300 patient feedback logs.",
         "visual": "clip",
         "query": "smartwatch health monitor screen",
         "prompt": "",
@@ -63,7 +63,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Fine tune seizure detectors",
+        "tag": "Fine-tunes seizure detectors",
         "name": "",
         "role": "",
         "x": "",
@@ -117,11 +117,11 @@
       "HealthTech"
     ],
     "sources": [
-      "https://www.nature.com"
+      "https://www.nature.com/articles/s41591-026-04719-6",
+      "https://healthcare-in-europe.com/en/news/ai-platform-patient-communication-medical-devices.html"
     ],
-    "script": "Nature published a study on a new conversational AI built for epilepsy care.\nPatients used a phone app to exchange over one thousand three hundred text messages with the system.\nThe conversational platform helps fine tune wearable seizure detectors using patient feedback.\nClinicians can converse with the chat interface to review automated seizure assessments and add notations.\nWould you use a chat app to track your health symptoms?",
+    "script": "Nature published a study on a new conversational AI built for epilepsy care.\nPatients used a phone app to exchange over one thousand three hundred text messages with the system.\nThe conversational platform fine-tunes wearable seizure detectors using over 1300 patient feedback logs.\nClinicians can converse with the chat interface to review automated seizure assessments and add notations.\nWould you use a chat app to track your health symptoms?",
     "keywords": [
-      "person texting on smartphone",
       "smartwatch health monitor screen",
       "doctor typing on computer",
       "person looking at mobile screen"
@@ -142,7 +142,7 @@
         "url": "https://healthcare-in-europe.com/en/news/ai-platform-patient-communication-medical-devices.html"
       },
       {
-        "claim": "The conversational platform helps fine tune wearable seizure detectors using patient feedback.",
+        "claim": "The conversational platform fine-tunes wearable seizure detectors using over 1300 patient feedback logs.",
         "url": "https://www.nature.com/articles/s41591-026-04719-6"
       },
       {
@@ -152,7 +152,8 @@
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.nature.com/articles/s41591-026-04719-6",
       "https://www.nature.com"
@@ -185,9 +186,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-16T17:34:38.618890+05:30",
+  "script_deadline": "2026-10-16T17:42:06.413108+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-16",
@@ -677,276 +678,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Zupee turns to AI as it exits the gaming business",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUJVd0gxRFA1UkNneEdQWENpamNvcC04WHhERVZhcU5VX0NPWnFlajNDOVFaNXFkSmt0eTVzcEloNnpNeldGZ2gxZVpCVkthb05mM1d0UkVXRnVwdHQzblZmZDdMb212Vks5WWVEeWViTU1uTk5NTk01NlhINTlPNGg1MUN3Nk1MbE5MWXN0bDRiVWt3bjByV0tfU05xLTJVTUZocnJkMWExVmZzem5CUUloZWZxSHMwMVBDR3UwNnQ1Z9IBxwFBVV95cUxOQW1OOFFLaXJMRFRjTC1mbUZYbUlBWkNjU2dsWUtHMXNwUkVIQnpDSndlQjZudWJqTzdmeVRSUHRvWGZwQUdOSVNwWS1aS3d3TUFRNzUwVTdGMHNpeERVdjc2eWJVTHJybl9FdGhrOWVXTW81OG5hLWJaRlJ2ZloyTHc3Nmc4dThBeG9GeHRPM0NLb2ZfUjB2Y1I2Y0Q3c2RCV0hjSmIzVXJtRk9pN1NtZm8yUnd2aUlnMTIzWDV5OC1qS0JGOVBV?oc=5",
-          "summary": "Zupee turns to AI as it exits the gaming business Moneycontrol.com",
-          "source": "Moneycontrol.com",
-          "published": "2026-10-16T08:10:11+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Zupee's AI pivot",
-          "hook_text": "Zupee leaves gaming for AI",
-          "beats": [
-            {
-              "line": "Zupee is exiting the gaming business to build AI.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Zupee",
-              "outlet": "",
-              "domain": "zupee.com",
-              "headline": "",
-              "url": "https://www.zupee.com",
-              "tag": "Zupee exits gaming",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zupee",
-                  "domain": "zupee.com"
-                }
-              ]
-            },
-            {
-              "line": "Founder Dilsher Singh is shifting the company entirely away from online games.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "CEO Dilsher Singh",
-              "name": "Dilsher Singh",
-              "role": "Founder and CEO, Zupee",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zupee",
-                  "domain": "zupee.com"
-                }
-              ]
-            },
-            {
-              "line": "They built their success on casual skill-based mobile games like Ludo.",
-              "visual": "clip",
-              "query": "mobile screen ludo game",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Digital Ludo empire",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zupee",
-                  "domain": "zupee.com"
-                }
-              ]
-            },
-            {
-              "line": "The platform has accumulated more than two hundred million downloads over time.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "200M",
-              "small": "Total Downloads",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "200M downloads",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zupee",
-                  "domain": "zupee.com"
-                }
-              ]
-            },
-            {
-              "line": "The new strategy focuses on developing artificial intelligence products for consumers.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Moneycontrol",
-              "domain": "moneycontrol.com",
-              "headline": "Zupee turns to AI as it exits the gaming business",
-              "url": "",
-              "tag": "Consumer AI focus",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zupee",
-                  "domain": "zupee.com"
-                }
-              ]
-            },
-            {
-              "line": "Leadership decided to wind down current gaming operations to fund this transition.",
-              "visual": "clip",
-              "query": "business meeting strategy office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Winding down gaming",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zupee",
-                  "domain": "zupee.com"
-                }
-              ]
-            },
-            {
-              "line": "It is a massive strategic pivot for one of India's biggest gaming startups.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Vertical cinematic shot of modern tech office in India with glowing screens",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Major startup pivot",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you switch from playing games to using its apps?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Vertical view of a smartphone displaying a clean minimal app interface",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "The AI transition",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and skeptical, questioning a massive pivot from games to algorithms",
-          "thin": false,
-          "caption": "Zupee is exiting the gaming industry after reaching over two hundred million downloads to build consumer AI. Founder Dilsher Singh is winding down operations to fund this major strategic shift. Would you switch from playing games to using its apps?",
-          "hashtags": [
-            "Zupee",
-            "AI",
-            "TechNews",
-            "India",
-            "Business"
-          ],
-          "sources": [
-            "https://www.moneycontrol.com/artificial-intelligence/zupee-turns-to-ai-as-it-exits-the-gaming-business-article-14053833.html"
-          ],
-          "script": "Zupee is exiting the gaming business to build AI.\nFounder Dilsher Singh is shifting the company entirely away from online games.\nThey built their success on casual skill-based mobile games like Ludo.\nThe platform has accumulated more than two hundred million downloads over time.\nThe new strategy focuses on developing artificial intelligence products for consumers.\nLeadership decided to wind down current gaming operations to fund this transition.\nIt is a massive strategic pivot for one of India's biggest gaming startups.\nWould you switch from playing games to using its apps?",
-          "keywords": [
-            "mobile screen ludo game",
-            "business meeting strategy office"
-          ],
-          "image_prompts": [
-            "Vertical cinematic shot of modern tech office in India with glowing screens",
-            "Vertical view of a smartphone displaying a clean minimal app interface"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Zupee leaves gaming for AI",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUJVd0gxRFA1UkNneEdQWENpamNvcC04WHhERVZhcU5VX0NPWnFlajNDOVFaNXFkSmt0eTVzcEloNnpNeldGZ2gxZVpCVkthb05mM1d0UkVXRnVwdHQzblZmZDdMb212Vks5WWVEeWViTU1uTk5NTk01NlhINTlPNGg1MUN3Nk1MbE5MWXN0bDRiVWt3bjByV0tfU05xLTJVTUZocnJkMWExVmZzem5CUUloZWZxSHMwMVBDR3UwNnQ1Z9IBxwFBVV95cUxOQW1OOFFLaXJMRFRjTC1mbUZYbUlBWkNjU2dsWUtHMXNwUkVIQnpDSndlQjZudWJqTzdmeVRSUHRvWGZwQUdOSVNwWS1aS3d3TUFRNzUwVTdGMHNpeERVdjc2eWJVTHJybl9FdGhrOWVXTW81OG5hLWJaRlJ2ZloyTHc3Nmc4dThBeG9GeHRPM0NLb2ZfUjB2Y1I2Y0Q3c2RCV0hjSmIzVXJtRk9pN1NtZm8yUnd2aUlnMTIzWDV5OC1qS0JGOVBV?oc=5"
-            },
-            {
-              "claim": "Zupee is exiting the gaming business to build AI.",
-              "url": "https://www.exchange4media.com/media-others-news/zupee-exits-gaming-business-after-rmg-ban-pivots-to-ai-ventures-159220.html"
-            },
-            {
-              "claim": "Founder Dilsher Singh is shifting the company entirely away from online games.",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUJVd0gxRFA1UkNneEdQWENpamNvcC04WHhERVZhcU5VX0NPWnFlajNDOVFaNXFkSmt0eTVzcEloNnpNeldGZ2gxZVpCVkthb05mM1d0UkVXRnVwdHQzblZmZDdMb212Vks5WWVEeWViTU1uTk5NTk01NlhINTlPNGg1MUN3Nk1MbE5MWXN0bDRiVWt3bjByV0tfU05xLTJVTUZocnJkMWExVmZzem5CUUloZWZxSHMwMVBDR3UwNnQ1Z9IBxwFBVV95cUxOQW1OOFFLaXJMRFRjTC1mbUZYbUlBWkNjU2dsWUtHMXNwUkVIQnpDSndlQjZudWJqTzdmeVRSUHRvWGZwQUdOSVNwWS1aS3d3TUFRNzUwVTdGMHNpeERVdjc2eWJVTHJybl9FdGhrOWVXTW81OG5hLWJaRlJ2ZloyTHc3Nmc4dThBeG9GeHRPM0NLb2ZfUjB2Y1I2Y0Q3c2RCV0hjSmIzVXJtRk9pN1NtZm8yUnd2aUlnMTIzWDV5OC1qS0JGOVBV?oc=5"
-            },
-            {
-              "claim": "They built their success on casual skill-based mobile games like Ludo.",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUJVd0gxRFA1UkNneEdQWENpamNvcC04WHhERVZhcU5VX0NPWnFlajNDOVFaNXFkSmt0eTVzcEloNnpNeldGZ2gxZVpCVkthb05mM1d0UkVXRnVwdHQzblZmZDdMb212Vks5WWVEeWViTU1uTk5NTk01NlhINTlPNGg1MUN3Nk1MbE5MWXN0bDRiVWt3bjByV0tfU05xLTJVTUZocnJkMWExVmZzem5CUUloZWZxSHMwMVBDR3UwNnQ1Z9IBxwFBVV95cUxOQW1OOFFLaXJMRFRjTC1mbUZYbUlBWkNjU2dsWUtHMXNwUkVIQnpDSndlQjZudWJqTzdmeVRSUHRvWGZwQUdOSVNwWS1aS3d3TUFRNzUwVTdGMHNpeERVdjc2eWJVTHJybl9FdGhrOWVXTW81OG5hLWJaRlJ2ZloyTHc3Nmc4dThBeG9GeHRPM0NLb2ZfUjB2Y1I2Y0Q3c2RCV0hjSmIzVXJtRk9pN1NtZm8yUnd2aUlnMTIzWDV5OC1qS0JGOVBV?oc=5"
-            },
-            {
-              "claim": "The platform has accumulated more than two hundred million downloads over time.",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUJVd0gxRFA1UkNneEdQWENpamNvcC04WHhERVZhcU5VX0NPWnFlajNDOVFaNXFkSmt0eTVzcEloNnpNeldGZ2gxZVpCVkthb05mM1d0UkVXRnVwdHQzblZmZDdMb212Vks5WWVEeWViTU1uTk5NTk01NlhINTlPNGg1MUN3Nk1MbE5MWXN0bDRiVWt3bjByV0tfU05xLTJVTUZocnJkMWExVmZzem5CUUloZWZxSHMwMVBDR3UwNnQ1Z9IBxwFBVV95cUxOQW1OOFFLaXJMRFRjTC1mbUZYbUlBWkNjU2dsWUtHMXNwUkVIQnpDSndlQjZudWJqTzdmeVRSUHRvWGZwQUdOSVNwWS1aS3d3TUFRNzUwVTdGMHNpeERVdjc2eWJVTHJybl9FdGhrOWVXTW81OG5hLWJaRlJ2ZloyTHc3Nmc4dThBeG9GeHRPM0NLb2ZfUjB2Y1I2Y0Q3c2RCV0hjSmIzVXJtRk9pN1NtZm8yUnd2aUlnMTIzWDV5OC1qS0JGOVBV?oc=5"
-            },
-            {
-              "claim": "The new strategy focuses on developing artificial intelligence products for consumers.",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUJVd0gxRFA1UkNneEdQWENpamNvcC04WHhERVZhcU5VX0NPWnFlajNDOVFaNXFkSmt0eTVzcEloNnpNeldGZ2gxZVpCVkthb05mM1d0UkVXRnVwdHQzblZmZDdMb212Vks5WWVEeWViTU1uTk5NTk01NlhINTlPNGg1MUN3Nk1MbE5MWXN0bDRiVWt3bjByV0tfU05xLTJVTUZocnJkMWExVmZzem5CUUloZWZxSHMwMVBDR3UwNnQ1Z9IBxwFBVV95cUxOQW1OOFFLaXJMRFRjTC1mbUZYbUlBWkNjU2dsWUtHMXNwUkVIQnpDSndlQjZudWJqTzdmeVRSUHRvWGZwQUdOSVNwWS1aS3d3TUFRNzUwVTdGMHNpeERVdjc2eWJVTHJybl9FdGhrOWVXTW81OG5hLWJaRlJ2ZloyTHc3Nmc4dThBeG9GeHRPM0NLb2ZfUjB2Y1I2Y0Q3c2RCV0hjSmIzVXJtRk9pN1NtZm8yUnd2aUlnMTIzWDV5OC1qS0JGOVBV?oc=5"
-            },
-            {
-              "claim": "Leadership decided to wind down current gaming operations to fund this transition.",
-              "url": "https://www.exchange4media.com/media-others-news/zupee-exits-gaming-business-after-rmg-ban-pivots-to-ai-ventures-159220.html"
-            },
-            {
-              "claim": "It is a massive strategic pivot for one of India's biggest gaming startups.",
-              "url": "https://www.exchange4media.com/media-others-news/zupee-exits-gaming-business-after-rmg-ban-pivots-to-ai-ventures-159220.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.moneycontrol.com/artificial-intelligence/zupee-turns-to-ai-as-it-exits-the-gaming-business-article-14053833.html",
-            "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUJVd0gxRFA1UkNneEdQWENpamNvcC04WHhERVZhcU5VX0NPWnFlajNDOVFaNXFkSmt0eTVzcEloNnpNeldGZ2gxZVpCVkthb05mM1d0UkVXRnVwdHQzblZmZDdMb212Vks5WWVEeWViTU1uTk5NTk01NlhINTlPNGg1MUN3Nk1MWNls0lE"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-16T14:54:51.772628+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1740,6 +1471,178 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Conversational brain AI for adaptive epilepsy care",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9OQjBCOER6MTBFX3NvR0RpaGR4M1pkVnlINExSS254WjBESGp6alFxV3JNN3dnYzFYQmRyTElLVVlZYzhXWG12cEhoY3MzS3FhN2R3TXVEZGlTdkhkNGZn?oc=5",
+          "summary": "Conversational brain AI for adaptive epilepsy care Nature",
+          "source": "Nature",
+          "published": "2026-10-16T10:41:25+00:00",
+          "angle": "Mind-blowing medical AI breakthrough using conversational brain tech for adaptive epilepsy care."
+        },
+        "draft": {
+          "title": "Conversational AI for Epilepsy Care",
+          "hook_text": "AI chats with epilepsy patients",
+          "beats": [
+            {
+              "line": "Nature published a study on a new conversational AI built for epilepsy care.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Nature",
+              "domain": "nature.com",
+              "headline": "Conversational brain AI for adaptive epilepsy care",
+              "url": "",
+              "tag": "Nature epilepsy study",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Patients used a phone app to exchange over one thousand three hundred text messages with the system.",
+              "visual": "clip",
+              "query": "person texting on smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Phone app text messages",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The conversational platform helps fine tune wearable seizure detectors using patient feedback.",
+              "visual": "clip",
+              "query": "smartwatch health monitor screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Fine tune seizure detectors",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Clinicians can converse with the chat interface to review automated seizure assessments and add notations.",
+              "visual": "clip",
+              "query": "doctor typing on computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Review seizure assessments",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you use a chat app to track your health symptoms?",
+              "visual": "clip",
+              "query": "person looking at mobile screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Track health symptoms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "clinical and precise, explaining a breakthrough medical AI with objective clarity",
+          "thin": false,
+          "caption": "Nature published research on conversational AI designed to help monitor epilepsy. The system uses text messaging via an app to fine tune seizure detectors based on patient feedback. Would you use a chat app to track health symptoms?",
+          "hashtags": [
+            "Nature",
+            "Epilepsy",
+            "ArtificialIntelligence",
+            "Neuroscience",
+            "HealthTech"
+          ],
+          "sources": [
+            "https://www.nature.com"
+          ],
+          "script": "Nature published a study on a new conversational AI built for epilepsy care.\nPatients used a phone app to exchange over one thousand three hundred text messages with the system.\nThe conversational platform helps fine tune wearable seizure detectors using patient feedback.\nClinicians can converse with the chat interface to review automated seizure assessments and add notations.\nWould you use a chat app to track your health symptoms?",
+          "keywords": [
+            "person texting on smartphone",
+            "smartwatch health monitor screen",
+            "doctor typing on computer",
+            "person looking at mobile screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "AI chats with epilepsy patients",
+              "url": "https://www.nature.com/articles/s41591-026-04719-6"
+            },
+            {
+              "claim": "Nature published a study on a new conversational AI built for epilepsy care.",
+              "url": "https://www.nature.com/articles/s41591-026-04719-6"
+            },
+            {
+              "claim": "Patients used a phone app to exchange over one thousand three hundred text messages with the system.",
+              "url": "https://healthcare-in-europe.com/en/news/ai-platform-patient-communication-medical-devices.html"
+            },
+            {
+              "claim": "The conversational platform helps fine tune wearable seizure detectors using patient feedback.",
+              "url": "https://www.nature.com/articles/s41591-026-04719-6"
+            },
+            {
+              "claim": "Clinicians can converse with the chat interface to review automated seizure assessments and add notations.",
+              "url": "https://healthcare-in-europe.com/en/news/ai-platform-patient-communication-medical-devices.html"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.nature.com/articles/s41591-026-04719-6",
+            "https://www.nature.com"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T17:34:38.618890+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2253,8 +2156,8 @@
       "event": "Bluesky replaces complex development with a simple AI. It lets you build apps and games directly on the social network. This expansion uses the Attie AI tool, which previously only managed custom feeds. Bluesky CEO Toni Schneider says you c"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-16T12:40+05:30",
@@ -2302,7 +2205,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
@@ -2427,30 +2330,6 @@
   "gemini_missing": [],
   "gemini_exhausted": {},
   "editor_log": [
-    {
-      "at": "2026-10-16T00:16+05:30",
-      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 5,
-        "flow": 7
-      },
-      "one_line": "Weak hook and repetitive, low-quality visuals fail to meet premium news standards.",
-      "fixes": [
-        "LINE 1: Start with the specific threat: 'The FTC is investigating OpenAI and Anthropic for potential data breach reporting failures.'",
-        "LINE 3: Remove the political commentary; replace with: 'The probe follows recent FTC warnings that AI firms must meet the same data security standards as other tech giants.'",
-        "LINE 7: Replace with a specific call to action: 'Will these new FTC fines force a change in how AI labs secure your data?'"
-      ],
-      "visual": [
-        "line 1: The stock photo of a generic official is irrelevant and lacks context.",
-        "line 2: The stock photo of a child is unrelated to the technical subject of data breaches.",
-        "line 6: The abstract gradient background is filler and lacks visual information."
-      ]
-    },
     {
       "at": "2026-10-16T00:30+05:30",
       "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
@@ -2882,6 +2761,28 @@
         "line 2: Displays an abstract placeholder graphic (NF) instead of a real photo of Nathan Fielder.",
         "line 3: Shows The Verge app icon and generic text card for 3 consecutive frames, becoming redundan",
         "line 4: Uses generic stock footage of people in a movie theater instead of relevant film clips."
+      ]
+    },
+    {
+      "at": "2026-10-16T17:40+05:30",
+      "title": "Conversational brain AI for adaptive epilepsy care",
+      "overall": 6.5,
+      "scores": {
+        "hook": 7,
+        "specific": 6,
+        "substance": 7,
+        "accuracy": 8,
+        "visuals": 6,
+        "flow": 7
+      },
+      "one_line": "Too generic and lacks a compelling visual hook for a complex medical AI topic.",
+      "fixes": [
+        "LINE 1: Nature published a study on a new conversational AI called [Model Name] built for epilepsy care.",
+        "LINE 3: The conversational platform fine-tunes wearable seizure detectors using over 1300 patient feedback logs."
+      ],
+      "visual": [
+        "line 2: Same visual elements held too long with minimal variation across frames 3, 4, and 5.",
+        "line 4: Static text frame for too long without displaying the actual chat interface or clinician d"
       ]
     }
   ],
