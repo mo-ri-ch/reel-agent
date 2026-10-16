@@ -214,7 +214,51 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Bluesky replaces complex development with a simple…: The shot is an almost-empty card with only text.",
+      "This expansion uses the Attie AI tool, which previ…: The shot is an almost-empty card with only text.",
+      "Bluesky CEO Toni Schneider says you can create sma…: The shot is an almost-empty card with only text.",
+      "The goal is turning a social feed into a functiona…: The shot is an almost-empty card with only text.",
+      "It's a massive shift from simple text posts to int…: The shot is an almost-empty card with only text.",
+      "Could you build a viral game today?…: The shot is an almost-empty card with only text.",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card"
+    ],
+    "editor": {
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 4,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Major factual error regarding the year; visuals are repetitive and lack variety.",
+      "script_fixes": [
+        "LINE 5: Change '2026' to '2024' to match the actual event date.",
+        "LINE 6: Replace 'The goal is turning a social feed into a functional software playground' with a specific detail about the tool's capabilities."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The same screenshot is held for too long across multiple frames.",
+        "line 2: The Attie AI logo/text frame is repeated for too many seconds.",
+        "line 5: The text '2026' is factually incorrect and misleading.",
+        "line 6: Visuals are static text overlays without supporting imagery of the software."
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
@@ -264,9 +308,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-16T11:36:08.183240+05:30",
+  "script_deadline": "2026-10-16T11:58:21.124492+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -673,14 +717,6 @@
   "paused": null,
   "spare": [
     {
-      "title": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
-      "link": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
-      "summary": "A new beginning for Windows PCs starts tomorrow with the launch of NVIDIA RTX Spark — one PC built for creators, gamers and AI agents. All are invited to celebrate with NVIDIA and partners at launch events around the world. Share Your Spark Every PC has a story. What was your first Windows PC, and […]",
-      "source": "NVIDIA Blog",
-      "published": "2026-10-15T17:00:23+00:00",
-      "angle": "NVIDIA is launching 'RTX Spark'—a new PC category specifically designed to run AI agents locally."
-    },
-    {
       "title": "Trump posts AI-edited photo to brag about White House restoration work",
       "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
       "summary": "President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an old White House column to a \"restored\" one, has several discrepancies and was flagged by Google's AI detector as \"made or […]",
@@ -690,7 +726,6 @@
     }
   ],
   "tried": [
-    "The EU’s next chapter in AI is agentic",
     "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
     "Agent erased full season of \"The Challenge Swe\": \"Hundreds of days of work gone\"",
     "Google’s biggest AI problem is the power grid",
@@ -749,233 +784,11 @@
     "Securing AI systems from cyber threats is a top priority, according to PwC’s Global Digital Trust Insights Survey",
     "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
     "Krea 3 – An image model built for editing at scale",
-    "Anthropic's Mythos found so many software flaws, Bank of America hired 1,000 contractors to fix them"
+    "Anthropic's Mythos found so many software flaws, Bank of America hired 1,000 contractors to fix them",
+    "Bluesky’s AI tool now lets you make games and apps to share on social"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "link": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-          "summary": "",
-          "source": "Hugging Face - Blog",
-          "published": "2026-10-16T01:44:47+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Nvidia Scales Indic Language Models",
-          "hook_text": "Nvidia just leveled up Indic AI",
-          "beats": [
-            {
-              "line": "Two point eight trillion tokens trained by Nvidia. They used a massive new pipeline for Indic language models.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-              "tag": "Nvidia Indic pipeline",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "They successfully pretrained models using two point eight trillion tokens.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2.8T",
-              "small": "tokens pretrained",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2.8 trillion tokens",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This project creates a blueprint for scaling AI across diverse languages.",
-              "visual": "clip",
-              "query": "digital data visualization",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Scaling diverse languages",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The team published an open data generation pipeline on Hugging Face.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Hugging Face",
-              "domain": "huggingface.co",
-              "headline": "Scaling Indic Pretraining: 2.8 Trillion Tokens",
-              "url": "",
-              "tag": "Hugging Face release",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Hugging Face",
-                  "domain": "huggingface.co"
-                }
-              ]
-            },
-            {
-              "line": "It targets complex linguistic regions often ignored by standard training sets.",
-              "visual": "clip",
-              "query": "global map data",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Targeting ignored languages",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You can now access these open resources to build localized applications.",
-              "visual": "clip",
-              "query": "software developer typing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Open resources available",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Could this finally bridge the global language gap in machine learning?",
-              "visual": "clip",
-              "query": "abstract futuristic connection lines",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Bridging language gaps",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast-paced and informative, highlighting the technical scale before ending on a thought-provoking note.",
-          "thin": false,
-          "caption": "Nvidia has launched an open data generation pipeline for Indic languages, training models on 2.8 trillion tokens. This release on Hugging Face provides a blueprint for improving AI performance in diverse, underrepresented languages. Which language should be the next priority for global AI development?",
-          "hashtags": [
-            "Nvidia",
-            "IndicAI",
-            "HuggingFace",
-            "MachineLearning",
-            "LanguageModels"
-          ],
-          "sources": [
-            "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-          ],
-          "script": "Two point eight trillion tokens trained by Nvidia. They used a massive new pipeline for Indic language models.\nThey successfully pretrained models using two point eight trillion tokens.\nThis project creates a blueprint for scaling AI across diverse languages.\nThe team published an open data generation pipeline on Hugging Face.\nIt targets complex linguistic regions often ignored by standard training sets.\nYou can now access these open resources to build localized applications.\nCould this finally bridge the global language gap in machine learning?",
-          "keywords": [
-            "digital data visualization",
-            "global map data",
-            "software developer typing code",
-            "abstract futuristic connection lines"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "Nvidia just released a massive new pipeline for training Indic language models.",
-          "hook_score": 51,
-          "evidence": [
-            {
-              "claim": "Nvidia just leveled up Indic AI",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "Two point eight trillion tokens trained by Nvidia.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "They used a massive new pipeline for Indic language models.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "They successfully pretrained models using two point eight trillion tokens.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "The team published an open data generation pipeline on Hugging Face.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "You can now access these open resources to build localized applications.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-16T08:56:55.402625+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1727,6 +1540,236 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
+          "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+          "summary": "Bluesky's Attie AI tool, which initially launched earlier this year as a way to use AI to build your own feeds, now lets you make \"small\" social apps like games, polls, and dashboards that you can then share with others as their own websites. In an interview at TechCrunch Disrupt, Bluesky CEO Toni Schneider said […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-15T19:57:16+00:00",
+          "angle": "Bluesky just launched an AI tool that lets anyone build games and apps directly inside social feeds."
+        },
+        "draft": {
+          "title": "Bluesky Now Lets You Build AI Apps",
+          "hook_text": "Build games directly on Bluesky",
+          "beats": [
+            {
+              "line": "Bluesky replaces complex development with a simple AI. It lets you build apps and games directly on the social network.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Bluesky",
+              "outlet": "",
+              "domain": "bsky.app",
+              "headline": "",
+              "url": "https://bsky.app",
+              "tag": "Bluesky AI tools",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This expansion uses the Attie AI tool, which previously only managed custom feeds.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Attie AI",
+              "outlet": "",
+              "domain": "bsky.app",
+              "headline": "",
+              "url": "https://bsky.app",
+              "tag": "Attie AI tool",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Bluesky CEO Toni Schneider says you can create small web-based tools like polls and dashboards.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://bsky.app",
+              "tag": "CEO Toni Schneider",
+              "name": "Toni Schneider",
+              "role": "CEO, Bluesky",
+              "x": "toni",
+              "brands": []
+            },
+            {
+              "line": "You share these creations as standalone websites for other users to interact with.",
+              "visual": "clip",
+              "query": "person coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Standalone websites",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Schneider revealed these features live at the TechCrunch Disrupt event this week.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "TechCrunch Disrupt",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "TechCrunch Disrupt 2026",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The goal is turning a social feed into a functional software playground.",
+              "visual": "clip",
+              "query": "digital interface dashboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Functional social feed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It's a massive shift from simple text posts to interactive user-made software.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Bluesky AI tool now lets you make games and apps",
+              "url": "",
+              "tag": "Interactive software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Could you build a viral game today?",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Build a game",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Excited and fast-paced tech update, slowing down slightly at the end to prompt user engagement.",
+          "thin": false,
+          "caption": "Bluesky CEO Toni Schneider just announced the Attie AI tool now allows users to build and share interactive games and apps. This moves the platform from simple social feeds to a functional playground for custom web-based software. Would you try building a game on your social feed?",
+          "hashtags": [
+            "Bluesky",
+            "AttieAI",
+            "SocialMedia",
+            "GameDev",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+          ],
+          "script": "Bluesky replaces complex development with a simple AI. It lets you build apps and games directly on the social network.\nThis expansion uses the Attie AI tool, which previously only managed custom feeds.\nBluesky CEO Toni Schneider says you can create small web-based tools like polls and dashboards.\nYou share these creations as standalone websites for other users to interact with.\nSchneider revealed these features live at the TechCrunch Disrupt event this week.\nThe goal is turning a social feed into a functional software playground.\nIt's a massive shift from simple text posts to interactive user-made software.\nCould you build a viral game today?",
+          "keywords": [
+            "person coding on laptop",
+            "digital interface dashboard",
+            "person looking at phone screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Bluesky now lets you build apps and games directly on the social network.",
+          "hook_score": 44,
+          "evidence": [
+            {
+              "claim": "Build games directly on Bluesky",
+              "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+            },
+            {
+              "claim": "Bluesky lets you build apps and games directly on the social network.",
+              "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
+            },
+            {
+              "claim": "The Attie AI tool previously only managed custom feeds.",
+              "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
+            },
+            {
+              "claim": "Bluesky CEO Toni Schneider says you can create small web-based tools like polls and dashboards.",
+              "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+            },
+            {
+              "claim": "You share these creations as standalone websites for other users to interact with.",
+              "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+            },
+            {
+              "claim": "Schneider revealed these features live at the TechCrunch Disrupt event this week.",
+              "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T11:36:08.183240+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2243,8 +2286,8 @@
       "event": "Two point eight trillion tokens trained by Nvidia. They used a massive new pipeline for Indic language models. They successfully pretrained models using two point eight trillion tokens. This project creates a blueprint for scaling AI across"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-16T09:41+05:30",
@@ -2292,38 +2335,23 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
-    "calls": 174,
+    "calls": 192,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 97,
-        "busy": 34,
-        "other": 43,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "ok": 103,
+        "busy": 36,
+        "other": 53,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "11:45",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-14"
-    },
-    {
-      "at": "11:46",
-      "error": "every free Gemini model is used up for today",
-      "day": "2026-10-14"
-    },
-    {
-      "at": "13:48",
-      "error": "gemini-flash-lite-latest: free quota used up for now",
-      "day": "2026-10-15"
-    },
     {
       "at": "16:59",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2358,19 +2386,34 @@
       "at": "04:46",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-16"
+    },
+    {
+      "at": "06:13",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-16"
+    },
+    {
+      "at": "06:23",
+      "error": "gemini-3.1-flash-lite didn't answer (ReadTimeout)",
+      "day": "2026-10-16"
+    },
+    {
+      "at": "06:23",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-16"
     }
   ],
   "last_script_error": {
     "at": "2026-10-14T12:54+05:30",
     "error": "The script came back empty, please try again."
   },
-  "render_fails": 0,
-  "render_fail_topic": "Friends don’t let friends feed their data to AI agents",
+  "render_fails": 1,
+  "render_fail_topic": "Bluesky’s AI tool now lets you make games and apps to share on social",
   "last_render_error": {
-    "at": "2026-10-16T07:51:59.460967+05:30",
-    "topic": "Friends don’t let friends feed their data to AI agents",
-    "error": "RuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1717, in cmd_render\n    out, action = editor_step(s, out, rerender)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1801, in editor_step\n    raise RuntimeError(\"the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\")\nRuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\n"
+    "at": "2026-10-16T11:53:21.123006+05:30",
+    "topic": "Bluesky’s AI tool now lets you make games and apps to share on social",
+    "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
+    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1719, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1855, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 539, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 578, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 372, in checked_script\n    draft = writer.write_script(topic, previous=previous, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 494, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 208, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
   },
   "report_week": "2026-41",
   "last_post_error": {
@@ -2388,29 +2431,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T18:15+05:30",
-      "title": "Lyceum Project Leaders Talk Corporate Funding and AI in Education",
-      "overall": 6.3,
-      "scores": {
-        "hook": 8,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Too generic and lacks concrete details about the Lyceum Project.",
-      "fixes": [
-        "LINE 1: Name specific student leaders or faculty members involved in the Lyceum Project.",
-        "LINE 2: Replace vague phrasing with specific dollar amounts or corporate sponsors mentioned."
-      ],
-      "visual": [
-        "line 2: Static text frame held for too long without visual variety.",
-        "line 3: Generic stock image of a classroom does not illustrate the specific Lyceum Project discuss",
-        "line 4: Unrelated static text graphic instead of showing panel or document footage."
-      ]
-    },
     {
       "at": "2026-10-15T18:25+05:30",
       "title": "Lyceum Project Leaders Talk Corporate Funding and AI in Education",
@@ -2845,6 +2865,29 @@
         "line 1: The image of two women in kimonos is completely irrelevant to a video game news story.",
         "line 2: The image of a 1990s Sega Mega Drive console is misleading and irrelevant to a 2011 PC gam",
         "line 4: The text on screen says 2007, but the script says 2011; this is a major visual error."
+      ]
+    },
+    {
+      "at": "2026-10-16T11:49+05:30",
+      "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 4,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Major factual error regarding the year; visuals are repetitive and lack variety.",
+      "fixes": [
+        "LINE 5: Change '2026' to '2024' to match the actual event date.",
+        "LINE 6: Replace 'The goal is turning a social feed into a functional software playground' with a specific detail about the tool's capabilities."
+      ],
+      "visual": [
+        "line 1: The same screenshot is held for too long across multiple frames.",
+        "line 2: The Attie AI logo/text frame is repeated for too many seconds.",
+        "line 5: The text '2026' is factually incorrect and misleading."
       ]
     }
   ],
