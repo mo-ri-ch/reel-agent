@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -196,11 +196,53 @@
     "fact_notes": [],
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "OpenAI updated its official Google Chrome extensio…: The image is an almost-empty card with only the word 'New' visible, failing to show the required source card for The Ver",
+      "You activate the feature by tagging Chrome inside …: The image is an almost-empty card with text, failing to show the required stock video of a person using a computer.",
+      "This update follows the discontinuation of the int…: The image is an almost-empty card with text, failing to show the required big number Atlas.",
+      "ChatGPT now scans active web pages to assist with …: The image is an almost-empty card with text, failing to show the required stock video of browser tabs.",
+      "Would you let an AI browse your private tabs?…: The image is an almost-empty card with text, failing to show the required stock video of a person looking at a computer ",
+      "The visual is a blank card with only the word 'New' visible, failing to show the required source card for The Verge.",
+      "The visual is a blank card, failing to show the required stock video of a person using a desktop computer.",
+      "The visual is a blank card, failing to show the required big number Atlas.",
+      "The visual shows 'Content analysis' text instead of the required stock video of browser tabs.",
+      "The visual shows 'Your privacy choice' text instead of the required stock video of a person looking at a computer screen"
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise reporting, but the visuals are repetitive and lack dynamic variety.",
+      "script_fixes": [
+        "LINE 6: Change to 'Are you comfortable with ChatGPT accessing your private browser data?'"
+      ],
+      "visual_beats": [
+        1,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 5: The 'Content analysis' graphic is held for 7 seconds, violating the 8-second rule when com",
+        "line 2: The 'The Verge' logo is static and lacks visual relevance to the Chrome extension update.",
+        "line 4: The OpenAI logo is used again, creating visual fatigue."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 AI images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIYOGrRbNXwjRspfznm7UKS30mkBPIVAAIUIAACOveQVloCuU_HibDJPQQ",
   "queue": [
     {
       "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
@@ -246,9 +288,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-16T05:36:04.985335+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-16T06:16:21.779756+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -724,282 +766,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
-          "link": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-          "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for local agentic workloads, and Nemotron 3.5 Bolt E4B 4GB, optimized […]",
-          "source": "NVIDIA Blog",
-          "published": "2026-10-15T15:00:24+00:00",
-          "angle": "Nvidia just dropped a massive 120B parameter model designed to run always-on AI agents on your own hardware."
-        },
-        "draft": {
-          "title": "Nvidia Nemotron 3.5 Efficiency Record",
-          "hook_text": "Nvidia just set a new efficiency record.",
-          "beats": [
-            {
-              "line": "Nvidia just set a new efficiency record for AI agents with Nemotron 3.5.",
-              "visual": "clip",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-              "tag": "Nemotron 3.5 Record",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "The 120-billion-parameter model handles specialized always-on agents faster than anything before.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "120B",
-              "small": "parameters",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "They also debuted the Bolt 74B-A9B model for local workloads.",
-              "visual": "clip",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-              "tag": "Bolt 74B Model",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "It delivers 24 gigabytes of optimized power for your desktop.",
-              "visual": "clip",
-              "query": "person coding on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "24GB Local Power",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "For smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "4GB",
-              "small": "minimal footprint",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These models shift processing from massive data centers to local hardware.",
-              "visual": "clip",
-              "query": "server room racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Edge AI Shift",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you prefer your AI running locally or in the cloud?",
-              "visual": "clip",
-              "query": "person thinking at desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Local vs Cloud",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast-paced and informative, highlighting the shift from massive models to efficient local performance.",
-          "thin": false,
-          "caption": "Nvidia has launched its Nemotron 3.5 Super VL model, featuring 120 billion parameters for high-speed agentic tasks. The company also introduced new Bolt models, including a 4GB version, to bring powerful AI capabilities directly to local hardware. Would you prefer your AI running locally or in the cloud?",
-          "hashtags": [
-            "Nvidia",
-            "Nemotron",
-            "AI",
-            "EdgeComputing",
-            "TechNews"
-          ],
-          "sources": [
-            "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-          ],
-          "script": "Nvidia just set a new efficiency record for AI agents with Nemotron 3.5.\nThe 120-billion-parameter model handles specialized always-on agents faster than anything before.\nThey also debuted the Bolt 74B-A9B model for local workloads.\nIt delivers 24 gigabytes of optimized power for your desktop.\nFor smaller setups, the new Bolt E4B model runs on just 4 gigabytes.\nThese models shift processing from massive data centers to local hardware.\nWould you prefer your AI running locally or in the cloud?",
-          "keywords": [
-            "technology",
-            "technology",
-            "person coding on laptop",
-            "server room racks",
-            "person thinking at desk"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Nvidia just set a new efficiency record.",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-            },
-            {
-              "claim": "Nvidia just set a new efficiency record for AI agents with Nemotron 3.5.",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-            },
-            {
-              "claim": "The 120-billion-parameter model handles specialized always-on agents faster than anything before.",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-            },
-            {
-              "claim": "They also debuted the Bolt 74B-A9B model for local workloads.",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-            },
-            {
-              "claim": "It delivers 24 gigabytes of optimized power for your desktop.",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-            },
-            {
-              "claim": "For smaller setups, the new Bolt E4B model runs on just 4 gigabytes.",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-            },
-            {
-              "claim": "These models shift processing from massive data centers to local hardware.",
-              "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "They also debuted the Bolt 74B-A9B model for local…: The visual shows a person wearing a VR headset, which is unrelated to the line about a software model for local workload",
-            "These models shift processing from massive data ce…: The visual is extremely dark and blurry, making it unreadable.",
-            "The visual is an almost-empty card with just a logo and text.",
-            "The visual is an almost-empty card with just a number and text.",
-            "The visual is an almost-empty card with just text.",
-            "The visual is an almost-empty card with just text.",
-            "The visual is an almost-empty card with just a number and text.",
-            "The visual is an almost-empty card with just text.",
-            "The visual is an almost-empty card with just text."
-          ],
-          "editor": {
-            "overall": 8.2,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 9,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong technical content, but visual variety is lacking and frames are held too long.",
-            "script_fixes": [
-              "LINE 2: Change 'anything before' to 'previous generations' for more professional tone.",
-              "LINE 6: Replace 'These models shift' with 'This architecture shifts' to be more precise."
-            ],
-            "visual_beats": [
-              0,
-              1,
-              5
-            ],
-            "visual_notes": [
-              "line 1: The same globe graphic is held for 7 seconds across 3 frames.",
-              "line 2: The Nvidia logo graphic is held for 7 seconds across 3 frames.",
-              "line 6: The 'Edge AI Shift' graphic is held for 7 seconds across 3 frames."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "7 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIYHmrROroo-qhO8n6t-PZUysa1P7qkAAIEIAACOveQVtMP95v1tbtcPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIYHmrROroo-qhO8n6t-PZUysa1P7qkAAIEIAACOveQVtMP95v1tbtcPQQ",
-      "history_title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1560,6 +1326,218 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "ChatGPT can peek at your Chrome tabs now",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+          "summary": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop app, posting a demo video […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-15T22:43:23+00:00",
+          "angle": "ChatGPT can now read your open Chrome tabs, making it a much more powerful personal assistant."
+        },
+        "draft": {
+          "title": "ChatGPT Can Now Peek at Your Chrome Tabs",
+          "hook_text": "ChatGPT can now read your Chrome tabs",
+          "beats": [
+            {
+              "line": "ChatGPT can now access your open Google Chrome tabs.",
+              "visual": "clip",
+              "query": "chatgpt logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "ChatGPT reads tabs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "OpenAI updated its official Google Chrome extension to enable this integration.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "ChatGPT can peek at your Chrome tabs now",
+              "url": "",
+              "tag": "New Chrome extension",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "You activate the feature by tagging Chrome inside the ChatGPT desktop app.",
+              "visual": "clip",
+              "query": "person using desktop computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Tag Chrome to start",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "This update follows the discontinuation of the internal OpenAI Atlas browser project.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Atlas",
+              "small": "project cancelled",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Atlas project gone",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "ChatGPT now scans active web pages to assist with your specific tasks.",
+              "visual": "clip",
+              "query": "browser tabs on screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Content analysis",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let an AI browse your private tabs?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Your privacy choice",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Direct and fast-paced, focusing on the functional shift from a dedicated browser to a browser extension.",
+          "thin": false,
+          "caption": "OpenAI has updated its ChatGPT Chrome extension, allowing the AI to read your open browser tabs. You can now trigger this by tagging Chrome directly in the ChatGPT desktop app. Would you let an AI browse your private tabs?",
+          "hashtags": [
+            "ChatGPT",
+            "OpenAI",
+            "Chrome",
+            "AI",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+          ],
+          "script": "ChatGPT can now access your open Google Chrome tabs.\nOpenAI updated its official Google Chrome extension to enable this integration.\nYou activate the feature by tagging Chrome inside the ChatGPT desktop app.\nThis update follows the discontinuation of the internal OpenAI Atlas browser project.\nChatGPT now scans active web pages to assist with your specific tasks.\nWould you let an AI browse your private tabs?",
+          "keywords": [
+            "chatgpt logo",
+            "person using desktop computer",
+            "browser tabs on screen",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "ChatGPT can now read your Chrome tabs",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+            },
+            {
+              "claim": "ChatGPT can now access your open Google Chrome tabs.",
+              "url": "https://www.unite.ai/openai-brings-computer-use-to-chrome-with-chatgpt-tab-controls/"
+            },
+            {
+              "claim": "OpenAI updated its official Google Chrome extension to enable this integration.",
+              "url": "https://www.unite.ai/openai-brings-computer-use-to-chrome-with-chatgpt-tab-controls/"
+            },
+            {
+              "claim": "You activate the feature by tagging Chrome inside the ChatGPT desktop app.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+            },
+            {
+              "claim": "This update follows the discontinuation of the internal OpenAI Atlas browser project.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+            },
+            {
+              "claim": "ChatGPT now scans active web pages to assist with your specific tasks.",
+              "url": "https://www.unite.ai/openai-brings-computer-use-to-chrome-with-chatgpt-tab-controls/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T05:36:04.985335+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2074,8 +2052,8 @@
       "event": "Amazon SVP Panos Panay says your apps might eventually disappear. He envisions ambient AI devices that anticipate your needs automatically. The goal is software that runs entirely in the background. Panay detailed this vision yesterday at t"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-16T04:30+05:30",
@@ -2103,7 +2081,7 @@
   "report_day": "2026-10-15",
   "ig_count": {
     "day": "2026-10-16",
-    "at": "2026-10-16T05:30:38.701596+05:30",
+    "at": "2026-10-16T05:46:21.780039+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2123,16 +2101,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
-    "calls": 72,
+    "calls": 78,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 43,
+        "ok": 49,
         "busy": 13,
         "other": 16,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2219,26 +2197,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T16:02+05:30",
-      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
-      "overall": 8.0,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong technical facts and specific model naming, but visuals repeat the same logo too often.",
-      "fixes": [],
-      "visual": [
-        "line 2: Repeats the same Liquid AI logo card used in line 1.",
-        "line 3: Reuses the Liquid AI logo card again instead of showing a parameter-scaling graphic.",
-        "line 4: Continues showing the same logo card for the fourth time."
-      ]
-    },
     {
       "at": "2026-10-15T17:22+05:30",
       "title": "Figma announces new features to define how agents work on its platform",
@@ -2671,6 +2629,28 @@
         "line 1: The same photo of Panos Panay is held for too long across three frames.",
         "line 5: The stock footage of a person holding a phone is generic and lacks a direct connection to ",
         "line 6: The visual is just text; it needs a relevant graphic or B-roll to maintain engagement."
+      ]
+    },
+    {
+      "at": "2026-10-16T05:46+05:30",
+      "title": "ChatGPT can peek at your Chrome tabs now",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise reporting, but the visuals are repetitive and lack dynamic variety.",
+      "fixes": [
+        "LINE 6: Change to 'Are you comfortable with ChatGPT accessing your private browser data?'"
+      ],
+      "visual": [
+        "line 5: The 'Content analysis' graphic is held for 7 seconds, violating the 8-second rule when com",
+        "line 2: The 'The Verge' logo is static and lacks visual relevance to the Chrome extension update.",
+        "line 4: The OpenAI logo is used again, creating visual fatigue."
       ]
     }
   ],
