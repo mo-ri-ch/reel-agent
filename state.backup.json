@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -185,11 +185,49 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Masad argues that software development is shifting…: The visual is almost blank showing only the word 'Software', failing to show real images of Replit as intended.",
+      "People will provide essential human judgment and c…: The visual is an almost-empty dark card, failing to show the source card for TechCrunch.",
+      "Would you let an autonomous agent run your busines…: The visual is an almost-empty dark card, failing to show the source card for TechCrunch.",
+      "The image is blank and shows no developer coding on dual monitors.",
+      "The image is blank and shows no real images of Replit.",
+      "The image is blank and shows no source card for TechCrunch.",
+      "The image is blank and shows no source card for TechCrunch."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong narrative and specifics, but repeated use of the TechCrunch logo hurts visual variety.",
+      "script_fixes": [],
+      "visual_beats": [
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 5: Reuses the TechCrunch logo card inappropriately instead of showing a human/creative motif.",
+        "line 6: Reuses the TechCrunch logo card again for the ending question instead of a dynamic busines"
+      ],
+      "reviewer": "gemini"
+    },
+    "editor_rounds": 1,
+    "credits": [
+      "Amjad Masad: x.com/amasad"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIZOWrSKjdo_K36QEPeP1CmoqfQfId-AAIQIgACtYmQVq2RBCMrBGprPQQ",
   "queue": [
     {
       "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
@@ -236,9 +274,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-16T19:04:46.772162+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-16T19:44:24.013757+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-16",
@@ -720,203 +758,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "The tech backlash is now in theaters",
-          "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-          "summary": "Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron Sorkin's The Social Reckoning frames Mark Zuckerberg as a robotic villain whose ambitions are destabilizing society. Nathan Fielder and Lance Oppenheim's You Can […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-15T21:39:52+00:00",
-          "angle": "The tech backlash hits the big screen as movies take a critical look at Silicon Valley"
-        },
-        "draft": {
-          "title": "The Tech Backlash Is In Theaters",
-          "hook_text": "Aaron Sorkin just targeted Mark Zuckerberg.",
-          "beats": [
-            {
-              "line": "Aaron Sorkin directs The Social Reckoning to frame Mark Zuckerberg as a robotic villain.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Aaron Sorkin targets Zuckerberg",
-              "name": "Aaron Sorkin",
-              "role": "Director",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            },
-            {
-              "line": "Nathan Fielder and Lance Oppenheim released You Can See Everything to critique Silicon Valley.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Nathan Fielder critiques Silicon Valley",
-              "name": "Nathan Fielder",
-              "role": "Filmmaker",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These 2026 features take a much more critical look at how disruptive tech founders reshape reality.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "The tech backlash is now in theaters",
-              "url": "",
-              "tag": "Critical look at tech founders",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Hollywood films once romanticized startup culture before shifting toward this severe cultural pushback.",
-              "visual": "clip",
-              "query": "people watching movie in theater",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Hollywood shifts tone on tech",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Audiences now see stories where tech ambitions are blamed for destabilizing modern society.",
-              "visual": "clip",
-              "query": "person looking at smartphone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Tech ambitions destabilizing society",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you watch a movie about tech founders breaking society?",
-              "visual": "clip",
-              "query": "person looking at phone screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Movies about tech founders",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp, cynical, and fast-paced tech journalist exposing Hollywood's pivot against big tech",
-          "thin": false,
-          "caption": "Aaron Sorkin and other filmmakers are targeting tech founders in new 2026 movies. Would you watch a film about tech billionaires?",
-          "hashtags": [
-            "AaronSorkin",
-            "MarkZuckerberg",
-            "SiliconValley",
-            "Movies",
-            "TechBacklash"
-          ],
-          "sources": [
-            "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-          ],
-          "script": "Aaron Sorkin directs The Social Reckoning to frame Mark Zuckerberg as a robotic villain.\nNathan Fielder and Lance Oppenheim released You Can See Everything to critique Silicon Valley.\nThese 2026 features take a much more critical look at how disruptive tech founders reshape reality.\nHollywood films once romanticized startup culture before shifting toward this severe cultural pushback.\nAudiences now see stories where tech ambitions are blamed for destabilizing modern society.\nWould you watch a movie about tech founders breaking society?",
-          "keywords": [
-            "people watching movie in theater",
-            "person looking at smartphone screen",
-            "person looking at phone screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Aaron Sorkin targeted Mark Zuckerberg.",
-              "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-            },
-            {
-              "claim": "Aaron Sorkin directs The Social Reckoning to frame Mark Zuckerberg as a robotic villain.",
-              "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-            },
-            {
-              "claim": "Nathan Fielder and Lance Oppenheim released You Can See Everything to critique Silicon Valley.",
-              "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-            },
-            {
-              "claim": "These 2026 features take a much more critical look at how disruptive tech founders reshape reality.",
-              "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-            },
-            {
-              "claim": "Hollywood films once romanticized startup culture before shifting toward this severe cultural pushback.",
-              "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-            },
-            {
-              "claim": "Audiences now see stories where tech ambitions are blamed for destabilizing modern society.",
-              "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-16T16:56:41.186662+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1515,6 +1356,207 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+          "link": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+          "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-16T12:55:09+00:00",
+          "angle": "Replit CEO predicts 'self-driving companies' where AI handles all day-to-day operations"
+        },
+        "draft": {
+          "title": "Replit CEO's Self-Driving Company Vision",
+          "hook_text": "Your next company might be self-driving.",
+          "beats": [
+            {
+              "line": "Replit CEO Amjad Masad predicts the rise of the self-driving company.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://replit.com",
+              "tag": "Replit CEO Amjad Masad",
+              "name": "Amjad Masad",
+              "role": "CEO, Replit",
+              "x": "amasad",
+              "brands": [
+                {
+                  "name": "Replit",
+                  "domain": "replit.com"
+                }
+              ]
+            },
+            {
+              "line": "Autonomous AI agents will handle day-to-day operations across entire organizations.",
+              "visual": "clip",
+              "query": "person working on laptop in modern office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Autonomous AI agents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Human workers will step away from routine coding to focus entirely on high-level decisions.",
+              "visual": "clip",
+              "query": "developer coding on dual monitors",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Human workers step away",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Masad argues that software development is shifting from writing syntax to directing autonomous systems.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Replit",
+              "outlet": "",
+              "domain": "replit.com",
+              "headline": "",
+              "url": "https://replit.com",
+              "tag": "Software development shifting",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Replit",
+                  "domain": "replit.com"
+                }
+              ]
+            },
+            {
+              "line": "People will provide essential human judgment and creative taste while AI does the grunt work.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Replit’s CEO says the future of work is the ‘self-driving company’",
+              "url": "",
+              "tag": "Essential human judgment",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let an autonomous agent run your business?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Replit’s CEO says the future of work is the ‘self-driving company’",
+              "url": "",
+              "tag": "Run your business",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "pragmatic and direct, exploring the shift toward autonomous business operations",
+          "thin": false,
+          "caption": "Replit CEO Amjad Masad predicts self-driving companies where AI agents handle daily tasks and humans focus on high-level decisions. Would you let an autonomous agent run your business?",
+          "hashtags": [
+            "Replit",
+            "AmjadMasad",
+            "AIAgents",
+            "FutureOfWork",
+            "TechNews"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+          ],
+          "script": "Replit CEO Amjad Masad predicts the rise of the self-driving company.\nAutonomous AI agents will handle day-to-day operations across entire organizations.\nHuman workers will step away from routine coding to focus entirely on high-level decisions.\nMasad argues that software development is shifting from writing syntax to directing autonomous systems.\nPeople will provide essential human judgment and creative taste while AI does the grunt work.\nWould you let an autonomous agent run your business?",
+          "keywords": [
+            "person working on laptop in modern office",
+            "developer coding on dual monitors"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Amjad Masad is the CEO of Replit.",
+              "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+            },
+            {
+              "claim": "Amjad Masad predicts the rise of the self-driving company.",
+              "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+            },
+            {
+              "claim": "Autonomous AI agents will handle day-to-day operations across entire organizations.",
+              "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+            },
+            {
+              "claim": "Human workers will step away from routine coding to focus entirely on high-level decisions.",
+              "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+            },
+            {
+              "claim": "Masad argues that software development is shifting from writing syntax to directing autonomous systems.",
+              "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+            },
+            {
+              "claim": "People will provide essential human judgment and creative taste while AI does the grunt work.",
+              "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T19:04:46.772162+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2029,8 +2071,8 @@
       "event": "Nature published a study on a new conversational AI built for epilepsy care. Patients used a phone app to exchange over one thousand three hundred text messages with the system. The conversational platform fine-tunes wearable seizure detect"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-16T18:20+05:30",
@@ -2058,7 +2100,7 @@
   "report_day": "2026-10-15",
   "ig_count": {
     "day": "2026-10-16",
-    "at": "2026-10-16T19:03:49.704739+05:30",
+    "at": "2026-10-16T19:14:24.014025+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2078,25 +2120,25 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
-    "calls": 347,
+    "calls": 368,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
         "ok": 110,
         "busy": 36,
-        "other": 58,
+        "other": 60,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.5-flash-lite": {
-        "ok": 57,
+        "ok": 68,
         "busy": 25,
-        "other": 12,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 18,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.6-flash": {
         "ok": 2,
@@ -2125,17 +2167,12 @@
       "gemini-flash-lite-latest": {
         "ok": 1,
         "busy": 0,
-        "other": 0,
-        "last": ""
+        "other": 2,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "17:34",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-15"
-    },
     {
       "at": "18:43",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2180,6 +2217,11 @@
       "at": "06:32",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-16"
+    },
+    {
+      "at": "13:40",
+      "error": "gemini-flash-lite-latest is overloaded right now",
+      "day": "2026-10-16"
     }
   ],
   "last_script_error": {
@@ -2208,50 +2250,6 @@
     "gemini-3-flash-preview": 1792153177.374798
   },
   "editor_log": [
-    {
-      "at": "2026-10-16T01:17+05:30",
-      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 9
-      },
-      "one_line": "Strong script, but the visuals are repetitive and lack dynamic variety.",
-      "fixes": [
-        "LINE 6: Remove 'This makes high-end local AI computing possible' as it is filler; replace with 'This eliminates the need for expensive cloud GPU clusters.'"
-      ],
-      "visual": [
-        "line 1: The same image of the Mac Studio is held for 7 seconds across three frames.",
-        "line 2: The 'Runs on desktop' text animation is static and repeated across two frames.",
-        "line 5: The Meta logo is held for 5 seconds; needs a visual of the model's performance chart or be"
-      ]
-    },
-    {
-      "at": "2026-10-16T01:23+05:30",
-      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 4,
-        "visuals": 7,
-        "flow": 8
-      },
-      "one_line": "Major factual error regarding hardware availability makes this reel unusable for news.",
-      "fixes": [
-        "LINE 3: Correct the hardware claim; the M5 Ultra does not exist yet, making the entire premise factually impossible.",
-        "LINE 1: Specify 'Meta's new open-weight model' instead of just 'Meta' to be more precise."
-      ],
-      "visual": [
-        "line 1: The same static image of a Mac Studio is held for too long (over 7 seconds).",
-        "line 3: The visual shows a generic Apple logo instead of the specific hardware mentioned."
-      ]
-    },
     {
       "at": "2026-10-16T02:06+05:30",
       "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Ef",
@@ -2656,6 +2654,45 @@
       "visual": [
         "line 1: Holds the same text title card across multiple frames for too long without motion or visua",
         "line 3: Reuses the exact same white visual layout and typography from line 3 through line 4, causi"
+      ]
+    },
+    {
+      "at": "2026-10-16T19:11+05:30",
+      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong industry insight let down by random stock eye visuals and TechCrunch branding confusion.",
+      "fixes": [],
+      "visual": [
+        "line 2: Random stock close-up of a human eye with a random Replit watermark doesn't fit day-to-day",
+        "line 5: Displays TechCrunch logo instead of something representing human creativity or judgment.",
+        "line 6: Displays TechCrunch logo for business question instead of a business or agent graphic."
+      ]
+    },
+    {
+      "at": "2026-10-16T19:14+05:30",
+      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong narrative and specifics, but repeated use of the TechCrunch logo hurts visual variety.",
+      "fixes": [],
+      "visual": [
+        "line 5: Reuses the TechCrunch logo card inappropriately instead of showing a human/creative motif.",
+        "line 6: Reuses the TechCrunch logo card again for the ending question instead of a dynamic busines"
       ]
     }
   ],
