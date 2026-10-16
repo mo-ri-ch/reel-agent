@@ -1,35 +1,140 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "NSF-funded research aims to make AI a more reliable tool for heart testing",
-      "link": "https://www.kennesaw.edu/news/stories/2026/nsf-research-aims-ai-tool-heart-testing.php",
-      "summary": "NSF-funded research aims to make AI a more reliable tool for heart testing Kennesaw State University",
-      "source": "Kennesaw State University",
-      "published": "2026-10-16T13:36:21+00:00",
-      "angle": ""
-    },
-    {
-      "title": "New publication urges skeptical approach to election information produced by artificial intelligence",
-      "link": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence",
-      "summary": "New publication urges skeptical approach to election information produced by artificial intelligence WRVO",
-      "source": "WRVO",
-      "published": "2026-10-16T13:34:00+00:00",
-      "angle": ""
-    },
-    {
-      "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
-      "link": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
-      "summary": "He Wants AI Benchmarking To Be a Science, Not a Dark Art Quanta Magazine",
-      "source": "Quanta Magazine",
-      "published": "2026-10-16T13:29:44+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-16T19:15:31.710278+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "New publication urges skeptical approach to election information produced by artificial intelligence",
+    "link": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence",
+    "summary": "New publication urges skeptical approach to election information produced by artificial intelligence WRVO",
+    "source": "WRVO",
+    "published": "2026-10-16T13:34:00+00:00",
+    "angle": ""
+  },
+  "draft": {
+    "title": "Letitia James Warns of Election AI",
+    "hook_text": "New York issues election AI guide",
+    "beats": [
+      {
+        "line": "New York Attorney General Letitia James released a guide on October sixteenth to spot election AI.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://ag.ny.gov/",
+        "tag": "Letitia James October guide",
+        "name": "Letitia James",
+        "role": "Attorney General, New York",
+        "x": "NewYorkStateAG",
+        "brands": []
+      },
+      {
+        "line": "The publication urges a skeptical approach to deepfakes and false answers circulating during voting periods.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "WRVO",
+        "domain": "wrvo.org",
+        "headline": "New publication urges skeptical approach to election information produced by artificial intelligence",
+        "url": "",
+        "tag": "Skeptical approach to deepfakes",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Officials recommend verifying details directly through local boards of elections before sharing any voting content.",
+        "visual": "clip",
+        "query": "voting ballot box election",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Verify local boards",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Will you check official sources before voting?",
+        "visual": "clip",
+        "query": "person reading phone screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Check official sources",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "sharp and urgent, warning viewers to stay vigilant against AI election misinformation",
+    "thin": false,
+    "caption": "New York Attorney General Letitia James released a guide urging a skeptical approach to election information produced by AI. The resource helps voters spot deepfakes before heading to the polls. How do you verify your voting sources?",
+    "hashtags": [
+      "Elections",
+      "Misinformation",
+      "Voting",
+      "NewYork"
+    ],
+    "sources": [
+      "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence"
+    ],
+    "script": "New York Attorney General Letitia James released a guide on October sixteenth to spot election AI.\nThe publication urges a skeptical approach to deepfakes and false answers circulating during voting periods.\nOfficials recommend verifying details directly through local boards of elections before sharing any voting content.\nWill you check official sources before voting?",
+    "keywords": [
+      "voting ballot box election",
+      "person reading phone screen"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "New York issues election AI guide",
+        "url": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence"
+      },
+      {
+        "claim": "New York Attorney General Letitia James released a guide on October sixteenth to spot election AI.",
+        "url": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence"
+      },
+      {
+        "claim": "Letitia James is the Attorney General of New York",
+        "url": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence"
+      },
+      {
+        "claim": "The publication urges a skeptical approach to deepfakes and false answers circulating during voting periods.",
+        "url": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence"
+      },
+      {
+        "claim": "Officials recommend verifying details directly through local boards of elections before sharing any voting content.",
+        "url": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -76,31 +181,10 @@
         "made": "2026-10-16T18:20+05:30"
       },
       "post_at": "2026-10-16T21:30:00+05:30"
-    },
-    {
-      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-      "video_file_id": "BAACAgUAAxkDAAIZOWrSKjdo_K36QEPeP1CmoqfQfId-AAIQIgACtYmQVq2RBCMrBGprPQQ",
-      "caption": "Replit CEO Amjad Masad predicts self-driving companies where AI agents handle daily tasks and humans focus on high-level decisions. Would you let an autonomous agent run your business?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Amjad Masad: x.com/amasad\n\n#Replit #AmjadMasad #AIAgents #FutureOfWork #TechNews",
-      "extra": false,
-      "meta": {
-        "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-        "kind": "news",
-        "source": "AI News & Artificial Intelligence | Tech",
-        "engine": "fish",
-        "voice": "Ethan (Fish Audio)",
-        "person": true,
-        "words": 73,
-        "visuals": "1 real photos, 5 cards",
-        "editor": 8.0,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-16T19:15+05:30"
-      },
-      "post_at": "2026-10-16T19:16:31.037353+05:30"
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-16T19:54:44.806905+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -268,10 +352,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-06T21:31:12.619067+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-07T09:01:07.770740+05:30",
       "extra": false
@@ -507,20 +587,24 @@
     {
       "at": "2026-10-16T16:31:14.226015+05:30",
       "extra": false
+    },
+    {
+      "at": "2026-10-16T19:25:20.916637+05:30",
+      "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
-      "title": "Faraday Future unveils a $2,490 humanoid robot for developers and schools",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9tUVVKUEdTblhiWmRpdWE1R0tyV1VPalNJZFM2cmJxRUdWenZoa2hwR29uakVDZEJIdm42OGc2Mm9MOUpFRDV0Um5DZW9CbF9qVW1xbjVwWXV6amhIcFVjWEV0T0dMVkhEWGM1VWg5UWc?oc=5",
-      "summary": "Faraday Future unveils a $2,490 humanoid robot for developers and schools The Next Web",
-      "source": "The Next Web",
-      "published": "2026-10-16T09:03:05+00:00",
-      "angle": "Faraday Future just dropped a $2,490 humanoid robot for developers and schools"
+      "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
+      "link": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "summary": "He Wants AI Benchmarking To Be a Science, Not a Dark Art Quanta Magazine",
+      "source": "Quanta Magazine",
+      "published": "2026-10-16T13:29:44+00:00",
+      "angle": ""
     }
   ],
   "tried": [
-    "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
     "OpenAI claims an ex-employee took its product plans and presented them to Apple",
     "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
     "Figma Expands Into Coding, Hosting as CEO Rules Out Covering High-Traffic Bills",
@@ -579,183 +663,10 @@
     "The tech backlash is now in theaters",
     "Turn Vibe-Coded Prototypes Into Tools Your Company Can Actually Use",
     "GBrain Tools",
-    "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint"
+    "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+    "NSF-funded research aims to make AI a more reliable tool for heart testing"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Conversational brain AI for adaptive epilepsy care",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9OQjBCOER6MTBFX3NvR0RpaGR4M1pkVnlINExSS254WjBESGp6alFxV3JNN3dnYzFYQmRyTElLVVlZYzhXWG12cEhoY3MzS3FhN2R3TXVEZGlTdkhkNGZn?oc=5",
-          "summary": "Conversational brain AI for adaptive epilepsy care Nature",
-          "source": "Nature",
-          "published": "2026-10-16T10:41:25+00:00",
-          "angle": "Mind-blowing medical AI breakthrough using conversational brain tech for adaptive epilepsy care."
-        },
-        "draft": {
-          "title": "Conversational AI for Epilepsy Care",
-          "hook_text": "AI chats with epilepsy patients",
-          "beats": [
-            {
-              "line": "Nature published a study on a new conversational AI built for epilepsy care.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Nature",
-              "domain": "nature.com",
-              "headline": "Conversational brain AI for adaptive epilepsy care",
-              "url": "",
-              "tag": "Nature epilepsy study",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Patients used a phone app to exchange over one thousand three hundred text messages with the system.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1300",
-              "small": "text messages exchanged",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "1300 text messages",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The conversational platform fine-tunes wearable seizure detectors using over 1300 patient feedback logs.",
-              "visual": "clip",
-              "query": "smartwatch health monitor screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Fine-tunes seizure detectors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Clinicians can converse with the chat interface to review automated seizure assessments and add notations.",
-              "visual": "clip",
-              "query": "doctor typing on computer",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Review seizure assessments",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you use a chat app to track your health symptoms?",
-              "visual": "clip",
-              "query": "person looking at mobile screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Track health symptoms",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "clinical and precise, explaining a breakthrough medical AI with objective clarity",
-          "thin": false,
-          "caption": "Nature published research on conversational AI designed to help monitor epilepsy. The system uses text messaging via an app to fine tune seizure detectors based on patient feedback. Would you use a chat app to track health symptoms?",
-          "hashtags": [
-            "Nature",
-            "Epilepsy",
-            "ArtificialIntelligence",
-            "Neuroscience",
-            "HealthTech"
-          ],
-          "sources": [
-            "https://www.nature.com/articles/s41591-026-04719-6",
-            "https://healthcare-in-europe.com/en/news/ai-platform-patient-communication-medical-devices.html"
-          ],
-          "script": "Nature published a study on a new conversational AI built for epilepsy care.\nPatients used a phone app to exchange over one thousand three hundred text messages with the system.\nThe conversational platform fine-tunes wearable seizure detectors using over 1300 patient feedback logs.\nClinicians can converse with the chat interface to review automated seizure assessments and add notations.\nWould you use a chat app to track your health symptoms?",
-          "keywords": [
-            "smartwatch health monitor screen",
-            "doctor typing on computer",
-            "person looking at mobile screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI chats with epilepsy patients",
-              "url": "https://www.nature.com/articles/s41591-026-04719-6"
-            },
-            {
-              "claim": "Nature published a study on a new conversational AI built for epilepsy care.",
-              "url": "https://www.nature.com/articles/s41591-026-04719-6"
-            },
-            {
-              "claim": "Patients used a phone app to exchange over one thousand three hundred text messages with the system.",
-              "url": "https://healthcare-in-europe.com/en/news/ai-platform-patient-communication-medical-devices.html"
-            },
-            {
-              "claim": "The conversational platform fine-tunes wearable seizure detectors using over 1300 patient feedback logs.",
-              "url": "https://www.nature.com/articles/s41591-026-04719-6"
-            },
-            {
-              "claim": "Clinicians can converse with the chat interface to review automated seizure assessments and add notations.",
-              "url": "https://healthcare-in-europe.com/en/news/ai-platform-patient-communication-medical-devices.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.nature.com/articles/s41591-026-04719-6",
-            "https://www.nature.com"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-16T17:42:06.413108+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1451,10 +1362,53 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIZOWrSKjdo_K36QEPeP1CmoqfQfId-AAIQIgACtYmQVq2RBCMrBGprPQQ",
       "history_title": "Replit’s CEO says the future of work is the ‘self-driving company’"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "NSF-funded research aims to make AI a more reliable tool for heart testing",
+            "link": "https://www.kennesaw.edu/news/stories/2026/nsf-research-aims-ai-tool-heart-testing.php",
+            "summary": "NSF-funded research aims to make AI a more reliable tool for heart testing Kennesaw State University",
+            "source": "Kennesaw State University",
+            "published": "2026-10-16T13:36:21+00:00",
+            "angle": ""
+          },
+          {
+            "title": "New publication urges skeptical approach to election information produced by artificial intelligence",
+            "link": "https://www.wrvo.org/2026-10-16/new-publication-urges-skeptical-approach-to-election-information-produced-by-artificial-intelligence",
+            "summary": "New publication urges skeptical approach to election information produced by artificial intelligence WRVO",
+            "source": "WRVO",
+            "published": "2026-10-16T13:34:00+00:00",
+            "angle": ""
+          },
+          {
+            "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
+            "link": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+            "summary": "He Wants AI Benchmarking To Be a Science, Not a Dark Art Quanta Magazine",
+            "source": "Quanta Magazine",
+            "published": "2026-10-16T13:29:44+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-16T19:15:31.710278+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIJI2rIm_2-FVBiQCP2RKE1dXqDrop2AAL7IQACqmdBVtZsGGxYzsEgPQQ",
     "BAACAgUAAxkDAAIJMGrItzT2M5W4v1jur6YpcCzgpEEXAALHJQACqmdJVlptXzRuv3ksPQQ",
     "BAACAgUAAxkDAAIJU2rI1A2_zm65oFfTCUEPEx6jdPOVAALvJQACqmdJVjAb6cus_4dDPQQ",
     "BAACAgUAAxkDAAIKMmrI_auX19rmd6pt7Fi5rH12jHeuAAJAJgACqmdJVpQCI15B-y4uPQQ",
@@ -1483,7 +1437,8 @@
     "BAACAgUAAxkDAAIYHmrROroo-qhO8n6t-PZUysa1P7qkAAIEIAACOveQVtMP95v1tbtcPQQ",
     "BAACAgUAAxkDAAIYK2rRU_p6p2SRKqJI11qLNP5yoiFlAAIJIAACOveQVuB23JT43x5IPQQ",
     "BAACAgUAAxkDAAIYOGrRbNXwjRspfznm7UKS30mkBPIVAAIUIAACOveQVloCuU_HibDJPQQ",
-    "BAACAgUAAxkDAAIYWGrRnDeHBPIkFopRZTIWHU9ViS-XAAKOIAACOveQVnnIhsSwcBQuPQQ"
+    "BAACAgUAAxkDAAIYWGrRnDeHBPIkFopRZTIWHU9ViS-XAAKOIAACOveQVnnIhsSwcBQuPQQ",
+    "BAACAgUAAxkDAAIZOWrSKjdo_K36QEPeP1CmoqfQfId-AAIQIgACtYmQVq2RBCMrBGprPQQ"
   ],
   "history": [
     "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now",
@@ -1999,7 +1954,7 @@
   "report_day": "2026-10-15",
   "ig_count": {
     "day": "2026-10-16",
-    "at": "2026-10-16T19:14:24.014025+05:30",
+    "at": "2026-10-16T19:24:45.409870+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2023,7 +1978,7 @@
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
-    "calls": 370,
+    "calls": 412,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2034,10 +1989,10 @@
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.5-flash-lite": {
-        "ok": 70,
-        "busy": 25,
-        "other": 18,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "ok": 95,
+        "busy": 39,
+        "other": 21,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.6-flash": {
         "ok": 2,
@@ -2595,6 +2550,5 @@
       ]
     }
   ],
-  "rest_note": "2026-10-15T12:32:00+05:30",
-  "behind_since": "2026-10-16T19:04:46.772162+05:30"
+  "rest_note": "2026-10-15T12:32:00+05:30"
 }
