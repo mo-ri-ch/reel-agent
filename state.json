@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -217,52 +217,53 @@
     ],
     "visual_status": "fixed",
     "visual_notes": [
-      "Bluesky replaces complex development with a simple…: The shot is an almost-empty card with only text.",
-      "This expansion uses the Attie AI tool, which previ…: The shot is an almost-empty card with only text.",
-      "Bluesky CEO Toni Schneider says you can create sma…: The shot is an almost-empty card with only text.",
-      "The goal is turning a social feed into a functiona…: The shot is an almost-empty card with only text.",
-      "It's a massive shift from simple text posts to int…: The shot is an almost-empty card with only text.",
-      "Could you build a viral game today?…: The shot is an almost-empty card with only text.",
-      "almost-empty card",
-      "almost-empty card",
-      "almost-empty card",
-      "almost-empty card",
-      "almost-empty card",
-      "almost-empty card"
+      "Bluesky replaces complex development with a simple…: almost-empty card",
+      "This expansion uses the Attie AI tool, which previ…: almost-empty card",
+      "Bluesky CEO Toni Schneider says you can create sma…: almost-empty card",
+      "Schneider revealed these features live at the Tech…: almost-empty card",
+      "It's a massive shift from simple text posts to int…: almost-empty card",
+      "The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with only text."
     ],
     "editor": {
-      "overall": 6.5,
+      "overall": 8.3,
       "scores": {
         "hook": 8,
         "specific": 9,
         "substance": 8,
-        "accuracy": 4,
-        "visuals": 6,
-        "flow": 8
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
       },
-      "one_line": "Major factual error regarding the year; visuals are repetitive and lack variety.",
+      "one_line": "Strong, informative news reel, but visual pacing needs more variety to maintain engagement.",
       "script_fixes": [
-        "LINE 5: Change '2026' to '2024' to match the actual event date.",
-        "LINE 6: Replace 'The goal is turning a social feed into a functional software playground' with a specific detail about the tool's capabilities."
+        "LINE 6: Change 'The goal is turning a social feed into a functional software playground' to 'Schneider aims to turn social feeds into functional software playgrounds.'"
       ],
       "visual_beats": [
         0,
-        1,
-        4,
-        5
+        3,
+        4
       ],
       "visual_notes": [
         "line 1: The same screenshot is held for too long across multiple frames.",
-        "line 2: The Attie AI logo/text frame is repeated for too many seconds.",
-        "line 5: The text '2026' is factually incorrect and misleading.",
-        "line 6: Visuals are static text overlays without supporting imagery of the software."
+        "line 4: The same 'Standalone websites' graphic is repeated for two consecutive frames.",
+        "line 5: The TechCrunch logo and text are held for too long without a transition."
       ],
       "reviewer": "gemini"
-    }
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "8 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIYiGrRxiPsVXV5o4PBQPIAAfCOw0b6bQAC9CAAAjr3kFbyNfYxf1kHrj0E",
   "queue": [
     {
       "title": "ChatGPT can peek at your Chrome tabs now",
@@ -308,15 +309,16 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-16T11:58:21.124492+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
-  "pending_offer": false,
+  "script_deadline": null,
+  "preview_deadline": "2026-10-16T12:37:24.005056+05:30",
+  "last_gender": "male",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-16",
     "done": [
       "07:00",
-      "09:30"
+      "09:30",
+      "12:00"
     ]
   },
   "pending_topic": null,
@@ -789,281 +791,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "link": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-          "summary": "",
-          "source": "Hugging Face - Blog",
-          "published": "2026-10-16T01:44:47+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Nvidia Scales Indic Language Models",
-          "hook_text": "Nvidia just leveled up Indic AI",
-          "beats": [
-            {
-              "line": "Two point eight trillion tokens trained by Nvidia. They used a massive new pipeline for Indic language models.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-              "tag": "Nvidia Indic pipeline",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "They successfully pretrained models using two point eight trillion tokens.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2.8T",
-              "small": "tokens pretrained",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2.8 trillion tokens",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This project creates a blueprint for scaling AI across diverse languages.",
-              "visual": "clip",
-              "query": "digital data visualization",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Scaling diverse languages",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The team published an open data generation pipeline on Hugging Face.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Hugging Face",
-              "domain": "huggingface.co",
-              "headline": "Scaling Indic Pretraining: 2.8 Trillion Tokens",
-              "url": "",
-              "tag": "Hugging Face release",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Hugging Face",
-                  "domain": "huggingface.co"
-                }
-              ]
-            },
-            {
-              "line": "It targets complex linguistic regions often ignored by standard training sets.",
-              "visual": "clip",
-              "query": "global map data",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Targeting ignored languages",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You can now access these open resources to build localized applications.",
-              "visual": "clip",
-              "query": "software developer typing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Open resources available",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Could this finally bridge the global language gap in machine learning?",
-              "visual": "clip",
-              "query": "abstract futuristic connection lines",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Bridging language gaps",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast-paced and informative, highlighting the technical scale before ending on a thought-provoking note.",
-          "thin": false,
-          "caption": "Nvidia has launched an open data generation pipeline for Indic languages, training models on 2.8 trillion tokens. This release on Hugging Face provides a blueprint for improving AI performance in diverse, underrepresented languages. Which language should be the next priority for global AI development?",
-          "hashtags": [
-            "Nvidia",
-            "IndicAI",
-            "HuggingFace",
-            "MachineLearning",
-            "LanguageModels"
-          ],
-          "sources": [
-            "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-          ],
-          "script": "Two point eight trillion tokens trained by Nvidia. They used a massive new pipeline for Indic language models.\nThey successfully pretrained models using two point eight trillion tokens.\nThis project creates a blueprint for scaling AI across diverse languages.\nThe team published an open data generation pipeline on Hugging Face.\nIt targets complex linguistic regions often ignored by standard training sets.\nYou can now access these open resources to build localized applications.\nCould this finally bridge the global language gap in machine learning?",
-          "keywords": [
-            "digital data visualization",
-            "global map data",
-            "software developer typing code",
-            "abstract futuristic connection lines"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "Nvidia just released a massive new pipeline for training Indic language models.",
-          "hook_score": 51,
-          "evidence": [
-            {
-              "claim": "Nvidia just leveled up Indic AI",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "Two point eight trillion tokens trained by Nvidia.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "They used a massive new pipeline for Indic language models.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "They successfully pretrained models using two point eight trillion tokens.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "The team published an open data generation pipeline on Hugging Face.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            },
-            {
-              "claim": "You can now access these open resources to build localized applications.",
-              "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Two point eight trillion tokens trained by Nvidia.…: The visual is a blank card with text, failing to show the required images of Nvidia.",
-            "They successfully pretrained models using two poin…: The visual is a blank card with text, failing to show the required big number 2.8T.",
-            "This project creates a blueprint for scaling AI ac…: The visual is a blank card with text, failing to show the required digital data visualization.",
-            "The team published an open data generation pipelin…: The visual is a blank card with text, failing to show the required source card for Hugging Face.",
-            "It targets complex linguistic regions often ignore…: The visual is a blank card with text, failing to show the required global map data.",
-            "You can now access these open resources to build l…: The visual is a blank card with text, failing to show the required software developer typing code.",
-            "Could this finally bridge the global language gap …: The visual is a blank card with text, failing to show the required abstract futuristic connection lines.",
-            "The visual is just text on a black background; it fails to show the required real images of Nvidia.",
-            "The visual is just text on a white background; it fails to show the required stock video of digital data visualization.",
-            "The visual is just text on a white background; it fails to show the required source card for Hugging Face.",
-            "The visual is just text on a black background; it fails to show the required stock video of global map data.",
-            "The visual is just text on a black background; it fails to show the required stock video of a software developer typing ",
-            "The visual is just text on a white background; it fails to show the required stock video of abstract futuristic connecti"
-          ],
-          "editor": {
-            "overall": 8.7,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 9,
-              "accuracy": 10,
-              "visuals": 7,
-              "flow": 9
-            },
-            "one_line": "Strong technical news, but visual variety is lacking and frames are held too long.",
-            "script_fixes": [
-              "LINE 1: Change 'Two point eight trillion' to '2.8 trillion' for better readability.",
-              "LINE 7: Replace 'Could this finally bridge...' with 'This is a major step toward bridging the global language gap in machine learning.'"
-            ],
-            "visual_beats": [
-              0,
-              1,
-              2,
-              4,
-              5
-            ],
-            "visual_notes": [
-              "line 1: The same chart is held for 9.6 seconds, exceeding the 8-second limit.",
-              "line 2: The same text-only frame is held for 4.8 seconds, creating visual stagnation.",
-              "line 3: The same text-only frame is held for 4.8 seconds, creating visual stagnation.",
-              "line 5: The same text-only frame is held for 4.8 seconds, creating visual stagnation.",
-              "line 6: The same text-only frame is held for 4.8 seconds, creating visual stagnation."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "7 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIYWGrRnDeHBPIkFopRZTIWHU9ViS-XAAKOIAACOveQVnnIhsSwcBQuPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIYWGrRnDeHBPIkFopRZTIWHU9ViS-XAAKOIAACOveQVnnIhsSwcBQuPQQ",
-      "history_title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1770,6 +1497,280 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
+          "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+          "summary": "Bluesky's Attie AI tool, which initially launched earlier this year as a way to use AI to build your own feeds, now lets you make \"small\" social apps like games, polls, and dashboards that you can then share with others as their own websites. In an interview at TechCrunch Disrupt, Bluesky CEO Toni Schneider said […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-15T19:57:16+00:00",
+          "angle": "Bluesky just launched an AI tool that lets anyone build games and apps directly inside social feeds."
+        },
+        "draft": {
+          "title": "Bluesky Now Lets You Build AI Apps",
+          "hook_text": "Build games directly on Bluesky",
+          "beats": [
+            {
+              "line": "Bluesky replaces complex development with a simple AI. It lets you build apps and games directly on the social network.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Bluesky",
+              "outlet": "",
+              "domain": "bsky.app",
+              "headline": "",
+              "url": "https://bsky.app",
+              "tag": "Bluesky AI tools",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This expansion uses the Attie AI tool, which previously only managed custom feeds.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Attie AI",
+              "outlet": "",
+              "domain": "bsky.app",
+              "headline": "",
+              "url": "https://bsky.app",
+              "tag": "Attie AI tool",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Bluesky CEO Toni Schneider says you can create small web-based tools like polls and dashboards.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://bsky.app",
+              "tag": "CEO Toni Schneider",
+              "name": "Toni Schneider",
+              "role": "CEO, Bluesky",
+              "x": "toni",
+              "brands": []
+            },
+            {
+              "line": "You share these creations as standalone websites for other users to interact with.",
+              "visual": "clip",
+              "query": "person coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Standalone websites",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Schneider revealed these features live at the TechCrunch Disrupt event this week.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "TechCrunch Disrupt",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "TechCrunch Disrupt 2026",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The goal is turning a social feed into a functional software playground.",
+              "visual": "clip",
+              "query": "digital interface dashboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Functional social feed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It's a massive shift from simple text posts to interactive user-made software.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Bluesky AI tool now lets you make games and apps",
+              "url": "",
+              "tag": "Interactive software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Could you build a viral game today?",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Build a game",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Excited and fast-paced tech update, slowing down slightly at the end to prompt user engagement.",
+          "thin": false,
+          "caption": "Bluesky CEO Toni Schneider just announced the Attie AI tool now allows users to build and share interactive games and apps. This moves the platform from simple social feeds to a functional playground for custom web-based software. Would you try building a game on your social feed?",
+          "hashtags": [
+            "Bluesky",
+            "AttieAI",
+            "SocialMedia",
+            "GameDev",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+          ],
+          "script": "Bluesky replaces complex development with a simple AI. It lets you build apps and games directly on the social network.\nThis expansion uses the Attie AI tool, which previously only managed custom feeds.\nBluesky CEO Toni Schneider says you can create small web-based tools like polls and dashboards.\nYou share these creations as standalone websites for other users to interact with.\nSchneider revealed these features live at the TechCrunch Disrupt event this week.\nThe goal is turning a social feed into a functional software playground.\nIt's a massive shift from simple text posts to interactive user-made software.\nCould you build a viral game today?",
+          "keywords": [
+            "person coding on laptop",
+            "digital interface dashboard",
+            "person looking at phone screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Bluesky now lets you build apps and games directly on the social network.",
+          "hook_score": 44,
+          "evidence": [
+            {
+              "claim": "Build games directly on Bluesky",
+              "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+            },
+            {
+              "claim": "Bluesky lets you build apps and games directly on the social network.",
+              "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
+            },
+            {
+              "claim": "The Attie AI tool previously only managed custom feeds.",
+              "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
+            },
+            {
+              "claim": "Bluesky CEO Toni Schneider says you can create small web-based tools like polls and dashboards.",
+              "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+            },
+            {
+              "claim": "You share these creations as standalone websites for other users to interact with.",
+              "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+            },
+            {
+              "claim": "Schneider revealed these features live at the TechCrunch Disrupt event this week.",
+              "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+          ],
+          "visual_status": "fixed",
+          "visual_notes": [
+            "Bluesky replaces complex development with a simple…: The shot is an almost-empty card with only text.",
+            "This expansion uses the Attie AI tool, which previ…: The shot is an almost-empty card with only text.",
+            "Bluesky CEO Toni Schneider says you can create sma…: The shot is an almost-empty card with only text.",
+            "The goal is turning a social feed into a functiona…: The shot is an almost-empty card with only text.",
+            "It's a massive shift from simple text posts to int…: The shot is an almost-empty card with only text.",
+            "Could you build a viral game today?…: The shot is an almost-empty card with only text.",
+            "almost-empty card",
+            "almost-empty card",
+            "almost-empty card",
+            "almost-empty card",
+            "almost-empty card",
+            "almost-empty card"
+          ],
+          "editor": {
+            "overall": 6.5,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 8,
+              "accuracy": 4,
+              "visuals": 6,
+              "flow": 8
+            },
+            "one_line": "Major factual error regarding the year; visuals are repetitive and lack variety.",
+            "script_fixes": [
+              "LINE 5: Change '2026' to '2024' to match the actual event date.",
+              "LINE 6: Replace 'The goal is turning a social feed into a functional software playground' with a specific detail about the tool's capabilities."
+            ],
+            "visual_beats": [
+              0,
+              1,
+              4,
+              5
+            ],
+            "visual_notes": [
+              "line 1: The same screenshot is held for too long across multiple frames.",
+              "line 2: The Attie AI logo/text frame is repeated for too many seconds.",
+              "line 5: The text '2026' is factually incorrect and misleading.",
+              "line 6: Visuals are static text overlays without supporting imagery of the software."
+            ],
+            "reviewer": "gemini"
+          }
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-16T11:58:21.124492+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2287,7 +2288,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-16T09:41+05:30",
@@ -2315,7 +2316,7 @@
   "report_day": "2026-10-15",
   "ig_count": {
     "day": "2026-10-16",
-    "at": "2026-10-16T11:53:38.192573+05:30",
+    "at": "2026-10-16T12:07:24.005293+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2335,28 +2336,23 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-16",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-16",
-    "calls": 192,
+    "calls": 201,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 103,
+        "ok": 109,
         "busy": 36,
-        "other": 53,
+        "other": 56,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "16:59",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-15"
-    },
     {
       "at": "17:34",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2401,6 +2397,11 @@
       "at": "06:23",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-16"
+    },
+    {
+      "at": "06:32",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-16"
     }
   ],
   "last_script_error": {
@@ -2431,28 +2432,6 @@
     "gemini-flash-lite-latest": 1792072088.8584108
   },
   "editor_log": [
-    {
-      "at": "2026-10-15T18:25+05:30",
-      "title": "Lyceum Project Leaders Talk Corporate Funding and AI in Education",
-      "overall": 6.0,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Too academic and repetitive visuals fail to engage global news audiences.",
-      "fixes": [
-        "LINE 1: Harvard faculty clashed over corporate funding for AI labs.",
-        "LINE 3: Name specific companies or donors involved if mentioned in the source."
-      ],
-      "visual": [
-        "line 2: Same visual held across multiple consecutive frames for too long.",
-        "line 4: Same visual repeated for over 4 consecutive frames causing severe visual stagnation."
-      ]
-    },
     {
       "at": "2026-10-15T18:39+05:30",
       "title": "Amazon’s always-listening Bee wearable can now help you buy stuff",
@@ -2888,6 +2867,28 @@
         "line 1: The same screenshot is held for too long across multiple frames.",
         "line 2: The Attie AI logo/text frame is repeated for too many seconds.",
         "line 5: The text '2026' is factually incorrect and misleading."
+      ]
+    },
+    {
+      "at": "2026-10-16T12:07+05:30",
+      "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, informative news reel, but visual pacing needs more variety to maintain engagement.",
+      "fixes": [
+        "LINE 6: Change 'The goal is turning a social feed into a functional software playground' to 'Schneider aims to turn social feeds into functional software playgrounds.'"
+      ],
+      "visual": [
+        "line 1: The same screenshot is held for too long across multiple frames.",
+        "line 4: The same 'Standalone websites' graphic is repeated for two consecutive frames.",
+        "line 5: The TechCrunch logo and text are held for too long without a transition."
       ]
     }
   ],
