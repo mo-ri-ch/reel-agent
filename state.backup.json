@@ -117,7 +117,7 @@
         "brands": []
       },
       {
-        "line": "Companies using these scores to hire or promote might miss the full picture of human utility.",
+        "line": "Employers using Mercor's scores to hire or promote might miss the full picture of human utility.",
         "visual": "clip",
         "query": "manager looking at data",
         "prompt": "",
@@ -132,10 +132,15 @@
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Mercor",
+            "domain": "mercor.com"
+          }
+        ]
       },
       {
-        "line": "Would you trust an AI benchmark to grade your actual job performance?",
+        "line": "Would you trust an AI benchmark to grade your specific job performance?",
         "visual": "clip",
         "query": "person looking thoughtful",
         "prompt": "",
@@ -155,7 +160,7 @@
     ],
     "delivery": "Analytical and direct, highlighting the disconnect between current tech testing and the reality of professional work.",
     "thin": false,
-    "caption": "New research from Mercor reveals that 90% of US working hours involve tasks not covered by existing AI benchmarks. By mapping data from the US Bureau of Labor Statistics, the report shows that only 10% of work aligns with current performance metrics. Would you trust an AI benchmark to grade your actual job performance?",
+    "caption": "New research from Mercor reveals that 90% of US working hours involve tasks not covered by existing AI benchmarks. By mapping data from the US Bureau of Labor Statistics, the report shows that only 10% of work aligns with current performance metrics. Would you trust an AI benchmark to grade your specific job performance?",
     "hashtags": [
       "Mercor",
       "AI",
@@ -166,7 +171,7 @@
     "sources": [
       "https://www.mercor.com/research/labor-index/benchmark-map/"
     ],
-    "script": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.\nMercor mapped this labor index using data from the US Bureau of Labor Statistics.\nThe Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.\nOnly ten percent of total American work time aligns with current AI performance metrics.\nThis data shows that most professional duties currently exist outside the scope of AI evaluation.\nCompanies using these scores to hire or promote might miss the full picture of human utility.\nWould you trust an AI benchmark to grade your actual job performance?",
+    "script": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.\nMercor mapped this labor index using data from the US Bureau of Labor Statistics.\nThe Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.\nOnly ten percent of total American work time aligns with current AI performance metrics.\nThis data shows that most professional duties currently exist outside the scope of AI evaluation.\nEmployers using Mercor's scores to hire or promote might miss the full picture of human utility.\nWould you trust an AI benchmark to grade your specific job performance?",
     "keywords": [
       "person using laptop in office",
       "people collaborating in office",
@@ -195,11 +200,20 @@
       {
         "claim": "Only ten percent of total American work time aligns with current AI performance metrics.",
         "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+      },
+      {
+        "claim": "Most professional duties currently exist outside the scope of AI evaluation.",
+        "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+      },
+      {
+        "claim": "Employers using Mercor's scores to hire or promote might miss the full picture of human utility.",
+        "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 2,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.mercor.com/research/labor-index/benchmark-map/"
     ]
@@ -231,9 +245,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-17T05:02:35.319003+05:30",
+  "script_deadline": "2026-10-17T05:15:12.648642+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-17",
@@ -700,254 +714,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "In Brief: UT-Led Fusion Research Team Wins Google.org AI Award",
-          "link": "https://news.utexas.edu/2026/10/16/in-brief-ut-led-fusion-research-team-wins-google-org-ai-award/",
-          "summary": "In Brief: UT-Led Fusion Research Team Wins Google.org AI Award UT News",
-          "source": "UT News",
-          "published": "2026-10-16T18:02:15+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "UT Fusion Team Wins Google.org AI Award",
-          "hook_text": "AI is accelerating fusion energy research.",
-          "beats": [
-            {
-              "line": "Google.org selected a University of Texas team for its AI for Science grant.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "University of Texas at Austin",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "UT wins AI grant",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "They are part of a massive thirty-six million dollar funding program.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$36M",
-              "small": "total program funding",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "36 million total funding",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Principal investigator Joshua Burby leads this specific research team.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://physics.utexas.edu/people/faculty/joshua-burby",
-              "tag": "Joshua Burby leads project",
-              "name": "Joshua Burby",
-              "role": "Principal Investigator, UT Austin",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The award supports researchers using AI to address critical scientific challenges.",
-              "visual": "clip",
-              "query": "researchers working in laboratory",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI for science",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This project specifically targets advanced fusion energy development.",
-              "visual": "clip",
-              "query": "nuclear fusion experiment",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Targeting fusion energy",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The funding helps them accelerate computational modeling for energy systems.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "high performance computing server rack with blue data lights",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Accelerating computational modeling",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Google.org chose this UT group out of many global applicants.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "UT News",
-              "domain": "news.utexas.edu",
-              "headline": "UT-Led Fusion Research Team Wins Google.org AI Award",
-              "url": "",
-              "tag": "Chosen from global applicants",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust AI to solve our clean energy crisis?",
-              "visual": "clip",
-              "query": "modern power plant control room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust AI with energy?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Energetic and professional, conveying the importance of the award and the scale of the research investment.",
-          "thin": false,
-          "caption": "The University of Texas at Austin has joined a 36 million dollar Google.org AI for Science cohort. Principal investigator Joshua Burby is leading the team to use AI for advancing fusion energy research. Would you trust AI to solve our clean energy crisis?",
-          "hashtags": [
-            "UTAustin",
-            "GoogleOrg",
-            "NuclearFusion",
-            "AI",
-            "CleanEnergy"
-          ],
-          "sources": [
-            "https://news.utexas.edu/2026/10/16/in-brief-ut-led-fusion-research-team-wins-google-org-ai-award/"
-          ],
-          "script": "Google.org selected a University of Texas team for its AI for Science grant.\nThey are part of a massive thirty-six million dollar funding program.\nPrincipal investigator Joshua Burby leads this specific research team.\nThe award supports researchers using AI to address critical scientific challenges.\nThis project specifically targets advanced fusion energy development.\nThe funding helps them accelerate computational modeling for energy systems.\nGoogle.org chose this UT group out of many global applicants.\nWould you trust AI to solve our clean energy crisis?",
-          "keywords": [
-            "researchers working in laboratory",
-            "nuclear fusion experiment",
-            "modern power plant control room"
-          ],
-          "image_prompts": [
-            "high performance computing server rack with blue data lights"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI is accelerating fusion energy research.",
-              "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/impact-challenge-ai-science-recipients/"
-            },
-            {
-              "claim": "Google.org selected a University of Texas team for its AI for Science grant.",
-              "url": "https://news.utexas.edu/2026/10/16/in-brief-ut-led-fusion-research-team-wins-google-org-ai-award/"
-            },
-            {
-              "claim": "They are part of a massive thirty-six million dollar funding program.",
-              "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/impact-challenge-ai-science-recipients/"
-            },
-            {
-              "claim": "Principal investigator Joshua Burby leads this specific research team.",
-              "url": "https://cns.utexas.edu/news/accolades/ut-wins-award-googleorg-apply-ai-fusion-energy-research"
-            },
-            {
-              "claim": "The award supports researchers using AI to address critical scientific challenges.",
-              "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/impact-challenge-ai-science-recipients/"
-            },
-            {
-              "claim": "This project specifically targets advanced fusion energy development.",
-              "url": "https://cns.utexas.edu/news/accolades/ut-wins-award-googleorg-apply-ai-fusion-energy-research"
-            },
-            {
-              "claim": "The funding helps them accelerate computational modeling for energy systems.",
-              "url": "https://cns.utexas.edu/news/accolades/ut-wins-award-googleorg-apply-ai-fusion-energy-research"
-            },
-            {
-              "claim": "Google.org chose this UT group out of many global applicants.",
-              "url": "https://cns.utexas.edu/news/accolades/ut-wins-award-googleorg-apply-ai-fusion-energy-research"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://news.utexas.edu/2026/10/16/in-brief-ut-led-fusion-research-team-wins-google-org-ai-award/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-17T01:08:32.111411+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1717,6 +1483,224 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+          "link": "https://www.mercor.com/research/labor-index/benchmark-map/",
+          "summary": "",
+          "source": "mercor.com",
+          "published": "2026-10-16T17:08:38+00:00",
+          "buzz": "Hacker News 350 points",
+          "angle": "New data shows 90% of your actual work isn't covered by AI benchmarks—why your job might be safer than you think."
+        },
+        "draft": {
+          "title": "AI Benchmarks vs Reality",
+          "hook_text": "90% of US work is unbenchmarked",
+          "beats": [
+            {
+              "line": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "90%",
+              "small": "US work hours",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "90% of hours",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Mercor mapped this labor index using data from the US Bureau of Labor Statistics.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Mercor",
+              "domain": "mercor.com",
+              "headline": "Benchmark Map: Labor Index",
+              "url": "",
+              "tag": "Mercor Labor Index",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Mercor",
+                  "domain": "mercor.com"
+                }
+              ]
+            },
+            {
+              "line": "The Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.",
+              "visual": "clip",
+              "query": "person using laptop in office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Mercor Benchmark Map",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Mercor",
+                  "domain": "mercor.com"
+                }
+              ]
+            },
+            {
+              "line": "Only ten percent of total American work time aligns with current AI performance metrics.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "10%",
+              "small": "Benchmark coverage",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Limited alignment",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This data shows that most professional duties currently exist outside the scope of AI evaluation.",
+              "visual": "clip",
+              "query": "people collaborating in office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Scope of evaluation",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Companies using these scores to hire or promote might miss the full picture of human utility.",
+              "visual": "clip",
+              "query": "manager looking at data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Hiring and benchmarks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an AI benchmark to grade your actual job performance?",
+              "visual": "clip",
+              "query": "person looking thoughtful",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Job performance evaluation",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Analytical and direct, highlighting the disconnect between current tech testing and the reality of professional work.",
+          "thin": false,
+          "caption": "New research from Mercor reveals that 90% of US working hours involve tasks not covered by existing AI benchmarks. By mapping data from the US Bureau of Labor Statistics, the report shows that only 10% of work aligns with current performance metrics. Would you trust an AI benchmark to grade your actual job performance?",
+          "hashtags": [
+            "Mercor",
+            "AI",
+            "LaborMarket",
+            "FutureOfWork",
+            "Automation"
+          ],
+          "sources": [
+            "https://www.mercor.com/research/labor-index/benchmark-map/"
+          ],
+          "script": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.\nMercor mapped this labor index using data from the US Bureau of Labor Statistics.\nThe Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.\nOnly ten percent of total American work time aligns with current AI performance metrics.\nThis data shows that most professional duties currently exist outside the scope of AI evaluation.\nCompanies using these scores to hire or promote might miss the full picture of human utility.\nWould you trust an AI benchmark to grade your actual job performance?",
+          "keywords": [
+            "person using laptop in office",
+            "people collaborating in office",
+            "manager looking at data",
+            "person looking thoughtful"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "90% of US work is unbenchmarked",
+              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+            },
+            {
+              "claim": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.",
+              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+            },
+            {
+              "claim": "Mercor mapped this labor index using data from the US Bureau of Labor Statistics.",
+              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+            },
+            {
+              "claim": "The Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.",
+              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+            },
+            {
+              "claim": "Only ten percent of total American work time aligns with current AI performance metrics.",
+              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.mercor.com/research/labor-index/benchmark-map/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-17T05:02:35.319003+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2233,8 +2217,8 @@
       "event": "Meta will start training its AI models on your website content for free. New business terms taking effect on October 30th grant this broad permission. The update applies to any websites associated with businesses that use Meta platforms. Me"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-17T03:15+05:30",
@@ -2282,7 +2266,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-17",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-17",
@@ -2378,29 +2362,6 @@
     "gemini-flash-lite-latest": 1792162330.6102633
   },
   "editor_log": [
-    {
-      "at": "2026-10-16T09:08+05:30",
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipel",
-      "overall": 8.7,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong technical news, but visual variety is lacking and frames are held too long.",
-      "fixes": [
-        "LINE 1: Change 'Two point eight trillion' to '2.8 trillion' for better readability.",
-        "LINE 7: Replace 'Could this finally bridge...' with 'This is a major step toward bridging the global language gap in machine learning.'"
-      ],
-      "visual": [
-        "line 1: The same chart is held for 9.6 seconds, exceeding the 8-second limit.",
-        "line 2: The same text-only frame is held for 4.8 seconds, creating visual stagnation.",
-        "line 3: The same text-only frame is held for 4.8 seconds, creating visual stagnation."
-      ]
-    },
     {
       "at": "2026-10-16T10:55+05:30",
       "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
@@ -2817,6 +2778,29 @@
       "visual": [
         "line 3: The same visual layout is held for 3 consecutive frames (5, 6, 7), violating the brand rul",
         "line 5: The same visual layout is held for 2 consecutive frames (10, 11), which is repetitive."
+      ]
+    },
+    {
+      "at": "2026-10-17T05:14+05:30",
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 5,
+        "flow": 9
+      },
+      "one_line": "Strong data, but the visuals are repetitive and lack dynamic variety.",
+      "fixes": [
+        "LINE 6: Replace 'Companies using these scores' with 'Employers using Mercor's scores' for more specificity.",
+        "LINE 7: Change to 'Would you trust an AI benchmark to grade your specific job performance?'"
+      ],
+      "visual": [
+        "line 1: The same static frame is held for 9.6 seconds, violating the brand style.",
+        "line 3: The same visual is held for 7.2 seconds, which is too long.",
+        "line 4: The same visual is held for 4.8 seconds, which is too long."
       ]
     }
   ],

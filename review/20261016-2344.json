@@ -1,0 +1,82 @@
+{
+ "made": "20261016-2344",
+ "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+ "hook_text": "90% of US work is unbenchmarked",
+ "hook_before": null,
+ "script": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.\nMercor mapped this labor index using data from the US Bureau of Labor Statistics.\nThe Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.\nOnly ten percent of total American work time aligns with current AI performance metrics.\nThis data shows that most professional duties currently exist outside the scope of AI evaluation.\nCompanies using these scores to hire or promote might miss the full picture of human utility.\nWould you trust an AI benchmark to grade your actual job performance?",
+ "words": 105,
+ "beats": [
+  {
+   "line": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.",
+   "visual": "stat"
+  },
+  {
+   "line": "Mercor mapped this labor index using data from the US Bureau of Labor Statistics.",
+   "visual": "source"
+  },
+  {
+   "line": "The Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.",
+   "visual": "clip"
+  },
+  {
+   "line": "Only ten percent of total American work time aligns with current AI performance metrics.",
+   "visual": "stat"
+  },
+  {
+   "line": "This data shows that most professional duties currently exist outside the scope of AI evaluation.",
+   "visual": "clip"
+  },
+  {
+   "line": "Companies using these scores to hire or promote might miss the full picture of human utility.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you trust an AI benchmark to grade your actual job performance?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 9,
+   "substance": 8,
+   "accuracy": 10,
+   "visuals": 5,
+   "flow": 9
+  },
+  "one_line": "Strong data, but the visuals are repetitive and lack dynamic variety.",
+  "script_fixes": [
+   "LINE 6: Replace 'Companies using these scores' with 'Employers using Mercor's scores' for more specificity.",
+   "LINE 7: Change to 'Would you trust an AI benchmark to grade your specific job performance?'"
+  ],
+  "visual_beats": [
+   0,
+   2,
+   3,
+   4
+  ],
+  "visual_notes": [
+   "line 1: The same static frame is held for 9.6 seconds, violating the brand style.",
+   "line 3: The same visual is held for 7.2 seconds, which is too long.",
+   "line 4: The same visual is held for 4.8 seconds, which is too long.",
+   "line 5: The same visual is held for 7.2 seconds, which is too long."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 43.77,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.0,
+ "cuts": [
+  13.33,
+  25.9,
+  38.6
+ ],
+ "first_cut_at": 13.33,
+ "avg_shot_seconds": 10.94,
+ "longest_shot_seconds": 13.33,
+ "verdict": "rejected",
+ "words_per_minute": 144
+}
