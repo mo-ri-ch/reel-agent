@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -216,11 +216,56 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Asus, HP, and Lenovo are already shipping devices …: The shot is an almost-empty card with only the word 'Available' and no visuals of the mentioned companies.",
+      "The Verge spent a week testing these machines acro…: The shot is an almost-empty card with only the word 'Tested' and no source card for The Verge.",
+      "This hardware might finally make Windows on Arm a …: The shot is an almost-empty card with only text and no visual of a person typing on a laptop.",
+      "The card is almost empty, containing only the word 'Available' instead of the requested visuals.",
+      "The image shows only an Asus logo, which is misleading as it does not show a person using a laptop as requested.",
+      "The card is almost empty, containing only the word 'Tested' instead of the requested source card.",
+      "The card is almost empty, containing only text instead of the requested stock video."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 4: Replace 'multiple high-speed cores' with a specific core count if available in source.",
+        "LINE 7: Replace 'Would you switch your laptop to an Arm chip?' with 'Is this the Windows on Arm breakthrough you've been waiting for?'"
+      ],
+      "visual_beats": [
+        0,
+        1,
+        3
+      ],
+      "visual_notes": [
+        "line 1: The same image is held for 4.8 seconds, exceeding the recommended pacing.",
+        "line 2: The same image is held for 7.2 seconds, creating a static feel.",
+        "line 4: The text 'Multiple' is repeated across three frames, which is visually redundant."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Nvidia RTX Spark: nvidia.com",
+      "Nvidia RTX Spark: nvidia.com",
+      "news photo: nvidia.com",
+      "news photo: nvidia.com"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "4 official images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIaGmrTGJnfBNh0rw_o1TaYTNm1itiiAAL6LQACtYmYViZ1-HtU4Ro0PQQ",
   "queue": [
     {
       "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
@@ -245,9 +290,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-17T12:02:35.473685+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-17T12:41:30.514251+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-17",
@@ -718,202 +763,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-          "link": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-          "summary": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-16T14:26:51+00:00",
-          "angle": "Mark Wahlberg is officially open to letting an AI clone carry on his acting legacy."
-        },
-        "draft": {
-          "title": "Mark Wahlberg on AI Acting Clones",
-          "hook_text": "Mark Wahlberg backs AI acting clones.",
-          "beats": [
-            {
-              "line": "Mark Wahlberg is open to an AI clone continuing his acting career.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-              "tag": "Wahlberg open to clones",
-              "name": "Mark Wahlberg",
-              "role": "Actor and Investor",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The actor says he will use AI to enhance his performances.",
-              "visual": "clip",
-              "query": "actor on a film set",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Enhance not replace",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Wahlberg spoke about this on October 16 2026 at a tech event.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Mark Wahlberg on using AI in film",
-              "url": "",
-              "tag": "October 16 2026",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He views these tools as a way to extend his legacy.",
-              "visual": "clip",
-              "query": "filmmaking equipment in studio",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Extending his legacy",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Wahlberg is also investing in companies developing these new technologies.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract digital neural network glowing in dark",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Wahlberg investor role",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you pay to watch a movie starring an AI clone?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "empty cinema theater with large screen",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Watch AI actors?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast, conversational tone, highlighting the shift in how actors view digital immortality.",
-          "thin": false,
-          "caption": "Mark Wahlberg is open to using an AI clone to continue his acting career. He stated on October 16 2026 that AI should enhance human performance. Would you pay to see a movie starring an AI clone?",
-          "hashtags": [
-            "MarkWahlberg",
-            "AIFilm",
-            "TechCrunch",
-            "DigitalLegacy"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-          ],
-          "script": "Mark Wahlberg is open to an AI clone continuing his acting career.\nThe actor says he will use AI to enhance his performances.\nWahlberg spoke about this on October 16 2026 at a tech event.\nHe views these tools as a way to extend his legacy.\nWahlberg is also investing in companies developing these new technologies.\nWould you pay to watch a movie starring an AI clone?",
-          "keywords": [
-            "actor on a film set",
-            "filmmaking equipment in studio"
-          ],
-          "image_prompts": [
-            "abstract digital neural network glowing in dark",
-            "empty cinema theater with large screen"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Mark Wahlberg backs AI acting clones.",
-              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-            },
-            {
-              "claim": "Mark Wahlberg is open to an AI clone continuing his acting career.",
-              "url": "https://www.analyticsinsight.net/news/would-you-watch-a-movie-starring-mark-wahlbergs-ai-clone-the-actor-says-yes"
-            },
-            {
-              "claim": "Mark Wahlberg is an actor and investor.",
-              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-            },
-            {
-              "claim": "The actor says he will use AI to enhance his performances.",
-              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-            },
-            {
-              "claim": "Wahlberg spoke about this on October 16 2026 at a tech event.",
-              "url": "https://www.analyticsinsight.net/news/would-you-watch-a-movie-starring-mark-wahlbergs-ai-clone-the-actor-says-yes"
-            },
-            {
-              "claim": "He views these tools as a way to extend his legacy.",
-              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-            },
-            {
-              "claim": "Wahlberg is also investing in companies developing these new technologies.",
-              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-17T08:33:12.087021+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1596,6 +1445,238 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+          "link": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+          "summary": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be a high-performing Arm-based SoC for laptops and small desktop computers, rivaling the best from Apple, Intel, AMD, and Qualcomm. It has loads of cores, Nvidia […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-16T15:00:00+00:00",
+          "angle": "Nvidia’s new RTX Spark 'superchip' laptops are finally here: is it worth the hype?"
+        },
+        "draft": {
+          "title": "Nvidia RTX Spark Laptops Tested",
+          "hook_text": "Nvidia just launched RTX Spark",
+          "beats": [
+            {
+              "line": "Nvidia just released the RTX Spark N1X processor for laptops and small desktops.",
+              "visual": "official",
+              "query": "Nvidia RTX Spark logo",
+              "prompt": "",
+              "big": "Nvidia RTX",
+              "small": "New Arm-based chip",
+              "entity": "Nvidia RTX Spark",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://www.nvidia.com",
+              "tag": "Nvidia RTX Spark N1X",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "This chip uses an Arm-based architecture designed for high performance in compact devices.",
+              "visual": "clip",
+              "query": "modern laptop internal components",
+              "prompt": "",
+              "big": "Arm-based ",
+              "small": "Compact device performance",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Arm-based architecture",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Asus, HP, and Lenovo are already shipping devices featuring this new hardware.",
+              "visual": "official",
+              "query": "Asus HP Lenovo laptops",
+              "prompt": "",
+              "big": "Asus HP Le",
+              "small": "Shipping now",
+              "entity": "Asus HP Lenovo laptops",
+              "outlet": "",
+              "domain": "asus.com",
+              "headline": "",
+              "url": "https://www.asus.com",
+              "tag": "Available on Asus HP Lenovo",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Asus",
+                  "domain": "asus.com"
+                },
+                {
+                  "name": "HP",
+                  "domain": "hp.com"
+                }
+              ]
+            },
+            {
+              "line": "The N1X chip integrates multiple high-speed cores for complex multitasking.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Multiple",
+              "small": "High-speed cores",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Initial testing highlights the platform's ability to run local AI tasks efficiently.",
+              "visual": "clip",
+              "query": "person using laptop in office",
+              "prompt": "",
+              "big": "Local AI t",
+              "small": "Efficient processing",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Runs AI tasks efficiently",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The Verge spent a week testing these machines across various professional workflows.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "A week with RTX Spark: everything we’ve learned",
+              "url": "",
+              "tag": "Tested by The Verge",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This hardware might finally make Windows on Arm a daily driver for power users. Would you switch your laptop to an Arm chip?",
+              "visual": "clip",
+              "query": "close up of person typing on laptop",
+              "prompt": "",
+              "big": "Windows on",
+              "small": "Daily driver status",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Windows on Arm",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Conversational and professional, focusing on the hardware specs and real-world testing experience.",
+          "thin": false,
+          "caption": "Nvidia has officially entered the Arm-based laptop market with the new RTX Spark N1X chip. This hardware is now available in laptops from Asus, HP, and Lenovo, aimed at power users. Would you switch your laptop to an Arm chip?",
+          "hashtags": [
+            "Nvidia",
+            "RTXSpark",
+            "TechNews",
+            "Arm",
+            "Laptops"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
+          ],
+          "script": "Nvidia just released the RTX Spark N1X processor for laptops and small desktops.\nThis chip uses an Arm-based architecture designed for high performance in compact devices.\nAsus, HP, and Lenovo are already shipping devices featuring this new hardware.\nThe N1X chip integrates multiple high-speed cores for complex multitasking.\nInitial testing highlights the platform's ability to run local AI tasks efficiently.\nThe Verge spent a week testing these machines across various professional workflows.\nThis hardware might finally make Windows on Arm a daily driver for power users. Would you switch your laptop to an Arm chip?",
+          "keywords": [
+            "modern laptop internal components",
+            "person using laptop in office",
+            "close up of person typing on laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia just launched RTX Spark",
+              "url": "https://www.storagereview.com/news/nvidia-rtx-spark-pre-orders-n1x-laptop-desktop-tdp-mxc-dgx-station-for-windows"
+            },
+            {
+              "claim": "Nvidia just released the RTX Spark N1X processor for laptops and small desktops.",
+              "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
+            },
+            {
+              "claim": "This chip uses an Arm-based architecture designed for high performance in compact devices.",
+              "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
+            },
+            {
+              "claim": "Asus, HP, and Lenovo are already shipping devices featuring this new hardware.",
+              "url": "https://hothardware.com/reviews/nvidia-rtx-spark-platform-review"
+            },
+            {
+              "claim": "The N1X chip integrates multiple high-speed cores for complex multitasking.",
+              "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
+            },
+            {
+              "claim": "Initial testing highlights the platform's ability to run local AI tasks efficiently.",
+              "url": "https://hothardware.com/reviews/nvidia-rtx-spark-platform-review"
+            },
+            {
+              "claim": "The Verge spent a week testing these machines across various professional workflows.",
+              "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
+            },
+            {
+              "claim": "This hardware might finally make Windows on Arm a daily driver for power users.",
+              "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-17T12:02:35.473685+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2114,8 +2195,8 @@
       "event": "Mark Wahlberg is open to an AI clone continuing his acting career. The actor says he will use AI to enhance his performances. Wahlberg spoke about this on October 16 2026 at a tech event. He views these tools as a way to extend his legacy. "
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-17T09:30+05:30",
@@ -2143,7 +2224,7 @@
   "report_day": "2026-10-16",
   "ig_count": {
     "day": "2026-10-17",
-    "at": "2026-10-17T12:00:34.076890+05:30",
+    "at": "2026-10-17T12:11:30.514506+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2163,16 +2244,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-17",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-17",
-    "calls": 194,
+    "calls": 200,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 134,
+        "ok": 140,
         "busy": 53,
         "other": 7,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2259,28 +2340,6 @@
     "gemini-flash-lite-latest": 1792162330.6102633
   },
   "editor_log": [
-    {
-      "at": "2026-10-16T15:46+05:30",
-      "title": "Sex, Spies and Silicon Valley: OpenAI Warns Staff About \"Honey Pots\"",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 7,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 5,
-        "flow": 7
-      },
-      "one_line": "Strong topic and hook, but visuals suffer from repetition and irrelevant stock images.",
-      "fixes": [
-        "LINE 4: Replace vague 'state actors now chase critical artificial intelligence breakthroughs' with specific details from the memo."
-      ],
-      "visual": [
-        "line 2: Repeated use of the same abstract OpenAI doodle graphic from Line 1.",
-        "line 4: NDTV logo is used as a visual while discussing security memos and state actors.",
-        "line 5: Text-only background persists for too long without dynamic visual changes."
-      ]
-    },
     {
       "at": "2026-10-16T15:56+05:30",
       "title": "Sex, Spies and Silicon Valley: OpenAI Warns Staff About \"Honey Pots\"",
@@ -2705,6 +2764,29 @@
         "line 1: The same static text screen is held for 9 seconds, violating the 8-second rule.",
         "line 2: Visuals are static and repetitive; lacks a dynamic element for the Ministry of Commerce.",
         "line 5: The same visual style is used for too many consecutive lines, creating a monotonous experi"
+      ]
+    },
+    {
+      "at": "2026-10-17T12:11+05:30",
+      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 4: Replace 'multiple high-speed cores' with a specific core count if available in source.",
+        "LINE 7: Replace 'Would you switch your laptop to an Arm chip?' with 'Is this the Windows on Arm breakthrough you've been waiting for?'"
+      ],
+      "visual": [
+        "line 1: The same image is held for 4.8 seconds, exceeding the recommended pacing.",
+        "line 2: The same image is held for 7.2 seconds, creating a static feel.",
+        "line 4: The text 'Multiple' is repeated across three frames, which is visually redundant."
       ]
     }
   ],
