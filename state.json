@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -174,11 +174,46 @@
     "fix_rounds": 1,
     "source_links": [
       "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "It brings faster processing speeds for automated c…: The image shows a chart/graph instead of data center servers blinking.",
+      "Would you integrate this flash model into your nex…: The image is blank/black instead of showing real images of OpenRouter.",
+      "Shows text instead of real images of DeepSeek v4.1 Flash.",
+      "Shows plain text instead of a source card for OpenRouter.",
+      "Shows plain text instead of stock video of a developer writing code.",
+      "Shows plain text instead of stock video of data center servers blinking.",
+      "Shows plain text instead of real images of OpenRouter."
+    ],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 8,
+        "flow": 8
+      },
+      "one_line": "Strong product launch reel with clear specifics, but pacing could be punchier.",
+      "script_fixes": [
+        "LINE 2: Specify the exact predecessor or context instead of generic 'previous iterations'."
+      ],
+      "visual_beats": [
+        1
+      ],
+      "visual_notes": [
+        "line 2: Static black background with only text during Line 2 lacks dynamic visual interest."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIaX2rTUGTFIgeESDEQqJ2hIt-qzkMgAAIEIQACtYmgVqExoTpEz2aYPQQ",
   "queue": [
     {
       "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
@@ -203,9 +238,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-17T16:05:11.926587+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-17T16:39:32.781423+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-17",
@@ -694,50 +729,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Is it safe to upload photos of your child to AI?",
-            "link": "https://www.bbc.com/news/articles/crpdgz2nqe59o",
-            "summary": "Is it safe to upload photos of your child to AI? BBC",
-            "source": "BBC",
-            "published": "2026-10-17T06:28:46+00:00",
-            "angle": "Is uploading baby photos to AI a privacy trap? Parents will definitely share this warning."
-          },
-          {
-            "title": "16-year-old Ethan Yan wins $50,000 scholarship for developing an affordable AI system to detect leukaemia",
-            "link": "https://timesofindia.indiatimes.com/science/discovery/16-year-old-ethan-yan-wins-50000-scholarship-for-developing-an-affordable-ai-system-to-detect-leukaemia-cells/articleshow/134893127.cms",
-            "summary": "16-year-old Ethan Yan wins $50,000 scholarship for developing an affordable AI system to detect leukaemia The Times of India",
-            "source": "The Times of India",
-            "published": "2026-10-17T05:30:00+00:00",
-            "angle": "A 16-year-old built an affordable AI leukaemia detector and won a massive scholarship."
-          },
-          {
-            "title": "Elorian’s first AI model wants to reason with images, not just about them",
-            "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-            "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-16T16:01:37+00:00",
-            "angle": "Elorian's new model beats top vision systems by actually reasoning with images, not just describing them."
-          }
-        ],
-        "choose_deadline": "2026-10-17T13:15:38.207109+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1625,6 +1616,196 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+          "link": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+          "summary": "",
+          "source": "openrouter.ai",
+          "published": "2026-10-17T08:37:46+00:00",
+          "buzz": "Hacker News 104 points",
+          "angle": "DeepSeek drops a hot new flash model, sending shockwaves through the AI developer community."
+        },
+        "draft": {
+          "title": "DeepSeek Drops v4.1 Flash",
+          "hook_text": "DeepSeek just dropped v4.1 Flash.",
+          "beats": [
+            {
+              "line": "DeepSeek just released the v4.1 Flash model on OpenRouter today.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "DeepSeek v4.1 Flash",
+              "outlet": "",
+              "domain": "openrouter.ai",
+              "headline": "",
+              "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+              "tag": "DeepSeek v4.1 Flash released",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "DeepSeek",
+                  "domain": "openrouter.ai"
+                }
+              ]
+            },
+            {
+              "line": "This updated version succeeds previous iterations in the DeepSeek lineup.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "OpenRouter",
+              "domain": "openrouter.ai",
+              "headline": "DeepSeek: DeepSeek v4.1 Flash 1017",
+              "url": "",
+              "tag": "Succeeds previous versions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "DeepSeek",
+                  "domain": "openrouter.ai"
+                }
+              ]
+            },
+            {
+              "line": "Developers can access the new model directly through the OpenRouter API.",
+              "visual": "clip",
+              "query": "developer writing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "API access on OpenRouter",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenRouter",
+                  "domain": "openrouter.ai"
+                }
+              ]
+            },
+            {
+              "line": "It brings faster processing speeds for automated coding and text tasks.",
+              "visual": "clip",
+              "query": "data center servers blinking",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Faster processing speeds",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you integrate this flash model into your next software project?",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenRouter",
+              "outlet": "",
+              "domain": "openrouter.ai",
+              "headline": "",
+              "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+              "tag": "Integrate into projects",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenRouter",
+                  "domain": "openrouter.ai"
+                }
+              ]
+            }
+          ],
+          "delivery": "sharp, fast-paced tech journalist delivery, straightforward and direct",
+          "thin": false,
+          "caption": "DeepSeek released the v4.1 Flash model on OpenRouter today. Would you integrate this flash model into your next software project?",
+          "hashtags": [
+            "DeepSeek",
+            "OpenRouter",
+            "TechNews",
+            "ArtificialIntelligence",
+            "Coding"
+          ],
+          "sources": [
+            "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+          ],
+          "script": "DeepSeek just released the v4.1 Flash model on OpenRouter today.\nThis updated version succeeds previous iterations in the DeepSeek lineup.\nDevelopers can access the new model directly through the OpenRouter API.\nIt brings faster processing speeds for automated coding and text tasks.\nWould you integrate this flash model into your next software project?",
+          "keywords": [
+            "developer writing code",
+            "data center servers blinking"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "DeepSeek just dropped v4.1 Flash.",
+              "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+            },
+            {
+              "claim": "DeepSeek just released the v4.1 Flash model on OpenRouter today.",
+              "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+            },
+            {
+              "claim": "This updated version succeeds previous iterations in the DeepSeek lineup.",
+              "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+            },
+            {
+              "claim": "Developers can access the new model directly through the OpenRouter API.",
+              "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+            },
+            {
+              "claim": "It brings faster processing speeds for automated coding and text tasks.",
+              "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-17T16:05:11.926587+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2144,8 +2325,8 @@
       "event": "Nvidia just released the RTX Spark N1X processor for laptops and small desktops. This chip uses an Arm-based architecture designed for high performance in compact devices. Asus, HP, and Lenovo are already shipping devices featuring this new"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-17T12:45+05:30",
@@ -2173,7 +2354,7 @@
   "report_day": "2026-10-16",
   "ig_count": {
     "day": "2026-10-17",
-    "at": "2026-10-17T15:55:26.276331+05:30",
+    "at": "2026-10-17T16:09:32.781701+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2193,11 +2374,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-17",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-17",
-    "calls": 296,
+    "calls": 303,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2208,7 +2389,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 15,
+        "ok": 21,
         "busy": 1,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2233,7 +2414,7 @@
       },
       "gemini-3-flash-preview": {
         "ok": 8,
-        "busy": 8,
+        "busy": 9,
         "other": 1,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
@@ -2313,28 +2494,10 @@
   "gemini_exhausted": {
     "gemini-3.6-flash": 1792223712.01539,
     "gemini-3.5-flash": 1792223784.6007473,
-    "gemini-3.7-flash": 1792223937.157778
+    "gemini-3.7-flash": 1792223937.157778,
+    "gemini-3-flash-preview": 1792233557.046363
   },
   "editor_log": [
-    {
-      "at": "2026-10-16T17:49+05:30",
-      "title": "Conversational brain AI for adaptive epilepsy care",
-      "overall": 8.2,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 9,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Fascinating health AI topic let down by static text cards and repetitive visuals.",
-      "fixes": [],
-      "visual": [
-        "line 1: Holds the same text title card across multiple frames for too long without motion or visua",
-        "line 3: Reuses the exact same white visual layout and typography from line 3 through line 4, causi"
-      ]
-    },
     {
       "at": "2026-10-16T19:11+05:30",
       "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
@@ -2763,6 +2926,26 @@
         "line 1: Title card style is plain and lacks strong breaking news visual context.",
         "line 2: Repeated dark typography layout with similar styling to previous text frames.",
         "line 5: Ending card holds for too long with static text layout."
+      ]
+    },
+    {
+      "at": "2026-10-17T16:09+05:30",
+      "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 8,
+        "flow": 8
+      },
+      "one_line": "Strong product launch reel with clear specifics, but pacing could be punchier.",
+      "fixes": [
+        "LINE 2: Specify the exact predecessor or context instead of generic 'previous iterations'."
+      ],
+      "visual": [
+        "line 2: Static black background with only text during Line 2 lacks dynamic visual interest."
       ]
     }
   ],
