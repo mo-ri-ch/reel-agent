@@ -744,7 +744,9 @@ def behind_today(s):
     now = st.now()
     start = datetime.fromisoformat(s.setdefault("guarantee_since", now.isoformat()))
     passed_slots = sum(1 for t in slots_on(now.date()) if start < t <= now)
-    queued_now = sum(1 for q in s["queue"] if datetime.fromisoformat(q["post_at"]) <= now and not q.get("extra"))
+    # a reel whose upload failed and waits for its retry still covers its slot (no second reel rushed out)
+    queued_now = sum(1 for q in s["queue"] if (datetime.fromisoformat(q["post_at"]) <= now or q.get("tries"))
+                     and not q.get("extra"))
     return max(0, passed_slots - posted_today(s) - queued_now)
 
 

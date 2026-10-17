@@ -410,5 +410,18 @@ check("tried keeps 60", len(_s["tried"]), 60)
 check("rejected story not re-picked", picked, ["Fresh news"])
 main.tg.send, main.start_script = _send, _start
 
+# a reel waiting to retry a failed upload covers its slot, so no second reel is rushed out for it
+from datetime import timedelta as _td  # noqa: E402
+_now, _ig = main.st.now(), main.IG_READY
+main.IG_READY = lambda: False
+_slot = [t for t in main.slots_on(_now.date()) if t <= _now]
+if _slot:
+    _s = {"guarantee_since": (_slot[0] - _td(minutes=1)).isoformat(), "post_log": [],
+          "queue": [{"title": "x", "post_at": (_now + _td(minutes=30)).isoformat(), "tries": 1}]}
+    check("retrying reel covers its slot", main.behind_today(_s), len(_slot) - 1)
+    _s["queue"][0].pop("tries")
+    check("later reel doesn't cover a missed slot", main.behind_today(_s), len(_slot))
+main.IG_READY = _ig
+
 print("\n".join(fails) if fails else "all checks passed")
 sys.exit(1 if fails else 0)
