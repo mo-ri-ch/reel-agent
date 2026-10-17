@@ -1,36 +1,185 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "North Korea says it tested new torpedo system with AI capabilities",
-      "link": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/",
-      "summary": "North Korea says it tested new torpedo system with AI capabilities WRAL",
-      "source": "WRAL",
-      "published": "2026-10-17T03:55:42+00:00",
-      "angle": "North Korea claims to have tested AI-powered torpedoes, raising global concerns about autonomous warfare."
-    },
-    {
-      "title": "Claude reveals ECDSA curve origins",
-      "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
-      "summary": "",
-      "source": "anthropic.com",
-      "published": "2026-10-16T18:55:59+00:00",
-      "buzz": "Hacker News 742 points",
-      "angle": "Claude just revealed the origins of the ECDSA curve, a deep-dive technical mystery that has the internet buzzing."
-    },
-    {
-      "title": "New technique uses artificial intelligence to fight breast cancer",
-      "link": "https://www.cbsnews.com/atlanta/video/new-technique-uses-artificial-intelligence-to-fight-breast-cancer/",
-      "summary": "New technique uses artificial intelligence to fight breast cancer CBS News",
-      "source": "CBS News",
-      "published": "2026-10-16T21:43:00+00:00",
-      "angle": "A new AI breakthrough is successfully detecting breast cancer, showing how the tech is saving lives right now."
-    }
-  ],
-  "choose_deadline": "2026-10-17T10:01:04.168016+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "North Korea says it tested new torpedo system with AI capabilities",
+    "link": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/",
+    "summary": "North Korea says it tested new torpedo system with AI capabilities WRAL",
+    "source": "WRAL",
+    "published": "2026-10-17T03:55:42+00:00",
+    "angle": "North Korea claims to have tested AI-powered torpedoes, raising global concerns about autonomous warfare."
+  },
+  "draft": {
+    "title": "North Korea Claims AI Torpedo Test",
+    "hook_text": "North Korea claims new AI torpedo",
+    "beats": [
+      {
+        "line": "North Korea claims it successfully tested a new underwater torpedo system with AI capabilities.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "North Korea",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "North Korea AI claim",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "State media confirmed the test occurred as part of their ongoing naval modernization efforts.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "WRAL",
+        "domain": "wral.com",
+        "headline": "North Korea says it tested new torpedo system with AI capabilities",
+        "url": "",
+        "tag": "Naval modernization program",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The country continues expanding its underwater strike capabilities to counter regional naval threats.",
+        "visual": "clip",
+        "query": "ocean water surface",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Underwater strike capabilities",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This announcement follows a series of recent weapons trials conducted by the government.",
+        "visual": "clip",
+        "query": "military ship at sea",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Recent weapons trials",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Military analysts are currently assessing the validity of these specific technical claims.",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "Cinematic dark blue underwater scene with a blurred torpedo shape in the distance, high contrast.",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Analysts assessing claims",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust AI to manage underwater weapon systems?",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "Close up of a radar interface on a dark background, minimal blue light, no text.",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "AI weapon systems",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Objective and measured, focusing strictly on the official claims and the context of the region.",
+    "thin": false,
+    "caption": "North Korea has announced the testing of a new underwater torpedo system featuring AI capabilities. This development is part of their broader naval modernization strategy. Would you trust AI to manage underwater weapon systems?",
+    "hashtags": [
+      "NorthKorea",
+      "AI",
+      "MilitaryTech",
+      "DefenseNews",
+      "Geopolitics"
+    ],
+    "sources": [
+      "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+    ],
+    "script": "North Korea claims it successfully tested a new underwater torpedo system with AI capabilities.\nState media confirmed the test occurred as part of their ongoing naval modernization efforts.\nThe country continues expanding its underwater strike capabilities to counter regional naval threats.\nThis announcement follows a series of recent weapons trials conducted by the government.\nMilitary analysts are currently assessing the validity of these specific technical claims.\nWould you trust AI to manage underwater weapon systems?",
+    "keywords": [
+      "ocean water surface",
+      "military ship at sea"
+    ],
+    "image_prompts": [
+      "Cinematic dark blue underwater scene with a blurred torpedo shape in the distance, high contrast.",
+      "Close up of a radar interface on a dark background, minimal blue light, no text."
+    ],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "North Korea claims new AI torpedo",
+        "url": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+      },
+      {
+        "claim": "North Korea claims it successfully tested a new underwater torpedo system with AI capabilities.",
+        "url": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+      },
+      {
+        "claim": "State media confirmed the test occurred as part of their ongoing naval modernization efforts.",
+        "url": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+      },
+      {
+        "claim": "The country continues expanding its underwater strike capabilities to counter regional naval threats.",
+        "url": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+      },
+      {
+        "claim": "This announcement follows a series of recent weapons trials conducted by the government.",
+        "url": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+      },
+      {
+        "claim": "Military analysts are currently assessing the validity of these specific technical claims.",
+        "url": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -79,7 +228,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-17T10:36:17.346653+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -486,7 +635,25 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Claude reveals ECDSA curve origins",
+      "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "summary": "",
+      "source": "anthropic.com",
+      "published": "2026-10-16T18:55:59+00:00",
+      "buzz": "Hacker News 742 points",
+      "angle": "Claude just revealed the origins of the ECDSA curve, a deep-dive technical mystery that has the internet buzzing."
+    },
+    {
+      "title": "New technique uses artificial intelligence to fight breast cancer",
+      "link": "https://www.cbsnews.com/atlanta/video/new-technique-uses-artificial-intelligence-to-fight-breast-cancer/",
+      "summary": "New technique uses artificial intelligence to fight breast cancer CBS News",
+      "source": "CBS News",
+      "published": "2026-10-16T21:43:00+00:00",
+      "angle": "A new AI breakthrough is successfully detecting breast cancer, showing how the tech is saving lives right now."
+    }
+  ],
   "tried": [
     "AI credit jitters drive US tech default insurance to record highs",
     "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
@@ -549,264 +716,7 @@
     "Replit is no longer working with Anthropic, CEO says",
     "India becomes the latest country to report rogue AI agent activity"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Replit is no longer working with Anthropic, CEO says",
-          "link": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
-          "summary": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with Anthropic.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-16T21:22:28+00:00",
-          "angle": "Replit ditches Anthropic for OpenAI—the biggest AI breakup of the year."
-        },
-        "draft": {
-          "title": "Replit Ends Partnership with Anthropic",
-          "hook_text": "Replit cuts ties with Anthropic",
-          "beats": [
-            {
-              "line": "Replit is officially ending its work with Anthropic. CEO Amjad Masad confirmed the decision this week.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://replit.com",
-              "tag": "Replit drops Anthropic",
-              "name": "Amjad Masad",
-              "role": "CEO, Replit",
-              "x": "amasad",
-              "brands": [
-                {
-                  "name": "Replit",
-                  "domain": "replit.com"
-                },
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Masad cited multiple reasons for the split, including high costs.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Costs",
-              "small": "Reason for departure",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Cost concerns",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Replit",
-                  "domain": "replit.com"
-                }
-              ]
-            },
-            {
-              "line": "Replit previously signed a major partnership with OpenAI back in August.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "tag": "Replit partners OpenAI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Replit",
-                  "domain": "replit.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Users had no prior warning that the Anthropic deal was ending.",
-              "visual": "clip",
-              "query": "coding on laptop screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No prior warning",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "This move marks a shift in how Replit manages its internal model integrations.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Replit",
-              "outlet": "",
-              "domain": "replit.com",
-              "headline": "",
-              "url": "https://replit.com",
-              "tag": "Integration shift",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Replit",
-                  "domain": "replit.com"
-                }
-              ]
-            },
-            {
-              "line": "TechCrunch reported the development after Masad addressed the change.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Replit is no longer working with Anthropic, CEO says",
-              "url": "",
-              "tag": "TechCrunch report",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will OpenAI now become the primary provider for all Replit services?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Future of Replit",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                },
-                {
-                  "name": "Replit",
-                  "domain": "replit.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "Direct and informative, maintaining a professional tech news tone throughout.",
-          "thin": false,
-          "caption": "Replit CEO Amjad Masad has confirmed the platform is ending its partnership with Anthropic, citing costs as a major factor. This follows Replit's August deal with OpenAI. Will OpenAI become the sole provider for Replit users?",
-          "hashtags": [
-            "Replit",
-            "Anthropic",
-            "OpenAI",
-            "AINews",
-            "Tech"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-          ],
-          "script": "Replit is officially ending its work with Anthropic. CEO Amjad Masad confirmed the decision this week.\nMasad cited multiple reasons for the split, including high costs.\nReplit previously signed a major partnership with OpenAI back in August.\nUsers had no prior warning that the Anthropic deal was ending.\nThis move marks a shift in how Replit manages its internal model integrations.\nTechCrunch reported the development after Masad addressed the change.\nWill OpenAI now become the primary provider for all Replit services?",
-          "keywords": [
-            "coding on laptop screen",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_score": 39,
-          "evidence": [
-            {
-              "claim": "Replit cuts ties with Anthropic",
-              "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            },
-            {
-              "claim": "Replit is officially ending its work with Anthropic.",
-              "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            },
-            {
-              "claim": "Amjad Masad is the CEO of Replit.",
-              "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            },
-            {
-              "claim": "Masad cited high costs as a reason for the split.",
-              "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            },
-            {
-              "claim": "Replit signed a partnership with OpenAI in August.",
-              "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            },
-            {
-              "claim": "Users had no prior warning that the Anthropic deal was ending.",
-              "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            },
-            {
-              "claim": "TechCrunch reported the development after Masad addressed the change.",
-              "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-17T07:02:53.333249+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1675,6 +1585,51 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIZ0mrS5vqu4dW-Fx04WLA2yxjY-n59AAKnLQACtYmYVig3ryYzXJ8DPQQ",
       "history_title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "North Korea says it tested new torpedo system with AI capabilities",
+            "link": "https://www.wral.com/news/ap/b9856-north-korea-says-it-tested-new-torpedo-system-with-ai-capabilities/",
+            "summary": "North Korea says it tested new torpedo system with AI capabilities WRAL",
+            "source": "WRAL",
+            "published": "2026-10-17T03:55:42+00:00",
+            "angle": "North Korea claims to have tested AI-powered torpedoes, raising global concerns about autonomous warfare."
+          },
+          {
+            "title": "Claude reveals ECDSA curve origins",
+            "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
+            "summary": "",
+            "source": "anthropic.com",
+            "published": "2026-10-16T18:55:59+00:00",
+            "buzz": "Hacker News 742 points",
+            "angle": "Claude just revealed the origins of the ECDSA curve, a deep-dive technical mystery that has the internet buzzing."
+          },
+          {
+            "title": "New technique uses artificial intelligence to fight breast cancer",
+            "link": "https://www.cbsnews.com/atlanta/video/new-technique-uses-artificial-intelligence-to-fight-breast-cancer/",
+            "summary": "New technique uses artificial intelligence to fight breast cancer CBS News",
+            "source": "CBS News",
+            "published": "2026-10-16T21:43:00+00:00",
+            "angle": "A new AI breakthrough is successfully detecting breast cancer, showing how the tech is saving lives right now."
+          }
+        ],
+        "choose_deadline": "2026-10-17T10:01:04.168016+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2250,13 +2205,13 @@
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-17",
-    "calls": 177,
+    "calls": 194,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 123,
-        "busy": 47,
+        "ok": 134,
+        "busy": 53,
         "other": 7,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
