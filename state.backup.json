@@ -1,35 +1,173 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "News 12 Investigates: ECU professor explains how AI is helping military intelligence",
-      "link": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence",
-      "summary": "News 12 Investigates: ECU professor explains how AI is helping military intelligence WCTI",
-      "source": "WCTI",
-      "published": "2026-10-17T14:05:22+00:00",
-      "angle": ""
-    },
-    {
-      "title": "How Taiwan’s new AI satellite system aims to speed up PLA tracking",
-      "link": "https://www.scmp.com/news/china/military/article/3371252/how-taiwans-new-ai-satellite-system-aims-speed-early-warning-against-pla-moves",
-      "summary": "How Taiwan’s new AI satellite system aims to speed up PLA tracking South China Morning Post",
-      "source": "South China Morning Post",
-      "published": "2026-10-17T14:00:07+00:00",
-      "angle": ""
-    },
-    {
-      "title": "CERT-In warns of autonomous intrusions, and the weaknesses are the oldest ones in the book",
-      "link": "https://www.expresscomputer.in/artificial-intelligence-ai/cert-in-warns-of-autonomous-intrusions-and-the-weaknesses-are-the-oldest-ones-in-the-book/140080/",
-      "summary": "CERT-In warns of autonomous intrusions, and the weaknesses are the oldest ones in the book Express Computer",
-      "source": "Express Computer",
-      "published": "2026-10-17T13:28:54+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-17T21:20:41.075244+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "News 12 Investigates: ECU professor explains how AI is helping military intelligence",
+    "link": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence",
+    "summary": "News 12 Investigates: ECU professor explains how AI is helping military intelligence WCTI",
+    "source": "WCTI",
+    "published": "2026-10-17T14:05:22+00:00",
+    "angle": ""
+  },
+  "draft": {
+    "title": "ECU Professor Explains AI in Military Intelligence",
+    "hook_text": "AI is reshaping military intelligence.",
+    "beats": [
+      {
+        "line": "East Carolina University assistant professor David Hart explains how AI is helping military intelligence operations.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Professor David Hart explains AI",
+        "name": "David Hart",
+        "role": "Assistant Professor, East Carolina University",
+        "x": "",
+        "brands": [
+          {
+            "name": "East Carolina University",
+            "domain": "ecu.edu"
+          }
+        ]
+      },
+      {
+        "line": "Defense sectors use these advanced systems to process massive amounts of operational data quickly.",
+        "visual": "clip",
+        "query": "military data analysis screens",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Processing operational data",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Analysts previously sifted through endless manual reports before machine learning entered the workflow.",
+        "visual": "clip",
+        "query": "analysts reviewing maps",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Previous manual workflows",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Human commanders still keep final control over major strategic decisions and the use of force.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "East Carolina University",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Humans retain final control",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "East Carolina University",
+            "domain": "ecu.edu"
+          }
+        ]
+      },
+      {
+        "line": "Would you trust an algorithm with national defense strategy?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "WCTI",
+        "domain": "wcti12.com",
+        "headline": "ECU professor explains how AI is helping military intelligence",
+        "url": "",
+        "tag": "Trust AI with defense",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "sharp, journalistic, fast-paced and objective delivery explaining defense tech clearly",
+    "thin": false,
+    "caption": "East Carolina University assistant professor David Hart explains how AI is helping military intelligence. Human commanders still keep final control over strategic decisions. Would you trust automated systems with national defense?",
+    "hashtags": [
+      "militaryintelligence",
+      "ecu",
+      "artificialintelligence",
+      "defense"
+    ],
+    "sources": [
+      "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+    ],
+    "script": "East Carolina University assistant professor David Hart explains how AI is helping military intelligence operations.\nDefense sectors use these advanced systems to process massive amounts of operational data quickly.\nAnalysts previously sifted through endless manual reports before machine learning entered the workflow.\nHuman commanders still keep final control over major strategic decisions and the use of force.\nWould you trust an algorithm with national defense strategy?",
+    "keywords": [
+      "military data analysis screens",
+      "analysts reviewing maps"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "AI is reshaping military intelligence.",
+        "url": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+      },
+      {
+        "claim": "David Hart is an assistant professor at East Carolina University.",
+        "url": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+      },
+      {
+        "claim": "David Hart explains how AI is helping military intelligence operations.",
+        "url": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+      },
+      {
+        "claim": "Defense sectors use these advanced systems to process massive amounts of operational data quickly.",
+        "url": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+      },
+      {
+        "claim": "Analysts previously sifted through endless manual reports before machine learning entered the workflow.",
+        "url": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+      },
+      {
+        "claim": "Human commanders still keep final control over major strategic decisions and the use of force.",
+        "url": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -57,7 +195,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-17T21:55:49.082750+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -470,20 +608,20 @@
   "paused": null,
   "spare": [
     {
-      "title": "Gartner says agent costs will rise fivefold by 2028 even as tokens get cheaper. Here is how to keep them in check",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQWpOYmpGOUxPMjd2UmRfSWNpTGNKcHlUTjl3N2s4NTVLVzB0TzlNd3VYaFNaVjcxWFhRWWlySFNFYW1Pdjd2SmRNNHJDdkxGNXFpLXFBXzdwZ3FxbTlQX0RGUDNNVEhCeVNQcGFhaVNNLUtpTEJENklRTHZkT29LUlpDLUxlWTFsZGs2czJVU1JRVzN0dHNHUWFjZVJhZWhOWnBDQ194WU9MXzhwWVZpMWtTUmdlME1vZVhZY3BzQ1k0MFU1ZmpvbGlQWVEzWHJ0UHNDX0QwUUdoWHNNdnlld01xREg?oc=5",
-      "summary": "Gartner says agent costs will rise fivefold by 2028 even as tokens get cheaper. Here is how to keep them in check VentureBeat",
-      "source": "VentureBeat",
-      "published": "2026-10-16T19:00:00+00:00",
-      "angle": "Gartner warns AI agent costs are about to explode by 5x even as tokens get cheaper."
+      "title": "How Taiwan’s new AI satellite system aims to speed up PLA tracking",
+      "link": "https://www.scmp.com/news/china/military/article/3371252/how-taiwans-new-ai-satellite-system-aims-speed-early-warning-against-pla-moves",
+      "summary": "How Taiwan’s new AI satellite system aims to speed up PLA tracking South China Morning Post",
+      "source": "South China Morning Post",
+      "published": "2026-10-17T14:00:07+00:00",
+      "angle": ""
     },
     {
-      "title": "One AI model, trillions of variants: Breaking mass attacks on voice assistants",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1vb0dnbWRSeUhCV09tRS1qMDRXRlBOdjExa2F5LWpqRmJqZThsYnFfU1hrMmVCMUdjV2wzb0VzOVI1WWRsakxvOUVJX3JnSVVNekNFdUM1UjJjQktxLVRLa0pFemRWZVZXX3RQNUNfZlI0bThfbWt4SmMwWG9sdw?oc=5",
-      "summary": "One AI model, trillions of variants: Breaking mass attacks on voice assistants Tech Xplore",
-      "source": "Tech Xplore",
-      "published": "2026-10-17T12:00:13+00:00",
-      "angle": "Researchers reveal a massive security flaw with AI voice assistants facing trillions of variants in mass attacks."
+      "title": "CERT-In warns of autonomous intrusions, and the weaknesses are the oldest ones in the book",
+      "link": "https://www.expresscomputer.in/artificial-intelligence-ai/cert-in-warns-of-autonomous-intrusions-and-the-weaknesses-are-the-oldest-ones-in-the-book/140080/",
+      "summary": "CERT-In warns of autonomous intrusions, and the weaknesses are the oldest ones in the book Express Computer",
+      "source": "Express Computer",
+      "published": "2026-10-17T13:28:54+00:00",
+      "angle": ""
     }
   ],
   "tried": [
@@ -548,203 +686,7 @@
     "AI lab offers free plumbing and HVAC repairs across three cities to train AI robots — wearable sensors record video of repair work for robotics training, free services also include electrical work, air duct cleaning, and carpet cleaning",
     "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Inside the long, bitter fight over one man’s quest to build the biggest AI datacenter in California",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOXpKSGU0ckJ0aURhNTRzTUhyMUI2QWI0SWp4M19HUnI1elJDNDRaUF9TVDJ1V1dWM3Y3VzlMTWxXX25DRXRMUldUTVpUcF9lcVR0X3hGZG5tS21ZaUxmNFVHTkRaV0RQT3ZWWkZpdHpaYU9Xbk1jMG5tS1UtWFdIVXFad01sdDJDa3BSdm1aUnQ4dkhDdXZZcQ?oc=5",
-          "summary": "Inside the long, bitter fight over one man’s quest to build the biggest AI datacenter in California The Guardian",
-          "source": "The Guardian",
-          "published": "2026-10-17T13:01:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "California's Biggest AI Datacenter Fight",
-          "hook_text": "Sebastian Rucci's massive California AI datacenter",
-          "beats": [
-            {
-              "line": "Sebastian Rucci wants to build the biggest AI datacenter in California.",
-              "visual": "clip",
-              "query": "large empty land California",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Sebastian Rucci's huge plan",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "His ambitious quest has triggered a long and bitter local fight.",
-              "visual": "clip",
-              "query": "community town hall meeting",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Bitter local fight",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The project secured three hundred thirty megawatts of electricity to operate.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "330 MW",
-              "small": "electricity secured",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Three hundred thirty megawatts",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Nearby Imperial County residents worry about severe power grid strain.",
-              "visual": "clip",
-              "query": "power lines sunset",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Imperial County grid strain",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "A county judge ruled the facility cannot proceed without an extensive environmental review.",
-              "visual": "clip",
-              "query": "court gavel judge desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Environmental review required",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will this legal roadblock permanently halt the massive energy drain?",
-              "visual": "clip",
-              "query": "solar panels desert california",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Legal roadblock clash",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and investigative, starting with ambition and shifting to local conflict over resources",
-          "thin": false,
-          "caption": "Sebastian Rucci is pushing to build California's largest AI datacenter, securing 330 megawatts of power and sparking fierce local pushback in Imperial County. A county judge ruled the facility must complete an extensive environmental review first. Will this legal roadblock stop the project?",
-          "hashtags": [
-            "datacenter",
-            "california",
-            "energy",
-            "ai"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOXpKSGU0ckJ0aURhNTRzTUhyMUI2QWI0SWp4M19HUnI1elJDNDRaUF9TVDJ1V1dWM3Y3VzlMTWxXX25DRXRMUldUTVpUcF9lcVR0X3hGZG5tS21ZaUxmNFVHTkRaV0RQT3ZWWkZpdHpaYU9Xbk1jMG5tS1UtWFdIVXFad01sdDJDa3BSdm1aUnQ4dkhDdXZZcQ?oc=5",
-            "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-          ],
-          "script": "Sebastian Rucci wants to build the biggest AI datacenter in California.\nHis ambitious quest has triggered a long and bitter local fight.\nThe project secured three hundred thirty megawatts of electricity to operate.\nNearby Imperial County residents worry about severe power grid strain.\nA county judge ruled the facility cannot proceed without an extensive environmental review.\nWill this legal roadblock permanently halt the massive energy drain?",
-          "keywords": [
-            "large empty land California",
-            "community town hall meeting",
-            "power lines sunset",
-            "court gavel judge desk",
-            "solar panels desert california"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Sebastian Rucci wants to build a massive AI datacenter in California.",
-              "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-            },
-            {
-              "claim": "Sebastian Rucci wants to build the biggest AI datacenter in California.",
-              "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-            },
-            {
-              "claim": "His ambitious quest has triggered a long and bitter local fight.",
-              "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-            },
-            {
-              "claim": "The project secured three hundred thirty megawatts of electricity to operate.",
-              "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-            },
-            {
-              "claim": "Nearby Imperial County residents worry about severe power grid strain.",
-              "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-            },
-            {
-              "claim": "A county judge ruled the facility cannot proceed without an extensive environmental review.",
-              "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-17T19:43:55.558896+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1508,6 +1450,50 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIa2GrTkFJ4rsjAdGC_YZX6BDLFmHXRAAK-IQACtYmgVidSDaYzPT2vPQQ",
       "history_title": "79% of employed respondents would sacrifice salary for protection against AI job displacement: Report"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "News 12 Investigates: ECU professor explains how AI is helping military intelligence",
+            "link": "https://wcti12.com/news/local/news-12-investigates-ecu-professor-explains-how-ai-is-helping-military-intelligence",
+            "summary": "News 12 Investigates: ECU professor explains how AI is helping military intelligence WCTI",
+            "source": "WCTI",
+            "published": "2026-10-17T14:05:22+00:00",
+            "angle": ""
+          },
+          {
+            "title": "How Taiwan’s new AI satellite system aims to speed up PLA tracking",
+            "link": "https://www.scmp.com/news/china/military/article/3371252/how-taiwans-new-ai-satellite-system-aims-speed-early-warning-against-pla-moves",
+            "summary": "How Taiwan’s new AI satellite system aims to speed up PLA tracking South China Morning Post",
+            "source": "South China Morning Post",
+            "published": "2026-10-17T14:00:07+00:00",
+            "angle": ""
+          },
+          {
+            "title": "CERT-In warns of autonomous intrusions, and the weaknesses are the oldest ones in the book",
+            "link": "https://www.expresscomputer.in/artificial-intelligence-ai/cert-in-warns-of-autonomous-intrusions-and-the-weaknesses-are-the-oldest-ones-in-the-book/140080/",
+            "summary": "CERT-In warns of autonomous intrusions, and the weaknesses are the oldest ones in the book Express Computer",
+            "source": "Express Computer",
+            "published": "2026-10-17T13:28:54+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-17T21:20:41.075244+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2054,7 +2040,7 @@
   "report_day": "2026-10-16",
   "ig_count": {
     "day": "2026-10-17",
-    "at": "2026-10-17T21:15:25.596511+05:30",
+    "at": "2026-10-17T21:25:49.598320+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2078,7 +2064,7 @@
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-17",
-    "calls": 347,
+    "calls": 364,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2089,8 +2075,8 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 52,
-        "busy": 14,
+        "ok": 63,
+        "busy": 20,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
