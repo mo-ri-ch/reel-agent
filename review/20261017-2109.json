@@ -1,0 +1,77 @@
+{
+ "made": "20261017-2109",
+ "title": "Nvidia has officially confirmed that the 5090 is not discontinued and will continue shipping.",
+ "hook_text": "Nvidia 5090 is not dead",
+ "hook_before": "Nvidia is officially continuing production of the RTX 5090.",
+ "script": "The RTX fifty-ninety is staying, not being discontinued. Nvidia confirmed the card remains in its active lineup.\nThe company confirmed the card remains in its active lineup.\nThis announcement follows widespread rumors of a sudden discontinuation.\nThe RTX 5090 remains the flagship choice for high-end AI processing.\nShoppers can expect units to keep hitting store shelves.\nAre you planning to upgrade your rig for local AI tasks?",
+ "words": 67,
+ "beats": [
+  {
+   "line": "The RTX fifty-ninety is staying, not being discontinued. Nvidia confirmed the card remains in its active lineup.",
+   "visual": "official"
+  },
+  {
+   "line": "The company confirmed the card remains in its active lineup.",
+   "visual": "official"
+  },
+  {
+   "line": "This announcement follows widespread rumors of a sudden discontinuation.",
+   "visual": "clip"
+  },
+  {
+   "line": "The RTX 5090 remains the flagship choice for high-end AI processing.",
+   "visual": "official"
+  },
+  {
+   "line": "Shoppers can expect units to keep hitting store shelves.",
+   "visual": "clip"
+  },
+  {
+   "line": "Are you planning to upgrade your rig for local AI tasks?",
+   "visual": "source"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 9,
+   "substance": 6,
+   "accuracy": 10,
+   "visuals": 4,
+   "flow": 8
+  },
+  "one_line": "Strong news, but visuals are repetitive and include a major brand mismatch.",
+  "script_fixes": [
+   "LINE 2: Remove this line entirely as it is a direct, redundant repetition of LINE 1.",
+   "LINE 5: Replace 'units' with 'RTX 5090 units' for better clarity."
+  ],
+  "visual_beats": [
+   0,
+   4,
+   5
+  ],
+  "visual_notes": [
+   "line 1: The same static graphic is held for too long across multiple frames.",
+   "line 5: The visual shows a Sony store, which is completely unrelated to Nvidia.",
+   "line 6: The Reddit logo is generic; use a relevant hardware or GPU-related graphic instead."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 31.1,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  2.8,
+  11.7,
+  22.57,
+  24.43
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 6.22,
+ "longest_shot_seconds": 10.87,
+ "verdict": "rejected",
+ "words_per_minute": 129
+}
