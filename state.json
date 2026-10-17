@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -180,11 +180,54 @@
     "fact_notes": [],
     "source_links": [
       "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Wahlberg spoke about this on October 16 2026 at a …: The shot is an almost-empty card with only text, missing the required source card for TechCrunch.",
+      "Wahlberg is also investing in companies developing…: The shot is an almost-empty card with only text, missing the required illustration of a neural network.",
+      "Would you pay to watch a movie starring an AI clon…: The shot is an almost-empty card with only text, missing the required illustration of a cinema theater.",
+      "The shot is an almost-empty card with text, missing the required stock video of an actor on a film set.",
+      "The shot is an almost-empty card with text, missing the required source card for TechCrunch.",
+      "The shot is an almost-empty card with text, missing the required stock video of filmmaking equipment.",
+      "The shot is an almost-empty card with text, missing the required illustration of a digital neural network.",
+      "The shot is an almost-empty card with text, missing the required illustration of an empty cinema theater."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong content, but the visuals are too static and repetitive for a premium feed.",
+      "script_fixes": [
+        "LINE 2: Change to 'He plans to use AI to enhance performances, not replace them.'",
+        "LINE 5: Specify the type of companies or the investment context if available."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The same photo of Mark Wahlberg is held for too long across multiple frames.",
+        "line 2: Visuals are just text on a black background; needs B-roll or dynamic imagery.",
+        "line 5: Repetitive visual style; lacks a visual representation of the 'investor' concept."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Mark Wahlberg: U.S. Marine Corps photo by Sgt. Jorge A. Rosales"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIZ0mrS5vqu4dW-Fx04WLA2yxjY-n59AAKnLQACtYmYVig3ryYzXJ8DPQQ",
   "queue": [
     {
       "title": "Meta’s new terms may allow it to train AI on news sites for free",
@@ -230,9 +273,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-17T08:33:12.087021+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-17T09:09:47.188829+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-17",
@@ -701,284 +744,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-          "link": "https://www.mercor.com/research/labor-index/benchmark-map/",
-          "summary": "",
-          "source": "mercor.com",
-          "published": "2026-10-16T17:08:38+00:00",
-          "buzz": "Hacker News 350 points",
-          "angle": "New data shows 90% of your actual work isn't covered by AI benchmarks—why your job might be safer than you think."
-        },
-        "draft": {
-          "title": "AI Benchmarks vs Reality",
-          "hook_text": "90% of US work is unbenchmarked",
-          "beats": [
-            {
-              "line": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "90%",
-              "small": "US work hours",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "90% of hours",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Mercor mapped this labor index using data from the US Bureau of Labor Statistics.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Mercor",
-              "domain": "mercor.com",
-              "headline": "Benchmark Map: Labor Index",
-              "url": "",
-              "tag": "Mercor Labor Index",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mercor",
-                  "domain": "mercor.com"
-                }
-              ]
-            },
-            {
-              "line": "The Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.",
-              "visual": "clip",
-              "query": "person using laptop in office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Mercor Benchmark Map",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mercor",
-                  "domain": "mercor.com"
-                }
-              ]
-            },
-            {
-              "line": "Only ten percent of total American work time aligns with current AI performance metrics.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "10%",
-              "small": "Benchmark coverage",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Limited alignment",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This data shows that most professional duties currently exist outside the scope of AI evaluation.",
-              "visual": "clip",
-              "query": "people collaborating in office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Scope of evaluation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Employers using Mercor's scores to hire or promote might miss the full picture of human utility.",
-              "visual": "clip",
-              "query": "manager looking at data",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Hiring and benchmarks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mercor",
-                  "domain": "mercor.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust an AI benchmark to grade your specific job performance?",
-              "visual": "clip",
-              "query": "person looking thoughtful",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Job performance evaluation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Analytical and direct, highlighting the disconnect between current tech testing and the reality of professional work.",
-          "thin": false,
-          "caption": "New research from Mercor reveals that 90% of US working hours involve tasks not covered by existing AI benchmarks. By mapping data from the US Bureau of Labor Statistics, the report shows that only 10% of work aligns with current performance metrics. Would you trust an AI benchmark to grade your specific job performance?",
-          "hashtags": [
-            "Mercor",
-            "AI",
-            "LaborMarket",
-            "FutureOfWork",
-            "Automation"
-          ],
-          "sources": [
-            "https://www.mercor.com/research/labor-index/benchmark-map/"
-          ],
-          "script": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.\nMercor mapped this labor index using data from the US Bureau of Labor Statistics.\nThe Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.\nOnly ten percent of total American work time aligns with current AI performance metrics.\nThis data shows that most professional duties currently exist outside the scope of AI evaluation.\nEmployers using Mercor's scores to hire or promote might miss the full picture of human utility.\nWould you trust an AI benchmark to grade your specific job performance?",
-          "keywords": [
-            "person using laptop in office",
-            "people collaborating in office",
-            "manager looking at data",
-            "person looking thoughtful"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "90% of US work is unbenchmarked",
-              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
-            },
-            {
-              "claim": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks.",
-              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
-            },
-            {
-              "claim": "Mercor mapped this labor index using data from the US Bureau of Labor Statistics.",
-              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
-            },
-            {
-              "claim": "The Mercor Benchmark Map identifies how well current models perform against these specific labor requirements.",
-              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
-            },
-            {
-              "claim": "Only ten percent of total American work time aligns with current AI performance metrics.",
-              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
-            },
-            {
-              "claim": "Most professional duties currently exist outside the scope of AI evaluation.",
-              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
-            },
-            {
-              "claim": "Employers using Mercor's scores to hire or promote might miss the full picture of human utility.",
-              "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.mercor.com/research/labor-index/benchmark-map/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Ninety percent of US working hours are spent on ta…: missing the required big number 90%",
-            "Mercor mapped this labor index using data from the…: missing the required source card for Mercor",
-            "The Mercor Benchmark Map identifies how well curre…: missing the required stock video of a person using a laptop",
-            "Only ten percent of total American work time align…: missing the required big number 10%",
-            "This data shows that most professional duties curr…: missing the required stock video of people collaborating",
-            "Employers using Mercor's scores to hire or promote…: missing the required stock video of a manager looking at data",
-            "Would you trust an AI benchmark to grade your spec…: missing the required stock video of a person looking thoughtful",
-            "The shot is a blank text card instead of the requested stock video.",
-            "The shot is a blank text card instead of the requested stock video.",
-            "The shot is a blank text card instead of the requested stock video.",
-            "The shot is a blank text card instead of the requested stock video."
-          ],
-          "editor": {
-            "overall": 8.3,
-            "scores": {
-              "hook": 9,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 10,
-              "visuals": 6,
-              "flow": 8
-            },
-            "one_line": "Strong data, but visual pacing is repetitive and lacks dynamic variety.",
-            "script_fixes": [
-              "LINE 5: Replace 'This data shows that most professional duties' with 'This implies 90% of professional duties'",
-              "LINE 6: Replace 'might miss the full picture of human utility' with 'risk overlooking critical human skills'"
-            ],
-            "visual_beats": [
-              0,
-              2,
-              4
-            ],
-            "visual_notes": [
-              "line 1: Same static frame held for too long (4.8s).",
-              "line 3: Repetitive use of the same Mercor logo frame for 4.8 seconds.",
-              "line 5: Visuals are static and lack movement or data visualization to support the claim."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "7 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIZq2rSuLpH9IOp3uStf4IOdDrabYoTAAIcLQACtYmYVpsw9XPJbez_PQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIZq2rSuLpH9IOp3uStf4IOdDrabYoTAAIcLQACtYmYVpsw9XPJbez_PQQ",
-      "history_title": "90% of US working hours are spent on tasks not covered well by AI benchmarks"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1710,6 +1475,202 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+          "link": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+          "summary": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-16T14:26:51+00:00",
+          "angle": "Mark Wahlberg is officially open to letting an AI clone carry on his acting legacy."
+        },
+        "draft": {
+          "title": "Mark Wahlberg on AI Acting Clones",
+          "hook_text": "Mark Wahlberg backs AI acting clones.",
+          "beats": [
+            {
+              "line": "Mark Wahlberg is open to an AI clone continuing his acting career.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+              "tag": "Wahlberg open to clones",
+              "name": "Mark Wahlberg",
+              "role": "Actor and Investor",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The actor says he will use AI to enhance his performances.",
+              "visual": "clip",
+              "query": "actor on a film set",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Enhance not replace",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Wahlberg spoke about this on October 16 2026 at a tech event.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Mark Wahlberg on using AI in film",
+              "url": "",
+              "tag": "October 16 2026",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He views these tools as a way to extend his legacy.",
+              "visual": "clip",
+              "query": "filmmaking equipment in studio",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Extending his legacy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Wahlberg is also investing in companies developing these new technologies.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract digital neural network glowing in dark",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Wahlberg investor role",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you pay to watch a movie starring an AI clone?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "empty cinema theater with large screen",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Watch AI actors?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast, conversational tone, highlighting the shift in how actors view digital immortality.",
+          "thin": false,
+          "caption": "Mark Wahlberg is open to using an AI clone to continue his acting career. He stated on October 16 2026 that AI should enhance human performance. Would you pay to see a movie starring an AI clone?",
+          "hashtags": [
+            "MarkWahlberg",
+            "AIFilm",
+            "TechCrunch",
+            "DigitalLegacy"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
+          ],
+          "script": "Mark Wahlberg is open to an AI clone continuing his acting career.\nThe actor says he will use AI to enhance his performances.\nWahlberg spoke about this on October 16 2026 at a tech event.\nHe views these tools as a way to extend his legacy.\nWahlberg is also investing in companies developing these new technologies.\nWould you pay to watch a movie starring an AI clone?",
+          "keywords": [
+            "actor on a film set",
+            "filmmaking equipment in studio"
+          ],
+          "image_prompts": [
+            "abstract digital neural network glowing in dark",
+            "empty cinema theater with large screen"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Mark Wahlberg backs AI acting clones.",
+              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
+            },
+            {
+              "claim": "Mark Wahlberg is open to an AI clone continuing his acting career.",
+              "url": "https://www.analyticsinsight.net/news/would-you-watch-a-movie-starring-mark-wahlbergs-ai-clone-the-actor-says-yes"
+            },
+            {
+              "claim": "Mark Wahlberg is an actor and investor.",
+              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
+            },
+            {
+              "claim": "The actor says he will use AI to enhance his performances.",
+              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
+            },
+            {
+              "claim": "Wahlberg spoke about this on October 16 2026 at a tech event.",
+              "url": "https://www.analyticsinsight.net/news/would-you-watch-a-movie-starring-mark-wahlbergs-ai-clone-the-actor-says-yes"
+            },
+            {
+              "claim": "He views these tools as a way to extend his legacy.",
+              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
+            },
+            {
+              "claim": "Wahlberg is also investing in companies developing these new technologies.",
+              "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-17T08:33:12.087021+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2227,8 +2188,8 @@
       "event": "Ninety percent of US working hours are spent on tasks with little or no coverage from existing AI benchmarks. Mercor mapped this labor index using data from the US Bureau of Labor Statistics. The Mercor Benchmark Map identifies how well cur"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-17T05:55+05:30",
@@ -2256,7 +2217,7 @@
   "report_day": "2026-10-16",
   "ig_count": {
     "day": "2026-10-17",
-    "at": "2026-10-17T08:25:24.035503+05:30",
+    "at": "2026-10-17T08:39:47.189113+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2276,16 +2237,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-17",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-17",
-    "calls": 167,
+    "calls": 173,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 113,
+        "ok": 119,
         "busy": 47,
         "other": 7,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2372,29 +2333,6 @@
     "gemini-flash-lite-latest": 1792162330.6102633
   },
   "editor_log": [
-    {
-      "at": "2026-10-16T14:02+05:30",
-      "title": "Mini brain organoids ‘reading’ Braille marks key step towards biohybrid computin",
-      "overall": 6.2,
-      "scores": {
-        "hook": 6,
-        "specific": 7,
-        "substance": 7,
-        "accuracy": 7,
-        "visuals": 4,
-        "flow": 6
-      },
-      "one_line": "Strong technical script ruined by irrelevant fish imagery and low-effort placeholder avatars.",
-      "fixes": [
-        "LINE 1: Bristol researchers just hit 83% accuracy running Braille through living brain tissue.",
-        "LINE 6: Liu’s team used human stem cells to grow these organoids for biohybrid tests."
-      ],
-      "visual": [
-        "line 4: Frame 7 shows fish, which is completely unrelated to brain organoids or Braille.",
-        "line 3: Initial-based avatars (TL, BW) look like unfinished placeholders; use real photos.",
-        "line 6: Repeating the University of Bristol text card is redundant and slows visual momentum."
-      ]
-    },
     {
       "at": "2026-10-16T14:52+05:30",
       "title": "Zupee turns to AI as it exits the gaming business",
@@ -2816,6 +2754,29 @@
         "line 1: The India flag graphic is held for too long and lacks dynamic motion.",
         "line 2: The visual for 'public code repositories' is just a text card; needs a screenshot of a rep",
         "line 5: The visual is a static text card; needs a relevant data visualization or security alert gr"
+      ]
+    },
+    {
+      "at": "2026-10-17T08:39+05:30",
+      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone ",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong content, but the visuals are too static and repetitive for a premium feed.",
+      "fixes": [
+        "LINE 2: Change to 'He plans to use AI to enhance performances, not replace them.'",
+        "LINE 5: Specify the type of companies or the investment context if available."
+      ],
+      "visual": [
+        "line 1: The same photo of Mark Wahlberg is held for too long across multiple frames.",
+        "line 2: Visuals are just text on a black background; needs B-roll or dynamic imagery.",
+        "line 5: Repetitive visual style; lacks a visual representation of the 'investor' concept."
       ]
     }
   ],
