@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -199,16 +199,61 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Police in Philadelphia arrested a woman for blocki…: The shot is a text-only card and does not show the required stock video of a Philadelphia city street.",
+      "Carolyn Marvin stood directly in front of an Uber …: The shot is a text-only card and does not show the required photo of Carolyn Marvin or an initials card.",
+      "Marvin told ABC13 she was protesting because AI ta…: The shot is a text-only card and does not show the required source card for ABC13.",
+      "Authorities officially charged Marvin with disorde…: The shot is a text-only card and does not show the required stock video of police handcuffs.",
+      "Uber utilizes these automated sidewalk units to ma…: The shot is a text-only card and does not show the required real images of an Uber Eats robot.",
+      "Would you ever stand in the way of a robot?…: The shot is a text-only card and does not show the required stock video of a sidewalk delivery robot.",
+      "The shot is an almost-empty card with only text, missing the required stock video of a Philadelphia city street.",
+      "The shot is an almost-empty card with only text, missing the required photo of the person.",
+      "The shot is an almost-empty card with only text, missing the required stock video of a police officer.",
+      "The shot is an almost-empty card with only text, missing the required source card for ABC13.",
+      "The shot is an almost-empty card with only text, missing the required stock video of police handcuffs.",
+      "The shot is an almost-empty card with only text, missing the required real images of an Uber Eats robot.",
+      "The shot is an almost-empty card with only text, missing the required stock video of a sidewalk delivery robot."
+    ],
+    "editor": {
+      "overall": 9.0,
+      "scores": {
+        "hook": 8,
+        "specific": 10,
+        "substance": 10,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visuals are repetitive and lack dynamic variety.",
+      "script_fixes": [],
+      "visual_beats": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The same image of the robot is held for too long (4.8 seconds).",
+        "line 3: The 'Refusal to move' graphic is repeated across two frames without change.",
+        "line 5: The 'Disorderly conduct charge' graphic is repeated across two frames without change.",
+        "line 6: The 'Automated delivery units' graphic is repeated across two frames without change."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIdT2rVILrEwUeGKuMQ-lYI8gABuIxLZAACIigAAmqoqVb7I4qFDddMwj0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-19T01:01:11.225793+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-19T01:40:43.367537+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-19",
@@ -675,208 +720,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Anthropic sees junior tech hires' share fall from 27% to 9% amid growing AI adoption",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVXNqRlFjYmM3cmZYRENhTG5teWxZNWJPZHp1M0tYMmJUcnhtNGRUUGJGeFNmSmVnUDItVnNwRlFsbzJsb1hqRXRKR2JKUG9ieVBVNHlKRmdCeXctMjVUMU91Vm55cW1PelpzZTNwUy0wLWtXYWR2eG9STVlyZWdmV1JWbWNkVkE3dXlaYklOWkhHdWdFODVUYTZNTHJ4dWp1aTEtanIwa3E5R044UWZSSkpSQXgxdEtZUWlNWlRLV0tJTjk1VFdCWTZZcWs?oc=5",
-          "summary": "Anthropic sees junior tech hires' share fall from 27% to 9% amid growing AI adoption ANI News",
-          "source": "ANI News",
-          "published": "2026-10-18T15:09:00+00:00",
-          "angle": "Anthropic data shows junior tech hiring has plummeted from 27% to 9%—is AI officially replacing entry-level jobs?"
-        },
-        "draft": {
-          "title": "Anthropic Junior Hiring Drops to 9%",
-          "hook_text": "Junior tech hires plummet at Anthropic",
-          "beats": [
-            {
-              "line": "Anthropic just cut its junior tech hiring share from twenty-seven percent to nine percent.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.anthropic.com",
-              "tag": "Anthropic hiring down",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "This shift follows the company's increased reliance on its Claude models for internal tasks.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Claude",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://claude.ai",
-              "tag": "Claude replacing juniors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Claude",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The company now leans on senior engineers to manage AI-driven workflows.",
-              "visual": "clip",
-              "query": "software engineer working on code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Senior engineers needed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This change happened rapidly over the last year as AI adoption accelerated.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "9%",
-              "small": "current junior share",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "9 percent junior share",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Junior roles previously made up over a quarter of the engineering headcount.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "27%",
-              "small": "previous junior share",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "27 percent previous share",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Does this mean entry-level tech jobs are disappearing for good?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "ANI News",
-              "domain": "aninews.in",
-              "headline": "Anthropic junior tech hires fall to 9 percent",
-              "url": "",
-              "tag": "Entry level jobs vanishing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Objective and slightly urgent tone, highlighting the rapid shift in hiring strategy at a leading AI lab.",
-          "thin": false,
-          "caption": "Anthropic has reduced its junior tech hiring from 27% to 9% as the company integrates its Claude AI models into internal workflows. This marks a significant pivot in how top AI labs structure their engineering teams. Are entry-level tech roles becoming obsolete?",
-          "hashtags": [
-            "Anthropic",
-            "ClaudeAI",
-            "TechNews",
-            "HiringTrends",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://www.aninews.in/news/technology/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018104523/"
-          ],
-          "script": "Anthropic just cut its junior tech hiring share from twenty-seven percent to nine percent.\nThis shift follows the company's increased reliance on its Claude models for internal tasks.\nThe company now leans on senior engineers to manage AI-driven workflows.\nThis change happened rapidly over the last year as AI adoption accelerated.\nJunior roles previously made up over a quarter of the engineering headcount.\nDoes this mean entry-level tech jobs are disappearing for good?",
-          "keywords": [
-            "software engineer working on code"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_score": 59,
-          "evidence": [
-            {
-              "claim": "Junior tech hires plummet at Anthropic",
-              "url": "https://www.anthropic.com/research/employment-at-anthropic"
-            },
-            {
-              "claim": "Anthropic cut its junior tech hiring share from twenty-seven percent to nine percent.",
-              "url": "https://www.anthropic.com/research/employment-at-anthropic"
-            },
-            {
-              "claim": "This shift follows the company's increased reliance on its Claude models for internal tasks.",
-              "url": "https://www.anthropic.com/research/employment-at-anthropic"
-            },
-            {
-              "claim": "The company now leans on senior engineers to manage AI-driven workflows.",
-              "url": "https://www.anthropic.com/research/employment-at-anthropic"
-            },
-            {
-              "claim": "This change happened rapidly over the last year as AI adoption accelerated.",
-              "url": "https://www.anthropic.com/research/employment-at-anthropic"
-            },
-            {
-              "claim": "Junior roles previously made up over a quarter of the engineering headcount.",
-              "url": "https://www.anthropic.com/research/employment-at-anthropic"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.aninews.in/news/business/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018203944",
-            "https://www.aninews.in/news/technology/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018104523/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-18T22:07:22.881932+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1578,6 +1421,221 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "A woman was arrested in Philly for blocking a delivery robot",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+          "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-18T18:28:10+00:00",
+          "angle": "A woman was arrested for blocking an AI delivery robot, highlighting the growing public tension between humans and autonomous tech."
+        },
+        "draft": {
+          "title": "Woman arrested for blocking Uber delivery robot",
+          "hook_text": "Philadelphia arrest over delivery robot",
+          "beats": [
+            {
+              "line": "Police in Philadelphia arrested a woman for blocking a sidewalk delivery robot.",
+              "visual": "clip",
+              "query": "Philadelphia city street",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Philadelphia arrest made",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Carolyn Marvin stood directly in front of an Uber robot to halt it.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Carolyn Marvin intercepted",
+              "name": "Carolyn Marvin",
+              "role": "Protester",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "She refused to move when officers requested that she clear the sidewalk path.",
+              "visual": "clip",
+              "query": "police officer talking",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Refusal to move",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Marvin told ABC13 she was protesting because AI takes jobs from human delivery workers.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "ABC13",
+              "domain": "6abc.com",
+              "headline": "Woman arrested for blocking delivery robot",
+              "url": "",
+              "tag": "Protesting job loss",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Authorities officially charged Marvin with disorderly conduct for the obstruction.",
+              "visual": "clip",
+              "query": "police handcuffs",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Disorderly conduct charge",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Uber utilizes these automated sidewalk units to manage local food delivery orders.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Uber Eats robot",
+              "outlet": "",
+              "domain": "uber.com",
+              "headline": "",
+              "url": "https://www.uber.com",
+              "tag": "Automated delivery units",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you ever stand in the way of a robot?",
+              "visual": "clip",
+              "query": "sidewalk delivery robot",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Would you protest",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "A factual, straightforward tone that moves from the incident to the underlying labor concerns.",
+          "thin": false,
+          "caption": "Carolyn Marvin was arrested and charged with disorderly conduct in Philadelphia after blocking an Uber delivery robot. Marvin stated she is protesting because she believes AI is replacing human delivery workers. Would you ever stand in the way of a robot?",
+          "hashtags": [
+            "Philadelphia",
+            "Uber",
+            "automation",
+            "futureofwork",
+            "AI"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
+          ],
+          "script": "Police in Philadelphia arrested a woman for blocking a sidewalk delivery robot.\nCarolyn Marvin stood directly in front of an Uber robot to halt it.\nShe refused to move when officers requested that she clear the sidewalk path.\nMarvin told ABC13 she was protesting because AI takes jobs from human delivery workers.\nAuthorities officially charged Marvin with disorderly conduct for the obstruction.\nUber utilizes these automated sidewalk units to manage local food delivery orders.\nWould you ever stand in the way of a robot?",
+          "keywords": [
+            "Philadelphia city street",
+            "police officer talking",
+            "police handcuffs",
+            "sidewalk delivery robot"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Philadelphia arrest over delivery robot",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
+            },
+            {
+              "claim": "Police in Philadelphia arrested a woman for blocking a sidewalk delivery robot.",
+              "url": "https://6abc.com/post/woman-arrested-blocking-delivery-robot-center-city-philadelphia-confrontation/19941323/"
+            },
+            {
+              "claim": "Carolyn Marvin stood directly in front of an Uber robot to halt it.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
+            },
+            {
+              "claim": "She refused to move when officers requested that she clear the sidewalk path.",
+              "url": "https://6abc.com/post/woman-arrested-blocking-delivery-robot-center-city-philadelphia-confrontation/19941323/"
+            },
+            {
+              "claim": "Marvin told ABC13 she was protesting because AI takes jobs from human delivery workers.",
+              "url": "https://6abc.com/post/woman-arrested-blocking-delivery-robot-center-city-philadelphia-confrontation/19941323/"
+            },
+            {
+              "claim": "Authorities officially charged Marvin with disorderly conduct for the obstruction.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
+            },
+            {
+              "claim": "Uber utilizes these automated sidewalk units to manage local food delivery orders.",
+              "url": "https://www.phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-19T01:01:11.225793+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2098,8 +2156,8 @@
       "event": "Anthropic just cut its junior tech hiring share from twenty-seven percent to nine percent. This shift follows the company's increased reliance on its Claude models for internal tasks. The company now leans on senior engineers to manage AI-d"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-18T22:50+05:30",
@@ -2127,7 +2185,7 @@
   "report_day": "2026-10-18",
   "ig_count": {
     "day": "2026-10-19",
-    "at": "2026-10-19T01:00:32.279439+05:30",
+    "at": "2026-10-19T01:10:43.367771+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2147,14 +2205,21 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-19",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-19",
-    "calls": 0,
+    "calls": 6,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.1-flash-lite": {
+        "ok": 6,
+        "busy": 0,
+        "other": 0,
+        "last": ""
+      }
+    }
   },
   "gemini_errors": [
     {
@@ -2235,29 +2300,6 @@
     "gemini-3.5-flash-lite": 1792330143.231468
   },
   "editor_log": [
-    {
-      "at": "2026-10-18T05:55+05:30",
-      "title": "Opencode breached, rotate keys to be safe.",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 8
-      },
-      "one_line": "The hook is too generic and the visuals are repetitive and static.",
-      "fixes": [
-        "LINE 1: Replace 'Opencode systems' with 'Opencode's API platform' to be more specific.",
-        "LINE 2: Change to 'Attackers exploited a legacy server awaiting decommissioning to gain access.'"
-      ],
-      "visual": [
-        "line 1: Hook is static text; needs a dynamic visual or motion graphic to stop the scroll.",
-        "line 2: Visuals are identical to the previous frame; lacks visual progression.",
-        "line 4: The same '1.4 percent' visual is held for too long without variation."
-      ]
-    },
     {
       "at": "2026-10-18T06:09+05:30",
       "title": "Opencode breached, rotate keys to be safe.",
@@ -2680,6 +2722,26 @@
         "line 1: The date '18 Oct 2026' is in the future; this is a major credibility error.",
         "line 3: The SCMP logo is generic; use a screenshot of the actual article headline.",
         "line 5: Visuals are static and repetitive; use a dynamic graphic showing a 'human-in-the-loop' wor"
+      ]
+    },
+    {
+      "at": "2026-10-19T01:10+05:30",
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "overall": 9.0,
+      "scores": {
+        "hook": 8,
+        "specific": 10,
+        "substance": 10,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visuals are repetitive and lack dynamic variety.",
+      "fixes": [],
+      "visual": [
+        "line 1: The same image of the robot is held for too long (4.8 seconds).",
+        "line 3: The 'Refusal to move' graphic is repeated across two frames without change.",
+        "line 5: The 'Disorderly conduct charge' graphic is repeated across two frames without change."
       ]
     }
   ],
