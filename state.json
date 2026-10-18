@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -185,16 +185,55 @@
     "source_links": [
       "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html",
       "https://www.livemint.com/companies/news/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11729227181057.html"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Morgan Stanley and Oliver Wyman published the find…: Leftover UI selection bounding box is visible around the word Morgan.",
+      "Wall Street poured billions into machine learning …: Leftover UI selection bounding box is visible around the word Billions.",
+      "Instead of higher profits, many asset managers fac…: Leftover UI selection bounding box is visible around the word Data.",
+      "Would you trust software with your life savings?…: Leftover UI selection bounding box is visible around the word Trust.",
+      "The image is heavily blurred and shows a plain grey gradient instead of stock video of financial traders looking at scre",
+      "The image shows text on a plain background instead of stock video of a Wall Street trading floor with computers."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual pacing is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 3: Replace 'Most investment firms' with 'The majority of surveyed firms' to maintain specificity.",
+        "LINE 6: Change to 'Would you trust AI with your life savings?' to align with the AI theme."
+      ],
+      "visual_beats": [
+        0,
+        2,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The same text and layout are held for too long across three frames.",
+        "line 3: Visuals are identical to the previous line, creating a static, repetitive feel.",
+        "line 5: The same visual layout is held for three frames, failing to provide new visual interest."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIczmrUyfdsAAHso4vhKHCDD8RfhdRgAAOuJwACaqipVv85Dyc4Sil6PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-18T18:51:07.110003+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-18T19:30:32.280469+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-18",
@@ -684,199 +723,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Researchers train AI to detect concealed handguns using Wi-Fi signals — open-source WiFireNet achieves precision detection on older 802.11a standard by analyzing how weapons distort wireless signals",
-          "link": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxPTEZsc1BFTllkRUpCUlRGQjlzQVBkWk5EeWRwRFBDSDVKNjFFamtBSlREZUo0MEFZSmNjbjRmbVhkS3U5SHlwTDJxWHZEeG9VOEV0UE5GbWRwLWYtN29reHBoTng1bWtQWXY1Zm54Z0h0LWRUbU5WakY4NVhnTlExYmNZaWZEV1J4b1dXQmswbTFrTGdQdkpqcVotNVRkUjNOYWNWYnhmN2dZOHJVQjc4cTBNSHBBVjBDaTFsMHZkZldzY0ZuaER4cHZKRFk1VWZtZTV0YnpLbm81ZHluY2tjY0lveERKb0FNT1AyRk5haFJLRUNIR3FzOGZwVlYxanNyUWdLSDRZaVhLc3VORDBlRGdSb2VYQXhQQzBOTW0tSFpIRmRqV3FNUHJ2MWRzdkhfSkllVFRtYWJkUlVOX0p6VDFfOTgzY21DTkJEZ0xZVHlvS2NhM3RrbzZjNWpINUltNjJHcDVoUWF1QkxuTlVoMGhVTlFuZ1c4anlZ?oc=5",
-          "summary": "Researchers train AI to detect concealed handguns using Wi-Fi signals — open-source WiFireNet achieves precision detection on older 802.11a standard by analyzing how weapons distort wireless signals Tom's Hardware",
-          "source": "Tom's Hardware",
-          "published": "2026-10-18T11:00:00+00:00",
-          "angle": "Surprising new capability: AI can now detect concealed weapons simply by analyzing Wi-Fi signals."
-        },
-        "draft": {
-          "title": "WiFireNet AI Detects Concealed Handguns",
-          "hook_text": "Wi-Fi routers can now spot hidden guns.",
-          "beats": [
-            {
-              "line": "An open-source AI called WiFireNet detects concealed handguns by tracking wireless signal disturbances.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Tom's Hardware",
-              "domain": "tomshardware.com",
-              "headline": "Researchers train AI to detect concealed handguns using Wi-Fi signals",
-              "url": "",
-              "tag": "WiFireNet detects concealed handguns",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It works by analyzing how metal weapons distort wireless signals bouncing through indoor environments.",
-              "visual": "clip",
-              "query": "wifi router blinking lights",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Analyzes wireless signal distortion",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Researchers specifically trained the detection model to run on the older 802.11a wireless standard.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "802.11a",
-              "small": "Wi-Fi standard used",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trained on 802.11a standard",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This allows security teams to achieve precision weapon detection using standard network infrastructure without cameras.",
-              "visual": "clip",
-              "query": "empty hallway security monitor",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Precision detection without cameras",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Traditional surveillance relied on expensive metal detectors and optical cameras to scan public spaces.",
-              "visual": "clip",
-              "query": "airport security metal detector",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Replaces traditional metal detectors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust a standard Wi-Fi router to secure your building?",
-              "visual": "clip",
-              "query": "digital network security glowing",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust router security",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "fast, journalist pacing, straight to the facts with sharp inflection on the technical details",
-          "thin": false,
-          "caption": "An open-source AI called WiFireNet detects concealed handguns using Wi-Fi signal distortion on the 802.11a standard. Would you trust router signals for security?",
-          "hashtags": [
-            "WiFireNet",
-            "ArtificialIntelligence",
-            "CyberSecurity",
-            "TechNews"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMi-wJBVV95cUxPTEZsc1BFTllkRUpCUlRGQjlzQVBkWk5EeWRwRFBDSDVKNjFFamtBSlREZUo0MEFZSmNjbjRmbVhkS3U5SHlwTDJxWHZEeG9VOEV0UE5GbWRwLWYtN29reHBoTng1bWtQWXY1Zm54Z0h0LWRUbU5WakY4NVhnTlExYmNZaWZEV1J4b1dXQmswbTFrTGdQdkpqcVotNVRkUjNOYWNWYnhmN2dZOHJVQjc4cTBNSHBBVjBDaTFsMHZkZldzY0ZuaER4cHZKRFk1VWZtZTV0YnpLbm81ZHluY2tjY0lveERKb0FNT1AyRk5haFJLRUNIR3FzOGZwVlYxanNyUWdLSDRZaVhLc3VORDBlRGdSb2VYQXhQQzBOTW0tSFpIRmRqV3FNUHJ2MWRzdkhfSkllVFRtYWJkUlVOX0p6VDFfOTgzY21DTkJEZ0xZVHlvS2NhM3RrbzZjNWpINUltNjJHcDVoUWF1QkxuTlVoMGhVTlFuZ1c4anlZ?oc=5"
-          ],
-          "script": "An open-source AI called WiFireNet detects concealed handguns by tracking wireless signal disturbances.\nIt works by analyzing how metal weapons distort wireless signals bouncing through indoor environments.\nResearchers specifically trained the detection model to run on the older 802.11a wireless standard.\nThis allows security teams to achieve precision weapon detection using standard network infrastructure without cameras.\nTraditional surveillance relied on expensive metal detectors and optical cameras to scan public spaces.\nWould you trust a standard Wi-Fi router to secure your building?",
-          "keywords": [
-            "wifi router blinking lights",
-            "empty hallway security monitor",
-            "airport security metal detector",
-            "digital network security glowing"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Wi-Fi routers can now spot hidden guns.",
-              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals"
-            },
-            {
-              "claim": "An open-source AI called WiFireNet detects concealed handguns by tracking wireless signal disturbances.",
-              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals"
-            },
-            {
-              "claim": "It works by analyzing how metal weapons distort wireless signals bouncing through indoor environments.",
-              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals"
-            },
-            {
-              "claim": "Researchers specifically trained the detection model to run on the older 802.11a wireless standard.",
-              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals"
-            },
-            {
-              "claim": "This allows security teams to achieve precision weapon detection using standard network infrastructure without cameras.",
-              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals"
-            },
-            {
-              "claim": "Traditional surveillance relied on expensive metal detectors and optical cameras to scan public spaces.",
-              "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals-open-source-wifirenet-achieves-precision-detection-on-older-802-11a-standard-by-analyzing-how-weapons-distort-wireless-signals"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-18T17:54:30.706460+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1686,6 +1532,207 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Only 8% of fund managers report improved investment returns from AI adoption: Morgan Stanley–Oliver Wyman",
+          "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVk5xNkxNeFMyR0ZrV3BTbHJNUWo4UlRWb2ttZlBia3lyelkzMTJpeTZuNEhKdmRhUE5wdEJCWDhFWUdwbTEzWjlnRzJldW5LWWF5MFhhQUZCZXJhdXczVHBRdXduQ1dmVG4wNXByeGQ4bU5xSHRvdU40Q1FUQmxNNFEzaHJQTnVPWTBsWnBtNl9MS01udnQ4a2VYb09feEhXT0U4NVJsQVdwOWpTbkx4NDQzck5tY3pNckgxM0dVSV92Vm12U2RZTmJQM0g3TkJoVTU3X1pWRGhVNUQxZTRJQjNyd0JYTGRseG00a3JHUmjSAfYBQVVfeXFMTm5lUlF0UTVBdnVJMXFLS3puNV9MdkhhRDNZVFlfWGRNYlNfaVhfVkxVUFpqcF9USEdTUkxrajZNb3lPeU9QT19NUHRzRWI4Y3BIYTcwTjdXN1ZrOFNUM0JUV2xnRnlaZTNUeFY3SjZzYkZta05qUlB2Y0IxdHFDaDYyQ1o3T0xXOEJYdEhjbHlwZVVjNldqVzJvRXNrVGJpaXhMQVlEZkp5WTRiaEt6TWJZZVI4Rk1IWmFBbUhYQjgxU0lqS1pvblQycjJNMnJETTR4dDlXbkNnY1dzWGhzaXhVZm16TGwzS0ViU1YtR1M1c1RnNTdB?oc=5",
+          "summary": "Only 8% of fund managers report improved investment returns from AI adoption: Morgan Stanley–Oliver Wyman Livemint",
+          "source": "Livemint",
+          "published": "2026-10-18T13:07:13+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Only 8% See AI Returns",
+          "hook_text": "Only eight percent",
+          "beats": [
+            {
+              "line": "Only eight percent of fund managers report improved investment returns from AI adoption.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "8%",
+              "small": "saw better returns",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Only eight percent",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Morgan Stanley",
+                  "domain": "morganstanley.com"
+                },
+                {
+                  "name": "Oliver Wyman",
+                  "domain": "oliverwyman.com"
+                }
+              ]
+            },
+            {
+              "line": "Morgan Stanley and Oliver Wyman published the finding in a new financial services analysis.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Livemint",
+              "domain": "livemint.com",
+              "headline": "Only 8% of fund managers report improved investment returns from AI adoption",
+              "url": "",
+              "tag": "Morgan Stanley Oliver Wyman",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Morgan Stanley",
+                  "domain": "morganstanley.com"
+                },
+                {
+                  "name": "Oliver Wyman",
+                  "domain": "oliverwyman.com"
+                }
+              ]
+            },
+            {
+              "line": "Most investment firms struggle to turn automated tools into actual portfolio gains.",
+              "visual": "clip",
+              "query": "financial traders looking at screens",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Struggle for gains",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Wall Street poured billions into machine learning systems hoping to slash operating costs.",
+              "visual": "clip",
+              "query": "wall street trading floor computers",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Billions into machine learning",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Instead of higher profits, many asset managers face complex data integration hurdles.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract digital data streams and complex financial charts on dark background",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data integration hurdles",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust software with your life savings?",
+              "visual": "clip",
+              "query": "person staring at smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust your savings",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "skeptical and analytical, highlighting the massive gap between tech hype and actual financial results",
+          "thin": false,
+          "caption": "Only eight percent of fund managers report improved investment returns from AI adoption according to a Morgan Stanley and Oliver Wyman analysis. Wall Street poured billions into machine learning systems, yet firms continue to struggle with portfolio gains. Would you trust software with your life savings?",
+          "hashtags": [
+            "MorganStanley",
+            "OliverWyman",
+            "Livemint",
+            "Investing",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.livemint.com/companies/news/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11729227181057.html"
+          ],
+          "script": "Only eight percent of fund managers report improved investment returns from AI adoption.\nMorgan Stanley and Oliver Wyman published the finding in a new financial services analysis.\nMost investment firms struggle to turn automated tools into actual portfolio gains.\nWall Street poured billions into machine learning systems hoping to slash operating costs.\nInstead of higher profits, many asset managers face complex data integration hurdles.\nWould you trust software with your life savings?",
+          "keywords": [
+            "financial traders looking at screens",
+            "wall street trading floor computers",
+            "person staring at smartphone"
+          ],
+          "image_prompts": [
+            "abstract digital data streams and complex financial charts on dark background"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Only 8% of fund managers report improved investment returns from AI adoption",
+              "url": "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html"
+            },
+            {
+              "claim": "Only eight percent of fund managers report improved investment returns from AI adoption",
+              "url": "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html"
+            },
+            {
+              "claim": "Morgan Stanley and Oliver Wyman published the finding in a new financial services analysis",
+              "url": "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html",
+            "https://www.livemint.com/companies/news/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11729227181057.html"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-18T18:51:07.110003+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2199,8 +2246,8 @@
       "event": "Anthropic is consulting law firms to figure out how AI agents should negotiate deals. The company wants its AI to act on behalf of users in complex business agreements. Lawyers are advising the lab on the nuances of how human negotiators ha"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-18T16:10+05:30",
@@ -2248,22 +2295,22 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-18",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-18",
-    "calls": 639,
+    "calls": 646,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 175,
-        "busy": 92,
+        "ok": 179,
+        "busy": 93,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 202,
+        "ok": 204,
         "busy": 95,
         "other": 51,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
@@ -2375,33 +2422,10 @@
     "gemini-3.6-flash": 1792309904.966125,
     "gemini-3.7-flash": 1792310007.757545,
     "gemini-3.5-flash": 1792310008.056542,
-    "gemini-3-flash-preview": 1792310041.031395
+    "gemini-3-flash-preview": 1792310041.031395,
+    "gemini-3.5-flash-lite": 1792330143.231468
   },
   "editor_log": [
-    {
-      "at": "2026-10-18T01:58+05:30",
-      "title": "Websites are closing their doors to AI agents",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 7,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 5,
-        "flow": 8
-      },
-      "one_line": "Strong premise, but visuals are repetitive and the script lacks specific, hard-hitting data.",
-      "fixes": [
-        "LINE 1: Replace 'scour the internet' with 'scrape data' to be more precise.",
-        "LINE 3: Name a specific site or platform that has implemented these blocks.",
-        "LINE 5: Replace 'uninvited bots' with 'AI crawlers' for industry accuracy."
-      ],
-      "visual": [
-        "line 1: The robot graphic is held for too long across multiple frames.",
-        "line 2: Stock footage of a man with a credit card is generic and lacks brand identity.",
-        "line 5: The GPT-6 screenshot is irrelevant to the topic of website blocking."
-      ]
-    },
     {
       "at": "2026-10-18T02:39+05:30",
       "title": "Nvidia has officially confirmed that the 5090 is not discontinued and will conti",
@@ -2827,6 +2851,29 @@
       "visual": [
         "line 1: First three frames hold static text with minimal movement or variety.",
         "line 4: Repeats the 1.5B valuation graphic which was already shown heavily in line 1."
+      ]
+    },
+    {
+      "at": "2026-10-18T19:00+05:30",
+      "title": "Only 8% of fund managers report improved investment returns from AI adoption: Mo",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual pacing is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 3: Replace 'Most investment firms' with 'The majority of surveyed firms' to maintain specificity.",
+        "LINE 6: Change to 'Would you trust AI with your life savings?' to align with the AI theme."
+      ],
+      "visual": [
+        "line 1: The same text and layout are held for too long across three frames.",
+        "line 3: Visuals are identical to the previous line, creating a static, repetitive feel.",
+        "line 5: The same visual layout is held for three frames, failing to provide new visual interest."
       ]
     }
   ],
