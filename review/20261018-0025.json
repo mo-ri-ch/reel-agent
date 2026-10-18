@@ -1,0 +1,87 @@
+{
+ "made": "20261018-0025",
+ "title": "Opencode breached, rotate keys to be safe.",
+ "hook_text": "Opencode security breach alert.",
+ "hook_before": null,
+ "script": "Opencode systems were breached through a legacy server.\nThis old hardware was awaiting decommissioning when attackers struck.\nThe incident exposed sensitive developer data held on that machine.\nOnly one point four percent of console users were actually impacted.\nYou still need to rotate every API key immediately.\nYour credentials could be used to access unauthorized AI workflows.\nThe company already sent out direct notifications to affected accounts.\nHave you updated your keys yet?",
+ "words": 73,
+ "beats": [
+  {
+   "line": "Opencode systems were breached through a legacy server.",
+   "visual": "source"
+  },
+  {
+   "line": "This old hardware was awaiting decommissioning when attackers struck.",
+   "visual": "clip"
+  },
+  {
+   "line": "The incident exposed sensitive developer data held on that machine.",
+   "visual": "clip"
+  },
+  {
+   "line": "Only one point four percent of console users were actually impacted.",
+   "visual": "stat"
+  },
+  {
+   "line": "You still need to rotate every API key immediately.",
+   "visual": "clip"
+  },
+  {
+   "line": "Your credentials could be used to access unauthorized AI workflows.",
+   "visual": "clip"
+  },
+  {
+   "line": "The company already sent out direct notifications to affected accounts.",
+   "visual": "clip"
+  },
+  {
+   "line": "Have you updated your keys yet?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 6,
+   "specific": 8,
+   "substance": 9,
+   "accuracy": 10,
+   "visuals": 5,
+   "flow": 8
+  },
+  "one_line": "The hook is too generic and the visuals are repetitive and static.",
+  "script_fixes": [
+   "LINE 1: Replace 'Opencode systems' with 'Opencode's API platform' to be more specific.",
+   "LINE 2: Change to 'Attackers exploited a legacy server awaiting decommissioning to gain access.'"
+  ],
+  "visual_beats": [
+   0,
+   1,
+   3,
+   6
+  ],
+  "visual_notes": [
+   "line 1: Hook is static text; needs a dynamic visual or motion graphic to stop the scroll.",
+   "line 2: Visuals are identical to the previous frame; lacks visual progression.",
+   "line 4: The same '1.4 percent' visual is held for too long without variation.",
+   "line 7: Visuals are static and repetitive; needs a graphic representing a notification."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 29.87,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.4,
+ "cuts": [
+  3.4,
+  7.37,
+  15.7,
+  23.47
+ ],
+ "first_cut_at": 3.4,
+ "avg_shot_seconds": 5.97,
+ "longest_shot_seconds": 8.33,
+ "verdict": "rejected",
+ "words_per_minute": 147
+}

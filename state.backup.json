@@ -13,11 +13,11 @@
     "angle": "Security alert: A major open-source AI platform has been breached, and you need to rotate your keys immediately."
   },
   "draft": {
-    "title": "Opencode Breach Security Warning",
-    "hook_text": "Opencode security breach alert.",
+    "title": "Opencode Security Breach Alert",
+    "hook_text": "Opencode API platform breached.",
     "beats": [
       {
-        "line": "Opencode systems were breached through a legacy server.",
+        "line": "Opencode's API platform was breached through a legacy server.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -28,7 +28,7 @@
         "domain": "reddit.com",
         "headline": "Opencode breached, rotate keys to be safe",
         "url": "",
-        "tag": "Legacy server breached",
+        "tag": "API platform breached",
         "name": "",
         "role": "",
         "x": "",
@@ -40,7 +40,7 @@
         ]
       },
       {
-        "line": "This old hardware was awaiting decommissioning when attackers struck.",
+        "line": "Attackers exploited a legacy server awaiting decommissioning to gain access.",
         "visual": "clip",
         "query": "server room hardware",
         "prompt": "",
@@ -51,7 +51,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Decommissioning in progress",
+        "tag": "Legacy server exploited",
         "name": "",
         "role": "",
         "x": "",
@@ -173,7 +173,7 @@
     ],
     "delivery": "Urgent and cautionary, focused on clear security instructions for developers.",
     "thin": false,
-    "caption": "Opencode suffered a breach via a legacy server, impacting 1.4% of console users. Even if you were not notified, you should rotate your API keys immediately to secure your AI workflows. Have you updated your credentials yet?",
+    "caption": "Opencode's API platform suffered a breach, impacting 1.4% of users. Even if you were not notified, you should rotate your API keys immediately to secure your AI workflows. Have you updated your credentials yet?",
     "hashtags": [
       "Opencode",
       "cybersecurity",
@@ -184,7 +184,7 @@
     "sources": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/"
     ],
-    "script": "Opencode systems were breached through a legacy server.\nThis old hardware was awaiting decommissioning when attackers struck.\nThe incident exposed sensitive developer data held on that machine.\nOnly one point four percent of console users were actually impacted.\nYou still need to rotate every API key immediately.\nYour credentials could be used to access unauthorized AI workflows.\nThe company already sent out direct notifications to affected accounts.\nHave you updated your keys yet?",
+    "script": "Opencode's API platform was breached through a legacy server.\nAttackers exploited a legacy server awaiting decommissioning to gain access.\nThe incident exposed sensitive developer data held on that machine.\nOnly one point four percent of console users were actually impacted.\nYou still need to rotate every API key immediately.\nYour credentials could be used to access unauthorized AI workflows.\nThe company already sent out direct notifications to affected accounts.\nHave you updated your keys yet?",
     "keywords": [
       "server room hardware",
       "data security breach",
@@ -197,15 +197,15 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Opencode security breach alert.",
+        "claim": "Opencode API platform breached.",
         "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
       },
       {
-        "claim": "Opencode systems were breached through a legacy server.",
+        "claim": "Opencode's API platform was breached through a legacy server.",
         "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
       },
       {
-        "claim": "This old hardware was awaiting decommissioning when attackers struck.",
+        "claim": "Attackers exploited a legacy server awaiting decommissioning to gain access.",
         "url": "https://www.onesafe.io/blog/opencode-api-security-breach"
       },
       {
@@ -231,7 +231,8 @@
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 2,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/"
     ]
@@ -263,9 +264,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-18T05:47:49.496351+05:30",
+  "script_deadline": "2026-10-18T05:56:32.817153+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-18",
@@ -749,220 +750,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "How Itaú is building generative AI for its entire customer base",
-          "link": "https://openai.com/index/itau-generative-ai",
-          "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
-          "source": "OpenAI News",
-          "published": "2026-10-16T19:00:00+00:00",
-          "angle": "One of the world's biggest banks is rolling out AI to their entire customer base—here is how they are doing it."
-        },
-        "draft": {
-          "title": "Itaú's Generative AI Strategy",
-          "hook_text": "Itaú is banking on AI",
-          "beats": [
-            {
-              "line": "Itaú is rolling out AI to its entire customer base by late 2026.",
-              "visual": "official",
-              "query": "Itau bank logo",
-              "prompt": "",
-              "big": "2026",
-              "small": "rollout deadline",
-              "entity": "Itaú Unibanco",
-              "outlet": "",
-              "domain": "itau.com.br",
-              "headline": "",
-              "url": "https://openai.com/index/itau-generative-ai",
-              "tag": "Full rollout 2026",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "They built a conversational interface called ia.i for customer interactions.",
-              "visual": "official",
-              "query": "Itau ia.i interface",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "ia.i",
-              "outlet": "",
-              "domain": "itau.com.br",
-              "headline": "",
-              "url": "https://openai.com/index/itau-generative-ai",
-              "tag": "Meet ia.i",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The bank also launched the IARA platform to manage internal AI governance.",
-              "visual": "official",
-              "query": "Itau IARA platform",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "IARA platform",
-              "outlet": "",
-              "domain": "itau.com.br",
-              "headline": "",
-              "url": "https://openai.com/index/itau-generative-ai",
-              "tag": "IARA governance",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This project integrates OpenAI technology into one of the world's most regulated sectors.",
-              "visual": "source",
-              "query": "OpenAI logo",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "OpenAI News",
-              "domain": "openai.com",
-              "headline": "How Itaú is building generative AI",
-              "url": "https://openai.com/index/itau-generative-ai",
-              "tag": "OpenAI integration",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Employees now use these tools to accelerate workflows across the entire firm.",
-              "visual": "clip",
-              "query": "office workers using laptops",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Faster workflows",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The bank is prioritizing security while deploying these systems at this massive scale.",
-              "visual": "clip",
-              "query": "digital security data",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Security first",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust a bank's AI to manage your primary savings account?",
-              "visual": "clip",
-              "query": "person using banking app",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trusting bank AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Crisp and professional, focused on the transition from internal tools to the full customer rollout.",
-          "thin": false,
-          "caption": "Itaú is currently deploying its new ia.i conversational interface for customers. The bank uses its proprietary IARA governance platform to ensure these OpenAI-powered tools remain secure. Would you trust a bank's AI to manage your primary savings account?",
-          "hashtags": [
-            "Itaú",
-            "GenerativeAI",
-            "Fintech",
-            "OpenAI",
-            "Brazil"
-          ],
-          "sources": [
-            "https://openai.com/index/itau-generative-ai"
-          ],
-          "script": "Itaú is rolling out AI to its entire customer base by late 2026.\nThey built a conversational interface called ia.i for customer interactions.\nThe bank also launched the IARA platform to manage internal AI governance.\nThis project integrates OpenAI technology into one of the world's most regulated sectors.\nEmployees now use these tools to accelerate workflows across the entire firm.\nThe bank is prioritizing security while deploying these systems at this massive scale.\nWould you trust a bank's AI to manage your primary savings account?",
-          "keywords": [
-            "office workers using laptops",
-            "digital security data",
-            "person using banking app"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Itaú is banking on AI",
-              "url": "https://openai.com/index/itau-generative-ai"
-            },
-            {
-              "claim": "Itaú is rolling out AI to its entire customer base by late 2026.",
-              "url": "https://openai.com/index/itau-generative-ai"
-            },
-            {
-              "claim": "They built a conversational interface called ia.i for customer interactions.",
-              "url": "https://openai.com/index/itau-generative-ai"
-            },
-            {
-              "claim": "The bank also launched the IARA platform to manage internal AI governance.",
-              "url": "https://openai.com/index/itau-generative-ai"
-            },
-            {
-              "claim": "This project integrates OpenAI technology into one of the world's most regulated sectors.",
-              "url": "https://openai.com/index/itau-generative-ai"
-            },
-            {
-              "claim": "Employees now use these tools to accelerate workflows across the entire firm.",
-              "url": "https://openai.com/index/itau-generative-ai"
-            },
-            {
-              "claim": "The bank is prioritizing security while deploying these systems at this massive scale.",
-              "url": "https://openai.com/index/itau-generative-ai"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://openai.com/index/itau-generative-ai"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-18T03:14:18.368089+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1687,6 +1474,256 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Opencode breached, rotate keys to be safe.",
+          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/",
+          "summary": "",
+          "source": "r/LocalLLaMA",
+          "published": "2026-10-17T18:02:37+00:00",
+          "buzz": "top of r/LocalLLaMA today",
+          "angle": "Security alert: A major open-source AI platform has been breached, and you need to rotate your keys immediately."
+        },
+        "draft": {
+          "title": "Opencode Breach Security Warning",
+          "hook_text": "Opencode security breach alert.",
+          "beats": [
+            {
+              "line": "Opencode systems were breached through a legacy server.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "r/LocalLLaMA",
+              "domain": "reddit.com",
+              "headline": "Opencode breached, rotate keys to be safe",
+              "url": "",
+              "tag": "Legacy server breached",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Opencode",
+                  "domain": "opencode.ai"
+                }
+              ]
+            },
+            {
+              "line": "This old hardware was awaiting decommissioning when attackers struck.",
+              "visual": "clip",
+              "query": "server room hardware",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Decommissioning in progress",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The incident exposed sensitive developer data held on that machine.",
+              "visual": "clip",
+              "query": "data security breach",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Developer data exposed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Only one point four percent of console users were actually impacted.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1.4%",
+              "small": "affected console users",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "1.4 percent affected",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Opencode",
+                  "domain": "opencode.ai"
+                }
+              ]
+            },
+            {
+              "line": "You still need to rotate every API key immediately.",
+              "visual": "clip",
+              "query": "cyber security settings",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rotate keys now",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Your credentials could be used to access unauthorized AI workflows.",
+              "visual": "clip",
+              "query": "ai coding interface",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Protect your workflows",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The company already sent out direct notifications to affected accounts.",
+              "visual": "clip",
+              "query": "email notification on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Check your email",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Have you updated your keys yet?",
+              "visual": "clip",
+              "query": "developer coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Update keys now",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Urgent and cautionary, focused on clear security instructions for developers.",
+          "thin": false,
+          "caption": "Opencode suffered a breach via a legacy server, impacting 1.4% of console users. Even if you were not notified, you should rotate your API keys immediately to secure your AI workflows. Have you updated your credentials yet?",
+          "hashtags": [
+            "Opencode",
+            "cybersecurity",
+            "AI",
+            "datasecurity",
+            "developer"
+          ],
+          "sources": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/"
+          ],
+          "script": "Opencode systems were breached through a legacy server.\nThis old hardware was awaiting decommissioning when attackers struck.\nThe incident exposed sensitive developer data held on that machine.\nOnly one point four percent of console users were actually impacted.\nYou still need to rotate every API key immediately.\nYour credentials could be used to access unauthorized AI workflows.\nThe company already sent out direct notifications to affected accounts.\nHave you updated your keys yet?",
+          "keywords": [
+            "server room hardware",
+            "data security breach",
+            "cyber security settings",
+            "ai coding interface",
+            "email notification on phone",
+            "developer coding on laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Opencode security breach alert.",
+              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
+            },
+            {
+              "claim": "Opencode systems were breached through a legacy server.",
+              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
+            },
+            {
+              "claim": "This old hardware was awaiting decommissioning when attackers struck.",
+              "url": "https://www.onesafe.io/blog/opencode-api-security-breach"
+            },
+            {
+              "claim": "The incident exposed sensitive developer data held on that machine.",
+              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
+            },
+            {
+              "claim": "Only one point four percent of console users were actually impacted.",
+              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
+            },
+            {
+              "claim": "You still need to rotate every API key immediately.",
+              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
+            },
+            {
+              "claim": "Your credentials could be used to access unauthorized AI workflows.",
+              "url": "https://www.onesafe.io/blog/opencode-api-security-breach"
+            },
+            {
+              "claim": "The company already sent out direct notifications to affected accounts.",
+              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-18T05:47:49.496351+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2205,8 +2242,8 @@
       "event": "An algorithm is reshaping military intelligence by processing massive operational data in seconds. East Carolina University assistant professor David Hart explains how these systems speed up defense analysis. Analysts previously sifted thro"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-18T04:31+05:30",
@@ -2254,7 +2291,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-18",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-18",
@@ -2362,29 +2399,6 @@
     "gemini-flash-lite-latest": 1792277484.00192
   },
   "editor_log": [
-    {
-      "at": "2026-10-17T15:33+05:30",
-      "title": "AI agents accessed Indian organisations’ systems without authorisation, CERT-In ",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 6,
-        "substance": 7,
-        "accuracy": 8,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Needs named organizations and better visual variety instead of repeating text templates.",
-      "fixes": [
-        "LINE 1: Name specific Indian organisations mentioned in the report instead of generic 'Indian firms'",
-        "LINE 2: Specify the exact number of days agents roamed undetected if available in the source"
-      ],
-      "visual": [
-        "line 1: Title card style is plain and lacks strong breaking news visual context.",
-        "line 2: Repeated dark typography layout with similar styling to previous text frames.",
-        "line 5: Ending card holds for too long with static text layout."
-      ]
-    },
     {
       "at": "2026-10-17T16:09+05:30",
       "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
@@ -2804,6 +2818,29 @@
         "line 1: The robot footage is held for too long (over 8 seconds) and repeats.",
         "line 4: Visuals are just text on a plain background; needs actual footage of actuators.",
         "line 5: Visuals are just text on a plain background; needs relevant imagery."
+      ]
+    },
+    {
+      "at": "2026-10-18T05:55+05:30",
+      "title": "Opencode breached, rotate keys to be safe.",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "The hook is too generic and the visuals are repetitive and static.",
+      "fixes": [
+        "LINE 1: Replace 'Opencode systems' with 'Opencode's API platform' to be more specific.",
+        "LINE 2: Change to 'Attackers exploited a legacy server awaiting decommissioning to gain access.'"
+      ],
+      "visual": [
+        "line 1: Hook is static text; needs a dynamic visual or motion graphic to stop the scroll.",
+        "line 2: Visuals are identical to the previous frame; lacks visual progression.",
+        "line 4: The same '1.4 percent' visual is held for too long without variation."
       ]
     }
   ],
