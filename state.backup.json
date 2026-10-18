@@ -1,35 +1,205 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Websites are closing their doors to AI agents",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice? In recent weeks, […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-17T13:00:00+00:00",
-      "angle": "The internet is fighting back: Why major websites are now blocking AI agents from scraping your data."
-    },
-    {
-      "title": "Army officer's wife used ChatGPT, Claude in suspected China espionage case",
-      "link": "https://www.indiatoday.in/amp/india/story/jammu-chinese-espionage-case-army-officer-wife-ai-chatgpt-claude-defence-papers-ptag-3020221-2026-10-18",
-      "summary": "Army officer's wife used ChatGPT, Claude in suspected China espionage case India Today",
-      "source": "India Today",
-      "published": "2026-10-18T16:41:18+00:00",
-      "angle": "AI in espionage: How an army officer's wife allegedly used ChatGPT and Claude in a high-stakes China spying case."
-    },
-    {
-      "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment",
-      "link": "https://finance.yahoo.com/technology/ai/articles/taiwan-semiconductor-just-proved-why-194300888.html",
-      "summary": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment Yahoo Finance",
-      "source": "Yahoo Finance",
-      "published": "2026-10-18T19:43:00+00:00",
-      "angle": "Why TSMC is the real king of the AI boom and the most important company you've never heard of."
-    }
-  ],
-  "choose_deadline": "2026-10-19T02:15:42.397120+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Websites are closing their doors to AI agents",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice? In recent weeks, […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-17T13:00:00+00:00",
+    "angle": "The internet is fighting back: Why major websites are now blocking AI agents from scraping your data."
+  },
+  "draft": {
+    "title": "Websites are blocking AI agents",
+    "hook_text": "Websites are locking out AI agents",
+    "beats": [
+      {
+        "line": "Websites are now blocking autonomous AI agents from scraping their data.",
+        "visual": "clip",
+        "query": "website access denied error screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Websites blocking AI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "OpenAI, Meta, and Google are building agents to scour the web for you.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "OpenAI",
+        "outlet": "",
+        "domain": "openai.com",
+        "headline": "",
+        "url": "https://openai.com",
+        "tag": "Big tech agents",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "These tools promise to book dinner reservations or buy your shoes automatically.",
+        "visual": "clip",
+        "query": "person booking dinner on phone",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Agent tasks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Instinct is also racing to build these autonomous web-scouring bots.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Instinct",
+        "outlet": "",
+        "domain": "instinct.com",
+        "headline": "",
+        "url": "https://instinct.com",
+        "tag": "Instinct agents",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Website owners are using robots.txt files to stop these automated scrapers.",
+        "visual": "clip",
+        "query": "coding text on dark screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Using robots.txt",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This friction makes it harder for autonomous tools to function for users.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Websites are closing their doors to AI agents",
+        "url": "",
+        "tag": "Agent reliability",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust a bot to handle your personal errands?",
+        "visual": "clip",
+        "query": "person looking at phone screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Trusting AI agents",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Serious and direct, explaining the conflict between AI tools and website owners.",
+    "thin": false,
+    "caption": "Websites are using robots.txt files to block autonomous AI agents from OpenAI, Meta, Google, and Instinct. These agents aim to book reservations and shop for you, but restricted web access could stop them from working. Would you trust a bot to handle your personal errands?",
+    "hashtags": [
+      "OpenAI",
+      "Meta",
+      "Google",
+      "Instinct",
+      "AI"
+    ],
+    "sources": [
+      "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+    ],
+    "script": "Websites are now blocking autonomous AI agents from scraping their data.\nOpenAI, Meta, and Google are building agents to scour the web for you.\nThese tools promise to book dinner reservations or buy your shoes automatically.\nInstinct is also racing to build these autonomous web-scouring bots.\nWebsite owners are using robots.txt files to stop these automated scrapers.\nThis friction makes it harder for autonomous tools to function for users.\nWould you trust a bot to handle your personal errands?",
+    "keywords": [
+      "website access denied error screen",
+      "person booking dinner on phone",
+      "coding text on dark screen",
+      "person looking at phone screen"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Websites are locking out AI agents",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      },
+      {
+        "claim": "Websites are now blocking autonomous AI agents from scraping their data.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      },
+      {
+        "claim": "OpenAI, Meta, and Google are building agents to scour the web for you.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      },
+      {
+        "claim": "These tools promise to book dinner reservations or buy your shoes automatically.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      },
+      {
+        "claim": "Instinct is also racing to build these autonomous web-scouring bots.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      },
+      {
+        "claim": "Website owners are using robots.txt files to stop these automated scrapers.",
+        "url": "https://finance.biggo.com/news/012cac6591a78042"
+      },
+      {
+        "claim": "This friction makes it harder for autonomous tools to function for users.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -57,7 +227,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-19T02:51:09.647625+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -461,7 +631,24 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Army officer's wife used ChatGPT, Claude in suspected China espionage case",
+      "link": "https://www.indiatoday.in/amp/india/story/jammu-chinese-espionage-case-army-officer-wife-ai-chatgpt-claude-defence-papers-ptag-3020221-2026-10-18",
+      "summary": "Army officer's wife used ChatGPT, Claude in suspected China espionage case India Today",
+      "source": "India Today",
+      "published": "2026-10-18T16:41:18+00:00",
+      "angle": "AI in espionage: How an army officer's wife allegedly used ChatGPT and Claude in a high-stakes China spying case."
+    },
+    {
+      "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment",
+      "link": "https://finance.yahoo.com/technology/ai/articles/taiwan-semiconductor-just-proved-why-194300888.html",
+      "summary": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment Yahoo Finance",
+      "source": "Yahoo Finance",
+      "published": "2026-10-18T19:43:00+00:00",
+      "angle": "Why TSMC is the real king of the AI boom and the most important company you've never heard of."
+    }
+  ],
   "tried": [
     "Linux creator says anti-AI rules are \"idiotic.\" (Absolute god-tier take.)",
     "Nvidia has officially confirmed that the 5090 is not discontinued and will continue shipping.",
@@ -524,52 +711,7 @@
     "AI now creates unknown viruses—should we fear it or hope for a cure?",
     "AI Agents Have Entered the Rat Race"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Disney agrees to hire the majority of Character.AI’s workforce",
-            "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-            "summary": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand recently became the entertainment giant’s first CTO, and the startup previously said that Disney had agreed to acquire some of its assets for $20 million. A legal […]",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-18T16:30:00+00:00",
-            "angle": "Disney is absorbing the workforce of bankrupt chatbot startup Character.AI, signaling a major shift in AI talent."
-          },
-          {
-            "title": "Man sells all his belongings, travels 1,931 km to meet ‘AI girlfriend’ he wanted to marry",
-            "link": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html",
-            "summary": "Man sells all his belongings, travels 1,931 km to meet ‘AI girlfriend’ he wanted to marry Livemint",
-            "source": "Livemint",
-            "published": "2026-10-18T17:05:47+00:00",
-            "angle": "A man sold everything he owned to meet his 'AI girlfriend'—a viral, cautionary tale about AI emotional attachment."
-          },
-          {
-            "title": "North Korea tests AI-powered torpedo system in new naval arms push",
-            "link": "https://www.indiatoday.in/amp/world/story/north-korea-ai-torpedo-test-kim-jong-un-naval-weapons-push-3020287-2026-10-18",
-            "summary": "North Korea tests AI-powered torpedo system in new naval arms push India Today",
-            "source": "India Today",
-            "published": "2026-10-18T14:05:15+00:00",
-            "angle": "North Korea is now testing AI-powered torpedo systems, marking a concerning new chapter in autonomous military tech."
-          }
-        ],
-        "choose_deadline": "2026-10-18T22:50:27.126349+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1458,6 +1600,50 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIdT2rVILrEwUeGKuMQ-lYI8gABuIxLZAACIigAAmqoqVb7I4qFDddMwj0E",
       "history_title": "A woman was arrested in Philly for blocking a delivery robot"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Websites are closing their doors to AI agents",
+            "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+            "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice? In recent weeks, […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-17T13:00:00+00:00",
+            "angle": "The internet is fighting back: Why major websites are now blocking AI agents from scraping your data."
+          },
+          {
+            "title": "Army officer's wife used ChatGPT, Claude in suspected China espionage case",
+            "link": "https://www.indiatoday.in/amp/india/story/jammu-chinese-espionage-case-army-officer-wife-ai-chatgpt-claude-defence-papers-ptag-3020221-2026-10-18",
+            "summary": "Army officer's wife used ChatGPT, Claude in suspected China espionage case India Today",
+            "source": "India Today",
+            "published": "2026-10-18T16:41:18+00:00",
+            "angle": "AI in espionage: How an army officer's wife allegedly used ChatGPT and Claude in a high-stakes China spying case."
+          },
+          {
+            "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment",
+            "link": "https://finance.yahoo.com/technology/ai/articles/taiwan-semiconductor-just-proved-why-194300888.html",
+            "summary": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment Yahoo Finance",
+            "source": "Yahoo Finance",
+            "published": "2026-10-18T19:43:00+00:00",
+            "angle": "Why TSMC is the real king of the AI boom and the most important company you've never heard of."
+          }
+        ],
+        "choose_deadline": "2026-10-19T02:15:42.397120+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2036,15 +2222,15 @@
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-19",
-    "calls": 9,
+    "calls": 26,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 9,
-        "busy": 0,
+        "ok": 20,
+        "busy": 6,
         "other": 0,
-        "last": ""
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
