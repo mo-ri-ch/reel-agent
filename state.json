@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -198,11 +198,56 @@
     "fact_notes": [],
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Websites are now blocking autonomous AI agents fro…: The image shows an OpenAI branding card instead of a website access denied error screen.",
+      "OpenAI, Meta, and Google are building agents to sc…: The image shows a 'dots' branding card instead of images related to OpenAI, Meta, or Google.",
+      "These tools promise to book dinner reservations or…: The image shows an 'Instinct' branding card instead of a person booking dinner.",
+      "Instinct is also racing to build these autonomous …: The image is an almost-empty card with just the company name.",
+      "Website owners are using robots.txt files to stop …: The image shows an OpenAI interface screenshot instead of coding text for robots.txt.",
+      "Would you trust a bot to handle your personal erra…: The image is an almost-empty card with just text instead of a person looking at a phone.",
+      "The shot is a text card, not the requested stock video of an access denied screen.",
+      "The shot is a text card, not the requested real images of OpenAI, Meta, and Google.",
+      "The shot is a text card, not the requested stock video of a person booking dinner.",
+      "The shot is a text card, not the requested real images of Instinct.",
+      "The shot is a text card, not the requested stock video of coding text.",
+      "The shot is a text card, not the requested stock video of a person looking at a phone."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 7,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual presentation is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 3: Replace 'buy your shoes' with a more specific example like 'purchase flight tickets' to sound more professional.",
+        "LINE 6: Replace 'This friction' with 'These blocks' for more direct, punchy language."
+      ],
+      "visual_beats": [
+        2,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 3: The 'Agent tasks' graphic is held for too long across multiple frames, becoming static.",
+        "line 4: The 'Instinct' logo/text is held for too long, lacking visual movement.",
+        "line 5: The 'robots.txt' visual is repeated across three frames without variation."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIdXWrVOosAAe63s4AGu7-Bq3mBOZhlTAACLCgAAmqoqVakvUyPPpySxD0E",
   "queue": [
     {
       "title": "A woman was arrested in Philly for blocking a delivery robot",
@@ -227,9 +272,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-19T02:51:09.647625+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-19T03:30:51.624540+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-19",
@@ -713,199 +758,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Man sells all his belongings, travels 1,931 km to meet ‘AI girlfriend’ he wanted to marry",
-          "link": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html",
-          "summary": "Man sells all his belongings, travels 1,931 km to meet ‘AI girlfriend’ he wanted to marry Livemint",
-          "source": "Livemint",
-          "published": "2026-10-18T17:05:47+00:00",
-          "angle": "A man sold everything he owned to meet his 'AI girlfriend'—a viral, cautionary tale about AI emotional attachment."
-        },
-        "draft": {
-          "title": "Man sells life to meet AI persona",
-          "hook_text": "He sold everything for AI",
-          "beats": [
-            {
-              "line": "A man sold all his belongings to meet his AI girlfriend. He traveled one thousand nine hundred thirty-one kilometers to find her.",
-              "visual": "clip",
-              "query": "man moving boxes",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Sold all belongings",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This AI is actually an AI-generated persona used for social media engagement.",
-              "visual": "clip",
-              "query": "digital avatar on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI-generated persona",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He made this journey specifically because he wanted to marry the digital persona.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1,931 km",
-              "small": "Total travel distance",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Marriage intentions",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The incident highlights the intense emotional connections people are now forming with non-human entities.",
-              "visual": "clip",
-              "query": "person looking at phone in city",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Emotional connection",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Most users engage with these personas for simple interaction rather than life-long commitments.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Livemint",
-              "domain": "livemint.com",
-              "headline": "Man sells all belongings for AI girlfriend",
-              "url": "",
-              "tag": "Digital interaction",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you ever consider an AI as a legal spouse?",
-              "visual": "clip",
-              "query": "person looking at camera",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI spouse",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Inquisitive and slightly shocked, emphasizing the disconnect between the man's extreme actions and the reality of the AI persona.",
-          "thin": false,
-          "caption": "A man sold all his possessions and traveled 1,931 kilometers to meet an AI-generated persona he intended to marry. This story highlights the growing trend of deep emotional attachment to AI entities on social media. Would you ever consider an AI as a legal spouse?",
-          "hashtags": [
-            "AI",
-            "DigitalPersona",
-            "TechNews",
-            "SocialMedia",
-            "HumanRelationships"
-          ],
-          "sources": [
-            "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-          ],
-          "script": "A man sold all his belongings to meet his AI girlfriend. He traveled one thousand nine hundred thirty-one kilometers to find her.\nThis AI is actually an AI-generated persona used for social media engagement.\nHe made this journey specifically because he wanted to marry the digital persona.\nThe incident highlights the intense emotional connections people are now forming with non-human entities.\nMost users engage with these personas for simple interaction rather than life-long commitments.\nWould you ever consider an AI as a legal spouse?",
-          "keywords": [
-            "man moving boxes",
-            "digital avatar on screen",
-            "person looking at phone in city",
-            "person looking at camera"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "A man sold everything to meet an AI girlfriend.",
-              "url": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-            },
-            {
-              "claim": "A man sold all his belongings to meet his AI girlfriend.",
-              "url": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-            },
-            {
-              "claim": "He traveled 1,931 kilometers to find her.",
-              "url": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-            },
-            {
-              "claim": "This AI is an AI-generated persona used for social media engagement.",
-              "url": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-            },
-            {
-              "claim": "He made this journey specifically because he wanted to marry the digital persona.",
-              "url": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-            },
-            {
-              "claim": "Total travel distance is 1,931 km.",
-              "url": "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.livemint.com/news/trends/man-sells-all-his-belongings-travels-1-931-km-to-meet-ai-girlfriend-he-wanted-to-marry-11792340765623.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-18T23:28:08.938113+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1645,6 +1497,220 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Websites are closing their doors to AI agents",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+          "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice? In recent weeks, […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-17T13:00:00+00:00",
+          "angle": "The internet is fighting back: Why major websites are now blocking AI agents from scraping your data."
+        },
+        "draft": {
+          "title": "Websites are blocking AI agents",
+          "hook_text": "Websites are locking out AI agents",
+          "beats": [
+            {
+              "line": "Websites are now blocking autonomous AI agents from scraping their data.",
+              "visual": "clip",
+              "query": "website access denied error screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Websites blocking AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "OpenAI, Meta, and Google are building agents to scour the web for you.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "tag": "Big tech agents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These tools promise to book dinner reservations or buy your shoes automatically.",
+              "visual": "clip",
+              "query": "person booking dinner on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Agent tasks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Instinct is also racing to build these autonomous web-scouring bots.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Instinct",
+              "outlet": "",
+              "domain": "instinct.com",
+              "headline": "",
+              "url": "https://instinct.com",
+              "tag": "Instinct agents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Website owners are using robots.txt files to stop these automated scrapers.",
+              "visual": "clip",
+              "query": "coding text on dark screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Using robots.txt",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This friction makes it harder for autonomous tools to function for users.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Websites are closing their doors to AI agents",
+              "url": "",
+              "tag": "Agent reliability",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a bot to handle your personal errands?",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting AI agents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and direct, explaining the conflict between AI tools and website owners.",
+          "thin": false,
+          "caption": "Websites are using robots.txt files to block autonomous AI agents from OpenAI, Meta, Google, and Instinct. These agents aim to book reservations and shop for you, but restricted web access could stop them from working. Would you trust a bot to handle your personal errands?",
+          "hashtags": [
+            "OpenAI",
+            "Meta",
+            "Google",
+            "Instinct",
+            "AI"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+          ],
+          "script": "Websites are now blocking autonomous AI agents from scraping their data.\nOpenAI, Meta, and Google are building agents to scour the web for you.\nThese tools promise to book dinner reservations or buy your shoes automatically.\nInstinct is also racing to build these autonomous web-scouring bots.\nWebsite owners are using robots.txt files to stop these automated scrapers.\nThis friction makes it harder for autonomous tools to function for users.\nWould you trust a bot to handle your personal errands?",
+          "keywords": [
+            "website access denied error screen",
+            "person booking dinner on phone",
+            "coding text on dark screen",
+            "person looking at phone screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Websites are locking out AI agents",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+            },
+            {
+              "claim": "Websites are now blocking autonomous AI agents from scraping their data.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+            },
+            {
+              "claim": "OpenAI, Meta, and Google are building agents to scour the web for you.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+            },
+            {
+              "claim": "These tools promise to book dinner reservations or buy your shoes automatically.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+            },
+            {
+              "claim": "Instinct is also racing to build these autonomous web-scouring bots.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+            },
+            {
+              "claim": "Website owners are using robots.txt files to stop these automated scrapers.",
+              "url": "https://finance.biggo.com/news/012cac6591a78042"
+            },
+            {
+              "claim": "This friction makes it harder for autonomous tools to function for users.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-19T02:51:09.647625+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2170,8 +2236,8 @@
       "event": "Police in Philadelphia arrested a woman for blocking a sidewalk delivery robot. Carolyn Marvin stood directly in front of an Uber robot to halt it. She refused to move when officers requested that she clear the sidewalk path. Marvin told AB"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-19T01:45+05:30",
@@ -2199,7 +2265,7 @@
   "report_day": "2026-10-18",
   "ig_count": {
     "day": "2026-10-19",
-    "at": "2026-10-19T02:45:24.647070+05:30",
+    "at": "2026-10-19T02:55:25.399049+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2219,16 +2285,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-19",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-19",
-    "calls": 26,
+    "calls": 32,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 20,
+        "ok": 26,
         "busy": 6,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2314,29 +2380,6 @@
     "gemini-3.5-flash-lite": 1792330143.231468
   },
   "editor_log": [
-    {
-      "at": "2026-10-18T06:09+05:30",
-      "title": "Opencode breached, rotate keys to be safe.",
-      "overall": 8.0,
-      "scores": {
-        "hook": 6,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 8
-      },
-      "one_line": "Strong, actionable news, but the visuals are too static and repetitive.",
-      "fixes": [
-        "LINE 1: Change to 'Opencode API platform breached; rotate your keys immediately.'",
-        "LINE 6: Change to 'Your credentials could be used to hijack your AI workflows.'"
-      ],
-      "visual": [
-        "line 1: The title screen is held for too long without visual movement.",
-        "line 2: The same 'Legacy server exploited' graphic is repeated across multiple frames.",
-        "line 3: The 'Developer data exposed' graphic is held for too long."
-      ]
-    },
     {
       "at": "2026-10-18T09:03+05:30",
       "title": "CERT-In warns of autonomous intrusions, and the weaknesses are the oldest ones i",
@@ -2756,6 +2799,29 @@
         "line 1: The same image of the robot is held for too long (4.8 seconds).",
         "line 3: The 'Refusal to move' graphic is repeated across two frames without change.",
         "line 5: The 'Disorderly conduct charge' graphic is repeated across two frames without change."
+      ]
+    },
+    {
+      "at": "2026-10-19T03:00+05:30",
+      "title": "Websites are closing their doors to AI agents",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 7,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual presentation is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 3: Replace 'buy your shoes' with a more specific example like 'purchase flight tickets' to sound more professional.",
+        "LINE 6: Replace 'This friction' with 'These blocks' for more direct, punchy language."
+      ],
+      "visual": [
+        "line 3: The 'Agent tasks' graphic is held for too long across multiple frames, becoming static.",
+        "line 4: The 'Instinct' logo/text is held for too long, lacking visual movement.",
+        "line 5: The 'robots.txt' visual is repeated across three frames without variation."
       ]
     }
   ],
