@@ -1,0 +1,86 @@
+{
+ "made": "20261018-0039",
+ "title": "Opencode breached, rotate keys to be safe.",
+ "hook_text": "Opencode API platform breached.",
+ "hook_before": null,
+ "script": "Opencode's API platform was breached through a legacy server.\nAttackers exploited a legacy server awaiting decommissioning to gain access.\nThe incident exposed sensitive developer data held on that machine.\nOnly one point four percent of console users were actually impacted.\nYou still need to rotate every API key immediately.\nYour credentials could be used to access unauthorized AI workflows.\nThe company already sent out direct notifications to affected accounts.\nHave you updated your keys yet?",
+ "words": 75,
+ "beats": [
+  {
+   "line": "Opencode's API platform was breached through a legacy server.",
+   "visual": "source"
+  },
+  {
+   "line": "Attackers exploited a legacy server awaiting decommissioning to gain access.",
+   "visual": "clip"
+  },
+  {
+   "line": "The incident exposed sensitive developer data held on that machine.",
+   "visual": "clip"
+  },
+  {
+   "line": "Only one point four percent of console users were actually impacted.",
+   "visual": "stat"
+  },
+  {
+   "line": "You still need to rotate every API key immediately.",
+   "visual": "clip"
+  },
+  {
+   "line": "Your credentials could be used to access unauthorized AI workflows.",
+   "visual": "clip"
+  },
+  {
+   "line": "The company already sent out direct notifications to affected accounts.",
+   "visual": "clip"
+  },
+  {
+   "line": "Have you updated your keys yet?",
+   "visual": "clip"
+  }
+ ],
+ "voice": "Paula (Fish Audio)",
+ "visuals": "8 cards",
+ "editor": {
+  "overall": 8.0,
+  "scores": {
+   "hook": 6,
+   "specific": 9,
+   "substance": 8,
+   "accuracy": 10,
+   "visuals": 7,
+   "flow": 8
+  },
+  "one_line": "Strong, actionable news, but the visuals are too static and repetitive.",
+  "script_fixes": [
+   "LINE 1: Change to 'Opencode API platform breached; rotate your keys immediately.'",
+   "LINE 6: Change to 'Your credentials could be used to hijack your AI workflows.'"
+  ],
+  "visual_beats": [
+   0,
+   1,
+   2,
+   4
+  ],
+  "visual_notes": [
+   "line 1: The title screen is held for too long without visual movement.",
+   "line 2: The same 'Legacy server exploited' graphic is repeated across multiple frames.",
+   "line 3: The 'Developer data exposed' graphic is held for too long.",
+   "line 5: The 'Rotate keys now' graphic is held for too long."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 33.63,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.2,
+ "cuts": [
+  4.17,
+  9.3,
+  18.2,
+  26.4
+ ],
+ "first_cut_at": 4.17,
+ "avg_shot_seconds": 6.73,
+ "longest_shot_seconds": 8.9,
+ "words_per_minute": 134
+}
