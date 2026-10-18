@@ -1,37 +1,201 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Xolotl (Strata based) - DeepSeek-V4.1-Flash (552B) on a single 4090 at ~27 tok/s, Uncensored 1017 quant coming in a couple of days",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8m0jj/xolotl_strata_based_deepseekv41flash_552b_on_a/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-17T21:40:27+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Run a massive 552B parameter AI model on a single home GPU—the impossible is becoming possible."
-    },
-    {
-      "title": "2 gaming PCs + an M4 Pro MacBook over Ethernet + 2 iPhone 17 Pro Maxes over USB-C: Qwen3.8 Flash Next at 37-39 tok/s at 60k context (262k layout in the works)",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ley0/2_gaming_pcs_an_m4_pro_macbook_over_ethernet_2/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-17T21:13:35+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "You can now chain your gaming PC, MacBook, and iPhones together to run cutting-edge AI locally."
-    },
-    {
-      "title": "Norfolk uses artificial intelligence to handle thousands of non-emergency calls",
-      "link": "https://www.wtkr.com/news/in-the-community/norfolk/norfolk-uses-artificial-intelligence-to-handle-thousands-of-non-emergency-calls",
-      "summary": "Norfolk uses artificial intelligence to handle thousands of non-emergency calls WTKR",
-      "source": "WTKR",
-      "published": "2026-10-18T04:35:03+00:00",
-      "angle": "Cities are now using AI to handle 911 calls—is this the end of human dispatchers?"
-    }
-  ],
-  "choose_deadline": "2026-10-18T20:45:32.753632+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "2 gaming PCs + an M4 Pro MacBook over Ethernet + 2 iPhone 17 Pro Maxes over USB-C: Qwen3.8 Flash Next at 37-39 tok/s at 60k context (262k layout in the works)",
+    "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ley0/2_gaming_pcs_an_m4_pro_macbook_over_ethernet_2/",
+    "summary": "",
+    "source": "r/LocalLLaMA",
+    "published": "2026-10-17T21:13:35+00:00",
+    "buzz": "top of r/LocalLLaMA today",
+    "angle": "You can now chain your gaming PC, MacBook, and iPhones together to run cutting-edge AI locally."
+  },
+  "draft": {
+    "title": "Qwen3.8 Flash Next on home hardware",
+    "hook_text": "Run Qwen3.8 on your home setup",
+    "beats": [
+      {
+        "line": "Qwen3.8 Flash Next is officially out with a massive 262 thousand token context window.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Qwen3.8 Flash Next",
+        "outlet": "",
+        "domain": "qwenlm.github.io",
+        "headline": "",
+        "url": "https://qwenlm.github.io/",
+        "tag": "262k token context",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This new model from Alibaba Cloud is designed for high-efficiency local deployment.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Alibaba Group headquarters",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Alibaba Cloud model",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The architecture allows for impressive throughput even on varied consumer hardware configurations.",
+        "visual": "clip",
+        "query": "computer hardware components",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "High throughput",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Users are finding that Qwen3.8 maintains speed while processing massive documents.",
+        "visual": "clip",
+        "query": "person reading document on screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Efficient processing",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This capacity makes it one of the most capable models for long-form memory tasks.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "262k",
+        "small": "context window",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Qwen",
+            "domain": "qwenlm.github.io"
+          }
+        ]
+      },
+      {
+        "line": "It outperforms previous generations in handling complex, multi-step instructions without data loss.",
+        "visual": "clip",
+        "query": "data processing visualization",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Improved instruction following",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you use this model to summarize your own digital library?",
+        "visual": "clip",
+        "query": "person using laptop",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Local AI usage",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Energetic and informative, emphasizing the technical capability of the new model.",
+    "thin": false,
+    "caption": "Qwen3.8 Flash Next is now available, featuring a massive 262k token context window for local deployment. This model from Alibaba Cloud is optimized for handling long-form data and complex instructions on consumer hardware. Would you use this model to summarize your own digital library?",
+    "hashtags": [
+      "Qwen",
+      "LocalLLaMA",
+      "Alibaba",
+      "AI",
+      "TechNews"
+    ],
+    "sources": [
+      "https://qwenlm.github.io/"
+    ],
+    "script": "Qwen3.8 Flash Next is officially out with a massive 262 thousand token context window.\nThis new model from Alibaba Cloud is designed for high-efficiency local deployment.\nThe architecture allows for impressive throughput even on varied consumer hardware configurations.\nUsers are finding that Qwen3.8 maintains speed while processing massive documents.\nThis capacity makes it one of the most capable models for long-form memory tasks.\nIt outperforms previous generations in handling complex, multi-step instructions without data loss.\nWould you use this model to summarize your own digital library?",
+    "keywords": [
+      "computer hardware components",
+      "person reading document on screen",
+      "data processing visualization",
+      "person using laptop"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Qwen3.8 Flash Next is officially out",
+        "url": "https://www.orcarouter.ai/blog/qwen-3-8-flash-next"
+      },
+      {
+        "claim": "Qwen3.8 Flash Next has a 262 thousand token context window",
+        "url": "https://www.orcarouter.ai/blog/qwen-3-8-flash-next"
+      },
+      {
+        "claim": "Qwen3.8 Flash Next is from Alibaba Cloud",
+        "url": "https://www.orcarouter.ai/blog/qwen-3-8-flash-next"
+      },
+      {
+        "claim": "Qwen3.8 Flash Next has a 262k context window",
+        "url": "https://www.orcarouter.ai/blog/qwen-3-8-flash-next"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://www.reddit.com/r/LocalLLaMA/comments/1x8ley0/2_gaming_pcs_an_m4_pro_macbook_over_ethernet_2/",
+      "https://qwenlm.github.io/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -59,7 +223,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-18T21:20:58.501346+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -470,9 +634,17 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Norfolk uses artificial intelligence to handle thousands of non-emergency calls",
+      "link": "https://www.wtkr.com/news/in-the-community/norfolk/norfolk-uses-artificial-intelligence-to-handle-thousands-of-non-emergency-calls",
+      "summary": "Norfolk uses artificial intelligence to handle thousands of non-emergency calls WTKR",
+      "source": "WTKR",
+      "published": "2026-10-18T04:35:03+00:00",
+      "angle": "Cities are now using AI to handle 911 calls—is this the end of human dispatchers?"
+    }
+  ],
   "tried": [
-    "AI Skills in 2026: 15 Skills to Build Your Career",
     "Top Free Resources to Learn Artificial Intelligence: Courses, Platforms and Learning Tips",
     "Crafty OpenAI agent willingly stole crypto from an account it didn't own to complete a task during test — rogue bot wrote a script to find accounts with public seed phrases, took funds to pay for gas",
     "AI lab offers free plumbing and HVAC repairs across three cities to train AI robots — wearable sensors record video of repair work for robotics training, free services also include electrical work, air duct cleaning, and carpet cleaning",
@@ -531,211 +703,10 @@
     "Artificial intelligence literacy and readiness among neonatal nurses: a structural equation modeling study",
     "Accenture weighs $1.5 billion sale of China business as AI push reshapes growth strategy: Report",
     "What are self-replicating ‘AI worms’, and why is Anthropic worried about them?",
-    "You don’t need that expensive of a build for local llms."
+    "You don’t need that expensive of a build for local llms.",
+    "Xolotl (Strata based) - DeepSeek-V4.1-Flash (552B) on a single 4090 at ~27 tok/s, Uncensored 1017 quant coming in a couple of days"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Only 8% of fund managers report improved investment returns from AI adoption: Morgan Stanley–Oliver Wyman",
-          "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVk5xNkxNeFMyR0ZrV3BTbHJNUWo4UlRWb2ttZlBia3lyelkzMTJpeTZuNEhKdmRhUE5wdEJCWDhFWUdwbTEzWjlnRzJldW5LWWF5MFhhQUZCZXJhdXczVHBRdXduQ1dmVG4wNXByeGQ4bU5xSHRvdU40Q1FUQmxNNFEzaHJQTnVPWTBsWnBtNl9MS01udnQ4a2VYb09feEhXT0U4NVJsQVdwOWpTbkx4NDQzck5tY3pNckgxM0dVSV92Vm12U2RZTmJQM0g3TkJoVTU3X1pWRGhVNUQxZTRJQjNyd0JYTGRseG00a3JHUmjSAfYBQVVfeXFMTm5lUlF0UTVBdnVJMXFLS3puNV9MdkhhRDNZVFlfWGRNYlNfaVhfVkxVUFpqcF9USEdTUkxrajZNb3lPeU9QT19NUHRzRWI4Y3BIYTcwTjdXN1ZrOFNUM0JUV2xnRnlaZTNUeFY3SjZzYkZta05qUlB2Y0IxdHFDaDYyQ1o3T0xXOEJYdEhjbHlwZVVjNldqVzJvRXNrVGJpaXhMQVlEZkp5WTRiaEt6TWJZZVI4Rk1IWmFBbUhYQjgxU0lqS1pvblQycjJNMnJETTR4dDlXbkNnY1dzWGhzaXhVZm16TGwzS0ViU1YtR1M1c1RnNTdB?oc=5",
-          "summary": "Only 8% of fund managers report improved investment returns from AI adoption: Morgan Stanley–Oliver Wyman Livemint",
-          "source": "Livemint",
-          "published": "2026-10-18T13:07:13+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Only 8% See AI Returns",
-          "hook_text": "Only eight percent",
-          "beats": [
-            {
-              "line": "Only eight percent of fund managers report improved investment returns from AI adoption.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "8%",
-              "small": "saw better returns",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Only eight percent",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Morgan Stanley",
-                  "domain": "morganstanley.com"
-                },
-                {
-                  "name": "Oliver Wyman",
-                  "domain": "oliverwyman.com"
-                }
-              ]
-            },
-            {
-              "line": "Morgan Stanley and Oliver Wyman published the finding in a new financial services analysis.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Livemint",
-              "domain": "livemint.com",
-              "headline": "Only 8% of fund managers report improved investment returns from AI adoption",
-              "url": "",
-              "tag": "Morgan Stanley Oliver Wyman",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Morgan Stanley",
-                  "domain": "morganstanley.com"
-                },
-                {
-                  "name": "Oliver Wyman",
-                  "domain": "oliverwyman.com"
-                }
-              ]
-            },
-            {
-              "line": "Most investment firms struggle to turn automated tools into actual portfolio gains.",
-              "visual": "clip",
-              "query": "financial traders looking at screens",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Struggle for gains",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Wall Street poured billions into machine learning systems hoping to slash operating costs.",
-              "visual": "clip",
-              "query": "wall street trading floor computers",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Billions into machine learning",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Instead of higher profits, many asset managers face complex data integration hurdles.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract digital data streams and complex financial charts on dark background",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data integration hurdles",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust software with your life savings?",
-              "visual": "clip",
-              "query": "person staring at smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust your savings",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "skeptical and analytical, highlighting the massive gap between tech hype and actual financial results",
-          "thin": false,
-          "caption": "Only eight percent of fund managers report improved investment returns from AI adoption according to a Morgan Stanley and Oliver Wyman analysis. Wall Street poured billions into machine learning systems, yet firms continue to struggle with portfolio gains. Would you trust software with your life savings?",
-          "hashtags": [
-            "MorganStanley",
-            "OliverWyman",
-            "Livemint",
-            "Investing",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.livemint.com/companies/news/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11729227181057.html"
-          ],
-          "script": "Only eight percent of fund managers report improved investment returns from AI adoption.\nMorgan Stanley and Oliver Wyman published the finding in a new financial services analysis.\nMost investment firms struggle to turn automated tools into actual portfolio gains.\nWall Street poured billions into machine learning systems hoping to slash operating costs.\nInstead of higher profits, many asset managers face complex data integration hurdles.\nWould you trust software with your life savings?",
-          "keywords": [
-            "financial traders looking at screens",
-            "wall street trading floor computers",
-            "person staring at smartphone"
-          ],
-          "image_prompts": [
-            "abstract digital data streams and complex financial charts on dark background"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Only 8% of fund managers report improved investment returns from AI adoption",
-              "url": "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html"
-            },
-            {
-              "claim": "Only eight percent of fund managers report improved investment returns from AI adoption",
-              "url": "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html"
-            },
-            {
-              "claim": "Morgan Stanley and Oliver Wyman published the finding in a new financial services analysis",
-              "url": "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.livemint.com/technology/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11792328833383.html",
-            "https://www.livemint.com/companies/news/only-8-of-fund-managers-report-improved-investment-returns-from-ai-adoption-morgan-stanley-oliver-wyman-11729227181057.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-18T18:51:07.110003+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1495,6 +1466,52 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIc6GrU1ONKU1d3z3wE7KFytYgjOCX0AALTJwACaqipVlaA3Uuvn6OCPQQ",
       "history_title": "Giving AI a “crystal clear” view of the materials world"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Xolotl (Strata based) - DeepSeek-V4.1-Flash (552B) on a single 4090 at ~27 tok/s, Uncensored 1017 quant coming in a couple of days",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8m0jj/xolotl_strata_based_deepseekv41flash_552b_on_a/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-17T21:40:27+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "Run a massive 552B parameter AI model on a single home GPU—the impossible is becoming possible."
+          },
+          {
+            "title": "2 gaming PCs + an M4 Pro MacBook over Ethernet + 2 iPhone 17 Pro Maxes over USB-C: Qwen3.8 Flash Next at 37-39 tok/s at 60k context (262k layout in the works)",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ley0/2_gaming_pcs_an_m4_pro_macbook_over_ethernet_2/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-17T21:13:35+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "You can now chain your gaming PC, MacBook, and iPhones together to run cutting-edge AI locally."
+          },
+          {
+            "title": "Norfolk uses artificial intelligence to handle thousands of non-emergency calls",
+            "link": "https://www.wtkr.com/news/in-the-community/norfolk/norfolk-uses-artificial-intelligence-to-handle-thousands-of-non-emergency-calls",
+            "summary": "Norfolk uses artificial intelligence to handle thousands of non-emergency calls WTKR",
+            "source": "WTKR",
+            "published": "2026-10-18T04:35:03+00:00",
+            "angle": "Cities are now using AI to handle 911 calls—is this the end of human dispatchers?"
+          }
+        ],
+        "choose_deadline": "2026-10-18T20:45:32.753632+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1632,10 +1649,6 @@
     "Giving AI a “crystal clear” view of the materials world"
   ],
   "posted_log": [
-    {
-      "title": "Religious scholars met with Anthropic",
-      "at": "2026-10-04T20:25:23.883325+05:30"
-    },
     {
       "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
       "at": "2026-10-04T23:05:20.447195+05:30"
@@ -2071,7 +2084,7 @@
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-18",
-    "calls": 708,
+    "calls": 721,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2082,8 +2095,8 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 248,
-        "busy": 113,
+        "ok": 257,
+        "busy": 117,
         "other": 51,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
