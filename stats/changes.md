@@ -166,3 +166,11 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 
 ## 2026-10-15: slightly softer (owner choice)
 - Still 8/10 overall; accuracy and specific >= 7; one of hook/substance/visuals/flow may be 6. Why: only 5 reels passed in 3 days, many rejections from the weak free reviewer. Metric: reels/day (baseline ~1.7), views and watch time per reel (watch for a drop).
+
+## 2026-10-18: Sunday review (no code changes)
+- No failed runs in 24 h (11 cancelled = overlapping 5-min runs). 16 and 17 Oct: 6 of 6 posted (after the 15 Oct softer editor);
+  18 Oct 09:00 posted at 09:13. Free Flash quota used up by ~16:00 IST; Flash-Lite 429s from ~04:00 IST, so 11:30 may wait for the 12:30 reset.
+- Week 11-17 Oct: 27 reels (57 prior at 12/day), median 66 views (prior 96), mean watch 4.5 s (prior 5.7), 2 shares, 8 saves;
+  followers 7 -> 9. Outliers: Intel D270 (6.6x), Liquid AI LFM2.5 (6.6x): product launches with specs, no person shown.
+- Signal: Ethan beats Paula both weeks (median views 113 vs 36 this week, 132 vs 99 before; watch 5.1 s vs 3.0 s). Confound:
+  alternation puts Paula on 21:30 often. Asked the owner (Ethan only vs keep both). hook_score has only 5 data points; not trusted yet.
