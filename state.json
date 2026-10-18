@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -186,11 +186,53 @@
     "source_links": [
       "https://www.aninews.in/news/business/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018203944",
       "https://www.aninews.in/news/technology/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018104523/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Anthropic just cut its junior tech hiring share fr…: The image is an almost-empty card with only text.",
+      "This shift follows the company's increased relianc…: The image is an almost-empty card with only text.",
+      "The company now leans on senior engineers to manag…: The image is an almost-empty card with only text.",
+      "This change happened rapidly over the last year as…: The image is an almost-empty card with only text.",
+      "Junior roles previously made up over a quarter of …: The image is an almost-empty card with only text.",
+      "Does this mean entry-level tech jobs are disappear…: The image is an almost-empty card with only text.",
+      "The shot is an almost-empty card with just a logo.",
+      "The shot is an almost-empty card with no visual content.",
+      "The shot is an almost-empty card with no visual content."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong data, but visual pacing is too slow and repetitive for a news reel.",
+      "script_fixes": [
+        "LINE 2: Replace 'the company's' with 'Anthropic's' to avoid repetition.",
+        "LINE 3: Specify the type of 'internal tasks' (e.g., coding, documentation) to add more substance."
+      ],
+      "visual_beats": [
+        0,
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 1: The same title screen is held for 7 seconds, violating the 8-second rule for total frame d",
+        "line 3: The same 'Senior engineers needed' graphic is held for too long without visual variation.",
+        "line 4: The '9 percent junior share' graphic is held for 7 seconds, which is static and boring."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIdCGrU985AqDzeJlY33Dd491UTfRaFAAIUKAACaqipVsCeT-qA2ZeqPQQ",
   "queue": [
     {
       "title": "Giving AI a “crystal clear” view of the materials world",
@@ -211,14 +253,14 @@
         "hook_score": null,
         "made": "2026-10-18T20:15+05:30"
       },
-      "post_at": "2026-10-18T22:07:39.325769+05:30",
-      "tries": 1
+      "post_at": "2026-10-18T22:40:29.592557+05:30",
+      "tries": 2
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-18T22:07:22.881932+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-18T22:46:06.913376+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-18",
@@ -709,51 +751,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "What are self-replicating ‘AI worms’, and why is Anthropic worried about them?",
-            "link": "https://www.theguardian.com/technology/2026/oct/18/anthropic-ai-worm-worries",
-            "summary": "What are self-replicating ‘AI worms’, and why is Anthropic worried about them? The Guardian",
-            "source": "The Guardian",
-            "published": "2026-10-18T13:30:00+00:00",
-            "angle": "Anthropic is warning about self-replicating 'AI worms' that could spread autonomously—here is why this is a major security red flag."
-          },
-          {
-            "title": "You don’t need that expensive of a build for local llms.",
-            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8s73i/you_dont_need_that_expensive_of_a_build_for_local/",
-            "summary": "",
-            "source": "r/LocalLLaMA",
-            "published": "2026-10-18T02:46:36+00:00",
-            "buzz": "top of r/LocalLLaMA today",
-            "angle": "Stop overspending on your PC build: You don't actually need a top-tier rig to run powerful LLMs locally."
-          },
-          {
-            "title": "Giving AI a “crystal clear” view of the materials world",
-            "link": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
-            "summary": "Giving AI a “crystal clear” view of the materials world MIT News",
-            "source": "MIT News",
-            "published": "2026-10-18T04:00:00+00:00",
-            "angle": "MIT researchers just gave AI a 'crystal clear' view of materials, potentially accelerating breakthroughs in batteries and tech hardware."
-          }
-        ],
-        "choose_deadline": "2026-10-18T19:04:01.818734+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1482,6 +1479,208 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic sees junior tech hires' share fall from 27% to 9% amid growing AI adoption",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVXNqRlFjYmM3cmZYRENhTG5teWxZNWJPZHp1M0tYMmJUcnhtNGRUUGJGeFNmSmVnUDItVnNwRlFsbzJsb1hqRXRKR2JKUG9ieVBVNHlKRmdCeXctMjVUMU91Vm55cW1PelpzZTNwUy0wLWtXYWR2eG9STVlyZWdmV1JWbWNkVkE3dXlaYklOWkhHdWdFODVUYTZNTHJ4dWp1aTEtanIwa3E5R044UWZSSkpSQXgxdEtZUWlNWlRLV0tJTjk1VFdCWTZZcWs?oc=5",
+          "summary": "Anthropic sees junior tech hires' share fall from 27% to 9% amid growing AI adoption ANI News",
+          "source": "ANI News",
+          "published": "2026-10-18T15:09:00+00:00",
+          "angle": "Anthropic data shows junior tech hiring has plummeted from 27% to 9%—is AI officially replacing entry-level jobs?"
+        },
+        "draft": {
+          "title": "Anthropic Junior Hiring Drops to 9%",
+          "hook_text": "Junior tech hires plummet at Anthropic",
+          "beats": [
+            {
+              "line": "Anthropic just cut its junior tech hiring share from twenty-seven percent to nine percent.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Anthropic hiring down",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "This shift follows the company's increased reliance on its Claude models for internal tasks.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Claude",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://claude.ai",
+              "tag": "Claude replacing juniors",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The company now leans on senior engineers to manage AI-driven workflows.",
+              "visual": "clip",
+              "query": "software engineer working on code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Senior engineers needed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This change happened rapidly over the last year as AI adoption accelerated.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "9%",
+              "small": "current junior share",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "9 percent junior share",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Junior roles previously made up over a quarter of the engineering headcount.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "27%",
+              "small": "previous junior share",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "27 percent previous share",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Does this mean entry-level tech jobs are disappearing for good?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "ANI News",
+              "domain": "aninews.in",
+              "headline": "Anthropic junior tech hires fall to 9 percent",
+              "url": "",
+              "tag": "Entry level jobs vanishing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Objective and slightly urgent tone, highlighting the rapid shift in hiring strategy at a leading AI lab.",
+          "thin": false,
+          "caption": "Anthropic has reduced its junior tech hiring from 27% to 9% as the company integrates its Claude AI models into internal workflows. This marks a significant pivot in how top AI labs structure their engineering teams. Are entry-level tech roles becoming obsolete?",
+          "hashtags": [
+            "Anthropic",
+            "ClaudeAI",
+            "TechNews",
+            "HiringTrends",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://www.aninews.in/news/technology/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018104523/"
+          ],
+          "script": "Anthropic just cut its junior tech hiring share from twenty-seven percent to nine percent.\nThis shift follows the company's increased reliance on its Claude models for internal tasks.\nThe company now leans on senior engineers to manage AI-driven workflows.\nThis change happened rapidly over the last year as AI adoption accelerated.\nJunior roles previously made up over a quarter of the engineering headcount.\nDoes this mean entry-level tech jobs are disappearing for good?",
+          "keywords": [
+            "software engineer working on code"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_score": 59,
+          "evidence": [
+            {
+              "claim": "Junior tech hires plummet at Anthropic",
+              "url": "https://www.anthropic.com/research/employment-at-anthropic"
+            },
+            {
+              "claim": "Anthropic cut its junior tech hiring share from twenty-seven percent to nine percent.",
+              "url": "https://www.anthropic.com/research/employment-at-anthropic"
+            },
+            {
+              "claim": "This shift follows the company's increased reliance on its Claude models for internal tasks.",
+              "url": "https://www.anthropic.com/research/employment-at-anthropic"
+            },
+            {
+              "claim": "The company now leans on senior engineers to manage AI-driven workflows.",
+              "url": "https://www.anthropic.com/research/employment-at-anthropic"
+            },
+            {
+              "claim": "This change happened rapidly over the last year as AI adoption accelerated.",
+              "url": "https://www.anthropic.com/research/employment-at-anthropic"
+            },
+            {
+              "claim": "Junior roles previously made up over a quarter of the engineering headcount.",
+              "url": "https://www.anthropic.com/research/employment-at-anthropic"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.aninews.in/news/business/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018203944",
+            "https://www.aninews.in/news/technology/anthropic-sees-junior-tech-hires-share-fall-from-27-to-9-amid-growing-ai-adoption20261018104523/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-18T22:07:22.881932+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2001,8 +2200,8 @@
       "event": "MIT researchers just launched a multimodal AI that finds optimal crystalline materials for specific uses. It pairs 3D atomic structures with natural language to identify materials based on your text descriptions. Professor Ju Li led the tea"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-18T20:15+05:30",
@@ -2030,7 +2229,7 @@
   "report_day": "2026-10-18",
   "ig_count": {
     "day": "2026-10-18",
-    "at": "2026-10-18T22:00:30.996065+05:30",
+    "at": "2026-10-18T22:16:06.913657+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2050,11 +2249,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-18",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-18",
-    "calls": 721,
+    "calls": 727,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2065,7 +2264,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 257,
+        "ok": 263,
         "busy": 117,
         "other": 51,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2168,7 +2367,7 @@
   },
   "report_week": "2026-42",
   "last_post_error": {
-    "at": "2026-10-18T21:38+05:30",
+    "at": "2026-10-18T22:11+05:30",
     "title": "Giving AI a “crystal clear” view of the materials world",
     "error": "RuntimeError: Instagram error: {'debug_info': {'retriable': False, 'type': 'ProcessingFailedError', 'message': 'Request processing failed'}}"
   },
@@ -2181,29 +2380,6 @@
     "gemini-3.5-flash-lite": 1792330143.231468
   },
   "editor_log": [
-    {
-      "at": "2026-10-18T03:27+05:30",
-      "title": "How Itaú is building generative AI for its entire customer base",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 4,
-        "visuals": 3,
-        "flow": 9
-      },
-      "one_line": "Visuals are completely broken and inaccurate, showing irrelevant logos and wrong dates.",
-      "fixes": [
-        "LINE 1: Remove 'by late 2026' if the source does not explicitly confirm this as a hard deadline.",
-        "LINE 6: Replace 'The bank is prioritizing security' with a specific detail about the security measures mentioned in the source."
-      ],
-      "visual": [
-        "line 1: The date '17 Oct 2026' is in the future and inaccurate.",
-        "line 2: Shows a 'Benefit Street Partners' logo instead of Itaú or ia.i.",
-        "line 4: The visual shows a generic OpenAI news card instead of relevant bank imagery."
-      ]
-    },
     {
       "at": "2026-10-18T04:04+05:30",
       "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
@@ -2626,6 +2802,29 @@
       "visual": [
         "line 1: Hook is too generic; needs to show the hardware setup mentioned in the source.",
         "line 3: Visuals are abstract text; should show the specific hardware (PCs, MacBooks, iPhones) ment"
+      ]
+    },
+    {
+      "at": "2026-10-18T22:15+05:30",
+      "title": "Anthropic sees junior tech hires' share fall from 27% to 9% amid growing AI adop",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong data, but visual pacing is too slow and repetitive for a news reel.",
+      "fixes": [
+        "LINE 2: Replace 'the company's' with 'Anthropic's' to avoid repetition.",
+        "LINE 3: Specify the type of 'internal tasks' (e.g., coding, documentation) to add more substance."
+      ],
+      "visual": [
+        "line 1: The same title screen is held for 7 seconds, violating the 8-second rule for total frame d",
+        "line 3: The same 'Senior engineers needed' graphic is held for too long without visual variation.",
+        "line 4: The '9 percent junior share' graphic is held for 7 seconds, which is static and boring."
       ]
     }
   ],
