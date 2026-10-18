@@ -700,6 +700,7 @@
     "Anthropic says its workforce has become less junior and is spending more time in meetings",
     "OpenAI models hacked a crypto wallet and breached more websites"
   ],
+  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot choosing the AI voice",
@@ -2415,7 +2416,7 @@
     "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
     "trace": "   next_story(s, \"the last one was a repeat\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 539, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 596, in start_script\n    next_story(s, \"the facts couldn't be verified\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 539, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 578, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 372, in checked_script\n    draft = writer.write_script(topic, previous=previous, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 494, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 208, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
   },
-  "report_week": "2026-41",
+  "report_week": "2026-42",
   "last_post_error": {
     "at": "2026-10-16T19:04+05:30",
     "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
