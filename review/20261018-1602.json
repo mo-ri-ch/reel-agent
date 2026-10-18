@@ -1,0 +1,79 @@
+{
+ "made": "20261018-1602",
+ "title": "2 gaming PCs + an M4 Pro MacBook over Ethernet + 2 iPhone 17 Pro Maxes over USB-C: Qwen3.8 Flash Next at 37-39 tok/s at 60k context (262k layout in the works)",
+ "hook_text": "Run Qwen3.8 on your home setup",
+ "hook_before": null,
+ "script": "Qwen3.8 Flash Next is officially out with a massive 262 thousand token context window.\nThis new model from Alibaba Cloud is designed for high-efficiency local deployment.\nThe architecture allows for impressive throughput even on varied consumer hardware configurations.\nUsers are finding that Qwen3.8 maintains speed while processing massive documents.\nThis capacity makes it one of the most capable models for long-form memory tasks.\nIt outperforms previous generations in handling complex, multi-step instructions without data loss.\nWould you use this model to summarize your own digital library?",
+ "words": 86,
+ "beats": [
+  {
+   "line": "Qwen3.8 Flash Next is officially out with a massive 262 thousand token context window.",
+   "visual": "official"
+  },
+  {
+   "line": "This new model from Alibaba Cloud is designed for high-efficiency local deployment.",
+   "visual": "photo"
+  },
+  {
+   "line": "The architecture allows for impressive throughput even on varied consumer hardware configurations.",
+   "visual": "clip"
+  },
+  {
+   "line": "Users are finding that Qwen3.8 maintains speed while processing massive documents.",
+   "visual": "clip"
+  },
+  {
+   "line": "This capacity makes it one of the most capable models for long-form memory tasks.",
+   "visual": "stat"
+  },
+  {
+   "line": "It outperforms previous generations in handling complex, multi-step instructions without data loss.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you use this model to summarize your own digital library?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 5.5,
+  "scores": {
+   "hook": 5,
+   "specific": 4,
+   "substance": 3,
+   "accuracy": 8,
+   "visuals": 6,
+   "flow": 7
+  },
+  "one_line": "Fails to leverage the specific, high-impact hardware data provided in the source.",
+  "script_fixes": [
+   "LINE 1: Replace with 'Qwen3.8 Flash Next is here, hitting 39 tokens per second at 60k context.'",
+   "LINE 3: Replace with 'It runs on dual gaming PCs, M4 Pro MacBooks, and iPhone 17 Pro Maxes.'",
+   "LINE 5: Replace with 'This efficiency enables local processing of massive, multi-step instruction sets.'"
+  ],
+  "visual_beats": [
+   0,
+   2
+  ],
+  "visual_notes": [
+   "line 1: Hook is too generic; needs to show the hardware setup mentioned in the source.",
+   "line 3: Visuals are abstract text; should show the specific hardware (PCs, MacBooks, iPhones) ment"
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 38.23,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  12.33,
+  23.03,
+  34.0
+ ],
+ "first_cut_at": 12.33,
+ "avg_shot_seconds": 9.56,
+ "longest_shot_seconds": 12.33,
+ "verdict": "rejected",
+ "words_per_minute": 135
+}
