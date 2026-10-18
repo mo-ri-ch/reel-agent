@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -200,11 +200,56 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "OpenAI now powers the core coding experience for a…: broken/blank visual",
+      "Anthropic's Claude remains accessible as an altern…: broken/blank visual",
+      "The company previously relied on Anthropic to driv…: broken/blank visual",
+      "Users can still toggle between different intellige…: broken/blank visual",
+      "Would you choose OpenAI over Claude for your own c…: broken/blank visual",
+      "The shot is an empty text card instead of the requested stock video of the Replit logo.",
+      "The shot is an empty text card instead of a photo of Amjad Masad or an initials card.",
+      "The shot is an empty text card instead of the requested stock video of the OpenAI logo.",
+      "The shot is an empty text card instead of the requested stock video of the Claude AI logo.",
+      "The shot is an empty text card instead of the requested source card for TechCrunch.",
+      "The shot is an empty text card instead of the requested stock video of a person using a laptop.",
+      "The shot is an empty text card instead of the requested stock video of a coding screen."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual presentation is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 5: Replace 'The company' with 'Replit' to maintain specificity.",
+        "LINE 7: Change to 'Which model do you prefer for coding: OpenAI or Claude?'"
+      ],
+      "visual_beats": [
+        0,
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 1: The same image of Amjad Masad is held for too long across multiple frames.",
+        "line 3: The visual is static and lacks a direct representation of the Replit interface.",
+        "line 4: The visual is too abstract; show the actual model toggle menu in the Replit UI."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIb02rUYx0sCssoELN9SC5sl6QnOEyLAAKYJgACaqihVqSfgiwQr2rrPQQ",
   "queue": [
     {
       "title": "Opencode breached, rotate keys to be safe.",
@@ -230,9 +275,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-18T11:31:26.474889+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-18T12:11:41.935335+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-18",
@@ -719,257 +764,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Opencode breached, rotate keys to be safe.",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-17T18:02:37+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "Security alert: A major open-source AI platform has been breached, and you need to rotate your keys immediately."
-        },
-        "draft": {
-          "title": "Opencode Security Breach Alert",
-          "hook_text": "Opencode API platform breached.",
-          "beats": [
-            {
-              "line": "Opencode's API platform was breached through a legacy server.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "r/LocalLLaMA",
-              "domain": "reddit.com",
-              "headline": "Opencode breached, rotate keys to be safe",
-              "url": "",
-              "tag": "API platform breached",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Opencode",
-                  "domain": "opencode.ai"
-                }
-              ]
-            },
-            {
-              "line": "Attackers exploited a legacy server awaiting decommissioning to gain access.",
-              "visual": "clip",
-              "query": "server room hardware",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Legacy server exploited",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The incident exposed sensitive developer data held on that machine.",
-              "visual": "clip",
-              "query": "data security breach",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Developer data exposed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Only one point four percent of console users were actually impacted.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1.4%",
-              "small": "affected console users",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "1.4 percent affected",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Opencode",
-                  "domain": "opencode.ai"
-                }
-              ]
-            },
-            {
-              "line": "You still need to rotate every API key immediately.",
-              "visual": "clip",
-              "query": "cyber security settings",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Rotate keys now",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Your credentials could be used to access unauthorized AI workflows.",
-              "visual": "clip",
-              "query": "ai coding interface",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Protect your workflows",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The company already sent out direct notifications to affected accounts.",
-              "visual": "clip",
-              "query": "email notification on phone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Check your email",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Have you updated your keys yet?",
-              "visual": "clip",
-              "query": "developer coding on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Update keys now",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Urgent and cautionary, focused on clear security instructions for developers.",
-          "thin": false,
-          "caption": "Opencode's API platform suffered a breach, impacting 1.4% of users. Even if you were not notified, you should rotate your API keys immediately to secure your AI workflows. Have you updated your credentials yet?",
-          "hashtags": [
-            "Opencode",
-            "cybersecurity",
-            "AI",
-            "datasecurity",
-            "developer"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/"
-          ],
-          "script": "Opencode's API platform was breached through a legacy server.\nAttackers exploited a legacy server awaiting decommissioning to gain access.\nThe incident exposed sensitive developer data held on that machine.\nOnly one point four percent of console users were actually impacted.\nYou still need to rotate every API key immediately.\nYour credentials could be used to access unauthorized AI workflows.\nThe company already sent out direct notifications to affected accounts.\nHave you updated your keys yet?",
-          "keywords": [
-            "server room hardware",
-            "data security breach",
-            "cyber security settings",
-            "ai coding interface",
-            "email notification on phone",
-            "developer coding on laptop"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Opencode API platform breached.",
-              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
-            },
-            {
-              "claim": "Opencode's API platform was breached through a legacy server.",
-              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
-            },
-            {
-              "claim": "Attackers exploited a legacy server awaiting decommissioning to gain access.",
-              "url": "https://www.onesafe.io/blog/opencode-api-security-breach"
-            },
-            {
-              "claim": "The incident exposed sensitive developer data held on that machine.",
-              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
-            },
-            {
-              "claim": "Only one point four percent of console users were actually impacted.",
-              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
-            },
-            {
-              "claim": "You still need to rotate every API key immediately.",
-              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
-            },
-            {
-              "claim": "Your credentials could be used to access unauthorized AI workflows.",
-              "url": "https://www.onesafe.io/blog/opencode-api-security-breach"
-            },
-            {
-              "claim": "The company already sent out direct notifications to affected accounts.",
-              "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-18T05:56:32.817153+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1567,6 +1361,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+          "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+          "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-17T18:48:08+00:00",
+          "angle": "Replit just dumped Anthropic for OpenAI as its default model—the AI model wars are getting personal."
+        },
+        "draft": {
+          "title": "Replit Switches Defaults to OpenAI",
+          "hook_text": "Replit drops Anthropic for OpenAI",
+          "beats": [
+            {
+              "line": "Replit has officially replaced Anthropic with OpenAI as its default model provider.",
+              "visual": "clip",
+              "query": "Replit logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Replit switches defaults",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "CEO Amjad Masad announced this shift during the TechCrunch Disrupt event this week.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://replit.com",
+              "tag": "CEO Amjad Masad",
+              "name": "Amjad Masad",
+              "role": "CEO, Replit",
+              "x": "amasad",
+              "brands": []
+            },
+            {
+              "line": "OpenAI now powers the core coding experience for all Replit users.",
+              "visual": "clip",
+              "query": "OpenAI logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "OpenAI powers Replit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Anthropic's Claude remains accessible as an alternative model within the platform interface.",
+              "visual": "clip",
+              "query": "Claude AI logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Claude stays optional",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The company previously relied on Anthropic to drive its automated coding features.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Replit makes OpenAI its default over Anthropic",
+              "url": "",
+              "tag": "Previous Anthropic integration",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Users can still toggle between different intelligence providers for their specific tasks.",
+              "visual": "clip",
+              "query": "person using laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Choose your model",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you choose OpenAI over Claude for your own coding projects?",
+              "visual": "clip",
+              "query": "coding screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Your coding choice?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Informative and direct, maintaining a neutral but professional pace regarding the software provider change.",
+          "thin": false,
+          "caption": "Replit CEO Amjad Masad has confirmed that OpenAI is now the default model provider for the platform, replacing Anthropic. While Claude remains available as an option for users, the shift marks a significant change in the coding environment. Would you choose OpenAI over Claude for your own coding projects?",
+          "hashtags": [
+            "Replit",
+            "OpenAI",
+            "Anthropic",
+            "Coding",
+            "Programming"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+          ],
+          "script": "Replit has officially replaced Anthropic with OpenAI as its default model provider.\nCEO Amjad Masad announced this shift during the TechCrunch Disrupt event this week.\nOpenAI now powers the core coding experience for all Replit users.\nAnthropic's Claude remains accessible as an alternative model within the platform interface.\nThe company previously relied on Anthropic to drive its automated coding features.\nUsers can still toggle between different intelligence providers for their specific tasks.\nWould you choose OpenAI over Claude for your own coding projects?",
+          "keywords": [
+            "Replit logo",
+            "OpenAI logo",
+            "Claude AI logo",
+            "person using laptop",
+            "coding screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Replit drops Anthropic for OpenAI",
+              "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            },
+            {
+              "claim": "Replit has officially replaced Anthropic with OpenAI as its default model provider.",
+              "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            },
+            {
+              "claim": "CEO Amjad Masad announced this shift during the TechCrunch Disrupt event this week.",
+              "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            },
+            {
+              "claim": "OpenAI now powers the core coding experience for all Replit users.",
+              "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            },
+            {
+              "claim": "Anthropic's Claude remains accessible as an alternative model within the platform interface.",
+              "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            },
+            {
+              "claim": "The company previously relied on Anthropic to drive its automated coding features.",
+              "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            },
+            {
+              "claim": "Users can still toggle between different intelligence providers for their specific tasks.",
+              "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-18T11:31:26.474889+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2082,8 +2092,8 @@
       "event": "Opencode's API platform was breached through a legacy server. Attackers exploited a legacy server awaiting decommissioning to gain access. The incident exposed sensitive developer data held on that machine. Only one point four percent of co"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-18T10:27+05:30",
@@ -2111,7 +2121,7 @@
   "report_day": "2026-10-17",
   "ig_count": {
     "day": "2026-10-18",
-    "at": "2026-10-18T11:30:39.393728+05:30",
+    "at": "2026-10-18T11:41:41.935601+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2131,11 +2141,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-18",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-18",
-    "calls": 436,
+    "calls": 444,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2146,10 +2156,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 194,
+        "ok": 200,
         "busy": 95,
-        "other": 49,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 51,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
         "ok": 0,
@@ -2239,26 +2249,6 @@
     "gemini-flash-lite-latest": 1792277484.00192
   },
   "editor_log": [
-    {
-      "at": "2026-10-17T19:01+05:30",
-      "title": "Croatia sets out €932 million plan for artificial intelligence development",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong script and hook, but repetitive static cards ruin the visuals.",
-      "fixes": [],
-      "visual": [
-        "line 1: Same visual card held across multiple frames too long.",
-        "line 2: Repeated use of plain text cards without dynamic B-roll.",
-        "line 3: Visuals hold static text for too many frames."
-      ]
-    },
     {
       "at": "2026-10-17T19:02+05:30",
       "title": "Croatia sets out €932 million plan for artificial intelligence development",
@@ -2685,6 +2675,29 @@
         "line 1: The same static text screen is held for too long without visual interest.",
         "line 2: Repetitive visual layout; the same text-box style is used for every single line.",
         "line 6: Visuals are purely text-based; lacks imagery of the threat or the CERT-In logo."
+      ]
+    },
+    {
+      "at": "2026-10-18T11:41+05:30",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visual presentation is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 5: Replace 'The company' with 'Replit' to maintain specificity.",
+        "LINE 7: Change to 'Which model do you prefer for coding: OpenAI or Claude?'"
+      ],
+      "visual": [
+        "line 1: The same image of Amjad Masad is held for too long across multiple frames.",
+        "line 3: The visual is static and lacks a direct representation of the Replit interface.",
+        "line 4: The visual is too abstract; show the actual model toggle menu in the Replit UI."
       ]
     }
   ],
