@@ -768,7 +768,8 @@ def editor_review(draft, topic, frames, beat_times):
                 return i
         return None
     lines = "\n".join(f"LINE {i + 1}: {b.get('line', '')}" for i, b in enumerate(beats))
-    parts = [{"text": EDITOR_BRIEF.format(title=topic.get("title", ""), summary=str(topic.get("summary", ""))[:600],
+    # the date stops the reviewer calling today's "Source · date" label a "future date" (it did on 19 Oct)
+    parts = [{"text": f"Today is {now().strftime('%d %B %Y')}.\n" + EDITOR_BRIEF.format(title=topic.get("title", ""), summary=str(topic.get("summary", ""))[:600],
                                           lines=lines)}]
     for i, f in enumerate(frames):
         b = beat_at(f["t"])
