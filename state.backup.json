@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "rendering",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -310,7 +310,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-19T13:47:31.662923+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -800,50 +800,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Sam Altman’s World Debuts ID Verification for AI Agents",
-            "link": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/",
-            "summary": "Sam Altman’s World Debuts ID Verification for AI Agents PYMNTS.com",
-            "source": "PYMNTS.com",
-            "published": "2026-10-19T01:18:49+00:00",
-            "angle": "Sam Altman's World is now verifying AI agents, meaning the internet is about to get a lot more 'human'—or a lot more controlled."
-          },
-          {
-            "title": "MI5 is opening an AI threat centre, and OpenAI just told MPs the worst isn't over",
-            "link": "https://www.wionews.com/world/mi5-is-opening-an-ai-threat-centre-and-openai-just-told-mps-the-worst-isn-t-over-1792254718733",
-            "summary": "MI5 is opening an AI threat centre, and OpenAI just told MPs the worst isn't over WION",
-            "source": "WION",
-            "published": "2026-10-18T21:02:00+00:00",
-            "angle": "MI5 is launching a dedicated AI threat center as OpenAI warns MPs that the worst of AI risks is still ahead of us."
-          },
-          {
-            "title": "2 Utah dads create tech to protect children, shield investigators from traumatic evidence",
-            "link": "https://www.ksl.com/article/51635544/2-utah-dads-create-tech-to-protect-children-shield-investigators-from-traumatic-evidence",
-            "summary": "2 Utah dads create tech to protect children, shield investigators from traumatic evidence KSL News",
-            "source": "KSL News",
-            "published": "2026-10-18T23:33:57+00:00",
-            "angle": "Two dads built AI tech to shield investigators from traumatic child abuse evidence—a powerful look at AI being used for good."
-          }
-        ],
-        "choose_deadline": "2026-10-19T07:40:35.886070+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1456,6 +1412,282 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "How AI chatbots and fake photos are playing with your mind to create false memories",
+          "link": "https://www.indiatoday.in/amp/technology/news/story/how-ai-chatbots-and-fake-photos-are-playing-with-your-mind-to-create-false-memories-3020488-2026-10-19",
+          "summary": "How AI chatbots and fake photos are playing with your mind to create false memories India Today",
+          "source": "India Today",
+          "published": "2026-10-19T04:27:21+00:00",
+          "angle": "How AI chatbots and fake photos are literally rewriting human memory"
+        },
+        "draft": {
+          "title": "How AI Chatbots Can Plant False Memories",
+          "hook_text": "AI can rewrite your memories",
+          "beats": [
+            {
+              "line": "MIT researchers proved AI can rewrite your memories.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Massachusetts Institute of Technology",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "MIT AI memory study",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "MIT",
+                  "domain": "mit.edu"
+                }
+              ]
+            },
+            {
+              "line": "A new study shows chatbots can plant fake facts in your mind.",
+              "visual": "clip",
+              "query": "person typing on smartphone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Chatbots plant fake facts",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Researchers at MIT Media Lab tested conversational AI on human subjects.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "India Today",
+              "domain": "indiatoday.in",
+              "headline": "How AI Chatbots and Fake Photos Create False Memories",
+              "url": "",
+              "tag": "MIT Media Lab testing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "MIT Media Lab",
+                  "domain": "media.mit.edu"
+                }
+              ]
+            },
+            {
+              "line": "Participants watched a crime scene video before chatting with a generative AI.",
+              "visual": "clip",
+              "query": "surveillance camera monitoring screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Crime scene video test",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The chatbot asked leading questions that subtly introduced false details.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI ChatGPT",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://chatgpt.com",
+              "tag": "Leading chatbot questions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Separately, fake photos were used to test visual memory distortion.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "A vertical cinematic photo of a distorted family photograph resting on a wooden table under soft spotlight.",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Fake photos memory test",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Thirty-six point four percent of user responses adopted the chatbot's fabrications.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "36.4%",
+              "small": "false memories accepted",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "36.4% misled by AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "After a brief conversation, participants remembered details that never happened.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "MIT Media Lab",
+              "domain": "media.mit.edu",
+              "headline": "Generative AI Agents and Human Memory Distortion",
+              "url": "",
+              "tag": "Remembering fake details",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "MIT Media Lab",
+                  "domain": "media.mit.edu"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust a memory an AI suggested?",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Human brain",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust your memory?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and intriguing, highlighting a disturbing psychological discovery with clear journalist precision.",
+          "thin": false,
+          "caption": "MIT Media Lab researchers found that AI chatbots can plant false memories in 36.4% of responses. By using conversational AI and fake photos, the study demonstrates how easily human memory can be distorted. Would you trust a memory an AI suggested?",
+          "hashtags": [
+            "MITMediaLab",
+            "AIBrain",
+            "FalseMemories",
+            "TechNews",
+            "CognitiveScience"
+          ],
+          "sources": [
+            "https://www.indiatoday.in/amp/technology/news/story/how-ai-chatbots-and-fake-photos-are-playing-with-your-mind-to-create-false-memories-3020488-2026-10-19",
+            "https://www.media.mit.edu/projects/ai-generated-memories/overview/"
+          ],
+          "script": "MIT researchers proved AI can rewrite your memories.\nA new study shows chatbots can plant fake facts in your mind.\nResearchers at MIT Media Lab tested conversational AI on human subjects.\nParticipants watched a crime scene video before chatting with a generative AI.\nThe chatbot asked leading questions that subtly introduced false details.\nSeparately, fake photos were used to test visual memory distortion.\nThirty-six point four percent of user responses adopted the chatbot's fabrications.\nAfter a brief conversation, participants remembered details that never happened.\nWould you trust a memory an AI suggested?",
+          "keywords": [
+            "person typing on smartphone screen",
+            "surveillance camera monitoring screen"
+          ],
+          "image_prompts": [
+            "A vertical cinematic photo of a distorted family photograph resting on a wooden table under soft spotlight."
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "AI can rewrite your memories.",
+              "url": "https://www.indiatoday.in/amp/technology/news/story/how-ai-chatbots-and-fake-photos-are-playing-with-your-mind-to-create-false-memories-3020488-2026-10-19"
+            },
+            {
+              "claim": "MIT researchers proved AI can rewrite your memories.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            },
+            {
+              "claim": "A new study shows chatbots can plant fake facts in your mind.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            },
+            {
+              "claim": "Researchers at MIT Media Lab tested conversational AI on human subjects.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            },
+            {
+              "claim": "Participants took part in a simulated crime-witness experiment before chatting with generative AI.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            },
+            {
+              "claim": "The chatbot interaction misled users into false details.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            },
+            {
+              "claim": "Fake photos were used to test visual memory distortion.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            },
+            {
+              "claim": "36.4% of user responses were misled through the chatbot interaction.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            },
+            {
+              "claim": "Participants remembered details that never happened.",
+              "url": "https://www.gadgetreview.com/ai-can-rewrite-your-memories-and-you-may-never-notice"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.indiatoday.in/amp/technology/news/story/how-ai-chatbots-and-fake-photos-are-playing-with-your-mind-to-create-false-memories-3020488-2026-10-19",
+            "https://www.media.mit.edu/projects/ai-generated-memories/overview/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-19T13:47:31.662923+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1992,8 +2224,8 @@
       "event": "Sam Altman just brought official ID verification to AI agents. His company, World, launched this feature on October 18, 2026. Developers can now issue World ID credentials to their autonomous software. This allows platforms to prove an agen"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-19T12:30+05:30",
