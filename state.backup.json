@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -222,11 +222,57 @@
     "source_links": [
       "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/",
       "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Developers can now issue World ID credentials to t…: The image is blank/unreadable.",
+      "This allows platforms to prove an agent is authori…: The image is blank/unreadable.",
+      "World is opening this layer to third-party platfor…: The image is blank/unreadable.",
+      "The visual is a blank, empty card.",
+      "The visual is a blank, empty card."
+    ],
+    "editor": {
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 10,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, factual reporting, but visual variety and pacing need significant improvement.",
+      "script_fixes": [
+        "LINE 2: Change 'His company, World' to 'World, formerly Worldcoin,' for better clarity.",
+        "LINE 8: Change 'Would you trust a verified AI?' to 'Will this solve the AI bot problem?' for a more news-oriented hook."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "visual_notes": [
+        "line 1: The same logo image is held for too long across multiple frames.",
+        "line 2: The World logo is repeated from the previous line; needs a new visual.",
+        "line 4: The visual is static text; needs a graphic representing 'human-authorized' agents.",
+        "line 7: The PYMNTS.com logo is irrelevant to the content; replace with a developer-focused graphic"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Sam Altman: x.com/sama",
+      "World: world.org",
+      "World: world.org",
+      "World Orb: world.org",
+      "World Orb: world.org"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "4 official images, 1 real photos, 1 clips, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIdy2rVhuxpLf23Ia5mDm5yby8YjxT5AAKlKAACaqipVgn1Mi_VLVNQPQQ",
   "queue": [
     {
       "title": "A woman was arrested in Philly for blocking a delivery robot",
@@ -293,9 +339,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-19T08:16:02.832843+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-19T08:56:45.441233+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-19",
@@ -781,209 +827,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "36, 85, 14: three numbers that explain the enterprise AI gap",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOalhCdGpQZi1SOHFuTVYxVW1NUjZtejBjSUMteXdfYkpveHJYaVBUWmNMMmg0d2E3VzYxdjBSYnJRdWlEdHMzek1MQ0xQZTRmTXhHNnltZWFla1B3SUJDSTR3dDVtSWNqMWhqWXVqZWhmRWVDcHZEUzNTODM5WnJPX1lNYWxhY2lyR2tFUmRSMzJSc3JKWjJ4THQ2bTR6SFE?oc=5",
-          "summary": "36, 85, 14: three numbers that explain the enterprise AI gap CIO",
-          "source": "CIO",
-          "published": "2026-10-18T23:08:41+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "The Enterprise AI Gap",
-          "hook_text": "36, 85, and 14 explain AI",
-          "beats": [
-            {
-              "line": "Thirty-six percent of organizations seeing real returns identified clean, accessible data as their strongest predictor of success.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "36%",
-              "small": "Data drives success",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "36% prioritize data",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Eighty-five percent is the reduction in underwriting turnaround time some AI-assisted credit platforms are now reporting.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "85%",
-              "small": "Faster underwriting",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "85% faster processing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Fourteen percent of organizations have built a genuinely unified view of the customer, according to Gartner.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Gartner",
-              "domain": "gartner.com",
-              "headline": "Unified customer view",
-              "url": "",
-              "tag": "14% unified view",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The CIO report highlights a massive gap between testing tools and real business value.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "CIO",
-              "domain": "cio.com",
-              "headline": "36, 85, 14: three numbers that explain the enterprise AI gap",
-              "url": "",
-              "tag": "CIO reports gap",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Companies struggle to move from simple pilot programs to full organizational integration.",
-              "visual": "clip",
-              "query": "office workers using laptops",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Pilot to scale",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Scaling requires clean data and a cultural shift in how internal teams operate.",
-              "visual": "clip",
-              "query": "data server room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data and culture",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can your company bridge this gap or will it stay stuck at fourteen percent?",
-              "visual": "clip",
-              "query": "person looking at dashboard",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Bridge the gap",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious and analytical, focusing on the stark contrast between ambition and execution.",
-          "thin": false,
-          "caption": "New data from CIO highlights the enterprise AI gap. While 36% of successful firms cite data as their main driver, only 14% have achieved a unified customer view. Is your company stuck in the pilot phase?",
-          "hashtags": [
-            "EnterpriseAI",
-            "CIO",
-            "DigitalTransformation",
-            "Gartner",
-            "BusinessStrategy"
-          ],
-          "sources": [
-            "https://www.cio.com/article/3547285/36-85-14-three-numbers-that-explain-the-enterprise-ai-gap.html"
-          ],
-          "script": "Thirty-six percent of organizations seeing real returns identified clean, accessible data as their strongest predictor of success.\nEighty-five percent is the reduction in underwriting turnaround time some AI-assisted credit platforms are now reporting.\nFourteen percent of organizations have built a genuinely unified view of the customer, according to Gartner.\nThe CIO report highlights a massive gap between testing tools and real business value.\nCompanies struggle to move from simple pilot programs to full organizational integration.\nScaling requires clean data and a cultural shift in how internal teams operate.\nCan your company bridge this gap or will it stay stuck at fourteen percent?",
-          "keywords": [
-            "office workers using laptops",
-            "data server room",
-            "person looking at dashboard"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "36, 85, and 14 explain the enterprise AI gap",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOalhCdGpQZi1SOHFuTVYxVW1NUjZtejBjSUMteXdfYkpveHJYaVBUWmNMMmg0d2E3VzYxdjBSYnJRdWlEdHMzek1MQ0xQZTRmTXhHNnltZWFla1B3SUJDSTR3dDVtSWNqMWhqWXVqZWhmRWVDcHZEUzNTODM5WnJPX1lNYWxhY2lyR2tFUmRSMzJSc3JKWjJ4THQ2bTR6SFE?oc=5"
-            },
-            {
-              "claim": "Thirty-six percent of organizations seeing real returns identified clean, accessible data as their strongest predictor of success",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOalhCdGpQZi1SOHFuTVYxVW1NUjZtejBjSUMteXdfYkpveHJYaVBUWmNMMmg0d2E3VzYxdjBSYnJRdWlEdHMzek1MQ0xQZTRmTXhHNnltZWFla1B3SUJDSTR3dDVtSWNqMWhqWXVqZWhmRWVDcHZEUzNTODM5WnJPX1lNYWxhY2lyR2tFUmRSMzJSc3JKWjJ4THQ2bTR6SFE?oc=5"
-            },
-            {
-              "claim": "Eighty-five percent is the reduction in underwriting turnaround time some AI-assisted credit platforms are reporting",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOalhCdGpQZi1SOHFuTVYxVW1NUjZtejBjSUMteXdfYkpveHJYaVBUWmNMMmg0d2E3VzYxdjBSYnJRdWlEdHMzek1MQ0xQZTRmTXhHNnltZWFla1B3SUJDSTR3dDVtSWNqMWhqWXVqZWhmRWVDcHZEUzNTODM5WnJPX1lNYWxhY2lyR2tFUmRSMzJSc3JKWjJ4THQ2bTR6SFE?oc=5"
-            },
-            {
-              "claim": "Fourteen percent of organizations have built a genuinely unified view of the customer, according to Gartner",
-              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOalhCdGpQZi1SOHFuTVYxVW1NUjZtejBjSUMteXdfYkpveHJYaVBUWmNMMmg0d2E3VzYxdjBSYnJRdWlEdHMzek1MQ0xQZTRmTXhHNnltZWFla1B3SUJDSTR3dDVtSWNqMWhqWXVqZWhmRWVDcHZEUzNTODM5WnJPX1lNYWxhY2lyR2tFUmRSMzJSc3JKWjJ4THQ2bTR6SFE?oc=5"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.cio.com/article/4235509/36-85-14-three-numbers-that-explain-the-enterprise-ai-gap.html",
-            "https://www.cio.com/article/3547285/36-85-14-three-numbers-that-explain-the-enterprise-ai-gap.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-19T05:37:39.363470+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1701,6 +1544,244 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Sam Altman’s World Debuts ID Verification for AI Agents",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/",
+          "summary": "Sam Altman’s World Debuts ID Verification for AI Agents PYMNTS.com",
+          "source": "PYMNTS.com",
+          "published": "2026-10-19T01:18:49+00:00",
+          "angle": "Sam Altman's World is now verifying AI agents, meaning the internet is about to get a lot more 'human'—or a lot more controlled."
+        },
+        "draft": {
+          "title": "World Debuts ID for AI Agents",
+          "hook_text": "AI agents now have IDs",
+          "beats": [
+            {
+              "line": "Sam Altman just brought official ID verification to AI agents.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://world.org",
+              "tag": "Sam Altman's move",
+              "name": "Sam Altman",
+              "role": "Co-founder, World",
+              "x": "sama",
+              "brands": []
+            },
+            {
+              "line": "His company, World, launched this feature on October 18, 2026.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "World",
+              "outlet": "",
+              "domain": "world.org",
+              "headline": "",
+              "url": "https://world.org",
+              "tag": "Launched October 18",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Developers can now issue World ID credentials to their autonomous software.",
+              "visual": "clip",
+              "query": "software developer coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "World ID for software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This allows platforms to prove an agent is authorized by a human.",
+              "visual": "clip",
+              "query": "digital security verification lock",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Human-authorized agents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Previously, the World project relied on scanning human irises with the Orb.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "World Orb",
+              "outlet": "",
+              "domain": "world.org",
+              "headline": "",
+              "url": "https://world.org",
+              "tag": "From iris scanning",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Now, the new World ID suite lets bots carry cryptographic proof of identity.",
+              "visual": "clip",
+              "query": "cryptography data visualization",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Cryptographic proof",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "World is opening this layer to third-party platforms starting today.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "PYMNTS.com",
+              "domain": "pymnts.com",
+              "headline": "Sam Altman’s World Debuts ID Verification for AI Agents",
+              "url": "",
+              "tag": "Third-party access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a verified AI?",
+              "visual": "clip",
+              "query": "person looking at smartphone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting verified AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast and punchy, like a tech briefing, emphasizing the transition from human iris scanning to machine verification.",
+          "thin": false,
+          "caption": "Sam Altman's World launched ID verification for AI agents on October 18, 2026. This move allows developers to issue cryptographic World IDs to autonomous software, distinguishing verified agents from anonymous bots. Would you trust a verified AI?",
+          "hashtags": [
+            "World",
+            "SamAltman",
+            "AIAgents",
+            "TechNews",
+            "DigitalIdentity"
+          ],
+          "sources": [
+            "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/",
+            "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869"
+          ],
+          "script": "Sam Altman just brought official ID verification to AI agents.\nHis company, World, launched this feature on October 18, 2026.\nDevelopers can now issue World ID credentials to their autonomous software.\nThis allows platforms to prove an agent is authorized by a human.\nPreviously, the World project relied on scanning human irises with the Orb.\nNow, the new World ID suite lets bots carry cryptographic proof of identity.\nWorld is opening this layer to third-party platforms starting today.\nWould you trust a verified AI?",
+          "keywords": [
+            "software developer coding on laptop",
+            "digital security verification lock",
+            "cryptography data visualization",
+            "person looking at smartphone screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "AI agents now have IDs",
+              "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/"
+            },
+            {
+              "claim": "Sam Altman is a co-founder of World",
+              "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869?utm_source=tradingview&utm_medium=rss"
+            },
+            {
+              "claim": "World launched this feature on October 18, 2026",
+              "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/"
+            },
+            {
+              "claim": "Developers can issue World ID credentials to their autonomous software",
+              "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/"
+            },
+            {
+              "claim": "This allows platforms to prove an agent is authorized by a human",
+              "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/"
+            },
+            {
+              "claim": "The World project relies on scanning human irises with the Orb",
+              "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/"
+            },
+            {
+              "claim": "The new World ID suite lets bots carry cryptographic proof of identity",
+              "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869?utm_source=tradingview&utm_medium=rss"
+            },
+            {
+              "claim": "World is opening this layer to third-party platforms starting today",
+              "url": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869?utm_source=tradingview&utm_medium=rss"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/",
+            "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-19T08:16:02.832843+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2236,8 +2317,8 @@
       "event": "SoftwareOne says Singapore CIOs are tracking the wrong AI metrics. Most leaders focus on technical outputs like total tokens generated by models. SoftwareOne suggests switching to cost per successful outcome as the primary number. This metr"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-19T07:10+05:30",
@@ -2265,7 +2346,7 @@
   "report_day": "2026-10-18",
   "ig_count": {
     "day": "2026-10-19",
-    "at": "2026-10-19T08:15:24.040822+05:30",
+    "at": "2026-10-19T08:26:45.441496+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2285,16 +2366,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-19",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-15-2",
   "gemini_use": {
     "day": "2026-10-19",
-    "calls": 159,
+    "calls": 174,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 111,
+        "ok": 126,
         "busy": 48,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2380,28 +2461,6 @@
     "gemini-3.5-flash-lite": 1792330143.231468
   },
   "editor_log": [
-    {
-      "at": "2026-10-18T17:26+05:30",
-      "title": "World Bank says ‘small AI’ could transform developing countries",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 6,
-        "substance": 6,
-        "accuracy": 7,
-        "visuals": 5,
-        "flow": 7
-      },
-      "one_line": "Too generic and lacks concrete metrics or specific model names.",
-      "fixes": [
-        "LINE 1: The World Bank stated on October 18, 2026, that small AI models could transform developing nations.",
-        "LINE 3: Developing regions face multibillion-dollar barriers when adopting massive frontier models like GPT-4."
-      ],
-      "visual": [
-        "line 2: Same image held for too many consecutive frames across multiple lines.",
-        "line 7: Generic publisher logo instead of a relevant data chart or visual representation of the te"
-      ]
-    },
     {
       "at": "2026-10-18T17:31+05:30",
       "title": "World Bank says ‘small AI’ could transform developing countries",
@@ -2824,6 +2883,29 @@
         "line 2: The stock footage of the woman with charts is generic and does not add specific value.",
         "line 4: The stock footage of people in a meeting is generic and repetitive.",
         "line 7: The final shot of a man on a laptop is generic; use a graphic summary instead."
+      ]
+    },
+    {
+      "at": "2026-10-19T08:26+05:30",
+      "title": "Sam Altman’s World Debuts ID Verification for AI Agents",
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 10,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, factual reporting, but visual variety and pacing need significant improvement.",
+      "fixes": [
+        "LINE 2: Change 'His company, World' to 'World, formerly Worldcoin,' for better clarity.",
+        "LINE 8: Change 'Would you trust a verified AI?' to 'Will this solve the AI bot problem?' for a more news-oriented hook."
+      ],
+      "visual": [
+        "line 1: The same logo image is held for too long across multiple frames.",
+        "line 2: The World logo is repeated from the previous line; needs a new visual.",
+        "line 4: The visual is static text; needs a graphic representing 'human-authorized' agents."
       ]
     }
   ],
