@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -215,16 +215,47 @@
     "fix_rounds": 0,
     "source_links": [
       "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-    ]
+    ],
+    "visual_status": "skipped",
+    "visual_notes": [],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, factual script, but the visuals are repetitive and lack dynamic variety.",
+      "script_fixes": [
+        "LINE 5: Change to 'This occurred because Meta failed to configure robots.txt to block public indexing.'"
+      ],
+      "visual_beats": [
+        0,
+        2,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The same robotic hand image is held for too long across multiple frames.",
+        "line 3: The visual is static; it should show a screen recording of the search query.",
+        "line 6: The visual is just text; it needs a representation of the thousands of exposed files."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 AI images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIff2rXgKT9j9BHT-P129EQ4jvnuY3DAAIaJwACvW25VpHRekqC0bHCPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T20:10:36.565902+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-20T20:54:29.339931+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-20",
@@ -707,243 +738,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
-          "link": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
-          "summary": "Meeting note-taking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend. Otter.ai said that it will use these funds for enterprise growth, go-to-market strategy, international expansion, and product innovation. […]",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-20T11:00:00+00:00",
-          "angle": "Otter.ai scores a massive $320M funding round, proving meeting bots are becoming billion-dollar giants."
-        },
-        "draft": {
-          "title": "Otter.ai raises $320M",
-          "hook_text": "Otter.ai just secured $320 million.",
-          "beats": [
-            {
-              "line": "Otter.ai just secured three hundred twenty million dollars.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Otter.ai",
-              "outlet": "",
-              "domain": "otter.ai",
-              "headline": "",
-              "url": "https://otter.ai",
-              "tag": "Otter.ai raises $320M",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Otter.ai",
-                  "domain": "otter.ai"
-                }
-              ]
-            },
-            {
-              "line": "General Catalyst backed the meeting note-taking tool through its Customer Value Fund.",
-              "visual": "clip",
-              "query": "venture capital meeting office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "General Catalyst fund",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The fund supplies capital without diluting equity while taking returns on marketing results.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$320M",
-              "small": "non-dilutive funding",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No equity dilution",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Otter.ai will pump the cash into enterprise growth and international expansion.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Otter.ai meeting assistant",
-              "outlet": "",
-              "domain": "otter.ai",
-              "headline": "",
-              "url": "https://otter.ai",
-              "tag": "Enterprise and expansion",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Otter.ai",
-                  "domain": "otter.ai"
-                }
-              ]
-            },
-            {
-              "line": "The company also plans heavy investments in product innovation.",
-              "visual": "clip",
-              "query": "software product development screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Product innovation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let an AI take minutes in your next meeting?",
-              "visual": "clip",
-              "query": "person listening to laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Meeting note AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and factual, explaining the funding deal with quick pacing",
-          "thin": false,
-          "caption": "Otter.ai has raised $320 million from General Catalyst's Customer Value Fund to expand its meeting assistant tool. The startup plans to use the non-dilutive capital for enterprise growth and product innovation. Would you use an AI note-taker at work?",
-          "hashtags": [
-            "Otterai",
-            "GeneralCatalyst",
-            "AITools",
-            "Startups",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-          ],
-          "script": "Otter.ai just secured three hundred twenty million dollars.\nGeneral Catalyst backed the meeting note-taking tool through its Customer Value Fund.\nThe fund supplies capital without diluting equity while taking returns on marketing results.\nOtter.ai will pump the cash into enterprise growth and international expansion.\nThe company also plans heavy investments in product innovation.\nWould you let an AI take minutes in your next meeting?",
-          "keywords": [
-            "venture capital meeting office",
-            "software product development screen",
-            "person listening to laptop"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Otter.ai just secured $320 million.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "Otter.ai just secured three hundred twenty million dollars.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "General Catalyst backed the meeting note-taking tool through its Customer Value Fund.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "The fund supplies capital without diluting equity while taking returns on marketing results.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "Otter.ai will pump the cash into enterprise growth and international expansion.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "The company also plans heavy investments in product innovation.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "General Catalyst backed the meeting note-taking to…: the image is completely black and unreadable",
-            "The fund supplies capital without diluting equity …: the card is almost empty with just a tiny 'No' visible"
-          ],
-          "editor": {
-            "overall": 9.0,
-            "scores": {
-              "hook": 9,
-              "specific": 9,
-              "substance": 9,
-              "accuracy": 10,
-              "visuals": 8,
-              "flow": 9
-            },
-            "one_line": "Strong, specific tech news reporting with a clear hook and solid data.",
-            "script_fixes": [],
-            "visual_beats": [
-              4
-            ],
-            "visual_notes": [
-              "line 5: Generic stock code and project board images used instead of specific Otter.ai product feat"
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [
-            "Otter.ai: otter.ai",
-            "Otter.ai: otter.ai",
-            "Otter.ai meeting assistant: otter.ai",
-            "Otter.ai meeting assistant: otter.ai"
-          ],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "4 official images, 4 clips, 2 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIfUGrXW_VWx3R7PAf4PMoSeQTxwXzzAALJJgACvW25VpqJ3ClxBjX7PQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIfUGrXW_VWx3R7PAf4PMoSeQTxwXzzAALJJgACvW25VpqJ3ClxBjX7PQQ",
-      "history_title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1655,6 +1449,237 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+          "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+          "summary": "A single query is all that's required to find thousands of conversations listed by title.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-20T12:33:13+00:00",
+          "angle": "Major privacy alert: Meta's AI is leaking private user conversations into public search results."
+        },
+        "draft": {
+          "title": "Meta Muse leaks private chats",
+          "hook_text": "Meta Muse leaked your secrets",
+          "beats": [
+            {
+              "line": "Meta Muse leaks thousands of private user chats.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta Muse",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+              "tag": "Meta Muse leaks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "The flaw triggers when users share links to their chat sessions.",
+              "visual": "clip",
+              "query": "person holding smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Shared links exposed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "A single query reveals these conversations listed by their titles.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1 query",
+              "small": "to find conversations",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Search reveals chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The breach includes sensitive personal details and confidential business data.",
+              "visual": "clip",
+              "query": "business professional working on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Business data exposed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This happens because Meta failed to secure public index access.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Meta Muse exposes users personal and business secrets",
+              "url": "",
+              "tag": "Meta security failure",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Thousands of user sessions are currently sitting out in the open.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Thousands",
+              "small": "of sessions leaked",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Thousands of chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you ever trust AI with your private business documents?",
+              "visual": "clip",
+              "query": "person looking concerned at screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting AI privacy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Alert and urgent, shifting to concerned skepticism about privacy.",
+          "thin": false,
+          "caption": "Meta Muse has exposed thousands of private user conversations through a simple search vulnerability. Shared chat links are being indexed, revealing sensitive personal and business secrets. Would you ever trust AI with your private business documents?",
+          "hashtags": [
+            "Meta",
+            "MetaMuse",
+            "CyberSecurity",
+            "Privacy",
+            "AI"
+          ],
+          "sources": [
+            "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+          ],
+          "script": "Meta Muse leaks thousands of private user chats.\nThe flaw triggers when users share links to their chat sessions.\nA single query reveals these conversations listed by their titles.\nThe breach includes sensitive personal details and confidential business data.\nThis happens because Meta failed to secure public index access.\nThousands of user sessions are currently sitting out in the open.\nWould you ever trust AI with your private business documents?",
+          "keywords": [
+            "person holding smartphone",
+            "business professional working on laptop",
+            "person looking concerned at screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Meta Muse just exposed thousands of private user conversations.",
+          "hook_score": 39,
+          "evidence": [
+            {
+              "claim": "Meta Muse leaked your secrets",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "Meta Muse leaks thousands of private user chats.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "The flaw triggers when users share links to their chat sessions.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "A single query reveals these conversations listed by their titles.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "The breach includes sensitive personal details and confidential business data.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "This happens because Meta failed to secure public index access.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "Thousands of user sessions are currently sitting out in the open.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T20:10:36.565902+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2192,8 +2217,8 @@
       "event": "Otter.ai just secured three hundred twenty million dollars. General Catalyst backed the meeting note-taking tool through its Customer Value Fund. The fund supplies capital without diluting equity while taking returns on marketing results. O"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T18:00+05:30",
@@ -2221,7 +2246,7 @@
   "report_day": "2026-10-19",
   "ig_count": {
     "day": "2026-10-20",
-    "at": "2026-10-20T20:10:30.363677+05:30",
+    "at": "2026-10-20T20:24:29.340193+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2241,11 +2266,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-20",
-    "calls": 493,
+    "calls": 502,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2280,9 +2305,9 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 16,
+        "ok": 20,
         "busy": 11,
-        "other": 8,
+        "other": 13,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
@@ -2294,11 +2319,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "00:30",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-18"
-    },
     {
       "at": "02:13",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2343,6 +2363,11 @@
       "at": "13:55",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-20"
+    },
+    {
+      "at": "14:51",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-20"
     }
   ],
   "last_script_error": {
@@ -2373,25 +2398,6 @@
     "gemini-flash-lite-latest": 1792504161.281722
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T12:19+05:30",
-      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
-      "overall": 7.8,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong tech news breakdown, but visuals use irrelevant TechCrunch and event logos.",
-      "fixes": [],
-      "visual": [
-        "line 5: Frame 9 displays a TechCrunch logo card instead of Amazon silicon or AWS Trainium.",
-        "line 4: Frame 8 features Jensen Huang sharing a stage with a German politician, lacking direct rel"
-      ]
-    },
     {
       "at": "2026-10-20T12:20+05:30",
       "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
@@ -2805,6 +2811,28 @@
         "line 1: The stock footage of a swamp is completely irrelevant to an AI software launch.",
         "line 2: The terminal code snippet is generic; use official logos for IBM, Red Hat, Google, CoreWea",
         "line 5: The '0.9' graphic is confusing and lacks context; replace with a relevant technical diagra"
+      ]
+    },
+    {
+      "at": "2026-10-20T20:24+05:30",
+      "title": "Meta Muse exposes users' personal and business secrets when they share conversat",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, factual script, but the visuals are repetitive and lack dynamic variety.",
+      "fixes": [
+        "LINE 5: Change to 'This occurred because Meta failed to configure robots.txt to block public indexing.'"
+      ],
+      "visual": [
+        "line 1: The same robotic hand image is held for too long across multiple frames.",
+        "line 3: The visual is static; it should show a screen recording of the search query.",
+        "line 6: The visual is just text; it needs a representation of the thousands of exposed files."
       ]
     }
   ],
