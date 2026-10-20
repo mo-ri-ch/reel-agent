@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -184,16 +184,56 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "She originally pitched this assistant concept on s…: blank white card with no source logo or content",
+      "Her newest startup offers a personal AI assistant …: empty white card box with no content or video",
+      "Would you let Wabi manage your daily routine?…: blank card showing only the word Manage instead of smartphone screen interface",
+      "Shot shows text card instead of stock video of a person using a smartphone.",
+      "Shot shows text card instead of stock video of a smartphone screen interface."
+    ],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong reporting and specific details, but static image repetition weakens visual engagement.",
+      "script_fixes": [
+        "LINE 3: change 'back in two thousand fourteen' to 'back in 2014' for punchier pacing",
+        "LINE 5: change 'The application' to 'Wabi' for better retention of product name"
+      ],
+      "visual_beats": [
+        3,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 4: Same visual style carried over without showing Wabi's actual product interface.",
+        "line 5: Frames 9 and 10 repeat the exact same static '0 Dollars' card for too long.",
+        "line 6: Closing visual lacks a strong final product mockup or QR code."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Replika app: replika.com"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 official images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIelGrXI-a3ChdiCSGMHz2j0t3J-oIdAAIcJgACvW25VrsiqDOwXFJePQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T13:43:28.163905+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-20T14:18:47.050244+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-20",
@@ -673,266 +713,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
-          "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-          "summary": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-19T20:09:24+00:00",
-          "angle": "Amazon is making its direct move to challenge Nvidia's dominance over AI development tools."
-        },
-        "draft": {
-          "title": "Amazon Takes on Nvidia with TorchNeuron",
-          "hook_text": "Amazon just challenged Nvidia.",
-          "beats": [
-            {
-              "line": "Amazon just launched TorchNeuron to break Nvidia's grip on PyTorch.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Amazon Web Services",
-              "outlet": "",
-              "domain": "aws.amazon.com",
-              "headline": "",
-              "url": "https://aws.amazon.com",
-              "tag": "Amazon launches TorchNeuron",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                },
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "PyTorch is the free toolkit used to build most AI apps.",
-              "visual": "clip",
-              "query": "developer coding on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "PyTorch for most AI apps",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The new developer tool helps engineers run their applications on alternative chips.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "AWS Trainium",
-              "outlet": "",
-              "domain": "aws.amazon.com",
-              "headline": "",
-              "url": "https://aws.amazon.com",
-              "tag": "Run apps on alternative chips",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "AWS",
-                  "domain": "aws.amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Nvidia hardware currently dominates the market for training large language models.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia H100 GPU",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://www.nvidia.com",
-              "tag": "Nvidia dominates training market",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Amazon wants developers to use its own silicon instead of rival hardware.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
-              "url": "",
-              "tag": "Amazon pushes own silicon",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Will Amazon's new software toolkit finally weaken Nvidia's market control?",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1 tool",
-              "small": "Amazon TorchNeuron",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Weaken Nvidia market control",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                },
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "sharp, fast-paced tech journalism, confident and direct",
-          "thin": false,
-          "caption": "Amazon released TorchNeuron to challenge Nvidia's control over PyTorch development. The new tool encourages engineers to run AI models on alternative Amazon chips. Can Amazon break Nvidia's hardware monopoly?",
-          "hashtags": [
-            "Amazon",
-            "Nvidia",
-            "PyTorch",
-            "TechNews",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-          ],
-          "script": "Amazon just launched TorchNeuron to break Nvidia's grip on PyTorch.\nPyTorch is the free toolkit used to build most AI apps.\nThe new developer tool helps engineers run their applications on alternative chips.\nNvidia hardware currently dominates the market for training large language models.\nAmazon wants developers to use its own silicon instead of rival hardware.\nWill Amazon's new software toolkit finally weaken Nvidia's market control?",
-          "keywords": [
-            "developer coding on screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Amazon challenged Nvidia.",
-              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-            },
-            {
-              "claim": "Amazon launched TorchNeuron to break Nvidia's software advantage/grip on PyTorch.",
-              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-            },
-            {
-              "claim": "PyTorch is a free toolkit used to build most AI apps.",
-              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-            },
-            {
-              "claim": "The new developer tool helps engineers run their applications on alternative chips (Trainium).",
-              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-            },
-            {
-              "claim": "Nvidia hardware currently dominates the market for training large language models.",
-              "url": "https://www.geekwire.com/2026/amazon-challenges-nvidias-software-advantage-with-new-tool-for-its-ai-chips/"
-            },
-            {
-              "claim": "Amazon wants developers to use its own silicon instead of rival hardware.",
-              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "PyTorch is the free toolkit used to build most AI …: The image shows an abstract colorful tunnel pattern instead of developer coding on screen.",
-            "The new developer tool helps engineers run their a…: The image shows an abstract green gradient and is credited to nvidia.com instead of showing AWS Trainium.",
-            "Amazon wants developers to use its own silicon ins…: The frame is completely blank and missing the source card for TechCrunch.",
-            "blank screen",
-            "blank screen"
-          ],
-          "editor": {
-            "overall": 8.5,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 9,
-              "accuracy": 9,
-              "visuals": 7,
-              "flow": 9
-            },
-            "one_line": "Strong, specific tech news script, but Frame 9 inappropriately displays TechCrunch instead of Amazon hardware.",
-            "script_fixes": [],
-            "visual_beats": [
-              4
-            ],
-            "visual_notes": [
-              "line 5: Frame 9 incorrectly shows the TechCrunch logo instead of AWS silicon hardware or Amazon's "
-            ],
-            "reviewer": "gemini"
-          },
-          "editor_rounds": 1,
-          "credits": [
-            "Amazon Web Services: aws.amazon.com",
-            "Amazon Web Services: aws.amazon.com"
-          ],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "2 official images, 5 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIeSWrXD1bb8bsB6g_ke7LcFzvD_FQYAAK4JQACvW25VpnOK2bXL-cRPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIeSWrXD1bb8bsB6g_ke7LcFzvD_FQYAAK4JQACvW25VpnOK2bXL-cRPQQ",
-      "history_title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1468,6 +1248,206 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
+          "link": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
+          "summary": "Eugenia Kuyda's newest startup Wabi is positioned to take advantage of an idea she had more than a decade ago. Wabi offers a personal AI assistant with a twist, free and downloadable to anyone today.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-19T18:49:04+00:00",
+          "angle": "Replika founder launches a new personal AI assistant after 12 years of trying."
+        },
+        "draft": {
+          "title": "Eugenia Kuyda Launches Wabi",
+          "hook_text": "Eugenia Kuyda just launched Wabi.",
+          "beats": [
+            {
+              "line": "Eugenia Kuyda built Wabi to realize an idea she first pitched twelve years ago.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Eugenia Kuyda built Wabi",
+              "name": "Eugenia Kuyda",
+              "role": "Founder, Replika and Wabi",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "She is the founder of Replika.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Replika app",
+              "outlet": "",
+              "domain": "replika.com",
+              "headline": "",
+              "url": "https://replika.com",
+              "tag": "Founder of Replika",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Replika",
+                  "domain": "replika.com"
+                }
+              ]
+            },
+            {
+              "line": "She originally pitched this assistant concept on stage at Disrupt back in two thousand fourteen.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
+              "url": "",
+              "tag": "Pitched at Disrupt in 2014",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Her newest startup offers a personal AI assistant designed to handle daily tasks.",
+              "visual": "clip",
+              "query": "person using smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Personal AI assistant startup",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The application is entirely free and downloadable for anyone today.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "0",
+              "small": "Dollars to download Wabi",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Free download today",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let Wabi manage your daily routine?",
+              "visual": "clip",
+              "query": "smartphone screen interface",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Manage daily routine",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp, journalistic, fast-paced and direct, highlighting the long journey from an old pitch to a new app release",
+          "thin": false,
+          "caption": "Replika founder Eugenia Kuyda just released her newest startup Wabi, offering a personal AI assistant based on an idea from over a decade ago. The app is free to download today. Would you let Wabi manage your daily routine?",
+          "hashtags": [
+            "EugeniaKuyda",
+            "Replika",
+            "Wabi",
+            "TechCrunch",
+            "TechNews"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+          ],
+          "script": "Eugenia Kuyda built Wabi to realize an idea she first pitched twelve years ago.\nShe is the founder of Replika.\nShe originally pitched this assistant concept on stage at Disrupt back in two thousand fourteen.\nHer newest startup offers a personal AI assistant designed to handle daily tasks.\nThe application is entirely free and downloadable for anyone today.\nWould you let Wabi manage your daily routine?",
+          "keywords": [
+            "person using smartphone",
+            "smartphone screen interface"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Eugenia Kuyda just launched Wabi.",
+              "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+            },
+            {
+              "claim": "Eugenia Kuyda built Wabi to realize an idea she first pitched twelve years ago.",
+              "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+            },
+            {
+              "claim": "Eugenia Kuyda is the founder of Replika and Wabi",
+              "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+            },
+            {
+              "claim": "She is the founder of Replika.",
+              "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+            },
+            {
+              "claim": "She originally pitched this assistant concept on stage at Disrupt back in two thousand fourteen.",
+              "url": "https://www.tokenpost.com/news/technology/35205"
+            },
+            {
+              "claim": "Her newest startup offers a personal AI assistant designed to handle daily tasks.",
+              "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+            },
+            {
+              "claim": "The application is entirely free and downloadable for anyone today.",
+              "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T13:43:28.163905+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1993,8 +1973,8 @@
       "event": "Amazon just launched TorchNeuron to break Nvidia's grip on PyTorch. PyTorch is the free toolkit used to build most AI apps. The new developer tool helps engineers run their applications on alternative chips. Nvidia hardware currently domina"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T12:58+05:30",
@@ -2042,16 +2022,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-20-1",
   "gemini_use": {
     "day": "2026-10-20",
-    "calls": 183,
+    "calls": 193,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 52,
+        "ok": 61,
         "busy": 11,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2076,9 +2056,9 @@
       },
       "gemini-3-flash-preview": {
         "ok": 9,
-        "busy": 13,
+        "busy": 14,
         "other": 3,
-        "last": "0 ReadTimeout"
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
@@ -2155,32 +2135,10 @@
   "gemini_exhausted": {
     "gemini-3.6-flash": 1792480446.4916801,
     "gemini-3.5-flash": 1792480677.9056172,
-    "gemini-3.7-flash": 1792482268.4899096
+    "gemini-3.7-flash": 1792482268.4899096,
+    "gemini-3-flash-preview": 1792484312.1053905
   },
   "editor_log": [
-    {
-      "at": "2026-10-18T19:00+05:30",
-      "title": "Only 8% of fund managers report improved investment returns from AI adoption: Mo",
-      "overall": 8.3,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but the visual pacing is repetitive and lacks dynamic variety.",
-      "fixes": [
-        "LINE 3: Replace 'Most investment firms' with 'The majority of surveyed firms' to maintain specificity.",
-        "LINE 6: Change to 'Would you trust AI with your life savings?' to align with the AI theme."
-      ],
-      "visual": [
-        "line 1: The same text and layout are held for too long across three frames.",
-        "line 3: Visuals are identical to the previous line, creating a static, repetitive feel.",
-        "line 5: The same visual layout is held for three frames, failing to provide new visual interest."
-      ]
-    },
     {
       "at": "2026-10-18T19:46+05:30",
       "title": "Giving AI a “crystal clear” view of the materials world",
@@ -2605,6 +2563,29 @@
         "line 1: Static text on black background fails to capture immediate attention.",
         "line 4: Generic stock chart photos lack specific branding or relevant data points.",
         "line 5: Yahoo Finance logo is a generic placeholder unrelated to hardware demand."
+      ]
+    },
+    {
+      "at": "2026-10-20T13:48+05:30",
+      "title": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong reporting and specific details, but static image repetition weakens visual engagement.",
+      "fixes": [
+        "LINE 3: change 'back in two thousand fourteen' to 'back in 2014' for punchier pacing",
+        "LINE 5: change 'The application' to 'Wabi' for better retention of product name"
+      ],
+      "visual": [
+        "line 4: Same visual style carried over without showing Wabi's actual product interface.",
+        "line 5: Frames 9 and 10 repeat the exact same static '0 Dollars' card for too long.",
+        "line 6: Closing visual lacks a strong final product mockup or QR code."
       ]
     }
   ],
