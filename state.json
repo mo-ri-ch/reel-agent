@@ -12,47 +12,29 @@
     "angle": "The dark side of AI's boom: US building massive fossil fuel infrastructure as energy demand skyrockets."
   },
   "draft": {
-    "title": "Fossil fuel power for data centers",
-    "hook_text": "Data centers are draining the grid",
+    "title": "Fossil fuels return for data centers",
+    "hook_text": "Fossil fuel infrastructure hits ten-year high",
     "beats": [
       {
-        "line": "Ten years. That is how long we waited for this massive fossil fuel comeback.",
-        "visual": "clip",
-        "query": "power plant smokestacks energy",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Fossil fuel comeback",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Electricity demand is climbing faster than it has in ten years.",
+        "line": "The US is building more fossil fuel infrastructure than it has in a decade.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
         "big": "10",
-        "small": "Years of peak demand",
+        "small": "Years of infrastructure high",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Decade high demand",
+        "tag": "Decade high building",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "At the same time, renewable energy growth is slowing down across the country.",
+        "line": "At the same time, renewable energy growth is slowing down.",
         "visual": "clip",
         "query": "solar panels wind turbines field",
         "prompt": "",
@@ -70,7 +52,25 @@
         "brands": []
       },
       {
-        "line": "More data centers, factories, and electric vehicles are plugging into the power grid.",
+        "line": "Electricity demand is climbing faster than it has in more than ten years.",
+        "visual": "clip",
+        "query": "power plant transmission lines grid",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Electricity demand climbs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "More data centers, factories, and electric vehicles are plugging into the grid.",
         "visual": "clip",
         "query": "server room data center racks",
         "prompt": "",
@@ -88,7 +88,7 @@
         "brands": []
       },
       {
-        "line": "The Verge published a new report detailing this surge in power demand.",
+        "line": "A report by the Environmental Defense Fund and Atlas Public Policy revealed the surge.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -99,7 +99,7 @@
         "domain": "theverge.com",
         "headline": "The fossil fuel comeback is here",
         "url": "",
-        "tag": "The Verge report",
+        "tag": "EDF and Atlas report",
         "name": "",
         "role": "",
         "x": "",
@@ -126,57 +126,56 @@
     ],
     "delivery": "urgent and direct, emphasizing the clash between data center growth and energy limits",
     "thin": false,
-    "caption": "The US is building more fossil fuel infrastructure than it has in a decade as data centers strain the power grid. A new report from The Verge shows electricity demand is climbing faster than ever while renewable growth slows. How should power companies handle surging tech demands?",
+    "caption": "The US is building more fossil fuel infrastructure than it has in a decade as data centers strain the power grid. A new report from the Environmental Defense Fund and Atlas Public Policy shows electricity demand is climbing faster than ever. How should power companies handle surging tech demands?",
     "hashtags": [
-      "TheVerge",
       "EnergyGrid",
       "DataCenters",
       "FossilFuels",
-      "RenewableEnergy"
+      "RenewableEnergy",
+      "TheVerge"
     ],
     "sources": [
       "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
     ],
-    "script": "Ten years. That is how long we waited for this massive fossil fuel comeback.\nElectricity demand is climbing faster than it has in ten years.\nAt the same time, renewable energy growth is slowing down across the country.\nMore data centers, factories, and electric vehicles are plugging into the power grid.\nThe Verge published a new report detailing this surge in power demand.\nWill your power bill go up because of this?",
+    "script": "The US is building more fossil fuel infrastructure than it has in a decade.\nAt the same time, renewable energy growth is slowing down.\nElectricity demand is climbing faster than it has in more than ten years.\nMore data centers, factories, and electric vehicles are plugging into the grid.\nA report by the Environmental Defense Fund and Atlas Public Policy revealed the surge.\nWill your power bill go up because of this?",
     "keywords": [
-      "power plant smokestacks energy",
       "solar panels wind turbines field",
+      "power plant transmission lines grid",
       "server room data center racks",
       "person looking at electricity bill"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
-    "hook_before": "The US is building more fossil fuel infrastructure now than it has in a decade.",
-    "hook_score": 40,
     "evidence": [
       {
-        "claim": "Data centers are draining the grid",
+        "claim": "Fossil fuel infrastructure hits ten-year high",
         "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
       },
       {
-        "claim": "The US is building more fossil fuel infrastructure than it has in a decade",
+        "claim": "The US is building more fossil fuel infrastructure than it has in a decade.",
         "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
       },
       {
-        "claim": "Electricity demand is climbing faster than it has in more than a decade",
+        "claim": "Renewable energy growth is slowing down.",
         "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
       },
       {
-        "claim": "Renewable energy growth is slowing down across the country",
+        "claim": "Electricity demand is climbing faster than it has in more than ten years.",
         "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
       },
       {
-        "claim": "More data centers, factories, and electric vehicles are plugging into the grid",
+        "claim": "More data centers, factories, and electric vehicles are plugging into the grid.",
         "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
       },
       {
-        "claim": "The Verge published a report detailing this surge in power demand",
+        "claim": "A report by the Environmental Defense Fund and Atlas Public Policy revealed the surge.",
         "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 0,
+    "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
     ]
@@ -186,9 +185,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T15:10:35.733752+05:30",
+  "script_deadline": "2026-10-20T15:21:12.000909+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-20",
@@ -669,198 +668,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "AI-generated political ads are showing up on TV screens, experts say they are getting harder to spot",
-          "link": "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/",
-          "summary": "AI-generated political ads are showing up on TV screens, experts say they are getting harder to spot KSAT",
-          "source": "KSAT",
-          "published": "2026-10-20T00:38:46+00:00",
-          "angle": "AI political ads on TV are getting so realistic people can't spot them anymore."
-        },
-        "draft": {
-          "title": "AI Political Ads Hit TV Screens",
-          "hook_text": "AI political ads hit TV screens.",
-          "beats": [
-            {
-              "line": "AI political ads are hitting television screens.",
-              "visual": "clip",
-              "query": "television broadcasting political advertisement",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI political ads on TV",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "KSAT reports that synthetic commercials are getting much harder to spot.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "KSAT",
-              "domain": "ksat.com",
-              "headline": "AI-generated political ads are showing up on TV screens",
-              "url": "",
-              "tag": "Harder to spot",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Political campaigns are using generative video tools to produce spots without filming actors.",
-              "visual": "clip",
-              "query": "video editing suite monitor",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Generative video in campaigns",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Viewers face digital avatars and manipulated audio during standard commercial breaks.",
-              "visual": "clip",
-              "query": "person watching television at home",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Digital avatars on screen",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Modern tools create fabricated speech and scenes in seconds.",
-              "visual": "clip",
-              "query": "digital data stream background",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Fabricated speech in seconds",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can you spot a fake ad?",
-              "visual": "clip",
-              "query": "person looking closely at screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Can you spot a fake ad?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and direct, warning viewers about the reality of deceptive political media on television",
-          "thin": false,
-          "caption": "AI-generated political ads are appearing on TV screens, and they are increasingly difficult for viewers to spot. Campaigns are utilizing synthetic media in their broadcasts. Can you spot the difference?",
-          "hashtags": [
-            "KSAT",
-            "PoliticalAds",
-            "Deepfakes",
-            "Elections"
-          ],
-          "sources": [
-            "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-          ],
-          "script": "AI political ads are hitting television screens.\nKSAT reports that synthetic commercials are getting much harder to spot.\nPolitical campaigns are using generative video tools to produce spots without filming actors.\nViewers face digital avatars and manipulated audio during standard commercial breaks.\nModern tools create fabricated speech and scenes in seconds.\nCan you spot a fake ad?",
-          "keywords": [
-            "television broadcasting political advertisement",
-            "video editing suite monitor",
-            "person watching television at home",
-            "digital data stream background",
-            "person looking closely at screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI political ads hit TV screens.",
-              "url": "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-            },
-            {
-              "claim": "AI political ads are hitting television screens.",
-              "url": "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-            },
-            {
-              "claim": "KSAT reports that synthetic commercials are getting much harder to spot.",
-              "url": "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-            },
-            {
-              "claim": "Political campaigns are using generative video tools to produce spots without filming actors.",
-              "url": "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-            },
-            {
-              "claim": "Viewers face digital avatars and manipulated audio during standard commercial breaks.",
-              "url": "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-            },
-            {
-              "claim": "Modern tools create fabricated speech and scenes in seconds.",
-              "url": "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://www.ksat.com/news/local/2026/10/20/ai-generated-political-ads-are-showing-up-on-tv-screens-experts-say-they-are-getting-harder-to-spot/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-20T14:03:07.790947+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1472,6 +1279,201 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "The fossil fuel comeback is here",
+          "link": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
+          "summary": "The US is building more fossil fuel infrastructure than it has in a decade while renewable energy growth slows down, a new report shows. Electricity demand is also climbing faster than it has in more than a decade with more data centers, factories, and electric vehicles plugging into the grid. Despite those growing demands, the […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-19T21:48:01+00:00",
+          "angle": "The dark side of AI's boom: US building massive fossil fuel infrastructure as energy demand skyrockets."
+        },
+        "draft": {
+          "title": "Fossil fuel power for data centers",
+          "hook_text": "Data centers are draining the grid",
+          "beats": [
+            {
+              "line": "Ten years. That is how long we waited for this massive fossil fuel comeback.",
+              "visual": "clip",
+              "query": "power plant smokestacks energy",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Fossil fuel comeback",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Electricity demand is climbing faster than it has in ten years.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "10",
+              "small": "Years of peak demand",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Decade high demand",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "At the same time, renewable energy growth is slowing down across the country.",
+              "visual": "clip",
+              "query": "solar panels wind turbines field",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Renewable growth slows",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "More data centers, factories, and electric vehicles are plugging into the power grid.",
+              "visual": "clip",
+              "query": "server room data center racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data centers plug in",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The Verge published a new report detailing this surge in power demand.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "The fossil fuel comeback is here",
+              "url": "",
+              "tag": "The Verge report",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will your power bill go up because of this?",
+              "visual": "clip",
+              "query": "person looking at electricity bill",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Higher power bills",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and direct, emphasizing the clash between data center growth and energy limits",
+          "thin": false,
+          "caption": "The US is building more fossil fuel infrastructure than it has in a decade as data centers strain the power grid. A new report from The Verge shows electricity demand is climbing faster than ever while renewable growth slows. How should power companies handle surging tech demands?",
+          "hashtags": [
+            "TheVerge",
+            "EnergyGrid",
+            "DataCenters",
+            "FossilFuels",
+            "RenewableEnergy"
+          ],
+          "sources": [
+            "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+          ],
+          "script": "Ten years. That is how long we waited for this massive fossil fuel comeback.\nElectricity demand is climbing faster than it has in ten years.\nAt the same time, renewable energy growth is slowing down across the country.\nMore data centers, factories, and electric vehicles are plugging into the power grid.\nThe Verge published a new report detailing this surge in power demand.\nWill your power bill go up because of this?",
+          "keywords": [
+            "power plant smokestacks energy",
+            "solar panels wind turbines field",
+            "server room data center racks",
+            "person looking at electricity bill"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "The US is building more fossil fuel infrastructure now than it has in a decade.",
+          "hook_score": 40,
+          "evidence": [
+            {
+              "claim": "Data centers are draining the grid",
+              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+            },
+            {
+              "claim": "The US is building more fossil fuel infrastructure than it has in a decade",
+              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+            },
+            {
+              "claim": "Electricity demand is climbing faster than it has in more than a decade",
+              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+            },
+            {
+              "claim": "Renewable energy growth is slowing down across the country",
+              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+            },
+            {
+              "claim": "More data centers, factories, and electric vehicles are plugging into the grid",
+              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+            },
+            {
+              "claim": "The Verge published a report detailing this surge in power demand",
+              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T15:10:35.733752+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2007,8 +2009,8 @@
       "event": "New York City Public Schools is banning AI use through middle school starting this year. The new restrictions apply specifically to students up through the eighth grade. High schools will handle technology policies differently under separat"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T14:35+05:30",
@@ -2036,7 +2038,7 @@
   "report_day": "2026-10-19",
   "ig_count": {
     "day": "2026-10-20",
-    "at": "2026-10-20T15:00:35.733784+05:30",
+    "at": "2026-10-20T15:15:31.512689+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2056,7 +2058,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-20",
@@ -2173,26 +2175,6 @@
     "gemini-3-flash-preview": 1792484312.1053905
   },
   "editor_log": [
-    {
-      "at": "2026-10-19T01:10+05:30",
-      "title": "A woman was arrested in Philly for blocking a delivery robot",
-      "overall": 9.0,
-      "scores": {
-        "hook": 8,
-        "specific": 10,
-        "substance": 10,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but the visuals are repetitive and lack dynamic variety.",
-      "fixes": [],
-      "visual": [
-        "line 1: The same image of the robot is held for too long (4.8 seconds).",
-        "line 3: The 'Refusal to move' graphic is repeated across two frames without change.",
-        "line 5: The 'Disorderly conduct charge' graphic is repeated across two frames without change."
-      ]
-    },
     {
       "at": "2026-10-19T03:00+05:30",
       "title": "Websites are closing their doors to AI agents",
@@ -2612,6 +2594,29 @@
         "line 1: Repeated static text slide used across multiple frames without changing visual element.",
         "line 3: Abrupt white background transition feels out of place compared to dark cinematic theme.",
         "line 4: Logo card appears floating with minimal context relative to the spoken line."
+      ]
+    },
+    {
+      "at": "2026-10-20T15:20+05:30",
+      "title": "The fossil fuel comeback is here",
+      "overall": 5.8,
+      "scores": {
+        "hook": 5,
+        "specific": 6,
+        "substance": 6,
+        "accuracy": 8,
+        "visuals": 4,
+        "flow": 6
+      },
+      "one_line": "Weak visual pacing and repetitive graphics ruin a compelling report on fossil fuels.",
+      "fixes": [
+        "LINE 1: Ten years. That is how the US is building fossil fuel infrastructure faster than ever.",
+        "LINE 5: A new report by The Verge details this surge in power demand."
+      ],
+      "visual": [
+        "line 1: Text says 'Data centers are draining the grid' while line 1 is about a fossil fuel comebac",
+        "line 2: Same static text and visual framing lingers too long without variation.",
+        "line 5: Generic Verge logo graphic repeated while discussing a specific report."
       ]
     }
   ],
