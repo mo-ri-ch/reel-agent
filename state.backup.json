@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+      "link": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+      "summary": "OpenCode is an open source AI coding agent that's become a popular alternative to Claude Code and Cursor. But hackers got into part of its online platform and stole some users’ API keys, and the AI tools it turned to for help kept refusing to look at the malicious code.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-19T19:28:34+00:00",
+      "angle": "Hackers infiltrated a popular AI coding tool and started running up massive bills on users' accounts."
+    },
+    {
+      "title": "Nscale and Anthropic are reportedly in talks for yet another $45B compute deal",
+      "link": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+      "summary": "If the deal goes through, it would be the latest in a long string of giant compute deals Anthropic has struck over the past year.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-19T23:39:38+00:00",
+      "angle": "Anthropic is reportedly in talks for another massive $45 billion compute and infrastructure deal."
+    },
+    {
+      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+      "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+      "summary": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-19T20:09:24+00:00",
+      "angle": "Amazon is making its direct move to challenge Nvidia's dominance over AI development tools."
+    }
+  ],
+  "choose_deadline": "2026-10-20T11:52:39.818122+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -416,6 +441,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [],
   "tried": [
     "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
@@ -479,6 +505,7 @@
     "fal launches FLUX 3 Max, claiming 22× faster AI video generation than Seedance 2.5",
     "AI game clones are making indie developers afraid to show their work"
   ],
+  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot picking story #1",
@@ -1621,7 +1648,7 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-20T11:10+05:30",
+    "at": "2026-10-20T11:52+05:30",
     "techcrunch.com": 13,
     "theverge.com": 6,
     "arstechnica.com": 3,
@@ -1632,7 +1659,7 @@
     "huggingface.co": 1,
     "blogs.nvidia.com": 3,
     "inc42.com": 2,
-    "news.google.com": 40,
+    "news.google.com": 39,
     "Google News (VentureBeat, AIM, AI News)": 23,
     "producthunt.com": 1,
     "Hacker News": 3,
@@ -1641,12 +1668,12 @@
   },
   "guarantee_since": "2026-10-10T13:19:00+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-20T11:10:31.448717+05:30",
+  "last_auto_offer": "2026-10-20T11:52:39.818122+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-19",
   "ig_count": {
     "day": "2026-10-20",
-    "at": "2026-10-20T11:35:55.635564+05:30",
+    "at": "2026-10-20T11:52:39.818152+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1670,12 +1697,12 @@
   "late_note_for": "2026-10-20-0",
   "gemini_use": {
     "day": "2026-10-20",
-    "calls": 45,
+    "calls": 47,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 10,
+        "ok": 12,
         "busy": 2,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
