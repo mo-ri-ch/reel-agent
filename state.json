@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -219,11 +219,57 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "This tool lets you share your AI conversations wit…: almost-empty card",
+      "Researchers at the firm Claroc found links to thes…: almost-empty card",
+      "They discovered more than 6,800 Muse links through…: almost-empty card",
+      "These links made private conversations publicly se…: almost-empty card",
+      "Meta disabled the sharing function while they inve…: almost-empty card",
+      "Would you share your AI chats if they could go pub…: almost-empty card",
+      "missing visual: should show a person looking at a tablet",
+      "missing visual: should show a photo of Claroc researchers or an initials card",
+      "missing visual: should show stock video of data center server racks",
+      "missing visual: should show a source card for The Verge",
+      "missing visual: should show stock video of a person looking concerned"
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 1: Change to 'Meta has paused its Muse AI chat-sharing feature.'",
+        "LINE 2: Remove as it is redundant; replace with 'The feature allowed users to generate public links for their private AI conversations.'"
+      ],
+      "visual_beats": [
+        0,
+        2,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The same image is held for 4.8 seconds, exceeding the recommended limit.",
+        "line 3: The same image is held for 4.8 seconds, exceeding the recommended limit.",
+        "line 5: The same image is held for 4.8 seconds, exceeding the recommended limit."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Meta Muse: Didier Descouens (Public domain), via Wikimedia Commons"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 real photos, 6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIfrmrX5bkfwDNH8Sm3tNoFW-I2p4RKAAJyIQACvW3BVhXENNOVh94OPQQ",
   "queue": [
     {
       "title": "Closed downtown San Francisco Centre mall could be turned into an AI data center, according to proposal from K-G Growth Partners",
@@ -248,9 +294,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-21T03:28:58.919189+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-21T04:05:45.666724+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-21",
@@ -735,42 +781,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Closed downtown San Francisco Centre mall could be turned into an AI data center, according to proposal from K-G Growth Partners",
-            "link": "https://abc7news.com/post/closed-downtown-san-francisco-centre-mall-could-turned-ai-data-center-according-proposal-growth-partners/19960404/",
-            "summary": "Closed downtown San Francisco Centre mall could be turned into an AI data center, according to proposal from K-G Growth Partners ABC7 Bay Area",
-            "source": "ABC7 Bay Area",
-            "published": "2026-10-20T17:03:47+00:00",
-            "angle": "The death of the shopping mall? A massive San Francisco mall might be converted into a giant AI data center."
-          },
-          {
-            "title": "Plants can speak using electricity, so this startup built an AI model to decipher their language",
-            "link": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/",
-            "summary": "Electric Plant has built an AI-powered translator to help humans listen to what plants are saying with the subtle electricity coursing through their stems.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-20T16:00:00+00:00",
-            "angle": "Scientists built an AI that translates the electrical signals of plants—now you can actually 'hear' what your houseplant is saying."
-          }
-        ],
-        "choose_deadline": "2026-10-21T00:45:47.740504+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1347,6 +1357,241 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
+          "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+          "summary": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report published this week, researchers at the security firm Claroc say they found more than 6,800 Muse links through public DNS records. […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-20T18:07:34+00:00",
+          "angle": "Meta had to pause its new AI feature because private user conversations were accidentally leaking publicly on the web."
+        },
+        "draft": {
+          "title": "Meta Pauses Muse Sharing Feature",
+          "hook_text": "Meta's AI chats leaked online",
+          "beats": [
+            {
+              "line": "Meta Muse is the tool sharing your chats.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta Muse",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://meta.com",
+              "tag": "Meta pauses Muse",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "This tool lets you share your AI conversations with others.",
+              "visual": "clip",
+              "query": "person looking at tablet",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Shareable AI chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Researchers at the firm Claroc found links to these chats on the web.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://claroc.com",
+              "tag": "Claroc researchers find links",
+              "name": "Claroc Security Researchers",
+              "role": "Security Analysis Team",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "They discovered more than 6,800 Muse links through public DNS records.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "6,800",
+              "small": "exposed Muse links",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "6,800 links exposed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "These links made private conversations publicly searchable.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Publicly searchable chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Meta disabled the sharing function while they investigate the privacy flaw.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Meta pauses Muse sharing after researchers find AI chats on the web",
+              "url": "",
+              "tag": "Meta investigating flaw",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you share your AI chats if they could go public?",
+              "visual": "clip",
+              "query": "person looking concerned",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Privacy risks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Neutral, investigative tone with a shift toward concern at the end.",
+          "thin": false,
+          "caption": "Meta has paused its Muse AI sharing feature after researchers discovered 6,800 private conversations were publicly accessible via DNS records. Would you share your AI chats if they could go public?",
+          "hashtags": [
+            "Meta",
+            "MuseAI",
+            "DataPrivacy",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+          ],
+          "script": "Meta Muse is the tool sharing your chats.\nThis tool lets you share your AI conversations with others.\nResearchers at the firm Claroc found links to these chats on the web.\nThey discovered more than 6,800 Muse links through public DNS records.\nThese links made private conversations publicly searchable.\nMeta disabled the sharing function while they investigate the privacy flaw.\nWould you share your AI chats if they could go public?",
+          "keywords": [
+            "person looking at tablet",
+            "data center server racks",
+            "person looking concerned"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Meta just paused its Muse AI sharing feature.",
+          "hook_score": 47,
+          "evidence": [
+            {
+              "claim": "Meta's AI chats leaked online",
+              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+            },
+            {
+              "claim": "Meta Muse is the tool sharing your chats.",
+              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+            },
+            {
+              "claim": "This tool lets you share your AI conversations with others.",
+              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+            },
+            {
+              "claim": "Researchers at the firm Claroc found links to these chats on the web.",
+              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+            },
+            {
+              "claim": "They discovered more than 6,800 Muse links through public DNS records.",
+              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+            },
+            {
+              "claim": "These links made private conversations publicly searchable.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "Meta disabled the sharing function while they investigate the privacy flaw.",
+              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-21T03:28:58.919189+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1886,8 +2131,8 @@
       "event": "San Francisco Centre mall could host a massive AI experience. K-G Growth Partners is pitching this plan to city officials. The investment firm wants to transform the dormant space into a center for interactive AI exhibits. The project inten"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-21T02:05+05:30",
@@ -1915,7 +2160,7 @@
   "report_day": "2026-10-20",
   "ig_count": {
     "day": "2026-10-21",
-    "at": "2026-10-21T03:25:20.225819+05:30",
+    "at": "2026-10-21T03:35:45.666990+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1935,16 +2180,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-21",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 54,
+    "calls": 61,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 32,
+        "ok": 39,
         "busy": 12,
         "other": 10,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2031,29 +2276,6 @@
     "gemini-flash-lite-latest": 1792504161.281722
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T13:20+05:30",
-      "title": "AI tool predicts cancer patients' survival chances from a single face photo",
-      "overall": 6.3,
-      "scores": {
-        "hook": 6,
-        "specific": 7,
-        "substance": 7,
-        "accuracy": 7,
-        "visuals": 5,
-        "flow": 6
-      },
-      "one_line": "Strong data-driven reporting undermined by lazy placeholder graphics and excessive text cards.",
-      "fixes": [
-        "LINE 1: Forty million photos trained this AI to predict cancer survival.",
-        "LINE 9: Would you let an AI predict your lifespan from a selfie?"
-      ],
-      "visual": [
-        "line 3: Frame 5 uses an RM avatar instead of a real photo of Dr. Mak.",
-        "line 7: Frames 13-14 use generic stock imagery instead of tool-specific UI.",
-        "line 4: Frames 6-9 are repetitive text cards that slow visual momentum."
-      ]
-    },
     {
       "at": "2026-10-20T13:39+05:30",
       "title": "Asian shares mostly decline after AI stocks lead a rebound on Wall Street",
@@ -2471,6 +2693,29 @@
         "line 1: The same aerial shot of the mall is held for too long (0s-9s).",
         "line 4: The background is a static white screen; needs a visual of city hall or a permit document.",
         "line 5: The background is a static black screen; needs a shot of the empty mall interior."
+      ]
+    },
+    {
+      "at": "2026-10-21T03:35+05:30",
+      "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 1: Change to 'Meta has paused its Muse AI chat-sharing feature.'",
+        "LINE 2: Remove as it is redundant; replace with 'The feature allowed users to generate public links for their private AI conversations.'"
+      ],
+      "visual": [
+        "line 1: The same image is held for 4.8 seconds, exceeding the recommended limit.",
+        "line 3: The same image is held for 4.8 seconds, exceeding the recommended limit.",
+        "line 5: The same image is held for 4.8 seconds, exceeding the recommended limit."
       ]
     }
   ],
