@@ -194,16 +194,53 @@
     "fix_rounds": 1,
     "source_links": [
       "https://newsroom.ibm.com/campaign?item=2998"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Google, CoreWeave, and NVIDIA also helped build th…: Shot shows a completely black, blank image instead of the expected server rack video.",
+      "The software delivers open and cost-efficient infe…: Shot is blank with just text and no image showing llm-d 1.0.",
+      "Organizations can now run heavy workloads without …: Shot shows only the word 'Enterprise' on a dark background instead of the expected IBM Newsroom source card.",
+      "The visual is completely blank/missing, showing only the background instead of the required server rack data center.",
+      "The visual is completely blank/missing, showing only the background instead of real images of llm-d 1.0.",
+      "The visual shows only the word 'Enterprise' on a plain background, failing to show the required source card for IBM News"
+    ],
+    "editor": {
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 7
+      },
+      "one_line": "Strong enterprise AI news, but suffers from repetitive visuals and vague marketing phrasing.",
+      "script_fixes": [
+        "LINE 3: Replace vague commentary with the exact cost-saving metrics or architecture specifics from the IBM release.",
+        "LINE 4: Specify the target enterprise systems or benchmarks instead of repeating general open inference benefits.",
+        "LINE 5: Mention specific workload types or performance multipliers instead of traditional infrastructure limits."
+      ],
+      "visual_beats": [
+        0,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 1: Generic AI landscape art does not fit an enterprise software release.",
+        "line 4: Reuses the generic bee icon logo card inappropriately for software features.",
+        "line 5: Reuses the bee icon logo card yet again for IBM Newsroom."
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T19:09:11.113466+05:30",
+  "script_deadline": "2026-10-20T19:30:22.809041+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-20",
@@ -611,18 +648,8 @@
     }
   ],
   "paused": null,
-  "spare": [
-    {
-      "title": "Not Anthropic. Not OpenAI. This Is the Artificial Intelligence (AI) Stock I'd Buy Before the Next Mega-IPO.",
-      "link": "https://www.fool.com/investing/2026/10/20/not-anthropic-not-openai-this-is-the-artificial-in/",
-      "summary": "Not Anthropic. Not OpenAI. This Is the Artificial Intelligence (AI) Stock I'd Buy Before the Next Mega-IPO. The Motley Fool",
-      "source": "The Motley Fool",
-      "published": "2026-10-20T12:04:14+00:00",
-      "angle": ""
-    }
-  ],
+  "spare": [],
   "tried": [
-    "North Korea tests AI-powered torpedo system in new naval arms push",
     "Anthropic gives outside AI watchdog “employee-like” access",
     "In Focus | The AI promise was automation. The reality? Managing digital workers",
     "Microsoft withdraws from artificial intelligence data center project in Britain",
@@ -681,275 +708,11 @@
     "SpaceX, Anthropic plan to share wealth with the public amid concern AI could trigger job losses",
     "Exa 3.0",
     "Yelp can now call on your behalf to check wait times at a restaurant",
-    "Artificial intelligence answers: what is the expected result of the Paris and Barcelona summit?"
+    "Artificial intelligence answers: what is the expected result of the Paris and Barcelona summit?",
+    "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could trigger job losses",
-          "link": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses",
-          "summary": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could trigger job losses Los Angeles Times",
-          "source": "Los Angeles Times",
-          "published": "2026-10-20T10:00:00+00:00",
-          "angle": "SpaceX and Anthropic plan to share wealth with the public amid job loss concerns"
-        },
-        "draft": {
-          "title": "SpaceX and Anthropic wealth sharing plan",
-          "hook_text": "SpaceX and Anthropic plan wealth sharing",
-          "beats": [
-            {
-              "line": "SpaceX and Anthropic plan to share wealth with the public.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "SpaceX Starship",
-              "outlet": "",
-              "domain": "spacex.com",
-              "headline": "",
-              "url": "https://www.spacex.com",
-              "tag": "SpaceX and Anthropic wealth plan",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "SpaceX",
-                  "domain": "spacex.com"
-                },
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The initiative comes amid growing concern that AI could trigger job losses.",
-              "visual": "clip",
-              "query": "people working on laptops",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI job losses concern",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Dario Amodei leads Anthropic as chief executive officer.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.anthropic.com",
-              "tag": "Dario Amodei leads Anthropic",
-              "name": "Dario Amodei",
-              "role": "CEO, Anthropic",
-              "x": "DarioAmodei",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Elon Musk serves as the chief executive officer of SpaceX.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.spacex.com",
-              "tag": "Elon Musk leads SpaceX",
-              "name": "Elon Musk",
-              "role": "CEO, SpaceX",
-              "x": "elonmusk",
-              "brands": [
-                {
-                  "name": "SpaceX",
-                  "domain": "spacex.com"
-                }
-              ]
-            },
-            {
-              "line": "Both SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.",
-              "visual": "clip",
-              "query": "data center servers",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Distributing financial returns",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "SpaceX",
-                  "domain": "spacex.com"
-                },
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "This strategy aims to offset economic inequality driven by rapid automation.",
-              "visual": "clip",
-              "query": "empty office desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Offset economic inequality",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Such proposals mark a major shift in how private technology firms address labor displacement.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Los Angeles Times",
-              "domain": "latimes.com",
-              "headline": "SpaceX, Anthropic plan to share wealth with the public",
-              "url": "",
-              "tag": "Shift in tech policy",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust tech firms to offset automation drops?",
-              "visual": "clip",
-              "query": "person looking at phone thoughtfully",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust tech firms",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and direct, highlighting the intersection of corporate wealth and automation anxiety",
-          "thin": false,
-          "caption": "SpaceX and Anthropic are planning to share wealth with the public to counter potential AI job losses. The initiative addresses growing economic worries around automation. Would you trust tech firms to offset automation drops?",
-          "hashtags": [
-            "SpaceX",
-            "Anthropic",
-            "ElonMusk",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-          ],
-          "script": "SpaceX and Anthropic plan to share wealth with the public.\nThe initiative comes amid growing concern that AI could trigger job losses.\nDario Amodei leads Anthropic as chief executive officer.\nElon Musk serves as the chief executive officer of SpaceX.\nBoth SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.\nThis strategy aims to offset economic inequality driven by rapid automation.\nSuch proposals mark a major shift in how private technology firms address labor displacement.\nWould you trust tech firms to offset automation drops?",
-          "keywords": [
-            "people working on laptops",
-            "data center servers",
-            "empty office desk",
-            "person looking at phone thoughtfully"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "SpaceX and Anthropic plan wealth sharing",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            },
-            {
-              "claim": "SpaceX and Anthropic plan to share wealth with the public.",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            },
-            {
-              "claim": "The initiative comes amid growing concern that AI could trigger job losses.",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            },
-            {
-              "claim": "Dario Amodei leads Anthropic as chief executive officer.",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            },
-            {
-              "claim": "Elon Musk serves as the chief executive officer of SpaceX.",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            },
-            {
-              "claim": "Both SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            },
-            {
-              "claim": "This strategy aims to offset economic inequality driven by rapid automation.",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            },
-            {
-              "claim": "Such proposals mark a major shift in how private technology firms address labor displacement.",
-              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-20T17:06:26.701313+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1736,6 +1499,216 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+          "link": "https://newsroom.ibm.com/campaign?item=2998",
+          "summary": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale IBM Newsroom",
+          "source": "IBM Newsroom",
+          "published": "2026-10-20T12:08:07+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "llm-d 1.0 Released",
+          "hook_text": "llm-d 1.0 just dropped.",
+          "beats": [
+            {
+              "line": "Project contributors led by IBM and Red Hat just released llm-d one point zero.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "IBM Newsroom",
+              "domain": "ibm.com",
+              "headline": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+              "url": "",
+              "tag": "IBM and Red Hat",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "IBM",
+                  "domain": "ibm.com"
+                },
+                {
+                  "name": "Red Hat",
+                  "domain": "redhat.com"
+                }
+              ]
+            },
+            {
+              "line": "Google, CoreWeave, and NVIDIA also helped build this open framework for production scale.",
+              "visual": "clip",
+              "query": "server rack data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Google and NVIDIA",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                },
+                {
+                  "name": "CoreWeave",
+                  "domain": "coreweave.com"
+                }
+              ]
+            },
+            {
+              "line": "It tackles the soaring cost of serving AI models at production scale.",
+              "visual": "clip",
+              "query": "engineer typing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Production scale AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The software delivers open and cost-efficient inference for enterprise systems.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "llm-d 1.0",
+              "outlet": "",
+              "domain": "ibm.com",
+              "headline": "",
+              "url": "https://newsroom.ibm.com/campaign?item=2998",
+              "tag": "Cost-efficient inference",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Organizations can now run heavy workloads without traditional infrastructure limits.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "IBM Newsroom",
+              "domain": "ibm.com",
+              "headline": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+              "url": "",
+              "tag": "Enterprise workloads",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would your team adopt this open framework?",
+              "visual": "clip",
+              "query": "software developer typing",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Adopt open framework",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and direct tech journalism, maintaining an informative and brisk pace",
+          "thin": false,
+          "caption": "Project contributors including IBM, Red Hat, Google, CoreWeave, and NVIDIA released llm-d 1.0 for open and cost-efficient AI inference. The release targets production scale challenges for enterprise workloads. Would your team adopt this open framework?",
+          "hashtags": [
+            "ibm",
+            "redhat",
+            "google",
+            "nvidia",
+            "ai"
+          ],
+          "sources": [
+            "https://newsroom.ibm.com/campaign?item=2998"
+          ],
+          "script": "Project contributors led by IBM and Red Hat just released llm-d one point zero.\nGoogle, CoreWeave, and NVIDIA also helped build this open framework for production scale.\nIt tackles the soaring cost of serving AI models at production scale.\nThe software delivers open and cost-efficient inference for enterprise systems.\nOrganizations can now run heavy workloads without traditional infrastructure limits.\nWould your team adopt this open framework?",
+          "keywords": [
+            "server rack data center",
+            "engineer typing code",
+            "software developer typing"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "llm-d 1.0 just dropped.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            },
+            {
+              "claim": "Project contributors led by IBM and Red Hat just released llm-d one point zero.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            },
+            {
+              "claim": "Google, CoreWeave, and NVIDIA also helped build this open framework for production scale.",
+              "url": "https://www.prnewswire.com/news-releases/llm-d-1-0-advances-open-cost-efficient-ai-inference-for-production-scale-302913429.html"
+            },
+            {
+              "claim": "It tackles the soaring cost of serving AI models at production scale.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            },
+            {
+              "claim": "The software delivers open and cost-efficient inference for enterprise systems.",
+              "url": "https://www.prnewswire.com/news-releases/llm-d-1-0-advances-open-cost-efficient-ai-inference-for-production-scale-302913429.html"
+            },
+            {
+              "claim": "Organizations can now run heavy workloads without traditional infrastructure limits.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://newsroom.ibm.com/campaign?item=2998"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T19:09:11.113466+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2273,8 +2246,8 @@
       "event": "Otter.ai just secured three hundred twenty million dollars. General Catalyst backed the meeting note-taking tool through its Customer Value Fund. The fund supplies capital without diluting equity while taking returns on marketing results. O"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T18:00+05:30",
@@ -2322,17 +2295,17 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-20",
-    "calls": 448,
+    "calls": 493,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 236,
-        "busy": 89,
+        "ok": 242,
+        "busy": 91,
         "other": 1,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
@@ -2361,24 +2334,20 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
+        "ok": 16,
+        "busy": 11,
+        "other": 8,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      },
+      "gemini-flash-lite-latest": {
         "ok": 1,
-        "busy": 0,
+        "busy": 2,
         "other": 0,
-        "last": ""
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "23:00",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-18"
-    },
-    {
-      "at": "23:36",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-18"
-    },
     {
       "at": "00:30",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2418,6 +2387,16 @@
       "at": "05:10",
       "error": "every free Gemini model is used up for today",
       "day": "2026-10-19"
+    },
+    {
+      "at": "13:49",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-20"
+    },
+    {
+      "at": "13:55",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-20"
     }
   ],
   "last_script_error": {
@@ -2425,12 +2404,12 @@
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now"
   },
   "render_fails": 1,
-  "render_fail_topic": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could trigger job losses",
+  "render_fail_topic": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
   "last_render_error": {
-    "at": "2026-10-20T17:12:39.640256+05:30",
-    "topic": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could tri",
-    "error": "RuntimeError: The script came back empty, please try again.",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1752, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1888, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 548, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 587, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 384, in checked_script\n    draft = writer.write_script(topic, previous=draft, instruction=fix)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 498, in write_script\n    draft = normalize_draft(draft, topic)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 438, in normalize_draft\n    raise RuntimeError(\"The script came back empty, please try again.\")\nRuntimeError: The script came back empty, please try again.\n"
+    "at": "2026-10-20T19:25:22.808403+05:30",
+    "topic": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+    "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
+    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1752, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1888, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 548, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 587, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 384, in checked_script\n    draft = writer.write_script(topic, previous=draft, instruction=fix)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 494, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 208, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
   },
   "report_week": "2026-42",
   "last_post_error": {
@@ -2443,33 +2422,11 @@
     "gemini-3.6-flash": 1792480446.4916801,
     "gemini-3.5-flash": 1792480677.9056172,
     "gemini-3.7-flash": 1792482268.4899096,
-    "gemini-3-flash-preview": 1792484312.1053905
+    "gemini-3-flash-preview": 1792484312.1053905,
+    "gemini-3.5-flash-lite": 1792503934.6558456,
+    "gemini-flash-lite-latest": 1792504161.281722
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T11:43+05:30",
-      "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
-      "overall": 5.8,
-      "scores": {
-        "hook": 6,
-        "specific": 4,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 6
-      },
-      "one_line": "Never names DeepSeek aloud, repeats line one, and relies heavily on text cards.",
-      "fixes": [
-        "LINE 1: Say 'DeepSeek was just banned by the DHS' instead of generic 'This Chinese AI model'",
-        "LINE 2: Replace the repetition of the ban with concrete details, such as the specific DHS binding operational directive or agency scope",
-        "LINE 6: Change 'a popular AI model' to 'DeepSeek or Chinese AI software' to keep the call-to-action specific"
-      ],
-      "visual": [
-        "line 3: Frames 7 and 8 show irrelevant stock footage of someone editing a presentation with the wo",
-        "line 5: Frames 11 and 12 use repetitive, low-effort text-only cards without any visual representat",
-        "line 6: Frames 13 and 14 continue the streak of blank text cards, leaving the final third visually"
-      ]
-    },
     {
       "at": "2026-10-20T12:04+05:30",
       "title": "Nscale and Anthropic are reportedly in talks for yet another $45B compute deal",
@@ -2879,6 +2836,30 @@
       "fixes": [],
       "visual": [
         "line 5: Generic stock code and project board images used instead of specific Otter.ai product feat"
+      ]
+    },
+    {
+      "at": "2026-10-20T19:15+05:30",
+      "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 7
+      },
+      "one_line": "Strong enterprise AI news, but suffers from repetitive visuals and vague marketing phrasing.",
+      "fixes": [
+        "LINE 3: Replace vague commentary with the exact cost-saving metrics or architecture specifics from the IBM release.",
+        "LINE 4: Specify the target enterprise systems or benchmarks instead of repeating general open inference benefits.",
+        "LINE 5: Mention specific workload types or performance multipliers instead of traditional infrastructure limits."
+      ],
+      "visual": [
+        "line 1: Generic AI landscape art does not fit an enterprise software release.",
+        "line 4: Reuses the generic bee icon logo card inappropriately for software features.",
+        "line 5: Reuses the bee icon logo card yet again for IBM Newsroom."
       ]
     }
   ],
