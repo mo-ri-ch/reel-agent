@@ -1294,6 +1294,26 @@ def handle_button(s, cq):
     return handle(s, {"chat": msg.get("chat", {}), "text": action}, from_button=True)
 
 
+def recover_cut_render(s):
+    """A run never starts in "rendering": the render step always moves the reel on, unless the job was cut off
+    (30-minute limit) or the video tools failed to install. On 19 Oct that left the agent stuck for 20 hours.
+    Autopilot drops the story (it already used a whole run) and the schedule keeper starts the next one."""
+    title = (s.get("topic") or {}).get("title", "")
+    s["last_render_error"] = {"at": st.now().isoformat(), "topic": title[:80],
+                              "error": "the reel-making step was cut off (over 30 minutes, or its tools didn't install)"}
+    if s.get("autopilot"):
+        tg.send(f"⚠️ Making “{title[:80]}” took too long and was stopped. Dropping it and moving on to another story.")
+        s["tried"] = ([t for t in s.get("tried") or [] if t and t != title] + ([title] if title else []))[-60:]
+        s["render_fails"] = 0
+        if not resume_paused(s):
+            reset_reel(s)
+    else:
+        s["stage"] = "awaiting_voice"
+        s["script_deadline"] = None
+        tg.send(f"⚠️ Making “{title[:80]}” took too long and was stopped. Reply \"ok\" to try the AI voice again, "
+                "or send a voice note.")
+
+
 # ---------- modes ----------
 def cmd_poll():
     s = st.load()
@@ -1305,6 +1325,8 @@ def cmd_poll():
             pass
     before = json.dumps(s, sort_keys=True)
     render = False
+    if s["stage"] == "rendering":
+        recover_cut_render(s)
     for u in tg.get_updates(s["offset"]):
         s["offset"] = u["update_id"] + 1
         cq = u.get("callback_query")

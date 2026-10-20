@@ -105,17 +105,21 @@ for k in ("last_auto_offer", "digest_for", "report_day", "behind_since", "paused
 s.update(autopilot=True, queue=[], post_log=[], guarantee_since=clock[0].isoformat(), tried=[], held=[],
          pending_offer=False, history=[], posted_log=[])
 st.save(s)
+killed = []
 while clock[0] < datetime.fromisoformat("2026-10-08T23:59:00+05:30"):
     out = []
     main.github_output = lambda k, v: out.append(v)
     main.cmd_poll()
     if out and out[-1] == "true":
-        main.cmd_render()
+        if SCENARIO == "render_killed" and not killed:
+            killed.append(1)  # the job is cut off mid-render: nothing is saved, the stage stays "rendering"
+        else:
+            main.cmd_render()
     clock[0] += timedelta(minutes=5)
 print(json.dumps({"posted": posted, "slots": sorted(main.POST_TIMES), "late_notes": sum("isn't ready yet" in l for l in log)}))
 '''
 
-SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low", "repeats_half", "gemini_flaky", "editor_mixed"]
+SCENARIOS = ["normal", "render_fails", "facts_fail", "gemini_down", "general_half", "editor_low", "repeats_half", "gemini_flaky", "editor_mixed", "render_killed"]
 # with no junk backups, these must post NOTHING (never a bad reel) and tell the owner the slots are late
 NOTHING_GOOD = {"gemini_down", "editor_low"}
 
