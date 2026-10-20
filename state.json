@@ -4,129 +4,144 @@
   "candidates": [],
   "choose_deadline": null,
   "topic": {
-    "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
-    "link": "https://newsroom.ibm.com/campaign?item=2998",
-    "summary": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale IBM Newsroom",
-    "source": "IBM Newsroom",
-    "published": "2026-10-20T12:08:07+00:00",
-    "angle": ""
+    "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+    "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+    "summary": "A single query is all that's required to find thousands of conversations listed by title.",
+    "source": "AI - Ars Technica",
+    "published": "2026-10-20T12:33:13+00:00",
+    "angle": "Major privacy alert: Meta's AI is leaking private user conversations into public search results."
   },
   "draft": {
-    "title": "IBM and Red Hat launch llm-d 1.0",
-    "hook_text": "IBM and Red Hat just launched llm-d 1.0.",
+    "title": "Meta Muse leaks private chats",
+    "hook_text": "Meta Muse leaked your secrets",
     "beats": [
       {
-        "line": "IBM and Red Hat just launched llm-d 1.0, an open-source framework for AI inference.",
+        "line": "Meta Muse leaks thousands of private user chats.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Meta Muse",
+        "outlet": "",
+        "domain": "meta.com",
+        "headline": "",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+        "tag": "Meta Muse leaks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Meta",
+            "domain": "meta.com"
+          }
+        ]
+      },
+      {
+        "line": "The flaw triggers when users share links to their chat sessions.",
+        "visual": "clip",
+        "query": "person holding smartphone",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Shared links exposed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Meta",
+            "domain": "meta.com"
+          }
+        ]
+      },
+      {
+        "line": "A single query reveals these conversations listed by their titles.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "1 query",
+        "small": "to find conversations",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Search reveals chats",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The breach includes sensitive personal details and confidential business data.",
+        "visual": "clip",
+        "query": "business professional working on laptop",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Business data exposed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This happens because Meta failed to secure public index access.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "IBM Newsroom",
-        "domain": "ibm.com",
-        "headline": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+        "outlet": "Ars Technica",
+        "domain": "arstechnica.com",
+        "headline": "Meta Muse exposes users personal and business secrets",
         "url": "",
-        "tag": "llm-d 1.0 launch",
+        "tag": "Meta security failure",
         "name": "",
         "role": "",
         "x": "",
         "brands": [
           {
-            "name": "IBM",
-            "domain": "ibm.com"
-          },
-          {
-            "name": "Red Hat",
-            "domain": "redhat.com"
+            "name": "Meta",
+            "domain": "meta.com"
           }
         ]
       },
       {
-        "line": "Google, CoreWeave, and NVIDIA helped build this framework to manage production scale.",
-        "visual": "clip",
-        "query": "data center server room",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Industry collaborators",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Google",
-            "domain": "google.com"
-          },
-          {
-            "name": "CoreWeave",
-            "domain": "coreweave.com"
-          }
-        ]
-      },
-      {
-        "line": "It tackles the soaring costs of running heavy AI workloads in enterprise systems.",
-        "visual": "clip",
-        "query": "server rack lights",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Cutting AI costs",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The software optimizes how data flows through your infrastructure during inference.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "llm-d 1.0",
-        "outlet": "",
-        "domain": "ibm.com",
-        "headline": "",
-        "url": "https://newsroom.ibm.com/campaign?item=2998",
-        "tag": "Optimized inference",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This version removes traditional bottlenecks that limit large-scale AI deployment.",
+        "line": "Thousands of user sessions are currently sitting out in the open.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
-        "big": "1.0",
-        "small": "initial version release",
+        "big": "Thousands",
+        "small": "of sessions leaked",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Removing bottlenecks",
+        "tag": "Thousands of chats",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Will your infrastructure team integrate llm-d 1.0 into your production stack?",
+        "line": "Would you ever trust AI with your private business documents?",
         "visual": "clip",
-        "query": "software engineer working",
+        "query": "person looking concerned at screen",
         "prompt": "",
         "big": "",
         "small": "",
@@ -135,66 +150,71 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Production stack integration",
+        "tag": "Trusting AI privacy",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       }
     ],
-    "delivery": "crisp and professional tech reporting, focusing on the architectural shift for enterprise AI",
+    "delivery": "Alert and urgent, shifting to concerned skepticism about privacy.",
     "thin": false,
-    "caption": "IBM and Red Hat launched llm-d 1.0, an open-source framework for AI inference built with Google, CoreWeave, and NVIDIA. It aims to reduce the costs of running heavy AI workloads at production scale. Will your infrastructure team integrate llm-d 1.0 into your production stack?",
+    "caption": "Meta Muse has exposed thousands of private user conversations through a simple search vulnerability. Shared chat links are being indexed, revealing sensitive personal and business secrets. Would you ever trust AI with your private business documents?",
     "hashtags": [
-      "ibm",
-      "redhat",
-      "nvidia",
-      "ai",
-      "llmd"
+      "Meta",
+      "MetaMuse",
+      "CyberSecurity",
+      "Privacy",
+      "AI"
     ],
     "sources": [
-      "https://newsroom.ibm.com/campaign?item=2998"
+      "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
     ],
-    "script": "IBM and Red Hat just launched llm-d 1.0, an open-source framework for AI inference.\nGoogle, CoreWeave, and NVIDIA helped build this framework to manage production scale.\nIt tackles the soaring costs of running heavy AI workloads in enterprise systems.\nThe software optimizes how data flows through your infrastructure during inference.\nThis version removes traditional bottlenecks that limit large-scale AI deployment.\nWill your infrastructure team integrate llm-d 1.0 into your production stack?",
+    "script": "Meta Muse leaks thousands of private user chats.\nThe flaw triggers when users share links to their chat sessions.\nA single query reveals these conversations listed by their titles.\nThe breach includes sensitive personal details and confidential business data.\nThis happens because Meta failed to secure public index access.\nThousands of user sessions are currently sitting out in the open.\nWould you ever trust AI with your private business documents?",
     "keywords": [
-      "data center server room",
-      "server rack lights",
-      "software engineer working"
+      "person holding smartphone",
+      "business professional working on laptop",
+      "person looking concerned at screen"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
+    "hook_before": "Meta Muse just exposed thousands of private user conversations.",
+    "hook_score": 39,
     "evidence": [
       {
-        "claim": "IBM and Red Hat launched llm-d 1.0.",
-        "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+        "claim": "Meta Muse leaked your secrets",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
       },
       {
-        "claim": "llm-d 1.0 is an open-source framework for AI inference.",
-        "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+        "claim": "Meta Muse leaks thousands of private user chats.",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
       },
       {
-        "claim": "Google, CoreWeave, and NVIDIA helped build llm-d.",
-        "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+        "claim": "The flaw triggers when users share links to their chat sessions.",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
       },
       {
-        "claim": "llm-d tackles the soaring costs of running heavy AI workloads in enterprise systems.",
-        "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+        "claim": "A single query reveals these conversations listed by their titles.",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
       },
       {
-        "claim": "The software optimizes how data flows through your infrastructure during inference.",
-        "url": "https://www.prnewswire.com/news-releases/llm-d-1-0-advances-open-cost-efficient-ai-inference-for-production-scale-302913429.html"
+        "claim": "The breach includes sensitive personal details and confidential business data.",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
       },
       {
-        "claim": "Version 1.0 removes traditional bottlenecks that limit large-scale AI deployment.",
-        "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+        "claim": "This happens because Meta failed to secure public index access.",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+      },
+      {
+        "claim": "Thousands of user sessions are currently sitting out in the open.",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 0,
-    "editor_rounds": 1,
     "source_links": [
-      "https://newsroom.ibm.com/campaign?item=2998"
+      "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
     ]
   },
   "voice_file_id": null,
@@ -202,9 +222,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T19:41:10.269105+05:30",
+  "script_deadline": "2026-10-20T20:25:42.854796+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-20",
@@ -613,9 +633,17 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
+      "link": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+      "summary": "Eka Robotics may be the first robotic arm that is actually good at picking a wide range of objects up, and it is so smooth and human-like, it is wowing the industry.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-20T13:00:00+00:00",
+      "angle": "This new robotic arm is so human-like and smooth it's actually changing how we think about physical AI."
+    }
+  ],
   "tried": [
-    "Anthropic gives outside AI watchdog “employee-like” access",
     "In Focus | The AI promise was automation. The reality? Managing digital workers",
     "Microsoft withdraws from artificial intelligence data center project in Britain",
     "AI now creates unknown viruses—should we fear it or hope for a cure?",
@@ -674,212 +702,10 @@
     "Exa 3.0",
     "Yelp can now call on your behalf to check wait times at a restaurant",
     "Artificial intelligence answers: what is the expected result of the Paris and Barcelona summit?",
-    "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale"
+    "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+    "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
-          "link": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
-          "summary": "Meeting note-taking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend. Otter.ai said that it will use these funds for enterprise growth, go-to-market strategy, international expansion, and product innovation. […]",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-20T11:00:00+00:00",
-          "angle": "Otter.ai scores a massive $320M funding round, proving meeting bots are becoming billion-dollar giants."
-        },
-        "draft": {
-          "title": "Otter.ai raises $320M",
-          "hook_text": "Otter.ai just secured $320 million.",
-          "beats": [
-            {
-              "line": "Otter.ai just secured three hundred twenty million dollars.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Otter.ai",
-              "outlet": "",
-              "domain": "otter.ai",
-              "headline": "",
-              "url": "https://otter.ai",
-              "tag": "Otter.ai raises $320M",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Otter.ai",
-                  "domain": "otter.ai"
-                }
-              ]
-            },
-            {
-              "line": "General Catalyst backed the meeting note-taking tool through its Customer Value Fund.",
-              "visual": "clip",
-              "query": "venture capital meeting office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "General Catalyst fund",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The fund supplies capital without diluting equity while taking returns on marketing results.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$320M",
-              "small": "non-dilutive funding",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No equity dilution",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Otter.ai will pump the cash into enterprise growth and international expansion.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Otter.ai meeting assistant",
-              "outlet": "",
-              "domain": "otter.ai",
-              "headline": "",
-              "url": "https://otter.ai",
-              "tag": "Enterprise and expansion",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Otter.ai",
-                  "domain": "otter.ai"
-                }
-              ]
-            },
-            {
-              "line": "The company also plans heavy investments in product innovation.",
-              "visual": "clip",
-              "query": "software product development screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Product innovation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let an AI take minutes in your next meeting?",
-              "visual": "clip",
-              "query": "person listening to laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Meeting note AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and factual, explaining the funding deal with quick pacing",
-          "thin": false,
-          "caption": "Otter.ai has raised $320 million from General Catalyst's Customer Value Fund to expand its meeting assistant tool. The startup plans to use the non-dilutive capital for enterprise growth and product innovation. Would you use an AI note-taker at work?",
-          "hashtags": [
-            "Otterai",
-            "GeneralCatalyst",
-            "AITools",
-            "Startups",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-          ],
-          "script": "Otter.ai just secured three hundred twenty million dollars.\nGeneral Catalyst backed the meeting note-taking tool through its Customer Value Fund.\nThe fund supplies capital without diluting equity while taking returns on marketing results.\nOtter.ai will pump the cash into enterprise growth and international expansion.\nThe company also plans heavy investments in product innovation.\nWould you let an AI take minutes in your next meeting?",
-          "keywords": [
-            "venture capital meeting office",
-            "software product development screen",
-            "person listening to laptop"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Otter.ai just secured $320 million.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "Otter.ai just secured three hundred twenty million dollars.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "General Catalyst backed the meeting note-taking tool through its Customer Value Fund.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "The fund supplies capital without diluting equity while taking returns on marketing results.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "Otter.ai will pump the cash into enterprise growth and international expansion.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-              "claim": "The company also plans heavy investments in product innovation.",
-              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-20T17:40:47.173026+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1617,6 +1443,217 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+          "link": "https://newsroom.ibm.com/campaign?item=2998",
+          "summary": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale IBM Newsroom",
+          "source": "IBM Newsroom",
+          "published": "2026-10-20T12:08:07+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "IBM and Red Hat launch llm-d 1.0",
+          "hook_text": "IBM and Red Hat just launched llm-d 1.0.",
+          "beats": [
+            {
+              "line": "IBM and Red Hat just launched llm-d 1.0, an open-source framework for AI inference.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "IBM Newsroom",
+              "domain": "ibm.com",
+              "headline": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+              "url": "",
+              "tag": "llm-d 1.0 launch",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "IBM",
+                  "domain": "ibm.com"
+                },
+                {
+                  "name": "Red Hat",
+                  "domain": "redhat.com"
+                }
+              ]
+            },
+            {
+              "line": "Google, CoreWeave, and NVIDIA helped build this framework to manage production scale.",
+              "visual": "clip",
+              "query": "data center server room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Industry collaborators",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                },
+                {
+                  "name": "CoreWeave",
+                  "domain": "coreweave.com"
+                }
+              ]
+            },
+            {
+              "line": "It tackles the soaring costs of running heavy AI workloads in enterprise systems.",
+              "visual": "clip",
+              "query": "server rack lights",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Cutting AI costs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The software optimizes how data flows through your infrastructure during inference.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "llm-d 1.0",
+              "outlet": "",
+              "domain": "ibm.com",
+              "headline": "",
+              "url": "https://newsroom.ibm.com/campaign?item=2998",
+              "tag": "Optimized inference",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This version removes traditional bottlenecks that limit large-scale AI deployment.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1.0",
+              "small": "initial version release",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Removing bottlenecks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will your infrastructure team integrate llm-d 1.0 into your production stack?",
+              "visual": "clip",
+              "query": "software engineer working",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Production stack integration",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "crisp and professional tech reporting, focusing on the architectural shift for enterprise AI",
+          "thin": false,
+          "caption": "IBM and Red Hat launched llm-d 1.0, an open-source framework for AI inference built with Google, CoreWeave, and NVIDIA. It aims to reduce the costs of running heavy AI workloads at production scale. Will your infrastructure team integrate llm-d 1.0 into your production stack?",
+          "hashtags": [
+            "ibm",
+            "redhat",
+            "nvidia",
+            "ai",
+            "llmd"
+          ],
+          "sources": [
+            "https://newsroom.ibm.com/campaign?item=2998"
+          ],
+          "script": "IBM and Red Hat just launched llm-d 1.0, an open-source framework for AI inference.\nGoogle, CoreWeave, and NVIDIA helped build this framework to manage production scale.\nIt tackles the soaring costs of running heavy AI workloads in enterprise systems.\nThe software optimizes how data flows through your infrastructure during inference.\nThis version removes traditional bottlenecks that limit large-scale AI deployment.\nWill your infrastructure team integrate llm-d 1.0 into your production stack?",
+          "keywords": [
+            "data center server room",
+            "server rack lights",
+            "software engineer working"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "IBM and Red Hat launched llm-d 1.0.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            },
+            {
+              "claim": "llm-d 1.0 is an open-source framework for AI inference.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            },
+            {
+              "claim": "Google, CoreWeave, and NVIDIA helped build llm-d.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            },
+            {
+              "claim": "llm-d tackles the soaring costs of running heavy AI workloads in enterprise systems.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            },
+            {
+              "claim": "The software optimizes how data flows through your infrastructure during inference.",
+              "url": "https://www.prnewswire.com/news-releases/llm-d-1-0-advances-open-cost-efficient-ai-inference-for-production-scale-302913429.html"
+            },
+            {
+              "claim": "Version 1.0 removes traditional bottlenecks that limit large-scale AI deployment.",
+              "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://newsroom.ibm.com/campaign?item=2998"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T19:41:10.269105+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2154,8 +2191,8 @@
       "event": "Otter.ai just secured three hundred twenty million dollars. General Catalyst backed the meeting note-taking tool through its Customer Value Fund. The fund supplies capital without diluting equity while taking returns on marketing results. O"
     }
   ],
-  "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_mode": null,
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T18:00+05:30",
@@ -2183,7 +2220,7 @@
   "report_day": "2026-10-19",
   "ig_count": {
     "day": "2026-10-20",
-    "at": "2026-10-20T19:25:44.696711+05:30",
+    "at": "2026-10-20T19:41:34.879577+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2203,7 +2240,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-20",
@@ -2335,30 +2372,6 @@
     "gemini-flash-lite-latest": 1792504161.281722
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T12:09+05:30",
-      "title": "Nscale and Anthropic are reportedly in talks for yet another $45B compute deal",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Strong hook and numbers, but suffers from repetitive visuals and vague filler lines.",
-      "fixes": [
-        "LINE 2: Remove vague line about ranking among giant deals; specify past investments instead.",
-        "LINE 3: Name specific infrastructure partners or locations instead of generic infrastructure partnerships.",
-        "LINE 5: Replace rhetorical question with a concrete consequence or industry impact."
-      ],
-      "visual": [
-        "line 2: Same Anthropic logo card held across multiple consecutive frames without variation.",
-        "line 3: Repeated Anthropic logo graphic appears for too many consecutive lines.",
-        "line 5: Static 'Data center capacity' text held for multiple frames over 8 seconds with zero visua"
-      ]
-    },
     {
       "at": "2026-10-20T12:19+05:30",
       "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
@@ -2768,6 +2781,29 @@
         "line 1: The abstract AI-generated landscape image is irrelevant to a technical software announceme",
         "line 2: The logo sequence is too slow; it takes 5 seconds to show three logos.",
         "line 4: The bee icon is repeated from previous frames, creating visual fatigue."
+      ]
+    },
+    {
+      "at": "2026-10-20T19:47+05:30",
+      "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "Strong technical content, but the visuals are generic, repetitive, and lack professional polish.",
+      "fixes": [
+        "LINE 1: Change 'just launched' to 'released' for a more professional news tone.",
+        "LINE 4: Replace 'The software' with 'The framework' to maintain consistent terminology."
+      ],
+      "visual": [
+        "line 1: The stock footage of a swamp is completely irrelevant to an AI software launch.",
+        "line 2: The terminal code snippet is generic; use official logos for IBM, Red Hat, Google, CoreWea",
+        "line 5: The '0.9' graphic is confusing and lacks context; replace with a relevant technical diagra"
       ]
     }
   ],

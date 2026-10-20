@@ -1,0 +1,80 @@
+{
+ "made": "20261020-1417",
+ "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
+ "hook_text": "IBM and Red Hat just launched llm-d 1.0.",
+ "hook_before": null,
+ "script": "IBM and Red Hat just launched llm-d 1.0, an open-source framework for AI inference.\nGoogle, CoreWeave, and NVIDIA helped build this framework to manage production scale.\nIt tackles the soaring costs of running heavy AI workloads in enterprise systems.\nThe software optimizes how data flows through your infrastructure during inference.\nThis version removes traditional bottlenecks that limit large-scale AI deployment.\nWill your infrastructure team integrate llm-d 1.0 into your production stack?",
+ "words": 71,
+ "beats": [
+  {
+   "line": "IBM and Red Hat just launched llm-d 1.0, an open-source framework for AI inference.",
+   "visual": "source"
+  },
+  {
+   "line": "Google, CoreWeave, and NVIDIA helped build this framework to manage production scale.",
+   "visual": "clip"
+  },
+  {
+   "line": "It tackles the soaring costs of running heavy AI workloads in enterprise systems.",
+   "visual": "clip"
+  },
+  {
+   "line": "The software optimizes how data flows through your infrastructure during inference.",
+   "visual": "official"
+  },
+  {
+   "line": "This version removes traditional bottlenecks that limit large-scale AI deployment.",
+   "visual": "stat"
+  },
+  {
+   "line": "Will your infrastructure team integrate llm-d 1.0 into your production stack?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 6,
+   "specific": 9,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 5,
+   "flow": 8
+  },
+  "one_line": "Strong technical content, but the visuals are generic, repetitive, and lack professional polish.",
+  "script_fixes": [
+   "LINE 1: Change 'just launched' to 'released' for a more professional news tone.",
+   "LINE 4: Replace 'The software' with 'The framework' to maintain consistent terminology."
+  ],
+  "visual_beats": [
+   0,
+   1,
+   4,
+   5
+  ],
+  "visual_notes": [
+   "line 1: The stock footage of a swamp is completely irrelevant to an AI software launch.",
+   "line 2: The terminal code snippet is generic; use official logos for IBM, Red Hat, Google, CoreWea",
+   "line 5: The '0.9' graphic is confusing and lacks context; replace with a relevant technical diagra",
+   "line 6: The stock footage of a person at a computer is too generic for a premium news account."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 31.87,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -13.9,
+ "cuts": [
+  4.63,
+  8.9,
+  11.33,
+  21.1,
+  28.73
+ ],
+ "first_cut_at": 4.63,
+ "avg_shot_seconds": 5.31,
+ "longest_shot_seconds": 9.77,
+ "verdict": "rejected",
+ "words_per_minute": 134
+}
