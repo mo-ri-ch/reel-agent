@@ -107,7 +107,7 @@
         ]
       },
       {
-        "line": "Both companies are exploring models to distribute equity or financial returns directly to citizens.",
+        "line": "Both SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.",
         "visual": "clip",
         "query": "data center servers",
         "prompt": "",
@@ -122,10 +122,19 @@
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "SpaceX",
+            "domain": "spacex.com"
+          },
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          }
+        ]
       },
       {
-        "line": "This strategy aims to offset economic inequality driven by rapid automation across industries.",
+        "line": "This strategy aims to offset economic inequality driven by rapid automation.",
         "visual": "clip",
         "query": "empty office desk",
         "prompt": "",
@@ -191,7 +200,7 @@
     "sources": [
       "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
     ],
-    "script": "SpaceX and Anthropic plan to share wealth with the public.\nThe initiative comes amid growing concern that AI could trigger job losses.\nDario Amodei leads Anthropic as chief executive officer.\nElon Musk serves as the chief executive officer of SpaceX.\nBoth companies are exploring models to distribute equity or financial returns directly to citizens.\nThis strategy aims to offset economic inequality driven by rapid automation across industries.\nSuch proposals mark a major shift in how private technology firms address labor displacement.\nWould you trust tech firms to offset automation drops?",
+    "script": "SpaceX and Anthropic plan to share wealth with the public.\nThe initiative comes amid growing concern that AI could trigger job losses.\nDario Amodei leads Anthropic as chief executive officer.\nElon Musk serves as the chief executive officer of SpaceX.\nBoth SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.\nThis strategy aims to offset economic inequality driven by rapid automation.\nSuch proposals mark a major shift in how private technology firms address labor displacement.\nWould you trust tech firms to offset automation drops?",
     "keywords": [
       "people working on laptops",
       "data center servers",
@@ -222,20 +231,22 @@
         "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
       },
       {
-        "claim": "Both companies are exploring models to distribute equity or financial returns directly to citizens.",
+        "claim": "Both SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.",
         "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
       },
       {
-        "claim": "This strategy aims to offset economic inequality driven by rapid automation across industries.",
+        "claim": "This strategy aims to offset economic inequality driven by rapid automation.",
         "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
       },
       {
         "claim": "Such proposals mark a major shift in how private technology firms address labor displacement.",
-        "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html"
+        "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
     ]
@@ -245,17 +256,18 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T16:56:17.910396+05:30",
+  "script_deadline": "2026-10-20T17:06:26.701313+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
-  "pending_offer": false,
+  "last_gender": "male",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-20",
     "done": [
       "07:00",
       "09:30",
       "12:00",
-      "14:30"
+      "14:30",
+      "17:00"
     ]
   },
   "pending_topic": null,
@@ -738,201 +750,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "The fossil fuel comeback is here",
-          "link": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
-          "summary": "The US is building more fossil fuel infrastructure than it has in a decade while renewable energy growth slows down, a new report shows. Electricity demand is also climbing faster than it has in more than a decade with more data centers, factories, and electric vehicles plugging into the grid. Despite those growing demands, the […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-19T21:48:01+00:00",
-          "angle": "The dark side of AI's boom: US building massive fossil fuel infrastructure as energy demand skyrockets."
-        },
-        "draft": {
-          "title": "Fossil fuel power for data centers",
-          "hook_text": "Data centers are draining the grid",
-          "beats": [
-            {
-              "line": "Ten years. That is how long we waited for this massive fossil fuel comeback.",
-              "visual": "clip",
-              "query": "power plant smokestacks energy",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Fossil fuel comeback",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Electricity demand is climbing faster than it has in ten years.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "10",
-              "small": "Years of peak demand",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Decade high demand",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "At the same time, renewable energy growth is slowing down across the country.",
-              "visual": "clip",
-              "query": "solar panels wind turbines field",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Renewable growth slows",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "More data centers, factories, and electric vehicles are plugging into the power grid.",
-              "visual": "clip",
-              "query": "server room data center racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data centers plug in",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The Verge published a new report detailing this surge in power demand.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "The fossil fuel comeback is here",
-              "url": "",
-              "tag": "The Verge report",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will your power bill go up because of this?",
-              "visual": "clip",
-              "query": "person looking at electricity bill",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Higher power bills",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and direct, emphasizing the clash between data center growth and energy limits",
-          "thin": false,
-          "caption": "The US is building more fossil fuel infrastructure than it has in a decade as data centers strain the power grid. A new report from The Verge shows electricity demand is climbing faster than ever while renewable growth slows. How should power companies handle surging tech demands?",
-          "hashtags": [
-            "TheVerge",
-            "EnergyGrid",
-            "DataCenters",
-            "FossilFuels",
-            "RenewableEnergy"
-          ],
-          "sources": [
-            "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-          ],
-          "script": "Ten years. That is how long we waited for this massive fossil fuel comeback.\nElectricity demand is climbing faster than it has in ten years.\nAt the same time, renewable energy growth is slowing down across the country.\nMore data centers, factories, and electric vehicles are plugging into the power grid.\nThe Verge published a new report detailing this surge in power demand.\nWill your power bill go up because of this?",
-          "keywords": [
-            "power plant smokestacks energy",
-            "solar panels wind turbines field",
-            "server room data center racks",
-            "person looking at electricity bill"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "The US is building more fossil fuel infrastructure now than it has in a decade.",
-          "hook_score": 40,
-          "evidence": [
-            {
-              "claim": "Data centers are draining the grid",
-              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-            },
-            {
-              "claim": "The US is building more fossil fuel infrastructure than it has in a decade",
-              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-            },
-            {
-              "claim": "Electricity demand is climbing faster than it has in more than a decade",
-              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-            },
-            {
-              "claim": "Renewable energy growth is slowing down across the country",
-              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-            },
-            {
-              "claim": "More data centers, factories, and electric vehicles are plugging into the grid",
-              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-            },
-            {
-              "claim": "The Verge published a report detailing this surge in power demand",
-              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-20T15:10:35.733752+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1616,6 +1433,260 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could trigger job losses",
+          "link": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses",
+          "summary": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could trigger job losses Los Angeles Times",
+          "source": "Los Angeles Times",
+          "published": "2026-10-20T10:00:00+00:00",
+          "angle": "SpaceX and Anthropic plan to share wealth with the public amid job loss concerns"
+        },
+        "draft": {
+          "title": "SpaceX and Anthropic wealth sharing plan",
+          "hook_text": "SpaceX and Anthropic plan wealth sharing",
+          "beats": [
+            {
+              "line": "SpaceX and Anthropic plan to share wealth with the public.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "SpaceX Starship",
+              "outlet": "",
+              "domain": "spacex.com",
+              "headline": "",
+              "url": "https://www.spacex.com",
+              "tag": "SpaceX and Anthropic wealth plan",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "SpaceX",
+                  "domain": "spacex.com"
+                },
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The initiative comes amid growing concern that AI could trigger job losses.",
+              "visual": "clip",
+              "query": "people working on laptops",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI job losses concern",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Dario Amodei leads Anthropic as chief executive officer.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Dario Amodei leads Anthropic",
+              "name": "Dario Amodei",
+              "role": "CEO, Anthropic",
+              "x": "DarioAmodei",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Elon Musk serves as the chief executive officer of SpaceX.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.spacex.com",
+              "tag": "Elon Musk leads SpaceX",
+              "name": "Elon Musk",
+              "role": "CEO, SpaceX",
+              "x": "elonmusk",
+              "brands": [
+                {
+                  "name": "SpaceX",
+                  "domain": "spacex.com"
+                }
+              ]
+            },
+            {
+              "line": "Both companies are exploring models to distribute equity or financial returns directly to citizens.",
+              "visual": "clip",
+              "query": "data center servers",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Distributing financial returns",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This strategy aims to offset economic inequality driven by rapid automation across industries.",
+              "visual": "clip",
+              "query": "empty office desk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Offset economic inequality",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Such proposals mark a major shift in how private technology firms address labor displacement.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Los Angeles Times",
+              "domain": "latimes.com",
+              "headline": "SpaceX, Anthropic plan to share wealth with the public",
+              "url": "",
+              "tag": "Shift in tech policy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust tech firms to offset automation drops?",
+              "visual": "clip",
+              "query": "person looking at phone thoughtfully",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust tech firms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and direct, highlighting the intersection of corporate wealth and automation anxiety",
+          "thin": false,
+          "caption": "SpaceX and Anthropic are planning to share wealth with the public to counter potential AI job losses. The initiative addresses growing economic worries around automation. Would you trust tech firms to offset automation drops?",
+          "hashtags": [
+            "SpaceX",
+            "Anthropic",
+            "ElonMusk",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+          ],
+          "script": "SpaceX and Anthropic plan to share wealth with the public.\nThe initiative comes amid growing concern that AI could trigger job losses.\nDario Amodei leads Anthropic as chief executive officer.\nElon Musk serves as the chief executive officer of SpaceX.\nBoth companies are exploring models to distribute equity or financial returns directly to citizens.\nThis strategy aims to offset economic inequality driven by rapid automation across industries.\nSuch proposals mark a major shift in how private technology firms address labor displacement.\nWould you trust tech firms to offset automation drops?",
+          "keywords": [
+            "people working on laptops",
+            "data center servers",
+            "empty office desk",
+            "person looking at phone thoughtfully"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "SpaceX and Anthropic plan wealth sharing",
+              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+            },
+            {
+              "claim": "SpaceX and Anthropic plan to share wealth with the public.",
+              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+            },
+            {
+              "claim": "The initiative comes amid growing concern that AI could trigger job losses.",
+              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+            },
+            {
+              "claim": "Dario Amodei leads Anthropic as chief executive officer.",
+              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+            },
+            {
+              "claim": "Elon Musk serves as the chief executive officer of SpaceX.",
+              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+            },
+            {
+              "claim": "Both companies are exploring models to distribute equity or financial returns directly to citizens.",
+              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+            },
+            {
+              "claim": "This strategy aims to offset economic inequality driven by rapid automation across industries.",
+              "url": "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+            },
+            {
+              "claim": "Such proposals mark a major shift in how private technology firms address labor displacement.",
+              "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.latimes.com/business/story/2026-10-20/spacex-anthropic-plan-to-share-wealth-with-public-amid-concern-ai-could-trigger-job-losses"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T16:56:17.910396+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2152,8 +2223,8 @@
       "event": "Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Generative AI models run on powerful chips known as graphics processing units. These processors depend on stacks of specialized memory chips p"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T15:50+05:30",
@@ -2201,7 +2272,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-20",
@@ -2318,29 +2389,6 @@
     "gemini-3-flash-preview": 1792484312.1053905
   },
   "editor_log": [
-    {
-      "at": "2026-10-19T05:46+05:30",
-      "title": "36, 85, 14: three numbers that explain the enterprise AI gap",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 6,
-        "accuracy": 4,
-        "visuals": 7,
-        "flow": 8
-      },
-      "one_line": "Strong data points, but failed accuracy check on the 85% figure.",
-      "fixes": [
-        "LINE 2: Verify the 85% figure; the source does not support this specific claim.",
-        "LINE 4: Remove 'The CIO report highlights' and replace with a specific finding.",
-        "LINE 5: Replace 'Companies struggle' with a specific industry or sector example."
-      ],
-      "visual": [
-        "line 2: Visual shows 62% while audio says 85%, creating a major credibility issue.",
-        "line 4: Visual repeats the title card instead of showing a relevant chart or data point."
-      ]
-    },
     {
       "at": "2026-10-19T06:28+05:30",
       "title": "Cost per successful outcome: the AI number Singapore CIOs should be reporting",
@@ -2756,6 +2804,28 @@
       "visual": [
         "line 3: Same blank typographic background style repeats across too many consecutive lines without ",
         "line 5: Generic Samsung app icon placeholder appears as a visual instead of actual fab imagery."
+      ]
+    },
+    {
+      "at": "2026-10-20T17:05+05:30",
+      "title": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could tri",
+      "overall": 7.3,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 7,
+        "accuracy": 8,
+        "visuals": 6,
+        "flow": 7
+      },
+      "one_line": "Strong subject matter, but visuals lack variety and some lines repeat structural filler.",
+      "fixes": [
+        "LINE 5: Both SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.",
+        "LINE 6: This strategy aims to offset economic inequality driven by rapid automation."
+      ],
+      "visual": [
+        "line 2: Elon Musk's photo is held unchanged across four consecutive frames through lines 1 and 2.",
+        "line 4: Elon Musk's initials graphic and text slide feels repetitive with previous leadership fram"
       ]
     }
   ],
