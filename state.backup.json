@@ -1,262 +1,67 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
-    "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-    "summary": "A single query is all that's required to find thousands of conversations listed by title.",
-    "source": "AI - Ars Technica",
-    "published": "2026-10-20T12:33:13+00:00",
-    "angle": "Major privacy alert: Meta's AI is leaking private user conversations into public search results."
-  },
-  "draft": {
-    "title": "Meta Muse leaks private chats",
-    "hook_text": "Meta Muse leaked your secrets",
-    "beats": [
-      {
-        "line": "Meta Muse leaks thousands of private user chats.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Meta Muse",
-        "outlet": "",
-        "domain": "meta.com",
-        "headline": "",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-        "tag": "Meta Muse leaks",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Meta",
-            "domain": "meta.com"
-          }
-        ]
-      },
-      {
-        "line": "The flaw triggers when users share links to their chat sessions.",
-        "visual": "clip",
-        "query": "person holding smartphone",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Shared links exposed",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Meta",
-            "domain": "meta.com"
-          }
-        ]
-      },
-      {
-        "line": "A single query reveals these conversations listed by their titles.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "1 query",
-        "small": "to find conversations",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Search reveals chats",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The breach includes sensitive personal details and confidential business data.",
-        "visual": "clip",
-        "query": "business professional working on laptop",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Business data exposed",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This happens because Meta failed to secure public index access.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "Ars Technica",
-        "domain": "arstechnica.com",
-        "headline": "Meta Muse exposes users personal and business secrets",
-        "url": "",
-        "tag": "Meta security failure",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Meta",
-            "domain": "meta.com"
-          }
-        ]
-      },
-      {
-        "line": "Thousands of user sessions are currently sitting out in the open.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "Thousands",
-        "small": "of sessions leaked",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Thousands of chats",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you ever trust AI with your private business documents?",
-        "visual": "clip",
-        "query": "person looking concerned at screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Trusting AI privacy",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Alert and urgent, shifting to concerned skepticism about privacy.",
-    "thin": false,
-    "caption": "Meta Muse has exposed thousands of private user conversations through a simple search vulnerability. Shared chat links are being indexed, revealing sensitive personal and business secrets. Would you ever trust AI with your private business documents?",
-    "hashtags": [
-      "Meta",
-      "MetaMuse",
-      "CyberSecurity",
-      "Privacy",
-      "AI"
-    ],
-    "sources": [
-      "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-    ],
-    "script": "Meta Muse leaks thousands of private user chats.\nThe flaw triggers when users share links to their chat sessions.\nA single query reveals these conversations listed by their titles.\nThe breach includes sensitive personal details and confidential business data.\nThis happens because Meta failed to secure public index access.\nThousands of user sessions are currently sitting out in the open.\nWould you ever trust AI with your private business documents?",
-    "keywords": [
-      "person holding smartphone",
-      "business professional working on laptop",
-      "person looking concerned at screen"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "hook_before": "Meta Muse just exposed thousands of private user conversations.",
-    "hook_score": 39,
-    "evidence": [
-      {
-        "claim": "Meta Muse leaked your secrets",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-      },
-      {
-        "claim": "Meta Muse leaks thousands of private user chats.",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-      },
-      {
-        "claim": "The flaw triggers when users share links to their chat sessions.",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-      },
-      {
-        "claim": "A single query reveals these conversations listed by their titles.",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-      },
-      {
-        "claim": "The breach includes sensitive personal details and confidential business data.",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-      },
-      {
-        "claim": "This happens because Meta failed to secure public index access.",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-      },
-      {
-        "claim": "Thousands of user sessions are currently sitting out in the open.",
-        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 0,
-    "source_links": [
-      "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-    ],
-    "visual_status": "skipped",
-    "visual_notes": [],
-    "editor": {
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong, factual script, but the visuals are repetitive and lack dynamic variety.",
-      "script_fixes": [
-        "LINE 5: Change to 'This occurred because Meta failed to configure robots.txt to block public indexing.'"
-      ],
-      "visual_beats": [
-        0,
-        2,
-        5
-      ],
-      "visual_notes": [
-        "line 1: The same robotic hand image is held for too long across multiple frames.",
-        "line 3: The visual is static; it should show a screen recording of the search query.",
-        "line 6: The visual is just text; it needs a representation of the thousands of exposed files."
-      ],
-      "reviewer": "gemini"
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
+      "link": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
+      "summary": "Spotify says it has removed more than 50 million songs considered AI-generated slop or spam from user recommendations over the past year. That's according to an announcement on Tuesday, which says Spotify has also made changes to its recommendation system to highlight more music made by human artists. \"Our editors hold the same standard and […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-20T14:18:37+00:00",
+      "angle": "Spotify just nuked 50 million AI-generated songs from its platform."
     },
-    "credits": [],
-    "voice_used": "Paula (Fish Audio)",
-    "visual_summary": "1 AI images, 4 cards"
-  },
+    {
+      "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
+      "link": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+      "summary": "Eka Robotics may be the first robotic arm that is actually good at picking a wide range of objects up, and it is so smooth and human-like, it is wowing the industry.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-20T13:00:00+00:00",
+      "angle": "This new robotic arm is so human-like it's actually scaring the industry."
+    },
+    {
+      "title": "Publish fake stats, get cited in LLMs",
+      "link": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "summary": "",
+      "source": "peec.ai",
+      "published": "2026-10-20T13:06:22+00:00",
+      "buzz": "Hacker News 96 points",
+      "angle": "Researchers proved you can trick AI into citing fake facts by publishing them online."
+    }
+  ],
+  "choose_deadline": "2026-10-20T21:06:13.226091+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIff2rXgKT9j9BHT-P129EQ4jvnuY3DAAIaJwACvW25VpHRekqC0bHCPQQ",
-  "queue": [],
+  "video_file_id": null,
+  "queue": [
+    {
+      "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+      "video_file_id": "BAACAgUAAxkDAAIff2rXgKT9j9BHT-P129EQ4jvnuY3DAAIaJwACvW25VpHRekqC0bHCPQQ",
+      "caption": "Meta Muse has exposed thousands of private user conversations through a simple search vulnerability. Shared chat links are being indexed, revealing sensitive personal and business secrets. Would you ever trust AI with your private business documents?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#Meta #MetaMuse #CyberSecurity #Privacy #AI",
+      "extra": false,
+      "meta": {
+        "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+        "kind": "news",
+        "source": "AI - Ars Technica",
+        "engine": "fish",
+        "voice": "Paula (Fish Audio)",
+        "person": false,
+        "words": 70,
+        "visuals": "1 AI images, 4 cards",
+        "editor": 8.5,
+        "writer": "gemini",
+        "hook_score": 39,
+        "made": "2026-10-20T20:35+05:30"
+      },
+      "post_at": "2026-10-20T21:30:00+05:30"
+    }
+  ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-10-20T20:34:51.421534+05:30",
+  "preview_deadline": null,
   "last_gender": "female",
-  "pending_offer": true,
+  "pending_offer": false,
   "offer_log": {
     "date": "2026-10-20",
     "done": [
@@ -663,7 +468,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
     {
       "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
@@ -738,50 +542,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Artificial intelligence answers: what is the expected result of the Paris and Barcelona summit?",
-            "link": "https://www.goal.com/en-in/news/artificial-intelligence-answers-what-is-the-expected-result-of-the-paris-and-barcelona-summit/blte7d63117ba6b3df3",
-            "summary": "Artificial intelligence answers: what is the expected result of the Paris and Barcelona summit? Goal.com",
-            "source": "Goal.com",
-            "published": "2026-10-20T12:22:30+00:00",
-            "angle": ""
-          },
-          {
-            "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
-            "link": "https://newsroom.ibm.com/campaign?item=2998",
-            "summary": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale IBM Newsroom",
-            "source": "IBM Newsroom",
-            "published": "2026-10-20T12:08:07+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Not Anthropic. Not OpenAI. This Is the Artificial Intelligence (AI) Stock I'd Buy Before the Next Mega-IPO.",
-            "link": "https://www.fool.com/investing/2026/10/20/not-anthropic-not-openai-this-is-the-artificial-in/",
-            "summary": "Not Anthropic. Not OpenAI. This Is the Artificial Intelligence (AI) Stock I'd Buy Before the Next Mega-IPO. The Motley Fool",
-            "source": "The Motley Fool",
-            "published": "2026-10-20T12:04:14+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-10-20T18:30:49.899337+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1680,6 +1440,270 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+          "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+          "summary": "A single query is all that's required to find thousands of conversations listed by title.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-20T12:33:13+00:00",
+          "angle": "Major privacy alert: Meta's AI is leaking private user conversations into public search results."
+        },
+        "draft": {
+          "title": "Meta Muse leaks private chats",
+          "hook_text": "Meta Muse leaked your secrets",
+          "beats": [
+            {
+              "line": "Meta Muse leaks thousands of private user chats.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta Muse",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+              "tag": "Meta Muse leaks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "The flaw triggers when users share links to their chat sessions.",
+              "visual": "clip",
+              "query": "person holding smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Shared links exposed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "A single query reveals these conversations listed by their titles.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1 query",
+              "small": "to find conversations",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Search reveals chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The breach includes sensitive personal details and confidential business data.",
+              "visual": "clip",
+              "query": "business professional working on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Business data exposed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This happens because Meta failed to secure public index access.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Meta Muse exposes users personal and business secrets",
+              "url": "",
+              "tag": "Meta security failure",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Thousands of user sessions are currently sitting out in the open.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Thousands",
+              "small": "of sessions leaked",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Thousands of chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you ever trust AI with your private business documents?",
+              "visual": "clip",
+              "query": "person looking concerned at screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting AI privacy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Alert and urgent, shifting to concerned skepticism about privacy.",
+          "thin": false,
+          "caption": "Meta Muse has exposed thousands of private user conversations through a simple search vulnerability. Shared chat links are being indexed, revealing sensitive personal and business secrets. Would you ever trust AI with your private business documents?",
+          "hashtags": [
+            "Meta",
+            "MetaMuse",
+            "CyberSecurity",
+            "Privacy",
+            "AI"
+          ],
+          "sources": [
+            "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+          ],
+          "script": "Meta Muse leaks thousands of private user chats.\nThe flaw triggers when users share links to their chat sessions.\nA single query reveals these conversations listed by their titles.\nThe breach includes sensitive personal details and confidential business data.\nThis happens because Meta failed to secure public index access.\nThousands of user sessions are currently sitting out in the open.\nWould you ever trust AI with your private business documents?",
+          "keywords": [
+            "person holding smartphone",
+            "business professional working on laptop",
+            "person looking concerned at screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Meta Muse just exposed thousands of private user conversations.",
+          "hook_score": 39,
+          "evidence": [
+            {
+              "claim": "Meta Muse leaked your secrets",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "Meta Muse leaks thousands of private user chats.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "The flaw triggers when users share links to their chat sessions.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "A single query reveals these conversations listed by their titles.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "The breach includes sensitive personal details and confidential business data.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "This happens because Meta failed to secure public index access.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            },
+            {
+              "claim": "Thousands of user sessions are currently sitting out in the open.",
+              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+          ],
+          "visual_status": "skipped",
+          "visual_notes": [],
+          "editor": {
+            "overall": 8.5,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 9,
+              "accuracy": 10,
+              "visuals": 6,
+              "flow": 9
+            },
+            "one_line": "Strong, factual script, but the visuals are repetitive and lack dynamic variety.",
+            "script_fixes": [
+              "LINE 5: Change to 'This occurred because Meta failed to configure robots.txt to block public indexing.'"
+            ],
+            "visual_beats": [
+              0,
+              2,
+              5
+            ],
+            "visual_notes": [
+              "line 1: The same robotic hand image is held for too long across multiple frames.",
+              "line 3: The visual is static; it should show a screen recording of the search query.",
+              "line 6: The visual is just text; it needs a representation of the thousands of exposed files."
+            ],
+            "reviewer": "gemini"
+          },
+          "credits": [],
+          "voice_used": "Paula (Fish Audio)",
+          "visual_summary": "1 AI images, 4 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAIff2rXgKT9j9BHT-P129EQ4jvnuY3DAAIaJwACvW25VpHRekqC0bHCPQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIff2rXgKT9j9BHT-P129EQ4jvnuY3DAAIaJwACvW25VpHRekqC0bHCPQQ",
+      "history_title": "Meta Muse exposes users' personal and business secrets when they share conversations"
     }
   ],
   "posted_ids": [
@@ -1715,7 +1739,6 @@
     "BAACAgUAAxkDAAIfUGrXW_VWx3R7PAf4PMoSeQTxwXzzAALJJgACvW25VpqJ3ClxBjX7PQQ"
   ],
   "history": [
-    "AI Can Detect Hidden Signs of Aging in the 3D Architecture of DNA",
     "Kolibri: A Sovereign Open-Weight Model",
     "Capcom is preparing for a ‘future where we create games together with AI’",
     "I quit OpenAI because its culture is broken",
@@ -1814,13 +1837,10 @@
     "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
     "New York City Public Schools banning AI use through middle school starting this year",
     "A visit to Samsung’s massive new semiconductor hub",
-    "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool"
+    "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
+    "Meta Muse exposes users' personal and business secrets when they share conversations"
   ],
   "posted_log": [
-    {
-      "title": "UK unveils new policy to constantly monitor AI-based medical devices",
-      "at": "2026-10-06T20:15:27.347164+05:30"
-    },
     {
       "title": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
       "at": "2026-10-06T22:45:25.671315+05:30"
@@ -2215,29 +2235,34 @@
       "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
       "at": "2026-10-20T18:00:36.398805+05:30",
       "event": "Otter.ai just secured three hundred twenty million dollars. General Catalyst backed the meeting note-taking tool through its Customer Value Fund. The fund supplies capital without diluting equity while taking returns on marketing results. O"
+    },
+    {
+      "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+      "at": "2026-10-20T20:35:26.171918+05:30",
+      "event": "Meta Muse leaks thousands of private user chats. The flaw triggers when users share links to their chat sessions. A single query reveals these conversations listed by their titles. The breach includes sensitive personal details and confiden"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-20T18:00+05:30",
-    "techcrunch.com": 14,
-    "theverge.com": 5,
-    "arstechnica.com": 3,
-    "technologyreview.com": 4,
+    "at": "2026-10-20T20:35+05:30",
+    "techcrunch.com": 17,
+    "theverge.com": 7,
+    "arstechnica.com": 4,
+    "technologyreview.com": 5,
     "openai.com": 1,
     "blog.google": 0,
     "deepmind.google": 0,
-    "huggingface.co": 1,
+    "huggingface.co": 2,
     "blogs.nvidia.com": 3,
     "inc42.com": 2,
     "news.google.com": 42,
-    "Google News (VentureBeat, AIM, AI News)": 24,
+    "Google News (VentureBeat, AIM, AI News)": 25,
     "producthunt.com": 12,
-    "Hacker News": 5,
+    "Hacker News": 4,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 4
+    "filtered out (PR / local events / market fluff)": 5
   },
   "guarantee_since": "2026-10-10T13:19:00+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -2246,7 +2271,7 @@
   "report_day": "2026-10-19",
   "ig_count": {
     "day": "2026-10-20",
-    "at": "2026-10-20T20:24:29.340193+05:30",
+    "at": "2026-10-20T20:35:26.171951+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2270,7 +2295,7 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-20",
-    "calls": 502,
+    "calls": 505,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2305,9 +2330,9 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 20,
+        "ok": 22,
         "busy": 11,
-        "other": 13,
+        "other": 14,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
