@@ -408,6 +408,15 @@ main.next_story(_s)
 check("tried keeps order", _s["tried"][-2:], ["Old story 58", "Qwen on a PS5"])
 check("tried keeps 60", len(_s["tried"]), 60)
 check("rejected story not re-picked", picked, ["Fresh news"])
+# a run that already took long doesn't start another story (the job would be cut off at 30 min and save nothing)
+picked.clear()
+_rs, main.RUN_START = main.RUN_START, main.RUN_START - main.RUN_BUDGET - 1
+_s = {"tried": [], "topic": {"title": "Slow story"}, "stage": "rendering", "spare": [{"title": "Fresh news"}],
+      "history": [], "posted_log": []}
+main.next_story(_s)
+main.RUN_START = _rs
+check("long run: no new story", picked, [])
+check("long run: reel reset", (_s["stage"], _s["tried"]), ("idle", ["Slow story"]))
 main.tg.send, main.start_script = _send, _start
 
 # a reel waiting to retry a failed upload covers its slot, so no second reel is rushed out for it

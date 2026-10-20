@@ -520,12 +520,21 @@ def make_specific(draft, topic):
     return draft
 
 
+RUN_START = time.time()
+RUN_BUDGET = 15 * 60  # a GitHub job is stopped after 30 minutes and then saves nothing: leave room for the reel
+
+
 def next_story(s, reason=""):
     """Moves on to another story when this one can't be verified, so the posting slot still gets a reel."""
     title = (s.get("topic") or {}).get("title", "")
     # keep the order (oldest first): a set dropped random titles here, so rejected stories were picked again
     s["tried"] = ([t for t in s.get("tried") or [] if t and t != title] + ([title] if title else []))[-60:]
     tried = s["tried"]
+    if time.time() - RUN_START > RUN_BUDGET:  # this run already took long: save now, the next run starts a new story
+        print(f"Run budget used ({reason}); the next run picks another story")
+        if not resume_paused(s):
+            reset_reel(s)
+        return
     spare = [c for c in (s.get("spare") or []) if not news.recent_match(c.get("title", ""), list(tried) + recent_titles(s))]
     if not spare:
         heads = news.dedupe(news.fetch_headlines(), recent_titles(s) + list(tried))
