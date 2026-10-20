@@ -1,0 +1,5 @@
+Claude check-in: the agent was stuck from yesterday 2:20 pm, so the 7:00 pm and 9:30 pm reels yesterday and today's 9:00 am reel were missed.
+
+Why: one reel failed the editor (5.2/10), and the agent kept rewriting and switching stories inside one run until GitHub stopped it at 30 minutes. That left it frozen in "making the reel".
+
+Fixed: it now notices a stopped run, drops that story and moves on, and it no longer keeps switching stories in one long run. Posting should restart within the hour. Nothing for you to do.
