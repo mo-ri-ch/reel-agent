@@ -1,0 +1,78 @@
+{
+ "made": "20261020-0954",
+ "title": "The fossil fuel comeback is here",
+ "hook_text": "Fossil fuel infrastructure hits ten-year high",
+ "hook_before": null,
+ "script": "The US is building more fossil fuel infrastructure than it has in a decade.\nAt the same time, renewable energy growth is slowing down.\nElectricity demand is climbing faster than it has in more than ten years.\nMore data centers, factories, and electric vehicles are plugging into the grid.\nA report by the Environmental Defense Fund and Atlas Public Policy revealed the surge.\nWill your power bill go up because of this?",
+ "words": 72,
+ "beats": [
+  {
+   "line": "The US is building more fossil fuel infrastructure than it has in a decade.",
+   "visual": "stat"
+  },
+  {
+   "line": "At the same time, renewable energy growth is slowing down.",
+   "visual": "clip"
+  },
+  {
+   "line": "Electricity demand is climbing faster than it has in more than ten years.",
+   "visual": "clip"
+  },
+  {
+   "line": "More data centers, factories, and electric vehicles are plugging into the grid.",
+   "visual": "clip"
+  },
+  {
+   "line": "A report by the Environmental Defense Fund and Atlas Public Policy revealed the surge.",
+   "visual": "source"
+  },
+  {
+   "line": "Will your power bill go up because of this?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 7.2,
+  "scores": {
+   "hook": 8,
+   "specific": 7,
+   "substance": 7,
+   "accuracy": 8,
+   "visuals": 6,
+   "flow": 7
+  },
+  "one_line": "Strong energy report reel, but visuals are repetitive and editing artifacts remain.",
+  "script_fixes": [
+   "LINE 5: specify Environmental Defense Fund and Atlas Public Policy's report title or exact finding instead of generic text"
+  ],
+  "visual_beats": [
+   0,
+   1,
+   3,
+   4
+  ],
+  "visual_notes": [
+   "line 1: Bounding box editing artifact visible around 'Fossil'.",
+   "line 2: Wind farm image held across multiple frames without movement or change.",
+   "line 4: Warehouse interior image poorly represents data centers and electric vehicles.",
+   "line 5: Shows The Verge logo and random text boxes instead of Environmental Defense Fund branding."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 25.07,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.4,
+ "cuts": [
+  7.67,
+  9.67,
+  13.97,
+  16.27
+ ],
+ "first_cut_at": 7.67,
+ "avg_shot_seconds": 5.01,
+ "longest_shot_seconds": 8.8,
+ "verdict": "rejected",
+ "words_per_minute": 172
+}
