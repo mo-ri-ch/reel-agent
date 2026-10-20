@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -186,16 +186,49 @@
     "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "General Catalyst backed the meeting note-taking to…: the image is completely black and unreadable",
+      "The fund supplies capital without diluting equity …: the card is almost empty with just a tiny 'No' visible"
+    ],
+    "editor": {
+      "overall": 9.0,
+      "scores": {
+        "hook": 9,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 8,
+        "flow": 9
+      },
+      "one_line": "Strong, specific tech news reporting with a clear hook and solid data.",
+      "script_fixes": [],
+      "visual_beats": [
+        4
+      ],
+      "visual_notes": [
+        "line 5: Generic stock code and project board images used instead of specific Otter.ai product feat"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Otter.ai: otter.ai",
+      "Otter.ai: otter.ai",
+      "Otter.ai meeting assistant: otter.ai",
+      "Otter.ai meeting assistant: otter.ai"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "4 official images, 4 clips, 2 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIfUGrXW_VWx3R7PAf4PMoSeQTxwXzzAALJJgACvW25VpqJ3ClxBjX7PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T17:40:47.173026+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-20T18:17:57.738933+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-20",
@@ -685,250 +718,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "A visit to Samsung’s massive new semiconductor hub",
-          "link": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
-          "summary": "Generative AI models run on powerful chips known as GPUs, which depend on stacks of specialized memory chips packaged with the processor. To meet growing demand for memory, Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Three fabs already operate around the clock, and a fourth is coming online. Construction…",
-          "source": "Artificial intelligence – MIT Technology Review",
-          "published": "2026-10-20T09:00:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Inside Samsung's Massive New Chip Hub",
-          "hook_text": "Samsung's new chip hub",
-          "beats": [
-            {
-              "line": "Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Samsung semiconductor hub",
-              "outlet": "",
-              "domain": "samsung.com",
-              "headline": "",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
-              "tag": "Pyeongtaek manufacturing complex",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Samsung",
-                  "domain": "samsung.com"
-                }
-              ]
-            },
-            {
-              "line": "Generative AI models run on powerful chips known as graphics processing units.",
-              "visual": "clip",
-              "query": "microchip manufacturing cleanroom",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "powerful graphics units",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These processors depend on stacks of specialized memory chips packaged directly with them.",
-              "visual": "clip",
-              "query": "computer hardware components",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "specialized memory chips",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Three fabrication plants already operate around the clock at the site.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "3",
-              "small": "fabs operating",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "three fabs operating",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "A fourth facility is now coming online to meet growing demand for memory.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Samsung Pyeongtaek fab four",
-              "outlet": "",
-              "domain": "samsung.com",
-              "headline": "",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
-              "tag": "fourth fab coming online",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Samsung",
-                  "domain": "samsung.com"
-                }
-              ]
-            },
-            {
-              "line": "Will this massive new complex keep up with global hardware needs?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "MIT Technology Review",
-              "domain": "technologyreview.com",
-              "headline": "A visit to Samsung’s massive new semiconductor hub",
-              "url": "",
-              "tag": "global hardware needs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "fast-paced and factual, explaining the scale of hardware manufacturing behind generative AI",
-          "thin": false,
-          "caption": "Samsung is building a massive new semiconductor complex in Pyeongtaek, South Korea, with four fabs operating or coming online to meet memory chip demand for AI GPUs. Will this expansion satisfy global hardware needs? Read the full story on MIT Technology Review.",
-          "hashtags": [
-            "Samsung",
-            "Semiconductors",
-            "Hardware",
-            "Pyeongtaek"
-          ],
-          "sources": [
-            "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-          ],
-          "script": "Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea.\nGenerative AI models run on powerful chips known as graphics processing units.\nThese processors depend on stacks of specialized memory chips packaged directly with them.\nThree fabrication plants already operate around the clock at the site.\nA fourth facility is now coming online to meet growing demand for memory.\nWill this massive new complex keep up with global hardware needs?",
-          "keywords": [
-            "microchip manufacturing cleanroom",
-            "computer hardware components"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Samsung's new chip hub",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-            },
-            {
-              "claim": "Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea.",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-            },
-            {
-              "claim": "Generative AI models run on powerful chips known as graphics processing units.",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-            },
-            {
-              "claim": "These processors depend on stacks of specialized memory chips packaged directly with them.",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-            },
-            {
-              "claim": "Three fabrication plants already operate around the clock at the site.",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-            },
-            {
-              "claim": "A fourth facility is now coming online to meet growing demand for memory.",
-              "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Generative AI models run on powerful chips known a…: The image is blank/black, missing the requested cleanroom video.",
-            "These processors depend on stacks of specialized m…: The image is blank/black with only a blurred placeholder box, missing the computer hardware video.",
-            "Three fabrication plants already operate around th…: The image is completely blank, missing the requested number 3 graphic.",
-            "A fourth facility is now coming online to meet gro…: The image is completely blank, missing the requested facility images.",
-            "Will this massive new complex keep up with global …: The image is completely blank, missing the requested source card.",
-            "The visual element for the image/video frame is completely missing or blank.",
-            "The visual element for the image/video frame is completely missing or blank.",
-            "The visual element for the image/video frame is completely missing or blank.",
-            "The visual element for the image/video frame is completely missing or blank.",
-            "The visual element for the image/video frame is completely missing or blank."
-          ],
-          "editor": {
-            "overall": 8.0,
-            "scores": {
-              "hook": 8,
-              "specific": 8,
-              "substance": 8,
-              "accuracy": 9,
-              "visuals": 7,
-              "flow": 8
-            },
-            "one_line": "Strong, specific industry reporting, but visual pacing needs variety to avoid repetition.",
-            "script_fixes": [
-              "LINE 2: specify leading AI accelerators like Nvidia H100 instead of general graphics processing units."
-            ],
-            "visual_beats": [
-              2,
-              4
-            ],
-            "visual_notes": [
-              "line 3: Same blank typographic background style repeats across too many consecutive lines without ",
-              "line 5: Generic Samsung app icon placeholder appears as a visual instead of actual fab imagery."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [
-            "Samsung semiconductor hub: Oskar Alexanderson (CC BY-SA 2.0), via Wikimedia Commons"
-          ],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "1 real photos, 5 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIfHmrXPzqSWmbTCvysK96hASyZ_WvMAAJvJgACvW25VpGAE8FoFYepPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIfHmrXPzqSWmbTCvysK96hASyZ_WvMAAJvJgACvW25VpGAE8FoFYepPQQ",
-      "history_title": "A visit to Samsung’s massive new semiconductor hub"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1797,6 +1586,208 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
+          "link": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+          "summary": "Meeting note-taking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend. Otter.ai said that it will use these funds for enterprise growth, go-to-market strategy, international expansion, and product innovation. […]",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-20T11:00:00+00:00",
+          "angle": "Otter.ai scores a massive $320M funding round, proving meeting bots are becoming billion-dollar giants."
+        },
+        "draft": {
+          "title": "Otter.ai raises $320M",
+          "hook_text": "Otter.ai just secured $320 million.",
+          "beats": [
+            {
+              "line": "Otter.ai just secured three hundred twenty million dollars.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Otter.ai",
+              "outlet": "",
+              "domain": "otter.ai",
+              "headline": "",
+              "url": "https://otter.ai",
+              "tag": "Otter.ai raises $320M",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Otter.ai",
+                  "domain": "otter.ai"
+                }
+              ]
+            },
+            {
+              "line": "General Catalyst backed the meeting note-taking tool through its Customer Value Fund.",
+              "visual": "clip",
+              "query": "venture capital meeting office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "General Catalyst fund",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The fund supplies capital without diluting equity while taking returns on marketing results.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$320M",
+              "small": "non-dilutive funding",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "No equity dilution",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Otter.ai will pump the cash into enterprise growth and international expansion.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Otter.ai meeting assistant",
+              "outlet": "",
+              "domain": "otter.ai",
+              "headline": "",
+              "url": "https://otter.ai",
+              "tag": "Enterprise and expansion",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Otter.ai",
+                  "domain": "otter.ai"
+                }
+              ]
+            },
+            {
+              "line": "The company also plans heavy investments in product innovation.",
+              "visual": "clip",
+              "query": "software product development screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Product innovation",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let an AI take minutes in your next meeting?",
+              "visual": "clip",
+              "query": "person listening to laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Meeting note AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and factual, explaining the funding deal with quick pacing",
+          "thin": false,
+          "caption": "Otter.ai has raised $320 million from General Catalyst's Customer Value Fund to expand its meeting assistant tool. The startup plans to use the non-dilutive capital for enterprise growth and product innovation. Would you use an AI note-taker at work?",
+          "hashtags": [
+            "Otterai",
+            "GeneralCatalyst",
+            "AITools",
+            "Startups",
+            "TechNews"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+          ],
+          "script": "Otter.ai just secured three hundred twenty million dollars.\nGeneral Catalyst backed the meeting note-taking tool through its Customer Value Fund.\nThe fund supplies capital without diluting equity while taking returns on marketing results.\nOtter.ai will pump the cash into enterprise growth and international expansion.\nThe company also plans heavy investments in product innovation.\nWould you let an AI take minutes in your next meeting?",
+          "keywords": [
+            "venture capital meeting office",
+            "software product development screen",
+            "person listening to laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Otter.ai just secured $320 million.",
+              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+            },
+            {
+              "claim": "Otter.ai just secured three hundred twenty million dollars.",
+              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+            },
+            {
+              "claim": "General Catalyst backed the meeting note-taking tool through its Customer Value Fund.",
+              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+            },
+            {
+              "claim": "The fund supplies capital without diluting equity while taking returns on marketing results.",
+              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+            },
+            {
+              "claim": "Otter.ai will pump the cash into enterprise growth and international expansion.",
+              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+            },
+            {
+              "claim": "The company also plans heavy investments in product innovation.",
+              "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T17:40:47.173026+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2333,8 +2324,8 @@
       "event": "Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Generative AI models run on powerful chips known as graphics processing units. These processors depend on stacks of specialized memory chips p"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T15:50+05:30",
@@ -2362,7 +2353,7 @@
   "report_day": "2026-10-19",
   "ig_count": {
     "day": "2026-10-20",
-    "at": "2026-10-20T17:30:47.173065+05:30",
+    "at": "2026-10-20T17:45:27.100709+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2382,16 +2373,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-20",
-    "calls": 411,
+    "calls": 416,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 211,
+        "ok": 216,
         "busy": 79,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2500,29 +2491,6 @@
     "gemini-3-flash-preview": 1792484312.1053905
   },
   "editor_log": [
-    {
-      "at": "2026-10-19T08:26+05:30",
-      "title": "Sam Altman’s World Debuts ID Verification for AI Agents",
-      "overall": 8.7,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 10,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong, factual reporting, but visual variety and pacing need significant improvement.",
-      "fixes": [
-        "LINE 2: Change 'His company, World' to 'World, formerly Worldcoin,' for better clarity.",
-        "LINE 8: Change 'Would you trust a verified AI?' to 'Will this solve the AI bot problem?' for a more news-oriented hook."
-      ],
-      "visual": [
-        "line 1: The same logo image is held for too long across multiple frames.",
-        "line 2: The World logo is repeated from the previous line; needs a new visual.",
-        "line 4: The visual is static text; needs a graphic representing 'human-authorized' agents."
-      ]
-    },
     {
       "at": "2026-10-20T11:43+05:30",
       "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
@@ -2938,6 +2906,24 @@
       "visual": [
         "line 4: Elon Musk initials circle card used instead of a clean photo matching line 3's style",
         "line 5: Generic scrolling code and numbers stock footage does not clearly represent equity distrib"
+      ]
+    },
+    {
+      "at": "2026-10-20T17:47+05:30",
+      "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting",
+      "overall": 9.0,
+      "scores": {
+        "hook": 9,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 8,
+        "flow": 9
+      },
+      "one_line": "Strong, specific tech news reporting with a clear hook and solid data.",
+      "fixes": [],
+      "visual": [
+        "line 5: Generic stock code and project board images used instead of specific Otter.ai product feat"
       ]
     }
   ],
