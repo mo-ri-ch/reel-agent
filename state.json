@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -221,11 +221,60 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Google is bringing its Gemini AI to your car dashb…: The image shows the Gemini logo, not a car dashboard as requested.",
+      "This update lets Gemini access your personal infor…: The shot is blank/empty; it does not show the requested number 6.",
+      "It pulls data from Gmail, Calendar, Maps, Photos, …: The shot is blank/empty; it does not show the requested Google Maps imagery.",
+      "You can ask Gemini about your flight status while …: The shot is just text; it does not show the requested stock video of a driver.",
+      "The AI uses your data to provide context-aware ans…: The shot is just text; it does not show the requested stock video of a car dashboard.",
+      "Would you let AI manage your schedule while drivin…: The image shows a map of Iowa, which is unrelated to the line about managing a schedule while driving.",
+      "The shot is an almost-empty card with just a logo and text.",
+      "The shot is an almost-empty card with just a logo and text.",
+      "The shot is an almost-empty card with just text.",
+      "The shot is an almost-empty card with just text.",
+      "The shot is an almost-empty card with just text.",
+      "The shot is an almost-empty card with just text.",
+      "The shot is an almost-empty card with just text.",
+      "The shot is an almost-empty card with just text."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, clear reporting, but the visuals are repetitive and lack dynamic variety.",
+      "script_fixes": [
+        "LINE 5: Remove this line; it is vague filler that adds no new information.",
+        "LINE 8: Change to 'Would you trust Gemini to manage your schedule while driving?' for more impact."
+      ],
+      "visual_beats": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "visual_notes": [
+        "line 2: The same static text layout is held for too long across multiple frames.",
+        "line 3: Visuals are just a series of app icons; needs more dynamic B-roll of the car interface.",
+        "line 5: The visual is just a text box; lacks a supporting graphic or animation.",
+        "line 7: The Android Auto logo is held for too long without a visual transition."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "8 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIfwWrX_5r0-C1BSEq0UZdvH71w_7mCAAKZHwACIdHBVmjhYXijtf01PQQ",
   "queue": [
     {
       "title": "Closed downtown San Francisco Centre mall could be turned into an AI data center, according to proposal from K-G Growth Partners",
@@ -271,9 +320,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-21T05:19:44.733904+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-21T05:56:11.195910+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-21",
@@ -749,51 +798,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "ChatGPT now lets you lock your chats",
-            "link": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-            "summary": "The company says the feature is designed for situations where users might be discussing something personal or planning a surprise and want to keep those conversations private when handing their device to friends or family to show them something in another chat.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-20T18:36:53+00:00",
-            "angle": "ChatGPT finally lets you lock specific chats—perfect for keeping your private plans and surprises hidden from prying eyes."
-          },
-          {
-            "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
-            "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-            "summary": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report published this week, researchers at the security firm Claroc say they found more than 6,800 Muse links through public DNS records. […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-20T18:07:34+00:00",
-            "angle": "Meta had to pause its new AI feature because private user conversations were accidentally leaking publicly on the web."
-          },
-          {
-            "title": "Publish fake stats, get cited in LLMs",
-            "link": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
-            "summary": "",
-            "source": "peec.ai",
-            "published": "2026-10-20T13:06:22+00:00",
-            "buzz": "Hacker News 282 points",
-            "angle": "A massive wake-up call: researchers proved you can trick AI models into citing fake statistics just by publishing them online."
-          }
-        ],
-        "choose_deadline": "2026-10-21T02:36:19.691760+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1400,6 +1404,243 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Google’s more personalized Gemini AI is heading to your car",
+          "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+          "summary": "Google is bringing Personal Intelligence to Gemini AI in your car. With this update, Gemini in Android Auto and cars with Google built-in can tap into your information across Google apps, including Gmail, Calendar, Maps, Photos, YouTube, and Search. As an example, Google says you can ask Gemini about your flight status if you're driving […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-20T22:11:34+00:00",
+          "angle": "Google is bringing Gemini directly into your car's dashboard to manage your life while you drive."
+        },
+        "draft": {
+          "title": "Gemini AI comes to your car dashboard",
+          "hook_text": "Gemini AI hits the road",
+          "beats": [
+            {
+              "line": "Google is bringing its Gemini AI to your car dashboard.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Gemini",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://gemini.google.com/",
+              "tag": "Gemini in cars",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This update lets Gemini access your personal information across six different apps.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "6",
+              "small": "connected apps",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Six connected apps",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It pulls data from Gmail, Calendar, Maps, Photos, YouTube, and Search.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google Maps",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://www.google.com/maps",
+              "tag": "Apps Gemini can access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You can ask Gemini about your flight status while driving.",
+              "visual": "clip",
+              "query": "driver talking to dashboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Flight status checks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The AI uses your data to provide context-aware answers.",
+              "visual": "clip",
+              "query": "car dashboard display",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Context-aware AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This feature is rolling out to cars with Google built-in.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://www.google.com",
+              "tag": "Google built-in rollout",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The system also supports Android Auto for your existing vehicle.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Android Auto",
+              "outlet": "",
+              "domain": "android.com",
+              "headline": "",
+              "url": "https://www.android.com/auto/",
+              "tag": "Android Auto support",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let AI manage your schedule while driving?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "modern car dashboard with digital interface",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Would you use this?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Conversational and sharp, focusing on the utility of having personal data in the car.",
+          "thin": false,
+          "caption": "Google is bringing Gemini AI to your car, allowing it to tap into your Gmail, Calendar, Maps, Photos, YouTube, and Search. You can now ask about flight status or schedule updates directly from your dashboard. Would you let AI manage your schedule while driving?",
+          "hashtags": [
+            "Google",
+            "Gemini",
+            "AndroidAuto",
+            "AI",
+            "CarTech"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+          ],
+          "script": "Google is bringing its Gemini AI to your car dashboard.\nThis update lets Gemini access your personal information across six different apps.\nIt pulls data from Gmail, Calendar, Maps, Photos, YouTube, and Search.\nYou can ask Gemini about your flight status while driving.\nThe AI uses your data to provide context-aware answers.\nThis feature is rolling out to cars with Google built-in.\nThe system also supports Android Auto for your existing vehicle.\nWould you let AI manage your schedule while driving?",
+          "keywords": [
+            "driver talking to dashboard",
+            "car dashboard display"
+          ],
+          "image_prompts": [
+            "modern car dashboard with digital interface"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Gemini AI hits the road",
+              "url": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/"
+            },
+            {
+              "claim": "Google is bringing its Gemini AI to your car dashboard.",
+              "url": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/"
+            },
+            {
+              "claim": "This update lets Gemini access your personal information across six different apps.",
+              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+            },
+            {
+              "claim": "It pulls data from Gmail, Calendar, Maps, Photos, YouTube, and Search.",
+              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+            },
+            {
+              "claim": "You can ask Gemini about your flight status while driving.",
+              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+            },
+            {
+              "claim": "The AI uses your data to provide context-aware answers.",
+              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+            },
+            {
+              "claim": "This feature is rolling out to cars with Google built-in.",
+              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+            },
+            {
+              "claim": "The system also supports Android Auto for your existing vehicle.",
+              "url": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-21T05:19:44.733904+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1944,8 +2185,8 @@
       "event": "Meta Muse is the tool sharing your chats. This tool lets you share your AI conversations with others. Researchers at the firm Claroc found links to these chats on the web. They discovered more than 6,800 Muse links through public DNS record"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-21T04:10+05:30",
@@ -1973,7 +2214,7 @@
   "report_day": "2026-10-20",
   "ig_count": {
     "day": "2026-10-21",
-    "at": "2026-10-21T05:15:24.709632+05:30",
+    "at": "2026-10-21T05:26:11.196175+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1993,19 +2234,19 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-21",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 90,
+    "calls": 97,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 58,
+        "ok": 64,
         "busy": 21,
-        "other": 11,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 12,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
@@ -2089,29 +2330,6 @@
     "gemini-flash-lite-latest": 1792504161.281722
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T13:39+05:30",
-      "title": "Asian shares mostly decline after AI stocks lead a rebound on Wall Street",
-      "overall": 5.3,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 4,
-        "accuracy": 7,
-        "visuals": 4,
-        "flow": 6
-      },
-      "one_line": "Informative but visually generic and lacks the specific company data required for premium news.",
-      "fixes": [
-        "LINE 4: Investors moved capital from Seoul-listed tech giants to US-based chipmakers.",
-        "LINE 5: Traders are monitoring Nvidia Blackwell demand to forecast 2027 price targets."
-      ],
-      "visual": [
-        "line 1: Static text on black background fails to capture immediate attention.",
-        "line 4: Generic stock chart photos lack specific branding or relevant data points.",
-        "line 5: Yahoo Finance logo is a generic placeholder unrelated to hardware demand."
-      ]
-    },
     {
       "at": "2026-10-20T13:48+05:30",
       "title": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
@@ -2529,6 +2747,29 @@
         "line 1: The same image is held for 4.8 seconds, exceeding the recommended limit.",
         "line 3: The same image is held for 4.8 seconds, exceeding the recommended limit.",
         "line 5: The same image is held for 4.8 seconds, exceeding the recommended limit."
+      ]
+    },
+    {
+      "at": "2026-10-21T05:26+05:30",
+      "title": "Google’s more personalized Gemini AI is heading to your car",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, clear reporting, but the visuals are repetitive and lack dynamic variety.",
+      "fixes": [
+        "LINE 5: Remove this line; it is vague filler that adds no new information.",
+        "LINE 8: Change to 'Would you trust Gemini to manage your schedule while driving?' for more impact."
+      ],
+      "visual": [
+        "line 2: The same static text layout is held for too long across multiple frames.",
+        "line 3: Visuals are just a series of app icons; needs more dynamic B-roll of the car interface.",
+        "line 5: The visual is just a text box; lacks a supporting graphic or animation."
       ]
     }
   ],
