@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -207,16 +207,51 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "PyTorch is the free toolkit used to build most AI …: The image shows an abstract colorful tunnel pattern instead of developer coding on screen.",
+      "The new developer tool helps engineers run their a…: The image shows an abstract green gradient and is credited to nvidia.com instead of showing AWS Trainium.",
+      "Amazon wants developers to use its own silicon ins…: The frame is completely blank and missing the source card for TechCrunch.",
+      "blank screen",
+      "blank screen"
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, specific tech news script, but Frame 9 inappropriately displays TechCrunch instead of Amazon hardware.",
+      "script_fixes": [],
+      "visual_beats": [
+        4
+      ],
+      "visual_notes": [
+        "line 5: Frame 9 incorrectly shows the TechCrunch logo instead of AWS silicon hardware or Amazon's "
+      ],
+      "reviewer": "gemini"
+    },
+    "editor_rounds": 1,
+    "credits": [
+      "Amazon Web Services: aws.amazon.com",
+      "Amazon Web Services: aws.amazon.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIeSWrXD1bb8bsB6g_ke7LcFzvD_FQYAAK4JQACvW25VpnOK2bXL-cRPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-20T12:10:51.083603+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-20T12:51:03.343981+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-20",
@@ -687,52 +722,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
-            "link": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-            "summary": "",
-            "source": "redact.dev",
-            "published": "2026-10-19T23:22:18+00:00",
-            "buzz": "Hacker News 201 points",
-            "angle": "WhatsApp help pages secretly hiding LLM instructions to dodge regulators is wild and very shareable."
-          },
-          {
-            "title": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
-            "link": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
-            "summary": "",
-            "source": "reuters.com",
-            "published": "2026-10-19T16:16:46+00:00",
-            "buzz": "Hacker News 114 points",
-            "angle": "The US Department of Homeland Security officially banning DeepSeek from federal agencies is major geopolitical tech news."
-          },
-          {
-            "title": "Accused OpenAI spy had folder called “Saudi Gov Docs,” FBI says",
-            "link": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
-            "summary": "US fears Saudi government will help ex-OpenAI engineer flee spying charges.",
-            "source": "AI - Ars Technica",
-            "published": "2026-10-19T20:21:53+00:00",
-            "angle": "An accused OpenAI spy having a folder called 'Saudi Gov Docs' reads straight out of a Hollywood thriller."
-          }
-        ],
-        "choose_deadline": "2026-10-20T11:10:31.448717+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1349,6 +1338,229 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+          "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+          "summary": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-19T20:09:24+00:00",
+          "angle": "Amazon is making its direct move to challenge Nvidia's dominance over AI development tools."
+        },
+        "draft": {
+          "title": "Amazon Takes on Nvidia with TorchNeuron",
+          "hook_text": "Amazon just challenged Nvidia.",
+          "beats": [
+            {
+              "line": "Amazon just launched TorchNeuron to break Nvidia's grip on PyTorch.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Amazon Web Services",
+              "outlet": "",
+              "domain": "aws.amazon.com",
+              "headline": "",
+              "url": "https://aws.amazon.com",
+              "tag": "Amazon launches TorchNeuron",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Amazon",
+                  "domain": "amazon.com"
+                },
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "PyTorch is the free toolkit used to build most AI apps.",
+              "visual": "clip",
+              "query": "developer coding on screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "PyTorch for most AI apps",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The new developer tool helps engineers run their applications on alternative chips.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "AWS Trainium",
+              "outlet": "",
+              "domain": "aws.amazon.com",
+              "headline": "",
+              "url": "https://aws.amazon.com",
+              "tag": "Run apps on alternative chips",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "AWS",
+                  "domain": "aws.amazon.com"
+                }
+              ]
+            },
+            {
+              "line": "Nvidia hardware currently dominates the market for training large language models.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia H100 GPU",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://www.nvidia.com",
+              "tag": "Nvidia dominates training market",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Amazon wants developers to use its own silicon instead of rival hardware.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+              "url": "",
+              "tag": "Amazon pushes own silicon",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Amazon",
+                  "domain": "amazon.com"
+                }
+              ]
+            },
+            {
+              "line": "Will Amazon's new software toolkit finally weaken Nvidia's market control?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1 tool",
+              "small": "Amazon TorchNeuron",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Weaken Nvidia market control",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Amazon",
+                  "domain": "amazon.com"
+                },
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "sharp, fast-paced tech journalism, confident and direct",
+          "thin": false,
+          "caption": "Amazon released TorchNeuron to challenge Nvidia's control over PyTorch development. The new tool encourages engineers to run AI models on alternative Amazon chips. Can Amazon break Nvidia's hardware monopoly?",
+          "hashtags": [
+            "Amazon",
+            "Nvidia",
+            "PyTorch",
+            "TechNews",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+          ],
+          "script": "Amazon just launched TorchNeuron to break Nvidia's grip on PyTorch.\nPyTorch is the free toolkit used to build most AI apps.\nThe new developer tool helps engineers run their applications on alternative chips.\nNvidia hardware currently dominates the market for training large language models.\nAmazon wants developers to use its own silicon instead of rival hardware.\nWill Amazon's new software toolkit finally weaken Nvidia's market control?",
+          "keywords": [
+            "developer coding on screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Amazon challenged Nvidia.",
+              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+            },
+            {
+              "claim": "Amazon launched TorchNeuron to break Nvidia's software advantage/grip on PyTorch.",
+              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+            },
+            {
+              "claim": "PyTorch is a free toolkit used to build most AI apps.",
+              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+            },
+            {
+              "claim": "The new developer tool helps engineers run their applications on alternative chips (Trainium).",
+              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+            },
+            {
+              "claim": "Nvidia hardware currently dominates the market for training large language models.",
+              "url": "https://www.geekwire.com/2026/amazon-challenges-nvidias-software-advantage-with-new-tool-for-its-ai-chips/"
+            },
+            {
+              "claim": "Amazon wants developers to use its own silicon instead of rival hardware.",
+              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-20T12:10:51.083603+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1873,8 +2085,8 @@
       "event": "Sam Altman just brought official ID verification to AI agents. His company, World, launched this feature on October 18, 2026. Developers can now issue World ID credentials to their autonomous software. This allows platforms to prove an agen"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-20T11:52+05:30",
@@ -1902,7 +2114,7 @@
   "report_day": "2026-10-19",
   "ig_count": {
     "day": "2026-10-20",
-    "at": "2026-10-20T12:05:21.251880+05:30",
+    "at": "2026-10-20T12:15:27.129489+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1922,16 +2134,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-20",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-0",
   "gemini_use": {
     "day": "2026-10-20",
-    "calls": 66,
+    "calls": 74,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 24,
+        "ok": 32,
         "busy": 8,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2039,52 +2251,6 @@
     "gemini-3.7-flash": 1792477522.8448071
   },
   "editor_log": [
-    {
-      "at": "2026-10-18T18:22+05:30",
-      "title": "Companies Are Realizing They're Spending a Fortune on AI Just So Their Employees",
-      "overall": 5.5,
-      "scores": {
-        "hook": 6,
-        "specific": 4,
-        "substance": 5,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 6
-      },
-      "one_line": "Too generic and lacks concrete company names or hard financial figures.",
-      "fixes": [
-        "LINE 1: Name specific firms instead of saying 'companies' to immediately grab attention.",
-        "LINE 2: Include the estimated total dollar amount spent on these failed tools.",
-        "LINE 3: Name the specific software or model types employees used."
-      ],
-      "visual": [
-        "line 2: Repeated use of the same Futurism logo graphic across multiple frames feels static.",
-        "line 3: Pure white background flash lacks context and visual variety.",
-        "line 5: Text on screen ('Pulling back funds') repeats concepts without adding visual data or proof"
-      ]
-    },
-    {
-      "at": "2026-10-18T18:29+05:30",
-      "title": "Nvidia CEO on AI Market Turmoil: ‘All of This Is Going to Pass’",
-      "overall": 7.8,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 9,
-        "visuals": 7,
-        "flow": 8
-      },
-      "one_line": "Strong hook and clear delivery, but visuals hold static too long and some lines feel padded.",
-      "fixes": [
-        "LINE 2: Specify the exact amount or percentage dropped instead of vague infrastructure questions.",
-        "LINE 5: Mention specific chip architectures like Blackwell or H200 to increase concrete substance."
-      ],
-      "visual": [
-        "line 1: Same graphic held across multiple frames for too long.",
-        "line 6: Article card held for multiple consecutive frames without movement."
-      ]
-    },
     {
       "at": "2026-10-18T18:44+05:30",
       "title": "Accenture weighs $1.5 billion sale of China business as AI push reshapes growth ",
@@ -2495,6 +2661,43 @@
         "line 2: Same Anthropic logo card held across multiple consecutive frames without variation.",
         "line 3: Repeated Anthropic logo graphic appears for too many consecutive lines.",
         "line 5: Static 'Data center capacity' text held for multiple frames over 8 seconds with zero visua"
+      ]
+    },
+    {
+      "at": "2026-10-20T12:19+05:30",
+      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong tech news breakdown, but visuals use irrelevant TechCrunch and event logos.",
+      "fixes": [],
+      "visual": [
+        "line 5: Frame 9 displays a TechCrunch logo card instead of Amazon silicon or AWS Trainium.",
+        "line 4: Frame 8 features Jensen Huang sharing a stage with a German politician, lacking direct rel"
+      ]
+    },
+    {
+      "at": "2026-10-20T12:20+05:30",
+      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, specific tech news script, but Frame 9 inappropriately displays TechCrunch instead of Amazon hardware.",
+      "fixes": [],
+      "visual": [
+        "line 5: Frame 9 incorrectly shows the TechCrunch logo instead of AWS silicon hardware or Amazon's "
       ]
     }
   ],
