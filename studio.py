@@ -347,6 +347,40 @@ def source_shot(out, frames, outlet, headline, domain, theme, date="", logo=None
     return write_frames(out, frames, draw)
 
 
+def webpage_shot(out, frames, page_png, outlet, domain, theme):
+    """The real news page (a mobile screenshot) in a floating card: it lands, holds on the headline for a moment,
+    then scrolls slowly down through the article, with the site name under the card."""
+    t_ = THEMES[theme]
+    cw, ch = 860, 1040
+    page = Image.open(page_png).convert("RGB")
+    page = page.resize((cw, max(ch, round(page.height * cw / page.width))), Image.LANCZOS)
+    scroll = max(0, page.height - ch)
+    base = sprite(Image.new("RGB", (cw, ch), (255, 255, 255)), theme, max_w=cw, max_h=ch, radius=34)
+    pad = (base.width - cw) // 2
+    bg = background(theme)
+    lf = V.font(34, semi=True)
+    site = (domain or outlet or "").replace("www.", "")
+    dur = frames / FPS
+    cy = CARD_CY - 30
+
+    def draw(k):
+        tt = k / FPS + 0.05
+        p = ease(tt / 0.35)
+        s = ease((tt - 1.0) / max(1.0, dur - 1.2))  # hold on the headline for a second, then a slow scroll
+        y = round(scroll * 0.5 * s)
+        card = base.copy()
+        card.alpha_composite(rounded(page.crop((0, y, cw, y + ch)).convert("RGBA"), 34), (pad, pad))
+        frame = bg.copy()
+        place(frame, card, W / 2, cy + 80 * (1 - p), 0.97 + 0.03 * p, p)
+        if site and p > 0.3:
+            layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+            ImageDraw.Draw(layer).text((W / 2, cy + ch / 2 + 70), site, font=lf,
+                                       fill=(*t_["muted"], int(255 * p)), anchor="ma")
+            frame.alpha_composite(layer)
+        return frame
+    return write_frames(out, frames, draw)
+
+
 def logo_shot(out, frames, name, domain, theme, logo=None):
     t_ = THEMES[theme]
     tile = Image.new("RGBA", (440, 440), (255, 255, 255, 255))
@@ -736,6 +770,8 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             elif kind == "person":
                 face = Image.open(info["raw"]) if info.get("raw") else None
                 add(person_shot, stop, theme, face, info["name"], info.get("role", ""), theme, info.get("credit", ""))
+            elif kind == "webpage":
+                add(webpage_shot, stop, theme, info["page"], info.get("outlet", ""), info.get("domain", ""), theme)
             elif kind == "source":
                 add(source_shot, stop, theme, info["outlet"], info["headline"], info.get("domain", ""), theme,
                     info.get("date", ""), info.get("logo"))
@@ -778,7 +814,7 @@ def specs_for(b, shots):
         info = V.STUDIO_INFO.get(src)
         if not info:
             continue
-        if info["kind"] in ("stat", "person", "source", "logo"):
+        if info["kind"] in ("stat", "person", "source", "logo", "webpage"):
             if not seen_text:
                 specs.insert(0, (info["kind"], info))
                 seen_text = True

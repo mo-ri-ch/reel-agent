@@ -1130,11 +1130,27 @@ def safe_shot(b, i, tmp):
     return ("image", p)
 
 
+WEB_USED = []  # one real-page shot per reel
+
+
+def web_page(tmp, source_urls):
+    """A mobile screenshot of the story's own article page, or None (blocked, paywall, blank)."""
+    import webshot
+    for u in [u for u in source_urls if isinstance(u, str) and u.startswith("http") and "news.google." not in u][:2]:
+        out = os.path.join(tmp, f"webpage_{len(WEB_USED)}.png")
+        if webshot.capture(u, out) and not webshot.looks_blank(out):
+            WEB_USED.append(u)
+            print(f"Real page shot: {u[:80]}")
+            return out
+    return None
+
+
 def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
     """Finds visuals for every beat. Returns a list (per beat) of shots: ('clip'|'image', path)."""
     global LAST_SUMMARY, LAST_CREDITS
     import images
     import writer
+    WEB_USED.clear()
     options, thumbs = {}, {}
     for i, b in enumerate(beats):
         if b["visual"] == "clip":
@@ -1258,8 +1274,12 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
         if b["visual"] == "source":
             p = os.path.join(tmp, f"source_{i}.png")
             make_source_card(p, b.get("outlet", ""), b.get("headline") or b["line"], b.get("domain", ""))
-            _remember(p, "source", outlet=b.get("outlet", ""), headline=b.get("headline") or b["line"],
-                      domain=b.get("domain", ""))
+            page = web_page(tmp, source_urls) if not WEB_USED and i not in safe_beats else None
+            if page:  # the real article, scrolling (studio style); the drawn card stays as the classic fallback
+                _remember(p, "webpage", page=page, outlet=b.get("outlet", ""), domain=b.get("domain", ""))
+            else:
+                _remember(p, "source", outlet=b.get("outlet", ""), headline=b.get("headline") or b["line"],
+                          domain=b.get("domain", ""))
             shots.append(("image", p))
             counts["cards"] += 1
         if b["visual"] == "clip":

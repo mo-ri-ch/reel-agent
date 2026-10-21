@@ -346,6 +346,13 @@ check("drop panel event", news.newsworthy({"title": "Lyceum Project Leaders Talk
                                           "source": "The Harvard Crimson"}), False)
 check("keep company talks", news.newsworthy({"title": "OpenAI in talks to buy Windsurf for $3B", "source": "Reuters"}), True)
 
+# real-page screenshots: no URL -> no shot (the drawn card is used); a blank page is detected
+import webshot as _ws  # noqa: E402
+from PIL import Image as _Im  # noqa: E402
+check("no url, no page shot", _ws.capture("", "/tmp/x.png"), None)
+_Im.new("RGB", (400, 900), (255, 255, 255)).save("/tmp/_blank.png")
+check("blank page detected", _ws.looks_blank("/tmp/_blank.png"), True)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
