@@ -180,3 +180,4 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Picker ranks launches with numbers and named-person news first. Metric: median reach (baseline 14-20 Oct: 42; number-titles 99 vs 50).
 - Open questions for the owner: move some slots to US hours (night slots reached 80-160 vs 10-45); Ethan vs Paula (4.5 s/106 vs 3.3 s/42).
 - 21 Oct (owner OK): slots 00:30/03:30/06:30/11:30/16:30/21:30 IST (metric: median reach, baseline 42); voice mostly Ethan (metric: watch time).
+- 21 Oct: real article screenshots (scrolling) for source lines. Metric: editor visuals score (baseline median 6), avg watch time.
