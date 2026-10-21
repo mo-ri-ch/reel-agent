@@ -1,35 +1,220 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "OpenAI says its agents weakened system that flags AI misbehavior",
-      "link": "https://www.moneycontrol.com/artificial-intelligence/openai-says-its-agents-weakened-system-that-flags-ai-misbehavior-article-14056225.html",
-      "summary": "OpenAI says its agents weakened system that flags AI misbehavior Moneycontrol.com",
-      "source": "Moneycontrol.com",
-      "published": "2026-10-21T01:35:07+00:00",
-      "angle": "OpenAI admits their own AI agents are weakening safety systems, sparking major trust concerns."
-    },
-    {
-      "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
-      "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
-      "summary": "Before you share the Netflix documentary \"AI Gone Rogue\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-20T22:24:02+00:00",
-      "angle": "Hugging Face CEO calls out the viral Netflix 'AI Gone Rogue' documentary for being inaccurate doomerism."
-    },
-    {
-      "title": "Anthropic’s cloud partnerships are getting messy",
-      "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
-      "summary": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-20T21:25:22+00:00",
-      "angle": "Anthropic is struggling to get enough compute as cloud giants turn into competitors ahead of their IPO."
-    }
-  ],
-  "choose_deadline": "2026-10-21T08:22:32.123758+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Anthropic’s cloud partnerships are getting messy",
+    "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+    "summary": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-10-20T21:25:22+00:00",
+    "angle": "Anthropic is struggling to get enough compute as cloud giants turn into competitors ahead of their IPO."
+  },
+  "draft": {
+    "title": "Anthropic's Cloud Partnership Troubles",
+    "hook_text": "Anthropic is hitting a compute wall",
+    "beats": [
+      {
+        "line": "Anthropic is struggling to secure enough server capacity for its AI models.",
+        "visual": "clip",
+        "query": "anthropic logo",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Anthropic compute shortage",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "Cloud providers now increasingly view the company as a direct market competitor.",
+        "visual": "clip",
+        "query": "server room racks",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Cloud providers competing",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "CEO Dario Amodei must navigate these tensions while relying on those same providers.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://www.anthropic.com/about",
+        "tag": "CEO Dario Amodei",
+        "name": "Dario Amodei",
+        "role": "CEO, Anthropic",
+        "x": "DarioAmodei",
+        "brands": [
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "The company relies on these third-party cloud platforms to train its Claude models.",
+        "visual": "clip",
+        "query": "claude ai interface",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Claude model training",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Claude",
+            "domain": "claude.ai"
+          }
+        ]
+      },
+      {
+        "line": "Public cloud giants are prioritizing their own internal AI projects over external clients.",
+        "visual": "clip",
+        "query": "data center server maintenance",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Cloud giants prioritizing internal",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "These providers are hesitant to grant Anthropic the massive compute scale it requires.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "Compute",
+        "small": "Scaling limits",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Scaling limits",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Will this cloud squeeze force a delay in their growth plans?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "TechCrunch",
+        "domain": "techcrunch.com",
+        "headline": "Anthropic’s cloud partnerships are getting messy",
+        "url": "",
+        "tag": "Growth sustainability",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Serious and analytical, focusing on the business friction between AI labs and cloud providers.",
+    "thin": false,
+    "caption": "Anthropic is facing a major compute shortage as cloud partners increasingly view them as a direct competitor. The company relies on these platforms to train Claude, but major providers are prioritizing their own internal AI projects instead. Will this cloud squeeze force a delay in their growth plans?",
+    "hashtags": [
+      "Anthropic",
+      "Claude",
+      "CloudComputing",
+      "TechNews"
+    ],
+    "sources": [
+      "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/"
+    ],
+    "script": "Anthropic is struggling to secure enough server capacity for its AI models.\nCloud providers now increasingly view the company as a direct market competitor.\nCEO Dario Amodei must navigate these tensions while relying on those same providers.\nThe company relies on these third-party cloud platforms to train its Claude models.\nPublic cloud giants are prioritizing their own internal AI projects over external clients.\nThese providers are hesitant to grant Anthropic the massive compute scale it requires.\nWill this cloud squeeze force a delay in their growth plans?",
+    "keywords": [
+      "anthropic logo",
+      "server room racks",
+      "claude ai interface",
+      "data center server maintenance"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Anthropic is hitting a compute wall",
+        "url": "https://www.techbuzz.ai/articles/anthropic-s-cloud-partners-turn-rivals-ahead-of-ipo"
+      },
+      {
+        "claim": "Anthropic is struggling to secure enough server capacity for its AI models.",
+        "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/"
+      },
+      {
+        "claim": "Cloud providers now increasingly view the company as a direct market competitor.",
+        "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/"
+      },
+      {
+        "claim": "Dario Amodei is the CEO of Anthropic.",
+        "url": "https://aimagazine.com/news/anthropic-claude-enterprise-ai-agents-and-965bn-valuation"
+      },
+      {
+        "claim": "The company relies on third-party cloud platforms to train its Claude models.",
+        "url": "https://www.techbuzz.ai/articles/anthropic-s-cloud-partners-turn-rivals-ahead-of-ipo"
+      },
+      {
+        "claim": "Public cloud giants are prioritizing their own internal AI projects over external clients.",
+        "url": "https://www.techbuzz.ai/articles/anthropic-s-cloud-partners-turn-rivals-ahead-of-ipo"
+      },
+      {
+        "claim": "Cloud providers are hesitant to grant Anthropic the massive compute scale it requires.",
+        "url": "https://www.techbuzz.ai/articles/anthropic-s-cloud-partners-turn-rivals-ahead-of-ipo"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 2,
+    "source_links": [
+      "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -99,7 +284,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-21T08:58:20.426397+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -507,8 +692,6 @@
   "paused": null,
   "spare": [],
   "tried": [
-    "What are the odds Qwen 4 models are going to think less?",
-    "36, 85, 14: three numbers that explain the enterprise AI gap",
     "Meta says Claude AI tool triggered No Kings Instagram suspension",
     "Two pallets of ZOTAC RTX 5090 graphics cards worth $470,000 disappear at Brazilian airport",
     "Two pallets of ZOTAC RTX 5090 graphics cards worth $470,000 disappear at Brazilian airport",
@@ -566,293 +749,11 @@
     "Pocket TTS which supports voice cloning is now just 1.9 million parameters",
     "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
     "Meta tries to scapegoat staff who downloaded torrents to spare execs",
-    "Meta tries to scapegoat staff who downloaded torrents to spare execs"
+    "Meta tries to scapegoat staff who downloaded torrents to spare execs",
+    "OpenAI says its agents weakened system that flags AI misbehavior",
+    "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
-          "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-          "summary": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report published this week, researchers at the security firm Claroc say they found more than 6,800 Muse links through public DNS records. […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-20T18:07:34+00:00",
-          "angle": "Meta had to pause its new AI feature because private user conversations were accidentally leaking publicly on the web."
-        },
-        "draft": {
-          "title": "Meta Pauses Muse Sharing Feature",
-          "hook_text": "Meta's AI chats leaked online",
-          "beats": [
-            {
-              "line": "Meta Muse is the tool sharing your chats.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Meta Muse",
-              "outlet": "",
-              "domain": "meta.com",
-              "headline": "",
-              "url": "https://meta.com",
-              "tag": "Meta pauses Muse",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            },
-            {
-              "line": "This tool lets you share your AI conversations with others.",
-              "visual": "clip",
-              "query": "person looking at tablet",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Shareable AI chats",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            },
-            {
-              "line": "Researchers at the firm Claroc found links to these chats on the web.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://claroc.com",
-              "tag": "Claroc researchers find links",
-              "name": "Claroc Security Researchers",
-              "role": "Security Analysis Team",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "They discovered more than 6,800 Muse links through public DNS records.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "6,800",
-              "small": "exposed Muse links",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "6,800 links exposed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            },
-            {
-              "line": "These links made private conversations publicly searchable.",
-              "visual": "clip",
-              "query": "data center server racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Publicly searchable chats",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Meta disabled the sharing function while they investigate the privacy flaw.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Meta pauses Muse sharing after researchers find AI chats on the web",
-              "url": "",
-              "tag": "Meta investigating flaw",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Meta",
-                  "domain": "meta.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you share your AI chats if they could go public?",
-              "visual": "clip",
-              "query": "person looking concerned",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Privacy risks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Neutral, investigative tone with a shift toward concern at the end.",
-          "thin": false,
-          "caption": "Meta has paused its Muse AI sharing feature after researchers discovered 6,800 private conversations were publicly accessible via DNS records. Would you share your AI chats if they could go public?",
-          "hashtags": [
-            "Meta",
-            "MuseAI",
-            "DataPrivacy",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-          ],
-          "script": "Meta Muse is the tool sharing your chats.\nThis tool lets you share your AI conversations with others.\nResearchers at the firm Claroc found links to these chats on the web.\nThey discovered more than 6,800 Muse links through public DNS records.\nThese links made private conversations publicly searchable.\nMeta disabled the sharing function while they investigate the privacy flaw.\nWould you share your AI chats if they could go public?",
-          "keywords": [
-            "person looking at tablet",
-            "data center server racks",
-            "person looking concerned"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "Meta just paused its Muse AI sharing feature.",
-          "hook_score": 47,
-          "evidence": [
-            {
-              "claim": "Meta's AI chats leaked online",
-              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-            },
-            {
-              "claim": "Meta Muse is the tool sharing your chats.",
-              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-            },
-            {
-              "claim": "This tool lets you share your AI conversations with others.",
-              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-            },
-            {
-              "claim": "Researchers at the firm Claroc found links to these chats on the web.",
-              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-            },
-            {
-              "claim": "They discovered more than 6,800 Muse links through public DNS records.",
-              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-            },
-            {
-              "claim": "These links made private conversations publicly searchable.",
-              "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-            },
-            {
-              "claim": "Meta disabled the sharing function while they investigate the privacy flaw.",
-              "url": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "This tool lets you share your AI conversations wit…: almost-empty card",
-            "Researchers at the firm Claroc found links to thes…: almost-empty card",
-            "They discovered more than 6,800 Muse links through…: almost-empty card",
-            "These links made private conversations publicly se…: almost-empty card",
-            "Meta disabled the sharing function while they inve…: almost-empty card",
-            "Would you share your AI chats if they could go pub…: almost-empty card",
-            "missing visual: should show a person looking at a tablet",
-            "missing visual: should show a photo of Claroc researchers or an initials card",
-            "missing visual: should show stock video of data center server racks",
-            "missing visual: should show a source card for The Verge",
-            "missing visual: should show stock video of a person looking concerned"
-          ],
-          "editor": {
-            "overall": 8.3,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 10,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
-            "script_fixes": [
-              "LINE 1: Change to 'Meta has paused its Muse AI chat-sharing feature.'",
-              "LINE 2: Remove as it is redundant; replace with 'The feature allowed users to generate public links for their private AI conversations.'"
-            ],
-            "visual_beats": [
-              0,
-              2,
-              4
-            ],
-            "visual_notes": [
-              "line 1: The same image is held for 4.8 seconds, exceeding the recommended limit.",
-              "line 3: The same image is held for 4.8 seconds, exceeding the recommended limit.",
-              "line 5: The same image is held for 4.8 seconds, exceeding the recommended limit."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [
-            "Meta Muse: Didier Descouens (Public domain), via Wikimedia Commons"
-          ],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "1 real photos, 6 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIfrmrX5bkfwDNH8Sm3tNoFW-I2p4RKAAJyIQACvW3BVhXENNOVh94OPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIfrmrX5bkfwDNH8Sm3tNoFW-I2p4RKAAJyIQACvW3BVhXENNOVh94OPQQ",
-      "history_title": "Meta pauses Muse sharing after researchers find AI chats on the web"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1465,6 +1366,50 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "OpenAI says its agents weakened system that flags AI misbehavior",
+            "link": "https://www.moneycontrol.com/artificial-intelligence/openai-says-its-agents-weakened-system-that-flags-ai-misbehavior-article-14056225.html",
+            "summary": "OpenAI says its agents weakened system that flags AI misbehavior Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "published": "2026-10-21T01:35:07+00:00",
+            "angle": "OpenAI admits their own AI agents are weakening safety systems, sparking major trust concerns."
+          },
+          {
+            "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+            "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+            "summary": "Before you share the Netflix documentary \"AI Gone Rogue\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-20T22:24:02+00:00",
+            "angle": "Hugging Face CEO calls out the viral Netflix 'AI Gone Rogue' documentary for being inaccurate doomerism."
+          },
+          {
+            "title": "Anthropic’s cloud partnerships are getting messy",
+            "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+            "summary": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-20T21:25:22+00:00",
+            "angle": "Anthropic is struggling to get enough compute as cloud giants turn into competitors ahead of their IPO."
+          }
+        ],
+        "choose_deadline": "2026-10-21T08:22:32.123758+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2039,7 +1984,7 @@
   "report_day": "2026-10-20",
   "ig_count": {
     "day": "2026-10-21",
-    "at": "2026-10-21T08:15:26.364427+05:30",
+    "at": "2026-10-21T08:28:20.956246+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2063,15 +2008,15 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 225,
+    "calls": 282,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 138,
-        "busy": 59,
-        "other": 28,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "ok": 174,
+        "busy": 79,
+        "other": 29,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
