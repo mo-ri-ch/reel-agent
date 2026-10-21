@@ -18,44 +18,8 @@
     "beats": [
       {
         "line": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Nvidia",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "35 billion in orders",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "These massive orders involve Nvidia RTX 5500 graphics cards.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Nvidia RTX 5500",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "RTX 5500 orders",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Chinese firms are securing this hardware to bolster their AI inference capabilities.",
         "visual": "clip",
-        "query": "data center server racks",
+        "query": "data center server room",
         "prompt": "",
         "big": "",
         "small": "",
@@ -64,14 +28,64 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Boosting AI inference",
+        "tag": "35 billion in orders",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "ByteDance",
+            "domain": "bytedance.com"
+          },
+          {
+            "name": "Alibaba",
+            "domain": "alibaba.com"
+          }
+        ]
+      },
+      {
+        "line": "These massive orders target specialized hardware to maintain their internal AI inference workloads.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia A100",
+        "outlet": "",
+        "domain": "nvidia.com",
+        "headline": "",
+        "url": "https://www.nvidia.com",
+        "tag": "Targeting AI workloads",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "This spending surge highlights their urgent race to build competitive domestic AI models.",
+        "visual": "clip",
+        "query": "coding on screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Building domestic models",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "These companies are working around tight US export controls on high-end silicon.",
+        "line": "The move comes as US export controls tighten around advanced data center silicon access.",
         "visual": "photo",
         "query": "technology",
         "prompt": "",
@@ -86,46 +100,33 @@
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
       },
       {
-        "line": "Previous supply chains relied on restricted chips, forcing this pivot toward alternative hardware.",
-        "visual": "clip",
-        "query": "microchip production line",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Supply chain pivot",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This investment highlights how critical AI throughput has become for their domestic services.",
+        "line": "These firms previously relied on now-restricted hardware to power their large-scale training clusters.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
         "big": "35B",
-        "small": "Total Order Value",
+        "small": "total order value",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Critical AI throughput",
+        "tag": "Training cluster hardware",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Will these chips be enough to keep their AI competitive globally?",
+        "line": "Can these companies sustain their AI development pace without unrestricted access to top-tier chips?",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -136,7 +137,7 @@
         "domain": "reddit.com",
         "headline": "ByteDance, Alibaba, Tencent place over 35B in Nvidia orders",
         "url": "",
-        "tag": "Staying competitive?",
+        "tag": "Can they sustain pace?",
         "name": "",
         "role": "",
         "x": "",
@@ -145,7 +146,7 @@
     ],
     "delivery": "Urgent and analytical, focusing on the sheer volume of the investment and the tactical shift in hardware.",
     "thin": false,
-    "caption": "ByteDance, Alibaba, and Tencent have placed over $35 billion in orders for Nvidia RTX 5500 chips. These Chinese tech giants are pivoting to this hardware to support their AI inference infrastructure despite ongoing US export restrictions. Will these chips be enough to keep their AI competitive globally?",
+    "caption": "ByteDance, Alibaba, and Tencent have placed over $35 billion in orders for Nvidia hardware to fuel their AI inference needs. This massive spending reflects an urgent push for domestic AI development despite ongoing US export restrictions. Can these companies sustain their development pace without access to top-tier chips?",
     "hashtags": [
       "Nvidia",
       "ByteDance",
@@ -156,10 +157,10 @@
     "sources": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
     ],
-    "script": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.\nThese massive orders involve Nvidia RTX 5500 graphics cards.\nChinese firms are securing this hardware to bolster their AI inference capabilities.\nThese companies are working around tight US export controls on high-end silicon.\nPrevious supply chains relied on restricted chips, forcing this pivot toward alternative hardware.\nThis investment highlights how critical AI throughput has become for their domestic services.\nWill these chips be enough to keep their AI competitive globally?",
+    "script": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.\nThese massive orders target specialized hardware to maintain their internal AI inference workloads.\nThis spending surge highlights their urgent race to build competitive domestic AI models.\nThe move comes as US export controls tighten around advanced data center silicon access.\nThese firms previously relied on now-restricted hardware to power their large-scale training clusters.\nCan these companies sustain their AI development pace without unrestricted access to top-tier chips?",
     "keywords": [
-      "data center server racks",
-      "microchip production line"
+      "data center server room",
+      "coding on screen"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
@@ -173,29 +174,26 @@
         "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
       },
       {
-        "claim": "These massive orders involve Nvidia RTX 5500 graphics cards.",
+        "claim": "These massive orders target specialized hardware to maintain their internal AI inference workloads.",
         "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
       },
       {
-        "claim": "Chinese firms are securing this hardware to bolster their AI inference capabilities.",
-        "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
+        "claim": "This spending surge highlights their urgent race to build competitive domestic AI models.",
+        "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
       },
       {
-        "claim": "These companies are working around tight US export controls on high-end silicon.",
+        "claim": "The move comes as US export controls tighten around advanced data center silicon access.",
         "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-sees-alibaba-bytedance-104826226.html"
       },
       {
-        "claim": "Previous supply chains relied on restricted chips, forcing this pivot toward alternative hardware.",
-        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-sees-alibaba-bytedance-104826226.html"
-      },
-      {
-        "claim": "Total Order Value is 35B",
+        "claim": "These firms previously relied on now-restricted hardware to power their large-scale training clusters.",
         "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 2,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
     ]
@@ -248,9 +246,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-21T09:40:31.246215+05:30",
+  "script_deadline": "2026-10-21T09:52:13.281342+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-21",
@@ -737,243 +735,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Google’s more personalized Gemini AI is heading to your car",
-          "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
-          "summary": "Google is bringing Personal Intelligence to Gemini AI in your car. With this update, Gemini in Android Auto and cars with Google built-in can tap into your information across Google apps, including Gmail, Calendar, Maps, Photos, YouTube, and Search. As an example, Google says you can ask Gemini about your flight status if you're driving […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-20T22:11:34+00:00",
-          "angle": "Google is bringing Gemini directly into your car's dashboard to manage your life while you drive."
-        },
-        "draft": {
-          "title": "Gemini AI comes to your car dashboard",
-          "hook_text": "Gemini AI hits the road",
-          "beats": [
-            {
-              "line": "Google is bringing its Gemini AI to your car dashboard.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Gemini",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://gemini.google.com/",
-              "tag": "Gemini in cars",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This update lets Gemini access your personal information across six different apps.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "6",
-              "small": "connected apps",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Six connected apps",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It pulls data from Gmail, Calendar, Maps, Photos, YouTube, and Search.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google Maps",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://www.google.com/maps",
-              "tag": "Apps Gemini can access",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You can ask Gemini about your flight status while driving.",
-              "visual": "clip",
-              "query": "driver talking to dashboard",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Flight status checks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The AI uses your data to provide context-aware answers.",
-              "visual": "clip",
-              "query": "car dashboard display",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Context-aware AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This feature is rolling out to cars with Google built-in.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://www.google.com",
-              "tag": "Google built-in rollout",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The system also supports Android Auto for your existing vehicle.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Android Auto",
-              "outlet": "",
-              "domain": "android.com",
-              "headline": "",
-              "url": "https://www.android.com/auto/",
-              "tag": "Android Auto support",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let AI manage your schedule while driving?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "modern car dashboard with digital interface",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Would you use this?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Conversational and sharp, focusing on the utility of having personal data in the car.",
-          "thin": false,
-          "caption": "Google is bringing Gemini AI to your car, allowing it to tap into your Gmail, Calendar, Maps, Photos, YouTube, and Search. You can now ask about flight status or schedule updates directly from your dashboard. Would you let AI manage your schedule while driving?",
-          "hashtags": [
-            "Google",
-            "Gemini",
-            "AndroidAuto",
-            "AI",
-            "CarTech"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-          ],
-          "script": "Google is bringing its Gemini AI to your car dashboard.\nThis update lets Gemini access your personal information across six different apps.\nIt pulls data from Gmail, Calendar, Maps, Photos, YouTube, and Search.\nYou can ask Gemini about your flight status while driving.\nThe AI uses your data to provide context-aware answers.\nThis feature is rolling out to cars with Google built-in.\nThe system also supports Android Auto for your existing vehicle.\nWould you let AI manage your schedule while driving?",
-          "keywords": [
-            "driver talking to dashboard",
-            "car dashboard display"
-          ],
-          "image_prompts": [
-            "modern car dashboard with digital interface"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Gemini AI hits the road",
-              "url": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/"
-            },
-            {
-              "claim": "Google is bringing its Gemini AI to your car dashboard.",
-              "url": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/"
-            },
-            {
-              "claim": "This update lets Gemini access your personal information across six different apps.",
-              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-            },
-            {
-              "claim": "It pulls data from Gmail, Calendar, Maps, Photos, YouTube, and Search.",
-              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-            },
-            {
-              "claim": "You can ask Gemini about your flight status while driving.",
-              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-            },
-            {
-              "claim": "The AI uses your data to provide context-aware answers.",
-              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-            },
-            {
-              "claim": "This feature is rolling out to cars with Google built-in.",
-              "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-            },
-            {
-              "claim": "The system also supports Android Auto for your existing vehicle.",
-              "url": "https://techcrunch.com/2026/10/20/google-is-bringing-a-more-personal-version-of-its-gemini-ai-assistant-to-your-car/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-21T05:19:44.733904+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1578,6 +1339,220 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
+          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/",
+          "summary": "",
+          "source": "r/LocalLLaMA",
+          "published": "2026-10-21T01:24:31+00:00",
+          "buzz": "top of r/LocalLLaMA today",
+          "angle": "Chinese tech giants are stockpiling $35B in Nvidia chips, signaling a massive AI arms race."
+        },
+        "draft": {
+          "title": "ByteDance, Alibaba, Tencent Nvidia Chip Order",
+          "hook_text": "35 billion dollars in Nvidia chips",
+          "beats": [
+            {
+              "line": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "35 billion in orders",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These massive orders involve Nvidia RTX 5500 graphics cards.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia RTX 5500",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "RTX 5500 orders",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Chinese firms are securing this hardware to bolster their AI inference capabilities.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Boosting AI inference",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These companies are working around tight US export controls on high-end silicon.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia headquarters",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Navigating export controls",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Previous supply chains relied on restricted chips, forcing this pivot toward alternative hardware.",
+              "visual": "clip",
+              "query": "microchip production line",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Supply chain pivot",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This investment highlights how critical AI throughput has become for their domestic services.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "35B",
+              "small": "Total Order Value",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Critical AI throughput",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will these chips be enough to keep their AI competitive globally?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "r/LocalLLaMA",
+              "domain": "reddit.com",
+              "headline": "ByteDance, Alibaba, Tencent place over 35B in Nvidia orders",
+              "url": "",
+              "tag": "Staying competitive?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Urgent and analytical, focusing on the sheer volume of the investment and the tactical shift in hardware.",
+          "thin": false,
+          "caption": "ByteDance, Alibaba, and Tencent have placed over $35 billion in orders for Nvidia RTX 5500 chips. These Chinese tech giants are pivoting to this hardware to support their AI inference infrastructure despite ongoing US export restrictions. Will these chips be enough to keep their AI competitive globally?",
+          "hashtags": [
+            "Nvidia",
+            "ByteDance",
+            "Alibaba",
+            "Tencent",
+            "AI"
+          ],
+          "sources": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
+          ],
+          "script": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.\nThese massive orders involve Nvidia RTX 5500 graphics cards.\nChinese firms are securing this hardware to bolster their AI inference capabilities.\nThese companies are working around tight US export controls on high-end silicon.\nPrevious supply chains relied on restricted chips, forcing this pivot toward alternative hardware.\nThis investment highlights how critical AI throughput has become for their domestic services.\nWill these chips be enough to keep their AI competitive globally?",
+          "keywords": [
+            "data center server racks",
+            "microchip production line"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "35 billion dollars in Nvidia chips",
+              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
+            },
+            {
+              "claim": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.",
+              "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
+            },
+            {
+              "claim": "These massive orders involve Nvidia RTX 5500 graphics cards.",
+              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
+            },
+            {
+              "claim": "Chinese firms are securing this hardware to bolster their AI inference capabilities.",
+              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
+            },
+            {
+              "claim": "These companies are working around tight US export controls on high-end silicon.",
+              "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-sees-alibaba-bytedance-104826226.html"
+            },
+            {
+              "claim": "Previous supply chains relied on restricted chips, forcing this pivot toward alternative hardware.",
+              "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-sees-alibaba-bytedance-104826226.html"
+            },
+            {
+              "claim": "Total Order Value is 35B",
+              "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-21T09:40:31.246215+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2123,8 +2098,8 @@
       "event": "Google is bringing its Gemini AI to your car dashboard. This update lets Gemini access your personal information across six different apps. It pulls data from Gmail, Calendar, Maps, Photos, YouTube, and Search. You can ask Gemini about your"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-21T07:52+05:30",
@@ -2152,7 +2127,7 @@
   "report_day": "2026-10-20",
   "ig_count": {
     "day": "2026-10-21",
-    "at": "2026-10-21T09:35:23.299024+05:30",
+    "at": "2026-10-21T09:45:27.887848+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2172,7 +2147,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-21",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
@@ -2268,30 +2243,6 @@
     "gemini-flash-lite-latest": 1792504161.281722
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T14:12+05:30",
-      "title": "AI-generated political ads are showing up on TV screens, experts say they are ge",
-      "overall": 6.3,
-      "scores": {
-        "hook": 8,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Too many text-only placeholder cards and repetitive graphics weaken visual storytelling.",
-      "fixes": [
-        "LINE 2: Change 'KSAT reports that synthetic commercials' to 'KSAT reveals AI commercials'",
-        "LINE 3: Add specific campaign software names if mentioned in source or remove filler",
-        "LINE 5: Add concrete time metrics or technical details from the report"
-      ],
-      "visual": [
-        "line 2: Visual switches to generic KSAT logo card with minimal context",
-        "line 3: Static text-only card used instead of relevant political ad footage",
-        "line 4: Repeated static text card design used again with minimal visual change"
-      ]
-    },
     {
       "at": "2026-10-20T14:20+05:30",
       "title": "Road Rage Sentence Thrown Out for Artificial Intelligence Usage",
@@ -2709,6 +2660,30 @@
         "line 2: Generic stock footage of code and a warehouse does not represent the specific cloud provid",
         "line 5: The black screen frame is a dead visual; use logos of AWS or Google Cloud.",
         "line 6: The 'Scaling limits' graphic is abstract; show a data center or server rack instead."
+      ]
+    },
+    {
+      "at": "2026-10-21T09:51+05:30",
+      "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia ch",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 6,
+        "accuracy": 4,
+        "visuals": 5,
+        "flow": 7
+      },
+      "one_line": "Fails on accuracy; RTX 5500 is a consumer card, not for enterprise AI.",
+      "fixes": [
+        "LINE 2: Replace 'RTX 5500' with the actual enterprise-grade chips (e.g., H20 or B20) mentioned in the report.",
+        "LINE 6: Remove this line; it is vague filler commentary that adds no new facts.",
+        "LINE 7: Make the question more specific to the geopolitical implications of the chip shortage."
+      ],
+      "visual": [
+        "line 1: Same static image held for too long (0.5s to 4.8s).",
+        "line 2: Same static image held for too long (7.2s to 12.0s).",
+        "line 6: Same static image held for too long (26.4s to 31.2s)."
       ]
     }
   ],
