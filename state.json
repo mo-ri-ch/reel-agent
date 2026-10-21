@@ -260,18 +260,8 @@
   "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
-    "date": "2026-10-21",
-    "done": [
-      "07:00",
-      "09:30",
-      "12:00",
-      "14:30",
-      "17:00",
-      "19:30",
-      "01:30",
-      "04:30",
-      "22:30"
-    ]
+    "date": "2026-10-22",
+    "done": []
   },
   "pending_topic": null,
   "held": [
@@ -1990,12 +1980,12 @@
   "last_engine": "microsoft",
   "report_day": "2026-10-21",
   "ig_count": {
-    "day": "2026-10-21",
-    "at": "2026-10-21T23:52:07.855166+05:30",
-    "count": 6
+    "day": "2026-10-22",
+    "at": "2026-10-22T00:00:34.494852+05:30",
+    "count": 0
   },
   "repeat_check_day": "2026-10-04",
-  "repeat_check2_day": "2026-10-21",
+  "repeat_check2_day": "2026-10-22",
   "late_alarm_day": "2026-10-20",
   "stats_day": "2026-10-21",
   "perm_told": true,
@@ -2010,50 +2000,20 @@
     }
   ],
   "engine_used": "fish",
-  "token_day": "2026-10-21",
+  "token_day": "2026-10-22",
   "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
-    "day": "2026-10-21",
-    "calls": 601,
+    "day": "2026-10-22",
+    "calls": 1,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
-      "gemini-3.1-flash-lite": {
-        "ok": 234,
-        "busy": 109,
-        "other": 48,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
       "gemini-3.5-flash-lite": {
-        "ok": 123,
-        "busy": 48,
+        "ok": 1,
+        "busy": 0,
         "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.6-flash": {
-        "ok": 0,
-        "busy": 1,
-        "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.7-flash": {
-        "ok": 0,
-        "busy": 5,
-        "other": 9,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.5-flash": {
-        "ok": 0,
-        "busy": 1,
-        "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3-flash-preview": {
-        "ok": 3,
-        "busy": 8,
-        "other": 12,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "last": ""
       }
     }
   },
