@@ -327,7 +327,9 @@ Meta software, not a horizon; "Gemini" is a Google AI, not a star sign; "Apple" 
   person, clip, source) can show the line; a real news photo is used instead whenever one exists. "prompt" = vivid
   cinematic vertical scene, no text, no logos, no real people's faces.
 - "official": the real images of a named product or company, taken from its official page and the news article.
-  "entity" = exact name ("Meta Horizon Studio"), "url" = the official product/announcement page if you know it,
+  "entity" = exact name ("Meta Horizon Studio"), "url" = the product's OWN page, shown scrolling in the reel: the
+  company's announcement post, the GitHub repo (open-source tools), the Hugging Face model page (new models) or the
+  App Store page (apps); copy it exactly from the sources, never guess a URL;
   "domain" = the company's website ("meta.com").
 - "person": the person's real photo with their name and role underneath. "name" = full name exactly as written in
   the source, "role" = short designation ("CEO, OpenAI", "Co-founder, Lovable"), "x" = their X/Twitter handle
@@ -449,9 +451,12 @@ def choose_clips(beats_with_options):
     beats_with_options: [{"line": str, "options": [jpeg_bytes, ...]}]  →  {beat_index: [option_index, ...]}"""
     import base64
     parts = [{"text": "You are editing an Instagram Reel. For each spoken line below, look at the numbered stock "
-                      "video thumbnails and pick the ones that visually fit the line. Prefer clips that match the "
-                      "meaning; avoid generic office meetings unless the line is about one. A loosely related but "
-                      "good-looking clip is fine; only reject all options if every one would look wrong or misleading."}]
+                      "video thumbnails and pick the ones that visually fit the line. Be STRICT: a clip fits only if a "
+                      "viewer would see a direct link to the words (the device, the activity or the place the line "
+                      "names). Reject generic stock: people in suits, office meetings, city skylines, abstract tech, "
+                      "code on screens, server rooms, handshakes, unless the line is literally about that. When "
+                      "unsure, reject: the line then gets a real product picture or a headline card instead "
+                      "(14 Oct: the editor marked reels down for 'irrelevant stock footage')."}]
     for bi, b in enumerate(beats_with_options):
         parts.append({"text": f"\nLINE {bi + 1}: \"{b['line']}\""})
         for ci, img in enumerate(b["options"]):

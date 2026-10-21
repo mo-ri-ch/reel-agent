@@ -1130,13 +1130,16 @@ def safe_shot(b, i, tmp):
     return ("image", p)
 
 
-WEB_USED = []  # one real-page shot per reel
+WEB_USED = []  # real-page shots in this reel (max 2: the article and the product's own page)
+MAX_WEB = 2
 
 
 def web_page(tmp, source_urls):
-    """A mobile screenshot of the story's own article page, or None (blocked, paywall, blank)."""
+    """A mobile screenshot of a real page (the article, or the product's own page), or None (blocked, paywall,
+    blank, or already shown)."""
     import webshot
-    for u in [u for u in source_urls if isinstance(u, str) and u.startswith("http") and "news.google." not in u][:2]:
+    for u in [u for u in source_urls if isinstance(u, str) and u.startswith("http") and "news.google." not in u
+              and u not in WEB_USED][:2]:
         out = os.path.join(tmp, f"webpage_{len(WEB_USED)}.png")
         if webshot.capture(u, out) and not webshot.looks_blank(out):
             WEB_USED.append(u)
@@ -1222,6 +1225,16 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
             else:
                 counts["cards"] += 1
             print(f"Person {b['name']}: {'photo from ' + str(credit) if img else 'name card (no reliable photo)'}")
+        if b["visual"] == "official" and b.get("url") and len(WEB_USED) < MAX_WEB:
+            page = web_page(tmp, [b["url"]])  # the product's own page (announcement, GitHub, Hugging Face, App Store)
+            if page:
+                p = os.path.join(tmp, f"official_page_{i}.png")
+                make_logo_card(p, b.get("entity") or "", b.get("domain", ""))
+                dom = b.get("domain") or re.sub(r"^https?://(www\.)?([^/]+).*", r"\2", b["url"])
+                _remember(p, "webpage", page=page, outlet=b.get("entity", ""), domain=dom)
+                shots.append(("image", p))
+                counts["official images"] += 1
+                want = max(0, want - 1)
         if b["visual"] == "official":
             for _ in range(want):
                 img, dom = take_from_pool(b.get("url", ""), b.get("domain", ""))
@@ -1274,7 +1287,7 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
         if b["visual"] == "source":
             p = os.path.join(tmp, f"source_{i}.png")
             make_source_card(p, b.get("outlet", ""), b.get("headline") or b["line"], b.get("domain", ""))
-            page = web_page(tmp, source_urls) if not WEB_USED and i not in safe_beats else None
+            page = web_page(tmp, source_urls) if len(WEB_USED) < MAX_WEB and i not in safe_beats else None
             if page:  # the real article, scrolling (studio style); the drawn card stays as the classic fallback
                 _remember(p, "webpage", page=page, outlet=b.get("outlet", ""), domain=b.get("domain", ""))
             else:
