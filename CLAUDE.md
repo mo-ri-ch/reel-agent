@@ -1,8 +1,8 @@
 # Gradient Daily reel agent: rules for Claude
 
 An automated Instagram account (**@gradientai.news**, "Gradient Daily · AI News", by Gradient AI Labs) that posts
-**6 AI-news reels a day** (09:00, 11:30, 14:00, 16:30, 19:00, 21:30 IST) on the FREE Gemini quota (owner, 2026-10-10:
-"stay free", 6/day; 12/day ran out of quota overnight). Watch `state.json` → `gemini_use` / `gemini_errors`. The owner talks to it
+**6 AI-news reels a day**: 3 for US daytime (00:30, 03:30, 06:30 IST) + 3 for India (11:30, 16:30, 21:30 IST)
+(owner, 2026-10-21: night slots reached 2-4x more) on the FREE Gemini quota (owner, 2026-10-10: "stay free"). Watch `state.json` → `gemini_use` / `gemini_errors`. The owner talks to it
 through a Telegram bot and reads Claude's messages there.
 
 ## Mission & goals (keep every change aimed at these)
@@ -54,7 +54,7 @@ through a Telegram bot and reads Claude's messages there.
 - No "Top AI headlines" backup reels (owner, 2026-10-09: made no sense). A late, fully checked reel beats an on-time bad one.
 - Scripts: 30-40 s, 75-105 words, every sentence a concrete fact. Owner rejected short 45-65 word scripts
   (2026-10-09: "getting so bad"). Don't shorten scripts again without asking.
-- Voice: Fish Audio library voices Paula & Ethan, alternating (owner's choice). The owner's own clone was removed on 2026-10-07 at their request — don't bring it back unless asked. Fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
+- Voice: Fish Audio library voices, mostly Ethan with Paula every 4th reel (owner, 2026-10-21: Ethan 4.5 s watch / 106 reach vs Paula 3.3 s / 42). The owner's own clone was removed on 2026-10-07 at their request — don't bring it back unless asked. Fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
 - Brand blue (#7B9AF8), "Source · date" label, @gradientai.news handle. Look: studio style (studio.py) — clean dark/light scenes, floating picture cards, top captions with key-word highlight box (owner approved 2026-10-07).
 
 ## Daily health check (every day)

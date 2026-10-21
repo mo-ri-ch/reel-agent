@@ -20,7 +20,7 @@ import main, state as st, telegram_api as tg, writer, news, instagram, video, tt
 SCENARIO = sys.argv[1]
 main.TELEGRAM_CHAT_ID = "1"
 log = []
-clock = [datetime.fromisoformat("2026-10-08T00:00:00+05:30")]
+clock = [datetime.fromisoformat("2026-10-07T19:00:00+05:30")]  # the evening before: night slots are prepared then
 tg.send = lambda t, buttons=None, html=False: log.append(clock[0].strftime("%H:%M ") + t.split("\n")[0][:90])
 tg.action = lambda *a: None
 tg.get_updates = lambda o: []
@@ -92,7 +92,7 @@ def synth(t, b, g, e="microsoft", **k):
     return ("v.wav", "Ava (Microsoft), female")
 tts.synthesize = synth
 posted = []
-instagram.publish_reel = lambda p, c: posted.append(clock[0].strftime("%H:%M")) or "https://instagram.com/reel/X/"
+instagram.publish_reel = lambda p, c: (posted.append(clock[0].strftime("%H:%M")) if clock[0].day == 8 else None) or "https://instagram.com/reel/X/"
 instagram.reels_posted_on = lambda day, tz: None
 main.IG_READY = lambda: False
 st.now = lambda: clock[0]
