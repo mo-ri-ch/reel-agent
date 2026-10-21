@@ -174,3 +174,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   followers 7 -> 9. Outliers: Intel D270 (6.6x), Liquid AI LFM2.5 (6.6x): product launches with specs, no person shown.
 - Signal: Ethan beats Paula both weeks (median views 113 vs 36 this week, 132 vs 99 before; watch 5.1 s vs 3.0 s). Confound:
   alternation puts Paula on 21:30 often. Asked the owner (Ethan only vs keep both). hook_score has only 5 data points; not trusted yet.
+
+## 2026-10-21: first data-backed changes (owner OK)
+- Opening shows headline + picture from frame 0 (no blank start), slow push-in. Metric: avg watch time (baseline 14-20 Oct: 4.4 s; 7-13 Oct: 6.7 s).
+- Picker ranks launches with numbers and named-person news first. Metric: median reach (baseline 14-20 Oct: 42; number-titles 99 vs 50).
+- Open questions for the owner: move some slots to US hours (night slots reached 80-160 vs 10-45); Ethan vs Paula (4.5 s/106 vs 3.3 s/42).
