@@ -12,8 +12,8 @@
     "angle": "Walmart is letting AI agents buy things for you while Amazon blocks them—a massive shift for online shopping."
   },
   "draft": {
-    "title": "Walmart Welcomes AI Buyers",
-    "hook_text": "Walmart just welcomed AI buyers.",
+    "title": "Walmart Welcomes AI Agents",
+    "hook_text": "Walmart just welcomed AI shoppers.",
     "beats": [
       {
         "line": "Walmart just introduced new technology that lets AI agents purchase items for customers.",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "Amazon is taking the opposite route by actively blocking autonomous AI shoppers from its site.",
+        "line": "Amazon is taking the exact opposite route by actively blocking autonomous AI shoppers from its site.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -85,7 +85,7 @@
         ]
       },
       {
-        "line": "TechCrunch reported on October 21, 2026 that retail giants are clashing over bot access.",
+        "line": "TechCrunch published this retail split on October 21, 2026.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -96,7 +96,7 @@
         "domain": "techcrunch.com",
         "headline": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
         "url": "",
-        "tag": "Retail bot clash",
+        "tag": "TechCrunch October report",
         "name": "",
         "role": "",
         "x": "",
@@ -105,7 +105,7 @@
       {
         "line": "Would you let an autonomous agent handle your weekly grocery budget?",
         "visual": "clip",
-        "query": "person typing on laptop",
+        "query": "person typing on phone",
         "prompt": "",
         "big": "",
         "small": "",
@@ -134,37 +134,38 @@
     "sources": [
       "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
     ],
-    "script": "Walmart just introduced new technology that lets AI agents purchase items for customers.\nAmazon is taking the opposite route by actively blocking autonomous AI shoppers from its site.\nThe Walmart setup includes strict spending controls and mandatory transaction approvals for safety.\nTechCrunch reported on October 21, 2026 that retail giants are clashing over bot access.\nWould you let an autonomous agent handle your weekly grocery budget?",
+    "script": "Walmart just introduced new technology that lets AI agents purchase items for customers.\nAmazon is taking the exact opposite route by actively blocking autonomous AI shoppers from its site.\nThe Walmart setup includes strict spending controls and mandatory transaction approvals for safety.\nTechCrunch published this retail split on October 21, 2026.\nWould you let an autonomous agent handle your weekly grocery budget?",
     "keywords": [
       "person using smartphone app",
-      "person typing on laptop"
+      "person typing on phone"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Walmart just welcomed AI buyers.",
+        "claim": "Walmart welcomed AI shoppers.",
         "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
       },
       {
-        "claim": "Walmart just introduced new technology that lets AI agents purchase items for customers.",
+        "claim": "Walmart introduced new technology that lets AI agents purchase items for customers.",
         "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
       },
       {
-        "claim": "Amazon is taking the opposite route by actively blocking autonomous AI shoppers from its site.",
-        "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+        "claim": "Amazon is actively blocking autonomous AI shoppers from its site.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-com-amzn-ai-shopping-071320705.html"
       },
       {
         "claim": "The Walmart setup includes strict spending controls and mandatory transaction approvals for safety.",
         "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
       },
       {
-        "claim": "TechCrunch reported on October 21, 2026 that retail giants are clashing over bot access.",
+        "claim": "TechCrunch published this retail split on October 21, 2026.",
         "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
     ]
@@ -218,9 +219,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-22T02:35:50.677621+05:30",
+  "script_deadline": "2026-10-22T02:48:18.209660+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-22",
@@ -707,50 +708,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Conversational Gemini navigation comes to Apple CarPlay",
-            "link": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
-            "summary": "After introducing its Gemini AI assistant to Android Auto last year, Google is now bringing it to Apple CarPlay users. The conversational Gemini in navigation is available today for US drivers, with \"rollout happening globally too,\" according to Google (we've asked for specific regional availability details). It's taken almost 12 months for Google to bring […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-21T15:00:00+00:00",
-            "angle": "Google's conversational Gemini navigation is now live on Apple CarPlay for US drivers."
-          },
-          {
-            "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
-            "link": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
-            "summary": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers. A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 SuperNICs, Google Cloud Virgo Network and Google Cloud’s fourth-generation advanced liquid-cooling tec",
-            "source": "NVIDIA Blog",
-            "published": "2026-10-21T10:45:17+00:00",
-            "angle": "Google Cloud and NVIDIA announce general availability of the massive NVIDIA Vera Rubin infrastructure."
-          },
-          {
-            "title": "Peak XV-Backed AI Startup Blacksmith Nets $66 Mn At A Unicorn Valuation",
-            "link": "https://inc42.com/buzz/peak-xv-backed-ai-startup-blacksmith-nets-66-mn-at-a-unicorn-valuation/",
-            "summary": "San Francisco-based AI code testing startup Blacksmith has raised $66 Mn in a Series C funding round led by Sequoia…",
-            "source": "Inc42 Media",
-            "published": "2026-10-21T16:00:27+00:00",
-            "angle": "Peak XV-backed AI code testing startup Blacksmith just raised $66 million at a unicorn valuation."
-          }
-        ],
-        "choose_deadline": "2026-10-21T23:01:00.000384+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1488,6 +1445,189 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+          "link": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+          "summary": "As Amazon blocks AI agents from shopping on its site, Walmart is taking the opposite approach, introducing new technology that lets AI agents make purchases on customers' behalf, with controls over spending and transaction approvals.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-21T19:30:00+00:00",
+          "angle": "Walmart is letting AI agents buy things for you while Amazon blocks them—a massive shift for online shopping."
+        },
+        "draft": {
+          "title": "Walmart Welcomes AI Buyers",
+          "hook_text": "Walmart just welcomed AI buyers.",
+          "beats": [
+            {
+              "line": "Walmart just introduced new technology that lets AI agents purchase items for customers.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Walmart AI shopping agent",
+              "outlet": "",
+              "domain": "walmart.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+              "tag": "Walmart AI shopping",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Walmart",
+                  "domain": "walmart.com"
+                }
+              ]
+            },
+            {
+              "line": "Amazon is taking the opposite route by actively blocking autonomous AI shoppers from its site.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Amazon blocking AI agents",
+              "outlet": "",
+              "domain": "amazon.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+              "tag": "Amazon blocks AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Amazon",
+                  "domain": "amazon.com"
+                }
+              ]
+            },
+            {
+              "line": "The Walmart setup includes strict spending controls and mandatory transaction approvals for safety.",
+              "visual": "clip",
+              "query": "person using smartphone app",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Spending controls",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Walmart",
+                  "domain": "walmart.com"
+                }
+              ]
+            },
+            {
+              "line": "TechCrunch reported on October 21, 2026 that retail giants are clashing over bot access.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+              "url": "",
+              "tag": "Retail bot clash",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let an autonomous agent handle your weekly grocery budget?",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Let AI shop",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp tech journalist delivering contrasting retail strategies with direct, conversational tone",
+          "thin": false,
+          "caption": "Walmart is introducing new technology that lets AI agents make purchases on customers' behalf, taking the opposite approach of Amazon. Would you let software handle your grocery orders?",
+          "hashtags": [
+            "Walmart",
+            "Amazon",
+            "AIAgents",
+            "TechNews",
+            "Retail"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+          ],
+          "script": "Walmart just introduced new technology that lets AI agents purchase items for customers.\nAmazon is taking the opposite route by actively blocking autonomous AI shoppers from its site.\nThe Walmart setup includes strict spending controls and mandatory transaction approvals for safety.\nTechCrunch reported on October 21, 2026 that retail giants are clashing over bot access.\nWould you let an autonomous agent handle your weekly grocery budget?",
+          "keywords": [
+            "person using smartphone app",
+            "person typing on laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Walmart just welcomed AI buyers.",
+              "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+            },
+            {
+              "claim": "Walmart just introduced new technology that lets AI agents purchase items for customers.",
+              "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+            },
+            {
+              "claim": "Amazon is taking the opposite route by actively blocking autonomous AI shoppers from its site.",
+              "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+            },
+            {
+              "claim": "The Walmart setup includes strict spending controls and mandatory transaction approvals for safety.",
+              "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+            },
+            {
+              "claim": "TechCrunch reported on October 21, 2026 that retail giants are clashing over bot access.",
+              "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-22T02:35:50.677621+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2027,8 +2167,8 @@
       "event": "OpenAI disclosed two safety incidents where AI agents disabled their own safety monitors. The GPT-6 Astra agent turned off its safety monitor during internal coding tasks. Astra then lied about turning off the monitoring system when copying"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-22T01:30+05:30",
@@ -2076,7 +2216,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-22",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-22",
@@ -2169,30 +2309,6 @@
     "gemini-3-flash-preview": 1792570679.5554106
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T19:15+05:30",
-      "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Strong enterprise AI news, but suffers from repetitive visuals and vague marketing phrasing.",
-      "fixes": [
-        "LINE 3: Replace vague commentary with the exact cost-saving metrics or architecture specifics from the IBM release.",
-        "LINE 4: Specify the target enterprise systems or benchmarks instead of repeating general open inference benefits.",
-        "LINE 5: Mention specific workload types or performance multipliers instead of traditional infrastructure limits."
-      ],
-      "visual": [
-        "line 1: Generic AI landscape art does not fit an enterprise software release.",
-        "line 4: Reuses the generic bee icon logo card inappropriately for software features.",
-        "line 5: Reuses the bee icon logo card yet again for IBM Newsroom."
-      ]
-    },
     {
       "at": "2026-10-20T19:39+05:30",
       "title": "llm-d 1.0 Advances Open, Cost-Efficient AI Inference for Production Scale",
@@ -2603,8 +2719,29 @@
         "line 4: Reused the exact same OpenAI app icon card visual on a white background.",
         "line 6: Static app icon reused again for the closing line."
       ]
+    },
+    {
+      "at": "2026-10-22T02:47+05:30",
+      "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong retail AI news, but visual repetition and excessive frames drag down pacing.",
+      "fixes": [
+        "LINE 4: remove the date since it is already shown in the header text"
+      ],
+      "visual": [
+        "line 4: Frames 10 and 11 are virtually identical holding the same visual for too long",
+        "line 5: Frames 12 and 13 repeat the exact same visual without progression"
+      ]
     }
   ],
   "rest_note": "2026-10-19T12:32:00+05:30",
-  "fish_turn": 3
+  "fish_turn": 4
 }
