@@ -1,5 +1,6 @@
 """Tiny Telegram Bot API helper."""
 import json
+import time
 
 import requests
 
@@ -105,7 +106,17 @@ def send_video(path, caption="", buttons=None):
 
 def get_updates(offset):
     if DOORBELL_URL:  # messages were saved by the doorbell the moment they arrived
-        r = requests.get(f"{DOORBELL_URL}/updates", params={"key": DOORBELL_KEY}, timeout=30)
+        for attempt in (1, 2):
+            try:
+                r = requests.get(f"{DOORBELL_URL}/updates", params={"key": DOORBELL_KEY}, timeout=30)
+                break
+            except (requests.ConnectionError, requests.Timeout) as e:
+                # a dropped connection crashed a whole run on 2026-10-21; the doorbell keeps the
+                # messages until they are acknowledged, so skipping them this run loses nothing
+                if attempt == 2:
+                    print(f"doorbell unreachable, reading messages next run: {e}")
+                    return []
+                time.sleep(3)
         r.raise_for_status()
         return [u for u in r.json() if u["update_id"] >= offset]
     return call("getUpdates", offset=offset, allowed_updates=json.dumps(["message", "callback_query"]))
