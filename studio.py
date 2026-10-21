@@ -256,10 +256,16 @@ def stat_shot(out, frames, big, small, theme):
     return write_frames(out, frames, draw)
 
 
-def person_shot(out, frames, face, name, role, theme, credit=""):
+def person_shot(out, frames, face, name, role, theme, credit="", logo=None):
     t_ = THEMES[theme]
     size = 560
-    if face is not None:
+    if face is None and logo is not None:  # no trustworthy photo: their company's logo, never initials or a guess
+        tile = Image.new("RGBA", (size, size), (255, 255, 255, 255))
+        lg = logo.convert("RGBA")
+        lg.thumbnail((size - 160, size - 160), Image.LANCZOS)
+        tile.alpha_composite(lg, ((size - lg.width) // 2, (size - lg.height) // 2))
+        spr = sprite(tile, theme, max_w=size, max_h=size, radius=90)
+    elif face is not None:
         sq = V.portrait_square(face.convert("RGB"), size)
         ring = Image.new("RGBA", (size + 20, size + 20), (0, 0, 0, 0))
         ImageDraw.Draw(ring).rounded_rectangle([0, 0, size + 19, size + 19], radius=70, fill=(255, 255, 255, 255))
@@ -769,7 +775,13 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
                 add(stat_shot, stop, theme, info["big"], info["small"], theme)
             elif kind == "person":
                 face = Image.open(info["raw"]) if info.get("raw") else None
-                add(person_shot, stop, theme, face, info["name"], info.get("role", ""), theme, info.get("credit", ""))
+                logo = None
+                if face is None:  # the person's company, from their role ("CEO, Cerebras Systems" / "CEO at X")
+                    m = re.search(r"(?:,| at | of )\s*([A-Z][\w&.\- ]{1,40})$", info.get("role", ""))
+                    if m:
+                        logo = V.brand_logo(m.group(1).strip(), "")
+                add(person_shot, stop, theme, face, info["name"], info.get("role", ""), theme, info.get("credit", ""),
+                    logo)
             elif kind == "webpage":
                 add(webpage_shot, stop, theme, info["page"], info.get("outlet", ""), info.get("domain", ""), theme)
             elif kind == "source":
