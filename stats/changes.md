@@ -182,3 +182,4 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 21 Oct (owner OK): slots 00:30/03:30/06:30/11:30/16:30/21:30 IST (metric: median reach, baseline 42); voice mostly Ethan (metric: watch time).
 - 21 Oct: real article screenshots (scrolling) for source lines. Metric: editor visuals score (baseline median 6), avg watch time.
 - 21 Oct: Instagram trending music via the Audio API (replaces our own track; falls back to it). Metric: reach, avg watch time.
+- 21 Oct night: product-page screenshots for official lines; company logo instead of initials; strict stock-clip picking. Metric: editor visuals (median 6).
