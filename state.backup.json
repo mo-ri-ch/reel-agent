@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Conversational Gemini navigation comes to Apple CarPlay",
+      "link": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
+      "summary": "After introducing its Gemini AI assistant to Android Auto last year, Google is now bringing it to Apple CarPlay users. The conversational Gemini in navigation is available today for US drivers, with \"rollout happening globally too,\" according to Google (we've asked for specific regional availability details). It's taken almost 12 months for Google to bring […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-21T15:00:00+00:00",
+      "angle": "Google's conversational Gemini navigation is now live on Apple CarPlay for US drivers."
+    },
+    {
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "link": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "summary": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers. A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 SuperNICs, Google Cloud Virgo Network and Google Cloud’s fourth-generation advanced liquid-cooling tec",
+      "source": "NVIDIA Blog",
+      "published": "2026-10-21T10:45:17+00:00",
+      "angle": "Google Cloud and NVIDIA announce general availability of the massive NVIDIA Vera Rubin infrastructure."
+    },
+    {
+      "title": "Peak XV-Backed AI Startup Blacksmith Nets $66 Mn At A Unicorn Valuation",
+      "link": "https://inc42.com/buzz/peak-xv-backed-ai-startup-blacksmith-nets-66-mn-at-a-unicorn-valuation/",
+      "summary": "San Francisco-based AI code testing startup Blacksmith has raised $66 Mn in a Series C funding round led by Sequoia…",
+      "source": "Inc42 Media",
+      "published": "2026-10-21T16:00:27+00:00",
+      "angle": "Peak XV-backed AI code testing startup Blacksmith just raised $66 million at a unicorn valuation."
+    }
+  ],
+  "choose_deadline": "2026-10-21T23:01:00.000384+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -68,7 +93,8 @@
       "17:00",
       "19:30",
       "01:30",
-      "04:30"
+      "04:30",
+      "22:30"
     ]
   },
   "pending_topic": null,
@@ -1616,14 +1642,6 @@
   ],
   "posted_log": [
     {
-      "title": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
-      "at": "2026-10-07T19:45:28.201185+05:30"
-    },
-    {
-      "title": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event",
-      "at": "2026-10-07T21:52:11.173963+05:30"
-    },
-    {
       "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
       "at": "2026-10-07T23:45:27.493315+05:30"
     },
@@ -2028,23 +2046,23 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-21T19:30+05:30",
+    "at": "2026-10-21T22:30+05:30",
     "techcrunch.com": 17,
-    "theverge.com": 6,
-    "arstechnica.com": "blocked (HTTP 503)",
+    "theverge.com": 7,
+    "arstechnica.com": 6,
     "technologyreview.com": 3,
-    "openai.com": 3,
+    "openai.com": 7,
     "blog.google": 1,
     "deepmind.google": 0,
-    "huggingface.co": 3,
-    "blogs.nvidia.com": 11,
-    "inc42.com": 3,
-    "news.google.com": 39,
-    "Google News (VentureBeat, AIM, AI News)": 21,
+    "huggingface.co": 5,
+    "blogs.nvidia.com": 10,
+    "inc42.com": 4,
+    "news.google.com": 43,
+    "Google News (VentureBeat, AIM, AI News)": 23,
     "producthunt.com": 8,
-    "Hacker News": 2,
+    "Hacker News": 4,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 5
+    "filtered out (PR / local events / market fluff)": 4
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -2053,7 +2071,7 @@
   "report_day": "2026-10-21",
   "ig_count": {
     "day": "2026-10-21",
-    "at": "2026-10-21T22:15:25.554309+05:30",
+    "at": "2026-10-21T22:31:00.660799+05:30",
     "count": 6
   },
   "repeat_check_day": "2026-10-04",
@@ -2077,7 +2095,7 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 568,
+    "calls": 570,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2088,7 +2106,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 101,
+        "ok": 103,
         "busy": 37,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
