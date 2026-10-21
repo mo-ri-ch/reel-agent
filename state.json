@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -192,11 +192,48 @@
     "source_links": [
       "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
       "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-s-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Dario Amodei leads Anthropic as chief executive of…: The image is completely blank and missing the expected photo of Dario Amodei.",
+      "Federal courts would decide if Claude or competing…: The image is completely blank and missing the expected stock video of the federal courthouse interior.",
+      "The image is blank/black, missing the required photo or initials card of Dario Amodei.",
+      "The image is blank/black, missing the required stock video of a federal courthouse interior.",
+      "The image is blank/black, missing the required stock video of a person looking at a phone screen."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong scoop on Anthropic's safety bill, but visuals need more direct matching.",
+      "script_fixes": [],
+      "visual_beats": [
+        1,
+        3
+      ],
+      "visual_notes": [
+        "line 2: Shows placeholder DA monogram instead of an actual photo of Dario Amodei.",
+        "line 4: Shows generic architectural columns instead of a Department of Commerce graphic or logo."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Anthropic Claude: anthropic.com",
+      "Anthropic Claude: anthropic.com",
+      "news photo: anthropic.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "3 official images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIgVGrYfid4V8atK12PxZ8AAfhe6R1tqgACJiEAAiHRwVZ1Kq4__oF0Tj0E",
   "queue": [
     {
       "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
@@ -221,9 +258,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-21T14:18:48.904135+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-21T14:56:08.250718+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-21",
@@ -695,265 +732,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-21T01:24:31+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "Chinese tech giants are stockpiling $35B in Nvidia chips, signaling a massive AI arms race."
-        },
-        "draft": {
-          "title": "ByteDance, Alibaba, Tencent Nvidia Chip Order",
-          "hook_text": "35 billion dollars in Nvidia chips",
-          "beats": [
-            {
-              "line": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.",
-              "visual": "clip",
-              "query": "data center server room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "35 billion in orders",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ByteDance",
-                  "domain": "bytedance.com"
-                },
-                {
-                  "name": "Alibaba",
-                  "domain": "alibaba.com"
-                }
-              ]
-            },
-            {
-              "line": "These massive orders target specialized hardware to maintain their internal AI inference workloads.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia A100",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://www.nvidia.com",
-              "tag": "Targeting AI workloads",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "This spending surge highlights their urgent race to build competitive domestic AI models.",
-              "visual": "clip",
-              "query": "coding on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Building domestic models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The move comes as US export controls tighten around advanced data center silicon access.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia headquarters",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Navigating export controls",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "These firms previously relied on now-restricted hardware to power their large-scale training clusters.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "35B",
-              "small": "total order value",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Training cluster hardware",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can these companies sustain their AI development pace without unrestricted access to top-tier chips?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "r/LocalLLaMA",
-              "domain": "reddit.com",
-              "headline": "ByteDance, Alibaba, Tencent place over 35B in Nvidia orders",
-              "url": "",
-              "tag": "Can they sustain pace?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Urgent and analytical, focusing on the sheer volume of the investment and the tactical shift in hardware.",
-          "thin": false,
-          "caption": "ByteDance, Alibaba, and Tencent have placed over $35 billion in orders for Nvidia hardware to fuel their AI inference needs. This massive spending reflects an urgent push for domestic AI development despite ongoing US export restrictions. Can these companies sustain their development pace without access to top-tier chips?",
-          "hashtags": [
-            "Nvidia",
-            "ByteDance",
-            "Alibaba",
-            "Tencent",
-            "AI"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
-          ],
-          "script": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.\nThese massive orders target specialized hardware to maintain their internal AI inference workloads.\nThis spending surge highlights their urgent race to build competitive domestic AI models.\nThe move comes as US export controls tighten around advanced data center silicon access.\nThese firms previously relied on now-restricted hardware to power their large-scale training clusters.\nCan these companies sustain their AI development pace without unrestricted access to top-tier chips?",
-          "keywords": [
-            "data center server room",
-            "coding on screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "35 billion dollars in Nvidia chips",
-              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
-            },
-            {
-              "claim": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.",
-              "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
-            },
-            {
-              "claim": "These massive orders target specialized hardware to maintain their internal AI inference workloads.",
-              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
-            },
-            {
-              "claim": "This spending surge highlights their urgent race to build competitive domestic AI models.",
-              "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
-            },
-            {
-              "claim": "The move comes as US export controls tighten around advanced data center silicon access.",
-              "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-sees-alibaba-bytedance-104826226.html"
-            },
-            {
-              "claim": "These firms previously relied on now-restricted hardware to power their large-scale training clusters.",
-              "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
-          ],
-          "visual_status": "fixed",
-          "visual_notes": [
-            "These massive orders target specialized hardware t…: The image shows a map of Europe, which is unrelated to the line about Nvidia hardware.",
-            "This spending surge highlights their urgent race t…: The shot is blank/empty.",
-            "The move comes as US export controls tighten aroun…: The shot is blank/empty.",
-            "These firms previously relied on now-restricted ha…: The shot is blank/empty.",
-            "Can these companies sustain their AI development p…: The shot is blank/empty.",
-            "The image shows a conference stage with text about 'Industrial AI' and 'Friedrich Merz', which is unrelated to the ByteD",
-            "The card is almost empty, containing only a few words of text on a dark background.",
-            "The image is an almost-empty card with only text.",
-            "The image is an almost-empty card with only text.",
-            "The image is an almost-empty card with only text.",
-            "The image is an almost-empty card with only text."
-          ],
-          "editor": {
-            "overall": 8.5,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 9,
-              "accuracy": 10,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
-            "script_fixes": [
-              "LINE 2: Replace 'specialized hardware' with specific chip models like 'H20 or L20 chips' if known."
-            ],
-            "visual_beats": [
-              0,
-              1,
-              3,
-              4
-            ],
-            "visual_notes": [
-              "line 1: The same text and layout are held for too long (0.5s to 7.2s).",
-              "line 2: The Nvidia A100 logo is held for 7+ seconds across multiple frames.",
-              "line 4: The Nvidia headquarters icon is held for 7+ seconds across multiple frames.",
-              "line 5: The 'Training cluster hardware' text remains static for the entire duration of the line."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "6 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIgE2rYP43PC86dbayRSf2FpQqAgM1iAAIlIAACIdHBVvYCviklWBWDPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIgE2rYP43PC86dbayRSf2FpQqAgM1iAAIlIAACIdHBVvYCviklWBWDPQQ",
-      "history_title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders"
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1299,6 +1077,214 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+          "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+          "summary": "The proposed policy seems to offer protections against AI running amok but actually forbids federal agencies from blocking a model's release without the permission of a judge.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-20T23:01:23+00:00",
+          "angle": "Anthropic proposes a new AI safety bill that could block models unless a judge intervenes"
+        },
+        "draft": {
+          "title": "Anthropic AI Safety Bill Pitch",
+          "hook_text": "Anthropic's Fifty Deaths Safety Bill",
+          "beats": [
+            {
+              "line": "Fifty deaths or one billion dollars in damage is Anthropic's new threshold for AI.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic Claude",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Fifty deaths threshold",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Dario Amodei leads Anthropic as chief executive officer.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Dario Amodei leads Anthropic",
+              "name": "Dario Amodei",
+              "role": "CEO, Anthropic",
+              "x": "DarioAmodei",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The proposed safety bill forbids federal agencies from blocking a model without permission from a judge.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Anthropic pitches AI safety bill that may block a model",
+              "url": "",
+              "tag": "Judges block AI release",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This legislation effectively makes the Commerce Department the sole agency capable of stopping a release.",
+              "visual": "clip",
+              "query": "federal office building exterior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Commerce Department control",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Federal courts would decide if Claude or competing systems cross the danger line.",
+              "visual": "clip",
+              "query": "federal courthouse interior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Federal court decides",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust a judge to halt a dangerous AI model?",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust a judge",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp tech journalist explaining the political maneuvering behind safety bills with skeptical urgency",
+          "thin": false,
+          "caption": "Anthropic proposed an AI safety bill that triggers at fifty deaths or one billion dollars in damage, requiring a judge's permission before federal agencies can block a model. The policy puts oversight into the hands of federal courts. Would you trust a judge to halt a dangerous model?",
+          "hashtags": [
+            "Anthropic",
+            "Claude",
+            "AIsafety",
+            "TechCrunch"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+            "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-s-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
+          ],
+          "script": "Fifty deaths or one billion dollars in damage is Anthropic's new threshold for AI.\nDario Amodei leads Anthropic as chief executive officer.\nThe proposed safety bill forbids federal agencies from blocking a model without permission from a judge.\nThis legislation effectively makes the Commerce Department the sole agency capable of stopping a release.\nFederal courts would decide if Claude or competing systems cross the danger line.\nWould you trust a judge to halt a dangerous AI model?",
+          "keywords": [
+            "federal office building exterior",
+            "federal courthouse interior",
+            "person looking at phone screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Anthropic proposes a safety bill regarding a threshold of fifty deaths.",
+              "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+            },
+            {
+              "claim": "Fifty deaths or one billion dollars in damage is Anthropic's threshold for AI safety intervention under the proposed bill.",
+              "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
+            },
+            {
+              "claim": "Dario Amodei is the chief executive officer of Anthropic.",
+              "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
+            },
+            {
+              "claim": "The proposed safety bill forbids federal agencies from blocking a model without permission from a judge.",
+              "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+            },
+            {
+              "claim": "The legislation effectively makes the Commerce Department the sole agency capable of seeking to halt a model release.",
+              "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
+            },
+            {
+              "claim": "Federal courts would decide if Claude or competing systems cross the danger line.",
+              "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+            "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-s-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-21T14:18:48.904135+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1836,7 +1822,7 @@
       "event": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders. These massive orders target specialized hardware to maintain their internal AI inference workloads. This spending surge highlights their urg"
     }
   ],
-  "voice_mode": null,
+  "voice_mode": "ai",
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
@@ -1865,7 +1851,7 @@
   "report_day": "2026-10-20",
   "ig_count": {
     "day": "2026-10-21",
-    "at": "2026-10-21T14:15:29.566278+05:30",
+    "at": "2026-10-21T14:26:08.251014+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -1885,11 +1871,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-21",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 469,
+    "calls": 475,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1900,7 +1886,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 27,
+        "ok": 33,
         "busy": 12,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2008,27 +1994,6 @@
     "gemini-3-flash-preview": 1792570679.5554106
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T14:22+05:30",
-      "title": "Road Rage Sentence Thrown Out for Artificial Intelligence Usage",
-      "overall": 7.8,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Fascinating legal AI story, but visuals rely heavily on stock text and repeated frames.",
-      "fixes": [
-        "LINE 1: specify the exact month or court name if available for better grounding"
-      ],
-      "visual": [
-        "line 3: Visuals transition to plain text without showing a relevant legal document or courthouse i",
-        "line 6: Text on screen remains static and identical for multiple frames without visual progression"
-      ]
-    },
     {
       "at": "2026-10-20T14:29+05:30",
       "title": "New York City Public Schools banning AI use through middle school starting this ",
@@ -2451,6 +2416,25 @@
         "line 1: The same text and layout are held for too long (0.5s to 7.2s).",
         "line 2: The Nvidia A100 logo is held for 7+ seconds across multiple frames.",
         "line 4: The Nvidia headquarters icon is held for 7+ seconds across multiple frames."
+      ]
+    },
+    {
+      "at": "2026-10-21T14:25+05:30",
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be k",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong scoop on Anthropic's safety bill, but visuals need more direct matching.",
+      "fixes": [],
+      "visual": [
+        "line 2: Shows placeholder DA monogram instead of an actual photo of Dario Amodei.",
+        "line 4: Shows generic architectural columns instead of a Department of Commerce graphic or logo."
       ]
     }
   ],
