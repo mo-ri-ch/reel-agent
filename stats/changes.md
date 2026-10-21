@@ -179,3 +179,4 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Opening shows headline + picture from frame 0 (no blank start), slow push-in. Metric: avg watch time (baseline 14-20 Oct: 4.4 s; 7-13 Oct: 6.7 s).
 - Picker ranks launches with numbers and named-person news first. Metric: median reach (baseline 14-20 Oct: 42; number-titles 99 vs 50).
 - Open questions for the owner: move some slots to US hours (night slots reached 80-160 vs 10-45); Ethan vs Paula (4.5 s/106 vs 3.3 s/42).
+- 21 Oct (owner OK): slots 00:30/03:30/06:30/11:30/16:30/21:30 IST (metric: median reach, baseline 42); voice mostly Ethan (metric: watch time).
