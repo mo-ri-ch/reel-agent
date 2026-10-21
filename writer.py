@@ -241,6 +241,11 @@ when they are big news, but keep the mix global.
 OUR DATA: stories about well-known companies and products (OpenAI/ChatGPT, Google/Gemini, Apple, Microsoft, Meta,
 Nvidia, Anthropic/Claude, Amazon, Tesla, big game studios…) get about 50% more views than niche ones. Strongly prefer
 them. Local pilots, regional regulations and small-company news only when they are genuinely big.
+OUR DATA (7-20 Oct, ~120 reels): headlines with a concrete NUMBER (parameters, price, $ raised, % faster, users) got
+about TWICE the reach of ones without, and stories with a real NAMED person (CEO, researcher) also about twice;
+product/model LAUNCHES did best (top 3 of the week: Liquid AI's 24B model, DeepSeek v4.1 Flash, Amazon vs Nvidia).
+Trend pieces, explainers, panels and "what this means" analysis did worst. So rank first: a launch or concrete
+event from a known name WITH a number; then named-person news; vague trend stories last or not at all.
 Skip minor funding news, opinion pieces and duplicates of each other.
 Also SKIP: company press releases and self-announcements by small or unknown firms, local/regional events
 (bootcamps, workshops, trainings, seminars, hackathons), government MoUs and "policy targets" without a concrete
