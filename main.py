@@ -1633,6 +1633,9 @@ def cmd_offer():
     st.save(s)
 
 
+ETHAN_ID = "536d3a5e000945adb7038665781a4aca"
+
+
 def fish_voices(s):
     """Fish Audio voices to try, in order: the owner's own voice (unless switched off), then the library voices the
     owner picked with /fishvoice (shuffled). Empty when there's no key or credits ran out today."""
@@ -1643,10 +1646,17 @@ def fish_voices(s):
     out = [(own, "your voice (Fish Audio)")] if own and not s.get("fish_disabled") else []
     pool = [(v["id"], f"{v.get('name') or 'library voice'} (Fish Audio)") for v in s.get("fish_pool") or []
             if v.get("id")]
-    last = s.get("last_fish_id")  # take turns (Paula, Ethan, Paula…): the one used last time goes to the back
-    if last in [v[0] for v in pool]:
-        k = [v[0] for v in pool].index(last)
-        pool = pool[k + 1:] + pool[:k + 1]
+    # owner, 21 Oct: "mostly Ethan" (Ethan 4.5 s watch / 106 reach vs Paula 3.3 s / 42): Ethan leads, Paula every 4th
+    lead = next((v for v in pool if v[0] == ETHAN_ID), None)
+    if lead:
+        n = s.get("fish_turn", 0)
+        others = [v for v in pool if v[0] != ETHAN_ID]
+        pool = (others + [lead]) if (n % 4 == 3 and others) else ([lead] + others)
+    else:  # Ethan not in the pool: take turns (the one used last goes to the back)
+        last = s.get("last_fish_id")
+        if last in [v[0] for v in pool]:
+            k = [v[0] for v in pool].index(last)
+            pool = pool[k + 1:] + pool[:k + 1]
     return out + pool
 
 
@@ -1695,6 +1705,7 @@ def cmd_render():
             s["engine_used"] = tts.LAST_ENGINE
             if tts.LAST_ENGINE == "fish" and tts.LAST_FISH_ID:
                 s["last_fish_id"] = tts.LAST_FISH_ID
+                s["fish_turn"] = s.get("fish_turn", 0) + 1
             print(f"Voice-over: {engine}")
         else:
             voice = tg.download(s["voice_file_id"], os.path.join(WORK_DIR, "voice_input"))

@@ -69,6 +69,12 @@ _s["last_fish_id"] = "paula"
 check("fish alternates", main.fish_voices(_s)[0][0], "ethan")
 _s["last_fish_id"] = "ethan"
 check("fish alternates back", main.fish_voices(_s)[0][0], "paula")
+_s2 = {"fish_disabled": True, "fish_pool": [{"id": "paula", "name": "Paula"}, {"id": main.ETHAN_ID, "name": "Ethan"}]}
+_firsts = []
+for _n in range(8):
+    _s2["fish_turn"] = _n
+    _firsts.append(main.fish_voices(_s2)[0][0] == main.ETHAN_ID)
+check("mostly Ethan (3 of 4)", sum(_firsts), 6)
 main.FISH_API_KEY = _k
 
 # a broken memory file falls back to the backup; control files are applied once and removed
