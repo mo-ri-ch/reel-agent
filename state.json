@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "rendering",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -252,7 +252,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-21T12:33:19.991233+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
@@ -725,220 +725,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-21T01:24:31+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "Chinese tech giants are stockpiling $35B in Nvidia chips, signaling a massive AI arms race."
-        },
-        "draft": {
-          "title": "ByteDance, Alibaba, Tencent Nvidia Chip Order",
-          "hook_text": "35 billion dollars in Nvidia chips",
-          "beats": [
-            {
-              "line": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "35 billion in orders",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These massive orders involve Nvidia RTX 5500 graphics cards.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia RTX 5500",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "RTX 5500 orders",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Chinese firms are securing this hardware to bolster their AI inference capabilities.",
-              "visual": "clip",
-              "query": "data center server racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Boosting AI inference",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These companies are working around tight US export controls on high-end silicon.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia headquarters",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Navigating export controls",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Previous supply chains relied on restricted chips, forcing this pivot toward alternative hardware.",
-              "visual": "clip",
-              "query": "microchip production line",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Supply chain pivot",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This investment highlights how critical AI throughput has become for their domestic services.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "35B",
-              "small": "Total Order Value",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Critical AI throughput",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will these chips be enough to keep their AI competitive globally?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "r/LocalLLaMA",
-              "domain": "reddit.com",
-              "headline": "ByteDance, Alibaba, Tencent place over 35B in Nvidia orders",
-              "url": "",
-              "tag": "Staying competitive?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Urgent and analytical, focusing on the sheer volume of the investment and the tactical shift in hardware.",
-          "thin": false,
-          "caption": "ByteDance, Alibaba, and Tencent have placed over $35 billion in orders for Nvidia RTX 5500 chips. These Chinese tech giants are pivoting to this hardware to support their AI inference infrastructure despite ongoing US export restrictions. Will these chips be enough to keep their AI competitive globally?",
-          "hashtags": [
-            "Nvidia",
-            "ByteDance",
-            "Alibaba",
-            "Tencent",
-            "AI"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
-          ],
-          "script": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.\nThese massive orders involve Nvidia RTX 5500 graphics cards.\nChinese firms are securing this hardware to bolster their AI inference capabilities.\nThese companies are working around tight US export controls on high-end silicon.\nPrevious supply chains relied on restricted chips, forcing this pivot toward alternative hardware.\nThis investment highlights how critical AI throughput has become for their domestic services.\nWill these chips be enough to keep their AI competitive globally?",
-          "keywords": [
-            "data center server racks",
-            "microchip production line"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "35 billion dollars in Nvidia chips",
-              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
-            },
-            {
-              "claim": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders.",
-              "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
-            },
-            {
-              "claim": "These massive orders involve Nvidia RTX 5500 graphics cards.",
-              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
-            },
-            {
-              "claim": "Chinese firms are securing this hardware to bolster their AI inference capabilities.",
-              "url": "https://qz.com/bytedance-alibaba-tencent-nvidia-chip-orders-102026"
-            },
-            {
-              "claim": "These companies are working around tight US export controls on high-end silicon.",
-              "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-sees-alibaba-bytedance-104826226.html"
-            },
-            {
-              "claim": "Previous supply chains relied on restricted chips, forcing this pivot toward alternative hardware.",
-              "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-sees-alibaba-bytedance-104826226.html"
-            },
-            {
-              "claim": "Total Order Value is 35B",
-              "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1xb9z8e/exclusive_bytedance_alibaba_tencent_place_over_35/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-21T09:40:31.246215+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1497,6 +1283,224 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Can India Capitalise On The AI Homecoming?",
+          "link": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/",
+          "summary": "For decades, Indian engineers and researchers moved to Silicon Valley, joining global technology companies and contributing to products and research…",
+          "source": "Inc42 Media",
+          "published": "2026-10-21T05:32:15+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "India's AI Homecoming",
+          "hook_text": "Indian talent is coming home.",
+          "beats": [
+            {
+              "line": "Indian engineers are leaving Silicon Valley roles to build AI in India.",
+              "visual": "clip",
+              "query": "software engineer working on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Returning AI Talent",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "For years, this talent fueled global tech companies and research labs abroad.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Silicon Valley",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Silicon Valley Reliance",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Now, the Indian AI ecosystem is shifting toward building local proprietary models.",
+              "visual": "clip",
+              "query": "modern office interior Bangalore",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Building Proprietary Models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Domestic startups are raising capital to solve India-specific enterprise challenges.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1.3B",
+              "small": "Population Scale",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "India-Specific Challenges",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Investors are betting on deep tech instead of traditional service-based models.",
+              "visual": "clip",
+              "query": "venture capital office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Deep Tech Focus",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Founders want to transform the country from a service provider into a product hub.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Bangalore",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Service to Product",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Can India dominate the next wave of global AI development?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Inc42 Media",
+              "domain": "inc42.com",
+              "headline": "Can India Capitalise On The AI Homecoming?",
+              "url": "",
+              "tag": "Global AI Dominance",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Confident and analytical, highlighting a strategic shift in the Indian tech industry.",
+          "thin": false,
+          "caption": "Indian tech talent is returning home to build proprietary AI models. Startups are pivoting from service roles to deep tech solutions. Can India become a global AI product hub?",
+          "hashtags": [
+            "IndiaTech",
+            "AI",
+            "StartupIndia",
+            "DeepTech",
+            "TechTrends"
+          ],
+          "sources": [
+            "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+          ],
+          "script": "Indian engineers are leaving Silicon Valley roles to build AI in India.\nFor years, this talent fueled global tech companies and research labs abroad.\nNow, the Indian AI ecosystem is shifting toward building local proprietary models.\nDomestic startups are raising capital to solve India-specific enterprise challenges.\nInvestors are betting on deep tech instead of traditional service-based models.\nFounders want to transform the country from a service provider into a product hub.\nCan India dominate the next wave of global AI development?",
+          "keywords": [
+            "software engineer working on laptop",
+            "modern office interior Bangalore",
+            "venture capital office"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Indian talent is coming home.",
+              "url": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+            },
+            {
+              "claim": "Indian engineers are leaving Silicon Valley roles to build AI in India.",
+              "url": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+            },
+            {
+              "claim": "For years, this talent fueled global tech companies and research labs abroad.",
+              "url": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+            },
+            {
+              "claim": "The Indian AI ecosystem is shifting toward building local proprietary models.",
+              "url": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+            },
+            {
+              "claim": "Domestic startups are raising capital to solve India-specific enterprise challenges.",
+              "url": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+            },
+            {
+              "claim": "AI data centres are projected to consume as much water as 1.3 billion people by 2030.",
+              "url": "https://www.orfonline.org/expert-speak/cooling-the-cloud-balancing-ai-growth-and-water-security"
+            },
+            {
+              "claim": "Investors are betting on deep tech instead of traditional service-based models.",
+              "url": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+            },
+            {
+              "claim": "Founders want to transform the country from a service provider into a product hub.",
+              "url": "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://inc42.com/features/can-india-capitalise-on-the-ai-homecoming/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-21T12:33:19.991233+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2039,8 +2043,8 @@
       "event": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders. These massive orders target specialized hardware to maintain their internal AI inference workloads. This spending surge highlights their urg"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-21T10:30+05:30",
