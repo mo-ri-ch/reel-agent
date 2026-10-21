@@ -436,7 +436,9 @@ def key_word_index(words):
 
 
 def hook_shot(out, frames, hook, label, img=None, theme="dark"):
-    """Opening: the source label, the headline popping in line by line (key word highlighted), the picture below."""
+    """Opening: the source label, the headline and the picture are ALL on screen from the very first frame (21 Oct:
+    viewers left after ~4 s; the old opening started on a blank dark frame and typed the headline in), with a slow
+    push-in for motion and the key word's highlight box popping on at 0.15 s."""
     t_ = THEMES[theme]
     bg = background(theme)
     probe = ImageDraw.Draw(bg)
@@ -459,7 +461,7 @@ def hook_shot(out, frames, hook, label, img=None, theme="dark"):
         frame = bg.copy()
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(layer)
-        a = ease(tt / 0.3)
+        a = 1.0
         tw = d.textlength(label, font=lf)
         x = W / 2 - (tw + 34) / 2
         d.ellipse([x, 230 - 11, x + 22, 230 + 11], fill=(*ACCENT, int(255 * a)))
@@ -467,25 +469,24 @@ def hook_shot(out, frames, hook, label, img=None, theme="dark"):
         y = top
         boxed = False
         for li, line in enumerate(lines):
-            q = ease((tt - 0.12 - li * 0.14) / 0.35)
+            q = 1.0
             if q > 0:
-                yy = y + 36 * (1 - q)
+                yy = y
                 lw = d.textlength(line, font=fnt)
                 xx = W / 2 - lw / 2
                 for wi, word in enumerate(line.split()):
                     ww = d.textlength(word, font=fnt)
                     if not boxed and key_word and word == key_word:
                         boxed = True
-                        if q > 0.6:
+                        if tt > 0.15:
                             select_box(d, (xx - 14, yy - 4, xx + ww + 14, yy + size * 1.08), theme)
                     d.text((xx, yy), word, font=fnt, fill=(*t_["fg"], int(255 * q)))
                     xx += ww + d.textlength(" ", font=fnt) + (18 if word == key_word else 0)
             y += int(size * 1.2)
         frame.alpha_composite(layer)
         if spr is not None:
-            p = ease((tt - 0.3) / 0.5)
-            place(frame, spr, W / 2, pic_top + (spr.height - 140) / 2 + 90 * (1 - p),
-                  0.94 + 0.06 * p + 0.02 * (k / max(1, frames)), p)
+            place(frame, spr, W / 2, pic_top + (spr.height - 140) / 2,
+                  1.0 + 0.05 * (k / max(1, frames)), 1.0)  # slow push-in: motion from frame 0
         return frame
     return write_frames(out, frames, draw)
 
