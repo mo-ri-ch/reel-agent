@@ -1225,7 +1225,8 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
             else:
                 counts["cards"] += 1
             print(f"Person {b['name']}: {'photo from ' + str(credit) if img else 'name card (no reliable photo)'}")
-        if b["visual"] == "official" and b.get("url") and len(WEB_USED) < MAX_WEB:
+        deep = re.match(r"^https?://[^/]+/[^?#]{3,}", b.get("url") or "")  # a real page, not a bare homepage
+        if b["visual"] == "official" and deep and len(WEB_USED) < MAX_WEB:
             page = web_page(tmp, [b["url"]])  # the product's own page (announcement, GitHub, Hugging Face, App Store)
             if page:
                 p = os.path.join(tmp, f"official_page_{i}.png")

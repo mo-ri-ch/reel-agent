@@ -681,7 +681,7 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             planned[key_of(info)] = planned.get(key_of(info), 0) + 1
             out.append(("picture", {**info, "_reframe": uses.get(key_of(info), 0) + planned[key_of(info)]}))
         return out
-    shown_brands, initials_shown = set(), set()
+    shown_brands, initials_shown, logos_shown = set(), set(), set()
 
     def banner(info):
         """Wide promo banners (> 2:1) lose their words in our card crop ('...TEST AI')."""
@@ -747,6 +747,12 @@ def build_track(beats, times, plan, hook, hook_len, total, tmp):
             kind, info = specs[k % len(specs)]
             repeat = k // len(specs)
             stop = start + (end - start) * (k + 1) / pieces
+            if kind == "logo":  # each logo once per reel (22 Oct: the OpenAI logo showed 7 times in one reel)
+                lkey = re.sub(r"[^a-z0-9]", "", str(info.get("name", "")).lower())
+                if lkey in logos_shown:
+                    kind, info = "statement", {"tag": tag or " ".join(b["line"].split()[:4]).rstrip(".,")}
+                else:
+                    logos_shown.add(lkey)
             if kind == "person" and not info.get("raw") and info.get("name") in initials_shown:
                 kind, info = ("statement", {"tag": tag}) if tag else (kind, info)  # initials card once per person
             if kind == "person" and not info.get("raw"):
