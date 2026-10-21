@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -158,11 +158,51 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
-    ]
+    ],
+    "visual_status": "fixed",
+    "visual_notes": [
+      "More than fifty percent of managers now find evalu…: Text box boundary handles are visible over the text and text at the bottom is cut off.",
+      "A TechCrunch survey published in October 2026 reve…: Text box boundary handles are visible over the text and text is overlapping.",
+      "Employees rely on automated software to draft repo…: Text box boundary handles are visible over the text.",
+      "Bosses struggle to verify who actually wrote the c…: Text box boundary handles are visible over the text.",
+      "Can you accurately measure output when algorithms …: Text box boundary handles are visible over the text.",
+      "Unfinished video editor bounding box visible around text '50%'.",
+      "Unfinished video editor bounding box visible around text '2026'.",
+      "Unfinished video editor bounding box visible around text 'Employees'.",
+      "Unfinished video editor bounding box visible around text 'Bosses'.",
+      "Unfinished video editor bounding box visible around text 'How'."
+    ],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong data-driven news piece, but visual variety needs urgent improvement.",
+      "script_fixes": [],
+      "visual_beats": [
+        0,
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 1: Gorilla image repeated across multiple frames without adding new context.",
+        "line 3: Static background held for too long without visual evolution.",
+        "line 4: Same visual asset held for too many consecutive frames."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIgmGrY18qcsLajCh6kksDDvKaJ0lP8AAJEIgACIdHJVjgyt87vwO3HPQQ",
   "queue": [
     {
       "title": "Tesla and SpaceX Explore Merger as Elon Musk Backs Deal",
@@ -208,9 +248,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-21T20:39:57.241565+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-21T21:18:35.179186+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-21",
@@ -695,179 +735,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Karmayogi Bharat, OpenAI Partner to Train Indian Civil Servants in Artificial Intelligence",
-          "link": "https://the420.in/karmayogi-bharat-openai-ai-training-civil-services-public-officers/",
-          "summary": "Karmayogi Bharat, OpenAI Partner to Train Indian Civil Servants in Artificial Intelligence The420.in",
-          "source": "The420.in",
-          "published": "2026-10-21T10:20:49+00:00",
-          "angle": "OpenAI partners with the Indian government to train civil servants on AI"
-        },
-        "draft": {
-          "title": "OpenAI and Karmayogi Bharat Train Indian Civil Servants",
-          "hook_text": "OpenAI is training Indian civil servants.",
-          "beats": [
-            {
-              "line": "Karmayogi Bharat partnered with OpenAI to train millions of Indian civil servants in AI.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The420.in",
-              "domain": "the420.in",
-              "headline": "Karmayogi Bharat, OpenAI Partner to Train Indian Civil Servants in Artificial Intelligence",
-              "url": "",
-              "tag": "Karmayogi Bharat partnership",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The state-run public governance platform is rolling out this curriculum for government officers across India.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Karmayogi Bharat",
-              "outlet": "",
-              "domain": "igotkarmayogi.gov.in",
-              "headline": "",
-              "url": "https://igotkarmayogi.gov.in",
-              "tag": "Public governance rollout",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Public officials at various administrative levels will learn how to leverage machine intelligence.",
-              "visual": "clip",
-              "query": "bureaucrats in meeting room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Administrative level training",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The collaboration aims to build digital capacity and modern skill sets within public service.",
-              "visual": "clip",
-              "query": "person typing on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Digital capacity building",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust a government official using an algorithm to handle your paperwork?",
-              "visual": "clip",
-              "query": "government office desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI in administration",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "crisp, professional tech journalist explaining a major government AI training initiative",
-          "thin": false,
-          "caption": "Karmayogi Bharat and OpenAI are partnering to train Indian civil servants in AI. The initiative aims to build digital capacity across public administrations. Would you trust government paperwork drafted by algorithms?",
-          "hashtags": [
-            "OpenAI",
-            "KarmayogiBharat",
-            "India",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://the420.in/karmayogi-bharat-openai-ai-training-civil-services-public-officers/"
-          ],
-          "script": "Karmayogi Bharat partnered with OpenAI to train millions of Indian civil servants in AI.\nThe state-run public governance platform is rolling out this curriculum for government officers across India.\nPublic officials at various administrative levels will learn how to leverage machine intelligence.\nThe collaboration aims to build digital capacity and modern skill sets within public service.\nWould you trust a government official using an algorithm to handle your paperwork?",
-          "keywords": [
-            "bureaucrats in meeting room",
-            "person typing on laptop",
-            "government office desk"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "OpenAI is training Indian civil servants.",
-              "url": "https://m.economictimes.com/ai/ai-insights/openai-to-train-indias-civil-servants-in-ai-through-karmayogi-bharat-tie-up/articleshow/135086417.cms"
-            },
-            {
-              "claim": "Karmayogi Bharat partnered with OpenAI to train millions of Indian civil servants in AI.",
-              "url": "https://the420.in/karmayogi-bharat-openai-ai-training-civil-services-public-officers/"
-            },
-            {
-              "claim": "The state-run public governance platform is rolling out this curriculum for government officers across India.",
-              "url": "https://the420.in/karmayogi-bharat-openai-ai-training-civil-services-public-officers/"
-            },
-            {
-              "claim": "Public officials at various administrative levels will learn how to leverage machine intelligence.",
-              "url": "https://the420.in/karmayogi-bharat-openai-ai-training-civil-services-public-officers/"
-            },
-            {
-              "claim": "The collaboration aims to build digital capacity and modern skill sets within public service.",
-              "url": "https://the420.in/karmayogi-bharat-openai-ai-training-civil-services-public-officers/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://the420.in/karmayogi-bharat-openai-ai-training-civil-services-public-officers/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-21T18:06:51.002800+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1612,6 +1479,180 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "AI promises productivity, but for managers, it’s mostly a headache for now",
+          "link": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+          "summary": "More than 50% of managers say they're finding it harder to evaluate employees' work after adopting AI, according to a new survey.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-21T14:00:00+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "AI makes employee reviews harder",
+          "hook_text": "Over fifty percent of managers struggle with AI",
+          "beats": [
+            {
+              "line": "More than fifty percent of managers now find evaluating work harder after adopting AI.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "50%",
+              "small": "Managers struggling with employee evalua",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Over 50% find evaluations harder",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "A TechCrunch survey published in October 2026 revealed that workplace tools create major oversight headaches.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "AI promises productivity, but for managers, it’s mostly a headache for now",
+              "url": "",
+              "tag": "TechCrunch survey published October 2026",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Employees rely on automated software to draft reports and write code every day.",
+              "visual": "clip",
+              "query": "manager looking at laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Employees rely on automated software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Bosses struggle to verify who actually wrote the code or built the final presentation.",
+              "visual": "clip",
+              "query": "office worker typing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Bosses struggle to verify work",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Can you accurately measure output when algorithms do half the heavy lifting?",
+              "visual": "clip",
+              "query": "person staring at screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "How to measure algorithm output",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "direct, conversational, and slightly exasperated tone, explaining how workplace automation creates new hurdles for leadership",
+          "thin": false,
+          "caption": "Over 50% of managers say AI makes evaluating employee work harder. A new TechCrunch survey highlights the hidden management challenges behind productivity tools. How do you measure output when algorithms do the work?",
+          "hashtags": [
+            "TechCrunch",
+            "ArtificialIntelligence",
+            "Workplace",
+            "Management",
+            "FutureOfWork"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
+          ],
+          "script": "More than fifty percent of managers now find evaluating work harder after adopting AI.\nA TechCrunch survey published in October 2026 revealed that workplace tools create major oversight headaches.\nEmployees rely on automated software to draft reports and write code every day.\nBosses struggle to verify who actually wrote the code or built the final presentation.\nCan you accurately measure output when algorithms do half the heavy lifting?",
+          "keywords": [
+            "manager looking at laptop",
+            "office worker typing code",
+            "person staring at screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Over fifty percent of managers struggle with AI",
+              "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
+            },
+            {
+              "claim": "More than fifty percent of managers now find evaluating work harder after adopting AI.",
+              "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
+            },
+            {
+              "claim": "A TechCrunch survey published in October 2026 revealed that workplace tools create major oversight headaches.",
+              "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
+            },
+            {
+              "claim": "Employees rely on automated software to draft reports and write code every day.",
+              "url": "https://www.peoplematters.in/article/ai-and-emerging-tech/ai-at-work-8-emerging-practices-creating-new-management-challenges-52764"
+            },
+            {
+              "claim": "Bosses struggle to verify who actually wrote the code or built the final presentation.",
+              "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
+            },
+            {
+              "claim": "Can you accurately measure output when algorithms do half the heavy lifting?",
+              "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-21T20:39:57.241565+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2153,8 +2194,8 @@
       "event": "Anthropic published new research on using Claude to reduce code attack surfaces. It targets dead code and unnecessary dependencies that increase software vulnerabilities. Engineering teams feed their codebase into Claude to trace execution "
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-21T19:30+05:30",
@@ -2182,7 +2223,7 @@
   "report_day": "2026-10-20",
   "ig_count": {
     "day": "2026-10-21",
-    "at": "2026-10-21T20:30:42.461431+05:30",
+    "at": "2026-10-21T20:48:35.179409+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2206,7 +2247,7 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 562,
+    "calls": 568,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2217,7 +2258,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 95,
+        "ok": 101,
         "busy": 37,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2325,28 +2366,6 @@
     "gemini-3-flash-preview": 1792570679.5554106
   },
   "editor_log": [
-    {
-      "at": "2026-10-20T17:05+05:30",
-      "title": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could tri",
-      "overall": 7.3,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 8,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Strong subject matter, but visuals lack variety and some lines repeat structural filler.",
-      "fixes": [
-        "LINE 5: Both SpaceX and Anthropic are exploring models to distribute equity or financial returns directly to citizens.",
-        "LINE 6: This strategy aims to offset economic inequality driven by rapid automation."
-      ],
-      "visual": [
-        "line 2: Elon Musk's photo is held unchanged across four consecutive frames through lines 1 and 2.",
-        "line 4: Elon Musk's initials graphic and text slide feels repetitive with previous leadership fram"
-      ]
-    },
     {
       "at": "2026-10-20T17:12+05:30",
       "title": "SpaceX, Anthropic plan to share wealth with the public amid concern AI could tri",
@@ -2763,7 +2782,28 @@
         "line 5: Repeats the Anthropic logo graphic which was already shown multiple times earlier.",
         "line 3: Repeats the Anthropic logo graphic in frame 6."
       ]
+    },
+    {
+      "at": "2026-10-21T20:48+05:30",
+      "title": "AI promises productivity, but for managers, it’s mostly a headache for now",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong data-driven news piece, but visual variety needs urgent improvement.",
+      "fixes": [],
+      "visual": [
+        "line 1: Gorilla image repeated across multiple frames without adding new context.",
+        "line 3: Static background held for too long without visual evolution.",
+        "line 4: Same visual asset held for too many consecutive frames."
+      ]
     }
   ],
-  "rest_note": "2026-10-19T12:32:00+05:30"
+  "rest_note": "2026-10-19T12:32:00+05:30",
+  "fish_turn": 1
 }
