@@ -353,6 +353,24 @@ check("no url, no page shot", _ws.capture("", "/tmp/x.png"), None)
 _Im.new("RGB", (400, 900), (255, 255, 255)).save("/tmp/_blank.png")
 check("blank page detected", _ws.looks_blank("/tmp/_blank.png"), True)
 
+# Instagram music: the track is sent with the post; if Instagram refuses it, the reel still posts without it
+import instagram as _ig  # noqa: E402
+_calls, _igpost, _igget = [], _ig.requests.post, _ig.requests.get
+def _fake_ig_post(url, data=None, **k):
+    _calls.append(dict(data) if isinstance(data, dict) else {})
+    if isinstance(data, dict) and "audio_configuration" in data and "media" in url and "publish" not in url:
+        return _R(400, {"error": {"message": "audio not available"}})
+    return _R(200, {"id": "123", "uri": "https://up"})
+_ig.requests.post = _fake_ig_post
+_ig.requests.get = lambda url, **k: _R(200, {"data": [], "status_code": "FINISHED", "permalink": "https://ig/p/1"})
+open("/tmp/_v.mp4", "wb").write(b"0" * 10)
+check("music refused -> still posts", _ig.publish_reel("/tmp/_v.mp4", "cap", audio_id="999"), "https://ig/p/1")
+check("music was asked first", "audio_configuration" in _calls[0], True)
+check("music error recorded", bool(_ig.AUDIO_ERROR[0]), True)
+_ig.requests.get = lambda url, **k: _R(200, {"data": [{"audio_id": "a1", "title": "Song", "display_artist": "X"}]})
+check("trending music parsed", _ig.search_music(), [{"id": "a1", "title": "Song", "artist": "X"}])
+_ig.requests.post, _ig.requests.get = _igpost, _igget
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

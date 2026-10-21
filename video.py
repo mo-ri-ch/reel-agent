@@ -1654,7 +1654,7 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
         print(f"Logo badges skipped: {e}")
 
     audio = wav
-    music = pick_music()
+    music = None if draft.get("ig_audio") else pick_music()  # Instagram adds its own track at posting
     if music:
         try:
             audio = os.path.join(tmp, "mixed.wav")

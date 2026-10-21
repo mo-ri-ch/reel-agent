@@ -92,7 +92,7 @@ def synth(t, b, g, e="microsoft", **k):
     return ("v.wav", "Ava (Microsoft), female")
 tts.synthesize = synth
 posted = []
-instagram.publish_reel = lambda p, c: (posted.append(clock[0].strftime("%H:%M")) if clock[0].day == 8 else None) or "https://instagram.com/reel/X/"
+instagram.publish_reel = lambda p, c, **k: (posted.append(clock[0].strftime("%H:%M")) if clock[0].day == 8 else None) or "https://instagram.com/reel/X/"
 instagram.reels_posted_on = lambda day, tz: None
 main.IG_READY = lambda: False
 st.now = lambda: clock[0]

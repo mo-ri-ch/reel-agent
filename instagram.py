@@ -1,4 +1,5 @@
 """Publishes a Reel using the official (free) Instagram Graph API."""
+import json
 import os
 import time
 
@@ -42,16 +43,47 @@ def already_posted(caption, hours=24):
 COVER_AT_MS = 1300  # the cover frame: 1.3 s in, when the opening headline is fully on screen
 
 
-def publish_reel(video_path, caption, cover_at_ms=COVER_AT_MS):
+IG_MUSIC_VOLUME = int(os.environ.get("IG_MUSIC_VOLUME") or 15)  # Instagram music under our voice (1-100)
+AUDIO_ERROR = [""]  # why Instagram refused the music on the last post ("" = fine / none asked)
+
+
+def search_music(query=None, limit=25):
+    """Music Instagram allows apps to use (Audio API). No query = what's trending now. [{"id", "title", "artist"}]"""
+    params = {"audio_type": "music", "user_id": IG_USER_ID, "access_token": IG_ACCESS_TOKEN}
+    if query:
+        params["search_query"] = query
+    data = _check(requests.get(f"{IG_GRAPH_BASE}/ig_audio", params=params, timeout=30))
+    out = []
+    for a in (data.get("data") or [])[:limit]:
+        aid = a.get("audio_id") or a.get("id")
+        if aid:
+            out.append({"id": str(aid), "title": str(a.get("title") or a.get("display_title") or "")[:80],
+                        "artist": str(a.get("display_artist") or a.get("artist_name") or a.get("artist") or "")[:60]})
+    return out
+
+
+def publish_reel(video_path, caption, cover_at_ms=COVER_AT_MS, audio_id=None):
     existing = already_posted(caption)
     if existing:
         print("This reel is already on Instagram — not posting it twice.")
         return existing
     size = os.path.getsize(video_path)
-    # 1) create an upload container
-    data = _check(requests.post(f"{IG_GRAPH_BASE}/{IG_USER_ID}/media", data={
-        "media_type": "REELS", "upload_type": "resumable", "caption": caption[:2200], "thumb_offset": int(cover_at_ms),
-        "share_to_feed": "true", "access_token": IG_ACCESS_TOKEN}, timeout=60))
+    # 1) create an upload container (with Instagram music under our voice, if one was chosen)
+    fields = {"media_type": "REELS", "upload_type": "resumable", "caption": caption[:2200],
+              "thumb_offset": int(cover_at_ms), "share_to_feed": "true", "access_token": IG_ACCESS_TOKEN}
+    AUDIO_ERROR[0] = ""
+    if audio_id:
+        fields["audio_configuration"] = json.dumps({"audio_id": str(audio_id), "audio_volume": IG_MUSIC_VOLUME,
+                                                    "video_volume": 100})
+    try:
+        data = _check(requests.post(f"{IG_GRAPH_BASE}/{IG_USER_ID}/media", data=fields, timeout=60))
+    except RuntimeError as e:
+        if not audio_id:
+            raise
+        AUDIO_ERROR[0] = str(e)[:200]  # music refused: post without it rather than not at all
+        print(f"Instagram music refused ({e}); posting without it")
+        fields.pop("audio_configuration")
+        data = _check(requests.post(f"{IG_GRAPH_BASE}/{IG_USER_ID}/media", data=fields, timeout=60))
     container = data["id"]
     version = IG_GRAPH_BASE.split("/")[-1]
     upload_uri = data.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{version}/{container}"

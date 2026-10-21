@@ -219,7 +219,7 @@ def post_next_now(s):
     item = s["queue"].pop(0)
     tg.send(f"📤 Posting \"{item['title']}\" now... (1-3 minutes)")
     try:
-        link = publish_item(item)
+        link = publish_item(item, s)
         s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
         record_post(s, item.get("extra"))
         mark_undo(s, irreversible=True)
@@ -783,11 +783,21 @@ def next_post_time(s):
     return now
 
 
-def publish_item(item):
+def publish_item(item, s=None):
     import instagram
     os.makedirs(WORK_DIR, exist_ok=True)
     path = tg.download(item["video_file_id"], os.path.join(WORK_DIR, "final.mp4"))
-    link = instagram.publish_reel(path, item["caption"])
+    audio = item.get("audio") or {}
+    link = instagram.publish_reel(path, item["caption"], audio_id=audio.get("id"))
+    if audio.get("id") and s is not None:
+        if instagram.AUDIO_ERROR[0]:  # Instagram refused the music: next reels keep our own background music
+            s["ig_music_off"] = st.now().date().isoformat()
+            s["ig_music_error"] = instagram.AUDIO_ERROR[0]
+            tg.send("🎵 Instagram didn't accept the music for this reel, so it went out with the voice only. "
+                    "Next reels use our own background music again until I fix it.")
+        else:
+            s["ig_music_recent"] = ((s.get("ig_music_recent") or []) + [audio["id"]])[-15:]
+            item.setdefault("meta", {})["music"] = f"{audio.get('title', '')} · {audio.get('artist', '')}"[:80]
     try:
         import insights
         insights.remember_reel(link, {**(item.get("meta") or {}), "posted": st.now().isoformat(timespec="minutes")})
@@ -907,14 +917,15 @@ def reel_meta(s):
 def approve(s, now_please=False):
     item = {"title": s["topic"]["title"], "video_file_id": s["video_file_id"],
             "caption": caption_for(s["draft"], s.get("voice_mode") == "ai"),
-            "extra": bool((s.get("topic") or {}).get("extra")), "meta": reel_meta(s)}
+            "extra": bool((s.get("topic") or {}).get("extra")), "meta": reel_meta(s),
+            "audio": (s.get("draft") or {}).get("ig_audio")}
     s["history"] = (s["history"] + [item["title"]])[-100:]
     said = " ".join((s["draft"].get("script") or "").split())[:240]
     s["posted_log"] = (s.get("posted_log") or []) + [{"title": item["title"], "at": st.now().isoformat(),
                                                       "event": said}]
     if now_please:
         tg.send("📤 Posting to Instagram now... (1-3 minutes)")
-        link = publish_item(item)
+        link = publish_item(item, s)
         s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
         record_post(s, (s.get("topic") or {}).get("extra"))
         mark_undo(s, irreversible=True)
@@ -937,7 +948,7 @@ def post_due(s):
         if datetime.fromisoformat(item["post_at"]) > now:
             continue
         try:
-            link = publish_item(item)
+            link = publish_item(item, s)
             s["queue"].remove(item)
             s["posted_ids"] = ((s.get("posted_ids") or []) + [item["video_file_id"]])[-30:]
             record_post(s, item.get("extra"))
@@ -1660,6 +1671,23 @@ def fish_voices(s):
     return out + pool
 
 
+def choose_ig_music(s):
+    """A trending Instagram track for this reel (Audio API), not one used in the last 15 reels. None when the
+    music API isn't available (then our own background music is mixed in as before)."""
+    import random
+    import instagram
+    if not IG_READY() or s.get("ig_music_off") == st.now().date().isoformat():
+        return None
+    try:
+        tracks = instagram.search_music()
+    except Exception as e:
+        print(f"Instagram music unavailable: {e}")
+        s["ig_music_error"] = str(e)[:200]
+        return None
+    fresh = [t for t in tracks[:12] if t["id"] not in (s.get("ig_music_recent") or [])]
+    return random.choice(fresh or tracks[:12]) if tracks else None
+
+
 def cmd_render():
     import tts
     import video
@@ -1722,6 +1750,7 @@ def cmd_render():
         if s.get("voice_mode") == "ai":
             import tts
             exact = tts.LAST_WORDS
+        s["draft"]["ig_audio"] = choose_ig_music(s)  # Instagram's own (trending) music replaces ours
         out = video.render(voice, s["draft"], s["topic"], user_image_path=image, user_video_path=clip,
                            exact_words=exact)
         # Checkpoint 2: does every shot actually fit what's being said?
@@ -1776,6 +1805,9 @@ def cmd_render():
                        "issues": "\n🖼 Visual check: ⚠️ some shots may not fit — please look",
                        "skipped": "\n🖼 Visual check: skipped"}.get(vs, "")
         voice_info += "\n" + fact_line(s["draft"]).split("\n")[0]
+        ia = s["draft"].get("ig_audio") or {}
+        if ia:
+            voice_info += f"\n🎵 Instagram music (added when posting): {ia.get('title', '')} · {ia.get('artist', '')}"
         ed = s["draft"].get("editor") or {}
         if ed.get("overall") is not None:
             voice_info += f"\n🎬 Editor: {ed['overall']}/10 — {ed.get('one_line', '')}"
