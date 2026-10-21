@@ -1,239 +1,40 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
-    "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-    "summary": "The proposed policy seems to offer protections against AI running amok but actually forbids federal agencies from blocking a model's release without the permission of a judge.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-10-20T23:01:23+00:00",
-    "angle": "Anthropic proposes a new AI safety bill that could block models unless a judge intervenes"
-  },
-  "draft": {
-    "title": "Anthropic AI Safety Bill Pitch",
-    "hook_text": "Anthropic's Fifty Deaths Safety Bill",
-    "beats": [
-      {
-        "line": "Fifty deaths or one billion dollars in damage is Anthropic's new threshold for AI.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Anthropic Claude",
-        "outlet": "",
-        "domain": "anthropic.com",
-        "headline": "",
-        "url": "https://www.anthropic.com",
-        "tag": "Fifty deaths threshold",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Anthropic",
-            "domain": "anthropic.com"
-          }
-        ]
-      },
-      {
-        "line": "Dario Amodei leads Anthropic as chief executive officer.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "https://www.anthropic.com",
-        "tag": "Dario Amodei leads Anthropic",
-        "name": "Dario Amodei",
-        "role": "CEO, Anthropic",
-        "x": "DarioAmodei",
-        "brands": [
-          {
-            "name": "Anthropic",
-            "domain": "anthropic.com"
-          }
-        ]
-      },
-      {
-        "line": "The proposed safety bill forbids federal agencies from blocking a model without permission from a judge.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "TechCrunch",
-        "domain": "techcrunch.com",
-        "headline": "Anthropic pitches AI safety bill that may block a model",
-        "url": "",
-        "tag": "Judges block AI release",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This legislation effectively makes the Commerce Department the sole agency capable of stopping a release.",
-        "visual": "clip",
-        "query": "federal office building exterior",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Commerce Department control",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Federal courts would decide if Claude or competing systems cross the danger line.",
-        "visual": "clip",
-        "query": "federal courthouse interior",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Federal court decides",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Claude",
-            "domain": "anthropic.com"
-          }
-        ]
-      },
-      {
-        "line": "Would you trust a judge to halt a dangerous AI model?",
-        "visual": "clip",
-        "query": "person looking at phone screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Trust a judge",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "sharp tech journalist explaining the political maneuvering behind safety bills with skeptical urgency",
-    "thin": false,
-    "caption": "Anthropic proposed an AI safety bill that triggers at fifty deaths or one billion dollars in damage, requiring a judge's permission before federal agencies can block a model. The policy puts oversight into the hands of federal courts. Would you trust a judge to halt a dangerous model?",
-    "hashtags": [
-      "Anthropic",
-      "Claude",
-      "AIsafety",
-      "TechCrunch"
-    ],
-    "sources": [
-      "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-      "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-s-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
-    ],
-    "script": "Fifty deaths or one billion dollars in damage is Anthropic's new threshold for AI.\nDario Amodei leads Anthropic as chief executive officer.\nThe proposed safety bill forbids federal agencies from blocking a model without permission from a judge.\nThis legislation effectively makes the Commerce Department the sole agency capable of stopping a release.\nFederal courts would decide if Claude or competing systems cross the danger line.\nWould you trust a judge to halt a dangerous AI model?",
-    "keywords": [
-      "federal office building exterior",
-      "federal courthouse interior",
-      "person looking at phone screen"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "evidence": [
-      {
-        "claim": "Anthropic proposes a safety bill regarding a threshold of fifty deaths.",
-        "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
-      },
-      {
-        "claim": "Fifty deaths or one billion dollars in damage is Anthropic's threshold for AI safety intervention under the proposed bill.",
-        "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
-      },
-      {
-        "claim": "Dario Amodei is the chief executive officer of Anthropic.",
-        "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
-      },
-      {
-        "claim": "The proposed safety bill forbids federal agencies from blocking a model without permission from a judge.",
-        "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
-      },
-      {
-        "claim": "The legislation effectively makes the Commerce Department the sole agency capable of seeking to halt a model release.",
-        "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
-      },
-      {
-        "claim": "Federal courts would decide if Claude or competing systems cross the danger line.",
-        "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 0,
-    "source_links": [
-      "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-      "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-s-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
-    ],
-    "visual_status": "fixed",
-    "visual_notes": [
-      "Dario Amodei leads Anthropic as chief executive of…: The image is completely blank and missing the expected photo of Dario Amodei.",
-      "Federal courts would decide if Claude or competing…: The image is completely blank and missing the expected stock video of the federal courthouse interior.",
-      "The image is blank/black, missing the required photo or initials card of Dario Amodei.",
-      "The image is blank/black, missing the required stock video of a federal courthouse interior.",
-      "The image is blank/black, missing the required stock video of a person looking at a phone screen."
-    ],
-    "editor": {
-      "overall": 8.3,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong scoop on Anthropic's safety bill, but visuals need more direct matching.",
-      "script_fixes": [],
-      "visual_beats": [
-        1,
-        3
-      ],
-      "visual_notes": [
-        "line 2: Shows placeholder DA monogram instead of an actual photo of Dario Amodei.",
-        "line 4: Shows generic architectural columns instead of a Department of Commerce graphic or logo."
-      ],
-      "reviewer": "gemini"
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Tesla and SpaceX Explore Merger as Elon Musk Backs Deal",
+      "link": "https://analyticsindiamag.com/ai-news/tesla-and-spacex-explore-merger-as-elon-musk-backs-deal",
+      "summary": "Tesla and SpaceX Explore Merger as Elon Musk Backs Deal analyticsindiamag.com",
+      "source": "analyticsindiamag.com",
+      "published": "2026-10-21T08:54:36+00:00",
+      "angle": "Elon Musk's massive move: Tesla and SpaceX explore a merger backed by Musk"
     },
-    "credits": [
-      "Anthropic Claude: anthropic.com",
-      "Anthropic Claude: anthropic.com",
-      "news photo: anthropic.com"
-    ],
-    "voice_used": "Ethan (Fish Audio)",
-    "visual_summary": "3 official images, 4 cards"
-  },
+    {
+      "title": "Agent Pets",
+      "link": "https://www.producthunt.com/products/agent-pets",
+      "summary": "Coding agents as pets that live on every page in Chrome Discussion | Link",
+      "source": "Product Hunt — The best new products, every day",
+      "published": "2026-10-21T04:55:21+00:00",
+      "buzz": "Product Hunt launch",
+      "angle": "Turn your coding agents into virtual pets that live directly inside your Chrome browser"
+    },
+    {
+      "title": "Using Claude to reduce the attack surface of code",
+      "link": "https://www.anthropic.com/research/attack-surface-reduction",
+      "summary": "",
+      "source": "anthropic.com",
+      "published": "2026-10-21T03:36:43+00:00",
+      "buzz": "Hacker News 46 points",
+      "angle": "Anthropic reveals how to use Claude to actively shrink the attack surface of your code"
+    }
+  ],
+  "choose_deadline": "2026-10-21T15:30:42.722908+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIgVGrYfid4V8atK12PxZ8AAfhe6R1tqgACJiEAAiHRwVZ1Kq4__oF0Tj0E",
+  "video_file_id": null,
   "queue": [
     {
       "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
@@ -255,13 +56,34 @@
         "made": "2026-10-21T10:30+05:30"
       },
       "post_at": "2026-10-21T16:30:00+05:30"
+    },
+    {
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "video_file_id": "BAACAgUAAxkDAAIgVGrYfid4V8atK12PxZ8AAfhe6R1tqgACJiEAAiHRwVZ1Kq4__oF0Tj0E",
+      "caption": "Anthropic proposed an AI safety bill that triggers at fifty deaths or one billion dollars in damage, requiring a judge's permission before federal agencies can block a model. The policy puts oversight into the hands of federal courts. Would you trust a judge to halt a dangerous model?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Anthropic Claude: anthropic.com · news photo: anthropic.com\n\n#Anthropic #Claude #AIsafety #TechCrunch",
+      "extra": false,
+      "meta": {
+        "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+        "kind": "news",
+        "source": "AI News & Artificial Intelligence | Tech",
+        "engine": "fish",
+        "voice": "Ethan (Fish Audio)",
+        "person": true,
+        "words": 77,
+        "visuals": "3 official images, 4 cards",
+        "editor": 8.3,
+        "writer": "gemini",
+        "hook_score": null,
+        "made": "2026-10-21T15:00+05:30"
+      },
+      "post_at": "2026-10-21T19:00:00+05:30"
     }
   ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-10-21T14:56:08.250718+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
-  "pending_offer": true,
+  "pending_offer": false,
   "offer_log": {
     "date": "2026-10-21",
     "done": [
@@ -666,7 +488,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [],
   "tried": [
     "AI game clones are making indie developers afraid to show their work",
@@ -732,50 +553,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "ElevenLabs Launches Real-Time Voice AI Models With Up to 98.8% Speech Reasoning Accuracy",
-            "link": "https://analyticsindiamag.com/ai-news/elevenlabs-launches-real-time-voice-ai-models-with-up-to-988-speech-reasoning-accuracy",
-            "summary": "ElevenLabs Launches Real-Time Voice AI Models With Up to 98.8% Speech Reasoning Accuracy Analytics India Magazine",
-            "source": "Analytics India Magazine",
-            "published": "2026-10-21T04:46:38+00:00",
-            "angle": "ElevenLabs just dropped real-time voice AI that sounds scarily human and accurate."
-          },
-          {
-            "title": "‘Freeze AI Now’: Bay Area Activists Rally Outside OpenAI Headquarters",
-            "link": "https://www.kqed.org/news/12105289/freeze-ai-now-bay-area-activists-rally-outside-openai-headquarters",
-            "summary": "‘Freeze AI Now’: Bay Area Activists Rally Outside OpenAI Headquarters KQED",
-            "source": "KQED",
-            "published": "2026-10-20T23:26:41+00:00",
-            "angle": "Protests against AI are hitting the streets—people are demanding a 'freeze' on development."
-          },
-          {
-            "title": "Ex-Nvidia-turned-VC Amulya Vishwanath: ‘Physical AI is in its LEGO era’",
-            "link": "https://techcrunch.com/2026/10/20/ex-nvidia-turned-vc-amulya-vishwanath-physical-ai-is-in-its-lego-era/",
-            "summary": "It’s the moment everyone is waiting for — the ChatGPT moment for robotics, Amulya Vishwanath explained to TechCrunch’s Equity.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-20T16:20:06+00:00",
-            "angle": "Experts say Physical AI is entering its 'LEGO era'—the robotics revolution is officially here."
-          }
-        ],
-        "choose_deadline": "2026-10-21T11:00:59.705862+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1289,6 +1066,253 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+          "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+          "summary": "The proposed policy seems to offer protections against AI running amok but actually forbids federal agencies from blocking a model's release without the permission of a judge.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-20T23:01:23+00:00",
+          "angle": "Anthropic proposes a new AI safety bill that could block models unless a judge intervenes"
+        },
+        "draft": {
+          "title": "Anthropic AI Safety Bill Pitch",
+          "hook_text": "Anthropic's Fifty Deaths Safety Bill",
+          "beats": [
+            {
+              "line": "Fifty deaths or one billion dollars in damage is Anthropic's new threshold for AI.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic Claude",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Fifty deaths threshold",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Dario Amodei leads Anthropic as chief executive officer.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Dario Amodei leads Anthropic",
+              "name": "Dario Amodei",
+              "role": "CEO, Anthropic",
+              "x": "DarioAmodei",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The proposed safety bill forbids federal agencies from blocking a model without permission from a judge.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Anthropic pitches AI safety bill that may block a model",
+              "url": "",
+              "tag": "Judges block AI release",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This legislation effectively makes the Commerce Department the sole agency capable of stopping a release.",
+              "visual": "clip",
+              "query": "federal office building exterior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Commerce Department control",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Federal courts would decide if Claude or competing systems cross the danger line.",
+              "visual": "clip",
+              "query": "federal courthouse interior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Federal court decides",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust a judge to halt a dangerous AI model?",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust a judge",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp tech journalist explaining the political maneuvering behind safety bills with skeptical urgency",
+          "thin": false,
+          "caption": "Anthropic proposed an AI safety bill that triggers at fifty deaths or one billion dollars in damage, requiring a judge's permission before federal agencies can block a model. The policy puts oversight into the hands of federal courts. Would you trust a judge to halt a dangerous model?",
+          "hashtags": [
+            "Anthropic",
+            "Claude",
+            "AIsafety",
+            "TechCrunch"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+            "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-s-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
+          ],
+          "script": "Fifty deaths or one billion dollars in damage is Anthropic's new threshold for AI.\nDario Amodei leads Anthropic as chief executive officer.\nThe proposed safety bill forbids federal agencies from blocking a model without permission from a judge.\nThis legislation effectively makes the Commerce Department the sole agency capable of stopping a release.\nFederal courts would decide if Claude or competing systems cross the danger line.\nWould you trust a judge to halt a dangerous AI model?",
+          "keywords": [
+            "federal office building exterior",
+            "federal courthouse interior",
+            "person looking at phone screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Anthropic proposes a safety bill regarding a threshold of fifty deaths.",
+              "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+            },
+            {
+              "claim": "Fifty deaths or one billion dollars in damage is Anthropic's threshold for AI safety intervention under the proposed bill.",
+              "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
+            },
+            {
+              "claim": "Dario Amodei is the chief executive officer of Anthropic.",
+              "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
+            },
+            {
+              "claim": "The proposed safety bill forbids federal agencies from blocking a model without permission from a judge.",
+              "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+            },
+            {
+              "claim": "The legislation effectively makes the Commerce Department the sole agency capable of seeking to halt a model release.",
+              "url": "https://mashable.com/tech/anthropic-pitching-congress-ai-safety-bill"
+            },
+            {
+              "claim": "Federal courts would decide if Claude or competing systems cross the danger line.",
+              "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+            "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-s-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model"
+          ],
+          "visual_status": "fixed",
+          "visual_notes": [
+            "Dario Amodei leads Anthropic as chief executive of…: The image is completely blank and missing the expected photo of Dario Amodei.",
+            "Federal courts would decide if Claude or competing…: The image is completely blank and missing the expected stock video of the federal courthouse interior.",
+            "The image is blank/black, missing the required photo or initials card of Dario Amodei.",
+            "The image is blank/black, missing the required stock video of a federal courthouse interior.",
+            "The image is blank/black, missing the required stock video of a person looking at a phone screen."
+          ],
+          "editor": {
+            "overall": 8.3,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 8,
+              "accuracy": 9,
+              "visuals": 7,
+              "flow": 9
+            },
+            "one_line": "Strong scoop on Anthropic's safety bill, but visuals need more direct matching.",
+            "script_fixes": [],
+            "visual_beats": [
+              1,
+              3
+            ],
+            "visual_notes": [
+              "line 2: Shows placeholder DA monogram instead of an actual photo of Dario Amodei.",
+              "line 4: Shows generic architectural columns instead of a Department of Commerce graphic or logo."
+            ],
+            "reviewer": "gemini"
+          },
+          "credits": [
+            "Anthropic Claude: anthropic.com",
+            "Anthropic Claude: anthropic.com",
+            "news photo: anthropic.com"
+          ],
+          "voice_used": "Ethan (Fish Audio)",
+          "visual_summary": "3 official images, 4 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAIgVGrYfid4V8atK12PxZ8AAfhe6R1tqgACJiEAAiHRwVZ1Kq4__oF0Tj0E",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIgVGrYfid4V8atK12PxZ8AAfhe6R1tqgACJiEAAiHRwVZ1Kq4__oF0Tj0E",
+      "history_title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed"
     }
   ],
   "posted_ids": [
@@ -1324,7 +1348,6 @@
     "BAACAgUAAxkDAAIfwWrX_5r0-C1BSEq0UZdvH71w_7mCAAKZHwACIdHBVmjhYXijtf01PQQ"
   ],
   "history": [
-    "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
     "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
     "President Donald Trump announces creation of 'Super Intelligence Force' AI task force - ABC News",
     "Top AI headlines · 10:20 AM today",
@@ -1423,13 +1446,10 @@
     "Closed downtown San Francisco Centre mall could be turned into an AI data center, according to proposal from K-G Growth Partners",
     "Meta pauses Muse sharing after researchers find AI chats on the web",
     "Google’s more personalized Gemini AI is heading to your car",
-    "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders"
+    "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
+    "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed"
   ],
   "posted_log": [
-    {
-      "title": "How to Defend Against AI-Designed Viruses",
-      "at": "2026-10-07T13:55:26.298786+05:30"
-    },
     {
       "title": "Penn State Announces New Artificial Intelligence Grants For Faculty",
       "at": "2026-10-07T15:45:36.554162+05:30"
@@ -1821,16 +1841,21 @@
       "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia chip orders",
       "at": "2026-10-21T10:30:35.064624+05:30",
       "event": "ByteDance, Alibaba, and Tencent just placed over thirty-five billion dollars in Nvidia chip orders. These massive orders target specialized hardware to maintain their internal AI inference workloads. This spending surge highlights their urg"
+    },
+    {
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "at": "2026-10-21T15:00:32.068338+05:30",
+      "event": "Fifty deaths or one billion dollars in damage is Anthropic's new threshold for AI. Dario Amodei leads Anthropic as chief executive officer. The proposed safety bill forbids federal agencies from blocking a model without permission from a ju"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-21T13:05+05:30",
+    "at": "2026-10-21T15:00+05:30",
     "techcrunch.com": 20,
-    "theverge.com": 7,
-    "arstechnica.com": 6,
+    "theverge.com": 6,
+    "arstechnica.com": 5,
     "technologyreview.com": 3,
     "openai.com": 3,
     "blog.google": 1,
@@ -1838,12 +1863,12 @@
     "huggingface.co": 6,
     "blogs.nvidia.com": 1,
     "inc42.com": 1,
-    "news.google.com": 44,
-    "Google News (VentureBeat, AIM, AI News)": 14,
-    "producthunt.com": 11,
-    "Hacker News": 3,
+    "news.google.com": 42,
+    "Google News (VentureBeat, AIM, AI News)": 16,
+    "producthunt.com": 9,
+    "Hacker News": 2,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 1
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-10T13:19:00+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -1876,7 +1901,7 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 475,
+    "calls": 477,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1887,7 +1912,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 33,
+        "ok": 35,
         "busy": 12,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
