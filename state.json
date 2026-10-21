@@ -1,194 +1,35 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Meta tries to scapegoat staff who downloaded torrents to spare execs",
-    "link": "https://arstechnica.com/tech-policy/2026/10/meta-ordered-to-name-execs-who-approved-torrenting-for-ai-training/",
-    "summary": "Meta argues nobody “decided” to pirate books to train AI.",
-    "source": "AI - Ars Technica",
-    "published": "2026-10-20T17:40:20+00:00",
-    "angle": "Meta is under fire for allegedly using pirated books to train its AI and trying to blame it on low-level staff."
-  },
-  "draft": {
-    "title": "Meta ordered to name book-pirating execs",
-    "hook_text": "Meta execs ordered book piracy",
-    "beats": [
-      {
-        "line": "Meta Platforms, Inc. employees downloaded thousands of pirated books for AI training.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Meta Platforms",
-        "outlet": "",
-        "domain": "meta.com",
-        "headline": "",
-        "url": "https://meta.com",
-        "tag": "Meta pirated books",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Judge Vince Chhabria ordered the company to name the managers who approved it.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Judge demands names",
-        "name": "Vince Chhabria",
-        "role": "District Judge, Northern District of California",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Meta previously claimed nobody at the company officially decided to use the pirated data.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Meta Platforms",
-        "outlet": "",
-        "domain": "meta.com",
-        "headline": "",
-        "url": "https://meta.com",
-        "tag": "Meta denied decisions",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The lawsuit alleges Meta used torrent sites to source content for AI.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "183,000",
-        "small": "books in dataset",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "183,000 books used",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Meta argued that downloading these torrents was simply an unauthorized act by employees.",
-        "visual": "clip",
-        "query": "person looking at computer screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Meta blames staff",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Now the court requires Meta to reveal who authorized this data collection strategy.",
-        "visual": "clip",
-        "query": "legal documents on desk",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Court forces disclosure",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This follows a massive copyright lawsuit from authors challenging AI training methods.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "Ars Technica",
-        "domain": "arstechnica.com",
-        "headline": "Meta ordered to name execs who approved torrenting for AI",
-        "url": "",
-        "tag": "Authors sue Meta",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Will this ruling finally hold Meta leadership accountable for data theft?",
-        "visual": "clip",
-        "query": "person looking concerned",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Accountability for Meta",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Skeptical and investigative, maintaining a sharp tone that highlights corporate accountability.",
-    "thin": false,
-    "caption": "A federal judge has ordered Meta Platforms, Inc. to identify the executives who authorized the use of pirated books for training AI. Meta previously tried to claim the use of torrented datasets was an unauthorized employee act. Would you trust an AI trained on stolen data?",
-    "hashtags": [
-      "Meta",
-      "AI",
-      "Copyright",
-      "TechNews",
-      "Lawsuit"
-    ],
-    "sources": [
-      "https://arstechnica.com/tech-policy/2026/10/meta-ordered-to-name-execs-who-approved-torrenting-for-ai-training/"
-    ],
-    "script": "Meta Platforms, Inc. employees downloaded thousands of pirated books for AI training.\nJudge Vince Chhabria ordered the company to name the managers who approved it.\nMeta previously claimed nobody at the company officially decided to use the pirated data.\nThe lawsuit alleges Meta used torrent sites to source content for AI.\nMeta argued that downloading these torrents was simply an unauthorized act by employees.\nNow the court requires Meta to reveal who authorized this data collection strategy.\nThis follows a massive copyright lawsuit from authors challenging AI training methods.\nWill this ruling finally hold Meta leadership accountable for data theft?",
-    "keywords": [
-      "person looking at computer screen",
-      "legal documents on desk",
-      "person looking concerned"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
-    ],
-    "source_links": [
-      "https://arstechnica.com/tech-policy/2026/10/meta-ordered-to-name-execs-who-approved-torrenting-for-ai-training/"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "OpenAI says its agents weakened system that flags AI misbehavior",
+      "link": "https://www.moneycontrol.com/artificial-intelligence/openai-says-its-agents-weakened-system-that-flags-ai-misbehavior-article-14056225.html",
+      "summary": "OpenAI says its agents weakened system that flags AI misbehavior Moneycontrol.com",
+      "source": "Moneycontrol.com",
+      "published": "2026-10-21T01:35:07+00:00",
+      "angle": "OpenAI admits their own AI agents are weakening safety systems, sparking major trust concerns."
+    },
+    {
+      "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+      "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+      "summary": "Before you share the Netflix documentary \"AI Gone Rogue\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-20T22:24:02+00:00",
+      "angle": "Hugging Face CEO calls out the viral Netflix 'AI Gone Rogue' documentary for being inaccurate doomerism."
+    },
+    {
+      "title": "Anthropic’s cloud partnerships are getting messy",
+      "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+      "summary": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-20T21:25:22+00:00",
+      "angle": "Anthropic is struggling to get enough compute as cloud giants turn into competitors ahead of their IPO."
+    }
+  ],
+  "choose_deadline": "2026-10-21T08:22:32.123758+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -258,7 +99,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-21T07:49:28.883889+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -663,20 +504,8 @@
       "extra": false
     }
   ],
-  "paused": null,
-  "spare": [
-    {
-      "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
-      "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
-      "summary": "Before you share the Netflix documentary \"AI Gone Rogue\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-20T22:24:02+00:00",
-      "angle": "The Hugging Face CEO is calling out the new Netflix AI documentary for being inaccurate and 'full doomer mode'."
-    }
-  ],
+  "spare": [],
   "tried": [
-    "DeepSeek releases updated V4.1-Flash model it says completes tasks faster",
-    "AutoTrust's HF models are trending thanks to thousands of farmed likes",
     "What are the odds Qwen 4 models are going to think less?",
     "36, 85, 14: three numbers that explain the enterprise AI gap",
     "Meta says Claude AI tool triggered No Kings Instagram suspension",
@@ -734,7 +563,9 @@
     "For the first time, artificial intelligence is a top 10 fear in the U.S.",
     "SpaceX’s AI business is beating expectations",
     "Pocket TTS which supports voice cloning is now just 1.9 million parameters",
-    "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business"
+    "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+    "Meta tries to scapegoat staff who downloaded torrents to spare execs",
+    "Meta tries to scapegoat staff who downloaded torrents to spare execs"
   ],
   "next_video_id": null,
   "undo_stack": [
@@ -1771,10 +1602,6 @@
   ],
   "posted_log": [
     {
-      "title": "OpenAI drops another batch of mathematical breakthroughs",
-      "at": "2026-10-07T07:30:38.527661+05:30"
-    },
-    {
       "title": "Utah to let AI examine patients and prescribe medication without human oversight",
       "at": "2026-10-07T10:00:31.145871+05:30"
     },
@@ -2186,27 +2013,27 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-21T06:00+05:30",
+    "at": "2026-10-21T07:52+05:30",
     "techcrunch.com": 20,
-    "theverge.com": 9,
+    "theverge.com": 8,
     "arstechnica.com": 8,
     "technologyreview.com": 5,
-    "openai.com": 2,
+    "openai.com": 3,
     "blog.google": 0,
     "deepmind.google": 0,
     "huggingface.co": 6,
     "blogs.nvidia.com": 3,
-    "inc42.com": 1,
-    "news.google.com": 38,
-    "Google News (VentureBeat, AIM, AI News)": 15,
+    "inc42.com": 0,
+    "news.google.com": 43,
+    "Google News (VentureBeat, AIM, AI News)": 13,
     "producthunt.com": 11,
-    "Hacker News": 3,
+    "Hacker News": 2,
     "Reddit": 5,
     "filtered out (PR / local events / market fluff)": 1
   },
   "guarantee_since": "2026-10-10T13:19:00+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-21T06:00:36.725361+05:30",
+  "last_auto_offer": "2026-10-21T07:52:08.039394+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-20",
   "ig_count": {
@@ -2235,24 +2062,19 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-21",
-    "calls": 212,
+    "calls": 225,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 131,
-        "busy": 56,
-        "other": 25,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "ok": 138,
+        "busy": 59,
+        "other": 28,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "13:55",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-20"
-    },
     {
       "at": "14:51",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2295,6 +2117,11 @@
     },
     {
       "at": "01:48",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-21"
+    },
+    {
+      "at": "02:22",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-21"
     }
