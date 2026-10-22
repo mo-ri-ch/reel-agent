@@ -1,206 +1,16 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "idle",
   "candidates": [],
   "choose_deadline": null,
-  "topic": {
-    "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
-    "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-    "summary": "Microsoft points the blame for ConnectWise's breach at a China-aligned hacker, which relied on AI agents to rapidly hack into thousands of its customers.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-10-22T16:47:17+00:00",
-    "angle": "Microsoft confirms hackers are now using AI agents to breach thousands of companies, marking a new era in cyber warfare."
-  },
-  "draft": {
-    "title": "Chinese hackers target ConnectWise",
-    "hook_text": "ConnectWise breached by Chinese hackers",
-    "beats": [
-      {
-        "line": "Chinese hackers recently compromised ConnectWise to spy on thousands of companies.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "ConnectWise",
-        "outlet": "",
-        "domain": "connectwise.com",
-        "headline": "",
-        "url": "https://www.connectwise.com",
-        "tag": "ConnectWise breach detected",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Microsoft security researchers linked the intrusion to a China-aligned actor called Flax Typhoon.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "https://www.microsoft.com",
-        "tag": "Flax Typhoon identified",
-        "name": "Satya Nadella",
-        "role": "CEO, Microsoft",
-        "x": "satyanadella",
-        "brands": []
-      },
-      {
-        "line": "The attackers targeted the ConnectWise Cloud Backup service to access customer environments.",
-        "visual": "clip",
-        "query": "cloud data server",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Cloud backup compromised",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "They deployed AI agents to rapidly automate the exploitation of these systems.",
-        "visual": "clip",
-        "query": "abstract digital code",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "AI agents used",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Microsoft identified that hackers attempted access to twenty-two hundred and fifty unique tenants.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "2250",
-        "small": "affected tenants",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Microsoft",
-            "domain": "microsoft.com"
-          }
-        ]
-      },
-      {
-        "line": "ConnectWise responded by suspending access to its cloud backup system for all customers.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "ConnectWise",
-        "outlet": "",
-        "domain": "connectwise.com",
-        "headline": "",
-        "url": "https://www.connectwise.com",
-        "tag": "Backup access suspended",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The firm is currently investigating the full scope of this unauthorized data access.",
-        "visual": "clip",
-        "query": "security team working",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Investigation underway",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you trust an IT platform that relies on automated backups for your data?",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "TechCrunch",
-        "domain": "techcrunch.com",
-        "headline": "Chinese hackers spied on thousands of companies after breaching ConnectWise",
-        "url": "",
-        "tag": "Security trust",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Urgent and serious, emphasizing the scale of the automation used in the attack.",
-    "thin": false,
-    "caption": "Chinese hackers linked to Flax Typhoon breached ConnectWise and targeted 2,250 tenants using AI agents. ConnectWise has suspended its cloud backup service while the investigation continues. Would you trust an IT platform that relies on automated backups for your data?",
-    "hashtags": [
-      "ConnectWise",
-      "Cybersecurity",
-      "Microsoft",
-      "FlaxTyphoon",
-      "TechNews"
-    ],
-    "sources": [
-      "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/"
-    ],
-    "script": "Chinese hackers recently compromised ConnectWise to spy on thousands of companies.\nMicrosoft security researchers linked the intrusion to a China-aligned actor called Flax Typhoon.\nThe attackers targeted the ConnectWise Cloud Backup service to access customer environments.\nThey deployed AI agents to rapidly automate the exploitation of these systems.\nMicrosoft identified that hackers attempted access to twenty-two hundred and fifty unique tenants.\nConnectWise responded by suspending access to its cloud backup system for all customers.\nThe firm is currently investigating the full scope of this unauthorized data access.\nWould you trust an IT platform that relies on automated backups for your data?",
-    "keywords": [
-      "cloud data server",
-      "abstract digital code",
-      "security team working"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
-    ],
-    "fix_rounds": 2,
-    "source_links": [
-      "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/"
-    ]
-  },
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-22T23:08:59.212696+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
@@ -610,17 +420,7 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
-    {
-      "title": "Ling-3.1-flash is getting a 1019 update, with open weights to follow",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xcftoo/ling31flash_is_getting_a_1019_update_with_open/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-22T11:19:57+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "The open-source AI community is buzzing as Ling-3.1-flash gets a major 1019 update with open weights arriving soon."
-    },
     {
       "title": "Beyond tree cover: mapping the world’s forest types",
       "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
@@ -631,8 +431,6 @@
     }
   ],
   "tried": [
-    "ElevenLabs Launches Real-Time Voice AI Models With Up to 98.8% Speech Reasoning Accuracy",
-    "‘Freeze AI Now’: Bay Area Activists Rally Outside OpenAI Headquarters",
     "‘Freeze AI Now’: Bay Area Activists Rally Outside OpenAI Headquarters",
     "Ex-Nvidia-turned-VC Amulya Vishwanath: ‘Physical AI is in its LEGO era’",
     "LTM Launches BlueVerse ValueMesh To Scale Enterprise AI In Oracle Transformations",
@@ -690,8 +488,11 @@
     "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
     "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
     "Someone hacked the Switch 2 by using an old game and AI",
-    "Pretrained AI detects factory defects using fewer examples, potentially easing costly setup"
+    "Pretrained AI detects factory defects using fewer examples, potentially easing costly setup",
+    "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
+    "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise"
   ],
+  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot choosing the AI voice",
@@ -1810,7 +1611,7 @@
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 765,
+    "calls": 770,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1822,8 +1623,8 @@
       },
       "gemini-3.1-flash-lite": {
         "ok": 112,
-        "busy": 66,
-        "other": 68,
+        "busy": 67,
+        "other": 72,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
@@ -1859,11 +1660,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "05:52",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-21"
-    },
     {
       "at": "04:38",
       "error": "gemini-flash-lite-latest: free quota used up for now",
@@ -1906,6 +1702,11 @@
     },
     {
       "at": "17:35",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-22"
+    },
+    {
+      "at": "17:39",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-22"
     }
