@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -195,11 +195,48 @@
     "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
-    ]
+    ],
+    "ig_audio": null,
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Chief Executive Officer Mark Zuckerberg revealed t…: Shot is blank/empty, missing the required photo of Mark Zuckerberg.",
+      "The enormous scale of investment is required to co…: Shot is blank/empty, missing the required source card for The Verge.",
+      "The frame is completely blank and dark, missing the required photo of Mark Zuckerberg.",
+      "The frame is completely blank and dark, missing the required source card for The Verge."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong financial news story, but visual asset errors and repetition drag down the score.",
+      "script_fixes": [
+        "LINE 5: specify the exact investment scale figure if available instead of general wording"
+      ],
+      "visual_beats": [
+        0,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 1: Unrelated generic graphic card used instead of Meta financial data or stock graphic",
+        "line 4: Static 2027 card repeats awkwardly across frames",
+        "line 5: The Verge publication logo used as a visual for Meta's AI infrastructure push"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 official images, 4 AI images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIhK2rZdtAcg-gp54FZF5Q2DAABX6UzMQAC3yIAAiHRyVZXV_vWNizZhj0E",
   "queue": [
     {
       "title": "Using Claude to reduce the attack surface of code",
@@ -246,9 +283,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-22T08:00:59.728779+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-22T08:37:04.787234+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-22",
@@ -735,189 +772,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "GM aims to develop vehicles in as little as two years with AI, software push",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zZHBsWGlxdmVTbHJRV2VPTktvTnlJNm1hRmZXbDBScmRENVV2UVhjcFZLWVRhZm1Bb3BWa0ZoWTNqeC1MVU9YTmpKbTRkOHJjX01vOUJTdHI2R2JUSkszMld1UVJ1Y19TNE4xWW5CVUk5ZG5IRjdvSkVsUdIBgAFBVV95cUxOVnZYd0dsUTk5azZ0Y1dDdzRsai0wT0dPdXpSNEVVdU5OZnBwQUt0cnYxZjRRaWoyOFlCeG1UeHlVSlFuSjhkSEpaYVFNSU5kSG00dmo1NGw5LUtRN0tYRURLTkZyb1FYRWV4RFVmX0dtWS1Fb0RvUEc5Y0NfN2NOWg?oc=5",
-          "summary": "GM aims to develop vehicles in as little as two years with AI, software push CNBC",
-          "source": "CNBC",
-          "published": "2026-10-21T18:00:01+00:00",
-          "angle": "GM is using AI to slash vehicle development time down to just two years."
-        },
-        "draft": {
-          "title": "GM Targets Two-Year Vehicle Development Using AI",
-          "hook_text": "GM wants cars in two years",
-          "beats": [
-            {
-              "line": "General Motors is aiming to develop new vehicles in as little as two years.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "General Motors",
-              "outlet": "",
-              "domain": "gm.com",
-              "headline": "",
-              "url": "https://www.cnbc.com/2026/10/22/gm-aims-to-develop-vehicles-in-as-little-as-two-years-with-ai-software-push.html",
-              "tag": "GM targets two years",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "General Motors",
-                  "domain": "gm.com"
-                }
-              ]
-            },
-            {
-              "line": "The automaker is relying on a major push into software and AI to hit that timeline.",
-              "visual": "clip",
-              "query": "automotive software development engineering",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Software and AI push",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "General Motors",
-                  "domain": "gm.com"
-                }
-              ]
-            },
-            {
-              "line": "Traditional vehicle development typically takes four to five years across the industry.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "5 yrs",
-              "small": "typical timeline",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Traditional timeline halved",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "General Motors hopes this new strategy will drastically speed up vehicle creation and design.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "General Motors",
-              "outlet": "",
-              "domain": "gm.com",
-              "headline": "",
-              "url": "https://www.cnbc.com/2026/10/22/gm-aims-to-develop-vehicles-in-as-little-as-two-years-with-ai-software-push.html",
-              "tag": "Faster vehicle creation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "General Motors",
-                  "domain": "gm.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you buy a car designed in two years?",
-              "visual": "clip",
-              "query": "person looking at new car",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Two year cars",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "forward-looking and fast-paced, explaining a major industry shift with calm confidence",
-          "thin": false,
-          "caption": "General Motors is using AI and software to develop new vehicles in just two years. The push aims to cut traditional development timelines in half. Would you buy an AI-designed car?",
-          "hashtags": [
-            "GeneralMotors",
-            "Automotive",
-            "Software",
-            "VehicleDesign"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zZHBsWGlxdmVTbHJRV2VPTktvTnlJNm1hRmZXbDBScmRENVV2UVhjcFZLWVRhZm1Bb3BWa0ZoWTNqeC1MVU9YTmpKbTRkOHJjX01vOUJTdHI2R2JUSkszMld1UVJ1Y19TNE4xWW5CVUk5ZG5IRjdvSkVsUdIBgAFBVV95cUxOVnZYd0dsUTk5azZ0Y1dDdzRsai0wT0dPdXpSNEVVdU5OZnBwQUt0cnYxZjRRaWoyOFlCeG1UeHlVSlFuSjhkSEpaYVFNSU5kSG00dmo1NGw5LUtRN0tYRURLTkZyb1FYRWV4RFVmX0dtWS1Fb0RvUEc5Y0NfN2NOWg?oc=5"
-          ],
-          "script": "General Motors is aiming to develop new vehicles in as little as two years.\nThe automaker is relying on a major push into software and AI to hit that timeline.\nTraditional vehicle development typically takes four to five years across the industry.\nGeneral Motors hopes this new strategy will drastically speed up vehicle creation and design.\nWould you buy a car designed in two years?",
-          "keywords": [
-            "automotive software development engineering",
-            "person looking at new car"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "GM wants cars in two years",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "General Motors is aiming to develop new vehicles in as little as two years.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "The automaker is relying on a major push into software and AI to hit that timeline.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "Traditional vehicle development typically takes four to five years across the industry.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "General Motors hopes this new strategy will drastically speed up vehicle creation and design.",
-              "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2026/oct/1021-gm-forward-2026.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-22T05:56:00.379381+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1632,6 +1486,217 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta to create a new class of shares to fund AI push",
+          "link": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+          "summary": "Meta says it's issuing a new class of shares to fund its AI initiatives. As part of its third-quarter earnings report released on Wednesday, the company says the non-voting stock will also go toward potential acquisitions and employee compensation, with trading beginning in 2027. \"The scale of investment required to compete, sustain growth, expand infrastructure, […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-21T21:30:02+00:00",
+          "angle": "Meta is creating a brand new class of shares just to fund its massive AI push"
+        },
+        "draft": {
+          "title": "Meta creates new shares for AI push",
+          "hook_text": "Meta's new stock gamble",
+          "beats": [
+            {
+              "line": "Meta just created a brand new stock class to fund its massive AI push.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta earnings report",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+              "tag": "Meta issues new shares",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Chief Executive Officer Mark Zuckerberg revealed the non-voting stock in the third-quarter earnings report.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Third-quarter earnings report",
+              "name": "Mark Zuckerberg",
+              "role": "CEO, Meta",
+              "x": "zuck",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "The funds will also go toward potential corporate acquisitions and staff compensation.",
+              "visual": "clip",
+              "query": "person working on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Employee compensation and acquisitions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Trading for this new stock class is officially scheduled to begin in 2027.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2027",
+              "small": "Trading begins",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trading starts in 2027",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The enormous scale of investment is required to compete and expand AI infrastructure.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Meta to create a new class of shares to fund AI push",
+              "url": "",
+              "tag": "Expanding AI infrastructure",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you buy non-voting shares to fund AI development?",
+              "visual": "clip",
+              "query": "stock market trading screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Would you buy non-voting stock?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and business-focused, highlighting the financial mechanics behind the AI race",
+          "thin": false,
+          "caption": "Meta is issuing a new class of non-voting shares led by Mark Zuckerberg to fund its expanding AI infrastructure and acquisitions, with trading set to begin in 2027. Would you invest in non-voting stock for AI?",
+          "hashtags": [
+            "Meta",
+            "MarkZuckerberg",
+            "AI",
+            "TechNews",
+            "StockMarket"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+          ],
+          "script": "Meta just created a brand new stock class to fund its massive AI push.\nChief Executive Officer Mark Zuckerberg revealed the non-voting stock in the third-quarter earnings report.\nThe funds will also go toward potential corporate acquisitions and staff compensation.\nTrading for this new stock class is officially scheduled to begin in 2027.\nThe enormous scale of investment is required to compete and expand AI infrastructure.\nWould you buy non-voting shares to fund AI development?",
+          "keywords": [
+            "person working on laptop",
+            "stock market trading screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Meta's new stock gamble",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+            },
+            {
+              "claim": "Meta created a brand new stock class to fund its AI push",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+            },
+            {
+              "claim": "Mark Zuckerberg is the CEO of Meta",
+              "url": "https://www.prnewswire.com/news-releases/meta-reports-third-quarter-2026-results-302915964.html"
+            },
+            {
+              "claim": "The non-voting stock was revealed in the third-quarter earnings report",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+            },
+            {
+              "claim": "The funds will also go toward potential corporate acquisitions and staff compensation",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+            },
+            {
+              "claim": "Trading for this new stock class is officially scheduled to begin in 2027",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+            },
+            {
+              "claim": "The enormous scale of investment is required to compete and expand AI infrastructure",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-22T08:00:59.728779+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2166,7 +2231,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-22T06:45+05:30",
@@ -2194,7 +2259,7 @@
   "report_day": "2026-10-21",
   "ig_count": {
     "day": "2026-10-22",
-    "at": "2026-10-22T07:45:27.078195+05:30",
+    "at": "2026-10-22T08:01:15.498954+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2218,12 +2283,12 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 134,
+    "calls": 141,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 96,
+        "ok": 103,
         "busy": 38,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2307,30 +2372,6 @@
     "gemini-3-flash-preview": 1792570679.5554106
   },
   "editor_log": [
-    {
-      "at": "2026-10-21T09:51+05:30",
-      "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia ch",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 6,
-        "accuracy": 4,
-        "visuals": 5,
-        "flow": 7
-      },
-      "one_line": "Fails on accuracy; RTX 5500 is a consumer card, not for enterprise AI.",
-      "fixes": [
-        "LINE 2: Replace 'RTX 5500' with the actual enterprise-grade chips (e.g., H20 or B20) mentioned in the report.",
-        "LINE 6: Remove this line; it is vague filler commentary that adds no new facts.",
-        "LINE 7: Make the question more specific to the geopolitical implications of the chip shortage."
-      ],
-      "visual": [
-        "line 1: Same static image held for too long (0.5s to 4.8s).",
-        "line 2: Same static image held for too long (7.2s to 12.0s).",
-        "line 6: Same static image held for too long (26.4s to 31.2s)."
-      ]
-    },
     {
       "at": "2026-10-21T09:58+05:30",
       "title": "EXCLUSIVE: ByteDance, Alibaba, Tencent place over $35 billion worth of Nvidia ch",
@@ -2723,8 +2764,30 @@
       "visual": [
         "line 5: Displays The Verge logo instead of a relevant AI infrastructure graphic."
       ]
+    },
+    {
+      "at": "2026-10-22T08:06+05:30",
+      "title": "Meta to create a new class of shares to fund AI push",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong financial news story, but visual asset errors and repetition drag down the score.",
+      "fixes": [
+        "LINE 5: specify the exact investment scale figure if available instead of general wording"
+      ],
+      "visual": [
+        "line 1: Unrelated generic graphic card used instead of Meta financial data or stock graphic",
+        "line 4: Static 2027 card repeats awkwardly across frames",
+        "line 5: The Verge publication logo used as a visual for Meta's AI infrastructure push"
+      ]
     }
   ],
   "rest_note": "2026-10-19T12:32:00+05:30",
-  "fish_turn": 10
+  "fish_turn": 11
 }
