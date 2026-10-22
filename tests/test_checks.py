@@ -369,6 +369,9 @@ check("music was asked first", "audio_configuration" in _calls[0], True)
 check("music error recorded", bool(_ig.AUDIO_ERROR[0]), True)
 _ig.requests.get = lambda url, **k: _R(200, {"data": [{"audio_id": "a1", "title": "Song", "display_artist": "X"}]})
 check("trending music parsed", _ig.search_music(), [{"id": "a1", "title": "Song", "artist": "X"}])
+_ig.requests.get = lambda url, **k: _R(200, {"audio": [{"audio_id": "2188901821285578", "duration_in_ms": 221565,
+                                                        "title": "End Of The Earth"}]})
+check("music in Instagram's real format", _ig.search_music()[0]["id"], "2188901821285578")
 _ig.requests.post, _ig.requests.get = _igpost, _igget
 
 # the article's header photo must show the story (no joke stock photos as the opening picture)

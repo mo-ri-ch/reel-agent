@@ -56,11 +56,12 @@ def search_music(query=None, limit=25):
     data = _check(requests.get(f"{IG_GRAPH_BASE}/ig_audio", params=params, timeout=30))
     LAST_MUSIC_REPLY[0] = json.dumps(data)[:400]
     out = []
-    for a in (data.get("data") or [])[:limit]:
+    for a in (data.get("audio") or data.get("data") or [])[:limit]:  # Instagram answers {"audio": [...]}
         aid = a.get("audio_id") or a.get("id")
         if aid:
             out.append({"id": str(aid), "title": str(a.get("title") or a.get("display_title") or "")[:80],
-                        "artist": str(a.get("display_artist") or a.get("artist_name") or a.get("artist") or "")[:60]})
+                        "artist": str(a.get("display_artist") or a.get("artist_name") or a.get("artist")
+                                      or a.get("owner_username") or "")[:60]})
     return out
 
 
