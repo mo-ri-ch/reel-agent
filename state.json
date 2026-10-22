@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "rendering",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -235,7 +235,7 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T02:48:13.825023+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
@@ -721,52 +721,8 @@
     "Nvidia pitches AI factories as GPUs sit idle",
     "Nvidia pitches AI factories as GPUs sit idle"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Build more responsive apps with the Decisions API",
-            "link": "https://openai.com/index/decisions-api",
-            "summary": "Fast, focused, low-cost decisions for any application.",
-            "source": "OpenAI News",
-            "published": "2026-10-22T19:00:00+00:00",
-            "angle": "OpenAI just launched a new Decisions API to help developers build faster, cheaper, and more responsive AI-powered apps."
-          },
-          {
-            "title": "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
-            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
-            "summary": "",
-            "source": "r/LocalLLaMA",
-            "published": "2026-10-22T15:22:41+00:00",
-            "buzz": "top of r/LocalLLaMA today",
-            "angle": "Ant Ling just dropped a massive 124B parameter model, Ling-3.0-flash-Sante, shaking up the open-source AI community."
-          },
-          {
-            "title": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts",
-            "link": "https://www.lawcommentary.com/articles/us-banks-unauthorized-ai-agents-customer-accounts",
-            "summary": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts Law Commentary",
-            "source": "Law Commentary",
-            "published": "2026-10-22T20:10:28+00:00",
-            "angle": "Major US banks are reporting unauthorized AI agents accessing customer accounts, raising urgent security concerns."
-          }
-        ],
-        "choose_deadline": "2026-10-23T01:52:04.571876+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1279,6 +1235,250 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Every AI model has the same \"controversial\" take on humans",
+          "link": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+          "summary": "",
+          "source": "modelcompare.ai",
+          "published": "2026-10-22T16:08:00+00:00",
+          "buzz": "Hacker News 71 points",
+          "angle": "Every major AI model shares the same weird, controversial bias about humans."
+        },
+        "draft": {
+          "title": "AI models share human-like biases",
+          "hook_text": "AI models share human biases",
+          "beats": [
+            {
+              "line": "Every AI model has the same controversial take on humans.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "modelcompare.ai",
+              "domain": "modelcompare.ai",
+              "headline": "Every AI model has the same controversial take on humans",
+              "url": "",
+              "tag": "Shared AI takes",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Modelcompare.ai tested top models to uncover these hidden patterns.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Modelcompare.ai",
+              "outlet": "",
+              "domain": "modelcompare.ai",
+              "headline": "",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+              "tag": "Modelcompare.ai testing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The study analyzed how models respond to prompts about human nature.",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Analyzing prompts",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These systems frequently mirror specific human views instead of remaining neutral.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract digital network nodes glowing against a dark blue background",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Mirroring human views",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Even models from different companies reach remarkably similar conclusions.",
+              "visual": "clip",
+              "query": "data center server room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Similar conclusions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The research shows models often adopt anthropocentric viewpoints when evaluating humanity.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "100%",
+              "small": "models tested",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Anthropocentric viewpoints",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This data suggests AI is built on training sets skewed toward human-centric narratives.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "geometric shapes forming a symmetrical structure in a digital void",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Human-centric training",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you rely on an AI that prioritizes human-centric logic?",
+              "visual": "clip",
+              "query": "person looking at smartphone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting AI logic",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Direct and analytical, focusing on the research findings without overstating the conclusions.",
+          "thin": false,
+          "caption": "Modelcompare.ai found that major AI models consistently mirror specific human-centric viewpoints. Instead of remaining neutral, these systems rely on training data that skews toward human perspectives. Would you rely on an AI that prioritizes human-centric logic?",
+          "hashtags": [
+            "Modelcompare",
+            "AI",
+            "TechNews",
+            "MachineLearning",
+            "Algorithms"
+          ],
+          "sources": [
+            "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+          ],
+          "script": "Every AI model has the same controversial take on humans.\nModelcompare.ai tested top models to uncover these hidden patterns.\nThe study analyzed how models respond to prompts about human nature.\nThese systems frequently mirror specific human views instead of remaining neutral.\nEven models from different companies reach remarkably similar conclusions.\nThe research shows models often adopt anthropocentric viewpoints when evaluating humanity.\nThis data suggests AI is built on training sets skewed toward human-centric narratives.\nWould you rely on an AI that prioritizes human-centric logic?",
+          "keywords": [
+            "person typing on laptop",
+            "data center server room",
+            "person looking at smartphone screen"
+          ],
+          "image_prompts": [
+            "abstract digital network nodes glowing against a dark blue background",
+            "geometric shapes forming a symmetrical structure in a digital void"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "AI models share human biases",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "Every AI model has the same controversial take on humans.",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "Modelcompare.ai tested top models to uncover these hidden patterns.",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "The study analyzed how models respond to prompts about human nature.",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "These systems frequently mirror specific human views instead of remaining neutral.",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "Even models from different companies reach remarkably similar conclusions.",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "The research shows models often adopt anthropocentric viewpoints when evaluating humanity.",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "100% of models tested",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            },
+            {
+              "claim": "This data suggests AI is built on training sets skewed toward human-centric narratives.",
+              "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-23T02:48:13.825023+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1773,8 +1973,8 @@
       "event": "Meta just created a brand new stock class to fund its massive AI push. Chief Executive Officer Mark Zuckerberg revealed the non-voting stock in the third-quarter earnings report. The funds will also go toward potential corporate acquisition"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-23T02:41+05:30",
