@@ -1,0 +1,85 @@
+{
+ "made": "20261022-0601",
+ "title": "Chinese-linked hackers use AI to compromise firms globally: Microsoft",
+ "hook_text": "Hackers are weaponizing AI",
+ "hook_before": null,
+ "script": "Microsoft identified a state-backed actor called Storm-0940 using AI to scale global cyberattacks.\nThis group deployed AI agents to identify vulnerabilities and conduct reconnaissance against high-value targets.\nThese sophisticated campaigns targeted research, defense, and telecommunications firms across the globe.\nMicrosoft confirmed these AI tools assist in the speed of scanning networks for potential entry points.\nInvestigators tracked these AI-enhanced campaigns against hundreds of organizations worldwide.\nMicrosoft reports these actors leverage automated processes to maintain persistence within compromised corporate networks.\nWill you check your network security today?",
+ "words": 86,
+ "beats": [
+  {
+   "line": "Microsoft identified a state-backed actor called Storm-0940 using AI to scale global cyberattacks.",
+   "visual": "source"
+  },
+  {
+   "line": "This group deployed AI agents to identify vulnerabilities and conduct reconnaissance against high-value targets.",
+   "visual": "clip"
+  },
+  {
+   "line": "These sophisticated campaigns targeted research, defense, and telecommunications firms across the globe.",
+   "visual": "clip"
+  },
+  {
+   "line": "Microsoft confirmed these AI tools assist in the speed of scanning networks for potential entry points.",
+   "visual": "clip"
+  },
+  {
+   "line": "Investigators tracked these AI-enhanced campaigns against hundreds of organizations worldwide.",
+   "visual": "stat"
+  },
+  {
+   "line": "Microsoft reports these actors leverage automated processes to maintain persistence within compromised corporate networks.",
+   "visual": "clip"
+  },
+  {
+   "line": "Will you check your network security today?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 6,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 5,
+   "flow": 8
+  },
+  "one_line": "Weak hook and repetitive, low-quality stock footage undermine a serious cybersecurity report.",
+  "script_fixes": [
+   "LINE 1: Start with the number: 'Hundreds of organizations are under attack by a Chinese-linked group, Microsoft warns.'",
+   "LINE 7: Replace with a specific call to action: 'Audit your network logs for Storm-0940 indicators today.'"
+  ],
+  "visual_beats": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "visual_notes": [
+   "line 1: Generic text-only hook fails to grab attention; needs high-impact motion graphics.",
+   "line 2: Stock footage of a generic screen is uninspired and lacks professional news aesthetic.",
+   "line 3: Stock footage of a cell tower is symbolic and unrelated to cyber-reconnaissance.",
+   "line 4: Stock footage of people in an office is generic and does not illustrate network scanning."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 46.27,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  15.93,
+  22.13,
+  25.57,
+  29.0,
+  38.13,
+  43.23
+ ],
+ "first_cut_at": 15.93,
+ "avg_shot_seconds": 6.61,
+ "longest_shot_seconds": 15.93,
+ "verdict": "rejected",
+ "words_per_minute": 112
+}
