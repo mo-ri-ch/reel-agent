@@ -3,14 +3,6 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts",
-      "link": "https://www.lawcommentary.com/articles/us-banks-unauthorized-ai-agents-customer-accounts",
-      "summary": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts Law Commentary",
-      "source": "Law Commentary",
-      "published": "2026-10-22T20:10:28+00:00",
-      "angle": "Major US banks are reporting unauthorized AI agents accessing customer accounts, raising urgent security concerns."
-    },
-    {
       "title": "Build more responsive apps with the Decisions API",
       "link": "https://openai.com/index/decisions-api",
       "summary": "Fast, focused, low-cost decisions for any application.",
@@ -26,9 +18,17 @@
       "published": "2026-10-22T15:22:41+00:00",
       "buzz": "top of r/LocalLLaMA today",
       "angle": "Ant Ling just dropped a massive 124B parameter model, Ling-3.0-flash-Sante, shaking up the open-source AI community."
+    },
+    {
+      "title": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts",
+      "link": "https://www.lawcommentary.com/articles/us-banks-unauthorized-ai-agents-customer-accounts",
+      "summary": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts Law Commentary",
+      "source": "Law Commentary",
+      "published": "2026-10-22T20:10:28+00:00",
+      "angle": "Major US banks are reporting unauthorized AI agents accessing customer accounts, raising urgent security concerns."
     }
   ],
-  "choose_deadline": "2026-10-23T01:46:02.129353+05:30",
+  "choose_deadline": "2026-10-23T01:52:04.571876+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -441,9 +441,27 @@
       "extra": false
     }
   ],
-  "spare": [],
+  "paused": null,
+  "spare": [
+    {
+      "title": "Build more responsive apps with the Decisions API",
+      "link": "https://openai.com/index/decisions-api",
+      "summary": "Fast, focused, low-cost decisions for any application.",
+      "source": "OpenAI News",
+      "published": "2026-10-22T19:00:00+00:00",
+      "angle": "OpenAI just launched a new Decisions API to help developers build faster, cheaper, and more responsive AI-powered apps."
+    },
+    {
+      "title": "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-22T15:22:41+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "Ant Ling just dropped a massive 124B parameter model, Ling-3.0-flash-Sante, shaking up the open-source AI community."
+    }
+  ],
   "tried": [
-    "DeepSeek raises $15 billion in challenge to leading US labs",
     "Data centers could erase decades of air quality gains",
     "Canadian publisher drops author, says he used AI to write novel",
     "HCLTech launches NVIDIA-powered AI solution to reduce physical testing of vehicle software",
@@ -502,54 +520,11 @@
     "Sure, let’s smoosh SpaceX and Tesla together, who cares",
     "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
     "Formic Raises $50 Million to Scale Physical AI Across American Manufacturing",
-    "Formic Raises $50 Million to Scale Physical AI Across American Manufacturing"
+    "Formic Raises $50 Million to Scale Physical AI Across American Manufacturing",
+    "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Harvard Students Put Expanded Claude Access to Use in Classes, Personal Projects",
-            "link": "https://www.thecrimson.com/article/2026/10/22/harvard-students-claude-use/",
-            "summary": "Harvard Students Put Expanded Claude Access to Use in Classes, Personal Projects The Harvard Crimson",
-            "source": "The Harvard Crimson",
-            "published": "2026-10-22T19:02:55+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Canva releases its first image generation model",
-            "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-            "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-22T19:00:00+00:00",
-            "angle": ""
-          },
-          {
-            "title": "Discord now formats Markdown previews right",
-            "link": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
-            "summary": "Discord's latest update released today has a big improvement for Markdown previews: they should now render correctly instead of with \"a bunch of symbols,\" according to the company. LLMs and AI agents often rely on Markdown files for instructions and context, so these improved previews could be helpful for people sharing information about AI projects […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-22T18:58:19+00:00",
-            "angle": ""
-          }
-        ],
-        "choose_deadline": "2026-10-23T00:45:24.625062+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -713,6 +688,51 @@
           }
         ],
         "choose_deadline": "2026-10-23T01:20:44.821941+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts",
+            "link": "https://www.lawcommentary.com/articles/us-banks-unauthorized-ai-agents-customer-accounts",
+            "summary": "Major US Banks Detect Unauthorized AI Agents Accessing Customer Accounts Law Commentary",
+            "source": "Law Commentary",
+            "published": "2026-10-22T20:10:28+00:00",
+            "angle": "Major US banks are reporting unauthorized AI agents accessing customer accounts, raising urgent security concerns."
+          },
+          {
+            "title": "Build more responsive apps with the Decisions API",
+            "link": "https://openai.com/index/decisions-api",
+            "summary": "Fast, focused, low-cost decisions for any application.",
+            "source": "OpenAI News",
+            "published": "2026-10-22T19:00:00+00:00",
+            "angle": "OpenAI just launched a new Decisions API to help developers build faster, cheaper, and more responsive AI-powered apps."
+          },
+          {
+            "title": "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-22T15:22:41+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "Ant Ling just dropped a massive 124B parameter model, Ling-3.0-flash-Sante, shaking up the open-source AI community."
+          }
+        ],
+        "choose_deadline": "2026-10-23T01:46:02.129353+05:30",
         "topic": null,
         "draft": null,
         "video_file_id": null,
@@ -1276,24 +1296,19 @@
   "late_note_for": "2026-10-23-0",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 180,
+    "calls": 192,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 52,
-        "busy": 37,
-        "other": 91,
+        "ok": 56,
+        "busy": 40,
+        "other": 96,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "19:20",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-23"
-    },
     {
       "at": "19:25",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1338,10 +1353,15 @@
       "at": "20:15",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-23"
+    },
+    {
+      "at": "20:21",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-23"
     }
   ],
   "last_script_error": {
-    "at": "2026-10-23T01:20+05:30",
+    "at": "2026-10-23T01:52+05:30",
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now"
   },
   "render_fails": 0,
