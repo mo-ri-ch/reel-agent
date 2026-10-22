@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Harvard Students Put Expanded Claude Access to Use in Classes, Personal Projects",
+      "link": "https://www.thecrimson.com/article/2026/10/22/harvard-students-claude-use/",
+      "summary": "Harvard Students Put Expanded Claude Access to Use in Classes, Personal Projects The Harvard Crimson",
+      "source": "The Harvard Crimson",
+      "published": "2026-10-22T19:02:55+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Canva releases its first image generation model",
+      "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-22T19:00:00+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Discord now formats Markdown previews right",
+      "link": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
+      "summary": "Discord's latest update released today has a big improvement for Markdown previews: they should now render correctly instead of with \"a bunch of symbols,\" according to the company. LLMs and AI agents often rely on Markdown files for instructions and context, so these improved previews could be helpful for people sharing information about AI projects […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-22T18:58:19+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-23T00:45:24.625062+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -849,10 +874,6 @@
   ],
   "posted_log": [
     {
-      "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
-      "at": "2026-10-09T00:45:30.085739+05:30"
-    },
-    {
       "title": "Google’s AI note-taking app transcribes your meetings completely offline",
       "at": "2026-10-09T02:00:33.792321+05:30"
     },
@@ -1217,12 +1238,12 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-23T00:25+05:30",
-    "techcrunch.com": 16,
+    "at": "2026-10-23T00:45+05:30",
+    "techcrunch.com": 18,
     "theverge.com": 10,
     "arstechnica.com": 5,
-    "technologyreview.com": 2,
-    "openai.com": 8,
+    "technologyreview.com": 3,
+    "openai.com": 6,
     "blog.google": 0,
     "deepmind.google": 1,
     "huggingface.co": 6,
@@ -1237,7 +1258,7 @@
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-23T00:25:23.331223+05:30",
+  "last_auto_offer": "2026-10-23T00:45:24.625062+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
@@ -1266,24 +1287,19 @@
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 41,
+    "calls": 45,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
         "ok": 7,
         "busy": 7,
-        "other": 27,
+        "other": 31,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "18:01",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-22"
-    },
     {
       "at": "18:11",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1326,6 +1342,11 @@
     },
     {
       "at": "19:01",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-23"
+    },
+    {
+      "at": "19:15",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-23"
     }
