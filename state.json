@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
+      "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "summary": "OpenAI is launching its decision model to the world. Can it compete with the original Jev?",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-22T19:00:00+00:00",
+      "angle": "OpenAI is launching a new decision-making model to compete with Jev, changing how AI handles complex tasks."
+    },
+    {
+      "title": "Claude Duet app is Anthropic’s bet on agents",
+      "link": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "summary": "Claude Duet is available through waitlist for Pro and Max plan users.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-22T13:53:26+00:00",
+      "angle": "Anthropic just dropped Claude Duet, a new agent-based app that could change how you work with AI."
+    },
+    {
+      "title": "Nvidia, UW Institute for Protein Design Unveil Open-Source Protein Design AI Model",
+      "link": "https://www.genengnews.com/topics/artificial-intelligence/nvidia-uw-institute-for-protein-design-unveil-open-source-protein-design-ai-model/",
+      "summary": "Nvidia, UW Institute for Protein Design Unveil Open-Source Protein Design AI Model Genetic Engineering and Biotechnology News",
+      "source": "Genetic Engineering and Biotechnology News",
+      "published": "2026-10-22T17:48:12+00:00",
+      "angle": "Nvidia and the UW Institute for Protein Design just released an open-source AI model that could revolutionize medicine."
+    }
+  ],
+  "choose_deadline": "2026-10-23T01:10:30.823304+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -413,6 +438,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "Discord now formats Markdown previews right",
@@ -1219,8 +1245,8 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-23T00:45+05:30",
-    "techcrunch.com": 18,
+    "at": "2026-10-23T01:10+05:30",
+    "techcrunch.com": 19,
     "theverge.com": 10,
     "arstechnica.com": 5,
     "technologyreview.com": 3,
@@ -1230,16 +1256,16 @@
     "huggingface.co": 6,
     "blogs.nvidia.com": 16,
     "inc42.com": 8,
-    "news.google.com": 40,
-    "Google News (VentureBeat, AIM, AI News)": 24,
+    "news.google.com": 37,
+    "Google News (VentureBeat, AIM, AI News)": 25,
     "producthunt.com": 5,
     "Hacker News": 7,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 6
+    "filtered out (PR / local events / market fluff)": 7
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-23T00:45:24.625062+05:30",
+  "last_auto_offer": "2026-10-23T01:10:30.823304+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
@@ -1268,14 +1294,14 @@
   "late_note_for": "2026-10-23-0",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 79,
+    "calls": 82,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 12,
+        "ok": 14,
         "busy": 14,
-        "other": 53,
+        "other": 54,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
