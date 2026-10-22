@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Spotify’s current AI bet is about being the music service that agents choose",
+      "link": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
+      "summary": "Spotify co-CEO Gustav Söderström explains why the rise of AI agents could be good news for the music service.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-22T15:03:58+00:00",
+      "angle": "Spotify co-CEO explains why the rise of AI agents could change music streaming forever"
+    },
+    {
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "link": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "summary": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are among the most complex operations in the world, with vast […]",
+      "source": "NVIDIA Blog",
+      "published": "2026-10-22T15:00:02+00:00",
+      "angle": "Nvidia unveils Minerva to bring end-to-end observability for massive AI factories"
+    },
+    {
+      "title": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
+      "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
+      "summary": "It was a busy summer for AI lobbyists. Anthropic, OpenAI, and Nvidia each had their highest-spending lobbying quarter between July and September, federal disclosures show. Nvidia spent the most of the group at $2.2 million, followed by Anthropic's $2.1 million and OpenAI's $1.5 million. Compared to other Big Tech companies with long-established presences in Washington, […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-22T15:50:30+00:00",
+      "angle": "OpenAI, Anthropic, and Nvidia hit record-breaking lobbying spends over the summer"
+    }
+  ],
+  "choose_deadline": "2026-10-22T21:20:45.956175+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -419,6 +444,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
@@ -499,6 +525,7 @@
     "Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption",
     "Websites shut down globally after AI finds flaw affecting 70% of the internet"
   ],
+  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot picking story #1",
@@ -1684,32 +1711,32 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-22T20:05+05:30",
-    "techcrunch.com": 11,
+    "at": "2026-10-22T21:20+05:30",
+    "techcrunch.com": 12,
     "theverge.com": 10,
-    "arstechnica.com": 4,
+    "arstechnica.com": 5,
     "technologyreview.com": 2,
     "openai.com": 8,
     "blog.google": 1,
     "deepmind.google": 1,
     "huggingface.co": 5,
-    "blogs.nvidia.com": 15,
+    "blogs.nvidia.com": 16,
     "inc42.com": 8,
-    "news.google.com": 41,
+    "news.google.com": 42,
     "Google News (VentureBeat, AIM, AI News)": 25,
     "producthunt.com": 5,
     "Hacker News": 3,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 5
+    "filtered out (PR / local events / market fluff)": 6
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-22T20:05:46.743957+05:30",
+  "last_auto_offer": "2026-10-22T21:20:45.956175+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-21",
   "ig_count": {
     "day": "2026-10-22",
-    "at": "2026-10-22T20:59:36.704400+05:30",
+    "at": "2026-10-22T21:20:45.956212+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -1733,12 +1760,12 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 627,
+    "calls": 629,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 268,
+        "ok": 270,
         "busy": 118,
         "other": 29,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
