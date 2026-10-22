@@ -112,18 +112,18 @@
         ]
       },
       {
-        "line": "The Rundown AI highlighted the new funding round for factory technology.",
-        "visual": "source",
-        "query": "technology",
+        "line": "Venture capital firms backed the massive round to scale industrial software.",
+        "visual": "clip",
+        "query": "tech startup office computers",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "The Rundown AI",
-        "domain": "therundown.ai",
-        "headline": "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
         "url": "",
-        "tag": "Arda funding reported",
+        "tag": "Massive funding round",
         "name": "",
         "role": "",
         "x": "",
@@ -135,7 +135,7 @@
         ]
       },
       {
-        "line": "Would you trust an automated system to run a factory floor?",
+        "line": "Would you trust Arda to run an entire factory floor?",
         "visual": "clip",
         "query": "modern industrial manufacturing plant",
         "prompt": "",
@@ -146,16 +146,21 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Factory automation future",
+        "tag": "Arda factory software",
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Arda",
+            "domain": "arda.ai"
+          }
+        ]
       }
     ],
     "delivery": "sharp and factual journalist delivery, moving quickly from the massive funding number to the industrial technology details.",
     "thin": false,
-    "caption": "Former OpenAI executive Bob McGrew has launched Arda at a 1.5 billion dollar valuation to build factory automation. The startup brings advanced intelligence to manufacturing facilities. Would you trust industrial systems to run a factory floor?",
+    "caption": "Former OpenAI executive Bob McGrew has launched Arda at a 1.5 billion dollar valuation to build factory automation. The startup brings advanced intelligence to manufacturing facilities. Would you trust Arda to run an entire factory floor?",
     "hashtags": [
       "Arda",
       "BobMcGrew",
@@ -164,22 +169,24 @@
       "ArtificialIntelligence"
     ],
     "sources": [
-      "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+      "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5",
+      "https://www.therundown.ai/news/bob-mcgrew-arda-ai-manufacturing-launch"
     ],
-    "script": "Arda just debuted with a valuation of one point five billion dollars.\nFormer OpenAI executive Bob McGrew launched the company to build factory automation.\nThe startup focuses on bringing advanced intelligence to manufacturing facilities.\nMcGrew previously worked as the chief research officer at OpenAI.\nThe Rundown AI highlighted the new funding round for factory technology.\nWould you trust an automated system to run a factory floor?",
+    "script": "Arda just debuted with a valuation of one point five billion dollars.\nFormer OpenAI executive Bob McGrew launched the company to build factory automation.\nThe startup focuses on bringing advanced intelligence to manufacturing facilities.\nMcGrew previously worked as the chief research officer at OpenAI.\nVenture capital firms backed the massive round to scale industrial software.\nWould you trust Arda to run an entire factory floor?",
     "keywords": [
       "factory assembly line robotics",
+      "tech startup office computers",
       "modern industrial manufacturing plant"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Arda debuts at one point five billion.",
+        "claim": "Arda debuts at a valuation of 1.5 billion dollars.",
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
       },
       {
-        "claim": "Arda just debuted with a valuation of one point five billion dollars.",
+        "claim": "Arda debuted with a valuation of one point five billion dollars.",
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
       },
       {
@@ -195,13 +202,14 @@
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
       },
       {
-        "claim": "The Rundown AI highlighted the new funding round for factory technology.",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+        "claim": "Venture capital firms backed the massive round to scale industrial software.",
+        "url": "https://www.cnbc.com/2026/10/20/ex-openai-executive-builds-1point5-billion-ai-manufacturing-startup-arda.html"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.therundown.ai/news/bob-mcgrew-arda-ai-manufacturing-launch"
     ]
@@ -234,9 +242,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-22T15:13:36.191237+05:30",
+  "script_deadline": "2026-10-22T15:20:09.241062+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-22",
@@ -725,221 +733,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-          "link": "https://huggingface.co/blog/nvidia/kumo-relational",
-          "summary": "",
-          "source": "Hugging Face - Blog",
-          "published": "2026-10-21T18:26:30+00:00",
-          "angle": "Nvidia’s new Kumo tool can outperform machine learning models without any training required."
-        },
-        "draft": {
-          "title": "NVIDIA Kumo Relational: Zero Training Required",
-          "hook_text": "NVIDIA Kumo needs no training.",
-          "beats": [
-            {
-              "line": "NVIDIA just released Kumo Relational, a new foundation model for tabular data.",
-              "visual": "clip",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://huggingface.co/blog/nvidia/kumo-relational",
-              "tag": "NVIDIA Kumo released",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It predicts outcomes on relational databases without any task-specific fine-tuning.",
-              "visual": "clip",
-              "query": "database schema visualization",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No fine-tuning needed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Kumo uses graph neural networks to map complex relationships between table rows.",
-              "visual": "clip",
-              "query": "graph data connection",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Graph neural networks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Researchers trained the model on massive synthetic data to learn general relational patterns.",
-              "visual": "clip",
-              "query": "supercomputer data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Synthetic data training",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This architecture eliminates the manual feature engineering that usually takes data scientists hours.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Zero",
-              "small": "manual feature engineering",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Zero manual prep",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Benchmarks show Kumo Relational outperforms standard supervised learning models on relational tasks.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Hugging Face",
-              "domain": "huggingface.co",
-              "headline": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning",
-              "url": "",
-              "tag": "Outperforms benchmarks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust a pre-trained model to query your company data?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI database trust",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast-paced and professional, emphasizing the technical leap of skipping manual training.",
-          "thin": false,
-          "caption": "NVIDIA Kumo Relational is a new pre-trained model that predicts outcomes on tabular data without task-specific training. By using graph neural networks, it removes the need for manual feature engineering. Would you trust a pre-trained model to query your company data?",
-          "hashtags": [
-            "NVIDIA",
-            "Kumo",
-            "MachineLearning",
-            "DataScience",
-            "AI"
-          ],
-          "sources": [
-            "https://huggingface.co/blog/nvidia/kumo-relational"
-          ],
-          "script": "NVIDIA just released Kumo Relational, a new foundation model for tabular data.\nIt predicts outcomes on relational databases without any task-specific fine-tuning.\nKumo uses graph neural networks to map complex relationships between table rows.\nResearchers trained the model on massive synthetic data to learn general relational patterns.\nThis architecture eliminates the manual feature engineering that usually takes data scientists hours.\nBenchmarks show Kumo Relational outperforms standard supervised learning models on relational tasks.\nWould you trust a pre-trained model to query your company data?",
-          "keywords": [
-            "technology",
-            "database schema visualization",
-            "graph data connection",
-            "supercomputer data center",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "NVIDIA Kumo needs no training.",
-              "url": "https://huggingface.co/blog/nvidia/kumo-relational"
-            },
-            {
-              "claim": "NVIDIA just released Kumo Relational, a new foundation model for tabular data.",
-              "url": "https://huggingface.co/blog/nvidia/kumo-relational"
-            },
-            {
-              "claim": "It predicts outcomes on relational databases without any task-specific fine-tuning.",
-              "url": "https://huggingface.co/blog/nvidia/kumo-relational"
-            },
-            {
-              "claim": "Kumo uses graph neural networks to map complex relationships between table rows.",
-              "url": "https://www.snowflake.com/en/blog/nvidia-kumo-graph-ml-snowflake/"
-            },
-            {
-              "claim": "Researchers trained the model on massive synthetic data to learn general relational patterns.",
-              "url": "https://huggingface.co/blog/nvidia/kumo-relational"
-            },
-            {
-              "claim": "This architecture eliminates the manual feature engineering that usually takes data scientists hours.",
-              "url": "https://huggingface.co/blog/nvidia/kumo-relational"
-            },
-            {
-              "claim": "Benchmarks show Kumo Relational outperforms standard supervised learning models on relational tasks.",
-              "url": "https://huggingface.co/blog/nvidia/kumo-relational"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://huggingface.co/blog/nvidia/kumo-relational"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-22T12:02:45.566561+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1637,6 +1430,226 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5",
+          "summary": "Bob McGrew’s Arda debuts at $1.5B with AI for factories The Rundown AI",
+          "source": "The Rundown AI",
+          "published": "2026-10-22T08:21:30+00:00",
+          "angle": "Former OpenAI executive Bob McGrew debuts Arda at a massive $1.5B valuation bringing AI to factories"
+        },
+        "draft": {
+          "title": "Arda Debuts at $1.5B",
+          "hook_text": "Arda debuts at one point five billion.",
+          "beats": [
+            {
+              "line": "Arda just debuted with a valuation of one point five billion dollars.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Arda",
+              "outlet": "",
+              "domain": "arda.ai",
+              "headline": "",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5",
+              "tag": "Arda debuts at 1.5B",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Arda",
+                  "domain": "arda.ai"
+                }
+              ]
+            },
+            {
+              "line": "Former OpenAI executive Bob McGrew launched the company to build factory automation.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Bob McGrew launches Arda",
+              "name": "Bob McGrew",
+              "role": "Founder, Arda",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Arda",
+                  "domain": "arda.ai"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "The startup focuses on bringing advanced intelligence to manufacturing facilities.",
+              "visual": "clip",
+              "query": "factory assembly line robotics",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI for factories",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Arda",
+                  "domain": "arda.ai"
+                }
+              ]
+            },
+            {
+              "line": "McGrew previously worked as the chief research officer at OpenAI.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1.5B",
+              "small": "Arda Valuation",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Ex-OpenAI research chief",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "The Rundown AI highlighted the new funding round for factory technology.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Rundown AI",
+              "domain": "therundown.ai",
+              "headline": "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
+              "url": "",
+              "tag": "Arda funding reported",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Arda",
+                  "domain": "arda.ai"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust an automated system to run a factory floor?",
+              "visual": "clip",
+              "query": "modern industrial manufacturing plant",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Factory automation future",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and factual journalist delivery, moving quickly from the massive funding number to the industrial technology details.",
+          "thin": false,
+          "caption": "Former OpenAI executive Bob McGrew has launched Arda at a 1.5 billion dollar valuation to build factory automation. The startup brings advanced intelligence to manufacturing facilities. Would you trust industrial systems to run a factory floor?",
+          "hashtags": [
+            "Arda",
+            "BobMcGrew",
+            "OpenAI",
+            "FactoryAutomation",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+          ],
+          "script": "Arda just debuted with a valuation of one point five billion dollars.\nFormer OpenAI executive Bob McGrew launched the company to build factory automation.\nThe startup focuses on bringing advanced intelligence to manufacturing facilities.\nMcGrew previously worked as the chief research officer at OpenAI.\nThe Rundown AI highlighted the new funding round for factory technology.\nWould you trust an automated system to run a factory floor?",
+          "keywords": [
+            "factory assembly line robotics",
+            "modern industrial manufacturing plant"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Arda debuts at one point five billion.",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+            },
+            {
+              "claim": "Arda just debuted with a valuation of one point five billion dollars.",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+            },
+            {
+              "claim": "Former OpenAI executive Bob McGrew launched the company to build factory automation.",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+            },
+            {
+              "claim": "The startup focuses on bringing advanced intelligence to manufacturing facilities.",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+            },
+            {
+              "claim": "McGrew previously worked as the chief research officer at OpenAI.",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+            },
+            {
+              "claim": "The Rundown AI highlighted the new funding round for factory technology.",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.therundown.ai/news/bob-mcgrew-arda-ai-manufacturing-launch"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-22T15:13:36.191237+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2159,8 +2172,8 @@
       "event": "Meta just created a brand new stock class to fund its massive AI push. Chief Executive Officer Mark Zuckerberg revealed the non-voting stock in the third-quarter earnings report. The funds will also go toward potential corporate acquisition"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-22T13:12+05:30",
@@ -2188,7 +2201,7 @@
   "report_day": "2026-10-21",
   "ig_count": {
     "day": "2026-10-22",
-    "at": "2026-10-22T15:05:22.599688+05:30",
+    "at": "2026-10-22T15:15:25.886524+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2208,7 +2221,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-22",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-22",
@@ -2338,27 +2351,6 @@
     "gemini-3-flash-preview": 1792657666.0724008
   },
   "editor_log": [
-    {
-      "at": "2026-10-21T23:51+05:30",
-      "title": "Peak XV-Backed AI Startup Blacksmith Nets $66 Mn At A Unicorn Valuation",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 9
-      },
-      "one_line": "Strong reporting ruined by generic marketing graphics and incorrect source branding.",
-      "fixes": [
-        "LINE 2: Specify the $66 million brings total funding or highlights the exact Series C amount from Sequoia."
-      ],
-      "visual": [
-        "line 5: Shows an unrelated e-commerce/D2C brand graphic instead of software code testing visuals.",
-        "line 6: Displays an Inc42 QR code/branding on a global AI news channel post."
-      ]
-    },
     {
       "at": "2026-10-22T00:31+05:30",
       "title": "OpenAI says an AI agent lied about disabling its safety monitoring system",
@@ -2777,8 +2769,30 @@
         "line 4: Repeated generic NVIDIA logo card used multiple times across different lines.",
         "line 5: Generic NVIDIA logo appears again instead of specific world model architecture graphics."
       ]
+    },
+    {
+      "at": "2026-10-22T15:19+05:30",
+      "title": "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 8,
+        "visuals": 4,
+        "flow": 7
+      },
+      "one_line": "Too many filler lines about news aggregation, and low-quality placeholder graphics.",
+      "fixes": [
+        "LINE 5: Remove the meta-commentary about The Rundown AI highlighting the round and replace with specific investor or product details.",
+        "LINE 6: Tighten the closing question to focus specifically on Arda's factory software."
+      ],
+      "visual": [
+        "line 3: Generic text display ('AI for') instead of a factory automation graphic.",
+        "line 5: Uses a tiny app-icon style logo for The Rundown AI instead of dynamic footage or clean bra"
+      ]
     }
   ],
   "rest_note": "2026-10-19T12:32:00+05:30",
-  "fish_turn": 20
+  "fish_turn": 21
 }
