@@ -1,41 +1,181 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "AI agents are ready to shop. Some retailers are wary",
-      "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-      "summary": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-22T12:30:00+00:00",
-      "angle": "AI agents are finally starting to shop for us, but retailers are fighting back—the future of e-commerce is changing."
-    },
-    {
-      "title": "India's FDEs earn up to Rs 1 crore annually as AI deployment skills gain premium",
-      "link": "https://www.moneycontrol.com/artificial-intelligence/india-s-fdes-earn-up-to-rs-1-crore-annually-as-ai-deployment-skills-gain-premium-article-14057906.html",
-      "summary": "India's FDEs earn up to Rs 1 crore annually as AI deployment skills gain premium Moneycontrol.com",
-      "source": "Moneycontrol.com",
-      "published": "2026-10-22T13:33:18+00:00",
-      "angle": "AI skills are now paying up to 1 crore (approx. $120k) annually, showing exactly where the money is moving in the tech job market."
-    },
-    {
-      "title": "PerturbAI and OpenAI Launch AI Reasoning Agents for Biomedical Discovery",
-      "link": "https://www.genengnews.com/topics/artificial-intelligence/perturbai-and-openai-launch-ai-reasoning-agents-for-biomedical-discovery/",
-      "summary": "PerturbAI and OpenAI Launch AI Reasoning Agents for Biomedical Discovery Genetic Engineering and Biotechnology News",
-      "source": "Genetic Engineering and Biotechnology News",
-      "published": "2026-10-22T17:33:44+00:00",
-      "angle": "OpenAI is now moving into biomedical discovery with new reasoning agents, a massive leap for real-world science."
-    }
-  ],
-  "choose_deadline": "2026-10-22T23:21:26.322954+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "AI agents are ready to shop. Some retailers are wary",
+    "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
+    "summary": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-22T12:30:00+00:00",
+    "angle": "AI agents are finally starting to shop for us, but retailers are fighting back—the future of e-commerce is changing."
+  },
+  "draft": {
+    "title": "Retailers block AI shopping agents",
+    "hook_text": "Retailers are blocking AI shopping agents",
+    "beats": [
+      {
+        "line": "Target and Amazon are actively blocking AI shopping agents from accessing their websites.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Target",
+        "outlet": "",
+        "domain": "target.com",
+        "headline": "",
+        "url": "https://www.target.com",
+        "tag": "Target blocks AI agents",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Target",
+            "domain": "target.com"
+          },
+          {
+            "name": "Amazon",
+            "domain": "amazon.com"
+          }
+        ]
+      },
+      {
+        "line": "These agents, like the one from Muse, struggle to navigate standard online checkout flows.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Muse",
+        "outlet": "",
+        "domain": "muse.io",
+        "headline": "",
+        "url": "https://muse.io",
+        "tag": "Muse AI struggles",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Muse",
+            "domain": "muse.io"
+          }
+        ]
+      },
+      {
+        "line": "The RealReal is also deploying defensive measures to stop these bots from scraping inventory.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "The RealReal",
+        "outlet": "",
+        "domain": "therealreal.com",
+        "headline": "",
+        "url": "https://www.therealreal.com",
+        "tag": "The RealReal blocks bots",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "The RealReal",
+            "domain": "therealreal.com"
+          }
+        ]
+      },
+      {
+        "line": "Retailers fear these agents could scrape private data or crash servers with automated requests.",
+        "visual": "clip",
+        "query": "server rack blinking lights",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Servers at risk",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Researchers estimate that most AI agent tasks fail before reaching the final checkout page.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "Most",
+        "small": "agent tasks fail",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "High failure rate",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust an AI agent to spend your money?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "AI agents are ready to shop. Some retailers are wary",
+        "url": "",
+        "tag": "AI shopping trust",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Fast, sharp, and skeptical, focusing on the current technical limitations of shopping automation.",
+    "thin": false,
+    "caption": "Target, Amazon, and The RealReal are blocking AI shopping agents to protect server stability and private data. Most AI tools like Muse still fail to navigate checkout processes reliably. Would you trust an AI agent to spend your money?",
+    "hashtags": [
+      "AI",
+      "Target",
+      "Amazon",
+      "ShoppingTech",
+      "Retail"
+    ],
+    "sources": [
+      "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse"
+    ],
+    "script": "Target and Amazon are actively blocking AI shopping agents from accessing their websites.\nThese agents, like the one from Muse, struggle to navigate standard online checkout flows.\nThe RealReal is also deploying defensive measures to stop these bots from scraping inventory.\nRetailers fear these agents could scrape private data or crash servers with automated requests.\nResearchers estimate that most AI agent tasks fail before reaching the final checkout page.\nWould you trust an AI agent to spend your money?",
+    "keywords": [
+      "server rack blinking lights"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "source_links": [
+      "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-22T23:27:14.540507+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
@@ -448,20 +588,20 @@
   "paused": null,
   "spare": [
     {
-      "title": "AI agents are ready to shop. Some retailers are wary",
-      "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-      "summary": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-22T12:30:00+00:00",
-      "angle": "AI agents are finally starting to shop for us, but retailers are fighting back—the future of e-commerce is changing."
-    },
-    {
       "title": "India's FDEs earn up to Rs 1 crore annually as AI deployment skills gain premium",
       "link": "https://www.moneycontrol.com/artificial-intelligence/india-s-fdes-earn-up-to-rs-1-crore-annually-as-ai-deployment-skills-gain-premium-article-14057906.html",
       "summary": "India's FDEs earn up to Rs 1 crore annually as AI deployment skills gain premium Moneycontrol.com",
       "source": "Moneycontrol.com",
       "published": "2026-10-22T13:33:18+00:00",
       "angle": "AI skills are now paying up to 1 crore (approx. $120k) annually, showing exactly where the money is moving in the tech job market."
+    },
+    {
+      "title": "PerturbAI and OpenAI Launch AI Reasoning Agents for Biomedical Discovery",
+      "link": "https://www.genengnews.com/topics/artificial-intelligence/perturbai-and-openai-launch-ai-reasoning-agents-for-biomedical-discovery/",
+      "summary": "PerturbAI and OpenAI Launch AI Reasoning Agents for Biomedical Discovery Genetic Engineering and Biotechnology News",
+      "source": "Genetic Engineering and Biotechnology News",
+      "published": "2026-10-22T17:33:44+00:00",
+      "angle": "OpenAI is now moving into biomedical discovery with new reasoning agents, a massive leap for real-world science."
     }
   ],
   "tried": [
@@ -526,234 +666,7 @@
     "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
     "PerturbAI and OpenAI Launch AI Reasoning Agents for Biomedical Discovery"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Uber puts all 30,000 employees on ChatGPT Work",
-          "link": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-          "summary": "The ride share giant previously deployed a much smaller pilot for ChatGPT Work, but is now taking the enterprise agent company-wide.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-22T16:00:00+00:00",
-          "angle": "Uber just put all 30,000 employees on ChatGPT Work, showing how fast enterprise AI is becoming mandatory."
-        },
-        "draft": {
-          "title": "Uber puts 30000 employees on ChatGPT Work",
-          "hook_text": "Thirty thousand Uber workers just got ChatGPT.",
-          "beats": [
-            {
-              "line": "Thirty thousand Uber employees just got full access to ChatGPT Work.",
-              "visual": "clip",
-              "query": "office workers typing",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "techcrunch.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-              "tag": "30,000 Uber employees",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Uber",
-                  "domain": "uber.com"
-                },
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The ride share giant previously ran a much smaller pilot program for the enterprise agent.",
-              "visual": "clip",
-              "query": "modern office desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Earlier pilot program",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Uber",
-                  "domain": "uber.com"
-                }
-              ]
-            },
-            {
-              "line": "Now OpenAI is scaling the enterprise tool company wide across the entire organization.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "30,000",
-              "small": "employees on ChatGPT",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Company wide rollout",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                },
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Every staff member gets direct daily access to enterprise grade AI assistance for their tasks.",
-              "visual": "clip",
-              "query": "person using laptop at desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Daily AI assistance",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This deployment embeds generative models directly into daily administrative tasks and internal operations.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Uber puts all 30000 employees on ChatGPT Work",
-              "url": "",
-              "tag": "Internal operations shift",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Would your employer roll out ChatGPT to everyone?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Uber puts all 30000 employees on ChatGPT Work",
-              "url": "",
-              "tag": "Company wide access",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "sharp, fast-paced tech news delivery, highlighting the massive scale of the corporate rollout",
-          "thin": false,
-          "caption": "Uber has deployed ChatGPT Work to all 30,000 of its employees following an earlier smaller pilot. The ride share giant is scaling enterprise AI across its entire workforce. Would your company roll out ChatGPT to everyone?",
-          "hashtags": [
-            "Uber",
-            "ChatGPT",
-            "OpenAI",
-            "TechNews",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-          ],
-          "script": "Thirty thousand Uber employees just got full access to ChatGPT Work.\nThe ride share giant previously ran a much smaller pilot program for the enterprise agent.\nNow OpenAI is scaling the enterprise tool company wide across the entire organization.\nEvery staff member gets direct daily access to enterprise grade AI assistance for their tasks.\nThis deployment embeds generative models directly into daily administrative tasks and internal operations.\nWould your employer roll out ChatGPT to everyone?",
-          "keywords": [
-            "office workers typing",
-            "modern office desk",
-            "person using laptop at desk"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Thirty thousand Uber workers just got ChatGPT.",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            },
-            {
-              "claim": "Thirty thousand Uber employees just got full access to ChatGPT Work.",
-              "url": "https://www.techbuzz.ai/articles/uber-rolls-out-chatgpt-work-to-all-30-000-employees"
-            },
-            {
-              "claim": "The ride share giant previously ran a much smaller pilot program for the enterprise agent.",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            },
-            {
-              "claim": "Now OpenAI is scaling the enterprise tool company wide across the entire organization.",
-              "url": "https://www.techbuzz.ai/articles/uber-rolls-out-chatgpt-work-to-all-30-000-employees"
-            },
-            {
-              "claim": "Every staff member gets direct daily access to enterprise grade AI assistance for their tasks.",
-              "url": "https://www.techbuzz.ai/articles/uber-rolls-out-chatgpt-work-to-all-30-000-employees"
-            },
-            {
-              "claim": "This deployment embeds generative models directly into daily administrative tasks and internal operations.",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-22T22:16:43.279955+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -893,6 +806,50 @@
           }
         ],
         "choose_deadline": "2026-10-22T23:15:24.424248+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "AI agents are ready to shop. Some retailers are wary",
+            "link": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
+            "summary": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-22T12:30:00+00:00",
+            "angle": "AI agents are finally starting to shop for us, but retailers are fighting back—the future of e-commerce is changing."
+          },
+          {
+            "title": "India's FDEs earn up to Rs 1 crore annually as AI deployment skills gain premium",
+            "link": "https://www.moneycontrol.com/artificial-intelligence/india-s-fdes-earn-up-to-rs-1-crore-annually-as-ai-deployment-skills-gain-premium-article-14057906.html",
+            "summary": "India's FDEs earn up to Rs 1 crore annually as AI deployment skills gain premium Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "published": "2026-10-22T13:33:18+00:00",
+            "angle": "AI skills are now paying up to 1 crore (approx. $120k) annually, showing exactly where the money is moving in the tech job market."
+          },
+          {
+            "title": "PerturbAI and OpenAI Launch AI Reasoning Agents for Biomedical Discovery",
+            "link": "https://www.genengnews.com/topics/artificial-intelligence/perturbai-and-openai-launch-ai-reasoning-agents-for-biomedical-discovery/",
+            "summary": "PerturbAI and OpenAI Launch AI Reasoning Agents for Biomedical Discovery Genetic Engineering and Biotechnology News",
+            "source": "Genetic Engineering and Biotechnology News",
+            "published": "2026-10-22T17:33:44+00:00",
+            "angle": "OpenAI is now moving into biomedical discovery with new reasoning agents, a massive leap for real-world science."
+          }
+        ],
+        "choose_deadline": "2026-10-22T23:21:26.322954+05:30",
         "topic": null,
         "draft": null,
         "video_file_id": null,
@@ -1464,7 +1421,7 @@
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 777,
+    "calls": 794,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1475,9 +1432,9 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 114,
-        "busy": 68,
-        "other": 76,
+        "ok": 118,
+        "busy": 72,
+        "other": 85,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
@@ -1513,11 +1470,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "04:48",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-22"
-    },
     {
       "at": "05:28",
       "error": "gemini-3.1-flash-lite didn't answer (ReadTimeout)",
@@ -1560,6 +1512,11 @@
     },
     {
       "at": "17:50",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-22"
+    },
+    {
+      "at": "17:55",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-22"
     }
