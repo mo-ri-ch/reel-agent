@@ -1,8 +1,34 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
+      "link": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
+      "summary": "",
+      "source": "biograph.com",
+      "published": "2026-10-22T18:02:54+00:00",
+      "buzz": "Hacker News 4 points",
+      "angle": ""
+    },
+    {
+      "title": "Nvidia, UW Institute for Protein Design Unveil Open-Source Protein Design AI Model",
+      "link": "https://www.genengnews.com/topics/artificial-intelligence/nvidia-uw-institute-for-protein-design-unveil-open-source-protein-design-ai-model/",
+      "summary": "Nvidia, UW Institute for Protein Design Unveil Open-Source Protein Design AI Model Genetic Engineering and Biotechnology News",
+      "source": "Genetic Engineering and Biotechnology News",
+      "published": "2026-10-22T17:48:12+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Don Beyer on artificial intelligence",
+      "link": "https://punchbowl.news/article/fly-out-day/beyer-artificial-intelligence/",
+      "summary": "Don Beyer on artificial intelligence Punchbowl News",
+      "source": "Punchbowl News",
+      "published": "2026-10-22T17:44:26+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-22T23:40:34.085012+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -420,6 +446,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [],
   "tried": [
     "Can India Capitalise On The AI Homecoming?",
@@ -1190,7 +1217,7 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-22T23:15+05:30",
+    "at": "2026-10-22T23:40+05:30",
     "techcrunch.com": 15,
     "theverge.com": 10,
     "arstechnica.com": 5,
@@ -1201,16 +1228,16 @@
     "huggingface.co": 6,
     "blogs.nvidia.com": 16,
     "inc42.com": 8,
-    "news.google.com": 41,
-    "Google News (VentureBeat, AIM, AI News)": 24,
+    "news.google.com": 40,
+    "Google News (VentureBeat, AIM, AI News)": 23,
     "producthunt.com": 5,
-    "Hacker News": 1,
+    "Hacker News": 3,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 5
+    "filtered out (PR / local events / market fluff)": 6
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-22T23:15:24.424248+05:30",
+  "last_auto_offer": "2026-10-22T23:40:34.085012+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
@@ -1239,7 +1266,7 @@
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 799,
+    "calls": 803,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1252,7 +1279,7 @@
       "gemini-3.1-flash-lite": {
         "ok": 118,
         "busy": 73,
-        "other": 89,
+        "other": 93,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
@@ -1288,11 +1315,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "05:36",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-22"
-    },
     {
       "at": "17:22",
       "error": "gemini-flash-lite-latest: free quota used up for now",
@@ -1335,6 +1357,11 @@
     },
     {
       "at": "18:01",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-22"
+    },
+    {
+      "at": "18:11",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-22"
     }
