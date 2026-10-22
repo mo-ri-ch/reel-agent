@@ -1148,6 +1148,30 @@ def web_page(tmp, source_urls):
     return None
 
 
+def picture_fits(img, headline):
+    """Does this picture literally show something from the headline? (22 Oct: TechCrunch's gorilla stock photo
+    opened a reel about managers and AI.) Fails open: if the check can't run, the picture is kept."""
+    import base64
+    import io
+    import writer
+    try:
+        im = img.convert("RGB")
+        im.thumbnail((512, 512))
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=80)
+        ans = writer.ask([{"text": f'News headline: "{headline}"\nIs this picture a LITERAL, relevant image for it '
+                                   '(the product, company, person, place, device or activity named)? Whimsical, '
+                                   'symbolic or joke stock photos (animals, toys, metaphors) and unrelated scenes '
+                                   'are NOT. Reply with only YES or NO.'},
+                          {"inline_data": {"mime_type": "image/jpeg",
+                                           "data": base64.b64encode(buf.getvalue()).decode()}}],
+                         temperature=0, light=True)
+        return not ans.strip().upper().startswith("NO")
+    except Exception as e:
+        print(f"Picture check skipped: {e}")
+        return True
+
+
 def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
     """Finds visuals for every beat. Returns a list (per beat) of shots: ('clip'|'image', path)."""
     global LAST_SUMMARY, LAST_CREDITS
@@ -1604,6 +1628,9 @@ def render(voice_path, draft, topic, user_image_path=None, words=None, user_vide
     if hook_img is None and topic and not topic.get("custom"):
         url = news.og_image(topic.get("link"))
         hook_img = fetch_image(url) if url else None
+        if hook_img is not None and not picture_fits(hook_img, draft.get("hook_text") or topic.get("title", "")):
+            print("The article's header photo doesn't show the story (e.g. a joke stock photo): not used")
+            hook_img = None
     sources = [topic.get("link")] if topic and topic.get("link") else []
     sources += [u for u in (draft.get("sources") or []) if isinstance(u, str) and u.startswith("http")][:4]
     sources = list(dict.fromkeys(news.real_url(u) for u in sources))  # never a Google News wrapper link

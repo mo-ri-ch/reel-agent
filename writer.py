@@ -753,6 +753,8 @@ Score each 1-10:
   report is not a confirmation). Wrong or misleading = 4 or less.
 - visuals: each frame fits the words being spoken at that moment (named company -> its logo/product, person -> their
   photo, number -> number card); no unrelated, repeated, blank or broken pictures; text readable.
+- A picture unrelated to the words (a joke or symbolic stock photo such as animals for a business story, a random
+  scene) is misleading: visuals 5 or less.
 - (Our brand style: the highlighted key word in a box with small corner squares is INTENTIONAL design, not a leftover
   editing artifact; don't mark it down. Captions are checked separately by code; ignore the text strip at the top. The same picture held for more than
   ~8 seconds, 3+ frames in a row, or the same photo appearing in many lines costs visuals points.)

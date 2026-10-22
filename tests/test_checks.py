@@ -371,6 +371,16 @@ _ig.requests.get = lambda url, **k: _R(200, {"data": [{"audio_id": "a1", "title"
 check("trending music parsed", _ig.search_music(), [{"id": "a1", "title": "Song", "artist": "X"}])
 _ig.requests.post, _ig.requests.get = _igpost, _igget
 
+# the article's header photo must show the story (no joke stock photos as the opening picture)
+_ask_pf = writer.ask
+writer.ask = lambda *a, **k: "NO"
+check("joke photo rejected", _video.picture_fits(_Im.new("RGB", (300, 200)), "Managers struggle with AI"), False)
+writer.ask = lambda *a, **k: "YES"
+check("fitting photo kept", _video.picture_fits(_Im.new("RGB", (300, 200)), "Meta new shares"), True)
+writer.ask = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("busy"))
+check("check down -> photo kept", _video.picture_fits(_Im.new("RGB", (300, 200)), "x"), True)
+writer.ask = _ask_pf
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)
