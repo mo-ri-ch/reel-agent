@@ -15,15 +15,8 @@
   "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
-    "date": "2026-10-22",
-    "done": [
-      "01:30",
-      "04:30",
-      "09:30",
-      "14:30",
-      "19:30",
-      "22:30"
-    ]
+    "date": "2026-10-23",
+    "done": []
   },
   "pending_topic": null,
   "held": [
@@ -420,6 +413,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "Don Beyer on artificial intelligence",
@@ -1232,9 +1226,9 @@
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
-    "day": "2026-10-22",
-    "at": "2026-10-22T23:47:13.719221+05:30",
-    "count": 5
+    "day": "2026-10-23",
+    "at": "2026-10-23T00:00:32.540163+05:30",
+    "count": 0
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-22",
@@ -1252,58 +1246,15 @@
     }
   ],
   "engine_used": "fish",
-  "token_day": "2026-10-22",
+  "token_day": "2026-10-23",
   "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
-    "day": "2026-10-22",
-    "calls": 819,
+    "day": "2026-10-23",
+    "calls": 0,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {
-      "gemini-3.5-flash-lite": {
-        "ok": 289,
-        "busy": 130,
-        "other": 40,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.1-flash-lite": {
-        "ok": 119,
-        "busy": 76,
-        "other": 105,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
-      },
-      "gemini-flash-lite-latest": {
-        "ok": 9,
-        "busy": 8,
-        "other": 2,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.6-flash": {
-        "ok": 0,
-        "busy": 1,
-        "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.7-flash": {
-        "ok": 1,
-        "busy": 4,
-        "other": 5,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.5-flash": {
-        "ok": 0,
-        "busy": 2,
-        "other": 1,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3-flash-preview": {
-        "ok": 4,
-        "busy": 12,
-        "other": 11,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      }
-    }
+    "models": {}
   },
   "gemini_errors": [
     {
@@ -1824,6 +1775,5 @@
     }
   ],
   "rest_note": "2026-10-19T12:32:00+05:30",
-  "fish_turn": 32,
-  "behind_since": "2026-10-22T21:40:46.030780+05:30"
+  "fish_turn": 32
 }
