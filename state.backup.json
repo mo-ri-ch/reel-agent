@@ -1,178 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
-    "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
-    "summary": "It was a busy summer for AI lobbyists. Anthropic, OpenAI, and Nvidia each had their highest-spending lobbying quarter between July and September, federal disclosures show. Nvidia spent the most of the group at $2.2 million, followed by Anthropic's $2.1 million and OpenAI's $1.5 million. Compared to other Big Tech companies with long-established presences in Washington, […]",
-    "source": "AI | The Verge",
-    "published": "2026-10-22T15:50:30+00:00",
-    "angle": "OpenAI, Anthropic, and Nvidia just hit record-breaking lobbying spending—here is why they are pouring millions into Washington right now."
-  },
-  "draft": {
-    "title": "OpenAI, Anthropic, and Nvidia Lobbying Records",
-    "hook_text": "Nvidia spent two million on lobbying.",
-    "beats": [
-      {
-        "line": "Nvidia just spent two point two million dollars on Washington lobbying in a single quarter.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Nvidia",
-        "outlet": "",
-        "domain": "nvidia.com",
-        "headline": "",
-        "url": "https://www.nvidia.com",
-        "tag": "Nvidia spent 2.2 million",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Nvidia",
-            "domain": "nvidia.com"
-          }
-        ]
-      },
-      {
-        "line": "Anthropic followed close behind at two point one million dollars.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Anthropic",
-        "outlet": "",
-        "domain": "anthropic.com",
-        "headline": "",
-        "url": "https://www.anthropic.com",
-        "tag": "Anthropic spent 2.1 million",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Anthropic",
-            "domain": "anthropic.com"
-          }
-        ]
-      },
-      {
-        "line": "OpenAI spent one point five million dollars during the same summer months.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "OpenAI",
-        "outlet": "",
-        "domain": "openai.com",
-        "headline": "",
-        "url": "https://openai.com",
-        "tag": "OpenAI spent 1.5 million",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          }
-        ]
-      },
-      {
-        "line": "Federal disclosures show these numbers are record highs for each company.",
-        "visual": "clip",
-        "query": "Washington DC capitol building",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Record federal lobbying highs",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The spending surge comes as lawmakers debate federal oversight for AI.",
-        "visual": "clip",
-        "query": "politicians meeting in congress",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Lawmakers debate federal oversight",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Will tech lobbying slow down as new rules take shape?",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "The Verge",
-        "domain": "theverge.com",
-        "headline": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
-        "url": "",
-        "tag": "Tech lobbying reaches record highs",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "sharp and factual, highlighting the massive lobbying spend by major AI labs",
-    "thin": false,
-    "caption": "Nvidia, Anthropic, and OpenAI hit record lobbying spend in Washington between July and September. Nvidia led the group at two point two million dollars as policy debates heat up. How much influence should AI companies have on Capitol Hill?",
-    "hashtags": [
-      "Nvidia",
-      "Anthropic",
-      "OpenAI",
-      "AIpolicy"
-    ],
-    "sources": [
-      "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records"
-    ],
-    "script": "Nvidia just spent two point two million dollars on Washington lobbying in a single quarter.\nAnthropic followed close behind at two point one million dollars.\nOpenAI spent one point five million dollars during the same summer months.\nFederal disclosures show these numbers are record highs for each company.\nThe spending surge comes as lawmakers debate federal oversight for AI.\nWill tech lobbying slow down as new rules take shape?",
-    "keywords": [
-      "Washington DC capitol building",
-      "politicians meeting in congress"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
-    ],
-    "fix_rounds": 0,
-    "source_links": [
-      "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Someone hacked the Switch 2 by using an old game and AI",
+      "link": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
+      "summary": "The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. OpenAI's Codex helped make this \"ns2jb\" jailbreak, according to Sammy Hajhamid, aka \"pepsipu.\" It's a […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-22T17:21:31+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Pretrained AI detects factory defects using fewer examples, potentially easing costly setup",
+      "link": "https://techxplore.com/news/2026-10-pretrained-ai-factory-defects-examples.html",
+      "summary": "Pretrained AI detects factory defects using fewer examples, potentially easing costly setup Tech Xplore",
+      "source": "Tech Xplore",
+      "published": "2026-10-22T17:20:26+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-22T22:54:04.726231+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-22T22:53:18.320364+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
@@ -582,20 +437,8 @@
       "extra": false
     }
   ],
-  "paused": null,
-  "spare": [
-    {
-      "title": "Nobel laureate expects human-level artificial intelligence to emerge in two to three years. What will smart t",
-      "link": "https://nashaniva.com/amp/en/407410",
-      "summary": "Nobel laureate expects human-level artificial intelligence to emerge in two to three years. What will smart t Наша Ніва",
-      "source": "Наша Ніва",
-      "published": "2026-10-22T14:06:04+00:00",
-      "angle": "A Nobel laureate predicts human-level AI will arrive in just 2-3 years, sparking a massive debate on what that actually means for our future."
-    }
-  ],
+  "spare": [],
   "tried": [
-    "Meta tries to scapegoat staff who downloaded torrents to spare execs",
-    "OpenAI says its agents weakened system that flags AI misbehavior",
     "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
     "Anthropic’s cloud partnerships are getting messy",
     "ElevenLabs Launches Real-Time Voice AI Models With Up to 98.8% Speech Reasoning Accuracy",
@@ -653,8 +496,11 @@
     "Websites shut down globally after AI finds flaw affecting 70% of the internet",
     "Spotify’s current AI bet is about being the music service that agents choose",
     "Uber puts all 30,000 employees on ChatGPT Work",
-    "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories"
+    "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+    "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
+    "OpenAI, Anthropic, and Nvidia had record lobbying quarters"
   ],
+  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot choosing the AI voice",
@@ -1909,7 +1755,7 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-22T22:39+05:30",
+    "at": "2026-10-22T22:54+05:30",
     "techcrunch.com": 15,
     "theverge.com": 10,
     "arstechnica.com": 5,
@@ -1920,16 +1766,16 @@
     "huggingface.co": 6,
     "blogs.nvidia.com": 16,
     "inc42.com": 8,
-    "news.google.com": 43,
+    "news.google.com": 41,
     "Google News (VentureBeat, AIM, AI News)": 24,
     "producthunt.com": 5,
     "Hacker News": 3,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 7
+    "filtered out (PR / local events / market fluff)": 8
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-22T21:59:49.154271+05:30",
+  "last_auto_offer": "2026-10-22T22:54:04.726231+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
@@ -1958,7 +1804,7 @@
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 699,
+    "calls": 706,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1969,9 +1815,9 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 86,
-        "busy": 50,
-        "other": 44,
+        "ok": 88,
+        "busy": 51,
+        "other": 48,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
@@ -2007,11 +1853,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "01:48",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-21"
-    },
     {
       "at": "02:22",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2054,6 +1895,11 @@
     },
     {
       "at": "17:23",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-22"
+    },
+    {
+      "at": "17:24",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-22"
     }
