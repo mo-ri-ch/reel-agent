@@ -1,19 +1,185 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "DeepSeek raises $15 billion in challenge to leading US labs",
-      "link": "https://www.moneycontrol.com/artificial-intelligence/deepseek-raises-15-billion-in-challenge-to-leading-us-labs-article-14057241.html/amp",
-      "summary": "DeepSeek raises $15 billion in challenge to leading US labs Moneycontrol.com",
-      "source": "Moneycontrol.com",
-      "published": "2026-10-22T03:00:14+00:00",
-      "angle": "DeepSeek raises a massive $15 billion to challenge US labs, shaking up the global AI race."
-    }
-  ],
-  "choose_deadline": "2026-10-22T09:10:40.063769+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Data centers could erase decades of air quality gains",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+    "summary": "A rush of new data centers could bring air pollution roaring back to levels not seen since the 2000s in Texas, which has become ground zero for the physical infrastructure behind generative AI. New and proposed data centers are demanding a tremendous amount of electricity. How developers and utilities meet that demand - with gas […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-21T22:33:44+00:00",
+    "angle": "Data centers in Texas are bringing air pollution back to 2000s levels, showing the hidden environmental cost of the AI boom."
+  },
+  "draft": {
+    "title": "Data Centers Threaten Air Quality",
+    "hook_text": "Texas Air Quality Warning",
+    "beats": [
+      {
+        "line": "Ninety percent more pollution could hit Texas from data centers.",
+        "visual": "clip",
+        "query": "texas skyline highway traffic",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Texas Air Quality Warning",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "These facilities are demanding a tremendous amount of electricity.",
+        "visual": "clip",
+        "query": "power plant smokestacks energy",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Massive Electricity Demand",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Generative AI expansion is driving the physical infrastructure behind this boom.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Data centers could erase decades of air quality gains",
+        "url": "",
+        "tag": "Generative AI Expansion",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Pollution levels could return to numbers not seen since the two thousands.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "2000s",
+        "small": "pollution levels return",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "2000s Pollution Levels",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Utilities and developers must decide how to meet this power demand cleanly.",
+        "visual": "clip",
+        "query": "utility workers electrical grid",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Grid Power Challenge",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Will your local utility turn to gas to power data centers?",
+        "visual": "clip",
+        "query": "natural gas flame burner",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Gas Power Dilemma",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "urgent and direct, highlighting the hidden environmental cost of data centers",
+    "thin": false,
+    "caption": "The massive electricity demand from new data centers in Texas could push air pollution back to levels not seen since the 2000s. As generative AI infrastructure expands rapidly, utilities face tough choices on how to generate power. Will your local utility turn to natural gas to meet this energy demand?",
+    "hashtags": [
+      "Texas",
+      "DataCenters",
+      "AirPollution",
+      "Energy"
+    ],
+    "sources": [
+      "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+    ],
+    "script": "Ninety percent more pollution could hit Texas from data centers.\nThese facilities are demanding a tremendous amount of electricity.\nGenerative AI expansion is driving the physical infrastructure behind this boom.\nPollution levels could return to numbers not seen since the two thousands.\nUtilities and developers must decide how to meet this power demand cleanly.\nWill your local utility turn to gas to power data centers?",
+    "keywords": [
+      "texas skyline highway traffic",
+      "power plant smokestacks energy",
+      "utility workers electrical grid",
+      "natural gas flame burner"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "hook_before": "A rush of new data centers could bring air pollution roaring back in Texas.",
+    "hook_score": 49,
+    "evidence": [
+      {
+        "claim": "Texas Air Quality Warning",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      },
+      {
+        "claim": "Ninety percent more pollution could hit Texas from data centers.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      },
+      {
+        "claim": "These facilities are demanding a tremendous amount of electricity.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      },
+      {
+        "claim": "Generative AI expansion is driving the physical infrastructure behind this boom.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      },
+      {
+        "claim": "Pollution levels could return to numbers not seen since the two thousands.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      },
+      {
+        "claim": "Utilities and developers must decide how to meet this power demand cleanly.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -64,7 +230,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-22T09:47:08.342764+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -473,24 +639,15 @@
   "paused": null,
   "spare": [
     {
-      "title": "The $15 billion ad-powered AI startup your doctor may already be using",
-      "link": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
-      "summary": "OpenEvidence is booming despite questions about accuracy and ads.",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-21T15:14:07+00:00",
-      "angle": "Inside OpenEvidence: the $15 billion ad-powered medical AI startup your doctor might already be using"
-    },
-    {
-      "title": "Data centers could erase decades of air quality gains",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-      "summary": "A rush of new data centers could bring air pollution roaring back to levels not seen since the 2000s in Texas, which has become ground zero for the physical infrastructure behind generative AI. New and proposed data centers are demanding a tremendous amount of electricity. How developers and utilities meet that demand - with gas […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-21T22:33:44+00:00",
-      "angle": "The dark side of AI infrastructure: how data centers could erase decades of air quality gains"
+      "title": "Canadian publisher drops author, says he used AI to write novel",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVjJIQkJwUFhmWG1lV3R4dU40a0FEOVlrWHY3cEM5N042UGZlNHRlaFNVYjd4SE9QRlZLOEozVzdDSHVLS2ZBdTB6N2dnLUJzZi1wbWhYMjgyNmtsTEhiOThXbG0zT0dsSTZPbjlOdUJZaF9ZX2xEdUhfTHoydW5ORDdBeS1FdHJsYU1ERS1naHJsT041V0tmTzBfUFlJQmhMaDA5dk14bGNDNGFOYmZILTAwaDZwdUJwdnlVcEdhLUFQbDFHal9KMWs0TkRSSlBZYVNlbg?oc=5",
+      "summary": "Canadian publisher drops author, says he used AI to write novel South China Morning Post",
+      "source": "South China Morning Post",
+      "published": "2026-10-22T02:52:47+00:00",
+      "angle": "A Canadian publisher dropped an author for using AI to write a novel, sparking debate on art versus automation."
     }
   ],
   "tried": [
-    "The Dirt on AI: How Smarter Spraying Is Changing Farming",
     "Dozens Of Police Chiefs, Investigators Get AI Training At CT Police Academy",
     "Artificial intelligence conformity assessment in Ukraine",
     "‘Just answering the questions is not the point’: Dartmouth mathematicians weigh artificial intelligence’s role in the future of their work",
@@ -549,263 +706,10 @@
     "Exclusive | AI Just Found a Bug That Puts up to 70% of the World’s Websites at Risk",
     "PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
     "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
-    "OpenAI's latest AI models are coming to Google Cloud and Antigravity"
+    "OpenAI's latest AI models are coming to Google Cloud and Antigravity",
+    "DeepSeek raises $15 billion in challenge to leading US labs"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "GM aims to develop vehicles in as little as two years with AI, software push",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zZHBsWGlxdmVTbHJRV2VPTktvTnlJNm1hRmZXbDBScmRENVV2UVhjcFZLWVRhZm1Bb3BWa0ZoWTNqeC1MVU9YTmpKbTRkOHJjX01vOUJTdHI2R2JUSkszMld1UVJ1Y19TNE4xWW5CVUk5ZG5IRjdvSkVsUdIBgAFBVV95cUxOVnZYd0dsUTk5azZ0Y1dDdzRsai0wT0dPdXpSNEVVdU5OZnBwQUt0cnYxZjRRaWoyOFlCeG1UeHlVSlFuSjhkSEpaYVFNSU5kSG00dmo1NGw5LUtRN0tYRURLTkZyb1FYRWV4RFVmX0dtWS1Fb0RvUEc5Y0NfN2NOWg?oc=5",
-          "summary": "GM aims to develop vehicles in as little as two years with AI, software push CNBC",
-          "source": "CNBC",
-          "published": "2026-10-21T18:00:01+00:00",
-          "angle": "GM is using AI to slash vehicle development time down to just two years."
-        },
-        "draft": {
-          "title": "GM Targets Two-Year Vehicle Development Using AI",
-          "hook_text": "GM wants cars in two years",
-          "beats": [
-            {
-              "line": "General Motors is aiming to develop new vehicles in as little as two years.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "General Motors",
-              "outlet": "",
-              "domain": "gm.com",
-              "headline": "",
-              "url": "https://www.cnbc.com/2026/10/22/gm-aims-to-develop-vehicles-in-as-little-as-two-years-with-ai-software-push.html",
-              "tag": "GM targets two years",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "General Motors",
-                  "domain": "gm.com"
-                }
-              ]
-            },
-            {
-              "line": "General Motors is leveraging generative AI and digital design tools to overhaul its engineering pipeline.",
-              "visual": "clip",
-              "query": "automotive software development engineering",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Software and AI push",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "General Motors",
-                  "domain": "gm.com"
-                }
-              ]
-            },
-            {
-              "line": "Traditional vehicle development across the auto industry typically takes four to five years to complete.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "5 yrs",
-              "small": "typical timeline",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Traditional timeline halved",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The new software push aims to slash engineering bottlenecks and accelerate production cycles significantly.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "General Motors",
-              "outlet": "",
-              "domain": "gm.com",
-              "headline": "",
-              "url": "https://www.cnbc.com/2026/10/22/gm-aims-to-develop-vehicles-in-as-little-as-two-years-with-ai-software-push.html",
-              "tag": "Faster vehicle creation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "General Motors",
-                  "domain": "gm.com"
-                }
-              ]
-            },
-            {
-              "line": "By integrating these advanced tools, General Motors hopes to outpace legacy manufacturing timelines.",
-              "visual": "clip",
-              "query": "car manufacturing assembly line",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Manufacturing timeline speed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "General Motors",
-                  "domain": "gm.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you buy a car designed in two years?",
-              "visual": "clip",
-              "query": "person looking at new car",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Two year cars",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "forward-looking and fast-paced, explaining a major industry shift with calm confidence",
-          "thin": false,
-          "caption": "General Motors is using AI and software to develop new vehicles in just two years. The push aims to cut traditional development timelines in half. Would you buy an AI-designed car?",
-          "hashtags": [
-            "GeneralMotors",
-            "Automotive",
-            "Software",
-            "VehicleDesign"
-          ],
-          "sources": [
-            "https://www.cnbc.com/2026/10/22/gm-aims-to-develop-vehicles-in-as-little-as-two-years-with-ai-software-push.html"
-          ],
-          "script": "General Motors is aiming to develop new vehicles in as little as two years.\nGeneral Motors is leveraging generative AI and digital design tools to overhaul its engineering pipeline.\nTraditional vehicle development across the auto industry typically takes four to five years to complete.\nThe new software push aims to slash engineering bottlenecks and accelerate production cycles significantly.\nBy integrating these advanced tools, General Motors hopes to outpace legacy manufacturing timelines.\nWould you buy a car designed in two years?",
-          "keywords": [
-            "automotive software development engineering",
-            "car manufacturing assembly line",
-            "person looking at new car"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "GM wants cars in two years",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "General Motors is aiming to develop new vehicles in as little as two years.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "General Motors is leveraging generative AI and digital design tools to overhaul its engineering pipeline.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "Traditional vehicle development across the auto industry typically takes four to five years to complete.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "The new software push aims to slash engineering bottlenecks and accelerate production cycles significantly.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            },
-            {
-              "claim": "By integrating these advanced tools, General Motors hopes to outpace legacy manufacturing timelines.",
-              "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html"
-          ],
-          "ig_audio": null,
-          "visual_status": "fixed",
-          "visual_notes": [
-            "General Motors is aiming to develop new vehicles i…: The image shows a '404 Page Not Found' error message instead of real images of General Motors.",
-            "By integrating these advanced tools, General Motor…: The image shows a CNBC logo card instead of stock video of a car manufacturing assembly line.",
-            "The visual is an almost-empty card with a small GM logo in the center instead of real images of General Motors.",
-            "The visual is an almost-empty card with only faint text instead of showing a big number 5 yrs.",
-            "The visual is an almost-empty card with only faint text instead of showing a car manufacturing assembly line.",
-            "The visual is an almost-empty card with text instead of stock video of a person looking at a new car."
-          ],
-          "editor": {
-            "overall": 8.0,
-            "scores": {
-              "hook": 8,
-              "specific": 8,
-              "substance": 8,
-              "accuracy": 9,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong news and numbers, but visual asset errors and repeated slides lower quality.",
-            "script_fixes": [],
-            "visual_beats": [
-              0,
-              3
-            ],
-            "visual_notes": [
-              "line 1: The CNBC logo screen stays static for too long across multiple frames without visual chang",
-              "line 4: Frames 8 and 9 display an unrelated 404 error page graphic instead of relevant software or"
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [
-            "news photo: cnbc.com",
-            "news photo: cnbc.com",
-            "General Motors: cnbc.com"
-          ],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "4 official images, 4 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIhGmrZXGQ1QC_m82CCqQ0R13tSczhQAAK4IgACIdHJVtu4jDqOKYn2PQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIhGmrZXGQ1QC_m82CCqQ0R13tSczhQAAK4IgACIdHJVtu4jDqOKYn2PQQ",
-      "history_title": "GM aims to develop vehicles in as little as two years with AI, software push"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1516,6 +1420,34 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIhK2rZdtAcg-gp54FZF5Q2DAABX6UzMQAC3yIAAiHRyVZXV_vWNizZhj0E",
       "history_title": "Meta to create a new class of shares to fund AI push"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "DeepSeek raises $15 billion in challenge to leading US labs",
+            "link": "https://www.moneycontrol.com/artificial-intelligence/deepseek-raises-15-billion-in-challenge-to-leading-us-labs-article-14057241.html/amp",
+            "summary": "DeepSeek raises $15 billion in challenge to leading US labs Moneycontrol.com",
+            "source": "Moneycontrol.com",
+            "published": "2026-10-22T03:00:14+00:00",
+            "angle": "DeepSeek raises a massive $15 billion to challenge US labs, shaking up the global AI race."
+          }
+        ],
+        "choose_deadline": "2026-10-22T09:10:40.063769+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2079,8 +2011,8 @@
   "report_day": "2026-10-21",
   "ig_count": {
     "day": "2026-10-22",
-    "at": "2026-10-22T09:00:33.196706+05:30",
-    "count": 3
+    "at": "2026-10-22T09:17:08.944206+05:30",
+    "count": 4
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-22",
@@ -2103,13 +2035,13 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 143,
+    "calls": 171,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 105,
-        "busy": 38,
+        "ok": 124,
+        "busy": 47,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
