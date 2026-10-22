@@ -1,8 +1,25 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Uber puts all 30,000 employees on ChatGPT Work",
+      "link": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+      "summary": "The ride share giant previously deployed a much smaller pilot for ChatGPT Work, but is now taking the enterprise agent company-wide.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-22T16:00:00+00:00",
+      "angle": "Uber just put all 30,000 employees on ChatGPT Work, showing how fast enterprise AI is becoming mandatory."
+    },
+    {
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "link": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "summary": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are among the most complex operations in the world, with vast […]",
+      "source": "NVIDIA Blog",
+      "published": "2026-10-22T15:00:02+00:00",
+      "angle": "Nvidia just launched Minerva to monitor massive AI factories and catch hardware failures before they crash systems."
+    }
+  ],
+  "choose_deadline": "2026-10-22T21:59:49.154271+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -419,6 +436,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
@@ -1346,10 +1364,6 @@
   ],
   "posted_log": [
     {
-      "title": "GPT‑6 and Intelligent UI for everyone",
-      "at": "2026-10-08T21:45:31.879609+05:30"
-    },
-    {
       "title": "Top AI headlines · 12:10 AM today",
       "at": "2026-10-09T00:20:25.633077+05:30"
     },
@@ -1722,32 +1736,32 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-22T21:20+05:30",
-    "techcrunch.com": 12,
+    "at": "2026-10-22T21:59+05:30",
+    "techcrunch.com": 14,
     "theverge.com": 10,
     "arstechnica.com": 5,
     "technologyreview.com": 2,
     "openai.com": 8,
-    "blog.google": 1,
+    "blog.google": 0,
     "deepmind.google": 1,
-    "huggingface.co": 5,
+    "huggingface.co": 6,
     "blogs.nvidia.com": 16,
     "inc42.com": 8,
-    "news.google.com": 42,
+    "news.google.com": 43,
     "Google News (VentureBeat, AIM, AI News)": 25,
     "producthunt.com": 5,
-    "Hacker News": 3,
+    "Hacker News": 1,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 6
+    "filtered out (PR / local events / market fluff)": 7
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-22T21:20:45.956175+05:30",
+  "last_auto_offer": "2026-10-22T21:59:49.154271+05:30",
   "last_engine": "microsoft",
-  "report_day": "2026-10-21",
+  "report_day": "2026-10-22",
   "ig_count": {
     "day": "2026-10-22",
-    "at": "2026-10-22T21:40:46.030831+05:30",
+    "at": "2026-10-22T21:59:49.154305+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -1771,15 +1785,15 @@
   "late_note_for": "2026-10-20-2",
   "gemini_use": {
     "day": "2026-10-22",
-    "calls": 656,
+    "calls": 659,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 279,
+        "ok": 281,
         "busy": 124,
-        "other": 32,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 33,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.1-flash-lite": {
         "ok": 84,
