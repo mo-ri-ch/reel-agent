@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "In Meta’s version of the future, I’ll have my Muse call your Muse",
+      "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
+      "summary": "Mark Zuckerberg is barrelling toward a future in which an autonomous network of AI agents will run our lives - shopping for us, working for us, talking to other people's AI agents for us. Are humans ready for this very specific and unrelenting vision of a life in which we communicate primarily through bot proxies? […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-22T18:15:00+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Time to invest in the 'human stack' to foster trust in health AI",
+      "link": "https://www.healthcareitnews.com/news/time-invest-human-stack-foster-trust-health-ai",
+      "summary": "Time to invest in the 'human stack' to foster trust in health AI Healthcare IT News",
+      "source": "Healthcare IT News",
+      "published": "2026-10-22T18:10:16+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+      "summary": "For years, AI leaders have touted healthcare as one of the clearest examples of where their technology will improve lives. Now \"it is finally here,\" Microsoft AI CEO Mustafa Suleyman tells The Verge. The company claims to have developed an AI-powered tool it says can diagnose conditions up to four times more accurately than human […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-22T18:00:00+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-23T00:05:22.175380+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -1202,7 +1227,7 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-22T23:40+05:30",
+    "at": "2026-10-23T00:05+05:30",
     "techcrunch.com": 15,
     "theverge.com": 10,
     "arstechnica.com": 5,
@@ -1216,13 +1241,13 @@
     "news.google.com": 40,
     "Google News (VentureBeat, AIM, AI News)": 23,
     "producthunt.com": 5,
-    "Hacker News": 3,
+    "Hacker News": 4,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 6
+    "filtered out (PR / local events / market fluff)": 7
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-22T23:40:34.085012+05:30",
+  "last_auto_offer": "2026-10-23T00:05:22.175380+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
@@ -1251,17 +1276,19 @@
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 0,
+    "calls": 4,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.1-flash-lite": {
+        "ok": 1,
+        "busy": 0,
+        "other": 3,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      }
+    }
   },
   "gemini_errors": [
-    {
-      "at": "17:24",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-22"
-    },
     {
       "at": "17:27",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1306,6 +1333,11 @@
       "at": "18:20",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-22"
+    },
+    {
+      "at": "18:35",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-23"
     }
   ],
   "last_script_error": {
