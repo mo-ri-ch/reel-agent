@@ -44,7 +44,8 @@ COVER_AT_MS = 1300  # the cover frame: 1.3 s in, when the opening headline is fu
 
 
 IG_MUSIC_VOLUME = int(os.environ.get("IG_MUSIC_VOLUME") or 15)  # Instagram music under our voice (1-100)
-AUDIO_ERROR = [""]  # why Instagram refused the music on the last post ("" = fine / none asked)
+AUDIO_ERROR = [""]
+LAST_MUSIC_REPLY = [""]  # Instagram's raw answer to the music search (for diagnosing an empty list)  # why Instagram refused the music on the last post ("" = fine / none asked)
 
 
 def search_music(query=None, limit=25):
@@ -53,6 +54,7 @@ def search_music(query=None, limit=25):
     if query:
         params["search_query"] = query
     data = _check(requests.get(f"{IG_GRAPH_BASE}/ig_audio", params=params, timeout=30))
+    LAST_MUSIC_REPLY[0] = json.dumps(data)[:400]
     out = []
     for a in (data.get("data") or [])[:limit]:
         aid = a.get("audio_id") or a.get("id")

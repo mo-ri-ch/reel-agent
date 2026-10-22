@@ -1684,6 +1684,10 @@ def choose_ig_music(s):
         print(f"Instagram music unavailable: {e}")
         s["ig_music_error"] = str(e)[:200]
         return None
+    if not tracks:
+        s["ig_music_error"] = f"no tracks returned: {instagram.LAST_MUSIC_REPLY[0]}"
+        return None
+    s.pop("ig_music_error", None)
     fresh = [t for t in tracks[:12] if t["id"] not in (s.get("ig_music_recent") or [])]
     return random.choice(fresh or tracks[:12]) if tracks else None
 
