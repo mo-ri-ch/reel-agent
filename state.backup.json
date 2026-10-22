@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "The device features built in AI conversations and promised owners their secrets were safe.",
+        "line": "It promised users their secrets were safe with built-in AI conversations.",
         "visual": "clip",
         "query": "person holding cute robot",
         "prompt": "",
@@ -57,7 +57,7 @@
         "brands": []
       },
       {
-        "line": "The Verge found that hackers could easily read complete transcripts of everything told to the toy.",
+        "line": "Hackers could easily read complete transcripts of everything told to the toy.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -98,7 +98,7 @@
         ]
       },
       {
-        "line": "The security lapse exposed private voice data meant to stay completely private.",
+        "line": "Hackers exposed private voice transcripts that were meant to remain completely secure.",
         "visual": "clip",
         "query": "cybersecurity data breach screen",
         "prompt": "",
@@ -147,7 +147,7 @@
     "sources": [
       "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
     ],
-    "script": "Energize Lab built Eiliko, a cute AI robot charm you can hang on your bag.\nThe device features built in AI conversations and promised owners their secrets were safe.\nThe Verge found that hackers could easily read complete transcripts of everything told to the toy.\nEnergize Lab responded by announcing it is hiring an independent security firm.\nThe security lapse exposed private voice data meant to stay completely private.\nWould you trust a smart toy with your voice data?",
+    "script": "Energize Lab built Eiliko, a cute AI robot charm you can hang on your bag.\nIt promised users their secrets were safe with built-in AI conversations.\nHackers could easily read complete transcripts of everything told to the toy.\nEnergize Lab responded by announcing it is hiring an independent security firm.\nHackers exposed private voice transcripts that were meant to remain completely secure.\nWould you trust a smart toy with your voice data?",
     "keywords": [
       "person holding cute robot",
       "cybersecurity data breach screen",
@@ -165,11 +165,11 @@
         "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
       },
       {
-        "claim": "The device features built in AI conversations and promised owners their secrets were safe.",
+        "claim": "It promised users their secrets were safe with built-in AI conversations.",
         "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
       },
       {
-        "claim": "The Verge found that hackers could easily read complete transcripts of everything told to the toy.",
+        "claim": "Hackers could easily read complete transcripts of everything told to the toy.",
         "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
       },
       {
@@ -177,12 +177,14 @@
         "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
       },
       {
-        "claim": "The security lapse exposed private voice data meant to stay completely private.",
-        "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+        "claim": "Hackers exposed private voice transcripts that were meant to remain completely secure.",
+        "url": "https://cybernews.com/privacy/eilik-ai-robot-leaks-8-million-private-chats/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
     ]
@@ -192,9 +194,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-22T17:28:50.366362+05:30",
+  "script_deadline": "2026-10-22T17:38:40.529639+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-22",
@@ -666,226 +668,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5",
-          "summary": "Bob McGrew’s Arda debuts at $1.5B with AI for factories The Rundown AI",
-          "source": "The Rundown AI",
-          "published": "2026-10-22T08:21:30+00:00",
-          "angle": "Former OpenAI executive Bob McGrew debuts Arda at a massive $1.5B valuation bringing AI to factories"
-        },
-        "draft": {
-          "title": "Arda Debuts at $1.5B",
-          "hook_text": "Arda debuts at one point five billion.",
-          "beats": [
-            {
-              "line": "Arda just debuted with a valuation of one point five billion dollars.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Arda",
-              "outlet": "",
-              "domain": "arda.ai",
-              "headline": "",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5",
-              "tag": "Arda debuts at 1.5B",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Arda",
-                  "domain": "arda.ai"
-                }
-              ]
-            },
-            {
-              "line": "Former OpenAI executive Bob McGrew launched the company to build factory automation.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Bob McGrew launches Arda",
-              "name": "Bob McGrew",
-              "role": "Founder, Arda",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Arda",
-                  "domain": "arda.ai"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The startup focuses on bringing advanced intelligence to manufacturing facilities.",
-              "visual": "clip",
-              "query": "factory assembly line robotics",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI for factories",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Arda",
-                  "domain": "arda.ai"
-                }
-              ]
-            },
-            {
-              "line": "McGrew previously worked as the chief research officer at OpenAI.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1.5B",
-              "small": "Arda Valuation",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Ex-OpenAI research chief",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The Rundown AI highlighted the new funding round for factory technology.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Rundown AI",
-              "domain": "therundown.ai",
-              "headline": "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
-              "url": "",
-              "tag": "Arda funding reported",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Arda",
-                  "domain": "arda.ai"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust an automated system to run a factory floor?",
-              "visual": "clip",
-              "query": "modern industrial manufacturing plant",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Factory automation future",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and factual journalist delivery, moving quickly from the massive funding number to the industrial technology details.",
-          "thin": false,
-          "caption": "Former OpenAI executive Bob McGrew has launched Arda at a 1.5 billion dollar valuation to build factory automation. The startup brings advanced intelligence to manufacturing facilities. Would you trust industrial systems to run a factory floor?",
-          "hashtags": [
-            "Arda",
-            "BobMcGrew",
-            "OpenAI",
-            "FactoryAutomation",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
-          ],
-          "script": "Arda just debuted with a valuation of one point five billion dollars.\nFormer OpenAI executive Bob McGrew launched the company to build factory automation.\nThe startup focuses on bringing advanced intelligence to manufacturing facilities.\nMcGrew previously worked as the chief research officer at OpenAI.\nThe Rundown AI highlighted the new funding round for factory technology.\nWould you trust an automated system to run a factory floor?",
-          "keywords": [
-            "factory assembly line robotics",
-            "modern industrial manufacturing plant"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Arda debuts at one point five billion.",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
-            },
-            {
-              "claim": "Arda just debuted with a valuation of one point five billion dollars.",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
-            },
-            {
-              "claim": "Former OpenAI executive Bob McGrew launched the company to build factory automation.",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
-            },
-            {
-              "claim": "The startup focuses on bringing advanced intelligence to manufacturing facilities.",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
-            },
-            {
-              "claim": "McGrew previously worked as the chief research officer at OpenAI.",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
-            },
-            {
-              "claim": "The Rundown AI highlighted the new funding round for factory technology.",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4wNWJ5M0lwRGIxRmViaTQtT1hubVFLbmlqWDByZ3FmYUwwTE1yNHVMQlNKM2t6dDYteFEyeEJGUjNOMFJGcHB2dkhqc3NPU2JsTTVFZTVhOVRlWXdXQmFfSDZndFlWcU1NZXp3STdHWUJrUWFrQ291eW13?oc=5"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.therundown.ai/news/bob-mcgrew-arda-ai-manufacturing-launch"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-22T15:13:36.191237+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1752,6 +1534,207 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Eiliko maker says it’s hiring an ‘independent security firm’ after Verge report on its insecure robots",
+          "link": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach",
+          "summary": "Eiliko, a cute robot charm you can hang on your bag with built-in AI conversations, turned out to be a security nightmare. It told owners that \"your secrets are safe with me,\" but hackers could easily read complete transcripts of everything we told the toy, and that was just the beginning. The Verge and security […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-22T11:00:00+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Eiliko Robot Security Flaw",
+          "hook_text": "Your bag charm is spying on you.",
+          "beats": [
+            {
+              "line": "Energize Lab built Eiliko, a cute AI robot charm you can hang on your bag.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Energize Lab Eiliko",
+              "outlet": "",
+              "domain": "energizelab.com",
+              "headline": "",
+              "url": "https://www.energizelab.com/",
+              "tag": "Energize Lab Eiliko",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Energize Lab",
+                  "domain": "energizelab.com"
+                }
+              ]
+            },
+            {
+              "line": "The device features built in AI conversations and promised owners their secrets were safe.",
+              "visual": "clip",
+              "query": "person holding cute robot",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Secrets safe promise",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The Verge found that hackers could easily read complete transcripts of everything told to the toy.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Eiliko maker says it’s hiring an independent security firm",
+              "url": "",
+              "tag": "Transcripts hacked",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Energize Lab responded by announcing it is hiring an independent security firm.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Energize Lab Eiliko",
+              "outlet": "",
+              "domain": "energizelab.com",
+              "headline": "",
+              "url": "https://www.energizelab.com/",
+              "tag": "Independent security firm",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Energize Lab",
+                  "domain": "energizelab.com"
+                }
+              ]
+            },
+            {
+              "line": "The security lapse exposed private voice data meant to stay completely private.",
+              "visual": "clip",
+              "query": "cybersecurity data breach screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Exposed voice data",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a smart toy with your voice data?",
+              "visual": "clip",
+              "query": "person talking to voice assistant",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust voice data",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "surprised and urgent, warning viewers about toy data security",
+          "thin": false,
+          "caption": "Energize Lab's Eiliko AI robot leaked complete conversation transcripts to hackers after promising privacy. Would you trust a smart toy with your private data?",
+          "hashtags": [
+            "EnergizeLab",
+            "Eiliko",
+            "AISecurity",
+            "Robotics",
+            "DataPrivacy"
+          ],
+          "sources": [
+            "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+          ],
+          "script": "Energize Lab built Eiliko, a cute AI robot charm you can hang on your bag.\nThe device features built in AI conversations and promised owners their secrets were safe.\nThe Verge found that hackers could easily read complete transcripts of everything told to the toy.\nEnergize Lab responded by announcing it is hiring an independent security firm.\nThe security lapse exposed private voice data meant to stay completely private.\nWould you trust a smart toy with your voice data?",
+          "keywords": [
+            "person holding cute robot",
+            "cybersecurity data breach screen",
+            "person talking to voice assistant"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Your bag charm is spying on you.",
+              "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+            },
+            {
+              "claim": "Energize Lab built Eiliko, a cute AI robot charm you can hang on your bag.",
+              "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+            },
+            {
+              "claim": "The device features built in AI conversations and promised owners their secrets were safe.",
+              "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+            },
+            {
+              "claim": "The Verge found that hackers could easily read complete transcripts of everything told to the toy.",
+              "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+            },
+            {
+              "claim": "Energize Lab responded by announcing it is hiring an independent security firm.",
+              "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+            },
+            {
+              "claim": "The security lapse exposed private voice data meant to stay completely private.",
+              "url": "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-22T17:28:50.366362+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2270,8 +2253,8 @@
       "event": "Meta just created a brand new stock class to fund its massive AI push. Chief Executive Officer Mark Zuckerberg revealed the non-voting stock in the third-quarter earnings report. The funds will also go toward potential corporate acquisition"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-22T13:12+05:30",
@@ -2449,26 +2432,6 @@
     "gemini-3-flash-preview": 1792657666.0724008
   },
   "editor_log": [
-    {
-      "at": "2026-10-22T05:23+05:30",
-      "title": "PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Fails visual dynamic standards with identical slides held for far too many consecutive frames.",
-      "fixes": [],
-      "visual": [
-        "line 1: Frames 1, 2, and 3 repeat the burning laptop graphic too long.",
-        "line 1: Frames 4 and 5 hold the exact same static text graphic for too long.",
-        "line 2: Frames 6 and 7 hold the exact same static text graphic for too long."
-      ]
-    },
     {
       "at": "2026-10-22T06:04+05:30",
       "title": "GM aims to develop vehicles in as little as two years with AI, software push",
@@ -2886,8 +2849,30 @@
         "line 3: Frame 5 displays an unrelated D2C brand launch graphic instead of software visuals.",
         "line 5: Frame 8 shows generic text card instead of actual customer service or banking call metrics"
       ]
+    },
+    {
+      "at": "2026-10-22T17:37+05:30",
+      "title": "Eiliko maker says it’s hiring an ‘independent security firm’ after Verge report ",
+      "overall": 7.7,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 7,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong scoop on insecure smart toys, but suffers from filler lines and slow pacing.",
+      "fixes": [
+        "LINE 2: Replace 'The device features built in AI conversations and promised owners their secrets were safe' with 'It promised users their secrets were safe with built-in AI conversations.'",
+        "LINE 5: Replace 'The security lapse exposed private voice data meant to stay completely private' with 'Hackers exposed private voice transcripts that were meant to remain completely secure.'"
+      ],
+      "visual": [
+        "line 2: Black screen with no visual for too long.",
+        "line 5: Generic stock image of multiple robots does not match the specific security breach topic."
+      ]
     }
   ],
   "rest_note": "2026-10-19T12:32:00+05:30",
-  "fish_turn": 25
+  "fish_turn": 26
 }
