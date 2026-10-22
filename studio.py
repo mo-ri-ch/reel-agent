@@ -222,8 +222,10 @@ def stat_shot(out, frames, big, small, theme):
     label = V.wrap(probe, small, V.font(62, semi=True), W - 200)[:2]
     ny = CARD_CY - 170
 
+    year = re.fullmatch(r"(19|20)\d\d", big.strip())  # a year doesn't count up (22 Oct: "854" on the way to 2027)
+
     def text_for(p):
-        if not m:
+        if not m or year:
             return big
         prefix, num, suffix = m.groups()
         value = float(num.replace(",", ""))
