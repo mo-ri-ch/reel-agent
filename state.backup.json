@@ -1,183 +1,42 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Nvidia pitches AI factories as GPUs sit idle",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeHNIcF82cDJTQl9VOHJNeFFDcHFMYlY5bGhiSVY1T0x3eGdkSXk5aXB5SGxSMTJfUm9iODdzSnBvbEJ1T3ptaW12YjBVT2pORmk0RGFLR2lldFlsSnJRTmt1NFRYS2E4a2R0TDhTMTVkR09ZTjkzbXU4aW9mcTNya25HSGcwcDhmZERTbU1CSVBzTExrRF9JUzBNSG1rWm5LNXFTanZKRE5zd2IzVm1yUTN2NEM0ekNVLWpJdVFOcTMyUTROQmFsV2t0WkF3cUk?oc=5",
-    "summary": "Nvidia pitches AI factories as GPUs sit idle VentureBeat",
-    "source": "VentureBeat",
-    "published": "2026-10-22T18:57:54+00:00",
-    "angle": "Nvidia is now pitching 'AI factories' as a solution to keep their expensive GPUs from sitting idle."
-  },
-  "draft": {
-    "title": "Nvidia pivots to AI factories",
-    "hook_text": "Nvidia GPUs are sitting idle",
-    "beats": [
-      {
-        "line": "Nvidia chips are sitting idle across major data centers.",
-        "visual": "clip",
-        "query": "server room data center",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "CEO Jensen Huang is pivoting to turnkey AI factories.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "https://www.nvidia.com/en-us/about/leadership/",
-        "tag": "",
-        "name": "Jensen Huang",
-        "role": "CEO, Nvidia",
-        "x": "nvidia",
-        "brands": []
-      },
-      {
-        "line": "Nvidia AI Enterprise bundles software with hardware to solve this.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Nvidia AI Enterprise",
-        "outlet": "",
-        "domain": "nvidia.com",
-        "headline": "",
-        "url": "https://www.nvidia.com/en-us/data-center/products/ai-enterprise/",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Companies currently struggle to integrate this massive processing power efficiently.",
-        "visual": "clip",
-        "query": "engineer working on server",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Nvidia DGX Cloud provides a pre-configured stack ready for deployment.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Nvidia DGX Cloud",
-        "outlet": "",
-        "domain": "nvidia.com",
-        "headline": "",
-        "url": "https://www.nvidia.com/en-us/data-center/dgx-cloud/",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "VentureBeat reports this transforms Nvidia into a systems architect.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "VentureBeat",
-        "domain": "venturebeat.com",
-        "headline": "Nvidia pitches AI factories as GPUs sit idle",
-        "url": "",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you trust a factory to build your company AI?",
-        "visual": "clip",
-        "query": "modern office tech",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Sharp, analytical, and direct; focusing on the business strategy shift.",
-    "thin": false,
-    "caption": "Nvidia CEO Jensen Huang is shifting focus to AI factories as high-end GPUs remain underutilized. The company is using Nvidia AI Enterprise to bundle software and hardware, aiming to simplify complex deployments. Would you trust a factory to build your company AI?",
-    "hashtags": [
-      "Nvidia",
-      "JensenHuang",
-      "AI",
-      "DataCenters",
-      "TechNews"
-    ],
-    "sources": [
-      "https://venturebeat.com/ai/nvidia-pitches-ai-factories-as-gpus-sit-idle/"
-    ],
-    "script": "Nvidia chips are sitting idle across major data centers.\nCEO Jensen Huang is pivoting to turnkey AI factories.\nNvidia AI Enterprise bundles software with hardware to solve this.\nCompanies currently struggle to integrate this massive processing power efficiently.\nNvidia DGX Cloud provides a pre-configured stack ready for deployment.\nVentureBeat reports this transforms Nvidia into a systems architect.\nWould you trust a factory to build your company AI?",
-    "keywords": [
-      "server room data center",
-      "engineer working on server",
-      "modern office tech"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
-    ],
-    "source_links": [
-      "https://venturebeat.com/infrastructure/nvidia-is-pitching-ai-factories-but-81-of-companies-say-their-gpus-run-at-half-capacity-or-less",
-      "https://venturebeat.com/ai/nvidia-pitches-ai-factories-as-gpus-sit-idle/"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Every AI model has the same \"controversial\" take on humans",
+      "link": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+      "summary": "",
+      "source": "modelcompare.ai",
+      "published": "2026-10-22T16:08:00+00:00",
+      "buzz": "Hacker News 71 points",
+      "angle": "Every major AI model shares the same weird, controversial bias about humans."
+    },
+    {
+      "title": "New phishing-as-a-service platform uses artificial intelligence",
+      "link": "https://www.scworld.com/brief/new-phishing-as-a-service-platform-uses-artificial-intelligence",
+      "summary": "New phishing-as-a-service platform uses artificial intelligence SC Media",
+      "source": "SC Media",
+      "published": "2026-10-22T15:00:05+00:00",
+      "angle": "New 'Phishing-as-a-Service' platforms are using AI to make scams impossible to spot."
+    },
+    {
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "source": "Google DeepMind News",
+      "published": "2026-10-22T14:30:24+00:00",
+      "angle": "Google DeepMind just mapped every 10-meter patch of Earth's forests using AI."
+    }
+  ],
+  "choose_deadline": "2026-10-23T02:41:12.986070+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T02:37:53.947326+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
@@ -582,20 +441,8 @@
       "extra": false
     }
   ],
-  "paused": null,
-  "spare": [
-    {
-      "title": "Wildwood’s director says AI is ‘antithetical to everything that we are at this studio’",
-      "link": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion",
-      "summary": "Wildwood is the most ambitious film yet from Laika, the stop-motion studio best known for the likes of Coraline and ParaNorman. It's a sprawling fantasy adventure that took five years to complete. The process involved more 230 puppets - including 36 of the main character Prue alone - which were brought to life by a […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-22T16:16:15+00:00",
-      "angle": "Laika studio's director slams AI as 'antithetical' to their creative process, sparking a debate on the future of animation."
-    }
-  ],
+  "spare": [],
   "tried": [
-    "Krsnaa Diagnostics Announces Strategic AI Partnership With Azmed",
-    "UK Taxman to Tackle Rogue Advice From Artificial Intelligence",
     "Chinese-linked hackers use AI to compromise firms globally: Microsoft",
     "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
     "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
@@ -653,8 +500,11 @@
     "Ant Ling just announced a second model today: Ling-3.0-flash-Sante (124B, 5.1B active)",
     "‘Klara and the Sun’ star Jenna Ortega: ‘Artificial intelligence isn’t creative’",
     "Discord now formats Markdown previews right",
-    "DeepSeek reportedly raises $15B days after US restrictions"
+    "DeepSeek reportedly raises $15B days after US restrictions",
+    "Nvidia pitches AI factories as GPUs sit idle",
+    "Nvidia pitches AI factories as GPUs sit idle"
   ],
+  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot picking story #1",
@@ -1711,7 +1561,7 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-23T01:46+05:30",
+    "at": "2026-10-23T02:41+05:30",
     "techcrunch.com": 19,
     "theverge.com": 10,
     "arstechnica.com": 5,
@@ -1722,7 +1572,7 @@
     "huggingface.co": 6,
     "blogs.nvidia.com": 16,
     "inc42.com": 8,
-    "news.google.com": 39,
+    "news.google.com": 41,
     "Google News (VentureBeat, AIM, AI News)": 24,
     "producthunt.com": 5,
     "Hacker News": 7,
@@ -1731,7 +1581,7 @@
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-23T01:46:02.129353+05:30",
+  "last_auto_offer": "2026-10-23T02:41:12.986070+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
@@ -1760,24 +1610,19 @@
   "late_note_for": "2026-10-23-0",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 284,
+    "calls": 291,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 84,
-        "busy": 62,
-        "other": 138,
+        "ok": 86,
+        "busy": 63,
+        "other": 142,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "20:12",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-23"
-    },
     {
       "at": "20:15",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1820,6 +1665,11 @@
     },
     {
       "at": "21:06",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-23"
+    },
+    {
+      "at": "21:10",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-23"
     }
