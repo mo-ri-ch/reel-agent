@@ -1,8 +1,35 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
+      "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+      "summary": "Microsoft’s new AI diagnostic system beat generalist doctors on hard cases, according to a study in Science. But most of the improvement seems to come from the AI models underneath, not from Microsoft’s system itself.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-22T18:43:53+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Award-Winning AI Literature",
+      "link": "https://jamesyu.org/award-winning-ai-literature/",
+      "summary": "",
+      "source": "jamesyu.org",
+      "published": "2026-10-22T18:28:26+00:00",
+      "buzz": "Hacker News 4 points",
+      "angle": ""
+    },
+    {
+      "title": "AI and the Enclosure of the Scientific Commons",
+      "link": "https://arxiv.org/abs/2610.27251",
+      "summary": "",
+      "source": "arxiv.org",
+      "published": "2026-10-22T18:28:16+00:00",
+      "buzz": "Hacker News 4 points",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-23T00:25:23.331223+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -838,10 +865,6 @@
   ],
   "posted_log": [
     {
-      "title": "Top AI headlines · 12:10 AM today",
-      "at": "2026-10-09T00:20:25.633077+05:30"
-    },
-    {
       "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
       "at": "2026-10-09T00:45:30.085739+05:30"
     },
@@ -1210,8 +1233,8 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-23T00:05+05:30",
-    "techcrunch.com": 15,
+    "at": "2026-10-23T00:25+05:30",
+    "techcrunch.com": 16,
     "theverge.com": 10,
     "arstechnica.com": 5,
     "technologyreview.com": 2,
@@ -1222,20 +1245,20 @@
     "blogs.nvidia.com": 16,
     "inc42.com": 8,
     "news.google.com": 40,
-    "Google News (VentureBeat, AIM, AI News)": 23,
+    "Google News (VentureBeat, AIM, AI News)": 24,
     "producthunt.com": 5,
-    "Hacker News": 4,
+    "Hacker News": 7,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 7
+    "filtered out (PR / local events / market fluff)": 6
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-23T00:05:22.175380+05:30",
+  "last_auto_offer": "2026-10-23T00:25:23.331223+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-22",
   "ig_count": {
     "day": "2026-10-23",
-    "at": "2026-10-23T00:12:07.364619+05:30",
+    "at": "2026-10-23T00:25:23.331260+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1259,24 +1282,19 @@
   "late_note_for": "2026-10-22-5",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 20,
+    "calls": 24,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
         "ok": 4,
         "busy": 3,
-        "other": 13,
+        "other": 17,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "17:39",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-22"
-    },
     {
       "at": "17:50",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1319,6 +1337,11 @@
     },
     {
       "at": "18:45",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-23"
+    },
+    {
+      "at": "18:55",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-23"
     }
