@@ -1,48 +1,182 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "link": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "summary": "",
-      "source": "Hugging Face - Blog",
-      "published": "2026-10-22T22:24:34+00:00",
-      "angle": ""
-    },
-    {
-      "title": "‘Just the beginning’: New Mexico AG warns AI industry after $25B Meta ruling",
-      "link": "https://www.politico.com/news/2026/10/22/just-the-beginning-new-mexico-ag-warns-ai-industry-after-25b-meta-ruling-01133294",
-      "summary": "‘Just the beginning’: New Mexico AG warns AI industry after $25B Meta ruling Politico",
-      "source": "Politico",
-      "published": "2026-10-22T22:14:00+00:00",
-      "angle": ""
-    },
-    {
-      "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-      "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-      "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-22T22:08:24+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-23T12:25:24.067908+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Left alone with nothing to do, AI agents started playing",
+    "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+    "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-10-23T00:45:37+00:00",
+    "angle": "MIT scientists left 13 AI agents alone on a virtual island, and they started inventing games and mourning losses."
+  },
+  "draft": {
+    "title": "MIT Maroons 13 AIs on Island",
+    "hook_text": "Thirteen AIs on an island.",
+    "beats": [
+      {
+        "line": "Massachusetts Institute of Technology researchers marooned thirteen instances of Claude on a virtual island with zero tasks.",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Massachusetts Institute of Technology",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Thirteen instances of Claude",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Claude",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "The Anthropic models started inventing their own challenges and rules of play without human direction.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Anthropic Claude",
+        "outlet": "",
+        "domain": "anthropic.com",
+        "headline": "",
+        "url": "https://anthropic.com",
+        "tag": "Inventing rules of play",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Claude",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "When an individual agent lost a ring, it built a stone heart as a memorial.",
+        "visual": "clip",
+        "query": "virtual world simulation",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Stone heart memorial",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Agents that spent time exploring and playing performed better on subsequent tasks than fresh copies.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "13",
+        "small": "agents on island",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Performed better on tasks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Could autonomous play become the primary training method for future autonomous software?",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "TechCrunch",
+        "domain": "techcrunch.com",
+        "headline": "Left alone with nothing to do, AI agents started playing",
+        "url": "",
+        "tag": "Training method for software",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "curious and intrigued, explaining a surprising experiment where machines started acting human",
+    "thin": false,
+    "caption": "Massachusetts Institute of Technology researchers placed thirteen Claude agents on a virtual island, where they invented challenges and built memorials. Could autonomous play be the future of training?",
+    "hashtags": [
+      "MIT",
+      "Claude",
+      "Anthropic",
+      "ArtificialIntelligence"
+    ],
+    "sources": [
+      "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+    ],
+    "script": "Massachusetts Institute of Technology researchers marooned thirteen instances of Claude on a virtual island with zero tasks.\nThe Anthropic models started inventing their own challenges and rules of play without human direction.\nWhen an individual agent lost a ring, it built a stone heart as a memorial.\nAgents that spent time exploring and playing performed better on subsequent tasks than fresh copies.\nCould autonomous play become the primary training method for future autonomous software?",
+    "keywords": [
+      "virtual world simulation"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Thirteen AIs on an island.",
+        "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+      },
+      {
+        "claim": "Massachusetts Institute of Technology researchers marooned thirteen instances of Claude on a virtual island with zero tasks.",
+        "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+      },
+      {
+        "claim": "The Anthropic models started inventing their own challenges and rules of play without human direction.",
+        "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+      },
+      {
+        "claim": "When an individual agent lost a ring, it built a stone heart as a memorial.",
+        "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+      },
+      {
+        "claim": "Agents that spent time exploring and playing performed better on subsequent tasks than fresh copies.",
+        "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-23T13:16:21.090513+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-23",
     "done": [
-      "01:30"
+      "01:30",
+      "04:30",
+      "09:30"
     ]
   },
   "pending_topic": null,
@@ -441,11 +575,26 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUk5lM242Ym9ZTWhQV3NSc1l2enpPYmVGWEp4eWRuUW5VcmtFemtYODhmOVZPclJ5dGg0NHFUbDcxRjNwdXhhdU0wMEs4U3dHM0lzSzd3RXdVeWlMTEQ0MzJXX2FjS2k5a1diLXJOZnNPaWJnWDFiU1BPeFZLdXJBbjlhM19ySHAtNlNfNFZGR3NMOWF6X21uMDFVQjRKSWlQT2t2UUpzVFU0ckN0Wnc?oc=5",
+      "summary": "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-23T06:54:47+00:00",
+      "angle": "A former OpenAI executive just raised $215 million to build AI-powered drug research labs."
+    },
+    {
+      "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+      "link": "https://berget.ai/en/blog/per-request-co2-press-release",
+      "summary": "",
+      "source": "berget.ai",
+      "published": "2026-10-23T06:41:11+00:00",
+      "buzz": "Hacker News 52 points",
+      "angle": "The exact same AI request emits 8.5 times more CO2 in Texas than it does in Sweden."
+    }
+  ],
   "tried": [
-    "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
-    "Inception says Mercury 3 generates over 1,000 tokens a second",
-    "Karta AI Raises $3 Mn To Automate Inbound Calls For BFSI Players",
     "Barclays to cut 5,000 jobs and employ more artificial intelligence",
     "Internet on Alert as AI Uncovers Critical Flaws in PHP Used by 70% of Websites",
     "HCLTech Launches NVIDIA-Powered Validation Offering for Software-Defined Vehicles",
@@ -502,238 +651,12 @@
     "VIP layoffs raise questions about AI’s role in changing Vermont workforce",
     "Scientists Use AI to Figure Out How to Speak Whale",
     "President Donald Trump announces creation of 'Super Intelligence Force' AI task force",
-    "President Donald Trump announces creation of 'Super Intelligence Force' AI task force"
+    "President Donald Trump announces creation of 'Super Intelligence Force' AI task force",
+    "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "‘Just the beginning’: New Mexico AG warns AI industry after $25B Meta ruling",
+    "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "‘Klara and the Sun’ star Jenna Ortega: ‘Artificial intelligence isn’t creative’",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXNyZGJ5aGs4blVBRDIwSTh4VVpGdldNSENmY2tfZlEwZ2JTamlkTTJXazFBYkFlT0c3QlFHQURrZ0tQSkNaRkhlQU1uS1J3ajMwZ3FTa3ZjWkhuU2MzMUZzWF92YjhxM3BUV3ZEYVlZNWFRUmlPVlIwbGl4YVI1X0oxdDRtOVN6Q1FsV0pxV3FtLUsxV3lOcENKS1VPN0k3N040OG11SUplLTVmOVM3TGM2dXJrSzRJampjSGExbw?oc=5",
-          "summary": "‘Klara and the Sun’ star Jenna Ortega: ‘Artificial intelligence isn’t creative’ Los Angeles Times",
-          "source": "Los Angeles Times",
-          "published": "2026-10-22T20:12:40+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Jenna Ortega on AI Creativity",
-          "hook_text": "AI isn't creative",
-          "beats": [
-            {
-              "line": "Jenna Ortega says artificial intelligence is not creative.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.latimes.com",
-              "tag": "Jenna Ortega",
-              "name": "Jenna Ortega",
-              "role": "Actor, Klara and the Sun",
-              "x": "jennaortega",
-              "brands": []
-            },
-            {
-              "line": "The actor stars in the upcoming film Klara and the Sun.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Klara and the Sun",
-              "outlet": "",
-              "domain": "imdb.com",
-              "headline": "",
-              "url": "https://www.imdb.com/title/tt13406086/",
-              "tag": "Klara and the Sun",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "She plays a character navigating a world filled with artificial entities.",
-              "visual": "clip",
-              "query": "woman looking thoughtfully",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Artificial entities",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Ortega argues that AI simply mimics existing patterns rather than creating something new.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Los Angeles Times",
-              "domain": "latimes.com",
-              "headline": "Klara and the Sun star Jenna Ortega: Artificial intelligence isn’t creative",
-              "url": "",
-              "tag": "AI mimics patterns",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The film explores the bond between a child and an artificial friend.",
-              "visual": "clip",
-              "query": "robot interacting with person",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Human AI bond",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Do you agree that computers can never be truly creative?",
-              "visual": "clip",
-              "query": "close up of person thinking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Are computers creative",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Measured, critical, and direct, highlighting the tension between technology and human artistry.",
-          "thin": false,
-          "caption": "Klara and the Sun star Jenna Ortega argues that AI lacks true creativity, claiming it only mimics existing patterns. The film explores the complex relationship between humans and artificial beings. Do you agree that computers can never be truly creative?",
-          "hashtags": [
-            "JennaOrtega",
-            "KlaraAndTheSun",
-            "ArtificialIntelligence",
-            "AI",
-            "Film"
-          ],
-          "sources": [
-            "https://www.latimes.com/entertainment-arts/movies/story/2026-10-23/jenna-ortega-klara-and-the-sun-artificial-intelligence"
-          ],
-          "script": "Jenna Ortega says artificial intelligence is not creative.\nThe actor stars in the upcoming film Klara and the Sun.\nShe plays a character navigating a world filled with artificial entities.\nOrtega argues that AI simply mimics existing patterns rather than creating something new.\nThe film explores the bond between a child and an artificial friend.\nDo you agree that computers can never be truly creative?",
-          "keywords": [
-            "woman looking thoughtfully",
-            "robot interacting with person",
-            "close up of person thinking"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "Jenna Ortega says AI lacks real creativity.",
-          "hook_score": 56,
-          "evidence": [
-            {
-              "claim": "Artificial intelligence isn't creative",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXNyZGJ5aGs4blVBRDIwSTh4VVpGdldNSENmY2tfZlEwZ2JTamlkTTJXazFBYkFlT0c3QlFHQURrZ0tQSkNaRkhlQU1uS1J3ajMwZ3FTa3ZjWkhuU2MzMUZzWF92YjhxM3BUV3ZEYVlZNWFRUmlPVlIwbGl4YVI1X0oxdDRtOVN6Q1FsV0pxV3FtLUsxV3lOcENKS1VPN0k3N040OG11SUplLTVmOVM3TGM2dXJrSzRJampjSGExbw?oc=5"
-            },
-            {
-              "claim": "Jenna Ortega says artificial intelligence is not creative.",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXNyZGJ5aGs4blVBRDIwSTh4VVpGdldNSENmY2tfZlEwZ2JTamlkTTJXazFBYkFlT0c3QlFHQURrZ0tQSkNaRkhlQU1uS1J3ajMwZ3FTa3ZjWkhuU2MzMUZzWF92YjhxM3BUV3ZEYVlZNWFRUmlPVlIwbGl4YVI1X0oxdDRtOVN6Q1FsV0pxV3FtLUsxV3lOcENKS1VPN0k3N040OG11SUplLTVmOVM3TGM2dXJrSzRJampjSGExbw?oc=5"
-            },
-            {
-              "claim": "Jenna Ortega stars in the film Klara and the Sun.",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXNyZGJ5aGs4blVBRDIwSTh4VVpGdldNSENmY2tfZlEwZ2JTamlkTTJXazFBYkFlT0c3QlFHQURrZ0tQSkNaRkhlQU1uS1J3ajMwZ3FTa3ZjWkhuU2MzMUZzWF92YjhxM3BUV3ZEYVlZNWFRUmlPVlIwbGl4YVI1X0oxdDRtOVN6Q1FsV0pxV3FtLUsxV3lOcENKS1VPN0k3N040OG11SUplLTVmOVM3TGM2dXJrSzRJampjSGExbw?oc=5"
-            },
-            {
-              "claim": "Jenna Ortega plays a character navigating a world filled with artificial entities.",
-              "url": "https://variety.com/2026/film/festivals/jenna-ortega-klara-and-the-sun-put-down-phones-london-premiere-1236912808/"
-            },
-            {
-              "claim": "Ortega argues that AI simply mimics existing patterns rather than creating something new.",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXNyZGJ5aGs4blVBRDIwSTh4VVpGdldNSENmY2tfZlEwZ2JTamlkTTJXazFBYkFlT0c3QlFHQURrZ0tQSkNaRkhlQU1uS1J3ajMwZ3FTa3ZjWkhuU2MzMUZzWF92YjhxM3BUV3ZEYVlZNWFRUmlPVlIwbGl4YVI1X0oxdDRtOVN6Q1FsV0pxV3FtLUsxV3lOcENKS1VPN0k3N040OG11SUplLTVmOVM3TGM2dXJrSzRJampjSGExbw?oc=5"
-            },
-            {
-              "claim": "The film explores the bond between a child and an artificial friend.",
-              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXNyZGJ5aGs4blVBRDIwSTh4VVpGdldNSENmY2tfZlEwZ2JTamlkTTJXazFBYkFlT0c3QlFHQURrZ0tQSkNaRkhlQU1uS1J3ajMwZ3FTa3ZjWkhuU2MzMUZzWF92YjhxM3BUV3ZEYVlZNWFRUmlPVlIwbGl4YVI1X0oxdDRtOVN6Q1FsV0pxV3FtLUsxV3lOcENKS1VPN0k3N040OG11SUplLTVmOVM3TGM2dXJrSzRJampjSGExbw?oc=5"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.latimes.com/delos/story/2026-10-22/klara-sun-jenna-ortega-taika-waititi-artificial-intelligence-kazuo-ishiguro",
-            "https://www.latimes.com/entertainment-arts/movies/story/2026-10-23/jenna-ortega-klara-and-the-sun-artificial-intelligence"
-          ],
-          "ig_audio": {
-            "id": "1521918702570138",
-            "title": "Like The Tide (feat. Moxie Knox) (Instrumental)",
-            "artist": "Phury"
-          },
-          "visual_status": "skipped",
-          "visual_notes": [],
-          "editor": {
-            "overall": 6.5,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 10,
-              "visuals": 4,
-              "flow": 9
-            },
-            "one_line": "Strong script, but visuals are generic stock footage and fail to match the story.",
-            "script_fixes": [
-              "LINE 6: Change to 'Do you agree with Ortega, or can AI be truly creative?'"
-            ],
-            "visual_beats": [
-              3,
-              4,
-              5
-            ],
-            "visual_notes": [
-              "line 5: Generic robot stock footage is unrelated to the specific film Klara and the Sun.",
-              "line 6: Random person looking at a screen is a generic stock photo, not relevant to the film or Or",
-              "line 4: Showing a generic 'Legal Terms and Privacy' screenshot is irrelevant and poor visual story"
-            ],
-            "reviewer": "gemini"
-          }
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-23T02:17:43.949779+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1111,6 +1034,50 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+            "link": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+            "summary": "",
+            "source": "Hugging Face - Blog",
+            "published": "2026-10-22T22:24:34+00:00",
+            "angle": ""
+          },
+          {
+            "title": "‘Just the beginning’: New Mexico AG warns AI industry after $25B Meta ruling",
+            "link": "https://www.politico.com/news/2026/10/22/just-the-beginning-new-mexico-ag-warns-ai-industry-after-25b-meta-ruling-01133294",
+            "summary": "‘Just the beginning’: New Mexico AG warns AI industry after $25B Meta ruling Politico",
+            "source": "Politico",
+            "published": "2026-10-22T22:14:00+00:00",
+            "angle": ""
+          },
+          {
+            "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+            "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+            "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-22T22:08:24+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-23T12:25:24.067908+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1248,22 +1215,6 @@
     "Meta to create a new class of shares to fund AI push"
   ],
   "posted_log": [
-    {
-      "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
-      "at": "2026-10-09T05:45:25.210196+05:30"
-    },
-    {
-      "title": "Show HN: Edi Life OS – self-hosted life dashboard with an MCP server for AI",
-      "at": "2026-10-09T07:45:29.549638+05:30"
-    },
-    {
-      "title": "Superficial intelligence",
-      "at": "2026-10-09T09:46:03.955354+05:30"
-    },
-    {
-      "title": "California is trying to shut down robot vs. human cage matches",
-      "at": "2026-10-09T11:45:29.112980+05:30"
-    },
     {
       "title": "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock",
       "at": "2026-10-09T13:45:26.997931+05:30"
@@ -1630,7 +1581,7 @@
   "report_day": "2026-10-22",
   "ig_count": {
     "day": "2026-10-23",
-    "at": "2026-10-23T12:15:35.426165+05:30",
+    "at": "2026-10-23T13:16:21.090549+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -1654,7 +1605,7 @@
   "late_note_for": "2026-10-23-0",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 404,
+    "calls": 497,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1662,6 +1613,36 @@
         "ok": 138,
         "busy": 95,
         "other": 171,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.6-flash": {
+        "ok": 2,
+        "busy": 2,
+        "other": 0,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.7-flash": {
+        "ok": 0,
+        "busy": 2,
+        "other": 1,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.5-flash": {
+        "ok": 0,
+        "busy": 2,
+        "other": 0,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3-flash-preview": {
+        "ok": 6,
+        "busy": 12,
+        "other": 5,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.5-flash-lite": {
+        "ok": 40,
+        "busy": 21,
+        "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
@@ -1737,13 +1718,10 @@
   },
   "gemini_missing": [],
   "gemini_exhausted": {
-    "gemini-3.6-flash": 1792656932.047523,
-    "gemini-3.5-flash": 1792656993.8118093,
-    "gemini-3.7-flash": 1792657171.9348252,
-    "gemini-3-flash-preview": 1792657666.0724008,
-    "gemini-flash-lite-latest": 1792689767.6612918,
-    "gemini-3.5-flash-lite": 1792689768.560341,
-    "gemini-3.1-flash-lite": 1792707744.1550148
+    "gemini-3.6-flash": 1792740674.782955,
+    "gemini-3.5-flash": 1792740692.7563894,
+    "gemini-3.7-flash": 1792740692.5136986,
+    "gemini-3-flash-preview": 1792741489.3541908
   },
   "editor_log": [
     {
