@@ -53,7 +53,7 @@
         "brands": []
       },
       {
-        "line": "Data centers draw power constantly from local electrical grids.",
+        "line": "Berget calculated per request emissions by tracking local energy mixes and hourly grid data.",
         "visual": "clip",
         "query": "data center servers",
         "prompt": "",
@@ -64,14 +64,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Data center power",
+        "tag": "Tracking energy mixes",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Grid carbon intensity dictates the exact footprint of your prompt.",
+        "line": "Services like WattTime and Klimatkollen provide the granular grid carbon intensity metrics used.",
         "visual": "clip",
         "query": "power lines grid",
         "prompt": "",
@@ -82,7 +82,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Grid carbon intensity",
+        "tag": "WattTime and Klimatkollen",
         "name": "",
         "role": "",
         "x": "",
@@ -127,7 +127,7 @@
     ],
     "delivery": "sharp and urgent, highlighting the stark carbon footprint difference between regions",
     "thin": false,
-    "caption": "An AI request emits eight point five times more CO2 in Texas than in Sweden due to regional grid differences. Berget analyzed data center energy sources to reveal this climate gap. Would you route your queries to cleaner regions?",
+    "caption": "An AI request emits eight point five times more CO2 in Texas than in Sweden due to regional grid differences. Berget analyzed data center energy sources using WattTime and Klimatkollen data to reveal this climate gap. Would you route your queries to cleaner regions?",
     "hashtags": [
       "berget",
       "climatechange",
@@ -137,7 +137,7 @@
     "sources": [
       "https://berget.ai/en/blog/per-request-co2-press-release"
     ],
-    "script": "Eight point five times more CO2. That is what the exact same AI request emits in Texas compared to Sweden.\nBerget analyzed carbon intensity differences across regional data center grids.\nData centers draw power constantly from local electrical grids.\nGrid carbon intensity dictates the exact footprint of your prompt.\nWhere you send a prompt changes its environmental impact.\nWould you route your queries to cleaner regions?",
+    "script": "Eight point five times more CO2. That is what the exact same AI request emits in Texas compared to Sweden.\nBerget analyzed carbon intensity differences across regional data center grids.\nBerget calculated per request emissions by tracking local energy mixes and hourly grid data.\nServices like WattTime and Klimatkollen provide the granular grid carbon intensity metrics used.\nWhere you send a prompt changes its environmental impact.\nWould you route your queries to cleaner regions?",
     "keywords": [
       "data center servers",
       "power lines grid"
@@ -150,17 +150,30 @@
         "url": "https://berget.ai/en/blog/per-request-co2-press-release"
       },
       {
-        "claim": "The exact same AI request emits 8.5 times more CO2 in Texas compared to Sweden",
+        "claim": "The exact same AI request emits 8.5 times more CO2 in Texas than in Sweden",
         "url": "https://berget.ai/en/blog/per-request-co2-press-release"
       },
       {
         "claim": "Berget analyzed carbon intensity differences across regional data center grids.",
         "url": "https://berget.ai/en/blog/per-request-co2-press-release"
+      },
+      {
+        "claim": "Berget calculated per request emissions by tracking local energy mixes and hourly grid data.",
+        "url": "https://berget.ai/en/blog/per-request-co2-press-release"
+      },
+      {
+        "claim": "Services like WattTime and Klimatkollen provide the granular grid carbon intensity metrics used.",
+        "url": "https://berget.ai/en/blog/per-request-co2-press-release"
+      },
+      {
+        "claim": "Where you send a prompt changes its environmental impact.",
+        "url": "https://berget.ai/en/blog/per-request-co2-press-release"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 2,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://berget.ai/en/blog/per-request-co2-press-release"
     ]
@@ -170,9 +183,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T14:06:01.975791+05:30",
+  "script_deadline": "2026-10-23T14:16:59.870481+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-23",
@@ -658,183 +671,8 @@
     "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
     "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Left alone with nothing to do, AI agents started playing",
-          "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-          "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-23T00:45:37+00:00",
-          "angle": "MIT scientists left 13 AI agents alone on a virtual island, and they started inventing games and mourning losses."
-        },
-        "draft": {
-          "title": "MIT Maroons 13 AIs on Island",
-          "hook_text": "Thirteen AIs on an island.",
-          "beats": [
-            {
-              "line": "Massachusetts Institute of Technology researchers marooned thirteen instances of Claude on a virtual island with zero tasks.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Massachusetts Institute of Technology",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Thirteen instances of Claude",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Claude",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The Anthropic models started inventing their own challenges and rules of play without human direction.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic Claude",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://anthropic.com",
-              "tag": "Inventing rules of play",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Claude",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "When an individual agent lost a ring, it built a stone heart as a memorial.",
-              "visual": "clip",
-              "query": "virtual world simulation",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Stone heart memorial",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Agents that spent time exploring and playing performed better on subsequent tasks than fresh copies.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "13",
-              "small": "agents on island",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Performed better on tasks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Could autonomous play become the primary training method for future autonomous software?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Left alone with nothing to do, AI agents started playing",
-              "url": "",
-              "tag": "Training method for software",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "curious and intrigued, explaining a surprising experiment where machines started acting human",
-          "thin": false,
-          "caption": "Massachusetts Institute of Technology researchers placed thirteen Claude agents on a virtual island, where they invented challenges and built memorials. Could autonomous play be the future of training?",
-          "hashtags": [
-            "MIT",
-            "Claude",
-            "Anthropic",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-          ],
-          "script": "Massachusetts Institute of Technology researchers marooned thirteen instances of Claude on a virtual island with zero tasks.\nThe Anthropic models started inventing their own challenges and rules of play without human direction.\nWhen an individual agent lost a ring, it built a stone heart as a memorial.\nAgents that spent time exploring and playing performed better on subsequent tasks than fresh copies.\nCould autonomous play become the primary training method for future autonomous software?",
-          "keywords": [
-            "virtual world simulation"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Thirteen AIs on an island.",
-              "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-            },
-            {
-              "claim": "Massachusetts Institute of Technology researchers marooned thirteen instances of Claude on a virtual island with zero tasks.",
-              "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-            },
-            {
-              "claim": "The Anthropic models started inventing their own challenges and rules of play without human direction.",
-              "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-            },
-            {
-              "claim": "When an individual agent lost a ring, it built a stone heart as a memorial.",
-              "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-            },
-            {
-              "claim": "Agents that spent time exploring and playing performed better on subsequent tasks than fresh copies.",
-              "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-23T13:16:21.090513+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1346,6 +1184,185 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+          "link": "https://berget.ai/en/blog/per-request-co2-press-release",
+          "summary": "",
+          "source": "berget.ai",
+          "published": "2026-10-23T06:41:11+00:00",
+          "buzz": "Hacker News 96 points",
+          "angle": "Surprising environmental cost showing the same AI request emits 8.5 times more CO2 in Texas than in Sweden"
+        },
+        "draft": {
+          "title": "Texas vs Sweden AI CO2 Emissions",
+          "hook_text": "Eight point five times more CO2",
+          "beats": [
+            {
+              "line": "Eight point five times more CO2. That is what the exact same AI request emits in Texas compared to Sweden.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "8.5x",
+              "small": "more CO2 in Texas",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "8.5x higher emissions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Berget analyzed carbon intensity differences across regional data center grids.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "berget.ai",
+              "domain": "berget.ai",
+              "headline": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+              "url": "",
+              "tag": "Berget analysis",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Data centers draw power constantly from local electrical grids.",
+              "visual": "clip",
+              "query": "data center servers",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data center power",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Grid carbon intensity dictates the exact footprint of your prompt.",
+              "visual": "clip",
+              "query": "power lines grid",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Grid carbon intensity",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Where you send a prompt changes its environmental impact.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "berget.ai",
+              "domain": "berget.ai",
+              "headline": "Per request CO2 press release",
+              "url": "",
+              "tag": "Environmental impact",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you route your queries to cleaner regions?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "berget.ai",
+              "domain": "berget.ai",
+              "headline": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+              "url": "",
+              "tag": "Route to cleaner regions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and urgent, highlighting the stark carbon footprint difference between regions",
+          "thin": false,
+          "caption": "An AI request emits eight point five times more CO2 in Texas than in Sweden due to regional grid differences. Berget analyzed data center energy sources to reveal this climate gap. Would you route your queries to cleaner regions?",
+          "hashtags": [
+            "berget",
+            "climatechange",
+            "datastorage",
+            "greenenergy"
+          ],
+          "sources": [
+            "https://berget.ai/en/blog/per-request-co2-press-release"
+          ],
+          "script": "Eight point five times more CO2. That is what the exact same AI request emits in Texas compared to Sweden.\nBerget analyzed carbon intensity differences across regional data center grids.\nData centers draw power constantly from local electrical grids.\nGrid carbon intensity dictates the exact footprint of your prompt.\nWhere you send a prompt changes its environmental impact.\nWould you route your queries to cleaner regions?",
+          "keywords": [
+            "data center servers",
+            "power lines grid"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "The exact same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+              "url": "https://berget.ai/en/blog/per-request-co2-press-release"
+            },
+            {
+              "claim": "The exact same AI request emits 8.5 times more CO2 in Texas compared to Sweden",
+              "url": "https://berget.ai/en/blog/per-request-co2-press-release"
+            },
+            {
+              "claim": "Berget analyzed carbon intensity differences across regional data center grids.",
+              "url": "https://berget.ai/en/blog/per-request-co2-press-release"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://berget.ai/en/blog/per-request-co2-press-release"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-23T14:06:01.975791+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1821,7 +1838,7 @@
       "event": "Massachusetts Institute of Technology researchers marooned thirteen instances of Claude on a virtual island with zero tasks. The Anthropic models started inventing their own challenges and rules of play without human direction. When an indi"
     }
   ],
-  "voice_mode": null,
+  "voice_mode": "ai",
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
@@ -1870,7 +1887,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-23",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-23-1",
   "gemini_use": {
     "day": "2026-10-23",
@@ -1993,30 +2010,6 @@
     "gemini-3-flash-preview": 1792741489.3541908
   },
   "editor_log": [
-    {
-      "at": "2026-10-22T13:00+05:30",
-      "title": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
-      "overall": 4.8,
-      "scores": {
-        "hook": 6,
-        "specific": 3,
-        "substance": 5,
-        "accuracy": 6,
-        "visuals": 3,
-        "flow": 6
-      },
-      "one_line": "Lacks specific company names and relies heavily on text slides rather than actual footage.",
-      "fixes": [
-        "LINE 1: Name specific European retailers and exact NVIDIA open model names.",
-        "LINE 2: Identify the commerce platform instead of using generic terms.",
-        "LINE 5: Replace general efficiency claim with a concrete metric or result."
-      ],
-      "visual": [
-        "line 1: Static rendering cut off early without video of actual operations.",
-        "line 2: Shows generic brand logo screen instead of platform visuals or data.",
-        "line 3: Text slide lacks footage of digital twin simulations."
-      ]
-    },
     {
       "at": "2026-10-22T14:35+05:30",
       "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
@@ -2425,10 +2418,32 @@
         "line 2: Frame 6 shows an architectural blueprint graphic unrelated to Anthropic models playing gam",
         "line 3: Frames 7-8 lack any visual representation or screenshot of the actual stone heart memorial"
       ]
+    },
+    {
+      "at": "2026-10-23T14:16+05:30",
+      "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+      "overall": 7.7,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 7,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong data-driven climate story, but suffers from repetitive filler text and visual stagnation.",
+      "fixes": [
+        "LINE 3: Replace generic power statement with the specific methodology details from the Berget report.",
+        "LINE 4: Mention the specific tools used like WattTime or Klimatkollen instead of generic grid terms."
+      ],
+      "visual": [
+        "line 3: Visual stays on generic 'Data center power' text card for multiple frames without changing",
+        "line 4: Repeated text card graphic for 'Grid carbon intensity' lacks dynamic B-roll or data charts"
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 35,
+  "fish_turn": 36,
   "behind_since": "2026-10-23T00:31:13.488549+05:30",
   "ig_music_recent": [
     "1209362676336144"
