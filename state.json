@@ -12,11 +12,11 @@
     "angle": ""
   },
   "draft": {
-    "title": "Job guarantees for mass AI unemployment",
-    "hook_text": "Could a job guarantee fix AI unemployment?",
+    "title": "The Guardian explores job guarantees for AI job losses",
+    "hook_text": "Can a job guarantee fix AI?",
     "beats": [
       {
-        "line": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.",
+        "line": "The Guardian reports that economists are proposing government job guarantees to combat mass AI unemployment.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -27,14 +27,14 @@
         "domain": "theguardian.com",
         "headline": "Is a job guarantee the solution to mass AI unemployment",
         "url": "",
-        "tag": "Job guarantee proposed fix",
+        "tag": "Job guarantee proposed",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Advocates argue the state should step in as an employer of last resort.",
+        "line": "Advocates argue that the state must act as an employer of last resort as automation accelerates.",
         "visual": "clip",
         "query": "people working in government office",
         "prompt": "",
@@ -52,7 +52,7 @@
         "brands": []
       },
       {
-        "line": "As generative algorithms replace office workers, traditional safety nets risk failing completely.",
+        "line": "Traditional social safety nets face unprecedented strain from rapid labor market disruptions.",
         "visual": "clip",
         "query": "empty office desks computers",
         "prompt": "",
@@ -63,32 +63,32 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Safety nets failing completely",
+        "tag": "Safety nets under strain",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Economists suggest funded public works could absorb millions of displaced workers.",
+        "line": "Economists debate whether publicly funded programs can absorb millions of displaced workers.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
-        "big": "100%",
-        "small": "Funded public works absorption",
+        "big": "1M+",
+        "small": "Displaced workers",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Funded public works absorption",
+        "tag": "Publicly funded programs debated",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Would you rely on a state-backed job if automation replaces your position?",
+        "line": "Would you support a state job guarantee if automation replaces your current role?",
         "visual": "clip",
         "query": "person looking worried at screen",
         "prompt": "",
@@ -99,27 +99,27 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "State-backed job reliance",
+        "tag": "State job guarantee support",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       }
     ],
-    "delivery": "serious and urgent, explaining the economic policy debate surrounding rapid labor displacement",
+    "delivery": "serious and analytical, explaining the economic policy debate surrounding labor displacement",
     "thin": true,
-    "caption": "A government-backed job guarantee is being proposed as a solution to mass AI unemployment. Advocates argue the state should act as an employer of last resort for displaced workers. Would you rely on a state-backed job if automation replaces your position?",
+    "caption": "Economists propose government job guarantees to tackle mass AI unemployment as automation accelerates. Advocates argue the state must act as an employer of last resort. Would you support a state job guarantee if automation replaces your current role?",
     "hashtags": [
       "JobGuarantee",
-      "AIUnemployment",
-      "FutureOfWork",
+      "AI",
       "Automation",
+      "FutureOfWork",
       "Economy"
     ],
     "sources": [
       "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
     ],
-    "script": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.\nAdvocates argue the state should step in as an employer of last resort.\nAs generative algorithms replace office workers, traditional safety nets risk failing completely.\nEconomists suggest funded public works could absorb millions of displaced workers.\nWould you rely on a state-backed job if automation replaces your position?",
+    "script": "The Guardian reports that economists are proposing government job guarantees to combat mass AI unemployment.\nAdvocates argue that the state must act as an employer of last resort as automation accelerates.\nTraditional social safety nets face unprecedented strain from rapid labor market disruptions.\nEconomists debate whether publicly funded programs can absorb millions of displaced workers.\nWould you support a state job guarantee if automation replaces your current role?",
     "keywords": [
       "people working in government office",
       "empty office desks computers",
@@ -129,28 +129,29 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "A job guarantee is proposed to address AI unemployment.",
+        "claim": "A job guarantee might fix AI-related unemployment.",
         "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
       },
       {
-        "claim": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.",
+        "claim": "The Guardian reports that economists are proposing government job guarantees to combat mass AI unemployment.",
         "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
       },
       {
-        "claim": "Advocates argue a job guarantee would ensure anyone who wants work is guaranteed a meaningful, decently paid job.",
+        "claim": "Advocates argue that the state must act as an employer of last resort as automation accelerates.",
         "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
       },
       {
-        "claim": "Generative algorithms or AI could eliminate positions in law, tech, finance and other white-collar professions.",
-        "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+        "claim": "Traditional social safety nets face unprecedented strain from rapid labor market disruptions.",
+        "url": "https://www.library.hbs.edu/working-knowledge/ai-hasnt-spurred-widespread-layoffs-yet-why-not"
       },
       {
-        "claim": "Funded public works could absorb millions of displaced workers.",
-        "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+        "claim": "Economists debate whether publicly funded programs can absorb millions of displaced workers.",
+        "url": "https://www.library.hbs.edu/working-knowledge/ai-hasnt-spurred-widespread-layoffs-yet-why-not"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
     ]
@@ -160,9 +161,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T15:48:26.764983+05:30",
+  "script_deadline": "2026-10-23T15:56:41.121289+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-23",
@@ -632,35 +633,8 @@
     "How nuclear security can help bring the US and China together on AI",
     "In higher education, the race is on to offer AI as an undergraduate major"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand",
-            "link": "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand",
-            "summary": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand analyticsindiamag.com",
-            "source": "analyticsindiamag.com",
-            "published": "2026-10-23T09:15:40+00:00",
-            "angle": "Meta's massive $145B bet on AI capex reveals the staggering cost of the race"
-          }
-        ],
-        "choose_deadline": "2026-10-23T15:11:00.861399+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1356,6 +1330,175 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Is a job guarantee the solution to mass AI unemployment?",
+          "link": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment",
+          "summary": "Is a job guarantee the solution to mass AI unemployment? The Guardian",
+          "source": "The Guardian",
+          "published": "2026-10-23T10:00:00+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Job guarantees for mass AI unemployment",
+          "hook_text": "Could a job guarantee fix AI unemployment?",
+          "beats": [
+            {
+              "line": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Guardian",
+              "domain": "theguardian.com",
+              "headline": "Is a job guarantee the solution to mass AI unemployment",
+              "url": "",
+              "tag": "Job guarantee proposed fix",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Advocates argue the state should step in as an employer of last resort.",
+              "visual": "clip",
+              "query": "people working in government office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Employer of last resort",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "As generative algorithms replace office workers, traditional safety nets risk failing completely.",
+              "visual": "clip",
+              "query": "empty office desks computers",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Safety nets failing completely",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Economists suggest funded public works could absorb millions of displaced workers.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "100%",
+              "small": "Funded public works absorption",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Funded public works absorption",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you rely on a state-backed job if automation replaces your position?",
+              "visual": "clip",
+              "query": "person looking worried at screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "State-backed job reliance",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "serious and urgent, explaining the economic policy debate surrounding rapid labor displacement",
+          "thin": true,
+          "caption": "A government-backed job guarantee is being proposed as a solution to mass AI unemployment. Advocates argue the state should act as an employer of last resort for displaced workers. Would you rely on a state-backed job if automation replaces your position?",
+          "hashtags": [
+            "JobGuarantee",
+            "AIUnemployment",
+            "FutureOfWork",
+            "Automation",
+            "Economy"
+          ],
+          "sources": [
+            "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+          ],
+          "script": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.\nAdvocates argue the state should step in as an employer of last resort.\nAs generative algorithms replace office workers, traditional safety nets risk failing completely.\nEconomists suggest funded public works could absorb millions of displaced workers.\nWould you rely on a state-backed job if automation replaces your position?",
+          "keywords": [
+            "people working in government office",
+            "empty office desks computers",
+            "person looking worried at screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "A job guarantee is proposed to address AI unemployment.",
+              "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+            },
+            {
+              "claim": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.",
+              "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+            },
+            {
+              "claim": "Advocates argue a job guarantee would ensure anyone who wants work is guaranteed a meaningful, decently paid job.",
+              "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+            },
+            {
+              "claim": "Generative algorithms or AI could eliminate positions in law, tech, finance and other white-collar professions.",
+              "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+            },
+            {
+              "claim": "Funded public works could absorb millions of displaced workers.",
+              "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-23T15:48:26.764983+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1842,8 +1985,8 @@
       "event": "One hundred forty five billion dollars is Meta expected to spend on capital expenditures. Third quarter earnings reports highlight how massive infrastructure expansion drives these record high technology budgets. Heavy financial commitments"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-23T15:40+05:30",
@@ -1871,8 +2014,8 @@
   "report_day": "2026-10-22",
   "ig_count": {
     "day": "2026-10-23",
-    "at": "2026-10-23T15:40:25.716944+05:30",
-    "count": 3
+    "at": "2026-10-23T15:50:28.483731+05:30",
+    "count": 4
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-23",
@@ -2014,24 +2157,6 @@
     "gemini-3-flash-preview": 1792741489.3541908
   },
   "editor_log": [
-    {
-      "at": "2026-10-22T16:51+05:30",
-      "title": "Karta AI Raises $3 Mn To Automate Inbound Calls For BFSI Players",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 9
-      },
-      "one_line": "Strong script and numbers, but Frame 5 features completely unrelated D2C shopping visuals.",
-      "fixes": [],
-      "visual": [
-        "line 3: Frame 5 displays an unrelated D2C brand launch graphic instead of agentic AI call software"
-      ]
-    },
     {
       "at": "2026-10-22T16:53+05:30",
       "title": "Karta AI Raises $3 Mn To Automate Inbound Calls For BFSI Players",
@@ -2435,10 +2560,32 @@
         "line 3: Mark Zuckerberg's photo repeats across multiple lines without new visual context",
         "line 6: Static text frame held too long with no fresh supporting graphic"
       ]
+    },
+    {
+      "at": "2026-10-23T15:55+05:30",
+      "title": "Is a job guarantee the solution to mass AI unemployment?",
+      "overall": 6.2,
+      "scores": {
+        "hook": 8,
+        "specific": 4,
+        "substance": 6,
+        "accuracy": 8,
+        "visuals": 4,
+        "flow": 7
+      },
+      "one_line": "Lacks specific data points, company names, and features a repetitive, generic stock visual.",
+      "fixes": [
+        "LINE 1: Mention the specific think-tank or study published in The Guardian today.",
+        "LINE 3: Replace general 'generative algorithms' with specific job sectors or automation tools mentioned in the report."
+      ],
+      "visual": [
+        "line 1: Stock handshake photo is generic and unrelated to specific tech details.",
+        "line 3: Static text animation held too long without dynamic B-roll supporting the claims."
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 41,
+  "fish_turn": 42,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
