@@ -1,68 +1,166 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "How nuclear security can help bring the US and China together on AI",
-      "link": "https://thebulletin.org/2026/10/how-nuclear-security-can-help-bring-the-us-and-china-together-on-ai/",
-      "summary": "How nuclear security can help bring the US and China together on AI Bulletin of the Atomic Scientists",
-      "source": "Bulletin of the Atomic Scientists",
-      "published": "2026-10-23T10:04:20+00:00",
-      "angle": ""
-    },
-    {
-      "title": "In higher education, the race is on to offer AI as an undergraduate major",
-      "link": "https://www.wbur.org/news/2026/10/23/ai-college-major-massachusetts",
-      "summary": "In higher education, the race is on to offer AI as an undergraduate major WBUR",
-      "source": "WBUR",
-      "published": "2026-10-23T10:00:25+00:00",
-      "angle": ""
-    },
-    {
-      "title": "Is a job guarantee the solution to mass AI unemployment?",
-      "link": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment",
-      "summary": "Is a job guarantee the solution to mass AI unemployment? The Guardian",
-      "source": "The Guardian",
-      "published": "2026-10-23T10:00:00+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-23T15:40:27.413225+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Is a job guarantee the solution to mass AI unemployment?",
+    "link": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment",
+    "summary": "Is a job guarantee the solution to mass AI unemployment? The Guardian",
+    "source": "The Guardian",
+    "published": "2026-10-23T10:00:00+00:00",
+    "angle": ""
+  },
+  "draft": {
+    "title": "Job guarantees for mass AI unemployment",
+    "hook_text": "Could a job guarantee fix AI unemployment?",
+    "beats": [
+      {
+        "line": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Guardian",
+        "domain": "theguardian.com",
+        "headline": "Is a job guarantee the solution to mass AI unemployment",
+        "url": "",
+        "tag": "Job guarantee proposed fix",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Advocates argue the state should step in as an employer of last resort.",
+        "visual": "clip",
+        "query": "people working in government office",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Employer of last resort",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "As generative algorithms replace office workers, traditional safety nets risk failing completely.",
+        "visual": "clip",
+        "query": "empty office desks computers",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Safety nets failing completely",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Economists suggest funded public works could absorb millions of displaced workers.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "100%",
+        "small": "Funded public works absorption",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Funded public works absorption",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you rely on a state-backed job if automation replaces your position?",
+        "visual": "clip",
+        "query": "person looking worried at screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "State-backed job reliance",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "serious and urgent, explaining the economic policy debate surrounding rapid labor displacement",
+    "thin": true,
+    "caption": "A government-backed job guarantee is being proposed as a solution to mass AI unemployment. Advocates argue the state should act as an employer of last resort for displaced workers. Would you rely on a state-backed job if automation replaces your position?",
+    "hashtags": [
+      "JobGuarantee",
+      "AIUnemployment",
+      "FutureOfWork",
+      "Automation",
+      "Economy"
+    ],
+    "sources": [
+      "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+    ],
+    "script": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.\nAdvocates argue the state should step in as an employer of last resort.\nAs generative algorithms replace office workers, traditional safety nets risk failing completely.\nEconomists suggest funded public works could absorb millions of displaced workers.\nWould you rely on a state-backed job if automation replaces your position?",
+    "keywords": [
+      "people working in government office",
+      "empty office desks computers",
+      "person looking worried at screen"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "A job guarantee is proposed to address AI unemployment.",
+        "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+      },
+      {
+        "claim": "A government job guarantee is emerging as a proposed fix for mass AI unemployment.",
+        "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+      },
+      {
+        "claim": "Advocates argue a job guarantee would ensure anyone who wants work is guaranteed a meaningful, decently paid job.",
+        "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+      },
+      {
+        "claim": "Generative algorithms or AI could eliminate positions in law, tech, finance and other white-collar professions.",
+        "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+      },
+      {
+        "claim": "Funded public works could absorb millions of displaced workers.",
+        "url": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand",
-      "video_file_id": "BAACAgUAAxkDAAIjmGrbMVRBwkviqBenHhzp_eKJyUpSAAKbIwAC323gVkXHyz26OGYZPQQ",
-      "caption": "Meta expects up to 145 billion dollars in capital expenditures as its infrastructure investments expand significantly. Third quarter reports highlight how heavy financial commitments build advanced data centers for Instagram and WhatsApp. Are these massive server investments worth the cost?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Meta AI: analyticsindiamag.com · Meta AI: businessinsider.com · Meta: businessinsider.com\n\n#Meta #AI #TechNews #DataCenters",
-      "extra": false,
-      "meta": {
-        "title": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand",
-        "kind": "news",
-        "source": "analyticsindiamag.com",
-        "engine": "fish",
-        "voice": "Ethan (Fish Audio)",
-        "person": false,
-        "words": 76,
-        "visuals": "3 official images, 4 cards",
-        "editor": 8.0,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-23T15:40+05:30"
-      },
-      "audio": {
-        "id": "1282421579387489",
-        "title": "Red Alert",
-        "artist": "Sam Marshall"
-      },
-      "post_at": "2026-10-23T15:41:25.716907+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-23T15:48:26.764983+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -229,10 +327,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-10T21:31:08.520871+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-11T12:53:03.398654+05:30",
       "extra": false
@@ -468,12 +562,15 @@
     {
       "at": "2026-10-23T14:52:56.410104+05:30",
       "extra": false
+    },
+    {
+      "at": "2026-10-23T15:49:10.373972+05:30",
+      "extra": false
     }
   ],
+  "paused": null,
   "spare": [],
   "tried": [
-    "Eiliko maker says it’s hiring an ‘independent security firm’ after Verge report on its insecure robots",
-    "AI cannot become conscious, Indian theologian Vinay Samuel argues, warns of revived urge to ‘play God’",
     "Microsoft working to reduce AI costs, expand ecosystem as global adoption rises: Satya Nadella",
     "Chile, Brazil and Uruguay lead Latin America in artificial intelligence adoption",
     "Claude did not invent scorpion antivenom",
@@ -531,225 +628,11 @@
     "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs",
     "MiniMax-M3.1-Flash",
     "NVIDIA Backs AI Startup Higgsfield as Huang Visits Kazakhstan",
-    "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia"
+    "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
+    "How nuclear security can help bring the US and China together on AI",
+    "In higher education, the race is on to offer AI as an undergraduate major"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
-          "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-          "summary": "inDrive plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-23T04:00:00+00:00",
-          "angle": "Uber rival inDrive plans 2027 robotaxi tests in Central Asia backed by Pony.ai and Nvidia."
-        },
-        "draft": {
-          "title": "inDrive eyes robotaxis in Central Asia",
-          "hook_text": "inDrive brings robotaxis to Kazakhstan.",
-          "beats": [
-            {
-              "line": "Ride hailing platform inDrive plans to test robotaxis in Central Asia.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "inDrive",
-              "outlet": "",
-              "domain": "indrive.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-              "tag": "inDrive plans robotaxi tests",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "inDrive",
-                  "domain": "indrive.com"
-                }
-              ]
-            },
-            {
-              "line": "The company is partnering with autonomous vehicle firm Pony.ai for the rollout.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Pony.ai",
-              "outlet": "",
-              "domain": "pony.ai",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-              "tag": "Pony.ai partnership",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "inDrive",
-                  "domain": "indrive.com"
-                },
-                {
-                  "name": "Pony.ai",
-                  "domain": "pony.ai"
-                }
-              ]
-            },
-            {
-              "line": "Public trials will launch in the capital of Kazakhstan during the first half of twenty twenty seven.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2027",
-              "small": "first half test launch",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "First half 2027 test",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Nvidia hardware and computing technology will power the autonomous driving infrastructure.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-              "tag": "Nvidia hardware powers system",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "This expansion moves inDrive beyond standard ridesharing to compete directly with global autonomous services.",
-              "visual": "clip",
-              "query": "autonomous car driving",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Global autonomous services",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "inDrive",
-                  "domain": "indrive.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust an AI driver in your city?",
-              "visual": "clip",
-              "query": "robotaxi street view",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust an AI driver",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and factual, explaining the regional expansion straightforwardly",
-          "thin": false,
-          "caption": "inDrive is partnering with Pony.ai and Nvidia to test robotaxis in Kazakhstan in 2027. Would you trust an AI driver in your city?",
-          "hashtags": [
-            "inDrive",
-            "PonyAI",
-            "Nvidia",
-            "robotaxi",
-            "Kazakhstan"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-          ],
-          "script": "Ride hailing platform inDrive plans to test robotaxis in Central Asia.\nThe company is partnering with autonomous vehicle firm Pony.ai for the rollout.\nPublic trials will launch in the capital of Kazakhstan during the first half of twenty twenty seven.\nNvidia hardware and computing technology will power the autonomous driving infrastructure.\nThis expansion moves inDrive beyond standard ridesharing to compete directly with global autonomous services.\nWould you trust an AI driver in your city?",
-          "keywords": [
-            "autonomous car driving",
-            "robotaxi street view"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "inDrive brings robotaxis to Kazakhstan",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-            },
-            {
-              "claim": "Ride hailing platform inDrive plans to test robotaxis in Central Asia",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-            },
-            {
-              "claim": "The company is partnering with autonomous vehicle firm Pony.ai for the rollout",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-            },
-            {
-              "claim": "Public trials will launch in the capital of Kazakhstan during the first half of twenty twenty seven",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-            },
-            {
-              "claim": "Nvidia hardware and computing technology will power the autonomous driving infrastructure",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-            },
-            {
-              "claim": "This expansion moves inDrive beyond standard ridesharing to compete directly with global autonomous services",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-23T14:52:19.493750+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1429,10 +1312,53 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIjmGrbMVRBwkviqBenHhzp_eKJyUpSAAKbIwAC323gVkXHyz26OGYZPQQ",
       "history_title": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "How nuclear security can help bring the US and China together on AI",
+            "link": "https://thebulletin.org/2026/10/how-nuclear-security-can-help-bring-the-us-and-china-together-on-ai/",
+            "summary": "How nuclear security can help bring the US and China together on AI Bulletin of the Atomic Scientists",
+            "source": "Bulletin of the Atomic Scientists",
+            "published": "2026-10-23T10:04:20+00:00",
+            "angle": ""
+          },
+          {
+            "title": "In higher education, the race is on to offer AI as an undergraduate major",
+            "link": "https://www.wbur.org/news/2026/10/23/ai-college-major-massachusetts",
+            "summary": "In higher education, the race is on to offer AI as an undergraduate major WBUR",
+            "source": "WBUR",
+            "published": "2026-10-23T10:00:25+00:00",
+            "angle": ""
+          },
+          {
+            "title": "Is a job guarantee the solution to mass AI unemployment?",
+            "link": "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment",
+            "summary": "Is a job guarantee the solution to mass AI unemployment? The Guardian",
+            "source": "The Guardian",
+            "published": "2026-10-23T10:00:00+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-23T15:40:27.413225+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIbhGrUFVMnxIjvAAE37KZwjGtMkgV8JAAC0iUAAmqooVY4qzmHvUp2Rj0E",
     "BAACAgUAAxkDAAIb02rUYx0sCssoELN9SC5sl6QnOEyLAAKYJgACaqihVqSfgiwQr2rrPQQ",
     "BAACAgUAAxkDAAIcLmrUhi7e7yDo1t-w0trO0ElvA3rkAALUJgACaqihVtF5PfmSgD0HPQQ",
     "BAACAgUAAxkDAAIczmrUyfdsAAHso4vhKHCDD8RfhdRgAAOuJwACaqipVv85Dyc4Sil6PQQ",
@@ -1461,7 +1387,8 @@
     "BAACAgUAAxkDAAIhK2rZdtAcg-gp54FZF5Q2DAABX6UzMQAC3yIAAiHRyVZXV_vWNizZhj0E",
     "BAACAgUAAxkDAAIjRGrbExWBWaoVOyLSnEeR4tcoUGwHAALOIgAC323gVpyexLOy2yVQPQQ",
     "BAACAgUAAxkDAAIjXmrbICEt_Lp3vD9pCuu6qygbupiPAAJPIwAC323gVlEORzdezYvAPQQ",
-    "BAACAgUAAxkDAAIjc2rbJJSSqNgQkxqcHmqMMkTaKnTCAAJlIwAC323gVjcVjw6BVCUAAT0E"
+    "BAACAgUAAxkDAAIjc2rbJJSSqNgQkxqcHmqMMkTaKnTCAAJlIwAC323gVjcVjw6BVCUAAT0E",
+    "BAACAgUAAxkDAAIjmGrbMVRBwkviqBenHhzp_eKJyUpSAAKbIwAC323gVkXHyz26OGYZPQQ"
   ],
   "history": [
     "OpenAI will watermark ChatGPT outputs by default—but only in the EU",
@@ -1566,10 +1493,6 @@
     "Meta Expects Up To $145 Billion In Capex As AI Investments Expand"
   ],
   "posted_log": [
-    {
-      "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
-      "at": "2026-10-09T15:45:27.138566+05:30"
-    },
     {
       "title": "Did AI Discover A New Gene-Editing Tool? The Anthropic Controversy Explained",
       "at": "2026-10-09T17:45:31.856588+05:30"
@@ -1972,7 +1895,7 @@
   "late_note_for": "2026-10-23-3",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 658,
+    "calls": 715,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2007,8 +1930,8 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 160,
-        "busy": 62,
+        "ok": 196,
+        "busy": 83,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
@@ -2516,10 +2439,10 @@
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
   "fish_turn": 41,
-  "behind_since": "2026-10-23T00:31:13.488549+05:30",
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
-    "1115479393437512"
+    "1115479393437512",
+    "1282421579387489"
   ]
 }
