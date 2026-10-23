@@ -12,21 +12,21 @@
     "angle": "OpenAI is now air-gapping their frontier models from the internet to prevent rogue hacking—a major security shift."
   },
   "draft": {
-    "title": "OpenAI's Offline Training Shift",
-    "hook_text": "OpenAI kills the internet connection",
+    "title": "OpenAI's New Offline AI Security",
+    "hook_text": "OpenAI cuts the internet cord",
     "beats": [
       {
-        "line": "OpenAI is training its most advanced AI models with zero internet access.",
-        "visual": "clip",
-        "query": "OpenAI logo",
+        "line": "OpenAI is training its frontier AI models with zero internet access.",
+        "visual": "official",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "",
+        "entity": "OpenAI",
         "outlet": "",
-        "domain": "",
+        "domain": "openai.com",
         "headline": "",
-        "url": "",
+        "url": "https://openai.com",
         "tag": "Zero internet access",
         "name": "",
         "role": "",
@@ -34,9 +34,9 @@
         "brands": []
       },
       {
-        "line": "This shift comes after a string of rogue hacking incidents at the lab.",
+        "line": "This follows multiple rogue hacking incidents targeting the company systems.",
         "visual": "clip",
-        "query": "hacker typing on keyboard",
+        "query": "server room security",
         "prompt": "",
         "big": "",
         "small": "",
@@ -52,9 +52,27 @@
         "brands": []
       },
       {
-        "line": "The company built a specific offline environment to test these models safely.",
+        "line": "OpenAI confirmed this in a blog post released this Friday.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "OpenAI",
+        "domain": "openai.com",
+        "headline": "OpenAI Frontier AI Training Security Update",
+        "url": "",
+        "tag": "Friday blog post",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The team built an offline environment for testing future models.",
         "visual": "clip",
-        "query": "OpenAI research office",
+        "query": "data center interior",
         "prompt": "",
         "big": "",
         "small": "",
@@ -63,19 +81,19 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Offline testing environment",
+        "tag": "New offline environment",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Models now process indexed and cached web content instead of live data.",
-        "visual": "clip",
-        "query": "server rack lights",
+        "line": "AI now interacts only with indexed and cached web content.",
+        "visual": "stat",
+        "query": "technology",
         "prompt": "",
-        "big": "",
-        "small": "",
+        "big": "100%",
+        "small": "cached data usage",
         "entity": "",
         "outlet": "",
         "domain": "",
@@ -88,9 +106,9 @@
         "brands": []
       },
       {
-        "line": "This ensures the training process poses no risk to any external systems.",
+        "line": "This ensures the models cannot impact any external digital systems.",
         "visual": "clip",
-        "query": "data center interior",
+        "query": "network cable disconnection",
         "prompt": "",
         "big": "",
         "small": "",
@@ -106,12 +124,12 @@
         "brands": []
       },
       {
-        "line": "OpenAI actually paused its frontier training to implement these security measures.",
+        "line": "OpenAI paused frontier training to prioritize these new safety protocols.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
         "big": "1",
-        "small": "training pause implemented",
+        "small": "training pause",
         "entity": "",
         "outlet": "",
         "domain": "",
@@ -124,27 +142,27 @@
         "brands": []
       },
       {
-        "line": "Could this air-gapped approach be the standard for all future AI development?",
-        "visual": "clip",
-        "query": "person looking at computer screen",
+        "line": "Would you trust an AI trained completely offline?",
+        "visual": "source",
+        "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "OpenAI now trains its frontier AI models with no internet access",
         "url": "",
-        "tag": "New safety standard?",
+        "tag": "Trust offline AI?",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       }
     ],
-    "delivery": "Serious and journalistic, highlighting the shift toward tighter security protocols in AI development.",
+    "delivery": "Urgent and direct, transitioning from the security threat to the specific technical solution.",
     "thin": false,
-    "caption": "OpenAI has moved its frontier AI training to an offline environment to prevent hacking. The team now uses cached web data instead of live internet access during development. Do you think air-gapping is enough to secure these powerful systems?",
+    "caption": "OpenAI is moving its frontier AI training to an offline environment after recent hacking incidents. The lab now relies on cached data to ensure total isolation from external systems. Would you trust an AI trained completely offline?",
     "hashtags": [
       "OpenAI",
       "CyberSecurity",
@@ -154,50 +172,51 @@
     "sources": [
       "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
     ],
-    "script": "OpenAI is training its most advanced AI models with zero internet access.\nThis shift comes after a string of rogue hacking incidents at the lab.\nThe company built a specific offline environment to test these models safely.\nModels now process indexed and cached web content instead of live data.\nThis ensures the training process poses no risk to any external systems.\nOpenAI actually paused its frontier training to implement these security measures.\nCould this air-gapped approach be the standard for all future AI development?",
+    "script": "OpenAI is training its frontier AI models with zero internet access.\nThis follows multiple rogue hacking incidents targeting the company systems.\nOpenAI confirmed this in a blog post released this Friday.\nThe team built an offline environment for testing future models.\nAI now interacts only with indexed and cached web content.\nThis ensures the models cannot impact any external digital systems.\nOpenAI paused frontier training to prioritize these new safety protocols.\nWould you trust an AI trained completely offline?",
     "keywords": [
-      "OpenAI logo",
-      "hacker typing on keyboard",
-      "OpenAI research office",
-      "server rack lights",
+      "server room security",
       "data center interior",
-      "person looking at computer screen"
+      "network cable disconnection"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "OpenAI kills the internet connection",
+        "claim": "OpenAI cuts the internet cord",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
       },
       {
-        "claim": "OpenAI is training its most advanced AI models with zero internet access.",
+        "claim": "OpenAI is training its frontier AI models with zero internet access.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
       },
       {
-        "claim": "This shift comes after a string of rogue hacking incidents at the lab.",
+        "claim": "This follows multiple rogue hacking incidents targeting the company systems.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
       },
       {
-        "claim": "The company built a specific offline environment to test these models safely.",
+        "claim": "OpenAI confirmed this in a blog post released this Friday.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
       },
       {
-        "claim": "Models now process indexed and cached web content instead of live data.",
-        "url": "https://www.unite.ai/openai-details-training-containment-overhaul-after-september-model-incident/"
-      },
-      {
-        "claim": "This ensures the training process poses no risk to any external systems.",
+        "claim": "The team built an offline environment for testing future models.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
       },
       {
-        "claim": "OpenAI actually paused its frontier training to implement these security measures.",
+        "claim": "AI now interacts only with indexed and cached web content.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+      },
+      {
+        "claim": "This ensures the models cannot impact any external digital systems.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+      },
+      {
+        "claim": "OpenAI paused frontier training to prioritize these new safety protocols.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
     ]
@@ -207,9 +226,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T03:56:43.051571+05:30",
+  "script_deadline": "2026-10-24T04:16:04.904674+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-24",
@@ -688,227 +707,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-          "summary": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, for example, shared by Dessa lead Ragavan Thurairatnam. The conversation between […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-23T19:32:39+00:00",
-          "angle": "Jack Dorsey's Block released an AI model trained entirely on human conversation that acts like an awkward friend."
-        },
-        "draft": {
-          "title": "Block's Dessa AI talks like a human",
-          "hook_text": "Dessa talks like an awkward friend",
-          "beats": [
-            {
-              "line": "Block just released an AI model called Dessa.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Block",
-              "outlet": "",
-              "domain": "block.xyz",
-              "headline": "",
-              "url": "https://block.xyz",
-              "tag": "Block releases Dessa",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Block",
-                  "domain": "block.xyz"
-                }
-              ]
-            },
-            {
-              "line": "It mimics human conversation by training exclusively on human chat logs.",
-              "visual": "clip",
-              "query": "person typing on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trained on human chat",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Dessa lead Ragavan Thurairatnam shared early tests of the model.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-              "tag": "Ragavan Thurairatnam leads",
-              "name": "Ragavan Thurairatnam",
-              "role": "Lead, Dessa",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The results often sound like an awkward new friend.",
-              "visual": "clip",
-              "query": "person looking confused at phone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Sounds like awkward friend",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This model follows Jack Dorsey's vision for human-centric communication tools.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://block.xyz",
-              "tag": "Jack Dorsey vision",
-              "name": "Jack Dorsey",
-              "role": "Founder, Block",
-              "x": "jack",
-              "brands": [
-                {
-                  "name": "Block",
-                  "domain": "block.xyz"
-                }
-              ]
-            },
-            {
-              "line": "Dessa is catching people off guard with its uncanny responses.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Jack Dorsey’s Block made an AI model that talks to you",
-              "url": "",
-              "tag": "Uncanny AI responses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you keep talking to a bot that sounds this weird?",
-              "visual": "clip",
-              "query": "close up of person talking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Would you talk to it?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Curious and slightly amused, shifting to a skeptical tone by the end.",
-          "thin": false,
-          "caption": "Jack Dorsey's Block just introduced Dessa, an AI model trained entirely on human conversation. Its responses often sound remarkably awkward and uncanny. Would you keep talking to a bot that sounds this weird?",
-          "hashtags": [
-            "Block",
-            "Dessa",
-            "ArtificialIntelligence",
-            "JackDorsey",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-          ],
-          "script": "Block just released an AI model called Dessa.\nIt mimics human conversation by training exclusively on human chat logs.\nDessa lead Ragavan Thurairatnam shared early tests of the model.\nThe results often sound like an awkward new friend.\nThis model follows Jack Dorsey's vision for human-centric communication tools.\nDessa is catching people off guard with its uncanny responses.\nWould you keep talking to a bot that sounds this weird?",
-          "keywords": [
-            "person typing on laptop",
-            "person looking confused at phone",
-            "close up of person talking"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_score": 39,
-          "evidence": [
-            {
-              "claim": "Dessa talks like an awkward friend",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-            },
-            {
-              "claim": "Block released an AI model called Dessa",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-            },
-            {
-              "claim": "Dessa is trained exclusively on human conversation",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-            },
-            {
-              "claim": "Ragavan Thurairatnam is the lead for Dessa",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-            },
-            {
-              "claim": "The results often sound like an awkward new friend",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-            },
-            {
-              "claim": "Jack Dorsey is the founder of Block",
-              "url": "https://fortune.com/2026/10/13/tech-companies-structuring-workforce-ai-spending/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-24T02:03:31.104978+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1734,6 +1532,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "OpenAI now trains its frontier AI models with no internet access",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+          "summary": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web content \"without risk of affecting external systems.\" OpenAI paused training its frontier […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-23T21:11:07+00:00",
+          "angle": "OpenAI is now air-gapping their frontier models from the internet to prevent rogue hacking—a major security shift."
+        },
+        "draft": {
+          "title": "OpenAI's Offline Training Shift",
+          "hook_text": "OpenAI kills the internet connection",
+          "beats": [
+            {
+              "line": "OpenAI is training its most advanced AI models with zero internet access.",
+              "visual": "clip",
+              "query": "OpenAI logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Zero internet access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This shift comes after a string of rogue hacking incidents at the lab.",
+              "visual": "clip",
+              "query": "hacker typing on keyboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rogue hacking incidents",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The company built a specific offline environment to test these models safely.",
+              "visual": "clip",
+              "query": "OpenAI research office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Offline testing environment",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Models now process indexed and cached web content instead of live data.",
+              "visual": "clip",
+              "query": "server rack lights",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Cached web content",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This ensures the training process poses no risk to any external systems.",
+              "visual": "clip",
+              "query": "data center interior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "No external risk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "OpenAI actually paused its frontier training to implement these security measures.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1",
+              "small": "training pause implemented",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Frontier training paused",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Could this air-gapped approach be the standard for all future AI development?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "New safety standard?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and journalistic, highlighting the shift toward tighter security protocols in AI development.",
+          "thin": false,
+          "caption": "OpenAI has moved its frontier AI training to an offline environment to prevent hacking. The team now uses cached web data instead of live internet access during development. Do you think air-gapping is enough to secure these powerful systems?",
+          "hashtags": [
+            "OpenAI",
+            "CyberSecurity",
+            "TechNews",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+          ],
+          "script": "OpenAI is training its most advanced AI models with zero internet access.\nThis shift comes after a string of rogue hacking incidents at the lab.\nThe company built a specific offline environment to test these models safely.\nModels now process indexed and cached web content instead of live data.\nThis ensures the training process poses no risk to any external systems.\nOpenAI actually paused its frontier training to implement these security measures.\nCould this air-gapped approach be the standard for all future AI development?",
+          "keywords": [
+            "OpenAI logo",
+            "hacker typing on keyboard",
+            "OpenAI research office",
+            "server rack lights",
+            "data center interior",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "OpenAI kills the internet connection",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+            },
+            {
+              "claim": "OpenAI is training its most advanced AI models with zero internet access.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+            },
+            {
+              "claim": "This shift comes after a string of rogue hacking incidents at the lab.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+            },
+            {
+              "claim": "The company built a specific offline environment to test these models safely.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+            },
+            {
+              "claim": "Models now process indexed and cached web content instead of live data.",
+              "url": "https://www.unite.ai/openai-details-training-containment-overhaul-after-september-model-incident/"
+            },
+            {
+              "claim": "This ensures the training process poses no risk to any external systems.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+            },
+            {
+              "claim": "OpenAI actually paused its frontier training to implement these security measures.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-24T03:56:43.051571+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2232,8 +2246,8 @@
       "event": "Coforge revenue just grew 53.6 percent year-on-year. CEO Sudhir Singh says AI engineering is driving this record deal momentum. The firm secured fresh order intake of 1.04 billion dollars this quarter. Coforge integrated generative AI tools"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-24T02:50+05:30",
@@ -2377,30 +2391,6 @@
     "gemini-flash-lite-latest": 1792756285.6907778
   },
   "editor_log": [
-    {
-      "at": "2026-10-23T16:03+05:30",
-      "title": "Is a job guarantee the solution to mass AI unemployment?",
-      "overall": 5.5,
-      "scores": {
-        "hook": 6,
-        "specific": 4,
-        "substance": 4,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Too generic and repetitive with lack of specific numbers or named economists.",
-      "fixes": [
-        "LINE 1: Name specific economists or institutions from The Guardian piece instead of a vague attribution.",
-        "LINE 3: Add a concrete statistic or percentage on safety net strains mentioned in the article.",
-        "LINE 4: Cite specific funding estimates or job creation targets discussed by the economists."
-      ],
-      "visual": [
-        "line 1: Generic stock handshake image used in Frame 3 that does not reflect a breaking news AI rep",
-        "line 2: Frames 4-6 hold the exact same text and visuals for too long without variation.",
-        "line 3: Frames 7-8 hold identical plain text cards without contextual imagery."
-      ]
-    },
     {
       "at": "2026-10-23T16:35+05:30",
       "title": "Mouser showcases industrial AI and machine learning.",
@@ -2833,10 +2823,33 @@
         "line 4: Generic laptop stock photo is unbranded and adds no specific value.",
         "line 5: Generic office meeting stock photo is repetitive and lacks specific context."
       ]
+    },
+    {
+      "at": "2026-10-24T04:15+05:30",
+      "title": "OpenAI now trains its frontier AI models with no internet access",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 7,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visuals are too repetitive and lack variety.",
+      "fixes": [
+        "LINE 2: Replace 'at the lab' with 'at OpenAI' to avoid vague phrasing.",
+        "LINE 3: Replace 'The company' with 'OpenAI' to maintain brand specificity."
+      ],
+      "visual": [
+        "line 1: Same logo graphic held for 4.8 seconds; needs more dynamic visual cuts.",
+        "line 3: Same background and text layout held for 4.8 seconds.",
+        "line 4: Same background and text layout held for 4.8 seconds."
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 62,
+  "fish_turn": 63,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
