@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -183,16 +183,63 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.reddit.com/r/LocalLLaMA/comments/1xdk6ow/introducing_kimi_k31_pro_advancing_open/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1131364661185460",
+      "title": "Sun Moon Scars (feat. Cullman Avenue)",
+      "artist": "Bryan Todd"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Moonshot AI just launched Kimi K3.1 Pro to push op…: The shot is an almost-empty card with only text, failing to show the requested real images of Moonshot AI Kimi.",
+      "The team integrated enhanced reasoning capabilitie…: The shot is an almost-empty card with only text, failing to show the requested stock video of a data processing server.",
+      "Users can now leverage multi-modal inputs for deep…: The shot is an almost-empty card with only text, failing to show the requested real images of the Kimi K3.1 Pro interfac",
+      "Developers are testing these new features to see h…: The shot is an almost-empty card with only text, failing to show the requested stock video of a software developer codin",
+      "Would you switch your primary workflow to an open …: The shot is an almost-empty card with only text, failing to show the requested stock video of a person thinking.",
+      "almost-empty card with only a logo",
+      "almost-empty card with only text",
+      "almost-empty card with only text",
+      "almost-empty card with only text",
+      "almost-empty card with only text"
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, informative content, but visual pacing is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 5: Replace 'closed models' with specific competitors like 'GPT-4o or Claude 3.5 Sonnet' for better impact."
+      ],
+      "visual_beats": [
+        0,
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 1: The same static text screen is held for too long (0.5s to 7.2s).",
+        "line 3: The 'Enhanced reasoning' graphic is repeated across three frames (16.8s to 24.0s) without ",
+        "line 4: The 'Multi-modal input' graphic is repeated across two frames (28.8s to 31.2s) without cha"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIktmrbqwPIAAE-RpDILrlkMHiCG5jkBAACbCUAAt9t4FYEq4WcsEk6cj0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T00:04:53.738582+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-24T00:44:20.055286+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-24",
@@ -675,254 +722,8 @@
     "Meta delays new business terms after publisher pushback on AI scraping",
     "Now Google says it might use your Gmail and Google Photos data to target ads"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEgwdU55dmhLNUlxSUFNSmNWdXcyeE1DOVU2VURhRmhrb01meVVRWkd0S1F1YTNwWjhLbk9yVGZaNWw4ZDJaNnFEVUowLXlDalFHZGtRSFVVLV90ZU1VNTMtQlBzRnI1eUJhRFBYcmxsSG9Sd2JNemtxSWhKOWw0QVVQb2ZwWXZ6NDlnVFg4VThpQkxheF8wdw?oc=5",
-          "summary": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI The Astana Times",
-          "source": "The Astana Times",
-          "published": "2026-10-23T14:31:25+00:00",
-          "angle": "Nvidia CEO Jensen Huang is pushing to turn Kazakhstan into a global hub for physical AI infrastructure."
-        },
-        "draft": {
-          "title": "Nvidia CEO Eyes Kazakhstan for Physical AI",
-          "hook_text": "Nvidia CEO targets Kazakhstan",
-          "beats": [
-            {
-              "line": "Nvidia CEO Jensen Huang proposed making Kazakhstan a global hub for physical AI.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.nvidia.com/en-us/about/leadership/",
-              "tag": "Jensen Huang's proposal",
-              "name": "Jensen Huang",
-              "role": "CEO, Nvidia",
-              "x": "nvidia",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "He met President Kassym-Jomart Tokayev to discuss this growth in Astana.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.akorda.kz/en",
-              "tag": "Meeting in Astana",
-              "name": "Kassym-Jomart Tokayev",
-              "role": "President of Kazakhstan",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Physical AI integrates software with robotics to interact with our world.",
-              "visual": "clip",
-              "query": "robotics industrial automation",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "What is physical AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Huang highlighted Kazakhstan as a strategic region for new data infrastructure.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Astana, Kazakhstan",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Kazakhstan infrastructure potential",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The President invited Nvidia to help build a national AI ecosystem.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Astana Times",
-              "domain": "astanatimes.com",
-              "headline": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
-              "url": "",
-              "tag": "Nvidia invited to Kazakhstan",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "They discussed training local talent to lead these advanced technical developments.",
-              "visual": "clip",
-              "query": "people working in technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Training local talent",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Kazakhstan aims to integrate AI into its economy through these new partnerships.",
-              "visual": "clip",
-              "query": "modern office tech",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Economic AI integration",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you rely on robots built in a new tech hub?",
-              "visual": "clip",
-              "query": "humanoid robot moving",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Future of physical AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Confident and informative, emphasizing the strategic international partnership between a tech giant and a central Asian nation.",
-          "thin": false,
-          "caption": "Nvidia CEO Jensen Huang is discussing Kazakhstan as a potential hub for physical AI. President Kassym-Jomart Tokayev has invited the company to help build a national AI ecosystem, focusing on data infrastructure and local expertise. Would you rely on robots built in a new tech hub?",
-          "hashtags": [
-            "Nvidia",
-            "Kazakhstan",
-            "PhysicalAI",
-            "JensenHuang",
-            "TechNews"
-          ],
-          "sources": [
-            "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-          ],
-          "script": "Nvidia CEO Jensen Huang proposed making Kazakhstan a global hub for physical AI.\nHe met President Kassym-Jomart Tokayev to discuss this growth in Astana.\nPhysical AI integrates software with robotics to interact with our world.\nHuang highlighted Kazakhstan as a strategic region for new data infrastructure.\nThe President invited Nvidia to help build a national AI ecosystem.\nThey discussed training local talent to lead these advanced technical developments.\nKazakhstan aims to integrate AI into its economy through these new partnerships.\nWould you rely on robots built in a new tech hub?",
-          "keywords": [
-            "robotics industrial automation",
-            "people working in technology",
-            "modern office tech",
-            "humanoid robot moving"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Nvidia CEO targets Kazakhstan",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            },
-            {
-              "claim": "Nvidia CEO Jensen Huang proposed making Kazakhstan a global hub for physical AI.",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            },
-            {
-              "claim": "He met President Kassym-Jomart Tokayev to discuss this growth in Astana.",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            },
-            {
-              "claim": "Physical AI integrates software with robotics to interact with our world.",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            },
-            {
-              "claim": "Huang highlighted Kazakhstan as a strategic region for new data infrastructure.",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            },
-            {
-              "claim": "The President invited Nvidia to help build a national AI ecosystem.",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            },
-            {
-              "claim": "They discussed training local talent to lead these advanced technical developments.",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            },
-            {
-              "claim": "Kazakhstan aims to integrate AI into its economy through these new partnerships.",
-              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-23T22:09:34.606030+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1743,6 +1544,205 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Introducing Kimi K3.1 Pro: Advancing Open Intelligence",
+          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xdk6ow/introducing_kimi_k31_pro_advancing_open/",
+          "summary": "",
+          "source": "r/LocalLLaMA",
+          "published": "2026-10-23T17:20:05+00:00",
+          "buzz": "top of r/LocalLLaMA today",
+          "angle": "A new powerful open-source model 'Kimi K3.1 Pro' is trending as the latest big launch for local AI enthusiasts."
+        },
+        "draft": {
+          "title": "Moonshot AI Releases Kimi K3.1 Pro",
+          "hook_text": "Moonshot AI unveils Kimi K3.1 Pro",
+          "beats": [
+            {
+              "line": "Moonshot AI just launched Kimi K3.1 Pro to push open intelligence forward. It brings significant updates to their core model architecture.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Moonshot AI Kimi",
+              "outlet": "",
+              "domain": "moonshot.cn",
+              "headline": "",
+              "url": "https://kimi.moonshot.cn/",
+              "tag": "Kimi K3.1 Pro launch",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Moonshot AI",
+                  "domain": "moonshot.cn"
+                }
+              ]
+            },
+            {
+              "line": "This model supports a one million token context window. You can analyze vast amounts of data in one go.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1M",
+              "small": "token context window",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The team integrated enhanced reasoning capabilities into this release. It aims to handle more complex logic than the previous K3 version.",
+              "visual": "clip",
+              "query": "data processing server",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Enhanced reasoning capabilities",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Users can now leverage multi-modal inputs for deeper analysis. You can upload images and documents for the AI to process directly.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Kimi K3.1 Pro interface",
+              "outlet": "",
+              "domain": "moonshot.cn",
+              "headline": "",
+              "url": "https://kimi.moonshot.cn/",
+              "tag": "Multi-modal input support",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Moonshot AI",
+                  "domain": "moonshot.cn"
+                }
+              ]
+            },
+            {
+              "line": "Developers are testing these new features to see how they stack up against closed models. It is a major test for the open-source community.",
+              "visual": "clip",
+              "query": "software developer coding",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Testing open models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you switch your primary workflow to an open model?",
+              "visual": "clip",
+              "query": "person thinking",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Open versus closed models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Enthusiastic but measured, emphasizing the technical shift towards open access and large-scale data handling.",
+          "thin": false,
+          "caption": "Moonshot AI has released Kimi K3.1 Pro, featuring a 1 million token context window and improved multi-modal reasoning. This update aims to challenge closed-source models with more accessible power for developers. Would you switch your primary workflow to an open model?",
+          "hashtags": [
+            "MoonshotAI",
+            "KimiAI",
+            "OpenIntelligence",
+            "LLM",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1xdk6ow/introducing_kimi_k31_pro_advancing_open/"
+          ],
+          "script": "Moonshot AI just launched Kimi K3.1 Pro to push open intelligence forward. It brings significant updates to their core model architecture.\nThis model supports a one million token context window. You can analyze vast amounts of data in one go.\nThe team integrated enhanced reasoning capabilities into this release. It aims to handle more complex logic than the previous K3 version.\nUsers can now leverage multi-modal inputs for deeper analysis. You can upload images and documents for the AI to process directly.\nDevelopers are testing these new features to see how they stack up against closed models. It is a major test for the open-source community.\nWould you switch your primary workflow to an open model?",
+          "keywords": [
+            "data processing server",
+            "software developer coding",
+            "person thinking"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Moonshot AI unveils Kimi K3.1 Pro",
+              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
+            },
+            {
+              "claim": "Moonshot AI launched Kimi K3.1 Pro",
+              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
+            },
+            {
+              "claim": "Kimi K3.1 Pro supports a one million token context window",
+              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
+            },
+            {
+              "claim": "Kimi K3.1 Pro has enhanced reasoning capabilities compared to K3",
+              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
+            },
+            {
+              "claim": "Kimi K3.1 Pro supports multi-modal inputs including images and video",
+              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1xdk6ow/introducing_kimi_k31_pro_advancing_open/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-24T00:04:53.738582+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2231,8 +2231,8 @@
       "event": "Nvidia CEO Jensen Huang proposed turning Kazakhstan into a global hub for physical AI. He met President Kassym-Jomart Tokayev in Astana to discuss this strategic expansion. Physical AI integrates digital software with robotics to automate c"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-23T23:20+05:30",
@@ -2260,7 +2260,7 @@
   "report_day": "2026-10-23",
   "ig_count": {
     "day": "2026-10-24",
-    "at": "2026-10-24T00:02:39.565013+05:30",
+    "at": "2026-10-24T00:14:20.055534+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2284,12 +2284,12 @@
   "late_note_for": "2026-10-23-4",
   "gemini_use": {
     "day": "2026-10-24",
-    "calls": 47,
+    "calls": 53,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 30,
+        "ok": 36,
         "busy": 15,
         "other": 2,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2376,25 +2376,6 @@
     "gemini-flash-lite-latest": 1792756285.6907778
   },
   "editor_log": [
-    {
-      "at": "2026-10-23T15:08+05:30",
-      "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvi",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 9,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 9
-      },
-      "one_line": "Strong reporting and facts, but heavy visual repetition tanks the video quality.",
-      "fixes": [],
-      "visual": [
-        "line 1: Frames 1, 2, and 3 hold the exact same vehicle image for too long, violating the ~8 second",
-        "line 5: Frames 11, 12, and 13 repeat text-only layouts and hold static graphics with no visual pro"
-      ]
-    },
     {
       "at": "2026-10-23T15:10+05:30",
       "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvi",
@@ -2827,10 +2808,32 @@
         "line 2: Generic 'KT' placeholder icon is weak; use a real photo of the President.",
         "line 3: Visuals are static text-only slides; needs a clip or image of industrial robotics."
       ]
+    },
+    {
+      "at": "2026-10-24T00:14+05:30",
+      "title": "Introducing Kimi K3.1 Pro: Advancing Open Intelligence",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, informative content, but visual pacing is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 5: Replace 'closed models' with specific competitors like 'GPT-4o or Claude 3.5 Sonnet' for better impact."
+      ],
+      "visual": [
+        "line 1: The same static text screen is held for too long (0.5s to 7.2s).",
+        "line 3: The 'Enhanced reasoning' graphic is repeated across three frames (16.8s to 24.0s) without ",
+        "line 4: The 'Multi-modal input' graphic is repeated across two frames (28.8s to 31.2s) without cha"
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 57,
+  "fish_turn": 58,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
