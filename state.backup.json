@@ -1,80 +1,246 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "MiniMax-M3.1-Flash",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xd0fgs/minimaxm31flash/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-23T01:12:49+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "New MiniMax-M3.1-Flash model drops, offering blazing speed for local AI users."
-    },
-    {
-      "title": "LLMs are making formal software verification feasible at a much larger scale",
-      "link": "https://www.anthropic.com/research/formal-verification",
-      "summary": "",
-      "source": "anthropic.com",
-      "published": "2026-10-22T22:54:43+00:00",
-      "buzz": "Hacker News 341 points",
-      "angle": "Anthropic and LLMs are finally making formal software verification feasible at scale."
-    },
-    {
-      "title": "Meta's 816B Muse Spark Open scores 39 on Artificial Analysis, the 180B Qwen3.8-Flash-Next scores 40. Score vs size for 11 open-weight models",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on/",
-      "summary": "",
-      "source": "r/LocalLLaMA",
-      "published": "2026-10-22T20:14:06+00:00",
-      "buzz": "top of r/LocalLLaMA today",
-      "angle": "Meta's massive 816B Muse Spark Open goes head-to-head with Qwen's latest flash model."
-    }
-  ],
-  "choose_deadline": "2026-10-23T14:25:29.936407+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "LLMs are making formal software verification feasible at a much larger scale",
+    "link": "https://www.anthropic.com/research/formal-verification",
+    "summary": "",
+    "source": "anthropic.com",
+    "published": "2026-10-22T22:54:43+00:00",
+    "buzz": "Hacker News 341 points",
+    "angle": "Anthropic and LLMs are finally making formal software verification feasible at scale."
+  },
+  "draft": {
+    "title": "Anthropic Scales Formal Software Verification",
+    "hook_text": "Anthropic scaled formal code verification.",
+    "beats": [
+      {
+        "line": "Anthropic just scaled formal software verification using its Claude models.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Anthropic Claude",
+        "outlet": "",
+        "domain": "anthropic.com",
+        "headline": "",
+        "url": "https://www.anthropic.com/research/formal-verification",
+        "tag": "Anthropic scales verification",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          },
+          {
+            "name": "Claude",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "Engineers usually spend months writing tedious mathematical proofs to prove code safety.",
+        "visual": "clip",
+        "query": "developer writing code",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Months of proofs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Formal verification gives mathematical certainty that software has no critical bugs.",
+        "visual": "clip",
+        "query": "code scrolling on screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Mathematical certainty",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Anthropic proved that AI models can automate writing these complex logic proofs.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Anthropic Claude",
+        "outlet": "",
+        "domain": "anthropic.com",
+        "headline": "",
+        "url": "https://www.anthropic.com/research/formal-verification",
+        "tag": "Claude writes proofs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          },
+          {
+            "name": "Claude",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "The technique successfully verified real open source codebases at a much larger scale.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "anthropic.com",
+        "domain": "anthropic.com",
+        "headline": "Formal verification at scale",
+        "url": "",
+        "tag": "Verified open source",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "This removes major bottlenecks in building secure systems across the entire industry.",
+        "visual": "clip",
+        "query": "person looking at laptop screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Removing security bottlenecks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust an AI to prove your software never crashes?",
+        "visual": "clip",
+        "query": "engineer looking at monitor",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Trust AI with code",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "sharp and factual, highlighting the breakthrough in software safety without hype",
+    "thin": false,
+    "caption": "Anthropic used Claude to make formal software verification feasible at a much larger scale. This breakthrough automates the process of writing mathematical proofs for secure code. Would you trust AI to verify your software?",
+    "hashtags": [
+      "anthropic",
+      "claude",
+      "softwareengineering",
+      "coding",
+      "tech"
+    ],
+    "sources": [
+      "https://www.anthropic.com/research/formal-verification"
+    ],
+    "script": "Anthropic just scaled formal software verification using its Claude models.\nEngineers usually spend months writing tedious mathematical proofs to prove code safety.\nFormal verification gives mathematical certainty that software has no critical bugs.\nAnthropic proved that AI models can automate writing these complex logic proofs.\nThe technique successfully verified real open source codebases at a much larger scale.\nThis removes major bottlenecks in building secure systems across the entire industry.\nWould you trust an AI to prove your software never crashes?",
+    "keywords": [
+      "developer writing code",
+      "code scrolling on screen",
+      "person looking at laptop screen",
+      "engineer looking at monitor"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Anthropic scaled formal code verification.",
+        "url": "https://kingy.ai/blog/anthropic-formal-verification-claude-proofs/"
+      },
+      {
+        "claim": "Anthropic scaled formal software verification using its Claude models.",
+        "url": "https://www.anthropic.com/research/formal-verification"
+      },
+      {
+        "claim": "Engineers usually spend months writing tedious mathematical proofs to prove code safety.",
+        "url": "https://www.anthropic.com/research/formal-verification"
+      },
+      {
+        "claim": "Formal verification gives mathematical certainty that software has no critical bugs.",
+        "url": "https://www.anthropic.com/research/formal-verification"
+      },
+      {
+        "claim": "Anthropic proved that AI models can automate writing these complex logic proofs.",
+        "url": "https://www.anthropic.com/research/formal-verification"
+      },
+      {
+        "claim": "The technique successfully verified real open source codebases at a much larger scale.",
+        "url": "https://www.anthropic.com/research/formal-verification"
+      },
+      {
+        "claim": "This removes major bottlenecks in building secure systems across the entire industry.",
+        "url": "https://www.anthropic.com/research/formal-verification"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://www.anthropic.com/research/formal-verification"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
-      "video_file_id": "BAACAgUAAxkDAAIjXmrbICEt_Lp3vD9pCuu6qygbupiPAAJPIwAC323gVlEORzdezYvAPQQ",
-      "caption": "An AI request emits eight point five times more CO2 in Texas than in Sweden due to regional grid differences. Berget analyzed data center energy sources using WattTime and Klimatkollen data to reveal this climate gap. Would you route your queries to cleaner regions?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 news photo: berget.ai\n\n#berget #climatechange #datastorage #greenenergy",
-      "extra": false,
-      "meta": {
-        "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
-        "kind": "news",
-        "source": "berget.ai",
-        "engine": "fish",
-        "voice": "Ethan (Fish Audio)",
-        "person": false,
-        "words": 74,
-        "visuals": "2 official images, 5 cards",
-        "editor": 8.0,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-23T14:25+05:30"
-      },
-      "audio": {
-        "id": "673694952016127",
-        "title": "A Little Rizz (Reels Sound - Before And After)",
-        "artist": "POTG"
-      },
-      "post_at": "2026-10-23T14:26:29.337135+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-23T14:31:58.321123+05:30",
   "preview_deadline": null,
   "last_gender": "male",
-  "pending_offer": false,
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-23",
     "done": [
       "01:30",
       "04:30",
-      "09:30"
+      "09:30",
+      "14:30"
     ]
   },
   "pending_topic": null,
@@ -231,10 +397,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-10T16:31:12.976546+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-10T19:01:04.366403+05:30",
       "extra": false
@@ -470,28 +632,25 @@
     {
       "at": "2026-10-23T13:36:33.779529+05:30",
       "extra": false
-    }
-  ],
-  "spare": [
-    {
-      "title": "DeepSeek, MiniMax secure licences to deploy AI overseas under China export rules",
-      "link": "https://www.scmp.com/tech/policy/article/3371880/deepseek-minimax-secure-open-source-licenses-days-after-new-china-export-rules-state-media",
-      "summary": "DeepSeek, MiniMax secure licences to deploy AI overseas under China export rules South China Morning Post",
-      "source": "South China Morning Post",
-      "published": "2026-10-23T06:00:25+00:00",
-      "angle": "DeepSeek and MiniMax secure major export licenses to deploy AI overseas"
     },
     {
-      "title": "China AI model stocks' $150 billion drop shows no sign of easing",
-      "link": "https://www.moneycontrol.com/artificial-intelligence/china-ai-model-stocks-150-billion-drop-shows-no-sign-of-easing-article-14058068.html/amp",
-      "summary": "China AI model stocks' $150 billion drop shows no sign of easing Moneycontrol.com",
-      "source": "Moneycontrol.com",
-      "published": "2026-10-23T01:42:27+00:00",
-      "angle": "China AI model stocks suffer a massive $150 billion drop"
+      "at": "2026-10-23T14:32:34.231781+05:30",
+      "extra": false
+    }
+  ],
+  "paused": null,
+  "spare": [
+    {
+      "title": "Meta's 816B Muse Spark Open scores 39 on Artificial Analysis, the 180B Qwen3.8-Flash-Next scores 40. Score vs size for 11 open-weight models",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-22T20:14:06+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "Meta's massive 816B Muse Spark Open goes head-to-head with Qwen's latest flash model."
     }
   ],
   "tried": [
-    "Internet on Alert as AI Uncovers Critical Flaws in PHP Used by 70% of Websites",
     "HCLTech Launches NVIDIA-Powered Validation Offering for Software-Defined Vehicles",
     "Enterprises don’t need artificial general intelligence. They need artificial specific intelligence",
     "Eiliko maker says it’s hiring an ‘independent security firm’ after Verge report on its insecure robots",
@@ -550,208 +709,10 @@
     "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
     "‘Just the beginning’: New Mexico AG warns AI industry after $25B Meta ruling",
     "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-    "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs"
+    "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs",
+    "MiniMax-M3.1-Flash"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs",
-          "link": "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs",
-          "summary": "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs Analytics India Magazine",
-          "source": "Analytics India Magazine",
-          "published": "2026-10-23T06:54:47+00:00",
-          "angle": "A former OpenAI executive just raised $215 million to completely revolutionize drug research labs with AI."
-        },
-        "draft": {
-          "title": "Former OpenAI Exec Raises $215M",
-          "hook_text": "Two hundred fifteen million dollars for drug labs.",
-          "beats": [
-            {
-              "line": "A former OpenAI executive just raised two hundred fifteen million dollars.",
-              "visual": "clip",
-              "query": "business person in modern office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Two hundred fifteen million dollars",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The funding is going toward building AI powered drug research labs.",
-              "visual": "clip",
-              "query": "advanced laboratory equipment",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI powered drug labs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Analytics India Magazine reported that the round secures massive capital for the project.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Analytics India Magazine",
-              "domain": "analyticsindiamag.com",
-              "headline": "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs",
-              "url": "",
-              "tag": "Analytics India Magazine report",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Machine learning models will drive the biological research inside these facilities.",
-              "visual": "clip",
-              "query": "scientists looking at data screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Machine learning research",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The goal is to accelerate how new pharmaceutical treatments are discovered.",
-              "visual": "clip",
-              "query": "modern biotechnology laboratory",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Accelerating drug discovery",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you take a pill designed entirely by algorithms?",
-              "visual": "clip",
-              "query": "person holding medicine capsule",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Algorithmic drug design",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "curious and fast-paced, highlighting the massive capital and the shift from software to biology",
-          "thin": false,
-          "caption": "A former OpenAI executive raised 215 million dollars to build automated drug research labs powered by artificial intelligence. Analytics India Magazine reported on the massive funding round. Would you take a pill designed entirely by algorithms?",
-          "hashtags": [
-            "OpenAI",
-            "DrugDiscovery",
-            "Biotech",
-            "HealthTech"
-          ],
-          "sources": [
-            "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-          ],
-          "script": "A former OpenAI executive just raised two hundred fifteen million dollars.\nThe funding is going toward building AI powered drug research labs.\nAnalytics India Magazine reported that the round secures massive capital for the project.\nMachine learning models will drive the biological research inside these facilities.\nThe goal is to accelerate how new pharmaceutical treatments are discovered.\nWould you take a pill designed entirely by algorithms?",
-          "keywords": [
-            "business person in modern office",
-            "advanced laboratory equipment",
-            "scientists looking at data screen",
-            "modern biotechnology laboratory",
-            "person holding medicine capsule"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Two hundred fifteen million dollars for drug labs.",
-              "url": "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-            },
-            {
-              "claim": "A former OpenAI executive just raised two hundred fifteen million dollars.",
-              "url": "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-            },
-            {
-              "claim": "The funding is going toward building AI powered drug research labs.",
-              "url": "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-            },
-            {
-              "claim": "Analytics India Magazine reported that the round secures massive capital for the project.",
-              "url": "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-            },
-            {
-              "claim": "Machine learning models will drive the biological research inside these facilities.",
-              "url": "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-            },
-            {
-              "claim": "The goal is to accelerate how new pharmaceutical treatments are discovered.",
-              "url": "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://analyticsindiamag.com/ai-news/former-openai-exec-raises-215-mn-to-build-ai-powered-drug-research-labs"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-23T13:35:50.618175+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1401,10 +1362,56 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIjXmrbICEt_Lp3vD9pCuu6qygbupiPAAJPIwAC323gVlEORzdezYvAPQQ",
       "history_title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "MiniMax-M3.1-Flash",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xd0fgs/minimaxm31flash/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-23T01:12:49+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "New MiniMax-M3.1-Flash model drops, offering blazing speed for local AI users."
+          },
+          {
+            "title": "LLMs are making formal software verification feasible at a much larger scale",
+            "link": "https://www.anthropic.com/research/formal-verification",
+            "summary": "",
+            "source": "anthropic.com",
+            "published": "2026-10-22T22:54:43+00:00",
+            "buzz": "Hacker News 341 points",
+            "angle": "Anthropic and LLMs are finally making formal software verification feasible at scale."
+          },
+          {
+            "title": "Meta's 816B Muse Spark Open scores 39 on Artificial Analysis, the 180B Qwen3.8-Flash-Next scores 40. Score vs size for 11 open-weight models",
+            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on/",
+            "summary": "",
+            "source": "r/LocalLLaMA",
+            "published": "2026-10-22T20:14:06+00:00",
+            "buzz": "top of r/LocalLLaMA today",
+            "angle": "Meta's massive 816B Muse Spark Open goes head-to-head with Qwen's latest flash model."
+          }
+        ],
+        "choose_deadline": "2026-10-23T14:25:29.936407+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIa2GrTkFJ4rsjAdGC_YZX6BDLFmHXRAAK-IQACtYmgVidSDaYzPT2vPQQ",
     "BAACAgUAAxkDAAIa7GrTpNmTjsTCYHOEYKFZpAL9WSREAALdIQACtYmgVpqNg5SrjqAFPQQ",
     "BAACAgUAAxkDAAIbhGrUFVMnxIjvAAE37KZwjGtMkgV8JAAC0iUAAmqooVY4qzmHvUp2Rj0E",
     "BAACAgUAAxkDAAIb02rUYx0sCssoELN9SC5sl6QnOEyLAAKYJgACaqihVqSfgiwQr2rrPQQ",
@@ -1433,7 +1440,8 @@
     "BAACAgUAAxkDAAIgi2rYvRTa9rhpL0--MIvip2B7YP3rAALzIQACIdHJViPwvtCUMh9QPQQ",
     "BAACAgUAAxkDAAIhGmrZXGQ1QC_m82CCqQ0R13tSczhQAAK4IgACIdHJVtu4jDqOKYn2PQQ",
     "BAACAgUAAxkDAAIhK2rZdtAcg-gp54FZF5Q2DAABX6UzMQAC3yIAAiHRyVZXV_vWNizZhj0E",
-    "BAACAgUAAxkDAAIjRGrbExWBWaoVOyLSnEeR4tcoUGwHAALOIgAC323gVpyexLOy2yVQPQQ"
+    "BAACAgUAAxkDAAIjRGrbExWBWaoVOyLSnEeR4tcoUGwHAALOIgAC323gVpyexLOy2yVQPQQ",
+    "BAACAgUAAxkDAAIjXmrbICEt_Lp3vD9pCuu6qygbupiPAAJPIwAC323gVlEORzdezYvAPQQ"
   ],
   "history": [
     "OpenAI drops another batch of mathematical breakthroughs",
@@ -1910,7 +1918,7 @@
   "report_day": "2026-10-22",
   "ig_count": {
     "day": "2026-10-23",
-    "at": "2026-10-23T14:17:21.064304+05:30",
+    "at": "2026-10-23T14:31:58.321163+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -1934,7 +1942,7 @@
   "late_note_for": "2026-10-23-1",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 550,
+    "calls": 589,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1969,8 +1977,8 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 83,
-        "busy": 31,
+        "ok": 108,
+        "busy": 45,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
@@ -2486,6 +2494,7 @@
   "fish_turn": 37,
   "behind_since": "2026-10-23T00:31:13.488549+05:30",
   "ig_music_recent": [
-    "1209362676336144"
+    "1209362676336144",
+    "673694952016127"
   ]
 }
