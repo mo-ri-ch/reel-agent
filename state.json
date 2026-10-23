@@ -1,81 +1,220 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-      "source": "OpenAI News",
-      "published": "2026-10-23T17:00:00+00:00",
-      "angle": "OpenAI reveals how they scaled ChatGPT to 1 billion users with 12x faster read speeds."
-    },
-    {
-      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-      "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-      "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-23T16:52:55+00:00",
-      "angle": "Google may start using your personal Gmail and Photos data to target ads if you use their AI features."
-    },
-    {
-      "title": "Meta delays new business terms after publisher pushback on AI scraping",
-      "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-      "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms will go into effect on November 20th \"to allow […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-23T14:47:41+00:00",
-      "angle": "Meta forced to delay new terms after publishers fight back against AI scraping of their news."
-    }
-  ],
-  "choose_deadline": "2026-10-23T23:50:38.085972+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+    "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-23T16:52:55+00:00",
+    "angle": "Google may start using your personal Gmail and Photos data to target ads if you use their AI features."
+  },
+  "draft": {
+    "title": "Google Privacy Policy Change Explained",
+    "hook_text": "Google ads now target your data.",
+    "beats": [
+      {
+        "line": "Google just replaced your privacy with targeted ads. The update uses your photos and emails for advertising.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Google",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+        "tag": "Google updates ad policy",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "The change targets users interacting with its new personalized AI features.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Google Gemini",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://gemini.google.com",
+        "tag": "Personalized AI ads",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "This specifically creates an exception for your Gmail, Drive, and Google Photos data.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Google Photos",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://photos.google.com",
+        "tag": "Gmail Drive Photos data",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "Android Authority first spotted this shift in the company's internal documentation.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Android Authority",
+        "domain": "androidauthority.com",
+        "headline": "Google updates privacy policy for AI ads",
+        "url": "",
+        "tag": "Android Authority report",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Previously, the company explicitly promised not to use this private content for ads.",
+        "visual": "clip",
+        "query": "person looking at phone settings",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Previous ad promise",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "The update now links your private files directly to your advertising profile.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "100%",
+        "small": "personal data access",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Ad profile expansion",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "Will you keep using Google AI features?",
+        "visual": "clip",
+        "query": "person deciding on smartphone",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Future of Google AI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      }
+    ],
+    "delivery": "Serious and direct, highlighting the privacy trade-off with a tone of concern.",
+    "thin": false,
+    "caption": "Google has updated its privacy policy to allow the use of your Gmail, Drive, and Photos data for personalized AI ads. This marks a significant reversal of previous promises regarding private user content. Will you keep using Google AI features?",
+    "hashtags": [
+      "Google",
+      "Privacy",
+      "ArtificialIntelligence",
+      "DataPrivacy",
+      "TechNews"
+    ],
+    "sources": [
+      "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+    ],
+    "script": "Google just replaced your privacy with targeted ads. The update uses your photos and emails for advertising.\nThe change targets users interacting with its new personalized AI features.\nThis specifically creates an exception for your Gmail, Drive, and Google Photos data.\nAndroid Authority first spotted this shift in the company's internal documentation.\nPreviously, the company explicitly promised not to use this private content for ads.\nThe update now links your private files directly to your advertising profile.\nWill you keep using Google AI features?",
+    "keywords": [
+      "person looking at phone settings",
+      "person deciding on smartphone"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "hook_before": "Google just updated its privacy policy to use your personal data for ads.",
+    "hook_score": 52,
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
-      "video_file_id": "BAACAgUAAxkDAAIknmrblwPTP__VL4HwHlg00I_6j1YDAAJXJQAC323gVkYY5IlGih4zPQQ",
-      "caption": "Nvidia CEO Jensen Huang met with President Kassym-Jomart Tokayev to propose Kazakhstan as a global hub for physical AI. The government is now accelerating its national AI development strategy and prioritizing digital training for the local workforce. Could this collaboration transform Kazakhstan into a key node in the global AI supply chain?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#Nvidia #Kazakhstan #PhysicalAI #JensenHuang #TechNews",
-      "extra": false,
-      "meta": {
-        "title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
-        "kind": "news",
-        "source": "The Astana Times",
-        "engine": "fish",
-        "voice": "Ethan (Fish Audio)",
-        "person": true,
-        "words": 89,
-        "visuals": "7 cards",
-        "editor": 8.5,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-23T23:20+05:30"
-      },
-      "audio": {
-        "id": "978387268348288",
-        "title": "Cloudlight",
-        "artist": "Fellow Travelers"
-      },
-      "post_at": "2026-10-24T00:30:00+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-24T00:02:39.564934+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
-    "date": "2026-10-23",
-    "done": [
-      "01:30",
-      "04:30",
-      "09:30",
-      "14:30",
-      "19:30",
-      "22:30"
-    ]
+    "date": "2026-10-24",
+    "done": []
   },
   "pending_topic": null,
   "held": [
@@ -475,24 +614,15 @@
   "paused": null,
   "spare": [
     {
-      "title": "1Password launches secure sign-in platform for artificial intelligence agents",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQenNEdjg4YjkzOC1PWlV4VkJRUWFVYTN3XzNRV242QWFPb0xGSlUwS3UzVUVXMzB0NjAyckFLLUpmR2dtSzdMakJ0S3RPanF1d09WQk0ySW5xeDQ0ZjRKN052YlZwLURDYmEtZGlhNXpoZk54MDJSRDVxVDlSbWppTFdnY1BIREY2WEliM0xMZjRXZUVzZFZQdmFKZ0tpUTZNVzlnVTU2QWlkdjA?oc=5",
-      "summary": "1Password launches secure sign-in platform for artificial intelligence agents SC Media",
-      "source": "SC Media",
-      "published": "2026-10-23T13:25:55+00:00",
-      "angle": "1Password is launching a dedicated security platform specifically for AI agents, addressing the growing risk of AI-driven cyber threats."
-    },
-    {
       "title": "Meta delays new business terms after publisher pushback on AI scraping",
       "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
       "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms will go into effect on November 20th \"to allow […]",
       "source": "AI | The Verge",
       "published": "2026-10-23T14:47:41+00:00",
-      "angle": "Meta is backing down on new business terms after publishers fought back against AI scraping concerns."
+      "angle": "Meta forced to delay new terms after publishers fight back against AI scraping of their news."
     }
   ],
   "tried": [
-    "Canva releases its first image generation model",
     "OpenAI makes its Jev competitor widely available as decision model competition heats up",
     "Claude Duet app is Anthropic’s bet on agents",
     "Nvidia, UW Institute for Protein Design Unveil Open-Source Protein Design AI Model",
@@ -551,54 +681,10 @@
     "Retro gaming is being overrun with AI",
     "Anthropic reveals deceptive behavior of an artificial intelligence model during a security test",
     "Not Intel. Not CoreWeave. This Underappreciated Nvidia-Backed Company Is Growing Artificial Intelligence (AI) Revenue by 123%. Here's Why It's a Buy Today for $8.",
-    "Her 6-year-old brought home an AI-generated photo from school. This mom isn’t having it"
+    "Her 6-year-old brought home an AI-generated photo from school. This mom isn’t having it",
+    "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Anthropic reveals deceptive behavior of an artificial intelligence model during a security test",
-            "link": "https://www.arabictrader.com/en/news/stock-market/233783/anthropic-reveals-deceptive-behavior-of-an-artificial-intelligence-model-during-a-security-test",
-            "summary": "Anthropic reveals deceptive behavior of an artificial intelligence model during a security test المتداول العربي",
-            "source": "المتداول العربي",
-            "published": "2026-10-23T14:36:17+00:00",
-            "angle": "Anthropic confirms AI models can act deceptively during security tests—a major red flag for safety."
-          },
-          {
-            "title": "Not Intel. Not CoreWeave. This Underappreciated Nvidia-Backed Company Is Growing Artificial Intelligence (AI) Revenue by 123%. Here's Why It's a Buy Today for $8.",
-            "link": "https://finance.yahoo.com/technology/ai/articles/not-intel-not-coreweave-underappreciated-145000623.html",
-            "summary": "Not Intel. Not CoreWeave. This Underappreciated Nvidia-Backed Company Is Growing Artificial Intelligence (AI) Revenue by 123%. Here's Why It's a Buy Today for $8. Yahoo Finance",
-            "source": "Yahoo Finance",
-            "published": "2026-10-23T14:50:00+00:00",
-            "angle": "This Nvidia-backed company is growing its AI revenue by 123%, proving where the real money is moving."
-          },
-          {
-            "title": "Her 6-year-old brought home an AI-generated photo from school. This mom isn’t having it",
-            "link": "https://www.usatoday.com/story/life/health-wellness/2026/10/23/schools-embracing-ai-parents-worried/92359840007/",
-            "summary": "Her 6-year-old brought home an AI-generated photo from school. This mom isn’t having it USA Today",
-            "source": "USA Today",
-            "published": "2026-10-23T13:27:00+00:00",
-            "angle": "Parents are fighting back as AI-generated content starts showing up in elementary school classrooms."
-          }
-        ],
-        "choose_deadline": "2026-10-23T21:31:21.599073+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1622,6 +1708,50 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIknmrblwPTP__VL4HwHlg00I_6j1YDAAJXJQAC323gVkYY5IlGih4zPQQ",
       "history_title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+            "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+            "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+            "source": "OpenAI News",
+            "published": "2026-10-23T17:00:00+00:00",
+            "angle": "OpenAI reveals how they scaled ChatGPT to 1 billion users with 12x faster read speeds."
+          },
+          {
+            "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+            "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+            "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-23T16:52:55+00:00",
+            "angle": "Google may start using your personal Gmail and Photos data to target ads if you use their AI features."
+          },
+          {
+            "title": "Meta delays new business terms after publisher pushback on AI scraping",
+            "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+            "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms will go into effect on November 20th \"to allow […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-23T14:47:41+00:00",
+            "angle": "Meta forced to delay new terms after publishers fight back against AI scraping of their news."
+          }
+        ],
+        "choose_deadline": "2026-10-23T23:50:38.085972+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2138,12 +2268,12 @@
   "last_engine": "microsoft",
   "report_day": "2026-10-23",
   "ig_count": {
-    "day": "2026-10-23",
-    "at": "2026-10-23T23:45:30.448941+05:30",
-    "count": 6
+    "day": "2026-10-24",
+    "at": "2026-10-24T00:02:39.565013+05:30",
+    "count": 0
   },
   "repeat_check_day": "2026-10-04",
-  "repeat_check2_day": "2026-10-23",
+  "repeat_check2_day": "2026-10-24",
   "late_alarm_day": "2026-10-23",
   "stats_day": "2026-10-23",
   "perm_told": true,
@@ -2158,65 +2288,24 @@
     }
   ],
   "engine_used": "fish",
-  "token_day": "2026-10-23",
+  "token_day": "2026-10-24",
   "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-23-4",
   "gemini_use": {
-    "day": "2026-10-23",
-    "calls": 996,
+    "day": "2026-10-24",
+    "calls": 31,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 226,
-        "busy": 128,
-        "other": 189,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
-      },
-      "gemini-3.6-flash": {
-        "ok": 2,
-        "busy": 2,
-        "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.7-flash": {
-        "ok": 0,
-        "busy": 2,
-        "other": 1,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.5-flash": {
-        "ok": 0,
-        "busy": 2,
-        "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3-flash-preview": {
-        "ok": 6,
-        "busy": 12,
-        "other": 5,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.5-flash-lite": {
-        "ok": 281,
-        "busy": 132,
-        "other": 5,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-flash-lite-latest": {
-        "ok": 1,
-        "busy": 2,
-        "other": 0,
+        "ok": 19,
+        "busy": 10,
+        "other": 2,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "21:57",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-23"
-    },
     {
       "at": "22:01",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2261,6 +2350,11 @@
       "at": "16:42",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-23"
+    },
+    {
+      "at": "18:30",
+      "error": "gemini-3.1-flash-lite didn't answer (ReadTimeout)",
+      "day": "2026-10-24"
     }
   ],
   "last_script_error": {
