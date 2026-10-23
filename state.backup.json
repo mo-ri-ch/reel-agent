@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -217,16 +217,71 @@
     "editor_rounds": 1,
     "source_links": [
       "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "978387268348288",
+      "title": "Cloudlight",
+      "artist": "Fellow Travelers"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "He met President Kassym-Jomart Tokayev in Astana t…: The visual is a blank card with only the word 'Meeting' on it, failing to show the required person.",
+      "Physical AI integrates digital software with robot…: The visual is a broken/unreadable image showing a robotic arm holding a wine glass, which is unrelated to the line.",
+      "Huang highlighted Kazakhstan's potential to become…: The visual is a blank card, failing to show the required photo of Astana.",
+      "The government is currently prioritizing advanced …: The visual is a blank card, failing to show the required stock video.",
+      "Could this collaboration transform Kazakhstan into…: The visual is a blank card, failing to show the required source card.",
+      "The shot shows an Nvidia logo instead of a photo of Jensen Huang or an initials card.",
+      "The shot is blank/empty except for the word 'Meeting' and does not show the required person or initials card.",
+      "The shot is a text card and does not show the required stock video of an industrial robotics arm.",
+      "The shot is a text card and does not show the required photo of Astana, Kazakhstan.",
+      "The shot is a text card and does not show the required stock video of a data center.",
+      "The shot is a text card and does not show the required stock video of students coding.",
+      "The shot is a text card and does not show the required source card for The Astana Times."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, informative content, but visuals are repetitive and lack dynamic, relevant imagery.",
+      "script_fixes": [
+        "LINE 7: Replace with a more direct question about the specific infrastructure investment."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The same title screen is held for too long across three frames.",
+        "line 2: Generic 'KT' placeholder icon is weak; use a real photo of the President.",
+        "line 3: Visuals are static text-only slides; needs a clip or image of industrial robotics.",
+        "line 4: Repetitive use of the same 'Regional AI leader' graphic.",
+        "line 5: Repetitive use of the same 'National AI strategy' graphic.",
+        "line 6: Repetitive use of the same 'Digital skills focus' graphic."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIknmrblwPTP__VL4HwHlg00I_6j1YDAAJXJQAC323gVkYY5IlGih4zPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T22:40:43.330817+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-23T23:18:59.951499+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-23",
@@ -717,246 +772,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Uber puts all 30,000 employees on ChatGPT Work",
-          "link": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-          "summary": "The ride-share giant previously deployed a much smaller pilot for ChatGPT Work but is now taking the enterprise agent company-wide.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-22T16:00:00+00:00",
-          "angle": "Uber is officially putting all 30,000 employees on ChatGPT Work—the biggest sign yet that corporate AI is going mainstream."
-        },
-        "draft": {
-          "title": "Uber gives ChatGPT Work to 30,000 staff",
-          "hook_text": "Uber just onboarded 30,000 employees to ChatGPT",
-          "beats": [
-            {
-              "line": "Thirty thousand Uber employees just gained full access to ChatGPT Work.",
-              "visual": "clip",
-              "query": "office workers using laptops",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "30,000 employees",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Uber",
-                  "domain": "uber.com"
-                },
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Uber is moving from a limited pilot to an enterprise-wide rollout.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Uber logo",
-              "outlet": "",
-              "domain": "uber.com",
-              "headline": "",
-              "url": "https://www.uber.com",
-              "tag": "Enterprise rollout",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Uber",
-                  "domain": "uber.com"
-                }
-              ]
-            },
-            {
-              "line": "This move follows a smaller pilot program launched earlier this year.",
-              "visual": "clip",
-              "query": "tech company office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Following pilot",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Uber",
-                  "domain": "uber.com"
-                }
-              ]
-            },
-            {
-              "line": "The company is betting big on AI to boost productivity across its global workforce.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "30,000",
-              "small": "total staff",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Global workforce",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Uber",
-                  "domain": "uber.com"
-                }
-              ]
-            },
-            {
-              "line": "Executives expect this deployment to shift how teams handle day-to-day operations.",
-              "visual": "clip",
-              "query": "business professional working",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Shifting operations",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Uber",
-                  "domain": "uber.com"
-                }
-              ]
-            },
-            {
-              "line": "The decision underscores the rapid adoption of enterprise AI tools in major corporations.",
-              "visual": "clip",
-              "query": "data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Rapid AI adoption",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you want your company to provide AI access to all staff?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Uber puts all 30,000 employees on ChatGPT Work",
-              "url": "",
-              "tag": "Would you use AI?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast, energetic, and informative, focusing on the scale of the rollout.",
-          "thin": false,
-          "caption": "Uber has officially expanded its ChatGPT Work access to all 30,000 employees following a successful pilot program. This move marks a major shift toward enterprise AI adoption for the company. Would you want your company to provide AI access to all staff?",
-          "hashtags": [
-            "Uber",
-            "ChatGPT",
-            "OpenAI",
-            "TechNews",
-            "EnterpriseAI"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-          ],
-          "script": "Thirty thousand Uber employees just gained full access to ChatGPT Work.\nUber is moving from a limited pilot to an enterprise-wide rollout.\nThis move follows a smaller pilot program launched earlier this year.\nThe company is betting big on AI to boost productivity across its global workforce.\nExecutives expect this deployment to shift how teams handle day-to-day operations.\nThe decision underscores the rapid adoption of enterprise AI tools in major corporations.\nWould you want your company to provide AI access to all staff?",
-          "keywords": [
-            "office workers using laptops",
-            "tech company office",
-            "business professional working",
-            "data center"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Uber onboarded 30,000 employees to ChatGPT",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            },
-            {
-              "claim": "Thirty thousand Uber employees gained full access to ChatGPT Work",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            },
-            {
-              "claim": "Uber is moving from a limited pilot to an enterprise-wide rollout",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            },
-            {
-              "claim": "This move follows a smaller pilot program launched earlier this year",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            },
-            {
-              "claim": "Uber has 30,000 employees",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            },
-            {
-              "claim": "Executives expect this deployment to shift how teams handle day-to-day operations",
-              "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-23T20:45:26.156361+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1796,6 +1611,239 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEgwdU55dmhLNUlxSUFNSmNWdXcyeE1DOVU2VURhRmhrb01meVVRWkd0S1F1YTNwWjhLbk9yVGZaNWw4ZDJaNnFEVUowLXlDalFHZGtRSFVVLV90ZU1VNTMtQlBzRnI1eUJhRFBYcmxsSG9Sd2JNemtxSWhKOWw0QVVQb2ZwWXZ6NDlnVFg4VThpQkxheF8wdw?oc=5",
+          "summary": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI The Astana Times",
+          "source": "The Astana Times",
+          "published": "2026-10-23T14:31:25+00:00",
+          "angle": "Nvidia CEO Jensen Huang is pushing to turn Kazakhstan into a global hub for physical AI infrastructure."
+        },
+        "draft": {
+          "title": "Nvidia CEO Eyes Kazakhstan for Physical AI",
+          "hook_text": "Nvidia targets Kazakhstan for AI",
+          "beats": [
+            {
+              "line": "Nvidia CEO Jensen Huang proposed turning Kazakhstan into a global hub for physical AI.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.nvidia.com/en-us/about/leadership/",
+              "tag": "Jensen Huang's proposal",
+              "name": "Jensen Huang",
+              "role": "CEO, Nvidia",
+              "x": "nvidia",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "He met President Kassym-Jomart Tokayev in Astana to discuss this strategic expansion.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.akorda.kz/en",
+              "tag": "Meeting in Astana",
+              "name": "Kassym-Jomart Tokayev",
+              "role": "President of Kazakhstan",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Physical AI integrates digital software with robotics to automate complex industrial tasks.",
+              "visual": "clip",
+              "query": "industrial robotics arm",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "What is physical AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Huang highlighted Kazakhstan's potential to become a regional leader in AI infrastructure.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Astana, Kazakhstan",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Regional AI leader",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Tokayev confirmed the country is now accelerating its national AI development strategy.",
+              "visual": "clip",
+              "query": "modern industrial data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "National AI strategy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The government is currently prioritizing advanced digital training for its local workforce.",
+              "visual": "clip",
+              "query": "students coding in classroom",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Digital skills focus",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Could this collaboration transform Kazakhstan into a key node in the global AI supply chain?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Astana Times",
+              "domain": "astanatimes.com",
+              "headline": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
+              "url": "",
+              "tag": "Global AI supply chain",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Professional and measured, shifting from the bold proposal to the long-term strategic implications of the partnership.",
+          "thin": false,
+          "caption": "Nvidia CEO Jensen Huang met with President Kassym-Jomart Tokayev to propose Kazakhstan as a global hub for physical AI. The government is now accelerating its national AI development strategy and prioritizing digital training for the local workforce. Could this collaboration transform Kazakhstan into a key node in the global AI supply chain?",
+          "hashtags": [
+            "Nvidia",
+            "Kazakhstan",
+            "PhysicalAI",
+            "JensenHuang",
+            "TechNews"
+          ],
+          "sources": [
+            "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+          ],
+          "script": "Nvidia CEO Jensen Huang proposed turning Kazakhstan into a global hub for physical AI.\nHe met President Kassym-Jomart Tokayev in Astana to discuss this strategic expansion.\nPhysical AI integrates digital software with robotics to automate complex industrial tasks.\nHuang highlighted Kazakhstan's potential to become a regional leader in AI infrastructure.\nTokayev confirmed the country is now accelerating its national AI development strategy.\nThe government is currently prioritizing advanced digital training for its local workforce.\nCould this collaboration transform Kazakhstan into a key node in the global AI supply chain?",
+          "keywords": [
+            "industrial robotics arm",
+            "modern industrial data center",
+            "students coding in classroom"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia targets Kazakhstan for AI",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "Nvidia CEO Jensen Huang proposed turning Kazakhstan into a global hub for physical AI.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "Jensen Huang is the CEO of Nvidia.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "He met President Kassym-Jomart Tokayev in Astana to discuss this strategic expansion.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "Kassym-Jomart Tokayev is the President of Kazakhstan.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "Physical AI integrates digital software with robotics to automate complex industrial tasks.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "Huang highlighted Kazakhstan's potential to become a regional leader in AI infrastructure.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "Tokayev confirmed the country is now accelerating its national AI development strategy.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            },
+            {
+              "claim": "The government is currently prioritizing advanced digital training for its local workforce.",
+              "url": "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://astanatimes.com/2026/10/nvidia-ceo-proposes-kazakhstan-as-global-hub-for-physical-ai/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-23T22:40:43.330817+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2285,7 +2333,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-23T21:00+05:30",
@@ -2313,7 +2361,7 @@
   "report_day": "2026-10-23",
   "ig_count": {
     "day": "2026-10-23",
-    "at": "2026-10-23T22:21:08.933641+05:30",
+    "at": "2026-10-23T22:41:02.088964+05:30",
     "count": 6
   },
   "repeat_check_day": "2026-10-04",
@@ -2333,16 +2381,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-23",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-23-4",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 985,
+    "calls": 994,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 215,
+        "ok": 224,
         "busy": 128,
         "other": 189,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
@@ -2465,27 +2513,6 @@
     "gemini-flash-lite-latest": 1792756285.6907778
   },
   "editor_log": [
-    {
-      "at": "2026-10-23T14:40+05:30",
-      "title": "LLMs are making formal software verification feasible at a much larger scale",
-      "overall": 8.0,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 7,
-        "flow": 8
-      },
-      "one_line": "Strong technical breakthrough covered well, but visual repetition on codebases lowers the score.",
-      "fixes": [
-        "LINE 1: specify the model version, like Claude 3.5 Sonnet, instead of just Claude models."
-      ],
-      "visual": [
-        "line 5: Generic Anthropic logo and text repeat earlier branding without showing codebases or proof",
-        "line 6: Reused static card style without illustrating real-world code or software engineering bott"
-      ]
-    },
     {
       "at": "2026-10-23T15:08+05:30",
       "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvi",
@@ -2915,10 +2942,32 @@
         "line 2: The 'KT' placeholder is generic and lacks the professional impact required for a premium n",
         "line 6: The visual remains static for too long, repeating the same 'Training' text across three fr"
       ]
+    },
+    {
+      "at": "2026-10-23T22:48+05:30",
+      "title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, informative content, but visuals are repetitive and lack dynamic, relevant imagery.",
+      "fixes": [
+        "LINE 7: Replace with a more direct question about the specific infrastructure investment."
+      ],
+      "visual": [
+        "line 1: The same title screen is held for too long across three frames.",
+        "line 2: Generic 'KT' placeholder icon is weak; use a real photo of the President.",
+        "line 3: Visuals are static text-only slides; needs a clip or image of industrial robotics."
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 56,
+  "fish_turn": 57,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
