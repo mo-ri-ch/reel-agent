@@ -522,6 +522,7 @@ def make_specific(draft, topic):
 
 RUN_START = time.time()
 RUN_BUDGET = 15 * 60  # a GitHub job is stopped after 30 minutes and then saves nothing: leave room for the reel
+writer.DEADLINE[0] = RUN_START + 22 * 60  # Gemini never waits past this: the run must save before GitHub stops it
 
 
 def next_story(s, reason=""):
@@ -1695,6 +1696,7 @@ def choose_ig_music(s):
 def cmd_render():
     import tts
     import video
+    writer.DEADLINE[0] = time.time() + 18 * 60  # the install step already used part of the job's 30 minutes
     s = st.load()
     backup_budget(s)
     try:
@@ -1876,7 +1878,7 @@ def editor_step(s, out, rerender):
         except Exception as e:
             print(f"Editor review failed (try {attempt + 1}): {e}")
             if attempt < 2:
-                time.sleep(EDITOR_RETRY_WAIT)
+                time.sleep(max(0, min(EDITOR_RETRY_WAIT, writer.time_left() - 60)))
     if rev is None:  # owner: every reel is reviewed before posting; a late reviewed reel beats an unreviewed one
         raise RuntimeError("the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly")
     d["editor"] = rev

@@ -80,6 +80,13 @@ MISSING = set()   # model names this key can't use (404)
 MODEL_USE = {}    # model -> {"ok": n, "busy": n, "other": n} in this run
 
 
+DEADLINE = [0.0]  # epoch seconds: no Gemini waiting past this (main.py sets it; a GitHub job is killed at 30 min)
+
+
+def time_left():
+    return (DEADLINE[0] - time.time()) if DEADLINE[0] else 1e9
+
+
 def retry_delay(text, default=20, cap=60):
     """Seconds Google asks us to wait after a per-minute limit ("retryDelay": "34s")."""
     m = re.search(r'retryDelay"?\s*:\s*"?(\d+(?:\.\d+)?)s', text or "")
@@ -143,9 +150,12 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
             body["generationConfig"]["responseMimeType"] = "application/json"
         overloaded = 0
         for attempt in range(5):
+            if time_left() < 20:
+                raise RuntimeError("out of time for this run (the next run continues)")
             CALLS[0] += 1
             try:
-                r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body, timeout=120)
+                r = requests.post(url, headers={"x-goog-api-key": GEMINI_API_KEY}, json=body,
+                                  timeout=max(20, min(120, time_left() - 10)))
             except requests.exceptions.RequestException as e:  # hung or dropped: hand the job to the next model
                 note_model(model, 0, type(e).__name__)
                 last = f"{model} didn't answer ({type(e).__name__})"
@@ -172,7 +182,7 @@ def ask(prompt, search=False, temperature=0.8, json_mode=False, light=False):
                     break
                 if attempt >= 2:
                     break  # still busy: try the next model
-                time.sleep(retry_delay(r.text))  # per-minute limit (Flash ~5/min): wait as long as Google asks
+                time.sleep(max(0, min(retry_delay(r.text), time_left() - 30)))  # per-minute limit: wait as asked
                 continue
             if r.status_code == 404:
                 MISSING.add(model)
