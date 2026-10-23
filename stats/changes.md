@@ -183,3 +183,11 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 21 Oct: real article screenshots (scrolling) for source lines. Metric: editor visuals score (baseline median 6), avg watch time.
 - 21 Oct: Instagram trending music via the Audio API (replaces our own track; falls back to it). Metric: reach, avg watch time.
 - 21 Oct night: product-page screenshots for official lines; company logo instead of initials; strict stock-clip picking. Metric: editor visuals (median 6).
+
+## 2026-10-23: daily check
+- No failed runs in 24 h (43 cancelled = overlapping 5-min runs). Last post 22 Oct 16:31; 21:30, 00:30, 03:30, 06:30 missed and
+  11:30 will be too (free Gemini used up until the 12:30 IST reset).
+- Cause: the editor passed 0 of 23 reels since 22 Oct 11:00 IST (19 Oct - 22 Oct 10:00: about 2 in 5). It began right after the
+  22 Oct rubric line "unrelated picture -> visuals 5 or less" (607a946): visuals now mostly 4. Asked the owner whether to undo that
+  line (the opening-photo check stays; pass mark unchanged). Not changed without his OK (hard rule 4).
+- Fix: terms/privacy/consent pages are never used as product-page or article screenshots. Metric: editor visuals (median 4 since 22 Oct 11:00).
