@@ -13,7 +13,7 @@
     "angle": "Major government offices in Sweden are banning ChatGPT and Claude, sparking a massive debate on workplace privacy."
   },
   "draft": {
-    "title": "Sweden Bans ChatGPT in Government Offices",
+    "title": "Sweden Bans ChatGPT and Claude",
     "hook_text": "Sweden bans ChatGPT and Claude",
     "beats": [
       {
@@ -44,7 +44,7 @@
         ]
       },
       {
-        "line": "The Government Offices of Sweden implemented this rule to secure internal information.",
+        "line": "The Government Offices of Sweden implemented this rule to secure sensitive internal information.",
         "visual": "photo",
         "query": "technology",
         "prompt": "",
@@ -56,24 +56,6 @@
         "headline": "",
         "url": "",
         "tag": "Securing internal information",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This restriction follows a broader shift across national agencies regarding digital security.",
-        "visual": "clip",
-        "query": "government office building",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Broader digital security shift",
         "name": "",
         "role": "",
         "x": "",
@@ -98,7 +80,7 @@
         "brands": []
       },
       {
-        "line": "Officials now require employees to use internal, approved software for sensitive tasks.",
+        "line": "Employees must now use internal, approved software for all professional tasks.",
         "visual": "clip",
         "query": "person typing on laptop",
         "prompt": "",
@@ -109,7 +91,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Use internal software",
+        "tag": "Approved software only",
         "name": "",
         "role": "",
         "x": "",
@@ -121,23 +103,23 @@
         "query": "technology",
         "prompt": "",
         "big": "3",
-        "small": "key agencies restricting use",
+        "small": "agencies restricting use",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Service Centre restrictions",
+        "tag": "3 agencies restricting use",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Would you trust a public official using AI to draft internal reports?",
-        "visual": "image",
-        "query": "technology",
-        "prompt": "modern clean office desk in Stockholm with a laptop and documents",
+        "line": "Would you trust a public official to handle your data without AI oversight?",
+        "visual": "clip",
+        "query": "security lock on computer",
+        "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
@@ -145,7 +127,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Drafting internal reports",
+        "tag": "Trust in data security",
         "name": "",
         "role": "",
         "x": "",
@@ -154,7 +136,7 @@
     ],
     "delivery": "Neutral, investigative, and sharp; keep it professional as a tech news update.",
     "thin": false,
-    "caption": "The Swedish Government Offices have banned ChatGPT and Claude to protect sensitive internal data. The Tax Agency and National Government Service Centre have also implemented similar usage restrictions. Would you trust a public official using AI to draft internal reports?",
+    "caption": "The Swedish Government Offices have banned ChatGPT and Claude to protect sensitive internal data. The Tax Agency and National Government Service Centre have also implemented similar usage restrictions. Would you trust a public official to handle your data without AI oversight?",
     "hashtags": [
       "Sweden",
       "ChatGPT",
@@ -165,14 +147,12 @@
     "sources": [
       "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet"
     ],
-    "script": "Sweden just banned ChatGPT and Claude from government offices.\nThe Government Offices of Sweden implemented this rule to secure internal information.\nThis restriction follows a broader shift across national agencies regarding digital security.\nThe Swedish Tax Agency already enforced a similar ban on these generative tools.\nOfficials now require employees to use internal, approved software for sensitive tasks.\nThe National Government Service Centre also joined these specific usage restrictions.\nWould you trust a public official using AI to draft internal reports?",
+    "script": "Sweden just banned ChatGPT and Claude from government offices.\nThe Government Offices of Sweden implemented this rule to secure sensitive internal information.\nThe Swedish Tax Agency already enforced a similar ban on these generative tools.\nEmployees must now use internal, approved software for all professional tasks.\nThe National Government Service Centre also joined these specific usage restrictions.\nWould you trust a public official to handle your data without AI oversight?",
     "keywords": [
-      "government office building",
-      "person typing on laptop"
+      "person typing on laptop",
+      "security lock on computer"
     ],
-    "image_prompts": [
-      "modern clean office desk in Stockholm with a laptop and documents"
-    ],
+    "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
@@ -184,7 +164,7 @@
         "url": "https://www.azernews.az/region/266078.html"
       },
       {
-        "claim": "The Government Offices of Sweden implemented this rule to secure internal information.",
+        "claim": "The Government Offices of Sweden implemented this rule to secure sensitive internal information.",
         "url": "https://www.azernews.az/region/266078.html"
       },
       {
@@ -192,7 +172,7 @@
         "url": "https://www.azernews.az/region/266078.html"
       },
       {
-        "claim": "Officials now require employees to use internal, approved software for sensitive tasks.",
+        "claim": "Employees must now use internal, approved software for all professional tasks.",
         "url": "https://www.azernews.az/region/266078.html"
       },
       {
@@ -202,7 +182,8 @@
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet"
     ]
@@ -212,17 +193,18 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T19:27:02.005936+05:30",
+  "script_deadline": "2026-10-23T19:46:51.510018+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
-  "pending_offer": false,
+  "last_gender": "female",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-10-23",
     "done": [
       "01:30",
       "04:30",
       "09:30",
-      "14:30"
+      "14:30",
+      "19:30"
     ]
   },
   "pending_topic": null,
@@ -701,51 +683,6 @@
         "stage": "choosing",
         "candidates": [
           {
-            "title": "Infosys AI Revenue Rises 29% in Q2, FY27 Growth Guidance Cut",
-            "link": "https://analyticsindiamag.com/ai-news/infosys-ai-revenue-rises-29-in-q2-fy27-growth-guidance-cut",
-            "summary": "Infosys AI Revenue Rises 29% in Q2, FY27 Growth Guidance Cut Analytics India Magazine",
-            "source": "Analytics India Magazine",
-            "published": "2026-10-23T11:18:00+00:00",
-            "angle": "Infosys AI revenue jumps 29% as enterprise adoption hits a massive financial milestone."
-          },
-          {
-            "title": "Agent Hunt",
-            "link": "https://www.producthunt.com/products/monid",
-            "summary": "Live rankings of the tools AI agents use most Discussion | Link",
-            "source": "Product Hunt — The best new products, every day",
-            "published": "2026-10-23T04:03:20+00:00",
-            "buzz": "Product Hunt launch",
-            "angle": "Agent Hunt launches: A live leaderboard tracking the most powerful AI agents being used right now."
-          },
-          {
-            "title": "Microsoft working to reduce AI costs, expand ecosystem as global adoption rises",
-            "link": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/microsoft-working-to-reduce-ai-costs-expand-ecosystem-as-global-adoption-rises/135132142?utm_source=portal_category_widget&utm_medium=homepage",
-            "summary": "Microsoft working to reduce AI costs, expand ecosystem as global adoption rises ET CIO",
-            "source": "ET CIO",
-            "published": "2026-10-23T02:40:27+00:00",
-            "angle": "Microsoft shifts strategy to slash AI costs and scale global adoption, signaling a new phase for the industry."
-          }
-        ],
-        "choose_deadline": "2026-10-23T17:15:29.276667+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
             "title": "Agent Hunt",
             "link": "https://www.producthunt.com/products/monid",
             "summary": "Live rankings of the tools AI agents use most Discussion | Link",
@@ -1216,6 +1153,227 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": "2026-10-23T18:44:12.835831+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Swedish government offices to ban ChatGPT and Claude",
+          "link": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+          "summary": "",
+          "source": "sverigesradio.se",
+          "published": "2026-10-23T11:39:54+00:00",
+          "buzz": "Hacker News 126 points",
+          "angle": "Major government offices in Sweden are banning ChatGPT and Claude, sparking a massive debate on workplace privacy."
+        },
+        "draft": {
+          "title": "Sweden Bans ChatGPT in Government Offices",
+          "hook_text": "Sweden bans ChatGPT and Claude",
+          "beats": [
+            {
+              "line": "Sweden just banned ChatGPT and Claude from government offices.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Sveriges Radio",
+              "domain": "sverigesradio.se",
+              "headline": "Swedish government offices ban ChatGPT and Claude",
+              "url": "",
+              "tag": "ChatGPT and Claude banned",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ChatGPT",
+                  "domain": "openai.com"
+                },
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The Government Offices of Sweden implemented this rule to secure internal information.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Rosenbad",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Securing internal information",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This restriction follows a broader shift across national agencies regarding digital security.",
+              "visual": "clip",
+              "query": "government office building",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Broader digital security shift",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The Swedish Tax Agency already enforced a similar ban on these generative tools.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Swedish Tax Agency",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Tax Agency ban",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Officials now require employees to use internal, approved software for sensitive tasks.",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Use internal software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The National Government Service Centre also joined these specific usage restrictions.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "3",
+              "small": "key agencies restricting use",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Service Centre restrictions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a public official using AI to draft internal reports?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "modern clean office desk in Stockholm with a laptop and documents",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Drafting internal reports",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Neutral, investigative, and sharp; keep it professional as a tech news update.",
+          "thin": false,
+          "caption": "The Swedish Government Offices have banned ChatGPT and Claude to protect sensitive internal data. The Tax Agency and National Government Service Centre have also implemented similar usage restrictions. Would you trust a public official using AI to draft internal reports?",
+          "hashtags": [
+            "Sweden",
+            "ChatGPT",
+            "Claude",
+            "Cybersecurity",
+            "AI"
+          ],
+          "sources": [
+            "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet"
+          ],
+          "script": "Sweden just banned ChatGPT and Claude from government offices.\nThe Government Offices of Sweden implemented this rule to secure internal information.\nThis restriction follows a broader shift across national agencies regarding digital security.\nThe Swedish Tax Agency already enforced a similar ban on these generative tools.\nOfficials now require employees to use internal, approved software for sensitive tasks.\nThe National Government Service Centre also joined these specific usage restrictions.\nWould you trust a public official using AI to draft internal reports?",
+          "keywords": [
+            "government office building",
+            "person typing on laptop"
+          ],
+          "image_prompts": [
+            "modern clean office desk in Stockholm with a laptop and documents"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Sweden bans ChatGPT and Claude",
+              "url": "https://www.azernews.az/region/266078.html"
+            },
+            {
+              "claim": "Sweden just banned ChatGPT and Claude from government offices.",
+              "url": "https://www.azernews.az/region/266078.html"
+            },
+            {
+              "claim": "The Government Offices of Sweden implemented this rule to secure internal information.",
+              "url": "https://www.azernews.az/region/266078.html"
+            },
+            {
+              "claim": "The Swedish Tax Agency already enforced a similar ban on these generative tools.",
+              "url": "https://www.azernews.az/region/266078.html"
+            },
+            {
+              "claim": "Officials now require employees to use internal, approved software for sensitive tasks.",
+              "url": "https://www.azernews.az/region/266078.html"
+            },
+            {
+              "claim": "The National Government Service Centre also joined these specific usage restrictions.",
+              "url": "https://www.azernews.az/region/266078.html"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-23T19:27:02.005936+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1706,8 +1864,8 @@
       "event": "Leidos just secured a ninety-five million dollar contract from the Defense Logistics Agency. They are tasked with applying AI to improve enterprise asset management for the agency. This initiative enhances supply chain visibility and readin"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-23T17:15+05:30",
@@ -1886,29 +2044,6 @@
     "gemini-flash-lite-latest": 1792756285.6907778
   },
   "editor_log": [
-    {
-      "at": "2026-10-22T22:30+05:30",
-      "title": "Uber puts all 30,000 employees on ChatGPT Work",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Strong specific facts hampered by disconnected visuals and repetitive script phrasing.",
-      "fixes": [
-        "LINE 5: Remove filler phrasing and replace with specific operational details.",
-        "LINE 4: Add exact rollout timeline details from the source report."
-      ],
-      "visual": [
-        "line 1: Car rear window photo with Uber sticker is irrelevant to corporate software deployment.",
-        "line 5: Displays TechCrunch logo card while discussing internal company operations.",
-        "line 6: Shows 'Company wide' text during the closing question instead of a fitting graphic."
-      ]
-    },
     {
       "at": "2026-10-23T02:13+05:30",
       "title": "‘Klara and the Sun’ star Jenna Ortega: ‘Artificial intelligence isn’t creative’",
@@ -2326,10 +2461,33 @@
         "line 2: Visuals are static text overlays with no relevant imagery for 'operational workflows'.",
         "line 3: The Azure logo is used for a general statement about enterprise software, which is mislead"
       ]
+    },
+    {
+      "at": "2026-10-23T19:44+05:30",
+      "title": "Swedish government offices to ban ChatGPT and Claude",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 6,
+        "accuracy": 10,
+        "visuals": 4,
+        "flow": 8
+      },
+      "one_line": "Visually repetitive and lacks dynamic imagery; relies too heavily on static text overlays.",
+      "fixes": [
+        "LINE 3: Remove 'This restriction follows a broader shift across national agencies regarding digital security' as it is filler commentary.",
+        "LINE 7: Replace with a more direct call to action or a specific question about the security implications."
+      ],
+      "visual": [
+        "line 1: Same visual held for too long (frames 1-2).",
+        "line 2: Same visual held for too long (frames 3-4).",
+        "line 3: Same visual held for too long (frames 5-6)."
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 49,
+  "fish_turn": 50,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
