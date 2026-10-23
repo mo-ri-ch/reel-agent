@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -223,16 +223,58 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.anthropic.com/research/formal-verification"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1115479393437512",
+      "title": "Cash Cow (Instrumental)",
+      "artist": "Jazmine"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Engineers usually spend months writing tedious mat…: The image is completely black/blank, failing to show the developer writing code.",
+      "Formal verification gives mathematical certainty t…: The image is a blurry gray placeholder instead of showing code scrolling on screen.",
+      "The technique successfully verified real open sour…: The image is blank/dark and missing the source card for anthropic.com.",
+      "This removes major bottlenecks in building secure …: The image is dark and missing the requested stock video of a person looking at a laptop screen."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong technical breakthrough covered well, but visual repetition on codebases lowers the score.",
+      "script_fixes": [
+        "LINE 1: specify the model version, like Claude 3.5 Sonnet, instead of just Claude models."
+      ],
+      "visual_beats": [
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 5: Generic Anthropic logo and text repeat earlier branding without showing codebases or proof",
+        "line 6: Reused static card style without illustrating real-world code or software engineering bott"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Anthropic Claude: anthropic.com",
+      "Anthropic Claude: anthropic.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "3 official images, 1 AI images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIjc2rbJJSSqNgQkxqcHmqMMkTaKnTCAAJlIwAC323gVjcVjw6BVCUAAT0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T14:31:58.321123+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-23T15:10:45.434570+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-23",
@@ -712,52 +754,8 @@
     "Former OpenAI Exec Raises $215 Mn to Build AI-Powered Drug Research Labs",
     "MiniMax-M3.1-Flash"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
-            "link": "https://berget.ai/en/blog/per-request-co2-press-release",
-            "summary": "",
-            "source": "berget.ai",
-            "published": "2026-10-23T06:41:11+00:00",
-            "buzz": "Hacker News 96 points",
-            "angle": "Surprising environmental cost showing the same AI request emits 8.5 times more CO2 in Texas than in Sweden"
-          },
-          {
-            "title": "DeepSeek, MiniMax secure licences to deploy AI overseas under China export rules",
-            "link": "https://www.scmp.com/tech/policy/article/3371880/deepseek-minimax-secure-open-source-licenses-days-after-new-china-export-rules-state-media",
-            "summary": "DeepSeek, MiniMax secure licences to deploy AI overseas under China export rules South China Morning Post",
-            "source": "South China Morning Post",
-            "published": "2026-10-23T06:00:25+00:00",
-            "angle": "DeepSeek and MiniMax secure major export licenses to deploy AI overseas"
-          },
-          {
-            "title": "China AI model stocks' $150 billion drop shows no sign of easing",
-            "link": "https://www.moneycontrol.com/artificial-intelligence/china-ai-model-stocks-150-billion-drop-shows-no-sign-of-easing-article-14058068.html/amp",
-            "summary": "China AI model stocks' $150 billion drop shows no sign of easing Moneycontrol.com",
-            "source": "Moneycontrol.com",
-            "published": "2026-10-23T01:42:27+00:00",
-            "angle": "China AI model stocks suffer a massive $150 billion drop"
-          }
-        ],
-        "choose_deadline": "2026-10-23T14:04:35.806920+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1409,6 +1407,245 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "LLMs are making formal software verification feasible at a much larger scale",
+          "link": "https://www.anthropic.com/research/formal-verification",
+          "summary": "",
+          "source": "anthropic.com",
+          "published": "2026-10-22T22:54:43+00:00",
+          "buzz": "Hacker News 341 points",
+          "angle": "Anthropic and LLMs are finally making formal software verification feasible at scale."
+        },
+        "draft": {
+          "title": "Anthropic Scales Formal Software Verification",
+          "hook_text": "Anthropic scaled formal code verification.",
+          "beats": [
+            {
+              "line": "Anthropic just scaled formal software verification using its Claude models.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic Claude",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com/research/formal-verification",
+              "tag": "Anthropic scales verification",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                },
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Engineers usually spend months writing tedious mathematical proofs to prove code safety.",
+              "visual": "clip",
+              "query": "developer writing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Months of proofs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Formal verification gives mathematical certainty that software has no critical bugs.",
+              "visual": "clip",
+              "query": "code scrolling on screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Mathematical certainty",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Anthropic proved that AI models can automate writing these complex logic proofs.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic Claude",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com/research/formal-verification",
+              "tag": "Claude writes proofs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                },
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The technique successfully verified real open source codebases at a much larger scale.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "anthropic.com",
+              "domain": "anthropic.com",
+              "headline": "Formal verification at scale",
+              "url": "",
+              "tag": "Verified open source",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "This removes major bottlenecks in building secure systems across the entire industry.",
+              "visual": "clip",
+              "query": "person looking at laptop screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Removing security bottlenecks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an AI to prove your software never crashes?",
+              "visual": "clip",
+              "query": "engineer looking at monitor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust AI with code",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and factual, highlighting the breakthrough in software safety without hype",
+          "thin": false,
+          "caption": "Anthropic used Claude to make formal software verification feasible at a much larger scale. This breakthrough automates the process of writing mathematical proofs for secure code. Would you trust AI to verify your software?",
+          "hashtags": [
+            "anthropic",
+            "claude",
+            "softwareengineering",
+            "coding",
+            "tech"
+          ],
+          "sources": [
+            "https://www.anthropic.com/research/formal-verification"
+          ],
+          "script": "Anthropic just scaled formal software verification using its Claude models.\nEngineers usually spend months writing tedious mathematical proofs to prove code safety.\nFormal verification gives mathematical certainty that software has no critical bugs.\nAnthropic proved that AI models can automate writing these complex logic proofs.\nThe technique successfully verified real open source codebases at a much larger scale.\nThis removes major bottlenecks in building secure systems across the entire industry.\nWould you trust an AI to prove your software never crashes?",
+          "keywords": [
+            "developer writing code",
+            "code scrolling on screen",
+            "person looking at laptop screen",
+            "engineer looking at monitor"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Anthropic scaled formal code verification.",
+              "url": "https://kingy.ai/blog/anthropic-formal-verification-claude-proofs/"
+            },
+            {
+              "claim": "Anthropic scaled formal software verification using its Claude models.",
+              "url": "https://www.anthropic.com/research/formal-verification"
+            },
+            {
+              "claim": "Engineers usually spend months writing tedious mathematical proofs to prove code safety.",
+              "url": "https://www.anthropic.com/research/formal-verification"
+            },
+            {
+              "claim": "Formal verification gives mathematical certainty that software has no critical bugs.",
+              "url": "https://www.anthropic.com/research/formal-verification"
+            },
+            {
+              "claim": "Anthropic proved that AI models can automate writing these complex logic proofs.",
+              "url": "https://www.anthropic.com/research/formal-verification"
+            },
+            {
+              "claim": "The technique successfully verified real open source codebases at a much larger scale.",
+              "url": "https://www.anthropic.com/research/formal-verification"
+            },
+            {
+              "claim": "This removes major bottlenecks in building secure systems across the entire industry.",
+              "url": "https://www.anthropic.com/research/formal-verification"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.anthropic.com/research/formal-verification"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-23T14:31:58.321123+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1889,8 +2126,8 @@
       "event": "Eight point five times more CO2. That is what the exact same AI request emits in Texas compared to Sweden. Berget analyzed carbon intensity differences across regional data center grids. Berget calculated per request emissions by tracking l"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-23T14:25+05:30",
@@ -1942,7 +2179,7 @@
   "late_note_for": "2026-10-23-1",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 589,
+    "calls": 596,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1977,7 +2214,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 108,
+        "ok": 115,
         "busy": 45,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2061,29 +2298,6 @@
     "gemini-3-flash-preview": 1792741489.3541908
   },
   "editor_log": [
-    {
-      "at": "2026-10-22T14:39+05:30",
-      "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 8,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Strong specific facts, but repetitive visuals and weak hook hold back quality.",
-      "fixes": [
-        "LINE 1: Start with a punchier hook featuring NVIDIA Cosmos and the specific update.",
-        "LINE 4: Mention specific leaderboards or benchmarks where Cosmos ranks top five."
-      ],
-      "visual": [
-        "line 1: Mixed application footage doesn't dynamically match the specific line fast enough.",
-        "line 4: Repeated generic NVIDIA logo card used multiple times across different lines.",
-        "line 5: Generic NVIDIA logo appears again instead of specific world model architecture graphics."
-      ]
-    },
     {
       "at": "2026-10-22T15:19+05:30",
       "title": "Bob McGrew’s Arda debuts at $1.5B with AI for factories",
@@ -2488,10 +2702,31 @@
         "line 1: Same article screenshot held across multiple frames for too long.",
         "line 3: Generic text card lacks a direct visual of the hourly grid data mentioned."
       ]
+    },
+    {
+      "at": "2026-10-23T14:40+05:30",
+      "title": "LLMs are making formal software verification feasible at a much larger scale",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong technical breakthrough covered well, but visual repetition on codebases lowers the score.",
+      "fixes": [
+        "LINE 1: specify the model version, like Claude 3.5 Sonnet, instead of just Claude models."
+      ],
+      "visual": [
+        "line 5: Generic Anthropic logo and text repeat earlier branding without showing codebases or proof",
+        "line 6: Reused static card style without illustrating real-world code or software engineering bott"
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 37,
+  "fish_turn": 38,
   "behind_since": "2026-10-23T00:31:13.488549+05:30",
   "ig_music_recent": [
     "1209362676336144",
