@@ -1134,6 +1134,9 @@ WEB_USED = []  # real-page shots in this reel (max 2: the article and the produc
 MAX_WEB = 2
 
 
+LEGAL_URL = re.compile(r"(?i)/(terms|tos|privacy|legal|cookies?|policies|policy|consent|imprint)([/_.?#-]|$)")
+
+
 def web_page(tmp, source_urls):
     """A mobile screenshot of a real page (the article, or the product's own page), or None (blocked, paywall,
     blank, or already shown)."""
@@ -1250,6 +1253,8 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
                 counts["cards"] += 1
             print(f"Person {b['name']}: {'photo from ' + str(credit) if img else 'name card (no reliable photo)'}")
         deep = re.match(r"^https?://[^/]+/[^?#]{3,}", b.get("url") or "")  # a real page, not a bare homepage
+        if deep and LEGAL_URL.search(b.get("url") or ""):
+            deep = None  # 23 Oct: a 'Terms and Privacy' page was shown as the product page (editor visuals 4)
         if b["visual"] == "official" and deep and len(WEB_USED) < MAX_WEB:
             page = web_page(tmp, [b["url"]])  # the product's own page (announcement, GitHub, Hugging Face, App Store)
             if page:

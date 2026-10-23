@@ -384,6 +384,15 @@ writer.ask = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("busy"))
 check("check down -> photo kept", _video.picture_fits(_Im.new("RGB", (300, 200)), "x"), True)
 writer.ask = _ask_pf
 
+# legal/consent pages are never shown as the product page or article
+check("terms url skipped", bool(_video.LEGAL_URL.search("https://www.sony.com/en/terms-of-use/")), True)
+check("privacy url skipped", bool(_video.LEGAL_URL.search("https://openai.com/policies/privacy-policy")), True)
+check("product url kept", bool(_video.LEGAL_URL.search("https://openai.com/index/introducing-gpt-6/")), False)
+check("github url kept", bool(_video.LEGAL_URL.search("https://github.com/microsoft/termsearch")), False)
+import webshot as _ws
+check("consent page caught", bool(_ws.LEGAL_PAGE.search("Before you continue to YouTube")), True)
+check("article page kept", bool(_ws.LEGAL_PAGE.search("OpenAI working on new $30B raise at $1.25T valuation")), False)
+
 # vague references must be caught
 check("vague developer", bool(writer.vague_phrases("A developer from Kerala just dropped Laya.")), True)
 check("vague experts argue", bool(writer.vague_phrases("Experts argue we must secure DNA supply chains.")), True)

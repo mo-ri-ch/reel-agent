@@ -6,6 +6,9 @@ import re
 
 BAD_PAGE = re.compile(r"(?i)captcha|are you a robot|access denied|verify you are human|enable javascript|"
                       r"subscribe to (continue|read)|403 forbidden|page not found|just a moment")
+# a terms/privacy/consent page instead of the article or product (23 Oct: editor marked it "irrelevant")
+LEGAL_PAGE = re.compile(r"(?i)terms (of|and) (use|service)|privacy (policy|notice|choices)|terms and privacy|"
+                        r"before you continue|we value your privacy|cookie (policy|settings)")
 
 HIDE_CLUTTER = """
 for (const el of document.querySelectorAll('body *')) {
@@ -57,7 +60,8 @@ def capture(url, out_png, screens=2.6, timeout_ms=30000):
             except Exception:
                 pass
             text = page.inner_text("body")[:6000] if page.query_selector("body") else ""
-            if len(text) < 600 or BAD_PAGE.search(text[:2500] + " " + (page.title() or "")):
+            if len(text) < 600 or BAD_PAGE.search(text[:2500] + " " + (page.title() or "")) or \
+                    LEGAL_PAGE.search((page.title() or "") + " " + text[:300]):
                 print(f"Web screenshot skipped: blocked or empty page ({len(text)} chars)")
                 browser.close()
                 return None
