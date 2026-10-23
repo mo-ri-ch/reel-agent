@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -246,16 +246,63 @@
     "source_links": [
       "https://analyticsindiamag.com/ai-news/coforge-revenue-rises-54-as-ai-engineering-and-deal-bookings-gain-momentum",
       "https://analyticsindiamag.com/coforge-revenue-rises-54-as-ai-engineering-and-deal-bookings-gain-momentum/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1139083324034840",
+      "title": "Stacks",
+      "artist": "Adam Griffith"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Their AI engineering services are now a primary re…: The image is broken and unreadable.",
+      "Would you trust an AI to manage your company IT?…: The card is almost empty and lacks the required visual.",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card"
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong financial reporting, but visuals rely too heavily on generic stock imagery.",
+      "script_fixes": [
+        "LINE 5: Replace 'This growth reflects a significant increase in client demand for AI expertise' with 'This growth is driven by a 40 percent surge in AI-related service contracts'."
+      ],
+      "visual_beats": [
+        0,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 1: Generic 'AI agents' stock graphic does not represent the company Coforge.",
+        "line 4: Generic laptop stock photo is unbranded and adds no specific value.",
+        "line 5: Generic office meeting stock photo is repetitive and lacks specific context."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Coforge: coforge.com",
+      "Coforge: coforge.com",
+      "news photo: coforge.com",
+      "news photo: coforge.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "4 official images, 6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIk6WrbztaxxUIT0rK85ArplL5KWLa_AAJ9JQAC323gVnIQF-jZR09JPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T02:37:50.517908+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-24T03:17:11.374692+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-24",
@@ -733,254 +780,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Introducing Kimi K3.1 Pro: Advancing Open Intelligence",
-          "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xdk6ow/introducing_kimi_k31_pro_advancing_open/",
-          "summary": "",
-          "source": "r/LocalLLaMA",
-          "published": "2026-10-23T17:20:05+00:00",
-          "buzz": "top of r/LocalLLaMA today",
-          "angle": "A new powerful open-source model 'Kimi K3.1 Pro' is trending as the latest big launch for local AI enthusiasts."
-        },
-        "draft": {
-          "title": "Moonshot AI Releases Kimi K3.1 Pro",
-          "hook_text": "Moonshot AI unveils Kimi K3.1 Pro",
-          "beats": [
-            {
-              "line": "Moonshot AI just launched Kimi K3.1 Pro to push open intelligence forward. It brings significant updates to their core model architecture.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Moonshot AI Kimi",
-              "outlet": "",
-              "domain": "moonshot.cn",
-              "headline": "",
-              "url": "https://kimi.moonshot.cn/",
-              "tag": "Kimi K3.1 Pro launch",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Moonshot AI",
-                  "domain": "moonshot.cn"
-                }
-              ]
-            },
-            {
-              "line": "This model supports a one million token context window. You can analyze vast amounts of data in one go.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1M",
-              "small": "token context window",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The team integrated enhanced reasoning capabilities into this release. It aims to handle more complex logic than the previous K3 version.",
-              "visual": "clip",
-              "query": "data processing server",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Enhanced reasoning capabilities",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Users can now leverage multi-modal inputs for deeper analysis. You can upload images and documents for the AI to process directly.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Kimi K3.1 Pro interface",
-              "outlet": "",
-              "domain": "moonshot.cn",
-              "headline": "",
-              "url": "https://kimi.moonshot.cn/",
-              "tag": "Multi-modal input support",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Moonshot AI",
-                  "domain": "moonshot.cn"
-                }
-              ]
-            },
-            {
-              "line": "Developers are testing these new features to see how they stack up against closed models. It is a major test for the open-source community.",
-              "visual": "clip",
-              "query": "software developer coding",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Testing open models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you switch your primary workflow to an open model?",
-              "visual": "clip",
-              "query": "person thinking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Open versus closed models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Enthusiastic but measured, emphasizing the technical shift towards open access and large-scale data handling.",
-          "thin": false,
-          "caption": "Moonshot AI has released Kimi K3.1 Pro, featuring a 1 million token context window and improved multi-modal reasoning. This update aims to challenge closed-source models with more accessible power for developers. Would you switch your primary workflow to an open model?",
-          "hashtags": [
-            "MoonshotAI",
-            "KimiAI",
-            "OpenIntelligence",
-            "LLM",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1xdk6ow/introducing_kimi_k31_pro_advancing_open/"
-          ],
-          "script": "Moonshot AI just launched Kimi K3.1 Pro to push open intelligence forward. It brings significant updates to their core model architecture.\nThis model supports a one million token context window. You can analyze vast amounts of data in one go.\nThe team integrated enhanced reasoning capabilities into this release. It aims to handle more complex logic than the previous K3 version.\nUsers can now leverage multi-modal inputs for deeper analysis. You can upload images and documents for the AI to process directly.\nDevelopers are testing these new features to see how they stack up against closed models. It is a major test for the open-source community.\nWould you switch your primary workflow to an open model?",
-          "keywords": [
-            "data processing server",
-            "software developer coding",
-            "person thinking"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Moonshot AI unveils Kimi K3.1 Pro",
-              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
-            },
-            {
-              "claim": "Moonshot AI launched Kimi K3.1 Pro",
-              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
-            },
-            {
-              "claim": "Kimi K3.1 Pro supports a one million token context window",
-              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
-            },
-            {
-              "claim": "Kimi K3.1 Pro has enhanced reasoning capabilities compared to K3",
-              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
-            },
-            {
-              "claim": "Kimi K3.1 Pro supports multi-modal inputs including images and video",
-              "url": "https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.reddit.com/r/LocalLLaMA/comments/1xdk6ow/introducing_kimi_k31_pro_advancing_open/"
-          ],
-          "ig_audio": {
-            "id": "1131364661185460",
-            "title": "Sun Moon Scars (feat. Cullman Avenue)",
-            "artist": "Bryan Todd"
-          },
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Moonshot AI just launched Kimi K3.1 Pro to push op…: The shot is an almost-empty card with only text, failing to show the requested real images of Moonshot AI Kimi.",
-            "The team integrated enhanced reasoning capabilitie…: The shot is an almost-empty card with only text, failing to show the requested stock video of a data processing server.",
-            "Users can now leverage multi-modal inputs for deep…: The shot is an almost-empty card with only text, failing to show the requested real images of the Kimi K3.1 Pro interfac",
-            "Developers are testing these new features to see h…: The shot is an almost-empty card with only text, failing to show the requested stock video of a software developer codin",
-            "Would you switch your primary workflow to an open …: The shot is an almost-empty card with only text, failing to show the requested stock video of a person thinking.",
-            "almost-empty card with only a logo",
-            "almost-empty card with only text",
-            "almost-empty card with only text",
-            "almost-empty card with only text",
-            "almost-empty card with only text"
-          ],
-          "editor": {
-            "overall": 8.5,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 10,
-              "visuals": 7,
-              "flow": 9
-            },
-            "one_line": "Strong, informative content, but visual pacing is repetitive and lacks dynamic variety.",
-            "script_fixes": [
-              "LINE 5: Replace 'closed models' with specific competitors like 'GPT-4o or Claude 3.5 Sonnet' for better impact."
-            ],
-            "visual_beats": [
-              0,
-              2,
-              3
-            ],
-            "visual_notes": [
-              "line 1: The same static text screen is held for too long (0.5s to 7.2s).",
-              "line 3: The 'Enhanced reasoning' graphic is repeated across three frames (16.8s to 24.0s) without ",
-              "line 4: The 'Multi-modal input' graphic is repeated across two frames (28.8s to 31.2s) without cha"
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "6 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIktmrbqwPIAAE-RpDILrlkMHiCG5jkBAACbCUAAt9t4FYEq4WcsEk6cj0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIktmrbqwPIAAE-RpDILrlkMHiCG5jkBAACbCUAAt9t4FYEq4WcsEk6cj0E",
-      "history_title": "Introducing Kimi K3.1 Pro: Advancing Open Intelligence"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1677,6 +1476,268 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Coforge Revenue Rises 54% as AI Engineering and Deal Bookings Gain Momentum",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOVk3U0RqVUVkRmd0WThXNEpQSGw3NVNxcHEzbXNmMFlKRXBaWGVudURLNjB5Tm9yTThwc0pSVzdoYTNaZkpGNU1QZWpaWW1qeVFidjJCT1hIRkg5Y2ctS3ZjT2lkNUlkSnFMQ24yMDZNMVIwNlMwbUp1cC1GRE9ESGprOVJ2cVdBbXRWM25Yd0lQQjVNVUQ2ZTNqZTU2S05HdWlYYXM5cEVOSG9kVE1va1Bn?oc=5",
+          "summary": "Coforge Revenue Rises 54% as AI Engineering and Deal Bookings Gain Momentum analyticsindiamag.com",
+          "source": "analyticsindiamag.com",
+          "published": "2026-10-23T18:00:46+00:00",
+          "angle": "Coforge revenue jumped 54% as AI engineering demand explodes, showing real money in the sector."
+        },
+        "draft": {
+          "title": "Coforge Revenue Jumps 53.6 Percent",
+          "hook_text": "Coforge revenue surges 53.6 percent",
+          "beats": [
+            {
+              "line": "Coforge revenue just grew 53.6 percent year-on-year.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "53.6%",
+              "small": "Year-on-year growth",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Coforge revenue growth",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Coforge",
+                  "domain": "coforge.com"
+                }
+              ]
+            },
+            {
+              "line": "CEO Sudhir Singh says AI engineering is driving this record deal momentum.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.coforge.com/about-us/leadership/sudhir-singh",
+              "tag": "Sudhir Singh CEO",
+              "name": "Sudhir Singh",
+              "role": "CEO, Coforge",
+              "x": "sudhirsingh",
+              "brands": [
+                {
+                  "name": "Coforge",
+                  "domain": "coforge.com"
+                }
+              ]
+            },
+            {
+              "line": "The firm secured fresh order intake of 1.04 billion dollars this quarter.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1.04B",
+              "small": "Fresh order intake",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Record order intake",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Coforge",
+                  "domain": "coforge.com"
+                }
+              ]
+            },
+            {
+              "line": "Coforge integrated generative AI tools into their core IT service operations.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Coforge",
+              "outlet": "",
+              "domain": "coforge.com",
+              "headline": "",
+              "url": "https://www.coforge.com",
+              "tag": "AI integration",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Coforge",
+                  "domain": "coforge.com"
+                }
+              ]
+            },
+            {
+              "line": "This growth reflects a significant increase in client demand for AI expertise.",
+              "visual": "clip",
+              "query": "business professional working",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rising client demand",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The firm now operates with a total headcount of over 30,000 employees.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "30,000+",
+              "small": "Total employees",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Coforge global team",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Coforge",
+                  "domain": "coforge.com"
+                }
+              ]
+            },
+            {
+              "line": "Their AI engineering services are now a primary revenue engine for the business.",
+              "visual": "clip",
+              "query": "data center server",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI as revenue",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an AI to manage your company IT?",
+              "visual": "clip",
+              "query": "person looking at server room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI management question",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Professional and analytical, emphasizing the rapid growth and the shift toward AI services.",
+          "thin": false,
+          "caption": "Coforge reported a 53.6 percent year-on-year revenue increase, supported by 1.04 billion dollars in fresh order intake. CEO Sudhir Singh is leveraging generative AI engineering to scale the firm's IT service operations globally. Would you trust an AI to manage your company IT?",
+          "hashtags": [
+            "Coforge",
+            "GenerativeAI",
+            "TechNews",
+            "BusinessGrowth",
+            "AIEngineering"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/coforge-revenue-rises-54-as-ai-engineering-and-deal-bookings-gain-momentum/"
+          ],
+          "script": "Coforge revenue just grew 53.6 percent year-on-year.\nCEO Sudhir Singh says AI engineering is driving this record deal momentum.\nThe firm secured fresh order intake of 1.04 billion dollars this quarter.\nCoforge integrated generative AI tools into their core IT service operations.\nThis growth reflects a significant increase in client demand for AI expertise.\nThe firm now operates with a total headcount of over 30,000 employees.\nTheir AI engineering services are now a primary revenue engine for the business.\nWould you trust an AI to manage your company IT?",
+          "keywords": [
+            "business professional working",
+            "data center server",
+            "person looking at server room"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Coforge revenue surges 53.6 percent",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            },
+            {
+              "claim": "Coforge revenue just grew 53.6 percent year-on-year.",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            },
+            {
+              "claim": "CEO Sudhir Singh says AI engineering is driving this record deal momentum.",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            },
+            {
+              "claim": "The firm secured fresh order intake of 1.04 billion dollars this quarter.",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            },
+            {
+              "claim": "Coforge integrated generative AI tools into their core IT service operations.",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            },
+            {
+              "claim": "This growth reflects a significant increase in client demand for AI expertise.",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            },
+            {
+              "claim": "The firm now operates with a total headcount of over 30,000 employees.",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            },
+            {
+              "claim": "Their AI engineering services are now a primary revenue engine for the business.",
+              "url": "https://www.thehindu.com/business/coforge-net-profit-rises-565-as-record-deal-wins-boost-growth/article71616615.ece/amp/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/coforge-revenue-rises-54-as-ai-engineering-and-deal-bookings-gain-momentum",
+            "https://analyticsindiamag.com/coforge-revenue-rises-54-as-ai-engineering-and-deal-bookings-gain-momentum/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-24T02:37:50.517908+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2170,8 +2231,8 @@
       "event": "Moonshot AI just launched Kimi K3.1 Pro to push open intelligence forward. It brings significant updates to their core model architecture. This model supports a one million token context window. You can analyze vast amounts of data in one g"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-24T00:15+05:30",
@@ -2199,7 +2260,7 @@
   "report_day": "2026-10-23",
   "ig_count": {
     "day": "2026-10-24",
-    "at": "2026-10-24T02:27:50.517936+05:30",
+    "at": "2026-10-24T02:40:31.050907+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2223,12 +2284,12 @@
   "late_note_for": "2026-10-23-4",
   "gemini_use": {
     "day": "2026-10-24",
-    "calls": 84,
+    "calls": 90,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 57,
+        "ok": 63,
         "busy": 25,
         "other": 2,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2315,28 +2376,6 @@
     "gemini-flash-lite-latest": 1792756285.6907778
   },
   "editor_log": [
-    {
-      "at": "2026-10-23T15:55+05:30",
-      "title": "Is a job guarantee the solution to mass AI unemployment?",
-      "overall": 6.2,
-      "scores": {
-        "hook": 8,
-        "specific": 4,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Lacks specific data points, company names, and features a repetitive, generic stock visual.",
-      "fixes": [
-        "LINE 1: Mention the specific think-tank or study published in The Guardian today.",
-        "LINE 3: Replace general 'generative algorithms' with specific job sectors or automation tools mentioned in the report."
-      ],
-      "visual": [
-        "line 1: Stock handshake photo is generic and unrelated to specific tech details.",
-        "line 3: Static text animation held too long without dynamic B-roll supporting the claims."
-      ]
-    },
     {
       "at": "2026-10-23T16:03+05:30",
       "title": "Is a job guarantee the solution to mass AI unemployment?",
@@ -2771,10 +2810,32 @@
         "line 4: Visuals show a restaurant menu app, which is unrelated to the AI model's conversational na",
         "line 6: Visuals show The Verge logo, which is irrelevant to the content of the line."
       ]
+    },
+    {
+      "at": "2026-10-24T02:46+05:30",
+      "title": "Coforge Revenue Rises 54% as AI Engineering and Deal Bookings Gain Momentum",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong financial reporting, but visuals rely too heavily on generic stock imagery.",
+      "fixes": [
+        "LINE 5: Replace 'This growth reflects a significant increase in client demand for AI expertise' with 'This growth is driven by a 40 percent surge in AI-related service contracts'."
+      ],
+      "visual": [
+        "line 1: Generic 'AI agents' stock graphic does not represent the company Coforge.",
+        "line 4: Generic laptop stock photo is unbranded and adds no specific value.",
+        "line 5: Generic office meeting stock photo is repetitive and lacks specific context."
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 61,
+  "fish_turn": 62,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
