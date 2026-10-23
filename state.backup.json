@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -190,16 +190,59 @@
     "editor_rounds": 1,
     "source_links": [
       "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1282421579387489",
+      "title": "Red Alert",
+      "artist": "Sam Marshall"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Will expanding server capacity change how digital …: The visual shows a person standing in an office or studio with sticky notes on the wall, not a server room as requested.",
+      "UI editing bounding box with anchor points is visible over the word Meta in the subtitle.",
+      "UI editing bounding box with anchor points is visible over the word Investor.",
+      "UI editing bounding box with anchor points is visible over the word Server."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong numbers and details, but visual pacing drops off in the middle.",
+      "script_fixes": [
+        "LINE 3: add Mark Zuckerberg or specific data center location to increase direct specificity"
+      ],
+      "visual_beats": [
+        2,
+        5
+      ],
+      "visual_notes": [
+        "line 3: Mark Zuckerberg's photo repeats across multiple lines without new visual context",
+        "line 6: Static text frame held too long with no fresh supporting graphic"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Meta AI: analyticsindiamag.com",
+      "Meta AI: businessinsider.com",
+      "Meta: businessinsider.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "3 official images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIjmGrbMVRBwkviqBenHhzp_eKJyUpSAAKbIwAC323gVkXHyz26OGYZPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-23T15:27:48.715983+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-23T16:05:09.545744+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-23",
@@ -671,289 +714,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "LLMs are making formal software verification feasible at a much larger scale",
-          "link": "https://www.anthropic.com/research/formal-verification",
-          "summary": "",
-          "source": "anthropic.com",
-          "published": "2026-10-22T22:54:43+00:00",
-          "buzz": "Hacker News 341 points",
-          "angle": "Anthropic and LLMs are finally making formal software verification feasible at scale."
-        },
-        "draft": {
-          "title": "Anthropic Scales Formal Software Verification",
-          "hook_text": "Anthropic scaled formal code verification.",
-          "beats": [
-            {
-              "line": "Anthropic just scaled formal software verification using its Claude models.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic Claude",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.anthropic.com/research/formal-verification",
-              "tag": "Anthropic scales verification",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                },
-                {
-                  "name": "Claude",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Engineers usually spend months writing tedious mathematical proofs to prove code safety.",
-              "visual": "clip",
-              "query": "developer writing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Months of proofs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Formal verification gives mathematical certainty that software has no critical bugs.",
-              "visual": "clip",
-              "query": "code scrolling on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Mathematical certainty",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Anthropic proved that AI models can automate writing these complex logic proofs.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic Claude",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.anthropic.com/research/formal-verification",
-              "tag": "Claude writes proofs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                },
-                {
-                  "name": "Claude",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The technique successfully verified real open source codebases at a much larger scale.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "anthropic.com",
-              "domain": "anthropic.com",
-              "headline": "Formal verification at scale",
-              "url": "",
-              "tag": "Verified open source",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "This removes major bottlenecks in building secure systems across the entire industry.",
-              "visual": "clip",
-              "query": "person looking at laptop screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Removing security bottlenecks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an AI to prove your software never crashes?",
-              "visual": "clip",
-              "query": "engineer looking at monitor",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust AI with code",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and factual, highlighting the breakthrough in software safety without hype",
-          "thin": false,
-          "caption": "Anthropic used Claude to make formal software verification feasible at a much larger scale. This breakthrough automates the process of writing mathematical proofs for secure code. Would you trust AI to verify your software?",
-          "hashtags": [
-            "anthropic",
-            "claude",
-            "softwareengineering",
-            "coding",
-            "tech"
-          ],
-          "sources": [
-            "https://www.anthropic.com/research/formal-verification"
-          ],
-          "script": "Anthropic just scaled formal software verification using its Claude models.\nEngineers usually spend months writing tedious mathematical proofs to prove code safety.\nFormal verification gives mathematical certainty that software has no critical bugs.\nAnthropic proved that AI models can automate writing these complex logic proofs.\nThe technique successfully verified real open source codebases at a much larger scale.\nThis removes major bottlenecks in building secure systems across the entire industry.\nWould you trust an AI to prove your software never crashes?",
-          "keywords": [
-            "developer writing code",
-            "code scrolling on screen",
-            "person looking at laptop screen",
-            "engineer looking at monitor"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Anthropic scaled formal code verification.",
-              "url": "https://kingy.ai/blog/anthropic-formal-verification-claude-proofs/"
-            },
-            {
-              "claim": "Anthropic scaled formal software verification using its Claude models.",
-              "url": "https://www.anthropic.com/research/formal-verification"
-            },
-            {
-              "claim": "Engineers usually spend months writing tedious mathematical proofs to prove code safety.",
-              "url": "https://www.anthropic.com/research/formal-verification"
-            },
-            {
-              "claim": "Formal verification gives mathematical certainty that software has no critical bugs.",
-              "url": "https://www.anthropic.com/research/formal-verification"
-            },
-            {
-              "claim": "Anthropic proved that AI models can automate writing these complex logic proofs.",
-              "url": "https://www.anthropic.com/research/formal-verification"
-            },
-            {
-              "claim": "The technique successfully verified real open source codebases at a much larger scale.",
-              "url": "https://www.anthropic.com/research/formal-verification"
-            },
-            {
-              "claim": "This removes major bottlenecks in building secure systems across the entire industry.",
-              "url": "https://www.anthropic.com/research/formal-verification"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.anthropic.com/research/formal-verification"
-          ],
-          "ig_audio": {
-            "id": "1115479393437512",
-            "title": "Cash Cow (Instrumental)",
-            "artist": "Jazmine"
-          },
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Engineers usually spend months writing tedious mat…: The image is completely black/blank, failing to show the developer writing code.",
-            "Formal verification gives mathematical certainty t…: The image is a blurry gray placeholder instead of showing code scrolling on screen.",
-            "The technique successfully verified real open sour…: The image is blank/dark and missing the source card for anthropic.com.",
-            "This removes major bottlenecks in building secure …: The image is dark and missing the requested stock video of a person looking at a laptop screen."
-          ],
-          "editor": {
-            "overall": 8.0,
-            "scores": {
-              "hook": 8,
-              "specific": 8,
-              "substance": 8,
-              "accuracy": 9,
-              "visuals": 7,
-              "flow": 8
-            },
-            "one_line": "Strong technical breakthrough covered well, but visual repetition on codebases lowers the score.",
-            "script_fixes": [
-              "LINE 1: specify the model version, like Claude 3.5 Sonnet, instead of just Claude models."
-            ],
-            "visual_beats": [
-              4,
-              5
-            ],
-            "visual_notes": [
-              "line 5: Generic Anthropic logo and text repeat earlier branding without showing codebases or proof",
-              "line 6: Reused static card style without illustrating real-world code or software engineering bott"
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [
-            "Anthropic Claude: anthropic.com",
-            "Anthropic Claude: anthropic.com"
-          ],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "3 official images, 1 AI images, 4 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIjc2rbJJSSqNgQkxqcHmqMMkTaKnTCAAJlIwAC323gVjcVjw6BVCUAAT0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIjc2rbJJSSqNgQkxqcHmqMMkTaKnTCAAJlIwAC323gVjcVjw6BVCUAAT0E",
-      "history_title": "LLMs are making formal software verification feasible at a much larger scale"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1432,6 +1192,212 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": "2026-10-23T15:15:56.283478+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand",
+          "link": "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand",
+          "summary": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand analyticsindiamag.com",
+          "source": "analyticsindiamag.com",
+          "published": "2026-10-23T09:15:40+00:00",
+          "angle": "Meta's massive $145B bet on AI capex reveals the staggering cost of the race"
+        },
+        "draft": {
+          "title": "Meta Capex Reaches 145 Billion",
+          "hook_text": "One hundred forty five billion dollars",
+          "beats": [
+            {
+              "line": "One hundred forty five billion dollars is Meta expected to spend on capital expenditures.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$145B",
+              "small": "Capex budget",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "$145B Meta capex",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Third quarter earnings reports highlight how massive infrastructure expansion drives these record high technology budgets.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Analytics India Magazine",
+              "domain": "analyticsindiamag.com",
+              "headline": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand",
+              "url": "",
+              "tag": "Q3 earnings report",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Heavy financial commitments build advanced data centers for complex machine learning tasks.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta AI",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://www.meta.ai/",
+              "tag": "Data centers for training",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These infrastructure upgrades support growing operational demands across Instagram and WhatsApp.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://www.meta.ai/",
+              "tag": "Instagram and WhatsApp demands",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Market analysts evaluate whether these massive investments will yield short term financial returns.",
+              "visual": "clip",
+              "query": "stock market traders",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Investor profit questions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will expanding server capacity change how digital platforms operate next year?",
+              "visual": "clip",
+              "query": "person looking at server room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Server farms expansion",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "urgent and direct, emphasizing the sheer scale of corporate spending on infrastructure",
+          "thin": false,
+          "caption": "Meta expects up to 145 billion dollars in capital expenditures as its infrastructure investments expand significantly. Third quarter reports highlight how heavy financial commitments build advanced data centers for Instagram and WhatsApp. Are these massive server investments worth the cost?",
+          "hashtags": [
+            "Meta",
+            "AI",
+            "TechNews",
+            "DataCenters"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand",
+            "https://www.businessinsider.com/meta-capex-narrows-ai-agent-wars-quarter-3-earnings-2026-10"
+          ],
+          "script": "One hundred forty five billion dollars is Meta expected to spend on capital expenditures.\nThird quarter earnings reports highlight how massive infrastructure expansion drives these record high technology budgets.\nHeavy financial commitments build advanced data centers for complex machine learning tasks.\nThese infrastructure upgrades support growing operational demands across Instagram and WhatsApp.\nMarket analysts evaluate whether these massive investments will yield short term financial returns.\nWill expanding server capacity change how digital platforms operate next year?",
+          "keywords": [
+            "stock market traders",
+            "person looking at server room"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Meta is expected to spend up to 145 billion dollars.",
+              "url": "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand"
+            },
+            {
+              "claim": "Meta is expected to spend $145 billion on capital expenditures.",
+              "url": "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand"
+            },
+            {
+              "claim": "Third quarter earnings reports highlight how massive infrastructure expansion drives these record high technology budgets.",
+              "url": "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand"
+            },
+            {
+              "claim": "Heavy financial commitments build advanced data centers for complex machine learning tasks.",
+              "url": "https://www.businessinsider.com/meta-capex-narrows-ai-agent-wars-quarter-3-earnings-2026-10"
+            },
+            {
+              "claim": "These infrastructure upgrades support growing operational demands across Instagram and WhatsApp.",
+              "url": "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand"
+            },
+            {
+              "claim": "Market analysts evaluate whether these massive investments will yield short term financial returns.",
+              "url": "https://www.businessinsider.com/meta-capex-narrows-ai-agent-wars-quarter-3-earnings-2026-10"
+            },
+            {
+              "claim": "Will expanding server capacity change how digital platforms operate next year?",
+              "url": "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/meta-expects-up-to-145-billion-in-capex-as-ai-investments-expand"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-23T15:27:48.715983+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1921,7 +1887,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-23T15:11+05:30",
@@ -1949,7 +1915,7 @@
   "report_day": "2026-10-22",
   "ig_count": {
     "day": "2026-10-23",
-    "at": "2026-10-23T15:11:00.861435+05:30",
+    "at": "2026-10-23T15:28:05.645288+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -1969,11 +1935,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-23",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-23-3",
   "gemini_use": {
     "day": "2026-10-23",
-    "calls": 647,
+    "calls": 656,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2008,7 +1974,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 149,
+        "ok": 158,
         "busy": 62,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2092,28 +2058,6 @@
     "gemini-3-flash-preview": 1792741489.3541908
   },
   "editor_log": [
-    {
-      "at": "2026-10-22T16:13+05:30",
-      "title": "Inception says Mercury 3 generates over 1,000 tokens a second",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 7,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Strong headline number, but visuals are repetitive and source attribution is inaccurate.",
-      "fixes": [
-        "LINE 1: Change 'Inception released Mercury 3' to 'Inception claims its Mercury 3 AI model' to match source framing."
-      ],
-      "visual": [
-        "line 1: Generic white rounded square icon used repeatedly instead of direct source material.",
-        "line 2: Repeats the same generic icon card from line 1.",
-        "line 4: Generic stock code/numbers scroll used for diffusion model architecture."
-      ]
-    },
     {
       "at": "2026-10-22T16:51+05:30",
       "title": "Karta AI Raises $3 Mn To Automate Inbound Calls For BFSI Players",
@@ -2514,10 +2458,31 @@
         "line 3: Static app icon reused across multiple consecutive frames without new contextual footage.",
         "line 4: Visuals drop completely to plain typography cards, missing the global digital platforms co"
       ]
+    },
+    {
+      "at": "2026-10-23T15:34+05:30",
+      "title": "Meta Expects Up To $145 Billion In Capex As AI Investments Expand",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong numbers and details, but visual pacing drops off in the middle.",
+      "fixes": [
+        "LINE 3: add Mark Zuckerberg or specific data center location to increase direct specificity"
+      ],
+      "visual": [
+        "line 3: Mark Zuckerberg's photo repeats across multiple lines without new visual context",
+        "line 6: Static text frame held too long with no fresh supporting graphic"
+      ]
     }
   ],
   "rest_note": "2026-10-23T12:32:00+05:30",
-  "fish_turn": 40,
+  "fish_turn": 41,
   "behind_since": "2026-10-23T00:31:13.488549+05:30",
   "ig_music_recent": [
     "1209362676336144",
