@@ -78,11 +78,33 @@ jobs:
         id: run
         run: python main.py ${{ steps.mode.outputs.mode }}
 
+      - name: Cache ffmpeg
+        if: steps.run.outputs.render == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-static-v1
+
       - name: Install video tools
         if: steps.run.outputs.render == 'true'
+        timeout-minutes: 10
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core libcairo2
+          # ffmpeg: a static build from GitHub, cached between runs (apt took up to 28 min on 22 Oct and killed a reel)
+          if [ ! -x ~/ffmpeg/ffmpeg ]; then
+            mkdir -p ~/ffmpeg
+            curl -sL --max-time 180 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz \
+              | tar -xJ --strip-components=2 -C ~/ffmpeg --wildcards '*/bin/ffmpeg' '*/bin/ffprobe' || true
+          fi
+          if [ -x ~/ffmpeg/ffmpeg ]; then echo "$HOME/ffmpeg" >> "$GITHUB_PATH"; export PATH="$HOME/ffmpeg:$PATH"; fi
+          missing=""
+          command -v ffmpeg >/dev/null || missing="$missing ffmpeg"
+          fc-list | grep -qi dejavu || missing="$missing fonts-dejavu-core"
+          ldconfig -p | grep -q libcairo.so.2 || missing="$missing libcairo2"
+          if [ -n "$missing" ]; then
+            sudo timeout 420 apt-get install -y -qq --no-install-recommends $missing \
+              || (sudo timeout 300 apt-get update -qq && sudo timeout 420 apt-get install -y -qq $missing)
+          fi
+          ffmpeg -version | head -1
           pip install -q -r requirements.txt
 
       - name: Cache speech models
