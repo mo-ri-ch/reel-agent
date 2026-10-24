@@ -1,8 +1,34 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Bipartisan House Bill Takes Aim at AI ‘Distillation Attacks’ (Oct 23, 2026)",
+      "link": "https://www.vitallaw.com/news/bipartisan-house-bill-takes-aim-at-ai-distillation-attacks/cspd0135c0a3c18b874a819c74b83fa01476dc",
+      "summary": "Bipartisan House Bill Takes Aim at AI ‘Distillation Attacks’ (Oct 23, 2026) VitalLaw.com",
+      "source": "VitalLaw.com",
+      "published": "2026-10-24T07:58:22+00:00",
+      "angle": "New US House bill targets 'distillation attacks'—the biggest threat to AI model security right now."
+    },
+    {
+      "title": "Vibecoding your own inference engine is easy they said",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-23T15:26:47+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "The viral 'vibe-coding' trend: Why developers are suddenly building their own custom AI inference engines."
+    },
+    {
+      "title": "An artificial intelligence system for human papillomavirus-positive dual stain cervical cancer screening reads p16-Ki67 slides",
+      "link": "https://www.2minutemedicine.com/an-artificial-intelligence-system-for-human-papillomavirus-positive-dual-stain-cervical-cancer-screening-reads-p16-ki67-slides/",
+      "summary": "An artificial intelligence system for human papillomavirus-positive dual stain cervical cancer screening reads p16-Ki67 slides 2 Minute Medicine",
+      "source": "2 Minute Medicine",
+      "published": "2026-10-23T17:13:23+00:00",
+      "angle": "Medical AI breakthrough: A new system is now screening for cervical cancer with high-precision digital slides."
+    }
+  ],
+  "choose_deadline": "2026-10-24T16:39:19.702971+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -418,6 +444,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "Bipartisan House Bill Takes Aim at AI ‘Distillation Attacks’ (Oct 23, 2026)",
@@ -499,6 +526,7 @@
     "How artificial intelligence affects real estate sales",
     "Mysterious Qwen4 Appearance by New GitHub Accounts"
   ],
+  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot choosing the AI voice",
@@ -1856,7 +1884,7 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-24T16:07+05:30",
+    "at": "2026-10-24T16:39+05:30",
     "techcrunch.com": 5,
     "theverge.com": 6,
     "arstechnica.com": 2,
@@ -1872,16 +1900,16 @@
     "producthunt.com": 4,
     "Hacker News": 3,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 2
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-24T16:07:24.693105+05:30",
+  "last_auto_offer": "2026-10-24T16:39:19.702971+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-23",
   "ig_count": {
     "day": "2026-10-24",
-    "at": "2026-10-24T16:23:23.000545+05:30",
+    "at": "2026-10-24T16:39:19.703012+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -1905,15 +1933,15 @@
   "late_note_for": "2026-10-24-3",
   "gemini_use": {
     "day": "2026-10-24",
-    "calls": 783,
+    "calls": 786,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 109,
+        "ok": 111,
         "busy": 45,
-        "other": 6,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 7,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.6-flash": {
         "ok": 12,
@@ -2476,5 +2504,6 @@
     "1139083324034840",
     "1492215775872550",
     "522339937196006"
-  ]
+  ],
+  "behind_since": "2026-10-24T16:39:19.702971+05:30"
 }
