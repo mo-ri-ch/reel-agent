@@ -43,7 +43,7 @@ def already_posted(caption, hours=24):
 COVER_AT_MS = 1300  # the cover frame: 1.3 s in, when the opening headline is fully on screen
 
 
-IG_MUSIC_VOLUME = int(os.environ.get("IG_MUSIC_VOLUME") or 15)  # Instagram music under our voice (1-100)
+IG_MUSIC_VOLUME = int(os.environ.get("IG_MUSIC_VOLUME") or 35)  # Instagram music under our voice (1-100)
 AUDIO_ERROR = [""]
 LAST_MUSIC_REPLY = [""]  # Instagram's raw answer to the music search (for diagnosing an empty list)  # why Instagram refused the music on the last post ("" = fine / none asked)
 
