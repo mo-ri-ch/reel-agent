@@ -13,46 +13,10 @@
   },
   "draft": {
     "title": "Nvidia's AI Financing Faces Market Test",
-    "hook_text": "Nvidia's AI bets face trouble",
+    "hook_text": "Nvidia backed cloud stocks plummet",
     "beats": [
       {
-        "line": "Nvidia's role as an AI financier is hitting a major market wall.",
-        "visual": "clip",
-        "query": "nvidia logo",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Nvidia financing risk",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Neocloud firms built their entire business model on renting out Nvidia hardware.",
-        "visual": "clip",
-        "query": "data center server racks",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Neocloud business model",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Shares for some major players in this sector are down thirty percent this month.",
+        "line": "Stocks for Nvidia-backed cloud providers have fallen thirty percent this month.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
@@ -63,14 +27,32 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Sector share price drop",
+        "tag": "30% share decline",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "CEO Jensen Huang has championed these firms as essential for massive AI infrastructure.",
+        "line": "These niche providers, known as neoclouds, rely on Nvidia hardware to scale their AI operations.",
+        "visual": "clip",
+        "query": "data center server racks",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Neocloud infrastructure",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "CEO Jensen Huang has used Nvidia to bankroll these firms to secure AI chip demand.",
         "visual": "person",
         "query": "technology",
         "prompt": "",
@@ -81,14 +63,14 @@
         "domain": "",
         "headline": "",
         "url": "https://www.nvidia.com/en-us/about/leadership/",
-        "tag": "Jensen Huang strategy",
+        "tag": "Jensen Huang's strategy",
         "name": "Jensen Huang",
         "role": "CEO, Nvidia",
         "x": "nvidia",
         "brands": []
       },
       {
-        "line": "These companies now face intense pressure to prove they can generate consistent, long-term profits.",
+        "line": "Investors are now questioning if these firms can generate consistent profits from their massive spending.",
         "visual": "clip",
         "query": "financial stock charts",
         "prompt": "",
@@ -106,7 +88,7 @@
         "brands": []
       },
       {
-        "line": "Without clear returns, investors are pulling capital away from these niche providers.",
+        "line": "Public markets are punishing companies that lack clear paths to long-term revenue growth.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -117,14 +99,14 @@
         "domain": "cnbc.com",
         "headline": "Nvidia's role as AI financier faces first big test",
         "url": "",
-        "tag": "Investor capital flight",
+        "tag": "Market correction",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Is this AI infrastructure boom actually built on shaky financial ground?",
+        "line": "This shift marks the first major test for the AI financing model Nvidia pioneered.",
         "visual": "clip",
         "query": "stock market ticker board",
         "prompt": "",
@@ -135,29 +117,28 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Market bubble risk",
+        "tag": "Financing model test",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       }
     ],
-    "delivery": "Objective and sharp, focusing on the financial shift in AI infrastructure markets.",
+    "delivery": "Serious and analytical, focusing on the financial risks behind the AI infrastructure boom.",
     "thin": false,
-    "caption": "Nvidia's strategy of financing AI neocloud providers faces a major market test as shares for these firms have dropped thirty percent this month. Is the AI infrastructure boom built on sustainable demand? Let us know.",
+    "caption": "Nvidia-backed neocloud stocks have dropped 30% this month as investors demand proof of profitability. Is the AI infrastructure boom hitting a financial wall? Tell us your take.",
     "hashtags": [
       "Nvidia",
       "AI",
-      "CloudComputing",
-      "TechNews",
-      "StockMarket"
+      "StockMarket",
+      "Finance",
+      "TechNews"
     ],
     "sources": [
-      "https://www.cnbc.com"
+      "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html"
     ],
-    "script": "Nvidia's role as an AI financier is hitting a major market wall.\nNeocloud firms built their entire business model on renting out Nvidia hardware.\nShares for some major players in this sector are down thirty percent this month.\nCEO Jensen Huang has championed these firms as essential for massive AI infrastructure.\nThese companies now face intense pressure to prove they can generate consistent, long-term profits.\nWithout clear returns, investors are pulling capital away from these niche providers.\nIs this AI infrastructure boom actually built on shaky financial ground?",
+    "script": "Stocks for Nvidia-backed cloud providers have fallen thirty percent this month.\nThese niche providers, known as neoclouds, rely on Nvidia hardware to scale their AI operations.\nCEO Jensen Huang has used Nvidia to bankroll these firms to secure AI chip demand.\nInvestors are now questioning if these firms can generate consistent profits from their massive spending.\nPublic markets are punishing companies that lack clear paths to long-term revenue growth.\nThis shift marks the first major test for the AI financing model Nvidia pioneered.",
     "keywords": [
-      "nvidia logo",
       "data center server racks",
       "financial stock charts",
       "stock market ticker board"
@@ -166,29 +147,30 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "Nvidia's AI bets face trouble",
+        "claim": "Nvidia backed cloud stocks plummet",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
       },
       {
-        "claim": "Nvidia's role as an AI financier is hitting a major market wall.",
+        "claim": "Stocks for Nvidia-backed cloud providers have fallen thirty percent this month.",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
       },
       {
-        "claim": "Neocloud firms built their business model on renting out Nvidia hardware.",
+        "claim": "These niche providers, known as neoclouds, rely on Nvidia hardware to scale their AI operations.",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
       },
       {
-        "claim": "Shares for some major players in this sector are down thirty percent this month.",
+        "claim": "CEO Jensen Huang has used Nvidia to bankroll these firms to secure AI chip demand.",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
       },
       {
-        "claim": "Jensen Huang is the CEO of Nvidia.",
+        "claim": "This shift marks the first major test for the AI financing model Nvidia pioneered.",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
       "https://www.cnbc.com"
@@ -199,9 +181,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T16:54:25.861165+05:30",
+  "script_deadline": "2026-10-24T17:04:53.970052+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-24",
@@ -671,178 +653,8 @@
     "Meta delays new business terms after publisher pushback on AI scraping",
     "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Guest commentary: Artificial intelligence is inflating medical bills",
-          "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5",
-          "summary": "Guest commentary: Artificial intelligence is inflating medical bills The Daily News | Texas' Oldest Newspaper",
-          "source": "The Daily News | Texas' Oldest Newspaper",
-          "published": "2026-10-24T01:30:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "AI is inflating medical bills",
-          "hook_text": "Your medical bills cost more now.",
-          "beats": [
-            {
-              "line": "Your next doctor visit might include algorithmic billing that drives up hospital revenue.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Daily News",
-              "domain": "galvnews.com",
-              "headline": "Guest commentary: Artificial intelligence is inflating medical bills",
-              "url": "",
-              "tag": "Algorithmic billing drives up revenue",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Hospitals now deploy automated software to parse patient records and optimize insurance claims.",
-              "visual": "clip",
-              "query": "hospital billing office computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Software parses patient records",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These programs scan clinical notes to find extra billing opportunities and code more aggressive charges.",
-              "visual": "clip",
-              "query": "medical doctor looking at records",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Programs code aggressive charges",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Patients end up paying higher out of pocket costs while navigating complex disputed statements.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "Close up of a frustrated person looking at a huge medical bill on a kitchen table",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Higher out of pocket costs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust software to decide what your healthcare is worth?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "A modern hospital hallway with soft lighting and digital screens",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust software with healthcare",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and concerned, exposing how automated hospital billing hits patients in the wallet",
-          "thin": false,
-          "caption": "Hospitals use AI software to parse patient records and code more aggressive charges. This automation inflates medical bills and drives up costs for patients. Have you noticed higher charges on your recent medical statements?",
-          "hashtags": [
-            "healthcare",
-            "medicalbills",
-            "insurance",
-            "hospitalcosts"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5"
-          ],
-          "script": "Your next doctor visit might include algorithmic billing that drives up hospital revenue.\nHospitals now deploy automated software to parse patient records and optimize insurance claims.\nThese programs scan clinical notes to find extra billing opportunities and code more aggressive charges.\nPatients end up paying higher out of pocket costs while navigating complex disputed statements.\nWould you trust software to decide what your healthcare is worth?",
-          "keywords": [
-            "hospital billing office computer screen",
-            "medical doctor looking at records"
-          ],
-          "image_prompts": [
-            "Close up of a frustrated person looking at a huge medical bill on a kitchen table",
-            "A modern hospital hallway with soft lighting and digital screens"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Medical bills cost more now due to artificial intelligence inflating medical bills.",
-              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5"
-            },
-            {
-              "claim": "Algorithmic billing is used to drive up hospital revenue.",
-              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5"
-            },
-            {
-              "claim": "Hospitals deploy automated software to parse patient records and optimize insurance claims.",
-              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5"
-            },
-            {
-              "claim": "AI programs scan clinical notes to code more aggressive charges and upcoding.",
-              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5"
-            },
-            {
-              "claim": "Medical debt and complex billing hurdles make it harder for patients.",
-              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYXE3bkVBSm5ET2FuX2o0MkhpMU9Vc0p5ZFdaMTNuWlk5enM5bHkySDZGbU9KM3cyai03MmlZMXNKU193cWFudldIbXJyR3dTbTRCZTJrZUw3dExtOEFEby1RcWREOENqY0JINGpUWmdkSUt6eVBfeWFrb2tQTkxWN2U2T2Zvc3F5SEZ6aUtqM3UwRFg3TEZtcm5HeE0tMnItR0czM2lyYzZycnZibnZtUTRqWGtlanlMLTVfRVNMQ1pURWI4SlZManc0QTZ6S3FEY2RpdHR0dHFxZUk0ZzFGcGVwN3EtN2JUb2pMR050SHVVWTNOMkR3?oc=5"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://www.galvnews.com/opinion/guest_columns/guest-commentary-artificial-intelligence-is-inflating-medical-bills/article_734909e5-dcfc-4c26-a320-c32bdd63f810.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-24T15:50:31.276351+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1374,6 +1186,214 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5",
+          "summary": "Nvidia's role as AI financier faces first big test as neoclouds take market hit CNBC",
+          "source": "CNBC",
+          "published": "2026-10-24T11:00:01+00:00",
+          "angle": "Nvidia's AI empire faces its first major stress test as cloud partners struggle."
+        },
+        "draft": {
+          "title": "Nvidia's AI Financing Faces Market Test",
+          "hook_text": "Nvidia's AI bets face trouble",
+          "beats": [
+            {
+              "line": "Nvidia's role as an AI financier is hitting a major market wall.",
+              "visual": "clip",
+              "query": "nvidia logo",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Nvidia financing risk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Neocloud firms built their entire business model on renting out Nvidia hardware.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Neocloud business model",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Shares for some major players in this sector are down thirty percent this month.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "30%",
+              "small": "monthly share price decline",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sector share price drop",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "CEO Jensen Huang has championed these firms as essential for massive AI infrastructure.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.nvidia.com/en-us/about/leadership/",
+              "tag": "Jensen Huang strategy",
+              "name": "Jensen Huang",
+              "role": "CEO, Nvidia",
+              "x": "nvidia",
+              "brands": []
+            },
+            {
+              "line": "These companies now face intense pressure to prove they can generate consistent, long-term profits.",
+              "visual": "clip",
+              "query": "financial stock charts",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Profitability pressure",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Without clear returns, investors are pulling capital away from these niche providers.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "CNBC",
+              "domain": "cnbc.com",
+              "headline": "Nvidia's role as AI financier faces first big test",
+              "url": "",
+              "tag": "Investor capital flight",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Is this AI infrastructure boom actually built on shaky financial ground?",
+              "visual": "clip",
+              "query": "stock market ticker board",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Market bubble risk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Objective and sharp, focusing on the financial shift in AI infrastructure markets.",
+          "thin": false,
+          "caption": "Nvidia's strategy of financing AI neocloud providers faces a major market test as shares for these firms have dropped thirty percent this month. Is the AI infrastructure boom built on sustainable demand? Let us know.",
+          "hashtags": [
+            "Nvidia",
+            "AI",
+            "CloudComputing",
+            "TechNews",
+            "StockMarket"
+          ],
+          "sources": [
+            "https://www.cnbc.com"
+          ],
+          "script": "Nvidia's role as an AI financier is hitting a major market wall.\nNeocloud firms built their entire business model on renting out Nvidia hardware.\nShares for some major players in this sector are down thirty percent this month.\nCEO Jensen Huang has championed these firms as essential for massive AI infrastructure.\nThese companies now face intense pressure to prove they can generate consistent, long-term profits.\nWithout clear returns, investors are pulling capital away from these niche providers.\nIs this AI infrastructure boom actually built on shaky financial ground?",
+          "keywords": [
+            "nvidia logo",
+            "data center server racks",
+            "financial stock charts",
+            "stock market ticker board"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia's AI bets face trouble",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
+            },
+            {
+              "claim": "Nvidia's role as an AI financier is hitting a major market wall.",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
+            },
+            {
+              "claim": "Neocloud firms built their business model on renting out Nvidia hardware.",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
+            },
+            {
+              "claim": "Shares for some major players in this sector are down thirty percent this month.",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
+            },
+            {
+              "claim": "Jensen Huang is the CEO of Nvidia.",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
+            "https://www.cnbc.com"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-24T16:54:25.861165+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1862,8 +1882,8 @@
       "event": "Google updated its privacy policy to allow ad targeting using your personal data. Turning on the Personal Intelligence feature gives Google access to more information for targeted ads. Data shared with AI search from connected apps can dire"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-24T16:39+05:30",
@@ -2042,29 +2062,6 @@
     "gemini-3.5-flash-lite": 1792838434.4177299
   },
   "editor_log": [
-    {
-      "at": "2026-10-23T22:38+05:30",
-      "title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 9,
-        "visuals": 5,
-        "flow": 7
-      },
-      "one_line": "Visually repetitive and lacks a strong, high-stakes hook for a premium news audience.",
-      "fixes": [
-        "LINE 1: Start with the specific proposal: 'Nvidia CEO Jensen Huang has proposed turning Kazakhstan into a global hub for physical AI.'",
-        "LINE 8: Replace with a more professional closing: 'Will this partnership successfully establish Kazakhstan as a central node in the global AI supply chain?'"
-      ],
-      "visual": [
-        "line 1: The same title screen is held for 4.8 seconds, violating the brand rule against static fra",
-        "line 2: The 'KT' placeholder is generic and lacks the professional impact required for a premium n",
-        "line 6: The visual remains static for too long, repeating the same 'Training' text across three fr"
-      ]
-    },
     {
       "at": "2026-10-23T22:48+05:30",
       "title": "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
@@ -2477,10 +2474,34 @@
         "line 7: The logo for 'Voice of Emirates' is irrelevant to an Nvidia/Europe AI story and looks like",
         "line 7: The text 'XXXXXXXXX XXX' is broken/corrupted and unprofessional."
       ]
+    },
+    {
+      "at": "2026-10-24T17:03+05:30",
+      "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
+      "overall": 6.3,
+      "scores": {
+        "hook": 6,
+        "specific": 5,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 4,
+        "flow": 8
+      },
+      "one_line": "Weak hook and generic visuals fail to meet premium news standards.",
+      "fixes": [
+        "LINE 1: Replace 'major market wall' with '30% stock decline' to lead with the impact.",
+        "LINE 3: Name specific companies like CoreWeave or Lambda Labs instead of 'major players'.",
+        "LINE 5: Replace 'these companies' with the specific names mentioned in line 3."
+      ],
+      "visual": [
+        "line 1: The image of Jensen Huang with a robot is irrelevant to the financial story.",
+        "line 3: Generic 'Sector share price drop' text card is lazy; use a real stock chart for a specific",
+        "line 7: Unlabeled, generic stock ticker data is meaningless and fails to support the narrative."
+      ]
     }
   ],
   "rest_note": "2026-10-24T12:32:00+05:30",
-  "fish_turn": 73,
+  "fish_turn": 74,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
