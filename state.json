@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -173,16 +173,64 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-    ]
+    ],
+    "ig_audio": {
+      "id": "691567042780116",
+      "title": "Hippie Jazz",
+      "artist": "Global Genius"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Jack Dorsey's Block just launched a new AI model c…: The shot is an almost-empty card with only text.",
+      "Dessa lead Ragavan Thurairatnam says the model was…: The shot is an almost-empty card with only text.",
+      "The team shared transcripts showing the AI struggl…: The shot is an almost-empty card with only text.",
+      "It sounds less like a polished assistant and more …: The shot is an almost-empty card with only text.",
+      "Would you feel comfortable talking to an AI that s…: The shot is an almost-empty card with only text.",
+      "The shot is an almost-empty card with no visual content.",
+      "The shot is an almost-empty card with no visual content.",
+      "The shot is missing the required visual of a big number 100%."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visuals are repetitive and lack the actual AI chat transcripts.",
+      "script_fixes": [
+        "LINE 1: Change to 'Jack Dorsey’s Block just released Dessa, an AI model trained entirely on human conversation.'"
+      ],
+      "visual_beats": [
+        0,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The Block logo is held for too long across multiple frames.",
+        "line 4: The Verge logo is generic; should show a screenshot of the actual awkward chat transcript.",
+        "line 5: Visuals are static and repetitive; needs a dynamic element or a snippet of the chat."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "news photo: block.xyz",
+      "news photo: block.xyz"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAImlWrcojkbFrXy3CMOSWWT0z8TkkT9AAK9IwACvKLpVsUQsl3xLqpwPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T17:38:07.262129+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-24T18:19:05.623073+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-24",
@@ -663,51 +711,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Bipartisan House Bill Takes Aim at AI ‘Distillation Attacks’ (Oct 23, 2026)",
-            "link": "https://www.vitallaw.com/news/bipartisan-house-bill-takes-aim-at-ai-distillation-attacks/cspd0135c0a3c18b874a819c74b83fa01476dc",
-            "summary": "Bipartisan House Bill Takes Aim at AI ‘Distillation Attacks’ (Oct 23, 2026) VitalLaw.com",
-            "source": "VitalLaw.com",
-            "published": "2026-10-24T07:58:22+00:00",
-            "angle": "New US House bill targets 'distillation attacks'—the biggest threat to AI model security right now."
-          },
-          {
-            "title": "Vibecoding your own inference engine is easy they said",
-            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xdh57e/vibecoding_your_own_inference_engine_is_easy_they/",
-            "summary": "",
-            "source": "r/LocalLLaMA",
-            "published": "2026-10-23T15:26:47+00:00",
-            "buzz": "top of r/LocalLLaMA today",
-            "angle": "The viral 'vibe-coding' trend: Why developers are suddenly building their own custom AI inference engines."
-          },
-          {
-            "title": "An artificial intelligence system for human papillomavirus-positive dual stain cervical cancer screening reads p16-Ki67 slides",
-            "link": "https://www.2minutemedicine.com/an-artificial-intelligence-system-for-human-papillomavirus-positive-dual-stain-cervical-cancer-screening-reads-p16-ki67-slides/",
-            "summary": "An artificial intelligence system for human papillomavirus-positive dual stain cervical cancer screening reads p16-Ki67 slides 2 Minute Medicine",
-            "source": "2 Minute Medicine",
-            "published": "2026-10-23T17:13:23+00:00",
-            "angle": "Medical AI breakthrough: A new system is now screening for cervical cancer with high-precision digital slides."
-          }
-        ],
-        "choose_deadline": "2026-10-24T16:39:19.702971+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1500,6 +1503,195 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+          "summary": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, for example, shared by Dessa lead Ragavan Thurairatnam. The conversation between […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-23T19:32:39+00:00",
+          "angle": "Jack Dorsey’s company built an AI trained only on human conversation to act like an awkward friend."
+        },
+        "draft": {
+          "title": "Block releases Dessa AI voice model",
+          "hook_text": "Block launched an awkward AI",
+          "beats": [
+            {
+              "line": "Jack Dorsey's Block just launched a new AI model called Dessa.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Block",
+              "outlet": "",
+              "domain": "block.xyz",
+              "headline": "",
+              "url": "https://block.xyz",
+              "tag": "Block launches Dessa",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Block",
+                  "domain": "block.xyz"
+                }
+              ]
+            },
+            {
+              "line": "It mimics human conversation with a surprisingly awkward personality.",
+              "visual": "clip",
+              "query": "person talking on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Dessa acts awkward",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Dessa lead Ragavan Thurairatnam says the model was trained from scratch on human conversations.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+              "tag": "Ragavan Thurairatnam leads",
+              "name": "Ragavan Thurairatnam",
+              "role": "Dessa lead",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The team shared transcripts showing the AI struggling with social cues.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Jack Dorsey’s Block made an AI model that talks to you",
+              "url": "",
+              "tag": "Transcripts show struggles",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It sounds less like a polished assistant and more like a nervous acquaintance.",
+              "visual": "clip",
+              "query": "person looking confused",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sounds like an acquaintance",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you feel comfortable talking to an AI that sounds this uncertain?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "100%",
+              "small": "human conversation data",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Uncertain AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Casual, slightly amused tone, emphasizing the uncanny nature of the AI's social behavior.",
+          "thin": false,
+          "caption": "Jack Dorsey’s Block has released Dessa, an AI model trained entirely on human conversation. Its dialogue is notably awkward and uncanny compared to standard virtual assistants. Would you feel comfortable talking to an AI that sounds this uncertain?",
+          "hashtags": [
+            "Block",
+            "Dessa",
+            "AI",
+            "JackDorsey",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+          ],
+          "script": "Jack Dorsey's Block just launched a new AI model called Dessa.\nIt mimics human conversation with a surprisingly awkward personality.\nDessa lead Ragavan Thurairatnam says the model was trained from scratch on human conversations.\nThe team shared transcripts showing the AI struggling with social cues.\nIt sounds less like a polished assistant and more like a nervous acquaintance.\nWould you feel comfortable talking to an AI that sounds this uncertain?",
+          "keywords": [
+            "person talking on phone",
+            "person looking confused"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_score": 41,
+          "evidence": [
+            {
+              "claim": "Block launched an awkward AI",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+            },
+            {
+              "claim": "Jack Dorsey's Block launched a new AI model called Dessa",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+            },
+            {
+              "claim": "Dessa lead Ragavan Thurairatnam says the model was trained from scratch on human conversations",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+            },
+            {
+              "claim": "The team shared transcripts showing the AI struggling with social cues",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-24T17:38:07.262129+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1988,8 +2180,8 @@
       "event": "Google updated its privacy policy to allow ad targeting using your personal data. Turning on the Personal Intelligence feature gives Google access to more information for targeted ads. Data shared with AI search from connected apps can dire"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-24T16:39+05:30",
@@ -2017,7 +2209,7 @@
   "report_day": "2026-10-23",
   "ig_count": {
     "day": "2026-10-24",
-    "at": "2026-10-24T17:38:07.262161+05:30",
+    "at": "2026-10-24T17:49:05.623319+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2041,15 +2233,15 @@
   "late_note_for": "2026-10-24-4",
   "gemini_use": {
     "day": "2026-10-24",
-    "calls": 930,
+    "calls": 944,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 200,
+        "ok": 211,
         "busy": 93,
-        "other": 13,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 16,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.6-flash": {
         "ok": 12,
@@ -2168,27 +2360,6 @@
     "gemini-3.5-flash-lite": 1792838434.4177299
   },
   "editor_log": [
-    {
-      "at": "2026-10-24T02:15+05:30",
-      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new frien",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but the visuals rely on generic stock footage instead of actual content.",
-      "fixes": [
-        "LINE 5: Remove 'This model follows Jack Dorsey's vision for human-centric communication tools' as it is vague filler; replace with a specific detail about the training data or the model's architecture"
-      ],
-      "visual": [
-        "line 4: Uses a generic stock photo of a laughing man instead of showing the actual awkward chat lo",
-        "line 7: Uses a generic close-up of a mouth instead of showing the bot's interface or a specific ex"
-      ]
-    },
     {
       "at": "2026-10-24T02:24+05:30",
       "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new frien",
@@ -2604,10 +2775,32 @@
         "line 3: Visuals are just text on a background; should show the robot sitting or somersaulting.",
         "line 4: Visuals are just text on a background; should show the robot reacting to a command."
       ]
+    },
+    {
+      "at": "2026-10-24T17:48+05:30",
+      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new frien",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visuals are repetitive and lack the actual AI chat transcripts.",
+      "fixes": [
+        "LINE 1: Change to 'Jack Dorsey’s Block just released Dessa, an AI model trained entirely on human conversation.'"
+      ],
+      "visual": [
+        "line 1: The Block logo is held for too long across multiple frames.",
+        "line 4: The Verge logo is generic; should show a screenshot of the actual awkward chat transcript.",
+        "line 5: Visuals are static and repetitive; needs a dynamic element or a snippet of the chat."
+      ]
     }
   ],
   "rest_note": "2026-10-24T12:32:00+05:30",
-  "fish_turn": 77,
+  "fish_turn": 78,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
