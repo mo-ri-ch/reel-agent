@@ -1,222 +1,71 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-    "link": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-    "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-    "source": "AI - Ars Technica",
-    "published": "2026-10-23T20:19:55+00:00",
-    "angle": "Google's updated privacy policy reveals your Gmail is used for ad targeting"
-  },
-  "draft": {
-    "title": "Google updates Gmail privacy policy for ads",
-    "hook_text": "Your Gmail is now ad data",
-    "beats": [
-      {
-        "line": "Google updated its privacy policy to allow ad targeting using your personal data.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Google Gmail",
-        "outlet": "",
-        "domain": "google.com",
-        "headline": "",
-        "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-        "tag": "Google privacy policy",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Google",
-            "domain": "google.com"
-          }
-        ]
-      },
-      {
-        "line": "Turning on the Personal Intelligence feature gives Google access to more information for targeted ads.",
-        "visual": "clip",
-        "query": "person checking smartphone",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Personal Intelligence feature",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Google",
-            "domain": "google.com"
-          }
-        ]
-      },
-      {
-        "line": "Data shared with AI search from connected apps can directly feed your ad profile.",
-        "visual": "clip",
-        "query": "typing on laptop",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "AI search data",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Google",
-            "domain": "google.com"
-          }
-        ]
-      },
-      {
-        "line": "Google specifies that Gmail messages can be utilized for advertising when this setting is active.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "Ars Technica",
-        "domain": "arstechnica.com",
-        "headline": "Updated Google privacy policy says your Gmail might be used for advertising",
-        "url": "",
-        "tag": "Gmail data for ads",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Google",
-            "domain": "google.com"
-          }
-        ]
-      },
-      {
-        "line": "Would you keep Personal Intelligence turned on?",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "2026",
-        "small": "Google Policy",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Personal Intelligence settings",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Google",
-            "domain": "google.com"
-          }
-        ]
-      }
-    ],
-    "delivery": "concerned and direct, explaining privacy changes with clear urgency",
-    "thin": false,
-    "caption": "Google updated its privacy policy to state that data from connected apps shared with AI search via Personal Intelligence can be used for personalized ads. Would you keep Personal Intelligence turned on?",
-    "hashtags": [
-      "Google",
-      "Gmail",
-      "Privacy",
-      "TechNews"
-    ],
-    "sources": [
-      "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
-    ],
-    "script": "Google updated its privacy policy to allow ad targeting using your personal data.\nTurning on the Personal Intelligence feature gives Google access to more information for targeted ads.\nData shared with AI search from connected apps can directly feed your ad profile.\nGoogle specifies that Gmail messages can be utilized for advertising when this setting is active.\nWould you keep Personal Intelligence turned on?",
-    "keywords": [
-      "person checking smartphone",
-      "typing on laptop"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "evidence": [
-      {
-        "claim": "Your Gmail is now ad data",
-        "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
-      },
-      {
-        "claim": "Google updated its privacy policy to allow ad targeting using your personal data.",
-        "url": "https://www.androidauthority.com/google-personal-intelligence-privacy-3727111/"
-      },
-      {
-        "claim": "Turning on the Personal Intelligence feature gives Google access to more information for targeted ads.",
-        "url": "https://www.androidauthority.com/google-personal-intelligence-privacy-3727111/"
-      },
-      {
-        "claim": "Data shared with AI search from connected apps can directly feed your ad profile.",
-        "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
-      },
-      {
-        "claim": "Google specifies that Gmail messages can be utilized for advertising when this setting is active.",
-        "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 1,
-    "source_links": [
-      "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
-    ],
-    "ig_audio": {
-      "id": "522339937196006",
-      "title": "Epic Proportions",
-      "artist": "Symphonic Planet"
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+      "link": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
+      "summary": "",
+      "source": "reddit.com",
+      "published": "2026-10-24T05:49:57+00:00",
+      "buzz": "Hacker News 51 points",
+      "angle": "A hacker reversed a Samsung TV and discovered on-board AI listening in, leading to a suspended OpenAI account."
     },
-    "visual_status": "fixed",
-    "visual_notes": [
-      "Google specifies that Gmail messages can be utiliz…: The visual shows text saying 'Gmail' instead of a source card for Ars Technica as intended."
-    ],
-    "editor": {
-      "overall": 9.0,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 9,
-        "flow": 9
-      },
-      "one_line": "Strong, specific coverage on Google's privacy policy change regarding Gmail ad data.",
-      "script_fixes": [],
-      "visual_beats": [],
-      "visual_notes": [],
-      "reviewer": "gemini"
+    {
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB · Hugging Face",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xdiecx/nvidianvidianemotron35bolte4b4gb_hugging_face/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-23T16:13:05+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "Nvidia drops the new Nemotron-3.5-Bolt-E4B-4GB model, pushing ultra-light edge AI capabilities."
     },
-    "editor_rounds": 1,
-    "credits": [
-      "Google Gmail: Stock Catalog (CC BY 2.0), via Wikimedia Commons"
-    ],
-    "voice_used": "Ethan (Fish Audio)",
-    "visual_summary": "1 real photos, 3 AI images, 2 cards"
-  },
+    {
+      "title": "Mark Cuban says AI hack agents are like cockroaches, but can be controlled",
+      "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/mark-cuban-says-ai-hack-agents-are-like-cockroaches-but-can-be-controlled/articleshow/135163806.cms",
+      "summary": "Mark Cuban says AI hack agents are like cockroaches, but can be controlled The Economic Times",
+      "source": "The Economic Times",
+      "published": "2026-10-24T06:10:51+00:00",
+      "angle": "Mark Cuban compares AI hack agents to cockroaches, sparking debate on autonomous security risks."
+    }
+  ],
+  "choose_deadline": "2026-10-24T13:40:31.695891+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIlQWrcZywvwB12XnfAOjSrdZFF1PBiAAJRJAACvKLhVh5KtGYTEPdOPQQ",
-  "queue": [],
+  "video_file_id": null,
+  "queue": [
+    {
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "video_file_id": "BAACAgUAAxkDAAIlQWrcZywvwB12XnfAOjSrdZFF1PBiAAJRJAACvKLhVh5KtGYTEPdOPQQ",
+      "caption": "Google updated its privacy policy to state that data from connected apps shared with AI search via Personal Intelligence can be used for personalized ads. Would you keep Personal Intelligence turned on?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Google Gmail: Stock Catalog (CC BY 2.0), via Wikimedia Commons\n\n#Google #Gmail #Privacy #TechNews",
+      "extra": false,
+      "meta": {
+        "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+        "kind": "news",
+        "source": "AI - Ars Technica",
+        "engine": "fish",
+        "voice": "Ethan (Fish Audio)",
+        "person": false,
+        "words": 64,
+        "visuals": "1 real photos, 3 AI images, 2 cards",
+        "editor": 9.0,
+        "writer": "gemini",
+        "hook_score": null,
+        "made": "2026-10-24T13:40+05:30"
+      },
+      "audio": {
+        "id": "522339937196006",
+        "title": "Epic Proportions",
+        "artist": "Symphonic Planet"
+      },
+      "post_at": "2026-10-24T13:41:31.197885+05:30"
+    }
+  ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-10-24T13:37:28.930526+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
@@ -622,7 +471,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
     {
       "title": "Mark Cuban says AI hack agents are like cockroaches, but can be controlled",
@@ -706,220 +554,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-          "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-          "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-23T21:59:19+00:00",
-          "angle": "Nvidia's CEO Jensen Huang is selling out $20,000 worth of adorable 'Microduck' robots—the future of AI hardware is getting weird."
-        },
-        "draft": {
-          "title": "Nvidia CEO's New AI Robot",
-          "hook_text": "Twenty thousand robots in one day",
-          "beats": [
-            {
-              "line": "Twenty thousand Microduck robots hit pre-order targets in just one day.",
-              "visual": "stat",
-              "query": "robot toy",
-              "prompt": "",
-              "big": "20,000",
-              "small": "units pre-ordered",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "20,000 robots pre-ordered",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Nvidia CEO Jensen Huang demonstrated the tiny robot on stage.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.nvidia.com",
-              "tag": "Jensen Huang with Microduck",
-              "name": "Jensen Huang",
-              "role": "CEO, Nvidia",
-              "x": "jensenhuang",
-              "brands": []
-            },
-            {
-              "line": "The robots stomp their feet while making tiny R2-D2 noises.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Microduck robot",
-              "outlet": "",
-              "domain": "techcrunch.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-              "tag": "Microduck robot features",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "They sit down, play dead for a nap, and perform somersaults.",
-              "visual": "clip",
-              "query": "small toy robot moving",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Voice command actions",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These movements activate immediately through simple voice commands.",
-              "visual": "clip",
-              "query": "person speaking to small robot",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Voice command control",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The company behind this gadget is targeting the busy holiday gift market.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots",
-              "url": "",
-              "tag": "Holiday gift trend",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you want one of these on your desk?",
-              "visual": "clip",
-              "query": "person looking at desk robot",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Desk robot interest",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Upbeat and curious, matching the fun nature of the tech while staying grounded in the numbers.",
-          "thin": false,
-          "caption": "Twenty thousand Microduck robots were pre-ordered in a single day after Nvidia CEO Jensen Huang showcased the device. These interactive AI toys respond to voice commands with lifelike movements and sounds. Would you want one of these on your desk?",
-          "hashtags": [
-            "Nvidia",
-            "Microduck",
-            "JensenHuang",
-            "Robotics",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-          ],
-          "script": "Twenty thousand Microduck robots hit pre-order targets in just one day.\nNvidia CEO Jensen Huang demonstrated the tiny robot on stage.\nThe robots stomp their feet while making tiny R2-D2 noises.\nThey sit down, play dead for a nap, and perform somersaults.\nThese movements activate immediately through simple voice commands.\nThe company behind this gadget is targeting the busy holiday gift market.\nWould you want one of these on your desk?",
-          "keywords": [
-            "small toy robot moving",
-            "person speaking to small robot",
-            "person looking at desk robot"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Twenty thousand robots in one day",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-            },
-            {
-              "claim": "Twenty thousand Microduck robots hit pre-order targets in just one day.",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-            },
-            {
-              "claim": "Nvidia CEO Jensen Huang demonstrated the tiny robot on stage.",
-              "url": "https://www.businessinsider.com/jensen-huang-berlin-gtc-keynote-protester-nvidia-robot-demo-2026-10"
-            },
-            {
-              "claim": "The robots stomp their feet while making tiny R2-D2 noises.",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-            },
-            {
-              "claim": "They sit down, play dead for a nap, and perform somersaults.",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-            },
-            {
-              "claim": "These movements activate immediately through simple voice commands.",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-            },
-            {
-              "claim": "The company behind this gadget is targeting the busy holiday gift market.",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-24T06:01:23.611368+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1412,6 +1046,232 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+          "link": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+          "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-23T20:19:55+00:00",
+          "angle": "Google's updated privacy policy reveals your Gmail is used for ad targeting"
+        },
+        "draft": {
+          "title": "Google updates Gmail privacy policy for ads",
+          "hook_text": "Your Gmail is now ad data",
+          "beats": [
+            {
+              "line": "Google updated its privacy policy to allow ad targeting using your personal data.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google Gmail",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+              "tag": "Google privacy policy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Turning on the Personal Intelligence feature gives Google access to more information for targeted ads.",
+              "visual": "clip",
+              "query": "person checking smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Personal Intelligence feature",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Data shared with AI search from connected apps can directly feed your ad profile.",
+              "visual": "clip",
+              "query": "typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI search data",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Google specifies that Gmail messages can be utilized for advertising when this setting is active.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Updated Google privacy policy says your Gmail might be used for advertising",
+              "url": "",
+              "tag": "Gmail data for ads",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you keep Personal Intelligence turned on?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2026",
+              "small": "Google Policy",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Personal Intelligence settings",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "concerned and direct, explaining privacy changes with clear urgency",
+          "thin": false,
+          "caption": "Google updated its privacy policy to state that data from connected apps shared with AI search via Personal Intelligence can be used for personalized ads. Would you keep Personal Intelligence turned on?",
+          "hashtags": [
+            "Google",
+            "Gmail",
+            "Privacy",
+            "TechNews"
+          ],
+          "sources": [
+            "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
+          ],
+          "script": "Google updated its privacy policy to allow ad targeting using your personal data.\nTurning on the Personal Intelligence feature gives Google access to more information for targeted ads.\nData shared with AI search from connected apps can directly feed your ad profile.\nGoogle specifies that Gmail messages can be utilized for advertising when this setting is active.\nWould you keep Personal Intelligence turned on?",
+          "keywords": [
+            "person checking smartphone",
+            "typing on laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Your Gmail is now ad data",
+              "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+            },
+            {
+              "claim": "Google updated its privacy policy to allow ad targeting using your personal data.",
+              "url": "https://www.androidauthority.com/google-personal-intelligence-privacy-3727111/"
+            },
+            {
+              "claim": "Turning on the Personal Intelligence feature gives Google access to more information for targeted ads.",
+              "url": "https://www.androidauthority.com/google-personal-intelligence-privacy-3727111/"
+            },
+            {
+              "claim": "Data shared with AI search from connected apps can directly feed your ad profile.",
+              "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
+            },
+            {
+              "claim": "Google specifies that Gmail messages can be utilized for advertising when this setting is active.",
+              "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
+          ],
+          "ig_audio": {
+            "id": "522339937196006",
+            "title": "Epic Proportions",
+            "artist": "Symphonic Planet"
+          },
+          "visual_status": "fixed",
+          "visual_notes": [
+            "Google specifies that Gmail messages can be utiliz…: The visual shows text saying 'Gmail' instead of a source card for Ars Technica as intended."
+          ],
+          "editor": {
+            "overall": 9.0,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 9,
+              "accuracy": 10,
+              "visuals": 9,
+              "flow": 9
+            },
+            "one_line": "Strong, specific coverage on Google's privacy policy change regarding Gmail ad data.",
+            "script_fixes": [],
+            "visual_beats": [],
+            "visual_notes": [],
+            "reviewer": "gemini"
+          },
+          "editor_rounds": 1,
+          "credits": [
+            "Google Gmail: Stock Catalog (CC BY 2.0), via Wikimedia Commons"
+          ],
+          "voice_used": "Ethan (Fish Audio)",
+          "visual_summary": "1 real photos, 3 AI images, 2 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAIlQWrcZywvwB12XnfAOjSrdZFF1PBiAAJRJAACvKLhVh5KtGYTEPdOPQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIlQWrcZywvwB12XnfAOjSrdZFF1PBiAAJRJAACvKLhVh5KtGYTEPdOPQQ",
+      "history_title": "Updated Google privacy policy says your Gmail might be used for advertising"
     }
   ],
   "posted_ids": [
@@ -1447,7 +1307,6 @@
     "BAACAgUAAxkDAAIk_Grb5Sq3kvvzmqSftKulaLl5HZ0WAAKJJQAC323gVnSVrXPdqbqKPQQ"
   ],
   "history": [
-    "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event",
     "Mistral says \"Le Chonk\" can challenge the best AI models",
     "Google experiments with an AI-powered gaming platform",
     "Top AI headlines · 4:10 AM today",
@@ -1546,7 +1405,8 @@
     "NVIDIA CEO Proposes Kazakhstan as Global Hub for Physical AI",
     "Introducing Kimi K3.1 Pro: Advancing Open Intelligence",
     "Coforge Revenue Rises 54% as AI Engineering and Deal Bookings Gain Momentum",
-    "OpenAI now trains its frontier AI models with no internet access"
+    "OpenAI now trains its frontier AI models with no internet access",
+    "Updated Google privacy policy says your Gmail might be used for advertising"
   ],
   "posted_log": [
     {
@@ -1898,15 +1758,20 @@
       "title": "OpenAI now trains its frontier AI models with no internet access",
       "at": "2026-10-24T04:55:23.963059+05:30",
       "event": "OpenAI is training its frontier AI models with zero internet access. This follows multiple rogue hacking incidents targeting the company systems. OpenAI confirmed this in a blog post released this Friday. The team built an offline environme"
+    },
+    {
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "at": "2026-10-24T13:40:31.197880+05:30",
+      "event": "Google updated its privacy policy to allow ad targeting using your personal data. Turning on the Personal Intelligence feature gives Google access to more information for targeted ads. Data shared with AI search from connected apps can dire"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-24T13:10+05:30",
+    "at": "2026-10-24T13:40+05:30",
     "techcrunch.com": 6,
-    "theverge.com": 10,
+    "theverge.com": 9,
     "arstechnica.com": 2,
     "technologyreview.com": 1,
     "openai.com": 3,
@@ -1915,16 +1780,16 @@
     "huggingface.co": 3,
     "blogs.nvidia.com": 1,
     "inc42.com": 0,
-    "news.google.com": 41,
+    "news.google.com": 42,
     "Google News (VentureBeat, AIM, AI News)": 14,
     "producthunt.com": 5,
     "Hacker News": 3,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 2
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-24T13:10:12.026489+05:30",
+  "last_auto_offer": "2026-10-24T13:40:31.695891+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-23",
   "ig_count": {
@@ -1953,7 +1818,7 @@
   "late_note_for": "2026-10-24-3",
   "gemini_use": {
     "day": "2026-10-24",
-    "calls": 300,
+    "calls": 302,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1988,7 +1853,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 40,
+        "ok": 42,
         "busy": 9,
         "other": 1,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
