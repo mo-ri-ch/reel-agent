@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -177,16 +177,47 @@
     "fix_rounds": 1,
     "source_links": [
       "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "522339937196006",
+      "title": "Epic Proportions",
+      "artist": "Symphonic Planet"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Google specifies that Gmail messages can be utiliz…: The visual shows text saying 'Gmail' instead of a source card for Ars Technica as intended."
+    ],
+    "editor": {
+      "overall": 9.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 9,
+        "flow": 9
+      },
+      "one_line": "Strong, specific coverage on Google's privacy policy change regarding Gmail ad data.",
+      "script_fixes": [],
+      "visual_beats": [],
+      "visual_notes": [],
+      "reviewer": "gemini"
+    },
+    "editor_rounds": 1,
+    "credits": [
+      "Google Gmail: Stock Catalog (CC BY 2.0), via Wikimedia Commons"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 3 AI images, 2 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIlQWrcZywvwB12XnfAOjSrdZFF1PBiAAJRJAACvKLhVh5KtGYTEPdOPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T13:30:03.166001+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-24T14:07:09.078401+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-24",
@@ -675,43 +706,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-            "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-            "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-23T21:59:19+00:00",
-            "angle": "Nvidia's CEO Jensen Huang is selling out $20,000 worth of adorable 'Microduck' robots—the future of AI hardware is getting weird."
-          },
-          {
-            "title": "Dessa: the most authentic full-duplex speech model ever built",
-            "link": "https://block.xyz/dessa",
-            "summary": "",
-            "source": "block.xyz",
-            "published": "2026-10-23T19:09:54+00:00",
-            "buzz": "Hacker News 168 points",
-            "angle": "Block just dropped 'Dessa,' a new full-duplex speech model that sounds more human and authentic than anything we've heard before."
-          }
-        ],
-        "choose_deadline": "2026-10-24T05:25:34.627945+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1225,6 +1219,199 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+          "link": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+          "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-23T20:19:55+00:00",
+          "angle": "Google's updated privacy policy reveals your Gmail is used for ad targeting"
+        },
+        "draft": {
+          "title": "Google updates Gmail privacy policy for ads",
+          "hook_text": "Your Gmail is now ad data",
+          "beats": [
+            {
+              "line": "Google updated its privacy policy to allow ad targeting using your personal data.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Google Gmail",
+              "outlet": "",
+              "domain": "google.com",
+              "headline": "",
+              "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+              "tag": "Google privacy policy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Turning on the Personal Intelligence feature gives Google access to more information for targeted ads.",
+              "visual": "clip",
+              "query": "person checking smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Personal Intelligence feature",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Data shared with AI search from connected apps can directly feed your ad profile.",
+              "visual": "clip",
+              "query": "typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI search data",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Google specifies that Gmail messages can be utilized for advertising when this setting is active.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Updated Google privacy policy says your Gmail might be used for advertising",
+              "url": "",
+              "tag": "Gmail data for ads",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you keep Personal Intelligence turned on?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2026",
+              "small": "Google Policy",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Personal Intelligence settings",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "concerned and direct, explaining privacy changes with clear urgency",
+          "thin": false,
+          "caption": "Google updated its privacy policy to state that data from connected apps shared with AI search via Personal Intelligence can be used for personalized ads. Would you keep Personal Intelligence turned on?",
+          "hashtags": [
+            "Google",
+            "Gmail",
+            "Privacy",
+            "TechNews"
+          ],
+          "sources": [
+            "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
+          ],
+          "script": "Google updated its privacy policy to allow ad targeting using your personal data.\nTurning on the Personal Intelligence feature gives Google access to more information for targeted ads.\nData shared with AI search from connected apps can directly feed your ad profile.\nGoogle specifies that Gmail messages can be utilized for advertising when this setting is active.\nWould you keep Personal Intelligence turned on?",
+          "keywords": [
+            "person checking smartphone",
+            "typing on laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Your Gmail is now ad data",
+              "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+            },
+            {
+              "claim": "Google updated its privacy policy to allow ad targeting using your personal data.",
+              "url": "https://www.androidauthority.com/google-personal-intelligence-privacy-3727111/"
+            },
+            {
+              "claim": "Turning on the Personal Intelligence feature gives Google access to more information for targeted ads.",
+              "url": "https://www.androidauthority.com/google-personal-intelligence-privacy-3727111/"
+            },
+            {
+              "claim": "Data shared with AI search from connected apps can directly feed your ad profile.",
+              "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
+            },
+            {
+              "claim": "Google specifies that Gmail messages can be utilized for advertising when this setting is active.",
+              "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-24T13:30:03.166001+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1713,8 +1900,8 @@
       "event": "OpenAI is training its frontier AI models with zero internet access. This follows multiple rogue hacking incidents targeting the company systems. OpenAI confirmed this in a blog post released this Friday. The team built an offline environme"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-24T13:10+05:30",
@@ -1742,7 +1929,7 @@
   "report_day": "2026-10-23",
   "ig_count": {
     "day": "2026-10-24",
-    "at": "2026-10-24T13:20:28.812611+05:30",
+    "at": "2026-10-24T13:30:41.146934+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -1766,7 +1953,7 @@
   "late_note_for": "2026-10-24-3",
   "gemini_use": {
     "day": "2026-10-24",
-    "calls": 290,
+    "calls": 300,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1801,7 +1988,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 30,
+        "ok": 40,
         "busy": 9,
         "other": 1,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -1886,53 +2073,6 @@
     "gemini-3-flash-preview": 1792828208.6931055
   },
   "editor_log": [
-    {
-      "at": "2026-10-23T17:11+05:30",
-      "title": "Leidos Lands $95M DLA Contract to Apply AI to Asset Management",
-      "overall": 8.3,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but the visuals are repetitive and lack dynamic variety.",
-      "fixes": [
-        "LINE 2: Replace 'the agency' with 'the Defense Logistics Agency' for clarity.",
-        "LINE 7: Replace 'Will this AI overhaul finally fix defense inventory tracking?' with 'Can Leidos' AI solve the DLA's long-standing inventory visibility issues?'"
-      ],
-      "visual": [
-        "line 1: The same static text frame is held for too long before the logo appears.",
-        "line 2: Visuals are just text overlays; lacks a relevant image of DLA operations or Leidos tech.",
-        "line 4: Visuals are identical to previous frames; lacks visual distinction for the new topic."
-      ]
-    },
-    {
-      "at": "2026-10-23T18:43+05:30",
-      "title": "Microsoft working to reduce AI costs, expand ecosystem as global adoption rises",
-      "overall": 5.5,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 4,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 6
-      },
-      "one_line": "Too much filler and repetitive visuals; lacks the punch required for premium news.",
-      "fixes": [
-        "LINE 1: Replace 'cutting AI costs' with 'slashing Azure AI inference costs by X percent'.",
-        "LINE 2: Replace 'focusing on infrastructure efficiency' with 'deploying custom Maia 100 chips'.",
-        "LINE 3: Remove 'This move aims to support the rising demand' (filler)."
-      ],
-      "visual": [
-        "line 1: Same logo repeated for 12 seconds.",
-        "line 2: Generic 'SN' circle icon is not professional news quality.",
-        "line 3: Static text-only frames for 10+ seconds are visually boring."
-      ]
-    },
     {
       "at": "2026-10-23T18:54+05:30",
       "title": "Microsoft working to reduce AI costs, expand ecosystem as global adoption rises",
@@ -2339,10 +2479,45 @@
         "line 4: Reuses the exact same stock bank building image from the intro, violating the uniqueness r",
         "line 5: Visuals lack a specific graphic or icon for back-office operations, defaulting to empty te"
       ]
+    },
+    {
+      "at": "2026-10-24T13:35+05:30",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 4,
+        "flow": 9
+      },
+      "one_line": "Strong script let down by irrelevant final and branding visuals.",
+      "fixes": [],
+      "visual": [
+        "line 4: Displays Ars Technica app logo instead of policy document or Google ad interface.",
+        "line 5: Displays random '2026' number card which makes no contextual sense for the closing questio"
+      ]
+    },
+    {
+      "at": "2026-10-24T13:36+05:30",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "overall": 9.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 9,
+        "flow": 9
+      },
+      "one_line": "Strong, specific coverage on Google's privacy policy change regarding Gmail ad data.",
+      "fixes": [],
+      "visual": []
     }
   ],
   "rest_note": "2026-10-24T12:32:00+05:30",
-  "fish_turn": 66,
+  "fish_turn": 67,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
