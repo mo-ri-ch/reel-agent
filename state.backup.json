@@ -31,33 +31,46 @@
         "name": "Jensen Huang",
         "role": "CEO, Nvidia",
         "x": "nvidia",
-        "brands": [
-          {
-            "name": "Nvidia",
-            "domain": "nvidia.com"
-          }
-        ]
+        "brands": []
       },
       {
-        "line": "The continent currently lacks the local computing power to compete globally.",
-        "visual": "clip",
-        "query": "data center server racks",
+        "line": "The United States currently controls seventy-five percent of global AI computing power.",
+        "visual": "stat",
+        "query": "technology",
         "prompt": "",
-        "big": "",
-        "small": "",
+        "big": "75%",
+        "small": "US compute share",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Computing power gap",
+        "tag": "",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Huang states that AI is vital for Europe to maintain its industrial strength.",
+        "line": "Europe sits at only five percent of that vital capacity.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "5%",
+        "small": "Europe compute share",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Huang says this lack of local power threatens industrial competitiveness.",
         "visual": "photo",
         "query": "technology",
         "prompt": "",
@@ -68,78 +81,50 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Industrial AI needs",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Nvidia",
-            "domain": "nvidia.com"
-          }
-        ]
-      },
-      {
-        "line": "Europe trails the United States in deploying the necessary AI infrastructure.",
-        "visual": "clip",
-        "query": "global connectivity map",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Infrastructure lag",
+        "tag": "Industrial risk",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Building sovereign AI capacity is essential for the region's future economic success.",
-        "visual": "image",
-        "query": "technology",
-        "prompt": "abstract digital visualization of a European data network",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Sovereign AI capacity",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Without more localized data centers, Europe relies heavily on external hardware providers.",
+        "line": "Nvidia emphasizes that sovereign AI infrastructure is now a strategic necessity.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Nvidia H100 GPU",
+        "entity": "Nvidia DGX",
         "outlet": "",
         "domain": "nvidia.com",
         "headline": "",
-        "url": "https://www.nvidia.com/en-us/data-center/h100/",
-        "tag": "External hardware reliance",
+        "url": "https://www.nvidia.com/en-us/data-center/dgx/",
+        "tag": "Sovereign AI needed",
         "name": "",
         "role": "",
         "x": "",
-        "brands": [
-          {
-            "name": "Nvidia",
-            "domain": "nvidia.com"
-          }
-        ]
+        "brands": []
       },
       {
-        "line": "Can Europe build enough infrastructure to keep its AI industry independent?",
+        "line": "Without local data centers, European companies may rely entirely on external systems.",
+        "visual": "clip",
+        "query": "modern server room racks",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Infrastructure gap",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Can Europe build enough local capacity to stay independent?",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -157,9 +142,9 @@
         "brands": []
       }
     ],
-    "delivery": "Urgent and analytical, highlighting the competitive gap with a serious tone.",
+    "delivery": "Urgent and analytical, emphasizing the massive gap between the US and Europe.",
     "thin": false,
-    "caption": "Nvidia CEO Jensen Huang warns that Europe lacks the computing power needed to remain competitive in AI. The continent currently trails the United States in infrastructure deployment, creating a dependency on foreign hardware. Can Europe achieve technological independence?",
+    "caption": "Nvidia CEO Jensen Huang warns that Europe's AI competitiveness is at risk. While the US holds 75% of global AI computing power, Europe accounts for only 5%. This lack of local infrastructure forces a reliance on external systems. Can Europe build enough local capacity to remain independent?",
     "hashtags": [
       "Nvidia",
       "AI",
@@ -170,14 +155,11 @@
     "sources": [
       "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
     ],
-    "script": "Nvidia CEO Jensen Huang warns Europe risks falling behind in AI.\nThe continent currently lacks the local computing power to compete globally.\nHuang states that AI is vital for Europe to maintain its industrial strength.\nEurope trails the United States in deploying the necessary AI infrastructure.\nBuilding sovereign AI capacity is essential for the region's future economic success.\nWithout more localized data centers, Europe relies heavily on external hardware providers.\nCan Europe build enough infrastructure to keep its AI industry independent?",
+    "script": "Nvidia CEO Jensen Huang warns Europe risks falling behind in AI.\nThe United States currently controls seventy-five percent of global AI computing power.\nEurope sits at only five percent of that vital capacity.\nHuang says this lack of local power threatens industrial competitiveness.\nNvidia emphasizes that sovereign AI infrastructure is now a strategic necessity.\nWithout local data centers, European companies may rely entirely on external systems.\nCan Europe build enough local capacity to stay independent?",
     "keywords": [
-      "data center server racks",
-      "global connectivity map"
+      "modern server room racks"
     ],
-    "image_prompts": [
-      "abstract digital visualization of a European data network"
-    ],
+    "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
@@ -189,29 +171,30 @@
         "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
       },
       {
-        "claim": "The continent currently lacks the local computing power to compete globally.",
+        "claim": "The United States currently controls seventy-five percent of global AI computing power.",
         "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
       },
       {
-        "claim": "Huang states that AI is vital for Europe to maintain its industrial strength.",
+        "claim": "Europe sits at only five percent of that vital capacity.",
         "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
       },
       {
-        "claim": "Europe trails the United States in deploying the necessary AI infrastructure.",
+        "claim": "Huang says this lack of local power threatens industrial competitiveness.",
         "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
       },
       {
-        "claim": "Building sovereign AI capacity is essential for the region's future economic success.",
+        "claim": "Nvidia emphasizes that sovereign AI infrastructure is now a strategic necessity.",
         "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
       },
       {
-        "claim": "Without more localized data centers, Europe relies heavily on external hardware providers.",
+        "claim": "Without local data centers, European companies may rely entirely on external systems.",
         "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 2,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
     ]
@@ -221,9 +204,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T16:12:06.842257+05:30",
+  "script_deadline": "2026-10-24T16:23:05.032641+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-24",
@@ -710,199 +693,8 @@
     "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
     "Capital One: The best enterprise AI is the AI employees barely notice"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Commerce Ministry identifying AI-proof professions, sectors where India can take global lead: Goyal",
-          "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5",
-          "summary": "Commerce Ministry identifying AI-proof professions, sectors where India can take global lead: Goyal The Hindu",
-          "source": "The Hindu",
-          "published": "2026-10-24T07:06:17+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "India Maps AI-Proof Careers to Lead Globally",
-          "hook_text": "India is hunting for AI-proof jobs.",
-          "beats": [
-            {
-              "line": "India is hunting for AI-proof jobs.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Piyush Goyal targets AI-proof jobs",
-              "name": "Piyush Goyal",
-              "role": "Minister of Commerce and Industry",
-              "x": "PiyushGoyal",
-              "brands": []
-            },
-            {
-              "line": "Minister Piyush Goyal announced a massive push to map sectors where the country can take a global lead.",
-              "visual": "clip",
-              "query": "indian commerce ministry office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Mapping global lead sectors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The Commerce Ministry is actively identifying professions that automated tools cannot easily replace.",
-              "visual": "clip",
-              "query": "tech workers collaborating in office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Identifying irreplaceable professions",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This strategy aims to secure long-term workforce stability and protect domestic industries from sudden disruption.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Hindu",
-              "domain": "thehindu.com",
-              "headline": "Commerce Ministry identifying AI-proof professions, sectors where India can take global lead",
-              "url": "",
-              "tag": "Securing long-term workforce stability",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Officials want to isolate high-value domains to capture emerging economic advantages worldwide.",
-              "visual": "clip",
-              "query": "data analytics dashboard screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Isolating high-value domains",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Which career path feels safest from automation right now?",
-              "visual": "clip",
-              "query": "person thinking at desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Safest career path",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "pragmatic and direct, highlighting strategic workforce planning without hype",
-          "thin": false,
-          "caption": "Piyush Goyal and the Commerce Ministry are identifying AI-proof professions where India can take a global lead. The initiative maps sectors least vulnerable to automation to secure long-term workforce stability. Which career path feels safest from automation right now?",
-          "hashtags": [
-            "PiyushGoyal",
-            "CommerceMinistry",
-            "India",
-            "Workforce",
-            "Automation"
-          ],
-          "sources": [
-            "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5"
-          ],
-          "script": "India is hunting for AI-proof jobs.\nMinister Piyush Goyal announced a massive push to map sectors where the country can take a global lead.\nThe Commerce Ministry is actively identifying professions that automated tools cannot easily replace.\nThis strategy aims to secure long-term workforce stability and protect domestic industries from sudden disruption.\nOfficials want to isolate high-value domains to capture emerging economic advantages worldwide.\nWhich career path feels safest from automation right now?",
-          "keywords": [
-            "indian commerce ministry office",
-            "tech workers collaborating in office",
-            "data analytics dashboard screen",
-            "person thinking at desk"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "India is hunting for AI-proof jobs.",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5"
-            },
-            {
-              "claim": "Piyush Goyal is the Minister of Commerce and Industry.",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5"
-            },
-            {
-              "claim": "Minister Piyush Goyal announced a massive push to map sectors where the country can take a global lead.",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5"
-            },
-            {
-              "claim": "The Commerce Ministry is actively identifying professions that automated tools cannot easily replace.",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5"
-            },
-            {
-              "claim": "This strategy aims to secure long-term workforce stability and protect domestic industries from sudden disruption.",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5"
-            },
-            {
-              "claim": "Officials want to isolate high-value domains to capture emerging economic advantages worldwide.",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWl9sa2liUXZ2UE1YNUtscjdHQWhoOUJsVHMwYlRNN2x0dWp2STEyN1FsSnBvU3BCcXlrS3ZCb3dWdlRzakI1WF9KQkptU19qcEVqeW8xbnI0U216MThpTlBLM3BaNXlKQTl0VWk2Mm51SG9PWG5CTWFKMFJ5Tm11NU1id2JudkhFMndhaloxRmRCWGdxd3B2MklLYUZ5X2ZPR2pJVldvZHdYNXRTT1JSZXkyTmxtMjJKRHcxQVJSbm84VVBmcTZxelFEU1V5RmhsaDEzNWw1dTV3YWp0clV6a1FxUFdRbnk2ZWxsaVhqelNUQk3SAfMBQVVfeXFMTVpfbGtpYlF2dlBNWDVLbHI3R0FoaDlCbFRzMGJUTTdsdHVqdkkxMjdRbEpwb1NwQnF5a0t2Qm93VnZUc2pCNVhfSkJKbVNfanBFanlvMW5yNFNtejE4aU5QSzNwWjV5SkE5dFVpNjJudUhvT1huQk1hSjBSeU5tdTVNYndibnZIRTJ3YWpaMUZkQlhncXdwdjJJS2FGeV9mT0dqSVZXb2R3WDV0U09SUmV5Mk5sbTIySkR3MUFSUm5vOFVQZnE2cXpRRFNVeUZobGgxMzVsNXU1d2FqdHJVemtRcVBXUW55NmVsbGlYanpTVEJN?oc=5"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://www.thehindu.com/news/national/commerce-ministry-identifying-ai-proof-professions-sectors-where-india-can-take-global-lead-goyal/article71619298.ece/amp/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-24T14:22:30.739214+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1530,6 +1322,236 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Nvidia warns: Lack of computing power threatens Europe’s competitiveness in artificial intelligence",
+          "link": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/",
+          "summary": "Nvidia warns: Lack of computing power threatens Europe’s competitiveness in artificial intelligence صوت الإمارات",
+          "source": "صوت الإمارات",
+          "published": "2026-10-24T10:32:26+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Nvidia's Europe AI Warning",
+          "hook_text": "Europe faces an AI computing crisis",
+          "beats": [
+            {
+              "line": "Nvidia CEO Jensen Huang warns Europe risks falling behind in AI.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.nvidia.com/en-us/about/board/jensen-huang/",
+              "tag": "Jensen Huang warns",
+              "name": "Jensen Huang",
+              "role": "CEO, Nvidia",
+              "x": "nvidia",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "The continent currently lacks the local computing power to compete globally.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Computing power gap",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Huang states that AI is vital for Europe to maintain its industrial strength.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia headquarters",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Industrial AI needs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Europe trails the United States in deploying the necessary AI infrastructure.",
+              "visual": "clip",
+              "query": "global connectivity map",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Infrastructure lag",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Building sovereign AI capacity is essential for the region's future economic success.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract digital visualization of a European data network",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sovereign AI capacity",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Without more localized data centers, Europe relies heavily on external hardware providers.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia H100 GPU",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://www.nvidia.com/en-us/data-center/h100/",
+              "tag": "External hardware reliance",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Can Europe build enough infrastructure to keep its AI industry independent?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "صوت الإمارات",
+              "domain": "voiceofemirates.com",
+              "headline": "Nvidia warns: Lack of computing power threatens Europe’s competitiveness",
+              "url": "",
+              "tag": "Europe's AI future",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Urgent and analytical, highlighting the competitive gap with a serious tone.",
+          "thin": false,
+          "caption": "Nvidia CEO Jensen Huang warns that Europe lacks the computing power needed to remain competitive in AI. The continent currently trails the United States in infrastructure deployment, creating a dependency on foreign hardware. Can Europe achieve technological independence?",
+          "hashtags": [
+            "Nvidia",
+            "AI",
+            "Europe",
+            "TechNews",
+            "Computing"
+          ],
+          "sources": [
+            "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+          ],
+          "script": "Nvidia CEO Jensen Huang warns Europe risks falling behind in AI.\nThe continent currently lacks the local computing power to compete globally.\nHuang states that AI is vital for Europe to maintain its industrial strength.\nEurope trails the United States in deploying the necessary AI infrastructure.\nBuilding sovereign AI capacity is essential for the region's future economic success.\nWithout more localized data centers, Europe relies heavily on external hardware providers.\nCan Europe build enough infrastructure to keep its AI industry independent?",
+          "keywords": [
+            "data center server racks",
+            "global connectivity map"
+          ],
+          "image_prompts": [
+            "abstract digital visualization of a European data network"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Europe faces an AI computing crisis",
+              "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+            },
+            {
+              "claim": "Nvidia CEO Jensen Huang warns Europe risks falling behind in AI.",
+              "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+            },
+            {
+              "claim": "The continent currently lacks the local computing power to compete globally.",
+              "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+            },
+            {
+              "claim": "Huang states that AI is vital for Europe to maintain its industrial strength.",
+              "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+            },
+            {
+              "claim": "Europe trails the United States in deploying the necessary AI infrastructure.",
+              "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+            },
+            {
+              "claim": "Building sovereign AI capacity is essential for the region's future economic success.",
+              "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+            },
+            {
+              "claim": "Without more localized data centers, Europe relies heavily on external hardware providers.",
+              "url": "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.voiceofemirates.com/en/science-and-tech/2026/10/24/nvidia-warns-lack-of-computing-power-threatens-europes-competitiveness-in-artificial-intelligence/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-24T16:12:06.842257+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2018,8 +2040,8 @@
       "event": "Google updated its privacy policy to allow ad targeting using your personal data. Turning on the Personal Intelligence feature gives Google access to more information for targeted ads. Data shared with AI search from connected apps can dire"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-24T16:07+05:30",
@@ -2067,7 +2089,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-24",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-24-3",
   "gemini_use": {
     "day": "2026-10-24",
@@ -2192,30 +2214,6 @@
     "gemini-3.5-flash-lite": 1792838434.4177299
   },
   "editor_log": [
-    {
-      "at": "2026-10-23T20:36+05:30",
-      "title": "Retro gaming is being overrun with AI",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Weak hook and generic visuals; lacks specific AI tool names and technical depth.",
-      "fixes": [
-        "LINE 1: Replace with 'Retro games are being ported to modern devices at record speeds.'",
-        "LINE 2: Name the specific AI tools or research papers driving this decompilation.",
-        "LINE 3: Specify the browser or engine (e.g., 'WebAssembly-based engines') instead of 'standard web browser'."
-      ],
-      "visual": [
-        "line 1: Hook is text-only; needs high-energy footage of a game running on a phone.",
-        "line 5: Nintendo logo is generic; needs actual footage of Smash Bros in a headset.",
-        "line 6: Static text card is boring; needs a visual representation of the surge in projects."
-      ]
-    },
     {
       "at": "2026-10-23T20:55+05:30",
       "title": "Uber puts all 30,000 employees on ChatGPT Work",
@@ -2629,10 +2627,33 @@
         "line 2: Frames 4 and 5 display unrelated text block while audio talks about hospital software pars",
         "line 5: Frames 11 and 12 display mismatching text 'Trust software with healthcare' instead of spok"
       ]
+    },
+    {
+      "at": "2026-10-24T16:21+05:30",
+      "title": "Nvidia warns: Lack of computing power threatens Europe’s competitiveness in arti",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 7,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong premise, but lacks specific data points and suffers from repetitive, static visuals.",
+      "fixes": [
+        "LINE 2: Replace 'competing globally' with a specific metric like 'trailing the US by X% in GPU capacity'.",
+        "LINE 4: Replace 'necessary AI infrastructure' with 'H100 or Blackwell-class data center clusters'.",
+        "LINE 6: Remove 'external hardware providers' and specify 'US-based cloud and chip suppliers'."
+      ],
+      "visual": [
+        "line 1: The same photo of Jensen Huang is held for too long across three frames.",
+        "line 6: The H100 datasheet graphic is static and repeated across three frames, failing to illustra"
+      ]
     }
   ],
   "rest_note": "2026-10-24T12:32:00+05:30",
-  "fish_turn": 71,
+  "fish_turn": 72,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",

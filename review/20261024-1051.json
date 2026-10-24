@@ -1,0 +1,80 @@
+{
+ "made": "20261024-1051",
+ "title": "Nvidia warns: Lack of computing power threatens Europe’s competitiveness in artificial intelligence",
+ "hook_text": "Europe faces an AI computing crisis",
+ "hook_before": null,
+ "script": "Nvidia CEO Jensen Huang warns Europe risks falling behind in AI.\nThe continent currently lacks the local computing power to compete globally.\nHuang states that AI is vital for Europe to maintain its industrial strength.\nEurope trails the United States in deploying the necessary AI infrastructure.\nBuilding sovereign AI capacity is essential for the region's future economic success.\nWithout more localized data centers, Europe relies heavily on external hardware providers.\nCan Europe build enough infrastructure to keep its AI industry independent?",
+ "words": 81,
+ "beats": [
+  {
+   "line": "Nvidia CEO Jensen Huang warns Europe risks falling behind in AI.",
+   "visual": "person"
+  },
+  {
+   "line": "The continent currently lacks the local computing power to compete globally.",
+   "visual": "clip"
+  },
+  {
+   "line": "Huang states that AI is vital for Europe to maintain its industrial strength.",
+   "visual": "photo"
+  },
+  {
+   "line": "Europe trails the United States in deploying the necessary AI infrastructure.",
+   "visual": "clip"
+  },
+  {
+   "line": "Building sovereign AI capacity is essential for the region's future economic success.",
+   "visual": "image"
+  },
+  {
+   "line": "Without more localized data centers, Europe relies heavily on external hardware providers.",
+   "visual": "official"
+  },
+  {
+   "line": "Can Europe build enough infrastructure to keep its AI industry independent?",
+   "visual": "source"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 7,
+   "substance": 6,
+   "accuracy": 9,
+   "visuals": 6,
+   "flow": 8
+  },
+  "one_line": "Strong premise, but lacks specific data points and suffers from repetitive, static visuals.",
+  "script_fixes": [
+   "LINE 2: Replace 'competing globally' with a specific metric like 'trailing the US by X% in GPU capacity'.",
+   "LINE 4: Replace 'necessary AI infrastructure' with 'H100 or Blackwell-class data center clusters'.",
+   "LINE 6: Remove 'external hardware providers' and specify 'US-based cloud and chip suppliers'."
+  ],
+  "visual_beats": [
+   0,
+   5
+  ],
+  "visual_notes": [
+   "line 1: The same photo of Jensen Huang is held for too long across three frames.",
+   "line 6: The H100 datasheet graphic is static and repeated across three frames, failing to illustra"
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 38.0,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.2,
+ "cuts": [
+  10.1,
+  20.43,
+  29.53,
+  32.7
+ ],
+ "first_cut_at": 10.1,
+ "avg_shot_seconds": 7.6,
+ "longest_shot_seconds": 10.33,
+ "verdict": "rejected",
+ "words_per_minute": 128
+}
