@@ -55,7 +55,7 @@ through a Telegram bot and reads Claude's messages there.
 - Scripts: 30-40 s, 75-105 words, every sentence a concrete fact. Owner rejected short 45-65 word scripts
   (2026-10-09: "getting so bad"). Don't shorten scripts again without asking.
 - Voice: Fish Audio library voices, mostly Ethan with Paula every 4th reel (owner, 2026-10-21: Ethan 4.5 s watch / 106 reach vs Paula 3.3 s / 42). The owner's own clone was removed on 2026-10-07 at their request — don't bring it back unless asked. Fallback US English voices only (Google + Microsoft alternating). Captions must never cover logos/faces/numbers.
-- Music: Instagram's own trending music via the Audio API (owner, 2026-10-21), at volume IG_MUSIC_VOLUME (15) under
+- Music: Instagram's own trending music via the Audio API (owner, 2026-10-21), at volume IG_MUSIC_VOLUME (15, owner confirmed it sounds right on 2026-10-24) under
   the voice; our own background music only when Instagram's isn't available (state ig_music_off / ig_music_error).
 - Brand blue (#7B9AF8), "Source · date" label, @gradientai.news handle. Look: studio style (studio.py) — clean dark/light scenes, floating picture cards, top captions with key-word highlight box (owner approved 2026-10-07).
 
