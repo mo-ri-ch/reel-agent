@@ -1,0 +1,75 @@
+{
+ "made": "20261024-1141",
+ "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
+ "hook_text": "Nvidia backed cloud stocks plummet",
+ "hook_before": null,
+ "script": "Stocks for Nvidia-backed cloud providers have fallen thirty percent this month.\nThese niche providers, known as neoclouds, rely on Nvidia hardware to scale their AI operations.\nCEO Jensen Huang has used Nvidia to bankroll these firms to secure AI chip demand.\nInvestors are now questioning if these firms can generate consistent profits from their massive spending.\nPublic markets are punishing companies that lack clear paths to long-term revenue growth.\nThis shift marks the first major test for the AI financing model Nvidia pioneered.",
+ "words": 83,
+ "beats": [
+  {
+   "line": "Stocks for Nvidia-backed cloud providers have fallen thirty percent this month.",
+   "visual": "stat"
+  },
+  {
+   "line": "These niche providers, known as neoclouds, rely on Nvidia hardware to scale their AI operations.",
+   "visual": "clip"
+  },
+  {
+   "line": "CEO Jensen Huang has used Nvidia to bankroll these firms to secure AI chip demand.",
+   "visual": "person"
+  },
+  {
+   "line": "Investors are now questioning if these firms can generate consistent profits from their massive spending.",
+   "visual": "clip"
+  },
+  {
+   "line": "Public markets are punishing companies that lack clear paths to long-term revenue growth.",
+   "visual": "source"
+  },
+  {
+   "line": "This shift marks the first major test for the AI financing model Nvidia pioneered.",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 7.7,
+  "scores": {
+   "hook": 8,
+   "specific": 7,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 6,
+   "flow": 8
+  },
+  "one_line": "Strong reporting, but visuals rely too heavily on generic stock footage and repetitive clips.",
+  "script_fixes": [
+   "LINE 1: Change 'thirty percent' to '30%' and name at least one specific neocloud provider like CoreWeave or Lambda.",
+   "LINE 4: Replace 'these firms' with specific names like 'CoreWeave or Lambda' to avoid vague references."
+  ],
+  "visual_beats": [
+   0,
+   4,
+   5
+  ],
+  "visual_notes": [
+   "line 1: Jensen Huang kneeling with a robot is irrelevant to a stock market crash story.",
+   "line 5: The CNBC logo card is filler; use a chart showing the actual stock decline instead.",
+   "line 6: Generic stock ticker footage is low-effort; show a specific chart for a neocloud company."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 33.27,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.0,
+ "cuts": [
+  11.2,
+  22.37
+ ],
+ "first_cut_at": 11.2,
+ "avg_shot_seconds": 11.09,
+ "longest_shot_seconds": 11.2,
+ "verdict": "rejected",
+ "words_per_minute": 150
+}
