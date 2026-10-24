@@ -1,0 +1,73 @@
+{
+ "made": "20261024-1026",
+ "title": "Guest commentary: Artificial intelligence is inflating medical bills",
+ "hook_text": "Your medical bills cost more now.",
+ "hook_before": null,
+ "script": "Your next doctor visit might include algorithmic billing that drives up hospital revenue.\nHospitals now deploy automated software to parse patient records and optimize insurance claims.\nThese programs scan clinical notes to find extra billing opportunities and code more aggressive charges.\nPatients end up paying higher out of pocket costs while navigating complex disputed statements.\nWould you trust software to decide what your healthcare is worth?",
+ "words": 66,
+ "beats": [
+  {
+   "line": "Your next doctor visit might include algorithmic billing that drives up hospital revenue.",
+   "visual": "source"
+  },
+  {
+   "line": "Hospitals now deploy automated software to parse patient records and optimize insurance claims.",
+   "visual": "clip"
+  },
+  {
+   "line": "These programs scan clinical notes to find extra billing opportunities and code more aggressive charges.",
+   "visual": "clip"
+  },
+  {
+   "line": "Patients end up paying higher out of pocket costs while navigating complex disputed statements.",
+   "visual": "image"
+  },
+  {
+   "line": "Would you trust software to decide what your healthcare is worth?",
+   "visual": "image"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 5.3,
+  "scores": {
+   "hook": 5,
+   "specific": 4,
+   "substance": 6,
+   "accuracy": 7,
+   "visuals": 4,
+   "flow": 6
+  },
+  "one_line": "Too generic, lacks specific named entities and data points from the commentary.",
+  "script_fixes": [
+   "LINE 1: Replace generic doctor visit reference with the publication name or specific author Jarrel De Matas.",
+   "LINE 3: Mention the exact terminology or context discussed in The Daily News guest commentary instead of vague software programs.",
+   "LINE 5: Ground the final question in the specific Texas healthcare context mentioned in the source summary."
+  ],
+  "visual_beats": [
+   0,
+   1,
+   4
+  ],
+  "visual_notes": [
+   "line 1: Title screen text 'Your medical bills cost more now' does not match spoken LINE 1 'Your ne",
+   "line 2: Frames 4 and 5 display unrelated text block while audio talks about hospital software pars",
+   "line 5: Frames 11 and 12 display mismatching text 'Trust software with healthcare' instead of spok"
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 27.1,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  5.1,
+  11.0,
+  23.1
+ ],
+ "first_cut_at": 5.1,
+ "avg_shot_seconds": 6.78,
+ "longest_shot_seconds": 12.1,
+ "verdict": "rejected",
+ "words_per_minute": 146
+}
