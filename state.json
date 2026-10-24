@@ -1,190 +1,41 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Got a pretrained music transformer to jam with me live, no fine-tuning, just steering the sampling [P]",
-    "link": "https://www.reddit.com/r/MachineLearning/comments/1xe4pex/got_a_pretrained_music_transformer_to_jam_with_me/",
-    "summary": "",
-    "source": "r/MachineLearning",
-    "published": "2026-10-24T09:58:29+00:00",
-    "buzz": "top of r/MachineLearning today",
-    "angle": "A developer got a pre-trained AI music transformer to jam live with them in real-time without any fine-tuning."
-  },
-  "draft": {
-    "title": "Live AI Jamming via Steering",
-    "hook_text": "Jamming with AI live",
-    "beats": [
-      {
-        "line": "Reddit user josh-m-w just jammed with a pretrained music transformer in real time.",
-        "visual": "clip",
-        "query": "musician playing piano in studio",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Live AI jam",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "He achieved this performance without any fine-tuning of the model.",
-        "visual": "clip",
-        "query": "computer screen showing code",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "No fine-tuning",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The project relies on steering the sampling process during active generation.",
-        "visual": "clip",
-        "query": "abstract digital data flow",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Steered sampling",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Tokens process instantly as the human musician plays notes alongside the AI.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Magenta Music Transformer",
-        "outlet": "",
-        "domain": "tensorflow.org",
-        "headline": "",
-        "url": "https://magenta.tensorflow.org/music-transformer",
-        "tag": "Instant token processing",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This setup runs effectively on standard consumer hardware.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "1",
-        "small": "consumer laptop",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Standard hardware",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The user shared the full project details on the Machine Learning subreddit.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "r/MachineLearning",
-        "domain": "reddit.com",
-        "headline": "Got a pretrained music transformer to jam with me live",
-        "url": "",
-        "tag": "Code on Reddit",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you let an AI handle your rhythm section?",
-        "visual": "clip",
-        "query": "musician playing piano",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "AI music partner",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Fast, rhythmic, and technically precise, emphasizing the DIY nature of the project.",
-    "thin": false,
-    "caption": "Reddit user josh-m-w jammed with a pretrained music transformer in real-time by steering the sampling process. This setup runs on standard consumer hardware without needing fine-tuning. Would you let an AI handle your rhythm section?",
-    "hashtags": [
-      "MusicAI",
-      "MachineLearning",
-      "Magenta",
-      "Reddit",
-      "AIJam"
-    ],
-    "sources": [
-      "https://www.reddit.com/r/MachineLearning/comments/1xe4pex/got_a_pretrained_music_transformer_to_jam_with_me/"
-    ],
-    "script": "Reddit user josh-m-w just jammed with a pretrained music transformer in real time.\nHe achieved this performance without any fine-tuning of the model.\nThe project relies on steering the sampling process during active generation.\nTokens process instantly as the human musician plays notes alongside the AI.\nThis setup runs effectively on standard consumer hardware.\nThe user shared the full project details on the Machine Learning subreddit.\nWould you let an AI handle your rhythm section?",
-    "keywords": [
-      "musician playing piano in studio",
-      "computer screen showing code",
-      "abstract digital data flow",
-      "musician playing piano"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "fact_status": "unsure",
-    "fact_notes": [
-      "Beat 1: “Reddit user josh-m-w jammed with a pretrained music transformer in real time.” — no source found for this",
-      "Beat 2: “The performance was achieved without any fine-tuning of the model.” — no source found for this",
-      "Beat 3: “The project relies on steering the sampling process during active generation.” — no source found for this",
-      "Beat 4: “Tokens process instantly as the human musician plays notes alongside the AI.” — no source found for this",
-      "Beat 5: “This setup runs effectively on standard consumer hardware.” — no source found for this",
-      "Beat 6: “The user shared the full project details on the Machine Learning subreddit.” — no source found for this"
-    ],
-    "fix_rounds": 2,
-    "source_links": [
-      "https://www.reddit.com/r/MachineLearning/comments/1xe4pex/got_a_pretrained_music_transformer_to_jam_with_me/"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Sun Valley Writers Conference to Hold Day-Long Conference Exploring AI",
+      "link": "https://eyeonsunvalley.com/Story_Reader/14435/Sun-Valley-Writers-Conference-to-Hold-Day-Long-Conference-Exploring-AI/",
+      "summary": "Sun Valley Writers Conference to Hold Day-Long Conference Exploring AI Eye On Sun Valley",
+      "source": "Eye On Sun Valley",
+      "published": "2026-10-24T13:18:45+00:00",
+      "angle": ""
+    },
+    {
+      "title": "OpenAI and Poland’s NASK partner on AI safety research",
+      "link": "https://www.artificialintelligence-news.com/news/openai-and-polands-nask-partner-on-ai-safety-research/",
+      "summary": "OpenAI and Poland’s NASK partner on AI safety research AI News",
+      "source": "AI News",
+      "published": "2026-10-24T12:04:13+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Letter: Delay the deployment of artificial intelligence",
+      "link": "https://www.postbulletin.com/opinion/letters/letter-delay-the-deployment-of-artificial-intelligence",
+      "summary": "Letter: Delay the deployment of artificial intelligence Post Bulletin",
+      "source": "Post Bulletin",
+      "published": "2026-10-24T12:03:05+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-24T20:10:48.340735+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-24T19:38:50.359521+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -592,20 +443,8 @@
       "extra": false
     }
   ],
-  "paused": null,
-  "spare": [
-    {
-      "title": "Stenosis detection in coronary angiograms, need recall over precision [D]",
-      "link": "https://www.reddit.com/r/MachineLearning/comments/1xdkcav/stenosis_detection_in_coronary_angiograms_need/",
-      "summary": "",
-      "source": "r/MachineLearning",
-      "published": "2026-10-23T17:25:52+00:00",
-      "buzz": "top of r/MachineLearning today",
-      "angle": "AI is now being used for medical diagnostics, specifically detecting stenosis in coronary angiograms with high-recall requirements."
-    }
-  ],
+  "spare": [],
   "tried": [
-    "NSE reviewing network vulnerabilities as AI cyber threats rise: Chauhan",
     "Commerce Ministry identifying AI-proof professions, sectors where India can take global lead: Goyal",
     "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
     "Hong Kong regulator sets accountability, resilience, trust rules for bank AI",
@@ -664,6 +503,7 @@
     "At Miami AI Summit, Hugging Face CEO Clem Delangue predicts every company will become an AI builder",
     "NCERT introduces module on Computational Thinking and Artificial Intelligence for grades 9-12",
     "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+    "Got a pretrained music transformer to jam with me live, no fine-tuning, just steering the sampling [P]",
     "Got a pretrained music transformer to jam with me live, no fine-tuning, just steering the sampling [P]"
   ],
   "next_video_id": null,
@@ -2074,8 +1914,8 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-24T17:50+05:30",
-    "techcrunch.com": 5,
+    "at": "2026-10-24T19:40+05:30",
+    "techcrunch.com": 4,
     "theverge.com": 6,
     "arstechnica.com": 2,
     "technologyreview.com": 0,
@@ -2083,18 +1923,18 @@
     "blog.google": 0,
     "deepmind.google": 0,
     "huggingface.co": 1,
-    "blogs.nvidia.com": 1,
+    "blogs.nvidia.com": 0,
     "inc42.com": 0,
     "news.google.com": 41,
     "Google News (VentureBeat, AIM, AI News)": 17,
     "producthunt.com": 4,
     "Hacker News": 3,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 1
+    "filtered out (PR / local events / market fluff)": 0
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-24T16:39:19.702971+05:30",
+  "last_auto_offer": "2026-10-24T19:40:38.220125+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-23",
   "ig_count": {
@@ -2173,11 +2013,6 @@
   },
   "gemini_errors": [
     {
-      "at": "22:22",
-      "error": "every free Gemini model is used up for today",
-      "day": "2026-10-23"
-    },
-    {
       "at": "22:35",
       "error": "every free Gemini model is used up for today",
       "day": "2026-10-23"
@@ -2220,6 +2055,11 @@
     {
       "at": "14:03",
       "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-24"
+    },
+    {
+      "at": "14:10",
+      "error": "every free Gemini model is used up for today",
       "day": "2026-10-24"
     }
   ],
