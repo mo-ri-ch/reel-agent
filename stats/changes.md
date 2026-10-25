@@ -205,3 +205,8 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Change: labelled opinion pieces ("Guest commentary:", "Editorial", "Viewpoint", "Perspective:", "Column:", letters to the
   editor) are skipped by title; a Guest commentary was made and rejected (5.3) on 24 Oct, wasting quota. Metric: reels passed per day.
 - 25 Oct: photo reuse back to 2 (1 made reels text-only, visuals 4); news-site domains stripped from product logos. Baseline 24 Oct: 2 of 17 passed, quota ran out 19:33, 5 slots missed.
+
+## Weekly review 2026-10-25 (18-24 vs 11-17 Oct)
+- 38 reels (27), median reach 106 (68), views 114 (71), watch 4.6 s (4.5), shares 1 (2), followers 8->11.
+- Top: Amazon TorchNeuron 4.1x median; launches by big names lead. US-night slots outperform India daytime.
+- Changes today: photo reuse back to 2; news-site logos blocked; skip stories without a picture; switch story when visuals <= 4. Metric: reels/day (baseline 24 Oct: 5, 25 Oct: quota ran low), watch time 4.6 s.
