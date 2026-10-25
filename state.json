@@ -1,264 +1,72 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-    "link": "https://github.com/Zagitta/gpu-unlock",
-    "summary": "",
-    "source": "github.com",
-    "published": "2026-10-24T09:58:27+00:00",
-    "buzz": "Hacker News 251 points",
-    "angle": "Nvidia GPU hack: A new tool unlocks hidden performance on RTX 3000 cards for AI tasks."
-  },
-  "draft": {
-    "title": "Unlock Nvidia 3000 GPU performance",
-    "hook_text": "Nvidia 3000 series cards hidden bottleneck",
-    "beats": [
-      {
-        "line": "Nvidia three thousand series cards have a hidden performance limitation.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Nvidia GeForce RTX 30 Series",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "https://www.nvidia.com/en-us/geforce/rtx-30-series/",
-        "tag": "Nvidia 3000 limit",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Developer Zagitta released a Linux kernel module to address this.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "https://github.com/Zagitta/gpu-unlock",
-        "tag": "Zagitta kernel module",
-        "name": "Zagitta",
-        "role": "Software Developer",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The module adjusts internal hardware speed selectors to reset the chip state.",
-        "visual": "clip",
-        "query": "microchip on circuit board",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Hardware speed selector",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "It targets the FP16 and BF16 instruction issue rate on these GPUs.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "FP16/BF16",
-        "small": "instruction rate",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Instruction rate fix",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This specifically allows the hardware to reach higher compute performance levels.",
-        "visual": "clip",
-        "query": "data center server racks",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Higher compute levels",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Zagitta notes this requires specific Linux kernel configurations to function correctly.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "GitHub",
-        "domain": "github.com",
-        "headline": "Zagitta gpu-unlock repository",
-        "url": "",
-        "tag": "Linux kernel requirement",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you modify your kernel for these performance gains?",
-        "visual": "image",
-        "query": "technology",
-        "prompt": "abstract visualization of server data flow",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Kernel modification risk",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Technical and precise, maintaining a neutral tone while explaining the hardware adjustment.",
-    "thin": false,
-    "caption": "Developer Zagitta released a Linux kernel module to increase the FP16 and BF16 instruction rate on Nvidia 3000 series GPUs. The tool works by adjusting hardware speed selectors to reset the chip state for better performance. Would you modify your kernel for these performance gains?",
-    "hashtags": [
-      "Nvidia",
-      "GPU",
-      "Linux",
-      "Hardware",
-      "Coding"
-    ],
-    "sources": [
-      "https://github.com/Zagitta/gpu-unlock"
-    ],
-    "script": "Nvidia three thousand series cards have a hidden performance limitation.\nDeveloper Zagitta released a Linux kernel module to address this.\nThe module adjusts internal hardware speed selectors to reset the chip state.\nIt targets the FP16 and BF16 instruction issue rate on these GPUs.\nThis specifically allows the hardware to reach higher compute performance levels.\nZagitta notes this requires specific Linux kernel configurations to function correctly.\nWould you modify your kernel for these performance gains?",
-    "keywords": [
-      "microchip on circuit board",
-      "data center server racks"
-    ],
-    "image_prompts": [
-      "abstract visualization of server data flow"
-    ],
-    "writer_model": "gemini",
-    "evidence": [
-      {
-        "claim": "Nvidia 3000 series cards have a hidden bottleneck",
-        "url": "https://finance.biggo.com/news/877b5873-58c4-4cd1-9e64-5f499f587987"
-      },
-      {
-        "claim": "Nvidia three thousand series cards have a hidden performance limitation.",
-        "url": "https://finance.biggo.com/news/877b5873-58c4-4cd1-9e64-5f499f587987"
-      },
-      {
-        "claim": "Developer Zagitta released a Linux kernel module to address this.",
-        "url": "https://github.com/Zagitta/gpu-unlock"
-      },
-      {
-        "claim": "The module adjusts internal hardware speed selectors to reset the chip state.",
-        "url": "https://github.com/Zagitta/gpu-unlock"
-      },
-      {
-        "claim": "It targets the FP16 and BF16 instruction issue rate on these GPUs.",
-        "url": "https://github.com/Zagitta/gpu-unlock"
-      },
-      {
-        "claim": "This specifically allows the hardware to reach higher compute performance levels.",
-        "url": "https://github.com/Zagitta/gpu-unlock"
-      },
-      {
-        "claim": "Zagitta notes this requires specific Linux kernel configurations to function correctly.",
-        "url": "https://github.com/Zagitta/gpu-unlock"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 1,
-    "source_links": [
-      "https://github.com/Zagitta/gpu-unlock"
-    ],
-    "ig_audio": {
-      "id": "672790974305597",
-      "title": "What's On The Line Now",
-      "artist": "Trout Recording"
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "KLD is misunderstood",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xeim3m/kld_is_misunderstood/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-24T20:12:28+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "The local AI community is buzzing about a major misunderstanding regarding KLD, a key metric for model performance."
     },
-    "visual_status": "fixed",
-    "visual_notes": [
-      "Developer Zagitta released a Linux kernel module t…: The shot is blank/empty.",
-      "Zagitta notes this requires specific Linux kernel …: The shot is blank/empty.",
-      "The image is a generic abstract graphic, not a real image of an Nvidia GeForce RTX 30 Series card.",
-      "The shot is blank/empty.",
-      "The image is a generic abstract graphic, not a microchip on a circuit board.",
-      "The shot is blank/empty.",
-      "The shot is blank/empty.",
-      "The image is a text card, not an illustration of server data flow."
-    ],
-    "editor": {
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong technical reporting, but visual variety is lacking and needs more dynamic assets.",
-      "script_fixes": [
-        "LINE 1: Change 'hidden performance limitation' to 'artificial performance cap' for more precise technical accuracy."
-      ],
-      "visual_beats": [
-        0,
-        3,
-        5
-      ],
-      "visual_notes": [
-        "line 1: Same static GitHub screenshot held for too long.",
-        "line 4: Generic Nvidia background image is repeated and lacks specific technical relevance.",
-        "line 6: GitHub logo is generic and does not illustrate 'Linux kernel configurations'."
-      ],
-      "reviewer": "gemini"
+    {
+      "title": "2 Warren Buffett Artificial Intelligence (AI) Stocks I'd Buy Right Now and Never Sell",
+      "link": "https://www.aol.com/articles/2-warren-buffett-artificial-intelligence-002000000.html",
+      "summary": "2 Warren Buffett Artificial Intelligence (AI) Stocks I'd Buy Right Now and Never Sell AOL.com",
+      "source": "AOL.com",
+      "published": "2026-10-25T00:20:00+00:00",
+      "angle": "Warren Buffett is famously cautious, but these are the 2 AI stocks he is betting on for the long haul."
     },
-    "credits": [
-      "news photo: nvidia.com",
-      "news photo: github.com"
-    ],
-    "voice_used": "Ethan (Fish Audio)",
-    "visual_summary": "2 official images, 6 cards"
-  },
+    {
+      "title": "WAICO vs Pax Silica: 2 US-China AI Blocs Ranked [2026]",
+      "link": "https://shattered.io/us-china-ai-blocs-waico-pax-silica-29-founders-35-warned-2026/",
+      "summary": "WAICO vs Pax Silica: 2 US-China AI Blocs Ranked [2026] shattered.io",
+      "source": "shattered.io",
+      "published": "2026-10-25T05:05:17+00:00",
+      "angle": "The world is splitting into two AI superpowers: WAICO vs Pax Silica, and it's changing the global tech landscape."
+    }
+  ],
+  "choose_deadline": "2026-10-25T16:20:38.682517+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIoNGrd3h5PGnrIqh6sB9Nw0Hlc1XMJAAItIwACvKLxVufu8iZbwDmJPQQ",
-  "queue": [],
+  "video_file_id": null,
+  "queue": [
+    {
+      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+      "video_file_id": "BAACAgUAAxkDAAIoNGrd3h5PGnrIqh6sB9Nw0Hlc1XMJAAItIwACvKLxVufu8iZbwDmJPQQ",
+      "caption": "Developer Zagitta released a Linux kernel module to increase the FP16 and BF16 instruction rate on Nvidia 3000 series GPUs. The tool works by adjusting hardware speed selectors to reset the chip state for better performance. Would you modify your kernel for these performance gains?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 news photo: nvidia.com · news photo: github.com\n\n#Nvidia #GPU #Linux #Hardware #Coding",
+      "extra": false,
+      "meta": {
+        "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+        "kind": "news",
+        "source": "github.com",
+        "engine": "fish",
+        "voice": "Ethan (Fish Audio)",
+        "person": true,
+        "words": 75,
+        "visuals": "2 official images, 6 cards",
+        "editor": 8.5,
+        "writer": "gemini",
+        "hook_score": null,
+        "made": "2026-10-25T16:20+05:30"
+      },
+      "audio": {
+        "id": "672790974305597",
+        "title": "What's On The Line Now",
+        "artist": "Trout Recording"
+      },
+      "post_at": "2026-10-25T16:21:26.468476+05:30"
+    }
+  ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-10-25T16:17:13.583709+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
-  "pending_offer": true,
+  "pending_offer": false,
   "offer_log": {
     "date": "2026-10-25",
     "done": [
@@ -663,7 +471,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [],
   "tried": [
     "Bill Gates warns of 20 years of turmoil from artificial intelligence",
@@ -729,188 +536,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Morocco and AI: Who Is Accountable When the Model Enters Government?",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdnktX1h6UzNERTdHbGJNWUJHdzJ0V1QzOXVaX0pzYjBXU3pRWmQybnd4WGJIQ0JfOVBhSkE2YmJDVS1FMVN6NElqSGcyZTdQTHUwOVdMaEVSSGxrNlJDbU9xbHluSWRuZlpYMzQwQ3J2aUhRX1Q3V1JPMDRKcVpWV2dWb2c5RnpVN3JpWHJvckxZLVlWSlZnekhzTHVNY0MxT2ZVMVVaRXVkcGV4MW5XZmY5b09QQ2szdHZWN214U1hUb2o3NmhPdW5IYlQtNlRHbkE?oc=5",
-          "summary": "Morocco and AI: Who Is Accountable When the Model Enters Government? Atalayar",
-          "source": "Atalayar",
-          "published": "2026-10-25T08:00:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Ahmed Rahhou Leads Morocco AI",
-          "hook_text": "Morocco just appointed Ahmed Rahhou to lead AI.",
-          "beats": [
-            {
-              "line": "Morocco appointed Ahmed Rahhou to lead AI at the ministerial level.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Ahmed Rahhou leads AI",
-              "name": "Ahmed Rahhou",
-              "role": "Ministerial Lead for AI, Morocco",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Zoher Bijou analyzed this new government shift for Atalayar.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Atalayar",
-              "domain": "atalayar.com",
-              "headline": "Morocco and AI: Who Is Accountable When the Model Enters Government?",
-              "url": "",
-              "tag": "Zoher Bijou at Atalayar",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Decrees 2.23.404 and 2.23.405 set the stage for digital transition back in June 2023.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2023",
-              "small": "Decrees 2.23.404 and 2.23.405",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "June 2023 decrees",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "State agencies now face tough questions over who bears legal blame when automated workflows fail.",
-              "visual": "clip",
-              "query": "government building office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Legal blame for workflow failures",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Public officials must decide who is responsible if administrative models make mistakes.",
-              "visual": "clip",
-              "query": "person at desk working",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Responsibility for model mistakes",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can institutional accountability survive when algorithms handle sensitive citizen data across state agencies?",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Parliament of Morocco",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Algorithms handle citizen data",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "analytical and direct, highlighting institutional challenges and legal accountability in government technology",
-          "thin": false,
-          "caption": "Morocco appointed Ahmed Rahhou to lead AI at the ministerial level. Zoher Bijou analyzed accountability as automated models enter government administration under decrees from June 2023. Who carries legal responsibility when state algorithms make mistakes?",
-          "hashtags": [
-            "Morocco",
-            "AhmedRahhou",
-            "TechPolicy",
-            "Government"
-          ],
-          "sources": [
-            "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-          ],
-          "script": "Morocco appointed Ahmed Rahhou to lead AI at the ministerial level.\nZoher Bijou analyzed this new government shift for Atalayar.\nDecrees 2.23.404 and 2.23.405 set the stage for digital transition back in June 2023.\nState agencies now face tough questions over who bears legal blame when automated workflows fail.\nPublic officials must decide who is responsible if administrative models make mistakes.\nCan institutional accountability survive when algorithms handle sensitive citizen data across state agencies?",
-          "keywords": [
-            "government building office",
-            "person at desk working"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Morocco appointed Ahmed Rahhou to lead AI.",
-              "url": "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-            },
-            {
-              "claim": "Morocco appointed Ahmed Rahhou to lead AI at the ministerial level.",
-              "url": "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-            },
-            {
-              "claim": "Zoher Bijou analyzed this new government shift for Atalayar.",
-              "url": "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-            },
-            {
-              "claim": "Decrees 2.23.404 and 2.23.405 set the stage for digital transition back in June 2023.",
-              "url": "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "editor_rounds": 1,
-          "source_links": [
-            "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-25T15:06:04.759922+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1680,6 +1305,272 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+          "link": "https://github.com/Zagitta/gpu-unlock",
+          "summary": "",
+          "source": "github.com",
+          "published": "2026-10-24T09:58:27+00:00",
+          "buzz": "Hacker News 251 points",
+          "angle": "Nvidia GPU hack: A new tool unlocks hidden performance on RTX 3000 cards for AI tasks."
+        },
+        "draft": {
+          "title": "Unlock Nvidia 3000 GPU performance",
+          "hook_text": "Nvidia 3000 series cards hidden bottleneck",
+          "beats": [
+            {
+              "line": "Nvidia three thousand series cards have a hidden performance limitation.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia GeForce RTX 30 Series",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.nvidia.com/en-us/geforce/rtx-30-series/",
+              "tag": "Nvidia 3000 limit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Developer Zagitta released a Linux kernel module to address this.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://github.com/Zagitta/gpu-unlock",
+              "tag": "Zagitta kernel module",
+              "name": "Zagitta",
+              "role": "Software Developer",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The module adjusts internal hardware speed selectors to reset the chip state.",
+              "visual": "clip",
+              "query": "microchip on circuit board",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Hardware speed selector",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It targets the FP16 and BF16 instruction issue rate on these GPUs.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "FP16/BF16",
+              "small": "instruction rate",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Instruction rate fix",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This specifically allows the hardware to reach higher compute performance levels.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Higher compute levels",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Zagitta notes this requires specific Linux kernel configurations to function correctly.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "GitHub",
+              "domain": "github.com",
+              "headline": "Zagitta gpu-unlock repository",
+              "url": "",
+              "tag": "Linux kernel requirement",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you modify your kernel for these performance gains?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract visualization of server data flow",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Kernel modification risk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Technical and precise, maintaining a neutral tone while explaining the hardware adjustment.",
+          "thin": false,
+          "caption": "Developer Zagitta released a Linux kernel module to increase the FP16 and BF16 instruction rate on Nvidia 3000 series GPUs. The tool works by adjusting hardware speed selectors to reset the chip state for better performance. Would you modify your kernel for these performance gains?",
+          "hashtags": [
+            "Nvidia",
+            "GPU",
+            "Linux",
+            "Hardware",
+            "Coding"
+          ],
+          "sources": [
+            "https://github.com/Zagitta/gpu-unlock"
+          ],
+          "script": "Nvidia three thousand series cards have a hidden performance limitation.\nDeveloper Zagitta released a Linux kernel module to address this.\nThe module adjusts internal hardware speed selectors to reset the chip state.\nIt targets the FP16 and BF16 instruction issue rate on these GPUs.\nThis specifically allows the hardware to reach higher compute performance levels.\nZagitta notes this requires specific Linux kernel configurations to function correctly.\nWould you modify your kernel for these performance gains?",
+          "keywords": [
+            "microchip on circuit board",
+            "data center server racks"
+          ],
+          "image_prompts": [
+            "abstract visualization of server data flow"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia 3000 series cards have a hidden bottleneck",
+              "url": "https://finance.biggo.com/news/877b5873-58c4-4cd1-9e64-5f499f587987"
+            },
+            {
+              "claim": "Nvidia three thousand series cards have a hidden performance limitation.",
+              "url": "https://finance.biggo.com/news/877b5873-58c4-4cd1-9e64-5f499f587987"
+            },
+            {
+              "claim": "Developer Zagitta released a Linux kernel module to address this.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "The module adjusts internal hardware speed selectors to reset the chip state.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "It targets the FP16 and BF16 instruction issue rate on these GPUs.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "This specifically allows the hardware to reach higher compute performance levels.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "Zagitta notes this requires specific Linux kernel configurations to function correctly.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://github.com/Zagitta/gpu-unlock"
+          ],
+          "ig_audio": {
+            "id": "672790974305597",
+            "title": "What's On The Line Now",
+            "artist": "Trout Recording"
+          },
+          "visual_status": "fixed",
+          "visual_notes": [
+            "Developer Zagitta released a Linux kernel module t…: The shot is blank/empty.",
+            "Zagitta notes this requires specific Linux kernel …: The shot is blank/empty.",
+            "The image is a generic abstract graphic, not a real image of an Nvidia GeForce RTX 30 Series card.",
+            "The shot is blank/empty.",
+            "The image is a generic abstract graphic, not a microchip on a circuit board.",
+            "The shot is blank/empty.",
+            "The shot is blank/empty.",
+            "The image is a text card, not an illustration of server data flow."
+          ],
+          "editor": {
+            "overall": 8.5,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 9,
+              "accuracy": 10,
+              "visuals": 6,
+              "flow": 9
+            },
+            "one_line": "Strong technical reporting, but visual variety is lacking and needs more dynamic assets.",
+            "script_fixes": [
+              "LINE 1: Change 'hidden performance limitation' to 'artificial performance cap' for more precise technical accuracy."
+            ],
+            "visual_beats": [
+              0,
+              3,
+              5
+            ],
+            "visual_notes": [
+              "line 1: Same static GitHub screenshot held for too long.",
+              "line 4: Generic Nvidia background image is repeated and lacks specific technical relevance.",
+              "line 6: GitHub logo is generic and does not illustrate 'Linux kernel configurations'."
+            ],
+            "reviewer": "gemini"
+          },
+          "credits": [
+            "news photo: nvidia.com",
+            "news photo: github.com"
+          ],
+          "voice_used": "Ethan (Fish Audio)",
+          "visual_summary": "2 official images, 6 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAIoNGrd3h5PGnrIqh6sB9Nw0Hlc1XMJAAItIwACvKLxVufu8iZbwDmJPQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIoNGrd3h5PGnrIqh6sB9Nw0Hlc1XMJAAItIwACvKLxVufu8iZbwDmJPQQ",
+      "history_title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards"
     }
   ],
   "posted_ids": [
@@ -1715,7 +1606,6 @@
     "BAACAgUAAxkDAAImlWrcojkbFrXy3CMOSWWT0z8TkkT9AAK9IwACvKLpVsUQsl3xLqpwPQQ"
   ],
   "history": [
-    "Google experiments with an AI-powered gaming platform",
     "Top AI headlines · 4:10 AM today",
     "“Software is over”: Bold AI developer takes aim at Adobe with open source clones",
     "Top AI headlines · 6:10 AM today",
@@ -1814,7 +1704,8 @@
     "Coforge Revenue Rises 54% as AI Engineering and Deal Bookings Gain Momentum",
     "OpenAI now trains its frontier AI models with no internet access",
     "Updated Google privacy policy says your Gmail might be used for advertising",
-    "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend"
+    "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+    "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards"
   ],
   "posted_log": [
     {
@@ -2141,16 +2032,21 @@
       "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
       "at": "2026-10-24T17:50:24.645384+05:30",
       "event": "Jack Dorsey's Block just launched a new AI model called Dessa. It mimics human conversation with a surprisingly awkward personality. Dessa lead Ragavan Thurairatnam says the model was trained from scratch on human conversations. The team sh"
+    },
+    {
+      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+      "at": "2026-10-25T16:20:26.468471+05:30",
+      "event": "Nvidia three thousand series cards have a hidden performance limitation. Developer Zagitta released a Linux kernel module to address this. The module adjusts internal hardware speed selectors to reset the chip state. It targets the FP16 and"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-25T13:11+05:30",
-    "techcrunch.com": 6,
-    "theverge.com": 3,
-    "arstechnica.com": 1,
+    "at": "2026-10-25T16:20+05:30",
+    "techcrunch.com": 5,
+    "theverge.com": 2,
+    "arstechnica.com": 0,
     "technologyreview.com": 0,
     "openai.com": 0,
     "blog.google": 0,
@@ -2158,12 +2054,12 @@
     "huggingface.co": 0,
     "blogs.nvidia.com": 0,
     "inc42.com": 0,
-    "news.google.com": "blocked (HTTP 503)",
-    "Google News (VentureBeat, AIM, AI News)": "blocked (HTTP 503)",
-    "producthunt.com": 2,
-    "Hacker News": 6,
+    "news.google.com": 45,
+    "Google News (VentureBeat, AIM, AI News)": 3,
+    "producthunt.com": 3,
+    "Hacker News": 4,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 0
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -2176,7 +2072,7 @@
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
-  "repeat_check2_day": "2026-10-24",
+  "repeat_check2_day": "2026-10-25",
   "late_alarm_day": "2026-10-25",
   "stats_day": "2026-10-25",
   "perm_told": true,
@@ -2196,7 +2092,7 @@
   "late_note_for": "2026-10-25-0",
   "gemini_use": {
     "day": "2026-10-25",
-    "calls": 316,
+    "calls": 319,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2231,7 +2127,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 9,
+        "ok": 12,
         "busy": 0,
         "other": 0,
         "last": ""
