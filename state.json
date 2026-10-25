@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -200,16 +200,64 @@
     "fix_rounds": 1,
     "source_links": [
       "https://github.com/Zagitta/gpu-unlock"
-    ]
+    ],
+    "ig_audio": {
+      "id": "672790974305597",
+      "title": "What's On The Line Now",
+      "artist": "Trout Recording"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Developer Zagitta released a Linux kernel module t…: The shot is blank/empty.",
+      "Zagitta notes this requires specific Linux kernel …: The shot is blank/empty.",
+      "The image is a generic abstract graphic, not a real image of an Nvidia GeForce RTX 30 Series card.",
+      "The shot is blank/empty.",
+      "The image is a generic abstract graphic, not a microchip on a circuit board.",
+      "The shot is blank/empty.",
+      "The shot is blank/empty.",
+      "The image is a text card, not an illustration of server data flow."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong technical reporting, but visual variety is lacking and needs more dynamic assets.",
+      "script_fixes": [
+        "LINE 1: Change 'hidden performance limitation' to 'artificial performance cap' for more precise technical accuracy."
+      ],
+      "visual_beats": [
+        0,
+        3,
+        5
+      ],
+      "visual_notes": [
+        "line 1: Same static GitHub screenshot held for too long.",
+        "line 4: Generic Nvidia background image is repeated and lacks specific technical relevance.",
+        "line 6: GitHub logo is generic and does not illustrate 'Linux kernel configurations'."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "news photo: nvidia.com",
+      "news photo: github.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIoNGrd3h5PGnrIqh6sB9Nw0Hlc1XMJAAItIwACvKLxVufu8iZbwDmJPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-25T16:06:42.210499+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-25T16:46:55.482386+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-25",
@@ -681,178 +729,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Morocco and AI: Who Is Accountable When the Model Enters Government?",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdnktX1h6UzNERTdHbGJNWUJHdzJ0V1QzOXVaX0pzYjBXU3pRWmQybnd4WGJIQ0JfOVBhSkE2YmJDVS1FMVN6NElqSGcyZTdQTHUwOVdMaEVSSGxrNlJDbU9xbHluSWRuZlpYMzQwQ3J2aUhRX1Q3V1JPMDRKcVpWV2dWb2c5RnpVN3JpWHJvckxZLVlWSlZnekhzTHVNY0MxT2ZVMVVaRXVkcGV4MW5XZmY5b09QQ2szdHZWN214U1hUb2o3NmhPdW5IYlQtNlRHbkE?oc=5",
-          "summary": "Morocco and AI: Who Is Accountable When the Model Enters Government? Atalayar",
-          "source": "Atalayar",
-          "published": "2026-10-25T08:00:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Morocco Government AI Accountability",
-          "hook_text": "Who answers when AI runs government?",
-          "beats": [
-            {
-              "line": "Zoher Bijou published an opinion piece in Atalayar addressing AI accountability in Morocco.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Atalayar",
-              "domain": "atalayar.com",
-              "headline": "Morocco and AI: Who Is Accountable When the Model Enters Government?",
-              "url": "",
-              "tag": "Atalayar examines AI governance",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Automated algorithms are moving into public administration and reshaping how civil services operate daily.",
-              "visual": "clip",
-              "query": "government office building",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Algorithms in public administration",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This shift forces policymakers to figure out who carries legal blame when systems fail.",
-              "visual": "clip",
-              "query": "person reviewing documents",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Legal blame when systems fail",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Traditional bureaucratic frameworks struggle to assign fault between software vendors and government agencies.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Parliament of Morocco",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Frameworks struggle to assign fault",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Clear liability laws must catch up before automated tools take over critical citizen decisions.",
-              "visual": "clip",
-              "query": "parliament meeting room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Liability laws must catch up",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an automated system with your government paperwork?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trusting government paperwork to AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "serious and inquiring, highlighting policy stakes and public accountability",
-          "thin": false,
-          "caption": "Morocco faces critical legal questions as AI enters public administration and government services. Officials must determine responsibility when automated systems make administrative errors. Would you trust an automated system with your government paperwork?",
-          "hashtags": [
-            "Morocco",
-            "GovernmentTech",
-            "TechPolicy",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-          ],
-          "script": "Zoher Bijou published an opinion piece in Atalayar addressing AI accountability in Morocco.\nAutomated algorithms are moving into public administration and reshaping how civil services operate daily.\nThis shift forces policymakers to figure out who carries legal blame when systems fail.\nTraditional bureaucratic frameworks struggle to assign fault between software vendors and government agencies.\nClear liability laws must catch up before automated tools take over critical citizen decisions.\nWould you trust an automated system with your government paperwork?",
-          "keywords": [
-            "government office building",
-            "person reviewing documents",
-            "parliament meeting room",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Zoher Bijou published an opinion piece in Atalayar addressing AI accountability in Morocco.",
-              "url": "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://atalayar.com/en/opinion/zoher-bijou/morocco-and-ai-who-is-accountable-when-the-model-enters-government/20261025090000230076.html"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-25T14:55:57.366691+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1588,6 +1464,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+          "link": "https://github.com/Zagitta/gpu-unlock",
+          "summary": "",
+          "source": "github.com",
+          "published": "2026-10-24T09:58:27+00:00",
+          "buzz": "Hacker News 251 points",
+          "angle": "Nvidia GPU hack: A new tool unlocks hidden performance on RTX 3000 cards for AI tasks."
+        },
+        "draft": {
+          "title": "Unlock Nvidia 3000 GPU performance",
+          "hook_text": "Nvidia 3000 series cards hidden bottleneck",
+          "beats": [
+            {
+              "line": "Nvidia three thousand series cards have a hidden performance limitation.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia GeForce RTX 30 Series",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.nvidia.com/en-us/geforce/rtx-30-series/",
+              "tag": "Nvidia 3000 limit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Developer Zagitta released a Linux kernel module to address this.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://github.com/Zagitta/gpu-unlock",
+              "tag": "Zagitta kernel module",
+              "name": "Zagitta",
+              "role": "Software Developer",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The module adjusts internal hardware speed selectors to reset the chip state.",
+              "visual": "clip",
+              "query": "microchip on circuit board",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Hardware speed selector",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It targets the FP16 and BF16 instruction issue rate on these GPUs.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "FP16/BF16",
+              "small": "instruction rate",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Instruction rate fix",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This specifically allows the hardware to reach higher compute performance levels.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Higher compute levels",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Zagitta notes this requires specific Linux kernel configurations to function correctly.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "GitHub",
+              "domain": "github.com",
+              "headline": "Zagitta gpu-unlock repository",
+              "url": "",
+              "tag": "Linux kernel requirement",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you modify your kernel for these performance gains?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract visualization of server data flow",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Kernel modification risk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Technical and precise, maintaining a neutral tone while explaining the hardware adjustment.",
+          "thin": false,
+          "caption": "Developer Zagitta released a Linux kernel module to increase the FP16 and BF16 instruction rate on Nvidia 3000 series GPUs. The tool works by adjusting hardware speed selectors to reset the chip state for better performance. Would you modify your kernel for these performance gains?",
+          "hashtags": [
+            "Nvidia",
+            "GPU",
+            "Linux",
+            "Hardware",
+            "Coding"
+          ],
+          "sources": [
+            "https://github.com/Zagitta/gpu-unlock"
+          ],
+          "script": "Nvidia three thousand series cards have a hidden performance limitation.\nDeveloper Zagitta released a Linux kernel module to address this.\nThe module adjusts internal hardware speed selectors to reset the chip state.\nIt targets the FP16 and BF16 instruction issue rate on these GPUs.\nThis specifically allows the hardware to reach higher compute performance levels.\nZagitta notes this requires specific Linux kernel configurations to function correctly.\nWould you modify your kernel for these performance gains?",
+          "keywords": [
+            "microchip on circuit board",
+            "data center server racks"
+          ],
+          "image_prompts": [
+            "abstract visualization of server data flow"
+          ],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia 3000 series cards have a hidden bottleneck",
+              "url": "https://finance.biggo.com/news/877b5873-58c4-4cd1-9e64-5f499f587987"
+            },
+            {
+              "claim": "Nvidia three thousand series cards have a hidden performance limitation.",
+              "url": "https://finance.biggo.com/news/877b5873-58c4-4cd1-9e64-5f499f587987"
+            },
+            {
+              "claim": "Developer Zagitta released a Linux kernel module to address this.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "The module adjusts internal hardware speed selectors to reset the chip state.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "It targets the FP16 and BF16 instruction issue rate on these GPUs.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "This specifically allows the hardware to reach higher compute performance levels.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            },
+            {
+              "claim": "Zagitta notes this requires specific Linux kernel configurations to function correctly.",
+              "url": "https://github.com/Zagitta/gpu-unlock"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://github.com/Zagitta/gpu-unlock"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-25T16:06:42.210499+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2051,8 +2143,8 @@
       "event": "Jack Dorsey's Block just launched a new AI model called Dessa. It mimics human conversation with a surprisingly awkward personality. Dessa lead Ragavan Thurairatnam says the model was trained from scratch on human conversations. The team sh"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-25T13:11+05:30",
@@ -2080,7 +2172,7 @@
   "report_day": "2026-10-24",
   "ig_count": {
     "day": "2026-10-25",
-    "at": "2026-10-25T16:06:42.210531+05:30",
+    "at": "2026-10-25T16:16:55.482626+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2104,7 +2196,7 @@
   "late_note_for": "2026-10-25-0",
   "gemini_use": {
     "day": "2026-10-25",
-    "calls": 306,
+    "calls": 316,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2134,9 +2226,15 @@
       },
       "gemini-3.5-flash-lite": {
         "ok": 142,
-        "busy": 69,
+        "busy": 70,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.1-flash-lite": {
+        "ok": 9,
+        "busy": 0,
+        "other": 0,
+        "last": ""
       }
     }
   },
@@ -2215,31 +2313,10 @@
     "gemini-3.6-flash": 1792912506.283249,
     "gemini-3.5-flash": 1792912527.3113973,
     "gemini-3.7-flash": 1792913124.224664,
-    "gemini-3-flash-preview": 1792914100.9591455
+    "gemini-3-flash-preview": 1792914100.9591455,
+    "gemini-3.5-flash-lite": 1792924868.0287292
   },
   "editor_log": [
-    {
-      "at": "2026-10-24T17:27+05:30",
-      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,0",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but the visuals are repetitive, static, and lack actual product footage.",
-      "fixes": [
-        "LINE 3: Replace 'These units represent a new wave of interactive AI hardware' with 'The Microduck is the first consumer robot powered by Nvidia's Jetson Orin platform.'"
-      ],
-      "visual": [
-        "line 1: Same image held for 7+ seconds across multiple frames.",
-        "line 2: Visuals are generic logos rather than showing the robots stomping or making noises.",
-        "line 3: Static text-only background is boring and lacks visual engagement."
-      ]
-    },
     {
       "at": "2026-10-24T17:35+05:30",
       "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,0",
@@ -2662,10 +2739,32 @@
         "line 3: The same visual (MeitY logo/text) is held for too long across three frames.",
         "line 4: The LawBeat logo is a source credit, not a visual representation of global AI regulation."
       ]
+    },
+    {
+      "at": "2026-10-25T16:16+05:30",
+      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong technical reporting, but visual variety is lacking and needs more dynamic assets.",
+      "fixes": [
+        "LINE 1: Change 'hidden performance limitation' to 'artificial performance cap' for more precise technical accuracy."
+      ],
+      "visual": [
+        "line 1: Same static GitHub screenshot held for too long.",
+        "line 4: Generic Nvidia background image is repeated and lacks specific technical relevance.",
+        "line 6: GitHub logo is generic and does not illustrate 'Linux kernel configurations'."
+      ]
     }
   ],
   "rest_note": "2026-10-25T12:32:00+05:30",
-  "fish_turn": 94,
+  "fish_turn": 95,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
