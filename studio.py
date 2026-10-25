@@ -12,7 +12,8 @@ import video as V
 
 W, H, FPS = V.W, V.H, V.FPS
 ACCENT = V.ACCENT
-MAX_PHOTO_USES = 1   # each photo once per reel (the hook counts): the editor marks any repeat down (13 Oct)
+MAX_PHOTO_USES = 2   # a story photo may appear twice (the hook counts), with a new crop: at 1 per reel most lines
+                     # became text-only cards and the editor scored visuals 4 (24 Oct: 15 of 17 reels rejected)
 MAX_SHOT = 3.2       # no shot longer than this: lines are cut into shots of what fits them (card, label, logo)
 CARD_TOP, CARD_BOTTOM, CARD_W = 470, 1700, 930   # the picture area; captions live above it
 CAP_Y0, CAP_H = 150, 320                          # caption strip (top of the screen)

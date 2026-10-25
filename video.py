@@ -1130,6 +1130,9 @@ def safe_shot(b, i, tmp):
     return ("image", p)
 
 
+NEWS_SITE = re.compile(r"(?i)techcrunch|theverge|verge\.com|wired|reuters|bloomberg|arstechnica|venturebeat|cnbc|"
+                       r"axios|engadget|technologyreview|ft\.com|wsj|nytimes|bbc|theguardian|theinformation|zdnet|"
+                       r"cnet|businessinsider|forbes|indianexpress|livemint|moneycontrol|inc42|yourstory|news\.")
 WEB_USED = []  # real-page shots in this reel (max 2: the article and the product's own page)
 MAX_WEB = 2
 
@@ -1181,6 +1184,12 @@ def plan_visuals(beats, tmp, times=None, source_urls=(), safe_beats=()):
     import images
     import writer
     WEB_USED.clear()
+    for b in beats:  # a product's logo must never be the news site's (24 Oct: "Microduck" got TechCrunch's logo)
+        if b.get("visual") != "source" and NEWS_SITE.search(str(b.get("domain") or "")):
+            b["domain"] = ""
+        for br in b.get("brands") or []:
+            if NEWS_SITE.search(str(br.get("domain") or "")) and not NEWS_SITE.search(str(br.get("name") or "")):
+                br["domain"] = ""
     options, thumbs = {}, {}
     for i, b in enumerate(beats):
         if b["visual"] == "clip":
