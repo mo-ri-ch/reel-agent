@@ -1,0 +1,82 @@
+{
+ "made": "20261025-0801",
+ "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+ "hook_text": "Grok and OpenAI pick opposite parties",
+ "hook_before": null,
+ "script": "XAI built Grok to overwhelmingly recommend Republican candidates in political races.\nOpenAI designed GPT to favor Democrats instead.\nA new study tested both models across 478 election races.\nThe two AI models disagreed in over ninety percent of those tests.\nTechCrunch published the findings after examining how political bias shapes automated decision making.\nVoters increasingly rely on conversational chatbots for election information and candidate research.\nWould you trust an AI to pick your candidate?",
+ "words": 74,
+ "beats": [
+  {
+   "line": "XAI built Grok to overwhelmingly recommend Republican candidates in political races.",
+   "visual": "official"
+  },
+  {
+   "line": "OpenAI designed GPT to favor Democrats instead.",
+   "visual": "official"
+  },
+  {
+   "line": "A new study tested both models across 478 election races.",
+   "visual": "stat"
+  },
+  {
+   "line": "The two AI models disagreed in over ninety percent of those tests.",
+   "visual": "stat"
+  },
+  {
+   "line": "TechCrunch published the findings after examining how political bias shapes automated decision making.",
+   "visual": "source"
+  },
+  {
+   "line": "Voters increasingly rely on conversational chatbots for election information and candidate research.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you trust an AI to pick your candidate?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 7,
+   "visuals": 4,
+   "flow": 8
+  },
+  "one_line": "Strong political AI story ruined by irrelevant line graphs and cartoon robot stock art.",
+  "script_fixes": [
+   "LINE 1: Change 'XAI built Grok to overwhelmingly recommend' to 'A new study found xAI's Grok overwhelmingly recommends'",
+   "LINE 2: Change 'OpenAI designed GPT to favor' to 'while OpenAI's GPT favors'"
+  ],
+  "visual_beats": [
+   1,
+   2,
+   4
+  ],
+  "visual_notes": [
+   "line 2: Frame 4 displays an unrelated time-series chart instead of OpenAI or GPT branding.",
+   "line 3: Frames 5 and 6 display the same unrelated line graph instead of study graphics or comparis",
+   "line 5: Frames 9 and 10 use a generic cartoon robot stock image and a spammy web ad banner."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 33.67,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.0,
+ "cuts": [
+  7.4,
+  9.47,
+  18.8,
+  21.73,
+  30.63
+ ],
+ "first_cut_at": 7.4,
+ "avg_shot_seconds": 5.61,
+ "longest_shot_seconds": 9.33,
+ "verdict": "rejected",
+ "words_per_minute": 132
+}
