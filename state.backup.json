@@ -27,7 +27,7 @@
       "angle": ""
     }
   ],
-  "choose_deadline": "2026-10-25T09:55:22.507237+05:30",
+  "choose_deadline": "2026-10-25T10:00:31.679546+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -1940,7 +1940,7 @@
   "report_day": "2026-10-24",
   "ig_count": {
     "day": "2026-10-25",
-    "at": "2026-10-25T09:45:33.364488+05:30",
+    "at": "2026-10-25T10:00:31.679579+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2033,7 +2033,7 @@
     "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now",
     "trace": "t_script\n    next_story(s, \"the facts couldn't be verified\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 549, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 606, in start_script\n    next_story(s, \"the facts couldn't be verified\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 549, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 588, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 384, in checked_script\n    draft = writer.write_script(topic, previous=draft, instruction=fix)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 514, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 218, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-flash-lite-latest: free quota used up for now\n"
   },
-  "report_week": "2026-42",
+  "report_week": "2026-43",
   "last_post_error": {
     "at": "2026-10-24T00:31+05:30",
     "title": "Introducing Kimi K3.1 Pro: Advancing Open Intelligence",
