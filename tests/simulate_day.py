@@ -40,6 +40,7 @@ def heads(**k):
              "summary": "", "source": "TechCrunch", "published": ""} for i in range(6)]
 news.fetch_headlines = heads
 news.real_url = lambda u: u
+news.og_image = lambda link: "https://example.com/pic.jpg"  # every fake story has a picture
 writer.pick_top = lambda h, u: h[:3]
 writer.drop_same_events = lambda p, c: p
 rep = [0]

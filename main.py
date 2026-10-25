@@ -574,6 +574,14 @@ def is_repeat(s, topic):
         return None
 
 
+def has_picture(topic):
+    """Does the story's article have a real header picture? (cheap: one page fetch, no AI). Fails open."""
+    try:
+        return bool(news.og_image(topic.get("link"))) if topic.get("link") else True
+    except Exception:
+        return True
+
+
 def start_script(s, topic, instruction=None, auto=False):
     if not instruction and not topic.get("extra") and not topic.get("custom") and not topic.get("digest"):
         repeat = is_repeat(s, topic)
@@ -582,6 +590,13 @@ def start_script(s, topic, instruction=None, auto=False):
             s["tried"] = ((s.get("tried") or []) + [topic.get("title", "")])[-60:]
             if auto or s.get("autopilot"):
                 next_story(s, "the last one was a repeat")
+            return
+        if (auto or s.get("autopilot")) and not has_picture(topic):
+            # 25 Oct: stories without any picture became text-only reels (visuals 4) and every rejected attempt
+            # burned the free quota; a story with no usable image is skipped before any AI work
+            tg.send(f"🖼 Skipping “{topic['title'][:80]}”: no usable picture for a good-looking reel.")
+            s["tried"] = ((s.get("tried") or []) + [topic.get("title", "")])[-60:]
+            next_story(s, "no picture")
             return
     tg.action("typing")
     tg.send("✍️ Revising the script..." if instruction else f"✍️ Writing a script about: {topic['title']}")
@@ -1896,6 +1911,8 @@ def editor_step(s, out, rerender):
     if rev["overall"] >= EDITOR_PASS:
         return out, "ok"
     first_round = not d.get("editor_rounds")
+    if rev["scores"].get("visuals", 7) <= 4:  # no rewrite or re-shoot fixes a story that has no pictures: move on
+        return out, "switch"
     if first_round and rev["visual_beats"] and not rev["script_fixes"]:
         d["editor_rounds"] = 1
         tg.send(f"🎬 Editor-in-chief: {rev['overall']}/10, {rev['one_line']}\nReplacing the weak shots:\n• " +
