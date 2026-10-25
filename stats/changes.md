@@ -191,3 +191,16 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   22 Oct rubric line "unrelated picture -> visuals 5 or less" (607a946): visuals now mostly 4. Asked the owner whether to undo that
   line (the opening-photo check stays; pass mark unchanged). Not changed without his OK (hard rule 4).
 - Fix: terms/privacy/consent pages are never used as product-page or article screenshots. Metric: editor visuals (median 4 since 22 Oct 11:00).
+
+## 2026-10-25: Sunday review
+- No failed runs in 24 h. 24 Oct: 5 of 6 posted (21:30 missed); 25 Oct 00:30/03:30/06:30 missed and 11:30 will be too: the free
+  Gemini quota ran out at 19:33 IST on 24 Oct (resets 12:30 IST). The editor reviewed 20 reels on 24 Oct and passed ~4; visuals
+  was the lowest score in 15 of 20 (11 scored 4). Owner's answer on the 22 Oct "unrelated picture" rubric line still pending.
+- Week 18-24 Oct vs 11-17: 38 reels (27), median views 113.5 (71), median reach 106 (68), mean watch 4.6 s (4.5), shares 1 (2),
+  saves 7 (9); followers 9 -> 11. Since the 21 Oct changes (opening from frame 0, picker ranking, US slots, Ethan, real pages):
+  median reach 109 vs 42 for 14-20 Oct; median watch 4.8 s vs 4.2 s. Keep all (only 4 days old; re-check next Sunday).
+- Ethan vs Paula again: 24 reels median 121 views / 5.0 s vs 14 reels 42 / 4.0 s (third week in a row). Asked the owner about Ethan only.
+- Outliers: Amazon TorchNeuron (5.6x), Anthropic Claude attack-surface research (3.4x), Uber ChatGPT Work (3.2x): big-company
+  launches/numbers again. hook_score: 9 data points, weak link to watch time; still not trusted.
+- Change: labelled opinion pieces ("Guest commentary:", "Editorial", "Viewpoint", "Perspective:", "Column:", letters to the
+  editor) are skipped by title; a Guest commentary was made and rejected (5.3) on 24 Oct, wasting quota. Metric: reels passed per day.
