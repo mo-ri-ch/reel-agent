@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -240,16 +240,69 @@
     "editor_rounds": 1,
     "source_links": [
       "https://nashaniva.com/en/407709"
-    ]
+    ],
+    "ig_audio": {
+      "id": "979175924268133",
+      "title": "Set Me Free (Reels Sound - Before & After)",
+      "artist": "Chela Rivas"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Computer scientist Atila Soares da Costa Filho use…: almost-empty card",
+      "The model identified an eighty-one percent probabi…: almost-empty card",
+      "It highlights significant differences in the paint…: almost-empty card",
+      "The work previously sold for four hundred fifty mi…: almost-empty card",
+      "This analysis suggests the painting is a collectiv…: almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card"
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 1: Change to 'The world's most expensive painting, Salvator Mundi, just faced an AI audit.'",
+        "LINE 2: Specify the neural network model name if available, otherwise keep as is."
+      ],
+      "visual_beats": [
+        3,
+        7,
+        8
+      ],
+      "visual_notes": [
+        "line 4: The painting image is held for too long across multiple frames, causing visual stagnation.",
+        "line 8: The logo for 'Nasha Niva' is generic and lacks context for a global audience.",
+        "line 9: The final frame lacks a visual call-to-action or a compelling closing graphic."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "news photo: nashaniva.com",
+      "news photo: nashaniva.com",
+      "Leonardo da Vinci: Wikimedia Commons (Public domain), via Wikimedia Commons",
+      "news photo: nashaniva.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "3 official images, 1 real photos, 6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIosGreAgJpxUng24ko0NB7kx4wpCBDAALHMgACYBDxVgr9k-Hn8cDZPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-25T18:42:47.632013+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-25T19:20:03.362540+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-25",
@@ -721,245 +774,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "ChatGPT Is Building Detailed Psychological Profiles of Its Users",
-          "link": "https://futurism.com/artificial-intelligence/chatgpt-building-profiles-users",
-          "summary": "ChatGPT Is Building Detailed Psychological Profiles of Its Users Futurism",
-          "source": "Futurism",
-          "published": "2026-10-25T11:55:00+00:00",
-          "angle": "ChatGPT is now building detailed psychological profiles of users, raising massive privacy concerns."
-        },
-        "draft": {
-          "title": "ChatGPT Is Profiling Your Psychology",
-          "hook_text": "ChatGPT is profiling your mind",
-          "beats": [
-            {
-              "line": "ChatGPT is building detailed psychological profiles of its users.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "ChatGPT",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://chatgpt.com",
-              "tag": "OpenAI builds profiles",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The system identifies your personality traits, beliefs, and emotional states through your chat history.",
-              "visual": "clip",
-              "query": "person typing on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Analyzing user traits",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "This tracking happens by analyzing your past interactions and individual behavioral patterns.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "100%",
-              "small": "User history analyzed",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Full data tracking",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "OpenAI previously introduced memory features that allow the AI to retain specific details about you.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "tag": "Memory features enabled",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Futurism notes these psychological models function without explicit user opt-in for this specific profiling.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Futurism",
-              "domain": "futurism.com",
-              "headline": "ChatGPT Is Building Detailed Psychological Profiles of Its Users",
-              "url": "",
-              "tag": "No opt-in profiling",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The AI uses this hidden map to customize its future responses to your personality.",
-              "visual": "clip",
-              "query": "abstract digital network data",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Customized AI responses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you keep using ChatGPT if you could read your own profile?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "a minimalist digital portrait made of binary code on a dark background",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Privacy concerns",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "ChatGPT",
-                  "domain": "openai.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "Serious and direct, shifting from informative to concerned regarding personal privacy.",
-          "thin": false,
-          "caption": "OpenAI is building detailed psychological profiles of ChatGPT users by analyzing their chat history and behavioral patterns. This profiling occurs automatically as the AI tracks personality traits and beliefs to influence future interactions. Would you keep using ChatGPT if you could read your own profile?",
-          "hashtags": [
-            "OpenAI",
-            "ChatGPT",
-            "DataPrivacy",
-            "AI"
-          ],
-          "sources": [
-            "https://futurism.com/artificial-intelligence/chatgpt-building-profiles-users"
-          ],
-          "script": "ChatGPT is building detailed psychological profiles of its users.\nThe system identifies your personality traits, beliefs, and emotional states through your chat history.\nThis tracking happens by analyzing your past interactions and individual behavioral patterns.\nOpenAI previously introduced memory features that allow the AI to retain specific details about you.\nFuturism notes these psychological models function without explicit user opt-in for this specific profiling.\nThe AI uses this hidden map to customize its future responses to your personality.\nWould you keep using ChatGPT if you could read your own profile?",
-          "keywords": [
-            "person typing on laptop",
-            "abstract digital network data"
-          ],
-          "image_prompts": [
-            "a minimalist digital portrait made of binary code on a dark background"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "ChatGPT is profiling your mind",
-              "url": "https://www.livemint.com/ai/artificial-intelligence/chatgpt-may-know-more-about-you-than-you-can-actually-realise-how-ai-memory-raises-questions-about-privacy-study-11792684252421.html"
-            },
-            {
-              "claim": "ChatGPT is building detailed psychological profiles of its users.",
-              "url": "https://futurism.com/artificial-intelligence/chatgpt-building-profiles-users"
-            },
-            {
-              "claim": "The system identifies your personality traits, beliefs, and emotional states through your chat history.",
-              "url": "https://www.livemint.com/ai/artificial-intelligence/chatgpt-may-know-more-about-you-than-you-can-actually-realise-how-ai-memory-raises-questions-about-privacy-study-11792684252421.html"
-            },
-            {
-              "claim": "This tracking happens by analyzing your past interactions and individual behavioral patterns.",
-              "url": "https://www.livemint.com/ai/artificial-intelligence/chatgpt-may-know-more-about-you-than-you-can-actually-realise-how-ai-memory-raises-questions-about-privacy-study-11792684252421.html"
-            },
-            {
-              "claim": "OpenAI previously introduced memory features that allow the AI to retain specific details about you.",
-              "url": "https://futurism.com/artificial-intelligence/chatgpt-building-profiles-users"
-            },
-            {
-              "claim": "Futurism notes these psychological models function without explicit user opt-in for this specific profiling.",
-              "url": "https://futurism.com/artificial-intelligence/chatgpt-building-profiles-users"
-            },
-            {
-              "claim": "The AI uses this hidden map to customize its future responses to your personality.",
-              "url": "https://www.livemint.com/ai/artificial-intelligence/chatgpt-may-know-more-about-you-than-you-can-actually-realise-how-ai-memory-raises-questions-about-privacy-study-11792684252421.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://futurism.com/artificial-intelligence/chatgpt-building-profiles-users"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-25T18:00:25.301618+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1772,6 +1586,262 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Artificial intelligence questioned the authorship of the world's most expensive painting",
+          "link": "https://nashaniva.com/en/407709",
+          "summary": "Artificial intelligence questioned the authorship of the world's most expensive painting Наша Ніва",
+          "source": "Наша Ніва",
+          "published": "2026-10-25T07:59:45+00:00",
+          "angle": "AI analysis just challenged the authorship of the world's most expensive painting."
+        },
+        "draft": {
+          "title": "AI Questions Salvator Mundi Authorship",
+          "hook_text": "Is the world's priciest painting fake?",
+          "beats": [
+            {
+              "line": "The world's most expensive painting just faced an AI audit.",
+              "visual": "clip",
+              "query": "Salvator Mundi painting",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Salvator Mundi audit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Computer scientist Atila Soares da Costa Filho used a neural network to analyze the piece.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://nashaniva.com/en/407709",
+              "tag": "Atila Soares analysis",
+              "name": "Atila Soares da Costa Filho",
+              "role": "Computer scientist",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He compared the work to other known Leonardo da Vinci paintings.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Leonardo da Vinci",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Comparing Da Vinci works",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The model identified an eighty-one percent probability of student authorship.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "81%",
+              "small": "probability of student",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "81 percent probability",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It highlights significant differences in the painting's execution style.",
+              "visual": "clip",
+              "query": "oil painting details",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Execution style differences",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The work previously sold for four hundred fifty million dollars in twenty seventeen.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$450M",
+              "small": "2017 sale price",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sold for 450M",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The researcher claims Leonardo only intervened to finish specific parts.",
+              "visual": "clip",
+              "query": "art restoration",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Leonardo's intervention",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This analysis suggests the painting is a collective studio effort.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Наша Ніва",
+              "domain": "nashaniva.com",
+              "headline": "Artificial intelligence questioned the authorship of the world's most expensive painting",
+              "url": "",
+              "tag": "Collective studio effort",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a machine to decide who painted an old masterpiece?",
+              "visual": "clip",
+              "query": "museum visitor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting machine results",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Neutral and investigative tone, focusing on the contrast between the high price and the new AI-driven findings.",
+          "thin": false,
+          "caption": "Computer scientist Atila Soares da Costa Filho used AI to analyze the $450 million Salvator Mundi. The study found an 81% probability that the work was primarily created by a student, with Leonardo da Vinci only finishing specific parts. Would you trust a machine to decide who painted an old masterpiece?",
+          "hashtags": [
+            "SalvatorMundi",
+            "ArtificialIntelligence",
+            "LeonardoDaVinci",
+            "ArtHistory",
+            "TechNews"
+          ],
+          "sources": [
+            "https://nashaniva.com/en/407709"
+          ],
+          "script": "The world's most expensive painting just faced an AI audit.\nComputer scientist Atila Soares da Costa Filho used a neural network to analyze the piece.\nHe compared the work to other known Leonardo da Vinci paintings.\nThe model identified an eighty-one percent probability of student authorship.\nIt highlights significant differences in the painting's execution style.\nThe work previously sold for four hundred fifty million dollars in twenty seventeen.\nThe researcher claims Leonardo only intervened to finish specific parts.\nThis analysis suggests the painting is a collective studio effort.\nWould you trust a machine to decide who painted an old masterpiece?",
+          "keywords": [
+            "Salvator Mundi painting",
+            "oil painting details",
+            "art restoration",
+            "museum visitor"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "The world's most expensive painting is the subject of a question regarding its authorship.",
+              "url": "https://nashaniva.com/en/407709"
+            },
+            {
+              "claim": "The world's most expensive painting faced an AI audit.",
+              "url": "https://www.martincid.com/art/salvator-mundi-not-leonardo-ai-boltraffio-claim/"
+            },
+            {
+              "claim": "Atila Soares da Costa Filho is a computer scientist who used a neural network to analyze the piece.",
+              "url": "https://www.martincid.com/art/salvator-mundi-not-leonardo-ai-boltraffio-claim/"
+            },
+            {
+              "claim": "He compared the work to other known Leonardo da Vinci paintings.",
+              "url": "https://www.martincid.com/art/salvator-mundi-not-leonardo-ai-boltraffio-claim/"
+            },
+            {
+              "claim": "The model identified an 81% probability of student authorship.",
+              "url": "https://www.martincid.com/art/salvator-mundi-not-leonardo-ai-boltraffio-claim/"
+            },
+            {
+              "claim": "The work sold for $450.3 million in 2017.",
+              "url": "https://nashaniva.com/en/407709"
+            },
+            {
+              "claim": "The researcher claims Leonardo only intervened to finish specific parts.",
+              "url": "https://www.martincid.com/art/salvator-mundi-not-leonardo-ai-boltraffio-claim/"
+            },
+            {
+              "claim": "This analysis suggests the painting is a collective studio effort.",
+              "url": "https://www.martincid.com/art/salvator-mundi-not-leonardo-ai-boltraffio-claim/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://nashaniva.com/en/407709"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-25T18:42:47.632013+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2256,7 +2326,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-25T18:10+05:30",
@@ -2284,8 +2354,8 @@
   "report_day": "2026-10-24",
   "ig_count": {
     "day": "2026-10-25",
-    "at": "2026-10-25T18:34:36.265159+05:30",
-    "count": 3
+    "at": "2026-10-25T18:50:03.362777+05:30",
+    "count": 4
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-25",
@@ -2308,7 +2378,7 @@
   "late_note_for": "2026-10-25-3",
   "gemini_use": {
     "day": "2026-10-25",
-    "calls": 514,
+    "calls": 523,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2343,7 +2413,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 138,
+        "ok": 147,
         "busy": 52,
         "other": 13,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2435,26 +2505,6 @@
     "gemini-3.5-flash-lite": 1792924868.0287292
   },
   "editor_log": [
-    {
-      "at": "2026-10-25T13:38+05:30",
-      "title": "Some US banks detect unauthorized AI agents in customer accounts: Report",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong banking story ruined by repetitive robot stock images and frozen frames.",
-      "fixes": [],
-      "visual": [
-        "line 1: Generic AI robot stock image used repeatedly across multiple frames.",
-        "line 3: Same robotic illustration reused inappropriately for login credentials.",
-        "line 5: Static text frame held for too long with no new relevant visual."
-      ]
-    },
     {
       "at": "2026-10-25T13:40+05:30",
       "title": "Some US banks detect unauthorized AI agents in customer accounts: Report",
@@ -2882,10 +2932,33 @@
         "line 6: Visual shows '223M' while the audio says 'four hundred fifty million dollars'. This is a m",
         "line 8: The visual is a random abstract monolith, which is unrelated to the story and violates the"
       ]
+    },
+    {
+      "at": "2026-10-25T18:49+05:30",
+      "title": "Artificial intelligence questioned the authorship of the world's most expensive ",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 1: Change to 'The world's most expensive painting, Salvator Mundi, just faced an AI audit.'",
+        "LINE 2: Specify the neural network model name if available, otherwise keep as is."
+      ],
+      "visual": [
+        "line 4: The painting image is held for too long across multiple frames, causing visual stagnation.",
+        "line 8: The logo for 'Nasha Niva' is generic and lacks context for a global audience.",
+        "line 9: The final frame lacks a visual call-to-action or a compelling closing graphic."
+      ]
     }
   ],
   "rest_note": "2026-10-25T12:32:00+05:30",
-  "fish_turn": 102,
+  "fish_turn": 103,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
