@@ -204,3 +204,4 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   launches/numbers again. hook_score: 9 data points, weak link to watch time; still not trusted.
 - Change: labelled opinion pieces ("Guest commentary:", "Editorial", "Viewpoint", "Perspective:", "Column:", letters to the
   editor) are skipped by title; a Guest commentary was made and rejected (5.3) on 24 Oct, wasting quota. Metric: reels passed per day.
+- 25 Oct: photo reuse back to 2 (1 made reels text-only, visuals 4); news-site domains stripped from product logos. Baseline 24 Oct: 2 of 17 passed, quota ran out 19:33, 5 slots missed.
