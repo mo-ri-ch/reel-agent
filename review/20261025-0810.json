@@ -1,0 +1,75 @@
+{
+ "made": "20261025-0810",
+ "title": "Some US banks detect unauthorized AI agents in customer accounts: Report",
+ "hook_text": "Unauthorized AI agents are inside US bank accounts",
+ "hook_before": null,
+ "script": "Major US banks just detected unauthorized AI agents operating inside customer accounts.\nFirms like JPMorganChase and Wells Fargo noticed automated tools scraping financial data.\nThese autonomous programs log into portals using customer credentials without direct human permission.\nFinancial institutions say third party software bypasses traditional security measures designed for humans.\nExecutives worry about data leaks and liability risks as bots manage personal finances.\nWould you let an autonomous agent manage your bank?",
+ "words": 72,
+ "beats": [
+  {
+   "line": "Major US banks just detected unauthorized AI agents operating inside customer accounts.",
+   "visual": "clip"
+  },
+  {
+   "line": "Firms like JPMorganChase and Wells Fargo noticed automated tools scraping financial data.",
+   "visual": "source"
+  },
+  {
+   "line": "These autonomous programs log into portals using customer credentials without direct human permission.",
+   "visual": "clip"
+  },
+  {
+   "line": "Financial institutions say third party software bypasses traditional security measures designed for humans.",
+   "visual": "clip"
+  },
+  {
+   "line": "Executives worry about data leaks and liability risks as bots manage personal finances.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you let an autonomous agent manage your bank?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 4,
+   "flow": 9
+  },
+  "one_line": "Strong banking news hook undermined by repetitive, low-context stock imagery and static holding cards.",
+  "script_fixes": [],
+  "visual_beats": [
+   0,
+   2,
+   3
+  ],
+  "visual_notes": [
+   "line 1: Frames 1-3 reuse the exact same city stock visual for too long without contextual bank log",
+   "line 3: Frames 6-8 hold a static text screen for too long with no dynamic visual representation.",
+   "line 4: Frames 9-10 reuse generic text cards instead of illustrating security bypasses or software"
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 32.9,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.2,
+ "cuts": [
+  2.8,
+  8.57,
+  11.6,
+  17.23,
+  23.8
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 5.48,
+ "longest_shot_seconds": 9.1,
+ "verdict": "rejected",
+ "words_per_minute": 131
+}
