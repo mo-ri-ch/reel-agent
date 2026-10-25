@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -194,16 +194,62 @@
     "source_links": [
       "https://www.ndtv.com/world-news/ndtv-world-summit-2026-is-the-ai-bubble-waiting-to-burst-nikhil-kamath-explains-why-the-months-ahead-could-be-tough-12232253",
       "https://www.ndtv.com/business/is-ai-bubble-waiting-to-burst-nikhil-kamath-warns-of-tougher-months-ahead-6825638"
-    ]
+    ],
+    "ig_audio": {
+      "id": "3001821403330916",
+      "title": "Campfire Sunset (Instrumental)",
+      "artist": "bbox"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Kamath points to the massive capital flowing into …: almost-empty card",
+      "Previous tech cycles often crashed when valuations…: almost-empty card",
+      "Kamath suggests current AI hype mirrors past marke…: almost-empty card",
+      "Do you think current AI stocks are overpriced?…: almost-empty card",
+      "The shot is blank/empty.",
+      "The shot is blank/empty."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, specific content, but visual variety is lacking and repetitive.",
+      "script_fixes": [
+        "LINE 1: Change 'Billion dollar bets' to 'Trillions in capital' to better reflect the scale of AI investment.",
+        "LINE 2: Remove this line entirely as it is a redundant repetition of Line 1, which hurts the substance score."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The same abstract city image is held for too long across multiple frames.",
+        "line 2: The visual is a repeat of the previous frame, failing to add new information.",
+        "line 5: The visual is a static text card; it needs a chart or historical reference to match the 't"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Nikhil Kamath: SP2904"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 1 AI images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIoXGrd5siTEcDQ9XiMGR4YkMHtfmBiAAJsIwACvKLxVgar2QGHMuIRPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-25T16:41:18.744003+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-25T17:23:53.441667+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-25",
@@ -684,176 +730,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "India To Get AI Law, Union Minister Ashwini Vaishnaw Says Centre Will Issue Consultation Paper Soon",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ01saElMWXAwZVBYdjV2cHlpSnFHTXdQODZDRGNhZXNzZ3JhNjE5QmtaX3VLZUxvWmt5a0k3NWRvbHVYaFFheHpMampwZ09YUU83SGhRNi1GSVJURG9YbEt2QkJ3bmFjdGhDcXR6NnRJV1c4NFlkN1V6LUk2NFptTnRTdzlSTkpNcUdObk42aTl5X1JnMVNRWkIycERacWVMOW9wcFdRR19nLW0walByQnlMQTdLZUxBaWp3VXhmamxPakhvUkFXdXlpSFdHWjdnU1p2Mk9HekXSAdgBQVVfeXFMUENNbGhJTFlwMGVQWHY1dnB5aUpxR013UDg2Q0RjYWVzc2dyYTYxOUJrWl91S2VMb1preWtJNzVkb2x1WGhRYXh6TGpqcGdPWFFPN0hoUTYtRklSVERvWGxLdkJCd25hY3RoQ3F0ejZ0SVdXODRZZDdVei1JNjRabU50U3c5Uk5KTXFHTm5ONmk5eV9SZzFTUVpCMnBEWnFlTDlvcHBXUUdfZy1tMGpQckJ5TEE3S2VMQWlqd1V4ZmpsT2pIb1JBV3V5aUhXR1o3Z1NadjJPR3pF?oc=5",
-          "summary": "India To Get AI Law, Union Minister Ashwini Vaishnaw Says Centre Will Issue Consultation Paper Soon LawBeat",
-          "source": "LawBeat",
-          "published": "2026-10-24T20:23:07+00:00",
-          "angle": "India is officially moving to regulate AI with a new consultation paper coming soon."
-        },
-        "draft": {
-          "title": "India To Regulate AI",
-          "hook_text": "India is drafting new AI laws",
-          "beats": [
-            {
-              "line": "India is drafting a formal legal framework for AI.",
-              "visual": "clip",
-              "query": "New Delhi government office building",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "India AI law",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Union Minister Ashwini Vaishnaw confirmed the Centre will issue a consultation paper soon.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.meity.gov.in/",
-              "tag": "Ashwini Vaishnaw announcement",
-              "name": "Ashwini Vaishnaw",
-              "role": "Union Minister of Electronics and IT",
-              "x": "AshwiniVaishnaw",
-              "brands": []
-            },
-            {
-              "line": "The Ministry of Electronics and Information Technology will lead this public consultation process.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Ministry of Electronics and Information Technology",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "MeitY leads consultation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This move follows global efforts to regulate AI safety and algorithmic accountability.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "LawBeat",
-              "domain": "lawbeat.in",
-              "headline": "India To Get AI Law",
-              "url": "",
-              "tag": "Global AI regulation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you support strict government oversight for all AI models?",
-              "visual": "clip",
-              "query": "person using smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI oversight",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Direct and informative tone, focusing on the upcoming policy action by the Indian government.",
-          "thin": false,
-          "caption": "India is moving toward a formal AI law as Union Minister Ashwini Vaishnaw prepares a new consultation paper. The Ministry of Electronics and Information Technology is leading the effort to set national standards. Would you support strict government oversight for all AI models?",
-          "hashtags": [
-            "India",
-            "AI",
-            "AshwiniVaishnaw",
-            "TechPolicy",
-            "DigitalIndia"
-          ],
-          "sources": [
-            "https://lawbeat.in/news-updates/india-get-ai-law-union-minister-ashwini-vaishnaw-says-centre-will-issue-consultation-paper-soon-186718"
-          ],
-          "script": "India is drafting a formal legal framework for AI.\nUnion Minister Ashwini Vaishnaw confirmed the Centre will issue a consultation paper soon.\nThe Ministry of Electronics and Information Technology will lead this public consultation process.\nThis move follows global efforts to regulate AI safety and algorithmic accountability.\nWould you support strict government oversight for all AI models?",
-          "keywords": [
-            "New Delhi government office building",
-            "person using smartphone"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "India is drafting new AI laws",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ01saElMWXAwZVBYdjV2cHlpSnFHTXdQODZDRGNhZXNzZ3JhNjE5QmtaX3VLZUxvWmt5a0k3NWRvbHVYaFFheHpMampwZ09YUU83SGhRNi1GSVJURG9YbEt2QkJ3bmFjdGhDcXR6NnRJV1c4NFlkN1V6LUk2NFptTnRTdzlSTkpNcUdObk42aTl5X1JnMVNRWkIycERacWVMOW9wcFdRR19nLW0walByQnlMQTdLZUxBaWp3VXhmamxPakhvUkFXdXlpSFdHWjdnU1p2Mk9HekXSAdgBQVVfeXFMUENNbGhJTFlwMGVQWHY1dnB5aUpxR013UDg2Q0RjYWVzc2dyYTYxOUJrWl91S2VMb1preWtJNzVkb2x1WGhRYXh6TGpqcGdPWFFPN0hoUTYtRklSVERvWGxLdkJCd25hY3RoQ3F0ejZ0SVdXODRZZDdVei1JNjRabU50U3c5Uk5KTXFHTm5ONmk5eV9SZzFTUVpCMnBEWnFlTDlvcHBXUUdfZy1tMGpQckJ5TEE3S2VMQWlqd1V4ZmpsT2pIb1JBV3V5aUhXR1o3Z1NadjJPR3pF?oc=5"
-            },
-            {
-              "claim": "India is drafting a formal legal framework for AI.",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ01saElMWXAwZVBYdjV2cHlpSnFHTXdQODZDRGNhZXNzZ3JhNjE5QmtaX3VLZUxvWmt5a0k3NWRvbHVYaFFheHpMampwZ09YUU83SGhRNi1GSVJURG9YbEt2QkJ3bmFjdGhDcXR6NnRJV1c4NFlkN1V6LUk2NFptTnRTdzlSTkpNcUdObk42aTl5X1JnMVNRWkIycERacWVMOW9wcFdRR19nLW0walByQnlMQTdLZUxBaWp3VXhmamxPakhvUkFXdXlpSFdHWjdnU1p2Mk9HekXSAdgBQVVfeXFMUENNbGhJTFlwMGVQWHY1dnB5aUpxR013UDg2Q0RjYWVzc2dyYTYxOUJrWl91S2VMb1preWtJNzVkb2x1WGhRYXh6TGpqcGdPWFFPN0hoUTYtRklSVERvWGxLdkJCd25hY3RoQ3F0ejZ0SVdXODRZZDdVei1JNjRabU50U3c5Uk5KTXFHTm5ONmk5eV9SZzFTUVpCMnBEWnFlTDlvcHBXUUdfZy1tMGpQckJ5TEE3S2VMQWlqd1V4ZmpsT2pIb1JBV3V5aUhXR1o3Z1NadjJPR3pF?oc=5"
-            },
-            {
-              "claim": "Union Minister Ashwini Vaishnaw confirmed the Centre will issue a consultation paper soon.",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ01saElMWXAwZVBYdjV2cHlpSnFHTXdQODZDRGNhZXNzZ3JhNjE5QmtaX3VLZUxvWmt5a0k3NWRvbHVYaFFheHpMampwZ09YUU83SGhRNi1GSVJURG9YbEt2QkJ3bmFjdGhDcXR6NnRJV1c4NFlkN1V6LUk2NFptTnRTdzlSTkpNcUdObk42aTl5X1JnMVNRWkIycERacWVMOW9wcFdRR19nLW0walByQnlMQTdLZUxBaWp3VXhmamxPakhvUkFXdXlpSFdHWjdnU1p2Mk9HekXSAdgBQVVfeXFMUENNbGhJTFlwMGVQWHY1dnB5aUpxR013UDg2Q0RjYWVzc2dyYTYxOUJrWl91S2VMb1preWtJNzVkb2x1WGhRYXh6TGpqcGdPWFFPN0hoUTYtRklSVERvWGxLdkJCd25hY3RoQ3F0ejZ0SVdXODRZZDdVei1JNjRabU50U3c5Uk5KTXFHTm5ONmk5eV9SZzFTUVpCMnBEWnFlTDlvcHBXUUdfZy1tMGpQckJ5TEE3S2VMQWlqd1V4ZmpsT2pIb1JBV3V5aUhXR1o3Z1NadjJPR3pF?oc=5"
-            },
-            {
-              "claim": "The Ministry of Electronics and Information Technology will lead this public consultation process.",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ01saElMWXAwZVBYdjV2cHlpSnFHTXdQODZDRGNhZXNzZ3JhNjE5QmtaX3VLZUxvWmt5a0k3NWRvbHVYaFFheHpMampwZ09YUU83SGhRNi1GSVJURG9YbEt2QkJ3bmFjdGhDcXR6NnRJV1c4NFlkN1V6LUk2NFptTnRTdzlSTkpNcUdObk42aTl5X1JnMVNRWkIycERacWVMOW9wcFdRR19nLW0walByQnlMQTdLZUxBaWp3VXhmamxPakhvUkFXdXlpSFdHWjdnU1p2Mk9HekXSAdgBQVVfeXFMUENNbGhJTFlwMGVQWHY1dnB5aUpxR013UDg2Q0RjYWVzc2dyYTYxOUJrWl91S2VMb1preWtJNzVkb2x1WGhRYXh6TGpqcGdPWFFPN0hoUTYtRklSVERvWGxLdkJCd25hY3RoQ3F0ejZ0SVdXODRZZDdVei1JNjRabU50U3c5Uk5KTXFHTm5ONmk5eV9SZzFTUVpCMnBEWnFlTDlvcHBXUUdfZy1tMGpQckJ5TEE3S2VMQWlqd1V4ZmpsT2pIb1JBV3V5aUhXR1o3Z1NadjJPR3pF?oc=5"
-            },
-            {
-              "claim": "This move follows global efforts to regulate AI safety and algorithmic accountability.",
-              "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ01saElMWXAwZVBYdjV2cHlpSnFHTXdQODZDRGNhZXNzZ3JhNjE5QmtaX3VLZUxvWmt5a0k3NWRvbHVYaFFheHpMampwZ09YUU83SGhRNi1GSVJURG9YbEt2QkJ3bmFjdGhDcXR6NnRJV1c4NFlkN1V6LUk2NFptTnRTdzlSTkpNcUdObk42aTl5X1JnMVNRWkIycERacWVMOW9wcFdRR19nLW0walByQnlMQTdLZUxBaWp3VXhmamxPakhvUkFXdXlpSFdHWjdnU1p2Mk9HekXSAdgBQVVfeXFMUENNbGhJTFlwMGVQWHY1dnB5aUpxR013UDg2Q0RjYWVzc2dyYTYxOUJrWl91S2VMb1preWtJNzVkb2x1WGhRYXh6TGpqcGdPWFFPN0hoUTYtRklSVERvWGxLdkJCd25hY3RoQ3F0ejZ0SVdXODRZZDdVei1JNjRabU50U3c5Uk5KTXFHTm5ONmk5eV9SZzFTUVpCMnBEWnFlTDlvcHBXUUdfZy1tMGpQckJ5TEE3S2VMQWlqd1V4ZmpsT2pIb1JBV3V5aUhXR1o3Z1NadjJPR3pF?oc=5"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "editor_rounds": 1,
-          "source_links": [
-            "https://lawbeat.in/amp/top-stories/india-to-get-ai-law-union-minister-ashwini-vaishnaw-says-centre-will-issue-consultation-paper-soon-1645425",
-            "https://lawbeat.in/news-updates/india-get-ai-law-union-minister-ashwini-vaishnaw-says-centre-will-issue-consultation-paper-soon-186718"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-25T15:54:27.454702+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1589,6 +1465,216 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Is AI Bubble Waiting To Burst? Nikhil Kamath Warns Of Tougher Months Ahead",
+          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRDV2Wi1zX0U0bEFVenY4TnNxNmI0b1ZMOElWejk5a2k1SkJqa2h0bmJCb3V2STZicm9YMi1rdGdZRENhMGMzYVBQek9oaVNTZEhyZnZBZnVKN19sbDZSa2M5dFVYNmlSOExGbFk1SVdaV2VLektfZ1lZZEhXRk9MZG0wNkdVaURoSm1rUzh5RXNsdlJzOE9FQzZjejhsQ0xYOHM2cHR4dm9YN0ZhckRpb1d6LUw2VllpYVZaeUtMRW1sR0lTOGZzN1ZmN19XNFI5QXVraFNzNDc5SFVDZmx4VVdROTRpWE95MEtkedIB9AFBVV95cUxPbkNpTWY2YW5ReTc1QU1UOW1MZU1XcXh6LXVZMG9DZnZ1enNDdEY5UWx5dzFaMFRVdEJCaEhGOFZxU2wtSTRTVFFad3M0emtFY25GS3ZhMEFNOTNPdnlPNUkwQjVaYmV5N25NRU56V0w5dnd2RWMweHJVU3VIT1h6cHU1c3J6N29Tay02NmdDTGxvaTVvU0N4dElKZHJ0S1pscldPRlA3dHZCWkptNnFkM3k5U3VPcmEwektwOVU1RU9ESk0xazJmbVU0emdoc1ZKQTVYeFZ0dFdqQUJHdkRBU0hPZWl2Y1NnSi1sQ19VUUZPZU1u?oc=5",
+          "summary": "Is AI Bubble Waiting To Burst? Nikhil Kamath Warns Of Tougher Months Ahead NDTV",
+          "source": "NDTV",
+          "published": "2026-10-25T07:30:15+00:00",
+          "angle": "Billionaire investor Nikhil Kamath warns the AI bubble is nearing a breaking point."
+        },
+        "draft": {
+          "title": "Nikhil Kamath on the AI Bubble",
+          "hook_text": "Is the AI bubble bursting?",
+          "beats": [
+            {
+              "line": "Billion dollar bets on AI might be failing. Nikhil Kamath predicts tougher months for companies.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://zerodha.com",
+              "tag": "Nikhil Kamath warns",
+              "name": "Nikhil Kamath",
+              "role": "Co-founder, Zerodha",
+              "x": "nikhilkamathcio",
+              "brands": []
+            },
+            {
+              "line": "He predicts tougher months ahead for companies betting heavily on this tech.",
+              "visual": "clip",
+              "query": "stock market ticker board",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Tougher months ahead",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Kamath points to the massive capital flowing into these unproven business models.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Capital fl",
+              "small": "High market speculation",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Massive capital flow",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Public interest in AI tools remains high, but real revenue growth is lagging.",
+              "visual": "clip",
+              "query": "people using laptops in office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Lagging revenue growth",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Previous tech cycles often crashed when valuations decoupled from actual earnings.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "New York Stock Exchange",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Valuations vs Earnings",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Kamath suggests current AI hype mirrors past market bubbles that eventually popped.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "NDTV",
+              "domain": "ndtv.com",
+              "headline": "Is AI Bubble Waiting To Burst? Nikhil Kamath Warns",
+              "url": "",
+              "tag": "Market bubble risks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Do you think current AI stocks are overpriced?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "abstract digital representation of a financial bubble bursting in a neon tech aesthetic",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Are stocks overpriced?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious, analytical, and direct tone, warning of market shifts.",
+          "thin": false,
+          "caption": "Zerodha co-founder Nikhil Kamath warns that the current AI bubble may face a correction as revenue fails to match high valuations. Is the market heading for a crash? Do you think current AI stocks are overpriced?",
+          "hashtags": [
+            "NikhilKamath",
+            "Zerodha",
+            "AI",
+            "StockMarket",
+            "Investing"
+          ],
+          "sources": [
+            "https://www.ndtv.com/business/is-ai-bubble-waiting-to-burst-nikhil-kamath-warns-of-tougher-months-ahead-6825638"
+          ],
+          "script": "Billion dollar bets on AI might be failing. Nikhil Kamath predicts tougher months for companies.\nHe predicts tougher months ahead for companies betting heavily on this tech.\nKamath points to the massive capital flowing into these unproven business models.\nPublic interest in AI tools remains high, but real revenue growth is lagging.\nPrevious tech cycles often crashed when valuations decoupled from actual earnings.\nKamath suggests current AI hype mirrors past market bubbles that eventually popped.\nDo you think current AI stocks are overpriced?",
+          "keywords": [
+            "stock market ticker board",
+            "people using laptops in office"
+          ],
+          "image_prompts": [
+            "abstract digital representation of a financial bubble bursting in a neon tech aesthetic"
+          ],
+          "writer_model": "gemini",
+          "hook_before": "Nikhil Kamath warns investors about a potential AI bubble.",
+          "hook_score": 51,
+          "evidence": [
+            {
+              "claim": "Nikhil Kamath is the co-founder of Zerodha.",
+              "url": "https://www.hindustantimes.com/india-news/raise-capital-now-nikhil-kamath-says-ai-funding-more-than-its-revenue-warns-startups-101792662885970.html"
+            },
+            {
+              "claim": "Nikhil Kamath predicts tougher months for companies.",
+              "url": "https://enterpriseai.economictimes.indiatimes.com/amp/news/industry/nikhil-kamath-warns-ai-boom-risks-mirroring-past-market-bubbles/135109140"
+            },
+            {
+              "claim": "Massive capital is flowing into AI business models.",
+              "url": "https://www.hindustantimes.com/india-news/raise-capital-now-nikhil-kamath-says-ai-funding-more-than-its-revenue-warns-startups-101792662885970.html"
+            },
+            {
+              "claim": "Real revenue growth in AI is lagging behind investment.",
+              "url": "https://www.hindustantimes.com/india-news/raise-capital-now-nikhil-kamath-says-ai-funding-more-than-its-revenue-warns-startups-101792662885970.html"
+            },
+            {
+              "claim": "Nikhil Kamath suggests current AI hype mirrors past market bubbles.",
+              "url": "https://enterpriseai.economictimes.indiatimes.com/amp/news/industry/nikhil-kamath-warns-ai-boom-risks-mirroring-past-market-bubbles/135109140"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.ndtv.com/world-news/ndtv-world-summit-2026-is-the-ai-bubble-waiting-to-burst-nikhil-kamath-explains-why-the-months-ahead-could-be-tough-12232253",
+            "https://www.ndtv.com/business/is-ai-bubble-waiting-to-burst-nikhil-kamath-warns-of-tougher-months-ahead-6825638"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-25T16:41:18.744003+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2057,8 +2143,8 @@
       "event": "Nvidia three thousand series cards have a hidden performance limitation. Developer Zagitta released a Linux kernel module to address this. The module adjusts internal hardware speed selectors to reset the chip state. It targets the FP16 and"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-25T16:20+05:30",
@@ -2086,7 +2172,7 @@
   "report_day": "2026-10-24",
   "ig_count": {
     "day": "2026-10-25",
-    "at": "2026-10-25T16:41:18.744036+05:30",
+    "at": "2026-10-25T16:53:53.441948+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2106,11 +2192,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-25",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-25-1",
   "gemini_use": {
     "day": "2026-10-25",
-    "calls": 370,
+    "calls": 376,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2145,7 +2231,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 45,
+        "ok": 51,
         "busy": 18,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2231,28 +2317,6 @@
     "gemini-3.5-flash-lite": 1792924868.0287292
   },
   "editor_log": [
-    {
-      "at": "2026-10-24T17:48+05:30",
-      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new frien",
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but the visuals are repetitive and lack the actual AI chat transcripts.",
-      "fixes": [
-        "LINE 1: Change to 'Jack Dorsey’s Block just released Dessa, an AI model trained entirely on human conversation.'"
-      ],
-      "visual": [
-        "line 1: The Block logo is held for too long across multiple frames.",
-        "line 4: The Verge logo is generic; should show a screenshot of the actual awkward chat transcript.",
-        "line 5: Visuals are static and repetitive; needs a dynamic element or a snippet of the chat."
-      ]
-    },
     {
       "at": "2026-10-24T18:37+05:30",
       "title": "Bill Gates warns of 20 years of turmoil from artificial intelligence",
@@ -2676,10 +2740,33 @@
         "line 6: The image of wooden carts is reused, violating the rule against repeating photos.",
         "line 1: The abstract road image is generic and does not represent the 'split' in the AI market."
       ]
+    },
+    {
+      "at": "2026-10-25T16:53+05:30",
+      "title": "Is AI Bubble Waiting To Burst? Nikhil Kamath Warns Of Tougher Months Ahead",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, specific content, but visual variety is lacking and repetitive.",
+      "fixes": [
+        "LINE 1: Change 'Billion dollar bets' to 'Trillions in capital' to better reflect the scale of AI investment.",
+        "LINE 2: Remove this line entirely as it is a redundant repetition of Line 1, which hurts the substance score."
+      ],
+      "visual": [
+        "line 1: The same abstract city image is held for too long across multiple frames.",
+        "line 2: The visual is a repeat of the previous frame, failing to add new information.",
+        "line 5: The visual is a static text card; it needs a chart or historical reference to match the 't"
+      ]
     }
   ],
   "rest_note": "2026-10-25T12:32:00+05:30",
-  "fish_turn": 96,
+  "fish_turn": 97,
   "ig_music_recent": [
     "1209362676336144",
     "673694952016127",
