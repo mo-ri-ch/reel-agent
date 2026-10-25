@@ -63,11 +63,12 @@ CAMPUS_ADMIN = re.compile(r"(?i)^(?=.*\b(university|college|campus|faculty|schoo
 OPINION = re.compile(r"(?i)^\s*(how to|how we|why (you|we|the|ai|artificial intelligence|this|it|i|everyone|nobody)|opinion|op-ed|commentary|analysis:|the case (for|against)|"
                      r"in defense of|a guide to|guide:|show hn|ask hn|is (this|it) the|are we|should (we|you)|"
                      r"what if|superficial intelligence|psa|rant|unpopular opinion|learning to|my|i|i'm|i've|what i|lessons from|"
-                     r"confessions of|notes on|thoughts on|reflections on)\b")
+                     r"confessions of|notes on|thoughts on|reflections on|editorial|viewpoint|(perspective|column|letters?)(?=\s*:)|letters? to the editor|"
+                     r"guest (commentary|column|essay|post|opinion|view|editorial|op-ed))\b")
 
 
 OPINION_ANYWHERE = re.compile(r"(?i)\b(must be stopped|must be banned|we must|it'?s time to|we need to talk|"
-                              r"here'?s what i think|my take)\b")
+                              r"here'?s what i think|my take|guest (commentary|column|essay|op-ed)|letters? to the editor)\b")
 # opinion / editorial / letters sections of a newspaper site (by URL path)
 OPINION_URL = re.compile(r"(?i)https?://[^/]+/(.*/)?(opinions?|op-?eds?|editorials?|letters(-to-the-editor)?|columns?|columnists?|commentary)/")
 

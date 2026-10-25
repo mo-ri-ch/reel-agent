@@ -318,6 +318,11 @@ check("no posting below 8", main.EDITOR_FLOOR, 8.0)
 
 check("drop opinion column", news.newsworthy({"title": "Why artificial intelligence must be stopped now",
                                              "source": "www.resilience.org"}), False)
+check("drop guest commentary", news.newsworthy({"title": "Guest commentary: Artificial intelligence is inflating your "
+                                                "medical bills", "source": "Denver Post"}), False)
+check("drop labelled column", news.newsworthy({"title": "Perspective: the AI bubble", "source": "Reuters"}), False)
+check("keep 'Perspective' product", news.newsworthy({"title": "Perspective API launches a new toxicity model",
+                                                    "source": "Reuters"}), True)
 check("keep real news", news.newsworthy({"title": "Amazon in talks to acquire AI chip startup Flexibility",
                                          "source": "Reuters"}), True)
 
