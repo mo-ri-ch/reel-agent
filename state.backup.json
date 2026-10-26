@@ -1,221 +1,43 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Cerebras Deploys Trillion-Parameter AI Models",
-    "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-    "summary": "",
-    "source": "cerebras.ai",
-    "published": "2026-10-25T01:33:49+00:00",
-    "buzz": "Hacker News 235 points",
-    "angle": ""
-  },
-  "draft": {
-    "title": "Cerebras Deploys Trillion-Parameter AI",
-    "hook_text": "Cerebras runs trillion-parameter AI",
-    "beats": [
-      {
-        "line": "Cerebras just deployed a trillion-parameter AI model.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Cerebras CS-3",
-        "outlet": "",
-        "domain": "cerebras.ai",
-        "headline": "",
-        "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-        "tag": "Trillion-parameter AI deployed",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Cerebras",
-            "domain": "cerebras.ai"
-          }
-        ]
-      },
-      {
-        "line": "It runs without slow GPU memory bottlenecks.",
-        "visual": "clip",
-        "query": "server rack cables flashing lights",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "No GPU memory wall",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Instead of standard graphics cards, the system links fifty-nine Wafer-Scale Engine three chips.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "59",
-        "small": "WSE-3 wafers",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "59 WSE-3 chips",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Cerebras",
-            "domain": "cerebras.ai"
-          }
-        ]
-      },
-      {
-        "line": "Each giant silicon wafer packs nine hundred thousand cores and forty-four gigabytes of ultra-fast on-chip memory.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Cerebras WSE-3",
-        "outlet": "",
-        "domain": "cerebras.ai",
-        "headline": "",
-        "url": "https://www.cerebras.ai/product/wse-3",
-        "tag": "900,000 cores per wafer",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Cerebras",
-            "domain": "cerebras.ai"
-          }
-        ]
-      },
-      {
-        "line": "Model layers are pipelined across the cluster, keeping all weights directly in static memory.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "Cerebras",
-        "domain": "cerebras.ai",
-        "headline": "How We Deploy Trillion-Parameter Frontier Models on Cerebras",
-        "url": "",
-        "tag": "Weights held in SRAM",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Cerebras",
-            "domain": "cerebras.ai"
-          }
-        ]
-      },
-      {
-        "line": "Because activations stream wafer-to-wafer, it skips slow high-bandwidth memory chips entirely.",
-        "visual": "clip",
-        "query": "computer microchip glowing circuits",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Bypasses external DRAM",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This setup delivers twenty-one petabytes per second of memory bandwidth per wafer.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "21 PB/s",
-        "small": "bandwidth per wafer",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "21 PB/s memory speed",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Will wafer clusters replace giant GPU farms for AI inference?",
-        "visual": "photo",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Supercomputer",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Wafers vs GPU clusters",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "sharp and informative, highlighting the hardware architecture shift from GPUs to massive wafer pipelines",
-    "thin": false,
-    "caption": "Cerebras deployed a trillion-parameter AI model across 59 WSE-3 wafers. By pipelining layers directly into on-chip SRAM with 21 PB/s bandwidth per wafer, the cluster avoids high-bandwidth memory bottlenecks entirely. Will wafer-scale clusters replace GPU farms for AI inference?",
-    "hashtags": [
-      "Cerebras",
-      "WSE3",
-      "AIChips",
-      "Hardware",
-      "Semiconductors"
-    ],
-    "sources": [
-      "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
-    ],
-    "script": "Cerebras just deployed a trillion-parameter AI model.\nIt runs without slow GPU memory bottlenecks.\nInstead of standard graphics cards, the system links fifty-nine Wafer-Scale Engine three chips.\nEach giant silicon wafer packs nine hundred thousand cores and forty-four gigabytes of ultra-fast on-chip memory.\nModel layers are pipelined across the cluster, keeping all weights directly in static memory.\nBecause activations stream wafer-to-wafer, it skips slow high-bandwidth memory chips entirely.\nThis setup delivers twenty-one petabytes per second of memory bandwidth per wafer.\nWill wafer clusters replace giant GPU farms for AI inference?",
-    "keywords": [
-      "server rack cables flashing lights",
-      "computer microchip glowing circuits"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
-    ],
-    "fix_rounds": 1,
-    "source_links": [
-      "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "IBM CEO says open weight models are now good and cheap on-prem",
+      "link": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "summary": "",
+      "source": "theregister.com",
+      "published": "2026-10-26T01:47:46+00:00",
+      "buzz": "Hacker News 179 points",
+      "angle": "IBM CEO reveals open weight models are finally good and cheap enough to run on-prem"
+    },
+    {
+      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+      "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-25T21:31:16+00:00",
+      "angle": "Grok just dropped the first 7 minutes of its AI-generated video series 'Odyssey'"
+    },
+    {
+      "title": "RTX 3080 20GB got reBAR and P2P unlock! +70% prompt processing speed",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xf9kmd/rtx_3080_20gb_got_rebar_and_p2p_unlock_70_prompt/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-25T18:16:54+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "How an RTX 3080 hack unlocked a massive 70% speed boost for AI prompt processing"
+    }
+  ],
+  "choose_deadline": "2026-10-26T13:08:36.752674+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-26T12:52:30.218495+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -622,23 +444,8 @@
       "extra": false
     }
   ],
-  "paused": null,
-  "spare": [
-    {
-      "title": "Some US banks detect unauthorized AI agents in customer accounts: Report",
-      "link": "https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/",
-      "summary": "Some US banks detect unauthorized AI agents in customer accounts: Report NewsNation",
-      "source": "NewsNation",
-      "published": "2026-10-25T00:32:36+00:00",
-      "angle": ""
-    }
-  ],
+  "spare": [],
   "tried": [
-    "Blue Planet III is keeping the rough edges in the age of AI",
-    "Haleon Heads These 3 British AI Healthcare Stocks To Watch",
-    "SpaceX Just Shared Great News for Artificial Intelligence (AI) Investors. Here Are 2 Stocks That Could Benefit",
-    "Goldman Cuts Kospi 12-Month Target by 25% as AI Trade Unravels",
-    "Goa Boosts AI Ecosystem, Announces Tech Conclave Return",
     "Artificial intelligence answers: what is the expected result of the Barcelona and Real Madrid Clasico?",
     "Finance Panel Selects 46 Topics, Including AI And Digital Assets",
     "88% of Indian enterprises expect demand for AI-focused engineers to rise by 2030: Report",
@@ -693,7 +500,12 @@
     "AI Can Be Cyborg or Centaur. But Can Enterprises Monetise I",
     "r/opensource just banned AI, non-English speakers and more",
     "r/opensource just banned AI, non-English speakers and more",
-    "Dr Arnab roy"
+    "Dr Arnab roy",
+    "Some US banks detect unauthorized AI agents in customer accounts: Report",
+    "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+    "SMH, seriously? -->> NVIDIA Eyes Software Revenue With a $2,000 per GPU Yearly Figure From Huang",
+    "Cerebras Deploys Trillion-Parameter AI Models",
+    "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?"
   ],
   "undo_stack": [
     {
@@ -2074,9 +1886,9 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-25T19:33+05:30",
-    "techcrunch.com": 4,
-    "theverge.com": 4,
+    "at": "2026-10-26T13:08+05:30",
+    "techcrunch.com": 3,
+    "theverge.com": 3,
     "arstechnica.com": 0,
     "technologyreview.com": 0,
     "openai.com": 0,
@@ -2084,22 +1896,22 @@
     "deepmind.google": 0,
     "huggingface.co": 0,
     "blogs.nvidia.com": 0,
-    "inc42.com": 0,
-    "news.google.com": 41,
-    "Google News (VentureBeat, AIM, AI News)": 3,
-    "producthunt.com": 3,
-    "Hacker News": 6,
-    "Reddit": "blocked (HTTP 403/429)",
-    "filtered out (PR / local events / market fluff)": 3
+    "inc42.com": 1,
+    "news.google.com": 42,
+    "Google News (VentureBeat, AIM, AI News)": 4,
+    "producthunt.com": 6,
+    "Hacker News": 7,
+    "Reddit": 5,
+    "filtered out (PR / local events / market fluff)": 4
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-25T19:33:45.711942+05:30",
+  "last_auto_offer": "2026-10-26T13:08:36.752674+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-25",
   "ig_count": {
     "day": "2026-10-26",
-    "at": "2026-10-26T12:52:30.218526+05:30",
+    "at": "2026-10-26T13:08:36.752720+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2123,7 +1935,7 @@
   "late_note_for": "2026-10-26-0",
   "gemini_use": {
     "day": "2026-10-26",
-    "calls": 67,
+    "calls": 103,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2135,9 +1947,9 @@
       },
       "gemini-3.7-flash": {
         "ok": 2,
-        "busy": 7,
-        "other": 11,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "busy": 9,
+        "other": 16,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash": {
         "ok": 9,
@@ -2146,16 +1958,16 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3-flash-preview": {
-        "ok": 4,
+        "ok": 11,
+        "busy": 9,
+        "other": 3,
+        "last": "0 ReadTimeout"
+      },
+      "gemini-3.5-flash-lite": {
+        "ok": 16,
         "busy": 3,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
-      },
-      "gemini-3.5-flash-lite": {
-        "ok": 6,
-        "busy": 0,
-        "other": 0,
-        "last": ""
       }
     }
   },
@@ -2232,7 +2044,8 @@
   "gemini_missing": [],
   "gemini_exhausted": {
     "gemini-3.6-flash": 1792998603.7630658,
-    "gemini-3.5-flash": 1792999035.2925482
+    "gemini-3.5-flash": 1792999035.2925482,
+    "gemini-3.7-flash": 1792999835.4715598
   },
   "editor_log": [
     {
