@@ -767,7 +767,9 @@ def record_post(s, extra=False):
 def behind_today(s):
     """How many of today's past slots went without a reel (not counting reels already queued to catch up)."""
     now = st.now()
-    start = datetime.fromisoformat(s.setdefault("guarantee_since", now.isoformat()))
+    # only slots missed in the last 2 hours are caught up: rushing out reels for slots missed hours ago bunched 5
+    # posts into 2.5 hours on 25 Oct (bad for reach) and used the quota the night slots needed
+    start = max(datetime.fromisoformat(s.setdefault("guarantee_since", now.isoformat())), now - timedelta(hours=CATCH_UP_HOURS))
     passed_slots = sum(1 for t in slots_on(now.date()) if start < t <= now)
     # a reel whose upload failed and waits for its retry still covers its slot (no second reel rushed out)
     queued_now = sum(1 for q in s["queue"] if (datetime.fromisoformat(q["post_at"]) <= now or q.get("tries"))
@@ -775,13 +777,22 @@ def behind_today(s):
     return max(0, passed_slots - posted_today(s) - queued_now)
 
 
+CATCH_UP_HOURS = 2
+WORK_AHEAD_HOURS = 20   # reels are made ahead for the next 20 h: the free quota resets at 12:30 IST, so the night
+MAX_QUEUED = 4          # (US-time) reels must be made in the afternoon/evening, or there's no quota left for them
+
+
 def next_unfilled(s):
-    """The next moment a reel is needed: now (if behind) or the next slot today that has nothing queued."""
+    """The next moment a reel is needed: now (if behind) or the next slot in the coming hours with nothing queued."""
     now = st.now()
     if behind_today(s):
         return now
     taken = {q["post_at"][:16] for q in s["queue"]}
-    return next((t for t in slots_on(now.date()) if t > now and t.isoformat()[:16] not in taken), None)
+    if sum(1 for q in s["queue"] if not q.get("extra")) >= MAX_QUEUED:
+        return None
+    upcoming = slots_on(now.date()) + slots_on((now + timedelta(days=1)).date())
+    return next((t for t in upcoming if now < t <= now + timedelta(hours=WORK_AHEAD_HOURS)
+                 and t.isoformat()[:16] not in taken), None)
 
 
 def next_post_time(s):

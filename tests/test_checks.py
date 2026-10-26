@@ -481,7 +481,8 @@ main.tg.send, main.start_script = _send, _start
 from datetime import timedelta as _td  # noqa: E402
 _now, _ig = main.st.now(), main.IG_READY
 main.IG_READY = lambda: False
-_slot = [t for t in main.slots_on(_now.date()) if t <= _now]
+_slot = [t for t in main.slots_on(_now.date()) if _now - _td(hours=main.CATCH_UP_HOURS) < t <= _now]
+check("only recent misses are caught up", all(t > _now - _td(hours=main.CATCH_UP_HOURS) for t in _slot), True)
 if _slot:
     _s = {"guarantee_since": (_slot[0] - _td(minutes=1)).isoformat(), "post_log": [],
           "queue": [{"title": "x", "post_at": (_now + _td(minutes=30)).isoformat(), "tries": 1}]}
