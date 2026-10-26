@@ -1,52 +1,230 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Dr Arnab roy",
-      "link": "https://gccsummit.analyticsindiamag.com/gcc-leaders/dr-arnab-roy",
-      "summary": "Dr Arnab roy gccsummit.analyticsindiamag.com",
-      "source": "gccsummit.analyticsindiamag.com",
-      "published": "2026-10-25T08:09:48+00:00",
-      "angle": ""
-    },
-    {
-      "title": "Cerebras Deploys Trillion-Parameter AI Models",
-      "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-      "summary": "",
-      "source": "cerebras.ai",
-      "published": "2026-10-25T01:33:49+00:00",
-      "buzz": "Hacker News 235 points",
-      "angle": ""
-    },
-    {
-      "title": "Some US banks detect unauthorized AI agents in customer accounts: Report",
-      "link": "https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/",
-      "summary": "Some US banks detect unauthorized AI agents in customer accounts: Report NewsNation",
-      "source": "NewsNation",
-      "published": "2026-10-25T00:32:36+00:00",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-26T12:25:22.387177+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Cerebras Deploys Trillion-Parameter AI Models",
+    "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+    "summary": "",
+    "source": "cerebras.ai",
+    "published": "2026-10-25T01:33:49+00:00",
+    "buzz": "Hacker News 235 points",
+    "angle": ""
+  },
+  "draft": {
+    "title": "Cerebras Deploys Trillion-Parameter AI",
+    "hook_text": "Cerebras runs trillion-parameter AI",
+    "beats": [
+      {
+        "line": "Cerebras just deployed a trillion-parameter AI model.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Cerebras CS-3",
+        "outlet": "",
+        "domain": "cerebras.ai",
+        "headline": "",
+        "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+        "tag": "Trillion-parameter AI deployed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Cerebras",
+            "domain": "cerebras.ai"
+          }
+        ]
+      },
+      {
+        "line": "It runs without slow GPU memory bottlenecks.",
+        "visual": "clip",
+        "query": "server rack cables flashing lights",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "No GPU memory wall",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Instead of standard graphics cards, the system links fifty-nine Wafer-Scale Engine three chips.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "59",
+        "small": "WSE-3 wafers",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "59 WSE-3 chips",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Cerebras",
+            "domain": "cerebras.ai"
+          }
+        ]
+      },
+      {
+        "line": "Each giant silicon wafer packs nine hundred thousand cores and forty-four gigabytes of ultra-fast on-chip memory.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Cerebras WSE-3",
+        "outlet": "",
+        "domain": "cerebras.ai",
+        "headline": "",
+        "url": "https://www.cerebras.ai/product/wse-3",
+        "tag": "900,000 cores per wafer",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Cerebras",
+            "domain": "cerebras.ai"
+          }
+        ]
+      },
+      {
+        "line": "Model layers are pipelined across the cluster, keeping all weights directly in static memory.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "Cerebras",
+        "domain": "cerebras.ai",
+        "headline": "How We Deploy Trillion-Parameter Frontier Models on Cerebras",
+        "url": "",
+        "tag": "Weights held in SRAM",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Cerebras",
+            "domain": "cerebras.ai"
+          }
+        ]
+      },
+      {
+        "line": "Because activations stream wafer-to-wafer, it skips slow high-bandwidth memory chips entirely.",
+        "visual": "clip",
+        "query": "computer microchip glowing circuits",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Bypasses external DRAM",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This setup delivers twenty-one petabytes per second of memory bandwidth per wafer.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "21 PB/s",
+        "small": "bandwidth per wafer",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "21 PB/s memory speed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Will wafer clusters replace giant GPU farms for AI inference?",
+        "visual": "photo",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Supercomputer",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Wafers vs GPU clusters",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "sharp and informative, highlighting the hardware architecture shift from GPUs to massive wafer pipelines",
+    "thin": false,
+    "caption": "Cerebras deployed a trillion-parameter AI model across 59 WSE-3 wafers. By pipelining layers directly into on-chip SRAM with 21 PB/s bandwidth per wafer, the cluster avoids high-bandwidth memory bottlenecks entirely. Will wafer-scale clusters replace GPU farms for AI inference?",
+    "hashtags": [
+      "Cerebras",
+      "WSE3",
+      "AIChips",
+      "Hardware",
+      "Semiconductors"
+    ],
+    "sources": [
+      "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
+    ],
+    "script": "Cerebras just deployed a trillion-parameter AI model.\nIt runs without slow GPU memory bottlenecks.\nInstead of standard graphics cards, the system links fifty-nine Wafer-Scale Engine three chips.\nEach giant silicon wafer packs nine hundred thousand cores and forty-four gigabytes of ultra-fast on-chip memory.\nModel layers are pipelined across the cluster, keeping all weights directly in static memory.\nBecause activations stream wafer-to-wafer, it skips slow high-bandwidth memory chips entirely.\nThis setup delivers twenty-one petabytes per second of memory bandwidth per wafer.\nWill wafer clusters replace giant GPU farms for AI inference?",
+    "keywords": [
+      "server rack cables flashing lights",
+      "computer microchip glowing circuits"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "fact_status": "skipped",
+    "fact_notes": [
+      "the fact check couldn't run (Gemini unavailable)"
+    ],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-26T12:52:30.218495+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
-    "date": "2026-10-25",
+    "date": "2026-10-26",
     "done": [
       "01:30",
       "04:30",
-      "09:30",
-      "14:30"
+      "09:30"
     ]
   },
   "pending_topic": null,
@@ -448,7 +626,7 @@
   "spare": [
     {
       "title": "Some US banks detect unauthorized AI agents in customer accounts: Report",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZy10WE55MjFudmZQTGR3VlQ0ekpfSm5RMWFobVppZWEzVUtGdkNPLTk3YVJTbS1CYU13X1JuX250VjNoaTlZRmlxbXNSSWs0cDJXYUVHYTdwcGNLRXpYRDlWZmM2STdSakJZV0YwV3lfWlg0ckVqaDVZRmVCUUoyRml1ZHlCeWR5NC04TC1HQVl4bWZf0gGaAUFVX3lxTE1TV2NxbHc5QURHYzJyVWN1a2hfck9XalBQaC1LWVpXc3RBdmk3Z0Rld3NaVzRta3FOVDBaRGFpdFdvOUJ2bFRkSnNQTVNoQnJxTTVLZ0d1ZUFTYUFkd3dqSzVBV3RqRk9NNDFOYnJKVGxQUjZVelMxaEJPcXZzQ25qaEZwZmQtdUNBYWwzVFQwZVk0UUY4Q29JNnc?oc=5",
+      "link": "https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/",
       "summary": "Some US banks detect unauthorized AI agents in customer accounts: Report NewsNation",
       "source": "NewsNation",
       "published": "2026-10-25T00:32:36+00:00",
@@ -456,7 +634,6 @@
     }
   ],
   "tried": [
-    "8 GB GPU, 262K context 3.5 BPW Qwen-Flash-Next Coder 70 T/s using llama.cpp",
     "Blue Planet III is keeping the rough edges in the age of AI",
     "Haleon Heads These 3 British AI Healthcare Stocks To Watch",
     "SpaceX Just Shared Great News for Artificial Intelligence (AI) Investors. Here Are 2 Stocks That Could Benefit",
@@ -515,249 +692,10 @@
     "Is AI coming for your money—or all money?",
     "AI Can Be Cyborg or Centaur. But Can Enterprises Monetise I",
     "r/opensource just banned AI, non-English speakers and more",
-    "r/opensource just banned AI, non-English speakers and more"
+    "r/opensource just banned AI, non-English speakers and more",
+    "Dr Arnab roy"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "McKinsey AI Value Curve: $2.52T at Risk From Costs",
-          "link": "https://shattered.io/mckinsey-ai-value-curve-2-52-trillion-850-billion-cost-risk-2026/",
-          "summary": "McKinsey AI Value Curve: $2.52T at Risk From Costs shattered.io",
-          "source": "shattered.io",
-          "published": "2026-10-25T10:35:24+00:00",
-          "angle": "McKinsey report reveals $2.52 trillion at risk—the massive cost of the AI transition."
-        },
-        "draft": {
-          "title": "McKinsey AI Value Analysis",
-          "hook_text": "850 Billion Dollars in AI Risk",
-          "beats": [
-            {
-              "line": "Eight hundred fifty billion dollars is now at risk from rising AI costs.",
-              "visual": "stat",
-              "query": "financial chart arrow down",
-              "prompt": "",
-              "big": "850B",
-              "small": "At-risk value",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "850 Billion at Risk",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "McKinsey analysts identified this figure as the potential impact of a thirty percent cost increase.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "McKinsey",
-              "domain": "mckinsey.com",
-              "headline": "AI Value Curve Analysis",
-              "url": "",
-              "tag": "McKinsey Cost Analysis",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This calculation stems from an annual global economic value projection of two point five two trillion dollars.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2.52T",
-              "small": "Total potential value",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2.52 Trillion Potential",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The value curve measures how AI might shift productivity across global sectors.",
-              "visual": "clip",
-              "query": "office workers using tablets",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Measuring Productivity",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Rising operational expenses threaten to erode those gains for companies scaling models.",
-              "visual": "clip",
-              "query": "data center server room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Rising Expenses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Most organizations still struggle to convert these technical capabilities into bottom line growth.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "abstract digital graph showing financial struggle",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Conversion Struggles",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Investors are watching whether these high costs will eventually yield the promised efficiency.",
-              "visual": "clip",
-              "query": "stock market digital screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Investor Scrutiny",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Is your business seeing real returns on AI spending?",
-              "visual": "clip",
-              "query": "person looking at spreadsheet",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Profitability Test",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious and analytical, focusing on the specific financial risk rather than hype.",
-          "thin": false,
-          "caption": "McKinsey reports that 850 billion dollars in AI value is at risk if costs rise by 30 percent. While the total modeled annual economic value reaches 2.52 trillion, rising expenses threaten to eat those gains. Is your business seeing real returns from its AI investment yet?",
-          "hashtags": [
-            "McKinsey",
-            "AI",
-            "TechNews",
-            "BusinessAnalysis",
-            "Economy"
-          ],
-          "sources": [
-            "https://shattered.io/mckinsey-ai-value-curve-2-52-trillion-850-billion-cost-risk-2026/"
-          ],
-          "script": "Eight hundred fifty billion dollars is now at risk from rising AI costs.\nMcKinsey analysts identified this figure as the potential impact of a thirty percent cost increase.\nThis calculation stems from an annual global economic value projection of two point five two trillion dollars.\nThe value curve measures how AI might shift productivity across global sectors.\nRising operational expenses threaten to erode those gains for companies scaling models.\nMost organizations still struggle to convert these technical capabilities into bottom line growth.\nInvestors are watching whether these high costs will eventually yield the promised efficiency.\nIs your business seeing real returns on AI spending?",
-          "keywords": [
-            "office workers using tablets",
-            "data center server room",
-            "stock market digital screen",
-            "person looking at spreadsheet"
-          ],
-          "image_prompts": [
-            "abstract digital graph showing financial struggle"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "850 Billion Dollars in AI Risk",
-              "url": "https://shattered.io/mckinsey-ai-value-curve-2-52-trillion-850-billion-cost-risk-2026/"
-            },
-            {
-              "claim": "Eight hundred fifty billion dollars is now at risk from rising AI costs.",
-              "url": "https://shattered.io/mckinsey-ai-value-curve-2-52-trillion-850-billion-cost-risk-2026/"
-            },
-            {
-              "claim": "McKinsey analysts identified this figure as the potential impact of a thirty percent cost increase.",
-              "url": "https://www.tribuneindia.com/news/business/ai-could-unlock-usd-2-52-trillion-in-annual-global-economic-value-rising-costs-pose-risk-mckinsey/amp"
-            },
-            {
-              "claim": "This calculation stems from an annual global economic value projection of two point five two trillion dollars.",
-              "url": "https://shattered.io/mckinsey-ai-value-curve-2-52-trillion-850-billion-cost-risk-2026/"
-            },
-            {
-              "claim": "The value curve measures how AI might shift productivity across global sectors.",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-needs-760-billion-in-annual-profit-to-justify-7-trillion-infra-investment-by-2030-mckinsey/articleshow/135086407.cms"
-            },
-            {
-              "claim": "Rising operational expenses threaten to erode those gains for companies scaling models.",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-needs-760-billion-in-annual-profit-to-justify-7-trillion-infra-investment-by-2030-mckinsey/articleshow/135086407.cms"
-            },
-            {
-              "claim": "Most organizations still struggle to convert these technical capabilities into bottom line growth.",
-              "url": "https://www.tribuneindia.com/news/business/ai-could-unlock-usd-2-52-trillion-in-annual-global-economic-value-rising-costs-pose-risk-mckinsey/amp"
-            },
-            {
-              "claim": "Investors are watching whether these high costs will eventually yield the promised efficiency.",
-              "url": "https://www.tribuneindia.com/news/business/ai-could-unlock-usd-2-52-trillion-in-annual-global-economic-value-rising-costs-pose-risk-mckinsey/amp"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://shattered.io/mckinsey-ai-value-curve-2-52-trillion-850-billion-cost-risk-2026/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-25T18:20:23.282771+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1604,6 +1542,51 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Dr Arnab roy",
+            "link": "https://gccsummit.analyticsindiamag.com/gcc-leaders/dr-arnab-roy",
+            "summary": "Dr Arnab roy gccsummit.analyticsindiamag.com",
+            "source": "gccsummit.analyticsindiamag.com",
+            "published": "2026-10-25T08:09:48+00:00",
+            "angle": ""
+          },
+          {
+            "title": "Cerebras Deploys Trillion-Parameter AI Models",
+            "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+            "summary": "",
+            "source": "cerebras.ai",
+            "published": "2026-10-25T01:33:49+00:00",
+            "buzz": "Hacker News 235 points",
+            "angle": ""
+          },
+          {
+            "title": "Some US banks detect unauthorized AI agents in customer accounts: Report",
+            "link": "https://www.newsnationnow.com/business/tech/ai/us-banks-unauthorized-ai-customer-accounts/",
+            "summary": "Some US banks detect unauthorized AI agents in customer accounts: Report NewsNation",
+            "source": "NewsNation",
+            "published": "2026-10-25T00:32:36+00:00",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-26T12:25:22.387177+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1741,11 +1724,6 @@
     "Artificial intelligence questioned the authorship of the world's most expensive painting"
   ],
   "posted_log": [
-    {
-      "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
-      "at": "2026-10-12T11:40:22.830321+05:30",
-      "event": "Satya Nadella says we should assume all AI models are compromised. The Microsoft CEO posted this warning on X today. He argues we can no longer treat AI as simple black boxes. We currently accept advice and actions from these systems withou"
-    },
     {
       "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
       "at": "2026-10-13T14:10:26.405168+05:30",
@@ -2121,7 +2099,7 @@
   "report_day": "2026-10-25",
   "ig_count": {
     "day": "2026-10-26",
-    "at": "2026-10-26T12:15:24.924455+05:30",
+    "at": "2026-10-26T12:52:30.218526+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2145,10 +2123,41 @@
   "late_note_for": "2026-10-26-0",
   "gemini_use": {
     "day": "2026-10-26",
-    "calls": 0,
+    "calls": 67,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.6-flash": {
+        "ok": 7,
+        "busy": 6,
+        "other": 4,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.7-flash": {
+        "ok": 2,
+        "busy": 7,
+        "other": 11,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      },
+      "gemini-3.5-flash": {
+        "ok": 9,
+        "busy": 5,
+        "other": 3,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3-flash-preview": {
+        "ok": 4,
+        "busy": 3,
+        "other": 0,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.5-flash-lite": {
+        "ok": 6,
+        "busy": 0,
+        "other": 0,
+        "last": ""
+      }
+    }
   },
   "gemini_errors": [
     {
@@ -2222,13 +2231,8 @@
   },
   "gemini_missing": [],
   "gemini_exhausted": {
-    "gemini-3.6-flash": 1792912506.283249,
-    "gemini-3.5-flash": 1792912527.3113973,
-    "gemini-3.7-flash": 1792913124.224664,
-    "gemini-3-flash-preview": 1792914100.9591455,
-    "gemini-3.5-flash-lite": 1792924868.0287292,
-    "gemini-3.1-flash-lite": 1792934889.9394002,
-    "gemini-flash-lite-latest": 1792934900.737756
+    "gemini-3.6-flash": 1792998603.7630658,
+    "gemini-3.5-flash": 1792999035.2925482
   },
   "editor_log": [
     {
