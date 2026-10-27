@@ -1,0 +1,71 @@
+{
+ "made": "20261027-1331",
+ "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+ "hook_text": "Roblox grabbed one hundred forty five gigabytes",
+ "hook_before": null,
+ "script": "Roblox downloaded one hundred forty five gigabytes of models from Open3DLab without asking.\nOpen3DLab hosts user generated three d assets for developers and creators.\nThe unauthorized downloads included explicit adult content hosted on the platform.\nOpen3DLab founders discovered the massive traffic spike hitting their servers.\nServer logs traced the data scraping activity directly back to Roblox infrastructure.\nHow should platforms handle unauthorized scraping of user assets?",
+ "words": 66,
+ "beats": [
+  {
+   "line": "Roblox downloaded one hundred forty five gigabytes of models from Open3DLab without asking.",
+   "visual": "official"
+  },
+  {
+   "line": "Open3DLab hosts user generated three d assets for developers and creators.",
+   "visual": "clip"
+  },
+  {
+   "line": "The unauthorized downloads included explicit adult content hosted on the platform.",
+   "visual": "clip"
+  },
+  {
+   "line": "Open3DLab founders discovered the massive traffic spike hitting their servers.",
+   "visual": "source"
+  },
+  {
+   "line": "Server logs traced the data scraping activity directly back to Roblox infrastructure.",
+   "visual": "stat"
+  },
+  {
+   "line": "How should platforms handle unauthorized scraping of user assets?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 9,
+   "substance": 9,
+   "accuracy": 9,
+   "visuals": 4,
+   "flow": 9
+  },
+  "one_line": "Strong, specific reporting ruined by completely unrelated, nonsensical tech hardware and lens stock footage.",
+  "script_fixes": [],
+  "visual_beats": [
+   1,
+   2
+  ],
+  "visual_notes": [
+   "line 2: Unrelated macro lens / camera hardware stock image used for 3D asset hosting platform.",
+   "line 3: Reused unrelated camera hardware stock image again for explicit adult content."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 31.43,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  6.1,
+  11.3,
+  21.6
+ ],
+ "first_cut_at": 6.1,
+ "avg_shot_seconds": 7.86,
+ "longest_shot_seconds": 10.3,
+ "verdict": "rejected",
+ "words_per_minute": 126
+}
