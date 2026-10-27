@@ -15,6 +15,9 @@ through a Telegram bot and reads Claude's messages there.
   order is 1 → 2: grow reach with credible reels; add lead/sponsor features once there's an audience (ask first).
 
 ## How it runs
+- The repo is **public** (owner, 2026-10-27): as a private repo it used up GitHub's 2,000 free Actions minutes on
+  26 Oct and every run was refused ("spending limit"). Public repos have unlimited minutes. So: never commit secrets
+  or personal data; they stay in GitHub secrets.
 - `.github/workflows/agent.yml` runs every 5 minutes (started by cron-job.org) in **Python 3.11**. `main.py poll` does the
   work; `Make the reel` steps run when a video must be rendered.
 - `state.json` is the agent's memory. **The agent commits it every 5 minutes**, so pushes often race: always
