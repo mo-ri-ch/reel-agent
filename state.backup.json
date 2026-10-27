@@ -199,16 +199,55 @@
     "fix_rounds": 2,
     "source_links": [
       "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1326492388374330",
+      "title": "Heavy Hearts (Instrumental)",
+      "artist": "half.cool"
+    },
+    "visual_status": "skipped",
+    "visual_notes": [],
+    "editor": {
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 7,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong technical insight, but visuals are repetitive and the hook lacks punch.",
+      "script_fixes": [
+        "LINE 1: Change to 'Software engineer Adrian Quesada warns that AI agents are fundamentally changing how we build software.'",
+        "LINE 2: Replace 'These agents' with 'Tools like Devin or Cursor' to provide specific examples.",
+        "LINE 7: Change to 'Can you reliably debug a codebase you never wrote?'"
+      ],
+      "visual_beats": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The title screen is held for too long (4.8s) without visual variety.",
+        "line 3: The same 'Shift to editing' graphic is held for 4.8 seconds across two frames.",
+        "line 4: The 'AQ' circle graphic is static and repeated across three frames (4.8s total).",
+        "line 5: The 'Debugging becomes harder' graphic is held for 4.8 seconds across two frames.",
+        "line 6: The 'System fragility risks' graphic is held for 4.8 seconds across two frames."
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-27T20:32:23.245803+05:30",
+  "script_deadline": "2026-10-27T20:51:38.256979+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-27",
@@ -616,9 +655,26 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "AI promised less work. I've never worked more",
+      "link": "https://oioannou.com/blog/ai-promised-less-work/",
+      "summary": "",
+      "source": "oioannou.com",
+      "published": "2026-10-27T11:08:14+00:00",
+      "buzz": "Hacker News 374 points",
+      "angle": "The brutal truth: AI was supposed to save us time, but it's actually making us work harder."
+    },
+    {
+      "title": "Bengaluru AI Startup Simplismart Raises $14 Mn in NVIDIA-Backed Round",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNzJTX05EeDlOMU4xcTVpcFZfZzVGV1hYNzdNZnozYWp4V3dtU0FDNGZMcGJZVmJDak1wVUZsakVOVVNRMUc3VmozbFppNFNIU3ZtaUp4czUyd2ZleTZuZm5OWG13ZW8tVTNJMXhQSnRsTXJnUEgyZlhES2hyTklSR0tkcmdoQTEzRzJRc2ZyQk9xRjdnV1c0cGdDUkUzVDk4YTE3WFlmbnhFZw?oc=5",
+      "summary": "Bengaluru AI Startup Simplismart Raises $14 Mn in NVIDIA-Backed Round Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-27T14:32:07+00:00",
+      "angle": "Nvidia is betting big on India, backing a startup that helps companies run AI with fewer GPUs."
+    }
+  ],
   "tried": [
-    "We are incredibly excited about the potential of AI",
     "AI at BNP Paribas #5 | EVA, FLOA's Artificial Intelligence omnichannel customer support",
     "Cent Raises $15 Mn To Scale AI-Led Preventive Healthcare Platform",
     "Oracle pushes AI deeper into enterprise workflows with Fusion Companion",
@@ -677,181 +733,11 @@
     "There’s not enough money in the world to pay for the AI boom",
     "World's Best Employer Combines Artificial Intelligence and Research to Evaluate America's Employers",
     "General Compute raises $100 million Series A, countering the neocloud disaster narrative",
-    "Japan internet giant GMO says hackers posted stolen customer data"
+    "Japan internet giant GMO says hackers posted stolen customer data",
+    "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Data center backlash is uniting America",
-          "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-          "summary": "If there's one issue that seems to activate all kinds of voters in 2026, it's data centers. The rapid buildout of these massive server storage facilities - and the infrastructure construction and expenses that come with them - has sparked local opposition in communities across the country and become a major issue in many congressional […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-27T10:00:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Data centers become a congressional election issue",
-          "hook_text": "Data centers unite American voters",
-          "beats": [
-            {
-              "line": "Data centers are now uniting American voters across the country in unexpected ways.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Data center backlash is uniting America",
-              "url": "",
-              "tag": "Data centers uniting voters",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The rapid buildout of massive server storage facilities has sparked intense local opposition.",
-              "visual": "clip",
-              "query": "server racks flashing lights data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Rapid server storage buildout",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Communities are fighting back against the heavy infrastructure construction and the huge expenses that come with them.",
-              "visual": "clip",
-              "query": "industrial construction site data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Heavy infrastructure construction",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This local pushback has officially become a major issue in many upcoming congressional races.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "us congressional ballot box with server building silhouette in background",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Major congressional election issue",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will your representative support or block the next facility?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "close up of election ballot paper with pen resting on table",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Representative facility decision",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent, direct, and serious about community pushback affecting national politics",
-          "thin": false,
-          "caption": "The rapid buildout of data centers has sparked fierce local opposition and become a major issue in congressional races across America. Are these facilities being built too close to your neighborhood?",
-          "hashtags": [
-            "datacenters",
-            "midtermelections",
-            "infrastructure",
-            "localpolitics",
-            "techpolicy"
-          ],
-          "sources": [
-            "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-          ],
-          "script": "Data centers are now uniting American voters across the country in unexpected ways.\nThe rapid buildout of massive server storage facilities has sparked intense local opposition.\nCommunities are fighting back against the heavy infrastructure construction and the huge expenses that come with them.\nThis local pushback has officially become a major issue in many upcoming congressional races.\nWill your representative support or block the next facility?",
-          "keywords": [
-            "server racks flashing lights data center",
-            "industrial construction site data center"
-          ],
-          "image_prompts": [
-            "us congressional ballot box with server building silhouette in background",
-            "close up of election ballot paper with pen resting on table"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Data centers unite American voters",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "Data centers are uniting American voters across the country in unexpected ways.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "The rapid buildout of massive server storage facilities has sparked intense local opposition.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "Communities are fighting back against heavy infrastructure construction and huge expenses.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "Local pushback has become a major issue in many upcoming congressional races.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-27T17:58:17.494696+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1628,6 +1514,221 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
+          "link": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+          "summary": "",
+          "source": "blog.adrq.dev",
+          "published": "2026-10-27T13:23:22+00:00",
+          "buzz": "Hacker News 11 points",
+          "angle": ""
+        },
+        "draft": {
+          "title": "The Risks of AI Coding Agents",
+          "hook_text": "Agents are writing your code",
+          "beats": [
+            {
+              "line": "Software engineer Adrian Quesada warns that AI agents are changing how we build software.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://blog.adrq.dev",
+              "tag": "Adrian Quesada warns",
+              "name": "Adrian Quesada",
+              "role": "Software Engineer",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These agents can now independently navigate codebases and generate pull requests.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "blog.adrq.dev",
+              "outlet": "",
+              "domain": "blog.adrq.dev",
+              "headline": "",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+              "tag": "Agents generate patches",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Developers are shifting from primary authors to editors of AI-generated work.",
+              "visual": "clip",
+              "query": "developer reviewing code on monitor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Shift to editing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Quesada notes this creates a dangerous gap in our mental models of complex systems.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://blog.adrq.dev",
+              "tag": "Mental model gap",
+              "name": "Adrian Quesada",
+              "role": "Software Engineer",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "When debugging fails, you might lack the deep context required to fix critical errors.",
+              "visual": "clip",
+              "query": "programmer looking frustrated at screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Debugging becomes harder",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The source article highlights that automated tools often mask underlying system fragility.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "blog.adrq.dev",
+              "domain": "blog.adrq.dev",
+              "headline": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work",
+              "url": "",
+              "tag": "System fragility risks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Could you reliably debug a system you never wrote?",
+              "visual": "clip",
+              "query": "person typing on laptop keyboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Reliable debugging",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious, observational, and cautionary tone regarding the hidden costs of automation.",
+          "thin": false,
+          "caption": "Adrian Quesada warns that relying on AI agents for software development risks losing deep system knowledge. As we shift from writing code to reviewing it, debugging complex failures becomes harder. Could you reliably maintain a system you never wrote?",
+          "hashtags": [
+            "SoftwareEngineering",
+            "CodingAgents",
+            "AI",
+            "Programming",
+            "TechEthics"
+          ],
+          "sources": [
+            "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+          ],
+          "script": "Software engineer Adrian Quesada warns that AI agents are changing how we build software.\nThese agents can now independently navigate codebases and generate pull requests.\nDevelopers are shifting from primary authors to editors of AI-generated work.\nQuesada notes this creates a dangerous gap in our mental models of complex systems.\nWhen debugging fails, you might lack the deep context required to fix critical errors.\nThe source article highlights that automated tools often mask underlying system fragility.\nCould you reliably debug a system you never wrote?",
+          "keywords": [
+            "developer reviewing code on monitor",
+            "programmer looking frustrated at screen",
+            "person typing on laptop keyboard"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Agents are writing your code",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+            },
+            {
+              "claim": "Adrian Quesada is a software engineer who warns that AI agents are changing how we build software.",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+            },
+            {
+              "claim": "AI agents can independently navigate codebases and generate pull requests.",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+            },
+            {
+              "claim": "Developers are shifting from primary authors to editors of AI-generated work.",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+            },
+            {
+              "claim": "Adrian Quesada notes this creates a gap in our mental models of complex systems.",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+            },
+            {
+              "claim": "When debugging fails, you might lack the deep context required to fix critical errors.",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+            },
+            {
+              "claim": "Automated tools often mask underlying system fragility.",
+              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-27T20:32:23.245803+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2111,8 +2212,8 @@
       "event": "Nvidia just backed Simplismart, an AI infrastructure startup in Bengaluru helping companies run AI models using fewer GPUs. Their software optimizes machine learning workloads so enterprises cut down on expensive hardware costs. The annuali"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-27T17:20+05:30",
@@ -2160,11 +2261,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-27",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-27-0",
   "gemini_use": {
     "day": "2026-10-27",
-    "calls": 211,
+    "calls": 236,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2193,24 +2294,26 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 103,
-        "busy": 35,
+        "ok": 104,
+        "busy": 36,
+        "other": 0,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.1-flash-lite": {
+        "ok": 5,
+        "busy": 2,
+        "other": 15,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      },
+      "gemini-flash-lite-latest": {
+        "ok": 0,
+        "busy": 1,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "16:42",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-23"
-    },
-    {
-      "at": "18:30",
-      "error": "gemini-3.1-flash-lite didn't answer (ReadTimeout)",
-      "day": "2026-10-24"
-    },
     {
       "at": "00:43",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2250,6 +2353,16 @@
       "at": "14:00",
       "error": "every free Gemini model is used up for today",
       "day": "2026-10-25"
+    },
+    {
+      "at": "15:07",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-27"
+    },
+    {
+      "at": "15:10",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-27"
     }
   ],
   "last_script_error": {
@@ -2257,12 +2370,12 @@
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. every free Gemini model is used up for today"
   },
   "render_fails": 1,
-  "render_fail_topic": "Unacademy Cofounders Plan ₹700 Cr AI, Deeptech Fund",
+  "render_fail_topic": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
   "last_render_error": {
-    "at": "2026-10-26T16:01:08.962694+05:30",
-    "topic": "Unacademy Cofounders Plan ₹700 Cr AI, Deeptech Fund",
-    "error": "RuntimeError: the voice-over didn't match the script twice (parts of the script are missing (84% spoken))",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1763, in cmd_render\n    raise RuntimeError(f\"the voice-over didn't match the script twice ({why2})\")\nRuntimeError: the voice-over didn't match the script twice (parts of the script are missing (84% spoken))\n"
+    "at": "2026-10-27T20:46:38.256082+05:30",
+    "topic": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
+    "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
+    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1824, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1965, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 549, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 603, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 372, in checked_script\n    draft = writer.write_script(topic, previous=previous, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 514, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 218, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
   },
   "report_week": "2026-43",
   "last_post_error": {
@@ -2275,29 +2388,11 @@
     "gemini-3.6-flash": 1793094037.907315,
     "gemini-3.5-flash": 1793094165.46552,
     "gemini-3.7-flash": 1793096856.1660314,
-    "gemini-3-flash-preview": 1793097201.9545894
+    "gemini-3-flash-preview": 1793097201.9545894,
+    "gemini-3.5-flash-lite": 1793113598.3538592,
+    "gemini-flash-lite-latest": 1793113626.5941374
   },
   "editor_log": [
-    {
-      "at": "2026-10-26T15:44+05:30",
-      "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong script and hook ruined by generic stock code and text-only visuals.",
-      "fixes": [],
-      "visual": [
-        "line 1: Text-only screens hold too long without dynamic B-roll or dynamic graphic elements.",
-        "line 2: Unrelated generic code and terminal screen stock images used for the tech sector mention.",
-        "line 3: Uses a generic text card instead of showing financial charts or corporate logos."
-      ]
-    },
     {
       "at": "2026-10-26T15:53+05:30",
       "title": "The hottest AI wearables and gadgets you should know about",
@@ -2699,10 +2794,34 @@
       "visual": [
         "line 3: Frames 6 and 7 use an unrelated historical photo of a bicycle delivery worker instead of G"
       ]
+    },
+    {
+      "at": "2026-10-27T20:43+05:30",
+      "title": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 7,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong technical insight, but visuals are repetitive and the hook lacks punch.",
+      "fixes": [
+        "LINE 1: Change to 'Software engineer Adrian Quesada warns that AI agents are fundamentally changing how we build software.'",
+        "LINE 2: Replace 'These agents' with 'Tools like Devin or Cursor' to provide specific examples.",
+        "LINE 7: Change to 'Can you reliably debug a codebase you never wrote?'"
+      ],
+      "visual": [
+        "line 1: The title screen is held for too long (4.8s) without visual variety.",
+        "line 3: The same 'Shift to editing' graphic is held for 4.8 seconds across two frames.",
+        "line 4: The 'AQ' circle graphic is static and repeated across three frames (4.8s total)."
+      ]
     }
   ],
   "rest_note": "2026-10-26T12:32:00+05:30",
-  "fish_turn": 127,
+  "fish_turn": 128,
   "ig_music_recent": [
     "1282421579387489",
     "336323136077669",
