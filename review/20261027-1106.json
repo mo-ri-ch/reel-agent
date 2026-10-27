@@ -1,0 +1,75 @@
+{
+ "made": "20261027-1106",
+ "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
+ "hook_text": "Roblox took 145GB of models.",
+ "hook_before": null,
+ "script": "Roblox downloaded one hundred forty-five gigabytes of 3D models from Open3DLab without permission.\nThe unauthorized scraping harvested thousands of user creations, including adult content hosted on the third-party sites.\nSite administrators spotted the massive data extraction and blocked the offending IP addresses tied to the platform.\nCreators discovered their intellectual property being harvested to fuel generative training sets for AI development.\nRoblox has not yet issued a public statement explaining how explicit files ended up in their dataset.\nWould you trust Roblox with your 3D assets?",
+ "words": 86,
+ "beats": [
+  {
+   "line": "Roblox downloaded one hundred forty-five gigabytes of 3D models from Open3DLab without permission.",
+   "visual": "source"
+  },
+  {
+   "line": "The unauthorized scraping harvested thousands of user creations, including adult content hosted on the third-party sites.",
+   "visual": "official"
+  },
+  {
+   "line": "Site administrators spotted the massive data extraction and blocked the offending IP addresses tied to the platform.",
+   "visual": "clip"
+  },
+  {
+   "line": "Creators discovered their intellectual property being harvested to fuel generative training sets for AI development.",
+   "visual": "clip"
+  },
+  {
+   "line": "Roblox has not yet issued a public statement explaining how explicit files ended up in their dataset.",
+   "visual": "stat"
+  },
+  {
+   "line": "Would you trust Roblox with your 3D assets?",
+   "visual": "official"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 8,
+   "visuals": 4,
+   "flow": 9
+  },
+  "one_line": "Strong reporting ruined by completely unrelated camera lens and generic stock graphics.",
+  "script_fixes": [
+   "LINE 1: specify Open3DLab in the opening line clearly for full context."
+  ],
+  "visual_beats": [
+   0,
+   2,
+   3
+  ],
+  "visual_notes": [
+   "line 1: Displays an unrelated camera lens instead of Roblox or Open3DLab context.",
+   "line 3: Reuses the same unrelated camera lens photo from line 1.",
+   "line 4: Generic text card 'Data for AI training' lacks strong specific visual proof."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 36.67,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  13.63,
+  17.0,
+  26.77
+ ],
+ "first_cut_at": 13.63,
+ "avg_shot_seconds": 9.17,
+ "longest_shot_seconds": 13.63,
+ "verdict": "rejected",
+ "words_per_minute": 141
+}
