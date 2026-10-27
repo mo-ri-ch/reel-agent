@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -203,16 +203,59 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "3981373215525331",
+      "title": "Afterlife",
+      "artist": "half.cool"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The firm plans to back at least ten companies with…: The visual shows the ElevenLabs logo instead of a venture capital office meeting.",
+      "Disruptive previously invested heavily in the AI c…: The visual is blank/empty.",
+      "They also poured funding into the AI voice generat…: The visual is blank/empty.",
+      "This firm has gained significant attention for its…: The visual is blank/empty.",
+      "These investments aim to capitalize on the rapid e…: The visual is blank/empty.",
+      "Would you bet ten billion on the future of these A…: The visual is blank/empty.",
+      "The card is almost empty and does not show the required source information."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 6,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong news, but lines 5 and 6 are fluff that dilute the impact.",
+      "script_fixes": [
+        "LINE 5: Replace with 'Disruptive is led by CEO David Hassum, focusing on high-growth AI infrastructure.'",
+        "LINE 6: Replace with 'The fund targets a 10-year horizon for these specialized AI investments.'"
+      ],
+      "visual_beats": [
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 5: Visuals are generic text overlays; should show the firm's logo or leadership.",
+        "line 6: Visuals are abstract; should show a chart or graphic representing the investment horizon."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIsj2rhD3BlT22-aRjQKzR9DzotArUaAALWIgAC9gQIV7r4PgABesJGXj0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-28T02:15:54.644351+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-28T02:54:09.109546+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-28",
@@ -689,258 +732,8 @@
     "Is my data used for model training?",
     "Robotics Lab Physical Intelligence in Talks for a $20 Billion Valuation"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
-          "link": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-          "summary": "",
-          "source": "futurism.com",
-          "published": "2026-10-27T16:25:30+00:00",
-          "buzz": "Hacker News 62 points",
-          "angle": "Reports claim Amazon is gutting its AI division after struggling to keep up with competitors."
-        },
-        "draft": {
-          "title": "Amazon Shifts AI Strategy",
-          "hook_text": "Amazon is restructuring its AI division.",
-          "beats": [
-            {
-              "line": "Amazon is restructuring its AGI division after failing to lead.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Futurism",
-              "domain": "futurism.com",
-              "headline": "Amazon Is Gutting Its AI Division After Sustained Failure",
-              "url": "",
-              "tag": "Amazon shifts strategy",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "The company struggled to ship a viable competitor to top models.",
-              "visual": "clip",
-              "query": "business meeting",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Model competition struggle",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Their Nova model failed to gain traction against market leaders.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Amazon Nova",
-              "outlet": "",
-              "domain": "aws.amazon.com",
-              "headline": "",
-              "url": "https://aws.amazon.com/ai/generative-ai/nova/",
-              "tag": "Nova model failure",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Engineers from the division are now moving to other internal teams.",
-              "visual": "clip",
-              "query": "office workers coding",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Staff moving teams",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Amazon prioritizes profit over burning cash on unproven AI research.",
-              "visual": "clip",
-              "query": "finance chart",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Profit over research",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Competitors like Google and OpenAI currently dominate the model space.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "tag": "Competitor dominance",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Will this retreat help Amazon fix its AI product lineup?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Future AI lineup",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "Serious and journalistic, highlighting the shift in corporate strategy.",
-          "thin": false,
-          "caption": "Amazon is restructuring its AGI division after failing to keep up with competitors like Google and OpenAI. The Nova model struggled to gain traction, leading the company to reassign staff. Will this retreat help Amazon fix its AI product lineup?",
-          "hashtags": [
-            "Amazon",
-            "AWS",
-            "TechNews",
-            "OpenAI",
-            "Google"
-          ],
-          "sources": [
-            "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-          ],
-          "script": "Amazon is restructuring its AGI division after failing to lead.\nThe company struggled to ship a viable competitor to top models.\nTheir Nova model failed to gain traction against market leaders.\nEngineers from the division are now moving to other internal teams.\nAmazon prioritizes profit over burning cash on unproven AI research.\nCompetitors like Google and OpenAI currently dominate the model space.\nWill this retreat help Amazon fix its AI product lineup?",
-          "keywords": [
-            "business meeting",
-            "office workers coding",
-            "finance chart",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Amazon is restructuring its AI division.",
-              "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-            },
-            {
-              "claim": "Amazon is restructuring its AGI division after failing to lead.",
-              "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-            },
-            {
-              "claim": "The company struggled to ship a viable competitor to top models.",
-              "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-            },
-            {
-              "claim": "Their Nova model failed to gain traction against market leaders.",
-              "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-            },
-            {
-              "claim": "Engineers from the division are now moving to other internal teams.",
-              "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-            },
-            {
-              "claim": "Amazon prioritizes profit over burning cash on unproven AI research.",
-              "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-            },
-            {
-              "claim": "Competitors like Google and OpenAI currently dominate the model space.",
-              "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-28T01:27:54.002990+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1684,6 +1477,225 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+          "link": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+          "summary": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-27T18:55:35+00:00",
+          "angle": "A new $10 billion fund is betting big on the next generation of AI giants like Groq and ElevenLabs."
+        },
+        "draft": {
+          "title": "Disruptive Raises $10 Billion for AI Bets",
+          "hook_text": "Disruptive raises ten billion dollars",
+          "beats": [
+            {
+              "line": "Disruptive just closed a ten billion dollar fund for its next series of bets.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "10B",
+              "small": "New investment fund",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "10 billion dollar fund",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The firm plans to back at least ten companies with this massive pool of capital.",
+              "visual": "clip",
+              "query": "venture capital office meeting",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "10 companies to fund",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Disruptive previously invested heavily in the AI chip startup Groq.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Groq",
+              "outlet": "",
+              "domain": "groq.com",
+              "headline": "",
+              "url": "https://groq.com",
+              "tag": "Early Groq investor",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Groq",
+                  "domain": "groq.com"
+                }
+              ]
+            },
+            {
+              "line": "They also poured funding into the AI voice generation startup ElevenLabs.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "ElevenLabs",
+              "outlet": "",
+              "domain": "elevenlabs.io",
+              "headline": "",
+              "url": "https://elevenlabs.io",
+              "tag": "Backing ElevenLabs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ElevenLabs",
+                  "domain": "elevenlabs.io"
+                }
+              ]
+            },
+            {
+              "line": "This firm has gained significant attention for its high-profile moves within the AI sector.",
+              "visual": "clip",
+              "query": "financial data on screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "High profile AI moves",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These investments aim to capitalize on the rapid expansion of specialized AI tools.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "10+",
+              "small": "Big bets coming",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rapid AI expansion",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you bet ten billion on the future of these AI startups?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Disruptive raises $10B fund to make big bets on 10 companies",
+              "url": "",
+              "tag": "10 billion dollar bet",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Professional and fast-paced, highlighting the sheer scale of the investment.",
+          "thin": false,
+          "caption": "Disruptive has closed a massive 10 billion dollar fund to back at least 10 AI companies. They previously invested in major players like Groq and ElevenLabs. Which AI sector do you think deserves this kind of funding next?",
+          "hashtags": [
+            "Disruptive",
+            "AI",
+            "Groq",
+            "ElevenLabs",
+            "VentureCapital"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/"
+          ],
+          "script": "Disruptive just closed a ten billion dollar fund for its next series of bets.\nThe firm plans to back at least ten companies with this massive pool of capital.\nDisruptive previously invested heavily in the AI chip startup Groq.\nThey also poured funding into the AI voice generation startup ElevenLabs.\nThis firm has gained significant attention for its high-profile moves within the AI sector.\nThese investments aim to capitalize on the rapid expansion of specialized AI tools.\nWould you bet ten billion on the future of these AI startups?",
+          "keywords": [
+            "venture capital office meeting",
+            "financial data on screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Disruptive raises ten billion dollars",
+              "url": "https://www.unite.ai/disruptive-announces-10b-flagship-fund-to-back-private-tech-companies/"
+            },
+            {
+              "claim": "Disruptive just closed a ten billion dollar fund",
+              "url": "https://www.unite.ai/disruptive-announces-10b-flagship-fund-to-back-private-tech-companies/"
+            },
+            {
+              "claim": "The firm plans to back at least ten companies with this massive pool of capital.",
+              "url": "https://www.unite.ai/disruptive-announces-10b-flagship-fund-to-back-private-tech-companies/"
+            },
+            {
+              "claim": "Disruptive previously invested heavily in the AI chip startup Groq.",
+              "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/"
+            },
+            {
+              "claim": "They also poured funding into the AI voice generation startup ElevenLabs.",
+              "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/"
+            },
+            {
+              "claim": "This firm has gained significant attention for its high-profile moves within the AI sector.",
+              "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-28T02:15:54.644351+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2172,8 +2184,8 @@
       "event": "OpenAI researchers recently presented three bold claims challenging the Exponential Time Hypothesis. This theory suggests some problems are fundamentally too complex for fast solutions. MIT computer scientist Ryan Williams is now evaluating"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-28T02:00+05:30",
@@ -2201,8 +2213,8 @@
   "report_day": "2026-10-27",
   "ig_count": {
     "day": "2026-10-28",
-    "at": "2026-10-28T02:05:54.644388+05:30",
-    "count": 0
+    "at": "2026-10-28T02:20:23.767858+05:30",
+    "count": 1
   },
   "repeat_check_day": "2026-10-04",
   "repeat_check2_day": "2026-10-28",
@@ -2225,12 +2237,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-28",
-    "calls": 45,
+    "calls": 54,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 32,
+        "ok": 41,
         "busy": 10,
         "other": 3,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2316,28 +2328,6 @@
     "gemini-flash-lite-latest": 1793113626.5941374
   },
   "editor_log": [
-    {
-      "at": "2026-10-27T16:36+05:30",
-      "title": "Roblox downloaded 145GB models from us (including adult content) without asking",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 9
-      },
-      "one_line": "Strong reporting ruined by completely unrelated camera lens and generic stock graphics.",
-      "fixes": [
-        "LINE 1: specify Open3DLab in the opening line clearly for full context."
-      ],
-      "visual": [
-        "line 1: Displays an unrelated camera lens instead of Roblox or Open3DLab context.",
-        "line 3: Reuses the same unrelated camera lens photo from line 1.",
-        "line 4: Generic text card 'Data for AI training' lacks strong specific visual proof."
-      ]
-    },
     {
       "at": "2026-10-27T16:50+05:30",
       "title": "The Mythical Man-Month in the Age of AI",
@@ -2757,10 +2747,32 @@
         "line 2: The same whiteboard video is held for 5 seconds across two frames.",
         "line 5: The TechCrunch logo is held for 7 seconds across three frames."
       ]
+    },
+    {
+      "at": "2026-10-28T02:24+05:30",
+      "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 6,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong news, but lines 5 and 6 are fluff that dilute the impact.",
+      "fixes": [
+        "LINE 5: Replace with 'Disruptive is led by CEO David Hassum, focusing on high-growth AI infrastructure.'",
+        "LINE 6: Replace with 'The fund targets a 10-year horizon for these specialized AI investments.'"
+      ],
+      "visual": [
+        "line 5: Visuals are generic text overlays; should show the firm's logo or leadership.",
+        "line 6: Visuals are abstract; should show a chart or graphic representing the investment horizon."
+      ]
     }
   ],
   "rest_note": "2026-10-26T12:32:00+05:30",
-  "fish_turn": 137,
+  "fish_turn": 138,
   "ig_music_recent": [
     "336323136077669",
     "881858343526459",
