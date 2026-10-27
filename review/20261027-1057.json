@@ -1,0 +1,74 @@
+{
+ "made": "20261027-1057",
+ "title": "Anthropic is burning gas to feed the AI boom",
+ "hook_text": "Anthropic is burning gas for AI",
+ "hook_before": null,
+ "script": "Anthropic filed its initial public offering S-1 paperwork with the Securities and Exchange Commission on Monday.\nThe filing exposes a heavy methane dependency required to power massive Anthropic generative AI data centers.\nAnthropic acknowledges that data centers are becoming increasingly reliant on natural gas for electrical supply.\nCompetition for data center locations with adequate power availability has become extremely intense across the industry.\nThis reliance on fossil fuels introduces major climate risks as Anthropic compute demands continue to grow.\nWould you buy shares in Anthropic while its data centers run on natural gas?",
+ "words": 93,
+ "beats": [
+  {
+   "line": "Anthropic filed its initial public offering S-1 paperwork with the Securities and Exchange Commission on Monday.",
+   "visual": "official"
+  },
+  {
+   "line": "The filing exposes a heavy methane dependency required to power massive Anthropic generative AI data centers.",
+   "visual": "clip"
+  },
+  {
+   "line": "Anthropic acknowledges that data centers are becoming increasingly reliant on natural gas for electrical supply.",
+   "visual": "official"
+  },
+  {
+   "line": "Competition for data center locations with adequate power availability has become extremely intense across the industry.",
+   "visual": "source"
+  },
+  {
+   "line": "This reliance on fossil fuels introduces major climate risks as Anthropic compute demands continue to grow.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you buy shares in Anthropic while its data centers run on natural gas?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 7.8,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 6,
+   "flow": 8
+  },
+  "one_line": "Strong story and facts, but visual repetition and static frames hurt pacing.",
+  "script_fixes": [
+   "LINE 5: specify the exact climate risk mentioned in the S-1 instead of general phrasing"
+  ],
+  "visual_beats": [
+   1,
+   2,
+   3
+  ],
+  "visual_notes": [
+   "line 2: Frames 4 and 5 display identical text and layout with zero visual progression.",
+   "line 3: Frames 8 and 9 repeat the exact same text block holding too long.",
+   "line 4: Frames 11 and 12 hold identical text cards for too long without new graphics."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 38.37,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.1,
+ "cuts": [
+  13.1,
+  26.6
+ ],
+ "first_cut_at": 13.1,
+ "avg_shot_seconds": 12.79,
+ "longest_shot_seconds": 13.5,
+ "verdict": "rejected",
+ "words_per_minute": 145
+}
