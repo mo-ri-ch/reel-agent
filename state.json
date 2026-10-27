@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -198,16 +198,61 @@
     "fact_notes": [],
     "source_links": [
       "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1127687701812816",
+      "title": "Backyard Memories",
+      "artist": "bbox"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Nvidia just backed Simplismart, an AI infrastructu…: missing visual, only text is shown with no image of Simplismart",
+      "The annualized revenue run rate for Simplismart gr…: missing visual, only text and background are shown instead of a big number 14x",
+      "More than half of that rapid revenue generation no…: missing visual, only text and background are shown instead of stock video of a person typing on laptop",
+      "Chief executive officer Amritanshu Jain leads the …: missing visual, only text is shown with no photo of the CEO or initials card",
+      "Would you trust Simplismart to cut your GPU bills?…: missing visual, only text is shown with no source card for TechCrunch",
+      "Missing required visual (real images of Simplismart), only shows plain text on dark background.",
+      "Missing required visual (big number 14x), only shows plain text.",
+      "Missing required visual (photo of CEO or initials card), only shows plain text on dark background.",
+      "Missing required visual (TechCrunch source card), only shows plain text on dark background."
+    ],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong facts and figures hampered by repetitive portraits and placeholder graphics.",
+      "script_fixes": [
+        "LINE 5: specify that Amritanshu Jain co-founded Simplismart to give precise context"
+      ],
+      "visual_beats": [
+        1,
+        5
+      ],
+      "visual_notes": [
+        "line 2: Repeats the same founders' photo from line 1 multiple times without adding fresh context",
+        "line 6: Shows a generic TechCrunch logo icon instead of a concluding visual tied to GPU costs or N"
+      ],
+      "reviewer": "gemini"
+    },
+    "editor_rounds": 1,
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIrZGrgj4x3ffVfqN-hpy9Fjts1fj-TAAKjIQAC9gQIV1RukAwYYf3iPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-27T17:06:58.083253+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-27T17:48:28.890123+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-27",
@@ -696,223 +741,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Anthropic is burning gas to feed the AI boom",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
-          "summary": "As it prepares to go public, Anthropic's S-1 filing makes generative AI's methane dependency glaringly obvious. \"Competition for access to electrical supply and data center locations with adequate power availability is intense.\" In documents filed with the US Securities and Exchange Commission Monday, Anthropic acknowledges that data centers are becoming increasingly reliant on \"natural gas\" […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-26T21:45:31+00:00",
-          "angle": "Anthropic's S-1 filing reveals the massive methane and energy cost of powering the AI boom."
-        },
-        "draft": {
-          "title": "Anthropic S-1 Methane Dependency",
-          "hook_text": "Anthropic is burning gas for AI",
-          "beats": [
-            {
-              "line": "Anthropic filed its initial public offering S-1 paperwork with the Securities and Exchange Commission on Monday.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic S-1 filing",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
-              "tag": "Anthropic SEC S-1 filing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The filing exposes a heavy methane dependency required to power massive Anthropic generative AI data centers.",
-              "visual": "clip",
-              "query": "natural gas power plant",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Methane dependency exposed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Anthropic acknowledges that data centers are becoming increasingly reliant on natural gas for electrical supply.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Anthropic data center energy",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
-              "tag": "Natural gas reliance",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Competition for data center locations with adequate power availability has become extremely intense across the industry.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Anthropic is burning gas to feed the AI boom",
-              "url": "",
-              "tag": "Intense power competition",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This reliance on fossil fuels introduces major climate risks as Anthropic compute demands continue to grow.",
-              "visual": "clip",
-              "query": "power plant cooling towers",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Growing climate risks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you buy shares in Anthropic while its data centers run on natural gas?",
-              "visual": "clip",
-              "query": "electrical grid lines",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Natural gas and going public",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "urgent and direct, emphasizing the hidden environmental cost of building Anthropic data centers",
-          "thin": false,
-          "caption": "Anthropic's SEC S-1 filing reveals heavy natural gas dependency to power its data centers ahead of its IPO. Would you buy shares while its data centers run on fossil fuels?",
-          "hashtags": [
-            "anthropic",
-            "ai",
-            "datacenters",
-            "climate"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-          ],
-          "script": "Anthropic filed its initial public offering S-1 paperwork with the Securities and Exchange Commission on Monday.\nThe filing exposes a heavy methane dependency required to power massive Anthropic generative AI data centers.\nAnthropic acknowledges that data centers are becoming increasingly reliant on natural gas for electrical supply.\nCompetition for data center locations with adequate power availability has become extremely intense across the industry.\nThis reliance on fossil fuels introduces major climate risks as Anthropic compute demands continue to grow.\nWould you buy shares in Anthropic while its data centers run on natural gas?",
-          "keywords": [
-            "natural gas power plant",
-            "power plant cooling towers",
-            "electrical grid lines"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Anthropic is burning gas for AI",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-            },
-            {
-              "claim": "Anthropic filed its initial public offering S-1 paperwork with the Securities and Exchange Commission on Monday.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-            },
-            {
-              "claim": "The filing exposes a heavy methane dependency required to power massive Anthropic generative AI data centers.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-            },
-            {
-              "claim": "Anthropic acknowledges that data centers are becoming increasingly reliant on natural gas for electrical supply.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-            },
-            {
-              "claim": "Competition for data center locations with adequate power availability has become extremely intense across the industry.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-            },
-            {
-              "claim": "This reliance on fossil fuels introduces major climate risks as Anthropic compute demands continue to grow.",
-              "url": "https://www.moneycontrol.com/news/information-technology/artificial-intelligence-information-technology/anthropic-s-ipo-filing-points-to-a-growing-problem-for-ai-climate-change-14060498.html"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-27T16:22:08.906897+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1660,6 +1488,220 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+          "link": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+          "summary": "Simplismart says its annualized revenue run rate has grown 14-fold in six months, with the U.S. accounting for more than half its revenue.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-27T11:00:00+00:00",
+          "angle": "Nvidia backs an Indian startup helping companies run AI models with 14x revenue growth."
+        },
+        "draft": {
+          "title": "Nvidia backs Indian startup Simplismart",
+          "hook_text": "Nvidia just backed Simplismart",
+          "beats": [
+            {
+              "line": "Nvidia just backed Simplismart, an AI infrastructure startup in Bengaluru helping companies run AI models using fewer GPUs.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Simplismart",
+              "outlet": "",
+              "domain": "simplismart.ai",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+              "tag": "Nvidia backs Simplismart",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                },
+                {
+                  "name": "Simplismart",
+                  "domain": "simplismart.ai"
+                }
+              ]
+            },
+            {
+              "line": "Their software optimizes machine learning workloads so enterprises cut down on expensive hardware costs.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Optimizes machine learning",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The annualized revenue run rate for Simplismart grew fourteen-fold in just six months.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "14x",
+              "small": "revenue growth",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Revenue grew fourteen-fold",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Simplismart",
+                  "domain": "simplismart.ai"
+                }
+              ]
+            },
+            {
+              "line": "More than half of that rapid revenue generation now comes directly from the United States.",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "US drives over half",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Chief executive officer Amritanshu Jain leads the team building these enterprise deployment tools.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Led by Amritanshu Jain",
+              "name": "Amritanshu Jain",
+              "role": "CEO, Simplismart",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Simplismart",
+                  "domain": "simplismart.ai"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust Simplismart to cut your GPU bills?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+              "url": "",
+              "tag": "Cut your GPU bills",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Simplismart",
+                  "domain": "simplismart.ai"
+                }
+              ]
+            }
+          ],
+          "delivery": "sharp and fast-paced tech news delivery, highlighting the staggering growth and Nvidia investment",
+          "thin": false,
+          "caption": "Bengaluru startup Simplismart grew its revenue fourteen-fold in six months after receiving backing from Nvidia. Chief executive officer Amritanshu Jain leads the company as over half of its revenue comes from the United States. Would you trust Simplismart to cut your GPU bills?",
+          "hashtags": [
+            "Nvidia",
+            "Simplismart",
+            "AI",
+            "TechNews",
+            "Startups"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+          ],
+          "script": "Nvidia just backed Simplismart, an AI infrastructure startup in Bengaluru helping companies run AI models using fewer GPUs.\nTheir software optimizes machine learning workloads so enterprises cut down on expensive hardware costs.\nThe annualized revenue run rate for Simplismart grew fourteen-fold in just six months.\nMore than half of that rapid revenue generation now comes directly from the United States.\nChief executive officer Amritanshu Jain leads the team building these enterprise deployment tools.\nWould you trust Simplismart to cut your GPU bills?",
+          "keywords": [
+            "data center server racks",
+            "person typing on laptop"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia backed Simplismart",
+              "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+            },
+            {
+              "claim": "Nvidia backed Simplismart, an AI infrastructure startup in Bengaluru helping companies run AI models using fewer GPUs.",
+              "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+            },
+            {
+              "claim": "Their software optimizes machine learning workloads so enterprises cut down on expensive hardware costs.",
+              "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+            },
+            {
+              "claim": "The annualized revenue run rate for Simplismart grew 14-fold in just six months.",
+              "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+            },
+            {
+              "claim": "More than half of that rapid revenue generation now comes directly from the United States.",
+              "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+            },
+            {
+              "claim": "Amritanshu Jain is the chief executive officer of Simplismart leading the team building these enterprise deployment tools.",
+              "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-27T17:06:58.083253+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2138,8 +2180,8 @@
       "event": "Unacademy cofounders Gaurav Munjal and Roman Saini are raising a seven hundred crore rupee venture fund. The vehicle is called Longshot Capital and will back artificial intelligence and deeptech startups. Roman Saini will run the new fund f"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-27T15:59+05:30",
@@ -2167,7 +2209,7 @@
   "report_day": "2026-10-25",
   "ig_count": {
     "day": "2026-10-27",
-    "at": "2026-10-27T17:06:58.083307+05:30",
+    "at": "2026-10-27T17:18:28.890381+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2191,7 +2233,7 @@
   "late_note_for": "2026-10-27-0",
   "gemini_use": {
     "day": "2026-10-27",
-    "calls": 149,
+    "calls": 162,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2220,7 +2262,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 53,
+        "ok": 66,
         "busy": 23,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2305,52 +2347,6 @@
     "gemini-3-flash-preview": 1793097201.9545894
   },
   "editor_log": [
-    {
-      "at": "2026-10-25T18:41+05:30",
-      "title": "Artificial intelligence questioned the authorship of the world's most expensive ",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 6,
-        "visuals": 5,
-        "flow": 8
-      },
-      "one_line": "Strong premise, but visuals are misleading and the AI model name is missing.",
-      "fixes": [
-        "LINE 2: Change 'an AI system' to 'the Luminari AI system'.",
-        "LINE 4: Change 'a pupil' to 'a student of da Vinci'.",
-        "LINE 7: Remove 'might have had significant help' and replace with 'suggests the painting is not entirely by da Vinci'."
-      ],
-      "visual": [
-        "line 6: Visual shows '223M' while the audio says 'four hundred fifty million dollars'. This is a m",
-        "line 8: The visual is a random abstract monolith, which is unrelated to the story and violates the"
-      ]
-    },
-    {
-      "at": "2026-10-25T18:49+05:30",
-      "title": "Artificial intelligence questioned the authorship of the world's most expensive ",
-      "overall": 8.3,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
-      "fixes": [
-        "LINE 1: Change to 'The world's most expensive painting, Salvator Mundi, just faced an AI audit.'",
-        "LINE 2: Specify the neural network model name if available, otherwise keep as is."
-      ],
-      "visual": [
-        "line 4: The painting image is held for too long across multiple frames, causing visual stagnation.",
-        "line 8: The logo for 'Nasha Niva' is generic and lacks context for a global audience.",
-        "line 9: The final frame lacks a visual call-to-action or a compelling closing graphic."
-      ]
-    },
     {
       "at": "2026-10-26T13:23+05:30",
       "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
@@ -2723,10 +2719,50 @@
         "line 4: Generic stock scientists in lab coats examining a clipboard do not match automated problem",
         "line 5: Displays The Verge logo instead of OpenAI or an academic symbol during a question about AI"
       ]
+    },
+    {
+      "at": "2026-10-27T17:16+05:30",
+      "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 5,
+        "flow": 9
+      },
+      "one_line": "Strong reporting and facts, but dragged down by repetitive and mismatched founder visuals.",
+      "fixes": [],
+      "visual": [
+        "line 2: Reuses founder photo instead of showing software optimization or hardware dashboards.",
+        "line 6: Displays TechCrunch logo instead of Simplismart branding or GPU cost graphics."
+      ]
+    },
+    {
+      "at": "2026-10-27T17:18+05:30",
+      "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong facts and figures hampered by repetitive portraits and placeholder graphics.",
+      "fixes": [
+        "LINE 5: specify that Amritanshu Jain co-founded Simplismart to give precise context"
+      ],
+      "visual": [
+        "line 2: Repeats the same founders' photo from line 1 multiple times without adding fresh context",
+        "line 6: Shows a generic TechCrunch logo icon instead of a concluding visual tied to GPU costs or N"
+      ]
     }
   ],
   "rest_note": "2026-10-26T12:32:00+05:30",
-  "fish_turn": 121,
+  "fish_turn": 122,
   "ig_music_recent": [
     "1115479393437512",
     "1282421579387489",
