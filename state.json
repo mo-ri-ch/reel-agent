@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "rendering",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -204,7 +204,7 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-28T00:36:20.322941+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -673,42 +673,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
-            "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-            "summary": "Google DeepMind released Genie 4, a world model with real-time audio, more realistic simulations, and mid-simulation text prompts, in research preview for trusted testers.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-27T16:30:57+00:00",
-            "angle": "Google DeepMind just dropped Genie 4, a world model that lets you steer simulations in real-time with audio."
-          },
-          {
-            "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-            "summary": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or LinkedIn page to paste your work history into a job application. You […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-27T16:14:18+00:00",
-            "angle": "Firefox is rolling out an AI 'Smart Window' that automatically fills out your online forms using data from your open tabs."
-          }
-        ],
-        "choose_deadline": "2026-10-27T23:10:38.111474+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1678,6 +1642,219 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic’s elaborate plan to keep Wall Street at bay",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+          "summary": "Anthropic wants to have it both ways. With its impending IPO, it wants to tap the vast riches of the public markets and insists it doesn't want to compromise its core mission of developing AI safely and for the benefit of humanity. But greater model capabilities bring greater risks, and shareholders eager for returns may […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-27T16:51:22+00:00",
+          "angle": "Anthropic is preparing for a massive IPO while trying to keep their AI safety mission alive."
+        },
+        "draft": {
+          "title": "Anthropic's IPO Safety Dilemma",
+          "hook_text": "Anthropic faces a massive public market test",
+          "beats": [
+            {
+              "line": "Anthropic is preparing for an initial public offering to tap into vast public market riches.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Anthropic IPO incoming",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "CEO Dario Amodei insists the company will not compromise its core AI safety mission.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.anthropic.com/about",
+              "tag": "CEO Dario Amodei",
+              "name": "Dario Amodei",
+              "role": "CEO, Anthropic",
+              "x": "DarioAmodei",
+              "brands": []
+            },
+            {
+              "line": "The lab aims to develop powerful models like Claude for the benefit of humanity.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Claude AI",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://claude.ai",
+              "tag": "Claude AI mission",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Public shareholders typically demand high returns on their investment.",
+              "visual": "clip",
+              "query": "stock market trading floor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Shareholder profit demands",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Anthropic acknowledges that greater model capabilities bring significantly greater risks.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Higher",
+              "small": "Model Risk",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Capability vs Risk",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The lab must now balance these technical risks against intense investor pressure for results.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Anthropic’s elaborate plan to keep Wall Street at bay",
+              "url": "",
+              "tag": "Safety vs profit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Can they protect humanity while hitting their stock price targets?",
+              "visual": "clip",
+              "query": "digital abstract network",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Can safety survive?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and analytical, focusing on the tension between corporate ethics and market mandates.",
+          "thin": false,
+          "caption": "Anthropic is heading toward an IPO while trying to maintain its core commitment to AI safety. The pressure from public shareholders could change how they develop future Claude models. Would you trust a public company to prioritize safety over profit?",
+          "hashtags": [
+            "Anthropic",
+            "ClaudeAI",
+            "IPO",
+            "AISafety",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+          ],
+          "script": "Anthropic is preparing for an initial public offering to tap into vast public market riches.\nCEO Dario Amodei insists the company will not compromise its core AI safety mission.\nThe lab aims to develop powerful models like Claude for the benefit of humanity.\nPublic shareholders typically demand high returns on their investment.\nAnthropic acknowledges that greater model capabilities bring significantly greater risks.\nThe lab must now balance these technical risks against intense investor pressure for results.\nCan they protect humanity while hitting their stock price targets?",
+          "keywords": [
+            "stock market trading floor",
+            "digital abstract network"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Anthropic faces a massive public market test",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+            },
+            {
+              "claim": "Anthropic is preparing for an initial public offering to tap into vast public market riches.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+            },
+            {
+              "claim": "Dario Amodei is the CEO of Anthropic.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+            },
+            {
+              "claim": "Dario Amodei insists the company will not compromise its core AI safety mission.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+            },
+            {
+              "claim": "The lab aims to develop powerful models like Claude for the benefit of humanity.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+            },
+            {
+              "claim": "Public shareholders typically demand high returns on their investment.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+            },
+            {
+              "claim": "Anthropic acknowledges that greater model capabilities bring significantly greater risks.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-28T00:36:20.322941+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2161,8 +2338,8 @@
       "event": "Nvidia just backed Simplismart, an AI infrastructure startup in Bengaluru helping companies run AI models using fewer GPUs. Their software optimizes machine learning workloads so enterprises cut down on expensive hardware costs. The annuali"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-27T22:42+05:30",
