@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "The challenges of artificial intelligence in education shaped UNESCO’s participation in the 14th País Digital Summit",
+      "link": "https://www.unesco.org/en/articles/challenges-artificial-intelligence-education-shaped-unescos-participation-14th-pais-digital-summit",
+      "summary": "The challenges of artificial intelligence in education shaped UNESCO’s participation in the 14th País Digital Summit UNESCO",
+      "source": "UNESCO",
+      "published": "2026-10-27T15:16:56+00:00",
+      "angle": ""
+    },
+    {
+      "title": "The use of biological age and artificial intelligence in health care",
+      "link": "https://www.pensionpolicyinternational.com/the-use-of-biological-age-and-artificial-intelligence-in-health-care/",
+      "summary": "The use of biological age and artificial intelligence in health care Pension Policy International",
+      "source": "Pension Policy International",
+      "published": "2026-10-27T15:12:18+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Artificial intelligence in a Jesuit University: A student conversation, Nov. 4",
+      "link": "https://today.marquette.edu/2026/10/artificial-intelligence-in-a-jesuit-university-a-student-conversation-nov-4/",
+      "summary": "Artificial intelligence in a Jesuit University: A student conversation, Nov. 4 Marquette Today",
+      "source": "Marquette Today",
+      "published": "2026-10-27T15:08:29+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-10-27T20:57:26.509102+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -419,6 +444,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "AI promised less work. I've never worked more",
@@ -2034,32 +2060,32 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-27T17:20+05:30",
-    "techcrunch.com": 6,
-    "theverge.com": 9,
+    "at": "2026-10-27T20:57+05:30",
+    "techcrunch.com": 10,
+    "theverge.com": 10,
     "arstechnica.com": 4,
     "technologyreview.com": 2,
-    "openai.com": 7,
+    "openai.com": 6,
     "blog.google": 1,
     "deepmind.google": 0,
     "huggingface.co": 0,
-    "blogs.nvidia.com": 0,
+    "blogs.nvidia.com": 1,
     "inc42.com": 7,
-    "news.google.com": 43,
+    "news.google.com": 39,
     "Google News (VentureBeat, AIM, AI News)": 24,
     "producthunt.com": 6,
-    "Hacker News": 6,
+    "Hacker News": 8,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 4
+    "filtered out (PR / local events / market fluff)": 6
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-27T15:59:39.632651+05:30",
+  "last_auto_offer": "2026-10-27T20:57:26.509102+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-25",
   "ig_count": {
     "day": "2026-10-27",
-    "at": "2026-10-27T20:47:02.464680+05:30",
+    "at": "2026-10-27T20:57:26.509139+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2083,7 +2109,7 @@
   "late_note_for": "2026-10-27-0",
   "gemini_use": {
     "day": "2026-10-27",
-    "calls": 247,
+    "calls": 251,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2120,7 +2146,7 @@
       "gemini-3.1-flash-lite": {
         "ok": 6,
         "busy": 2,
-        "other": 25,
+        "other": 29,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
@@ -2132,11 +2158,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "00:43",
-      "error": "gemini-3.1-flash-lite: free quota used up for now",
-      "day": "2026-10-24"
-    },
     {
       "at": "00:44",
       "error": "every free Gemini model is used up for today",
@@ -2179,6 +2200,11 @@
     },
     {
       "at": "15:21",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-27"
+    },
+    {
+      "at": "15:28",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-27"
     }
