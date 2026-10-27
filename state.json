@@ -217,16 +217,58 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
-    ]
+    ],
+    "ig_audio": {
+      "id": "921366826007985",
+      "title": "Seybrok",
+      "artist": "Eveningland"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The updated Smart Window tool now auto-fills compl…: The shot is blank/empty.",
+      "It pulls your work history from open tabs like Lin…: The shot is blank/empty.",
+      "Mozilla designed this to speed up repetitive job a…: The shot is blank/empty.",
+      "This AI context-awareness is a major shift from ba…: The shot is blank/empty.",
+      "The image of a red panda is unrelated to the topic of AI context-awareness.",
+      "The image of a red panda is unrelated to the topic of browser data monitoring."
+    ],
+    "editor": {
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 7,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "Weak hook and repetitive, low-effort visuals fail to meet premium news standards.",
+      "script_fixes": [
+        "LINE 1: Replace with a punchier hook like 'Firefox is turning your browser into a personal assistant.'",
+        "LINE 5: Remove this line; it is vague commentary that adds no new information.",
+        "LINE 6: Be more specific about the privacy implications or the 'Smart Window' mechanism."
+      ],
+      "visual_beats": [
+        0,
+        3,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The same Firefox logo is held for too long across multiple frames.",
+        "line 4: Using The Verge logo as a visual for a Mozilla feature is confusing and misleading.",
+        "line 6: The Firefox logo is repeated again, creating visual fatigue."
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-27T23:25:30.069717+05:30",
+  "script_deadline": "2026-10-27T23:49:16.957513+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-27",
@@ -635,9 +677,26 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Police Are Using AI to Pull over Drivers for 'Suspicious' Behavior",
+      "link": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+      "summary": "",
+      "source": "gizmodo.com",
+      "published": "2026-10-27T16:40:15+00:00",
+      "buzz": "Hacker News 131 points",
+      "angle": "Police are now using AI to pull over drivers for 'suspicious' behavior—is this a privacy nightmare?"
+    },
+    {
+      "title": "Bengaluru AI Startup Simplismart Raises $14 Mn in NVIDIA-Backed Round",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNzJTX05EeDlOMU4xcTVpcFZfZzVGV1hYNzdNZnozYWp4V3dtU0FDNGZMcGJZVmJDak1wVUZsakVOVVNRMUc3VmozbFppNFNIU3ZtaUp4czUyd2ZleTZuZm5OWG13ZW8tVTNJMXhQSnRsTXJnUEgyZlhES2hyTklSR0tkcmdoQTEzRzJRc2ZyQk9xRjdnV1c0cGdDUkUzVDk4YTE3WFlmbnhFZw?oc=5",
+      "summary": "Bengaluru AI Startup Simplismart Raises $14 Mn in NVIDIA-Backed Round Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-27T14:32:07+00:00",
+      "angle": "Nvidia is betting big on India, backing Bengaluru-based Simplismart with a $14 million investment."
+    }
+  ],
   "tried": [
-    "Morning Bid: All eyes on AI",
     "Neuroscience gave AI its start. What happens now?",
     "Artificial Intelligence at MassMutual – Two Use Cases",
     "Update: My 4B coding model is getting better at generating 3D scenes",
@@ -696,224 +755,11 @@
     "Dubai AI Festival showcases emerging artificial intelligence applications",
     "The use of biological age and artificial intelligence in health care",
     "The use of biological age and artificial intelligence in health care",
-    "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering"
+    "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+    "Firefox’s Smart Window adds AI form filling and webpage monitoring"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
-          "link": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
-          "summary": "",
-          "source": "blog.adrq.dev",
-          "published": "2026-10-27T13:23:22+00:00",
-          "buzz": "Hacker News 11 points",
-          "angle": ""
-        },
-        "draft": {
-          "title": "The Risks of AI Coding Agents",
-          "hook_text": "Agents are writing your code",
-          "beats": [
-            {
-              "line": "Software engineer Adrian Quesada warns that AI agents are changing how we build software.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://blog.adrq.dev",
-              "tag": "Adrian Quesada warns",
-              "name": "Adrian Quesada",
-              "role": "Software Engineer",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These agents can now independently navigate codebases and generate pull requests.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "blog.adrq.dev",
-              "outlet": "",
-              "domain": "blog.adrq.dev",
-              "headline": "",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
-              "tag": "Agents generate patches",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Developers are shifting from primary authors to editors of AI-generated work.",
-              "visual": "clip",
-              "query": "developer reviewing code on monitor",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Shift to editing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Quesada notes this creates a dangerous gap in our mental models of complex systems.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://blog.adrq.dev",
-              "tag": "Mental model gap",
-              "name": "Adrian Quesada",
-              "role": "Software Engineer",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "When debugging fails, you might lack the deep context required to fix critical errors.",
-              "visual": "clip",
-              "query": "programmer looking frustrated at screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Debugging becomes harder",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The source article highlights that automated tools often mask underlying system fragility.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "blog.adrq.dev",
-              "domain": "blog.adrq.dev",
-              "headline": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work",
-              "url": "",
-              "tag": "System fragility risks",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Could you reliably debug a system you never wrote?",
-              "visual": "clip",
-              "query": "person typing on laptop keyboard",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Reliable debugging",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Serious, observational, and cautionary tone regarding the hidden costs of automation.",
-          "thin": false,
-          "caption": "Adrian Quesada warns that relying on AI agents for software development risks losing deep system knowledge. As we shift from writing code to reviewing it, debugging complex failures becomes harder. Could you reliably maintain a system you never wrote?",
-          "hashtags": [
-            "SoftwareEngineering",
-            "CodingAgents",
-            "AI",
-            "Programming",
-            "TechEthics"
-          ],
-          "sources": [
-            "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-          ],
-          "script": "Software engineer Adrian Quesada warns that AI agents are changing how we build software.\nThese agents can now independently navigate codebases and generate pull requests.\nDevelopers are shifting from primary authors to editors of AI-generated work.\nQuesada notes this creates a dangerous gap in our mental models of complex systems.\nWhen debugging fails, you might lack the deep context required to fix critical errors.\nThe source article highlights that automated tools often mask underlying system fragility.\nCould you reliably debug a system you never wrote?",
-          "keywords": [
-            "developer reviewing code on monitor",
-            "programmer looking frustrated at screen",
-            "person typing on laptop keyboard"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Agents are writing your code",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-            },
-            {
-              "claim": "Adrian Quesada is a software engineer who warns that AI agents are changing how we build software.",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-            },
-            {
-              "claim": "AI agents can independently navigate codebases and generate pull requests.",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-            },
-            {
-              "claim": "Developers are shifting from primary authors to editors of AI-generated work.",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-            },
-            {
-              "claim": "Adrian Quesada notes this creates a gap in our mental models of complex systems.",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-            },
-            {
-              "claim": "When debugging fails, you might lack the deep context required to fix critical errors.",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-            },
-            {
-              "claim": "Automated tools often mask underlying system fragility.",
-              "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-27T20:32:23.245803+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1288,6 +1134,239 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+          "summary": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or LinkedIn page to paste your work history into a job application. You […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-27T16:14:18+00:00",
+          "angle": "Firefox is rolling out an AI 'Smart Window' that automatically fills out your online forms using data from your open tabs."
+        },
+        "draft": {
+          "title": "Firefox Smart Window AI Update",
+          "hook_text": "Firefox brings AI to your browser",
+          "beats": [
+            {
+              "line": "Firefox Smart Window is faster than manual typing.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Firefox",
+              "outlet": "",
+              "domain": "mozilla.org",
+              "headline": "",
+              "url": "https://www.mozilla.org/firefox/",
+              "tag": "Firefox AI integrated",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Firefox",
+                  "domain": "mozilla.org"
+                }
+              ]
+            },
+            {
+              "line": "The updated Smart Window tool now auto-fills complex online forms.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Firefox Smart Window",
+              "outlet": "",
+              "domain": "mozilla.org",
+              "headline": "",
+              "url": "https://www.mozilla.org/firefox/",
+              "tag": "Smart Window fills forms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Firefox",
+                  "domain": "mozilla.org"
+                }
+              ]
+            },
+            {
+              "line": "It pulls your work history from open tabs like LinkedIn profiles.",
+              "visual": "clip",
+              "query": "person using browser tabs",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Pulls data from tabs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "LinkedIn",
+                  "domain": "linkedin.com"
+                }
+              ]
+            },
+            {
+              "line": "Mozilla designed this to speed up repetitive job application tasks.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Firefox Smart Window adds AI form filling",
+              "url": "",
+              "tag": "Mozilla speeds up tasks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This AI context-awareness is a major shift from basic autofill.",
+              "visual": "clip",
+              "query": "digital data processing",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI vs basic autofill",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The feature will monitor your active session to gather data.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Firefox",
+              "outlet": "",
+              "domain": "mozilla.org",
+              "headline": "",
+              "url": "https://www.mozilla.org/firefox/",
+              "tag": "Active session monitoring",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Firefox",
+                  "domain": "mozilla.org"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust your browser to manage your personal job data?",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "minimalist abstract representation of a web browser interface with glowing data nodes",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting browser AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "informative and direct, highlighting the utility of the feature before ending with a skeptical question",
+          "thin": false,
+          "caption": "Mozilla is updating Firefox Smart Window to automatically fill out job applications using data from your open tabs. This AI-powered tool pulls info directly from sites like LinkedIn to save you time. Would you trust your browser to manage your personal job data?",
+          "hashtags": [
+            "Firefox",
+            "Mozilla",
+            "AI",
+            "WebBrowser",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+          ],
+          "script": "Firefox Smart Window is faster than manual typing.\nThe updated Smart Window tool now auto-fills complex online forms.\nIt pulls your work history from open tabs like LinkedIn profiles.\nMozilla designed this to speed up repetitive job application tasks.\nThis AI context-awareness is a major shift from basic autofill.\nThe feature will monitor your active session to gather data.\nWould you trust your browser to manage your personal job data?",
+          "keywords": [
+            "person using browser tabs",
+            "digital data processing"
+          ],
+          "image_prompts": [
+            "minimalist abstract representation of a web browser interface with glowing data nodes"
+          ],
+          "writer_model": "gemini",
+          "hook_before": "Firefox just integrated AI directly into your browser windows.",
+          "hook_score": 42,
+          "evidence": [
+            {
+              "claim": "Firefox brings AI to your browser",
+              "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+            },
+            {
+              "claim": "The updated Smart Window tool now auto-fills complex online forms.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+            },
+            {
+              "claim": "It pulls your work history from open tabs like LinkedIn profiles.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+            },
+            {
+              "claim": "Mozilla designed this to speed up repetitive job application tasks.",
+              "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+            },
+            {
+              "claim": "This AI context-awareness is a major shift from basic autofill.",
+              "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+            },
+            {
+              "claim": "The feature will monitor your active session to gather data.",
+              "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-27T23:25:30.069717+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1774,8 +1853,8 @@
       "event": "Nvidia just backed Simplismart, an AI infrastructure startup in Bengaluru helping companies run AI models using fewer GPUs. Their software optimizes machine learning workloads so enterprises cut down on expensive hardware costs. The annuali"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-27T22:42+05:30",
@@ -1803,7 +1882,7 @@
   "report_day": "2026-10-27",
   "ig_count": {
     "day": "2026-10-27",
-    "at": "2026-10-27T23:15:30.069748+05:30",
+    "at": "2026-10-27T23:30:38.772663+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -1827,7 +1906,7 @@
   "late_note_for": "2026-10-27-0",
   "gemini_use": {
     "day": "2026-10-27",
-    "calls": 383,
+    "calls": 408,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1862,10 +1941,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 50,
-        "busy": 32,
-        "other": 87,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "ok": 60,
+        "busy": 34,
+        "other": 100,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
         "ok": 0,
@@ -1876,11 +1955,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "15:21",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-27"
-    },
     {
       "at": "15:28",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1925,19 +1999,24 @@
       "at": "17:41",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-27"
+    },
+    {
+      "at": "18:01",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-27"
     }
   ],
   "last_script_error": {
     "at": "2026-10-27T21:10+05:30",
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now"
   },
-  "render_fails": 0,
-  "render_fail_topic": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
+  "render_fails": 1,
+  "render_fail_topic": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
   "last_render_error": {
-    "at": "2026-10-27T20:57:07.064626+05:30",
-    "topic": "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
-    "error": "RuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1822, in cmd_render\n    out, action = editor_step(s, out, rerender)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1909, in editor_step\n    raise RuntimeError(\"the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\")\nRuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\n"
+    "at": "2026-10-27T23:44:16.956517+05:30",
+    "topic": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+    "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
+    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1824, in cmd_render\n    editor_redo(s, action)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1965, in editor_redo\n    next_story(s, f\"editor score {rev.get('overall')}/10\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 549, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 603, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 372, in checked_script\n    draft = writer.write_script(topic, previous=previous, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 514, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 218, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
   },
   "report_week": "2026-43",
   "last_post_error": {
@@ -1955,30 +2034,6 @@
     "gemini-flash-lite-latest": 1793113626.5941374
   },
   "editor_log": [
-    {
-      "at": "2026-10-26T15:53+05:30",
-      "title": "The hottest AI wearables and gadgets you should know about",
-      "overall": 5.2,
-      "scores": {
-        "hook": 5,
-        "specific": 6,
-        "substance": 5,
-        "accuracy": 6,
-        "visuals": 3,
-        "flow": 6
-      },
-      "one_line": "Weak hook, severe visual mismatches, and generalized filler lines make this unsuitable.",
-      "fixes": [
-        "LINE 1: Start directly with the first product name instead of generic opening fluff",
-        "LINE 4: Replace vague commentary with another specific wearable from the source summary like Muse Charm",
-        "LINE 5: Remove vague form factor commentary and specify exact device weights or pricing"
-      ],
-      "visual": [
-        "line 1: Shows 'friend' logo while speaking about 'Bee'",
-        "line 2: Shows Plaud app/hardware while speaking about Friend pendant",
-        "line 3: Shows Plaud hardware while discussing its software features"
-      ]
-    },
     {
       "at": "2026-10-26T16:16+05:30",
       "title": "Unacademy Cofounders Plan ₹700 Cr AI, Deeptech Fund",
@@ -2380,10 +2435,34 @@
         "line 3: The same 'Shift to editing' graphic is held for 4.8 seconds across two frames.",
         "line 4: The 'AQ' circle graphic is static and repeated across three frames (4.8s total)."
       ]
+    },
+    {
+      "at": "2026-10-27T23:43+05:30",
+      "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 7,
+        "accuracy": 9,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "Weak hook and repetitive, low-effort visuals fail to meet premium news standards.",
+      "fixes": [
+        "LINE 1: Replace with a punchier hook like 'Firefox is turning your browser into a personal assistant.'",
+        "LINE 5: Remove this line; it is vague commentary that adds no new information.",
+        "LINE 6: Be more specific about the privacy implications or the 'Smart Window' mechanism."
+      ],
+      "visual": [
+        "line 1: The same Firefox logo is held for too long across multiple frames.",
+        "line 4: Using The Verge logo as a visual for a Mozilla feature is confusing and misleading.",
+        "line 6: The Firefox logo is repeated again, creating visual fatigue."
+      ]
     }
   ],
   "rest_note": "2026-10-26T12:32:00+05:30",
-  "fish_turn": 129,
+  "fish_turn": 130,
   "ig_music_recent": [
     "1282421579387489",
     "336323136077669",
