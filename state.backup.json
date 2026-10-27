@@ -12,11 +12,11 @@
     "angle": "OpenAI claims its AI made three major scientific breakthroughs in mathematics, shaking up academic research."
   },
   "draft": {
-    "title": "OpenAI makes three new major science discoveries",
-    "hook_text": "OpenAI just dropped three brand new science discoveries.",
+    "title": "OpenAI drops three new major science discoveries",
+    "hook_text": "OpenAI just dropped three new science breakthroughs.",
     "beats": [
       {
-        "line": "OpenAI just dropped three brand new science discoveries in math, computer science, and physics.",
+        "line": "OpenAI just dropped three new science breakthroughs in math, computer science, and physics.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "External academic experts called shepherds guided these exact results.",
+        "line": "External academic experts acting as shepherds guided these exact results.",
         "visual": "clip",
         "query": "researchers collaborating in lab",
         "prompt": "",
@@ -57,16 +57,16 @@
         "brands": []
       },
       {
-        "line": "This comes less than a month after OpenAI released hundreds of manuscripts containing math solutions.",
-        "visual": "source",
+        "line": "This comes less than a month after hundreds of manuscripts solved long-standing math questions.",
+        "visual": "stat",
         "query": "technology",
         "prompt": "",
-        "big": "",
-        "small": "",
+        "big": "100s",
+        "small": "manuscripts released",
         "entity": "",
-        "outlet": "The Verge",
-        "domain": "theverge.com",
-        "headline": "OpenAI announces three big science discoveries and a new way to work with academics",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
         "url": "",
         "tag": "Hundreds of math manuscripts",
         "name": "",
@@ -118,7 +118,7 @@
     ],
     "delivery": "sharp and fast-paced tech journalist tone, highlighting the scale of OpenAI's new discoveries and the unique shepherd methodology",
     "thin": false,
-    "caption": "OpenAI announced three major science discoveries in math, computer science, and physics using external academic experts called shepherds. The update follows its mass release of hundreds of manuscripts solving long-standing math questions. Would you trust academic shepherds to supervise complex AI discoveries?",
+    "caption": "OpenAI just published three major science discoveries in math, computer science, and physics using external academic experts called shepherds. The update follows its mass release of hundreds of manuscripts solving long-standing math questions. Would you trust academic shepherds to supervise complex AI discoveries?",
     "hashtags": [
       "OpenAI",
       "ArtificialIntelligence",
@@ -129,7 +129,7 @@
     "sources": [
       "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
     ],
-    "script": "OpenAI just dropped three brand new science discoveries in math, computer science, and physics.\nExternal academic experts called shepherds guided these exact results.\nThis comes less than a month after OpenAI released hundreds of manuscripts containing math solutions.\nWorking directly with external researchers helps validate complex automated problem-solving.\nWould you trust academic shepherds to supervise complex AI discoveries?",
+    "script": "OpenAI just dropped three new science breakthroughs in math, computer science, and physics.\nExternal academic experts acting as shepherds guided these exact results.\nThis comes less than a month after hundreds of manuscripts solved long-standing math questions.\nWorking directly with external researchers helps validate complex automated problem-solving.\nWould you trust academic shepherds to supervise complex AI discoveries?",
     "keywords": [
       "researchers collaborating in lab",
       "scientists reviewing data"
@@ -138,29 +138,30 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "OpenAI dropped three brand new science discoveries.",
+        "claim": "OpenAI dropped three new science breakthroughs.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
       },
       {
-        "claim": "OpenAI announced three brand new science discoveries in math, computer science, and physics.",
+        "claim": "OpenAI dropped three new science breakthroughs in math, computer science, and physics.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
       },
       {
-        "claim": "External academic experts called shepherds guided these results.",
+        "claim": "External academic experts acting as shepherds guided these exact results.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
       },
       {
-        "claim": "This comes less than a month after OpenAI released hundreds of manuscripts containing math solutions.",
+        "claim": "This comes less than a month after hundreds of manuscripts solved long-standing math questions.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
       },
       {
         "claim": "Working directly with external researchers helps validate complex automated problem-solving.",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+        "url": "https://www.hindustantimes.com/world-news/openai-announces-three-major-science-discoveries-in-math-computer-science-and-physics-101793057796185.html"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
     ]
@@ -170,9 +171,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-27T16:54:21.464650+05:30",
+  "script_deadline": "2026-10-27T17:00:44.643054+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-27",
@@ -644,223 +645,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Data center backlash is uniting America",
-          "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-          "summary": "If there's one issue that seems to activate all kinds of voters in 2026, it's data centers. The rapid buildout of these massive server storage facilities - and the infrastructure construction and expenses that come with them - has sparked local opposition in communities across the country and become a major issue in many congressional […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-27T10:00:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Data center backlash is uniting America",
-          "hook_text": "Data centers ignite midterm backlash",
-          "beats": [
-            {
-              "line": "Data centers are sparking fierce local opposition across communities nationwide in the midterms.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Data center backlash is uniting America",
-              "url": "",
-              "tag": "Local opposition nationwide",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The rapid buildout of massive server storage facilities is driving the local pushback.",
-              "visual": "clip",
-              "query": "server storage facility building",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Rapid server buildout",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Voters are activating against the massive infrastructure construction and expenses coming with them.",
-              "visual": "clip",
-              "query": "construction site heavy machinery",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Infrastructure construction expenses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This sudden expansion has turned into a major issue in many congressional races.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "aerial view of a sprawling industrial data center complex next to rural land",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Major congressional race issue",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Communities are raising serious concerns over heavy energy consumption and local grid strains.",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "close up of heavy electrical power lines running past a suburban neighborhood",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Energy consumption strains",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Local residents demand stricter regulations on massive new tech real estate projects.",
-              "visual": "clip",
-              "query": "town hall meeting citizens talking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Strict real estate regulations",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you want a massive facility built near your town?",
-              "visual": "image",
-              "query": "technology",
-              "prompt": "large industrial building under construction near a small American town",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Facility near your town",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and conversational, highlighting community pushback against tech infrastructure expansion",
-          "thin": false,
-          "caption": "The rapid buildout of massive data centers has sparked local opposition and become a major issue in congressional elections across America. Are these facilities welcome in your town?",
-          "hashtags": [
-            "datacenters",
-            "midterms",
-            "infrastructure",
-            "energy",
-            "politics"
-          ],
-          "sources": [
-            "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-          ],
-          "script": "Data centers are sparking fierce local opposition across communities nationwide in the midterms.\nThe rapid buildout of massive server storage facilities is driving the local pushback.\nVoters are activating against the massive infrastructure construction and expenses coming with them.\nThis sudden expansion has turned into a major issue in many congressional races.\nCommunities are raising serious concerns over heavy energy consumption and local grid strains.\nLocal residents demand stricter regulations on massive new tech real estate projects.\nWould you want a massive facility built near your town?",
-          "keywords": [
-            "server storage facility building",
-            "construction site heavy machinery",
-            "town hall meeting citizens talking"
-          ],
-          "image_prompts": [
-            "aerial view of a sprawling industrial data center complex next to rural land",
-            "close up of heavy electrical power lines running past a suburban neighborhood",
-            "large industrial building under construction near a small American town"
-          ],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Data centers ignite midterm backlash",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "Data centers are sparking fierce local opposition across communities nationwide in the midterms.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "The rapid buildout of massive server storage facilities is driving the local pushback.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "Voters are activating against the massive infrastructure construction and expenses coming with them.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "This sudden expansion has turned into a major issue in many congressional races.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            },
-            {
-              "claim": "Communities are raising serious concerns over heavy energy consumption and local grid strains.",
-              "url": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html"
-            },
-            {
-              "claim": "Local residents demand stricter regulations on massive new tech real estate projects.",
-              "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-27T16:05:20.648855+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1681,6 +1465,185 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "OpenAI announces three big science discoveries and a new way to work with academics",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+          "summary": "Less than a month after its mass release of hundreds of manuscripts that it said contained solutions to long-standing mathematics questions, OpenAI is back with three more \"major\" discoveries in math, computer science, and physics. What's different this time is the choice to have external experts that OpenAI describes as \"shepherds\" guiding the results in […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-26T23:34:58+00:00",
+          "angle": "OpenAI claims its AI made three major scientific breakthroughs in mathematics, shaking up academic research."
+        },
+        "draft": {
+          "title": "OpenAI makes three new major science discoveries",
+          "hook_text": "OpenAI just dropped three brand new science discoveries.",
+          "beats": [
+            {
+              "line": "OpenAI just dropped three brand new science discoveries in math, computer science, and physics.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+              "tag": "OpenAI three science discoveries",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "External academic experts called shepherds guided these exact results.",
+              "visual": "clip",
+              "query": "researchers collaborating in lab",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Academic shepherds guide results",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This comes less than a month after OpenAI released hundreds of manuscripts containing math solutions.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "OpenAI announces three big science discoveries and a new way to work with academics",
+              "url": "",
+              "tag": "Hundreds of math manuscripts",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Working directly with external researchers helps validate complex automated problem-solving.",
+              "visual": "clip",
+              "query": "scientists reviewing data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "External researchers validate results",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust academic shepherds to supervise complex AI discoveries?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "OpenAI announces three big science discoveries and a new way to work with academics",
+              "url": "",
+              "tag": "Supervise complex discoveries",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and fast-paced tech journalist tone, highlighting the scale of OpenAI's new discoveries and the unique shepherd methodology",
+          "thin": false,
+          "caption": "OpenAI announced three major science discoveries in math, computer science, and physics using external academic experts called shepherds. The update follows its mass release of hundreds of manuscripts solving long-standing math questions. Would you trust academic shepherds to supervise complex AI discoveries?",
+          "hashtags": [
+            "OpenAI",
+            "ArtificialIntelligence",
+            "TechNews",
+            "Physics",
+            "Mathematics"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+          ],
+          "script": "OpenAI just dropped three brand new science discoveries in math, computer science, and physics.\nExternal academic experts called shepherds guided these exact results.\nThis comes less than a month after OpenAI released hundreds of manuscripts containing math solutions.\nWorking directly with external researchers helps validate complex automated problem-solving.\nWould you trust academic shepherds to supervise complex AI discoveries?",
+          "keywords": [
+            "researchers collaborating in lab",
+            "scientists reviewing data"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "OpenAI dropped three brand new science discoveries.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+            },
+            {
+              "claim": "OpenAI announced three brand new science discoveries in math, computer science, and physics.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+            },
+            {
+              "claim": "External academic experts called shepherds guided these results.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+            },
+            {
+              "claim": "This comes less than a month after OpenAI released hundreds of manuscripts containing math solutions.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+            },
+            {
+              "claim": "Working directly with external researchers helps validate complex automated problem-solving.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-27T16:54:21.464650+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2164,8 +2127,8 @@
       "event": "Unacademy cofounders Gaurav Munjal and Roman Saini are raising a seven hundred crore rupee venture fund. The vehicle is called Longshot Capital and will back artificial intelligence and deeptech startups. Roman Saini will run the new fund f"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-27T15:59+05:30",
@@ -2193,7 +2156,7 @@
   "report_day": "2026-10-25",
   "ig_count": {
     "day": "2026-10-27",
-    "at": "2026-10-27T16:44:25.978969+05:30",
+    "at": "2026-10-27T16:55:20.399457+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2213,7 +2176,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-27",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-26-0",
   "gemini_use": {
     "day": "2026-10-27",
@@ -2331,29 +2294,6 @@
     "gemini-3-flash-preview": 1793097201.9545894
   },
   "editor_log": [
-    {
-      "at": "2026-10-25T18:07+05:30",
-      "title": "ChatGPT Is Building Detailed Psychological Profiles of Its Users",
-      "overall": 8.7,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong, informative script, but visual pacing is repetitive and lacks dynamic variety.",
-      "fixes": [
-        "LINE 6: Change 'The AI' to 'ChatGPT' for better brand consistency.",
-        "LINE 7: Change to 'Would you keep using ChatGPT if you could see your psychological profile?' for higher impact."
-      ],
-      "visual": [
-        "line 1: The same screenshot is held for too long across three frames.",
-        "line 3: The same 'Full data tracking' graphic is repeated for three consecutive frames.",
-        "line 4: The same 'Memory features enabled' graphic is repeated for three consecutive frames."
-      ]
-    },
     {
       "at": "2026-10-25T18:32+05:30",
       "title": "McKinsey AI Value Curve: $2.52T at Risk From Costs",
@@ -2754,10 +2694,31 @@
         "line 2: Holding the same unrelated museum photo for too many frames.",
         "line 3: Abrupt switch to plain text cards without strong conceptual imagery matching the AI tools."
       ]
+    },
+    {
+      "at": "2026-10-27T17:00+05:30",
+      "title": "OpenAI announces three big science discoveries and a new way to work with academ",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong reporting and engaging hook let down by recycled math background visuals.",
+      "fixes": [
+        "LINE 1: Mention OpenAI's specific research division or project name if available to increase specificity."
+      ],
+      "visual": [
+        "line 2: Reuses the exact same math background image from Line 1, violating the variety rule.",
+        "line 3: Displays 'The Verge' logo card for an article reference rather than relevant source materi"
+      ]
     }
   ],
   "rest_note": "2026-10-26T12:32:00+05:30",
-  "fish_turn": 119,
+  "fish_turn": 120,
   "ig_music_recent": [
     "1115479393437512",
     "1282421579387489",
