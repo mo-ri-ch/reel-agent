@@ -1,33 +1,230 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
-      "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-      "summary": "Google DeepMind released Genie 4, a world model with real-time audio, more realistic simulations, and mid-simulation text prompts, in research preview for trusted testers.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-27T16:30:57+00:00",
-      "angle": "Google DeepMind just dropped Genie 4, a world model that lets you steer simulations in real-time with audio."
-    },
-    {
-      "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-      "summary": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or LinkedIn page to paste your work history into a job application. You […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-27T16:14:18+00:00",
-      "angle": "Firefox is rolling out an AI 'Smart Window' that automatically fills out your online forms using data from your open tabs."
-    }
-  ],
-  "choose_deadline": "2026-10-27T23:10:38.111474+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+    "summary": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or LinkedIn page to paste your work history into a job application. You […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-27T16:14:18+00:00",
+    "angle": "Firefox is rolling out an AI 'Smart Window' that automatically fills out your online forms using data from your open tabs."
+  },
+  "draft": {
+    "title": "Firefox Smart Window AI Update",
+    "hook_text": "Firefox brings AI to your browser",
+    "beats": [
+      {
+        "line": "Firefox Smart Window is faster than manual typing.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Firefox",
+        "outlet": "",
+        "domain": "mozilla.org",
+        "headline": "",
+        "url": "https://www.mozilla.org/firefox/",
+        "tag": "Firefox AI integrated",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Firefox",
+            "domain": "mozilla.org"
+          }
+        ]
+      },
+      {
+        "line": "The updated Smart Window tool now auto-fills complex online forms.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Firefox Smart Window",
+        "outlet": "",
+        "domain": "mozilla.org",
+        "headline": "",
+        "url": "https://www.mozilla.org/firefox/",
+        "tag": "Smart Window fills forms",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Firefox",
+            "domain": "mozilla.org"
+          }
+        ]
+      },
+      {
+        "line": "It pulls your work history from open tabs like LinkedIn profiles.",
+        "visual": "clip",
+        "query": "person using browser tabs",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Pulls data from tabs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "LinkedIn",
+            "domain": "linkedin.com"
+          }
+        ]
+      },
+      {
+        "line": "Mozilla designed this to speed up repetitive job application tasks.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Firefox Smart Window adds AI form filling",
+        "url": "",
+        "tag": "Mozilla speeds up tasks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This AI context-awareness is a major shift from basic autofill.",
+        "visual": "clip",
+        "query": "digital data processing",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "AI vs basic autofill",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The feature will monitor your active session to gather data.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Firefox",
+        "outlet": "",
+        "domain": "mozilla.org",
+        "headline": "",
+        "url": "https://www.mozilla.org/firefox/",
+        "tag": "Active session monitoring",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Firefox",
+            "domain": "mozilla.org"
+          }
+        ]
+      },
+      {
+        "line": "Would you trust your browser to manage your personal job data?",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "minimalist abstract representation of a web browser interface with glowing data nodes",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Trusting browser AI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "informative and direct, highlighting the utility of the feature before ending with a skeptical question",
+    "thin": false,
+    "caption": "Mozilla is updating Firefox Smart Window to automatically fill out job applications using data from your open tabs. This AI-powered tool pulls info directly from sites like LinkedIn to save you time. Would you trust your browser to manage your personal job data?",
+    "hashtags": [
+      "Firefox",
+      "Mozilla",
+      "AI",
+      "WebBrowser",
+      "TechNews"
+    ],
+    "sources": [
+      "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+    ],
+    "script": "Firefox Smart Window is faster than manual typing.\nThe updated Smart Window tool now auto-fills complex online forms.\nIt pulls your work history from open tabs like LinkedIn profiles.\nMozilla designed this to speed up repetitive job application tasks.\nThis AI context-awareness is a major shift from basic autofill.\nThe feature will monitor your active session to gather data.\nWould you trust your browser to manage your personal job data?",
+    "keywords": [
+      "person using browser tabs",
+      "digital data processing"
+    ],
+    "image_prompts": [
+      "minimalist abstract representation of a web browser interface with glowing data nodes"
+    ],
+    "writer_model": "gemini",
+    "hook_before": "Firefox just integrated AI directly into your browser windows.",
+    "hook_score": 42,
+    "evidence": [
+      {
+        "claim": "Firefox brings AI to your browser",
+        "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+      },
+      {
+        "claim": "The updated Smart Window tool now auto-fills complex online forms.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+      },
+      {
+        "claim": "It pulls your work history from open tabs like LinkedIn profiles.",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+      },
+      {
+        "claim": "Mozilla designed this to speed up repetitive job application tasks.",
+        "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+      },
+      {
+        "claim": "This AI context-awareness is a major shift from basic autofill.",
+        "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+      },
+      {
+        "claim": "The feature will monitor your active session to gather data.",
+        "url": "https://blog.mozilla.org/en/firefox/skip-the-busywork-with-smart-window/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 0,
+    "source_links": [
+      "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-27T23:25:30.069717+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": true,
@@ -438,18 +635,8 @@
     }
   ],
   "paused": null,
-  "spare": [
-    {
-      "title": "Fix evaluation bias to unlock better models on Amazon Bedrock",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaVRjSXRpN1h1M0VqWWR5SFB1eXo5NHFsNjM0ZTNMNnB1bk5qUERfeVNhZGlVMGZzcHFoQ0xFZVU2dkFoaDRvQURfLVVlMlZDclh1S09Cd1BoNUF4MV9MdEhpUWJxdDNQWmlVUXNWcUpTOTdMNC1LRDY5M3luZXI2SXNxTkg2UUNYOFhEYng5VUQ1YW1jcHBBWVZjWFFMZUg2N1NtanQ2c2J4N1BQ?oc=5",
-      "summary": "Fix evaluation bias to unlock better models on Amazon Bedrock Amazon Web Services (AWS)",
-      "source": "Amazon Web Services (AWS)",
-      "published": "2026-10-27T16:53:02+00:00",
-      "angle": ""
-    }
-  ],
+  "spare": [],
   "tried": [
-    "ContextGem 1.0",
     "Morning Bid: All eyes on AI",
     "Neuroscience gave AI its start. What happens now?",
     "Artificial Intelligence at MassMutual – Two Use Cases",
@@ -508,187 +695,10 @@
     "Chai Point Cuts Monthly AWS Bill by 58%",
     "Dubai AI Festival showcases emerging artificial intelligence applications",
     "The use of biological age and artificial intelligence in health care",
-    "The use of biological age and artificial intelligence in health care"
+    "The use of biological age and artificial intelligence in health care",
+    "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Japan internet giant GMO says hackers posted stolen customer data",
-          "link": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
-          "summary": "Japan's GMO Internet is verifying alleged customer data posted by suspected hackers following a cloud service breach.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-27T13:32:57+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "GMO Internet Hack Exposes Customer Data",
-          "hook_text": "Hackers leaked GMO customer data",
-          "beats": [
-            {
-              "line": "Japan internet giant GMO Internet is verifying customer data posted online by hackers.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "GMO Internet",
-              "outlet": "",
-              "domain": "gmo.jp",
-              "headline": "",
-              "url": "https://www.gmo.jp/en/",
-              "tag": "GMO Internet breach",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "GMO Internet",
-                  "domain": "gmo.jp"
-                }
-              ]
-            },
-            {
-              "line": "Suspected cybercriminals leaked the information following a security breach in cloud services.",
-              "visual": "clip",
-              "query": "cloud server data breach",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Cloud service breach",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The Tokyo based corporation discovered the unauthorized access and launched an immediate internal investigation.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Tokyo",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Tokyo investigation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Security teams are working to confirm whether the published files contain genuine customer records.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Japan internet giant GMO says hackers posted stolen customer data",
-              "url": "",
-              "tag": "Verifying customer records",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will GMO Internet upgrade its security to prevent future data leaks?",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "GMO Internet",
-              "outlet": "",
-              "domain": "gmo.jp",
-              "headline": "",
-              "url": "https://www.gmo.jp/en/",
-              "tag": "GMO Internet security",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "GMO Internet",
-                  "domain": "gmo.jp"
-                }
-              ]
-            }
-          ],
-          "delivery": "urgent and direct, like a tech reporter breaking a fresh corporate security breach",
-          "thin": false,
-          "caption": "Japan's GMO Internet is verifying customer data posted by hackers after a cloud service breach. Can the company secure its cloud infrastructure?",
-          "hashtags": [
-            "GMO",
-            "Cybersecurity",
-            "DataBreach",
-            "TechNews",
-            "Japan"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/"
-          ],
-          "script": "Japan internet giant GMO Internet is verifying customer data posted online by hackers.\nSuspected cybercriminals leaked the information following a security breach in cloud services.\nThe Tokyo based corporation discovered the unauthorized access and launched an immediate internal investigation.\nSecurity teams are working to confirm whether the published files contain genuine customer records.\nWill GMO Internet upgrade its security to prevent future data leaks?",
-          "keywords": [
-            "cloud server data breach"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Hackers leaked GMO customer data",
-              "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/"
-            },
-            {
-              "claim": "Japan internet giant GMO Internet is verifying customer data posted online by hackers.",
-              "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/"
-            },
-            {
-              "claim": "Suspected cybercriminals leaked the information following a security breach in cloud services.",
-              "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/"
-            },
-            {
-              "claim": "The Tokyo based corporation discovered the unauthorized access and launched an immediate internal investigation.",
-              "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/"
-            },
-            {
-              "claim": "Security teams are working to confirm whether the published files contain genuine customer records.",
-              "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-27T20:10:34.502065+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1245,6 +1255,42 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+            "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+            "summary": "Google DeepMind released Genie 4, a world model with real-time audio, more realistic simulations, and mid-simulation text prompts, in research preview for trusted testers.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-27T16:30:57+00:00",
+            "angle": "Google DeepMind just dropped Genie 4, a world model that lets you steer simulations in real-time with audio."
+          },
+          {
+            "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+            "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+            "summary": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or LinkedIn page to paste your work history into a job application. You […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-27T16:14:18+00:00",
+            "angle": "Firefox is rolling out an AI 'Smart Window' that automatically fills out your online forms using data from your open tabs."
+          }
+        ],
+        "choose_deadline": "2026-10-27T23:10:38.111474+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1757,7 +1803,7 @@
   "report_day": "2026-10-27",
   "ig_count": {
     "day": "2026-10-27",
-    "at": "2026-10-27T22:55:24.347631+05:30",
+    "at": "2026-10-27T23:15:30.069748+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -1781,7 +1827,7 @@
   "late_note_for": "2026-10-27-0",
   "gemini_use": {
     "day": "2026-10-27",
-    "calls": 351,
+    "calls": 383,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1816,10 +1862,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 37,
-        "busy": 24,
-        "other": 76,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "ok": 50,
+        "busy": 32,
+        "other": 87,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-flash-lite-latest": {
         "ok": 0,
@@ -1830,11 +1876,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "15:10",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-27"
-    },
     {
       "at": "15:21",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1877,6 +1918,11 @@
     },
     {
       "at": "17:11",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-10-27"
+    },
+    {
+      "at": "17:41",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-10-27"
     }
