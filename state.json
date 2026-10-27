@@ -1,69 +1,168 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Guidewire to buy UK insurance AI firm hyperexponential in deal worth up to $2.1 billion",
-      "link": "https://www.reuters.com/legal/litigation/guidewire-buy-uk-insurance-ai-firm-hyperexponential-deal-worth-up-21-billion-2026-10-27/",
-      "summary": "Guidewire to buy UK insurance AI firm hyperexponential in deal worth up to $2.1 billion Reuters",
-      "source": "Reuters",
-      "published": "2026-10-27T11:32:05+00:00",
-      "angle": ""
-    },
-    {
-      "title": "Fashion's AI era: face swaps and digital clones",
-      "link": "https://www.reuters.com/legal/litigation/fashions-ai-era-face-swaps-digital-clones-2026-10-27/",
-      "summary": "Fashion's AI era: face swaps and digital clones Reuters",
-      "source": "Reuters",
-      "published": "2026-10-27T11:23:58+00:00",
-      "angle": ""
-    },
-    {
-      "title": "Wikipedia's Cleanup of AI-Generated Content",
-      "link": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-      "summary": "",
-      "source": "spectrum.ieee.org",
-      "published": "2026-10-27T11:08:15+00:00",
-      "buzz": "Hacker News 13 points",
-      "angle": ""
-    }
-  ],
-  "choose_deadline": "2026-10-27T17:20:45.677598+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Data center backlash is uniting America",
+    "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
+    "summary": "If there's one issue that seems to activate all kinds of voters in 2026, it's data centers. The rapid buildout of these massive server storage facilities - and the infrastructure construction and expenses that come with them - has sparked local opposition in communities across the country and become a major issue in many congressional […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-27T10:00:00+00:00",
+    "angle": ""
+  },
+  "draft": {
+    "title": "Data centers become a congressional election issue",
+    "hook_text": "Data centers unite American voters",
+    "beats": [
+      {
+        "line": "Data centers are now uniting American voters across the country in unexpected ways.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Data center backlash is uniting America",
+        "url": "",
+        "tag": "Data centers uniting voters",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The rapid buildout of massive server storage facilities has sparked intense local opposition.",
+        "visual": "clip",
+        "query": "server racks flashing lights data center",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Rapid server storage buildout",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Communities are fighting back against the heavy infrastructure construction and the huge expenses that come with them.",
+        "visual": "clip",
+        "query": "industrial construction site data center",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Heavy infrastructure construction",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This local pushback has officially become a major issue in many upcoming congressional races.",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "us congressional ballot box with server building silhouette in background",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Major congressional election issue",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Will your representative support or block the next facility?",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "close up of election ballot paper with pen resting on table",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Representative facility decision",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "urgent, direct, and serious about community pushback affecting national politics",
+    "thin": false,
+    "caption": "The rapid buildout of data centers has sparked fierce local opposition and become a major issue in congressional races across America. Are these facilities being built too close to your neighborhood?",
+    "hashtags": [
+      "datacenters",
+      "midtermelections",
+      "infrastructure",
+      "localpolitics",
+      "techpolicy"
+    ],
+    "sources": [
+      "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
+    ],
+    "script": "Data centers are now uniting American voters across the country in unexpected ways.\nThe rapid buildout of massive server storage facilities has sparked intense local opposition.\nCommunities are fighting back against the heavy infrastructure construction and the huge expenses that come with them.\nThis local pushback has officially become a major issue in many upcoming congressional races.\nWill your representative support or block the next facility?",
+    "keywords": [
+      "server racks flashing lights data center",
+      "industrial construction site data center"
+    ],
+    "image_prompts": [
+      "us congressional ballot box with server building silhouette in background",
+      "close up of election ballot paper with pen resting on table"
+    ],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Data centers unite American voters",
+        "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
+      },
+      {
+        "claim": "Data centers are uniting American voters across the country in unexpected ways.",
+        "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
+      },
+      {
+        "claim": "The rapid buildout of massive server storage facilities has sparked intense local opposition.",
+        "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
+      },
+      {
+        "claim": "Communities are fighting back against heavy infrastructure construction and huge expenses.",
+        "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
+      },
+      {
+        "claim": "Local pushback has become a major issue in many upcoming congressional races.",
+        "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://www.theverge.com/policy/1019152/data-centers-midterm-elections"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
-  "queue": [
-    {
-      "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
-      "video_file_id": "BAACAgUAAxkDAAIrZGrgj4x3ffVfqN-hpy9Fjts1fj-TAAKjIQAC9gQIV1RukAwYYf3iPQQ",
-      "caption": "Bengaluru startup Simplismart grew its revenue fourteen-fold in six months after receiving backing from Nvidia. Chief executive officer Amritanshu Jain leads the company as over half of its revenue comes from the United States. Would you trust Simplismart to cut your GPU bills?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#Nvidia #Simplismart #AI #TechNews #Startups",
-      "extra": false,
-      "meta": {
-        "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
-        "kind": "news",
-        "source": "AI News & Artificial Intelligence | Tech",
-        "engine": "fish",
-        "voice": "Ethan (Fish Audio)",
-        "person": true,
-        "words": 82,
-        "visuals": "6 cards",
-        "editor": 8.2,
-        "writer": "gemini",
-        "hook_score": null,
-        "made": "2026-10-27T17:20+05:30"
-      },
-      "audio": {
-        "id": "1127687701812816",
-        "title": "Backyard Memories",
-        "artist": "bbox"
-      },
-      "post_at": "2026-10-27T17:21:28.858154+05:30"
-    }
-  ],
+  "queue": [],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-27T17:58:17.494696+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -230,10 +329,6 @@
     }
   ],
   "post_log": [
-    {
-      "at": "2026-10-15T19:01:11.272503+05:30",
-      "extra": false
-    },
     {
       "at": "2026-10-15T21:31:17.322967+05:30",
       "extra": false
@@ -469,36 +564,24 @@
     {
       "at": "2026-10-26T16:31:18.098097+05:30",
       "extra": false
-    }
-  ],
-  "spare": [
-    {
-      "title": "Fashion's AI era: face swaps and digital clones",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMWtnLUwtNEgzYnkxbDdsWlA3TXZDUGFtYWpub0p0YXdfaHliNldnVzB4WjQ0a0pxeElLRFBWdXZrTFQzcHJSa1IwVEkwWVBsNFJzYVFIbTNjYXQ0ZWpOUjdBNkNwRzlCQVQ1dERobkJnOEVfdVV3djNqbWtjSEFhVHR0LThlVl8zZWp6dGZjNi1VUWJOTmN6dHFR?oc=5",
-      "summary": "Fashion's AI era: face swaps and digital clones Reuters",
-      "source": "Reuters",
-      "published": "2026-10-27T10:48:15+00:00",
-      "angle": "Fashion's AI era is here with face swaps and digital clones replacing models."
     },
     {
-      "title": "iFLYTEK launches Spark X2 6 device cloud artificial intelligence model series - Vietnam Investment Review",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdk04bnJ5NUJuSGIxeG02clJRcHlJT092c1FibENEcEE0a3daQ2o1RU8tTmpBOUg1WkJ0Y08zVnlUTy1KbUZXdmhwUkhLTGlWcEtrRjFzQTItTVJZZnVJaGp4cGhwREUxbEo2NmRQT0JkbkMtUTFNMGczLURuTHhVWkpwc3BkSHg1VTBLQ2FHcEJaLVoyVkZkRG1TTUJreWdzSVZzTEFGN3FBTWtq?oc=5",
-      "summary": "iFLYTEK launches Spark X2 6 device cloud artificial intelligence model series Vietnam Investment Review - VIR",
-      "source": "VIR",
-      "published": "2026-10-27T04:53:51+00:00",
-      "angle": "iFLYTEK launches the Spark X2 device cloud AI model series."
+      "at": "2026-10-27T17:28:51.649549+05:30",
+      "extra": false
+    }
+  ],
+  "paused": null,
+  "spare": [
+    {
+      "title": "Privacy group files complaints against Scale AI over alleged worker surveillance",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ0QzdElNcDhKWkJYRldiRUp4RmE4Z2t6aXdxZjNPM3Q1VEpMb1djS2QyVUdBRWozV0R3QXg1bUdkcDJkeXJsbV9oTmFaaHQtaHMwYzVLNFZaY0Rld3EtckUtSkxyYlZldVV4Unh0VzVkbzF5cHFPUy04aThFbEt2LXJtb1NmSUZZN1A2eHBXYXkyb1hWajliWVdPTTJWNnRaRV9DaHU1MXJpNFNXMjFfVG9SdmhwUFNyaFJqTEVzR0dwaG8?oc=5",
+      "summary": "Privacy group files complaints against Scale AI over alleged worker surveillance Reuters",
+      "source": "Reuters",
+      "published": "2026-10-27T08:45:16+00:00",
+      "angle": ""
     }
   ],
   "tried": [
-    "Telekom invests in Tandem Health: AI-powered medical assistant eases the burden on healthcare professionals",
-    "The problem with AI shortcuts",
-    "In the A.I. ‘Robogym,’ Machines Train to Be More Like Humans",
-    "This AI detects a vision-threatening eye disease with 96% accuracy",
-    "Former GitHub CEO Launches Git Platform Built for AI Agents",
-    "Data center backlash is uniting America",
-    "Privacy group files complaints against Scale AI over alleged worker surveillance",
-    "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
-    "Anthropic's Mythos 5 ignored risks, targeted real GitHub project in test",
     "Anthropic model accessed publicly available Georgia voter data; no human authorization",
     "Anthropic is burning gas to feed the AI boom",
     "DeepSeek AI model shows safety gaps in independent tests",
@@ -549,188 +632,18 @@
     "Researchers find Alibaba’s AI model tried to reach China server: Security risk or training bug?",
     "AI companies are barreling toward huge Wall Street debuts. A look at the biggest players",
     "The Mythical Man-Month in the Age of AI",
-    "OpenAI announces three big science discoveries and a new way to work with academics"
+    "OpenAI announces three big science discoveries and a new way to work with academics",
+    "Guidewire to buy UK insurance AI firm hyperexponential in deal worth up to $2.1 billion",
+    "Fashion's AI era: face swaps and digital clones",
+    "In the A.I. ‘Robogym,’ Machines Train to Be More Like Humans",
+    "artificial intelligence companions",
+    "CoRover Lists Three BharatGPT Models On Government-Backed AIKosh Platform",
+    "Tech Sell-Off: This All-Star Artificial Intelligence Stock Is Down 50% but Up 127,300% Since Its IPO. Here's Why It's a Screaming Buy Heading Into the Midterms.",
+    "Former GitHub CEO Launches Git Platform Built for AI Agents",
+    "Telekom invests in Tandem Health: AI-powered medical assistant eases the burden on healthcare professionals",
+    "Wikipedia's Cleanup of AI-Generated Content"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "The Mythical Man-Month in the Age of AI",
-          "link": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
-          "summary": "",
-          "source": "j11g.com",
-          "published": "2026-10-27T06:25:37+00:00",
-          "buzz": "Hacker News 176 points",
-          "angle": ""
-        },
-        "draft": {
-          "title": "The Mythical Man-Month in the Age of AI",
-          "hook_text": "Brooks law meets agent orchestration",
-          "beats": [
-            {
-              "line": "Frederick Brooks wrote in nineteen seventy five that adding workers to a late project makes it later.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "j11g.com",
-              "domain": "j11g.com",
-              "headline": "The Mythical Man-Month in the Age of AI",
-              "url": "",
-              "tag": "Brooks law in seventy five",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "That principle defined software development for half a century.",
-              "visual": "clip",
-              "query": "vintage computer lab",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Fifty years of code",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Now generative models and coding assistants mutate that rule entirely.",
-              "visual": "clip",
-              "query": "typing code on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Generative models change math",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The constraint shifts from human labor to agent orchestration.",
-              "visual": "clip",
-              "query": "person looking at laptop screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Agent orchestration constraint",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Engineering teams must manage autonomous systems instead of dozens of human developers.",
-              "visual": "clip",
-              "query": "modern tech office team",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Manage autonomous systems",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How will your organization adapt to this architectural shift?",
-              "visual": "clip",
-              "query": "tech startup workspace",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Adapt to architectural shift",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "thoughtful tech analysis, moving from historical context to the modern shift in software engineering",
-          "thin": false,
-          "caption": "Frederick Brooks wrote in The Mythical Man-Month that adding workers to late software projects only delays them further. Generative models and AI agents now mutate this foundational rule as orchestration replaces headcount. How does your engineering team handle this shift?",
-          "hashtags": [
-            "SoftwareEngineering",
-            "GenerativeAI",
-            "TechTrends",
-            "DeveloperTools"
-          ],
-          "sources": [
-            "https://j11g.com/the-mythical-man-month-in-the-age-of-ai"
-          ],
-          "script": "Frederick Brooks wrote in nineteen seventy five that adding workers to a late project makes it later.\nThat principle defined software development for half a century.\nNow generative models and coding assistants mutate that rule entirely.\nThe constraint shifts from human labor to agent orchestration.\nEngineering teams must manage autonomous systems instead of dozens of human developers.\nHow will your organization adapt to this architectural shift?",
-          "keywords": [
-            "vintage computer lab",
-            "typing code on screen",
-            "person looking at laptop screen",
-            "modern tech office team",
-            "tech startup workspace"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Frederick Brooks wrote in 1975 that adding workers to a late project makes it later.",
-              "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai"
-            },
-            {
-              "claim": "Frederick Brooks wrote The Mythical Man-Month.",
-              "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://j11g.com/the-mythical-man-month-in-the-age-of-ai"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-27T16:44:25.978941+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1564,10 +1477,54 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIrZGrgj4x3ffVfqN-hpy9Fjts1fj-TAAKjIQAC9gQIV1RukAwYYf3iPQQ",
       "history_title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Guidewire to buy UK insurance AI firm hyperexponential in deal worth up to $2.1 billion",
+            "link": "https://www.reuters.com/legal/litigation/guidewire-buy-uk-insurance-ai-firm-hyperexponential-deal-worth-up-21-billion-2026-10-27/",
+            "summary": "Guidewire to buy UK insurance AI firm hyperexponential in deal worth up to $2.1 billion Reuters",
+            "source": "Reuters",
+            "published": "2026-10-27T11:32:05+00:00",
+            "angle": ""
+          },
+          {
+            "title": "Fashion's AI era: face swaps and digital clones",
+            "link": "https://www.reuters.com/legal/litigation/fashions-ai-era-face-swaps-digital-clones-2026-10-27/",
+            "summary": "Fashion's AI era: face swaps and digital clones Reuters",
+            "source": "Reuters",
+            "published": "2026-10-27T11:23:58+00:00",
+            "angle": ""
+          },
+          {
+            "title": "Wikipedia's Cleanup of AI-Generated Content",
+            "link": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+            "summary": "",
+            "source": "spectrum.ieee.org",
+            "published": "2026-10-27T11:08:15+00:00",
+            "buzz": "Hacker News 13 points",
+            "angle": ""
+          }
+        ],
+        "choose_deadline": "2026-10-27T17:20:45.677598+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
-    "BAACAgUAAxkDAAIff2rXgKT9j9BHT-P129EQ4jvnuY3DAAIaJwACvW25VpHRekqC0bHCPQQ",
     "BAACAgUAAxkDAAIfnmrXyKSM7bM7dBwfpqGW7dE9cKWFAAJhIQACvW3BVsr3Kebbl5ZIPQQ",
     "BAACAgUAAxkDAAIfrmrX5bkfwDNH8Sm3tNoFW-I2p4RKAAJyIQACvW3BVhXENNOVh94OPQQ",
     "BAACAgUAAxkDAAIfwWrX_5r0-C1BSEq0UZdvH71w_7mCAAKZHwACIdHBVmjhYXijtf01PQQ",
@@ -1596,7 +1553,8 @@
     "BAACAgUAAxkDAAIoi2rd-CF00y51cUsGAoZC4V1m44R3AAK8MgACYBDxVjbbs_q0UbmzPQQ",
     "BAACAgUAAxkDAAIofGrd8zNkHMubdMReFmu5-hjZ7Oo4AALwIwACvKLxVpIf_mViFF6CPQQ",
     "BAACAgUAAxkDAAIosGreAgJpxUng24ko0NB7kx4wpCBDAALHMgACYBDxVgr9k-Hn8cDZPQQ",
-    "BAACAgUAAxkDAAIqNmrfL4rU0_s-wmHsymwYvKMoz1koAAIQMQACYBD5VhJhCElBE6I7PQQ"
+    "BAACAgUAAxkDAAIqNmrfL4rU0_s-wmHsymwYvKMoz1koAAIQMQACYBD5VhJhCElBE6I7PQQ",
+    "BAACAgUAAxkDAAIrZGrgj4x3ffVfqN-hpy9Fjts1fj-TAAKjIQAC9gQIV1RukAwYYf3iPQQ"
   ],
   "history": [
     "Top AI headlines · 2:10 PM today",
@@ -2100,7 +2058,7 @@
   "late_note_for": "2026-10-27-0",
   "gemini_use": {
     "day": "2026-10-27",
-    "calls": 165,
+    "calls": 211,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2129,8 +2087,8 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 69,
-        "busy": 23,
+        "ok": 103,
+        "busy": 35,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
@@ -2631,7 +2589,6 @@
   "rest_note": "2026-10-26T12:32:00+05:30",
   "fish_turn": 122,
   "ig_music_recent": [
-    "1115479393437512",
     "1282421579387489",
     "336323136077669",
     "881858343526459",
@@ -2645,7 +2602,7 @@
     "1679493397169813",
     "618903860889102",
     "979175924268133",
-    "1696569997584136"
-  ],
-  "behind_since": "2026-10-27T16:44:25.978941+05:30"
+    "1696569997584136",
+    "1127687701812816"
+  ]
 }
