@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -208,16 +208,60 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1048553357803824",
+      "title": "Star Ship",
+      "artist": "cloud cover"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Publishers raised major concerns over how the comp…: The shot is blank/black and missing the required source card.",
+      "Meta communications head Andy Stone announced the …: The shot is blank/empty except for text, missing the person photo or initials card.",
+      "This marks the second time the implementation date…: The shot is blank/black and missing the required big number 2nd graphic.",
+      "The image is blank and missing the required source card for The Verge.",
+      "The image is blank and missing the required photo or initials card of Andy Stone.",
+      "The image is blank and missing the required big number 2nd graphic."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong reporting on Meta's policy delay, but visual repetition and generic branding cards drag down the polish.",
+      "script_fixes": [
+        "LINE 2: Specify the major publishers raising concerns instead of a generic grouping",
+        "LINE 4: Include the exact date or timeframe mentioned for upcoming industry consultations"
+      ],
+      "visual_beats": [
+        0,
+        3,
+        5
+      ],
+      "visual_notes": [
+        "line 1: Meta logo red card graphic is repeated across multiple different lines in the video.",
+        "line 4: Visual switches to abstract typography instead of showing a relevant graphic for industry ",
+        "line 6: Holding the same opt-out graphic for multiple consecutive frames creates visual stagnation"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 official images, 4 AI images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAItpWriV2YllGqS6bpvfpF6NZEjVYDJAALGIQACApsRV0KUn8nSQUQ9PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-29T01:35:08.725503+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-29T02:13:27.203376+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-29",
@@ -686,227 +730,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-          "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-          "summary": "",
-          "source": "Hugging Face - Blog",
-          "published": "2026-10-28T14:58:17+00:00",
-          "angle": "Nvidia drops intelligent multilingual transcription tools you can prompt and adapt right now."
-        },
-        "draft": {
-          "title": "Nvidia Released Nemotron 3.5 Transcribe",
-          "hook_text": "Nvidia just dropped Nemotron 3.5 Transcribe.",
-          "beats": [
-            {
-              "line": "Nvidia just released Nemotron 3.5 Transcribe on Hugging Face.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Nemotron 3.5 Transcribe",
-              "outlet": "",
-              "domain": "huggingface.co",
-              "headline": "",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-              "tag": "Nvidia Nemotron 3.5 Transcribe",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "The open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Hugging Face - Blog",
-              "domain": "huggingface.co",
-              "headline": "NVIDIA Nemotron 3.5 Transcribe and Granary v2",
-              "url": "",
-              "tag": "Hugging Face Open ASR Leaderboard",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "It also ties for first among open weight models on Artificial Analysis.",
-              "visual": "clip",
-              "query": "data charts analytics screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Artificial Analysis top spot",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Alongside the model, Nvidia introduced Granary version two for speech training data curation.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Granary v2",
-              "outlet": "",
-              "domain": "huggingface.co",
-              "headline": "",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-              "tag": "Granary v2 speech training",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Granary version two provides advanced data curation pipelines to build better voice recognition datasets.",
-              "visual": "clip",
-              "query": "developer editing code audio",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data curation pipelines",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you deploy this transcription model?",
-              "visual": "clip",
-              "query": "person using laptop at desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Nemotron 3.5 deployment",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "crisp, tech-forward, and direct, highlighting open-weights AI releases for developers",
-          "thin": false,
-          "caption": "Nvidia released Nemotron 3.5 Transcribe and Granary v2 on Hugging Face for customizable multilingual speech recognition. Would you use open models for audio tasks?",
-          "hashtags": [
-            "Nvidia",
-            "Nemotron",
-            "HuggingFace",
-            "AI"
-          ],
-          "sources": [
-            "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-          ],
-          "script": "Nvidia just released Nemotron 3.5 Transcribe on Hugging Face.\nThe open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.\nIt also ties for first among open weight models on Artificial Analysis.\nAlongside the model, Nvidia introduced Granary version two for speech training data curation.\nGranary version two provides advanced data curation pipelines to build better voice recognition datasets.\nWould you deploy this transcription model?",
-          "keywords": [
-            "data charts analytics screen",
-            "developer editing code audio",
-            "person using laptop at desk"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Nvidia dropped Nemotron 3.5 Transcribe.",
-              "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
-            },
-            {
-              "claim": "Nvidia released Nemotron 3.5 Transcribe on Hugging Face.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-            },
-            {
-              "claim": "The open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-            },
-            {
-              "claim": "It also ties for first among open weight models on Artificial Analysis.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-            },
-            {
-              "claim": "Nvidia introduced Granary version two for speech training data curation.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-            },
-            {
-              "claim": "Granary version two provides advanced data curation pipelines to build better voice recognition datasets.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-28T22:19:11.364216+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1592,6 +1415,230 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Meta says it’ll probably delay its controversial new business terms again",
+          "link": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
+          "summary": "Meta says it may push the implementation of its new business terms past November 20th as it faces backlash from publishers over concerns about AI training. In a post on X, Meta communications head Andy Stone said the company does \"not plan to make policy changes without a full consultation with industry groups and leaders.\" […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-28T16:15:30+00:00",
+          "angle": "Meta caves and delays its controversial new business terms after publisher backlash"
+        },
+        "draft": {
+          "title": "Meta Delays Business Terms Again",
+          "hook_text": "Meta just delayed its AI terms.",
+          "beats": [
+            {
+              "line": "Meta is pushing its controversial new business terms past November twentieth after facing immense pressure.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Meta business terms",
+              "outlet": "",
+              "domain": "meta.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
+              "tag": "Meta business terms",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Publishers raised major concerns over how the company scrapes content for AI training.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Meta says it’ll probably delay its controversial new business terms again",
+              "url": "",
+              "tag": "AI training concerns",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Meta communications head Andy Stone announced the delay in a post on the platform X.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Andy Stone announcement",
+              "name": "Andy Stone",
+              "role": "Communications Head, Meta",
+              "x": "andystone",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Stone stated the firm does not plan to implement policy changes without full industry consultation.",
+              "visual": "clip",
+              "query": "corporate executives meeting",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Full industry consultation",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "This marks the second time the implementation date has been pushed back following earlier publisher backlash.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2nd",
+              "small": "Delay instance",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Second delay instance",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            },
+            {
+              "line": "Will publishers secure strict content opt outs before Meta finalizes these rules?",
+              "visual": "clip",
+              "query": "news publisher office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Publisher content opt outs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Meta",
+                  "domain": "meta.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "sharp and factual, highlighting the pressure Meta faces from publishers over AI training",
+          "thin": false,
+          "caption": "Meta delayed its new business terms past November twentieth following heavy pushback from publishers over AI training. Communications head Andy Stone stated policy changes require full industry consultations first. Will publishers secure strict content opt outs before Meta finalizes these rules?",
+          "hashtags": [
+            "Meta",
+            "AndyStone",
+            "AITraining",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+          ],
+          "script": "Meta is pushing its controversial new business terms past November twentieth after facing immense pressure.\nPublishers raised major concerns over how the company scrapes content for AI training.\nMeta communications head Andy Stone announced the delay in a post on the platform X.\nStone stated the firm does not plan to implement policy changes without full industry consultation.\nThis marks the second time the implementation date has been pushed back following earlier publisher backlash.\nWill publishers secure strict content opt outs before Meta finalizes these rules?",
+          "keywords": [
+            "corporate executives meeting",
+            "news publisher office"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Meta just delayed its AI terms.",
+              "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+            },
+            {
+              "claim": "Meta is pushing its controversial new business terms past November twentieth after facing immense pressure.",
+              "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+            },
+            {
+              "claim": "Publishers raised major concerns over how the company scrapes content for AI training.",
+              "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping"
+            },
+            {
+              "claim": "Andy Stone is the communications head at Meta.",
+              "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+            },
+            {
+              "claim": "Andy Stone announced the delay in a post on the platform X.",
+              "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+            },
+            {
+              "claim": "Stone stated the firm does not plan to implement policy changes without full industry consultation.",
+              "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+            },
+            {
+              "claim": "This marks the second time the implementation date has been pushed back following earlier publisher backlash.",
+              "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-29T01:35:08.725503+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2095,8 +2142,8 @@
       "event": "Nvidia just released Nemotron 3.5 Transcribe on Hugging Face. The open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition. It also ties for first among open weight models on Artificial Ana"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-28T23:00+05:30",
@@ -2124,7 +2171,7 @@
   "report_day": "2026-10-28",
   "ig_count": {
     "day": "2026-10-29",
-    "at": "2026-10-29T01:30:38.256732+05:30",
+    "at": "2026-10-29T01:43:27.203656+05:30",
     "count": 1
   },
   "repeat_check_day": "2026-10-04",
@@ -2148,12 +2195,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
-    "calls": 1,
+    "calls": 11,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 1,
+        "ok": 11,
         "busy": 0,
         "other": 0,
         "last": ""
@@ -2237,30 +2284,6 @@
     "gemini-3-flash-preview": 1793175515.9540641
   },
   "editor_log": [
-    {
-      "at": "2026-10-27T23:43+05:30",
-      "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 9,
-        "visuals": 5,
-        "flow": 8
-      },
-      "one_line": "Weak hook and repetitive, low-effort visuals fail to meet premium news standards.",
-      "fixes": [
-        "LINE 1: Replace with a punchier hook like 'Firefox is turning your browser into a personal assistant.'",
-        "LINE 5: Remove this line; it is vague commentary that adds no new information.",
-        "LINE 6: Be more specific about the privacy implications or the 'Smart Window' mechanism."
-      ],
-      "visual": [
-        "line 1: The same Firefox logo is held for too long across multiple frames.",
-        "line 4: Using The Verge logo as a visual for a Mozilla feature is confusing and misleading.",
-        "line 6: The Firefox logo is repeated again, creating visual fatigue."
-      ]
-    },
     {
       "at": "2026-10-27T23:56+05:30",
       "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
@@ -2674,10 +2697,33 @@
         "line 3: Frames 6 and 7 show G2 'Leader' badges completely unrelated to PHP bugs.",
         "line 4: Frame 10 shows a G2 award badge instead of offline websites or servers."
       ]
+    },
+    {
+      "at": "2026-10-29T01:43+05:30",
+      "title": "Meta says it’ll probably delay its controversial new business terms again",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong reporting on Meta's policy delay, but visual repetition and generic branding cards drag down the polish.",
+      "fixes": [
+        "LINE 2: Specify the major publishers raising concerns instead of a generic grouping",
+        "LINE 4: Include the exact date or timeframe mentioned for upcoming industry consultations"
+      ],
+      "visual": [
+        "line 1: Meta logo red card graphic is repeated across multiple different lines in the video.",
+        "line 4: Visual switches to abstract typography instead of showing a relevant graphic for industry ",
+        "line 6: Holding the same opt-out graphic for multiple consecutive frames creates visual stagnation"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 149,
+  "fish_turn": 150,
   "ig_music_recent": [
     "1492215775872550",
     "522339937196006",
