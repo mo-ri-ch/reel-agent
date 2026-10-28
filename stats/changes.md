@@ -210,3 +210,9 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 38 reels (27), median reach 106 (68), views 114 (71), watch 4.6 s (4.5), shares 1 (2), followers 8->11.
 - Top: Amazon TorchNeuron 4.1x median; launches by big names lead. US-night slots outperform India daytime.
 - Changes today: photo reuse back to 2; news-site logos blocked; skip stories without a picture; switch story when visuals <= 4. Metric: reels/day (baseline 24 Oct: 5, 25 Oct: quota ran low), watch time 4.6 s.
+
+## 2026-10-28: daily check
+- 1 failed run (10:10 IST, one-off; later runs fine). 27 Oct: 1 of 6 posted; 28 Oct: 00:30 and 03:30 posted, 06:30/11:30 missed
+  (all free Gemini models used up 04:40 until ~12:30 IST). Editor passed 3 of 20 since 27 Oct 17:00; visuals lowest in 13 of 17
+  rejects. Repeated complaint (7 of 20): a news outlet's logo/page (TechCrunch, The Verge) on lines not about the outlet.
+  No code change; asked the owner again about the 22 Oct "unrelated picture" rubric line.
