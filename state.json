@@ -4,30 +4,30 @@
   "candidates": [],
   "choose_deadline": null,
   "topic": {
-    "title": "Voice AI in vogue: Nvidia releases new open transcription model",
-    "link": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-    "summary": "Nvidia just released a free speech-to-text model that can transcribe up to 40 languages, but it only works on recordings, not live audio, so it’s a big step for meeting and medical transcription tools while still leaving real-time use to rivals like ElevenLabs.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-10-28T15:00:00+00:00",
-    "angle": "Nvidia just dropped a free speech-to-text model for 40 languages—huge for anyone who records meetings or does medical transcription."
+    "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+    "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+    "summary": "",
+    "source": "Hugging Face - Blog",
+    "published": "2026-10-28T14:58:17+00:00",
+    "angle": "Nvidia drops intelligent multilingual transcription tools you can prompt and adapt right now."
   },
   "draft": {
-    "title": "Nvidia releases open transcription model",
-    "hook_text": "Nvidia just dropped a new transcription model.",
+    "title": "Nvidia Released Nemotron 3.5 Transcribe",
+    "hook_text": "Nvidia just dropped Nemotron 3.5 Transcribe.",
     "beats": [
       {
-        "line": "Nvidia just released a free open speech-to-text model that handles forty languages.",
+        "line": "Nvidia just released Nemotron 3.5 Transcribe on Hugging Face.",
         "visual": "official",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Nvidia transcription model",
+        "entity": "Nvidia Nemotron 3.5 Transcribe",
         "outlet": "",
-        "domain": "nvidia.com",
+        "domain": "huggingface.co",
         "headline": "",
-        "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-        "tag": "Nvidia forty language model",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "tag": "Nvidia Nemotron 3.5 Transcribe",
         "name": "",
         "role": "",
         "x": "",
@@ -39,109 +39,172 @@
         ]
       },
       {
-        "line": "The software is built specifically to process recordings instead of managing live streams.",
-        "visual": "clip",
-        "query": "person listening to audio recording",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Processed audio only",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "That specific design choice leaves real-time tasks open to competitors like ElevenLabs.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "ElevenLabs",
-        "outlet": "",
-        "domain": "elevenlabs.io",
-        "headline": "",
-        "url": "https://elevenlabs.io",
-        "tag": "Left to ElevenLabs",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "ElevenLabs",
-            "domain": "elevenlabs.io"
-          }
-        ]
-      },
-      {
-        "line": "Engineers designed the tool to power medical documentation and meeting transcription software.",
-        "visual": "clip",
-        "query": "doctor typing medical notes",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Medical and meeting tools",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you trust it to accurately write your doctor notes?",
+        "line": "The open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "TechCrunch",
-        "domain": "techcrunch.com",
-        "headline": "Voice AI in vogue: Nvidia releases new open transcription model",
+        "outlet": "Hugging Face - Blog",
+        "domain": "huggingface.co",
+        "headline": "NVIDIA Nemotron 3.5 Transcribe and Granary v2",
         "url": "",
-        "tag": "Trust for doctor notes",
+        "tag": "Hugging Face Open ASR Leaderboard",
         "name": "",
         "role": "",
         "x": "",
-        "brands": []
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "It also ties for first among open weight models on Artificial Analysis.",
+        "visual": "clip",
+        "query": "data charts analytics screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Artificial Analysis top spot",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Alongside the model, Nvidia introduced Granary version two for speech training data curation.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Nvidia Granary v2",
+        "outlet": "",
+        "domain": "huggingface.co",
+        "headline": "",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "tag": "Granary v2 speech training",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Granary version two provides advanced data curation pipelines to build better voice recognition datasets.",
+        "visual": "clip",
+        "query": "developer editing code audio",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Data curation pipelines",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
+      },
+      {
+        "line": "Would you deploy this transcription model?",
+        "visual": "clip",
+        "query": "person using laptop at desk",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Nemotron 3.5 deployment",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Nvidia",
+            "domain": "nvidia.com"
+          }
+        ]
       }
     ],
-    "delivery": "sharp and direct, highlighting the trade-offs of the new tool with a questioning finish",
+    "delivery": "crisp, tech-forward, and direct, highlighting open-weights AI releases for developers",
     "thin": false,
-    "caption": "Nvidia released a free open speech-to-text model supporting forty languages for recorded audio. The tool targets medical and meeting transcription while leaving real-time tasks to competitors. Would you use this for your work?",
+    "caption": "Nvidia released Nemotron 3.5 Transcribe and Granary v2 on Hugging Face for customizable multilingual speech recognition. Would you use open models for audio tasks?",
     "hashtags": [
       "Nvidia",
-      "VoiceAI",
-      "TechNews",
-      "ArtificialIntelligence"
+      "Nemotron",
+      "HuggingFace",
+      "AI"
     ],
     "sources": [
-      "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+      "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
     ],
-    "script": "Nvidia just released a free open speech-to-text model that handles forty languages.\nThe software is built specifically to process recordings instead of managing live streams.\nThat specific design choice leaves real-time tasks open to competitors like ElevenLabs.\nEngineers designed the tool to power medical documentation and meeting transcription software.\nWould you trust it to accurately write your doctor notes?",
+    "script": "Nvidia just released Nemotron 3.5 Transcribe on Hugging Face.\nThe open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.\nIt also ties for first among open weight models on Artificial Analysis.\nAlongside the model, Nvidia introduced Granary version two for speech training data curation.\nGranary version two provides advanced data curation pipelines to build better voice recognition datasets.\nWould you deploy this transcription model?",
     "keywords": [
-      "person listening to audio recording",
-      "doctor typing medical notes"
+      "data charts analytics screen",
+      "developer editing code audio",
+      "person using laptop at desk"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
-    "fact_status": "skipped",
-    "fact_notes": [
-      "the fact check couldn't run (Gemini unavailable)"
+    "evidence": [
+      {
+        "claim": "Nvidia dropped Nemotron 3.5 Transcribe.",
+        "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+      },
+      {
+        "claim": "Nvidia released Nemotron 3.5 Transcribe on Hugging Face.",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+      },
+      {
+        "claim": "The open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+      },
+      {
+        "claim": "It also ties for first among open weight models on Artificial Analysis.",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+      },
+      {
+        "claim": "Nvidia introduced Granary version two for speech training data curation.",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+      },
+      {
+        "claim": "Granary version two provides advanced data curation pipelines to build better voice recognition datasets.",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+      }
     ],
-    "fix_rounds": 0,
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
     "source_links": [
-      "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+      "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
     ]
   },
   "voice_file_id": null,
@@ -203,7 +266,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-28T21:43:36.731168+05:30",
+  "script_deadline": "2026-10-28T22:19:11.364216+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -613,12 +676,25 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "Akamai Launches AI Inference and Agent Sandbox Services",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQnh1OFF2X2E0c1N0ZEtfWVdaVjZCdXZtWUhGMWtrQWZUUGl4dFZYOFpoZnhLQlE5ZktBVkh3MHhrcHpNanUwVlp0MWFzUzR0cXJuMXFMdzF2clhwU25rYnhVNERsLXZ1NGJtUUtKd0MwQkY5Rl9ITHkwbWcxR2VuR3NONURRbFR3M0tRZXB4WWZzQ0tXa2JMXw?oc=5",
+      "summary": "Akamai Launches AI Inference and Agent Sandbox Services Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-28T09:51:21+00:00",
+      "angle": "Akamai launches new AI inference and agent sandbox services for developers."
+    },
+    {
+      "title": "L&T’s Vyoma.AI Breaks Ground on 52 MW Data Centre in Chennai",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa1ZlMUZKa3pXa2RaZ3N6X2Uwb1o0R1ZIZjB0RnduVDBEaG9nWHR1ZkpQbTVsdzhIRFNocXk5emRZbGs3ams1cFFMZ1RlREVOVjlfcmdzOG45U1V6WVJ5RHRwTVJOM3hpRWtfZ2h4WHpWZHNON0N0N3Q5QkNGX0t0OXRnMHNyMnQtREV4Ujl4MmFGeVRibVBBZTBHcw?oc=5",
+      "summary": "L&T’s Vyoma.AI Breaks Ground on 52 MW Data Centre in Chennai Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-28T08:22:39+00:00",
+      "angle": "L&T’s Vyoma.AI breaks ground on a massive 52 MW data centre in Chennai to power the AI boom."
+    }
+  ],
   "tried": [
-    "Japan internet giant GMO says hackers posted stolen customer data",
-    "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
-    "Here Be Monsters: What Do You Still Need to Know When Agents Do the Work?",
-    "The challenges of artificial intelligence in education shaped UNESCO’s participation in the 14th País Digital Summit",
     "The challenges of artificial intelligence in education shaped UNESCO’s participation in the 14th País Digital Summit",
     "Anthropic IPO: Here are some of the key people of Indian origin behind the AI giant",
     "Chai Point Cuts Monthly AWS Bill by 58%",
@@ -674,9 +750,12 @@
     "Agentic AI can cut banks' transaction monitoring workload by up to 50%",
     "Kentucky man becomes the first humanist granted religious exemption from AI",
     "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
-    "Opera introduces a new web standard to let users deploy AI locally in their browser"
+    "Opera introduces a new web standard to let users deploy AI locally in their browser",
+    "GitHub Expands Infra With 4 Mn Cores, Debuts Copilot Fusion for Multi-Model Routing",
+    "Synthflow Launches Vector, a Long-Horizon AI Agent for Lenders That Doesn’t Stop When the Call Ends",
+    "Live2.ai Secures ₹130 Cr Funding for Expansion",
+    "Voice AI in vogue: Nvidia releases new open transcription model"
   ],
-  "next_video_id": null,
   "undo_stack": [
     {
       "label": "autopilot picking story #1",
@@ -1922,7 +2001,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-28",
-    "calls": 349,
+    "calls": 366,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1951,8 +2030,8 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 124,
-        "busy": 43,
+        "ok": 137,
+        "busy": 47,
         "other": 7,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
