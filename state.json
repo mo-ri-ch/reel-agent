@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -211,16 +211,57 @@
     "fact_notes": [],
     "source_links": [
       "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-    ]
+    ],
+    "ig_audio": {
+      "id": "4724608451159342",
+      "title": "Sunny Days",
+      "artist": "Giulio Cercato"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "OpenAI Codex will help corporate software develope…: The visual is blank/missing, showing only the background gradient instead of the required developer stock video.",
+      "The collaboration links OpenAI models directly wit…: The visual is blank/missing, showing only the background gradient instead of the required Oracle Database images.",
+      "Analytics India Magazine detailed how this integra…: The visual is nearly empty and blank, only showing a faint 'Analytics' text label instead of a proper source card.",
+      "Would your engineering team migrate core database …: The visual is completely blank and empty, missing the required Oracle Cloud images.",
+      "missing image/visual, shows only plain background card",
+      "missing image/visual, shows only plain background card with text",
+      "missing image/visual, source card is almost empty and unreadable",
+      "missing image/visual, shows only plain background card with text instead of Oracle Cloud images"
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong enterprise news, but visual repetition across early frames hurts pacing.",
+      "script_fixes": [],
+      "visual_beats": [
+        1
+      ],
+      "visual_notes": [
+        "line 2: Reuses the same Oracle building image from line 1 for too many frames."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Oracle OpenAI Partnership: analyticsindiamag.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 2 AI images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIs72rhwNyVoxNpxPm8crOQcrLKKnXPAAIXJQAC9gQQV3gYfPqxyj93PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-28T14:50:54.146974+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-28T15:31:09.230669+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-28",
@@ -720,206 +761,6 @@
           "hook_text": "Nova Spectral AI secures ₹21.2 Cr",
           "beats": [
             {
-              "line": "Nova Spectral AI just raised twenty-one point two crore rupees for indigenous infrared sensor chips.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "₹21.2 Cr",
-              "small": "Seed funding round",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "₹21.2 Cr raised",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nova Spectral AI",
-                  "domain": "novaspectral.com"
-                }
-              ]
-            },
-            {
-              "line": "Shastra VC led this seed round to help build specialized sensor hardware in India.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://shastravc.com",
-              "tag": "Shastra VC lead",
-              "name": "Shastra VC",
-              "role": "Lead Investor",
-              "x": "ShastraVC",
-              "brands": []
-            },
-            {
-              "line": "The Bengaluru startup is now scaling its research and local manufacturing capabilities.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Bengaluru",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Based in Bengaluru",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Founders Anish Priyadarshi and Sanjeev Kumar are tackling critical gaps in semiconductor supply chains.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://novaspectral.com",
-              "tag": "Founders leading",
-              "name": "Anish Priyadarshi",
-              "role": "Co-founder, Nova Spectral AI",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nova Spectral AI",
-                  "domain": "novaspectral.com"
-                }
-              ]
-            },
-            {
-              "line": "These infrared sensors are essential for defense and various industrial monitoring applications.",
-              "visual": "clip",
-              "query": "infrared sensor technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Critical applications",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you rely on domestically produced hardware for your high-tech gear?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Inc42 Media",
-              "domain": "inc42.com",
-              "headline": "Nova Spectral AI Raises ₹21.2 Cr",
-              "url": "",
-              "tag": "Local hardware preference",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Confident and sharp, emphasizing the importance of indigenous hardware manufacturing.",
-          "thin": false,
-          "caption": "Nova Spectral AI has raised ₹21.2 Cr in a seed round led by Shastra VC. Founders Anish Priyadarshi and Sanjeev Kumar are scaling production of indigenous infrared sensor chips in Bengaluru. Would you rely on domestically produced hardware for your high-tech gear?",
-          "hashtags": [
-            "NovaSpectralAI",
-            "DeepTech",
-            "Semiconductor",
-            "ShastraVC",
-            "MakeInIndia"
-          ],
-          "sources": [
-            "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-          ],
-          "script": "Nova Spectral AI just raised twenty-one point two crore rupees for indigenous infrared sensor chips.\nShastra VC led this seed round to help build specialized sensor hardware in India.\nThe Bengaluru startup is now scaling its research and local manufacturing capabilities.\nFounders Anish Priyadarshi and Sanjeev Kumar are tackling critical gaps in semiconductor supply chains.\nThese infrared sensors are essential for defense and various industrial monitoring applications.\nWould you rely on domestically produced hardware for your high-tech gear?",
-          "keywords": [
-            "infrared sensor technology"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Nova Spectral AI secures ₹21.2 Cr",
-              "url": "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-            },
-            {
-              "claim": "Nova Spectral AI raised twenty-one point two crore rupees for indigenous infrared sensor chips.",
-              "url": "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-            },
-            {
-              "claim": "Shastra VC led this seed round to help build specialized sensor hardware in India.",
-              "url": "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-            },
-            {
-              "claim": "The Bengaluru startup is now scaling its research and local manufacturing capabilities.",
-              "url": "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-            },
-            {
-              "claim": "Founders Anish Priyadarshi and Sanjeev Kumar are tackling critical gaps in semiconductor supply chains.",
-              "url": "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-            },
-            {
-              "claim": "These infrared sensors are essential for defense and various industrial monitoring applications.",
-              "url": "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-28T03:43:00.217575+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Nova Spectral AI Raises ₹21.2 Cr To Build Indigenous Infrared Sensor Chips",
-          "link": "https://inc42.com/buzz/nova-spectral-ai-raises-%e2%82%b921-2-cr-to-build-indigenous-infrared-sensor-chips/",
-          "summary": "Bengaluru-based Nova Spectral AI has raised ₹21.2 Cr ($2.3 Mn) in a seed funding round led by Shastra VC, with…",
-          "source": "Inc42 Media",
-          "published": "2026-10-27T14:35:33+00:00",
-          "angle": "Bengaluru-based Nova Spectral AI raises ₹21.2 Cr ($2.3M) to build indigenous infrared sensor chips."
-        },
-        "draft": {
-          "title": "Nova Spectral AI Raises ₹21.2 Cr",
-          "hook_text": "Nova Spectral AI secures ₹21.2 Cr",
-          "beats": [
-            {
               "line": "Nova Spectral AI just raised ₹21.2 Cr to manufacture infrared sensor chips in India.",
               "visual": "stat",
               "query": "technology",
@@ -1237,6 +1078,233 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Oracle Partners With OpenAI to Bring ChatGPT and Codex to Enterprise Workflows",
+          "link": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
+          "summary": "Oracle Partners With OpenAI to Bring ChatGPT and Codex to Enterprise Workflows Analytics India Magazine",
+          "source": "Analytics India Magazine",
+          "published": "2026-10-28T03:36:01+00:00",
+          "angle": "Oracle partners with OpenAI to bring ChatGPT and Codex directly into enterprise workflows."
+        },
+        "draft": {
+          "title": "Oracle Partners With OpenAI for Enterprise",
+          "hook_text": "Oracle just teamed up with OpenAI.",
+          "beats": [
+            {
+              "line": "Oracle just partnered with OpenAI to bring ChatGPT and Codex to enterprise workflows.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Oracle OpenAI Partnership",
+              "outlet": "",
+              "domain": "oracle.com",
+              "headline": "",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
+              "tag": "Oracle OpenAI partnership",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Oracle",
+                  "domain": "oracle.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Businesses can now run ChatGPT inside Oracle Cloud Infrastructure for heavy operational workloads.",
+              "visual": "clip",
+              "query": "cloud server rack data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Oracle Cloud Infrastructure",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Oracle",
+                  "domain": "oracle.com"
+                }
+              ]
+            },
+            {
+              "line": "OpenAI Codex will help corporate software developers write and debug code at scale.",
+              "visual": "clip",
+              "query": "developer writing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Codex code generation",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "The collaboration links OpenAI models directly with Oracle database infrastructure.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Oracle Database",
+              "outlet": "",
+              "domain": "oracle.com",
+              "headline": "",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
+              "tag": "Oracle database power",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Oracle",
+                  "domain": "oracle.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Analytics India Magazine detailed how this integration expands enterprise AI adoption globally.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Analytics India Magazine",
+              "domain": "analyticsindiamag.com",
+              "headline": "Oracle Partners With OpenAI to Bring ChatGPT and Codex",
+              "url": "",
+              "tag": "Analytics India Magazine",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would your engineering team migrate core database workflows to OpenAI tools?",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Oracle Cloud",
+              "outlet": "",
+              "domain": "oracle.com",
+              "headline": "",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
+              "tag": "Enterprise workflow migration",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Oracle",
+                  "domain": "oracle.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "sharp and informative, explaining business tech shifts with professional curiosity",
+          "thin": false,
+          "caption": "Oracle partners with OpenAI to bring ChatGPT and Codex into enterprise workflows. Businesses can now use advanced AI tools securely within cloud infrastructure. Would your engineering team migrate core database workflows to OpenAI tools?",
+          "hashtags": [
+            "Oracle",
+            "OpenAI",
+            "ChatGPT",
+            "Codex",
+            "EnterpriseAI"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+          ],
+          "script": "Oracle just partnered with OpenAI to bring ChatGPT and Codex to enterprise workflows.\nBusinesses can now run ChatGPT inside Oracle Cloud Infrastructure for heavy operational workloads.\nOpenAI Codex will help corporate software developers write and debug code at scale.\nThe collaboration links OpenAI models directly with Oracle database infrastructure.\nAnalytics India Magazine detailed how this integration expands enterprise AI adoption globally.\nWould your engineering team migrate core database workflows to OpenAI tools?",
+          "keywords": [
+            "cloud server rack data center",
+            "developer writing code"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Oracle teamed up with OpenAI.",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+            },
+            {
+              "claim": "Oracle partnered with OpenAI to bring ChatGPT and Codex to enterprise workflows.",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+            },
+            {
+              "claim": "Businesses can now run ChatGPT inside Oracle Cloud Infrastructure for heavy operational workloads.",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+            },
+            {
+              "claim": "OpenAI Codex will help corporate software developers write and debug code at scale.",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+            },
+            {
+              "claim": "The collaboration links OpenAI models directly with Oracle database infrastructure.",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+            },
+            {
+              "claim": "Analytics India Magazine detailed how this integration expands enterprise AI adoption globally.",
+              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-28T14:50:54.146974+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1733,8 +1801,8 @@
       "event": "Disruptive just closed a ten billion dollar fund for its next series of bets. The firm plans to back at least ten companies with this massive pool of capital. Disruptive previously invested heavily in the AI chip startup Groq. They also pou"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-28T13:49+05:30",
@@ -1762,7 +1830,7 @@
   "report_day": "2026-10-27",
   "ig_count": {
     "day": "2026-10-28",
-    "at": "2026-10-28T14:45:28.931717+05:30",
+    "at": "2026-10-28T15:01:09.230936+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -1782,11 +1850,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-28",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-28",
-    "calls": 225,
+    "calls": 234,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1815,7 +1883,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 37,
+        "ok": 46,
         "busy": 14,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -1905,27 +1973,6 @@
     "gemini-3-flash-preview": 1793175515.9540641
   },
   "editor_log": [
-    {
-      "at": "2026-10-27T17:04+05:30",
-      "title": "OpenAI announces three big science discoveries and a new way to work with academ",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong reporting ruined by broken, disconnected generic stock laboratory imagery.",
-      "fixes": [
-        "LINE 4: specify the fields or names of academic institutions involved if available"
-      ],
-      "visual": [
-        "line 4: Generic stock scientists in lab coats examining a clipboard do not match automated problem",
-        "line 5: Displays The Verge logo instead of OpenAI or an academic symbol during a question about AI"
-      ]
-    },
     {
       "at": "2026-10-27T17:16+05:30",
       "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
@@ -2348,10 +2395,28 @@
         "line 2: Visuals are static and repetitive; no imagery of sensor hardware or semiconductor chips.",
         "line 5: Reusing the same coin/graph stock image from the start is unacceptable for a news reel."
       ]
+    },
+    {
+      "at": "2026-10-28T15:00+05:30",
+      "title": "Oracle Partners With OpenAI to Bring ChatGPT and Codex to Enterprise Workflows",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong enterprise news, but visual repetition across early frames hurts pacing.",
+      "fixes": [],
+      "visual": [
+        "line 2: Reuses the same Oracle building image from line 1 for too many frames."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 140,
+  "fish_turn": 141,
   "ig_music_recent": [
     "881858343526459",
     "1131364661185460",
