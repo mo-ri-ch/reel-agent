@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -208,16 +208,62 @@
     "fix_rounds": 1,
     "source_links": [
       "https://inc42.com/buzz/cognizant-in-talks-to-invest-in-sarvam-at-3-5-bn-to-4-bn-valuation-report/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1681984019700492",
+      "title": "Feeling Good",
+      "artist": "Neon Avenue"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The Nasdaq-listed IT services company wants a piec…: The visual is an abstract gradient pattern instead of a corporate office meeting boardroom.",
+      "Would you back enterprise AI built for local langu…: The visual only shows text saying 'Enterprise' instead of a stock video of a person using a smartphone app.",
+      "almost-empty card with tiny text on a big blank square",
+      "almost-empty card with cut-off text on a big blank square"
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 9,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong financial details and hook, but visuals rely heavily on generic abstract stock graphics.",
+      "script_fixes": [
+        "LINE 2: Replace 'Cognizant Technology Solutions is in talks to join this new funding round' with 'Cognizant is negotiating to lead Sarvam's latest investment.'"
+      ],
+      "visual_beats": [
+        1,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 2: Uses generic abstract blue tech lines instead of Cognizant's actual corporate branding or ",
+        "line 5: Abstract blue cube graphics do not visually represent foundational AI models for Indian la",
+        "line 6: Reuses generic abstract fiber optic particle graphic instead of a contextual closing image"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Cognizant: cognizant.com",
+      "Cognizant: cognizant.com",
+      "news photo: cognizant.com",
+      "news photo: cognizant.com"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "4 official images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAItFmrh4CLlsLyN3o1I1ld5ekLVwDaoAAJ_JQAC9gQQVzjnu2maFD59PQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-28T17:06:19.312187+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-28T17:44:35.162646+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-28",
@@ -706,233 +752,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Oracle Partners With OpenAI to Bring ChatGPT and Codex to Enterprise Workflows",
-          "link": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
-          "summary": "Oracle Partners With OpenAI to Bring ChatGPT and Codex to Enterprise Workflows Analytics India Magazine",
-          "source": "Analytics India Magazine",
-          "published": "2026-10-28T03:36:01+00:00",
-          "angle": "Oracle partners with OpenAI to bring ChatGPT and Codex directly into enterprise workflows."
-        },
-        "draft": {
-          "title": "Oracle Partners With OpenAI for Enterprise",
-          "hook_text": "Oracle just teamed up with OpenAI.",
-          "beats": [
-            {
-              "line": "Oracle just partnered with OpenAI to bring ChatGPT and Codex to enterprise workflows.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Oracle OpenAI Partnership",
-              "outlet": "",
-              "domain": "oracle.com",
-              "headline": "",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
-              "tag": "Oracle OpenAI partnership",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Oracle",
-                  "domain": "oracle.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Businesses can now run ChatGPT inside Oracle Cloud Infrastructure for heavy operational workloads.",
-              "visual": "clip",
-              "query": "cloud server rack data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Oracle Cloud Infrastructure",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Oracle",
-                  "domain": "oracle.com"
-                }
-              ]
-            },
-            {
-              "line": "OpenAI Codex will help corporate software developers write and debug code at scale.",
-              "visual": "clip",
-              "query": "developer writing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Codex code generation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "The collaboration links OpenAI models directly with Oracle database infrastructure.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Oracle Database",
-              "outlet": "",
-              "domain": "oracle.com",
-              "headline": "",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
-              "tag": "Oracle database power",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Oracle",
-                  "domain": "oracle.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Analytics India Magazine detailed how this integration expands enterprise AI adoption globally.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Analytics India Magazine",
-              "domain": "analyticsindiamag.com",
-              "headline": "Oracle Partners With OpenAI to Bring ChatGPT and Codex",
-              "url": "",
-              "tag": "Analytics India Magazine",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would your engineering team migrate core database workflows to OpenAI tools?",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Oracle Cloud",
-              "outlet": "",
-              "domain": "oracle.com",
-              "headline": "",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows",
-              "tag": "Enterprise workflow migration",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Oracle",
-                  "domain": "oracle.com"
-                },
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "sharp and informative, explaining business tech shifts with professional curiosity",
-          "thin": false,
-          "caption": "Oracle partners with OpenAI to bring ChatGPT and Codex into enterprise workflows. Businesses can now use advanced AI tools securely within cloud infrastructure. Would your engineering team migrate core database workflows to OpenAI tools?",
-          "hashtags": [
-            "Oracle",
-            "OpenAI",
-            "ChatGPT",
-            "Codex",
-            "EnterpriseAI"
-          ],
-          "sources": [
-            "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-          ],
-          "script": "Oracle just partnered with OpenAI to bring ChatGPT and Codex to enterprise workflows.\nBusinesses can now run ChatGPT inside Oracle Cloud Infrastructure for heavy operational workloads.\nOpenAI Codex will help corporate software developers write and debug code at scale.\nThe collaboration links OpenAI models directly with Oracle database infrastructure.\nAnalytics India Magazine detailed how this integration expands enterprise AI adoption globally.\nWould your engineering team migrate core database workflows to OpenAI tools?",
-          "keywords": [
-            "cloud server rack data center",
-            "developer writing code"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Oracle teamed up with OpenAI.",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-            },
-            {
-              "claim": "Oracle partnered with OpenAI to bring ChatGPT and Codex to enterprise workflows.",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-            },
-            {
-              "claim": "Businesses can now run ChatGPT inside Oracle Cloud Infrastructure for heavy operational workloads.",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-            },
-            {
-              "claim": "OpenAI Codex will help corporate software developers write and debug code at scale.",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-            },
-            {
-              "claim": "The collaboration links OpenAI models directly with Oracle database infrastructure.",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-            },
-            {
-              "claim": "Analytics India Magazine detailed how this integration expands enterprise AI adoption globally.",
-              "url": "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://analyticsindiamag.com/ai-news/oracle-partners-with-openai-to-bring-chatgpt-and-codex-to-enterprise-workflows"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-28T14:50:54.146974+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1736,6 +1555,230 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Cognizant In Talks To Invest In Sarvam At $3.5 Bn To $4 Bn Valuation: Report",
+          "link": "https://inc42.com/buzz/cognizant-in-talks-to-invest-in-sarvam-at-3-5-bn-to-4-bn-valuation-report/",
+          "summary": "AI unicorn Sarvam AI is reportedly in talks to raise funds from Nasdaq-listed IT services company Cognizant Technology Solutions as…",
+          "source": "Inc42 Media",
+          "published": "2026-10-28T09:50:02+00:00",
+          "angle": "Cognizant in talks to invest in Indian AI unicorn Sarvam at a massive $3.5B to $4B valuation"
+        },
+        "draft": {
+          "title": "Cognizant Eyeing Sarvam At $4 Billion",
+          "hook_text": "Four billion dollar AI valuation",
+          "beats": [
+            {
+              "line": "Four billion dollars. That is the target valuation for Sarvam AI.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$4 Billion",
+              "small": "Sarvam AI valuation",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "$4 Billion target valuation",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Sarvam AI",
+                  "domain": "sarvam.ai"
+                }
+              ]
+            },
+            {
+              "line": "Cognizant Technology Solutions is in talks to join this new funding round.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Cognizant",
+              "outlet": "",
+              "domain": "cognizant.com",
+              "headline": "",
+              "url": "https://www.cognizant.com",
+              "tag": "Cognizant in funding talks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Cognizant",
+                  "domain": "cognizant.com"
+                },
+                {
+                  "name": "Sarvam AI",
+                  "domain": "sarvam.ai"
+                }
+              ]
+            },
+            {
+              "line": "The Nasdaq-listed IT services company wants a piece of the Indian AI unicorn.",
+              "visual": "clip",
+              "query": "corporate office meeting boardroom",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Nasdaq-listed IT company",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Cognizant",
+                  "domain": "cognizant.com"
+                }
+              ]
+            },
+            {
+              "line": "Negotiations place the valuation between three point five and four billion dollars.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$3.5B+",
+              "small": "Sarvam AI valuation range",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "$3.5 Billion to $4 Billion range",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Sarvam AI",
+                  "domain": "sarvam.ai"
+                }
+              ]
+            },
+            {
+              "line": "Sarvam AI develops foundational models focused on Indian languages and enterprise use.",
+              "visual": "clip",
+              "query": "software developer typing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Foundational models for India",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Sarvam AI",
+                  "domain": "sarvam.ai"
+                }
+              ]
+            },
+            {
+              "line": "Would you back enterprise AI built for local languages?",
+              "visual": "clip",
+              "query": "person using smartphone app",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Enterprise AI for local languages",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp tech journalist tone, fast and factual",
+          "thin": false,
+          "caption": "Cognizant Technology Solutions is in talks to invest in Sarvam AI at a valuation up to four billion dollars. The discussions highlight major interest in the Indian AI unicorn. Would you trust enterprise AI built for local languages?",
+          "hashtags": [
+            "Cognizant",
+            "SarvamAI",
+            "StartupNews",
+            "TechInvestments"
+          ],
+          "sources": [
+            "https://inc42.com/buzz/cognizant-in-talks-to-invest-in-sarvam-at-3-5-bn-to-4-bn-valuation-report/"
+          ],
+          "script": "Four billion dollars. That is the target valuation for Sarvam AI.\nCognizant Technology Solutions is in talks to join this new funding round.\nThe Nasdaq-listed IT services company wants a piece of the Indian AI unicorn.\nNegotiations place the valuation between three point five and four billion dollars.\nSarvam AI develops foundational models focused on Indian languages and enterprise use.\nWould you back enterprise AI built for local languages?",
+          "keywords": [
+            "corporate office meeting boardroom",
+            "software developer typing code",
+            "person using smartphone app"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Sarvam AI has a four billion dollar AI valuation target or discussion range",
+              "url": "https://cio.eletsonline.com/artificial-intelligence/cognizant-talks-invest-sarvam-ai-3-5-4-billion-valuation-sovereign-ai/76475/"
+            },
+            {
+              "claim": "Sarvam AI's target valuation includes four billion dollars",
+              "url": "https://www.wocult.com/news/cognizant-sarvam-ai-investment-talks-4-billion-valuation"
+            },
+            {
+              "claim": "Cognizant Technology Solutions is in talks to join this new funding round",
+              "url": "https://cio.eletsonline.com/artificial-intelligence/cognizant-talks-invest-sarvam-ai-3-5-4-billion-valuation-sovereign-ai/76475/"
+            },
+            {
+              "claim": "Cognizant is a Nasdaq-listed IT services company",
+              "url": "https://inc42.com/buzz/cognizant-in-talks-to-invest-in-sarvam-at-3-5-bn-to-4-bn-valuation-report/"
+            },
+            {
+              "claim": "Sarvam AI is an Indian AI unicorn",
+              "url": "https://inc42.com/buzz/cognizant-in-talks-to-invest-in-sarvam-at-3-5-bn-to-4-bn-valuation-report/"
+            },
+            {
+              "claim": "Negotiations place the valuation between 3.5 and 4 billion dollars",
+              "url": "https://www.wocult.com/news/cognizant-sarvam-ai-investment-talks-4-billion-valuation"
+            },
+            {
+              "claim": "Sarvam AI develops foundational models focused on Indian languages and enterprise use",
+              "url": "https://www.wocult.com/news/cognizant-sarvam-ai-investment-talks-4-billion-valuation"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://inc42.com/buzz/cognizant-in-talks-to-invest-in-sarvam-at-3-5-bn-to-4-bn-valuation-report/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-28T17:06:19.312187+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2229,8 +2272,8 @@
       "event": "Oracle just partnered with OpenAI to bring ChatGPT and Codex to enterprise workflows. Businesses can now run ChatGPT inside Oracle Cloud Infrastructure for heavy operational workloads. OpenAI Codex will help corporate software developers wr"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-28T15:15+05:30",
@@ -2278,11 +2321,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-28",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-28",
-    "calls": 267,
+    "calls": 276,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2311,7 +2354,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 68,
+        "ok": 77,
         "busy": 25,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2401,29 +2444,6 @@
     "gemini-3-flash-preview": 1793175515.9540641
   },
   "editor_log": [
-    {
-      "at": "2026-10-27T18:07+05:30",
-      "title": "Data center backlash is uniting America",
-      "overall": 6.0,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 5,
-        "flow": 6
-      },
-      "one_line": "Too generic with lacking specific names, companies, and concrete figures.",
-      "fixes": [
-        "LINE 1: Name specific states or regions where voters are uniting instead of saying across the country.",
-        "LINE 3: Mention exact dollar amounts or megawatt figures for the infrastructure expenses.",
-        "LINE 4: Name specific congressional districts or politicians involved in these races."
-      ],
-      "visual": [
-        "line 2: Static text repeating for too many frames without dynamic imagery.",
-        "line 3: Generic background style does not match the heavy infrastructure topic."
-      ]
-    },
     {
       "at": "2026-10-27T18:16+05:30",
       "title": "Data center backlash is uniting America",
@@ -2845,10 +2865,32 @@
         "line 4: Generic blurry stock trading charts and blank grey boxes do not align directly with the pa",
         "line 6: Unrelated cyberpunk fantasy artwork with UI text prompts (Vulca) is completely irrelevant "
       ]
+    },
+    {
+      "at": "2026-10-28T17:14+05:30",
+      "title": "Cognizant In Talks To Invest In Sarvam At $3.5 Bn To $4 Bn Valuation: Report",
+      "overall": 8.3,
+      "scores": {
+        "hook": 9,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong financial details and hook, but visuals rely heavily on generic abstract stock graphics.",
+      "fixes": [
+        "LINE 2: Replace 'Cognizant Technology Solutions is in talks to join this new funding round' with 'Cognizant is negotiating to lead Sarvam's latest investment.'"
+      ],
+      "visual": [
+        "line 2: Uses generic abstract blue tech lines instead of Cognizant's actual corporate branding or ",
+        "line 5: Abstract blue cube graphics do not visually represent foundational AI models for Indian la",
+        "line 6: Reuses generic abstract fiber optic particle graphic instead of a contextual closing image"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 143,
+  "fish_turn": 144,
   "ig_music_recent": [
     "1131364661185460",
     "1139083324034840",
