@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -205,11 +205,54 @@
     "fix_rounds": 1,
     "source_links": [
       "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-    ]
+    ],
+    "ig_audio": {
+      "id": "631990169384330",
+      "title": "Your Love (feat. Nawas)",
+      "artist": "Company Money"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The open model leads open weight models on the Hug…: The image is blank and unreadable, missing the expected source card for Hugging Face.",
+      "Alongside the model, Nvidia introduced Granary ver…: The image is an almost-empty card with just background and text, missing the expected real images of Nvidia Granary v2.",
+      "Granary version two provides advanced data curatio…: The image is nearly completely black/blank, failing to show the requested stock video of a developer editing audio code.",
+      "The frame is completely blank except for text overlay, missing the required source card for Hugging Face.",
+      "The frame is completely empty with only text, missing the required images of Nvidia Granary v2.",
+      "The frame is completely blank except for text overlay, missing the required stock video of a developer editing audio cod"
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong, specific tech news with minor visual repetition and generic stock assets.",
+      "script_fixes": [
+        "LINE 2: Specify the exact leaderboard metrics or rankings if applicable to add extra punch."
+      ],
+      "visual_beats": [
+        0,
+        2,
+        5
+      ],
+      "visual_notes": [
+        "line 1: Repeated use of the same Nvidia app-icon graphic across multiple frames.",
+        "line 3: Generic blurred abstract dashboard stock image doesn't clearly convey Artificial Analysis.",
+        "line 6: Generic laptop workspace stock image for the closing question."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 official images, 3 clips, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAItVWriKaoc2KiHJ4fMdcX6eIHkrJFxAAKuIQACApsRV7IlA1NyXhPJPQQ",
   "queue": [
     {
       "title": "Meta quietly launched an ‘AI pet journal’ app",
@@ -239,9 +282,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-28T22:19:11.364216+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-28T22:58:19.056253+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-28",
@@ -731,50 +774,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Meta quietly launched an ‘AI pet journal’ app",
-            "link": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
-            "summary": "Meta has launched a \"tamagotchi-style\" pet game called Waddle World, with virtual creatures that chat with users and create doodles to illustrate conversations. According to its Apple and Play Store listings, the \"16-bit pet care game\" is not really a game, but \"a daily journal disguised as a pet.\" Users should talk, not type, with […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-28T11:27:30+00:00",
-            "angle": "Meta quietly launched a Tamagotchi-style AI pet game called Waddle World where virtual creatures chat and draw."
-          },
-          {
-            "title": "Oracle Expands AI Compute Options With NVIDIA, Google TPUs and Cerebras",
-            "link": "https://analyticsindiamag.com/ai-news/oracle-expands-ai-compute-options-with-nvidia-google-tpus-and-cerebras",
-            "summary": "Oracle Expands AI Compute Options With NVIDIA, Google TPUs and Cerebras Analytics India Magazine",
-            "source": "Analytics India Magazine",
-            "published": "2026-10-28T03:23:14+00:00",
-            "angle": "Oracle expands its AI compute options by adding NVIDIA, Google TPUs, and Cerebras."
-          },
-          {
-            "title": "China's CXMT to start advanced AI memory production despite poor yields",
-            "link": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/chinas-cxmt-to-start-advanced-ai-memory-production-despite-poor-yields/135255964",
-            "summary": "China's CXMT to start advanced AI memory production despite poor yields ET CIO",
-            "source": "ET CIO",
-            "published": "2026-10-28T08:30:00+00:00",
-            "angle": "China's CXMT is pushing ahead to start advanced AI memory production despite poor yields."
-          }
-        ],
-        "choose_deadline": "2026-10-28T18:15:57.874392+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1424,6 +1423,227 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+          "summary": "",
+          "source": "Hugging Face - Blog",
+          "published": "2026-10-28T14:58:17+00:00",
+          "angle": "Nvidia drops intelligent multilingual transcription tools you can prompt and adapt right now."
+        },
+        "draft": {
+          "title": "Nvidia Released Nemotron 3.5 Transcribe",
+          "hook_text": "Nvidia just dropped Nemotron 3.5 Transcribe.",
+          "beats": [
+            {
+              "line": "Nvidia just released Nemotron 3.5 Transcribe on Hugging Face.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia Nemotron 3.5 Transcribe",
+              "outlet": "",
+              "domain": "huggingface.co",
+              "headline": "",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+              "tag": "Nvidia Nemotron 3.5 Transcribe",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "The open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Hugging Face - Blog",
+              "domain": "huggingface.co",
+              "headline": "NVIDIA Nemotron 3.5 Transcribe and Granary v2",
+              "url": "",
+              "tag": "Hugging Face Open ASR Leaderboard",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "It also ties for first among open weight models on Artificial Analysis.",
+              "visual": "clip",
+              "query": "data charts analytics screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Artificial Analysis top spot",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Alongside the model, Nvidia introduced Granary version two for speech training data curation.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia Granary v2",
+              "outlet": "",
+              "domain": "huggingface.co",
+              "headline": "",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+              "tag": "Granary v2 speech training",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Granary version two provides advanced data curation pipelines to build better voice recognition datasets.",
+              "visual": "clip",
+              "query": "developer editing code audio",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data curation pipelines",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you deploy this transcription model?",
+              "visual": "clip",
+              "query": "person using laptop at desk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Nemotron 3.5 deployment",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "crisp, tech-forward, and direct, highlighting open-weights AI releases for developers",
+          "thin": false,
+          "caption": "Nvidia released Nemotron 3.5 Transcribe and Granary v2 on Hugging Face for customizable multilingual speech recognition. Would you use open models for audio tasks?",
+          "hashtags": [
+            "Nvidia",
+            "Nemotron",
+            "HuggingFace",
+            "AI"
+          ],
+          "sources": [
+            "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+          ],
+          "script": "Nvidia just released Nemotron 3.5 Transcribe on Hugging Face.\nThe open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.\nIt also ties for first among open weight models on Artificial Analysis.\nAlongside the model, Nvidia introduced Granary version two for speech training data curation.\nGranary version two provides advanced data curation pipelines to build better voice recognition datasets.\nWould you deploy this transcription model?",
+          "keywords": [
+            "data charts analytics screen",
+            "developer editing code audio",
+            "person using laptop at desk"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia dropped Nemotron 3.5 Transcribe.",
+              "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+            },
+            {
+              "claim": "Nvidia released Nemotron 3.5 Transcribe on Hugging Face.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            },
+            {
+              "claim": "The open model leads open weight models on the Hugging Face Open ASR Leaderboard for English speech recognition.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            },
+            {
+              "claim": "It also ties for first among open weight models on Artificial Analysis.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            },
+            {
+              "claim": "Nvidia introduced Granary version two for speech training data curation.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            },
+            {
+              "claim": "Granary version two provides advanced data curation pipelines to build better voice recognition datasets.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-28T22:19:11.364216+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1922,8 +2142,8 @@
       "event": "Meta just launched Waddle World, a virtual pet game where creatures chat and create doodles. Apple and Play Store listings reveal the sixteen-bit pet care experience is actually a daily journal disguised as a pet. Users talk instead of typi"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-28T19:35+05:30",
@@ -1951,7 +2171,7 @@
   "report_day": "2026-10-28",
   "ig_count": {
     "day": "2026-10-28",
-    "at": "2026-10-28T22:10:28.384533+05:30",
+    "at": "2026-10-28T22:20:34.283716+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -1975,7 +2195,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-28",
-    "calls": 366,
+    "calls": 376,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2004,10 +2224,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 137,
+        "ok": 146,
         "busy": 47,
-        "other": 7,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 8,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3-flash-preview": {
         "ok": 14,
@@ -2094,26 +2314,6 @@
     "gemini-3-flash-preview": 1793175515.9540641
   },
   "editor_log": [
-    {
-      "at": "2026-10-27T19:39+05:30",
-      "title": "Opera introduces a new web standard to let users deploy AI locally in their brow",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 9
-      },
-      "one_line": "Strong script and hook ruined by mismatched, repetitive, and unrelated visual assets.",
-      "fixes": [],
-      "visual": [
-        "line 4: Shows TechCrunch logo and name instead of local processing or a device illustration.",
-        "line 2: Repeats the Opera WebAI app icon graphic from line 1.",
-        "line 5: Holds static text without illustrating data privacy or local control."
-      ]
-    },
     {
       "at": "2026-10-27T20:18+05:30",
       "title": "Japan internet giant GMO says hackers posted stolen customer data",
@@ -2534,10 +2734,32 @@
         "line 4: Frame 7 shows a generic Microsoft 365 Copilot promotional card instead of anything related",
         "line 5: Frame 8 displays a generic Google logo placeholder instead of Google Workspace interface o"
       ]
+    },
+    {
+      "at": "2026-10-28T22:28+05:30",
+      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcri",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong, specific tech news with minor visual repetition and generic stock assets.",
+      "fixes": [
+        "LINE 2: Specify the exact leaderboard metrics or rankings if applicable to add extra punch."
+      ],
+      "visual": [
+        "line 1: Repeated use of the same Nvidia app-icon graphic across multiple frames.",
+        "line 3: Generic blurred abstract dashboard stock image doesn't clearly convey Artificial Analysis.",
+        "line 6: Generic laptop workspace stock image for the closing question."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 146,
+  "fish_turn": 147,
   "ig_music_recent": [
     "1139083324034840",
     "1492215775872550",
