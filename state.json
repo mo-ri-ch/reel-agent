@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -34,7 +34,7 @@
         "brands": [
           {
             "name": "Microsoft",
-            "domain": "microsoft.com"
+            "domain": ""
           },
           {
             "name": "OpenAI",
@@ -102,7 +102,7 @@
         "brands": [
           {
             "name": "Microsoft",
-            "domain": "microsoft.com"
+            "domain": ""
           },
           {
             "name": "OpenAI",
@@ -147,7 +147,7 @@
         "brands": [
           {
             "name": "Microsoft",
-            "domain": "microsoft.com"
+            "domain": ""
           },
           {
             "name": "OpenAI",
@@ -207,16 +207,57 @@
     "fix_rounds": 2,
     "source_links": [
       "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "5067527913473007",
+      "title": "Showcase (Instrumental)",
+      "artist": "Shanice"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "This money flowed in from commercial arrangements …: The frame is completely blank/dark, missing the expected source card for TechCrunch.",
+      "The massive sum includes direct revenue-sharing pa…: The frame is an almost-empty card with no real images of OpenAI.",
+      "Cloud infrastructure costs and massive computing p…: The picture shows a hand holding an OpenAI sticker instead of the expected stock video of computer screens running code.",
+      "Can Microsoft sustain this enormous quarterly inta…: The frame shows a dark screen with the word 'Sustained' instead of the expected source card for TechCrunch.",
+      "The image shows a presentation or people on stage instead of the required stock video of computer screens running code."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong financial details are undermined by repetitive and generic stock visual assets.",
+      "script_fixes": [
+        "LINE 5: specify Azure cloud infrastructure costs instead of generic cloud infrastructure",
+        "LINE 6: specify OpenAI operational expenses instead of AI operational expenses"
+      ],
+      "visual_beats": [
+        1,
+        4
+      ],
+      "visual_notes": [
+        "line 2: Frames 3, 4, and 5 use generic techcrunch logos and text cards instead of Microsoft financ",
+        "line 5: Frames 10 and 11 feature blank dark screens with random floating text highlights instead o"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "2 AI images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAItyGriefBGPuMz5Y2XyJBsQ0UM7I1YAALBIQACApsZV4KtcUCuAAFtBD0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-10-29T04:00:55.811340+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-29T04:40:49.423347+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-29",
@@ -694,204 +735,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "The ‘Vulnpocalypse’ is coming for the internet’s aging code, says Wiz’s CTO",
-          "link": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
-          "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the vulnerabilities could be patched. According to researchers who found the […]",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-28T18:50:39+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Wiz warns of coming Vulnpocalypse",
-          "hook_text": "Seventy percent of websites run on aging code.",
-          "beats": [
-            {
-              "line": "Seventy percent of websites run on aging code that faces a massive crisis.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "70%",
-              "small": "of all websites",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "70 percent of websites",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Cloud security company Wiz warns that the internet is barreling toward what it calls a vulnpocalypse.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Wiz",
-              "outlet": "",
-              "domain": "wiz.io",
-              "headline": "",
-              "url": "https://www.wiz.io/",
-              "tag": "Wiz warns of vulnpocalypse",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Wiz",
-                  "domain": "wiz.io"
-                }
-              ]
-            },
-            {
-              "line": "Last week, two critical bugs in PHP left organizations scrambling to patch their systems.",
-              "visual": "clip",
-              "query": "server room data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Two critical PHP bugs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Organizations took affected web properties entirely offline until the vulnerabilities were fixed.",
-              "visual": "clip",
-              "query": "developer typing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Websites taken offline",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "TechCrunch notes that cleanup efforts for these aging open source systems are far from over.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "The Vulnpocalypse is coming for the internet's aging code",
-              "url": "",
-              "tag": "TechCrunch reports cleanup",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "How many legacy systems in your stack are still waiting for a critical security patch?",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2",
-              "small": "critical bugs found",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2 critical bugs found",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and direct, emphasizing the hidden risks lurking in legacy infrastructure",
-          "thin": false,
-          "caption": "Wiz warns that seventy percent of websites face a vulnpocalypse from aging open source code. Two critical PHP bugs recently forced organizations to take systems offline for emergency patches. Are your legacy systems secure?",
-          "hashtags": [
-            "Wiz",
-            "PHP",
-            "Cybersecurity",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-          ],
-          "script": "Seventy percent of websites run on aging code that faces a massive crisis.\nCloud security company Wiz warns that the internet is barreling toward what it calls a vulnpocalypse.\nLast week, two critical bugs in PHP left organizations scrambling to patch their systems.\nOrganizations took affected web properties entirely offline until the vulnerabilities were fixed.\nTechCrunch notes that cleanup efforts for these aging open source systems are far from over.\nHow many legacy systems in your stack are still waiting for a critical security patch?",
-          "keywords": [
-            "server room data center",
-            "developer typing code"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Seventy percent of websites run on aging code.",
-              "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-            },
-            {
-              "claim": "Seventy percent of websites run on aging code that faces a massive crisis.",
-              "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-vulnpocalypse/"
-            },
-            {
-              "claim": "Cloud security company Wiz warns that the internet is barreling toward what it calls a vulnpocalypse.",
-              "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-            },
-            {
-              "claim": "Last week, two critical bugs in PHP left organizations scrambling to patch their systems.",
-              "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-            },
-            {
-              "claim": "Organizations took affected web properties entirely offline until the vulnerabilities were fixed.",
-              "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-            },
-            {
-              "claim": "TechCrunch notes that cleanup efforts for these aging open source systems are far from over.",
-              "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-            },
-            {
-              "claim": "Two critical bugs were found.",
-              "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-29T00:53:27.175522+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1628,6 +1471,229 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+          "link": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+          "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-28T21:34:30+00:00",
+          "angle": "Microsoft just dropped a bombshell: it recorded $10 billion in revenue from OpenAI in a single quarter."
+        },
+        "draft": {
+          "title": "Microsoft's $10 Billion OpenAI Payout",
+          "hook_text": "Ten billion dollars from OpenAI.",
+          "beats": [
+            {
+              "line": "Microsoft recorded ten billion dollars in revenue from OpenAI.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$10B",
+              "small": "Microsoft revenue from OpenAI",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "10 billion revenue",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "This money flowed in from commercial arrangements during the quarter ending September 30.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Microsoft recorded $10 billion in revenue from OpenAI",
+              "url": "",
+              "tag": "September 30 quarter",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The massive sum includes direct revenue-sharing payments tied to their ongoing partnership.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "tag": "Revenue-sharing payments",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "The financial milestone highlights just how deeply dependent both technology giants remain on each other.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Partnership dependency",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Cloud infrastructure costs and massive computing power continue driving these high-stakes financial transactions.",
+              "visual": "clip",
+              "query": "computer screens running code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Cloud infrastructure costs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Can Microsoft sustain this enormous quarterly intake as AI operational expenses climb?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Microsoft recorded $10 billion in revenue from OpenAI",
+              "url": "",
+              "tag": "Sustained revenue growth",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                },
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Sharp and direct business tone, emphasizing the massive financial scale of the Microsoft and OpenAI partnership.",
+          "thin": false,
+          "caption": "Microsoft generated $10 billion in revenue from its OpenAI partnership in the quarter ending September 30, underscoring their enormous financial dependency. Can Microsoft maintain this level of growth next quarter?",
+          "hashtags": [
+            "Microsoft",
+            "OpenAI",
+            "TechNews",
+            "Business",
+            "ArtificialIntelligence"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+          ],
+          "script": "Microsoft recorded ten billion dollars in revenue from OpenAI.\nThis money flowed in from commercial arrangements during the quarter ending September 30.\nThe massive sum includes direct revenue-sharing payments tied to their ongoing partnership.\nThe financial milestone highlights just how deeply dependent both technology giants remain on each other.\nCloud infrastructure costs and massive computing power continue driving these high-stakes financial transactions.\nCan Microsoft sustain this enormous quarterly intake as AI operational expenses climb?",
+          "keywords": [
+            "server room data center",
+            "computer screens running code"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Ten billion dollars from OpenAI.",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+            },
+            {
+              "claim": "Microsoft recorded ten billion dollars in revenue from OpenAI.",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+            },
+            {
+              "claim": "This money flowed in from commercial arrangements during the quarter ending September 30.",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+            },
+            {
+              "claim": "The massive sum includes direct revenue-sharing payments tied to their ongoing partnership.",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+            },
+            {
+              "claim": "The financial milestone highlights just how deeply dependent both technology giants remain on each other.",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+            },
+            {
+              "claim": "Cloud infrastructure costs and massive computing power continue driving these high-stakes financial transactions.",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-29T04:00:55.811340+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2136,8 +2202,8 @@
       "event": "Meta is pushing its controversial new business terms past November twentieth after facing immense pressure. Publishers raised major concerns over how the company scrapes content for AI training. Meta communications head Andy Stone announced"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-29T02:15+05:30",
@@ -2165,7 +2231,7 @@
   "report_day": "2026-10-28",
   "ig_count": {
     "day": "2026-10-29",
-    "at": "2026-10-29T03:55:28.799199+05:30",
+    "at": "2026-10-29T04:10:49.423611+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2185,16 +2251,16 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-29",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
-    "calls": 38,
+    "calls": 47,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 29,
+        "ok": 38,
         "busy": 9,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2278,28 +2344,6 @@
     "gemini-3-flash-preview": 1793175515.9540641
   },
   "editor_log": [
-    {
-      "at": "2026-10-28T00:13+05:30",
-      "title": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 9,
-        "visuals": 5,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but visuals are repetitive and rely too heavily on generic stock imagery.",
-      "fixes": [
-        "LINE 2: Change 'struggling with an explosion of medical data' to 'struggling to synthesize petabytes of medical data'."
-      ],
-      "visual": [
-        "line 2: The C-BRAIN data challenge graphic is held for too long across three frames.",
-        "line 4: The stock footage of a man at a computer is generic and does not represent C-BRAIN.",
-        "line 6: The NVIDIA Blog logo is used as a placeholder; it is not the C-BRAIN tool."
-      ]
-    },
     {
       "at": "2026-10-28T00:31+05:30",
       "title": "Live2.ai Raises ₹130 Cr To Scale AI Marketing SaaS Platform",
@@ -2714,10 +2758,32 @@
         "line 4: Random terminal code text (bytes=32) and blurred colorful Christmas lights have nothing to",
         "line 5: Fails to show any document visuals, relying on generic typography animations on a dark bac"
       ]
+    },
+    {
+      "at": "2026-10-29T04:10+05:30",
+      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong financial details are undermined by repetitive and generic stock visual assets.",
+      "fixes": [
+        "LINE 5: specify Azure cloud infrastructure costs instead of generic cloud infrastructure",
+        "LINE 6: specify OpenAI operational expenses instead of AI operational expenses"
+      ],
+      "visual": [
+        "line 2: Frames 3, 4, and 5 use generic techcrunch logos and text cards instead of Microsoft financ",
+        "line 5: Frames 10 and 11 feature blank dark screens with random floating text highlights instead o"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 151,
+  "fish_turn": 152,
   "ig_music_recent": [
     "522339937196006",
     "691567042780116",
