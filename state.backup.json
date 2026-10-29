@@ -1,8 +1,25 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Anthropic’s business plan: Build God or die trying",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive",
+      "summary": "The Anthropic S-1 seems to have provided the financial justification for the company to spend as much as it possibly can on compute. If you are the kind of person who wonders if Anthropic is doing its level best to build a machine god while convincing Wall Street it's in the business of selling IT […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-29T13:30:00+00:00",
+      "angle": "Inside Anthropic's wild financial plan to spend everything on compute"
+    },
+    {
+      "title": "Amazon updates Alexa to help you manage shopping lists, subscriptions, and update delivery instructions",
+      "link": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/",
+      "summary": "The update allows you to use Alexa to create lists, register them, see what's on them, and add or edit items. You can also manage subscriptions with the AI bot.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-29T13:00:00+00:00",
+      "angle": "Amazon's major Alexa AI upgrade that handles your shopping and deliveries"
+    }
+  ],
+  "choose_deadline": "2026-10-29T19:32:18.090054+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -445,6 +462,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [],
   "tried": [
     "AI’s biggest effects in the Berkshires might be hiding in plain sight",
@@ -1695,32 +1713,32 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-29T17:30+05:30",
-    "techcrunch.com": 14,
+    "at": "2026-10-29T19:01+05:30",
+    "techcrunch.com": 15,
     "theverge.com": 10,
     "arstechnica.com": 2,
     "technologyreview.com": 3,
     "openai.com": 3,
     "blog.google": 0,
     "deepmind.google": 1,
-    "huggingface.co": 1,
+    "huggingface.co": 2,
     "blogs.nvidia.com": 1,
     "inc42.com": 5,
     "news.google.com": 42,
     "Google News (VentureBeat, AIM, AI News)": 24,
     "producthunt.com": 9,
-    "Hacker News": 1,
-    "Reddit": "blocked (HTTP 403/429)",
-    "filtered out (PR / local events / market fluff)": 7
+    "Hacker News": 3,
+    "Reddit": 5,
+    "filtered out (PR / local events / market fluff)": 9
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-29T17:30:36.295932+05:30",
+  "last_auto_offer": "2026-10-29T19:01:23.023982+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-28",
   "ig_count": {
     "day": "2026-10-29",
-    "at": "2026-10-29T18:40:24.334081+05:30",
+    "at": "2026-10-29T19:01:23.024016+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -1744,12 +1762,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
-    "calls": 534,
+    "calls": 536,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 326,
+        "ok": 328,
         "busy": 53,
         "other": 2,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
