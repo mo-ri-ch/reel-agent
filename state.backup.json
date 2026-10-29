@@ -156,11 +156,11 @@
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "SAP India target to train two million people",
+        "claim": "Two million people targeted for training.",
         "url": "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
       },
       {
-        "claim": "SAP India set a target to train two million people in AI by 2030",
+        "claim": "SAP India set a target to train two million people in AI by 2030.",
         "url": "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
       },
       {
@@ -173,7 +173,7 @@
       },
       {
         "claim": "Participants will learn practical machine learning concepts through hands-on cloud software modules.",
-        "url": "https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/?amp=1"
+        "url": "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
       },
       {
         "claim": "This massive rollout addresses the rising demand for certified technology talent in local enterprises.",
@@ -182,7 +182,8 @@
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
     ]
@@ -241,9 +242,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-29T15:37:10.493386+05:30",
+  "script_deadline": "2026-10-29T15:46:43.738837+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-29",
@@ -732,173 +733,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "AI token use may jump 78% as falling prices fail to guarantee lower costs",
-          "link": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741?utm_source=portal_category_widget&utm_medium=homepage",
-          "summary": "AI token use may jump 78% as falling prices fail to guarantee lower costs ET CIO",
-          "source": "ET CIO",
-          "published": "2026-10-29T02:32:00+00:00",
-          "angle": "AI token usage is projected to jump 78%, proving that cheaper models don't necessarily mean lower bills for users."
-        },
-        "draft": {
-          "title": "AI Costs: Why Your Bill Isn't Dropping",
-          "hook_text": "AI token use is surging 78%.",
-          "beats": [
-            {
-              "line": "AI token consumption is set to surge 78 percent over the next two years. Despite lower unit costs, enterprise spending is actually rising.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "78%",
-              "small": "projected token use surge",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "78 percent surge",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Companies are now processing far more data than ever before. Falling prices per token failed to guarantee lower total costs for businesses.",
-              "visual": "clip",
-              "query": "busy data center server racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "more data processed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The reliance on AI is deepening as firms integrate these models into core workflows. Volume is effectively canceling out the price cuts from providers.",
-              "visual": "clip",
-              "query": "business professional looking at data on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "volume cancels savings",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "IT leaders are struggling to project long-term budgets as usage patterns remain volatile. Efficiency is not keeping pace with this rapid expansion.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "ET CIO",
-              "domain": "economictimes.indiatimes.com",
-              "headline": "AI token use may jump 78% as falling prices fail to guarantee lower costs",
-              "url": "",
-              "tag": "unpredictable IT budgets",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The race for performance is driving this consumption spike. Would you sacrifice speed for lower AI bills?",
-              "visual": "clip",
-              "query": "person typing on laptop in office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "speed vs bills",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Analytical and punchy, emphasizing the irony of falling unit prices leading to higher overall spending.",
-          "thin": false,
-          "caption": "AI token consumption is projected to surge 78% over the next two years. Even though individual token prices are dropping, total enterprise spending is climbing because companies are scaling up their AI usage. Would you sacrifice speed for lower AI bills?",
-          "hashtags": [
-            "AI",
-            "TechNews",
-            "EnterpriseAI",
-            "CloudComputing",
-            "BusinessTech"
-          ],
-          "sources": [
-            "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741"
-          ],
-          "script": "AI token consumption is set to surge 78 percent over the next two years. Despite lower unit costs, enterprise spending is actually rising.\nCompanies are now processing far more data than ever before. Falling prices per token failed to guarantee lower total costs for businesses.\nThe reliance on AI is deepening as firms integrate these models into core workflows. Volume is effectively canceling out the price cuts from providers.\nIT leaders are struggling to project long-term budgets as usage patterns remain volatile. Efficiency is not keeping pace with this rapid expansion.\nThe race for performance is driving this consumption spike. Would you sacrifice speed for lower AI bills?",
-          "keywords": [
-            "busy data center server racks",
-            "business professional looking at data on screen",
-            "person typing on laptop in office"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI token use is surging 78%.",
-              "url": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741?utm_source=portal_category_widget&utm_medium=homepage"
-            },
-            {
-              "claim": "AI token consumption is set to surge 78 percent over the next two years.",
-              "url": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741?utm_source=portal_category_widget&utm_medium=homepage"
-            },
-            {
-              "claim": "Despite lower unit costs, enterprise spending is actually rising.",
-              "url": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741?utm_source=portal_category_widget&utm_medium=homepage"
-            },
-            {
-              "claim": "Falling prices per token failed to guarantee lower total costs for businesses.",
-              "url": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741?utm_source=portal_category_widget&utm_medium=homepage"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741?utm_source=portal_category_widget&utm_medium=homepage",
-            "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-token-use-may-jump-78-as-falling-prices-fail-to-guarantee-lower-costs/135250741"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-29T11:01:43.620105+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1470,6 +1304,207 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "SAP India Targets 2 Million People for AI Skilling by 2030",
+          "link": "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030",
+          "summary": "SAP India Targets 2 Million People for AI Skilling by 2030 Analytics India Magazine",
+          "source": "Analytics India Magazine",
+          "published": "2026-10-29T08:39:59+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "SAP India's 2 Million AI Skilling Goal",
+          "hook_text": "Two million people.",
+          "beats": [
+            {
+              "line": "SAP India just set a target to train two million people in AI by twenty thirty.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "2M",
+              "small": "people to skill",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "SAP India AI target",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "SAP",
+                  "domain": "sap.com"
+                }
+              ]
+            },
+            {
+              "line": "The program aims to bridge the growing digital skills gap across the Indian workforce.",
+              "visual": "clip",
+              "query": "diverse students in tech classroom",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Bridging digital skills gap",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Students, educators, and professionals will gain access to specialized digital learning pathways and certifications.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "SAP",
+              "outlet": "",
+              "domain": "sap.com",
+              "headline": "",
+              "url": "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030",
+              "tag": "Specialized learning pathways",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "SAP",
+                  "domain": "sap.com"
+                }
+              ]
+            },
+            {
+              "line": "Participants will learn practical machine learning concepts through hands-on cloud software modules.",
+              "visual": "clip",
+              "query": "software developer writing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Practical machine learning",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This massive rollout addresses the rising demand for certified technology talent in local enterprises.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Analytics India Magazine",
+              "domain": "analyticsindiamag.com",
+              "headline": "SAP India Targets 2 Million People for AI Skilling by 2030",
+              "url": "",
+              "tag": "Rising tech demand",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would your career benefit from free professional training?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Free professional training",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "direct and informative, highlighting a massive workforce commitment",
+          "thin": false,
+          "caption": "SAP India aims to skill two million people in AI by 2030 to bridge the digital gap across the workforce. The initiative focuses on building essential capabilities through specialized learning pathways. Would your career benefit from free professional training?",
+          "hashtags": [
+            "SAP",
+            "SAPIndia",
+            "ArtificialIntelligence",
+            "TechSkills"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
+          ],
+          "script": "SAP India just set a target to train two million people in AI by twenty thirty.\nThe program aims to bridge the growing digital skills gap across the Indian workforce.\nStudents, educators, and professionals will gain access to specialized digital learning pathways and certifications.\nParticipants will learn practical machine learning concepts through hands-on cloud software modules.\nThis massive rollout addresses the rising demand for certified technology talent in local enterprises.\nWould your career benefit from free professional training?",
+          "keywords": [
+            "diverse students in tech classroom",
+            "software developer writing code",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "SAP India target to train two million people",
+              "url": "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
+            },
+            {
+              "claim": "SAP India set a target to train two million people in AI by 2030",
+              "url": "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
+            },
+            {
+              "claim": "The program aims to bridge the growing digital skills gap across the Indian workforce.",
+              "url": "https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/?amp=1"
+            },
+            {
+              "claim": "Students, educators, and professionals will gain access to specialized digital learning pathways and certifications.",
+              "url": "https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/?amp=1"
+            },
+            {
+              "claim": "Participants will learn practical machine learning concepts through hands-on cloud software modules.",
+              "url": "https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/?amp=1"
+            },
+            {
+              "claim": "This massive rollout addresses the rising demand for certified technology talent in local enterprises.",
+              "url": "https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/?amp=1"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/sap-india-targets-2-million-people-for-ai-skilling-by-2030"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-29T15:37:10.493386+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1988,8 +2023,8 @@
       "event": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line. Software developer Flamerix identified this issue while analyzing the agent's internal communication logs. The agent repeatedly sends status"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-29T14:30+05:30",
@@ -2037,7 +2072,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-29",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
@@ -2160,24 +2195,6 @@
     "gemini-3-flash-preview": 1793263180.8430204
   },
   "editor_log": [
-    {
-      "at": "2026-10-28T15:00+05:30",
-      "title": "Oracle Partners With OpenAI to Bring ChatGPT and Codex to Enterprise Workflows",
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 9,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong enterprise news, but visual repetition across early frames hurts pacing.",
-      "fixes": [],
-      "visual": [
-        "line 2: Reuses the same Oracle building image from line 1 for too many frames."
-      ]
-    },
     {
       "at": "2026-10-28T16:31+05:30",
       "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much)",
@@ -2586,10 +2603,31 @@
         "line 3: The visual remains static for 4.8s, failing to show the actual log example mentioned.",
         "line 4: The visual is a generic GitHub Gist logo; it should show a snippet of the actual log file."
       ]
+    },
+    {
+      "at": "2026-10-29T15:46+05:30",
+      "title": "SAP India Targets 2 Million People for AI Skilling by 2030",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong headline topic, but visuals repeat the SAP logo too frequently and pacing is slow.",
+      "fixes": [
+        "LINE 1: Mention SAP India explicitly to match the regional scope of the headline."
+      ],
+      "visual": [
+        "line 1: SAP logo card repeats unnecessarily across the first three frames.",
+        "line 5: Displays an unrelated logo (Analytics India Magazine) instead of showcasing enterprise tec"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 159,
+  "fish_turn": 160,
   "ig_music_recent": [
     "672790974305597",
     "3001821403330916",
