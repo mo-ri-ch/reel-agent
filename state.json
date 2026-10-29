@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -215,11 +215,50 @@
     "fix_rounds": 1,
     "source_links": [
       "https://cursor.com/blog/agent-sdk"
-    ]
+    ],
+    "ig_audio": null,
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The SDK is available now for all users on the Curs…: The visual shows the word 'Available' instead of the requested big number 1.",
+      "Would you let an AI agent manage your production e…: The visual shows the text 'AI management' instead of the requested stock video of a person looking at a computer screen.",
+      "The visual shows the word 'Available' instead of a big number 1 as requested.",
+      "The visual shows text 'AI management' instead of the requested stock video of a person looking at a computer screen."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong technical update, but visuals suffer from repetitive, static UI screenshots.",
+      "script_fixes": [
+        "LINE 6: Replace 'It marks a move toward more personalized AI tools' with 'This enables deeper integration for custom software engineering workflows'."
+      ],
+      "visual_beats": [
+        1,
+        3,
+        6
+      ],
+      "visual_notes": [
+        "line 2: The same UI screenshot is held for too long across multiple frames.",
+        "line 4: Visuals are static and do not show the 'automation' process being described.",
+        "line 7: The final frame is a static text screen; needs a more engaging visual or screen recording."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Cursor Agent SDK: cursor.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 3 AI images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIuDWriwr3kZ6hO1LNVtI2zBR0y6_r6AAJ5IgACApsZV8jJe1ubIa9jPQQ",
   "queue": [
     {
       "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
@@ -249,9 +288,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-29T09:10:56.801347+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-29T09:51:26.351896+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-29",
@@ -738,244 +777,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Google expands AI Search ads globally as core ad growth slows",
-          "link": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-          "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-28T21:48:37+00:00",
-          "angle": "Google expands AI Search ads globally as parent company Alphabet's revenue surges to $127.6 billion."
-        },
-        "draft": {
-          "title": "Google rolls out AI Search ads globally",
-          "hook_text": "Google just monetized global AI search",
-          "beats": [
-            {
-              "line": "Google just expanded its AI Search ads to users everywhere.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google AI Overviews",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://blog.google/products/search/generative-ai-search-updates/",
-              "tag": "Google expands AI ads",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "Parent company Alphabet just posted its third quarter earnings report.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Alphabet",
-              "outlet": "",
-              "domain": "abc.xyz",
-              "headline": "",
-              "url": "https://abc.xyz/investor/",
-              "tag": "Alphabet earnings report",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Alphabet",
-                  "domain": "abc.xyz"
-                }
-              ]
-            },
-            {
-              "line": "Total revenue grew twenty five percent year over year.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "25%",
-              "small": "revenue growth",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Twenty five percent growth",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Alphabet",
-                  "domain": "abc.xyz"
-                }
-              ]
-            },
-            {
-              "line": "That brought total quarterly revenue to one hundred twenty seven point six billion dollars.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$127.6B",
-              "small": "third quarter revenue",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "One hundred twenty seven billion",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Alphabet",
-                  "domain": "abc.xyz"
-                }
-              ]
-            },
-            {
-              "line": "The global ad rollout arrives as traditional search ad growth slows down.",
-              "visual": "clip",
-              "query": "person typing on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Traditional ad growth slows",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Commercial ads now display directly inside conversational AI search summaries.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Google AI Overviews",
-              "outlet": "",
-              "domain": "google.com",
-              "headline": "",
-              "url": "https://blog.google/products/search/generative-ai-search-updates/",
-              "tag": "Ads in AI summaries",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "Will you buy products recommended by conversational search ads?",
-              "visual": "clip",
-              "query": "using smartphone search",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Buying from AI ads",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "crisp and direct tech journalist tone, highlighting the financial shift behind the global rollout",
-          "thin": false,
-          "caption": "Google has expanded its AI Search ads globally as Alphabet reported a twenty five percent revenue jump to one hundred twenty seven point six billion dollars. The global rollout arrives as core ad growth slows across the platform. Would you buy products recommended by conversational search ads?",
-          "hashtags": [
-            "Google",
-            "Alphabet",
-            "TechNews",
-            "ArtificialIntelligence",
-            "SearchAds"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-          ],
-          "script": "Google just expanded its AI Search ads to users everywhere.\nParent company Alphabet just posted its third quarter earnings report.\nTotal revenue grew twenty five percent year over year.\nThat brought total quarterly revenue to one hundred twenty seven point six billion dollars.\nThe global ad rollout arrives as traditional search ad growth slows down.\nCommercial ads now display directly inside conversational AI search summaries.\nWill you buy products recommended by conversational search ads?",
-          "keywords": [
-            "person typing on laptop",
-            "using smartphone search"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Google expanded its AI search ads globally.",
-              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-            },
-            {
-              "claim": "Google expanded its AI Search ads to international markets.",
-              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-            },
-            {
-              "claim": "Parent company Alphabet posted its third-quarter earnings report.",
-              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-            },
-            {
-              "claim": "Total revenue grew 25% year over year.",
-              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-            },
-            {
-              "claim": "Total quarterly revenue reached $127.6 billion.",
-              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-            },
-            {
-              "claim": "The global ad rollout arrives as traditional search ad growth slows down.",
-              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-            },
-            {
-              "claim": "Commercial ads now display directly inside conversational AI search summaries.",
-              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-29T06:32:11.422191+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1723,6 +1524,237 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "The Agent SDK",
+          "link": "https://cursor.com/blog/agent-sdk",
+          "summary": "",
+          "source": "cursor.com",
+          "published": "2026-10-28T14:02:20+00:00",
+          "buzz": "Hacker News 99 points",
+          "angle": "Cursor just dropped an Agent SDK, letting developers build AI agents that actually take control of your computer."
+        },
+        "draft": {
+          "title": "Cursor launches the Agent SDK",
+          "hook_text": "Cursor just released an Agent SDK",
+          "beats": [
+            {
+              "line": "Cursor just released an Agent SDK for building custom AI agents.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Cursor Agent SDK",
+              "outlet": "",
+              "domain": "cursor.com",
+              "headline": "",
+              "url": "https://cursor.com/blog/agent-sdk",
+              "tag": "Cursor Agent SDK",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Cursor",
+                  "domain": "cursor.com"
+                }
+              ]
+            },
+            {
+              "line": "This SDK lets you craft agents that live inside your code editor.",
+              "visual": "clip",
+              "query": "developer typing code",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Agents in editor",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You define custom instructions that guide how your agent behaves and responds.",
+              "visual": "clip",
+              "query": "coding interface dashboard",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Custom instructions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Developers use these agents to automate specific workflows within their own projects.",
+              "visual": "clip",
+              "query": "computer terminal command line",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Automate workflows",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The SDK is available now for all users on the Cursor platform.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1",
+              "small": "SDK available now",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Available now",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Cursor",
+                  "domain": "cursor.com"
+                }
+              ]
+            },
+            {
+              "line": "It marks a move toward more personalized AI tools for software engineering.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Cursor",
+              "domain": "cursor.com",
+              "headline": "The Agent SDK",
+              "url": "",
+              "tag": "Personalized AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Cursor",
+                  "domain": "cursor.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you let an AI agent manage your production environment?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI management",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast, precise, and tech-focused; sounds like a quick update for a developer friend.",
+          "thin": false,
+          "caption": "Cursor has launched its Agent SDK, giving developers a way to build custom AI agents directly within the editor. You can now define specific instructions to automate your unique coding workflows. Would you let an AI agent manage your production environment?",
+          "hashtags": [
+            "Cursor",
+            "AgentSDK",
+            "AI",
+            "SoftwareEngineering",
+            "Coding"
+          ],
+          "sources": [
+            "https://cursor.com/blog/agent-sdk"
+          ],
+          "script": "Cursor just released an Agent SDK for building custom AI agents.\nThis SDK lets you craft agents that live inside your code editor.\nYou define custom instructions that guide how your agent behaves and responds.\nDevelopers use these agents to automate specific workflows within their own projects.\nThe SDK is available now for all users on the Cursor platform.\nIt marks a move toward more personalized AI tools for software engineering.\nWould you let an AI agent manage your production environment?",
+          "keywords": [
+            "developer typing code",
+            "coding interface dashboard",
+            "computer terminal command line",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Cursor just released an Agent SDK",
+              "url": "https://cursor.com/blog/agent-sdk"
+            },
+            {
+              "claim": "Cursor just released an Agent SDK for building custom AI agents.",
+              "url": "https://cursor.com/blog/agent-sdk"
+            },
+            {
+              "claim": "This SDK lets you craft agents that live inside your code editor.",
+              "url": "https://cursor.com/blog/agent-sdk"
+            },
+            {
+              "claim": "You define custom instructions that guide how your agent behaves and responds.",
+              "url": "https://cursor.com/blog/agent-sdk"
+            },
+            {
+              "claim": "Developers use these agents to automate specific workflows within their own projects.",
+              "url": "https://cursor.com/blog/agent-sdk"
+            },
+            {
+              "claim": "The SDK is available now for all users on the Cursor platform.",
+              "url": "https://cursor.com/blog/agent-sdk"
+            },
+            {
+              "claim": "It marks a move toward more personalized AI tools for software engineering.",
+              "url": "https://cursor.com/blog/agent-sdk"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://cursor.com/blog/agent-sdk"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-29T09:10:56.801347+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2241,8 +2273,8 @@
       "event": "Head of Instagram Adam Mosseri expects AI negativity to worsen. He shared this perspective on the Colin and Samir podcast on October twenty-eighth. Mosseri referenced college students booing tech CEOs at recent graduation ceremonies. He sta"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-29T08:05+05:30",
@@ -2270,7 +2302,7 @@
   "report_day": "2026-10-28",
   "ig_count": {
     "day": "2026-10-29",
-    "at": "2026-10-29T09:05:22.909031+05:30",
+    "at": "2026-10-29T09:15:31.530900+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2290,11 +2322,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-29",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
-    "calls": 90,
+    "calls": 99,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2305,7 +2337,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 21,
+        "ok": 30,
         "busy": 6,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2390,28 +2422,6 @@
     "gemini-3.5-flash-lite": 1793238961.2824173
   },
   "editor_log": [
-    {
-      "at": "2026-10-28T02:24+05:30",
-      "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
-      "overall": 8.0,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 6,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 8
-      },
-      "one_line": "Strong news, but lines 5 and 6 are fluff that dilute the impact.",
-      "fixes": [
-        "LINE 5: Replace with 'Disruptive is led by CEO David Hassum, focusing on high-growth AI infrastructure.'",
-        "LINE 6: Replace with 'The fund targets a 10-year horizon for these specialized AI investments.'"
-      ],
-      "visual": [
-        "line 5: Visuals are generic text overlays; should show the firm's logo or leadership.",
-        "line 6: Visuals are abstract; should show a chart or graphic representing the investment horizon."
-      ]
-    },
     {
       "at": "2026-10-28T03:57+05:30",
       "title": "Nova Spectral AI Raises ₹21.2 Cr To Build Indigenous Infrared Sensor Chips",
@@ -2814,10 +2824,32 @@
         "line 3: Visuals are static text cards; needs footage of graduation protests or tech CEOs.",
         "line 6: The Verge logo is irrelevant to the specific point about public sentiment."
       ]
+    },
+    {
+      "at": "2026-10-29T09:21+05:30",
+      "title": "The Agent SDK",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong technical update, but visuals suffer from repetitive, static UI screenshots.",
+      "fixes": [
+        "LINE 6: Replace 'It marks a move toward more personalized AI tools' with 'This enables deeper integration for custom software engineering workflows'."
+      ],
+      "visual": [
+        "line 2: The same UI screenshot is held for too long across multiple frames.",
+        "line 4: Visuals are static and do not show the 'automation' process being described.",
+        "line 7: The final frame is a static text screen; needs a more engaging visual or screen recording."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 156,
+  "fish_turn": 157,
   "ig_music_recent": [
     "691567042780116",
     "672790974305597",
@@ -2834,5 +2866,6 @@
     "629259179669455",
     "1048553357803824",
     "5067527913473007"
-  ]
+  ],
+  "ig_music_error": "HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v26.0/ig_audio?audio_type=music&user_id=17841432289476902&access_token=EAAPX1VB30w8BSk7P6v2EaATN5frOjxoZAja28m"
 }
