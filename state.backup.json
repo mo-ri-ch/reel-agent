@@ -1,37 +1,214 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Cohere Raises $5 Billion for Alternative AI Vision",
-      "link": "https://www.pymnts.com/news/artificial-intelligence/2026/cohere-raises-5-billion-dollars-alternative-ai-vision/",
-      "summary": "Cohere Raises $5 Billion for Alternative AI Vision PYMNTS.com",
-      "source": "PYMNTS.com",
-      "published": "2026-10-29T20:54:24+00:00",
-      "angle": "Cohere raises a massive $5 billion, signaling a major shift in the AI race beyond just OpenAI and Google."
-    },
-    {
-      "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
-      "link": "https://fig.blue/posts/duet-is-the-future/",
-      "summary": "",
-      "source": "fig.blue",
-      "published": "2026-10-29T17:24:25+00:00",
-      "buzz": "Hacker News 79 points",
-      "angle": "Claude Duet is being hailed as the first personal AI assistant that actually feels useful—here is why."
-    },
-    {
-      "title": "LLM Voice",
-      "link": "https://martinfowler.com/bliki/LLM-Voice.html",
-      "summary": "",
-      "source": "martinfowler.com",
-      "published": "2026-10-29T14:57:55+00:00",
-      "buzz": "Hacker News 302 points",
-      "angle": "The 'LLM Voice' debate: Why experts are warning about the future of AI-generated speech and how it changes communication."
-    }
-  ],
-  "choose_deadline": "2026-10-30T05:10:40.871657+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Trump declares robot imports a national security threat",
+    "link": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/",
+    "summary": "President orders trade talks on foreign-made factory robots, threatens tariffs.",
+    "source": "AI - Ars Technica",
+    "published": "2026-10-29T19:07:53+00:00",
+    "angle": "Trump declares robot imports a national security threat, signaling a major shift in AI hardware trade policy."
+  },
+  "draft": {
+    "title": "Trump Declares Robot Imports a Security Threat",
+    "hook_text": "Robot imports now a national security threat",
+    "beats": [
+      {
+        "line": "President Donald Trump declared foreign-made industrial robots a national security threat on October twenty-eighth.",
+        "visual": "person",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "https://www.whitehouse.gov",
+        "tag": "Trump declares threat",
+        "name": "Donald Trump",
+        "role": "President of the United States",
+        "x": "realDonaldTrump",
+        "brands": []
+      },
+      {
+        "line": "The executive order focuses on the rising reliance on foreign automation in American factories.",
+        "visual": "clip",
+        "query": "industrial factory robots",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Targeting foreign automation",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "His administration initiated formal trade talks to assess risks from these overseas robotic systems.",
+        "visual": "clip",
+        "query": "robotic arm assembly line",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Initiating trade talks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The White House has set a one hundred eighty day deadline for these negotiations to conclude.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "180",
+        "small": "days to negotiate",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "180 day deadline",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Officials are weighing potential new tariffs if these discussions fail to produce significant trade concessions.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "Tariffs",
+        "small": "New trade barriers",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Potential new tariffs",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This move directly impacts global suppliers like Fanuc and ABB who dominate current domestic robotics imports.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Fanuc",
+        "outlet": "",
+        "domain": "fanuc.com",
+        "headline": "",
+        "url": "https://www.fanuc.com",
+        "tag": "Fanuc and ABB impacted",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Fanuc",
+            "domain": "fanuc.com"
+          },
+          {
+            "name": "ABB",
+            "domain": "abb.com"
+          }
+        ]
+      },
+      {
+        "line": "Would you support higher prices on consumer goods to keep robot manufacturing domestic?",
+        "visual": "clip",
+        "query": "automated manufacturing facility",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Support domestic robots?",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Urgent and direct, focusing on the specific timeline and the impact on global manufacturing giants.",
+    "thin": false,
+    "caption": "President Donald Trump officially declared foreign-made industrial robots a national security threat on October 28. The administration is now holding trade talks with a 180-day deadline, potentially leading to new tariffs on companies like Fanuc and ABB. Would you support higher prices on consumer goods to keep robot manufacturing domestic?",
+    "hashtags": [
+      "DonaldTrump",
+      "Robotics",
+      "TradePolicy",
+      "Manufacturing",
+      "Automation"
+    ],
+    "sources": [
+      "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/"
+    ],
+    "script": "President Donald Trump declared foreign-made industrial robots a national security threat on October twenty-eighth.\nThe executive order focuses on the rising reliance on foreign automation in American factories.\nHis administration initiated formal trade talks to assess risks from these overseas robotic systems.\nThe White House has set a one hundred eighty day deadline for these negotiations to conclude.\nOfficials are weighing potential new tariffs if these discussions fail to produce significant trade concessions.\nThis move directly impacts global suppliers like Fanuc and ABB who dominate current domestic robotics imports.\nWould you support higher prices on consumer goods to keep robot manufacturing domestic?",
+    "keywords": [
+      "industrial factory robots",
+      "robotic arm assembly line",
+      "automated manufacturing facility"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Robot imports now a national security threat",
+        "url": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/"
+      },
+      {
+        "claim": "President Donald Trump declared foreign-made industrial robots a national security threat on October twenty-eighth.",
+        "url": "https://www.unite.ai/trump-directs-robotics-import-talks-after-commerce-security-finding/"
+      },
+      {
+        "claim": "The executive order focuses on the rising reliance on foreign automation in American factories.",
+        "url": "https://www.unite.ai/trump-directs-robotics-import-talks-after-commerce-security-finding/"
+      },
+      {
+        "claim": "His administration initiated formal trade talks to assess risks from these overseas robotic systems.",
+        "url": "https://www.unite.ai/trump-directs-robotics-import-talks-after-commerce-security-finding/"
+      },
+      {
+        "claim": "The White House has set a one hundred eighty day deadline for these negotiations to conclude.",
+        "url": "https://www.unite.ai/trump-directs-robotics-import-talks-after-commerce-security-finding/"
+      },
+      {
+        "claim": "Officials are weighing potential new tariffs if these discussions fail to produce significant trade concessions.",
+        "url": "https://www.unite.ai/trump-directs-robotics-import-talks-after-commerce-security-finding/"
+      },
+      {
+        "claim": "This move directly impacts global suppliers like Fanuc and ABB who dominate current domestic robotics imports.",
+        "url": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 2,
+    "source_links": [
+      "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -90,7 +267,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-30T05:50:43.242048+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -497,26 +674,8 @@
     }
   ],
   "paused": null,
-  "spare": [
-    {
-      "title": "LLM Voice",
-      "link": "https://martinfowler.com/bliki/LLM-Voice.html",
-      "summary": "",
-      "source": "martinfowler.com",
-      "published": "2026-10-29T14:57:55+00:00",
-      "buzz": "Hacker News 267 points",
-      "angle": "Martin Fowler’s viral take on the future of LLM voice interfaces is sparking major debate."
-    }
-  ],
+  "spare": [],
   "tried": [
-    "DeepSeek, Moonshot Used OpenAI'sGPT-6 Astra To Train Latest Models: Report",
-    "Serval triples valuation to $3 billion as businesses adopt AI workflow automation",
-    "Qwen4 1M context window",
-    "Marine Corps Ordered to Call AI 'Super Intelligence' Under New Policy",
-    "It’s Time to Teach Students to Be Drivers of AI, Not Passengers",
-    "Gnani AI Launches Prisma v3.0 Speech Recognition Model for 10 Languages",
-    "Microsoft Up, Google Down. A Tale of Two Hyperscalers.",
-    "FILE PHOTO: Illustration shows words \"Artificial Intelligence AI\\",
     "Will Hurd Worked With Sam Altman. His (P)Doom Is “Not Zero.”",
     "AI Artificial Intelligence What it is and What it is Not",
     "AI Artificial Intelligence What it is and What it is Not",
@@ -568,227 +727,17 @@
     "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
     "US investigated Chinese spy plot aimed at Nvidia CEO",
     "The NYT Cooking app is testing AI recipe modifications",
-    "OpenAI-backed Thrive Holdings acquires ADT"
+    "OpenAI-backed Thrive Holdings acquires ADT",
+    "Claude Duet is the first personal-assistant-type harness that feels useful",
+    "LLM Voice",
+    "Cohere Raises $5 Billion for Alternative AI Vision",
+    "Google admits AI search makes less money, but it's fixing that with more ads",
+    "Sam Altman: “Local inference is a terrible allocation of scarce resources”",
+    "Value of Google parent Alphabet plunges by $500bn as AI fears rattle Wall Street",
+    "We ran AI agent swarms in Minecraft and Mindustry",
+    "A tiny world model running games on a Raspberry Pi Pico 2 W"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "You can generate and edit Google Docs files directly in Gemini chats now",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-          "summary": "Now you can generate, preview, and edit PDFs, Google Docs, Google Sheets, slide decks, Markdown files, TXT files, and code directly within Google Gemini. The new file editing capabilities are available starting today for all Gemini users, and while PDF previews/editing works on both the web and mobile, all other file formats are only in […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-29T18:45:31+00:00",
-          "angle": "Google Gemini now lets you create and edit Docs, Sheets, and PDFs directly in the chat."
-        },
-        "draft": {
-          "title": "Gemini Now Edits Google Docs",
-          "hook_text": "Gemini now edits files directly",
-          "beats": [
-            {
-              "line": "Google Gemini now lets you generate and edit files directly in your chat window.",
-              "visual": "clip",
-              "query": "person using laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Gemini file editing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You can handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
-              "visual": "clip",
-              "query": "spreadsheet on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Docs and Sheets",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The update also brings support for Markdown files, TXT files, and raw code.",
-              "visual": "clip",
-              "query": "coding on screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Markdown and code",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These new capabilities are officially available to all Gemini users starting today.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Today",
-              "small": "Global rollout",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Available to all",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "PDF previews and editing work on both web and mobile devices.",
-              "visual": "clip",
-              "query": "person using smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Web and mobile",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "However, those other file formats are only available on the web version.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "You can generate and edit Google Docs files directly in Gemini chats now",
-              "url": "",
-              "tag": "Web version only",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will you switch your workflow to Gemini for document drafting?",
-              "visual": "clip",
-              "query": "person thinking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Future of editing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Energetic and punchy, focusing on the immediate utility of the new AI file editing features.",
-          "thin": false,
-          "caption": "Google Gemini now lets you generate and edit Google Docs, Sheets, PDFs, and code directly in your chat. These tools are rolling out to all users starting today across web and mobile, though other formats are currently web-only. Will you switch your workflow to Gemini for document drafting?",
-          "hashtags": [
-            "Google",
-            "Gemini",
-            "AI",
-            "Productivity",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-          ],
-          "script": "Google Gemini now lets you generate and edit files directly in your chat window.\nYou can handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.\nThe update also brings support for Markdown files, TXT files, and raw code.\nThese new capabilities are officially available to all Gemini users starting today.\nPDF previews and editing work on both web and mobile devices.\nHowever, those other file formats are only available on the web version.\nWill you switch your workflow to Gemini for document drafting?",
-          "keywords": [
-            "person using laptop",
-            "spreadsheet on screen",
-            "coding on screen",
-            "person using smartphone",
-            "person thinking"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Gemini now edits files directly",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-            },
-            {
-              "claim": "Google Gemini now lets you generate and edit files directly in your chat window.",
-              "url": "https://www.theverge.com/www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-            },
-            {
-              "claim": "You can handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-            },
-            {
-              "claim": "The update also brings support for Markdown files, TXT files, and raw code.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-            },
-            {
-              "claim": "These new capabilities are officially available to all Gemini users starting today.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-            },
-            {
-              "claim": "PDF previews and editing work on both web and mobile devices.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-            },
-            {
-              "claim": "However, those other file formats are only available on the web version.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-30T02:18:05.556502+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1530,6 +1479,52 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIwZGrjyweWqoKqF6cdmMMbIXuKNHDYAALQIgACApshV3fpMZvD6-hDPQQ",
       "history_title": "Rivian expands joint venture with VW to include AI assistant"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Cohere Raises $5 Billion for Alternative AI Vision",
+            "link": "https://www.pymnts.com/news/artificial-intelligence/2026/cohere-raises-5-billion-dollars-alternative-ai-vision/",
+            "summary": "Cohere Raises $5 Billion for Alternative AI Vision PYMNTS.com",
+            "source": "PYMNTS.com",
+            "published": "2026-10-29T20:54:24+00:00",
+            "angle": "Cohere raises a massive $5 billion, signaling a major shift in the AI race beyond just OpenAI and Google."
+          },
+          {
+            "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+            "link": "https://fig.blue/posts/duet-is-the-future/",
+            "summary": "",
+            "source": "fig.blue",
+            "published": "2026-10-29T17:24:25+00:00",
+            "buzz": "Hacker News 79 points",
+            "angle": "Claude Duet is being hailed as the first personal AI assistant that actually feels useful—here is why."
+          },
+          {
+            "title": "LLM Voice",
+            "link": "https://martinfowler.com/bliki/LLM-Voice.html",
+            "summary": "",
+            "source": "martinfowler.com",
+            "published": "2026-10-29T14:57:55+00:00",
+            "buzz": "Hacker News 302 points",
+            "angle": "The 'LLM Voice' debate: Why experts are warning about the future of AI-generated speech and how it changes communication."
+          }
+        ],
+        "choose_deadline": "2026-10-30T05:10:40.871657+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2067,7 +2062,7 @@
   "report_day": "2026-10-29",
   "ig_count": {
     "day": "2026-10-30",
-    "at": "2026-10-30T05:05:22.779911+05:30",
+    "at": "2026-10-30T05:20:43.899357+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2091,14 +2086,14 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
-    "calls": 64,
+    "calls": 159,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 50,
-        "busy": 13,
-        "other": 1,
+        "ok": 112,
+        "busy": 45,
+        "other": 2,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
