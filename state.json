@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -217,11 +217,55 @@
     "fact_notes": [],
     "source_links": [
       "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "562869749636642",
+      "title": "Club Level (feat. Dawson March)",
+      "artist": "The K Club"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Daily is the creator of the open source framework …: The image is blank/unreadable; the word 'Daily' is barely visible as a watermark on a dark background.",
+      "Pipecat lets developers build real time voice appl…: The image is heavily blurred and greyed out, making the developer stock video unreadable.",
+      "Deepgram provides speech to text models used acros…: The image is a nearly empty card with a very faint, small watermark.",
+      "Deepgram confirmed it is committed to keeping Pipe…: The image is mostly blank and dark, failing to show the requested source card for TechCrunch.",
+      "Would you build your next voice project with open …: The image is heavily blurred and greyed out, failing to clearly show a person looking at a screen.",
+      "The visual is mostly empty/dark with no meaningful image of Pipecat.",
+      "The visual shows the Deepgram team photo instead of a developer writing code on a laptop.",
+      "The visual is a blank/faint Deepgram logo card instead of real images of Deepgram.",
+      "The visual shows a dark card with 'Pipecat' instead of a source card for TechCrunch.",
+      "The visual shows text saying 'Open source voice tools' instead of a person looking at a screen."
+    ],
+    "editor": {
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, specific reporting on Deepgram's acquisition, but visuals need better alignment.",
+      "script_fixes": [],
+      "visual_beats": [
+        0,
+        5
+      ],
+      "visual_notes": [
+        "line 1: Generic conference photo for Deepgram acquisition instead of company logos or deal announc",
+        "line 6: TechCrunch app logo icon appears while discussing Deepgram's commitment to keep Pipecat op"
+      ],
+      "reviewer": "gemini"
+    },
+    "editor_rounds": 1,
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIwBWrjaEad0sHRfgrZbVrn1PlyYShKAAJkIgACApshVxDYAoX1Y8MsPQQ",
   "queue": [
     {
       "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
@@ -251,9 +295,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-29T20:47:24.973879+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-29T21:37:43.161662+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-29",
@@ -727,211 +771,6 @@
   "next_video_id": null,
   "undo_stack": [
     {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "AI led services to generate up to $200 billion in new work by 2030: BCG report",
-          "link": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms",
-          "summary": "AI led services to generate up to $200 billion in new work by 2030: BCG report The Economic Times",
-          "source": "The Economic Times",
-          "published": "2026-10-29T08:24:38+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "BCG forecasts $200B in AI work by 2030",
-          "hook_text": "Two hundred billion dollars in new AI work",
-          "beats": [
-            {
-              "line": "Two hundred billion dollars in new work is coming by two thousand thirty.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$200B",
-              "small": "New work by 2030",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "$200B in new work",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Boston Consulting Group",
-                  "domain": "bcg.com"
-                }
-              ]
-            },
-            {
-              "line": "Boston Consulting Group authored this new study on expanding market demand.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Economic Times",
-              "domain": "economictimes.com",
-              "headline": "AI led services to generate up to 200 billion in new work",
-              "url": "",
-              "tag": "Boston Consulting Group study",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Boston Consulting Group",
-                  "domain": "bcg.com"
-                }
-              ]
-            },
-            {
-              "line": "The forecast tracks the rapid commercial expansion of automated business solutions.",
-              "visual": "clip",
-              "query": "data center servers running",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Expanding AI solutions",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Companies are restructuring corporate workflows to capture emerging revenue streams.",
-              "visual": "clip",
-              "query": "business team reviewing analytics",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Corporate workflows",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Consultancies project massive spending shifts toward digital transformation initiatives globally.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2030",
-              "small": "Target year",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Global spending shifts",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will your enterprise secure a share of this expanding sector?",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$200B",
-              "small": "Market value",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Enterprise market share",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp, direct, and fast-paced tech reporting with a focus on business numbers",
-          "thin": false,
-          "caption": "Boston Consulting Group forecasts AI led services will generate up to $200 billion in new work by 2030. Companies are restructuring corporate workflows to capture these emerging revenue streams. Will your enterprise secure a share of this expanding sector?",
-          "hashtags": [
-            "BostonConsultingGroup",
-            "ArtificialIntelligence",
-            "BusinessGrowth",
-            "TechTrends",
-            "Enterprise"
-          ],
-          "sources": [
-            "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-          ],
-          "script": "Two hundred billion dollars in new work is coming by two thousand thirty.\nBoston Consulting Group authored this new study on expanding market demand.\nThe forecast tracks the rapid commercial expansion of automated business solutions.\nCompanies are restructuring corporate workflows to capture emerging revenue streams.\nConsultancies project massive spending shifts toward digital transformation initiatives globally.\nWill your enterprise secure a share of this expanding sector?",
-          "keywords": [
-            "data center servers running",
-            "business team reviewing analytics"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "AI led services to generate up to $200 billion in new work by 2030 according to BCG report",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-            },
-            {
-              "claim": "$200 billion in new work is coming by 2030",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-            },
-            {
-              "claim": "Boston Consulting Group authored this new study on expanding market demand.",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-            },
-            {
-              "claim": "The forecast tracks the rapid commercial expansion of automated business solutions.",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-            },
-            {
-              "claim": "Companies are restructuring corporate workflows to capture emerging revenue streams.",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-            },
-            {
-              "claim": "Consultancies project massive spending shifts toward digital transformation initiatives globally by 2030.",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-            },
-            {
-              "claim": "Market value of $200 billion in net new work by 2030",
-              "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://m.economictimes.com/tech/artificial-intelligence/ai-led-services-to-generate-up-to-200-billion-in-new-work-by-2030-bcg-report/articleshow/135297282.cms"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-29T16:22:07.193985+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
-    {
       "label": "autopilot picking story #1",
       "data": {
         "stage": "choosing",
@@ -1235,6 +1074,239 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Deepgram acquires Pipecat-maker Daily to bolster its voice AI infrastructure",
+          "link": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+          "summary": "Deepgram said that it is committed to keep Pipecat open source.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-29T13:00:00+00:00",
+          "angle": "Deepgram acquires voice AI infrastructure startup Daily to bolster tools."
+        },
+        "draft": {
+          "title": "Deepgram buys Daily",
+          "hook_text": "Deepgram just bought Daily.",
+          "beats": [
+            {
+              "line": "Deepgram acquired Daily to build out its voice AI infrastructure.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Deepgram",
+              "outlet": "",
+              "domain": "deepgram.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+              "tag": "Deepgram acquires Daily",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Deepgram",
+                  "domain": "deepgram.com"
+                }
+              ]
+            },
+            {
+              "line": "Daily is the creator of the open source framework Pipecat.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Pipecat",
+              "outlet": "",
+              "domain": "daily.co",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+              "tag": "Daily makes Pipecat",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Deepgram",
+                  "domain": "deepgram.com"
+                }
+              ]
+            },
+            {
+              "line": "Pipecat lets developers build real time voice applications with speech models.",
+              "visual": "clip",
+              "query": "developer writing code on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Real time voice applications",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Deepgram provides speech to text models used across customer support workflows.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Deepgram",
+              "outlet": "",
+              "domain": "deepgram.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+              "tag": "Deepgram speech models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Deepgram",
+                  "domain": "deepgram.com"
+                }
+              ]
+            },
+            {
+              "line": "This buyout combines Deepgram audio transcription with Daily real time pipelines.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Audio and video pipelines",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Deepgram confirmed it is committed to keeping Pipecat open source.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Deepgram acquires Pipecat-maker Daily",
+              "url": "",
+              "tag": "Pipecat stays open source",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Deepgram",
+                  "domain": "deepgram.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you build your next voice project with open source tools?",
+              "visual": "clip",
+              "query": "person looking at screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Open source voice tools",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and direct, highlighting the consolidation in voice infrastructure while noting the open source promise",
+          "thin": false,
+          "caption": "Deepgram acquired Daily, the creator of Pipecat, to strengthen its voice AI infrastructure by combining audio transcription with real-time pipelines. Deepgram confirmed that Pipecat will remain open source. Would you build your voice agent with open source tools?",
+          "hashtags": [
+            "Deepgram",
+            "Daily",
+            "Pipecat",
+            "VoiceAI",
+            "OpenSource"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
+          ],
+          "script": "Deepgram acquired Daily to build out its voice AI infrastructure.\nDaily is the creator of the open source framework Pipecat.\nPipecat lets developers build real time voice applications with speech models.\nDeepgram provides speech to text models used across customer support workflows.\nThis buyout combines Deepgram audio transcription with Daily real time pipelines.\nDeepgram confirmed it is committed to keeping Pipecat open source.\nWould you build your next voice project with open source tools?",
+          "keywords": [
+            "developer writing code on laptop",
+            "server room data center",
+            "person looking at screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Deepgram acquired Daily.",
+              "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
+            },
+            {
+              "claim": "Deepgram acquired Daily to build out its voice AI infrastructure.",
+              "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
+            },
+            {
+              "claim": "Daily is the creator of the open source framework Pipecat.",
+              "url": "https://www.unite.ai/deepgram-acquires-daily-commits-to-keeping-pipecat-open-source/"
+            },
+            {
+              "claim": "Pipecat lets developers build real time voice applications with speech models.",
+              "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
+            },
+            {
+              "claim": "Deepgram provides speech to text models used across customer support workflows.",
+              "url": "https://www.unite.ai/deepgram-acquires-daily-commits-to-keeping-pipecat-open-source/"
+            },
+            {
+              "claim": "This buyout combines Deepgram audio transcription with Daily real time pipelines.",
+              "url": "https://www.unite.ai/deepgram-acquires-daily-commits-to-keeping-pipecat-open-source/"
+            },
+            {
+              "claim": "Deepgram confirmed it is committed to keeping Pipecat open source.",
+              "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-29T20:47:24.973879+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1741,8 +1813,8 @@
       "event": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line. Software developer Flamerix identified this issue while analyzing the agent's internal communication logs. The agent repeatedly sends status"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-29T19:30+05:30",
@@ -1770,7 +1842,7 @@
   "report_day": "2026-10-28",
   "ig_count": {
     "day": "2026-10-29",
-    "at": "2026-10-29T20:45:28.060076+05:30",
+    "at": "2026-10-29T21:07:43.161909+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -1790,25 +1862,25 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-29",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
-    "calls": 587,
+    "calls": 610,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 353,
+        "ok": 364,
         "busy": 67,
-        "other": 10,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 16,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.1-flash-lite": {
-        "ok": 57,
+        "ok": 58,
         "busy": 13,
-        "other": 2,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 5,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-3.6-flash": {
         "ok": 11,
@@ -1837,17 +1909,12 @@
       "gemini-flash-lite-latest": {
         "ok": 1,
         "busy": 0,
-        "other": 0,
-        "last": ""
+        "other": 2,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "15:51",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-27"
-    },
     {
       "at": "15:56",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -1892,6 +1959,11 @@
       "at": "23:10",
       "error": "every free Gemini model is used up for today",
       "day": "2026-10-28"
+    },
+    {
+      "at": "15:35",
+      "error": "gemini-flash-lite-latest is overloaded right now",
+      "day": "2026-10-29"
     }
   ],
   "last_script_error": {
@@ -1919,46 +1991,6 @@
     "gemini-3-flash-preview": 1793263180.8430204
   },
   "editor_log": [
-    {
-      "at": "2026-10-28T19:02+05:30",
-      "title": "Meta quietly launched an ‘AI pet journal’ app",
-      "overall": 8.7,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Engaging AI news reel with solid specific details, but visual pacing needs refinement.",
-      "fixes": [],
-      "visual": [
-        "line 2: Displays 'The Verge' logo instead of Apple or Play Store store listings.",
-        "line 5: Displays the Meta logo instead of an image of the Waddle World pet interface or journal."
-      ]
-    },
-    {
-      "at": "2026-10-28T21:05+05:30",
-      "title": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Works",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong reporting ruined by generic stock imagery and Microsoft promos instead of Ndoc visuals.",
-      "fixes": [
-        "LINE 1: Meta AI director Rohit Patel is leaving his role after eight years."
-      ],
-      "visual": [
-        "line 4: Frame 7 shows a generic Microsoft 365 Copilot promotional card instead of anything related",
-        "line 5: Frame 8 displays a generic Google logo placeholder instead of Google Workspace interface o"
-      ]
-    },
     {
       "at": "2026-10-28T22:28+05:30",
       "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcri",
@@ -2347,10 +2379,49 @@
         "line 2: No visual representation for Robusta Dev or its troubleshooting tools; just plain text on ",
         "line 5: Reuses the exact same stock image from the beginning of the reel during the final question"
       ]
+    },
+    {
+      "at": "2026-10-29T21:01+05:30",
+      "title": "Deepgram acquires Pipecat-maker Daily to bolster its voice AI infrastructure",
+      "overall": 7.8,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong news coverage, but visuals rely too heavily on repeated generic office and code clips.",
+      "fixes": [],
+      "visual": [
+        "line 1: Photo of founders displayed for multiple frames without relation to the acquisition action",
+        "line 5: Generic code and random person working on a laptop do not visually represent Deepgram audi",
+        "line 6: TechCrunch icon is generic and unrelated to the open-source commitment statement."
+      ]
+    },
+    {
+      "at": "2026-10-29T21:07+05:30",
+      "title": "Deepgram acquires Pipecat-maker Daily to bolster its voice AI infrastructure",
+      "overall": 8.7,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong, specific reporting on Deepgram's acquisition, but visuals need better alignment.",
+      "fixes": [],
+      "visual": [
+        "line 1: Generic conference photo for Deepgram acquisition instead of company logos or deal announc",
+        "line 6: TechCrunch app logo icon appears while discussing Deepgram's commitment to keep Pipecat op"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 163,
+  "fish_turn": 164,
   "ig_music_recent": [
     "672790974305597",
     "3001821403330916",
