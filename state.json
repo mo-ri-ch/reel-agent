@@ -16,7 +16,7 @@
     "hook_text": "Microsoft is offering buyouts to 60,000 workers",
     "beats": [
       {
-        "line": "Microsoft just offered voluntary exit packages to sixty thousand employees.",
+        "line": "Microsoft just offered voluntary exit packages to 60,000 employees.",
         "visual": "stat",
         "query": "technology",
         "prompt": "",
@@ -70,7 +70,7 @@
         "small": "",
         "entity": "Microsoft",
         "outlet": "",
-        "domain": "theverge.com",
+        "domain": "microsoft.com",
         "headline": "",
         "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
         "tag": "US UK and Canada",
@@ -85,9 +85,9 @@
         ]
       },
       {
-        "line": "This move signals a fundamental shift in the size of the Microsoft workforce.",
+        "line": "This move signals how artificial intelligence is permanently shrinking corporate headcounts.",
         "visual": "clip",
-        "query": "office workers at laptops",
+        "query": "empty modern office desk",
         "prompt": "",
         "big": "",
         "small": "",
@@ -96,7 +96,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "workforce size changing",
+        "tag": "AI shrinking headcounts",
         "name": "",
         "role": "",
         "x": "",
@@ -108,30 +108,25 @@
         ]
       },
       {
-        "line": "The Verge detailed how internal changes are rolling out alongside Notepad updates.",
-        "visual": "source",
-        "query": "technology",
+        "line": "Workers now face hard choices as software handles tasks once done by humans.",
+        "visual": "clip",
+        "query": "person typing on laptop",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "The Verge",
-        "domain": "theverge.com",
-        "headline": "Microsoft’s AI future has fewer jobs",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
         "url": "",
-        "tag": "The Verge report",
+        "tag": "hard choices for workers",
         "name": "",
         "role": "",
         "x": "",
-        "brands": [
-          {
-            "name": "Microsoft",
-            "domain": "microsoft.com"
-          }
-        ]
+        "brands": []
       },
       {
-        "line": "Would you accept a buyout for your role?",
+        "line": "Would you trade your job for an AI buyout?",
         "visual": "clip",
         "query": "person looking at computer screen",
         "prompt": "",
@@ -142,7 +137,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "accept a buyout",
+        "tag": "trade job for buyout",
         "name": "",
         "role": "",
         "x": "",
@@ -151,7 +146,7 @@
     ],
     "delivery": "sharp and direct tech journalist tone, highlighting the scale of the cuts without alarmism",
     "thin": false,
-    "caption": "Microsoft is offering voluntary buyouts to 60,000 employees as CEO Satya Nadella reshapes the workforce for AI. Would you accept a buyout for your role?",
+    "caption": "Microsoft is offering voluntary buyouts to 60,000 employees as CEO Satya Nadella reshapes the workforce for AI. Would you trade your job for an AI buyout?",
     "hashtags": [
       "Microsoft",
       "SatyaNadella",
@@ -162,9 +157,10 @@
     "sources": [
       "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
     ],
-    "script": "Microsoft just offered voluntary exit packages to sixty thousand employees.\nChief Executive Officer Satya Nadella is shifting the company focus toward AI.\nThe buyout offers reached staff located across the United States, United Kingdom, and Canada.\nThis move signals a fundamental shift in the size of the Microsoft workforce.\nThe Verge detailed how internal changes are rolling out alongside Notepad updates.\nWould you accept a buyout for your role?",
+    "script": "Microsoft just offered voluntary exit packages to 60,000 employees.\nChief Executive Officer Satya Nadella is shifting the company focus toward AI.\nThe buyout offers reached staff located across the United States, United Kingdom, and Canada.\nThis move signals how artificial intelligence is permanently shrinking corporate headcounts.\nWorkers now face hard choices as software handles tasks once done by humans.\nWould you trade your job for an AI buyout?",
     "keywords": [
-      "office workers at laptops",
+      "empty modern office desk",
+      "person typing on laptop",
       "person looking at computer screen"
     ],
     "image_prompts": [],
@@ -175,11 +171,11 @@
         "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
       },
       {
-        "claim": "Microsoft offered voluntary exit packages to sixty thousand employees.",
+        "claim": "Microsoft just offered voluntary exit packages to 60,000 employees.",
         "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
       },
       {
-        "claim": "Satya Nadella is the Chief Executive Officer of Microsoft.",
+        "claim": "Satya Nadella is CEO of Microsoft.",
         "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
       },
       {
@@ -187,13 +183,14 @@
         "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
       },
       {
-        "claim": "The Verge detailed how internal changes are rolling out alongside Notepad updates.",
+        "claim": "This move signals how artificial intelligence is permanently shrinking corporate headcounts.",
         "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
     ]
@@ -230,9 +227,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-29T22:49:27.155618+05:30",
+  "script_deadline": "2026-10-29T22:58:47.189755+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-29",
@@ -723,206 +720,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Freshworks Acquires AI Startup Robusta To Strengthen IT Operations Platform",
-          "link": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/",
-          "summary": "Nasdaq-listed SaaS major Freshworks has acquired Israel-based AI startup Robusta Dev for an undisclosed amount to strengthen its IT service…",
-          "source": "Inc42 Media",
-          "published": "2026-10-29T07:06:42+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Freshworks Buys Robusta Dev",
-          "hook_text": "Freshworks just bought Robusta Dev.",
-          "beats": [
-            {
-              "line": "Nasdaq-listed SaaS giant Freshworks just bought Tel Aviv startup Robusta Dev for an undisclosed sum.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Freshworks",
-              "outlet": "",
-              "domain": "freshworks.com",
-              "headline": "",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/",
-              "tag": "Freshworks buys Robusta Dev",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Freshworks",
-                  "domain": "freshworks.com"
-                },
-                {
-                  "name": "Robusta Dev",
-                  "domain": "robustadev.com"
-                }
-              ]
-            },
-            {
-              "line": "The Robusta Dev platform builds automated troubleshooting tools to fix IT incidents in production environments.",
-              "visual": "clip",
-              "query": "engineer looking at server monitors",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Robusta Dev troubleshooting tools",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Robusta Dev",
-                  "domain": "robustadev.com"
-                }
-              ]
-            },
-            {
-              "line": "Freshworks plans to embed this automation straight into its Freshservice IT service management platform.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Freshservice",
-              "outlet": "",
-              "domain": "freshworks.com",
-              "headline": "",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/",
-              "tag": "Freshservice platform integration",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Freshworks",
-                  "domain": "freshworks.com"
-                }
-              ]
-            },
-            {
-              "line": "Inc42 Media reported the acquisition to speed up enterprise incident resolutions across customer support software.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Inc42 Media",
-              "domain": "inc42.com",
-              "headline": "Freshworks Acquires AI Startup Robusta To Strengthen IT Operations Platform",
-              "url": "",
-              "tag": "Enterprise incident resolution",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Freshworks",
-                  "domain": "freshworks.com"
-                }
-              ]
-            },
-            {
-              "line": "Will automated incident resolution completely replace human help desks?",
-              "visual": "clip",
-              "query": "person typing fast on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Automated incident resolution",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp, fast-paced tech news delivery, maintaining an objective and informative tone from start to finish",
-          "thin": false,
-          "caption": "Freshworks has acquired Israel-based startup Robusta Dev to strengthen its Freshservice IT platform. The acquisition brings automated incident resolution directly into enterprise support workflows. How soon will automated ticketing handle all your tech support requests?",
-          "hashtags": [
-            "Freshworks",
-            "RobustaDev",
-            "IToperations",
-            "SaaS",
-            "TechNews"
-          ],
-          "sources": [
-            "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-          ],
-          "script": "Nasdaq-listed SaaS giant Freshworks just bought Tel Aviv startup Robusta Dev for an undisclosed sum.\nThe Robusta Dev platform builds automated troubleshooting tools to fix IT incidents in production environments.\nFreshworks plans to embed this automation straight into its Freshservice IT service management platform.\nInc42 Media reported the acquisition to speed up enterprise incident resolutions across customer support software.\nWill automated incident resolution completely replace human help desks?",
-          "keywords": [
-            "engineer looking at server monitors",
-            "person typing fast on laptop"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Freshworks acquired Robusta Dev.",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-            },
-            {
-              "claim": "Freshworks is a Nasdaq-listed SaaS giant.",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-            },
-            {
-              "claim": "Freshworks bought Robusta Dev for an undisclosed sum.",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-            },
-            {
-              "claim": "Robusta Dev is a startup based in Tel Aviv.",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-            },
-            {
-              "claim": "The Robusta Dev platform builds automated troubleshooting tools to fix IT incidents in production environments.",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-            },
-            {
-              "claim": "Freshworks plans to embed this automation straight into its Freshservice IT service management platform.",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-            },
-            {
-              "claim": "Inc42 Media reported the acquisition to speed up enterprise incident resolutions across customer support software.",
-              "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-29T18:44:08.894217+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1514,6 +1311,218 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Microsoft’s AI future has fewer jobs",
+          "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+          "summary": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's workforce. Microsoft is now offering voluntary buyouts to around 60,000 employees across the US, UK, Canada, and […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-29T16:00:00+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Microsoft Offers 60,000 Buyouts",
+          "hook_text": "Microsoft is offering buyouts to 60,000 workers",
+          "beats": [
+            {
+              "line": "Microsoft just offered voluntary exit packages to sixty thousand employees.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "60,000",
+              "small": "employees offered buyouts",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "60,000 buyout offers",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "Chief Executive Officer Satya Nadella is shifting the company focus toward AI.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://news.microsoft.com/exec/satya-nadella/",
+              "tag": "Satya Nadella CEO",
+              "name": "Satya Nadella",
+              "role": "CEO, Microsoft",
+              "x": "satyanadella",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "The buyout offers reached staff located across the United States, United Kingdom, and Canada.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Microsoft",
+              "outlet": "",
+              "domain": "theverge.com",
+              "headline": "",
+              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+              "tag": "US UK and Canada",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "This move signals a fundamental shift in the size of the Microsoft workforce.",
+              "visual": "clip",
+              "query": "office workers at laptops",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "workforce size changing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "The Verge detailed how internal changes are rolling out alongside Notepad updates.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Microsoft’s AI future has fewer jobs",
+              "url": "",
+              "tag": "The Verge report",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Microsoft",
+                  "domain": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you accept a buyout for your role?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "accept a buyout",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and direct tech journalist tone, highlighting the scale of the cuts without alarmism",
+          "thin": false,
+          "caption": "Microsoft is offering voluntary buyouts to 60,000 employees as CEO Satya Nadella reshapes the workforce for AI. Would you accept a buyout for your role?",
+          "hashtags": [
+            "Microsoft",
+            "SatyaNadella",
+            "AI",
+            "Layoffs",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+          ],
+          "script": "Microsoft just offered voluntary exit packages to sixty thousand employees.\nChief Executive Officer Satya Nadella is shifting the company focus toward AI.\nThe buyout offers reached staff located across the United States, United Kingdom, and Canada.\nThis move signals a fundamental shift in the size of the Microsoft workforce.\nThe Verge detailed how internal changes are rolling out alongside Notepad updates.\nWould you accept a buyout for your role?",
+          "keywords": [
+            "office workers at laptops",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Microsoft is offering buyouts to 60,000 workers",
+              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+            },
+            {
+              "claim": "Microsoft offered voluntary exit packages to sixty thousand employees.",
+              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+            },
+            {
+              "claim": "Satya Nadella is the Chief Executive Officer of Microsoft.",
+              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+            },
+            {
+              "claim": "The buyout offers reached staff located across the United States, United Kingdom, and Canada.",
+              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+            },
+            {
+              "claim": "The Verge detailed how internal changes are rolling out alongside Notepad updates.",
+              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-29T22:49:27.155618+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2017,8 +2026,8 @@
       "event": "Deepgram acquired Daily to build out its voice AI infrastructure. Daily is the creator of the open source framework Pipecat. Pipecat lets developers build real time voice applications with speech models. Deepgram provides speech to text mod"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-29T21:40+05:30",
@@ -2066,7 +2075,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-29",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
@@ -2195,28 +2204,6 @@
     "gemini-3-flash-preview": 1793263180.8430204
   },
   "editor_log": [
-    {
-      "at": "2026-10-28T22:28+05:30",
-      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcri",
-      "overall": 8.3,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong, specific tech news with minor visual repetition and generic stock assets.",
-      "fixes": [
-        "LINE 2: Specify the exact leaderboard metrics or rankings if applicable to add extra punch."
-      ],
-      "visual": [
-        "line 1: Repeated use of the same Nvidia app-icon graphic across multiple frames.",
-        "line 3: Generic blurred abstract dashboard stock image doesn't clearly convey Artificial Analysis.",
-        "line 6: Generic laptop workspace stock image for the closing question."
-      ]
-    },
     {
       "at": "2026-10-29T00:16+05:30",
       "title": "Chrome’s AI-powered Autofill can now dig through your Gmail to fill out forms",
@@ -2622,10 +2609,34 @@
         "line 1: Generic conference photo for Deepgram acquisition instead of company logos or deal announc",
         "line 6: TechCrunch app logo icon appears while discussing Deepgram's commitment to keep Pipecat op"
       ]
+    },
+    {
+      "at": "2026-10-29T22:57+05:30",
+      "title": "Microsoft’s AI future has fewer jobs",
+      "overall": 6.5,
+      "scores": {
+        "hook": 9,
+        "specific": 9,
+        "substance": 6,
+        "accuracy": 4,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Inaccurate data and filler commentary undermine the credibility of this news report.",
+      "fixes": [
+        "LINE 1: Change 'sixty thousand' to '60,000' to match the source text.",
+        "LINE 4: Remove this line entirely as it is vague commentary/filler.",
+        "LINE 5: Remove this line as it is irrelevant to the core news of the buyouts."
+      ],
+      "visual": [
+        "line 1: The number 59,990 appears in frame 3, contradicting the 60,000 stated in the script.",
+        "line 4: Visuals are generic text cards that do not add information.",
+        "line 5: The Verge logo is used, but the connection to Notepad updates is confusing and lacks visua"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 164,
+  "fish_turn": 165,
   "ig_music_recent": [
     "3001821403330916",
     "1679493397169813",
