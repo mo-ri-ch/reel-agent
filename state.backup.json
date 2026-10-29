@@ -12,13 +12,13 @@
     "angle": "Google Gemini now lets you create and edit Docs, Sheets, and PDFs directly in the chat."
   },
   "draft": {
-    "title": "Google Gemini adds file editing",
+    "title": "Gemini Now Edits Google Docs",
     "hook_text": "Gemini now edits files directly",
     "beats": [
       {
         "line": "Google Gemini now lets you generate and edit files directly in your chat window.",
         "visual": "clip",
-        "query": "technology",
+        "query": "person using laptop",
         "prompt": "",
         "big": "",
         "small": "",
@@ -34,9 +34,9 @@
         "brands": []
       },
       {
-        "line": "You can now handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
+        "line": "You can handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
         "visual": "clip",
-        "query": "person typing on laptop",
+        "query": "spreadsheet on screen",
         "prompt": "",
         "big": "",
         "small": "",
@@ -45,7 +45,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Docs and Sheets support",
+        "tag": "Docs and Sheets",
         "name": "",
         "role": "",
         "x": "",
@@ -54,7 +54,7 @@
       {
         "line": "The update also brings support for Markdown files, TXT files, and raw code.",
         "visual": "clip",
-        "query": "technology",
+        "query": "coding on screen",
         "prompt": "",
         "big": "",
         "small": "",
@@ -63,7 +63,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Markdown and code support",
+        "tag": "Markdown and code",
         "name": "",
         "role": "",
         "x": "",
@@ -99,14 +99,14 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Web and mobile support",
+        "tag": "Web and mobile",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Other file formats are currently limited to specific interfaces for now.",
+        "line": "However, those other file formats are only available on the web version.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -117,16 +117,16 @@
         "domain": "theverge.com",
         "headline": "You can generate and edit Google Docs files directly in Gemini chats now",
         "url": "",
-        "tag": "Limited format access",
+        "tag": "Web version only",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Will you use Gemini for your next document draft?",
+        "line": "Will you switch your workflow to Gemini for document drafting?",
         "visual": "clip",
-        "query": "person thinking at desk",
+        "query": "person thinking",
         "prompt": "",
         "big": "",
         "small": "",
@@ -142,9 +142,9 @@
         "brands": []
       }
     ],
-    "delivery": "Informative and direct, highlighting the utility of the update with a neutral, professional tone.",
+    "delivery": "Energetic and punchy, focusing on the immediate utility of the new AI file editing features.",
     "thin": false,
-    "caption": "Google Gemini now lets you generate and edit Google Docs, Sheets, PDFs, and code directly in your chat. These tools are rolling out to all users starting today across web and mobile. Will you use Gemini for your next document draft?",
+    "caption": "Google Gemini now lets you generate and edit Google Docs, Sheets, PDFs, and code directly in your chat. These tools are rolling out to all users starting today across web and mobile, though other formats are currently web-only. Will you switch your workflow to Gemini for document drafting?",
     "hashtags": [
       "Google",
       "Gemini",
@@ -155,13 +155,13 @@
     "sources": [
       "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
     ],
-    "script": "Google Gemini now lets you generate and edit files directly in your chat window.\nYou can now handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.\nThe update also brings support for Markdown files, TXT files, and raw code.\nThese new capabilities are officially available to all Gemini users starting today.\nPDF previews and editing work on both web and mobile devices.\nOther file formats are currently limited to specific interfaces for now.\nWill you use Gemini for your next document draft?",
+    "script": "Google Gemini now lets you generate and edit files directly in your chat window.\nYou can handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.\nThe update also brings support for Markdown files, TXT files, and raw code.\nThese new capabilities are officially available to all Gemini users starting today.\nPDF previews and editing work on both web and mobile devices.\nHowever, those other file formats are only available on the web version.\nWill you switch your workflow to Gemini for document drafting?",
     "keywords": [
-      "technology",
-      "person typing on laptop",
-      "technology",
+      "person using laptop",
+      "spreadsheet on screen",
+      "coding on screen",
       "person using smartphone",
-      "person thinking at desk"
+      "person thinking"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
@@ -172,10 +172,10 @@
       },
       {
         "claim": "Google Gemini now lets you generate and edit files directly in your chat window.",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+        "url": "https://www.theverge.com/www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
       },
       {
-        "claim": "You can now handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
+        "claim": "You can handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
       },
       {
@@ -191,13 +191,14 @@
         "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
       },
       {
-        "claim": "Other file formats are currently limited to specific interfaces for now.",
+        "claim": "However, those other file formats are only available on the web version.",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
     ]
@@ -234,9 +235,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-30T02:06:44.583316+05:30",
+  "script_deadline": "2026-10-30T02:18:05.556502+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-30",
@@ -723,215 +724,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Microsoft’s AI future has fewer jobs",
-          "link": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-          "summary": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's workforce. Microsoft is now offering voluntary buyouts to around 60,000 employees across the US, UK, Canada, and […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-29T16:00:00+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Microsoft Offers 60,000 Buyouts",
-          "hook_text": "Microsoft is offering buyouts to 60,000 workers",
-          "beats": [
-            {
-              "line": "Microsoft just offered voluntary exit packages to 60,000 employees.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "60,000",
-              "small": "employees offered buyouts",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "60,000 buyout offers",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "Chief Executive Officer Satya Nadella is shifting the company focus toward AI.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://news.microsoft.com/exec/satya-nadella/",
-              "tag": "Satya Nadella CEO",
-              "name": "Satya Nadella",
-              "role": "CEO, Microsoft",
-              "x": "satyanadella",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "The buyout offers reached staff located across the United States, United Kingdom, and Canada.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Microsoft",
-              "outlet": "",
-              "domain": "microsoft.com",
-              "headline": "",
-              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-              "tag": "US UK and Canada",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "This move signals how artificial intelligence is permanently shrinking corporate headcounts.",
-              "visual": "clip",
-              "query": "empty modern office desk",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI shrinking headcounts",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Microsoft",
-                  "domain": "microsoft.com"
-                }
-              ]
-            },
-            {
-              "line": "Workers now face hard choices as software handles tasks once done by humans.",
-              "visual": "clip",
-              "query": "person typing on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "hard choices for workers",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trade your job for an AI buyout?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "trade job for buyout",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp and direct tech journalist tone, highlighting the scale of the cuts without alarmism",
-          "thin": false,
-          "caption": "Microsoft is offering voluntary buyouts to 60,000 employees as CEO Satya Nadella reshapes the workforce for AI. Would you trade your job for an AI buyout?",
-          "hashtags": [
-            "Microsoft",
-            "SatyaNadella",
-            "AI",
-            "Layoffs",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
-          ],
-          "script": "Microsoft just offered voluntary exit packages to 60,000 employees.\nChief Executive Officer Satya Nadella is shifting the company focus toward AI.\nThe buyout offers reached staff located across the United States, United Kingdom, and Canada.\nThis move signals how artificial intelligence is permanently shrinking corporate headcounts.\nWorkers now face hard choices as software handles tasks once done by humans.\nWould you trade your job for an AI buyout?",
-          "keywords": [
-            "empty modern office desk",
-            "person typing on laptop",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Microsoft is offering buyouts to 60,000 workers",
-              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
-            },
-            {
-              "claim": "Microsoft just offered voluntary exit packages to 60,000 employees.",
-              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
-            },
-            {
-              "claim": "Satya Nadella is CEO of Microsoft.",
-              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
-            },
-            {
-              "claim": "The buyout offers reached staff located across the United States, United Kingdom, and Canada.",
-              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
-            },
-            {
-              "claim": "This move signals how artificial intelligence is permanently shrinking corporate headcounts.",
-              "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-29T22:58:47.189755+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1678,6 +1470,222 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+          "summary": "Now you can generate, preview, and edit PDFs, Google Docs, Google Sheets, slide decks, Markdown files, TXT files, and code directly within Google Gemini. The new file editing capabilities are available starting today for all Gemini users, and while PDF previews/editing works on both the web and mobile, all other file formats are only in […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-29T18:45:31+00:00",
+          "angle": "Google Gemini now lets you create and edit Docs, Sheets, and PDFs directly in the chat."
+        },
+        "draft": {
+          "title": "Google Gemini adds file editing",
+          "hook_text": "Gemini now edits files directly",
+          "beats": [
+            {
+              "line": "Google Gemini now lets you generate and edit files directly in your chat window.",
+              "visual": "clip",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Gemini file editing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You can now handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
+              "visual": "clip",
+              "query": "person typing on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Docs and Sheets support",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The update also brings support for Markdown files, TXT files, and raw code.",
+              "visual": "clip",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Markdown and code support",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These new capabilities are officially available to all Gemini users starting today.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Today",
+              "small": "Global rollout",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Available to all",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "PDF previews and editing work on both web and mobile devices.",
+              "visual": "clip",
+              "query": "person using smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Web and mobile support",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Other file formats are currently limited to specific interfaces for now.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "You can generate and edit Google Docs files directly in Gemini chats now",
+              "url": "",
+              "tag": "Limited format access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will you use Gemini for your next document draft?",
+              "visual": "clip",
+              "query": "person thinking at desk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Future of editing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Informative and direct, highlighting the utility of the update with a neutral, professional tone.",
+          "thin": false,
+          "caption": "Google Gemini now lets you generate and edit Google Docs, Sheets, PDFs, and code directly in your chat. These tools are rolling out to all users starting today across web and mobile. Will you use Gemini for your next document draft?",
+          "hashtags": [
+            "Google",
+            "Gemini",
+            "AI",
+            "Productivity",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+          ],
+          "script": "Google Gemini now lets you generate and edit files directly in your chat window.\nYou can now handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.\nThe update also brings support for Markdown files, TXT files, and raw code.\nThese new capabilities are officially available to all Gemini users starting today.\nPDF previews and editing work on both web and mobile devices.\nOther file formats are currently limited to specific interfaces for now.\nWill you use Gemini for your next document draft?",
+          "keywords": [
+            "technology",
+            "person typing on laptop",
+            "technology",
+            "person using smartphone",
+            "person thinking at desk"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Gemini now edits files directly",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+            },
+            {
+              "claim": "Google Gemini now lets you generate and edit files directly in your chat window.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+            },
+            {
+              "claim": "You can now handle PDFs, Google Docs, Sheets, and slide decks without leaving the app.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+            },
+            {
+              "claim": "The update also brings support for Markdown files, TXT files, and raw code.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+            },
+            {
+              "claim": "These new capabilities are officially available to all Gemini users starting today.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+            },
+            {
+              "claim": "PDF previews and editing work on both web and mobile devices.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+            },
+            {
+              "claim": "Other file formats are currently limited to specific interfaces for now.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-30T02:06:44.583316+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2186,8 +2194,8 @@
       "event": "Dream just raised $17 million from Andreessen Horowitz to build AI world models. The startup was founded by former Palantir executives. They are building a model grounded in real physics and construction standards. The engine is trained on "
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-30T00:20+05:30",
@@ -2235,7 +2243,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-30",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
@@ -2329,30 +2337,6 @@
     "gemini-3.5-flash-lite": 1793297482.9921598
   },
   "editor_log": [
-    {
-      "at": "2026-10-29T03:29+05:30",
-      "title": "Trump pushes to rebrand AI as 'super intelligence' in bid to reshape tech narrat",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 7,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Strong subject matter ruined by low-effort random b-roll and generic placeholder imagery.",
-      "fixes": [
-        "LINE 1: Donald Trump signed a directive on October 29 to replace the term AI with super intelligence.",
-        "LINE 2: The executive order mandates all federal agencies to reshape their tech narrative.",
-        "LINE 4: Officials developed the policy to shift public perception away from traditional industry terminology like artificial intelligence."
-      ],
-      "visual": [
-        "line 1: Displays an unrelated dark screenshot of ChatGPT interface instead of executive documents ",
-        "line 4: Random terminal code text (bytes=32) and blurred colorful Christmas lights have nothing to",
-        "line 5: Fails to show any document visuals, relying on generic typography animations on a dark bac"
-      ]
-    },
     {
       "at": "2026-10-29T04:10+05:30",
       "title": "Microsoft recorded $10 billion in revenue from OpenAI",
@@ -2763,10 +2747,33 @@
         "line 5: The '1 Trillion parameters' graphic is held for 7+ seconds, violating the visual pacing ru",
         "line 6: The TechCrunch logo is irrelevant to the content of the line being spoken."
       ]
+    },
+    {
+      "at": "2026-10-30T02:17+05:30",
+      "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Visuals are repetitive and lack dynamic variety, failing to match the premium brand standard.",
+      "fixes": [
+        "LINE 6: Replace 'specific interfaces' with 'Google Workspace apps' for better clarity.",
+        "LINE 7: Change to 'Will you switch your workflow to Gemini for document drafting?'"
+      ],
+      "visual": [
+        "line 1: The Gemini logo is held for too long across multiple frames.",
+        "line 2: Visuals are static and lack a demonstration of the actual UI/UX.",
+        "line 6: Visual is completely blank/missing, failing to illustrate the limitation mentioned."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 168,
+  "fish_turn": 169,
   "ig_music_recent": [
     "1679493397169813",
     "618903860889102",
