@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -177,11 +177,59 @@
     "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "810120545333296",
+      "title": "Iced Latte",
+      "artist": "Global Genius"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "This expansion integrates advanced software direct…: The image shows a Volkswagen Buggy, which is unrelated to the software-focused context of the line.",
+      "The companies have not disclosed if the total inve…: The card is almost empty and does not show the required number.",
+      "This partnership aims to combine Rivian's software…: The card is almost empty and does not show the required image of Volkswagen.",
+      "Engineers from both firms are now working to embed…: The image shows a Rivian car instead of the required stock video of automotive software engineers.",
+      "Would you trust an AI assistant to control your ca…: The card is almost empty and does not show the required source card for TechCrunch.",
+      "The visual is a generic presentation slide and does not show the required big number 5.8B.",
+      "The visual is a blank card with text and does not show the required real photo of Volkswagen.",
+      "The visual is a text-only card and does not show the required stock video of engineers.",
+      "The visual is a text-only card and does not show the required source card for TechCrunch."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 3: Change to 'The companies have not confirmed if the 5.8 billion dollar total will increase.'"
+      ],
+      "visual_beats": [
+        0,
+        3,
+        5
+      ],
+      "visual_notes": [
+        "line 1: Same image held for too long across two frames.",
+        "line 4: Volkswagen logo icon is repeated across three frames, creating visual stagnation.",
+        "line 6: TechCrunch logo is irrelevant to the question about AI in cars."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Rivian: rivian.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 official images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIwZGrjyweWqoKqF6cdmMMbIXuKNHDYAALQIgACApshV3fpMZvD6-hDPQQ",
   "queue": [
     {
       "title": "You can generate and edit Google Docs files directly in Gemini chats now",
@@ -211,9 +259,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-30T04:03:01.441753+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-30T04:39:04.451965+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-30",
@@ -692,234 +740,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
-          "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-          "summary": "Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can't.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-29T17:00:00+00:00",
-          "angle": "Mistral just dropped a massive trillion-parameter model that gives companies total control over their own cybersecurity."
-        },
-        "draft": {
-          "title": "Mistral Releases Trillion-Parameter AI",
-          "hook_text": "Mistral releases a trillion-parameter AI",
-          "beats": [
-            {
-              "line": "Mistral released a new trillion-parameter AI model yesterday, October twenty-ninth, twenty-twenty-six.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Mistral Large",
-              "outlet": "",
-              "domain": "mistral.ai",
-              "headline": "",
-              "url": "https://mistral.ai",
-              "tag": "Mistral trillion-parameter model",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mistral",
-                  "domain": "mistral.ai"
-                }
-              ]
-            },
-            {
-              "line": "This model is designed to help organizations manage their own cyber defenses.",
-              "visual": "clip",
-              "query": "server room security",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Cybersecurity focus",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Mistral provides the model weights, allowing companies to run it on their own infrastructure.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Mistral AI",
-              "outlet": "",
-              "domain": "mistral.ai",
-              "headline": "",
-              "url": "https://mistral.ai",
-              "tag": "Open-weights control",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mistral",
-                  "domain": "mistral.ai"
-                }
-              ]
-            },
-            {
-              "line": "CEO Arthur Mensch argues this transparency offers control that closed models cannot match.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://mistral.ai",
-              "tag": "Arthur Mensch on safety",
-              "name": "Arthur Mensch",
-              "role": "CEO, Mistral AI",
-              "x": "arthurmensch",
-              "brands": [
-                {
-                  "name": "Mistral",
-                  "domain": "mistral.ai"
-                }
-              ]
-            },
-            {
-              "line": "It is the largest open-weights model yet, specifically optimized for detecting complex digital threats.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1 Trillion",
-              "small": "parameters",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "1 Trillion parameters",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The release aims to reduce reliance on third-party providers for critical security tasks.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Mistral releases weights for trillion-parameter AI",
-              "url": "",
-              "tag": "Security independence",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an open-source model to secure your private data?",
-              "visual": "clip",
-              "query": "data security visualization",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Secure private data?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast, authoritative, and direct, highlighting the shift toward organizational control in cybersecurity.",
-          "thin": false,
-          "caption": "Mistral has released a trillion-parameter AI model to give organizations direct control over their cybersecurity defenses. By providing the model weights, Mistral challenges the dominance of closed-source tech giants. Would you trust an open-source model to secure your private data?",
-          "hashtags": [
-            "Mistral",
-            "Cybersecurity",
-            "ArtificialIntelligence",
-            "TechNews",
-            "OpenSource"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-          ],
-          "script": "Mistral released a new trillion-parameter AI model yesterday, October twenty-ninth, twenty-twenty-six.\nThis model is designed to help organizations manage their own cyber defenses.\nMistral provides the model weights, allowing companies to run it on their own infrastructure.\nCEO Arthur Mensch argues this transparency offers control that closed models cannot match.\nIt is the largest open-weights model yet, specifically optimized for detecting complex digital threats.\nThe release aims to reduce reliance on third-party providers for critical security tasks.\nWould you trust an open-source model to secure your private data?",
-          "keywords": [
-            "server room security",
-            "data security visualization"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Mistral releases a trillion-parameter AI",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "Mistral released a new trillion-parameter AI model yesterday, October 29, 2026.",
-              "url": "https://www.unite.ai/mistrals-1-trillion-parameter-le-chonk-checkpoint-lands-on-hugging-face/"
-            },
-            {
-              "claim": "This model is designed to help organizations manage their own cyber defenses.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "Mistral provides the model weights, allowing companies to run it on their own infrastructure.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "CEO Arthur Mensch argues this transparency offers control that closed models cannot match.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "It is the largest open-weights model yet, specifically optimized for detecting complex digital threats.",
-              "url": "https://www.unite.ai/mistrals-1-trillion-parameter-le-chonk-checkpoint-lands-on-hugging-face/"
-            },
-            {
-              "claim": "The release aims to reduce reliance on third-party providers for critical security tasks.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-30T01:22:53.629600+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1658,6 +1478,199 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Rivian expands joint venture with VW to include AI assistant",
+          "link": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+          "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-29T20:05:47+00:00",
+          "angle": "Rivian is expanding its $5.8 billion joint venture with Volkswagen to include AI assistants."
+        },
+        "draft": {
+          "title": "Rivian and VW Expand AI Partnership",
+          "hook_text": "Rivian adds AI to VW deal",
+          "beats": [
+            {
+              "line": "Five point eight billion dollars is the new bet.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Rivian",
+              "outlet": "",
+              "domain": "rivian.com",
+              "headline": "",
+              "url": "https://rivian.com",
+              "tag": "5.8 billion deal",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This expansion integrates advanced software directly into their upcoming vehicle architectures.",
+              "visual": "clip",
+              "query": "electric vehicle interior technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "advanced vehicle software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The companies have not disclosed if the total investment value will increase following this update.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "5.8B",
+              "small": "total venture value",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "investment value unchanged",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This partnership aims to combine Rivian's software platform with the scale of Volkswagen's manufacturing.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Volkswagen",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "scaling vehicle software",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Engineers from both firms are now working to embed voice-activated AI features into new car models.",
+              "visual": "clip",
+              "query": "automotive software engineers working",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI features coming",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an AI assistant to control your car's settings while you drive?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Rivian expands joint venture with VW to include AI assistant",
+              "url": "",
+              "tag": "AI in your car",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Professional and crisp, focusing on the scale of the automotive tech shift.",
+          "thin": false,
+          "caption": "Rivian and Volkswagen are expanding their 5.8 billion dollar joint venture to include a new AI assistant for their vehicles. The collaboration aims to merge high-end software with mass manufacturing. Would you trust an AI assistant to control your car's settings while you drive?",
+          "hashtags": [
+            "Rivian",
+            "Volkswagen",
+            "AutomotiveTech",
+            "AI",
+            "ElectricVehicles"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+          ],
+          "script": "Five point eight billion dollars is the new bet.\nThis expansion integrates advanced software directly into their upcoming vehicle architectures.\nThe companies have not disclosed if the total investment value will increase following this update.\nThis partnership aims to combine Rivian's software platform with the scale of Volkswagen's manufacturing.\nEngineers from both firms are now working to embed voice-activated AI features into new car models.\nWould you trust an AI assistant to control your car's settings while you drive?",
+          "keywords": [
+            "electric vehicle interior technology",
+            "automotive software engineers working"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Rivian is adding a new AI assistant to its five point eight billion dollar joint venture with Volkswagen.",
+          "hook_score": 51,
+          "evidence": [
+            {
+              "claim": "Rivian adds AI to VW deal",
+              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+            },
+            {
+              "claim": "Five point eight billion dollars is the new bet.",
+              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+            },
+            {
+              "claim": "This expansion integrates advanced software directly into their upcoming vehicle architectures.",
+              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+            },
+            {
+              "claim": "The companies have not disclosed if the total investment value will increase following this update.",
+              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+            },
+            {
+              "claim": "This partnership aims to combine Rivian's software platform with the scale of Volkswagen's manufacturing.",
+              "url": "https://www.unite.ai/rivian-licenses-ai-voice-assistant-technology-through-volkswagen-jv/"
+            },
+            {
+              "claim": "Engineers from both firms are now working to embed voice-activated AI features into new car models.",
+              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-30T04:03:01.441753+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2166,8 +2179,8 @@
       "event": "Google Gemini now lets you generate and edit files directly in your chat window. You can handle PDFs, Google Docs, Sheets, and slide decks without leaving the app. The update also brings support for Markdown files, TXT files, and raw code. "
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-30T02:55+05:30",
@@ -2219,12 +2232,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
-    "calls": 53,
+    "calls": 62,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 39,
+        "ok": 48,
         "busy": 13,
         "other": 1,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2309,26 +2322,6 @@
     "gemini-3.5-flash-lite": 1793297482.9921598
   },
   "editor_log": [
-    {
-      "at": "2026-10-29T06:01+05:30",
-      "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong reporting and numbers let down by repetitive visuals and generic graphics.",
-      "fixes": [],
-      "visual": [
-        "line 1: Generic server stock photo with dollar signs feels cliché and uninformative.",
-        "line 2: TechCrunch app icon used for Microsoft cloud platform revelation.",
-        "line 4: Blank text-only card used for the entire duration of the line."
-      ]
-    },
     {
       "at": "2026-10-29T06:44+05:30",
       "title": "Google expands AI Search ads globally as core ad growth slows",
@@ -2742,10 +2735,32 @@
         "line 2: The stock footage of a person typing is generic and doesn't show the actual Gemini interfa",
         "line 6: The Verge logo is irrelevant to the specific feature being discussed."
       ]
+    },
+    {
+      "at": "2026-10-30T04:08+05:30",
+      "title": "Rivian expands joint venture with VW to include AI assistant",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 3: Change to 'The companies have not confirmed if the 5.8 billion dollar total will increase.'"
+      ],
+      "visual": [
+        "line 1: Same image held for too long across two frames.",
+        "line 4: Volkswagen logo icon is repeated across three frames, creating visual stagnation.",
+        "line 6: TechCrunch logo is irrelevant to the question about AI in cars."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 170,
+  "fish_turn": 171,
   "ig_music_recent": [
     "618903860889102",
     "979175924268133",
