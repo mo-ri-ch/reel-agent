@@ -1,265 +1,30 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
-    "link": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-    "summary": "",
-    "source": "gist.github.com",
-    "published": "2026-10-29T03:33:42+00:00",
-    "buzz": "Hacker News 168 points",
-    "angle": "Developers are calling out Claude Code for burning 15-20% of token limits on useless status lines—a relatable frustration for AI power users."
-  },
-  "draft": {
-    "title": "Claude Code wastes tokens on status lines",
-    "hook_text": "Claude Code wastes your tokens",
-    "beats": [
-      {
-        "line": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Claude Code",
-        "outlet": "",
-        "domain": "anthropic.com",
-        "headline": "",
-        "url": "https://github.com/anthropics/claude-code",
-        "tag": "Claude Code token waste",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Claude",
-            "domain": "anthropic.com"
-          }
-        ]
-      },
-      {
-        "line": "Software developer Flamerix identified this issue while analyzing the agent's internal communication logs.",
-        "visual": "person",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-        "tag": "Flamerix discovered issue",
-        "name": "Flamerix",
-        "role": "Developer",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The agent repeatedly sends status updates like thought process active to the model with every prompt.",
-        "visual": "clip",
-        "query": "developer typing on computer",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Repetitive status updates",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "These redundant tokens accumulate quickly during long coding sessions in the terminal.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "20%",
-        "small": "of tokens lost",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "20 percent token loss",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The analysis shows these status lines occupy a significant portion of the total context window.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "GitHub Gist",
-        "domain": "gist.github.com",
-        "headline": "Claude Code burns 15-20% of your tokens on a 3-word status line",
-        "url": "",
-        "tag": "Filler content costs",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "You are effectively paying for repetitive filler instead of actual code logic.",
-        "visual": "clip",
-        "query": "person looking frustrated at screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Paying for filler",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you continue using these agents if they drain your budget this fast?",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "15-20%",
-        "small": "wasted cost",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Claude Code efficiency",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Frustrated and analytical, highlighting the absurdity of the wasted cost.",
-    "thin": false,
-    "caption": "Claude Code is burning 15-20% of user tokens just by repeating a three-word status line. This hidden cost makes coding agents significantly more expensive than necessary for developers. Would you keep using Claude Code if it ate your budget this fast?",
-    "hashtags": [
-      "ClaudeCode",
-      "Anthropic",
-      "AIcoding",
-      "LLM",
-      "Programming"
-    ],
-    "sources": [
-      "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-    ],
-    "script": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line.\nSoftware developer Flamerix identified this issue while analyzing the agent's internal communication logs.\nThe agent repeatedly sends status updates like thought process active to the model with every prompt.\nThese redundant tokens accumulate quickly during long coding sessions in the terminal.\nThe analysis shows these status lines occupy a significant portion of the total context window.\nYou are effectively paying for repetitive filler instead of actual code logic.\nWould you continue using these agents if they drain your budget this fast?",
-    "keywords": [
-      "developer typing on computer",
-      "person looking frustrated at screen"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "evidence": [
-      {
-        "claim": "Claude Code wastes your tokens",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-      },
-      {
-        "claim": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line.",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-      },
-      {
-        "claim": "Software developer Flamerix identified this issue while analyzing the agent's internal communication logs.",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-      },
-      {
-        "claim": "The agent repeatedly sends status updates to the model with every prompt.",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-      },
-      {
-        "claim": "These redundant tokens accumulate quickly during long coding sessions in the terminal.",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-      },
-      {
-        "claim": "The analysis shows these status lines occupy a significant portion of the total context window.",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-      },
-      {
-        "claim": "You are effectively paying for repetitive filler instead of actual code logic.",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 1,
-    "source_links": [
-      "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-    ],
-    "ig_audio": {
-      "id": "1126345968385858",
-      "title": "The Closest",
-      "artist": "Kevin Dusablon"
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "‘You’re Not Doing This AI Stuff,’ Databricks CEO Tells Snowflake",
+      "link": "https://analyticsindiamag.com/ai-news/youre-not-doing-this-ai-stuff-databricks-ceo-tells-snowflake",
+      "summary": "‘You’re Not Doing This AI Stuff,’ Databricks CEO Tells Snowflake Analytics India Magazine",
+      "source": "Analytics India Magazine",
+      "published": "2026-10-29T05:47:11+00:00",
+      "angle": "Databricks CEO calls out Snowflake in a spicy public rivalry over enterprise AI"
     },
-    "visual_status": "fixed",
-    "visual_notes": [
-      "Software developer Flamerix identified this issue …: The shot is blank and does not show the required person or initials card.",
-      "The agent repeatedly sends status updates like tho…: The shot is blank and does not show the required stock video.",
-      "These redundant tokens accumulate quickly during l…: The shot is mostly empty and does not clearly show the required big number 20%.",
-      "The analysis shows these status lines occupy a sig…: The shot is blank and does not show the required source card.",
-      "You are effectively paying for repetitive filler i…: The shot shows a GitHub snippet instead of the required stock video of a person looking frustrated.",
-      "Would you continue using these agents if they drai…: The shot is blank and does not show the required big number 15-20%.",
-      "The shot is blank/empty.",
-      "The visual is a cropped, unreadable screenshot of a GitHub page instead of a stock video of a developer.",
-      "The visual is a cropped, unreadable screenshot of a GitHub page instead of a big number 20%.",
-      "The shot is blank/empty.",
-      "The visual is a logo card instead of a stock video of a person looking frustrated.",
-      "The visual is text about efficiency instead of a big number 15-20%."
-    ],
-    "editor": {
-      "overall": 8.7,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong, specific reporting, but visual pacing is repetitive and lacks dynamic variety.",
-      "script_fixes": [
-        "LINE 3: Change 'The agent' to 'Claude Code' for immediate clarity.",
-        "LINE 7: Replace 'drain your budget' with 'waste your credits' to match standard AI terminology."
-      ],
-      "visual_beats": [
-        0,
-        2,
-        3
-      ],
-      "visual_notes": [
-        "line 1: The same static logo screen is held for too long (4.8s).",
-        "line 3: The visual remains static for 4.8s, failing to show the actual log example mentioned.",
-        "line 4: The visual is a generic GitHub Gist logo; it should show a snippet of the actual log file."
-      ],
-      "reviewer": "gemini"
-    },
-    "credits": [
-      "Claude Code: gist.github.com"
-    ],
-    "voice_used": "Ethan (Fish Audio)",
-    "visual_summary": "2 official images, 6 cards"
-  },
+    {
+      "title": "DeepSeek, Moonshot Used OpenAI'sGPT-6 Astra To Train Latest Models: Report",
+      "link": "https://www.ndtv.com/artificial-intelligence/deepseek-moonshot-used-openais-gpt-6-astra-to-train-latest-models-the-information-reports-12251432",
+      "summary": "DeepSeek, Moonshot Used OpenAI'sGPT-6 Astra To Train Latest Models: Report NDTV",
+      "source": "NDTV",
+      "published": "2026-10-29T05:04:28+00:00",
+      "angle": "Surprising report claims top Chinese AI labs used OpenAI's advanced models to train their latest systems"
+    }
+  ],
+  "choose_deadline": "2026-10-29T13:01:05.712663+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAIuNWri5umNzJbebX6THhpuxMZRVz0ZAALkIgACApsZVwPGf0QWnBBrPQQ",
+  "video_file_id": null,
   "queue": [
     {
       "title": "The Agent SDK",
@@ -282,11 +47,37 @@
       },
       "audio": null,
       "post_at": "2026-10-29T16:30:00+05:30"
+    },
+    {
+      "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
+      "video_file_id": "BAACAgUAAxkDAAIuNWri5umNzJbebX6THhpuxMZRVz0ZAALkIgACApsZVwPGf0QWnBBrPQQ",
+      "caption": "Claude Code is burning 15-20% of user tokens just by repeating a three-word status line. This hidden cost makes coding agents significantly more expensive than necessary for developers. Would you keep using Claude Code if it ate your budget this fast?\n\nFollow @gradientai.news for daily AI news ⚡\n\n📷 Claude Code: gist.github.com\n\n#ClaudeCode #Anthropic #AIcoding #LLM #Programming",
+      "extra": false,
+      "meta": {
+        "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
+        "kind": "news",
+        "source": "gist.github.com",
+        "engine": "fish",
+        "voice": "Ethan (Fish Audio)",
+        "person": true,
+        "words": 98,
+        "visuals": "2 official images, 6 cards",
+        "editor": 8.7,
+        "writer": "gemini",
+        "hook_score": null,
+        "made": "2026-10-29T12:30+05:30"
+      },
+      "audio": {
+        "id": "1126345968385858",
+        "title": "The Closest",
+        "artist": "Kevin Dusablon"
+      },
+      "post_at": "2026-10-29T21:30:00+05:30"
     }
   ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-10-29T12:25:46.193506+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
@@ -692,7 +483,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [],
   "tried": [
     "Retell uses OpenAI models to help power 100M monthly calls",
@@ -758,237 +548,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "The Agent SDK",
-          "link": "https://cursor.com/blog/agent-sdk",
-          "summary": "",
-          "source": "cursor.com",
-          "published": "2026-10-28T14:02:20+00:00",
-          "buzz": "Hacker News 99 points",
-          "angle": "Cursor just dropped an Agent SDK, letting developers build AI agents that actually take control of your computer."
-        },
-        "draft": {
-          "title": "Cursor launches the Agent SDK",
-          "hook_text": "Cursor just released an Agent SDK",
-          "beats": [
-            {
-              "line": "Cursor just released an Agent SDK for building custom AI agents.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Cursor Agent SDK",
-              "outlet": "",
-              "domain": "cursor.com",
-              "headline": "",
-              "url": "https://cursor.com/blog/agent-sdk",
-              "tag": "Cursor Agent SDK",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Cursor",
-                  "domain": "cursor.com"
-                }
-              ]
-            },
-            {
-              "line": "This SDK lets you craft agents that live inside your code editor.",
-              "visual": "clip",
-              "query": "developer typing code",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Agents in editor",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "You define custom instructions that guide how your agent behaves and responds.",
-              "visual": "clip",
-              "query": "coding interface dashboard",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Custom instructions",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Developers use these agents to automate specific workflows within their own projects.",
-              "visual": "clip",
-              "query": "computer terminal command line",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Automate workflows",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The SDK is available now for all users on the Cursor platform.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1",
-              "small": "SDK available now",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Available now",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Cursor",
-                  "domain": "cursor.com"
-                }
-              ]
-            },
-            {
-              "line": "It marks a move toward more personalized AI tools for software engineering.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Cursor",
-              "domain": "cursor.com",
-              "headline": "The Agent SDK",
-              "url": "",
-              "tag": "Personalized AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Cursor",
-                  "domain": "cursor.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you let an AI agent manage your production environment?",
-              "visual": "clip",
-              "query": "person looking at computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI management",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast, precise, and tech-focused; sounds like a quick update for a developer friend.",
-          "thin": false,
-          "caption": "Cursor has launched its Agent SDK, giving developers a way to build custom AI agents directly within the editor. You can now define specific instructions to automate your unique coding workflows. Would you let an AI agent manage your production environment?",
-          "hashtags": [
-            "Cursor",
-            "AgentSDK",
-            "AI",
-            "SoftwareEngineering",
-            "Coding"
-          ],
-          "sources": [
-            "https://cursor.com/blog/agent-sdk"
-          ],
-          "script": "Cursor just released an Agent SDK for building custom AI agents.\nThis SDK lets you craft agents that live inside your code editor.\nYou define custom instructions that guide how your agent behaves and responds.\nDevelopers use these agents to automate specific workflows within their own projects.\nThe SDK is available now for all users on the Cursor platform.\nIt marks a move toward more personalized AI tools for software engineering.\nWould you let an AI agent manage your production environment?",
-          "keywords": [
-            "developer typing code",
-            "coding interface dashboard",
-            "computer terminal command line",
-            "person looking at computer screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Cursor just released an Agent SDK",
-              "url": "https://cursor.com/blog/agent-sdk"
-            },
-            {
-              "claim": "Cursor just released an Agent SDK for building custom AI agents.",
-              "url": "https://cursor.com/blog/agent-sdk"
-            },
-            {
-              "claim": "This SDK lets you craft agents that live inside your code editor.",
-              "url": "https://cursor.com/blog/agent-sdk"
-            },
-            {
-              "claim": "You define custom instructions that guide how your agent behaves and responds.",
-              "url": "https://cursor.com/blog/agent-sdk"
-            },
-            {
-              "claim": "Developers use these agents to automate specific workflows within their own projects.",
-              "url": "https://cursor.com/blog/agent-sdk"
-            },
-            {
-              "claim": "The SDK is available now for all users on the Cursor platform.",
-              "url": "https://cursor.com/blog/agent-sdk"
-            },
-            {
-              "claim": "It marks a move toward more personalized AI tools for software engineering.",
-              "url": "https://cursor.com/blog/agent-sdk"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://cursor.com/blog/agent-sdk"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-29T09:10:56.801347+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1690,6 +1249,279 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
+          "link": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+          "summary": "",
+          "source": "gist.github.com",
+          "published": "2026-10-29T03:33:42+00:00",
+          "buzz": "Hacker News 168 points",
+          "angle": "Developers are calling out Claude Code for burning 15-20% of token limits on useless status lines—a relatable frustration for AI power users."
+        },
+        "draft": {
+          "title": "Claude Code wastes tokens on status lines",
+          "hook_text": "Claude Code wastes your tokens",
+          "beats": [
+            {
+              "line": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Claude Code",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://github.com/anthropics/claude-code",
+              "tag": "Claude Code token waste",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Claude",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "Software developer Flamerix identified this issue while analyzing the agent's internal communication logs.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+              "tag": "Flamerix discovered issue",
+              "name": "Flamerix",
+              "role": "Developer",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The agent repeatedly sends status updates like thought process active to the model with every prompt.",
+              "visual": "clip",
+              "query": "developer typing on computer",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Repetitive status updates",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "These redundant tokens accumulate quickly during long coding sessions in the terminal.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "20%",
+              "small": "of tokens lost",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "20 percent token loss",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The analysis shows these status lines occupy a significant portion of the total context window.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "GitHub Gist",
+              "domain": "gist.github.com",
+              "headline": "Claude Code burns 15-20% of your tokens on a 3-word status line",
+              "url": "",
+              "tag": "Filler content costs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "You are effectively paying for repetitive filler instead of actual code logic.",
+              "visual": "clip",
+              "query": "person looking frustrated at screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Paying for filler",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you continue using these agents if they drain your budget this fast?",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "15-20%",
+              "small": "wasted cost",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Claude Code efficiency",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Frustrated and analytical, highlighting the absurdity of the wasted cost.",
+          "thin": false,
+          "caption": "Claude Code is burning 15-20% of user tokens just by repeating a three-word status line. This hidden cost makes coding agents significantly more expensive than necessary for developers. Would you keep using Claude Code if it ate your budget this fast?",
+          "hashtags": [
+            "ClaudeCode",
+            "Anthropic",
+            "AIcoding",
+            "LLM",
+            "Programming"
+          ],
+          "sources": [
+            "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+          ],
+          "script": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line.\nSoftware developer Flamerix identified this issue while analyzing the agent's internal communication logs.\nThe agent repeatedly sends status updates like thought process active to the model with every prompt.\nThese redundant tokens accumulate quickly during long coding sessions in the terminal.\nThe analysis shows these status lines occupy a significant portion of the total context window.\nYou are effectively paying for repetitive filler instead of actual code logic.\nWould you continue using these agents if they drain your budget this fast?",
+          "keywords": [
+            "developer typing on computer",
+            "person looking frustrated at screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Claude Code wastes your tokens",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+            },
+            {
+              "claim": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line.",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+            },
+            {
+              "claim": "Software developer Flamerix identified this issue while analyzing the agent's internal communication logs.",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+            },
+            {
+              "claim": "The agent repeatedly sends status updates to the model with every prompt.",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+            },
+            {
+              "claim": "These redundant tokens accumulate quickly during long coding sessions in the terminal.",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+            },
+            {
+              "claim": "The analysis shows these status lines occupy a significant portion of the total context window.",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+            },
+            {
+              "claim": "You are effectively paying for repetitive filler instead of actual code logic.",
+              "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+          ],
+          "ig_audio": {
+            "id": "1126345968385858",
+            "title": "The Closest",
+            "artist": "Kevin Dusablon"
+          },
+          "visual_status": "fixed",
+          "visual_notes": [
+            "Software developer Flamerix identified this issue …: The shot is blank and does not show the required person or initials card.",
+            "The agent repeatedly sends status updates like tho…: The shot is blank and does not show the required stock video.",
+            "These redundant tokens accumulate quickly during l…: The shot is mostly empty and does not clearly show the required big number 20%.",
+            "The analysis shows these status lines occupy a sig…: The shot is blank and does not show the required source card.",
+            "You are effectively paying for repetitive filler i…: The shot shows a GitHub snippet instead of the required stock video of a person looking frustrated.",
+            "Would you continue using these agents if they drai…: The shot is blank and does not show the required big number 15-20%.",
+            "The shot is blank/empty.",
+            "The visual is a cropped, unreadable screenshot of a GitHub page instead of a stock video of a developer.",
+            "The visual is a cropped, unreadable screenshot of a GitHub page instead of a big number 20%.",
+            "The shot is blank/empty.",
+            "The visual is a logo card instead of a stock video of a person looking frustrated.",
+            "The visual is text about efficiency instead of a big number 15-20%."
+          ],
+          "editor": {
+            "overall": 8.7,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 9,
+              "accuracy": 10,
+              "visuals": 7,
+              "flow": 9
+            },
+            "one_line": "Strong, specific reporting, but visual pacing is repetitive and lacks dynamic variety.",
+            "script_fixes": [
+              "LINE 3: Change 'The agent' to 'Claude Code' for immediate clarity.",
+              "LINE 7: Replace 'drain your budget' with 'waste your credits' to match standard AI terminology."
+            ],
+            "visual_beats": [
+              0,
+              2,
+              3
+            ],
+            "visual_notes": [
+              "line 1: The same static logo screen is held for too long (4.8s).",
+              "line 3: The visual remains static for 4.8s, failing to show the actual log example mentioned.",
+              "line 4: The visual is a generic GitHub Gist logo; it should show a snippet of the actual log file."
+            ],
+            "reviewer": "gemini"
+          },
+          "credits": [
+            "Claude Code: gist.github.com"
+          ],
+          "voice_used": "Ethan (Fish Audio)",
+          "visual_summary": "2 official images, 6 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAIuNWri5umNzJbebX6THhpuxMZRVz0ZAALkIgACApsZVwPGf0QWnBBrPQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAIuNWri5umNzJbebX6THhpuxMZRVz0ZAALkIgACApsZVwPGf0QWnBBrPQQ",
+      "history_title": "Claude Code burns ~15–20% of your tokens on a 3-word status line"
     }
   ],
   "posted_ids": [
@@ -1725,7 +1557,6 @@
     "BAACAgUAAxkDAAIt_2riqMOv8UMAAUIhsiB_PBZeXj96FgACASIAAgKbGVfXy9pRXBR9yj0E"
   ],
   "history": [
-    "Show HN: Edi Life OS – self-hosted life dashboard with an MCP server for AI",
     "Superficial intelligence",
     "California is trying to shut down robot vs. human cage matches",
     "Is this the ‘mathocalypse’? Why OpenAI’s latest results dump has left mathematicians in shock",
@@ -1824,7 +1655,8 @@
     "Meta says it’ll probably delay its controversial new business terms again",
     "Microsoft recorded $10 billion in revenue from OpenAI",
     "Adam Mosseri says negativity around AI is ‘going to get worse’",
-    "The Agent SDK"
+    "The Agent SDK",
+    "Claude Code burns ~15–20% of your tokens on a 3-word status line"
   ],
   "posted_log": [
     {
@@ -2211,38 +2043,43 @@
       "title": "The Agent SDK",
       "at": "2026-10-29T09:55:25.411839+05:30",
       "event": "Cursor just released an Agent SDK for building custom AI agents. This SDK lets you craft agents that live inside your code editor. You define custom instructions that guide how your agent behaves and responds. Developers use these agents to"
+    },
+    {
+      "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
+      "at": "2026-10-29T12:30:39.069685+05:30",
+      "event": "Claude Code is burning fifteen to twenty percent of your tokens on a simple three-word status line. Software developer Flamerix identified this issue while analyzing the agent's internal communication logs. The agent repeatedly sends status"
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-29T09:55+05:30",
-    "techcrunch.com": 20,
+    "at": "2026-10-29T12:30+05:30",
+    "techcrunch.com": 18,
     "theverge.com": 10,
-    "arstechnica.com": 5,
+    "arstechnica.com": 4,
     "technologyreview.com": 2,
     "openai.com": 3,
     "blog.google": 0,
     "deepmind.google": 1,
-    "huggingface.co": 2,
+    "huggingface.co": 1,
     "blogs.nvidia.com": 1,
     "inc42.com": 5,
-    "news.google.com": 32,
-    "Google News (VentureBeat, AIM, AI News)": 18,
-    "producthunt.com": 4,
+    "news.google.com": 38,
+    "Google News (VentureBeat, AIM, AI News)": 23,
+    "producthunt.com": 2,
     "Hacker News": 4,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 3
+    "filtered out (PR / local events / market fluff)": 4
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-29T08:05:21.041609+05:30",
+  "last_auto_offer": "2026-10-29T12:30:39.842346+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-28",
   "ig_count": {
     "day": "2026-10-29",
-    "at": "2026-10-29T12:20:27.130025+05:30",
+    "at": "2026-10-29T12:30:39.069727+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2266,12 +2103,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-29",
-    "calls": 131,
+    "calls": 133,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 49,
+        "ok": 51,
         "busy": 14,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2354,13 +2191,7 @@
     "error": "RuntimeError: Instagram error: {'debug_info': {'retriable': False, 'type': 'ProcessingFailedError', 'message': 'Request processing failed'}}"
   },
   "gemini_missing": [],
-  "gemini_exhausted": {
-    "gemini-3.5-flash": 1793172108.1251144,
-    "gemini-3.6-flash": 1793172148.624462,
-    "gemini-3.7-flash": 1793174904.7542756,
-    "gemini-3-flash-preview": 1793175515.9540641,
-    "gemini-3.5-flash-lite": 1793238961.2824173
-  },
+  "gemini_exhausted": {},
   "editor_log": [
     {
       "at": "2026-10-28T15:00+05:30",
