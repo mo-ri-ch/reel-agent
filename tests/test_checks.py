@@ -93,6 +93,10 @@ check("backup used", (_s["stage"], bool(_st.RECOVERED)), ("choosing", True))
 check("control applied", ("fish_disabled" in _s, _s["autopilot"], _os.listdir(_st.CONTROL_DIR)), (False, True, []))
 _st.save(_s)
 check("both copies saved", _json.load(open(_st.STATE_FILE))["stage"], "choosing")
+_st.save(dict(_s, ig_music_error="Max retries exceeded with url: /v26.0/ig_audio?user_id=1&access_token=EAAPX1VB30w8B"))
+_saved = open(_st.STATE_FILE).read() + open(_st.BACKUP_FILE).read()
+check("no token saved to the public state", ("EAAPX1" in _saved, _json.loads(open(_st.STATE_FILE).read())["stage"]),
+      (False, "choosing"))
 _st.STATE_FILE, _st.BACKUP_FILE, _st.CONTROL_DIR = _old
 _st.RECOVERED = None
 

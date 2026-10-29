@@ -1,6 +1,7 @@
 """Remembers where the daily conversation is. Saved to state.json in the repo."""
 import json
 import os
+import re
 from datetime import datetime
 
 from config import STATE_FILE, TIMEZONE
@@ -82,10 +83,28 @@ def apply_control(s):
         os.remove(path)
 
 
+_SECRET_ENVS = ("TELEGRAM_BOT_TOKEN", "IG_ACCESS_TOKEN", "GEMINI_API_KEY", "ANTHROPIC_API_KEY", "FISH_API_KEY",
+                "PEXELS_API_KEY", "CF_API_TOKEN", "CALLMEBOT_API_KEY", "DOORBELL_KEY")
+_SECRET_PARAMS = re.compile(r"(\b(?:access_token|input_token)=)[^&\s'\"\\]+|(?<=\bkey=)AIza[A-Za-z0-9_-]+")
+_BOT_TOKEN = re.compile(r"/bot\d+:[A-Za-z0-9_-]+")
+
+
+def redact(text):
+    """Text with secrets removed. state.json is in a PUBLIC repo, and error messages can carry request URLs
+    (e.g. ...?access_token=..., cut to 200 chars, so the exact token may not match: patterns catch those)."""
+    for name in _SECRET_ENVS:
+        value = os.environ.get(name, "").strip()
+        if len(value) >= 8:
+            text = text.replace(value, "***")
+    text = _SECRET_PARAMS.sub(lambda m: (m.group(1) or "") + "***", text)
+    return _BOT_TOKEN.sub("/bot***", text)
+
+
 def save(state):
+    text = redact(json.dumps(state, indent=2, ensure_ascii=False))
     for path in (STATE_FILE, BACKUP_FILE):
         with open(path, "w") as f:
-            json.dump(state, f, indent=2, ensure_ascii=False)
+            f.write(text)
 
 
 def now():
