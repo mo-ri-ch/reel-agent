@@ -1,27 +1,220 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Google’s satellite AI server transmits its first response to Earth",
-      "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space: Blue marble below Data streams in […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-30T18:21:38+00:00",
-      "angle": "Google put an AI server with TPUs into space, and it just transmitted its first response back to Earth."
-    },
-    {
-      "title": "The biggest names in AI are backing a new way to opt out of scraping",
-      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal […]",
-      "source": "AI | The Verge",
-      "published": "2026-10-30T20:26:10+00:00",
-      "angle": "OpenAI, Google, Microsoft, and Anthropic are finally backing a universal new standard for publishers to opt out of AI scraping."
-    }
-  ],
-  "choose_deadline": "2026-10-31T03:17:24.914780+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Google’s satellite AI server transmits its first response to Earth",
+    "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+    "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space: Blue marble below Data streams in […]",
+    "source": "AI | The Verge",
+    "published": "2026-10-30T18:21:38+00:00",
+    "angle": "Google put an AI server with TPUs into space, and it just transmitted its first response back to Earth."
+  },
+  "draft": {
+    "title": "Google's AI satellite in space",
+    "hook_text": "Google AI just reached orbit",
+    "beats": [
+      {
+        "line": "Google just transmitted an AI response from orbit.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Gemma 4",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://ai.google.dev/gemma",
+        "tag": "Google AI in orbit",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "The satellite uses on-board Tensor Processing Units to run the Gemma 4 model.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Tensor Processing Unit",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://cloud.google.com/tpu",
+        "tag": "TPUs in space",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "This hardware successfully booted up while circling the planet.",
+        "visual": "clip",
+        "query": "satellite orbiting earth",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Orbiting hardware",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Engineers prompted the model to write a haiku about being in space.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Google’s satellite AI server transmits its first response",
+        "url": "",
+        "tag": "AI writes poetry",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "The Gemma 4 model successfully generated that poem from space.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Gemma 4",
+        "outlet": "",
+        "domain": "google.com",
+        "headline": "",
+        "url": "https://ai.google.dev/gemma",
+        "tag": "AI poem generated",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "Google posted the results of this test on Friday.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "The Verge",
+        "domain": "theverge.com",
+        "headline": "Google’s satellite AI server transmits its first response",
+        "url": "",
+        "tag": "Test results shared",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you trust an AI operating from orbit with your data?",
+        "visual": "image",
+        "query": "technology",
+        "prompt": "futuristic satellite in deep space with glowing data streams, cinematic lighting",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Orbiting AI security",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "Fast-paced and inquisitive, moving from the technical achievement to the surreal nature of space-based AI.",
+    "thin": false,
+    "caption": "Google successfully ran its Gemma 4 AI model from a satellite in orbit using Tensor Processing Units. The AI generated a haiku about being in space, which Google shared on Friday. Would you trust an AI operating from orbit with your data?",
+    "hashtags": [
+      "Google",
+      "Gemma",
+      "AI",
+      "SpaceTech",
+      "Satellite"
+    ],
+    "sources": [
+      "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+    ],
+    "script": "Google just transmitted an AI response from orbit.\nThe satellite uses on-board Tensor Processing Units to run the Gemma 4 model.\nThis hardware successfully booted up while circling the planet.\nEngineers prompted the model to write a haiku about being in space.\nThe Gemma 4 model successfully generated that poem from space.\nGoogle posted the results of this test on Friday.\nWould you trust an AI operating from orbit with your data?",
+    "keywords": [
+      "satellite orbiting earth"
+    ],
+    "image_prompts": [
+      "futuristic satellite in deep space with glowing data streams, cinematic lighting"
+    ],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Google AI just reached orbit",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+      },
+      {
+        "claim": "Google just transmitted an AI response from orbit.",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+      },
+      {
+        "claim": "The satellite uses on-board Tensor Processing Units to run the Gemma 4 model.",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+      },
+      {
+        "claim": "This hardware successfully booted up while circling the planet.",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+      },
+      {
+        "claim": "Engineers prompted the model to write a haiku about being in space.",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+      },
+      {
+        "claim": "The Gemma 4 model successfully generated that poem from space.",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+      },
+      {
+        "claim": "Google posted the results of this test on Friday.",
+        "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -106,7 +299,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-31T03:54:17.275347+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -514,12 +707,12 @@
   "paused": null,
   "spare": [
     {
-      "title": "Making it easier for websites to express AI training preferences",
-      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
-      "source": "OpenAI News",
-      "published": "2026-10-30T09:30:00+00:00",
-      "angle": "OpenAI just launched a new way for websites to block AI training, giving creators more control over their data."
+      "title": "The biggest names in AI are backing a new way to opt out of scraping",
+      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal […]",
+      "source": "AI | The Verge",
+      "published": "2026-10-30T20:26:10+00:00",
+      "angle": "OpenAI, Google, Microsoft, and Anthropic are finally backing a universal new standard for publishers to opt out of AI scraping."
     }
   ],
   "tried": [
@@ -584,213 +777,7 @@
     "AWS will be a $1T business, Jassy says — but first, it will spend big",
     "'Evil Qwen' says humans deserve to be 'incinerated.' Inside the wild world of LLM neuron exploration"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "nemotron-halloween",
-          "link": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-          "summary": "",
-          "source": "Hugging Face - Blog",
-          "published": "2026-10-30T17:57:24+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Nvidia Nemotron Halloween Haunted House",
-          "hook_text": "Nvidia built an AI haunted house.",
-          "beats": [
-            {
-              "line": "Nvidia built an interactive haunted house powered by Nemotron open models.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Nemotron",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-              "tag": "Nemotron open models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Engineers combined vision capabilities and language models to create live responses.",
-              "visual": "clip",
-              "query": "developer coding on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Vision and language models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Sensors and cameras track visitors in real time as they walk through the dark corridors.",
-              "visual": "clip",
-              "query": "security cameras in dark room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Sensors track visitors",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The Hugging Face blog outlines how the team deployed custom workflows for the project.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Hugging Face",
-              "domain": "huggingface.co",
-              "headline": "nemotron-halloween",
-              "url": "",
-              "tag": "Hugging Face blog",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Hugging Face",
-                  "domain": "huggingface.co"
-                }
-              ]
-            },
-            {
-              "line": "This setup shows how edge computing can run complex neural networks locally.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "100%",
-              "small": "local processing",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Edge computing setup",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you walk through an AI haunted house?",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Nemotron",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-              "tag": "Enter the AI house",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "playful and energetic, highlighting the creative engineering behind the tech demo",
-          "thin": false,
-          "caption": "Nvidia built an interactive haunted house powered by Nemotron open models, using vision and language capabilities to track visitors. Would you walk through an AI haunted house?",
-          "hashtags": [
-            "nvidia",
-            "nemotron",
-            "huggingface",
-            "ai",
-            "edgecomputing"
-          ],
-          "sources": [
-            "https://huggingface.co/blog/nvidia/nemotron-halloween"
-          ],
-          "script": "Nvidia built an interactive haunted house powered by Nemotron open models.\nEngineers combined vision capabilities and language models to create live responses.\nSensors and cameras track visitors in real time as they walk through the dark corridors.\nThe Hugging Face blog outlines how the team deployed custom workflows for the project.\nThis setup shows how edge computing can run complex neural networks locally.\nWould you walk through an AI haunted house?",
-          "keywords": [
-            "developer coding on laptop",
-            "security cameras in dark room"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Nvidia built an AI haunted house.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
-            },
-            {
-              "claim": "Nvidia built an interactive haunted house powered by Nemotron open models.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
-            },
-            {
-              "claim": "Engineers combined vision capabilities and language models to create live responses.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
-            },
-            {
-              "claim": "Sensors and cameras track visitors in real time as they walk through the dark corridors.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
-            },
-            {
-              "claim": "The Hugging Face blog outlines how the team deployed custom workflows for the project.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
-            },
-            {
-              "claim": "This setup shows how edge computing can run complex neural networks locally.",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://huggingface.co/blog/nvidia/nemotron-halloween"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-31T00:12:06.993890+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1602,6 +1589,42 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIylmrlAAG-FpR4zX7LgxgkdUMPKNWEZgAC5CMAAn5SKFfi1NlHQPk--z0E",
       "history_title": "Zest’s new AI agent finds restaurants and books reservations over text"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Google’s satellite AI server transmits its first response to Earth",
+            "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+            "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space: Blue marble below Data streams in […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-30T18:21:38+00:00",
+            "angle": "Google put an AI server with TPUs into space, and it just transmitted its first response back to Earth."
+          },
+          {
+            "title": "The biggest names in AI are backing a new way to opt out of scraping",
+            "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+            "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal […]",
+            "source": "AI | The Verge",
+            "published": "2026-10-30T20:26:10+00:00",
+            "angle": "OpenAI, Google, Microsoft, and Anthropic are finally backing a universal new standard for publishers to opt out of AI scraping."
+          }
+        ],
+        "choose_deadline": "2026-10-31T03:17:24.914780+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2168,7 +2191,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 36,
+    "calls": 50,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2179,13 +2202,13 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 18,
-        "busy": 2,
-        "other": 4,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "ok": 25,
+        "busy": 6,
+        "other": 6,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-flash-lite-latest": {
-        "ok": 2,
+        "ok": 3,
         "busy": 0,
         "other": 0,
         "last": ""
