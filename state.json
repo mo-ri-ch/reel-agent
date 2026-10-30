@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -235,11 +235,65 @@
     "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1034552372408400",
+      "title": "Let Me Tell You",
+      "artist": "PiNKSHGRFNGR"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Reddit is shifting to a primarily logged-in experi…: The visual shows the Pexels website, not the Reddit interface.",
+      "The platform now forces sign-ins to prevent unauth…: The visual is a blank, blurred-out card.",
+      "This move will strictly restrict third-party acces…: The visual is a blank, blurred-out card.",
+      "Would you keep using Reddit if you had to sign in?…: The visual is a blank, blurred-out card.",
+      "The shot shows a logo on a plain background instead of the requested website interface.",
+      "The shot is an almost-empty card with only the text 'CEO' visible.",
+      "The shot is an almost-empty card with only text, missing the requested stock video.",
+      "The shot is an almost-empty card with only text, missing the requested mobile app UI.",
+      "The shot shows a Google logo instead of the requested $60M figure.",
+      "The shot shows a blank, unreadable smartphone screen.",
+      "The shot is an almost-empty card with only text, missing the requested app icon."
+    ],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual variety is lacking and repetitive across too many frames.",
+      "script_fixes": [
+        "LINE 3: Remove 'The platform now forces sign-ins to' and start with 'Reddit is forcing sign-ins to...'"
+      ],
+      "visual_beats": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "visual_notes": [
+        "line 1: Same image held for too long across frames 1 and 2.",
+        "line 2: Same image held for too long across frames 3, 4, and 5.",
+        "line 3: Same image held for too long across frames 6 and 7.",
+        "line 4: Same image held for too long across frames 8 and 9.",
+        "line 5: Same image held for too long across frames 10 and 11.",
+        "line 7: Same image held for too long across frames 13 and 14."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIwsGrj_-9XvKK_dhnGLG0zqvO-bM7DAAJ5IQACflIgV0elKv20CSEePQQ",
   "queue": [
     {
       "title": "Rivian expands joint venture with VW to include AI assistant",
@@ -295,9 +349,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-30T07:49:33.206912+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-30T08:24:47.936657+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-30",
@@ -785,52 +839,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Cohere Raises $5 Billion for Alternative AI Vision",
-            "link": "https://www.pymnts.com/news/artificial-intelligence/2026/cohere-raises-5-billion-dollars-alternative-ai-vision/",
-            "summary": "Cohere Raises $5 Billion for Alternative AI Vision PYMNTS.com",
-            "source": "PYMNTS.com",
-            "published": "2026-10-29T20:54:24+00:00",
-            "angle": "Cohere raises a massive $5 billion, signaling a major shift in the AI race beyond just OpenAI and Google."
-          },
-          {
-            "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
-            "link": "https://fig.blue/posts/duet-is-the-future/",
-            "summary": "",
-            "source": "fig.blue",
-            "published": "2026-10-29T17:24:25+00:00",
-            "buzz": "Hacker News 79 points",
-            "angle": "Claude Duet is being hailed as the first personal AI assistant that actually feels useful—here is why."
-          },
-          {
-            "title": "LLM Voice",
-            "link": "https://martinfowler.com/bliki/LLM-Voice.html",
-            "summary": "",
-            "source": "martinfowler.com",
-            "published": "2026-10-29T14:57:55+00:00",
-            "buzz": "Hacker News 302 points",
-            "angle": "The 'LLM Voice' debate: Why experts are warning about the future of AI-generated speech and how it changes communication."
-          }
-        ],
-        "choose_deadline": "2026-10-30T05:10:40.871657+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1602,6 +1610,257 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
+          "link": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+          "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-29T20:08:31+00:00",
+          "angle": "Reddit is locking down its content to stop AI scraping—the open internet is officially changing."
+        },
+        "draft": {
+          "title": "Reddit Shifts to Logged-In Experience",
+          "hook_text": "Reddit is restricting anonymous browsing.",
+          "beats": [
+            {
+              "line": "Reddit is shifting to a primarily logged-in experience for its users.",
+              "visual": "clip",
+              "query": "Reddit website interface",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Reddit restricts browsing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "CEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.redditinc.com/leadership",
+              "tag": "CEO Steve Huffman",
+              "name": "Steve Huffman",
+              "role": "CEO, Reddit",
+              "x": "spez",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "The platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.",
+              "visual": "clip",
+              "query": "person logging into website",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Stopping AI scrapers",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "This move will strictly restrict third-party access to public threads.",
+              "visual": "clip",
+              "query": "Reddit mobile app UI",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Restricting public threads",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "This follows Reddit's sixty million dollar annual data licensing deal with Google.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$60M",
+              "small": "Annual licensing deal",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                },
+                {
+                  "name": "Google",
+                  "domain": "google.com"
+                }
+              ]
+            },
+            {
+              "line": "Expect more aggressive prompts to create an account while browsing.",
+              "visual": "clip",
+              "query": "smartphone screen notification",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "More sign-in prompts",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you keep using Reddit if you had to sign in?",
+              "visual": "clip",
+              "query": "Reddit app icon",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Mandatory sign-in?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Fast-paced and professional, focusing on the trade-off between open web access and data protection.",
+          "thin": false,
+          "caption": "Reddit is moving to a logged-in experience to curb unauthorized AI scraping of its public threads. This decision follows the company's $60M annual data licensing deal with Google. Would you keep using the platform if you had to sign in?",
+          "hashtags": [
+            "Reddit",
+            "SocialMedia",
+            "TechNews",
+            "InternetPrivacy",
+            "DigitalRights"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+          ],
+          "script": "Reddit is shifting to a primarily logged-in experience for its users.\nCEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.\nThe platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.\nThis move will strictly restrict third-party access to public threads.\nThis follows Reddit's sixty million dollar annual data licensing deal with Google.\nExpect more aggressive prompts to create an account while browsing.\nWould you keep using Reddit if you had to sign in?",
+          "keywords": [
+            "Reddit website interface",
+            "person logging into website",
+            "Reddit mobile app UI",
+            "smartphone screen notification",
+            "Reddit app icon"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Reddit is restricting anonymous browsing.",
+              "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
+            },
+            {
+              "claim": "Reddit is shifting to a primarily logged-in experience for its users.",
+              "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+            },
+            {
+              "claim": "CEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.",
+              "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+            },
+            {
+              "claim": "The platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.",
+              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
+            },
+            {
+              "claim": "This move will strictly restrict third-party access to public threads.",
+              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
+            },
+            {
+              "claim": "This follows Reddit's sixty million dollar annual data licensing deal with Google.",
+              "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
+            },
+            {
+              "claim": "Expect more aggressive prompts to create an account while browsing.",
+              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-30T07:49:33.206912+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2111,7 +2370,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "male",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-30T06:35+05:30",
@@ -2139,7 +2398,7 @@
   "report_day": "2026-10-29",
   "ig_count": {
     "day": "2026-10-30",
-    "at": "2026-10-30T07:40:30.370804+05:30",
+    "at": "2026-10-30T07:54:47.936888+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2163,12 +2422,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
-    "calls": 242,
+    "calls": 251,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 169,
+        "ok": 178,
         "busy": 70,
         "other": 3,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2253,29 +2512,6 @@
     "gemini-3.5-flash-lite": 1793297482.9921598
   },
   "editor_log": [
-    {
-      "at": "2026-10-29T07:23+05:30",
-      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Strong topic and visuals, but suffers from filler lines and repeated images.",
-      "fixes": [
-        "LINE 5: specify the exact date or context of the podcast appearance rather than filler",
-        "LINE 6: replace vague concern commentary with specific details on what Mosseri fears"
-      ],
-      "visual": [
-        "line 2: Same photo of Adam Mosseri held for too long across multiple frames.",
-        "line 5: Generic Instagram login screen shown instead of the actual podcast or widescreen feature.",
-        "line 6: Instagram login screen repeated unnecessarily."
-      ]
-    },
     {
       "at": "2026-10-29T07:30+05:30",
       "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
@@ -2696,10 +2932,32 @@
         "line 2: The same portrait of Steve Huffman is repeated across three consecutive frames.",
         "line 3: Generic stock photo of a laptop does not add specific news value."
       ]
+    },
+    {
+      "at": "2026-10-30T07:54+05:30",
+      "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experi",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual variety is lacking and repetitive across too many frames.",
+      "fixes": [
+        "LINE 3: Remove 'The platform now forces sign-ins to' and start with 'Reddit is forcing sign-ins to...'"
+      ],
+      "visual": [
+        "line 1: Same image held for too long across frames 1 and 2.",
+        "line 2: Same image held for too long across frames 3, 4, and 5.",
+        "line 3: Same image held for too long across frames 6 and 7."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 173,
+  "fish_turn": 174,
   "ig_music_recent": [
     "979175924268133",
     "1696569997584136",
