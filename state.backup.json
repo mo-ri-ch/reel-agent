@@ -1,38 +1,194 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Post-training 4B model with RL to fly Tesla Roadster 21% better than GPT-6 Astra",
-      "link": "https://skypilot.ai/blog/flying-roadster-rl",
-      "summary": "",
-      "source": "skypilot.ai",
-      "published": "2026-10-30T15:27:16+00:00",
-      "buzz": "Hacker News 4 points",
-      "angle": "A 4B model using RL trained to physically drive a Tesla Roadster 21% better than GPT-6 Astra."
-    },
-    {
-      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-      "link": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-      "summary": "",
-      "source": "phorion.io",
-      "published": "2026-10-30T07:09:12+00:00",
-      "buzz": "Hacker News 271 points",
-      "angle": "A high-severity security backdoor discovered in Claude Code for VS Code on the Cursor Marketplace."
-    },
-    {
-      "title": "Axonnic",
-      "link": "https://www.producthunt.com/products/axonnic",
-      "summary": "Muscle-sensing sleeves for robot training Discussion | Link",
-      "source": "Product Hunt — The best new products, every day",
-      "published": "2026-10-30T01:11:16+00:00",
-      "buzz": "Product Hunt launch",
-      "angle": "Axonnic launches muscle-sensing sleeves for robot training."
-    }
-  ],
-  "choose_deadline": "2026-10-30T22:01:05.500401+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "AI Isn't Replacing SREs. It's Deskilling Them",
+    "link": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+    "summary": "",
+    "source": "newsletter.signoz.io",
+    "published": "2026-10-30T15:52:18+00:00",
+    "buzz": "Hacker News 80 points",
+    "angle": "Tech warning: AI isn't replacing SREs yet, but it's dangerously deskilling them"
+  },
+  "draft": {
+    "title": "SigNoz Reveals AI SRE Deskilling",
+    "hook_text": "AI isn't replacing SREs.",
+    "beats": [
+      {
+        "line": "SigNoz warns that generative AI is quietly deskilling site reliability engineers.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "SigNoz",
+        "domain": "signoz.io",
+        "headline": "AI Isn't Replacing SREs. It's Deskilling Them",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+        "tag": "SigNoz warns of SRE deskilling",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "SigNoz",
+            "domain": "signoz.io"
+          }
+        ]
+      },
+      {
+        "line": "Automated models now generate runbooks, write code snippets, and draft routine post-mortems.",
+        "visual": "clip",
+        "query": "developer reviewing automated runbook alerts",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "AI generates automated runbooks",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Instead of manual triage, teams rely entirely on automated assistants for quick fixes.",
+        "visual": "clip",
+        "query": "engineer looking at dashboard metrics",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Teams rely on automated assistants",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This shortcut prevents junior engineers from building deep foundational debugging habits.",
+        "visual": "clip",
+        "query": "stressed team debugging system outage",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Junior engineers lose debugging habits",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "When complex production outages hit, teams struggle without deep systems knowledge.",
+        "visual": "clip",
+        "query": "server room lights blinking in data center",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Teams struggle during outages",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you rely entirely on automated code fixes?",
+        "visual": "clip",
+        "query": "software developer working late at night",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Relying on automated code fixes",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      }
+    ],
+    "delivery": "urgent and critical, sounding the alarm on hidden workforce degradation in tech",
+    "thin": false,
+    "caption": "SigNoz reveals how generative AI tools are deskilling site reliability engineers by automating runbooks and post-mortems. Without manual triage, teams risk losing critical debugging skills. Would you rely entirely on automated code fixes?",
+    "hashtags": [
+      "SigNoz",
+      "SRE",
+      "DevOps",
+      "CloudComputing",
+      "SoftwareEngineering"
+    ],
+    "sources": [
+      "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+    ],
+    "script": "SigNoz warns that generative AI is quietly deskilling site reliability engineers.\nAutomated models now generate runbooks, write code snippets, and draft routine post-mortems.\nInstead of manual triage, teams rely entirely on automated assistants for quick fixes.\nThis shortcut prevents junior engineers from building deep foundational debugging habits.\nWhen complex production outages hit, teams struggle without deep systems knowledge.\nWould you rely entirely on automated code fixes?",
+    "keywords": [
+      "developer reviewing automated runbook alerts",
+      "engineer looking at dashboard metrics",
+      "stressed team debugging system outage",
+      "server room lights blinking in data center",
+      "software developer working late at night"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "AI isn't replacing SREs.",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+      },
+      {
+        "claim": "SigNoz warns that generative AI is quietly deskilling site reliability engineers.",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+      },
+      {
+        "claim": "Automated models now generate runbooks, write code snippets, and draft routine post-mortems.",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+      },
+      {
+        "claim": "Instead of manual triage, teams rely entirely on automated assistants for quick fixes.",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+      },
+      {
+        "claim": "This shortcut prevents junior engineers from building deep foundational debugging habits.",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+      },
+      {
+        "claim": "When complex production outages hit, teams struggle without deep systems knowledge.",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+      },
+      {
+        "claim": "Would you rely entirely on automated code fixes?",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "source_links": [
+      "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -91,7 +247,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-30T22:38:47.574775+05:30",
   "preview_deadline": null,
   "last_gender": "female",
   "pending_offer": false,
@@ -503,11 +659,6 @@
   "paused": null,
   "spare": [],
   "tried": [
-    "Artificial Intelligence is a Horror Story",
-    "Google admits AI search makes less money, but it's fixing that with more ads",
-    "An AI Agent Just Performed A Brain Operation",
-    "Foxconn working on a new tie-up with OpenAI, says there is no AI bubble",
-    "We ran AI agent swarms in Minecraft and Mindustry",
     "AWS will be a $1T business, Jassy says — but first, it will spend big",
     "A tiny world model running games on a Raspberry Pi Pico 2 W",
     "As US airlines deploy AI pricing tools, startups help travelers cash in on fare drops",
@@ -562,243 +713,14 @@
     "OpenAI-backed Thrive Holdings acquires ADT",
     "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
     "Sam Altman: “Local inference is a terrible allocation of scarce resources”",
-    "DoorDash said it’s only received ‘several hundred’ orders from AI agents"
+    "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
+    "Post-training 4B model with RL to fly Tesla Roadster 21% better than GPT-6 Astra",
+    "Axonnic",
+    "An AI Agent Just Performed A Brain Operation",
+    "Theranos whistleblower Tyler Shultz warns that the AI boom is ‘a great opportunity to go deceive people’",
+    "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
-          "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-          "summary": "Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can't.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-29T17:00:00+00:00",
-          "angle": "Mistral drops weights for a massive trillion-parameter AI model built for cybersecurity"
-        },
-        "draft": {
-          "title": "Mistral releases trillion-parameter AI",
-          "hook_text": "Mistral dropped a trillion-parameter AI model.",
-          "beats": [
-            {
-              "line": "Mistral dropped a trillion-parameter AI model.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Mistral AI",
-              "outlet": "",
-              "domain": "mistral.ai",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-              "tag": "Mistral trillion-parameter AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mistral",
-                  "domain": "mistral.ai"
-                }
-              ]
-            },
-            {
-              "line": "The Paris lab released open weights for the massive system.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Paris",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Paris lab open weights",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mistral",
-                  "domain": "mistral.ai"
-                }
-              ]
-            },
-            {
-              "line": "It targets enterprise cybersecurity and network defense.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
-              "url": "",
-              "tag": "Targets cybersecurity defense",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mistral",
-                  "domain": "mistral.ai"
-                }
-              ]
-            },
-            {
-              "line": "Organizations gain direct control that closed models block.",
-              "visual": "clip",
-              "query": "cybersecurity analyst examining threat map",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Direct control over defenses",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Companies can inspect and modify the raw weights themselves.",
-              "visual": "clip",
-              "query": "developer reviewing code on monitor",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Inspect raw model weights",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This counters security risks tied to black box systems.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "One Trilli",
-              "small": "Model Parameters",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "One trillion parameters",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an open model with your firewall?",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Mistral AI",
-              "outlet": "",
-              "domain": "mistral.ai",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-              "tag": "Trust an open model?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Mistral",
-                  "domain": "mistral.ai"
-                }
-              ]
-            }
-          ],
-          "delivery": "sharp, technical, and matter-of-fact tone explaining a major enterprise AI release without hype",
-          "thin": false,
-          "caption": "Mistral released open weights for a trillion-parameter AI model focused on cybersecurity. Organizations get direct control over cyber defenses that closed models fail to provide. Would you trust an open model with your network?",
-          "hashtags": [
-            "Mistral",
-            "Cybersecurity",
-            "ArtificialIntelligence",
-            "TechNews",
-            "OpenSource"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-          ],
-          "script": "Mistral dropped a trillion-parameter AI model.\nThe Paris lab released open weights for the massive system.\nIt targets enterprise cybersecurity and network defense.\nOrganizations gain direct control that closed models block.\nCompanies can inspect and modify the raw weights themselves.\nThis counters security risks tied to black box systems.\nWould you trust an open model with your firewall?",
-          "keywords": [
-            "cybersecurity analyst examining threat map",
-            "developer reviewing code on monitor"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Mistral dropped a trillion-parameter AI model.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "Mistral dropped a trillion-parameter AI model.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "The Paris lab released open weights for the massive system.",
-              "url": "https://yourstory.com/ai-story/mistral-ai-trillion-parameter-cybersecurity-model"
-            },
-            {
-              "claim": "It targets enterprise cybersecurity and network defense.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "Organizations gain direct control that closed models block.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "Companies can inspect and modify the raw weights themselves.",
-              "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-            },
-            {
-              "claim": "This counters security risks tied to black box systems.",
-              "url": "https://yourstory.com/ai-story/mistral-ai-trillion-parameter-cybersecurity-model"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-30T18:52:29.594635+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1694,6 +1616,53 @@
       },
       "remove_from_queue": "BAACAgUAAxkDAAIyN2rkuBuXpPdQBVP1y5muI0b2spBPAAKtIgACflIoV7qah9N7AcYqPQQ",
       "history_title": "Can AI data centers be mass-produced like cars? This startup aims to find out"
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Post-training 4B model with RL to fly Tesla Roadster 21% better than GPT-6 Astra",
+            "link": "https://skypilot.ai/blog/flying-roadster-rl",
+            "summary": "",
+            "source": "skypilot.ai",
+            "published": "2026-10-30T15:27:16+00:00",
+            "buzz": "Hacker News 4 points",
+            "angle": "A 4B model using RL trained to physically drive a Tesla Roadster 21% better than GPT-6 Astra."
+          },
+          {
+            "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+            "link": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+            "summary": "",
+            "source": "phorion.io",
+            "published": "2026-10-30T07:09:12+00:00",
+            "buzz": "Hacker News 271 points",
+            "angle": "A high-severity security backdoor discovered in Claude Code for VS Code on the Cursor Marketplace."
+          },
+          {
+            "title": "Axonnic",
+            "link": "https://www.producthunt.com/products/axonnic",
+            "summary": "Muscle-sensing sleeves for robot training Discussion | Link",
+            "source": "Product Hunt — The best new products, every day",
+            "published": "2026-10-30T01:11:16+00:00",
+            "buzz": "Product Hunt launch",
+            "angle": "Axonnic launches muscle-sensing sleeves for robot training."
+          }
+        ],
+        "choose_deadline": "2026-10-30T22:01:05.500401+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2250,7 +2219,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
-    "calls": 496,
+    "calls": 562,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2285,8 +2254,8 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 50,
-        "busy": 13,
+        "ok": 93,
+        "busy": 36,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
