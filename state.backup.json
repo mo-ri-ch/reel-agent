@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -189,11 +189,59 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1211743776397750",
+      "title": "Traveler",
+      "artist": "Lusine"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The S-1 details massive spending on compute power …: The image of a classical architectural column is unrelated to the topic of data center servers.",
+      "The screen is blank/empty.",
+      "The screen is almost empty (only shows the name 'Joey' in a large font).",
+      "The image shows a classical architectural column, which is unrelated to data center servers.",
+      "The screen is blank/empty.",
+      "The screen is blank/empty."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 7,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong reporting, but visuals rely too heavily on abstract stock imagery.",
+      "script_fixes": [
+        "LINE 2: Change 'long-term AGI vision' to 'the path to profitability despite massive compute burn'",
+        "LINE 5: Replace 'immense infrastructure costs' with a specific dollar figure from the S-1 if available",
+        "LINE 7: Change 'this AI lab' to 'Anthropic'"
+      ],
+      "visual_beats": [
+        1,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 2: The 'AGI' graphic is abstract; use a chart from the S-1 filing instead.",
+        "line 4: The architectural column image is unrelated and confusing; use a compute cost chart.",
+        "line 5: Repeated the column image; use a revenue growth graph."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Anthropic: anthropic.com",
+      "Anthropic: anthropic.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 1 clips, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIxJGrkLyk855V8rOX7ED1MjSguDvcRAAJQIgACflIgVw5yWfKMMMiaPQQ",
   "queue": [
     {
       "title": "Rivian expands joint venture with VW to include AI assistant",
@@ -275,9 +323,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-30T11:09:56.428422+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-30T11:46:18.840900+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-30",
@@ -765,313 +813,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-          "link": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-          "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-29T20:08:31+00:00",
-          "angle": "Reddit is locking down its content to stop AI scraping—the open internet is officially changing."
-        },
-        "draft": {
-          "title": "Reddit Shifts to Logged-In Experience",
-          "hook_text": "Reddit is restricting anonymous browsing.",
-          "beats": [
-            {
-              "line": "Reddit is shifting to a primarily logged-in experience for its users.",
-              "visual": "clip",
-              "query": "Reddit website interface",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Reddit restricts browsing",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Reddit",
-                  "domain": "reddit.com"
-                }
-              ]
-            },
-            {
-              "line": "CEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.redditinc.com/leadership",
-              "tag": "CEO Steve Huffman",
-              "name": "Steve Huffman",
-              "role": "CEO, Reddit",
-              "x": "spez",
-              "brands": [
-                {
-                  "name": "Reddit",
-                  "domain": "reddit.com"
-                }
-              ]
-            },
-            {
-              "line": "The platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.",
-              "visual": "clip",
-              "query": "person logging into website",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Stopping AI scrapers",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Reddit",
-                  "domain": "reddit.com"
-                }
-              ]
-            },
-            {
-              "line": "This move will strictly restrict third-party access to public threads.",
-              "visual": "clip",
-              "query": "Reddit mobile app UI",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Restricting public threads",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Reddit",
-                  "domain": "reddit.com"
-                }
-              ]
-            },
-            {
-              "line": "This follows Reddit's sixty million dollar annual data licensing deal with Google.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$60M",
-              "small": "Annual licensing deal",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Reddit",
-                  "domain": "reddit.com"
-                },
-                {
-                  "name": "Google",
-                  "domain": "google.com"
-                }
-              ]
-            },
-            {
-              "line": "Expect more aggressive prompts to create an account while browsing.",
-              "visual": "clip",
-              "query": "smartphone screen notification",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "More sign-in prompts",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you keep using Reddit if you had to sign in?",
-              "visual": "clip",
-              "query": "Reddit app icon",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Mandatory sign-in?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Reddit",
-                  "domain": "reddit.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "Fast-paced and professional, focusing on the trade-off between open web access and data protection.",
-          "thin": false,
-          "caption": "Reddit is moving to a logged-in experience to curb unauthorized AI scraping of its public threads. This decision follows the company's $60M annual data licensing deal with Google. Would you keep using the platform if you had to sign in?",
-          "hashtags": [
-            "Reddit",
-            "SocialMedia",
-            "TechNews",
-            "InternetPrivacy",
-            "DigitalRights"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
-          ],
-          "script": "Reddit is shifting to a primarily logged-in experience for its users.\nCEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.\nThe platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.\nThis move will strictly restrict third-party access to public threads.\nThis follows Reddit's sixty million dollar annual data licensing deal with Google.\nExpect more aggressive prompts to create an account while browsing.\nWould you keep using Reddit if you had to sign in?",
-          "keywords": [
-            "Reddit website interface",
-            "person logging into website",
-            "Reddit mobile app UI",
-            "smartphone screen notification",
-            "Reddit app icon"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Reddit is restricting anonymous browsing.",
-              "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
-            },
-            {
-              "claim": "Reddit is shifting to a primarily logged-in experience for its users.",
-              "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
-            },
-            {
-              "claim": "CEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.",
-              "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
-            },
-            {
-              "claim": "The platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.",
-              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
-            },
-            {
-              "claim": "This move will strictly restrict third-party access to public threads.",
-              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
-            },
-            {
-              "claim": "This follows Reddit's sixty million dollar annual data licensing deal with Google.",
-              "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
-            },
-            {
-              "claim": "Expect more aggressive prompts to create an account while browsing.",
-              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "editor_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
-          ],
-          "ig_audio": {
-            "id": "1034552372408400",
-            "title": "Let Me Tell You",
-            "artist": "PiNKSHGRFNGR"
-          },
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Reddit is shifting to a primarily logged-in experi…: The visual shows the Pexels website, not the Reddit interface.",
-            "The platform now forces sign-ins to prevent unauth…: The visual is a blank, blurred-out card.",
-            "This move will strictly restrict third-party acces…: The visual is a blank, blurred-out card.",
-            "Would you keep using Reddit if you had to sign in?…: The visual is a blank, blurred-out card.",
-            "The shot shows a logo on a plain background instead of the requested website interface.",
-            "The shot is an almost-empty card with only the text 'CEO' visible.",
-            "The shot is an almost-empty card with only text, missing the requested stock video.",
-            "The shot is an almost-empty card with only text, missing the requested mobile app UI.",
-            "The shot shows a Google logo instead of the requested $60M figure.",
-            "The shot shows a blank, unreadable smartphone screen.",
-            "The shot is an almost-empty card with only text, missing the requested app icon."
-          ],
-          "editor": {
-            "overall": 8.2,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 9,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong reporting, but visual variety is lacking and repetitive across too many frames.",
-            "script_fixes": [
-              "LINE 3: Remove 'The platform now forces sign-ins to' and start with 'Reddit is forcing sign-ins to...'"
-            ],
-            "visual_beats": [
-              0,
-              1,
-              2,
-              3,
-              4,
-              6
-            ],
-            "visual_notes": [
-              "line 1: Same image held for too long across frames 1 and 2.",
-              "line 2: Same image held for too long across frames 3, 4, and 5.",
-              "line 3: Same image held for too long across frames 6 and 7.",
-              "line 4: Same image held for too long across frames 8 and 9.",
-              "line 5: Same image held for too long across frames 10 and 11.",
-              "line 7: Same image held for too long across frames 13 and 14."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "7 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIwsGrj_-9XvKK_dhnGLG0zqvO-bM7DAAJ5IQACflIgV0elKv20CSEePQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIwsGrj_-9XvKK_dhnGLG0zqvO-bM7DAAJ5IQACflIgV0elKv20CSEePQQ",
-      "history_title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1797,6 +1538,211 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic is asking Wall Street to believe in AGI",
+          "link": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
+          "summary": "Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document known as an S-1. Anthropic just filed its S-1 to go public on the Nasdaq, and it could start […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-29T14:00:00+00:00",
+          "angle": "Anthropic is prepping for a massive IPO, and analysts are finally digging into the real numbers behind their AGI claims."
+        },
+        "draft": {
+          "title": "Anthropic IPO: Inside the S-1",
+          "hook_text": "Anthropic files for IPO",
+          "beats": [
+            {
+              "line": "Anthropic just filed its S-1 paperwork to go public on the Nasdaq.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Anthropic files IPO",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The company is asking investors to believe in its long-term AGI vision.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Claude",
+              "outlet": "",
+              "domain": "claude.ai",
+              "headline": "",
+              "url": "https://claude.ai",
+              "tag": "Believing in AGI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Joey Brookhart from SemiAnalysis is auditing the specific numbers inside this filing.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.semianalysis.com",
+              "tag": "Joey Brookhart analyst",
+              "name": "Joey Brookhart",
+              "role": "Analyst, SemiAnalysis",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The S-1 details massive spending on compute power to train the Claude models.",
+              "visual": "clip",
+              "query": "data center servers",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Massive compute spending",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Anthropic revenue must now scale to cover these immense infrastructure costs.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "S-1",
+              "small": "IPO filing",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Revenue vs costs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The Verge podcast interviewed Brookhart to explain these complex financial tradeoffs.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Anthropic is asking Wall Street to believe in AGI",
+              "url": "",
+              "tag": "The Verge analysis",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Will you buy stock in this AI lab?",
+              "visual": "clip",
+              "query": "stock market ticker",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Would you invest?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Professional and analytical, shifting from the excitement of the IPO filing to the serious financial reality of AI infrastructure costs.",
+          "thin": false,
+          "caption": "Anthropic has officially filed its S-1 to go public on the Nasdaq. Analysts are now scrutinizing the firm's path to profitability for its Claude model and its heavy spending on compute. Would you buy stock in this AI lab?",
+          "hashtags": [
+            "Anthropic",
+            "ClaudeAI",
+            "IPO",
+            "Nasdaq",
+            "TechInvesting"
+          ],
+          "sources": [
+            "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+          ],
+          "script": "Anthropic just filed its S-1 paperwork to go public on the Nasdaq.\nThe company is asking investors to believe in its long-term AGI vision.\nJoey Brookhart from SemiAnalysis is auditing the specific numbers inside this filing.\nThe S-1 details massive spending on compute power to train the Claude models.\nAnthropic revenue must now scale to cover these immense infrastructure costs.\nThe Verge podcast interviewed Brookhart to explain these complex financial tradeoffs.\nWill you buy stock in this AI lab?",
+          "keywords": [
+            "data center servers",
+            "stock market ticker"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Anthropic files for IPO",
+              "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+            },
+            {
+              "claim": "Anthropic just filed its S-1 paperwork to go public on the Nasdaq.",
+              "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+            },
+            {
+              "claim": "Joey Brookhart is an analyst at SemiAnalysis.",
+              "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+            },
+            {
+              "claim": "The S-1 details massive spending on compute power to train the Claude models.",
+              "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+            },
+            {
+              "claim": "The Verge podcast interviewed Joey Brookhart.",
+              "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-30T11:09:56.428422+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2305,8 +2251,8 @@
       "event": "Reddit is shifting to a primarily logged-in experience for its users. CEO Steve Huffman confirms this change protects content from unauthorized AI scrapers. The platform now forces sign-ins to prevent unauthorized data scraping by AI crawle"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-30T08:25+05:30",
@@ -2334,7 +2280,7 @@
   "report_day": "2026-10-29",
   "ig_count": {
     "day": "2026-10-30",
-    "at": "2026-10-30T11:00:31.338238+05:30",
+    "at": "2026-10-30T11:16:18.841159+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2358,12 +2304,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
-    "calls": 314,
+    "calls": 325,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 220,
+        "ok": 231,
         "busy": 91,
         "other": 3,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2448,29 +2394,6 @@
     "gemini-3.5-flash-lite": 1793297482.9921598
   },
   "editor_log": [
-    {
-      "at": "2026-10-29T11:55+05:30",
-      "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
-      "overall": 8.7,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 7,
-        "flow": 9
-      },
-      "one_line": "Strong, specific reporting, but visual pacing is repetitive and lacks dynamic variety.",
-      "fixes": [
-        "LINE 3: Change 'The agent' to 'Claude Code' for immediate clarity.",
-        "LINE 7: Replace 'drain your budget' with 'waste your credits' to match standard AI terminology."
-      ],
-      "visual": [
-        "line 1: The same static logo screen is held for too long (4.8s).",
-        "line 3: The visual remains static for 4.8s, failing to show the actual log example mentioned.",
-        "line 4: The visual is a generic GitHub Gist logo; it should show a snippet of the actual log file."
-      ]
-    },
     {
       "at": "2026-10-29T15:46+05:30",
       "title": "SAP India Targets 2 Million People for AI Skilling by 2030",
@@ -2893,10 +2816,34 @@
         "line 2: Visuals are just a static, low-quality collage; needs dynamic footage of the agent in acti",
         "line 3: The NVIDIA logo is a generic placeholder; show the actual software interface or rendering "
       ]
+    },
+    {
+      "at": "2026-10-30T11:16+05:30",
+      "title": "Anthropic is asking Wall Street to believe in AGI",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 7,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong reporting, but visuals rely too heavily on abstract stock imagery.",
+      "fixes": [
+        "LINE 2: Change 'long-term AGI vision' to 'the path to profitability despite massive compute burn'",
+        "LINE 5: Replace 'immense infrastructure costs' with a specific dollar figure from the S-1 if available",
+        "LINE 7: Change 'this AI lab' to 'Anthropic'"
+      ],
+      "visual": [
+        "line 2: The 'AGI' graphic is abstract; use a chart from the S-1 filing instead.",
+        "line 4: The architectural column image is unrelated and confusing; use a compute cost chart.",
+        "line 5: Repeated the column image; use a revenue growth graph."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 177,
+  "fish_turn": 178,
   "ig_music_recent": [
     "979175924268133",
     "1696569997584136",
