@@ -17,16 +17,16 @@
     "beats": [
       {
         "line": "Reddit is shifting to a primarily logged-in experience for its users.",
-        "visual": "official",
-        "query": "technology",
+        "visual": "clip",
+        "query": "Reddit website interface",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Reddit",
+        "entity": "",
         "outlet": "",
-        "domain": "reddit.com",
+        "domain": "",
         "headline": "",
-        "url": "https://www.reddit.com",
+        "url": "",
         "tag": "Reddit restricts browsing",
         "name": "",
         "role": "",
@@ -49,7 +49,7 @@
         "outlet": "",
         "domain": "",
         "headline": "",
-        "url": "https://www.reddit.com/user/spez",
+        "url": "https://www.redditinc.com/leadership",
         "tag": "CEO Steve Huffman",
         "name": "Steve Huffman",
         "role": "CEO, Reddit",
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "line": "The platform now prioritizes logged-in users to improve data security.",
+        "line": "The platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.",
         "visual": "clip",
         "query": "person logging into website",
         "prompt": "",
@@ -73,25 +73,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Data security focus",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Reddit aims to better control how its community content is accessed.",
-        "visual": "official",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Reddit logo",
-        "outlet": "",
-        "domain": "reddit.com",
-        "headline": "",
-        "url": "https://www.reddit.com",
-        "tag": "Controlling content access",
+        "tag": "Stopping AI scrapers",
         "name": "",
         "role": "",
         "x": "",
@@ -103,18 +85,18 @@
         ]
       },
       {
-        "line": "This strategy follows the company's recent focus on monetization via data licensing.",
-        "visual": "stat",
-        "query": "technology",
+        "line": "This move will strictly restrict third-party access to public threads.",
+        "visual": "clip",
+        "query": "Reddit mobile app UI",
         "prompt": "",
-        "big": "Monetizati",
-        "small": "Data licensing focus",
+        "big": "",
+        "small": "",
         "entity": "",
         "outlet": "",
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Licensing strategy",
+        "tag": "Restricting public threads",
         "name": "",
         "role": "",
         "x": "",
@@ -126,7 +108,34 @@
         ]
       },
       {
-        "line": "You will see more prompts to sign in while browsing.",
+        "line": "This follows Reddit's sixty million dollar annual data licensing deal with Google.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "$60M",
+        "small": "Annual licensing deal",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Reddit",
+            "domain": "reddit.com"
+          },
+          {
+            "name": "Google",
+            "domain": "google.com"
+          }
+        ]
+      },
+      {
+        "line": "Expect more aggressive prompts to create an account while browsing.",
         "visual": "clip",
         "query": "smartphone screen notification",
         "prompt": "",
@@ -145,16 +154,16 @@
       },
       {
         "line": "Would you keep using Reddit if you had to sign in?",
-        "visual": "official",
-        "query": "technology",
+        "visual": "clip",
+        "query": "Reddit app icon",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Reddit mobile app",
+        "entity": "",
         "outlet": "",
-        "domain": "reddit.com",
+        "domain": "",
         "headline": "",
-        "url": "https://www.reddit.com/mobile/download",
+        "url": "",
         "tag": "Mandatory sign-in?",
         "name": "",
         "role": "",
@@ -167,9 +176,9 @@
         ]
       }
     ],
-    "delivery": "Conversational, direct, and matter-of-fact as the implications for daily browsing become clear.",
+    "delivery": "Fast-paced and professional, focusing on the trade-off between open web access and data protection.",
     "thin": false,
-    "caption": "Reddit is moving to a primarily logged-in experience to curb unauthorized AI scraping. CEO Steve Huffman is prioritizing site security and data control over anonymous access. Would you keep using the platform if you had to sign in?",
+    "caption": "Reddit is moving to a logged-in experience to curb unauthorized AI scraping of its public threads. This decision follows the company's $60M annual data licensing deal with Google. Would you keep using the platform if you had to sign in?",
     "hashtags": [
       "Reddit",
       "SocialMedia",
@@ -180,10 +189,13 @@
     "sources": [
       "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
     ],
-    "script": "Reddit is shifting to a primarily logged-in experience for its users.\nCEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.\nThe platform now prioritizes logged-in users to improve data security.\nReddit aims to better control how its community content is accessed.\nThis strategy follows the company's recent focus on monetization via data licensing.\nYou will see more prompts to sign in while browsing.\nWould you keep using Reddit if you had to sign in?",
+    "script": "Reddit is shifting to a primarily logged-in experience for its users.\nCEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.\nThe platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.\nThis move will strictly restrict third-party access to public threads.\nThis follows Reddit's sixty million dollar annual data licensing deal with Google.\nExpect more aggressive prompts to create an account while browsing.\nWould you keep using Reddit if you had to sign in?",
     "keywords": [
+      "Reddit website interface",
       "person logging into website",
-      "smartphone screen notification"
+      "Reddit mobile app UI",
+      "smartphone screen notification",
+      "Reddit app icon"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
@@ -201,25 +213,26 @@
         "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
       },
       {
-        "claim": "The platform now prioritizes logged-in users to improve data security.",
-        "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
-      },
-      {
-        "claim": "Reddit aims to better control how its community content is accessed.",
+        "claim": "The platform now forces sign-ins to prevent unauthorized data scraping by AI crawlers.",
         "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
       },
       {
-        "claim": "This strategy follows the company's recent focus on monetization via data licensing.",
-        "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+        "claim": "This move will strictly restrict third-party access to public threads.",
+        "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
       },
       {
-        "claim": "You will see more prompts to sign in while browsing.",
+        "claim": "This follows Reddit's sixty million dollar annual data licensing deal with Google.",
+        "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
+      },
+      {
+        "claim": "Expect more aggressive prompts to create an account while browsing.",
         "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
     ]
@@ -282,9 +295,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-30T07:44:47.393422+05:30",
+  "script_deadline": "2026-10-30T07:49:33.206912+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-30",
@@ -772,249 +785,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Rivian expands joint venture with VW to include AI assistant",
-          "link": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-          "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-29T20:05:47+00:00",
-          "angle": "Rivian is expanding its $5.8 billion joint venture with Volkswagen to include AI assistants."
-        },
-        "draft": {
-          "title": "Rivian and VW Expand AI Partnership",
-          "hook_text": "Rivian adds AI to VW deal",
-          "beats": [
-            {
-              "line": "Five point eight billion dollars is the new bet.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Rivian",
-              "outlet": "",
-              "domain": "rivian.com",
-              "headline": "",
-              "url": "https://rivian.com",
-              "tag": "5.8 billion deal",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This expansion integrates advanced software directly into their upcoming vehicle architectures.",
-              "visual": "clip",
-              "query": "electric vehicle interior technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "advanced vehicle software",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The companies have not disclosed if the total investment value will increase following this update.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "5.8B",
-              "small": "total venture value",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "investment value unchanged",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This partnership aims to combine Rivian's software platform with the scale of Volkswagen's manufacturing.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Volkswagen",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "scaling vehicle software",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Engineers from both firms are now working to embed voice-activated AI features into new car models.",
-              "visual": "clip",
-              "query": "automotive software engineers working",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI features coming",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an AI assistant to control your car's settings while you drive?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Rivian expands joint venture with VW to include AI assistant",
-              "url": "",
-              "tag": "AI in your car",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Professional and crisp, focusing on the scale of the automotive tech shift.",
-          "thin": false,
-          "caption": "Rivian and Volkswagen are expanding their 5.8 billion dollar joint venture to include a new AI assistant for their vehicles. The collaboration aims to merge high-end software with mass manufacturing. Would you trust an AI assistant to control your car's settings while you drive?",
-          "hashtags": [
-            "Rivian",
-            "Volkswagen",
-            "AutomotiveTech",
-            "AI",
-            "ElectricVehicles"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-          ],
-          "script": "Five point eight billion dollars is the new bet.\nThis expansion integrates advanced software directly into their upcoming vehicle architectures.\nThe companies have not disclosed if the total investment value will increase following this update.\nThis partnership aims to combine Rivian's software platform with the scale of Volkswagen's manufacturing.\nEngineers from both firms are now working to embed voice-activated AI features into new car models.\nWould you trust an AI assistant to control your car's settings while you drive?",
-          "keywords": [
-            "electric vehicle interior technology",
-            "automotive software engineers working"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "Rivian is adding a new AI assistant to its five point eight billion dollar joint venture with Volkswagen.",
-          "hook_score": 51,
-          "evidence": [
-            {
-              "claim": "Rivian adds AI to VW deal",
-              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-            },
-            {
-              "claim": "Five point eight billion dollars is the new bet.",
-              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-            },
-            {
-              "claim": "This expansion integrates advanced software directly into their upcoming vehicle architectures.",
-              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-            },
-            {
-              "claim": "The companies have not disclosed if the total investment value will increase following this update.",
-              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-            },
-            {
-              "claim": "This partnership aims to combine Rivian's software platform with the scale of Volkswagen's manufacturing.",
-              "url": "https://www.unite.ai/rivian-licenses-ai-voice-assistant-technology-through-volkswagen-jv/"
-            },
-            {
-              "claim": "Engineers from both firms are now working to embed voice-activated AI features into new car models.",
-              "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-          ],
-          "ig_audio": {
-            "id": "810120545333296",
-            "title": "Iced Latte",
-            "artist": "Global Genius"
-          },
-          "visual_status": "fixed",
-          "visual_notes": [
-            "This expansion integrates advanced software direct…: The image shows a Volkswagen Buggy, which is unrelated to the software-focused context of the line.",
-            "The companies have not disclosed if the total inve…: The card is almost empty and does not show the required number.",
-            "This partnership aims to combine Rivian's software…: The card is almost empty and does not show the required image of Volkswagen.",
-            "Engineers from both firms are now working to embed…: The image shows a Rivian car instead of the required stock video of automotive software engineers.",
-            "Would you trust an AI assistant to control your ca…: The card is almost empty and does not show the required source card for TechCrunch.",
-            "The visual is a generic presentation slide and does not show the required big number 5.8B.",
-            "The visual is a blank card with text and does not show the required real photo of Volkswagen.",
-            "The visual is a text-only card and does not show the required stock video of engineers.",
-            "The visual is a text-only card and does not show the required source card for TechCrunch."
-          ],
-          "editor": {
-            "overall": 8.3,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 10,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
-            "script_fixes": [
-              "LINE 3: Change to 'The companies have not confirmed if the 5.8 billion dollar total will increase.'"
-            ],
-            "visual_beats": [
-              0,
-              3,
-              5
-            ],
-            "visual_notes": [
-              "line 1: Same image held for too long across two frames.",
-              "line 4: Volkswagen logo icon is repeated across three frames, creating visual stagnation.",
-              "line 6: TechCrunch logo is irrelevant to the question about AI in cars."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [
-            "Rivian: rivian.com"
-          ],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "1 official images, 5 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIwZGrjyweWqoKqF6cdmMMbIXuKNHDYAALQIgACApshV3fpMZvD6-hDPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIwZGrjyweWqoKqF6cdmMMbIXuKNHDYAALQIgACApshV3fpMZvD6-hDPQQ",
-      "history_title": "Rivian expands joint venture with VW to include AI assistant"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1594,6 +1364,244 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
+          "link": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+          "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-29T20:08:31+00:00",
+          "angle": "Reddit is locking down its content to stop AI scraping—the open internet is officially changing."
+        },
+        "draft": {
+          "title": "Reddit Shifts to Logged-In Experience",
+          "hook_text": "Reddit is restricting anonymous browsing.",
+          "beats": [
+            {
+              "line": "Reddit is shifting to a primarily logged-in experience for its users.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Reddit",
+              "outlet": "",
+              "domain": "reddit.com",
+              "headline": "",
+              "url": "https://www.reddit.com",
+              "tag": "Reddit restricts browsing",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "CEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.reddit.com/user/spez",
+              "tag": "CEO Steve Huffman",
+              "name": "Steve Huffman",
+              "role": "CEO, Reddit",
+              "x": "spez",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "The platform now prioritizes logged-in users to improve data security.",
+              "visual": "clip",
+              "query": "person logging into website",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data security focus",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Reddit aims to better control how its community content is accessed.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Reddit logo",
+              "outlet": "",
+              "domain": "reddit.com",
+              "headline": "",
+              "url": "https://www.reddit.com",
+              "tag": "Controlling content access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "This strategy follows the company's recent focus on monetization via data licensing.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Monetizati",
+              "small": "Data licensing focus",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Licensing strategy",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            },
+            {
+              "line": "You will see more prompts to sign in while browsing.",
+              "visual": "clip",
+              "query": "smartphone screen notification",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "More sign-in prompts",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you keep using Reddit if you had to sign in?",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Reddit mobile app",
+              "outlet": "",
+              "domain": "reddit.com",
+              "headline": "",
+              "url": "https://www.reddit.com/mobile/download",
+              "tag": "Mandatory sign-in?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Reddit",
+                  "domain": "reddit.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Conversational, direct, and matter-of-fact as the implications for daily browsing become clear.",
+          "thin": false,
+          "caption": "Reddit is moving to a primarily logged-in experience to curb unauthorized AI scraping. CEO Steve Huffman is prioritizing site security and data control over anonymous access. Would you keep using the platform if you had to sign in?",
+          "hashtags": [
+            "Reddit",
+            "SocialMedia",
+            "TechNews",
+            "InternetPrivacy",
+            "DigitalRights"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+          ],
+          "script": "Reddit is shifting to a primarily logged-in experience for its users.\nCEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.\nThe platform now prioritizes logged-in users to improve data security.\nReddit aims to better control how its community content is accessed.\nThis strategy follows the company's recent focus on monetization via data licensing.\nYou will see more prompts to sign in while browsing.\nWould you keep using Reddit if you had to sign in?",
+          "keywords": [
+            "person logging into website",
+            "smartphone screen notification"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Reddit is restricting anonymous browsing.",
+              "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
+            },
+            {
+              "claim": "Reddit is shifting to a primarily logged-in experience for its users.",
+              "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+            },
+            {
+              "claim": "CEO Steve Huffman confirms this change protects content from unauthorized AI scrapers.",
+              "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+            },
+            {
+              "claim": "The platform now prioritizes logged-in users to improve data security.",
+              "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
+            },
+            {
+              "claim": "Reddit aims to better control how its community content is accessed.",
+              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
+            },
+            {
+              "claim": "This strategy follows the company's recent focus on monetization via data licensing.",
+              "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+            },
+            {
+              "claim": "You will see more prompts to sign in while browsing.",
+              "url": "https://shattered.io/reddit-sign-in-push-search-referrals-drop-1-million-week-2026/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-30T07:44:47.393422+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2102,8 +2110,8 @@
       "event": "President Donald Trump declared foreign-made industrial robots a national security threat on October twenty-eighth. The executive order focuses on the rising reliance on foreign automation in American factories. His administration initiated"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-30T06:35+05:30",
@@ -2151,7 +2159,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-30",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
@@ -2245,27 +2253,6 @@
     "gemini-3.5-flash-lite": 1793297482.9921598
   },
   "editor_log": [
-    {
-      "at": "2026-10-29T06:45+05:30",
-      "title": "Google expands AI Search ads globally as core ad growth slows",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 5,
-        "flow": 9
-      },
-      "one_line": "Solid financial data and hook, but repetitive and mismatched visuals drag down quality.",
-      "fixes": [
-        "LINE 2: Parent company Alphabet announced its third quarter earnings report today."
-      ],
-      "visual": [
-        "line 5: Reused the exact same Google sign image from line 1.",
-        "line 6: No visual representation of conversational AI search summaries, just text cards."
-      ]
-    },
     {
       "at": "2026-10-29T07:23+05:30",
       "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
@@ -2685,10 +2672,34 @@
         "line 3: The industrial machine footage is generic and lacks a clear connection to 'trade talks'.",
         "line 5: Visuals are repetitive, cycling through the same 'Tariffs' text card multiple times."
       ]
+    },
+    {
+      "at": "2026-10-30T07:49+05:30",
+      "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experi",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 8,
+        "substance": 6,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "The script relies on vague corporate speak and repetitive visuals, lacking punchy, concrete news value.",
+      "fixes": [
+        "LINE 3: Replace 'improve data security' with 'prevent unauthorized data scraping by AI crawlers'.",
+        "LINE 4: Replace 'better control how its community content is accessed' with 'restrict third-party access to public threads'.",
+        "LINE 5: Replace 'This strategy follows the company's recent focus on monetization' with 'This follows Reddit's $60M annual data licensing deal with Google'."
+      ],
+      "visual": [
+        "line 1: The same image of a phone is held for too long across multiple frames.",
+        "line 2: The same portrait of Steve Huffman is repeated across three consecutive frames.",
+        "line 3: Generic stock photo of a laptop does not add specific news value."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 172,
+  "fish_turn": 173,
   "ig_music_recent": [
     "979175924268133",
     "1696569997584136",
