@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -24,7 +24,7 @@
         "small": "",
         "entity": "Runware data center",
         "outlet": "",
-        "domain": "techcrunch.com",
+        "domain": "",
         "headline": "",
         "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
         "tag": "Runware factory assembly line",
@@ -111,7 +111,7 @@
         "small": "",
         "entity": "Runware prefab unit",
         "outlet": "",
-        "domain": "techcrunch.com",
+        "domain": "",
         "headline": "",
         "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
         "tag": "Can Runware deliver at scale",
@@ -195,11 +195,51 @@
     "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1121250805840078",
+      "title": "Italian Sunshine Remix (Moira Smiley)",
+      "artist": "Sleeping Lion"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The company aims to get these modular units online…: The image is blank/missing the expected '48 hrs' big number card.",
+      "Traditional facilities take months to build and wi…: The image is completely blank and blurred out, missing the server rack stock video.",
+      "Runware is betting standardizing the hardware will…: The image is blank, missing the TechCrunch source card.",
+      "The real test is whether Runware can deliver these…: The image only contains text cards instead of showing real images of a Runware prefab unit.",
+      "blank screen, missing visual card with number 48 hrs",
+      "blank screen, missing TechCrunch source card",
+      "blank screen, missing real images of Runware prefab unit"
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong concept and hook, but repetitive visual assets and missing company logo on first mention.",
+      "script_fixes": [],
+      "visual_beats": [
+        0,
+        3
+      ],
+      "visual_notes": [
+        "line 1: Factory illustration is reused excessively across multiple lines without new visual contex",
+        "line 4: Displays TechCrunch logo instead of Runware branding when discussing Runware's strategy."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 official images, 1 AI images, 4 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIyN2rkuBuXpPdQBVP1y5muI0b2spBPAAKtIgACflIoV7qah9N7AcYqPQQ",
   "queue": [
     {
       "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
@@ -255,9 +295,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-30T20:51:56.744325+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-30T21:30:35.978836+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-30",
@@ -730,179 +770,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-          "link": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
-          "summary": "The Wikimedia Foundation is staking out a middle ground in a group of landmark AI copyright cases, pushing courts to legally protect large language models (LLMs) training on copyrighted work - but not chatbots regurgitating that work to users. An overly black-and-white ruling, it says, could either deprive Wikipedians of useful AI-based tools or endanger […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-30T09:00:00+00:00",
-          "angle": "Wikimedia warns that a bad AI copyright ruling could completely destroy the open web."
-        },
-        "draft": {
-          "title": "Wikipedia Takes A Stand On AI Copyright",
-          "hook_text": "Wikimedia intervenes in AI copyright.",
-          "beats": [
-            {
-              "line": "The Wikimedia Foundation is intervening in landmark artificial intelligence copyright lawsuits.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Wikimedia Foundation",
-              "outlet": "",
-              "domain": "wikimedia.org",
-              "headline": "",
-              "url": "https://wikimediafoundation.org/",
-              "tag": "Wikimedia Foundation AI stance",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Wikimedia",
-                  "domain": "wikimedia.org"
-                }
-              ]
-            },
-            {
-              "line": "The operator behind Wikipedia is urging courts to protect large language models training on copyrighted material.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-              "url": "",
-              "tag": "Protecting large language models",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "At the same time, the foundation argues chatbots must be barred from regurgitating that copyrighted work directly to users.",
-              "visual": "clip",
-              "query": "typing on laptop keyboard",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No chatbot regurgitation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "An overly rigid legal ruling could deprive Wikipedians of essential AI-based tools.",
-              "visual": "clip",
-              "query": "person editing wikipedia",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Risks for Wikipedia tools",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you protect training data while blocking chatbot outputs?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-              "url": "",
-              "tag": "Copyright legal compromise",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "urgent and direct, breaking down a complex legal stance into stark practical choices for the open web",
-          "thin": false,
-          "caption": "The Wikimedia Foundation is pushing courts to protect AI model training while blocking chatbots from regurgitating copyrighted text. This middle ground aims to save useful research tools without breaking the open web. Would you support this legal compromise?",
-          "hashtags": [
-            "Wikimedia",
-            "Wikipedia",
-            "OpenAI",
-            "Copyright",
-            "TheVerge"
-          ],
-          "sources": [
-            "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-          ],
-          "script": "The Wikimedia Foundation is intervening in landmark artificial intelligence copyright lawsuits.\nThe operator behind Wikipedia is urging courts to protect large language models training on copyrighted material.\nAt the same time, the foundation argues chatbots must be barred from regurgitating that copyrighted work directly to users.\nAn overly rigid legal ruling could deprive Wikipedians of essential AI-based tools.\nWould you protect training data while blocking chatbot outputs?",
-          "keywords": [
-            "typing on laptop keyboard",
-            "person editing wikipedia"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Wikimedia intervenes in AI copyright.",
-              "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-            },
-            {
-              "claim": "The Wikimedia Foundation is intervening in landmark artificial intelligence copyright lawsuits.",
-              "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-            },
-            {
-              "claim": "The operator behind Wikipedia is urging courts to protect large language models training on copyrighted material.",
-              "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-            },
-            {
-              "claim": "The foundation argues chatbots must be barred from regurgitating that copyrighted work directly to users.",
-              "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-            },
-            {
-              "claim": "An overly rigid legal ruling could deprive Wikipedians of essential AI-based tools.",
-              "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-30T17:29:55.279205+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1767,6 +1634,217 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+          "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+          "summary": "Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-30T13:00:00+00:00",
+          "angle": "Startup Runware is attempting to mass-produce prefabricated AI data centers on assembly lines like cars to solve the hardware crunch."
+        },
+        "draft": {
+          "title": "Runware's Prefabricated AI Data Centers",
+          "hook_text": "AI data centers built in 48 hours",
+          "beats": [
+            {
+              "line": "Startup Runware is building a factory to mass-produce prefabricated AI data centers on an assembly line.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Runware data center",
+              "outlet": "",
+              "domain": "techcrunch.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+              "tag": "Runware factory assembly line",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Runware",
+                  "domain": "runware.ai"
+                }
+              ]
+            },
+            {
+              "line": "The company aims to get these modular units online in just forty-eight hours.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "48 hrs",
+              "small": "deployment time",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Online in 48 hours",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Runware",
+                  "domain": "runware.ai"
+                }
+              ]
+            },
+            {
+              "line": "Traditional facilities take months to build and wire up for heavy computing loads.",
+              "visual": "clip",
+              "query": "server rack installation data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Months of traditional setup",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Runware is betting standardizing the hardware will slash construction costs.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Can AI data centers be mass-produced like cars?",
+              "url": "",
+              "tag": "Standardizing hardware costs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Runware",
+                  "domain": "runware.ai"
+                }
+              ]
+            },
+            {
+              "line": "The real test is whether Runware can deliver these units at true scale.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Runware prefab unit",
+              "outlet": "",
+              "domain": "techcrunch.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+              "tag": "Can Runware deliver at scale",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Runware",
+                  "domain": "runware.ai"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust a prefab data center?",
+              "visual": "clip",
+              "query": "technician checking server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trust prefab data centers?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp tech journalist explaining a novel manufacturing approach with brisk curiosity",
+          "thin": false,
+          "caption": "Startup Runware is building a factory to mass-produce prefabricated AI data centers that can go online in forty-eight hours. The approach aims to bypass the months-long construction delays currently plaguing the industry. Would you trust a factory-built data center?",
+          "hashtags": [
+            "Runware",
+            "DataCenter",
+            "AI",
+            "TechNews"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+          ],
+          "script": "Startup Runware is building a factory to mass-produce prefabricated AI data centers on an assembly line.\nThe company aims to get these modular units online in just forty-eight hours.\nTraditional facilities take months to build and wire up for heavy computing loads.\nRunware is betting standardizing the hardware will slash construction costs.\nThe real test is whether Runware can deliver these units at true scale.\nWould you trust a prefab data center?",
+          "keywords": [
+            "server rack installation data center",
+            "technician checking server racks"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_score": 32,
+          "evidence": [
+            {
+              "claim": "AI data centers built in 48 hours",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+            },
+            {
+              "claim": "Startup Runware is building a factory to mass-produce prefabricated AI data centers on an assembly line.",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+            },
+            {
+              "claim": "The company aims to get these modular units online in just forty-eight hours.",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+            },
+            {
+              "claim": "Traditional facilities take months to build and wire up for heavy computing loads.",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+            },
+            {
+              "claim": "Runware is betting standardizing the hardware will slash construction costs.",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+            },
+            {
+              "claim": "The real test is whether Runware can deliver these units at true scale.",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-30T20:51:56.744325+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2265,8 +2343,8 @@
       "event": "Anthropic just filed its S-1 paperwork to go public on the Nasdaq. The company is asking investors to believe in its long-term AGI vision. Joey Brookhart from SemiAnalysis is auditing the specific numbers inside this filing. The S-1 details"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-30T14:57+05:30",
@@ -2294,7 +2372,7 @@
   "report_day": "2026-10-29",
   "ig_count": {
     "day": "2026-10-30",
-    "at": "2026-10-30T20:45:25.817464+05:30",
+    "at": "2026-10-30T21:00:35.979113+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2314,11 +2392,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-30",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-30",
-    "calls": 485,
+    "calls": 494,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2353,7 +2431,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 39,
+        "ok": 48,
         "busy": 13,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2437,29 +2515,6 @@
     "gemini-3-flash-preview": 1793354846.4698699
   },
   "editor_log": [
-    {
-      "at": "2026-10-30T01:33+05:30",
-      "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersec",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong reporting, but visual execution is repetitive and fails to maintain engagement.",
-      "fixes": [
-        "LINE 1: Remove the date; it is redundant with the on-screen text and slows the hook.",
-        "LINE 7: Make the question more provocative, e.g., 'Would you trust an open-weights model with your company's crown jewels?'"
-      ],
-      "visual": [
-        "line 1: The same photo of Arthur Mensch is held for too long across multiple frames.",
-        "line 5: The '1 Trillion parameters' graphic is held for 7+ seconds, violating the visual pacing ru",
-        "line 6: The TechCrunch logo is irrelevant to the content of the line being spoken."
-      ]
-    },
     {
       "at": "2026-10-30T02:17+05:30",
       "title": "You can generate and edit Google Docs files directly in Gemini chats now",
@@ -2885,10 +2940,29 @@
         "line 3: No visual change or graphic for business updates or order statistics.",
         "line 4: TechCrunch logo is used as a generic graphic while discussing DoorDash working with agents"
       ]
+    },
+    {
+      "at": "2026-10-30T21:00+05:30",
+      "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 9,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong concept and hook, but repetitive visual assets and missing company logo on first mention.",
+      "fixes": [],
+      "visual": [
+        "line 1: Factory illustration is reused excessively across multiple lines without new visual contex",
+        "line 4: Displays TechCrunch logo instead of Runware branding when discussing Runware's strategy."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 187,
+  "fish_turn": 188,
   "ig_music_recent": [
     "1127687701812816",
     "925708957269745",
