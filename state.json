@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -189,11 +189,58 @@
     "fact_notes": [],
     "source_links": [
       "https://huggingface.co/blog/nvidia/nemotron-halloween"
-    ]
+    ],
+    "ig_audio": {
+      "id": "497116412841351",
+      "title": "Air (Reels Sound - Before and After)",
+      "artist": "Ross Lara"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "This setup shows how edge computing can run comple…: the frame is blank / missing the requested visual",
+      "the source card for Hugging Face is an almost-empty card showing only tiny text on a big white area",
+      "the visual shows a simple Nvidia logo card instead of real images of Nvidia Nemotron"
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise reporting, but visual variety and pacing need significant improvement.",
+      "script_fixes": [
+        "LINE 1: Keep as is.",
+        "LINE 2: Mention the specific hardware used (e.g., Jetson Orin) to add technical depth.",
+        "LINE 3: Keep as is.",
+        "LINE 4: Keep as is.",
+        "LINE 5: Keep as is.",
+        "LINE 6: Keep as is."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The same image is held for too long across multiple frames.",
+        "line 2: Visuals are static; needs a clip of the actual haunted house or the interface.",
+        "line 3: Repetitive use of the same text-heavy slide design.",
+        "line 5: Visuals are too abstract; show the hardware or a diagram of the edge setup."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 official images, 3 AI images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIyhmrk5yegwrUR8nEmlH2totU-Z_4BAALVIwACflIoV-koI3GYxhhHPQQ",
   "queue": [
     {
       "title": "Anthropic is asking Wall Street to believe in AGI",
@@ -249,9 +296,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-31T00:12:06.993890+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-31T00:51:20.249262+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-31",
@@ -735,259 +782,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
-          "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
-          "summary": "Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-30T13:00:00+00:00",
-          "angle": "Startup Runware is attempting to mass-produce prefabricated AI data centers on assembly lines like cars to solve the hardware crunch."
-        },
-        "draft": {
-          "title": "Runware's Prefabricated AI Data Centers",
-          "hook_text": "AI data centers built in 48 hours",
-          "beats": [
-            {
-              "line": "Startup Runware is building a factory to mass-produce prefabricated AI data centers on an assembly line.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Runware data center",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
-              "tag": "Runware factory assembly line",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Runware",
-                  "domain": "runware.ai"
-                }
-              ]
-            },
-            {
-              "line": "The company aims to get these modular units online in just forty-eight hours.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "48 hrs",
-              "small": "deployment time",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Online in 48 hours",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Runware",
-                  "domain": "runware.ai"
-                }
-              ]
-            },
-            {
-              "line": "Traditional facilities take months to build and wire up for heavy computing loads.",
-              "visual": "clip",
-              "query": "server rack installation data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Months of traditional setup",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Runware is betting standardizing the hardware will slash construction costs.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Can AI data centers be mass-produced like cars?",
-              "url": "",
-              "tag": "Standardizing hardware costs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Runware",
-                  "domain": "runware.ai"
-                }
-              ]
-            },
-            {
-              "line": "The real test is whether Runware can deliver these units at true scale.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Runware prefab unit",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
-              "tag": "Can Runware deliver at scale",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Runware",
-                  "domain": "runware.ai"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust a prefab data center?",
-              "visual": "clip",
-              "query": "technician checking server racks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust prefab data centers?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "sharp tech journalist explaining a novel manufacturing approach with brisk curiosity",
-          "thin": false,
-          "caption": "Startup Runware is building a factory to mass-produce prefabricated AI data centers that can go online in forty-eight hours. The approach aims to bypass the months-long construction delays currently plaguing the industry. Would you trust a factory-built data center?",
-          "hashtags": [
-            "Runware",
-            "DataCenter",
-            "AI",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-          ],
-          "script": "Startup Runware is building a factory to mass-produce prefabricated AI data centers on an assembly line.\nThe company aims to get these modular units online in just forty-eight hours.\nTraditional facilities take months to build and wire up for heavy computing loads.\nRunware is betting standardizing the hardware will slash construction costs.\nThe real test is whether Runware can deliver these units at true scale.\nWould you trust a prefab data center?",
-          "keywords": [
-            "server rack installation data center",
-            "technician checking server racks"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_score": 32,
-          "evidence": [
-            {
-              "claim": "AI data centers built in 48 hours",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-            },
-            {
-              "claim": "Startup Runware is building a factory to mass-produce prefabricated AI data centers on an assembly line.",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-            },
-            {
-              "claim": "The company aims to get these modular units online in just forty-eight hours.",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-            },
-            {
-              "claim": "Traditional facilities take months to build and wire up for heavy computing loads.",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-            },
-            {
-              "claim": "Runware is betting standardizing the hardware will slash construction costs.",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-            },
-            {
-              "claim": "The real test is whether Runware can deliver these units at true scale.",
-              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
-          ],
-          "ig_audio": {
-            "id": "1121250805840078",
-            "title": "Italian Sunshine Remix (Moira Smiley)",
-            "artist": "Sleeping Lion"
-          },
-          "visual_status": "fixed",
-          "visual_notes": [
-            "The company aims to get these modular units online…: The image is blank/missing the expected '48 hrs' big number card.",
-            "Traditional facilities take months to build and wi…: The image is completely blank and blurred out, missing the server rack stock video.",
-            "Runware is betting standardizing the hardware will…: The image is blank, missing the TechCrunch source card.",
-            "The real test is whether Runware can deliver these…: The image only contains text cards instead of showing real images of a Runware prefab unit.",
-            "blank screen, missing visual card with number 48 hrs",
-            "blank screen, missing TechCrunch source card",
-            "blank screen, missing real images of Runware prefab unit"
-          ],
-          "editor": {
-            "overall": 8.3,
-            "scores": {
-              "hook": 8,
-              "specific": 8,
-              "substance": 9,
-              "accuracy": 9,
-              "visuals": 7,
-              "flow": 9
-            },
-            "one_line": "Strong concept and hook, but repetitive visual assets and missing company logo on first mention.",
-            "script_fixes": [],
-            "visual_beats": [
-              0,
-              3
-            ],
-            "visual_notes": [
-              "line 1: Factory illustration is reused excessively across multiple lines without new visual contex",
-              "line 4: Displays TechCrunch logo instead of Runware branding when discussing Runware's strategy."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Paula (Fish Audio)",
-          "visual_summary": "1 official images, 1 AI images, 4 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIyN2rkuBuXpPdQBVP1y5muI0b2spBPAAKtIgACflIoV7qah9N7AcYqPQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIyN2rkuBuXpPdQBVP1y5muI0b2spBPAAKtIgACflIoV7qah9N7AcYqPQQ",
-      "history_title": "Can AI data centers be mass-produced like cars? This startup aims to find out"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1715,6 +1509,211 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "nemotron-halloween",
+          "link": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+          "summary": "",
+          "source": "Hugging Face - Blog",
+          "published": "2026-10-30T17:57:24+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Nvidia Nemotron Halloween Haunted House",
+          "hook_text": "Nvidia built an AI haunted house.",
+          "beats": [
+            {
+              "line": "Nvidia built an interactive haunted house powered by Nemotron open models.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia Nemotron",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+              "tag": "Nemotron open models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            },
+            {
+              "line": "Engineers combined vision capabilities and language models to create live responses.",
+              "visual": "clip",
+              "query": "developer coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Vision and language models",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Sensors and cameras track visitors in real time as they walk through the dark corridors.",
+              "visual": "clip",
+              "query": "security cameras in dark room",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sensors track visitors",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The Hugging Face blog outlines how the team deployed custom workflows for the project.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Hugging Face",
+              "domain": "huggingface.co",
+              "headline": "nemotron-halloween",
+              "url": "",
+              "tag": "Hugging Face blog",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Hugging Face",
+                  "domain": "huggingface.co"
+                }
+              ]
+            },
+            {
+              "line": "This setup shows how edge computing can run complex neural networks locally.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "100%",
+              "small": "local processing",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Edge computing setup",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you walk through an AI haunted house?",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Nvidia Nemotron",
+              "outlet": "",
+              "domain": "nvidia.com",
+              "headline": "",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+              "tag": "Enter the AI house",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Nvidia",
+                  "domain": "nvidia.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "playful and energetic, highlighting the creative engineering behind the tech demo",
+          "thin": false,
+          "caption": "Nvidia built an interactive haunted house powered by Nemotron open models, using vision and language capabilities to track visitors. Would you walk through an AI haunted house?",
+          "hashtags": [
+            "nvidia",
+            "nemotron",
+            "huggingface",
+            "ai",
+            "edgecomputing"
+          ],
+          "sources": [
+            "https://huggingface.co/blog/nvidia/nemotron-halloween"
+          ],
+          "script": "Nvidia built an interactive haunted house powered by Nemotron open models.\nEngineers combined vision capabilities and language models to create live responses.\nSensors and cameras track visitors in real time as they walk through the dark corridors.\nThe Hugging Face blog outlines how the team deployed custom workflows for the project.\nThis setup shows how edge computing can run complex neural networks locally.\nWould you walk through an AI haunted house?",
+          "keywords": [
+            "developer coding on laptop",
+            "security cameras in dark room"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Nvidia built an AI haunted house.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+            },
+            {
+              "claim": "Nvidia built an interactive haunted house powered by Nemotron open models.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+            },
+            {
+              "claim": "Engineers combined vision capabilities and language models to create live responses.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+            },
+            {
+              "claim": "Sensors and cameras track visitors in real time as they walk through the dark corridors.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+            },
+            {
+              "claim": "The Hugging Face blog outlines how the team deployed custom workflows for the project.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+            },
+            {
+              "claim": "This setup shows how edge computing can run complex neural networks locally.",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://huggingface.co/blog/nvidia/nemotron-halloween"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-31T00:12:06.993890+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2218,8 +2217,8 @@
       "event": "Startup Runware is building a factory to mass-produce prefabricated AI data centers on an assembly line. The company aims to get these modular units online in just forty-eight hours. Traditional facilities take months to build and wire up f"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-30T21:30+05:30",
@@ -2247,7 +2246,7 @@
   "report_day": "2026-10-30",
   "ig_count": {
     "day": "2026-10-31",
-    "at": "2026-10-31T00:00:36.472221+05:30",
+    "at": "2026-10-31T00:15:25.066277+05:30",
     "count": 0
   },
   "repeat_check_day": "2026-10-04",
@@ -2267,15 +2266,21 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-31",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 1,
+    "calls": 11,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
+        "ok": 9,
+        "busy": 1,
+        "other": 0,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+      },
+      "gemini-3.1-flash-lite": {
         "ok": 1,
         "busy": 0,
         "other": 0,
@@ -2357,32 +2362,10 @@
     "gemini-3.6-flash": 1793351154.1251557,
     "gemini-3.5-flash": 1793351274.7507343,
     "gemini-3.7-flash": 1793352381.3621755,
-    "gemini-3-flash-preview": 1793354846.4698699
+    "gemini-3-flash-preview": 1793354846.4698699,
+    "gemini-3.5-flash-lite": 1793386219.935049
   },
   "editor_log": [
-    {
-      "at": "2026-10-30T06:02+05:30",
-      "title": "Trump declares robot imports a national security threat",
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but visual variety is lacking and some frames are held too long.",
-      "fixes": [
-        "LINE 1: Change 'October twenty-eighth' to 'October 28' for consistency with the visual style.",
-        "LINE 7: Replace 'consumer goods' with 'industrial automation costs' to be more precise."
-      ],
-      "visual": [
-        "line 2: The same factory footage is held for 7+ seconds across three frames.",
-        "line 3: The industrial machine footage is generic and lacks a clear connection to 'trade talks'.",
-        "line 5: Visuals are repetitive, cycling through the same 'Tariffs' text card multiple times."
-      ]
-    },
     {
       "at": "2026-10-30T07:49+05:30",
       "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experi",
@@ -2801,10 +2784,34 @@
         "line 3: Blank white background screens with plain text feel lazy for a news reel",
         "line 4: Blank white background lacks contextual visuals or graphics"
       ]
+    },
+    {
+      "at": "2026-10-31T00:21+05:30",
+      "title": "nemotron-halloween",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise reporting, but visual variety and pacing need significant improvement.",
+      "fixes": [
+        "LINE 1: Keep as is.",
+        "LINE 2: Mention the specific hardware used (e.g., Jetson Orin) to add technical depth.",
+        "LINE 3: Keep as is."
+      ],
+      "visual": [
+        "line 1: The same image is held for too long across multiple frames.",
+        "line 2: Visuals are static; needs a clip of the actual haunted house or the interface.",
+        "line 3: Repetitive use of the same text-heavy slide design."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 191,
+  "fish_turn": 192,
   "ig_music_recent": [
     "925708957269745",
     "3981373215525331",
