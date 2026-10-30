@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -215,11 +215,61 @@
     "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "518512217892918",
+      "title": "Como Candy",
+      "artist": "half.cool"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Zest just replaced your dining concierge service. …: shows a different company (WalkMe) instead of Zest",
+      "You send a text to the concierge to start the proc…: shows a blank, unreadable card instead of the requested visual",
+      "The AI aggregates preferences from your group to i…: shows a blank, unreadable card instead of the requested visual",
+      "It puts those restaurant choices to a vote among y…: shows an almost-empty card with a tiny icon instead of real images of Zest",
+      "Once the group decides, the system automatically b…: shows a blank, unreadable card instead of the requested visual",
+      "This concierge replaces the manual back and forth …: shows a blank, unreadable card instead of the requested visual",
+      "Would you let an AI pick your next Friday night di…: shows a blank, unreadable card instead of the requested visual",
+      "almost-empty card",
+      "almost-empty card",
+      "unrelated visual",
+      "almost-empty card"
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise script, but visual repetition and static frames hurt the premium feel.",
+      "script_fixes": [
+        "LINE 6: Change 'This concierge' to 'Zest' to avoid generic phrasing and reinforce the brand name."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "visual_notes": [
+        "line 1: The same screenshot is held for 4.8 seconds across 3 frames; needs more dynamic movement.",
+        "line 2: The same 'Text your concierge' graphic is held for 4.8 seconds across 2 frames.",
+        "line 5: The same 'Automatic booking confirmed' graphic is held for 4.8 seconds across 2 frames.",
+        "line 6: The same 'No more coordination' graphic is held for 4.8 seconds across 2 frames."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIylmrlAAG-FpR4zX7LgxgkdUMPKNWEZgAC5CMAAn5SKFfi1NlHQPk--z0E",
   "queue": [
     {
       "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
@@ -275,9 +325,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-31T02:01:09.339357+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-31T02:40:30.858379+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-31",
@@ -755,243 +805,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
-          "link": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-          "summary": "While science fiction lore tells us that humans will meet extraterrestrial life in the form of little green men, the detail that should raise hairs this Halloween is this: the search for extraterrestrial intelligence took a major leap forward with AI, and it increasingly focuses on AI agents built by humans listening for AI agents […]",
-          "source": "NVIDIA Blog",
-          "published": "2026-10-30T15:00:10+00:00",
-          "angle": "Nvidia's AI agents are now joining the search for alien signals in deep space"
-        },
-        "draft": {
-          "title": "AI Agents Join Search for Extraterrestrial Signals",
-          "hook_text": "Nvidia agents hunt for aliens",
-          "beats": [
-            {
-              "line": "Nvidia just detailed how autonomous AI agents are transforming the search for extraterrestrial intelligence.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Nvidia Blog",
-              "domain": "nvidia.com",
-              "headline": "AI Joins the Search for Extraterrestrial Signals",
-              "url": "",
-              "tag": "Nvidia details AI agent search",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Astronomers traditionally sift through massive volumes of radio telescope data manually looking for anomalies.",
-              "visual": "clip",
-              "query": "radio telescope control room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Telescope data sifted manually",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Autonomous AI agents now assist researchers by analyzing complex deep space audio streams.",
-              "visual": "clip",
-              "query": "data center servers blinking",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI agents analyze space audio",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These software systems help detect faint technological signatures that human teams might miss.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Blog",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-              "tag": "Systems detect faint signatures",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "The initiative scales up radio astronomy by automating the tedious process of signal filtering.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Blog",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-              "tag": "Scaling up radio astronomy",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "This shift brings machine learning directly into the frontline of interstellar signal detection.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Nvidia Blog",
-              "outlet": "",
-              "domain": "nvidia.com",
-              "headline": "",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-              "tag": "Frontline interstellar detection",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust Nvidia AI to verify an alien transmission?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Nvidia Blog",
-              "domain": "nvidia.com",
-              "headline": "AI Joins the Search for Extraterrestrial Signals",
-              "url": "",
-              "tag": "Trust Nvidia AI with transmission",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Nvidia",
-                  "domain": "nvidia.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "curious and precise, explaining how autonomous tech joins the search for alien signals",
-          "thin": false,
-          "caption": "Nvidia detailed how autonomous AI agents are joining the search for extraterrestrial radio signals. The technology helps researchers analyze complex space data streams. Would you trust Nvidia AI to verify an alien transmission?",
-          "hashtags": [
-            "Nvidia",
-            "AI",
-            "Space",
-            "Astronomy",
-            "TechNews"
-          ],
-          "sources": [
-            "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-          ],
-          "script": "Nvidia just detailed how autonomous AI agents are transforming the search for extraterrestrial intelligence.\nAstronomers traditionally sift through massive volumes of radio telescope data manually looking for anomalies.\nAutonomous AI agents now assist researchers by analyzing complex deep space audio streams.\nThese software systems help detect faint technological signatures that human teams might miss.\nThe initiative scales up radio astronomy by automating the tedious process of signal filtering.\nThis shift brings machine learning directly into the frontline of interstellar signal detection.\nWould you trust Nvidia AI to verify an alien transmission?",
-          "keywords": [
-            "radio telescope control room",
-            "data center servers blinking"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Nvidia agents hunt for aliens",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-            },
-            {
-              "claim": "Nvidia detailed how autonomous AI agents are transforming the search for extraterrestrial intelligence.",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-            },
-            {
-              "claim": "Astronomers traditionally sift through massive volumes of radio telescope data manually looking for anomalies.",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-            },
-            {
-              "claim": "Autonomous AI agents now assist researchers by analyzing complex deep space audio streams.",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-            },
-            {
-              "claim": "These software systems help detect faint technological signatures that human teams might miss.",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-            },
-            {
-              "claim": "The initiative scales up radio astronomy by automating the tedious process of signal filtering.",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-            },
-            {
-              "claim": "This shift brings machine learning directly into the frontline of interstellar signal detection.",
-              "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-30T23:21:27.170391+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1735,6 +1548,237 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Zest’s new AI agent finds restaurants and books reservations over text",
+          "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+          "summary": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-30T17:47:12+00:00",
+          "angle": "Zest's new AI agent can finally settle the 'where to eat' debate by voting and booking reservations for you."
+        },
+        "draft": {
+          "title": "Zest AI automates restaurant bookings",
+          "hook_text": "Zest now books your dinner.",
+          "beats": [
+            {
+              "line": "Zest just replaced your dining concierge service. It finds restaurants and books reservations via text.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Zest",
+              "outlet": "",
+              "domain": "zest.is",
+              "headline": "",
+              "url": "https://zest.is/",
+              "tag": "Zest books reservations",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Zest",
+                  "domain": "zest.is"
+                }
+              ]
+            },
+            {
+              "line": "You send a text to the concierge to start the process.",
+              "visual": "clip",
+              "query": "person texting on smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Text your concierge",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The AI aggregates preferences from your group to identify suitable dining options.",
+              "visual": "clip",
+              "query": "group of friends eating at restaurant",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Group preference matching",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It puts those restaurant choices to a vote among your friends.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Zest",
+              "outlet": "",
+              "domain": "zest.is",
+              "headline": "",
+              "url": "https://zest.is/",
+              "tag": "AI manages group voting",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Zest",
+                  "domain": "zest.is"
+                }
+              ]
+            },
+            {
+              "line": "Once the group decides, the system automatically books the reservation for you.",
+              "visual": "clip",
+              "query": "restaurant reservation confirmation on phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Automatic booking confirmed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This concierge replaces the manual back and forth of finding a place to eat.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Zero",
+              "small": "manual coordination",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "No more coordination",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you let an AI pick your next Friday night dinner?",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Zest",
+              "outlet": "",
+              "domain": "zest.is",
+              "headline": "",
+              "url": "https://zest.is/",
+              "tag": "Would you use it?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Zest",
+                  "domain": "zest.is"
+                }
+              ]
+            }
+          ],
+          "delivery": "Fast, helpful, and direct, like explaining a useful new life hack to a friend.",
+          "thin": false,
+          "caption": "Zest has released an AI concierge that handles restaurant discovery and bookings entirely via text. It eliminates the group chat headache by managing preferences and voting before securing the table. Would you let an AI pick your next Friday night dinner?",
+          "hashtags": [
+            "Zest",
+            "AI",
+            "restauranttech",
+            "automation",
+            "dining"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
+          ],
+          "script": "Zest just replaced your dining concierge service. It finds restaurants and books reservations via text.\nYou send a text to the concierge to start the process.\nThe AI aggregates preferences from your group to identify suitable dining options.\nIt puts those restaurant choices to a vote among your friends.\nOnce the group decides, the system automatically books the reservation for you.\nThis concierge replaces the manual back and forth of finding a place to eat.\nWould you let an AI pick your next Friday night dinner?",
+          "keywords": [
+            "person texting on smartphone",
+            "group of friends eating at restaurant",
+            "restaurant reservation confirmation on phone"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Zest launched an AI agent that finds restaurants and handles reservations over text.",
+          "hook_score": 52,
+          "evidence": [
+            {
+              "claim": "Zest now books your dinner.",
+              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
+            },
+            {
+              "claim": "Zest finds restaurants and books reservations via text.",
+              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
+            },
+            {
+              "claim": "You send a text to the concierge to start the process.",
+              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
+            },
+            {
+              "claim": "The AI aggregates preferences from your group to identify suitable dining options.",
+              "url": "https://www.techbuzz.ai/articles/zest-s-ai-agent-handles-group-dining-from-chat-to-reservation"
+            },
+            {
+              "claim": "It puts those restaurant choices to a vote among your friends.",
+              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
+            },
+            {
+              "claim": "Once the group decides, the system automatically books the reservation for you.",
+              "url": "https://www.techbuzz.ai/articles/zest-s-ai-agent-handles-group-dining-from-chat-to-reservation"
+            },
+            {
+              "claim": "This concierge replaces the manual back and forth of finding a place to eat.",
+              "url": "https://www.techbuzz.ai/articles/zest-s-ai-agent-handles-group-dining-from-chat-to-reservation"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-31T02:01:09.339357+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2243,8 +2287,8 @@
       "event": "Nvidia built an interactive haunted house powered by Nemotron open models. Engineers combined vision capabilities and language models to create live responses. Sensors and cameras track visitors in real time as they walk through the dark co"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-31T00:55+05:30",
@@ -2292,11 +2336,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-31",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 21,
+    "calls": 30,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2307,7 +2351,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 9,
+        "ok": 18,
         "busy": 2,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2392,30 +2436,6 @@
     "gemini-3.5-flash-lite": 1793386219.935049
   },
   "editor_log": [
-    {
-      "at": "2026-10-30T07:49+05:30",
-      "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experi",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "The script relies on vague corporate speak and repetitive visuals, lacking punchy, concrete news value.",
-      "fixes": [
-        "LINE 3: Replace 'improve data security' with 'prevent unauthorized data scraping by AI crawlers'.",
-        "LINE 4: Replace 'better control how its community content is accessed' with 'restrict third-party access to public threads'.",
-        "LINE 5: Replace 'This strategy follows the company's recent focus on monetization' with 'This follows Reddit's $60M annual data licensing deal with Google'."
-      ],
-      "visual": [
-        "line 1: The same image of a phone is held for too long across multiple frames.",
-        "line 2: The same portrait of Steve Huffman is repeated across three consecutive frames.",
-        "line 3: Generic stock photo of a laptop does not add specific news value."
-      ]
-    },
     {
       "at": "2026-10-30T07:54+05:30",
       "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experi",
@@ -2834,10 +2854,32 @@
         "line 2: Visuals are static; needs a clip of the actual haunted house or the interface.",
         "line 3: Repetitive use of the same text-heavy slide design."
       ]
+    },
+    {
+      "at": "2026-10-31T02:10+05:30",
+      "title": "Zest’s new AI agent finds restaurants and books reservations over text",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise script, but visual repetition and static frames hurt the premium feel.",
+      "fixes": [
+        "LINE 6: Change 'This concierge' to 'Zest' to avoid generic phrasing and reinforce the brand name."
+      ],
+      "visual": [
+        "line 1: The same screenshot is held for 4.8 seconds across 3 frames; needs more dynamic movement.",
+        "line 2: The same 'Text your concierge' graphic is held for 4.8 seconds across 2 frames.",
+        "line 5: The same 'Automatic booking confirmed' graphic is held for 4.8 seconds across 2 frames."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 192,
+  "fish_turn": 193,
   "ig_music_recent": [
     "3981373215525331",
     "4724608451159342",
