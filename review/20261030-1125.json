@@ -1,0 +1,77 @@
+{
+ "made": "20261030-1125",
+ "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+ "hook_text": "Play games inside a tiny microcontroller",
+ "hook_before": null,
+ "script": "Software developer Sebastien built a tiny world model running games on a Raspberry Pi Pico 2 W.\nThe open-source project is called tinyworldformer and uses a compact neural network.\nIt runs entirely on hardware with just five hundred twenty kilobytes of SRAM.\nThe microcontroller processes real-time visual predictions locally without any cloud connection.\nThis brings interactive neural simulations to extremely low-power edge devices.\nWould you flash this model onto your microcontroller?",
+ "words": 71,
+ "beats": [
+  {
+   "line": "Software developer Sebastien built a tiny world model running games on a Raspberry Pi Pico 2 W.",
+   "visual": "official"
+  },
+  {
+   "line": "The open-source project is called tinyworldformer and uses a compact neural network.",
+   "visual": "source"
+  },
+  {
+   "line": "It runs entirely on hardware with just five hundred twenty kilobytes of SRAM.",
+   "visual": "stat"
+  },
+  {
+   "line": "The microcontroller processes real-time visual predictions locally without any cloud connection.",
+   "visual": "clip"
+  },
+  {
+   "line": "This brings interactive neural simulations to extremely low-power edge devices.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you flash this model onto your microcontroller?",
+   "visual": "source"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 7.7,
+  "scores": {
+   "hook": 7,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 6,
+   "flow": 8
+  },
+  "one_line": "Strong technical content dragged down by repetitive text-only frames and slow pacing.",
+  "script_fixes": [
+   "LINE 1: Make the title card punchier by introducing the developer and device immediately.",
+   "LINE 5: Specify exact power consumption metrics if available instead of vague edge device references."
+  ],
+  "visual_beats": [
+   1,
+   4,
+   5
+  ],
+  "visual_notes": [
+   "line 2: Generic GitHub logo shown instead of project-specific interface or code snippet.",
+   "line 5: Multiple consecutive text-only frames with slow panning and no engaging visual assets.",
+   "line 6: Static text card for the ending question lacks a dynamic concluding visual."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 29.73,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.0,
+ "cuts": [
+  2.8,
+  6.2,
+  11.1,
+  21.43
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 5.95,
+ "longest_shot_seconds": 10.33,
+ "verdict": "rejected",
+ "words_per_minute": 143
+}
