@@ -1,0 +1,77 @@
+{
+ "made": "20261031-1513",
+ "title": "AI startup hacks Anthropic, gains access to employee details, internal messages",
+ "hook_text": "Anthropic hacked in just twelve hours",
+ "hook_before": null,
+ "script": "Twelve hours was all it took for startup Cathedral to hack Anthropic.\nThe attack exposed employee details and sensitive internal messages.\nCathedral deployed autonomous AI agents to scan for weaknesses in third-party business software.\nThis exact software was used by Anthropic for administrative and sales operations.\nAutonomous agents found a vulnerability in corporate tools before human defenders could react.\nWould you trust autonomous software agents to secure your enterprise network?",
+ "words": 70,
+ "beats": [
+  {
+   "line": "Twelve hours was all it took for startup Cathedral to hack Anthropic.",
+   "visual": "official"
+  },
+  {
+   "line": "The attack exposed employee details and sensitive internal messages.",
+   "visual": "clip"
+  },
+  {
+   "line": "Cathedral deployed autonomous AI agents to scan for weaknesses in third-party business software.",
+   "visual": "clip"
+  },
+  {
+   "line": "This exact software was used by Anthropic for administrative and sales operations.",
+   "visual": "source"
+  },
+  {
+   "line": "Autonomous agents found a vulnerability in corporate tools before human defenders could react.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you trust autonomous software agents to secure your enterprise network?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 8,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 4,
+   "flow": 8
+  },
+  "one_line": "Strong reporting ruined by generic and repeated stock imagery.",
+  "script_fixes": [],
+  "visual_beats": [
+   0,
+   2,
+   4,
+   5
+  ],
+  "visual_notes": [
+   "line 1: Static logo graphic held across multiple frames with zero motion or variety.",
+   "line 3: Random architectural column drawing completely unrelated to autonomous AI agents.",
+   "line 5: Reused architectural column drawing creates disconnected and confusing visuals.",
+   "line 6: Reused generic robot stock image seen earlier in the reel."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 32.37,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.0,
+ "cuts": [
+  2.8,
+  4.8,
+  9.57,
+  21.2,
+  26.3
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 5.39,
+ "longest_shot_seconds": 11.63,
+ "verdict": "rejected",
+ "words_per_minute": 130
+}
