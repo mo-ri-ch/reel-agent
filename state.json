@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -203,11 +203,57 @@
     "fact_notes": [],
     "source_links": [
       "https://datacenters.economictimes.indiatimes.com/news/policy-land-power/india-proposes-depa-framework-to-unlock-data-for-ai-training/135384759?utm_source=top_news&utm_medium=homepage"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1541833500436228",
+      "title": "Milky Way",
+      "artist": "Alex Blue"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Sharad Sharma co-founded iSPIRT, the think tank be…: contains visible editing bounding box over text and lacks person photo or initials card",
+      "It utilizes secure data environments and different…: contains visible editing bounding box over text and lacks requested server background",
+      "Electronic contracts govern access under the new p…: contains visible editing bounding box over text and lacks requested person looking at phone screen",
+      "Would you trust electronic contracts for training …: contains visible editing bounding box over text and lacks requested smartphone video",
+      "contains visible text editing bounding box selection handles over the word Sharad",
+      "contains visible text editing bounding box selection handles over the word Secure",
+      "contains visible text editing bounding box selection handles over the word Electronic",
+      "contains visible text editing bounding box selection handles over the word Electronic"
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong coverage of India's DEPA framework, but visuals lack dynamic variety and rely too much on generic stock imagery.",
+      "script_fixes": [
+        "LINE 4: Specify the target sectors or types of bulk data mentioned in the report instead of general terminology."
+      ],
+      "visual_beats": [
+        0,
+        1
+      ],
+      "visual_notes": [
+        "line 1: Generic stock image of a desk and papers does not specifically illustrate the DEPA framewo",
+        "line 2: Holding the same desk and papers image for too long across multiple frames breaks visual e"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "news photo: datacenters.economictimes.indiatimes.com",
+      "news photo: datacenters.economictimes.indiatimes.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 official images, 1 AI images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIzOWrlvcfU2_YHI-j3HQvsP5RTw12xAAJ0JQACflIwV7nf8deaUgdwPQQ",
   "queue": [
     {
       "title": "Google’s satellite AI server transmits its first response to Earth",
@@ -289,9 +335,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-31T15:28:19.870719+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-31T16:07:03.751724+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-31",
@@ -772,270 +818,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
-          "link": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/",
-          "summary": "Boom’s airliner may be delayed, and its data center power business lost a customer.",
-          "source": "AI - Ars Technica",
-          "published": "2026-10-30T21:41:54+00:00",
-          "angle": "The supersonic airliner dream is dying as the company pivots to powering AI data centers instead."
-        },
-        "draft": {
-          "title": "Boom Supersonic Delays and Pivot",
-          "hook_text": "Boom Supersonic misses 2029 target?",
-          "beats": [
-            {
-              "line": "United Airlines CEO Scott Kirby doubts the Boom Overture airliner will fly by 2029.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.united.com/en/us/fly/company/executive-leadership.html",
-              "tag": "Kirby doubts 2029",
-              "name": "Scott Kirby",
-              "role": "CEO, United Airlines",
-              "x": "scottkirby",
-              "brands": [
-                {
-                  "name": "United Airlines",
-                  "domain": "united.com"
-                }
-              ]
-            },
-            {
-              "line": "Boom Supersonic is now shifting resources toward powering AI data centers.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Boom Supersonic",
-              "outlet": "",
-              "domain": "boomsupersonic.com",
-              "headline": "",
-              "url": "https://boomsupersonic.com/",
-              "tag": "Pivot to AI power",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Boom Supersonic",
-                  "domain": "boomsupersonic.com"
-                }
-              ]
-            },
-            {
-              "line": "This shift follows the loss of a major customer for the power division at Boom Supersonic.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Boom Supersonic",
-              "outlet": "",
-              "domain": "boomsupersonic.com",
-              "headline": "",
-              "url": "https://boomsupersonic.com/",
-              "tag": "Lost major customer",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Boom Supersonic",
-                  "domain": "boomsupersonic.com"
-                }
-              ]
-            },
-            {
-              "line": "The Overture jet was meant to be the first supersonic airliner in decades.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Boom Overture",
-              "outlet": "",
-              "domain": "boomsupersonic.com",
-              "headline": "",
-              "url": "https://boomsupersonic.com/overture",
-              "tag": "Overture jet delayed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Boom Supersonic",
-                  "domain": "boomsupersonic.com"
-                }
-              ]
-            },
-            {
-              "line": "Data centers now consume massive power for AI training.",
-              "visual": "clip",
-              "query": "data center server room",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI energy demand",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Boom Supersonic is trying to capture this surging energy demand instead of focusing on flight.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Boom Supersonic",
-              "outlet": "",
-              "domain": "boomsupersonic.com",
-              "headline": "",
-              "url": "https://boomsupersonic.com/",
-              "tag": "Chasing AI power",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Boom Supersonic",
-                  "domain": "boomsupersonic.com"
-                }
-              ]
-            },
-            {
-              "line": "United Airlines remains cautious about the timeline for supersonic travel.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Ars Technica",
-              "domain": "arstechnica.com",
-              "headline": "United Airlines CEO doubts supersonic airliner from Boom",
-              "url": "",
-              "tag": "Supersonic future uncertain",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "United Airlines",
-                  "domain": "united.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trust a plane from a data center power company?",
-              "visual": "clip",
-              "query": "airplane flying in sky",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust the plane?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Skeptical and direct, emphasizing the shift from aviation to infrastructure.",
-          "thin": false,
-          "caption": "United Airlines CEO Scott Kirby doubts the Boom Overture will be ready by 2029. Boom Supersonic is pivoting to power AI data centers after losing a major client. Would you trust a plane from a data center power company?",
-          "hashtags": [
-            "BoomSupersonic",
-            "UnitedAirlines",
-            "AviationNews",
-            "DataCenters",
-            "AI"
-          ],
-          "sources": [
-            "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-          ],
-          "script": "United Airlines CEO Scott Kirby doubts the Boom Overture airliner will fly by 2029.\nBoom Supersonic is now shifting resources toward powering AI data centers.\nThis shift follows the loss of a major customer for the power division at Boom Supersonic.\nThe Overture jet was meant to be the first supersonic airliner in decades.\nData centers now consume massive power for AI training.\nBoom Supersonic is trying to capture this surging energy demand instead of focusing on flight.\nUnited Airlines remains cautious about the timeline for supersonic travel.\nWould you trust a plane from a data center power company?",
-          "keywords": [
-            "data center server room",
-            "airplane flying in sky"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Boom Supersonic misses 2029 target?",
-              "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-            },
-            {
-              "claim": "United Airlines CEO Scott Kirby doubts the Boom Overture airliner will fly by 2029.",
-              "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-            },
-            {
-              "claim": "Boom Supersonic is now shifting resources toward powering AI data centers.",
-              "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-            },
-            {
-              "claim": "This shift follows the loss of a major customer for the power division at Boom Supersonic.",
-              "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-            },
-            {
-              "claim": "The Overture jet was meant to be the first supersonic airliner in decades.",
-              "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-            },
-            {
-              "claim": "Data centers now consume massive power for AI training.",
-              "url": "https://mezha.net/eng/news/mezha-0e01c469a202efbe19b24739_boom-s_supersonic_airliner/"
-            },
-            {
-              "claim": "Boom Supersonic is trying to capture this surging energy demand instead of focusing on flight.",
-              "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-            },
-            {
-              "claim": "United Airlines remains cautious about the timeline for supersonic travel.",
-              "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "source_links": [
-            "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-31T12:16:56.195493+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1607,6 +1389,225 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "India proposes DEPA framework to unlock data for AI training",
+          "link": "https://datacenters.economictimes.indiatimes.com/news/policy-land-power/india-proposes-depa-framework-to-unlock-data-for-ai-training/135384759?utm_source=top_news&utm_medium=homepage",
+          "summary": "India proposes DEPA framework to unlock data for AI training ET Datacenters",
+          "source": "ET Datacenters",
+          "published": "2026-10-31T03:19:40+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "India Proposes DEPA Framework for AI",
+          "hook_text": "India proposes DEPA for AI training",
+          "beats": [
+            {
+              "line": "India just proposed the DEPA framework to unlock data for AI training.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "ET Datacenters",
+              "domain": "datacenters.economictimes.indiatimes.com",
+              "headline": "India proposes DEPA framework to unlock data for AI training",
+              "url": "",
+              "tag": "DEPA framework proposed",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The proposal aims to make structured data accessible for developers building models.",
+              "visual": "clip",
+              "query": "coding screens in office",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Structured data access",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Sharad Sharma co-founded iSPIRT, the think tank behind this data sharing model.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Sharad Sharma iSPIRT",
+              "name": "Sharad Sharma",
+              "role": "Co-founder, iSPIRT",
+              "x": "",
+              "brands": [
+                {
+                  "name": "iSPIRT",
+                  "domain": "ispirt.in"
+                }
+              ]
+            },
+            {
+              "line": "The initiative targets bulk de-identified data used to build models.",
+              "visual": "clip",
+              "query": "digital data flow animation",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Bulk de-identified data",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It utilizes secure data environments and differential privacy methods.",
+              "visual": "clip",
+              "query": "data center servers blinking",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Secure data environments",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Electronic contracts govern access under the new policy setup.",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Electronic contracts",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust electronic contracts for training data?",
+              "visual": "clip",
+              "query": "person using smartphone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Electronic contracts trust",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp and informative, explaining the policy shift with clear authority",
+          "thin": false,
+          "caption": "India is proposing the DEPA framework to unlock bulk de-identified data for AI training. iSPIRT co-founder Sharad Sharma helped shape the initiative using secure data environments and electronic contracts. Would you trust electronic contracts for training data?",
+          "hashtags": [
+            "IndiaAI",
+            "DEPA",
+            "iSPIRT",
+            "TechPolicy"
+          ],
+          "sources": [
+            "https://datacenters.economictimes.indiatimes.com/news/policy-land-power/india-proposes-depa-framework-to-unlock-data-for-ai-training/135384759?utm_source=top_news&utm_medium=homepage"
+          ],
+          "script": "India just proposed the DEPA framework to unlock data for AI training.\nThe proposal aims to make structured data accessible for developers building models.\nSharad Sharma co-founded iSPIRT, the think tank behind this data sharing model.\nThe initiative targets bulk de-identified data used to build models.\nIt utilizes secure data environments and differential privacy methods.\nElectronic contracts govern access under the new policy setup.\nWould you trust electronic contracts for training data?",
+          "keywords": [
+            "coding screens in office",
+            "digital data flow animation",
+            "data center servers blinking",
+            "person looking at phone screen",
+            "person using smartphone"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "India proposes DEPA framework to unlock data for AI training",
+              "url": "https://www.rediff.com/business/report/indias-depa-framework-boosting-ai-training-safeguarding-data-privacy--msmes/20261031.htm"
+            },
+            {
+              "claim": "India just proposed the DEPA framework to unlock data for AI training.",
+              "url": "https://www.rediff.com/business/report/indias-depa-framework-boosting-ai-training-safeguarding-data-privacy--msmes/20261031.htm"
+            },
+            {
+              "claim": "The proposal aims to make structured data accessible for developers building models.",
+              "url": "https://www.rediff.com/business/report/indias-depa-framework-boosting-ai-training-safeguarding-data-privacy--msmes/20261031.htm"
+            },
+            {
+              "claim": "Sharad Sharma co-founded iSPIRT, the think tank behind this data sharing model.",
+              "url": "https://www.rediff.com/business/report/indias-depa-framework-boosting-ai-training-safeguarding-data-privacy--msmes/20261031.htm"
+            },
+            {
+              "claim": "The initiative targets bulk de-identified data used to build models.",
+              "url": "https://www.rediff.com/business/report/indias-depa-framework-boosting-ai-training-safeguarding-data-privacy--msmes/20261031.htm"
+            },
+            {
+              "claim": "It utilizes secure data environments and differential privacy methods.",
+              "url": "https://www.rediff.com/business/report/indias-depa-framework-boosting-ai-training-safeguarding-data-privacy--msmes/20261031.htm"
+            },
+            {
+              "claim": "Electronic contracts govern access under the new policy setup.",
+              "url": "https://www.rediff.com/business/report/indias-depa-framework-boosting-ai-training-safeguarding-data-privacy--msmes/20261031.htm"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://datacenters.economictimes.indiatimes.com/news/policy-land-power/india-proposes-depa-framework-to-unlock-data-for-ai-training/135384759?utm_source=top_news&utm_medium=homepage"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-31T15:28:19.870719+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2115,8 +2116,8 @@
       "event": "Dartmouth Provost Santiago Schnell resigned after an internal investigation. He failed to disclose AI use in a research paper and a Washington Post op-ed. The investigation found he used AI to edit manuscripts and troubleshoot code. He also"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-31T13:31+05:30",
@@ -2144,7 +2145,7 @@
   "report_day": "2026-10-30",
   "ig_count": {
     "day": "2026-10-31",
-    "at": "2026-10-31T15:20:29.393737+05:30",
+    "at": "2026-10-31T15:30:34.497261+05:30",
     "count": 4
   },
   "repeat_check_day": "2026-10-04",
@@ -2164,22 +2165,22 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-31",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 315,
+    "calls": 328,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 24,
+        "ok": 33,
         "busy": 5,
-        "other": 0,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 1,
+        "last": "0 ReadTimeout"
       },
       "gemini-3.1-flash-lite": {
-        "ok": 121,
+        "ok": 122,
         "busy": 47,
         "other": 42,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2210,9 +2211,9 @@
       },
       "gemini-3-flash-preview": {
         "ok": 7,
-        "busy": 10,
-        "other": 6,
-        "last": "0 ReadTimeout"
+        "busy": 11,
+        "other": 7,
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
@@ -2290,29 +2291,10 @@
   "gemini_exhausted": {
     "gemini-3.6-flash": 1793432733.962455,
     "gemini-3.5-flash": 1793433012.315749,
-    "gemini-3.7-flash": 1793436255.5271916
+    "gemini-3.7-flash": 1793436255.5271916,
+    "gemini-3-flash-preview": 1793441213.2165174
   },
   "editor_log": [
-    {
-      "at": "2026-10-30T16:15+05:30",
-      "title": "Google admits AI search makes less money, but it's fixing that with more ads",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong financial details and script, but repetitive, low-res, and irrelevant image usage ruins the visuals.",
-      "fixes": [],
-      "visual": [
-        "line 1: The Google sign image is reused across multiple frames and does not match the specific sub",
-        "line 2: Generic Google icon app placeholder used for a massive financial cash flow deficit report.",
-        "line 4: Repeats the same outdoor Google storefront sign photo from line 1, violating the fresh vis"
-      ]
-    },
     {
       "at": "2026-10-30T16:55+05:30",
       "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
@@ -2726,10 +2708,31 @@
         "line 7: Reuses the Goldman Sachs office building photo from line 2, which is unrelated to central ",
         "line 7: Reuses the office worker stock photo from line 4, making visuals repetitive and mismatched"
       ]
+    },
+    {
+      "at": "2026-10-31T15:36+05:30",
+      "title": "India proposes DEPA framework to unlock data for AI training",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong coverage of India's DEPA framework, but visuals lack dynamic variety and rely too much on generic stock imagery.",
+      "fixes": [
+        "LINE 4: Specify the target sectors or types of bulk data mentioned in the report instead of general terminology."
+      ],
+      "visual": [
+        "line 1: Generic stock image of a desk and papers does not specifically illustrate the DEPA framewo",
+        "line 2: Holding the same desk and papers image for too long across multiple frames breaks visual e"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 200,
+  "fish_turn": 201,
   "ig_music_recent": [
     "629259179669455",
     "1048553357803824",
