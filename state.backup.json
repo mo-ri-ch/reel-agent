@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -24,7 +24,7 @@
         "small": "",
         "entity": "Ollie",
         "outlet": "",
-        "domain": "techcrunch.com",
+        "domain": "",
         "headline": "",
         "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
         "tag": "Ollie shuts down in seven days",
@@ -157,11 +157,47 @@
     "fact_notes": [],
     "source_links": [
       "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "27878618708400305",
+      "title": "Funky Friday",
+      "artist": "Danny Peter Wolf"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Users now have just one week to export their store…: The visual is missing entirely, showing a blank screen instead of the expected big number 7 Days.",
+      "The image is completely black/blank and unreadable.",
+      "The image is extremely dark, almost black, making the content unreadable."
+    ],
+    "editor": {
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong reporting on Ollie AI's shutdown, but visuals need better alignment with the script.",
+      "script_fixes": [
+        "LINE 3: add specific details about the competitor pressure or market conditions if available"
+      ],
+      "visual_beats": [
+        4
+      ],
+      "visual_notes": [
+        "line 5: Displays TechCrunch logo instead of illustrating the closing question about privacy-first "
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 official images, 2 AI images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI0YWrmLiEnOFEL5WESMvLXjBPbEPQwAAI5IgACVGA4V1Qn2tdstT-8PQQ",
   "queue": [
     {
       "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
@@ -217,9 +253,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-31T23:27:43.640808+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-11-01T00:06:25.587545+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-31",
@@ -693,206 +729,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Cracks are emerging in the AI spending boom",
-          "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
-          "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-30T21:17:40+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "Cracks emerge in the AI spending boom",
-          "hook_text": "Seven hundred forty billion dollars for AI infrastructure",
-          "beats": [
-            {
-              "line": "Alphabet, Amazon, Meta, and Microsoft plan to spend over seven hundred forty billion dollars on capital expenditures.",
-              "visual": "clip",
-              "query": "server racks in data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Seven hundred forty billion dollars spen",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Alphabet",
-                  "domain": "abc.xyz"
-                },
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Alphabet, Amazon, Meta, and Microsoft are pouring massive funds into building data centers and chips.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "740B",
-              "small": "capital expenditures",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data centers and chips",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Alphabet",
-                  "domain": "abc.xyz"
-                },
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            },
-            {
-              "line": "Wall Street investors are pushing back as mounting debt and negative cash flow hit balance sheets.",
-              "visual": "clip",
-              "query": "financial charts on computer screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Mounting debt and cash flow",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "TechCrunch reports that growing skepticism is forcing boardrooms to rethink long term returns on data centers.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Cracks are emerging in the AI spending boom",
-              "url": "",
-              "tag": "TechCrunch reports growing skepticism",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Can Alphabet, Amazon, Meta, and Microsoft justify these massive hardware costs to their shareholders?",
-              "visual": "clip",
-              "query": "business meeting in modern office",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Justify massive hardware costs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Alphabet",
-                  "domain": "abc.xyz"
-                },
-                {
-                  "name": "Amazon",
-                  "domain": "amazon.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "urgent and analytical, warning viewers about a financial shift in the tech industry",
-          "thin": false,
-          "caption": "Alphabet, Amazon, Meta, and Microsoft plan to spend over seven hundred forty billion dollars as mounting debt and negative cash flow raise questions. Can these companies justify massive data center costs?",
-          "hashtags": [
-            "TechCrunch",
-            "BigTech",
-            "ArtificialIntelligence",
-            "TechNews"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-          ],
-          "script": "Alphabet, Amazon, Meta, and Microsoft plan to spend over seven hundred forty billion dollars on capital expenditures.\nAlphabet, Amazon, Meta, and Microsoft are pouring massive funds into building data centers and chips.\nWall Street investors are pushing back as mounting debt and negative cash flow hit balance sheets.\nTechCrunch reports that growing skepticism is forcing boardrooms to rethink long term returns on data centers.\nCan Alphabet, Amazon, Meta, and Microsoft justify these massive hardware costs to their shareholders?",
-          "keywords": [
-            "server racks in data center",
-            "financial charts on computer screen",
-            "business meeting in modern office"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Alphabet, Amazon, Meta, and Microsoft plan to spend over seven hundred forty billion dollars for AI infrastructure",
-              "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-            },
-            {
-              "claim": "Alphabet, Amazon, Meta, and Microsoft plan to spend over seven hundred forty billion dollars on capital expenditures.",
-              "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-            },
-            {
-              "claim": "Alphabet, Amazon, Meta, and Microsoft are pouring massive funds into building data centers and chips.",
-              "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-            },
-            {
-              "claim": "Wall Street investors are pushing back as mounting debt and negative cash flow hit balance sheets.",
-              "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-            },
-            {
-              "claim": "TechCrunch reports that growing skepticism is forcing boardrooms to rethink long term returns on data centers.",
-              "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-            },
-            {
-              "claim": "Alphabet, Amazon, Meta, and Microsoft are investing heavily in AI hardware costs.",
-              "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-31T19:55:59.171000+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1554,6 +1390,179 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+          "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+          "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-30T22:56:13+00:00",
+          "angle": "Ollie, a major privacy-focused AI assistant, is shutting down just weeks after launch, proving how brutal the AI market is right now."
+        },
+        "draft": {
+          "title": "Ollie AI Assistant Shutting Down",
+          "hook_text": "Ollie AI is shutting down in seven days.",
+          "beats": [
+            {
+              "line": "Ollie is shutting down in seven days due to an overcrowded market.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Ollie",
+              "outlet": "",
+              "domain": "techcrunch.com",
+              "headline": "",
+              "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+              "tag": "Ollie shuts down in seven days",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The privacy-focused assistant built its reputation on respecting user confidentiality.",
+              "visual": "clip",
+              "query": "data privacy security lock",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Respecting user confidentiality",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "An increasing flood of competing models made it impossible for the small platform to survive.",
+              "visual": "clip",
+              "query": "servers in data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Intense market competition",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Users now have just one week to export their stored chat histories before servers go dark.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "7 Days",
+              "small": "until chat export deadline",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Seven days to export chats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Can any privacy-first AI survive against dominant market leaders?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Ollie, a privacy-focused AI assistant, is shutting down",
+              "url": "",
+              "tag": "Can privacy-first AI survive",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "TechCrunch",
+                  "domain": "techcrunch.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "sharp tech journalist delivering the news directly and plainly, moving from the shutdown announcement to what users must do now",
+          "thin": false,
+          "caption": "Privacy-focused AI assistant Ollie is shutting down in just seven days due to heavy market competition. Users must export their chats before the service ends. Can privacy-first AI survive against dominant market leaders?",
+          "hashtags": [
+            "Ollie",
+            "ArtificialIntelligence",
+            "DataPrivacy",
+            "TechNews",
+            "AIAssistant"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+          ],
+          "script": "Ollie is shutting down in seven days due to an overcrowded market.\nThe privacy-focused assistant built its reputation on respecting user confidentiality.\nAn increasing flood of competing models made it impossible for the small platform to survive.\nUsers now have just one week to export their stored chat histories before servers go dark.\nCan any privacy-first AI survive against dominant market leaders?",
+          "keywords": [
+            "data privacy security lock",
+            "servers in data center"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Ollie AI is shutting down in seven days",
+              "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+            },
+            {
+              "claim": "Ollie is shutting down in seven days due to an overcrowded market.",
+              "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+            },
+            {
+              "claim": "Ollie is a privacy-focused assistant that built its reputation on respecting user confidentiality.",
+              "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+            },
+            {
+              "claim": "An increasing flood of competing models made it impossible for the small platform to survive.",
+              "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+            },
+            {
+              "claim": "Users now have just one week to export their stored chat histories before servers go dark.",
+              "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "source_links": [
+            "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-31T23:27:43.640808+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2052,8 +2061,8 @@
       "event": "India just proposed the DEPA framework to unlock data for AI training. The proposal aims to make structured data accessible for developers building models. Sharad Sharma co-founded iSPIRT, the think tank behind this data sharing model. The "
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-31T21:31+05:30",
@@ -2081,7 +2090,7 @@
   "report_day": "2026-10-31",
   "ig_count": {
     "day": "2026-10-31",
-    "at": "2026-10-31T23:25:29.045169+05:30",
+    "at": "2026-10-31T23:36:25.587765+05:30",
     "count": 6
   },
   "repeat_check_day": "2026-10-04",
@@ -2105,12 +2114,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 447,
+    "calls": 456,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 119,
+        "ok": 128,
         "busy": 37,
         "other": 2,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2231,29 +2240,6 @@
     "gemini-3-flash-preview": 1793441213.2165174
   },
   "editor_log": [
-    {
-      "at": "2026-10-30T23:40+05:30",
-      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestri",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Fascinating topic hampered by repetitive AI art and plain white frames instead of dynamic news footage.",
-      "fixes": [
-        "LINE 3: add specific mention of NVIDIA Holoscan to maintain technical precision",
-        "LINE 6: replace vague 'this shift' with reference to Allen Telescope Array automation"
-      ],
-      "visual": [
-        "line 3: Reuses the exact same moody silhouette image seen in frames 1, 2, and 5",
-        "line 3: Blank white background screens with plain text feel lazy for a news reel",
-        "line 4: Blank white background lacks contextual visuals or graphics"
-      ]
-    },
     {
       "at": "2026-10-31T00:21+05:30",
       "title": "nemotron-halloween",
@@ -2666,10 +2652,30 @@
         "line 2: Holding the same pharmaceutical researcher image across multiple lines, violating variety ",
         "line 3: Repeating the same image card yet again with no new visual context."
       ]
+    },
+    {
+      "at": "2026-10-31T23:36+05:30",
+      "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+      "overall": 8.0,
+      "scores": {
+        "hook": 8,
+        "specific": 8,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 7,
+        "flow": 8
+      },
+      "one_line": "Strong reporting on Ollie AI's shutdown, but visuals need better alignment with the script.",
+      "fixes": [
+        "LINE 3: add specific details about the competitor pressure or market conditions if available"
+      ],
+      "visual": [
+        "line 5: Displays TechCrunch logo instead of illustrating the closing question about privacy-first "
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 210,
+  "fish_turn": 211,
   "ig_music_recent": [
     "5067527913473007",
     "790540610751673",
