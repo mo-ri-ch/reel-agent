@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -201,11 +201,62 @@
     "fix_rounds": 0,
     "source_links": [
       "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1131843324460821",
+      "title": "Calypso Kids",
+      "artist": "Global Genius"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Altman shared this view during a recent appearance…: The shot is blank/empty.",
+      "He described the current distribution of hardware …: The shot is blank/empty.",
+      "The industry is currently facing a massive global …: The shot is blank/empty.",
+      "Altman argues that centralized cloud computing is …: The shot is blank/empty.",
+      "Would you trade your PC speed for pure cloud acces…: The shot is blank/empty.",
+      "The shot is blank/empty.",
+      "The shot is blank/empty.",
+      "The shot is blank/empty."
+    ],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, specific news, but visual pacing is repetitive and lacks dynamic variety.",
+      "script_fixes": [
+        "LINE 5: Replace 'The industry is currently facing' with 'Altman cited the current global shortage of high-speed memory modules'."
+      ],
+      "visual_beats": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "visual_notes": [
+        "line 1: Same image held for 3 frames (0.5s to 4.8s) is too long.",
+        "line 4: Same image held for 2 frames (14.4s to 19.2s) is repetitive.",
+        "line 5: Same image held for 2 frames (19.2s to 24.0s) is repetitive.",
+        "line 6: Same image held for 2 frames (24.0s to 28.8s) is repetitive.",
+        "line 7: Same image held for 2 frames (28.8s to 31.2s) is repetitive."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Sam Altman: theverge.com"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "1 real photos, 2 AI images, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIyvWrlNFJzmWMVUnFsg0kvD4kBn3eGAAL4IwACflIoV2WtpFwuMCb3PQQ",
   "queue": [
     {
       "title": "nemotron-halloween",
@@ -287,9 +338,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-31T05:45:07.692645+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-31T06:20:34.765815+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-10-31",
@@ -776,289 +827,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Zest’s new AI agent finds restaurants and books reservations over text",
-          "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
-          "summary": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-30T17:47:12+00:00",
-          "angle": "Zest's new AI agent can finally settle the 'where to eat' debate by voting and booking reservations for you."
-        },
-        "draft": {
-          "title": "Zest AI automates restaurant bookings",
-          "hook_text": "Zest now books your dinner.",
-          "beats": [
-            {
-              "line": "Zest just replaced your dining concierge service. It finds restaurants and books reservations via text.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Zest",
-              "outlet": "",
-              "domain": "zest.is",
-              "headline": "",
-              "url": "https://zest.is/",
-              "tag": "Zest books reservations",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zest",
-                  "domain": "zest.is"
-                }
-              ]
-            },
-            {
-              "line": "You send a text to the concierge to start the process.",
-              "visual": "clip",
-              "query": "person texting on smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Text your concierge",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The AI aggregates preferences from your group to identify suitable dining options.",
-              "visual": "clip",
-              "query": "group of friends eating at restaurant",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Group preference matching",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It puts those restaurant choices to a vote among your friends.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Zest",
-              "outlet": "",
-              "domain": "zest.is",
-              "headline": "",
-              "url": "https://zest.is/",
-              "tag": "AI manages group voting",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zest",
-                  "domain": "zest.is"
-                }
-              ]
-            },
-            {
-              "line": "Once the group decides, the system automatically books the reservation for you.",
-              "visual": "clip",
-              "query": "restaurant reservation confirmation on phone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Automatic booking confirmed",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "This concierge replaces the manual back and forth of finding a place to eat.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Zero",
-              "small": "manual coordination",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "No more coordination",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you let an AI pick your next Friday night dinner?",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Zest",
-              "outlet": "",
-              "domain": "zest.is",
-              "headline": "",
-              "url": "https://zest.is/",
-              "tag": "Would you use it?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Zest",
-                  "domain": "zest.is"
-                }
-              ]
-            }
-          ],
-          "delivery": "Fast, helpful, and direct, like explaining a useful new life hack to a friend.",
-          "thin": false,
-          "caption": "Zest has released an AI concierge that handles restaurant discovery and bookings entirely via text. It eliminates the group chat headache by managing preferences and voting before securing the table. Would you let an AI pick your next Friday night dinner?",
-          "hashtags": [
-            "Zest",
-            "AI",
-            "restauranttech",
-            "automation",
-            "dining"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
-          ],
-          "script": "Zest just replaced your dining concierge service. It finds restaurants and books reservations via text.\nYou send a text to the concierge to start the process.\nThe AI aggregates preferences from your group to identify suitable dining options.\nIt puts those restaurant choices to a vote among your friends.\nOnce the group decides, the system automatically books the reservation for you.\nThis concierge replaces the manual back and forth of finding a place to eat.\nWould you let an AI pick your next Friday night dinner?",
-          "keywords": [
-            "person texting on smartphone",
-            "group of friends eating at restaurant",
-            "restaurant reservation confirmation on phone"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_before": "Zest launched an AI agent that finds restaurants and handles reservations over text.",
-          "hook_score": 52,
-          "evidence": [
-            {
-              "claim": "Zest now books your dinner.",
-              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
-            },
-            {
-              "claim": "Zest finds restaurants and books reservations via text.",
-              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
-            },
-            {
-              "claim": "You send a text to the concierge to start the process.",
-              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
-            },
-            {
-              "claim": "The AI aggregates preferences from your group to identify suitable dining options.",
-              "url": "https://www.techbuzz.ai/articles/zest-s-ai-agent-handles-group-dining-from-chat-to-reservation"
-            },
-            {
-              "claim": "It puts those restaurant choices to a vote among your friends.",
-              "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
-            },
-            {
-              "claim": "Once the group decides, the system automatically books the reservation for you.",
-              "url": "https://www.techbuzz.ai/articles/zest-s-ai-agent-handles-group-dining-from-chat-to-reservation"
-            },
-            {
-              "claim": "This concierge replaces the manual back and forth of finding a place to eat.",
-              "url": "https://www.techbuzz.ai/articles/zest-s-ai-agent-handles-group-dining-from-chat-to-reservation"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
-          ],
-          "ig_audio": {
-            "id": "518512217892918",
-            "title": "Como Candy",
-            "artist": "half.cool"
-          },
-          "visual_status": "fixed",
-          "visual_notes": [
-            "Zest just replaced your dining concierge service. …: shows a different company (WalkMe) instead of Zest",
-            "You send a text to the concierge to start the proc…: shows a blank, unreadable card instead of the requested visual",
-            "The AI aggregates preferences from your group to i…: shows a blank, unreadable card instead of the requested visual",
-            "It puts those restaurant choices to a vote among y…: shows an almost-empty card with a tiny icon instead of real images of Zest",
-            "Once the group decides, the system automatically b…: shows a blank, unreadable card instead of the requested visual",
-            "This concierge replaces the manual back and forth …: shows a blank, unreadable card instead of the requested visual",
-            "Would you let an AI pick your next Friday night di…: shows a blank, unreadable card instead of the requested visual",
-            "almost-empty card",
-            "almost-empty card",
-            "unrelated visual",
-            "almost-empty card"
-          ],
-          "editor": {
-            "overall": 8.5,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 9,
-              "accuracy": 10,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong, concise script, but visual repetition and static frames hurt the premium feel.",
-            "script_fixes": [
-              "LINE 6: Change 'This concierge' to 'Zest' to avoid generic phrasing and reinforce the brand name."
-            ],
-            "visual_beats": [
-              0,
-              1,
-              4,
-              5
-            ],
-            "visual_notes": [
-              "line 1: The same screenshot is held for 4.8 seconds across 3 frames; needs more dynamic movement.",
-              "line 2: The same 'Text your concierge' graphic is held for 4.8 seconds across 2 frames.",
-              "line 5: The same 'Automatic booking confirmed' graphic is held for 4.8 seconds across 2 frames.",
-              "line 6: The same 'No more coordination' graphic is held for 4.8 seconds across 2 frames."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "7 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAIylmrlAAG-FpR4zX7LgxgkdUMPKNWEZgAC5CMAAn5SKFfi1NlHQPk--z0E",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAIylmrlAAG-FpR4zX7LgxgkdUMPKNWEZgAC5CMAAn5SKFfi1NlHQPk--z0E",
-      "history_title": "Zest’s new AI agent finds restaurants and books reservations over text"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1645,6 +1413,223 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+          "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented on AI's impact on math, Altman said: \"A lot of people want […]",
+          "source": "AI | The Verge",
+          "published": "2026-10-30T20:48:43+00:00",
+          "angle": "OpenAI CEO Sam Altman says your home PC is 'terrible' for RAM, sparking debate on the future of personal computing vs. data centers."
+        },
+        "draft": {
+          "title": "Sam Altman's RAM vision",
+          "hook_text": "RAM belongs in data centers",
+          "beats": [
+            {
+              "line": "OpenAI CEO Sam Altman thinks your personal computer RAM is a waste.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://openai.com/about",
+              "tag": "Altman's bold claim",
+              "name": "Sam Altman",
+              "role": "CEO, OpenAI",
+              "x": "sama",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "He says keeping memory in data centers is better than having it on your desk.",
+              "visual": "clip",
+              "query": "modern server room rack",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Data center focus",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Altman shared this view during a recent appearance on the Cheeky Pint podcast.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "Sam Altman on RAM and AI hardware supply chains",
+              "url": "",
+              "tag": "Cheeky Pint interview",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He described the current distribution of hardware as terrible for scaling AI.",
+              "visual": "clip",
+              "query": "microchip production manufacturing",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Hardware supply issues",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The industry is currently facing a massive global shortage of high-speed memory modules.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Global RAM",
+              "small": "Supply chain constraints",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Global RAM shortage",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Altman argues that centralized cloud computing is the only way forward for AI.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "OpenAI",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "tag": "Cloud vs desktop",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "Would you trade your PC speed for pure cloud access?",
+              "visual": "clip",
+              "query": "person looking at laptop screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Your take?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Direct and analytical, highlighting a controversial industry stance with a calm, matter-of-fact tone.",
+          "thin": false,
+          "caption": "OpenAI CEO Sam Altman claims that having RAM in personal PCs is inefficient compared to cloud data centers. He believes centralizing hardware is essential for future AI growth. Would you trade your PC speed for pure cloud access?",
+          "hashtags": [
+            "OpenAI",
+            "SamAltman",
+            "ArtificialIntelligence",
+            "CloudComputing",
+            "TechNews"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+          ],
+          "script": "OpenAI CEO Sam Altman thinks your personal computer RAM is a waste.\nHe says keeping memory in data centers is better than having it on your desk.\nAltman shared this view during a recent appearance on the Cheeky Pint podcast.\nHe described the current distribution of hardware as terrible for scaling AI.\nThe industry is currently facing a massive global shortage of high-speed memory modules.\nAltman argues that centralized cloud computing is the only way forward for AI.\nWould you trade your PC speed for pure cloud access?",
+          "keywords": [
+            "modern server room rack",
+            "microchip production manufacturing",
+            "person looking at laptop screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_score": 64,
+          "evidence": [
+            {
+              "claim": "RAM belongs in data centers",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+            },
+            {
+              "claim": "Sam Altman is the CEO of OpenAI",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+            },
+            {
+              "claim": "Sam Altman appeared on the Cheeky Pint podcast",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+            },
+            {
+              "claim": "Sam Altman described the current distribution of hardware as terrible for scaling AI",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+            },
+            {
+              "claim": "The industry is currently facing a massive global shortage of high-speed memory modules",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-31T05:45:07.692645+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2158,8 +2143,8 @@
       "event": "Google just transmitted an AI response from orbit. The satellite uses on-board Tensor Processing Units to run the Gemma 4 model. This hardware successfully booted up while circling the planet. Engineers prompted the model to write a haiku a"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-31T04:35+05:30",
@@ -2187,7 +2172,7 @@
   "report_day": "2026-10-30",
   "ig_count": {
     "day": "2026-10-31",
-    "at": "2026-10-31T05:40:24.853817+05:30",
+    "at": "2026-10-31T05:50:34.766047+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2211,7 +2196,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 113,
+    "calls": 122,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2222,7 +2207,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 65,
+        "ok": 74,
         "busy": 22,
         "other": 11,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2313,29 +2298,6 @@
     "gemini-3.5-flash-lite": 1793386219.935049
   },
   "editor_log": [
-    {
-      "at": "2026-10-30T09:44+05:30",
-      "title": "You don’t need to believe in a god to get a religious exemption from using AI at",
-      "overall": 6.0,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Lacks specific naming in hook, uses repetitive blank frames, and fails strong visual context.",
-      "fixes": [
-        "LINE 1: You can get a religious exemption from using AI, and David Durman just proved it.",
-        "LINE 2: David Durman, a University of Kentucky administrator, secured the legal accommodation."
-      ],
-      "visual": [
-        "line 1: Hook text is too generic and lacks a compelling named entity.",
-        "line 3: Static repeated text card fails to show the actual employee or document.",
-        "line 6: Random TechCrunch logo icon used instead of workplace context."
-      ]
-    },
     {
       "at": "2026-10-30T10:27+05:30",
       "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI ",
@@ -2754,10 +2716,32 @@
         "line 3: The 'Orbiting hardware' visual is repeated for two consecutive frames.",
         "line 5: The 'Gemma 4' logo graphic is reused, creating visual fatigue."
       ]
+    },
+    {
+      "at": "2026-10-31T05:50+05:30",
+      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, specific news, but visual pacing is repetitive and lacks dynamic variety.",
+      "fixes": [
+        "LINE 5: Replace 'The industry is currently facing' with 'Altman cited the current global shortage of high-speed memory modules'."
+      ],
+      "visual": [
+        "line 1: Same image held for 3 frames (0.5s to 4.8s) is too long.",
+        "line 4: Same image held for 2 frames (14.4s to 19.2s) is repetitive.",
+        "line 5: Same image held for 2 frames (19.2s to 24.0s) is repetitive."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 194,
+  "fish_turn": 195,
   "ig_music_recent": [
     "4724608451159342",
     "1681984019700492",
