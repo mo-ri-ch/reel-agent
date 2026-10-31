@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -208,11 +208,58 @@
     "fix_rounds": 2,
     "source_links": [
       "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1781707405985548",
+      "title": "Ese Alguien (Instrumental)",
+      "artist": "Signa"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "He failed to disclose AI use in a research paper a…: The shot is blank/unreadable.",
+      "The investigation found he used AI to edit manuscr…: The visual shows a building, but should show a person coding on a laptop.",
+      "He also used the software to generate figures for …: The shot is blank/unreadable.",
+      "Schnell stated he used the tech as an editorial to…: The visual shows a building, but should show a person editing a document.",
+      "Would you trust AI to polish your professional wor…: The visual shows a building, but should show a person thinking at a desk.",
+      "The shot is blank/empty and does not show the required source card."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visuals are repetitive and lack variety.",
+      "script_fixes": [
+        "LINE 3: Replace 'the software' with 'the AI tools' for better flow.",
+        "LINE 4: Replace 'the software' with 'the AI' to avoid repetition."
+      ],
+      "visual_beats": [
+        2,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 3: The same building photo is used for too many consecutive frames.",
+        "line 4: The building photo is repeated again, causing visual fatigue.",
+        "line 5: The building photo is used for a fourth time; needs a different visual."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Santiago Schnell: Eudoro Lopez",
+      "Dartmouth College: Kane5187 (Public domain), via Wikimedia Commons"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "2 real photos, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAIy6mrld_gUb9g63TflKYGkwGssu_ZNAAIjIwACflIwV_IMUk_5VpR1PQQ",
   "queue": [
     {
       "title": "Zest’s new AI agent finds restaurants and books reservations over text",
@@ -294,9 +341,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-10-31T10:29:04.506207+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-10-31T11:09:13.559824+05:30",
+  "last_gender": "male",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-10-31",
@@ -767,42 +814,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Apple Intelligence is finally coming to China with iOS 27.3",
-            "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-            "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December. This launch doesn't bring […]",
-            "source": "AI | The Verge",
-            "published": "2026-10-30T22:32:53+00:00",
-            "angle": "Apple Intelligence is finally launching in China with iOS 27.3, a massive move for the world's biggest smartphone market."
-          },
-          {
-            "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-            "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-            "summary": "Low costs and offline security mean magnetic tape still has a job.",
-            "source": "AI - Ars Technica",
-            "published": "2026-10-30T17:38:19+00:00",
-            "angle": "AI is so hungry for data that Fujifilm is boosting magnetic tape production by 5x to handle the massive archiving demand."
-          }
-        ],
-        "choose_deadline": "2026-10-31T07:40:40.869487+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1525,6 +1536,230 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+          "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+          "summary": "People who love AI don't always love telling others they used it.",
+          "source": "AI - Ars Technica",
+          "published": "2026-10-30T20:40:13+00:00",
+          "angle": "A university provost was fired for using AI to cheat—a massive wake-up call on AI ethics in the workplace."
+        },
+        "draft": {
+          "title": "Dartmouth Provost resigns over AI use",
+          "hook_text": "Dartmouth Provost resigned over hidden AI use.",
+          "beats": [
+            {
+              "line": "Dartmouth Provost Santiago Schnell resigned after an internal investigation.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://home.dartmouth.edu/",
+              "tag": "Provost Santiago Schnell",
+              "name": "Santiago Schnell",
+              "role": "Provost, Dartmouth College",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Dartmouth",
+                  "domain": "dartmouth.edu"
+                }
+              ]
+            },
+            {
+              "line": "He failed to disclose AI use in a research paper and a Washington Post op-ed.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Dartmouth's provost warned us about AI cheating",
+              "url": "",
+              "tag": "Failed to disclose AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The investigation found he used AI to edit manuscripts and troubleshoot code.",
+              "visual": "clip",
+              "query": "person coding on laptop",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI for research tasks",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He also used the software to generate figures for his academic work.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "Multiple",
+              "small": "AI tools used",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Generating figures",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Schnell stated he used the tech as an editorial tool for clarity.",
+              "visual": "clip",
+              "query": "person editing document",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Editorial AI use",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He previously warned the campus about the risks of unauthorized AI.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Dartmouth College",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Campus AI warnings",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Dartmouth",
+                  "domain": "dartmouth.edu"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust AI to polish your professional work?",
+              "visual": "clip",
+              "query": "person thinking at desk",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting AI polish",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and factual, emphasizing the irony of his public warnings versus his private actions.",
+          "thin": false,
+          "caption": "Dartmouth Provost Santiago Schnell resigned after an investigation found he used AI to edit research and code without disclosure. He had previously warned the campus about the risks of unauthorized AI use. Would you trust AI to polish your professional work?",
+          "hashtags": [
+            "Dartmouth",
+            "SantiagoSchnell",
+            "AI",
+            "AcademicIntegrity",
+            "TechEthics"
+          ],
+          "sources": [
+            "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+          ],
+          "script": "Dartmouth Provost Santiago Schnell resigned after an internal investigation.\nHe failed to disclose AI use in a research paper and a Washington Post op-ed.\nThe investigation found he used AI to edit manuscripts and troubleshoot code.\nHe also used the software to generate figures for his academic work.\nSchnell stated he used the tech as an editorial tool for clarity.\nHe previously warned the campus about the risks of unauthorized AI.\nWould you trust AI to polish your professional work?",
+          "keywords": [
+            "person coding on laptop",
+            "person editing document",
+            "person thinking at desk"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Dartmouth Provost resigned over hidden AI use.",
+              "url": "https://www.insidehighered.com/news/governance/executive-leadership/2026/10/28/dartmouth-provost-resigns-over-ai-use"
+            },
+            {
+              "claim": "Dartmouth Provost Santiago Schnell resigned after an internal investigation.",
+              "url": "https://president.dartmouth.edu/news/2026/10/update-provost-review"
+            },
+            {
+              "claim": "He failed to disclose AI use in a research paper and a Washington Post op-ed.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+            },
+            {
+              "claim": "The investigation found he used AI to edit manuscripts and troubleshoot code.",
+              "url": "https://www.insidehighered.com/news/governance/executive-leadership/2026/10/28/dartmouth-provost-resigns-over-ai-use"
+            },
+            {
+              "claim": "He also used the software to generate figures for his academic work.",
+              "url": "https://www.insidehighered.com/news/governance/executive-leadership/2026/10/28/dartmouth-provost-resigns-over-ai-use"
+            },
+            {
+              "claim": "Schnell stated he used the tech as an editorial tool for clarity.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+            },
+            {
+              "claim": "He previously warned the campus about the risks of unauthorized AI.",
+              "url": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-10-31T10:29:04.506207+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2033,8 +2268,8 @@
       "event": "OpenAI CEO Sam Altman thinks your personal computer RAM is a waste. He says keeping memory in data centers is better than having it on your desk. Altman shared this view during a recent appearance on the Cheeky Pint podcast. He described th"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-10-31T08:40+05:30",
@@ -2062,7 +2297,7 @@
   "report_day": "2026-10-30",
   "ig_count": {
     "day": "2026-10-31",
-    "at": "2026-10-31T10:25:24.604383+05:30",
+    "at": "2026-10-31T10:39:13.560054+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2082,11 +2317,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-10-31",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 205,
+    "calls": 221,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2097,25 +2332,20 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 98,
+        "ok": 105,
         "busy": 40,
-        "other": 34,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 41,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
-        "ok": 16,
-        "busy": 7,
+        "ok": 17,
+        "busy": 8,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "15:56",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-27"
-    },
     {
       "at": "16:01",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2160,6 +2390,11 @@
       "at": "15:35",
       "error": "gemini-flash-lite-latest is overloaded right now",
       "day": "2026-10-29"
+    },
+    {
+      "at": "05:07",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-10-31"
     }
   ],
   "last_script_error": {
@@ -2186,33 +2421,10 @@
     "gemini-3.5-flash": 1793351274.7507343,
     "gemini-3.7-flash": 1793352381.3621755,
     "gemini-3-flash-preview": 1793354846.4698699,
-    "gemini-3.5-flash-lite": 1793386219.935049
+    "gemini-3.5-flash-lite": 1793386219.935049,
+    "gemini-flash-lite-latest": 1793423225.7663443
   },
   "editor_log": [
-    {
-      "at": "2026-10-30T10:33+05:30",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI ",
-      "overall": 6.2,
-      "scores": {
-        "hook": 6,
-        "specific": 5,
-        "substance": 6,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Too much generic filler and repetitive, low-quality stock visuals.",
-      "fixes": [
-        "LINE 1: Replace 'frontier AI agents' with specific model names if available, or 'NVIDIA's new generative AI agents'.",
-        "LINE 3: Specify which Omniverse libraries (e.g., 'Omniverse RTX' or 'PhysX') are being utilized.",
-        "LINE 7: Replace 'vehicle design' with a specific example mentioned in the source if available, or keep it as is if it's the only concrete example."
-      ],
-      "visual": [
-        "line 1: The 4-way split screen is cluttered and low-resolution; use a single, high-quality clip of",
-        "line 2: Visuals are just a static, low-quality collage; needs dynamic footage of the agent in acti",
-        "line 3: The NVIDIA logo is a generic placeholder; show the actual software interface or rendering "
-      ]
-    },
     {
       "at": "2026-10-30T11:16+05:30",
       "title": "Anthropic is asking Wall Street to believe in AGI",
@@ -2627,10 +2839,33 @@
         "line 3: Blank white frame with no relevant graphic or chart showing PC sales decline.",
         "line 4: Generic text card lacks actual data graphics for high AI memory demand."
       ]
+    },
+    {
+      "at": "2026-10-31T10:39+05:30",
+      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his ",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but the visuals are repetitive and lack variety.",
+      "fixes": [
+        "LINE 3: Replace 'the software' with 'the AI tools' for better flow.",
+        "LINE 4: Replace 'the software' with 'the AI' to avoid repetition."
+      ],
+      "visual": [
+        "line 3: The same building photo is used for too many consecutive frames.",
+        "line 4: The building photo is repeated again, causing visual fatigue.",
+        "line 5: The building photo is used for a fourth time; needs a different visual."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 196,
+  "fish_turn": 197,
   "ig_music_recent": [
     "1681984019700492",
     "629259179669455",
