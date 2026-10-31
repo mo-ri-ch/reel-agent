@@ -1,35 +1,236 @@
 {
   "offset": 153809618,
-  "stage": "choosing",
-  "candidates": [
-    {
-      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-      "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-      "summary": "Low costs and offline security mean magnetic tape still has a job.",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-30T17:38:19+00:00",
-      "angle": "AI is so data-hungry that Fujifilm is boosting magnetic tape production by 5x to handle the massive storage demand."
-    },
-    {
-      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
-      "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-      "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-10-30T21:54:34+00:00",
-      "angle": "Intel's stock just crashed, wiping out $12B in value as the AI industry shifts focus to specialized hardware."
-    },
-    {
-      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
-      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
-      "summary": "People who love AI don't always love telling others they used it.",
-      "source": "AI - Ars Technica",
-      "published": "2026-10-30T20:40:13+00:00",
-      "angle": "A university provost was fired for using AI to cheat—a massive wake-up call on AI ethics in the workplace."
-    }
-  ],
-  "choose_deadline": "2026-10-31T09:12:55.571429+05:30",
-  "topic": null,
-  "draft": null,
+  "stage": "awaiting_voice",
+  "candidates": [],
+  "choose_deadline": null,
+  "topic": {
+    "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+    "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+    "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+    "source": "AI News & Artificial Intelligence | TechCrunch",
+    "published": "2026-10-30T21:54:34+00:00",
+    "angle": "Intel's stock just crashed, wiping out $12B in value as the AI industry shifts focus to specialized hardware."
+  },
+  "draft": {
+    "title": "Intel Stock Crash Costs Government $12B",
+    "hook_text": "Twelve billion dollars lost in Intel.",
+    "beats": [
+      {
+        "line": "Twelve billion dollars just vanished from the government's Intel stake.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "12B",
+        "small": "USD value drop",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "12 billion lost",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      },
+      {
+        "line": "Intel stock crashed after the company missed critical quarterly earnings targets.",
+        "visual": "source",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "TechCrunch",
+        "domain": "techcrunch.com",
+        "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
+        "url": "",
+        "tag": "Earnings miss",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      },
+      {
+        "line": "The company is suffering as PC sales continue to slide downward.",
+        "visual": "clip",
+        "query": "empty computer store",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "PC sales slide",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      },
+      {
+        "line": "Meanwhile, the AI industry is aggressively gobbling up memory and other essential components.",
+        "visual": "clip",
+        "query": "data center server racks",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "AI demand high",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "This AI-driven demand is forcing component prices to rise significantly.",
+        "visual": "official",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "Intel",
+        "outlet": "",
+        "domain": "intel.com",
+        "headline": "",
+        "url": "https://www.intel.com",
+        "tag": "Component costs up",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      },
+      {
+        "line": "This leaves Intel exposed to massive market volatility as investors lose confidence.",
+        "visual": "clip",
+        "query": "stock market ticker",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Investor confidence low",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      },
+      {
+        "line": "Can the company stabilize its value before the government stake drops further?",
+        "visual": "clip",
+        "query": "person looking at computer screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Stabilization needed",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      }
+    ],
+    "delivery": "Urgent and professional, emphasizing the financial severity of the shift toward AI and its impact on Intel.",
+    "thin": false,
+    "caption": "Intel stock crashed, wiping 12 billion dollars from the government's investment stake. Weak PC sales and rising AI-driven component costs are pressuring the company. Will Intel be able to regain its footing after this significant market loss?",
+    "hashtags": [
+      "Intel",
+      "StockMarket",
+      "AI",
+      "TechNews",
+      "Investing"
+    ],
+    "sources": [
+      "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+    ],
+    "script": "Twelve billion dollars just vanished from the government's Intel stake.\nIntel stock crashed after the company missed critical quarterly earnings targets.\nThe company is suffering as PC sales continue to slide downward.\nMeanwhile, the AI industry is aggressively gobbling up memory and other essential components.\nThis AI-driven demand is forcing component prices to rise significantly.\nThis leaves Intel exposed to massive market volatility as investors lose confidence.\nCan the company stabilize its value before the government stake drops further?",
+    "keywords": [
+      "empty computer store",
+      "data center server racks",
+      "stock market ticker",
+      "person looking at computer screen"
+    ],
+    "image_prompts": [],
+    "writer_model": "gemini",
+    "evidence": [
+      {
+        "claim": "Twelve billion dollars lost in Intel.",
+        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+      },
+      {
+        "claim": "Twelve billion dollars just vanished from the government's Intel stake.",
+        "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
+      },
+      {
+        "claim": "Intel stock crashed after the company missed critical quarterly earnings targets.",
+        "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
+      },
+      {
+        "claim": "The company is suffering as PC sales continue to slide downward.",
+        "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
+      },
+      {
+        "claim": "The AI industry is aggressively gobbling up memory and other essential components.",
+        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+      },
+      {
+        "claim": "This AI-driven demand is forcing component prices to rise significantly.",
+        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+      },
+      {
+        "claim": "This leaves Intel exposed to massive market volatility as investors lose confidence.",
+        "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
+      }
+    ],
+    "fact_status": "ok",
+    "fact_notes": [],
+    "fix_rounds": 1,
+    "source_links": [
+      "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+    ]
+  },
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -114,7 +315,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": null,
+  "script_deadline": "2026-10-31T09:47:15.044109+05:30",
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -523,16 +724,15 @@
   "paused": null,
   "spare": [
     {
-      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-      "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-      "summary": "Low costs and offline security mean magnetic tape still has a job.",
+      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "summary": "People who love AI don't always love telling others they used it.",
       "source": "AI - Ars Technica",
-      "published": "2026-10-30T17:38:19+00:00",
-      "angle": "AI is so hungry for data that Fujifilm is boosting magnetic tape production by 5x to handle the massive archiving demand."
+      "published": "2026-10-30T20:40:13+00:00",
+      "angle": "A university provost was fired for using AI to cheat—a massive wake-up call on AI ethics in the workplace."
     }
   ],
   "tried": [
-    "Indian AI infrastructure firm reportedly seeks to raise $3 billion of debt to buy Nvidia's next-generation chips",
     "Granola crunches up a dictation feature to compete with Wispr",
     "You don’t need to believe in a god to get a religious exemption from using AI at work",
     "Technology: Keeping Human Dignity at the Center of Innovation",
@@ -591,227 +791,10 @@
     "Cisco gives engineer unlimited AI tokens to rewrite 98% of the company's code",
     "Google’s first data center satellite is online and writing poetry",
     "The biggest names in AI are backing a new way to opt out of scraping",
-    "Apple Intelligence is finally coming to China with iOS 27.3"
+    "Apple Intelligence is finally coming to China with iOS 27.3",
+    "Fujifilm to boost tape production 5x as AI fuels archiving demand"
   ],
-  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-          "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented on AI's impact on math, Altman said: \"A lot of people want […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-30T20:48:43+00:00",
-          "angle": "OpenAI CEO Sam Altman says your home PC is 'terrible' for RAM, sparking debate on the future of personal computing vs. data centers."
-        },
-        "draft": {
-          "title": "Sam Altman's RAM vision",
-          "hook_text": "RAM belongs in data centers",
-          "beats": [
-            {
-              "line": "OpenAI CEO Sam Altman thinks your personal computer RAM is a waste.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://openai.com/about",
-              "tag": "Altman's bold claim",
-              "name": "Sam Altman",
-              "role": "CEO, OpenAI",
-              "x": "sama",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "He says keeping memory in data centers is better than having it on your desk.",
-              "visual": "clip",
-              "query": "modern server room rack",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Data center focus",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Altman shared this view during a recent appearance on the Cheeky Pint podcast.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "Sam Altman on RAM and AI hardware supply chains",
-              "url": "",
-              "tag": "Cheeky Pint interview",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He described the current distribution of hardware as terrible for scaling AI.",
-              "visual": "clip",
-              "query": "microchip production manufacturing",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Hardware supply issues",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The industry is currently facing a massive global shortage of high-speed memory modules.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Global RAM",
-              "small": "Supply chain constraints",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Global RAM shortage",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Altman argues that centralized cloud computing is the only way forward for AI.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "OpenAI",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "tag": "Cloud vs desktop",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "Would you trade your PC speed for pure cloud access?",
-              "visual": "clip",
-              "query": "person looking at laptop screen",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Your take?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Direct and analytical, highlighting a controversial industry stance with a calm, matter-of-fact tone.",
-          "thin": false,
-          "caption": "OpenAI CEO Sam Altman claims that having RAM in personal PCs is inefficient compared to cloud data centers. He believes centralizing hardware is essential for future AI growth. Would you trade your PC speed for pure cloud access?",
-          "hashtags": [
-            "OpenAI",
-            "SamAltman",
-            "ArtificialIntelligence",
-            "CloudComputing",
-            "TechNews"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-          ],
-          "script": "OpenAI CEO Sam Altman thinks your personal computer RAM is a waste.\nHe says keeping memory in data centers is better than having it on your desk.\nAltman shared this view during a recent appearance on the Cheeky Pint podcast.\nHe described the current distribution of hardware as terrible for scaling AI.\nThe industry is currently facing a massive global shortage of high-speed memory modules.\nAltman argues that centralized cloud computing is the only way forward for AI.\nWould you trade your PC speed for pure cloud access?",
-          "keywords": [
-            "modern server room rack",
-            "microchip production manufacturing",
-            "person looking at laptop screen"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "hook_score": 64,
-          "evidence": [
-            {
-              "claim": "RAM belongs in data centers",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-            },
-            {
-              "claim": "Sam Altman is the CEO of OpenAI",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-            },
-            {
-              "claim": "Sam Altman appeared on the Cheeky Pint podcast",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-            },
-            {
-              "claim": "Sam Altman described the current distribution of hardware as terrible for scaling AI",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-            },
-            {
-              "claim": "The industry is currently facing a massive global shortage of high-speed memory modules",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-10-31T05:45:07.692645+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1551,6 +1534,50 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot picking story #1",
+      "data": {
+        "stage": "choosing",
+        "candidates": [
+          {
+            "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+            "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+            "summary": "Low costs and offline security mean magnetic tape still has a job.",
+            "source": "AI - Ars Technica",
+            "published": "2026-10-30T17:38:19+00:00",
+            "angle": "AI is so data-hungry that Fujifilm is boosting magnetic tape production by 5x to handle the massive storage demand."
+          },
+          {
+            "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+            "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+            "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "published": "2026-10-30T21:54:34+00:00",
+            "angle": "Intel's stock just crashed, wiping out $12B in value as the AI industry shifts focus to specialized hardware."
+          },
+          {
+            "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+            "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+            "summary": "People who love AI don't always love telling others they used it.",
+            "source": "AI - Ars Technica",
+            "published": "2026-10-30T20:40:13+00:00",
+            "angle": "A university provost was fired for using AI to cheat—a massive wake-up call on AI ethics in the workplace."
+          }
+        ],
+        "choose_deadline": "2026-10-31T09:12:55.571429+05:30",
+        "topic": null,
+        "draft": null,
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1688,11 +1715,6 @@
     "Sam Altman says it’s better for RAM to be in a data center than on your desk"
   ],
   "posted_log": [
-    {
-      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-      "at": "2026-10-17T09:10:27.643767+05:30",
-      "event": "Mark Wahlberg is open to an AI clone continuing his acting career. The actor says he will use AI to enhance his performances. Wahlberg spoke about this on October 16 2026 at a tech event. He views these tools as a way to extend his legacy. "
-    },
     {
       "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
       "at": "2026-10-17T12:45:25.670445+05:30",
@@ -2093,7 +2115,7 @@
   "report_day": "2026-10-30",
   "ig_count": {
     "day": "2026-10-31",
-    "at": "2026-10-31T09:00:31.501316+05:30",
+    "at": "2026-10-31T09:17:15.743221+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2117,7 +2139,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 175,
+    "calls": 205,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2128,10 +2150,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 79,
-        "busy": 29,
+        "ok": 98,
+        "busy": 40,
         "other": 34,
-        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-flash-lite-latest": {
         "ok": 16,
