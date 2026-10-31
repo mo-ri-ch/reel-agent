@@ -1,8 +1,33 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "link": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "summary": "Low costs and offline security mean magnetic tape still has a job.",
+      "source": "AI - Ars Technica",
+      "published": "2026-10-30T17:38:19+00:00",
+      "angle": "AI is so data-hungry that Fujifilm is boosting magnetic tape production by 5x to handle the massive storage demand."
+    },
+    {
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+      "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-10-30T21:54:34+00:00",
+      "angle": "Intel's stock just crashed, wiping out $12B in value as the AI industry shifts focus to specialized hardware."
+    },
+    {
+      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/",
+      "summary": "People who love AI don't always love telling others they used it.",
+      "source": "AI - Ars Technica",
+      "published": "2026-10-30T20:40:13+00:00",
+      "angle": "A university provost was fired for using AI to cheat—a massive wake-up call on AI ethics in the workplace."
+    }
+  ],
+  "choose_deadline": "2026-10-31T09:12:55.571429+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -495,6 +520,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
@@ -2042,7 +2068,7 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-10-31T07:10+05:30",
+    "at": "2026-10-31T08:40+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
     "arstechnica.com": 8,
@@ -2052,17 +2078,17 @@
     "deepmind.google": 0,
     "huggingface.co": 1,
     "blogs.nvidia.com": 2,
-    "inc42.com": 1,
+    "inc42.com": 2,
     "news.google.com": 38,
-    "Google News (VentureBeat, AIM, AI News)": 5,
+    "Google News (VentureBeat, AIM, AI News)": 3,
     "producthunt.com": 4,
-    "Hacker News": 6,
+    "Hacker News": 5,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 6
+    "filtered out (PR / local events / market fluff)": 4
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-31T07:10:27.687722+05:30",
+  "last_auto_offer": "2026-10-31T08:40:28.085189+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-30",
   "ig_count": {
@@ -2091,7 +2117,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-10-31",
-    "calls": 172,
+    "calls": 175,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2102,9 +2128,9 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 77,
+        "ok": 79,
         "busy": 29,
-        "other": 33,
+        "other": 34,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
