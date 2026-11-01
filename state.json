@@ -1,288 +1,38 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_approval",
-  "candidates": [],
-  "choose_deadline": null,
-  "topic": {
-    "title": "Intel’s stock crashes, knocking $12B from government’s stake",
-    "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-    "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-10-30T21:54:34+00:00",
-    "angle": "Intel stock crash wipes $12B from government stake as AI hardware shifts the market."
-  },
-  "draft": {
-    "title": "Intel stock crash hits government stake",
-    "hook_text": "Intel loses twelve billion dollars",
-    "beats": [
-      {
-        "line": "Intel just lost twelve billion dollars of government value.",
-        "visual": "stat",
-        "query": "stock market chart",
-        "prompt": "",
-        "big": "$12B",
-        "small": "market loss",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "$12B Intel loss",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Intel",
-            "domain": "intel.com"
-          }
-        ]
-      },
-      {
-        "line": "Intel's client computing segment revenue recently declined by five percent.",
-        "visual": "clip",
-        "query": "computer motherboard manufacturing",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "5% revenue drop",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Intel",
-            "domain": "intel.com"
-          }
-        ]
-      },
-      {
-        "line": "The AI industry is gobbling up memory and high-bandwidth memory.",
-        "visual": "clip",
-        "query": "data center server racks",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "AI memory demand",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This AI demand is causing PC component prices to rise.",
-        "visual": "clip",
-        "query": "Intel Core processor",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "PC component prices",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Intel",
-            "domain": "intel.com"
-          }
-        ]
-      },
-      {
-        "line": "Intel warned its gross profit margin will drop to thirty-seven percent.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "TechCrunch",
-        "domain": "techcrunch.com",
-        "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
-        "url": "",
-        "tag": "37% profit margin",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Intel",
-            "domain": "intel.com"
-          }
-        ]
-      },
-      {
-        "line": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
-        "visual": "clip",
-        "query": "modern office building",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Hardware vs AI",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Intel",
-            "domain": "intel.com"
-          }
-        ]
-      },
-      {
-        "line": "Does this drop make you worry about your next PC purchase?",
-        "visual": "clip",
-        "query": "person looking at laptop screen",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "PC purchase concerns",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "Intel",
-            "domain": "intel.com"
-          }
-        ]
-      }
-    ],
-    "delivery": "Serious, financial tone focusing on the shift from consumer hardware to AI infrastructure.",
-    "thin": false,
-    "caption": "Intel stock just dropped, wiping $12 billion from the government's stake. Declining client revenue and high AI demand for memory have pushed Intel’s expected gross margin down to 37%. Does this shift make you worry about your next PC purchase?",
-    "hashtags": [
-      "Intel",
-      "StockMarket",
-      "TechNews",
-      "Hardware",
-      "AI"
-    ],
-    "sources": [
-      "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-    ],
-    "script": "Intel just lost twelve billion dollars of government value.\nIntel's client computing segment revenue recently declined by five percent.\nThe AI industry is gobbling up memory and high-bandwidth memory.\nThis AI demand is causing PC component prices to rise.\nIntel warned its gross profit margin will drop to thirty-seven percent.\nIntel now struggles to balance consumer hardware with massive AI chip needs.\nDoes this drop make you worry about your next PC purchase?",
-    "keywords": [
-      "computer motherboard manufacturing",
-      "data center server racks",
-      "Intel Core processor",
-      "modern office building",
-      "person looking at laptop screen"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "evidence": [
-      {
-        "claim": "Intel loses twelve billion dollars",
-        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-      },
-      {
-        "claim": "Intel just lost twelve billion dollars of government value.",
-        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-      },
-      {
-        "claim": "Intel's client computing segment revenue recently declined by five percent.",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-stock-crashed-friday-024146893.html"
-      },
-      {
-        "claim": "The AI industry is gobbling up memory and high-bandwidth memory.",
-        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-      },
-      {
-        "claim": "This AI demand is causing PC component prices to rise.",
-        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-      },
-      {
-        "claim": "Intel warned its gross profit margin will drop to thirty-seven percent.",
-        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-      },
-      {
-        "claim": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
-        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-      }
-    ],
-    "fact_status": "ok",
-    "fact_notes": [],
-    "fix_rounds": 1,
-    "editor_rounds": 1,
-    "source_links": [
-      "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-    ],
-    "ig_audio": {
-      "id": "1141888927293516",
-      "title": "Christmastime In The City (feat. Sharkie J)",
-      "artist": "Neko Fuzz"
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "AI Investors Are Racing to Get Insurance on the Biggest Market Bet in History",
+      "link": "https://www.wsj.com/finance/stocks/ai-investors-are-racing-to-get-insurance-on-the-biggest-market-bet-in-history-a60e296f",
+      "summary": "AI Investors Are Racing to Get Insurance on the Biggest Market Bet in History WSJ",
+      "source": "WSJ",
+      "published": "2026-11-01T01:00:00+00:00",
+      "angle": ""
     },
-    "visual_status": "fixed",
-    "visual_notes": [
-      "The AI industry is gobbling up memory and high-ban…: The shot is an almost-empty card with only text, missing the required stock video.",
-      "This AI demand is causing PC component prices to r…: The shot is an almost-empty card with only text, missing the required stock video.",
-      "Intel now struggles to balance consumer hardware w…: The shot is an almost-empty card with only text, missing the required stock video.",
-      "Does this drop make you worry about your next PC p…: The shot is an almost-empty card with only text, missing the required stock video.",
-      "contains garbled text",
-      "almost-empty card",
-      "almost-empty card",
-      "almost-empty card",
-      "almost-empty card",
-      "almost-empty card"
-    ],
-    "editor": {
-      "overall": 8.2,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but visuals are too repetitive and lack dynamic, relevant imagery.",
-      "script_fixes": [
-        "LINE 7: Replace with 'Will this supply crunch force you to delay your next PC upgrade?'"
-      ],
-      "visual_beats": [
-        0,
-        2,
-        5
-      ],
-      "visual_notes": [
-        "line 1: Static text screen held for too long; lacks visual impact.",
-        "line 3: Visuals are just text cards; needs footage of HBM chips or server racks.",
-        "line 6: Abstract 'Hardware vs AI' graphic is generic; needs actual Intel product imagery."
-      ],
-      "reviewer": "gemini"
+    {
+      "title": "NYSBA Releases In-Depth Guidelines To Advise Attorneys on Ethical Use of AI",
+      "link": "https://nysba.org/nysba-releases-in-depth-guidelines-to-advise-attorneys-on-ethical-use-of-ai/",
+      "summary": "NYSBA Releases In-Depth Guidelines To Advise Attorneys on Ethical Use of AI New York State Bar Association",
+      "source": "New York State Bar Association",
+      "published": "2026-11-01T00:11:15+00:00",
+      "angle": ""
     },
-    "credits": [],
-    "voice_used": "Ethan (Fish Audio)",
-    "visual_summary": "7 cards"
-  },
+    {
+      "title": "How AI can use health data to improve patient care",
+      "link": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help",
+      "summary": "How AI can use health data to improve patient care InSight+",
+      "source": "InSight+",
+      "published": "2026-10-31T23:42:31+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-11-01T07:36:10.450911+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": "BAACAgUAAxkDAAI002rmj-kntliF-oQpYH0g0IQaAW5mAALjIgACVGA4V5Na77yokvvHPQQ",
+  "video_file_id": null,
   "queue": [
     {
       "title": "Exclusive: upliance.ai In Talks To Raise Up To $4 Mn For R&D, Global Expansion",
@@ -335,11 +85,37 @@
         "artist": "Otis McDonald"
       },
       "post_at": "2026-11-01T16:30:00+05:30"
+    },
+    {
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "video_file_id": "BAACAgUAAxkDAAI002rmj-kntliF-oQpYH0g0IQaAW5mAALjIgACVGA4V5Na77yokvvHPQQ",
+      "caption": "Intel stock just dropped, wiping $12 billion from the government's stake. Declining client revenue and high AI demand for memory have pushed Intel’s expected gross margin down to 37%. Does this shift make you worry about your next PC purchase?\n\nFollow @gradientai.news for daily AI news ⚡\n\n#Intel #StockMarket #TechNews #Hardware #AI",
+      "extra": false,
+      "meta": {
+        "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+        "kind": "news",
+        "source": "AI News & Artificial Intelligence | Tech",
+        "engine": "fish",
+        "voice": "Ethan (Fish Audio)",
+        "person": false,
+        "words": 73,
+        "visuals": "7 cards",
+        "editor": 8.2,
+        "writer": "gemini",
+        "hook_score": null,
+        "made": "2026-11-01T07:05+05:30"
+      },
+      "audio": {
+        "id": "1141888927293516",
+        "title": "Christmastime In The City (feat. Sharkie J)",
+        "artist": "Neko Fuzz"
+      },
+      "post_at": "2026-11-01T21:30:00+05:30"
     }
   ],
   "autopilot": true,
   "script_deadline": null,
-  "preview_deadline": "2026-11-01T07:03:37.546636+05:30",
+  "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
@@ -744,7 +520,6 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
     {
       "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
@@ -828,249 +603,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Apple Intelligence is finally coming to China with iOS 27.3",
-          "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-          "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December. This launch doesn't bring […]",
-          "source": "AI | The Verge",
-          "published": "2026-10-30T22:32:53+00:00",
-          "angle": "Apple Intelligence is officially launching in China, marking a massive move for the global AI market."
-        },
-        "draft": {
-          "title": "Apple Intelligence heading to China",
-          "hook_text": "Apple Intelligence is hitting China",
-          "beats": [
-            {
-              "line": "Apple Intelligence is finally arriving in China with the iOS 27.3 update.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Apple Intelligence",
-              "outlet": "",
-              "domain": "apple.com",
-              "headline": "",
-              "url": "https://www.apple.com/apple-intelligence/",
-              "tag": "Apple Intelligence China",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "The company confirmed the news directly on its Chinese newsroom website today.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Apple Newsroom China",
-              "domain": "apple.com.cn",
-              "headline": "Apple Intelligence availability in China",
-              "url": "",
-              "tag": "Official newsroom update",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "Users can access the first beta release starting on November 4th.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Nov 4",
-              "small": "Beta start date",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Beta starts November 4th",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "A full public release for the software is scheduled for this December.",
-              "visual": "clip",
-              "query": "person holding iPhone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "December public launch",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "The update brings specific localized features for Chinese speaking users.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Apple Intelligence",
-              "outlet": "",
-              "domain": "apple.com",
-              "headline": "",
-              "url": "https://www.apple.com/apple-intelligence/",
-              "tag": "Localized AI features",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "This move follows reports first surfaced by the team at MacRumors.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "MacRumors",
-              "domain": "macrumors.com",
-              "headline": "Apple Intelligence coming to China",
-              "url": "",
-              "tag": "MacRumors report",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Apple",
-                  "domain": "apple.com"
-                }
-              ]
-            },
-            {
-              "line": "Will you try these new tools?",
-              "visual": "clip",
-              "query": "person using smartphone",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Try new AI",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Sharp, direct, and fast-paced tech news delivery.",
-          "thin": false,
-          "caption": "Apple Intelligence is officially coming to China with the iOS 27.3 update. The beta arrives on November 4th, with the full release scheduled for December. Will you try these new tools?",
-          "hashtags": [
-            "Apple",
-            "iOS27",
-            "AppleIntelligence",
-            "ChinaTech",
-            "iPhone"
-          ],
-          "sources": [
-            "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-          ],
-          "script": "Apple Intelligence is finally arriving in China with the iOS 27.3 update.\nThe company confirmed the news directly on its Chinese newsroom website today.\nUsers can access the first beta release starting on November 4th.\nA full public release for the software is scheduled for this December.\nThe update brings specific localized features for Chinese speaking users.\nThis move follows reports first surfaced by the team at MacRumors.\nWill you try these new tools?",
-          "keywords": [
-            "person holding iPhone",
-            "person using smartphone"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Apple Intelligence is hitting China",
-              "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-            },
-            {
-              "claim": "Apple Intelligence is finally arriving in China with the iOS 27.3 update.",
-              "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-            },
-            {
-              "claim": "The company confirmed the news directly on its Chinese newsroom website today.",
-              "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-            },
-            {
-              "claim": "Users can access the first beta release starting on November 4th.",
-              "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-            },
-            {
-              "claim": "A full public release for the software is scheduled for this December.",
-              "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-            },
-            {
-              "claim": "The update brings specific localized features for Chinese speaking users.",
-              "url": "https://www.chinadaily.com.cn/a/202610/31/WS6ae54463e4b06d4aa0566359.html"
-            },
-            {
-              "claim": "This move follows reports first surfaced by the team at MacRumors.",
-              "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 2,
-          "source_links": [
-            "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-11-01T04:34:29.711375+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1879,6 +1411,302 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot posting the reel",
+      "data": {
+        "stage": "awaiting_approval",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+          "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+          "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-30T21:54:34+00:00",
+          "angle": "Intel stock crash wipes $12B from government stake as AI hardware shifts the market."
+        },
+        "draft": {
+          "title": "Intel stock crash hits government stake",
+          "hook_text": "Intel loses twelve billion dollars",
+          "beats": [
+            {
+              "line": "Intel just lost twelve billion dollars of government value.",
+              "visual": "stat",
+              "query": "stock market chart",
+              "prompt": "",
+              "big": "$12B",
+              "small": "market loss",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "$12B Intel loss",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Intel's client computing segment revenue recently declined by five percent.",
+              "visual": "clip",
+              "query": "computer motherboard manufacturing",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "5% revenue drop",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "The AI industry is gobbling up memory and high-bandwidth memory.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI memory demand",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This AI demand is causing PC component prices to rise.",
+              "visual": "clip",
+              "query": "Intel Core processor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "PC component prices",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Intel warned its gross profit margin will drop to thirty-seven percent.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
+              "url": "",
+              "tag": "37% profit margin",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
+              "visual": "clip",
+              "query": "modern office building",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Hardware vs AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Does this drop make you worry about your next PC purchase?",
+              "visual": "clip",
+              "query": "person looking at laptop screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "PC purchase concerns",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Serious, financial tone focusing on the shift from consumer hardware to AI infrastructure.",
+          "thin": false,
+          "caption": "Intel stock just dropped, wiping $12 billion from the government's stake. Declining client revenue and high AI demand for memory have pushed Intel’s expected gross margin down to 37%. Does this shift make you worry about your next PC purchase?",
+          "hashtags": [
+            "Intel",
+            "StockMarket",
+            "TechNews",
+            "Hardware",
+            "AI"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+          ],
+          "script": "Intel just lost twelve billion dollars of government value.\nIntel's client computing segment revenue recently declined by five percent.\nThe AI industry is gobbling up memory and high-bandwidth memory.\nThis AI demand is causing PC component prices to rise.\nIntel warned its gross profit margin will drop to thirty-seven percent.\nIntel now struggles to balance consumer hardware with massive AI chip needs.\nDoes this drop make you worry about your next PC purchase?",
+          "keywords": [
+            "computer motherboard manufacturing",
+            "data center server racks",
+            "Intel Core processor",
+            "modern office building",
+            "person looking at laptop screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Intel loses twelve billion dollars",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel just lost twelve billion dollars of government value.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel's client computing segment revenue recently declined by five percent.",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-stock-crashed-friday-024146893.html"
+            },
+            {
+              "claim": "The AI industry is gobbling up memory and high-bandwidth memory.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "This AI demand is causing PC component prices to rise.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel warned its gross profit margin will drop to thirty-seven percent.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+          ],
+          "ig_audio": {
+            "id": "1141888927293516",
+            "title": "Christmastime In The City (feat. Sharkie J)",
+            "artist": "Neko Fuzz"
+          },
+          "visual_status": "fixed",
+          "visual_notes": [
+            "The AI industry is gobbling up memory and high-ban…: The shot is an almost-empty card with only text, missing the required stock video.",
+            "This AI demand is causing PC component prices to r…: The shot is an almost-empty card with only text, missing the required stock video.",
+            "Intel now struggles to balance consumer hardware w…: The shot is an almost-empty card with only text, missing the required stock video.",
+            "Does this drop make you worry about your next PC p…: The shot is an almost-empty card with only text, missing the required stock video.",
+            "contains garbled text",
+            "almost-empty card",
+            "almost-empty card",
+            "almost-empty card",
+            "almost-empty card",
+            "almost-empty card"
+          ],
+          "editor": {
+            "overall": 8.2,
+            "scores": {
+              "hook": 8,
+              "specific": 9,
+              "substance": 8,
+              "accuracy": 9,
+              "visuals": 6,
+              "flow": 9
+            },
+            "one_line": "Strong reporting, but visuals are too repetitive and lack dynamic, relevant imagery.",
+            "script_fixes": [
+              "LINE 7: Replace with 'Will this supply crunch force you to delay your next PC upgrade?'"
+            ],
+            "visual_beats": [
+              0,
+              2,
+              5
+            ],
+            "visual_notes": [
+              "line 1: Static text screen held for too long; lacks visual impact.",
+              "line 3: Visuals are just text cards; needs footage of HBM chips or server racks.",
+              "line 6: Abstract 'Hardware vs AI' graphic is generic; needs actual Intel product imagery."
+            ],
+            "reviewer": "gemini"
+          },
+          "credits": [],
+          "voice_used": "Ethan (Fish Audio)",
+          "visual_summary": "7 cards"
+        },
+        "video_file_id": "BAACAgUAAxkDAAI002rmj-kntliF-oQpYH0g0IQaAW5mAALjIgACVGA4V5Na77yokvvHPQQ",
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      },
+      "remove_from_queue": "BAACAgUAAxkDAAI002rmj-kntliF-oQpYH0g0IQaAW5mAALjIgACVGA4V5Na77yokvvHPQQ",
+      "history_title": "Intel’s stock crashes, knocking $12B from government’s stake"
     }
   ],
   "posted_ids": [
@@ -1914,7 +1742,6 @@
     "BAACAgUAAxkDAAI0YWrmLiEnOFEL5WESMvLXjBPbEPQwAAI5IgACVGA4V1Qn2tdstT-8PQQ"
   ],
   "history": [
-    "Satya Nadella says we should assume all AI models are ‘compromised’",
     "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
     "Janas: Run LLMs larger than RAM by streaming experts from SSD",
     "Saudi employee arrested for allegedly bugging OpenAI office in San Francisco",
@@ -2013,14 +1840,10 @@
     "India proposes DEPA framework to unlock data for AI training",
     "Ollie, a privacy-focused AI assistant, is shutting down",
     "Exclusive: upliance.ai In Talks To Raise Up To $4 Mn For R&D, Global Expansion",
-    "Apple Intelligence is finally coming to China with iOS 27.3"
+    "Apple Intelligence is finally coming to China with iOS 27.3",
+    "Intel’s stock crashes, knocking $12B from government’s stake"
   ],
   "posted_log": [
-    {
-      "title": "Opencode breached, rotate keys to be safe.",
-      "at": "2026-10-18T06:40:31.448586+05:30",
-      "event": "Opencode's API platform was breached through a legacy server. Attackers exploited a legacy server awaiting decommissioning to gain access. The incident exposed sensitive developer data held on that machine. Only one point four percent of co"
-    },
     {
       "title": "Replit makes OpenAI its default over Anthropic, CEO says",
       "at": "2026-10-18T12:15:23.221825+05:30",
@@ -2390,15 +2213,20 @@
       "title": "Apple Intelligence is finally coming to China with iOS 27.3",
       "at": "2026-11-01T05:10:25.252125+05:30",
       "event": "Apple Intelligence is finally arriving in China with the iOS 27.3 update. The company confirmed the news directly on its Chinese newsroom website today. Users can access the first beta release starting on November 4th. A full public release"
+    },
+    {
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "at": "2026-11-01T07:05:22.066963+05:30",
+      "event": "Intel just lost twelve billion dollars of government value. Intel's client computing segment revenue recently declined by five percent. The AI industry is gobbling up memory and high-bandwidth memory. This AI demand is causing PC component "
     }
   ],
-  "voice_mode": "ai",
+  "voice_mode": null,
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-01T05:10+05:30",
-    "techcrunch.com": 17,
-    "theverge.com": 9,
+    "at": "2026-11-01T07:05+05:30",
+    "techcrunch.com": 15,
+    "theverge.com": 7,
     "arstechnica.com": 6,
     "technologyreview.com": 0,
     "openai.com": 0,
@@ -2407,16 +2235,16 @@
     "huggingface.co": 1,
     "blogs.nvidia.com": 1,
     "inc42.com": 2,
-    "news.google.com": 44,
+    "news.google.com": 41,
     "Google News (VentureBeat, AIM, AI News)": 3,
     "producthunt.com": 4,
-    "Hacker News": 4,
+    "Hacker News": 5,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 8
+    "filtered out (PR / local events / market fluff)": 4
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-10-31T21:30:58.829554+05:30",
+  "last_auto_offer": "2026-11-01T07:05:22.579128+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-31",
   "ig_count": {
@@ -2445,7 +2273,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-01",
-    "calls": 130,
+    "calls": 136,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2458,17 +2286,18 @@
       "gemini-3.1-flash-lite": {
         "ok": 77,
         "busy": 27,
+        "other": 4,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      },
+      "gemini-flash-lite-latest": {
+        "ok": 1,
+        "busy": 1,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "16:01",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-27"
-    },
     {
       "at": "16:36",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2513,6 +2342,11 @@
       "at": "05:07",
       "error": "gemini-flash-lite-latest: free quota used up for now",
       "day": "2026-10-31"
+    },
+    {
+      "at": "01:36",
+      "error": "gemini-flash-lite-latest: free quota used up for now",
+      "day": "2026-11-01"
     }
   ],
   "last_script_error": {
@@ -2539,7 +2373,8 @@
     "gemini-3.5-flash": 1793433012.315749,
     "gemini-3.7-flash": 1793436255.5271916,
     "gemini-3-flash-preview": 1793441213.2165174,
-    "gemini-3.5-flash-lite": 1793481568.9685707
+    "gemini-3.5-flash-lite": 1793481568.9685707,
+    "gemini-flash-lite-latest": 1793496969.4221454
   },
   "editor_log": [
     {
