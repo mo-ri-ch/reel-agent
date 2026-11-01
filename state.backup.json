@@ -18,7 +18,7 @@
       {
         "line": "Intel just lost twelve billion dollars of government value.",
         "visual": "stat",
-        "query": "technology",
+        "query": "stock market chart",
         "prompt": "",
         "big": "$12B",
         "small": "market loss",
@@ -39,9 +39,9 @@
         ]
       },
       {
-        "line": "PC sales are dragging the company down as the industry shifts.",
+        "line": "Intel's client computing segment revenue recently declined by five percent.",
         "visual": "clip",
-        "query": "empty computer factory floor",
+        "query": "computer motherboard manufacturing",
         "prompt": "",
         "big": "",
         "small": "",
@@ -50,7 +50,7 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "PC sales struggle",
+        "tag": "5% revenue drop",
         "name": "",
         "role": "",
         "x": "",
@@ -62,9 +62,9 @@
         ]
       },
       {
-        "line": "The AI industry is gobbling up memory and other essential components.",
+        "line": "The AI industry is gobbling up memory and high-bandwidth memory.",
         "visual": "clip",
-        "query": "server room data center",
+        "query": "data center server racks",
         "prompt": "",
         "big": "",
         "small": "",
@@ -73,25 +73,25 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "AI hardware demand",
+        "tag": "AI memory demand",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "This surge in demand is driving up prices for personal computer parts.",
-        "visual": "official",
-        "query": "technology",
+        "line": "This AI demand is causing PC component prices to rise.",
+        "visual": "clip",
+        "query": "Intel Core processor",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Intel Core processor",
+        "entity": "",
         "outlet": "",
-        "domain": "intel.com",
+        "domain": "",
         "headline": "",
-        "url": "https://www.intel.com/content/www/us/en/products/details/processors/core.html",
-        "tag": "PC prices rising",
+        "url": "",
+        "tag": "PC component prices",
         "name": "",
         "role": "",
         "x": "",
@@ -103,7 +103,7 @@
         ]
       },
       {
-        "line": "Intel is now struggling to keep pace with these market shifts.",
+        "line": "Intel warned its gross profit margin will drop to thirty-seven percent.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -114,7 +114,7 @@
         "domain": "techcrunch.com",
         "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
         "url": "",
-        "tag": "Intel market struggle",
+        "tag": "37% profit margin",
         "name": "",
         "role": "",
         "x": "",
@@ -126,9 +126,9 @@
         ]
       },
       {
-        "line": "Will you keep buying Intel-based PCs if prices continue to climb?",
+        "line": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
         "visual": "clip",
-        "query": "person looking at computer screen",
+        "query": "modern office building",
         "prompt": "",
         "big": "",
         "small": "",
@@ -137,7 +137,30 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Rising PC costs",
+        "tag": "Hardware vs AI",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Intel",
+            "domain": "intel.com"
+          }
+        ]
+      },
+      {
+        "line": "Does this drop make you worry about your next PC purchase?",
+        "visual": "clip",
+        "query": "person looking at laptop screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "PC purchase concerns",
         "name": "",
         "role": "",
         "x": "",
@@ -149,9 +172,9 @@
         ]
       }
     ],
-    "delivery": "Urgent and direct, focusing on the financial impact of the hardware supply shift.",
+    "delivery": "Serious, financial tone focusing on the shift from consumer hardware to AI infrastructure.",
     "thin": false,
-    "caption": "Intel stock has crashed, resulting in a $12 billion loss for the government's stake. Rising costs for PC components due to AI demand are hitting the company hard. Will you keep buying Intel-based PCs if prices continue to climb?",
+    "caption": "Intel stock just dropped, wiping $12 billion from the government's stake. Declining client revenue and high AI demand for memory have pushed Intel’s expected gross margin down to 37%. Does this shift make you worry about your next PC purchase?",
     "hashtags": [
       "Intel",
       "StockMarket",
@@ -162,16 +185,16 @@
     "sources": [
       "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
     ],
-    "script": "Intel just lost twelve billion dollars of government value.\nPC sales are dragging the company down as the industry shifts.\nThe AI industry is gobbling up memory and other essential components.\nThis surge in demand is driving up prices for personal computer parts.\nIntel is now struggling to keep pace with these market shifts.\nWill you keep buying Intel-based PCs if prices continue to climb?",
+    "script": "Intel just lost twelve billion dollars of government value.\nIntel's client computing segment revenue recently declined by five percent.\nThe AI industry is gobbling up memory and high-bandwidth memory.\nThis AI demand is causing PC component prices to rise.\nIntel warned its gross profit margin will drop to thirty-seven percent.\nIntel now struggles to balance consumer hardware with massive AI chip needs.\nDoes this drop make you worry about your next PC purchase?",
     "keywords": [
-      "empty computer factory floor",
-      "server room data center",
-      "person looking at computer screen"
+      "computer motherboard manufacturing",
+      "data center server racks",
+      "Intel Core processor",
+      "modern office building",
+      "person looking at laptop screen"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
-    "hook_before": "Intel stock just crashed, wiping twelve billion dollars from the government's stake.",
-    "hook_score": 63,
     "evidence": [
       {
         "claim": "Intel loses twelve billion dollars",
@@ -182,25 +205,30 @@
         "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
       },
       {
-        "claim": "PC sales are dragging the company down as the industry shifts.",
+        "claim": "Intel's client computing segment revenue recently declined by five percent.",
         "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-stock-crashed-friday-024146893.html"
       },
       {
-        "claim": "The AI industry is gobbling up memory and other essential components.",
+        "claim": "The AI industry is gobbling up memory and high-bandwidth memory.",
         "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
       },
       {
-        "claim": "This surge in demand is driving up prices for personal computer parts.",
+        "claim": "This AI demand is causing PC component prices to rise.",
         "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
       },
       {
-        "claim": "Intel is now struggling to keep pace with these market shifts.",
+        "claim": "Intel warned its gross profit margin will drop to thirty-seven percent.",
+        "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+      },
+      {
+        "claim": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
         "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 0,
+    "fix_rounds": 1,
+    "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
     ]
@@ -289,9 +317,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-01T06:15:38.622078+05:30",
+  "script_deadline": "2026-11-01T06:26:40.630988+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-01",
@@ -779,300 +807,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot posting the reel",
-      "data": {
-        "stage": "awaiting_approval",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Exclusive: upliance.ai In Talks To Raise Up To $4 Mn For R&D, Global Expansion",
-          "link": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/",
-          "summary": "D2C home appliance startup upliance.ai is in advanced talks to raise $3 Mn to $4 Mn (around ₹28-₹37 Cr) in…",
-          "source": "Inc42 Media",
-          "published": "2026-10-31T02:30:48+00:00",
-          "angle": "Indian startup upliance.ai is raising $4M to bring AI-powered smart cooking to global kitchens."
-        },
-        "draft": {
-          "title": "upliance.ai Targets $4 Million Funding",
-          "hook_text": "upliance.ai seeks $4 million",
-          "beats": [
-            {
-              "line": "Upliance.ai is negotiating a funding round of up to four million dollars.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "upliance.ai",
-              "outlet": "",
-              "domain": "upliance.ai",
-              "headline": "",
-              "url": "https://upliance.ai/",
-              "tag": "upliance.ai $4M funding",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "upliance.ai",
-                  "domain": "upliance.ai"
-                }
-              ]
-            },
-            {
-              "line": "The D2C startup aims to use this capital for research and global expansion.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "$4M",
-              "small": "expansion goal",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "global growth plans",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "upliance.ai",
-                  "domain": "upliance.ai"
-                }
-              ]
-            },
-            {
-              "line": "Co-founders Mahek Mody and Mohit Sharma previously launched this hardware venture in India.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "https://www.linkedin.com/in/mahekmody/",
-              "tag": "founded by Mahek Mody",
-              "name": "Mahek Mody",
-              "role": "Co-founder, upliance.ai",
-              "x": "mahekmody",
-              "brands": [
-                {
-                  "name": "upliance.ai",
-                  "domain": "upliance.ai"
-                }
-              ]
-            },
-            {
-              "line": "Khosla Ventures is listed as a backer of the company.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Inc42 Media",
-              "domain": "inc42.com",
-              "headline": "upliance.ai In Talks To Raise Up To $4 Mn",
-              "url": "",
-              "tag": "backed by Khosla",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "upliance.ai",
-                  "domain": "upliance.ai"
-                }
-              ]
-            },
-            {
-              "line": "The company focuses on creating intelligent kitchen hardware for modern households.",
-              "visual": "clip",
-              "query": "modern smart kitchen appliance",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "intelligent kitchen hardware",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "upliance.ai",
-                  "domain": "upliance.ai"
-                }
-              ]
-            },
-            {
-              "line": "This fresh investment will help the team scale their engineering operations.",
-              "visual": "clip",
-              "query": "engineers working on hardware",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "scaling engineering",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "upliance.ai",
-                  "domain": "upliance.ai"
-                }
-              ]
-            },
-            {
-              "line": "Would you let a robot handle your cooking?",
-              "visual": "clip",
-              "query": "automated cooking robot",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "cooking automation",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Business-focused and professional, maintaining a sharp journalistic pace throughout.",
-          "thin": false,
-          "caption": "Upliance.ai is in talks to raise up to $4 million to fuel its research and global expansion. The startup, backed by Khosla Ventures, is scaling its smart kitchen hardware business. Would you let a robot handle your cooking?",
-          "hashtags": [
-            "upliance",
-            "startupfunding",
-            "aihardware",
-            "techbusiness",
-            "smartkitchen"
-          ],
-          "sources": [
-            "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-          ],
-          "script": "Upliance.ai is negotiating a funding round of up to four million dollars.\nThe D2C startup aims to use this capital for research and global expansion.\nCo-founders Mahek Mody and Mohit Sharma previously launched this hardware venture in India.\nKhosla Ventures is listed as a backer of the company.\nThe company focuses on creating intelligent kitchen hardware for modern households.\nThis fresh investment will help the team scale their engineering operations.\nWould you let a robot handle your cooking?",
-          "keywords": [
-            "modern smart kitchen appliance",
-            "engineers working on hardware",
-            "automated cooking robot"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "upliance.ai seeks $4 million",
-              "url": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-            },
-            {
-              "claim": "Upliance.ai is negotiating a funding round of up to four million dollars.",
-              "url": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-            },
-            {
-              "claim": "The D2C startup aims to use this capital for research and global expansion.",
-              "url": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-            },
-            {
-              "claim": "Co-founders Mahek Mody and Mohit Sharma previously launched this hardware venture in India.",
-              "url": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-            },
-            {
-              "claim": "Khosla Ventures is listed as a backer of the company.",
-              "url": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-            },
-            {
-              "claim": "The company focuses on creating intelligent kitchen hardware for modern households.",
-              "url": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-            },
-            {
-              "claim": "This fresh investment will help the team scale their engineering operations.",
-              "url": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion-2/"
-          ],
-          "ig_audio": {
-            "id": "1482891479125465",
-            "title": "This Is The One",
-            "artist": "The K Club"
-          },
-          "visual_status": "fixed",
-          "visual_notes": [
-            "This fresh investment will help the team scale the…: The image shows the founders instead of engineers working on hardware as intended.",
-            "Would you let a robot handle your cooking?…: The image repeats the founders photo instead of showing an automated cooking robot.",
-            "almost-empty card",
-            "almost-empty card",
-            "almost-empty card",
-            "almost-empty card"
-          ],
-          "editor": {
-            "overall": 8.3,
-            "scores": {
-              "hook": 8,
-              "specific": 9,
-              "substance": 8,
-              "accuracy": 10,
-              "visuals": 6,
-              "flow": 9
-            },
-            "one_line": "Strong reporting, but visual pacing is repetitive and lacks dynamic variety.",
-            "script_fixes": [
-              "LINE 6: Replace 'This fresh investment will help the team scale their engineering operations' with 'The funds will specifically target scaling their engineering and R&D teams.'"
-            ],
-            "visual_beats": [
-              1,
-              2,
-              5
-            ],
-            "visual_notes": [
-              "line 2: Visuals are static and identical to the previous frame, creating a 'stuck' feeling.",
-              "line 6: The text-only background is visually unengaging; should show a clip of the engineering tea",
-              "line 3: The same 'MM' graphic is held for too long; should cut to a photo of the founders."
-            ],
-            "reviewer": "gemini"
-          },
-          "credits": [
-            "upliance.ai: upliance.ai",
-            "upliance.ai: upliance.ai",
-            "news photo: upliance.ai",
-            "news photo: upliance.ai"
-          ],
-          "voice_used": "Ethan (Fish Audio)",
-          "visual_summary": "4 official images, 5 cards"
-        },
-        "video_file_id": "BAACAgUAAxkDAAI0pGrmW9stGjbZUleAintRnG9zFqqFAALNIgACVGA4VyahdkaOE5xePQQ",
-        "voice_file_id": null,
-        "voice_mode": "ai",
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      },
-      "remove_from_queue": "BAACAgUAAxkDAAI0pGrmW9stGjbZUleAintRnG9zFqqFAALNIgACVGA4VyahdkaOE5xePQQ",
-      "history_title": "Exclusive: upliance.ai In Talks To Raise Up To $4 Mn For R&D, Global Expansion"
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1703,6 +1437,225 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+          "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+          "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-30T21:54:34+00:00",
+          "angle": "Intel stock crash wipes $12B from government stake as AI hardware shifts the market."
+        },
+        "draft": {
+          "title": "Intel stock crash hits government stake",
+          "hook_text": "Intel loses twelve billion dollars",
+          "beats": [
+            {
+              "line": "Intel just lost twelve billion dollars of government value.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "$12B",
+              "small": "market loss",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "$12B Intel loss",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "PC sales are dragging the company down as the industry shifts.",
+              "visual": "clip",
+              "query": "empty computer factory floor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "PC sales struggle",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "The AI industry is gobbling up memory and other essential components.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI hardware demand",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This surge in demand is driving up prices for personal computer parts.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Intel Core processor",
+              "outlet": "",
+              "domain": "intel.com",
+              "headline": "",
+              "url": "https://www.intel.com/content/www/us/en/products/details/processors/core.html",
+              "tag": "PC prices rising",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Intel is now struggling to keep pace with these market shifts.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
+              "url": "",
+              "tag": "Intel market struggle",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Will you keep buying Intel-based PCs if prices continue to climb?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rising PC costs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Urgent and direct, focusing on the financial impact of the hardware supply shift.",
+          "thin": false,
+          "caption": "Intel stock has crashed, resulting in a $12 billion loss for the government's stake. Rising costs for PC components due to AI demand are hitting the company hard. Will you keep buying Intel-based PCs if prices continue to climb?",
+          "hashtags": [
+            "Intel",
+            "StockMarket",
+            "TechNews",
+            "Hardware",
+            "AI"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+          ],
+          "script": "Intel just lost twelve billion dollars of government value.\nPC sales are dragging the company down as the industry shifts.\nThe AI industry is gobbling up memory and other essential components.\nThis surge in demand is driving up prices for personal computer parts.\nIntel is now struggling to keep pace with these market shifts.\nWill you keep buying Intel-based PCs if prices continue to climb?",
+          "keywords": [
+            "empty computer factory floor",
+            "server room data center",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "Intel stock just crashed, wiping twelve billion dollars from the government's stake.",
+          "hook_score": 63,
+          "evidence": [
+            {
+              "claim": "Intel loses twelve billion dollars",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel just lost twelve billion dollars of government value.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "PC sales are dragging the company down as the industry shifts.",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-stock-crashed-friday-024146893.html"
+            },
+            {
+              "claim": "The AI industry is gobbling up memory and other essential components.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "This surge in demand is driving up prices for personal computer parts.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel is now struggling to keep pace with these market shifts.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-01T06:15:38.622078+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2216,8 +2169,8 @@
       "event": "Apple Intelligence is finally arriving in China with the iOS 27.3 update. The company confirmed the news directly on its Chinese newsroom website today. Users can access the first beta release starting on November 4th. A full public release"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-01T05:10+05:30",
@@ -2265,7 +2218,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-11-01",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-01",
@@ -2366,28 +2319,6 @@
     "gemini-3.5-flash-lite": 1793481568.9685707
   },
   "editor_log": [
-    {
-      "at": "2026-10-31T09:55+05:30",
-      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 8,
-        "visuals": 4,
-        "flow": 9
-      },
-      "one_line": "Strong financial reporting ruined by bizarre, unrelated person portrait visuals.",
-      "fixes": [
-        "LINE 3: specify the exact percentage or dollar amount of PC sales decline instead of sliding downward."
-      ],
-      "visual": [
-        "line 2: Displays an unrelated random executive portrait instead of stock charts or Intel's logo du",
-        "line 3: Blank white frame with no relevant graphic or chart showing PC sales decline.",
-        "line 4: Generic text card lacks actual data graphics for high AI memory demand."
-      ]
-    },
     {
       "at": "2026-10-31T10:39+05:30",
       "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his ",
@@ -2800,10 +2731,34 @@
         "line 4: The abstract sphere graphic is generic and does not represent the software update.",
         "line 5: The Apple logo is reused from line 2, creating visual repetition."
       ]
+    },
+    {
+      "at": "2026-11-01T06:25+05:30",
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 6,
+        "substance": 6,
+        "accuracy": 8,
+        "visuals": 5,
+        "flow": 7
+      },
+      "one_line": "Visuals are generic stock footage and the script lacks specific data points.",
+      "fixes": [
+        "LINE 2: Replace 'the industry shifts' with 'a 15% drop in quarterly PC shipments'.",
+        "LINE 3: Replace 'other essential components' with 'high-bandwidth memory (HBM)'.",
+        "LINE 5: Replace 'struggling to keep pace' with 'Intel's operating margin fell to 12%'."
+      ],
+      "visual": [
+        "line 2: Visuals show a random factory and old TV, which are unrelated to Intel's PC sales decline.",
+        "line 3: Visuals are abstract text cards rather than relevant hardware or market data.",
+        "line 6: Generic stock footage of a person typing on a laptop is low-effort and lacks news value."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 215,
+  "fish_turn": 216,
   "ig_music_recent": [
     "1126345968385858",
     "562869749636642",
