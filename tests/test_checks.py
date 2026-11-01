@@ -324,6 +324,10 @@ check("drop opinion column", news.newsworthy({"title": "Why artificial intellige
                                              "source": "www.resilience.org"}), False)
 check("drop guest commentary", news.newsworthy({"title": "Guest commentary: Artificial intelligence is inflating your "
                                                 "medical bills", "source": "Denver Post"}), False)
+check("drop generic AI explainer", news.newsworthy({"title": "How AI can use health data to improve patient care",
+                                                  "source": "Healthcare IT"}), False)
+check("keep 'How OpenAI' news", news.newsworthy({"title": "How OpenAI trained GPT-6 on 100,000 chips",
+                                                "source": "The Verge"}), True)
 check("drop labelled column", news.newsworthy({"title": "Perspective: the AI bubble", "source": "Reuters"}), False)
 check("keep 'Perspective' product", news.newsworthy({"title": "Perspective API launches a new toxicity model",
                                                     "source": "Reuters"}), True)

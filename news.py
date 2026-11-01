@@ -61,6 +61,7 @@ CAMPUS_ADMIN = re.compile(r"(?i)^(?=.*\b(university|college|campus|faculty|schoo
                           r"(?=.*\b(grants?|course|courses|curriculum|degree|programme|centre|center|scholarships?|"
                           r"chair|workshop|announces new)\b)")
 OPINION = re.compile(r"(?i)^\s*(how to|how we|why (you|we|the|ai|artificial intelligence|this|it|i|everyone|nobody)|opinion|op-ed|commentary|analysis:|the case (for|against)|"
+                     r"how (ai|artificial intelligence|generative ai|gen ?ai|ai agents?|agentic ai|llms?|machine learning) (can|could|is|are|will|might|may|helps?|is helping|could help)|"
                      r"in defense of|a guide to|guide:|show hn|ask hn|is (this|it) the|are we|should (we|you)|"
                      r"what if|superficial intelligence|psa|rant|unpopular opinion|learning to|my|i|i'm|i've|what i|lessons from|"
                      r"confessions of|notes on|thoughts on|reflections on|editorial|viewpoint|(perspective|column|letters?)(?=\s*:)|letters? to the editor|"

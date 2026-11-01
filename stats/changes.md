@@ -216,3 +216,18 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   (all free Gemini models used up 04:40 until ~12:30 IST). Editor passed 3 of 20 since 27 Oct 17:00; visuals lowest in 13 of 17
   rejects. Repeated complaint (7 of 20): a news outlet's logo/page (TechCrunch, The Verge) on lines not about the outlet.
   No code change; asked the owner again about the 22 Oct "unrelated picture" rubric line.
+
+## Weekly review 2026-11-01 (25-31 vs 18-24 Oct)
+- No failed runs in 24 h (2 cancelled = overlapping runs). 31 Oct: 6 of 6 posted (00:30 and 21:30 slots ~35-70 min late; one
+  Instagram "ProcessingFailed" at 22:09, retried fine). 1 Nov: 00:30/03:30/06:30 posted; 11:30 at risk (Gemini 3.1 overloaded,
+  3.5-flash-lite quota used up; 308 calls by 11:00 IST).
+- 29 reels (38), median views 110 (115), reach 103 (107), mean watch 5.0 s (4.6), shares 23 (1), saves 46 (8); followers 11 -> 17.
+  26-28 Oct posted only 1-4/day (quota); 29-31 Oct 6/6 each, so the 25 Oct changes (reels/day) are kept.
+- Outlier: Zagitta's Linux kernel module (developer tool), 3,101 views = 28x median, 21 shares, 43 saves (almost all of the week's
+  shares/saves). Next: Oracle + OpenAI ChatGPT/Codex 811 (7x).
+- Ethan 20 reels median 135 views / 5.2 s vs Paula 9 reels 96 / 3.5 s (4th week in a row). Named person shown: 132 / 5.3 s vs
+  100 / 3.7 s. 11:30 slot weakest (median 69). Editor score does not track views (>=8.5: 97 vs <8.5: 132). hook_score: 5 points, not trusted.
+- 21 Oct changes (frame-0 opening, picker ranking, US slots, Ethan, real pages, IG music): reach 103-107 vs 42 baseline; keep.
+- Change: generic "How AI can/could/is ..." explainer headlines are skipped (news.OPINION). On 1 Nov "How AI can use health data
+  to improve patient care" took 3 editor rounds (specific 3/10) and the quota before the 11:30 slot. Metric: reels passed/day,
+  Gemini calls per posted reel (baseline 1 Nov: ~100).
