@@ -201,7 +201,50 @@
     "fix_rounds": 2,
     "source_links": [
       "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
-    ]
+    ],
+    "ig_audio": {
+      "id": "354285343958709",
+      "title": "Me & U (Reels Sound - Photo Dump)",
+      "artist": "Kiri T"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The goal is moving past manual chart reviews to au…: The visual is blank/black.",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card"
+    ],
+    "editor": {
+      "overall": 5.5,
+      "scores": {
+        "hook": 6,
+        "specific": 3,
+        "substance": 4,
+        "accuracy": 8,
+        "visuals": 5,
+        "flow": 7
+      },
+      "one_line": "Too vague and generic; lacks the specific data, models, or studies required for credibility.",
+      "script_fixes": [
+        "LINE 1: Replace 'InSight Plus says' with a specific study or recent report title.",
+        "LINE 2: Name the specific EHR systems or clinical software causing the fragmentation.",
+        "LINE 3: Name the specific AI model or tool being used to synthesize this data.",
+        "LINE 5: Replace 'automated insights' with a specific metric or outcome (e.g., 'reducing diagnostic time by 30%')."
+      ],
+      "visual_beats": [
+        0,
+        2,
+        4
+      ],
+      "visual_notes": [
+        "line 1: Generic stock photo of a doctor; lacks specific branding or context.",
+        "line 3: Visuals are abstract and repetitive; does not show the actual AI tool or data synthesis.",
+        "line 5: Visuals are just text overlays; lacks a concrete representation of the 'automated insights"
+      ],
+      "reviewer": "gemini"
+    }
   },
   "voice_file_id": null,
   "user_image_id": null,
@@ -287,9 +330,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-01T08:12:43.855099+05:30",
+  "script_deadline": "2026-11-01T08:32:09.348525+05:30",
   "preview_deadline": null,
-  "last_gender": "male",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-01",
@@ -696,9 +739,6 @@
   "paused": null,
   "spare": [],
   "tried": [
-    "OpenAI cuts fundraising target by $10 billion amid AI market selloff",
-    "New AI-designed peptide, RK-14, eradicates stubborn bacterial biofilms and superbugs",
-    "AI May Have Disproved A 27-Year-Old Computer Science Theory: Report",
     "Report from the Vatican",
     "'Must Be Mindful': IISc Director On AI At Adani University Convocation",
     "AI must be integrated into thinking and work, says NITK Director",
@@ -755,55 +795,13 @@
     "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
     "Anthropic takes steps to block Claude from reverse-engineering video games",
     "AI Investors Are Racing to Get Insurance on the Biggest Market Bet in History",
-    "NYSBA Releases In-Depth Guidelines To Advise Attorneys on Ethical Use of AI"
+    "NYSBA Releases In-Depth Guidelines To Advise Attorneys on Ethical Use of AI",
+    "An LLM inside an LLM - Same guy who put a RISK-V CPU inside Qwen has now made Karpathy's stories260k run on an NPU compiled inside Qwen 3.5-4B's weights",
+    "OpenAI CEO Sam Altman meets Samsung executives to discuss memory chip supply, AI infrastructure",
+    "How AI can use health data to improve patient care"
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Intel’s stock crashes, knocking $12B from government’s stake",
-            "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-            "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-30T21:54:34+00:00",
-            "angle": "Intel stock crash wipes $12B from government stake as AI hardware shifts the market."
-          },
-          {
-            "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-            "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-            "summary": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-31T21:17:03+00:00",
-            "angle": "NAACP lawsuit against xAI data center pollution moves forward, raising major environmental concerns."
-          },
-          {
-            "title": "Pluto Door",
-            "link": "https://www.producthunt.com/products/pluto-door",
-            "summary": "SSH client with an AI agent and a desktop for every server Discussion | Link",
-            "source": "Product Hunt — The best new products, every day",
-            "published": "2026-10-30T22:10:44+00:00",
-            "buzz": "Product Hunt launch",
-            "angle": "New AI-powered SSH client 'Pluto Door' launches, turning your server management into an AI agent experience."
-          }
-        ],
-        "choose_deadline": "2026-11-01T05:40:34.860009+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1609,6 +1607,223 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "How AI can use health data to improve patient care",
+          "link": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help",
+          "summary": "How AI can use health data to improve patient care InSight+",
+          "source": "InSight+",
+          "published": "2026-10-31T23:42:31+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "AI's Role in Healthcare Data",
+          "hook_text": "Healthcare data is currently trapped.",
+          "beats": [
+            {
+              "line": "InSight Plus says our healthcare system ignores vital patient data.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "InSight+",
+              "domain": "insightplus.mja.com.au",
+              "headline": "We need to be better at improving healthcare",
+              "url": "",
+              "tag": "Healthcare data is trapped",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Clinicians currently struggle with fragmented records across different digital systems.",
+              "visual": "clip",
+              "query": "doctor looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Fragmented patient records",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "AI can bridge these gaps by synthesizing scattered clinical information.",
+              "visual": "clip",
+              "query": "data processing visualization",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI bridges data gaps",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This technology enables smarter, faster decisions for complex patient cases.",
+              "visual": "clip",
+              "query": "doctor analyzing digital scan",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Faster clinical decisions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The goal is moving past manual chart reviews to automated insights.",
+              "visual": "clip",
+              "query": "medical charts on screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Moving past manual reviews",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Better data utilization is necessary for safer, more efficient patient care.",
+              "visual": "clip",
+              "query": "modern hospital hallway",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Safer patient care",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an algorithm to manage your entire medical history?",
+              "visual": "clip",
+              "query": "patient talking to doctor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting health AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Serious and urgent tone, emphasizing the clear systemic problem and the logical role for technology.",
+          "thin": false,
+          "caption": "InSight Plus reports that our healthcare system is failing to utilize vital patient data due to fragmented records. AI could bridge these gaps by synthesizing scattered clinical information into actionable insights. Would you trust an algorithm to manage your entire medical history?",
+          "hashtags": [
+            "InSightPlus",
+            "HealthTech",
+            "DigitalHealth",
+            "MedicalAI",
+            "PatientSafety"
+          ],
+          "sources": [
+            "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+          ],
+          "script": "InSight Plus says our healthcare system ignores vital patient data.\nClinicians currently struggle with fragmented records across different digital systems.\nAI can bridge these gaps by synthesizing scattered clinical information.\nThis technology enables smarter, faster decisions for complex patient cases.\nThe goal is moving past manual chart reviews to automated insights.\nBetter data utilization is necessary for safer, more efficient patient care.\nWould you trust an algorithm to manage your entire medical history?",
+          "keywords": [
+            "doctor looking at computer screen",
+            "data processing visualization",
+            "doctor analyzing digital scan",
+            "medical charts on screen",
+            "modern hospital hallway",
+            "patient talking to doctor"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Healthcare data is currently trapped.",
+              "url": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+            },
+            {
+              "claim": "InSight Plus says our healthcare system ignores vital patient data.",
+              "url": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+            },
+            {
+              "claim": "Clinicians currently struggle with fragmented records across different digital systems.",
+              "url": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+            },
+            {
+              "claim": "AI can bridge these gaps by synthesizing scattered clinical information.",
+              "url": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+            },
+            {
+              "claim": "This technology enables smarter, faster decisions for complex patient cases.",
+              "url": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+            },
+            {
+              "claim": "The goal is moving past manual chart reviews to automated insights.",
+              "url": "https://mexicobusiness.news/health/news/ai-healthcare-patient-measurable-outcomes"
+            },
+            {
+              "claim": "Better data utilization is necessary for safer, more efficient patient care.",
+              "url": "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 2,
+          "source_links": [
+            "https://insightplus.mja.com.au/2026/42/we-need-to-be-better-at-improving-healthcare-and-ai-can-help"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-01T08:12:43.855099+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2122,8 +2337,8 @@
       "event": "Intel just lost twelve billion dollars of government value. Intel's client computing segment revenue recently declined by five percent. The AI industry is gobbling up memory and high-bandwidth memory. This AI demand is causing PC component "
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-01T07:05+05:30",
@@ -2151,7 +2366,7 @@
   "report_day": "2026-10-31",
   "ig_count": {
     "day": "2026-11-01",
-    "at": "2026-11-01T08:05:20.033726+05:30",
+    "at": "2026-11-01T08:15:26.909774+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2175,7 +2390,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-01",
-    "calls": 163,
+    "calls": 206,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2186,10 +2401,10 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 92,
-        "busy": 35,
-        "other": 8,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "ok": 113,
+        "busy": 44,
+        "other": 21,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       },
       "gemini-flash-lite-latest": {
         "ok": 1,
@@ -2200,16 +2415,6 @@
     }
   },
   "gemini_errors": [
-    {
-      "at": "17:11",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-27"
-    },
-    {
-      "at": "17:41",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-10-27"
-    },
     {
       "at": "18:01",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2249,19 +2454,29 @@
       "at": "02:11",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-11-01"
+    },
+    {
+      "at": "02:48",
+      "error": "gemini-3.1-flash-lite didn't answer (ReadTimeout)",
+      "day": "2026-11-01"
+    },
+    {
+      "at": "02:50",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-11-01"
     }
   ],
   "last_script_error": {
     "at": "2026-10-27T21:10+05:30",
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now"
   },
-  "render_fails": 0,
-  "render_fail_topic": "Apple Intelligence is finally coming to China with iOS 27.3",
+  "render_fails": 1,
+  "render_fail_topic": "How AI can use health data to improve patient care",
   "last_render_error": {
-    "at": "2026-10-31T08:35:51.434347+05:30",
-    "topic": "Apple Intelligence is finally coming to China with iOS 27.3",
-    "error": "RuntimeError: the voice-over didn't match the script twice (parts of the script are missing (83% spoken))",
-    "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1763, in cmd_render\n    raise RuntimeError(f\"the voice-over didn't match the script twice ({why2})\")\nRuntimeError: the voice-over didn't match the script twice (parts of the script are missing (83% spoken))\n"
+    "at": "2026-11-01T08:27:09.347039+05:30",
+    "topic": "How AI can use health data to improve patient care",
+    "error": "RuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now",
+    "trace": "el-agent/reel-agent/main.py\", line 599, in start_script\n    next_story(s, \"no picture\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 549, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 599, in start_script\n    next_story(s, \"no picture\")\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 549, in next_story\n    start_script(s, pick, auto=True)\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 603, in start_script\n    draft = checked_script(topic, previous=s.get(\"draft\") if instruction else None, instruction=instruction)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 384, in checked_script\n    draft = writer.write_script(topic, previous=draft, instruction=fix)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 514, in write_script\n    draft = parse_json(ask(prompt, search=True, json_mode=True))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/writer.py\", line 218, in ask\n    raise RuntimeError(f\"Gemini didn't give a usable reply, please try again in a few minutes. {last}\")\nRuntimeError: Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now\n"
   },
   "report_week": "2026-43",
   "last_post_error": {
@@ -2279,29 +2494,6 @@
     "gemini-flash-lite-latest": 1793496969.4221454
   },
   "editor_log": [
-    {
-      "at": "2026-10-31T12:27+05:30",
-      "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
-      "overall": 7.8,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 7,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong reporting, but visuals are repetitive and lack variety in pacing.",
-      "fixes": [
-        "LINE 3: Replace 'a major customer' with the specific name of the client if available, or 'a key data center partner'.",
-        "LINE 6: Remove 'instead of focusing on flight' as it is editorializing; replace with 'to diversify revenue streams'."
-      ],
-      "visual": [
-        "line 4: The same aircraft image is reused from previous frames, creating visual fatigue.",
-        "line 5: The image of a person working on hardware is generic and lacks a direct connection to Boom",
-        "line 6: The aircraft footage is repeated again; needs a graphic or diagram of the power unit."
-      ]
-    },
     {
       "at": "2026-10-31T12:31+05:30",
       "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
@@ -2714,10 +2906,34 @@
         "line 3: Visuals are just text cards; needs footage of HBM chips or server racks.",
         "line 6: Abstract 'Hardware vs AI' graphic is generic; needs actual Intel product imagery."
       ]
+    },
+    {
+      "at": "2026-11-01T08:24+05:30",
+      "title": "How AI can use health data to improve patient care",
+      "overall": 5.5,
+      "scores": {
+        "hook": 6,
+        "specific": 3,
+        "substance": 4,
+        "accuracy": 8,
+        "visuals": 5,
+        "flow": 7
+      },
+      "one_line": "Too vague and generic; lacks the specific data, models, or studies required for credibility.",
+      "fixes": [
+        "LINE 1: Replace 'InSight Plus says' with a specific study or recent report title.",
+        "LINE 2: Name the specific EHR systems or clinical software causing the fragmentation.",
+        "LINE 3: Name the specific AI model or tool being used to synthesize this data."
+      ],
+      "visual": [
+        "line 1: Generic stock photo of a doctor; lacks specific branding or context.",
+        "line 3: Visuals are abstract and repetitive; does not show the actual AI tool or data synthesis.",
+        "line 5: Visuals are just text overlays; lacks a concrete representation of the 'automated insights"
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 217,
+  "fish_turn": 218,
   "ig_music_recent": [
     "562869749636642",
     "405791305597715",
