@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -177,11 +177,54 @@
     "fix_rounds": 1,
     "source_links": [
       "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
-    ]
+    ],
+    "ig_audio": {
+      "id": "284015877703785",
+      "title": "Came From Nothing",
+      "artist": "Mike Floss"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "He just won the Rohini Nayyar prize for his rural …: The shot is completely blank with no image or card shown.",
+      "Over 350000 students across nine states and 120 di…: The shot is blank and does not show the requested big number 350K.",
+      "The image is completely blank/black instead of showing a photo of Prashant Chaudhary or an initials card.",
+      "The image shows a group photo instead of a big number 350K as requested.",
+      "The image is blank/dark with just the word 'AI' instead of showing stock video of a rural student looking at a phone."
+    ],
+    "editor": {
+      "overall": 8.8,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 8,
+        "flow": 9
+      },
+      "one_line": "Compelling story with strong specifics, minor visual repetition on group photos.",
+      "script_fixes": [],
+      "visual_beats": [
+        2
+      ],
+      "visual_notes": [
+        "line 3: Multiple group photos of students repeat similar visual themes back-to-back."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "news photo: codeyogi.org",
+      "news photo: codeyogi.org",
+      "CodeYogi Foundation: codeyogi.org",
+      "CodeYogi Foundation: codeyogi.org",
+      "news photo: codeyogi.org",
+      "news photo: indiatoday.in"
+    ],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "6 official images, 3 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI2vGrnV0MRf1djiRhl4SMMZeUjz9YqAAKPIgACVGBAVxW68ZjskxA8PQQ",
   "queue": [
     {
       "title": "Intel’s stock crashes, knocking $12B from government’s stake",
@@ -237,9 +280,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-01T20:35:48.381386+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-11-01T21:14:11.861935+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-01",
@@ -721,197 +764,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-          "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-          "summary": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
-          "source": "AI News & Artificial Intelligence | TechCrunch",
-          "published": "2026-10-31T21:17:03+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "NAACP Lawsuit Over xAI Data Center",
-          "hook_text": "NAACP lawsuit against xAI moves forward",
-          "beats": [
-            {
-              "line": "Thirty-five gas turbines power the xAI data center in Memphis, Tennessee.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "xAI Memphis Supercluster",
-              "outlet": "",
-              "domain": "techcrunch.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-              "tag": "Thirty-five gas turbines",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "xAI",
-                  "domain": "x.ai"
-                }
-              ]
-            },
-            {
-              "line": "A federal judge just allowed an NAACP lawsuit against the Elon Musk company to move forward.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "xAI Memphis Supercluster",
-              "outlet": "",
-              "domain": "techcrunch.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-              "tag": "NAACP lawsuit moves forward",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "xAI",
-                  "domain": "x.ai"
-                }
-              ]
-            },
-            {
-              "line": "The civil rights organization accuses the artificial intelligence firm of violating the Clean Air Act.",
-              "visual": "official",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "xAI Memphis Supercluster",
-              "outlet": "",
-              "domain": "techcrunch.com",
-              "headline": "",
-              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-              "tag": "Clean Air Act violations",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "xAI",
-                  "domain": "x.ai"
-                }
-              ]
-            },
-            {
-              "line": "Residents argue that unpermitted emissions from the facility threaten local air quality and public health.",
-              "visual": "clip",
-              "query": "industrial air pollution smoke",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Unpermitted emissions threaten health",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Will this court battle force tech companies to clean up their infrastructure?",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "TechCrunch",
-              "domain": "techcrunch.com",
-              "headline": "Judge allows NAACP lawsuit over xAI data center pollution",
-              "url": "",
-              "tag": "Infrastructure emissions battle",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "xAI",
-                  "domain": "x.ai"
-                }
-              ]
-            }
-          ],
-          "delivery": "urgent and direct, highlighting the environmental stakes of rapid AI infrastructure growth",
-          "thin": false,
-          "caption": "A federal judge allowed the NAACP lawsuit against xAI over pollution at its Memphis data center to move forward. The civil rights group accuses the company of violating the Clean Air Act. How should cities handle data center emissions?",
-          "hashtags": [
-            "xAI",
-            "NAACP",
-            "Memphis",
-            "CleanAirAct"
-          ],
-          "sources": [
-            "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-          ],
-          "script": "Thirty-five gas turbines power the xAI data center in Memphis, Tennessee.\nA federal judge just allowed an NAACP lawsuit against the Elon Musk company to move forward.\nThe civil rights organization accuses the artificial intelligence firm of violating the Clean Air Act.\nResidents argue that unpermitted emissions from the facility threaten local air quality and public health.\nWill this court battle force tech companies to clean up their infrastructure?",
-          "keywords": [
-            "industrial air pollution smoke"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "NAACP lawsuit against xAI moves forward",
-              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-            },
-            {
-              "claim": "Thirty-five gas turbines power the xAI data center in Memphis, Tennessee.",
-              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-            },
-            {
-              "claim": "A federal judge just allowed an NAACP lawsuit against the Elon Musk company to move forward.",
-              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-            },
-            {
-              "claim": "The civil rights organization accuses the artificial intelligence firm of violating the Clean Air Act.",
-              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-            },
-            {
-              "claim": "Residents argue that unpermitted emissions from the facility threaten local air quality and public health.",
-              "url": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html"
-            },
-            {
-              "claim": "Will this court battle force tech companies to clean up their infrastructure?",
-              "url": "https://earthjustice.org/press/2026/court-denies-xais-motion-to-dismiss-air-pollution-lawsuit-against-elon-musks-company"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-11-01T17:20:14.850627+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1559,6 +1411,199 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "No laptops, no labs: How IIT Delhi alumnus is bringing coding to rural students",
+          "link": "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01",
+          "summary": "No laptops, no labs: How IIT Delhi alumnus is bringing coding to rural students India Today",
+          "source": "India Today",
+          "published": "2026-11-01T10:22:25+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "IIT Delhi alumnus brings AI coding to villages",
+          "hook_text": "Zero laptops, zero labs.",
+          "beats": [
+            {
+              "line": "Zero laptops and zero labs stopped IIT Delhi alumnus Prashant Chaudhary.",
+              "visual": "clip",
+              "query": "rural school students studying",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Zero laptops zero labs",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He just won the Rohini Nayyar prize for his rural education work.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rohini Nayyar prize winner",
+              "name": "Prashant Chaudhary",
+              "role": "Founder, CodeYogi Foundation",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "He built the CodeYogi Foundation to bring technology education to students using basic smartphones.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "CodeYogi Foundation",
+              "outlet": "",
+              "domain": "codeyogi.io",
+              "headline": "",
+              "url": "https://www.codeyogi.io",
+              "tag": "CodeYogi Foundation smartphones",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "His initiative uses an AI-powered learning platform that works on basic family smartphones.",
+              "visual": "clip",
+              "query": "student using smartphone learning",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI powered learning platform",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Over 350000 students across nine states and 120 districts have been reached through this platform.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "350K",
+              "small": "rural students reached",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "350000 students reached",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Could AI bring tech education to every village?",
+              "visual": "clip",
+              "query": "rural student looking at phone",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI tech education villages",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "inspiring and grounded, highlighting ingenuity over tech luxury",
+          "thin": false,
+          "caption": "IIT Delhi alumnus Prashant Chaudhary won the Rohini Nayyar prize for bringing coding to rural students using basic smartphones. His CodeYogi Foundation has reached over 350000 students across nine states and 120 districts. Could AI bring tech education to every village?",
+          "hashtags": [
+            "PrashantChaudhary",
+            "CodeYogi",
+            "AI",
+            "Education",
+            "India"
+          ],
+          "sources": [
+            "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+          ],
+          "script": "Zero laptops and zero labs stopped IIT Delhi alumnus Prashant Chaudhary.\nHe just won the Rohini Nayyar prize for his rural education work.\nHe built the CodeYogi Foundation to bring technology education to students using basic smartphones.\nHis initiative uses an AI-powered learning platform that works on basic family smartphones.\nOver 350000 students across nine states and 120 districts have been reached through this platform.\nCould AI bring tech education to every village?",
+          "keywords": [
+            "rural school students studying",
+            "student using smartphone learning",
+            "rural student looking at phone"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_score": 52,
+          "fact_status": "ok",
+          "fact_notes": [],
+          "evidence": [
+            {
+              "claim": "Zero laptops, zero labs as an opening headline",
+              "url": "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+            },
+            {
+              "claim": "Prashant Chaudhary is an IIT Delhi alumnus",
+              "url": "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+            },
+            {
+              "claim": "Prashant Chaudhary won the Rohini Nayyar prize for his rural education work",
+              "url": "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+            },
+            {
+              "claim": "Prashant Chaudhary built the CodeYogi Foundation to bring technology education to students using basic smartphones",
+              "url": "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+            },
+            {
+              "claim": "The initiative uses an AI-powered learning platform that works on basic family smartphones",
+              "url": "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+            },
+            {
+              "claim": "Over 350,000 students across nine states and 120 districts have been reached through this platform",
+              "url": "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+            }
+          ],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.indiatoday.in/amp/education-today/news/story/how-iit-delhi-alumnus-took-coding-to-rural-india-and-won-the-rohini-nayyar-prize-3029837-2026-11-01"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-01T20:35:48.381386+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2062,8 +2107,8 @@
       "event": "Security researchers at Parameter discovered a critical flaw that let them take over ChatGPT accounts. The attack abused the way MathLive parses formulas inside chat inputs. Researchers bypassed the sandbox environment using cross-frame mes"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-01T19:30+05:30",
@@ -2091,7 +2136,7 @@
   "report_day": "2026-10-31",
   "ig_count": {
     "day": "2026-11-01",
-    "at": "2026-11-01T20:30:41.214503+05:30",
+    "at": "2026-11-01T20:44:11.862188+05:30",
     "count": 5
   },
   "repeat_check_day": "2026-10-04",
@@ -2115,12 +2160,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-01",
-    "calls": 611,
+    "calls": 621,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 197,
+        "ok": 207,
         "busy": 60,
         "other": 2,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2241,28 +2286,6 @@
     "gemini-3-flash-preview": 1793524359.2604012
   },
   "editor_log": [
-    {
-      "at": "2026-10-31T20:06+05:30",
-      "title": "Cracks are emerging in the AI spending boom",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong financial reporting ruined by repetitive, static corporate stock imagery.",
-      "fixes": [
-        "LINE 3: add specific company balance sheet figures or debt amounts to replace general pushback."
-      ],
-      "visual": [
-        "line 1: Generic city skyscraper stock photo repeats unnecessarily across multiple frames.",
-        "line 2: No visual provided for data centers or chips; lacks relevant hardware graphics.",
-        "line 3: Static financial district image reused improperly for balance sheet discussion."
-      ]
-    },
     {
       "at": "2026-10-31T20:43+05:30",
       "title": "AI startup hacks Anthropic, gains access to employee details, internal messages",
@@ -2690,10 +2713,28 @@
         "line 3: The same 'Sandbox bypass' visual is repeated across two frames (6 and 7) without change.",
         "line 5: The visual for Parameter is static and lacks movement or visual interest for the duration "
       ]
+    },
+    {
+      "at": "2026-11-01T20:44+05:30",
+      "title": "No laptops, no labs: How IIT Delhi alumnus is bringing coding to rural students",
+      "overall": 8.8,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 8,
+        "flow": 9
+      },
+      "one_line": "Compelling story with strong specifics, minor visual repetition on group photos.",
+      "fixes": [],
+      "visual": [
+        "line 3: Multiple group photos of students repeat similar visual themes back-to-back."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 226,
+  "fish_turn": 227,
   "ig_music_recent": [
     "1418611098781784",
     "810120545333296",
