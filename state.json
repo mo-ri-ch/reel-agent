@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -231,11 +231,58 @@
     "editor_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "1141888927293516",
+      "title": "Christmastime In The City (feat. Sharkie J)",
+      "artist": "Neko Fuzz"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The AI industry is gobbling up memory and high-ban…: The shot is an almost-empty card with only text, missing the required stock video.",
+      "This AI demand is causing PC component prices to r…: The shot is an almost-empty card with only text, missing the required stock video.",
+      "Intel now struggles to balance consumer hardware w…: The shot is an almost-empty card with only text, missing the required stock video.",
+      "Does this drop make you worry about your next PC p…: The shot is an almost-empty card with only text, missing the required stock video.",
+      "contains garbled text",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card",
+      "almost-empty card"
+    ],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visuals are too repetitive and lack dynamic, relevant imagery.",
+      "script_fixes": [
+        "LINE 7: Replace with 'Will this supply crunch force you to delay your next PC upgrade?'"
+      ],
+      "visual_beats": [
+        0,
+        2,
+        5
+      ],
+      "visual_notes": [
+        "line 1: Static text screen held for too long; lacks visual impact.",
+        "line 3: Visuals are just text cards; needs footage of HBM chips or server racks.",
+        "line 6: Abstract 'Hardware vs AI' graphic is generic; needs actual Intel product imagery."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "7 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI002rmj-kntliF-oQpYH0g0IQaAW5mAALjIgACVGA4V5Na77yokvvHPQQ",
   "queue": [
     {
       "title": "Ollie, a privacy-focused AI assistant, is shutting down",
@@ -317,9 +364,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-01T06:26:40.630988+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-11-01T07:03:37.546636+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-01",
@@ -807,51 +854,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Anthropic blocks users for anything touching training larger models",
-            "link": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
-            "summary": "",
-            "source": "twitter.com",
-            "published": "2026-10-31T19:39:19+00:00",
-            "buzz": "Hacker News 59 points",
-            "angle": "Anthropic is now banning users for prompts that involve training larger models, sparking a massive debate on AI access."
-          },
-          {
-            "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
-            "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
-            "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-10-31T21:41:00+00:00",
-            "angle": "Apple CEO Tim Cook breaks silence on their AI strategy, claiming they refuse to ship AI just for the sake of it."
-          },
-          {
-            "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-            "link": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-            "summary": "Anthropic takes steps to block Claude from reverse-engineering video games Mashable",
-            "source": "Mashable",
-            "published": "2026-10-31T20:05:28+00:00",
-            "angle": "Anthropic is actively blocking Claude from reverse-engineering video games, raising questions about how far AI restrictions will go."
-          }
-        ],
-        "choose_deadline": "2026-11-01T03:55:34.364044+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1656,6 +1658,253 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+          "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+          "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-10-30T21:54:34+00:00",
+          "angle": "Intel stock crash wipes $12B from government stake as AI hardware shifts the market."
+        },
+        "draft": {
+          "title": "Intel stock crash hits government stake",
+          "hook_text": "Intel loses twelve billion dollars",
+          "beats": [
+            {
+              "line": "Intel just lost twelve billion dollars of government value.",
+              "visual": "stat",
+              "query": "stock market chart",
+              "prompt": "",
+              "big": "$12B",
+              "small": "market loss",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "$12B Intel loss",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Intel's client computing segment revenue recently declined by five percent.",
+              "visual": "clip",
+              "query": "computer motherboard manufacturing",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "5% revenue drop",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "The AI industry is gobbling up memory and high-bandwidth memory.",
+              "visual": "clip",
+              "query": "data center server racks",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI memory demand",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This AI demand is causing PC component prices to rise.",
+              "visual": "clip",
+              "query": "Intel Core processor",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "PC component prices",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Intel warned its gross profit margin will drop to thirty-seven percent.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
+              "url": "",
+              "tag": "37% profit margin",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
+              "visual": "clip",
+              "query": "modern office building",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Hardware vs AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            },
+            {
+              "line": "Does this drop make you worry about your next PC purchase?",
+              "visual": "clip",
+              "query": "person looking at laptop screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "PC purchase concerns",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Intel",
+                  "domain": "intel.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Serious, financial tone focusing on the shift from consumer hardware to AI infrastructure.",
+          "thin": false,
+          "caption": "Intel stock just dropped, wiping $12 billion from the government's stake. Declining client revenue and high AI demand for memory have pushed Intel’s expected gross margin down to 37%. Does this shift make you worry about your next PC purchase?",
+          "hashtags": [
+            "Intel",
+            "StockMarket",
+            "TechNews",
+            "Hardware",
+            "AI"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+          ],
+          "script": "Intel just lost twelve billion dollars of government value.\nIntel's client computing segment revenue recently declined by five percent.\nThe AI industry is gobbling up memory and high-bandwidth memory.\nThis AI demand is causing PC component prices to rise.\nIntel warned its gross profit margin will drop to thirty-seven percent.\nIntel now struggles to balance consumer hardware with massive AI chip needs.\nDoes this drop make you worry about your next PC purchase?",
+          "keywords": [
+            "computer motherboard manufacturing",
+            "data center server racks",
+            "Intel Core processor",
+            "modern office building",
+            "person looking at laptop screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Intel loses twelve billion dollars",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel just lost twelve billion dollars of government value.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel's client computing segment revenue recently declined by five percent.",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-stock-crashed-friday-024146893.html"
+            },
+            {
+              "claim": "The AI industry is gobbling up memory and high-bandwidth memory.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "This AI demand is causing PC component prices to rise.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel warned its gross profit margin will drop to thirty-seven percent.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            },
+            {
+              "claim": "Intel now struggles to balance consumer hardware with massive AI chip needs.",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-01T06:26:40.630988+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2170,7 +2419,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-01T05:10+05:30",
@@ -2198,7 +2447,7 @@
   "report_day": "2026-10-31",
   "ig_count": {
     "day": "2026-11-01",
-    "at": "2026-11-01T06:15:22.977497+05:30",
+    "at": "2026-11-01T06:27:00.961347+05:30",
     "count": 2
   },
   "repeat_check_day": "2026-10-04",
@@ -2218,11 +2467,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-11-01",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-01",
-    "calls": 121,
+    "calls": 130,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2233,7 +2482,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 68,
+        "ok": 77,
         "busy": 27,
         "other": 0,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2319,29 +2568,6 @@
     "gemini-3.5-flash-lite": 1793481568.9685707
   },
   "editor_log": [
-    {
-      "at": "2026-10-31T10:39+05:30",
-      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his ",
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but the visuals are repetitive and lack variety.",
-      "fixes": [
-        "LINE 3: Replace 'the software' with 'the AI tools' for better flow.",
-        "LINE 4: Replace 'the software' with 'the AI' to avoid repetition."
-      ],
-      "visual": [
-        "line 3: The same building photo is used for too many consecutive frames.",
-        "line 4: The building photo is repeated again, causing visual fatigue.",
-        "line 5: The building photo is used for a fourth time; needs a different visual."
-      ]
-    },
     {
       "at": "2026-10-31T12:27+05:30",
       "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
@@ -2755,10 +2981,32 @@
         "line 3: Visuals are abstract text cards rather than relevant hardware or market data.",
         "line 6: Generic stock footage of a person typing on a laptop is low-effort and lacks news value."
       ]
+    },
+    {
+      "at": "2026-11-01T06:33+05:30",
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visuals are too repetitive and lack dynamic, relevant imagery.",
+      "fixes": [
+        "LINE 7: Replace with 'Will this supply crunch force you to delay your next PC upgrade?'"
+      ],
+      "visual": [
+        "line 1: Static text screen held for too long; lacks visual impact.",
+        "line 3: Visuals are just text cards; needs footage of HBM chips or server racks.",
+        "line 6: Abstract 'Hardware vs AI' graphic is generic; needs actual Intel product imagery."
+      ]
     }
   ],
   "rest_note": "2026-10-28T12:32:00+05:30",
-  "fish_turn": 216,
+  "fish_turn": 217,
   "ig_music_recent": [
     "1126345968385858",
     "562869749636642",
