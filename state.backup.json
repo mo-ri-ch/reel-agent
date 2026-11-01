@@ -1,8 +1,34 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+      "link": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "summary": "",
+      "source": "github.com",
+      "published": "2026-10-31T22:46:12+00:00",
+      "buzz": "Hacker News 108 points",
+      "angle": "A new team of 5 Qwen models just beat Fable 5, showing how multi-agent AI is getting smarter than ever."
+    },
+    {
+      "title": "AI May Have Disproved A 27-Year-Old Computer Science Theory: Report",
+      "link": "https://www.ndtv.com/artificial-intelligence/ai-may-have-disproved-a-27-year-old-computer-science-theory-report-12262433",
+      "summary": "AI May Have Disproved A 27-Year-Old Computer Science Theory: Report NDTV",
+      "source": "NDTV",
+      "published": "2026-10-31T06:17:59+00:00",
+      "angle": "AI just shocked the tech world by disproving a 27-year-old computer science theory."
+    },
+    {
+      "title": "Put Your A.I. Agents to Work With These 5 Killer Tasks",
+      "link": "https://www.nytimes.com/2026/10/25/technology/personaltech/openai-dots-meta-muse-killer-tasks.html",
+      "summary": "Put Your A.I. Agents to Work With These 5 Killer Tasks The New York Times",
+      "source": "The New York Times",
+      "published": "2026-11-01T00:24:00+00:00",
+      "angle": "The New York Times just dropped 5 killer tasks you can actually use your AI agents for today."
+    }
+  ],
+  "choose_deadline": "2026-11-01T09:22:52.413941+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -495,6 +521,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [
     {
       "title": "AI May Have Disproved A 27-Year-Old Computer Science Theory: Report",
@@ -2105,32 +2132,32 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-01T07:05+05:30",
-    "techcrunch.com": 15,
-    "theverge.com": 7,
+    "at": "2026-11-01T08:52+05:30",
+    "techcrunch.com": 13,
+    "theverge.com": 6,
     "arstechnica.com": 6,
     "technologyreview.com": 0,
     "openai.com": 0,
     "blog.google": 0,
     "deepmind.google": 0,
     "huggingface.co": 1,
-    "blogs.nvidia.com": 1,
+    "blogs.nvidia.com": 0,
     "inc42.com": 2,
-    "news.google.com": 41,
-    "Google News (VentureBeat, AIM, AI News)": 3,
+    "news.google.com": 43,
+    "Google News (VentureBeat, AIM, AI News)": 4,
     "producthunt.com": 4,
     "Hacker News": 5,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 4
+    "filtered out (PR / local events / market fluff)": 5
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-11-01T07:05:22.579128+05:30",
+  "last_auto_offer": "2026-11-01T08:52:39.256029+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-10-31",
   "ig_count": {
     "day": "2026-11-01",
-    "at": "2026-11-01T08:40:28.213512+05:30",
+    "at": "2026-11-01T08:52:39.256096+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -2154,7 +2181,7 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-01",
-    "calls": 244,
+    "calls": 246,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -2165,7 +2192,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.1-flash-lite": {
-        "ok": 132,
+        "ok": 134,
         "busy": 49,
         "other": 35,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
