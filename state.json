@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -222,16 +222,56 @@
     "fix_rounds": 1,
     "source_links": [
       "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
-    ]
+    ],
+    "ig_audio": null,
+    "visual_status": "fixed",
+    "visual_notes": [
+      "Co-founder and CEO Amit Gal-Or leads this new vent…: The card is almost empty and does not show the required photo or initials.",
+      "The model functions by learning how humans act in …: The card is blank and does not show the required source logo.",
+      "The shot is blank/empty.",
+      "The shot is blank/empty.",
+      "The shot is blank/empty.",
+      "The shot is blank/empty."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual variety is lacking and some imagery is too abstract.",
+      "script_fixes": [
+        "LINE 4: Change 'Their software' to '42AI's software' to maintain brand focus.",
+        "LINE 7: Replace 'The model' with 'The 42AI model' for better specificity."
+      ],
+      "visual_beats": [
+        3,
+        5,
+        6
+      ],
+      "visual_notes": [
+        "line 4: Abstract neural network imagery is used for too many consecutive frames.",
+        "line 6: Reusing the founders' photo here is redundant and breaks visual flow.",
+        "line 7: TechCrunch logo is irrelevant to the specific claim about the model's function."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "6 clips, 5 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI7X2rpBEhusJwDClxMAAEEy6i_pBMf4gACQiAAAo_ASVc3ZYJgIKMDLj0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-11-03T03:03:58.815382+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-11-03T03:44:41.561133+05:30",
+  "last_gender": "female",
   "pending_offer": true,
   "offer_log": {
     "date": "2026-11-03",
@@ -707,44 +747,8 @@
     "Introducing the Grid Protectors Program",
     "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition"
   ],
+  "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Astra can read and write weights to improve Qwen",
-            "link": "https://rikiyat.github.io/blog/weight-space-programming/",
-            "summary": "",
-            "source": "rikiyat.github.io",
-            "published": "2026-11-02T18:21:28+00:00",
-            "buzz": "Hacker News 211 points",
-            "angle": "A breakthrough in open-source AI: Astra can now rewrite model weights to improve Qwen performance."
-          },
-          {
-            "title": "Johns Hopkins cancer cell mapping technology chosen for Anthropic AI project",
-            "link": "https://hub.jhu.edu/2026/11/02/cancer-cell-mapping-anthropic-ai-for-science/",
-            "summary": "Johns Hopkins cancer cell mapping technology chosen for Anthropic AI project Johns Hopkins University",
-            "source": "Johns Hopkins University",
-            "published": "2026-11-02T18:55:00+00:00",
-            "angle": "Johns Hopkins is partnering with Anthropic to use advanced cancer cell mapping for medical AI research."
-          }
-        ],
-        "choose_deadline": "2026-11-03T00:50:30.262687+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1475,6 +1479,244 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
+          "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+          "summary": "Here's a question straight out of sci-fi: What if AI could predict what you were going to do before you decided to, even in a completely new situation?",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-11-02T16:30:00+00:00",
+          "angle": "A new startup, 42AI, just raised $62.5M to build a world model that claims to predict human behavior."
+        },
+        "draft": {
+          "title": "42AI Predicts Human Behavior",
+          "hook_text": "42AI raised sixty-two point five million.",
+          "beats": [
+            {
+              "line": "42AI just raised sixty-two point five million dollars in funding.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "62.5M",
+              "small": "42AI Funding",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "62.5M raised",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The startup is building a world model that predicts human behavior.",
+              "visual": "clip",
+              "query": "person looking at phone screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Predicts human behavior",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Co-founder and CEO Amit Gal-Or leads this new venture.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://42.ai",
+              "tag": "CEO Amit Gal-Or",
+              "name": "Amit Gal-Or",
+              "role": "CEO, 42AI",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Their software analyzes massive datasets to simulate complex human decision-making processes.",
+              "visual": "clip",
+              "query": "data visualization network",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Simulates complex decisions",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This technology aims to identify patterns in novel, real-world environments.",
+              "visual": "clip",
+              "query": "abstract data patterns",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Identifies novel patterns",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The firm is currently targeting applications in gaming, fraud prevention, and cybersecurity.",
+              "visual": "clip",
+              "query": "cybersecurity digital interface",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Gaming and security use",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The model functions by learning how humans act in completely new situations.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "42AI comes out of stealth with $62.5M",
+              "url": "",
+              "tag": "Learning new situations",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust an AI to predict your next decision?",
+              "visual": "clip",
+              "query": "person making a decision",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Would you trust it?",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Fast-paced and professional, highlighting the financial weight and the specific capabilities of the new model.",
+          "thin": false,
+          "caption": "42AI has emerged from stealth with $62.5 million to build a world model that predicts human behavior. CEO Amit Gal-Or is leading the team to apply this tech to gaming, fraud prevention, and cybersecurity. Would you trust an AI to predict your next decision?",
+          "hashtags": [
+            "42AI",
+            "ArtificialIntelligence",
+            "TechNews",
+            "PredictiveAI",
+            "Cybersecurity"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+          ],
+          "script": "42AI just raised sixty-two point five million dollars in funding.\nThe startup is building a world model that predicts human behavior.\nCo-founder and CEO Amit Gal-Or leads this new venture.\nTheir software analyzes massive datasets to simulate complex human decision-making processes.\nThis technology aims to identify patterns in novel, real-world environments.\nThe firm is currently targeting applications in gaming, fraud prevention, and cybersecurity.\nThe model functions by learning how humans act in completely new situations.\nWould you trust an AI to predict your next decision?",
+          "keywords": [
+            "person looking at phone screen",
+            "data visualization network",
+            "abstract data patterns",
+            "cybersecurity digital interface",
+            "person making a decision"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "42AI raised sixty-two point five million.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            },
+            {
+              "claim": "42AI just raised sixty-two point five million dollars in funding.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            },
+            {
+              "claim": "The startup is building a world model that predicts human behavior.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            },
+            {
+              "claim": "Co-founder and CEO Amit Gal-Or leads this new venture.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            },
+            {
+              "claim": "Their software analyzes massive datasets to simulate complex human decision-making processes.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            },
+            {
+              "claim": "This technology aims to identify patterns in novel, real-world environments.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            },
+            {
+              "claim": "The firm is currently targeting applications in gaming, fraud prevention, and cybersecurity.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            },
+            {
+              "claim": "The model functions by learning how humans act in completely new situations.",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-03T03:03:58.815382+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1973,8 +2215,8 @@
       "event": "Apple is developing a one thousand dollar home robot for twenty twenty-seven. CEO John Ternus is leading this project to bring the device to your home. The machine uses a robotic arm to handle FaceTime calls and switch on lights. It feature"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "male",
+  "voice_mode": "ai",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-03T02:57+05:30",
@@ -2022,19 +2264,19 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-11-03",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-03",
-    "calls": 183,
+    "calls": 194,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 97,
+        "ok": 106,
         "busy": 34,
-        "other": 52,
-        "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+        "other": 54,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
@@ -2118,29 +2360,6 @@
     "gemini-flash-lite-latest": 1793634960.5067186
   },
   "editor_log": [
-    {
-      "at": "2026-11-02T02:56+05:30",
-      "title": "Meesho’s Next Monetisation Engines",
-      "overall": 6.5,
-      "scores": {
-        "hook": 6,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "The hook is weak and the visuals are repetitive, lacking dynamic engagement.",
-      "fixes": [
-        "LINE 1: Change to 'Meesho just hit 12,909 crore rupees in quarterly net merchandise value.'",
-        "LINE 4: Change to 'Meesho is now pivoting to non-commerce revenue to reach profitability.'",
-        "LINE 7: Change to 'Would you pay for premium placement on a budget-focused app?'"
-      ],
-      "visual": [
-        "line 1: The same static image is held for too long across multiple frames.",
-        "line 5: The visual is a repeat of the image used in line 1, causing visual fatigue."
-      ]
-    },
     {
       "at": "2026-11-02T03:42+05:30",
       "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
@@ -2563,10 +2782,33 @@
         "line 3: The visual for Lumi AI is a generic report screenshot rather than a product interface.",
         "line 6: The text 'Scaling error' is visually redundant with the spoken line."
       ]
+    },
+    {
+      "at": "2026-11-03T03:14+05:30",
+      "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human ",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visual variety is lacking and some imagery is too abstract.",
+      "fixes": [
+        "LINE 4: Change 'Their software' to '42AI's software' to maintain brand focus.",
+        "LINE 7: Replace 'The model' with 'The 42AI model' for better specificity."
+      ],
+      "visual": [
+        "line 4: Abstract neural network imagery is used for too many consecutive frames.",
+        "line 6: Reusing the founders' photo here is redundant and breaks visual flow.",
+        "line 7: TechCrunch logo is irrelevant to the specific claim about the model's function."
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 251,
+  "fish_turn": 252,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",
