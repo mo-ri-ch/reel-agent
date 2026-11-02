@@ -1,189 +1,36 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
-  "candidates": [],
-  "choose_deadline": "2026-11-02T05:27:02.630638+05:30",
-  "topic": {
-    "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-    "link": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-    "summary": "Data centers are deeply unpopular. But what if we called them something else?",
-    "source": "AI News & Artificial Intelligence | TechCrunch",
-    "published": "2026-11-01T21:55:23+00:00",
-    "angle": "OpenAI is reportedly rebranding data centers as 'AI compute campuses' to fix their public image—is it a genius rebrand or just PR?"
-  },
-  "draft": {
-    "title": "OpenAI's AI Compute Campus Rebrand",
-    "hook_text": "OpenAI rebranding its data centers",
-    "beats": [
-      {
-        "line": "OpenAI is considering a new name for its massive facilities: AI compute campuses.",
-        "visual": "clip",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "AI compute campuses",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          }
-        ]
-      },
-      {
-        "line": "The company wants to move away from the industrial term data center.",
-        "visual": "clip",
-        "query": "large server room",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Dropping data centers",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "This pivot reflects a broader industry trend toward campus-style terminology.",
-        "visual": "photo",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "University campus",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Campus style trends",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "TechCrunch notes that OpenAI is looking at this rebrand to match its scale.",
-        "visual": "source",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "TechCrunch",
-        "domain": "techcrunch.com",
-        "headline": "OpenAI might rebrand its data centers as AI compute campuses",
-        "url": "",
-        "tag": "TechCrunch report",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "The change aligns with their growing infrastructure needs for training models like GPT.",
-        "visual": "clip",
-        "query": "supercomputer server racks",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Training GPT models",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          }
-        ]
-      },
-      {
-        "line": "They are scouting locations for massive projects that require significant power capacity.",
-        "visual": "clip",
-        "query": "electrical power station",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Power capacity needs",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Will calling these sites campuses change how you see their local impact?",
-        "visual": "clip",
-        "query": "suburban neighborhood",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Changing local perception",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      }
-    ],
-    "delivery": "Conversational and sharp, focusing on the corporate branding shift rather than speculation.",
-    "thin": false,
-    "caption": "OpenAI is exploring renaming its data centers to AI compute campuses. This shift reflects their massive infrastructure needs as they scale up model training. Do you think a new name changes how we view these massive facilities?",
-    "hashtags": [
-      "OpenAI",
-      "DataCenters",
-      "TechNews",
-      "AI",
-      "Infrastructure"
-    ],
-    "sources": [
-      "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
-    ],
-    "script": "OpenAI is considering a new name for its massive facilities: AI compute campuses.\nThe company wants to move away from the industrial term data center.\nThis pivot reflects a broader industry trend toward campus-style terminology.\nTechCrunch notes that OpenAI is looking at this rebrand to match its scale.\nThe change aligns with their growing infrastructure needs for training models like GPT.\nThey are scouting locations for massive projects that require significant power capacity.\nWill calling these sites campuses change how you see their local impact?",
-    "keywords": [
-      "technology",
-      "large server room",
-      "supercomputer server racks",
-      "electrical power station",
-      "suburban neighborhood"
-    ],
-    "image_prompts": [],
-    "writer_model": "gemini",
-    "fact_status": "unsure",
-    "fact_notes": [
-      "Beat 3: “This pivot reflects a broader industry trend toward campus-style terminology.” — no source found for this"
-    ],
-    "fix_rounds": 2,
-    "source_links": [
-      "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
-    ]
-  },
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "summary": "",
+      "source": "techcrunch.com",
+      "published": "2026-11-01T22:10:45+00:00",
+      "buzz": "Hacker News 93 points",
+      "angle": ""
+    },
+    {
+      "title": "The Smartest People in AI Believe This Is the World’s Most Important Chart",
+      "link": "https://www.wsj.com/tech/ai/ai-anthropic-rsi-recursive-self-improvement-bff4e815",
+      "summary": "The Smartest People in AI Believe This Is the World’s Most Important Chart WSJ",
+      "source": "WSJ",
+      "published": "2026-11-01T22:01:33+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Hackers are running riot with AI. Its makers want to cash in",
+      "link": "https://www.economist.com/business/2026/11/01/hackers-are-running-riot-with-ai-its-makers-want-to-cash-in",
+      "summary": "Hackers are running riot with AI. Its makers want to cash in The Economist",
+      "source": "The Economist",
+      "published": "2026-11-01T21:41:42+00:00",
+      "angle": ""
+    }
+  ],
+  "choose_deadline": "2026-11-02T06:20:51.449219+05:30",
+  "topic": null,
+  "draft": null,
   "voice_file_id": null,
   "user_image_id": null,
   "video_file_id": null,
@@ -216,7 +63,7 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-02T05:46:20.499656+05:30",
+  "script_deadline": null,
   "preview_deadline": null,
   "last_gender": "male",
   "pending_offer": false,
@@ -622,23 +469,25 @@
       "extra": false
     }
   ],
-  "paused": null,
   "spare": [
     {
-      "title": "AI’s Future Must Be Shaped by Human Choices",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZWZ2bG1neVN1bHQyX3kwa1dnei1US0JXV081LVltazY4aVJvVjFidnAyYThySjhjUHVqcGVJeXVIaEkyb2hPVS1RbFA0eUdTWHhWMlVIUFNNcEh0alpUMFI0QVc3U01hdFI0NmdHV290aUJ6al8tSWh4YVQ1X2Y0UXRJYlo2cGQ1b3NpaFNfSmI?oc=5",
-      "summary": "AI’s Future Must Be Shaped by Human Choices Rising Kashmir",
-      "source": "Rising Kashmir",
-      "published": "2026-11-01T21:51:37+00:00",
+      "title": "The Smartest People in AI Believe This Is the World’s Most Important Chart",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdlRTSktsR1lfYmNBOURrNzZSbDJRcG55dmhHQ2E3d1JQSXNQMjRrdVpHdTlUcHotNF9UaVdnX0QzRlVONWtPSmsteUtQSTc0cTRxRjVjOXM1WWExcTdkdkJqLTdmc19seXlxYXd3ZGlZejREMTJTeUsxWFVaVHFjemkwQVVZTk0?oc=5",
+      "summary": "The Smartest People in AI Believe This Is the World’s Most Important Chart WSJ",
+      "source": "WSJ",
+      "published": "2026-11-01T22:01:33+00:00",
+      "angle": ""
+    },
+    {
+      "title": "Hackers are running riot with AI. Its makers want to cash in",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdF80NkpLZHJxNVlWX0s0UEhLMlRKVnVqZldzN2tjY2tveUJ1NTdqeEtTeW9kWnBnakZzcEd1ZURSemt1dFR1RXdpYUNRSVp2ZFg5VGxuOTBfOE5uMEZfbl9raVB4Ym5SZ0JpdVd0MU9Xa1RpdWxrRml3aHVnN21HYTBaNnhmU292RS1XaDBYYVNqa3BoZVBMYk45aXpKVXhtM295VGZQelE?oc=5",
+      "summary": "Hackers are running riot with AI. Its makers want to cash in The Economist",
+      "source": "The Economist",
+      "published": "2026-11-01T21:41:42+00:00",
       "angle": ""
     }
   ],
   "tried": [
-    "The Smartest People in AI Believe This Is the World’s Most Important Chart",
-    "Artificial Intelligence and the Things That Matter Most",
-    "Microsoft Patents an AI That Can Literally Put Words in People’s Mouths in Real Time",
-    "\"We're the first hospital outside the US that gets the latest capabilities of OpenAI\"",
-    "Local mom-and-pops are embracing AI food slop, and residents are revolting",
     "Elementary, my dear… So... what can all of us ‘little’ people do about the looming AI problem?",
     "One of the Fastest-Growing Segments of the Crypto Market Involves Artificial Intelligence. Here's the 1 Cryptocurrency I'm Buying Now.",
     "How CPAs are putting AI to work in audits",
@@ -692,8 +541,13 @@
     "Who will regulate AI next year?",
     "Iowa State University professor gives lecture on AI’s potential to protect power grids, infrastructure",
     "Open Call: Tarbell Institutional Grants for AI Journalism - fundsforNGOs",
+    "Companies Worldwide Begin Rehiring Workers Previously Laid Off to Be Replaced by AI",
+    "AI’s Future Must Be Shaped by Human Choices",
+    "AI acceleration of science – a personal reflection",
+    "SMVDU organizes expert talk on AI in medical imaging",
+    "What MIT Can Learn from Israel’s Public Colleges About AI",
     "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-    "Companies Worldwide Begin Rehiring Workers Previously Laid Off to Be Replaced by AI"
+    "OpenAI might rebrand its data centers as ‘AI compute campuses’"
   ],
   "next_video_id": null,
   "undo_stack": [
@@ -2216,7 +2070,7 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-02T04:35+05:30",
+    "at": "2026-11-02T05:50+05:30",
     "techcrunch.com": 6,
     "theverge.com": 1,
     "arstechnica.com": 0,
@@ -2226,17 +2080,17 @@
     "deepmind.google": 0,
     "huggingface.co": 0,
     "blogs.nvidia.com": 0,
-    "inc42.com": 1,
-    "news.google.com": 41,
+    "inc42.com": "blocked (HTTP 404)",
+    "news.google.com": 40,
     "Google News (VentureBeat, AIM, AI News)": 4,
     "producthunt.com": 1,
     "Hacker News": 2,
-    "Reddit": 4,
-    "filtered out (PR / local events / market fluff)": 2
+    "Reddit": "blocked (HTTP 403/429)",
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-11-02T01:00:46.972044+05:30",
+  "last_auto_offer": "2026-11-02T05:50:44.862356+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-11-01",
   "ig_count": {
@@ -2285,11 +2139,6 @@
   },
   "gemini_errors": [
     {
-      "at": "05:35",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-11-01"
-    },
-    {
       "at": "05:50",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-11-01"
@@ -2331,6 +2180,11 @@
     },
     {
       "at": "23:46",
+      "error": "every free Gemini model is used up for today",
+      "day": "2026-11-02"
+    },
+    {
+      "at": "00:20",
       "error": "every free Gemini model is used up for today",
       "day": "2026-11-02"
     }
