@@ -1,8 +1,26 @@
 {
   "offset": 153809618,
-  "stage": "idle",
-  "candidates": [],
-  "choose_deadline": null,
+  "stage": "choosing",
+  "candidates": [
+    {
+      "title": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xlys6k/release_ista_deepseekv41flash1017_gsqrco_coder_a/",
+      "summary": "",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-02T14:33:20+00:00",
+      "buzz": "top of r/LocalLLaMA today",
+      "angle": "A massive 763B parameter model running at just 1-bit per parameter is a game-changer for AI efficiency."
+    },
+    {
+      "title": "Stop counting tokens, start counting what ships",
+      "link": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+      "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt. The more useful the agent becomes, the more calls…",
+      "source": "Artificial intelligence – MIT Technology Review",
+      "published": "2026-11-02T13:10:32+00:00",
+      "angle": "Why counting tokens is dead: AI agents are now performing 10-50x more work per task than we realized."
+    }
+  ],
+  "choose_deadline": "2026-11-03T02:56:58.046566+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -415,6 +433,7 @@
       "extra": false
     }
   ],
+  "paused": null,
   "spare": [],
   "tried": [
     "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
@@ -1961,7 +1980,7 @@
   "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-03T00:50+05:30",
+    "at": "2026-11-03T02:57+05:30",
     "techcrunch.com": 8,
     "theverge.com": 3,
     "arstechnica.com": 2,
@@ -1972,16 +1991,16 @@
     "huggingface.co": 0,
     "blogs.nvidia.com": 0,
     "inc42.com": 3,
-    "news.google.com": 41,
-    "Google News (VentureBeat, AIM, AI News)": 13,
+    "news.google.com": 39,
+    "Google News (VentureBeat, AIM, AI News)": 14,
     "producthunt.com": 2,
-    "Hacker News": 4,
+    "Hacker News": 7,
     "Reddit": 5,
     "filtered out (PR / local events / market fluff)": 6
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
-  "last_auto_offer": "2026-11-03T00:50:30.262687+05:30",
+  "last_auto_offer": "2026-11-03T02:56:58.046566+05:30",
   "last_engine": "microsoft",
   "report_day": "2026-11-02",
   "ig_count": {
@@ -2010,12 +2029,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-03",
-    "calls": 146,
+    "calls": 148,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 71,
+        "ok": 73,
         "busy": 24,
         "other": 51,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
