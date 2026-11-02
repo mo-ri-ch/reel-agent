@@ -1,0 +1,82 @@
+{
+ "made": "20261102-2101",
+ "title": "Raising the quality of insights in agentic analytics",
+ "hook_text": "Agentic analytics is hitting its stride.",
+ "hook_before": null,
+ "script": "Agentic analytics now drives business improvements in 48 percent of cases.\nThis is a jump from 37 percent just one year ago.\nLumi AI recently reported a 90 percent pilot graduation rate for its platform.\nGenerative AI previously opened enterprise analytics to everyone across an organization.\nNow agents go further by automating entire workflows and taking action.\nReliability remains the main challenge for agentic workflows as errors scale.\nWould you trust an AI agent to execute your company's strategy?",
+ "words": 79,
+ "beats": [
+  {
+   "line": "Agentic analytics now drives business improvements in 48 percent of cases.",
+   "visual": "stat"
+  },
+  {
+   "line": "This is a jump from 37 percent just one year ago.",
+   "visual": "stat"
+  },
+  {
+   "line": "Lumi AI recently reported a 90 percent pilot graduation rate for its platform.",
+   "visual": "source"
+  },
+  {
+   "line": "Generative AI previously opened enterprise analytics to everyone across an organization.",
+   "visual": "clip"
+  },
+  {
+   "line": "Now agents go further by automating entire workflows and taking action.",
+   "visual": "clip"
+  },
+  {
+   "line": "Reliability remains the main challenge for agentic workflows as errors scale.",
+   "visual": "image"
+  },
+  {
+   "line": "Would you trust an AI agent to execute your company's strategy?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 6,
+   "specific": 9,
+   "substance": 8,
+   "accuracy": 10,
+   "visuals": 6,
+   "flow": 8
+  },
+  "one_line": "Strong data, but the visual presentation is repetitive and lacks dynamic variety.",
+  "script_fixes": [
+   "LINE 1: Change to 'Agentic analytics now drives business improvements in 48 percent of enterprise cases.'",
+   "LINE 6: Change to 'Reliability remains the primary hurdle as agentic workflows scale and errors propagate.'"
+  ],
+  "visual_beats": [
+   0,
+   2,
+   5
+  ],
+  "visual_notes": [
+   "line 1: The same static report cover is held for too long across multiple frames.",
+   "line 3: The visual for Lumi AI is a generic report screenshot rather than a product interface.",
+   "line 6: The text 'Scaling error' is visually redundant with the spoken line."
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 33.07,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.2,
+ "cuts": [
+  2.8,
+  8.33,
+  11.03,
+  19.33,
+  28.67
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 5.51,
+ "longest_shot_seconds": 9.34,
+ "verdict": "rejected",
+ "words_per_minute": 143
+}
