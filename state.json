@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -196,16 +196,51 @@
     "editor_rounds": 1,
     "source_links": [
       "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
-    ]
+    ],
+    "ig_audio": null,
+    "visual_status": "skipped",
+    "visual_notes": [],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visuals rely too heavily on generic AI-generated stock imagery.",
+      "script_fixes": [
+        "LINE 3: Replace 'The machine' with 'The device' to avoid repetition.",
+        "LINE 4: Replace 'It features' with 'The design includes' for better flow."
+      ],
+      "visual_beats": [
+        0,
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 1: The robot image is generic AI-generated art, not an actual product photo.",
+        "line 3: Industrial robotic arm is unrelated to a consumer home device.",
+        "line 4: The robot shown is a generic toy-like figure, not representative of Apple's design languag"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "John Ternus: arstechnica.com"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "1 real photos, 4 clips, 1 AI images, 1 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI6-Wro4ZB4jpQUhwJ4FSJkkd2jAAHFyQACMiAAAo_ASVcyiyqVQGkMdz0E",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-11-03T00:39:02.558214+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-11-03T01:16:33.280130+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-03",
@@ -681,208 +716,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-          "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners in around 700,000 homes. The announcement comes as opposition to […]",
-          "source": "AI | The Verge",
-          "published": "2026-11-02T18:01:30+00:00",
-          "angle": "OpenAI is building its own power plants to fuel AI, promising 1,000 megawatts of energy for the grid."
-        },
-        "draft": {
-          "title": "OpenAI's Grid Protectors Program",
-          "hook_text": "OpenAI joins the power grid",
-          "beats": [
-            {
-              "line": "OpenAI is launching its Grid Protectors Program to support local electrical grids.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "The Verge",
-              "domain": "theverge.com",
-              "headline": "OpenAI pitches data center power plants as grid protection",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The company will pilot this at a new data center in Effingham County, Georgia.",
-              "visual": "photo",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "Effingham County, Georgia",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "It commits to freeing up one thousand megawatts during extreme weather or emergencies.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "1,000",
-              "small": "megawatts available",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            },
-            {
-              "line": "That total capacity is enough to run air conditioners in seven hundred thousand homes.",
-              "visual": "clip",
-              "query": "suburban houses electricity",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "The move follows rising local opposition to data center energy usage in many regions.",
-              "visual": "clip",
-              "query": "data center exterior",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust a data center to manage your local power supply?",
-              "visual": "clip",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "openai.com",
-              "headline": "",
-              "url": "https://openai.com",
-              "tag": "Managing power supply",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "OpenAI",
-                  "domain": "openai.com"
-                }
-              ]
-            }
-          ],
-          "delivery": "Fast-paced and informative, with a shift from industry strategy to a personal question about infrastructure.",
-          "thin": false,
-          "caption": "OpenAI is piloting its Grid Protectors Program in Georgia to free up 1,000 megawatts of power during grid emergencies. The project aims to address community opposition to data center energy consumption. Would you trust a data center to manage your local power supply?",
-          "hashtags": [
-            "OpenAI",
-            "DataCenter",
-            "Energy",
-            "Georgia",
-            "Grid"
-          ],
-          "sources": [
-            "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-          ],
-          "script": "OpenAI is launching its Grid Protectors Program to support local electrical grids.\nThe company will pilot this at a new data center in Effingham County, Georgia.\nIt commits to freeing up one thousand megawatts during extreme weather or emergencies.\nThat total capacity is enough to run air conditioners in seven hundred thousand homes.\nThe move follows rising local opposition to data center energy usage in many regions.\nWould you trust a data center to manage your local power supply?",
-          "keywords": [
-            "suburban houses electricity",
-            "data center exterior",
-            "technology"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "OpenAI joins the power grid",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-            },
-            {
-              "claim": "OpenAI is launching its Grid Protectors Program to support local electrical grids.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-            },
-            {
-              "claim": "The company will pilot this at a new data center in Effingham County, Georgia.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-            },
-            {
-              "claim": "It commits to freeing up one thousand megawatts during extreme weather or emergencies.",
-              "url": "https://www.tradingview.com/news/seekingalpha:3f6c2371b094b:0-openai-to-reduce-data-center-power-usage-during-peak-demand/"
-            },
-            {
-              "claim": "That total capacity is enough to run air conditioners in seven hundred thousand homes.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-            },
-            {
-              "claim": "The move follows rising local opposition to data center energy usage in many regions.",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-11-02T23:43:19.556837+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1831,6 +1664,218 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
+          "link": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
+          "summary": "Apple robot backed by CEO John Ternus may have hefty price tag and limited uses.",
+          "source": "AI - Ars Technica",
+          "published": "2026-11-02T18:32:21+00:00",
+          "angle": "Apple is reportedly building a $1,000 home robot for 2027, signaling a major push into physical AI hardware for the home."
+        },
+        "draft": {
+          "title": "Apple's $1,000 Home Robot Coming 2027",
+          "hook_text": "One thousand dollars for Apple's robot.",
+          "beats": [
+            {
+              "line": "Apple is developing a one thousand dollar home robot for twenty twenty-seven.",
+              "visual": "clip",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://www.apple.com",
+              "tag": "Apple $1,000 robot",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "CEO John Ternus is leading this project to bring the device to your home.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.apple.com/leadership/john-ternus/",
+              "tag": "CEO John Ternus",
+              "name": "John Ternus",
+              "role": "CEO, Apple",
+              "x": "johnternus",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "The machine uses a robotic arm to handle FaceTime calls and switch on lights.",
+              "visual": "clip",
+              "query": "robotic arm movement",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "FaceTime and lights",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It features a roaming base designed to follow you around the house.",
+              "visual": "clip",
+              "query": "autonomous home robot",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Roaming base",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Ars Technica reports this device focuses on smart home control and video communication.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Ars Technica",
+              "domain": "arstechnica.com",
+              "headline": "Apple's roaming home robot may do FaceTime and switch lights on",
+              "url": "",
+              "tag": "Ars Technica report",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you pay one thousand dollars for a robot with such limited functionality?",
+              "visual": "clip",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://www.apple.com",
+              "tag": "$1,000 price tag",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Sharp and direct, maintaining a skeptical tone about the value proposition.",
+          "thin": false,
+          "caption": "Apple is building a $1,000 home robot expected in 2027. Led by CEO John Ternus, the device aims to manage FaceTime and smart home lighting while roaming your space. Would you pay $1,000 for a robot with such limited functionality?",
+          "hashtags": [
+            "Apple",
+            "Robotics",
+            "SmartHome",
+            "TechNews"
+          ],
+          "sources": [
+            "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+          ],
+          "script": "Apple is developing a one thousand dollar home robot for twenty twenty-seven.\nCEO John Ternus is leading this project to bring the device to your home.\nThe machine uses a robotic arm to handle FaceTime calls and switch on lights.\nIt features a roaming base designed to follow you around the house.\nArs Technica reports this device focuses on smart home control and video communication.\nWould you pay one thousand dollars for a robot with such limited functionality?",
+          "keywords": [
+            "technology",
+            "robotic arm movement",
+            "autonomous home robot",
+            "technology"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Apple's robot costs one thousand dollars.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "Apple is developing a one thousand dollar home robot for 2027.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "John Ternus is the CEO of Apple.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "John Ternus is leading the project to bring the home robot to market.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "The machine uses a robotic arm to handle FaceTime calls and switch on lights.",
+              "url": "https://oodaloop.com/briefs/technology/apples-rumored-tabletop-robot-j595-expected-to-cost-around-1000-to-release-in-2027-or-2028/"
+            },
+            {
+              "claim": "The robot features a roaming base designed to follow you around the house.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "Ars Technica reports this device focuses on smart home control and video communication.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-03T00:39:02.558214+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2325,7 +2370,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "male",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-02T22:30+05:30",
@@ -2373,21 +2418,23 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-11-03",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-03",
-    "calls": 0,
+    "calls": 11,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.1-flash-lite": {
+        "ok": 3,
+        "busy": 0,
+        "other": 8,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      }
+    }
   },
   "gemini_errors": [
-    {
-      "at": "23:41",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-11-02"
-    },
     {
       "at": "23:46",
       "error": "gemini-3.1-flash-lite: free quota used up for now",
@@ -2432,6 +2479,11 @@
       "at": "17:35",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-11-02"
+    },
+    {
+      "at": "19:12",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-11-03"
     }
   ],
   "last_script_error": {
@@ -2462,25 +2514,6 @@
     "gemini-flash-lite-latest": 1793634960.5067186
   },
   "editor_log": [
-    {
-      "at": "2026-11-01T22:32+05:30",
-      "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
-      "overall": 6.5,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 4,
-        "flow": 8
-      },
-      "one_line": "Strong reporting ruined by generic laptop stock photos and a held-over image violating rules.",
-      "fixes": [],
-      "visual": [
-        "line 5: Unrelated generic laptop stock photo used instead of product visuals.",
-        "line 6: Same laptop stock photo held across multiple lines exceeding the duration limit."
-      ]
-    },
     {
       "at": "2026-11-02T00:01+05:30",
       "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
@@ -2900,10 +2933,33 @@
         "line 3: Visuals are generic; lacks a diagram or representation of a robotic arm.",
         "line 5: Visuals are misleading as there is no source evidence for cat-yelling."
       ]
+    },
+    {
+      "at": "2026-11-03T00:46+05:30",
+      "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong reporting, but visuals rely too heavily on generic AI-generated stock imagery.",
+      "fixes": [
+        "LINE 3: Replace 'The machine' with 'The device' to avoid repetition.",
+        "LINE 4: Replace 'It features' with 'The design includes' for better flow."
+      ],
+      "visual": [
+        "line 1: The robot image is generic AI-generated art, not an actual product photo.",
+        "line 3: Industrial robotic arm is unrelated to a consumer home device.",
+        "line 4: The robot shown is a generic toy-like figure, not representative of Apple's design languag"
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 247,
+  "fish_turn": 248,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",
