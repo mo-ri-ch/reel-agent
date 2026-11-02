@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -199,16 +199,56 @@
     "fix_rounds": 1,
     "source_links": [
       "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
-    ]
+    ],
+    "ig_audio": {
+      "id": "427470769834330",
+      "title": "Fallout",
+      "artist": "Adam Griffith"
+    },
+    "visual_status": "fixed",
+    "visual_notes": [
+      "The physical AI venture took over the Mumbai-based…: The image is nearly completely black and fails to show the real photo of Mumbai.",
+      "Basilisk Industries brings hardware capabilities t…: The image is nearly empty with only faint watermark text and fails to show the expected robot hardware engineering stock",
+      "Anjali Sardana previously founded autonomous truck…: The image is nearly empty and dark, failing to show a photo or initials card of Anjali Sardana.",
+      "The image is heavily blurred and effectively blank, failing to show the requested robotics lab video.",
+      "The image is mostly dark and missing the requested photo or initials card of Anjali Sardana."
+    ],
+    "editor": {
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong reporting and substance, but repetitive visuals drag down the pacing.",
+      "script_fixes": [
+        "LINE 3: add the year Provision Labs was founded to increase specificity"
+      ],
+      "visual_beats": [
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 3: Same visual asset (Training physical AI) held for too many consecutive frames",
+        "line 4: Same visual asset (Basilisk Industries hardware) held for too many consecutive frames"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI5G2roaEn472r9TtqRJw7TejONP9uwAAIlIgACj8BBVypoQE2sD0jHPQQ",
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-11-02T16:02:39.359847+05:30",
-  "preview_deadline": null,
-  "last_gender": "female",
+  "script_deadline": null,
+  "preview_deadline": "2026-11-02T16:39:06.016125+05:30",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-02",
@@ -680,43 +720,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "India’s Frontier AI Race Gets a 240M Model That Beats Liquid AI",
-            "link": "https://analyticsindiamag.com/ai-features/indias-frontier-ai-race-gets-a-240m-model-that-beats-liquid-ai",
-            "summary": "India’s Frontier AI Race Gets a 240M Model That Beats Liquid AI Analytics India Magazine",
-            "source": "Analytics India Magazine",
-            "published": "2026-11-02T07:28:07+00:00",
-            "angle": "India's new 240M model beats Liquid AI in frontier performance"
-          },
-          {
-            "title": "Agent Inbox",
-            "link": "https://www.producthunt.com/products/agent-inbox",
-            "summary": "Give your agent an email address, Slack and Telegram handle Discussion | Link",
-            "source": "Product Hunt — The best new products, every day",
-            "published": "2026-11-01T12:10:54+00:00",
-            "buzz": "Product Hunt launch",
-            "angle": "Agent Inbox lets you give your AI agent its own email and Slack handles"
-          }
-        ],
-        "choose_deadline": "2026-11-02T14:22:33.989221+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1349,6 +1352,221 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Pronto Founder’s Provision Labs Acquires Hardware Startup Basilisk Industries",
+          "link": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/",
+          "summary": "Pronto founder Anjali Sardana’s physical AI venture Provision Labs has acquired Mumbai-based hardware startup Basilisk Industries for an undisclosed sum. …",
+          "source": "Inc42 Media",
+          "published": "2026-11-02T09:11:26+00:00",
+          "angle": ""
+        },
+        "draft": {
+          "title": "Provision Labs Acquires Basilisk Industries",
+          "hook_text": "Pronto's founder just bought Basilisk Industries.",
+          "beats": [
+            {
+              "line": "Provision Labs just acquired hardware startup Basilisk Industries.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Provision Labs acquisition",
+              "name": "Anjali Sardana",
+              "role": "Founder, Pronto & Provision Labs",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Provision Labs",
+                  "domain": "provisionlabs.ai"
+                }
+              ]
+            },
+            {
+              "line": "The physical AI venture took over the Mumbai-based hardware startup for an undisclosed sum.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Mumbai",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Mumbai hardware startup",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Provision Labs was launched by Anjali Sardana to collect data for training and testing physical AI systems.",
+              "visual": "clip",
+              "query": "data collection robotics lab",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Training physical AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Provision Labs",
+                  "domain": "provisionlabs.ai"
+                }
+              ]
+            },
+            {
+              "line": "Basilisk Industries brings hardware capabilities to help build machines that perform real-world tasks.",
+              "visual": "clip",
+              "query": "robot hardware engineering",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Basilisk Industries hardware",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Basilisk Industries",
+                  "domain": "basiliskindustries.com"
+                }
+              ]
+            },
+            {
+              "line": "Anjali Sardana previously founded autonomous trucking company Pronto.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Pronto autonomous trucking",
+              "name": "Anjali Sardana",
+              "role": "Founder, Pronto",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Pronto",
+                  "domain": "pronto.ai"
+                }
+              ]
+            },
+            {
+              "line": "Would you trust a machine trained by this team?",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Inc42 Media",
+              "domain": "inc42.com",
+              "headline": "Pronto Founder’s Provision Labs Acquires Hardware Startup Basilisk Industries",
+              "url": "",
+              "tag": "Machine trained by team",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "sharp tech journalist tone, quick pacing, factual and direct",
+          "thin": false,
+          "caption": "Provision Labs acquired Mumbai hardware startup Basilisk Industries to collect data for physical AI systems. Founder Anjali Sardana previously launched autonomous trucking company Pronto. Would you trust a machine trained by this team?",
+          "hashtags": [
+            "ProvisionLabs",
+            "BasiliskIndustries",
+            "PhysicalAI",
+            "Robotics",
+            "Pronto"
+          ],
+          "sources": [
+            "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+          ],
+          "script": "Provision Labs just acquired hardware startup Basilisk Industries.\nThe physical AI venture took over the Mumbai-based hardware startup for an undisclosed sum.\nProvision Labs was launched by Anjali Sardana to collect data for training and testing physical AI systems.\nBasilisk Industries brings hardware capabilities to help build machines that perform real-world tasks.\nAnjali Sardana previously founded autonomous trucking company Pronto.\nWould you trust a machine trained by this team?",
+          "keywords": [
+            "data collection robotics lab",
+            "robot hardware engineering"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Pronto's founder acquired Basilisk Industries.",
+              "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+            },
+            {
+              "claim": "Provision Labs acquired hardware startup Basilisk Industries.",
+              "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+            },
+            {
+              "claim": "Anjali Sardana is the founder of Pronto and Provision Labs.",
+              "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+            },
+            {
+              "claim": "Provision Labs took over the Mumbai-based hardware startup for an undisclosed sum.",
+              "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+            },
+            {
+              "claim": "Provision Labs was launched by Anjali Sardana to collect data for training and testing physical AI systems.",
+              "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+            },
+            {
+              "claim": "Basilisk Industries brings hardware capabilities to help build machines that perform real-world tasks.",
+              "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+            },
+            {
+              "claim": "Anjali Sardana is the founder of Pronto.",
+              "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-02T16:02:39.359847+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1832,8 +2050,8 @@
       "event": "A federal judge just greenlit the NAACP lawsuit against xAI. The case concerns the company's Memphis data center. The NAACP claims the facility operates twenty-seven gas turbines without proper permits. They argue this violates the Clean Ai"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-02T14:46+05:30",
@@ -1861,7 +2079,7 @@
   "report_day": "2026-11-01",
   "ig_count": {
     "day": "2026-11-02",
-    "at": "2026-11-02T15:56:45.570195+05:30",
+    "at": "2026-11-02T16:09:06.016348+05:30",
     "count": 3
   },
   "repeat_check_day": "2026-10-04",
@@ -1881,11 +2099,11 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-11-02",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-02",
-    "calls": 641,
+    "calls": 650,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
@@ -1908,7 +2126,7 @@
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
       },
       "gemini-3.5-flash-lite": {
-        "ok": 46,
+        "ok": 55,
         "busy": 20,
         "other": 3,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2011,28 +2229,6 @@
     "gemini-3-flash-preview": 1793613118.9716375
   },
   "editor_log": [
-    {
-      "at": "2026-11-01T06:33+05:30",
-      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
-      "overall": 8.2,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but visuals are too repetitive and lack dynamic, relevant imagery.",
-      "fixes": [
-        "LINE 7: Replace with 'Will this supply crunch force you to delay your next PC upgrade?'"
-      ],
-      "visual": [
-        "line 1: Static text screen held for too long; lacks visual impact.",
-        "line 3: Visuals are just text cards; needs footage of HBM chips or server racks.",
-        "line 6: Abstract 'Hardware vs AI' graphic is generic; needs actual Intel product imagery."
-      ]
-    },
     {
       "at": "2026-11-01T08:24+05:30",
       "title": "How AI can use health data to improve patient care",
@@ -2452,10 +2648,31 @@
         "line 4: Incorrect text overlay typo 'Artificial intelligence - MIT Technology Review'.",
         "line 5: Same text graphic 'Replacing manual browsing' held across multiple frames for too long."
       ]
+    },
+    {
+      "at": "2026-11-02T16:08+05:30",
+      "title": "Pronto Founder’s Provision Labs Acquires Hardware Startup Basilisk Industries",
+      "overall": 8.3,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 9,
+        "accuracy": 10,
+        "visuals": 6,
+        "flow": 8
+      },
+      "one_line": "Strong reporting and substance, but repetitive visuals drag down the pacing.",
+      "fixes": [
+        "LINE 3: add the year Provision Labs was founded to increase specificity"
+      ],
+      "visual": [
+        "line 3: Same visual asset (Training physical AI) held for too many consecutive frames",
+        "line 4: Same visual asset (Basilisk Industries hardware) held for too many consecutive frames"
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 236,
+  "fish_turn": 237,
   "ig_music_recent": [
     "1211743776397750",
     "1121250805840078",
