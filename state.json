@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -187,11 +187,54 @@
     "editor_rounds": 1,
     "source_links": [
       "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-    ]
+    ],
+    "ig_audio": null,
+    "visual_status": "fixed",
+    "visual_notes": [
+      "These figures emerge from the latest financial dis…: The card is almost empty, containing only text on a plain background.",
+      "The shift toward an operating loss reflects massiv…: The card is almost empty, containing only text on a plain background.",
+      "Analytics India Magazine highlighted these results…: The card is almost empty, containing only text on a plain background.",
+      "The shot is an almost-empty card with no visual representation of the source.",
+      "The shot is an almost-empty card with no visual representation of the business professional."
+    ],
+    "editor": {
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong financial reporting, but visuals are repetitive and lack sufficient variety.",
+      "script_fixes": [
+        "LINE 3: Replace 'the San Francisco firm' with 'the San Francisco-based AI lab' to avoid generic phrasing.",
+        "LINE 6: Replace 'Can enterprise demand cover these costs' with 'Can Claude enterprise adoption offset these costs'."
+      ],
+      "visual_beats": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "visual_notes": [
+        "line 1: The same text and layout are held for too many frames (1-3).",
+        "line 2: The same visual style is repeated for frames 4 and 5.",
+        "line 3: Frames 6 and 7 are identical, violating the no-repeat rule.",
+        "line 4: Frames 8 and 9 are identical, violating the no-repeat rule.",
+        "line 5: Frames 10, 11, and 12 are nearly identical, violating the no-repeat rule."
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [],
+    "voice_used": "Ethan (Fish Audio)",
+    "visual_summary": "6 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI7c2rpF6aSD2-e4SyIsXXgNM-8WkNFAAJGIAACj8BJV6Ev3u0GhVFpPQQ",
   "queue": [
     {
       "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
@@ -218,14 +261,15 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-03T04:32:06.735004+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
-  "pending_offer": false,
+  "script_deadline": null,
+  "preview_deadline": "2026-11-03T05:07:19.460756+05:30",
+  "last_gender": "female",
+  "pending_offer": true,
   "offer_log": {
     "date": "2026-11-03",
     "done": [
-      "01:30"
+      "01:30",
+      "04:30"
     ]
   },
   "pending_topic": null,
@@ -706,43 +750,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "[Release] ISTA DeepSeek-V4.1-Flash-1017 GSQ-RCO Coder: a 763B model at 1 bit per parameter",
-            "link": "https://www.reddit.com/r/LocalLLaMA/comments/1xlys6k/release_ista_deepseekv41flash1017_gsqrco_coder_a/",
-            "summary": "",
-            "source": "r/LocalLLaMA",
-            "published": "2026-11-02T14:33:20+00:00",
-            "buzz": "top of r/LocalLLaMA today",
-            "angle": "A massive 763B parameter model running at just 1-bit per parameter is a game-changer for AI efficiency."
-          },
-          {
-            "title": "Stop counting tokens, start counting what ships",
-            "link": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
-            "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt. The more useful the agent becomes, the more calls…",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "published": "2026-11-02T13:10:32+00:00",
-            "angle": "Why counting tokens is dead: AI agents are now performing 10-50x more work per task than we realized."
-          }
-        ],
-        "choose_deadline": "2026-11-03T02:56:58.046566+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1540,6 +1547,209 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss",
+          "link": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss",
+          "summary": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss Analytics India Magazine",
+          "source": "Analytics India Magazine",
+          "published": "2026-11-02T16:06:55+00:00",
+          "angle": "Anthropic hits massive $17B revenue milestone but swings to a loss—is the AI bubble showing cracks?"
+        },
+        "draft": {
+          "title": "Anthropic Q3 2026 Financial Results",
+          "hook_text": "Anthropic hits 17 billion in revenue",
+          "beats": [
+            {
+              "line": "Anthropic just posted seventeen billion dollars in revenue for the third quarter of 2026.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "17B",
+              "small": "Q3 Revenue",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "17 billion revenue",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "The company swung to an operating loss of five hundred sixty-seven million dollars.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "567M",
+              "small": "Operating Loss",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "567 million loss",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "These figures emerge from the latest financial disclosure provided by the San Francisco firm.",
+              "visual": "clip",
+              "query": "modern office glass building",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "San Francisco firm",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The shift toward an operating loss reflects massive investments in model compute capacity.",
+              "visual": "clip",
+              "query": "server racks in data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Compute investments",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Analytics India Magazine highlighted these results before the expected initial public offering.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Analytics India Magazine",
+              "domain": "analyticsindiamag.com",
+              "headline": "Anthropic Posts 17 Bn in Q3 Revenue, Swings to Operating Loss",
+              "url": "",
+              "tag": "Pre-IPO reporting",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Can enterprise demand cover these costs before the company goes public?",
+              "visual": "clip",
+              "query": "business professional looking at data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Profitability check",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Objective and direct, emphasizing the scale of the financial shift and the upcoming IPO pressure.",
+          "thin": false,
+          "caption": "Anthropic reported 17 billion dollars in revenue for Q3 2026, alongside an operating loss of 567 million dollars. These financials provide a clear look at the company's scaling costs ahead of their anticipated IPO. Can enterprise demand eventually cover these massive infrastructure expenses?",
+          "hashtags": [
+            "Anthropic",
+            "Claude",
+            "AI",
+            "TechNews",
+            "Business"
+          ],
+          "sources": [
+            "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+          ],
+          "script": "Anthropic just posted seventeen billion dollars in revenue for the third quarter of 2026.\nThe company swung to an operating loss of five hundred sixty-seven million dollars.\nThese figures emerge from the latest financial disclosure provided by the San Francisco firm.\nThe shift toward an operating loss reflects massive investments in model compute capacity.\nAnalytics India Magazine highlighted these results before the expected initial public offering.\nCan enterprise demand cover these costs before the company goes public?",
+          "keywords": [
+            "modern office glass building",
+            "server racks in data center",
+            "business professional looking at data"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "Anthropic hits 17 billion in revenue",
+              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+            },
+            {
+              "claim": "Anthropic just posted seventeen billion dollars in revenue for the third quarter of 2026.",
+              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+            },
+            {
+              "claim": "The company swung to an operating loss of five hundred sixty-seven million dollars.",
+              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+            },
+            {
+              "claim": "These figures emerge from the latest financial disclosure provided by the San Francisco firm.",
+              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+            },
+            {
+              "claim": "The shift toward an operating loss reflects massive investments in model compute capacity.",
+              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+            },
+            {
+              "claim": "Analytics India Magazine highlighted these results before the expected initial public offering.",
+              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "editor_rounds": 1,
+          "source_links": [
+            "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-03T04:32:06.735004+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2044,7 +2254,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "male",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-03T03:17+05:30",
@@ -2096,12 +2306,12 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-03",
-    "calls": 208,
+    "calls": 217,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 116,
+        "ok": 125,
         "busy": 38,
         "other": 54,
         "last": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
@@ -2188,28 +2398,6 @@
     "gemini-flash-lite-latest": 1793634960.5067186
   },
   "editor_log": [
-    {
-      "at": "2026-11-02T04:04+05:30",
-      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-      "overall": 8.5,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 6,
-        "flow": 9
-      },
-      "one_line": "Strong reporting, but visual pacing is too slow and repetitive.",
-      "fixes": [
-        "LINE 6: Change to 'Would you want 27 gas turbines operating in your neighborhood?' to maintain specificity."
-      ],
-      "visual": [
-        "line 1: The same image of the facility is held for too long (frames 1-4).",
-        "line 2: The '27 gas turbines' graphic is repeated across three separate frames (5-7).",
-        "line 3: The image of the turbine stack is held for too long (frames 8-10)."
-      ]
-    },
     {
       "at": "2026-11-02T15:40+05:30",
       "title": "The middle layer will make or break enterprise AI agents",
@@ -2633,10 +2821,33 @@
       "visual": [
         "line 1: The abstract head-and-nodes graphic is generic and does not represent Anthropic."
       ]
+    },
+    {
+      "at": "2026-11-03T04:37+05:30",
+      "title": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss",
+      "overall": 8.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 7,
+        "flow": 9
+      },
+      "one_line": "Strong financial reporting, but visuals are repetitive and lack sufficient variety.",
+      "fixes": [
+        "LINE 3: Replace 'the San Francisco firm' with 'the San Francisco-based AI lab' to avoid generic phrasing.",
+        "LINE 6: Replace 'Can enterprise demand cover these costs' with 'Can Claude enterprise adoption offset these costs'."
+      ],
+      "visual": [
+        "line 1: The same text and layout are held for too many frames (1-3).",
+        "line 2: The same visual style is repeated for frames 4 and 5.",
+        "line 3: Frames 6 and 7 are identical, violating the no-repeat rule."
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 253,
+  "fish_turn": 254,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",
