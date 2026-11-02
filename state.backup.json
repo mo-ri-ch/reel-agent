@@ -232,7 +232,10 @@
     "fix_rounds": 0,
     "source_links": [
       "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
-    ]
+    ],
+    "ig_audio": null,
+    "visual_status": "skipped",
+    "visual_notes": []
   },
   "voice_file_id": null,
   "user_image_id": null,
@@ -263,9 +266,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-03T05:10:34.671865+05:30",
+  "script_deadline": "2026-11-03T05:28:33.471604+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-03",
@@ -753,50 +756,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss",
-            "link": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss",
-            "summary": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss Analytics India Magazine",
-            "source": "Analytics India Magazine",
-            "published": "2026-11-02T16:06:55+00:00",
-            "angle": "Anthropic hits massive $17B revenue milestone but swings to a loss—is the AI bubble showing cracks?"
-          },
-          {
-            "title": "Web host Squarespace lays off 19% of its employees",
-            "link": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
-            "summary": "The website builder said that the job losses are part of a broader restructuring of its organization.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-11-02T19:25:59+00:00",
-            "angle": "Squarespace cuts 19% of staff as AI-driven restructuring hits the tech industry."
-          },
-          {
-            "title": "Tech companies brace for AI-driven election misinformation",
-            "link": "https://www.nextgov.com/artificial-intelligence/2026/11/tech-companies-brace-ai-driven-election-misinformation/416983/?oref=ng-homepage-river",
-            "summary": "Tech companies brace for AI-driven election misinformation Nextgov/FCW",
-            "source": "Nextgov/FCW",
-            "published": "2026-11-02T21:29:00+00:00",
-            "angle": "Tech giants are on high alert as AI-generated misinformation threatens global election integrity."
-          }
-        ],
-        "choose_deadline": "2026-11-03T03:47:12.165497+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1528,6 +1487,254 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+          "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+          "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-11-02T22:14:50+00:00",
+          "angle": "Anthropic warns we are approaching 'RSI'—the point where AI starts building itself, triggering a massive, uncontrollable acceleration."
+        },
+        "draft": {
+          "title": "Anthropic warns of self-building AI",
+          "hook_text": "AI that builds itself",
+          "beats": [
+            {
+              "line": "Anthropic warns they are nearing RSI capability.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Anthropic RSI warning",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "RSI stands for Recursive Self-Improvement.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "What is RSI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This is the point where AI trains itself.",
+              "visual": "clip",
+              "query": "abstract digital code matrix",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI training AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It triggers a massive acceleration in its own capabilities.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "RSI",
+              "small": "Recursive capability spike",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Capability acceleration",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Dario Amodei and his team say this creates an irreversible path.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.anthropic.com/about",
+              "tag": "Dario Amodei's warning",
+              "name": "Dario Amodei",
+              "role": "CEO, Anthropic",
+              "x": "DarioAmodei",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "TechCrunch reports this could mark a point of no return.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Anthropic warns that it’s very close to RSI capability",
+              "url": "",
+              "tag": "Point of no return",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The system could soon improve faster than we can understand.",
+              "visual": "clip",
+              "query": "fast moving digital data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rapid improvement",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a machine that updates its own code?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting self-improving AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Urgent and cautionary tone, emphasizing the technical stakes as the story progresses.",
+          "thin": false,
+          "caption": "Anthropic warns they are approaching Recursive Self-Improvement, a state where AI can upgrade its own code. This breakthrough could trigger a rapid acceleration in intelligence that humans may no longer be able to control. Would you trust a machine that updates its own code?",
+          "hashtags": [
+            "Anthropic",
+            "RSI",
+            "ArtificialIntelligence",
+            "TechNews",
+            "AI"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+          ],
+          "script": "Anthropic warns they are nearing RSI capability.\nRSI stands for Recursive Self-Improvement.\nThis is the point where AI trains itself.\nIt triggers a massive acceleration in its own capabilities.\nDario Amodei and his team say this creates an irreversible path.\nTechCrunch reports this could mark a point of no return.\nThe system could soon improve faster than we can understand.\nWould you trust a machine that updates its own code?",
+          "keywords": [
+            "server room data center",
+            "abstract digital code matrix",
+            "fast moving digital data",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_score": 30,
+          "evidence": [
+            {
+              "claim": "Anthropic is developing AI that builds itself.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "Anthropic warns they are nearing RSI capability.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "RSI stands for Recursive Self-Improvement.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "RSI is the point where AI trains itself.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "RSI triggers a massive acceleration in AI capabilities.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "Dario Amodei is the CEO of Anthropic.",
+              "url": "https://aimagazine.com/news/anthropic-ipo-s-1-finances-rsi-and-existential-danger"
+            },
+            {
+              "claim": "TechCrunch reports RSI could mark a point of no return.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "The system could soon improve faster than we can understand.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-03T05:10:34.671865+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2036,8 +2243,8 @@
       "event": "Anthropic just posted seventeen billion dollars in revenue for the third quarter of 2026. The company swung to an operating loss of five hundred sixty-seven million dollars. These figures emerge from the latest financial disclosure provided"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-03T04:45+05:30",
@@ -2089,24 +2296,19 @@
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-03",
-    "calls": 228,
+    "calls": 240,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
         "ok": 132,
         "busy": 41,
-        "other": 55,
-        "last": "0 ReadTimeout"
+        "other": 67,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "17:35",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-11-02"
-    },
     {
       "at": "19:12",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2151,17 +2353,22 @@
       "at": "23:23",
       "error": "gemini-3.1-flash-lite didn't answer (ReadTimeout)",
       "day": "2026-11-03"
+    },
+    {
+      "at": "23:46",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-11-03"
     }
   ],
   "last_script_error": {
     "at": "2026-11-02T23:06+05:30",
     "error": "Gemini didn't give a usable reply, please try again in a few minutes. gemini-3.1-flash-lite is overloaded right now"
   },
-  "render_fails": 0,
-  "render_fail_topic": "Raising the quality of insights in agentic analytics",
+  "render_fails": 1,
+  "render_fail_topic": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
   "last_render_error": {
-    "at": "2026-11-03T02:56:40.301319+05:30",
-    "topic": "Raising the quality of insights in agentic analytics",
+    "at": "2026-11-03T05:23:33.471177+05:30",
+    "topic": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
     "error": "RuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly",
     "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1822, in cmd_render\n    out, action = editor_step(s, out, rerender)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1909, in editor_step\n    raise RuntimeError(\"the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\")\nRuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\n"
   },
@@ -2630,7 +2837,7 @@
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 254,
+  "fish_turn": 255,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",
