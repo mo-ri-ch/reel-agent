@@ -4,80 +4,126 @@
   "candidates": [],
   "choose_deadline": null,
   "topic": {
-    "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-    "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners in around 700,000 homes. The announcement comes as opposition to […]",
-    "source": "AI | The Verge",
-    "published": "2026-11-02T18:01:30+00:00",
-    "angle": "OpenAI is building its own power plants to fuel AI, promising 1,000 megawatts of energy for the grid."
+    "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
+    "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+    "summary": "The tsunami of imitators is way bigger than any one model maker can stem.",
+    "source": "AI - Ars Technica",
+    "published": "2026-11-02T18:05:31+00:00",
+    "angle": "Why AI game cloning is exploding and why even Anthropic's new rules can't stop the tsunami of copycat apps."
   },
   "draft": {
-    "title": "OpenAI's Grid Protectors Program",
-    "hook_text": "OpenAI joins the power grid",
+    "title": "Anthropic's New Game Clone Rules",
+    "hook_text": "Claude can't stop game clones",
     "beats": [
       {
-        "line": "OpenAI is launching its Grid Protectors Program to support local electrical grids.",
+        "line": "Anthropic just updated its acceptable use policy to block AI game cloning.",
+        "visual": "clip",
+        "query": "anthropic logo",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Anthropic updates policy",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "The company now explicitly prohibits using Claude to clone or replicate existing software products.",
+        "visual": "clip",
+        "query": "claude ai interface",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Claude bans replication",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Claude",
+            "domain": "claude.ai"
+          }
+        ]
+      },
+      {
+        "line": "This move targets the recent surge in AI-generated clones of popular indie games.",
+        "visual": "clip",
+        "query": "indie game development screen",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Targeting indie game clones",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Anthropic faces a massive hurdle because these rules only apply to its hosted services.",
+        "visual": "stat",
+        "query": "technology",
+        "prompt": "",
+        "big": "Hosted",
+        "small": "Only",
+        "entity": "",
+        "outlet": "",
+        "domain": "",
+        "headline": "",
+        "url": "",
+        "tag": "Limited rule enforcement",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": [
+          {
+            "name": "Anthropic",
+            "domain": "anthropic.com"
+          }
+        ]
+      },
+      {
+        "line": "The Ars Technica report notes that model makers cannot control how developers use model weights.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
-        "outlet": "The Verge",
-        "domain": "theverge.com",
-        "headline": "OpenAI pitches data center power plants as grid protection",
+        "outlet": "Ars Technica",
+        "domain": "arstechnica.com",
+        "headline": "Claude’s new rules against game cloning won’t stop the AI copying boom",
         "url": "",
-        "tag": "",
+        "tag": "Model weight limitations",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "The company will pilot this at a new data center in Effingham County, Georgia.",
-        "visual": "photo",
-        "query": "technology",
-        "prompt": "",
-        "big": "",
-        "small": "",
-        "entity": "Effingham County, Georgia",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "It commits to freeing up one thousand megawatts during extreme weather or emergencies.",
-        "visual": "stat",
-        "query": "technology",
-        "prompt": "",
-        "big": "1,000",
-        "small": "megawatts available",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          }
-        ]
-      },
-      {
-        "line": "That total capacity is enough to run air conditioners in seven hundred thousand homes.",
+        "line": "Once models are released, they often run on local hardware without any central oversight.",
         "visual": "clip",
-        "query": "suburban houses electricity",
+        "query": "computer processor running code",
         "prompt": "",
         "big": "",
         "small": "",
@@ -86,16 +132,16 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "",
+        "tag": "Local execution risks",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "The move follows rising local opposition to data center energy usage in many regions.",
+        "line": "Policy updates cannot stop the massive, decentralized wave of AI-powered software copying.",
         "visual": "clip",
-        "query": "data center exterior",
+        "query": "digital code stream",
         "prompt": "",
         "big": "",
         "small": "",
@@ -104,88 +150,94 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "",
+        "tag": "Decentralized copying boom",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Would you trust a data center to manage your local power supply?",
+        "line": "Can any company truly stop this?",
         "visual": "clip",
-        "query": "technology",
+        "query": "indie game developer looking at screen",
         "prompt": "",
         "big": "",
         "small": "",
         "entity": "",
         "outlet": "",
-        "domain": "openai.com",
+        "domain": "",
         "headline": "",
-        "url": "https://openai.com",
-        "tag": "Managing power supply",
+        "url": "",
+        "tag": "Future of game cloning",
         "name": "",
         "role": "",
         "x": "",
-        "brands": [
-          {
-            "name": "OpenAI",
-            "domain": "openai.com"
-          }
-        ]
+        "brands": []
       }
     ],
-    "delivery": "Fast-paced and informative, with a shift from industry strategy to a personal question about infrastructure.",
+    "delivery": "Analytical and realistic, acknowledging the difficulty of policing decentralized AI models.",
     "thin": false,
-    "caption": "OpenAI is piloting its Grid Protectors Program in Georgia to free up 1,000 megawatts of power during grid emergencies. The project aims to address community opposition to data center energy consumption. Would you trust a data center to manage your local power supply?",
+    "caption": "Anthropic has updated its policy to block Claude from being used to clone software. Despite these rules, the rise of decentralized models makes enforcement difficult for any single company. Can these policies actually stop the AI copying boom?",
     "hashtags": [
-      "OpenAI",
-      "DataCenter",
-      "Energy",
-      "Georgia",
-      "Grid"
+      "Anthropic",
+      "ClaudeAI",
+      "gamedev",
+      "AI",
+      "techpolicy"
     ],
     "sources": [
-      "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+      "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
     ],
-    "script": "OpenAI is launching its Grid Protectors Program to support local electrical grids.\nThe company will pilot this at a new data center in Effingham County, Georgia.\nIt commits to freeing up one thousand megawatts during extreme weather or emergencies.\nThat total capacity is enough to run air conditioners in seven hundred thousand homes.\nThe move follows rising local opposition to data center energy usage in many regions.\nWould you trust a data center to manage your local power supply?",
+    "script": "Anthropic just updated its acceptable use policy to block AI game cloning.\nThe company now explicitly prohibits using Claude to clone or replicate existing software products.\nThis move targets the recent surge in AI-generated clones of popular indie games.\nAnthropic faces a massive hurdle because these rules only apply to its hosted services.\nThe Ars Technica report notes that model makers cannot control how developers use model weights.\nOnce models are released, they often run on local hardware without any central oversight.\nPolicy updates cannot stop the massive, decentralized wave of AI-powered software copying.\nCan any company truly stop this?",
     "keywords": [
-      "suburban houses electricity",
-      "data center exterior",
-      "technology"
+      "anthropic logo",
+      "claude ai interface",
+      "indie game development screen",
+      "computer processor running code",
+      "digital code stream",
+      "indie game developer looking at screen"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
     "evidence": [
       {
-        "claim": "OpenAI joins the power grid",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+        "claim": "Claude can't stop game clones",
+        "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
       },
       {
-        "claim": "OpenAI is launching its Grid Protectors Program to support local electrical grids.",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+        "claim": "Anthropic updated its acceptable use policy to block AI game cloning.",
+        "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
       },
       {
-        "claim": "The company will pilot this at a new data center in Effingham County, Georgia.",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+        "claim": "The company now explicitly prohibits using Claude to clone or replicate existing software products.",
+        "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
       },
       {
-        "claim": "It commits to freeing up one thousand megawatts during extreme weather or emergencies.",
-        "url": "https://www.tradingview.com/news/seekingalpha:3f6c2371b094b:0-openai-to-reduce-data-center-power-usage-during-peak-demand/"
+        "claim": "This move targets the recent surge in AI-generated clones of popular indie games.",
+        "url": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games"
       },
       {
-        "claim": "That total capacity is enough to run air conditioners in seven hundred thousand homes.",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+        "claim": "Anthropic faces a massive hurdle because these rules only apply to its hosted services.",
+        "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
       },
       {
-        "claim": "The move follows rising local opposition to data center energy usage in many regions.",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+        "claim": "The Ars Technica report notes that model makers cannot control how developers use model weights.",
+        "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
+      },
+      {
+        "claim": "Once models are released, they often run on local hardware without any central oversight.",
+        "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
+      },
+      {
+        "claim": "Policy updates cannot stop the massive, decentralized wave of AI-powered software copying.",
+        "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
-    "fix_rounds": 1,
+    "fix_rounds": 2,
     "source_links": [
-      "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+      "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/"
     ]
   },
   "voice_file_id": null,
@@ -193,9 +245,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-11-02T23:43:19.556837+05:30",
+  "script_deadline": "2026-11-03T00:22:48.058830+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-02",
@@ -604,10 +656,17 @@
     }
   ],
   "paused": null,
-  "spare": [],
+  "spare": [
+    {
+      "title": "No Bailouts, Just Confiscations: Nationalize The Artificial Intelligence Companies",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb3ZsdTkyUThVXzdiaXFhWEptNDluMmxjSkwtaHNRWmNIN1oyNWRkMnRqMlVFRER0OVMyRUVNcVBNdXNmVmd6NEN1TFpVZGJkeUdKZ3A4MDl2NUU1UHB5cU9lOGZIeGdTM2w1R05nQWVpSmhvdDlPZHJfZlNFSG9xRDZUMmVvQUlEQjMtR00zcEpwLVB4TVVTWHNlMTJGQTlwOUlYbFpJREZ6NFBDSVJz?oc=5",
+      "summary": "No Bailouts, Just Confiscations: Nationalize The Artificial Intelligence Companies FOREVER WARS by Spencer Ackerman",
+      "source": "FOREVER WARS by Spencer Ackerman",
+      "published": "2026-11-02T15:19:31+00:00",
+      "angle": "A controversial new proposal is gaining traction: should governments nationalize AI companies instead of bailing them out?"
+    }
+  ],
   "tried": [
-    "AI will create more software, transform developers' roles: IBM's Raghavan",
-    "Customs AI That Ignores the Operator is Built to Fail",
     "ESDS Q2 Profit Zooms 41% YoY To ₹31.1 Cr, Revenue Up 48%",
     "CCIA Files Joint Amicus Brief in AI Training Copyright Case",
     "Telangana: KTR launches CampusHub AI in Hyderabad, says \"AI is messenger of progress, not monster\"",
@@ -665,176 +724,11 @@
     "SBU Study: AI May Improve Patient Discharge Summaries",
     "Cognitive Cities: How AI Can Help Cities Move From Seeing Conditions to Acting on Them",
     "The Artificial Intelligence (AI) Market in Orthopedic Surgery: Examining Demand Patterns and Competitive Landscape",
-    "The latest AI news we announced in October 2026"
+    "The latest AI news we announced in October 2026",
+    "Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings",
+    "OpenAI pitches data center power plants as a way to protect nearby areas"
   ],
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "The agentic web is here",
-          "link": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
-          "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet designed to be navigated by autonomous software agents that could address our every…",
-          "source": "Artificial intelligence – MIT Technology Review",
-          "published": "2026-11-02T09:35:19+00:00",
-          "angle": ""
-        },
-        "draft": {
-          "title": "The agentic web is here",
-          "hook_text": "Tim Berners-Lee predicted autonomous AI agents.",
-          "beats": [
-            {
-              "line": "In 2001, Tim Berners-Lee published a vision for autonomous web software in Scientific American.",
-              "visual": "person",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "2001 Semantic Web vision",
-              "name": "Tim Berners-Lee",
-              "role": "Inventor of the World Wide Web",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "He called it the semantic web, an internet designed specifically for machine navigation.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Scientific American",
-              "domain": "scientificamerican.com",
-              "headline": "The Semantic Web",
-              "url": "",
-              "tag": "Scientific American article",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Decades later, autonomous software agents are finally turning that exact concept into reality.",
-              "visual": "clip",
-              "query": "person typing on laptop",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Autonomous web agents",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "These programs can navigate complex websites and address your everyday tasks automatically.",
-              "visual": "clip",
-              "query": "automated browser tasks",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Software navigates web",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Would you trust an AI agent to handle your daily browsing?",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "2001",
-              "small": "Semantic web origin",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Trust AI agents?",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "curious and forward-looking, explaining how an old vision is finally turning into reality",
-          "thin": false,
-          "caption": "Tim Berners-Lee first proposed autonomous software agents in 2001, and the agentic web is finally arriving. How will autonomous agents change how you browse the internet?",
-          "hashtags": [
-            "TimBernersLee",
-            "AgenticWeb",
-            "ArtificialIntelligence"
-          ],
-          "sources": [
-            "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-          ],
-          "script": "In 2001, Tim Berners-Lee published a vision for autonomous web software in Scientific American.\nHe called it the semantic web, an internet designed specifically for machine navigation.\nDecades later, autonomous software agents are finally turning that exact concept into reality.\nThese programs can navigate complex websites and address your everyday tasks automatically.\nWould you trust an AI agent to handle your daily browsing?",
-          "keywords": [
-            "person typing on laptop",
-            "automated browser tasks"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Tim Berners-Lee predicted autonomous AI agents.",
-              "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-            },
-            {
-              "claim": "In 2001, Tim Berners-Lee published a vision for autonomous web software in Scientific American.",
-              "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-            },
-            {
-              "claim": "He called it the semantic web, an internet designed specifically for machine navigation.",
-              "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-            },
-            {
-              "claim": "Decades later, autonomous software agents are finally turning that exact concept into reality.",
-              "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-            },
-            {
-              "claim": "These programs can navigate complex websites and address your everyday tasks automatically.",
-              "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 0,
-          "source_links": [
-            "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "male",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-11-02T20:26:39.640116+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot posting the reel",
       "data": {
@@ -1166,6 +1060,208 @@
         "user_image_id": null,
         "user_video_id": null,
         "script_deadline": null,
+        "preview_deadline": null,
+        "pending_topic": null
+      }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+          "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners in around 700,000 homes. The announcement comes as opposition to […]",
+          "source": "AI | The Verge",
+          "published": "2026-11-02T18:01:30+00:00",
+          "angle": "OpenAI is building its own power plants to fuel AI, promising 1,000 megawatts of energy for the grid."
+        },
+        "draft": {
+          "title": "OpenAI's Grid Protectors Program",
+          "hook_text": "OpenAI joins the power grid",
+          "beats": [
+            {
+              "line": "OpenAI is launching its Grid Protectors Program to support local electrical grids.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "The Verge",
+              "domain": "theverge.com",
+              "headline": "OpenAI pitches data center power plants as grid protection",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The company will pilot this at a new data center in Effingham County, Georgia.",
+              "visual": "photo",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Effingham County, Georgia",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It commits to freeing up one thousand megawatts during extreme weather or emergencies.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "1,000",
+              "small": "megawatts available",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            },
+            {
+              "line": "That total capacity is enough to run air conditioners in seven hundred thousand homes.",
+              "visual": "clip",
+              "query": "suburban houses electricity",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The move follows rising local opposition to data center energy usage in many regions.",
+              "visual": "clip",
+              "query": "data center exterior",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a data center to manage your local power supply?",
+              "visual": "clip",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "openai.com",
+              "headline": "",
+              "url": "https://openai.com",
+              "tag": "Managing power supply",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "OpenAI",
+                  "domain": "openai.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Fast-paced and informative, with a shift from industry strategy to a personal question about infrastructure.",
+          "thin": false,
+          "caption": "OpenAI is piloting its Grid Protectors Program in Georgia to free up 1,000 megawatts of power during grid emergencies. The project aims to address community opposition to data center energy consumption. Would you trust a data center to manage your local power supply?",
+          "hashtags": [
+            "OpenAI",
+            "DataCenter",
+            "Energy",
+            "Georgia",
+            "Grid"
+          ],
+          "sources": [
+            "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+          ],
+          "script": "OpenAI is launching its Grid Protectors Program to support local electrical grids.\nThe company will pilot this at a new data center in Effingham County, Georgia.\nIt commits to freeing up one thousand megawatts during extreme weather or emergencies.\nThat total capacity is enough to run air conditioners in seven hundred thousand homes.\nThe move follows rising local opposition to data center energy usage in many regions.\nWould you trust a data center to manage your local power supply?",
+          "keywords": [
+            "suburban houses electricity",
+            "data center exterior",
+            "technology"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "evidence": [
+            {
+              "claim": "OpenAI joins the power grid",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+            },
+            {
+              "claim": "OpenAI is launching its Grid Protectors Program to support local electrical grids.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+            },
+            {
+              "claim": "The company will pilot this at a new data center in Effingham County, Georgia.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+            },
+            {
+              "claim": "It commits to freeing up one thousand megawatts during extreme weather or emergencies.",
+              "url": "https://www.tradingview.com/news/seekingalpha:3f6c2371b094b:0-openai-to-reduce-data-center-power-usage-during-peak-demand/"
+            },
+            {
+              "claim": "That total capacity is enough to run air conditioners in seven hundred thousand homes.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+            },
+            {
+              "claim": "The move follows rising local opposition to data center energy usage in many regions.",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 1,
+          "source_links": [
+            "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-02T23:43:19.556837+05:30",
         "preview_deadline": null,
         "pending_topic": null
       }
@@ -1663,7 +1759,7 @@
     }
   ],
   "voice_mode": null,
-  "voice_gender": "female",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-02T22:30+05:30",
@@ -1843,28 +1939,6 @@
     "gemini-flash-lite-latest": 1793634960.5067186
   },
   "editor_log": [
-    {
-      "at": "2026-11-01T15:59+05:30",
-      "title": "‘I really like where we’re at’: Apple CEO John Ternus explains company’s AI stra",
-      "overall": 7.3,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 7,
-        "accuracy": 8,
-        "visuals": 6,
-        "flow": 7
-      },
-      "one_line": "Strong headline choice, but drags out with repetitive visual cards and vague commentary.",
-      "fixes": [
-        "LINE 2: He told Moneycontrol development is right where it needs to be.",
-        "LINE 5: Ternus argues taking time to polish software beats rushing to market."
-      ],
-      "visual": [
-        "line 2: Reuses static logo card with text overlay instead of dynamic interview footage or photo.",
-        "line 5: Displays generic Apple logo and text cards instead of software development or product UI v"
-      ]
-    },
     {
       "at": "2026-11-01T16:45+05:30",
       "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connection",
@@ -2271,10 +2345,33 @@
       "visual": [
         "line 3: The illustration of the person at the computer is repeated across multiple lines and stati"
       ]
+    },
+    {
+      "at": "2026-11-02T23:51+05:30",
+      "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+      "overall": 6.5,
+      "scores": {
+        "hook": 6,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 10,
+        "visuals": 4,
+        "flow": 8
+      },
+      "one_line": "Strong reporting, but visuals are abstract, repetitive, and fail to illustrate the story.",
+      "fixes": [
+        "LINE 1: Change to 'OpenAI is piloting its Grid Protectors Program to stabilize local electrical grids.'",
+        "LINE 6: Change to 'Would you trust an AI company to manage your local power supply?'"
+      ],
+      "visual": [
+        "line 1: Title screen is generic; lacks visual impact or immediate connection to the power grid.",
+        "line 4: The image of a tall, thin tower is an abstract, unrelated AI-generated graphic that fails ",
+        "line 5: Visuals are just text overlays; lacks any imagery representing local opposition or data ce"
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 242,
+  "fish_turn": 243,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",
