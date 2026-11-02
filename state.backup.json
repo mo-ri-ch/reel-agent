@@ -17,16 +17,16 @@
     "beats": [
       {
         "line": "ESDS Software Solution just beat last year by forty one percent.",
-        "visual": "official",
-        "query": "technology",
+        "visual": "clip",
+        "query": "ESDS Software Solution logo",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "ESDS Software Solution",
+        "entity": "",
         "outlet": "",
-        "domain": "esds.co.in",
+        "domain": "",
         "headline": "",
-        "url": "https://www.esds.co.in/",
+        "url": "",
         "tag": "41 percent profit jump",
         "name": "",
         "role": "",
@@ -44,7 +44,7 @@
         "query": "technology",
         "prompt": "",
         "big": "31.1 Cr",
-        "small": "consolidated net profit",
+        "small": "Net Profit",
         "entity": "",
         "outlet": "",
         "domain": "",
@@ -67,7 +67,7 @@
         "query": "technology",
         "prompt": "",
         "big": "48 percent",
-        "small": "revenue growth",
+        "small": "Revenue growth",
         "entity": "",
         "outlet": "",
         "domain": "",
@@ -131,7 +131,7 @@
         ]
       },
       {
-        "line": "This growth shows heavy demand for their specialized cloud infrastructure.",
+        "line": "Heavy demand for specialized cloud infrastructure is driving this performance.",
         "visual": "source",
         "query": "technology",
         "prompt": "",
@@ -185,15 +185,14 @@
     "sources": [
       "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
     ],
-    "script": "ESDS Software Solution just beat last year by forty one percent.\nThe company reached 31.1 crore rupees in consolidated net profit.\nQuarterly revenue climbed by 48 percent compared to last year.\nESDS provides enterprise cloud and AI services for businesses.\nPiyush Somani leads the firm as Managing Director.\nThis growth shows heavy demand for their specialized cloud infrastructure.\nCould this profit streak continue through the next quarter?",
+    "script": "ESDS Software Solution just beat last year by forty one percent.\nThe company reached 31.1 crore rupees in consolidated net profit.\nQuarterly revenue climbed by 48 percent compared to last year.\nESDS provides enterprise cloud and AI services for businesses.\nPiyush Somani leads the firm as Managing Director.\nHeavy demand for specialized cloud infrastructure is driving this performance.\nCould this profit streak continue through the next quarter?",
     "keywords": [
+      "ESDS Software Solution logo",
       "cloud computing data center",
       "stock market chart rising"
     ],
     "image_prompts": [],
     "writer_model": "gemini",
-    "hook_before": "ESDS Software Solution just reported a 41 percent jump in profit.",
-    "hook_score": 58,
     "evidence": [
       {
         "claim": "ESDS profit zooms 41 percent",
@@ -218,11 +217,16 @@
       {
         "claim": "Piyush Somani leads the firm as Managing Director.",
         "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+      },
+      {
+        "claim": "Heavy demand for specialized cloud infrastructure is driving this performance.",
+        "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
     ]
@@ -232,9 +236,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-11-03T00:07:28.984981+05:30",
+  "script_deadline": "2026-11-03T00:19:39.042573+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-03",
@@ -710,50 +714,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
-            "link": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
-            "summary": "Two startups tackling the data center water problem are joining forces in a $16 million deal.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-11-02T15:00:00+00:00",
-            "angle": "Startups tackle the massive AI data center water crisis with a $16 million deal"
-          },
-          {
-            "title": "Inside Anthropic’s Urgent Hunt for A.I. Computing Power",
-            "link": "https://www.nytimes.com/2026/11/02/technology/anthropic-ai-computing-power.html",
-            "summary": "Inside Anthropic’s Urgent Hunt for A.I. Computing Power The New York Times",
-            "source": "The New York Times",
-            "published": "2026-11-02T15:08:36+00:00",
-            "angle": "Inside Anthropic's desperate and urgent hunt for more A.I. computing power"
-          },
-          {
-            "title": "Introducing the Grid Protectors Program",
-            "link": "https://openai.com/index/grid-protectors-program",
-            "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-            "source": "OpenAI News",
-            "published": "2026-11-02T15:00:00+00:00",
-            "angle": "OpenAI launches a new program partnering with utilities to protect electricity grids and consumer costs"
-          }
-        ],
-        "choose_deadline": "2026-11-02T21:20:49.462572+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot picking story #1",
       "data": {
@@ -1297,6 +1257,247 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "ESDS Q2 Profit Zooms 41% YoY To ₹31.1 Cr, Revenue Up 48%",
+          "link": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/",
+          "summary": "Enterprise cloud and AI company ESDS Software Solution reported a 40.7% year-on-year (YoY) increase in consolidated net profit to ₹31.1…",
+          "source": "Inc42 Media",
+          "published": "2026-11-02T12:14:04+00:00",
+          "angle": "Enterprise AI is proving profitable: ESDS Software Solution reports a 41% surge in profit and 48% revenue growth."
+        },
+        "draft": {
+          "title": "ESDS Q2 Profit Jumps 41%",
+          "hook_text": "ESDS profit zooms 41 percent",
+          "beats": [
+            {
+              "line": "ESDS Software Solution just beat last year by forty one percent.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "ESDS Software Solution",
+              "outlet": "",
+              "domain": "esds.co.in",
+              "headline": "",
+              "url": "https://www.esds.co.in/",
+              "tag": "41 percent profit jump",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ESDS Software Solution",
+                  "domain": "esds.co.in"
+                }
+              ]
+            },
+            {
+              "line": "The company reached 31.1 crore rupees in consolidated net profit.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "31.1 Cr",
+              "small": "consolidated net profit",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "31.1 crore profit",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ESDS Software Solution",
+                  "domain": "esds.co.in"
+                }
+              ]
+            },
+            {
+              "line": "Quarterly revenue climbed by 48 percent compared to last year.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "48 percent",
+              "small": "revenue growth",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "48 percent revenue growth",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ESDS Software Solution",
+                  "domain": "esds.co.in"
+                }
+              ]
+            },
+            {
+              "line": "ESDS provides enterprise cloud and AI services for businesses.",
+              "visual": "clip",
+              "query": "cloud computing data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Cloud and AI services",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ESDS Software Solution",
+                  "domain": "esds.co.in"
+                }
+              ]
+            },
+            {
+              "line": "Piyush Somani leads the firm as Managing Director.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.esds.co.in/leadership",
+              "tag": "CEO Piyush Somani",
+              "name": "Piyush Somani",
+              "role": "Managing Director, ESDS",
+              "x": "psomani",
+              "brands": [
+                {
+                  "name": "ESDS Software Solution",
+                  "domain": "esds.co.in"
+                }
+              ]
+            },
+            {
+              "line": "This growth shows heavy demand for their specialized cloud infrastructure.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "Inc42 Media",
+              "domain": "inc42.com",
+              "headline": "ESDS Q2 Profit Zooms 41% YoY To ₹31.1 Cr, Revenue Up 48%",
+              "url": "",
+              "tag": "High cloud demand",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "ESDS Software Solution",
+                  "domain": "esds.co.in"
+                }
+              ]
+            },
+            {
+              "line": "Could this profit streak continue through the next quarter?",
+              "visual": "clip",
+              "query": "stock market chart rising",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Future profit growth",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Professional, fast-paced, and direct tone highlighting financial growth.",
+          "thin": false,
+          "caption": "ESDS Software Solution reported a 41 percent profit increase to 31.1 crore rupees this quarter. Revenue for the enterprise cloud provider grew by 48 percent compared to last year. Could this profit streak continue through the next quarter?",
+          "hashtags": [
+            "ESDS",
+            "CloudComputing",
+            "StockMarket",
+            "BusinessNews",
+            "AI"
+          ],
+          "sources": [
+            "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+          ],
+          "script": "ESDS Software Solution just beat last year by forty one percent.\nThe company reached 31.1 crore rupees in consolidated net profit.\nQuarterly revenue climbed by 48 percent compared to last year.\nESDS provides enterprise cloud and AI services for businesses.\nPiyush Somani leads the firm as Managing Director.\nThis growth shows heavy demand for their specialized cloud infrastructure.\nCould this profit streak continue through the next quarter?",
+          "keywords": [
+            "cloud computing data center",
+            "stock market chart rising"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_before": "ESDS Software Solution just reported a 41 percent jump in profit.",
+          "hook_score": 58,
+          "evidence": [
+            {
+              "claim": "ESDS profit zooms 41 percent",
+              "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+            },
+            {
+              "claim": "ESDS Software Solution just beat last year by forty one percent.",
+              "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+            },
+            {
+              "claim": "The company reached 31.1 crore rupees in consolidated net profit.",
+              "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+            },
+            {
+              "claim": "Quarterly revenue climbed by 48 percent compared to last year.",
+              "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+            },
+            {
+              "claim": "ESDS provides enterprise cloud and AI services for businesses.",
+              "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+            },
+            {
+              "claim": "Piyush Somani leads the firm as Managing Director.",
+              "url": "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://inc42.com/buzz/esds-q2-profit-zooms-41-yoy-to-%e2%82%b931-1-cr-revenue-up-48/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-03T00:07:28.984981+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -1790,8 +1991,8 @@
       "event": "In 2001, Tim Berners-Lee published a vision for autonomous web software in Scientific American. He called it the semantic web, an internet designed specifically for machine navigation. Decades later, autonomous software agents are finally t"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-02T22:30+05:30",
@@ -1839,7 +2040,7 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-11-03",
-  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
+  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-03",
@@ -1928,28 +2129,6 @@
     "gemini-flash-lite-latest": 1793634960.5067186
   },
   "editor_log": [
-    {
-      "at": "2026-11-01T17:25+05:30",
-      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-      "overall": 7.8,
-      "scores": {
-        "hook": 8,
-        "specific": 8,
-        "substance": 8,
-        "accuracy": 9,
-        "visuals": 6,
-        "flow": 8
-      },
-      "one_line": "Strong environmental tech news story, but visual repetition and generic branding slow it down.",
-      "fixes": [
-        "LINE 2: say 'xAI' directly instead of 'the Elon Musk company'",
-        "LINE 3: say 'NAACP' directly instead of 'The civil rights organization'"
-      ],
-      "visual": [
-        "line 4: The same data center photo is reused after appearing in line 1, causing visual fatigue.",
-        "line 5: Completely blank dark frame with only small scrolling text during the final closing questi"
-      ]
-    },
     {
       "at": "2026-11-01T18:07+05:30",
       "title": "Do the math: How we took over ChatGPT accounts",
@@ -2357,10 +2536,33 @@
         "line 2: The Claude logo is repeated across multiple frames without adding new visual information.",
         "line 3: The image used is a generic AI-generated forest scene, which is symbolic/stock and not rel"
       ]
+    },
+    {
+      "at": "2026-11-03T00:19+05:30",
+      "title": "ESDS Q2 Profit Zooms 41% YoY To ₹31.1 Cr, Revenue Up 48%",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 7,
+        "accuracy": 4,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "Inaccurate data visualization and misleading numbers make this reel unfit for publication.",
+      "fixes": [
+        "LINE 2: Ensure the visual matches the audio; the text says 31.1 Cr but the visual shows 28.0 Cr.",
+        "LINE 3: Ensure the visual matches the audio; the text says 48 percent but the visual shows 20 percent.",
+        "LINE 6: Remove 'This growth shows' to avoid filler commentary; start directly with 'Heavy demand for specialized cloud infrastructure is driving this performance.'"
+      ],
+      "visual": [
+        "line 2: Visual displays '28.0 Cr' while audio states '31.1 crore', creating a major accuracy confl",
+        "line 3: Visual displays '20 percent' while audio states '48 percent', creating a major accuracy co"
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 244,
+  "fish_turn": 245,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",

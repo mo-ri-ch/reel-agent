@@ -1,0 +1,81 @@
+{
+ "made": "20261102-1849",
+ "title": "ESDS Q2 Profit Zooms 41% YoY To ₹31.1 Cr, Revenue Up 48%",
+ "hook_text": "ESDS profit zooms 41 percent",
+ "hook_before": "ESDS Software Solution just reported a 41 percent jump in profit.",
+ "script": "ESDS Software Solution just beat last year by forty one percent.\nThe company reached 31.1 crore rupees in consolidated net profit.\nQuarterly revenue climbed by 48 percent compared to last year.\nESDS provides enterprise cloud and AI services for businesses.\nPiyush Somani leads the firm as Managing Director.\nThis growth shows heavy demand for their specialized cloud infrastructure.\nCould this profit streak continue through the next quarter?",
+ "words": 67,
+ "beats": [
+  {
+   "line": "ESDS Software Solution just beat last year by forty one percent.",
+   "visual": "official"
+  },
+  {
+   "line": "The company reached 31.1 crore rupees in consolidated net profit.",
+   "visual": "stat"
+  },
+  {
+   "line": "Quarterly revenue climbed by 48 percent compared to last year.",
+   "visual": "stat"
+  },
+  {
+   "line": "ESDS provides enterprise cloud and AI services for businesses.",
+   "visual": "clip"
+  },
+  {
+   "line": "Piyush Somani leads the firm as Managing Director.",
+   "visual": "person"
+  },
+  {
+   "line": "This growth shows heavy demand for their specialized cloud infrastructure.",
+   "visual": "source"
+  },
+  {
+   "line": "Could this profit streak continue through the next quarter?",
+   "visual": "clip"
+  }
+ ],
+ "voice": null,
+ "visuals": null,
+ "editor": {
+  "overall": 6.5,
+  "scores": {
+   "hook": 8,
+   "specific": 9,
+   "substance": 7,
+   "accuracy": 4,
+   "visuals": 5,
+   "flow": 8
+  },
+  "one_line": "Inaccurate data visualization and misleading numbers make this reel unfit for publication.",
+  "script_fixes": [
+   "LINE 2: Ensure the visual matches the audio; the text says 31.1 Cr but the visual shows 28.0 Cr.",
+   "LINE 3: Ensure the visual matches the audio; the text says 48 percent but the visual shows 20 percent.",
+   "LINE 6: Remove 'This growth shows' to avoid filler commentary; start directly with 'Heavy demand for specialized cloud infrastructure is driving this performance.'"
+  ],
+  "visual_beats": [
+   1,
+   2
+  ],
+  "visual_notes": [
+   "line 2: Visual displays '28.0 Cr' while audio states '31.1 crore', creating a major accuracy confl",
+   "line 3: Visual displays '20 percent' while audio states '48 percent', creating a major accuracy co"
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 29.3,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.3,
+ "cuts": [
+  2.8,
+  9.5,
+  15.77,
+  18.13,
+  25.87
+ ],
+ "first_cut_at": 2.8,
+ "avg_shot_seconds": 4.88,
+ "longest_shot_seconds": 7.74,
+ "verdict": "rejected",
+ "words_per_minute": 137
+}
