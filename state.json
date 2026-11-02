@@ -12,17 +12,17 @@
     "angle": "Apple is reportedly building a $1,000 home robot for 2027, signaling a major push into physical AI hardware for the home."
   },
   "draft": {
-    "title": "Apple's $1,000 Home Robot",
-    "hook_text": "Apple is building a home robot.",
+    "title": "Apple's $1,000 Home Robot Coming 2027",
+    "hook_text": "One thousand dollars for Apple's robot.",
     "beats": [
       {
-        "line": "One thousand dollars for a new Apple home robot.",
-        "visual": "official",
+        "line": "Apple is developing a one thousand dollar home robot for twenty twenty-seven.",
+        "visual": "clip",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Apple",
+        "entity": "",
         "outlet": "",
         "domain": "apple.com",
         "headline": "",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "line": "CEO John Ternus is leading the project to bring this device into your living room.",
+        "line": "CEO John Ternus is leading this project to bring the device to your home.",
         "visual": "person",
         "query": "technology",
         "prompt": "",
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "line": "The machine uses a robotic arm to handle FaceTime calls and manage smart home lights.",
+        "line": "The machine uses a robotic arm to handle FaceTime calls and switch on lights.",
         "visual": "clip",
         "query": "robotic arm movement",
         "prompt": "",
@@ -80,7 +80,7 @@
         "brands": []
       },
       {
-        "line": "It also features a roaming base that follows you around the house.",
+        "line": "It features a roaming base designed to follow you around the house.",
         "visual": "clip",
         "query": "autonomous home robot",
         "prompt": "",
@@ -91,38 +91,38 @@
         "domain": "",
         "headline": "",
         "url": "",
-        "tag": "Roaming robot base",
+        "tag": "Roaming base",
         "name": "",
         "role": "",
         "x": "",
         "brands": []
       },
       {
-        "line": "Sources suggest the device might even be programmed to yell at your cat.",
-        "visual": "image",
-        "query": "technology",
-        "prompt": "a sleek minimalist white robotic home device in a modern living room",
-        "big": "",
-        "small": "",
-        "entity": "",
-        "outlet": "",
-        "domain": "",
-        "headline": "",
-        "url": "",
-        "tag": "Yells at cats",
-        "name": "",
-        "role": "",
-        "x": "",
-        "brands": []
-      },
-      {
-        "line": "Would you pay one thousand dollars for a robot that follows you?",
-        "visual": "official",
+        "line": "Ars Technica reports this device focuses on smart home control and video communication.",
+        "visual": "source",
         "query": "technology",
         "prompt": "",
         "big": "",
         "small": "",
-        "entity": "Apple",
+        "entity": "",
+        "outlet": "Ars Technica",
+        "domain": "arstechnica.com",
+        "headline": "Apple's roaming home robot may do FaceTime and switch lights on",
+        "url": "",
+        "tag": "Ars Technica report",
+        "name": "",
+        "role": "",
+        "x": "",
+        "brands": []
+      },
+      {
+        "line": "Would you pay one thousand dollars for a robot with such limited functionality?",
+        "visual": "clip",
+        "query": "technology",
+        "prompt": "",
+        "big": "",
+        "small": "",
+        "entity": "",
         "outlet": "",
         "domain": "apple.com",
         "headline": "",
@@ -139,9 +139,9 @@
         ]
       }
     ],
-    "delivery": "Informative and slightly skeptical, ending with a direct question to the viewer.",
+    "delivery": "Sharp and direct, maintaining a skeptical tone about the value proposition.",
     "thin": false,
-    "caption": "Apple is reportedly developing a $1,000 home robot set to launch in 2027. The device aims to handle FaceTime calls, control smart lights, and roam your home. Would you pay $1,000 for a robot that follows you?",
+    "caption": "Apple is building a $1,000 home robot expected in 2027. Led by CEO John Ternus, the device aims to manage FaceTime and smart home lighting while roaming your space. Would you pay $1,000 for a robot with such limited functionality?",
     "hashtags": [
       "Apple",
       "Robotics",
@@ -151,24 +151,22 @@
     "sources": [
       "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
     ],
-    "script": "One thousand dollars for a new Apple home robot.\nCEO John Ternus is leading the project to bring this device into your living room.\nThe machine uses a robotic arm to handle FaceTime calls and manage smart home lights.\nIt also features a roaming base that follows you around the house.\nSources suggest the device might even be programmed to yell at your cat.\nWould you pay one thousand dollars for a robot that follows you?",
+    "script": "Apple is developing a one thousand dollar home robot for twenty twenty-seven.\nCEO John Ternus is leading this project to bring the device to your home.\nThe machine uses a robotic arm to handle FaceTime calls and switch on lights.\nIt features a roaming base designed to follow you around the house.\nArs Technica reports this device focuses on smart home control and video communication.\nWould you pay one thousand dollars for a robot with such limited functionality?",
     "keywords": [
+      "technology",
       "robotic arm movement",
-      "autonomous home robot"
+      "autonomous home robot",
+      "technology"
     ],
-    "image_prompts": [
-      "a sleek minimalist white robotic home device in a modern living room"
-    ],
+    "image_prompts": [],
     "writer_model": "gemini",
-    "hook_before": "Apple is developing a one thousand dollar home robot for 2027.",
-    "hook_score": 51,
     "evidence": [
       {
-        "claim": "Apple is building a home robot.",
+        "claim": "Apple's robot costs one thousand dollars.",
         "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
       },
       {
-        "claim": "The Apple home robot is expected to cost $1,000.",
+        "claim": "Apple is developing a one thousand dollar home robot for 2027.",
         "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
       },
       {
@@ -176,21 +174,26 @@
         "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
       },
       {
-        "claim": "The machine uses a robotic arm to handle FaceTime calls and manage smart home lights.",
-        "url": "https://oodaloop.com/briefs/technology/apples-rumored-tabletop-robot-j595-expected-to-cost-around-1000-to-release-in-2027-or-2028/"
-      },
-      {
-        "claim": "It features a roaming base that follows you around the house.",
+        "claim": "John Ternus is leading the project to bring the home robot to market.",
         "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
       },
       {
-        "claim": "Sources suggest the device might be programmed to yell at your cat.",
+        "claim": "The machine uses a robotic arm to handle FaceTime calls and switch on lights.",
+        "url": "https://oodaloop.com/briefs/technology/apples-rumored-tabletop-robot-j595-expected-to-cost-around-1000-to-release-in-2027-or-2028/"
+      },
+      {
+        "claim": "The robot features a roaming base designed to follow you around the house.",
+        "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+      },
+      {
+        "claim": "Ars Technica reports this device focuses on smart home control and video communication.",
         "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
       }
     ],
     "fact_status": "ok",
     "fact_notes": [],
     "fix_rounds": 0,
+    "editor_rounds": 1,
     "source_links": [
       "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
     ]
@@ -200,9 +203,9 @@
   "video_file_id": null,
   "queue": [],
   "autopilot": true,
-  "script_deadline": "2026-11-03T00:28:07.988064+05:30",
+  "script_deadline": "2026-11-03T00:39:02.558214+05:30",
   "preview_deadline": null,
-  "last_gender": "female",
+  "last_gender": "male",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-03",
@@ -678,50 +681,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot picking story #1",
-      "data": {
-        "stage": "choosing",
-        "candidates": [
-          {
-            "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
-            "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-            "summary": "Musk recently referred to Grok Bot as having \"the fastest growth of a product that I've ever seen in my life.\"",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-11-02T16:23:21+00:00",
-            "angle": "Elon Musk is forced to throttle Grok's usage because the growth is so explosive it's becoming 'unsustainably expensive'."
-          },
-          {
-            "title": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss",
-            "link": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss",
-            "summary": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss Analytics India Magazine",
-            "source": "Analytics India Magazine",
-            "published": "2026-11-02T16:06:55+00:00",
-            "angle": "Anthropic hits a massive $17 billion in Q3 revenue, proving the AI gold rush is officially in full swing."
-          },
-          {
-            "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
-            "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-            "summary": "Here's a question straight out of sci-fi: What if AI could predict what you were going to do before you decided to, even in a completely new situation?",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "published": "2026-11-02T16:30:00+00:00",
-            "angle": "A new startup just raised $62.5M to build an AI that can predict your next move before you even make it."
-          }
-        ],
-        "choose_deadline": "2026-11-02T23:16:14.356097+05:30",
-        "topic": null,
-        "draft": null,
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": null,
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1663,6 +1622,215 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
+          "link": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
+          "summary": "Apple robot backed by CEO John Ternus may have hefty price tag and limited uses.",
+          "source": "AI - Ars Technica",
+          "published": "2026-11-02T18:32:21+00:00",
+          "angle": "Apple is reportedly building a $1,000 home robot for 2027, signaling a major push into physical AI hardware for the home."
+        },
+        "draft": {
+          "title": "Apple's $1,000 Home Robot",
+          "hook_text": "Apple is building a home robot.",
+          "beats": [
+            {
+              "line": "One thousand dollars for a new Apple home robot.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://www.apple.com",
+              "tag": "Apple $1,000 robot",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "CEO John Ternus is leading the project to bring this device into your living room.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.apple.com/leadership/john-ternus/",
+              "tag": "CEO John Ternus",
+              "name": "John Ternus",
+              "role": "CEO, Apple",
+              "x": "johnternus",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            },
+            {
+              "line": "The machine uses a robotic arm to handle FaceTime calls and manage smart home lights.",
+              "visual": "clip",
+              "query": "robotic arm movement",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "FaceTime and lights",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It also features a roaming base that follows you around the house.",
+              "visual": "clip",
+              "query": "autonomous home robot",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Roaming robot base",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Sources suggest the device might even be programmed to yell at your cat.",
+              "visual": "image",
+              "query": "technology",
+              "prompt": "a sleek minimalist white robotic home device in a modern living room",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Yells at cats",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you pay one thousand dollars for a robot that follows you?",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Apple",
+              "outlet": "",
+              "domain": "apple.com",
+              "headline": "",
+              "url": "https://www.apple.com",
+              "tag": "$1,000 price tag",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Apple",
+                  "domain": "apple.com"
+                }
+              ]
+            }
+          ],
+          "delivery": "Informative and slightly skeptical, ending with a direct question to the viewer.",
+          "thin": false,
+          "caption": "Apple is reportedly developing a $1,000 home robot set to launch in 2027. The device aims to handle FaceTime calls, control smart lights, and roam your home. Would you pay $1,000 for a robot that follows you?",
+          "hashtags": [
+            "Apple",
+            "Robotics",
+            "SmartHome",
+            "TechNews"
+          ],
+          "sources": [
+            "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+          ],
+          "script": "One thousand dollars for a new Apple home robot.\nCEO John Ternus is leading the project to bring this device into your living room.\nThe machine uses a robotic arm to handle FaceTime calls and manage smart home lights.\nIt also features a roaming base that follows you around the house.\nSources suggest the device might even be programmed to yell at your cat.\nWould you pay one thousand dollars for a robot that follows you?",
+          "keywords": [
+            "robotic arm movement",
+            "autonomous home robot"
+          ],
+          "image_prompts": [
+            "a sleek minimalist white robotic home device in a modern living room"
+          ],
+          "writer_model": "gemini",
+          "hook_before": "Apple is developing a one thousand dollar home robot for 2027.",
+          "hook_score": 51,
+          "evidence": [
+            {
+              "claim": "Apple is building a home robot.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "The Apple home robot is expected to cost $1,000.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "John Ternus is the CEO of Apple.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "The machine uses a robotic arm to handle FaceTime calls and manage smart home lights.",
+              "url": "https://oodaloop.com/briefs/technology/apples-rumored-tabletop-robot-j595-expected-to-cost-around-1000-to-release-in-2027-or-2028/"
+            },
+            {
+              "claim": "It features a roaming base that follows you around the house.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            },
+            {
+              "claim": "Sources suggest the device might be programmed to yell at your cat.",
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+          ]
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": null,
+        "voice_gender": "female",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-03T00:28:07.988064+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2156,8 +2324,8 @@
       "event": "In 2001, Tim Berners-Lee published a vision for autonomous web software in Scientific American. He called it the semantic web, an internet designed specifically for machine navigation. Decades later, autonomous software agents are finally t"
     }
   ],
-  "voice_mode": null,
-  "voice_gender": "female",
+  "voice_mode": "ai",
+  "voice_gender": "male",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-02T22:30+05:30",
@@ -2294,24 +2462,6 @@
     "gemini-flash-lite-latest": 1793634960.5067186
   },
   "editor_log": [
-    {
-      "at": "2026-11-01T20:44+05:30",
-      "title": "No laptops, no labs: How IIT Delhi alumnus is bringing coding to rural students",
-      "overall": 8.8,
-      "scores": {
-        "hook": 8,
-        "specific": 9,
-        "substance": 9,
-        "accuracy": 10,
-        "visuals": 8,
-        "flow": 9
-      },
-      "one_line": "Compelling story with strong specifics, minor visual repetition on group photos.",
-      "fixes": [],
-      "visual": [
-        "line 3: Multiple group photos of students repeat similar visual themes back-to-back."
-      ]
-    },
     {
       "at": "2026-11-01T22:32+05:30",
       "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
@@ -2727,10 +2877,33 @@
         "line 2: Visual shows '29.7 Cr' while audio says '31.1 crore'; this is a major accuracy failure.",
         "line 3: Visual shows '30 percent' while audio says '48 percent'; contradictory information."
       ]
+    },
+    {
+      "at": "2026-11-03T00:38+05:30",
+      "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
+      "overall": 6.5,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 6,
+        "accuracy": 4,
+        "visuals": 5,
+        "flow": 8
+      },
+      "one_line": "Misleading claim about cat-yelling ruins credibility; visuals are repetitive and lack variety.",
+      "fixes": [
+        "LINE 5: Remove the cat-yelling claim entirely as it is not in the source.",
+        "LINE 6: Change to 'Would you pay $1,000 for a robot with such limited functionality?'"
+      ],
+      "visual": [
+        "line 1: Same photo held for too long across multiple frames.",
+        "line 3: Visuals are generic; lacks a diagram or representation of a robotic arm.",
+        "line 5: Visuals are misleading as there is no source evidence for cat-yelling."
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 246,
+  "fish_turn": 247,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",
