@@ -231,3 +231,10 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Change: generic "How AI can/could/is ..." explainer headlines are skipped (news.OPINION). On 1 Nov "How AI can use health data
   to improve patient care" took 3 editor rounds (specific 3/10) and the quota before the 11:30 slot. Metric: reels passed/day,
   Gemini calls per posted reel (baseline 1 Nov: ~100).
+
+## 2026-11-02: daily check; Gemini quota reset follows US clock change
+- No failed runs in the last 8 h of runs checked (98 ok, 2 cancelled). 1 Nov 6/6 posted (21:30 slot 35 min late, one Instagram ProcessingFailed).
+  2 Nov 00:30/03:30/06:30 on time. All free Gemini models used up since 05:17 IST (478 calls for 3 reels); 11:30 will be late.
+- Bug fixed: quota_reset_after assumed 07:00 UTC (12:30 IST) all year. US clocks changed 1 Nov, so the real reset is now 13:30 IST.
+  A try at 12:32 would be refused as "per day" and block every model for 24 h, repeating daily all winter. It now uses America/Los_Angeles.
+  Metric: reels/day from 2 Nov; models usable after 13:32 IST.

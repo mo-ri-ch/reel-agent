@@ -778,7 +778,7 @@ def behind_today(s):
 
 
 CATCH_UP_HOURS = 2
-WORK_AHEAD_HOURS = 20   # reels are made ahead for the next 20 h: the free quota resets at 12:30 IST, so the night
+WORK_AHEAD_HOURS = 20   # reels are made ahead for the next 20 h: the free quota resets at 12:30/13:30 IST, so the night
 MAX_QUEUED = 4          # (US-time) reels must be made in the afternoon/evening, or there's no quota left for them
 
 

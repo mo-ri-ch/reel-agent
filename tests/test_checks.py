@@ -234,6 +234,12 @@ _pd = _R(429, {"error": {"details": [{"violations": [{"quotaId": "GenerateReques
 check("per-day limit", writer.daily_limit_hit(_pd), True)
 check("light jobs start on Flash-Lite", "lite" in writer.model_order(light=True)[0], True)
 check("reset is in the future", writer.quota_reset_after(writer.time.time()) > writer.time.time(), True)
+_ts = lambda *a: writer.datetime(*a, tzinfo=_utc).timestamp()
+_utc = __import__("datetime").timezone.utc
+check("quota reset, summer: 07:00 UTC", writer.quota_reset_after(_ts(2026, 10, 20, 7, 2)), _ts(2026, 10, 21, 7, 0))
+check("quota reset, winter: a refusal at 07:02 UTC clears at 08:00, not next day",
+      writer.quota_reset_after(_ts(2026, 11, 2, 7, 2)), _ts(2026, 11, 2, 8, 0))
+check("quota reset, clock-change day", writer.quota_reset_after(_ts(2026, 11, 1, 8, 10)), _ts(2026, 11, 2, 8, 0))
 writer.EXHAUSTED.clear(); writer.MISSING.clear(); writer.MODEL_USE.clear()
 writer.requests.post, _cfg.ANTHROPIC_API_KEY = _post, _key
 writer.time.sleep = _sleep

@@ -2,6 +2,8 @@
 import json
 import re
 import time
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -75,6 +77,7 @@ def claude_backup(prompt, search, json_mode, last):
     return text
 
 
+PACIFIC = ZoneInfo("America/Los_Angeles")
 EXHAUSTED = {}    # model -> when its free daily quota ran out (saved in state.json, cleared at Google's reset)
 MISSING = set()   # model names this key can't use (404)
 MODEL_USE = {}    # model -> {"ok": n, "busy": n, "other": n} in this run
@@ -115,11 +118,11 @@ def note_model(model, code, text=""):
 
 
 def quota_reset_after(ts):
-    """Google's free quota resets at midnight Pacific (07:00 UTC in summer, 08:00 in winter; 07:00 is used, an
-    early try only costs one refused request)."""
-    t = time.gmtime(ts)
-    reset = time.mktime((t.tm_year, t.tm_mon, t.tm_mday, 7, 0, 0, 0, 0, 0)) - time.timezone
-    return reset if reset > ts else reset + 86400
+    """Google's free quota resets at midnight Pacific: 12:30 IST in summer, 13:30 IST in winter (clocks changed
+    1 Nov 2026). Must follow the real clock: a try before the true reset is refused as "per day", and that refusal
+    would then block the model until the following day."""
+    t = datetime.fromtimestamp(ts, PACIFIC)
+    return (datetime(t.year, t.month, t.day, tzinfo=PACIFIC) + timedelta(days=1)).timestamp()
 
 
 def model_order(light=False):
