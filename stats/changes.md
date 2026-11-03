@@ -238,3 +238,9 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - Bug fixed: quota_reset_after assumed 07:00 UTC (12:30 IST) all year. US clocks changed 1 Nov, so the real reset is now 13:30 IST.
   A try at 12:32 would be refused as "per day" and block every model for 24 h, repeating daily all winter. It now uses America/Los_Angeles.
   Metric: reels/day from 2 Nov; models usable after 13:32 IST.
+
+## 2026-11-03: daily check; Instagram refuses the login
+- Last post 2 Nov 16:31 IST. Every try since about 01:00 IST on 3 Nov failed: "Error validating access token: Sessions for the user are not allowed because
+  the user is not a confirmed user". Needs the owner on Meta's side (told via outbox). 2 Nov 4/6; 3 Nov 0/3 so far. 4 finished reels were dropped after 3 tries each.
+- Change: this error now locks posting and reel making (ig_locked_since), keeps the finished reel, tests the login every 30 min, restarts by itself, and
+  drops a waiting reel if locked over 24 h. Seeded the lock with a control file. Metric: Gemini calls and reels lost during a lockout (baseline: 277 calls, 4 reels).

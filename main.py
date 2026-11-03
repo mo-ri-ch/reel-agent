@@ -969,8 +969,40 @@ def approve(s, now_please=False):
         next_offer_if_waiting(s)
 
 
+def ig_login_refused(e):
+    """Instagram refuses the login itself (locked account, dead token): retrying or making more reels can't help."""
+    return "error validating access token" in str(e).lower()
+
+
+def ig_lock_check(s):
+    """While Instagram refuses the login, tests it every 30 minutes. True = still locked: post and make nothing."""
+    since = s.get("ig_locked_since")
+    if not since:
+        return False
+    now = st.now()
+    probe = s.get("ig_lock_probe")
+    if probe and now - datetime.fromisoformat(probe) < timedelta(minutes=30):
+        return True
+    s["ig_lock_probe"] = now.isoformat()
+    try:
+        import instagram
+        instagram.whoami()
+    except Exception as e:
+        print(f"Instagram still locked: {e}")
+        return True
+    s.pop("ig_locked_since", None)
+    s.pop("ig_lock_probe", None)
+    old = now - datetime.fromisoformat(since) > timedelta(hours=24)
+    if old:  # the waiting reel's news is over a day old by now
+        s["queue"] = []
+    tg.send("✅ Instagram accepts the login again, so posting and reel making have restarted.")
+    return False
+
+
 def post_due(s):
     now = st.now()
+    if s.get("ig_locked_since"):
+        return
     for item in list(s["queue"]):
         if datetime.fromisoformat(item["post_at"]) > now:
             continue
@@ -983,6 +1015,15 @@ def post_due(s):
             whatsapp.alert(f"✅ Your reel is live on Instagram: {item['title']}\n{link}")
         except Exception as e:
             traceback.print_exc()
+            if ig_login_refused(e):  # keep this finished reel, and stop making more until the login works
+                s["ig_locked_since"] = now.isoformat()
+                s["ig_lock_probe"] = now.isoformat()
+                s["last_post_error"] = {"at": now.isoformat(timespec="minutes"), "title": item["title"][:80],
+                                        "error": f"{type(e).__name__}: {e}"[:500]}
+                tg.send("🚨 Instagram is refusing our login, so nothing can post. Please open Instagram and Facebook "
+                        "and complete any confirmation Meta asks for. I've stopped making reels until it works, and "
+                        "I'll restart by myself. If it's still stuck after that, ask Claude for a new token.")
+                return
             item["tries"] = item.get("tries", 0) + 1
             s["last_post_error"] = {"at": st.now().isoformat(timespec="minutes"), "title": item["title"][:80],
                                     "error": f"{type(e).__name__}: {e}"[:500]}  # for Claude's checks
@@ -1389,11 +1430,12 @@ def cmd_poll():
             traceback.print_exc()
             tg.send(f"⚠️ Something went wrong: {e}")
 
+    ig_locked = ig_lock_check(s)
     resting = gemini_resting(s)
     if not render and s["stage"] == "choosing" and s.get("choose_deadline") and resting:
         # every free model is used up until Google's reset: wait quietly instead of burning stories every 10 minutes
         s["choose_deadline"] = resting.isoformat()
-    if not render and s["stage"] == "choosing" and s.get("choose_deadline"):
+    if not render and not ig_locked and s["stage"] == "choosing" and s.get("choose_deadline"):
         if st.now() >= datetime.fromisoformat(s["choose_deadline"]) and s["candidates"]:
             pick = s["candidates"][0]
             tg.send(f"⏰ No reply, so I picked #1: {pick['title']}")
@@ -1508,6 +1550,8 @@ def keep_schedule(s):
     """Makes sure every post time today gets a reel: works ahead, hurries when a slot is close, and makes a
     backup reel if nothing will be ready in time. Returns True when a video needs rendering now."""
     now = st.now()
+    if s.get("ig_locked_since"):  # nothing can post: don't spend the free quota on reels that can't go out
+        return False
     need = next_unfilled(s)
     if not need:
         s.pop("behind_since", None)

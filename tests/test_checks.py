@@ -505,5 +505,37 @@ if _slot:
     check("later reel doesn't cover a missed slot", main.behind_today(_s), len(_slot))
 main.IG_READY = _ig
 
+# Instagram refuses the login: keep the finished reel, make no more, restart by itself when it works again
+import instagram as _insta  # noqa: E402
+_sent, _send, _pi, _who = [], main.tg.send, main.publish_item, _insta.whoami
+main.tg.send = lambda m, **k: _sent.append(m)
+def _refuse(*a, **k):
+    raise RuntimeError("Instagram error: Error validating access token: Sessions for the user are not allowed")
+main.publish_item = _refuse
+_past = (main.st.now() - _td(minutes=1)).isoformat()
+_s = {"queue": [{"title": "x", "post_at": _past, "video_file_id": "v"}]}
+main.post_due(_s)
+check("login refused: reel kept", len(_s["queue"]), 1)
+check("login refused: no try used", _s["queue"][0].get("tries"), None)
+check("login refused: locked", bool(_s.get("ig_locked_since")), True)
+check("login refused: told once", len(_sent), 1)
+main.post_due(_s)
+check("locked: no second message", len(_sent), 1)
+check("locked: no new reels", main.keep_schedule(_s), False)
+_insta.whoami = _refuse
+_s["ig_lock_probe"] = (main.st.now() - _td(minutes=31)).isoformat()
+check("probe fails: still locked", main.ig_lock_check(_s), True)
+_insta.whoami = lambda: "gradientai.news"
+check("probe waits 30 min", main.ig_lock_check(_s), True)
+_s["ig_lock_probe"] = (main.st.now() - _td(minutes=31)).isoformat()
+check("probe ok: unlocked", main.ig_lock_check(_s), False)
+check("unlocked: reel still waiting", len(_s["queue"]), 1)
+_s.update(ig_locked_since=(main.st.now() - _td(hours=25)).isoformat())
+main.ig_lock_check(_s)
+check("locked over a day: stale reel dropped", _s["queue"], [])
+_e = RuntimeError("Instagram error: ProcessingFailed")
+check("other errors still retry normally", main.ig_login_refused(_e), False)
+main.tg.send, main.publish_item, _insta.whoami = _send, _pi, _who
+
 print("\n".join(fails) if fails else "all checks passed")
 sys.exit(1 if fails else 0)
