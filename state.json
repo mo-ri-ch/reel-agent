@@ -1,6 +1,6 @@
 {
   "offset": 153809618,
-  "stage": "awaiting_voice",
+  "stage": "awaiting_approval",
   "candidates": [],
   "choose_deadline": null,
   "topic": {
@@ -235,11 +235,43 @@
     ],
     "ig_audio": null,
     "visual_status": "skipped",
-    "visual_notes": []
+    "visual_notes": [],
+    "editor": {
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise script, but visuals rely too heavily on generic stock code footage.",
+      "script_fixes": [
+        "LINE 3: Change to 'This is the point where AI models autonomously improve their own training data.'",
+        "LINE 7: Change to 'The system could soon iterate faster than human researchers can audit.'"
+      ],
+      "visual_beats": [
+        2,
+        3
+      ],
+      "visual_notes": [
+        "line 3: Generic terminal output is filler; replace with a diagram of a neural network loop.",
+        "line 4: Abstract light bars are filler; replace with a graph showing exponential capability growth"
+      ],
+      "reviewer": "gemini"
+    },
+    "credits": [
+      "Anthropic: anthropic.com",
+      "Anthropic: anthropic.com",
+      "Dario Amodei: TechCrunch"
+    ],
+    "voice_used": "Paula (Fish Audio)",
+    "visual_summary": "2 official images, 1 real photos, 6 clips, 2 cards"
   },
   "voice_file_id": null,
   "user_image_id": null,
-  "video_file_id": null,
+  "video_file_id": "BAACAgUAAxkDAAI7gmrpJbG6Pjx6KUPH8blHO30PBqeYAAJTIAACj8BJVx2ZgWjS9jxvPQQ",
   "queue": [
     {
       "title": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss",
@@ -266,9 +298,9 @@
     }
   ],
   "autopilot": true,
-  "script_deadline": "2026-11-03T05:28:33.471604+05:30",
-  "preview_deadline": null,
-  "last_gender": "male",
+  "script_deadline": null,
+  "preview_deadline": "2026-11-03T06:07:14.005983+05:30",
+  "last_gender": "female",
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-03",
@@ -756,242 +788,6 @@
   ],
   "next_video_id": null,
   "undo_stack": [
-    {
-      "label": "autopilot choosing the AI voice",
-      "data": {
-        "stage": "awaiting_voice",
-        "candidates": [],
-        "choose_deadline": null,
-        "topic": {
-          "title": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss",
-          "link": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss",
-          "summary": "Anthropic Posts $17 Bn in Q3 Revenue, Swings to Operating Loss Analytics India Magazine",
-          "source": "Analytics India Magazine",
-          "published": "2026-11-02T16:06:55+00:00",
-          "angle": "Anthropic hits massive $17B revenue milestone but swings to a loss—is the AI bubble showing cracks?"
-        },
-        "draft": {
-          "title": "Anthropic Q3 Revenue and Operating Loss",
-          "hook_text": "Anthropic hit 17 billion in revenue",
-          "beats": [
-            {
-              "line": "Anthropic hit seventeen billion dollars in revenue for the third quarter of 2026.",
-              "visual": "clip",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://www.anthropic.com",
-              "tag": "17 billion revenue",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The company swung to an operating loss during this same period.",
-              "visual": "stat",
-              "query": "technology",
-              "prompt": "",
-              "big": "Operating",
-              "small": "Loss",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "operating loss",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "This San Francisco firm maintains its focus on developing the Claude AI model.",
-              "visual": "clip",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "anthropic.com",
-              "headline": "",
-              "url": "https://claude.ai",
-              "tag": "Claude AI model",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Claude",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "The financial report highlights the massive cost of training advanced AI systems.",
-              "visual": "clip",
-              "query": "server room data center",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "AI training costs",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Analytics India Magazine notes these figures reflect the current state of the industry.",
-              "visual": "source",
-              "query": "technology",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "Analytics India Magazine",
-              "domain": "analyticsindiamag.com",
-              "headline": "Anthropic Posts 17 Bn in Q3 Revenue, Swings to Operating Loss",
-              "url": "",
-              "tag": "Industry finances",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            },
-            {
-              "line": "Scaling compute power requires significant capital investment for the company.",
-              "visual": "clip",
-              "query": "abstract digital network",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Capital investment",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": [
-                {
-                  "name": "Anthropic",
-                  "domain": "anthropic.com"
-                }
-              ]
-            },
-            {
-              "line": "Will high revenue eventually outweigh these rising infrastructure costs?",
-              "visual": "clip",
-              "query": "person looking at charts",
-              "prompt": "",
-              "big": "",
-              "small": "",
-              "entity": "",
-              "outlet": "",
-              "domain": "",
-              "headline": "",
-              "url": "",
-              "tag": "Future profitability",
-              "name": "",
-              "role": "",
-              "x": "",
-              "brands": []
-            }
-          ],
-          "delivery": "Fast, analytical tone focusing on the trade-off between massive scale and the high costs of AI infrastructure.",
-          "thin": false,
-          "caption": "Anthropic posted 17 billion dollars in revenue for Q3 2026, yet reported an operating loss. The financial results underscore the immense capital required to train and deploy advanced AI models like Claude. Will high revenue eventually outweigh these rising infrastructure costs?",
-          "hashtags": [
-            "Anthropic",
-            "Claude",
-            "AI",
-            "TechNews",
-            "Business"
-          ],
-          "sources": [
-            "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-          ],
-          "script": "Anthropic hit seventeen billion dollars in revenue for the third quarter of 2026.\nThe company swung to an operating loss during this same period.\nThis San Francisco firm maintains its focus on developing the Claude AI model.\nThe financial report highlights the massive cost of training advanced AI systems.\nAnalytics India Magazine notes these figures reflect the current state of the industry.\nScaling compute power requires significant capital investment for the company.\nWill high revenue eventually outweigh these rising infrastructure costs?",
-          "keywords": [
-            "technology",
-            "technology",
-            "server room data center",
-            "abstract digital network",
-            "person looking at charts"
-          ],
-          "image_prompts": [],
-          "writer_model": "gemini",
-          "evidence": [
-            {
-              "claim": "Anthropic hit 17 billion in revenue",
-              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-            },
-            {
-              "claim": "Anthropic hit seventeen billion dollars in revenue for the third quarter of 2026.",
-              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-            },
-            {
-              "claim": "The company swung to an operating loss during this same period.",
-              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-            },
-            {
-              "claim": "This San Francisco firm maintains its focus on developing the Claude AI model.",
-              "url": "https://www.trendingtopics.eu/anthropic-ahead-of-ipo-17-billion-in-revenue-and-a-23-billion-loss-in-q3-2026/"
-            },
-            {
-              "claim": "The financial report highlights the massive cost of training advanced AI systems.",
-              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-            },
-            {
-              "claim": "Analytics India Magazine notes these figures reflect the current state of the industry.",
-              "url": "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-            },
-            {
-              "claim": "Scaling compute power requires significant capital investment for the company.",
-              "url": "https://www.trendingtopics.eu/anthropic-ahead-of-ipo-17-billion-in-revenue-and-a-23-billion-loss-in-q3-2026/"
-            }
-          ],
-          "fact_status": "ok",
-          "fact_notes": [],
-          "fix_rounds": 1,
-          "source_links": [
-            "https://analyticsindiamag.com/ai-news/anthropic-posts-17-bn-in-q3-revenue-swings-to-operating-loss"
-          ]
-        },
-        "video_file_id": null,
-        "voice_file_id": null,
-        "voice_mode": null,
-        "voice_gender": "female",
-        "user_image_id": null,
-        "user_video_id": null,
-        "script_deadline": "2026-11-03T04:21:03.629269+05:30",
-        "preview_deadline": null,
-        "pending_topic": null
-      }
-    },
     {
       "label": "autopilot choosing the AI voice",
       "data": {
@@ -1735,6 +1531,257 @@
         "preview_deadline": null,
         "pending_topic": null
       }
+    },
+    {
+      "label": "autopilot choosing the AI voice",
+      "data": {
+        "stage": "awaiting_voice",
+        "candidates": [],
+        "choose_deadline": null,
+        "topic": {
+          "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+          "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+          "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "published": "2026-11-02T22:14:50+00:00",
+          "angle": "Anthropic warns we are approaching 'RSI'—the point where AI starts building itself, triggering a massive, uncontrollable acceleration."
+        },
+        "draft": {
+          "title": "Anthropic warns of self-building AI",
+          "hook_text": "AI that builds itself",
+          "beats": [
+            {
+              "line": "Anthropic warns they are nearing RSI capability.",
+              "visual": "official",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "Anthropic",
+              "outlet": "",
+              "domain": "anthropic.com",
+              "headline": "",
+              "url": "https://www.anthropic.com",
+              "tag": "Anthropic RSI warning",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "RSI stands for Recursive Self-Improvement.",
+              "visual": "clip",
+              "query": "server room data center",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "What is RSI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "This is the point where AI trains itself.",
+              "visual": "clip",
+              "query": "abstract digital code matrix",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "AI training AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "It triggers a massive acceleration in its own capabilities.",
+              "visual": "stat",
+              "query": "technology",
+              "prompt": "",
+              "big": "RSI",
+              "small": "Recursive capability spike",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Capability acceleration",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Dario Amodei and his team say this creates an irreversible path.",
+              "visual": "person",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "https://www.anthropic.com/about",
+              "tag": "Dario Amodei's warning",
+              "name": "Dario Amodei",
+              "role": "CEO, Anthropic",
+              "x": "DarioAmodei",
+              "brands": [
+                {
+                  "name": "Anthropic",
+                  "domain": "anthropic.com"
+                }
+              ]
+            },
+            {
+              "line": "TechCrunch reports this could mark a point of no return.",
+              "visual": "source",
+              "query": "technology",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "TechCrunch",
+              "domain": "techcrunch.com",
+              "headline": "Anthropic warns that it’s very close to RSI capability",
+              "url": "",
+              "tag": "Point of no return",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "The system could soon improve faster than we can understand.",
+              "visual": "clip",
+              "query": "fast moving digital data",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Rapid improvement",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            },
+            {
+              "line": "Would you trust a machine that updates its own code?",
+              "visual": "clip",
+              "query": "person looking at computer screen",
+              "prompt": "",
+              "big": "",
+              "small": "",
+              "entity": "",
+              "outlet": "",
+              "domain": "",
+              "headline": "",
+              "url": "",
+              "tag": "Trusting self-improving AI",
+              "name": "",
+              "role": "",
+              "x": "",
+              "brands": []
+            }
+          ],
+          "delivery": "Urgent and cautionary tone, emphasizing the technical stakes as the story progresses.",
+          "thin": false,
+          "caption": "Anthropic warns they are approaching Recursive Self-Improvement, a state where AI can upgrade its own code. This breakthrough could trigger a rapid acceleration in intelligence that humans may no longer be able to control. Would you trust a machine that updates its own code?",
+          "hashtags": [
+            "Anthropic",
+            "RSI",
+            "ArtificialIntelligence",
+            "TechNews",
+            "AI"
+          ],
+          "sources": [
+            "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+          ],
+          "script": "Anthropic warns they are nearing RSI capability.\nRSI stands for Recursive Self-Improvement.\nThis is the point where AI trains itself.\nIt triggers a massive acceleration in its own capabilities.\nDario Amodei and his team say this creates an irreversible path.\nTechCrunch reports this could mark a point of no return.\nThe system could soon improve faster than we can understand.\nWould you trust a machine that updates its own code?",
+          "keywords": [
+            "server room data center",
+            "abstract digital code matrix",
+            "fast moving digital data",
+            "person looking at computer screen"
+          ],
+          "image_prompts": [],
+          "writer_model": "gemini",
+          "hook_score": 30,
+          "evidence": [
+            {
+              "claim": "Anthropic is developing AI that builds itself.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "Anthropic warns they are nearing RSI capability.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "RSI stands for Recursive Self-Improvement.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "RSI is the point where AI trains itself.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "RSI triggers a massive acceleration in AI capabilities.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "Dario Amodei is the CEO of Anthropic.",
+              "url": "https://aimagazine.com/news/anthropic-ipo-s-1-finances-rsi-and-existential-danger"
+            },
+            {
+              "claim": "TechCrunch reports RSI could mark a point of no return.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            },
+            {
+              "claim": "The system could soon improve faster than we can understand.",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+            }
+          ],
+          "fact_status": "ok",
+          "fact_notes": [],
+          "fix_rounds": 0,
+          "source_links": [
+            "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+          ],
+          "ig_audio": null,
+          "visual_status": "skipped",
+          "visual_notes": []
+        },
+        "video_file_id": null,
+        "voice_file_id": null,
+        "voice_mode": "ai",
+        "voice_gender": "male",
+        "user_image_id": null,
+        "user_video_id": null,
+        "script_deadline": "2026-11-03T05:28:33.471604+05:30",
+        "preview_deadline": null,
+        "pending_topic": null
+      }
     }
   ],
   "posted_ids": [
@@ -2244,7 +2291,7 @@
     }
   ],
   "voice_mode": "ai",
-  "voice_gender": "male",
+  "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
     "at": "2026-11-03T04:45+05:30",
@@ -2292,28 +2339,23 @@
   ],
   "engine_used": "fish",
   "token_day": "2026-11-03",
-  "last_fish_id": "536d3a5e000945adb7038665781a4aca",
+  "last_fish_id": "c2623f0c075b4492ac367989aee1576f",
   "late_note_for": "2026-10-28-0",
   "gemini_use": {
     "day": "2026-11-03",
-    "calls": 240,
+    "calls": 252,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.1-flash-lite": {
-        "ok": 132,
+        "ok": 133,
         "busy": 41,
-        "other": 67,
+        "other": 78,
         "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
       }
     }
   },
   "gemini_errors": [
-    {
-      "at": "19:12",
-      "error": "gemini-3.1-flash-lite is overloaded right now",
-      "day": "2026-11-03"
-    },
     {
       "at": "19:25",
       "error": "gemini-3.1-flash-lite is overloaded right now",
@@ -2358,6 +2400,11 @@
       "at": "23:46",
       "error": "gemini-3.1-flash-lite is overloaded right now",
       "day": "2026-11-03"
+    },
+    {
+      "at": "00:01",
+      "error": "gemini-3.1-flash-lite is overloaded right now",
+      "day": "2026-11-03"
     }
   ],
   "last_script_error": {
@@ -2388,30 +2435,6 @@
     "gemini-flash-lite-latest": 1793634960.5067186
   },
   "editor_log": [
-    {
-      "at": "2026-11-02T15:40+05:30",
-      "title": "The middle layer will make or break enterprise AI agents",
-      "overall": 5.2,
-      "scores": {
-        "hook": 6,
-        "specific": 3,
-        "substance": 4,
-        "accuracy": 7,
-        "visuals": 4,
-        "flow": 7
-      },
-      "one_line": "Too abstract and generic with severe visual repetition across multiple frames.",
-      "fixes": [
-        "LINE 1: Replace generic enterprise terms with specific software platforms or named case studies from the CIO piece.",
-        "LINE 3: Mention concrete orchestration tools like LangChain, LlamaIndex, or specific enterprise middleware instead of vague tools.",
-        "LINE 5: Specify which developers or enterprises are building these wrappers."
-      ],
-      "visual": [
-        "line 1: AI-generated fantasy architecture image is completely unrelated to the technical topic of ",
-        "line 2: Repeats the same abstract building graphic from line 1.",
-        "line 3: Static text frame held across multiple consecutive shots with no visual evolution."
-      ]
-    },
     {
       "at": "2026-11-02T15:55+05:30",
       "title": "The agentic web is here",
@@ -2834,10 +2857,32 @@
         "line 2: The same visual style is repeated for frames 4 and 5.",
         "line 3: Frames 6 and 7 are identical, violating the no-repeat rule."
       ]
+    },
+    {
+      "at": "2026-11-03T05:37+05:30",
+      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+      "overall": 8.2,
+      "scores": {
+        "hook": 8,
+        "specific": 9,
+        "substance": 8,
+        "accuracy": 9,
+        "visuals": 6,
+        "flow": 9
+      },
+      "one_line": "Strong, concise script, but visuals rely too heavily on generic stock code footage.",
+      "fixes": [
+        "LINE 3: Change to 'This is the point where AI models autonomously improve their own training data.'",
+        "LINE 7: Change to 'The system could soon iterate faster than human researchers can audit.'"
+      ],
+      "visual": [
+        "line 3: Generic terminal output is filler; replace with a diagram of a neural network loop.",
+        "line 4: Abstract light bars are filler; replace with a graph showing exponential capability growth"
+      ]
     }
   ],
   "rest_note": "2026-11-02T13:32:00+05:30",
-  "fish_turn": 255,
+  "fish_turn": 256,
   "ig_music_recent": [
     "1121250805840078",
     "497116412841351",

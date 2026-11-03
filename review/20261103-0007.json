@@ -1,0 +1,84 @@
+{
+ "made": "20261103-0007",
+ "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+ "hook_text": "AI that builds itself",
+ "hook_before": null,
+ "script": "Anthropic warns they are nearing RSI capability.\nRSI stands for Recursive Self-Improvement.\nThis is the point where AI trains itself.\nIt triggers a massive acceleration in its own capabilities.\nDario Amodei and his team say this creates an irreversible path.\nTechCrunch reports this could mark a point of no return.\nThe system could soon improve faster than we can understand.\nWould you trust a machine that updates its own code?",
+ "words": 70,
+ "beats": [
+  {
+   "line": "Anthropic warns they are nearing RSI capability.",
+   "visual": "official"
+  },
+  {
+   "line": "RSI stands for Recursive Self-Improvement.",
+   "visual": "clip"
+  },
+  {
+   "line": "This is the point where AI trains itself.",
+   "visual": "clip"
+  },
+  {
+   "line": "It triggers a massive acceleration in its own capabilities.",
+   "visual": "stat"
+  },
+  {
+   "line": "Dario Amodei and his team say this creates an irreversible path.",
+   "visual": "person"
+  },
+  {
+   "line": "TechCrunch reports this could mark a point of no return.",
+   "visual": "source"
+  },
+  {
+   "line": "The system could soon improve faster than we can understand.",
+   "visual": "clip"
+  },
+  {
+   "line": "Would you trust a machine that updates its own code?",
+   "visual": "clip"
+  }
+ ],
+ "voice": "Paula (Fish Audio)",
+ "visuals": "2 official images, 1 real photos, 6 clips, 2 cards",
+ "editor": {
+  "overall": 8.2,
+  "scores": {
+   "hook": 8,
+   "specific": 9,
+   "substance": 8,
+   "accuracy": 9,
+   "visuals": 6,
+   "flow": 9
+  },
+  "one_line": "Strong, concise script, but visuals rely too heavily on generic stock code footage.",
+  "script_fixes": [
+   "LINE 3: Change to 'This is the point where AI models autonomously improve their own training data.'",
+   "LINE 7: Change to 'The system could soon iterate faster than human researchers can audit.'"
+  ],
+  "visual_beats": [
+   2,
+   3
+  ],
+  "visual_notes": [
+   "line 3: Generic terminal output is filler; replace with a diagram of a neural network loop.",
+   "line 4: Abstract light bars are filler; replace with a graph showing exponential capability growth"
+  ],
+  "reviewer": "gemini"
+ },
+ "duration": 28.13,
+ "sound_starts_at": 0.0,
+ "loudness_lufs": -14.0,
+ "cuts": [
+  3.47,
+  6.73,
+  9.47,
+  13.4,
+  21.03,
+  24.67
+ ],
+ "first_cut_at": 3.47,
+ "avg_shot_seconds": 4.02,
+ "longest_shot_seconds": 7.63,
+ "words_per_minute": 149
+}
