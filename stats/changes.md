@@ -244,3 +244,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   the user is not a confirmed user". Needs the owner on Meta's side (told via outbox). 2 Nov 4/6; 3 Nov 0/3 so far. 4 finished reels were dropped after 3 tries each.
 - Change: this error now locks posting and reel making (ig_locked_since), keeps the finished reel, tests the login every 30 min, restarts by itself, and
   drops a waiting reel if locked over 24 h. Seeded the lock with a control file. Metric: Gemini calls and reels lost during a lockout (baseline: 277 calls, 4 reels).
+
+## 2026-11-04: daily check; Instagram login still refused
+- No failed runs in the last 8 h of runs checked (100 ok). Lock since 3 Nov: last post 2 Nov 16:31 IST, 0 posts on 3 Nov and so far on 4 Nov. Gemini use is only 6 calls today, so the lock is saving quota as designed.
+  Insights have also stopped (last collect 2 Nov 00:20). No code change; reminded the owner, since only he can complete Meta's confirmation.
