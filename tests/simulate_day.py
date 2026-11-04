@@ -130,6 +130,13 @@ def run(scenario):
         for name in os.listdir(ROOT):
             if name.endswith(".py") or name == "state.json":
                 shutil.copy(os.path.join(ROOT, name), tmp)
+        # the simulated day must not inherit a live Instagram lockout from the real state.json (it would post nothing)
+        with open(os.path.join(tmp, "state.json")) as f:
+            sim_state = json.load(f)
+        sim_state.pop("ig_locked_since", None)
+        sim_state.pop("ig_lock_probe", None)
+        with open(os.path.join(tmp, "state.json"), "w") as f:
+            json.dump(sim_state, f)
         with open(os.path.join(tmp, "_driver.py"), "w") as f:
             f.write(DRIVER)
         env = {**os.environ, "WORK_DIR": os.path.join(tmp, "work"), "TELEGRAM_CHAT_ID": "1"}
