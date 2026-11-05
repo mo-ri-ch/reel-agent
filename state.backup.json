@@ -3,20 +3,20 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "OpenAI cyber model found 948 Linux kernel exploits",
-      "link": "https://www.artificialintelligence-news.com/news/openai-cyber-model-found-948-linux-kernel-exploits/",
-      "summary": "OpenAI cyber model found 948 Linux kernel exploits AI News",
-      "source": "AI News",
-      "published": "2026-11-05T14:47:32+00:00",
-      "angle": "OpenAI's new cyber model found 948 Linux kernel exploits, showing shocking automated hacking power."
+      "title": "Claude AI can plug directly into your bank account",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
+      "summary": "Anthropic has a new pitch for managing your personal finances: let Claude do it instead, with a new Personal Finance feature that connects it to your bank and card accounts via the Plaid bank bridging platform. You can ask the chatbot \"where did my money go this month,\" for example, and it'll create an overview […]",
+      "source": "AI | The Verge",
+      "published": "2026-11-05T18:00:00+00:00",
+      "angle": "Anthropic's Claude can now connect directly to your bank account to manage your personal finances."
     },
     {
-      "title": "You can post AI music straight to SoundCloud from ElevenLabs",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
-      "summary": "After partnering with Moises earlier this year, SoundCloud is now adding integration with another AI music platform, ElevenLabs. Now, rather than having to export and download your outputs from ElevenLabs and then upload them to SoundCloud, you can publish them directly. As part of the partnership, SoundCloud Artist Pro subscribers are also getting three months […]",
-      "source": "AI | The Verge",
-      "published": "2026-11-05T15:00:00+00:00",
-      "angle": "SoundCloud now lets you post AI-generated music straight from ElevenLabs with one tap."
+      "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
+      "link": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
+      "summary": "OpenAI president Greg Brockman says the company could be ready to go public in 2027, pointing to accelerating enterprise revenue and a turnaround in its business.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-11-05T18:02:27+00:00",
+      "angle": "OpenAI President Greg Brockman confirms the company could be IPO ready by 2027."
     },
     {
       "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
@@ -24,10 +24,10 @@
       "summary": "The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.",
       "source": "AI News & Artificial Intelligence | TechCrunch",
       "published": "2026-11-05T14:00:00+00:00",
-      "angle": "Box taps Nvidia for a new AI retrieval system that's 4x faster and uses 90% fewer tokens."
+      "angle": "Box uses Nvidia's Nemotron to make AI agents 4x faster with 90% fewer tokens used."
     }
   ],
-  "choose_deadline": "2026-11-05T23:01:15.326314+05:30",
+  "choose_deadline": "2026-11-06T02:01:21.601559+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -41,7 +41,9 @@
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-06",
-    "done": []
+    "done": [
+      "01:30"
+    ]
   },
   "pending_topic": null,
   "held": [
@@ -1989,23 +1991,23 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-05T22:30+05:30",
-    "techcrunch.com": 19,
+    "at": "2026-11-06T01:30+05:30",
+    "techcrunch.com": 20,
     "theverge.com": 10,
     "arstechnica.com": 2,
     "technologyreview.com": 2,
-    "openai.com": 4,
-    "blog.google": 0,
+    "openai.com": 3,
+    "blog.google": 1,
     "deepmind.google": 0,
-    "huggingface.co": 2,
-    "blogs.nvidia.com": 3,
+    "huggingface.co": 3,
+    "blogs.nvidia.com": 4,
     "inc42.com": 5,
-    "news.google.com": 40,
+    "news.google.com": 36,
     "Google News (VentureBeat, AIM, AI News)": 17,
-    "producthunt.com": 7,
+    "producthunt.com": 6,
     "Hacker News": 6,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 11
+    "filtered out (PR / local events / market fluff)": 6
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -2038,10 +2040,23 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-06",
-    "calls": 0,
+    "calls": 4,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.5-flash-lite": {
+        "ok": 1,
+        "busy": 0,
+        "other": 2,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      },
+      "gemini-3.1-flash-lite": {
+        "ok": 1,
+        "busy": 0,
+        "other": 0,
+        "last": ""
+      }
+    }
   },
   "gemini_errors": [
     {
