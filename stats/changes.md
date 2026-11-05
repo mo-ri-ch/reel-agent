@@ -248,3 +248,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 ## 2026-11-04: daily check; Instagram login still refused
 - No failed runs in the last 8 h of runs checked (100 ok). Lock since 3 Nov: last post 2 Nov 16:31 IST, 0 posts on 3 Nov and so far on 4 Nov. Gemini use is only 6 calls today, so the lock is saving quota as designed.
   Insights have also stopped (last collect 2 Nov 00:20). No code change; reminded the owner, since only he can complete Meta's confirmation.
+
+## 2026-11-05: daily check; Instagram login still refused (day 3)
+- No failed runs in the last 100 runs (8 h). Lock since 3 Nov still on: last post 2 Nov 16:31 IST, login test at 11:05 IST today still refused. Gemini 6 calls today, no reels wasted.
+  Insights stopped since 2 Nov 00:20. No code change; reminded the owner again, since only he can complete Meta's confirmation.
