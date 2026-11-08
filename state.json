@@ -3,13 +3,12 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "OpenAI raises $11B at a $1.25T valuation",
-      "link": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
-      "summary": "",
-      "source": "247wallst.com",
-      "published": "2026-11-08T14:49:23+00:00",
-      "buzz": "Hacker News 99 points",
-      "angle": "OpenAI raises $11B at a massive $1.25T valuation—huge numbers everyone in tech is talking about."
+      "title": "Elvis and Eminem rights holders are suing Suno",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "summary": "Suno is facing yet another pair of lawsuits. A group of rights holders of Elvis Presley's music and the publisher of some of Eminem's biggest records are suing the AI music company, claiming it illegally generates music and lyrics that mimic those artists. The lawyers in the Presley suit claim that Suno has violated Tennessee's […]",
+      "source": "AI | The Verge",
+      "published": "2026-11-08T17:23:19+00:00",
+      "angle": "Elvis and Eminem rights holders are suing Suno, sparking a massive legal battle over AI music."
     },
     {
       "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
@@ -17,8 +16,8 @@
       "summary": "",
       "source": "apiiro.com",
       "published": "2026-11-07T20:45:32+00:00",
-      "buzz": "Hacker News 499 points",
-      "angle": "Claude Code bug dangerously exposes real passwords in over 1,000 public GitHub files."
+      "buzz": "Hacker News 527 points",
+      "angle": "Claude Code's security flaw accidentally exposed real passwords in thousands of public GitHub files."
     },
     {
       "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
@@ -26,11 +25,11 @@
       "summary": "",
       "source": "github.com",
       "published": "2026-11-08T10:22:04+00:00",
-      "buzz": "Hacker News 174 points",
-      "angle": "Run a massive 284B DeepSeek model locally on just 64GB RAM with no GPU required."
+      "buzz": "Hacker News 281 points",
+      "angle": "Run a massive 284B DeepSeek model on just 64GB RAM with zero GPUs using this wild new modchip trick."
     }
   ],
-  "choose_deadline": "2026-11-08T23:01:04.478534+05:30",
+  "choose_deadline": "2026-11-09T02:01:01.157619+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -44,7 +43,9 @@
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-09",
-    "done": []
+    "done": [
+      "01:30"
+    ]
   },
   "pending_topic": null,
   "held": [
@@ -1907,9 +1908,9 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-08T22:30+05:30",
+    "at": "2026-11-09T01:30+05:30",
     "techcrunch.com": 2,
-    "theverge.com": 4,
+    "theverge.com": 6,
     "arstechnica.com": 0,
     "technologyreview.com": 0,
     "openai.com": 0,
@@ -1918,10 +1919,10 @@
     "huggingface.co": 0,
     "blogs.nvidia.com": 0,
     "inc42.com": 0,
-    "news.google.com": 38,
-    "Google News (VentureBeat, AIM, AI News)": 5,
+    "news.google.com": 40,
+    "Google News (VentureBeat, AIM, AI News)": 4,
     "producthunt.com": 1,
-    "Hacker News": 6,
+    "Hacker News": 7,
     "Reddit": 5,
     "filtered out (PR / local events / market fluff)": 3
   },
@@ -1956,10 +1957,17 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-09",
-    "calls": 0,
+    "calls": 2,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.5-flash-lite": {
+        "ok": 2,
+        "busy": 0,
+        "other": 0,
+        "last": ""
+      }
+    }
   },
   "gemini_errors": [
     {
