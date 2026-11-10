@@ -3,23 +3,31 @@
   "stage": "choosing",
   "candidates": [
     {
+      "title": "Meta’s proprietary Muse Ember nearly matches Claude Haiku 5.5 at 1/3 the estimated per-task cost",
+      "link": "https://venturebeat.com/technology/metas-proprietary-muse-ember-nearly-matches-claude-haiku-5-5-at-1-3-the-estimated-per-task-cost",
+      "summary": "Meta’s proprietary Muse Ember nearly matches Claude Haiku 5.5 at 1/3 the estimated per-task cost VentureBeat",
+      "source": "VentureBeat",
+      "published": "2026-11-10T00:13:38+00:00",
+      "angle": "Meta's new Muse Ember matches top-tier Claude performance at a fraction of the cost."
+    },
+    {
+      "title": "Did Claude Code’s ‘don’t ask again’ option accidentally expose your enterprise's passwords and keys?",
+      "link": "https://venturebeat.com/security/did-claude-codes-dont-ask-again-option-accidentally-expose-your-enterprises-passwords-and-keys",
+      "summary": "Did Claude Code’s ‘don’t ask again’ option accidentally expose your enterprise's passwords and keys? VentureBeat",
+      "source": "VentureBeat",
+      "published": "2026-11-10T03:49:00+00:00",
+      "angle": "Did Claude Code accidentally leak your enterprise passwords?"
+    },
+    {
       "title": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
       "link": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
       "summary": "After publishing a support article in early September outlining usage limits for some Apple Intelligence features, the company has updated Logic Pro with an option to \"Buy More Usage\" for a one-time purchase price of $49.99, as spotted by 9to5Mac. It has a built-in AI assistant to do things like \"start a new song, set […]",
       "source": "AI | The Verge",
       "published": "2026-11-09T19:09:58+00:00",
-      "angle": "Apple introduces $50 Intelligence Usage Packs, starting a paid tier for advanced AI features."
-    },
-    {
-      "title": "Claude Code is accidentally exposing secrets all over GitHub",
-      "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
-      "summary": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
-      "source": "AI - Ars Technica",
-      "published": "2026-11-09T17:24:26+00:00",
-      "angle": "Claude Code is accidentally exposing passwords and API keys all over GitHub due to a prompt bug."
+      "angle": "Apple introduces $50 Intelligence Usage Packs to extend AI features."
     }
   ],
-  "choose_deadline": "2026-11-10T05:00:48.012354+05:30",
+  "choose_deadline": "2026-11-10T10:01:16.266699+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -35,7 +43,8 @@
     "date": "2026-11-10",
     "done": [
       "01:30",
-      "04:30"
+      "04:30",
+      "09:30"
     ]
   },
   "pending_topic": null,
@@ -1894,8 +1903,8 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-10T04:30+05:30",
-    "techcrunch.com": 11,
+    "at": "2026-11-10T09:30+05:30",
+    "techcrunch.com": 13,
     "theverge.com": 10,
     "arstechnica.com": 2,
     "technologyreview.com": 3,
@@ -1906,8 +1915,8 @@
     "blogs.nvidia.com": 6,
     "inc42.com": 1,
     "news.google.com": 39,
-    "Google News (VentureBeat, AIM, AI News)": 20,
-    "producthunt.com": 1,
+    "Google News (VentureBeat, AIM, AI News)": 22,
+    "producthunt.com": 0,
     "Hacker News": 6,
     "Reddit": 5,
     "filtered out (PR / local events / market fluff)": 4
@@ -1943,12 +1952,12 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-10",
-    "calls": 4,
+    "calls": 6,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 4,
+        "ok": 6,
         "busy": 0,
         "other": 0,
         "last": ""
