@@ -274,3 +274,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
 - 291 runs in the last 24 h: 288 ok, 3 failed at 23:40-23:55 IST on 9 Nov before any job started (GitHub side, no step ran; fine since). Lock since 3 Nov still on:
   last post 2 Nov 16:31 IST, login test at 10:30 IST today still refused. About 46 slots missed. Gemini 6 calls today. Insights stopped since 2 Nov 00:20.
   No code change; reminded the owner, since only he can complete Meta's confirmation.
+
+## 2026-11-11: daily check; Instagram login still refused (day 9)
+- 293 runs in the last 24 h, all ok. Lock since 3 Nov still on: last post 2 Nov 16:31 IST, login test at 10:35 IST today still refused. About 52 slots missed.
+  Gemini 6 calls today. Insights stopped since 2 Nov 00:20. No code change; reminded the owner, since only he can complete Meta's confirmation.
