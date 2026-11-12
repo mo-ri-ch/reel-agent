@@ -3,32 +3,31 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
-      "link": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
-      "summary": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-11-11T23:28:45+00:00",
-      "angle": "Nvidia board reportedly prepping to oust CEO Jensen Huang"
+      "title": "Nvidia CEO Jensen Huang resigns amid spy, affair scandals",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-fired-nvidia",
+      "summary": "Nvidia's board has separated from Jensen Huang, its longtime co-founder, president, and CEO, after reports of two extramarital affairs - one with an alleged Chinese spy and one with an Nvidia executive who reported to Huang. A press release published Thursday following a late Wednesday night board meeting announced Huang's resignation as CEO, president, and […]",
+      "source": "AI | The Verge",
+      "published": "2026-11-12T13:53:16+00:00",
+      "angle": "Nvidia CEO Jensen Huang resigns amid massive scandal—here is what it means for the world's most important AI company."
     },
     {
-      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-      "link": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-      "summary": "",
-      "source": "cbsnews.com",
-      "published": "2026-11-11T21:24:35+00:00",
-      "buzz": "Hacker News 543 points",
-      "angle": "United Airlines officially bans AI agents from booking flights"
+      "title": "AI Startup Pays Humans $45 An Hour To Babysit Robots On Night Shifts",
+      "link": "https://www.ndtv.com/artificial-intelligence/ai-startup-pays-humans-45-an-hour-to-babysit-robots-on-night-shifts-12316522",
+      "summary": "AI Startup Pays Humans $45 An Hour To Babysit Robots On Night Shifts NDTV",
+      "source": "NDTV",
+      "published": "2026-11-12T08:54:50+00:00",
+      "angle": "AI startup pays humans $45/hour to 'babysit' robots on night shifts—is this the future of the job market?"
     },
     {
-      "title": "Attackers breached the Fireworks AI storage where Notion AI chats sat outside zero data retention",
-      "link": "https://venturebeat.com/security/attackers-breached-the-fireworks-ai-storage-where-notion-ai-chats-sat-outside-zero-data-retention",
-      "summary": "Attackers breached the Fireworks AI storage where Notion AI chats sat outside zero data retention VentureBeat",
-      "source": "VentureBeat",
-      "published": "2026-11-12T02:13:00+00:00",
-      "angle": "Notion AI chats breached in Fireworks AI storage hack"
+      "title": "OpenAI Brings API Inference Residency To India To Deepen Enterprise AI Adoption",
+      "link": "https://inc42.com/buzz/openai-brings-api-inference-residency-to-india-to-deepen-enterprise-ai-adoption/",
+      "summary": "ChatGPT maker OpenAI has introduced local inference and data processing for its APIs in India, adding to its efforts to…",
+      "source": "Inc42 Media",
+      "published": "2026-11-12T12:28:31+00:00",
+      "angle": "OpenAI makes a major move into India, launching local API inference to speed up AI adoption for millions."
     }
   ],
-  "choose_deadline": "2026-11-12T15:01:03.710748+05:30",
+  "choose_deadline": "2026-11-12T20:01:13.887614+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -46,7 +45,8 @@
       "01:30",
       "04:30",
       "09:30",
-      "14:30"
+      "14:30",
+      "19:30"
     ]
   },
   "pending_topic": null,
@@ -1845,23 +1845,23 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-12T14:30+05:30",
+    "at": "2026-11-12T19:30+05:30",
     "techcrunch.com": 16,
-    "theverge.com": 5,
-    "arstechnica.com": 5,
+    "theverge.com": 6,
+    "arstechnica.com": 3,
     "technologyreview.com": 0,
-    "openai.com": 3,
+    "openai.com": 4,
     "blog.google": 3,
     "deepmind.google": 1,
-    "huggingface.co": 2,
+    "huggingface.co": 1,
     "blogs.nvidia.com": 1,
-    "inc42.com": 2,
-    "news.google.com": 40,
-    "Google News (VentureBeat, AIM, AI News)": 19,
-    "producthunt.com": 9,
-    "Hacker News": 4,
+    "inc42.com": 3,
+    "news.google.com": 42,
+    "Google News (VentureBeat, AIM, AI News)": 24,
+    "producthunt.com": 8,
+    "Hacker News": 6,
     "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 6
+    "filtered out (PR / local events / market fluff)": 7
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -1894,12 +1894,18 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-12",
-    "calls": 8,
+    "calls": 12,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 8,
+        "ok": 9,
+        "busy": 0,
+        "other": 2,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      },
+      "gemini-3.1-flash-lite": {
+        "ok": 1,
         "busy": 0,
         "other": 0,
         "last": ""
