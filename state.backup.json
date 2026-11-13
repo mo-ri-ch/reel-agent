@@ -3,31 +3,33 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "link": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-11-13T15:58:00+00:00",
-      "angle": "Nvidia CEO Jensen Huang resigns following a scandal, shaking up the entire AI industry."
-    },
-    {
       "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
       "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
       "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
       "source": "AI News & Artificial Intelligence | TechCrunch",
       "published": "2026-11-13T16:00:12+00:00",
-      "angle": "ChatGPT introduces a new Wallet allowing AI agents to shop and checkout on your behalf."
+      "angle": "ChatGPT can now spend your money directly with a new wallet feature for U.S. Pro users."
     },
     {
-      "title": "Ex-Alibaba engineer's new startup Octen pairs 10-millisecond AI search with a $20 unlimited plan",
-      "link": "https://venturebeat.com/orchestration/ex-alibaba-engineers-new-startup-octen-pairs-10-millisecond-ai-search-with-a-20-unlimited-plan",
-      "summary": "Ex-Alibaba engineer's new startup Octen pairs 10-millisecond AI search with a $20 unlimited plan VentureBeat",
-      "source": "VentureBeat",
-      "published": "2026-11-13T14:09:42+00:00",
-      "angle": "Ex-Alibaba engineer launches Octen pairing 10-millisecond AI search with a $20 unlimited plan."
+      "title": "OpenAI disbands its robotics team as its general models start running robots",
+      "link": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+      "summary": "",
+      "source": "fortune.com",
+      "published": "2026-11-13T17:55:23+00:00",
+      "buzz": "Hacker News 64 points",
+      "angle": "OpenAI completely shuts down its robotics team as general models take over physical machines."
+    },
+    {
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "link": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "summary": "",
+      "source": "theguardian.com",
+      "published": "2026-11-13T17:30:10+00:00",
+      "buzz": "Hacker News 186 points",
+      "angle": "AI successfully unlocks and decodes lost notebooks belonging to legendary mathematician Gödel."
     }
   ],
-  "choose_deadline": "2026-11-13T23:00:51.175234+05:30",
+  "choose_deadline": "2026-11-14T02:00:50.914130+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -41,7 +43,9 @@
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-14",
-    "done": []
+    "done": [
+      "01:30"
+    ]
   },
   "pending_topic": null,
   "held": [
@@ -1700,11 +1704,6 @@
   ],
   "posted_log": [
     {
-      "title": "nemotron-halloween",
-      "at": "2026-10-31T00:55:23.414374+05:30",
-      "event": "Nvidia built an interactive haunted house powered by Nemotron open models. Engineers combined vision capabilities and language models to create live responses. Sensors and cameras track visitors in real time as they walk through the dark co"
-    },
-    {
       "title": "Zest’s new AI agent finds restaurants and books reservations over text",
       "at": "2026-10-31T02:45:28.180792+05:30",
       "event": "Zest just replaced your dining concierge service. It finds restaurants and books reservations via text. You send a text to the concierge to start the process. The AI aggregates preferences from your group to identify suitable dining options"
@@ -1799,23 +1798,23 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-13T22:30+05:30",
+    "at": "2026-11-14T01:30+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
-    "arstechnica.com": 5,
+    "arstechnica.com": 6,
     "technologyreview.com": 1,
     "openai.com": 4,
     "blog.google": 1,
     "deepmind.google": 1,
-    "huggingface.co": 2,
+    "huggingface.co": 4,
     "blogs.nvidia.com": 2,
     "inc42.com": 5,
-    "news.google.com": 37,
+    "news.google.com": 38,
     "Google News (VentureBeat, AIM, AI News)": 25,
-    "producthunt.com": 4,
+    "producthunt.com": 3,
     "Hacker News": 9,
     "Reddit": 4,
-    "filtered out (PR / local events / market fluff)": 3
+    "filtered out (PR / local events / market fluff)": 4
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -1848,10 +1847,17 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-14",
-    "calls": 0,
+    "calls": 2,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.5-flash-lite": {
+        "ok": 2,
+        "busy": 0,
+        "other": 0,
+        "last": ""
+      }
+    }
   },
   "gemini_errors": [
     {
