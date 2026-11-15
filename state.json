@@ -1878,7 +1878,7 @@
     "error": "RuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly",
     "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1822, in cmd_render\n    out, action = editor_step(s, out, rerender)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/reel-agent/reel-agent/main.py\", line 1909, in editor_step\n    raise RuntimeError(\"the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\")\nRuntimeError: the editor-in-chief couldn't review the reel (Gemini busy); trying again shortly\n"
   },
-  "report_week": "2026-45",
+  "report_week": "2026-46",
   "last_post_error": {
     "at": "2026-11-03T07:45+05:30",
     "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
