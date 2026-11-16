@@ -296,3 +296,7 @@ Each entry: date · change · why · target metric and baseline. Review after 7+
   Gemini 6 calls today, 1 reel held. Insights stopped since 2 Nov 00:20 (followers 17 then).
 - Weekly review: second week with no reels posted and no insights collected. Nothing to analyse, so no changes.
   The 1 Nov and 2 Nov changes still can't be judged; re-check once posting resumes. Sent the weekly summary + login reminder.
+
+## 2026-11-16: daily check; Instagram login still refused (day 14)
+- Last 100 runs (8 h) all ok. Lock since 3 Nov still on: last post 2 Nov 16:31 IST, login test at 10:40 IST today still refused. About 82 slots missed.
+  Gemini 6 calls today, 1 reel held. Insights stopped since 2 Nov 00:20. No code change; reminded the owner, since only he can complete Meta's confirmation.
