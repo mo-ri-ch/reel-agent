@@ -3,31 +3,32 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "Jensen Huang says he would be ‘honored’ if allowed to return as Nvidia CEO",
-      "link": "https://techcrunch.com/2026/11/17/jensen-huang-says-he-would-be-honored-if-allowed-to-return-as-nvidia-ceo/",
-      "summary": "In the first public statement since his resignation, Nvidia founder Jensen Huang signalled his willingness to return as CEO.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-11-17T16:44:15+00:00",
-      "angle": "Nvidia founder Jensen Huang signals willingness to return as CEO after surprise resignation"
+      "title": "GPT‑6.2 Astra and Sol",
+      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "summary": "",
+      "source": "openai.com",
+      "published": "2026-11-17T17:46:43+00:00",
+      "buzz": "Hacker News 659 points",
+      "angle": "OpenAI drops GPT‑6.2 Astra and Sol, shaking up the entire AI race with massive new capabilities."
     },
     {
-      "title": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
-      "link": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
-      "summary": "Science Corp raised a $400 million Series D to scale up its anti-blindness business.",
+      "title": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
+      "link": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+      "summary": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 billion in a Series C funding round.",
       "source": "AI News & Artificial Intelligence | TechCrunch",
-      "published": "2026-11-17T14:26:46+00:00",
-      "angle": "Science Corp valued at $3.5 billion after raising a $400 million Series D for anti-blindness tech"
+      "published": "2026-11-17T14:50:58+00:00",
+      "angle": "Google's spinout Isomorphic Labs just raised a staggering $5B to take AI drug candidates to clinical trials."
     },
     {
-      "title": "Grok Bot took unapproved actions, ignored orders to stop, and then denied it",
-      "link": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/",
-      "summary": "AI agent takes unapproved actions even when laptop lid is closed and told not to.",
-      "source": "AI - Ars Technica",
-      "published": "2026-11-17T14:00:29+00:00",
-      "angle": "Grok Bot takes unapproved actions and ignores orders to stop even with the laptop lid closed"
+      "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
+      "link": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
+      "summary": "Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig through your emails to find recurring expenses you might not need. Users in the US […]",
+      "source": "AI | The Verge",
+      "published": "2026-11-17T18:58:01+00:00",
+      "angle": "Google's new Spark AI agent 'Tasks' is now totally free and can make purchases and calls for you."
     }
   ],
-  "choose_deadline": "2026-11-17T23:01:11.327786+05:30",
+  "choose_deadline": "2026-11-18T02:01:14.744085+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -41,7 +42,9 @@
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-18",
-    "done": []
+    "done": [
+      "01:30"
+    ]
   },
   "pending_topic": null,
   "held": [
@@ -1703,13 +1706,13 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-17T22:31+05:30",
+    "at": "2026-11-18T01:30+05:30",
     "techcrunch.com": 20,
     "theverge.com": 10,
     "arstechnica.com": 6,
     "technologyreview.com": 3,
-    "openai.com": 10,
-    "blog.google": 1,
+    "openai.com": 9,
+    "blog.google": 2,
     "deepmind.google": 0,
     "huggingface.co": 0,
     "blogs.nvidia.com": 9,
@@ -1717,9 +1720,9 @@
     "news.google.com": 36,
     "Google News (VentureBeat, AIM, AI News)": 25,
     "producthunt.com": 7,
-    "Hacker News": 4,
-    "Reddit": 5,
-    "filtered out (PR / local events / market fluff)": 4
+    "Hacker News": 8,
+    "Reddit": "blocked (HTTP 403/429)",
+    "filtered out (PR / local events / market fluff)": 3
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -1752,10 +1755,17 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-18",
-    "calls": 0,
+    "calls": 3,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.5-flash-lite": {
+        "ok": 2,
+        "busy": 0,
+        "other": 1,
+        "last": "503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"statu"
+      }
+    }
   },
   "gemini_errors": [
     {
