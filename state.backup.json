@@ -3,24 +3,33 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-      "summary": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to learn more about the user are \"undermining Signal's ability to independently guarantee privacy,\" Signal president […]",
-      "source": "AI | The Verge",
-      "published": "2026-11-20T12:30:47+00:00",
-      "angle": "Signal is blocking Gemini and Siri from reading your screen to protect your privacy"
-    },
-    {
       "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
       "link": "https://architectlabs.com/blog/frostbite",
       "summary": "",
       "source": "architectlabs.com",
       "published": "2026-11-20T10:01:41+00:00",
-      "buzz": "Hacker News 449 points",
-      "angle": "AI just designed an entirely new CPU architecture called Frostbite"
+      "buzz": "Hacker News 544 points",
+      "angle": "AI just designed a brand new CPU architecture from scratch—and it actually works."
+    },
+    {
+      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "summary": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to learn more about the user are \"undermining Signal's ability to independently guarantee privacy,\" Signal president […]",
+      "source": "AI | The Verge",
+      "published": "2026-11-20T12:30:47+00:00",
+      "angle": "Signal is blocking Siri and Gemini to stop AI agents from reading your private messages."
+    },
+    {
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "link": "https://arxiv.org/abs/2611.21885",
+      "summary": "",
+      "source": "arxiv.org",
+      "published": "2026-11-20T16:29:06+00:00",
+      "buzz": "Hacker News 234 points",
+      "angle": "AI language models can now literally rewrite their own underlying weights."
     }
   ],
-  "choose_deadline": "2026-11-20T23:01:08.779659+05:30",
+  "choose_deadline": "2026-11-21T02:00:53.217919+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -34,7 +43,9 @@
   "pending_offer": false,
   "offer_log": {
     "date": "2026-11-21",
-    "done": []
+    "done": [
+      "01:30"
+    ]
   },
   "pending_topic": null,
   "held": [
@@ -1696,18 +1707,18 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-20T22:30+05:30",
-    "techcrunch.com": 15,
+    "at": "2026-11-21T01:30+05:30",
+    "techcrunch.com": 18,
     "theverge.com": 10,
     "arstechnica.com": 1,
-    "technologyreview.com": 0,
-    "openai.com": 1,
+    "technologyreview.com": 1,
+    "openai.com": 2,
     "blog.google": 2,
     "deepmind.google": 0,
     "huggingface.co": 1,
     "blogs.nvidia.com": 3,
-    "inc42.com": 5,
-    "news.google.com": 36,
+    "inc42.com": 4,
+    "news.google.com": 40,
     "Google News (VentureBeat, AIM, AI News)": 24,
     "producthunt.com": 6,
     "Hacker News": 4,
@@ -1745,10 +1756,17 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-21",
-    "calls": 0,
+    "calls": 2,
     "claude_calls": 0,
     "claude_backup": 0,
-    "models": {}
+    "models": {
+      "gemini-3.5-flash-lite": {
+        "ok": 2,
+        "busy": 0,
+        "other": 0,
+        "last": ""
+      }
+    }
   },
   "gemini_errors": [
     {
