@@ -52,7 +52,8 @@ through a Telegram bot and reads Claude's messages there.
   slightly softer", after only 5 reels passed in 3 days); no exceptions after fixes; no posting if the editor
   can't run. Captions are guaranteed by code (video.sync_problem / even_words), not the
   free vision model, which misread correct captions on 12 Oct (owner, 2026-10-12: "BE very strict with the quality check"). Never lower the bar.
-- Models: **free Gemini only** (owner, 2026-10-10 13:14: "Sonnet is costly. Stay free"). Claude Sonnet 5.5 code stays
+- Models: **free Gemini only** (owner, 2026-10-10 13:14: "Sonnet is costly. Stay free"; asked again 2026-11-20:
+  "Stay as is", accepting ~4 good reels/day over paying for Gemini). Claude Sonnet 5.5 code stays
   but is off (config USE_CLAUDE; the trial ran out of credit on 10 Oct). Don't turn it on without asking.
 - No "Top AI headlines" backup reels (owner, 2026-10-09: made no sense). A late, fully checked reel beats an on-time bad one.
 - Scripts: 30-40 s, 75-105 words, every sentence a concrete fact. Owner rejected short 45-65 word scripts
