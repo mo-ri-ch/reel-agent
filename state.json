@@ -3,13 +3,20 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "Language Models Can Rewrite Their Own Weights",
-      "link": "https://arxiv.org/abs/2611.21885",
-      "summary": "",
-      "source": "arxiv.org",
-      "published": "2026-11-20T16:29:06+00:00",
-      "buzz": "Hacker News 308 points",
-      "angle": "Language models can now completely rewrite their own weights—a major technical breakthrough."
+      "title": "Amazon says attackers' AI agents found and exploited a zero-day in 11 minutes, but no patched release is available",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUjQ5c0hsZDBTcWxGNUVxN0phZDdwRGhzTk1nWWEzZTdOSVpVT2h2WlI3OUVfeVZVMWt4eTFTQXFGZ1hoM1dMS2puekZ1YVYzSWV0aHMtYkVkNUpKdEJtaHlTRE9NRE5YZHRWbDk2YVZPVmdrOXN6cmJGbnFlcWxGODhZTVdaRGJ0aF9icTYwamtYakRaTFY0bGo4dHJMY21mRFFGTjNxYWkzN1J2d2tFX1g4Wk5US25oU0ZKTHoxSlU1dW9qODFRNEYyRTlaQm1aWmhIU05rMzJ4bmN5X1E?oc=5",
+      "summary": "Amazon says attackers' AI agents found and exploited a zero-day in 11 minutes, but no patched release is available VentureBeat",
+      "source": "VentureBeat",
+      "published": "2026-11-21T00:51:01+00:00",
+      "angle": "Amazon reveals AI agents exploited a zero-day vulnerability in just 11 minutes."
+    },
+    {
+      "title": "Google rolls out new search homepage with AI chat history and no search button",
+      "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+      "summary": "Google search is making it even easier to access AI tools on the search page.",
+      "source": "AI - Ars Technica",
+      "published": "2026-11-20T21:58:29+00:00",
+      "angle": "Google completely redesigns its search homepage to put AI front and center without a search button."
     },
     {
       "title": "Signal is blocking Gemini and Siri AI from reading your screen",
@@ -17,18 +24,10 @@
       "summary": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to learn more about the user are \"undermining Signal's ability to independently guarantee privacy,\" Signal president […]",
       "source": "AI | The Verge",
       "published": "2026-11-20T12:30:47+00:00",
-      "angle": "Signal is blocking Gemini and Siri to protect your private messages from AI agents reading your screen."
-    },
-    {
-      "title": "Noninvasive brain interface uses AI suggestions to convey messages nearly three times faster",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMGdMQy1lVnVBdHhOMTV6VXV5eFlOTzFnRTk2OGJ6QlhocXViUkRURElGY1A5TW9ES0pMeVdqQjJuYVNoRGtxVmQxX1JucUhwY2VwN2t0S2lySWFuRi0tSkNfWkNFeWhJQldLVDYweU1hem5PUWRkUDZIZUdaZDRSV0FDQnI?oc=5",
-      "summary": "Noninvasive brain interface uses AI suggestions to convey messages nearly three times faster Tech Xplore",
-      "source": "Tech Xplore",
-      "published": "2026-11-20T20:00:04+00:00",
-      "angle": "A new noninvasive brain interface uses AI suggestions to convey messages nearly three times faster."
+      "angle": "Signal blocks Gemini and Siri from reading your screen to protect user privacy."
     }
   ],
-  "choose_deadline": "2026-11-21T05:00:55.750285+05:30",
+  "choose_deadline": "2026-11-21T10:01:20.129836+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -44,7 +43,8 @@
     "date": "2026-11-21",
     "done": [
       "01:30",
-      "04:30"
+      "04:30",
+      "09:30"
     ]
   },
   "pending_topic": null,
@@ -1707,8 +1707,8 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-21T04:30+05:30",
-    "techcrunch.com": 18,
+    "at": "2026-11-21T09:30+05:30",
+    "techcrunch.com": 16,
     "theverge.com": 10,
     "arstechnica.com": 4,
     "technologyreview.com": 1,
@@ -1716,14 +1716,14 @@
     "blog.google": 2,
     "deepmind.google": 0,
     "huggingface.co": 2,
-    "blogs.nvidia.com": 3,
-    "inc42.com": 4,
-    "news.google.com": 41,
-    "Google News (VentureBeat, AIM, AI News)": 24,
-    "producthunt.com": 5,
-    "Hacker News": 6,
+    "blogs.nvidia.com": 2,
+    "inc42.com": 3,
+    "news.google.com": 39,
+    "Google News (VentureBeat, AIM, AI News)": 23,
+    "producthunt.com": 3,
+    "Hacker News": 4,
     "Reddit": "blocked (HTTP 403/429)",
-    "filtered out (PR / local events / market fluff)": 3
+    "filtered out (PR / local events / market fluff)": 5
   },
   "guarantee_since": "2026-10-21T20:31:58+05:30",
   "digest_for": "2026-10-09T23:00",
@@ -1756,12 +1756,12 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-21",
-    "calls": 4,
+    "calls": 6,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 4,
+        "ok": 6,
         "busy": 0,
         "other": 0,
         "last": ""
