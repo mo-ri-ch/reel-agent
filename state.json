@@ -3,32 +3,31 @@
   "stage": "choosing",
   "candidates": [
     {
-      "title": "Amazon says attackers' AI agents found and exploited a zero-day in 11 minutes, but no patched release is available",
-      "link": "https://venturebeat.com/security/amazon-says-attackers-ai-agents-found-and-exploited-a-zero-day-in-11-minutes-but-no-patched-release-is-available",
-      "summary": "Amazon says attackers' AI agents found and exploited a zero-day in 11 minutes, but no patched release is available VentureBeat",
-      "source": "VentureBeat",
-      "published": "2026-11-21T00:51:01+00:00",
-      "angle": "AI agents found and exploited a zero-day vulnerability in just 11 minutes without a patch."
-    },
-    {
-      "title": "Language Models Can Rewrite Their Own Weights",
-      "link": "https://arxiv.org/abs/2611.21885",
-      "summary": "",
-      "source": "arxiv.org",
-      "published": "2026-11-20T16:29:06+00:00",
-      "buzz": "Hacker News 401 points",
-      "angle": "Language models can now rewrite their own weights, hitting a massive AI milestone."
-    },
-    {
       "title": "Google rolls out new search homepage with AI chat history and no search button",
       "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
       "summary": "Google search is making it even easier to access AI tools on the search page.",
       "source": "AI - Ars Technica",
       "published": "2026-11-20T21:58:29+00:00",
-      "angle": "Google completely redesigns its search homepage to put AI front and center with chat history."
+      "angle": "Google completely redesigns its search homepage to put AI chat front and center with no search button."
+    },
+    {
+      "title": "OpenAI improves AI models' safety, reducing unauthorized extraction attempts by over 50%",
+      "link": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/openai-improves-ai-models-safety-reducing-unauthorized-extraction-attempts-by-over-50/136043590",
+      "summary": "OpenAI improves AI models' safety, reducing unauthorized extraction attempts by over 50% ET CIO",
+      "source": "ET CIO",
+      "published": "2026-11-21T03:14:02+00:00",
+      "angle": "OpenAI successfully upgrades safety models to slash unauthorized extraction attempts by over 50%."
+    },
+    {
+      "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+      "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+      "source": "AI News & Artificial Intelligence | TechCrunch",
+      "published": "2026-11-20T19:32:08+00:00",
+      "angle": "AI claims to solve a 167-year-old math problem, sparking a massive showdown with human mathematicians."
     }
   ],
-  "choose_deadline": "2026-11-21T15:00:56.549884+05:30",
+  "choose_deadline": "2026-11-21T20:00:56.256647+05:30",
   "topic": null,
   "draft": null,
   "voice_file_id": null,
@@ -46,7 +45,8 @@
       "01:30",
       "04:30",
       "09:30",
-      "14:30"
+      "14:30",
+      "19:30"
     ]
   },
   "pending_topic": null,
@@ -1709,20 +1709,20 @@
   "voice_gender": "female",
   "user_video_id": null,
   "feed_report": {
-    "at": "2026-11-21T14:30+05:30",
-    "techcrunch.com": 9,
-    "theverge.com": 6,
+    "at": "2026-11-21T19:30+05:30",
+    "techcrunch.com": 5,
+    "theverge.com": 4,
     "arstechnica.com": 3,
     "technologyreview.com": 1,
-    "openai.com": 3,
+    "openai.com": 1,
     "blog.google": 0,
     "deepmind.google": 0,
-    "huggingface.co": 2,
+    "huggingface.co": 0,
     "blogs.nvidia.com": 0,
-    "inc42.com": 3,
-    "news.google.com": 44,
-    "Google News (VentureBeat, AIM, AI News)": 22,
-    "producthunt.com": 2,
+    "inc42.com": 5,
+    "news.google.com": 42,
+    "Google News (VentureBeat, AIM, AI News)": 20,
+    "producthunt.com": 1,
     "Hacker News": 3,
     "Reddit": "blocked (HTTP 403/429)",
     "filtered out (PR / local events / market fluff)": 3
@@ -1758,12 +1758,12 @@
   "late_note_for": "2026-11-03-0",
   "gemini_use": {
     "day": "2026-11-21",
-    "calls": 8,
+    "calls": 10,
     "claude_calls": 0,
     "claude_backup": 0,
     "models": {
       "gemini-3.5-flash-lite": {
-        "ok": 8,
+        "ok": 10,
         "busy": 0,
         "other": 0,
         "last": ""
